@@ -1,0 +1,36 @@
+target/
+*.class
+*.log
+*.tmp
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.factorypath
+build/
+bin/
+dist/
+node_modules/
+.DS_Store
+*.swp
+*.bak
+jsp-src/
+work/
+temp/
+.gemini/
+.agent/
+.agents/
+knowledge/
+brain/
+artifacts/
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.m4v
+*.mov
+# Never upload DB secrets
+src/main/resources/config.properties
+# Or any other sensitive data

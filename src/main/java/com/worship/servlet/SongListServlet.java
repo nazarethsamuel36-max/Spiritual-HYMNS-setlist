@@ -1,0 +1,58 @@
+package com.worship.servlet;
+
+import com.worship.dao.SongDAO;
+import com.worship.model.Song;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * Servlet for listing and filtering songs.
+ * Supports search, hashtag, language, and key filtering.
+ */
+@WebServlet(name = "SongListServlet", urlPatterns = {"/songs"})
+public class SongListServlet extends HttpServlet {
+
+    private SongDAO songDAO = new SongDAO();
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+
+        String query = request.getParameter("q");
+        String hashtag = request.getParameter("hashtag");
+        String language = request.getParameter("language");
+        String key = request.getParameter("key");
+
+        String sortBy = request.getParameter("sortBy");
+
+        List<Song> songs;
+
+        if (query != null && !query.trim().isEmpty()) {
+            songs = songDAO.searchSongs(query.trim());
+            request.setAttribute("searchQuery", query.trim());
+        } else if (hashtag != null && !hashtag.trim().isEmpty()) {
+            songs = songDAO.getSongsByHashtag(hashtag.trim());
+            request.setAttribute("filterHashtag", hashtag.trim());
+        } else if (language != null && !language.trim().isEmpty()) {
+            songs = songDAO.getSongsByLanguage(language.trim());
+            request.setAttribute("filterLanguage", language.trim());
+        } else if (key != null && !key.trim().isEmpty()) {
+            songs = songDAO.getSongsByKey(key.trim());
+            request.setAttribute("filterKey", key.trim());
+        } else if ("popular".equals(sortBy)) {
+            songs = songDAO.getSongsSortedByViews();
+            request.setAttribute("sortBy", "popular");
+        } else {
+            songs = songDAO.getAllSongs();
+        }
+
+        request.setAttribute("songs", songs);
+        request.getRequestDispatcher("/jsp/songList.jsp").forward(request, response);
+    }
+}
