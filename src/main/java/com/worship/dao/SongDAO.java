@@ -148,6 +148,30 @@ public class SongDAO {
     }
 
     /**
+     * Get songs added by a specific user (Personal Library).
+     */
+    public List<Song> getSongsByUser(int userId) {
+        List<Song> songs = new ArrayList<>();
+        String sql = "SELECT * FROM songs WHERE is_active = TRUE AND created_by = ? ORDER BY title";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, userId);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Song song = mapResultSetToSong(rs);
+                    song.setHashtags(getHashtagsForSong(song.getId()));
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return songs;
+    }
+
+    /**
      * Get songs filtered by language.
      */
     public List<Song> getSongsByLanguage(String language) {

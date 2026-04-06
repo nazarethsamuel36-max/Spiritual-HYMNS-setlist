@@ -6,6 +6,9 @@
 <a href="${pageContext.request.contextPath}/" class="text-2xl font-black text-[#001264] dark:text-blue-100 uppercase tracking-widest font-headline decoration-none" style="text-decoration: none;">The Resonant Archive</a>
     <div class="hidden lg:flex items-center gap-8 font-manrope tracking-tight font-medium">
           <a class="text-[#001264] dark:text-blue-400 pb-1 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/songs">Songs</a>
+        <c:if test="${not empty sessionScope.username}">
+            <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none font-bold" style="text-decoration: none;" href="${pageContext.request.contextPath}/song/add">Add Song</a>
+        </c:if>
         <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/leaflet/new">Leaflet Builder</a>
         <c:choose>
             <c:when test="${not empty sessionScope.username}">

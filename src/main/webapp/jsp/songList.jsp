@@ -12,19 +12,27 @@
     <main class="flex-grow max-w-[1920px] mx-auto w-full px-6 md:px-24 py-12">
         <!-- Header & Search -->
         <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 border-b border-surface-dim pb-8 mb-12">
-            <div>
+            <div class="flex-grow">
                 <h1 class="text-4xl font-headline font-extrabold tracking-tight text-on-surface mb-2">Song Library</h1>
                 <p class="text-on-surface-variant text-lg font-medium">Browse and transpose songs for your worship service.</p>
             </div>
             
-            <div class="w-full lg:w-96">
-                <!-- Live Search Bar -->
-                <form action="${pageContext.request.contextPath}/search" method="get" class="relative group">
-                    <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold">search</span>
-                    <input name="q" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border border-outline-variant/30 rounded-xl text-md focus:ring-2 focus:ring-primary focus:border-primary transition-all font-medium placeholder:text-outline shadow-sm" placeholder="Search by title, artist, or lyrics..." type="text" value="${searchQuery}"/>
-                </form>
-            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-max">
+                <c:if test="${not empty sessionScope.username}">
+                    <a href="${pageContext.request.contextPath}/song/add" class="flex items-center gap-2 px-6 py-4 bg-primary text-white font-black rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all text-sm uppercase tracking-widest text-decoration-none" style="text-decoration: none;">
+                        <span class="material-symbols-outlined">add</span>
+                        Add New Song
+                    </a>
+                </c:if>
 
+                <div class="w-full lg:w-96">
+                    <!-- Live Search Bar -->
+                    <form action="${pageContext.request.contextPath}/search" method="get" class="relative group">
+                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold">search</span>
+                        <input name="q" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border border-outline-variant/30 rounded-xl text-md focus:ring-2 focus:ring-primary focus:border-primary transition-all font-medium placeholder:text-outline shadow-sm" placeholder="Search by title, artist, or lyrics..." type="text" value="${searchQuery}"/>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!-- Filter & Sort Header -->
@@ -32,8 +40,11 @@
             <!-- Filter Pills & Key Dropdown -->
             <div class="flex flex-wrap gap-4 items-center text-sm font-semibold tracking-wide">
                 <div class="flex flex-wrap gap-2 items-center">
-                    <span class="text-outline uppercase text-xs tracking-widest mr-2">Language:</span>
-                    <a href="${pageContext.request.contextPath}/songs" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${empty filterHashtag && empty filterLanguage ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">All</a>
+                    <span class="text-outline uppercase text-xs tracking-widest mr-2">Library:</span>
+                    <a href="${pageContext.request.contextPath}/songs" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${empty filter && empty filterHashtag && empty filterLanguage ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">All Master</a>
+                    <c:if test="${not empty sessionScope.username}">
+                        <a href="${pageContext.request.contextPath}/songs?filter=personal" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${filter == 'personal' ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">My Additions</a>
+                    </c:if>
                     <a href="${pageContext.request.contextPath}/songs?language=english" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'english' ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">English</a>
                     <a href="${pageContext.request.contextPath}/songs?language=hindi" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'hindi' ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">Hindi</a>
                     <a href="${pageContext.request.contextPath}/songs?language=marathi" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'marathi' ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-dim'} text-decoration-none" style="text-decoration: none;">Marathi</a>

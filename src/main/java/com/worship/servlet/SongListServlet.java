@@ -29,13 +29,18 @@ public class SongListServlet extends HttpServlet {
         String language = request.getParameter("language");
         String key = request.getParameter("key");
 
+        String filter = request.getParameter("filter");
         String sortBy = request.getParameter("sortBy");
 
         List<Song> songs;
+        com.worship.model.User user = com.worship.util.SessionUtil.getUser(request);
 
         if (query != null && !query.trim().isEmpty()) {
             songs = songDAO.searchSongs(query.trim());
             request.setAttribute("searchQuery", query.trim());
+        } else if ("personal".equals(filter) && user != null) {
+            songs = songDAO.getSongsByUser(user.getId());
+            request.setAttribute("filter", "personal");
         } else if (hashtag != null && !hashtag.trim().isEmpty()) {
             songs = songDAO.getSongsByHashtag(hashtag.trim());
             request.setAttribute("filterHashtag", hashtag.trim());
