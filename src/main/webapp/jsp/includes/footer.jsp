@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<footer class="no-print w-full py-12 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 font-manrope text-xs uppercase tracking-widest opacity-80 hover:opacity-100 transition-all mt-auto z-50 relative">
+<footer class="no-print w-full py-12 font-manrope text-xs uppercase tracking-widest opacity-80 hover:opacity-100 transition-all mt-auto z-50 relative" style="background:rgba(255,255,255,0.12); border-top:0.5px solid rgba(255,255,255,0.35); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
     <div class="max-w-[1920px] mx-auto px-6 md:px-24 flex flex-col md:flex-row justify-between items-center gap-4">
         <div class="text-slate-400 dark:text-slate-500">© 2026 The Resonant Archive. All rights reserved.</div>
         <div class="flex flex-wrapjustify-center gap-8">

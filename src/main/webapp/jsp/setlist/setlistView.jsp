@@ -30,6 +30,9 @@
         </div>
         
         <div class="flex flex-wrap gap-3">
+            <button onclick="addDivider()" class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-5 py-2.5 rounded-xl font-bold shadow-md hover:shadow-lg transition-all border border-tertiary/20">
+                <span class="material-symbols-outlined text-sm">horizontal_rule</span> Add Divider
+            </button>
             <button onclick="openSearchModal()" class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-white px-5 py-2.5 rounded-xl font-bold shadow-md hover:shadow-lg transition-all">
                 <span class="material-symbols-outlined text-sm">add</span> Add Song
             </button>
@@ -68,21 +71,39 @@
                 List<SetlistSong> songs = s.getSongs();
                 if (songs == null || songs.isEmpty()) { 
             %>
-                <div class="p-12 text-center text-on-surface-variant">No songs added to this setlist yet. Click "Add Song" to begin.</div>
+                <div class="p-12 text-center text-on-surface-variant">No items in this setlist yet. Click "Add Song" or "Add Divider" to begin.</div>
             <% 
                 } else {
+                    int songCounter = 0;
                     for (SetlistSong ss : songs) {
+                        if (ss.isHeader()) {
             %>
-                <div class="song-row group flex items-center p-4 hover:bg-surface-container-low transition-colors bg-white dark:bg-slate-800" data-song-id="<%=ss.getSongId()%>">
+                <div class="song-row group flex items-center p-3 hover:bg-tertiary-container/10 transition-colors bg-tertiary-container/5 border-x-4 border-tertiary" data-id="<%=ss.getId()%>">
+                    <div class="drag-handle w-[40px] text-center cursor-grab text-tertiary/40 hover:text-tertiary transition-colors flex justify-center">
+                        <span class="material-symbols-outlined">drag_indicator</span>
+                    </div>
+                    <div class="flex-grow flex items-center px-4">
+                        <textarea onkeyup="renameHeader(<%=ss.getId()%>, this.value)" class="w-full bg-transparent border-none focus:outline-none text-tertiary font-black uppercase text-center tracking-widest placeholder:text-tertiary/30 resize-none overflow-hidden py-1" rows="1" placeholder="Enter divider purpose..."><%=ss.getSongTitle()%></textarea>
+                    </div>
+                    <div class="w-[40px] flex justify-end pr-2">
+                        <button onclick="removeSong(<%=ss.getId()%>)" class="text-slate-400 hover:text-error transition-colors p-1"><span class="material-symbols-outlined text-xl">close</span></button>
+                    </div>
+                </div>
+            <%
+                        } else {
+                            songCounter++;
+            %>
+                <div class="song-row group flex items-center p-4 hover:bg-surface-container-low transition-colors bg-white dark:bg-slate-800" data-id="<%=ss.getId()%>">
                     <div class="drag-handle w-[40px] text-center cursor-grab text-slate-300 dark:text-slate-600 hover:text-primary transition-colors flex justify-center">
                         <span class="material-symbols-outlined">drag_indicator</span>
                     </div>
+                    <div class="w-[40px] text-center font-bold text-outline-variant text-sm"><%=songCounter%></div>
                     <div class="flex-grow min-w-0 pr-4">
                         <a href="<%=request.getContextPath()%>/song?id=<%=ss.getSongId()%>" target="_blank" class="font-bold text-on-surface hover:text-primary transition-colors text-lg truncate block text-decoration-none" style="text-decoration: none;"><%=ss.getSongTitle()%></a>
                         <div class="text-on-surface-variant text-sm truncate"><%=ss.getSongArtist()%></div>
                     </div>
                     <div class="w-[120px] px-2">
-                        <select onchange="updateSongKey(<%=ss.getSongId()%>)" id="key-<%=ss.getSongId()%>" class="w-full bg-surface-container border border-surface-dim rounded-lg px-2 py-1.5 text-sm font-bold text-on-surface outline-none focus:border-primary">
+                        <select onchange="updateSongKey(<%=ss.getId()%>)" id="key-<%=ss.getId()%>" class="w-full bg-surface-container border border-surface-dim rounded-lg px-2 py-1.5 text-sm font-bold text-on-surface outline-none focus:border-primary">
                             <% String skey = ss.getCreatorKey(); %>
                             <option value="C" <%= "C".equals(skey) ? "selected" : "" %>>C</option>
                             <option value="D" <%= "D".equals(skey) ? "selected" : "" %>>D</option>
@@ -94,13 +115,14 @@
                         </select>
                     </div>
                     <div class="w-[100px] px-2">
-                        <input type="number" min="0" max="11" id="capo-<%=ss.getSongId()%>" value="<%=ss.getCreatorCapo()%>" onchange="updateSongKey(<%=ss.getSongId()%>)" class="w-full bg-surface-container border border-surface-dim rounded-lg px-2 py-1.5 text-sm font-bold text-center text-on-surface outline-none focus:border-primary">
+                        <input type="number" min="0" max="11" id="capo-<%=ss.getId()%>" value="<%=ss.getCreatorCapo()%>" onchange="updateSongKey(<%=ss.getId()%>)" class="w-full bg-surface-container border border-surface-dim rounded-lg px-2 py-1.5 text-sm font-bold text-center text-on-surface outline-none focus:border-primary">
                     </div>
                     <div class="w-[40px] flex justify-end pr-2">
-                        <button onclick="removeSong(<%=ss.getSongId()%>)" class="text-slate-400 hover:text-error transition-colors p-1"><span class="material-symbols-outlined text-xl">close</span></button>
+                        <button onclick="removeSong(<%=ss.getId()%>)" class="text-slate-400 hover:text-error transition-colors p-1"><span class="material-symbols-outlined text-xl">close</span></button>
                     </div>
                 </div>
             <% 
+                        }
                     }
                 } 
             %>
@@ -147,7 +169,7 @@
         var rows = document.querySelectorAll('.song-row');
         var orderedIds = [];
         for (var i = 0; i < rows.length; i++) {
-            orderedIds.push(parseInt(rows[i].getAttribute('data-song-id')));
+            orderedIds.push(parseInt(rows[i].getAttribute('data-id')));
         }
         fetch(contextPath + '/setlist/' + setlistId + '/reorder', {
             method: 'POST',
@@ -156,22 +178,42 @@
         });
     }
 
-    function updateSongKey(songId) {
-        var key = document.getElementById('key-' + songId).value;
-        var capo = document.getElementById('capo-' + songId).value;
+    function addDivider() {
+        fetch(contextPath + '/setlist/' + setlistId + '/add-header', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'text=NEW DIVIDER&position=999'
+        }).then(function() { window.location.reload(); });
+    }
+
+    var renameTimeout;
+    function renameHeader(id, text) {
+        clearTimeout(renameTimeout);
+        renameTimeout = setTimeout(function() {
+            fetch(contextPath + '/setlist/' + setlistId + '/rename-header', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: 'id=' + id + '&text=' + encodeURIComponent(text)
+            });
+        }, 500);
+    }
+
+    function updateSongKey(id) {
+        var key = document.getElementById('key-' + id).value;
+        var capo = document.getElementById('capo-' + id).value;
         fetch(contextPath + '/setlist/' + setlistId + '/key', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'songId=' + songId + '&key=' + encodeURIComponent(key) + '&capo=' + capo
+            body: 'id=' + id + '&key=' + encodeURIComponent(key) + '&capo=' + capo
         });
     }
 
-    function removeSong(songId) {
-        if (!confirm('Remove this song?')) return;
+    function removeSong(id) {
+        if (!confirm('Remove this item?')) return;
         fetch(contextPath + '/setlist/' + setlistId + '/remove', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'songId=' + songId
+            body: 'id=' + id
         }).then(function() { window.location.reload(); });
     }
 

@@ -162,7 +162,7 @@ public class UserSongServlet extends HttpServlet {
                 sendSuccess(response, saved ? "Personal version saved" : "Save failed");
             } else {
                 // Guest: save to session only — never database
-                SessionUtil.saveGuestEdits(session, songId, customChords, customLyrics, customKey);
+                SessionUtil.saveGuestEdits(session, songId, customChords, customLyrics, customKey, customNotes);
                 Map<String, Object> result = new HashMap<>();
                 result.put("success", true);
                 result.put("message", "Saved to session. Sign up to keep your edits permanently.");

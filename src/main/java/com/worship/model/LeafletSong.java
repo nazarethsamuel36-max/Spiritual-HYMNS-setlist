@@ -9,7 +9,7 @@ public class LeafletSong {
 
     private int id;
     private int leafletId;
-    private int songId;
+    private Integer songId;   // Changed to Integer because headers don't have song IDs
     private String songTitle;
     private String songArtist;
     private String songChords;       // full bracket-format chord string
@@ -17,6 +17,8 @@ public class LeafletSong {
     private String songOriginalKey;  // master key
     private int position;
     private String customKey;        // leaflet-specific key override
+    private boolean isHeader;        // New: Support for dividers
+    private String headerText;       // New: Text for dividers ("Opening Prayer")
 
     public LeafletSong() {}
 
@@ -27,8 +29,8 @@ public class LeafletSong {
     public int getLeafletId() { return leafletId; }
     public void setLeafletId(int leafletId) { this.leafletId = leafletId; }
 
-    public int getSongId() { return songId; }
-    public void setSongId(int songId) { this.songId = songId; }
+    public Integer getSongId() { return songId; }
+    public void setSongId(Integer songId) { this.songId = songId; }
 
     public String getSongTitle() { return songTitle; }
     public void setSongTitle(String songTitle) { this.songTitle = songTitle; }
@@ -51,8 +53,15 @@ public class LeafletSong {
     public String getCustomKey() { return customKey; }
     public void setCustomKey(String customKey) { this.customKey = customKey; }
 
+    public boolean isHeader() { return isHeader; }
+    public void setHeader(boolean header) { isHeader = header; }
+
+    public String getHeaderText() { return headerText; }
+    public void setHeaderText(String headerText) { this.headerText = headerText; }
+
     /** Returns the effective display key (customKey if set, else songOriginalKey) */
     public String getDisplayKey() {
+        if (isHeader) return "";
         return (customKey != null && !customKey.isEmpty()) ? customKey : songOriginalKey;
     }
 }

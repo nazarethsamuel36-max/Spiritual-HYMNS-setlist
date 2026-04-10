@@ -26,6 +26,7 @@ public class DBConnection {
         if (dbPass == null) dbPass = "root123";
 
         HikariConfig config = new HikariConfig();
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setJdbcUrl(dbUrl);
         config.setUsername(dbUser);
         config.setPassword(dbPass);

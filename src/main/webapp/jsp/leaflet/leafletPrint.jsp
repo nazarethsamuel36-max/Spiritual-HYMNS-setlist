@@ -10,34 +10,51 @@
     <style>
         /* Essential print and specific layout overrides that Tailwind doesn't handle natively as well for complex print jobs */
         body { background-color: white !important; }
+        .print-song-header {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        .print-song-content {
+            orphans: 3;
+            widows: 3;
+        }
         
         @media print {
             @page {
-                margin: 1.5cm;
-                size: auto;
+                size: A4;
+                margin: 1.2cm;
             }
             body { 
                 padding: 0 !important;
                 background-color: white !important;
                 color: black !important;
-                font-size: 11pt !important;
+                font-size: 10pt !important;
+                line-height: 1.4 !important;
             }
-            .print-song { 
-                page-break-inside: avoid;
-                margin-bottom: 2rem !important;
-            }
-            .print-song-content {
+            .print-song {
+                break-inside: auto;
                 page-break-inside: auto;
+                page-break-before: always;
+                margin-bottom: 0 !important;
+                padding-bottom: 0 !important;
+                border-bottom: none !important;
             }
-            /* Start a new page for every song except the first */
-            .print-song { page-break-before: always; }
             .print-song:first-of-type { page-break-before: auto; }
+            .print-song-content {
+                break-inside: auto;
+                page-break-inside: auto;
+                margin-top: 0.75rem !important;
+            }
             
             /* Ensure chords print clearly */
             .chord-line { 
                 color: #000 !important; 
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+                margin-bottom: -0.15rem !important;
+            }
+            .lyric-line {
+                margin-bottom: 0.15rem !important;
             }
             
             /* Hide elements meant only for screen */
@@ -53,12 +70,27 @@
                 border: 1px solid black !important;
                 padding: 0 4px !important;
             }
+            .print-shell {
+                max-width: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            .print-header {
+                margin-bottom: 1.25rem !important;
+                padding-bottom: 0.75rem !important;
+            }
+            .print-subtitle {
+                font-size: 10pt !important;
+                color: #444 !important;
+            }
         }
     </style>
 </head>
 <body class="font-body text-on-surface bg-gray-50/50 min-h-screen p-4 md:p-8">
 
-    <div class="max-w-[800px] mx-auto bg-white sm:shadow-lg sm:rounded-2xl sm:border border-surface-dim p-6 md:p-12 print:p-0 print:shadow-none print:border-none print:max-w-none print:m-0">
+    <div class="print-shell max-w-[800px] mx-auto bg-white sm:shadow-lg sm:rounded-2xl sm:border border-surface-dim p-6 md:p-12 print:p-0 print:shadow-none print:border-none print:max-w-none print:m-0">
         
         <!-- Controls (Hidden on Print) -->
         <div class="no-print flex flex-wrap gap-3 mb-10 pb-6 border-b border-surface-dim items-center justify-between">
@@ -76,53 +108,80 @@
         </div>
 
         <!-- Leaflet Header -->
-        <div class="text-center mb-10 pb-6 border-b-4 border-primary print:border-b-2 print:border-black print-border-b">
+        <div class="print-header text-center mb-10 pb-6 border-b-4 border-primary print:border-b-2 print:border-black print-border-b">
             <h1 class="text-3xl font-headline font-extrabold tracking-tight text-primary print:text-black mb-1">${leaflet.title}</h1>
             <div class="text-lg font-medium text-on-surface-variant print:text-black">${leaflet.occasionName}</div>
+            <div class="print-subtitle text-sm text-on-surface-variant mt-2">
+                <c:choose>
+                    <c:when test="${leaflet.printType == 'lyrics_only'}">Lyrics-only print</c:when>
+                    <c:otherwise>Musician print with chords</c:otherwise>
+                </c:choose>
+            </div>
         </div>
 
-        <%-- Render each song in the leaflet --%>
-        <c:forEach var="ls" items="${leaflet.songs}" varStatus="loop">
-            <div class="print-song mb-12">
-                <div class="flex justify-between items-baseline mb-2 pb-2 border-b border-surface-dim print:border-gray-300 print-border-b">
-                    <h3 class="text-xl font-headline font-bold text-on-surface print:text-black m-0">${loop.index + 1}. ${ls.songTitle}</h3>
-                    <span class="print-badge bg-primary text-white text-xs font-bold px-3 py-1 rounded-full font-mono tracking-widest">${ls.displayKey}</span>
-                </div>
-                
-                <c:if test="${not empty ls.songArtist}">
-                    <div class="text-sm font-medium text-on-surface-variant print:text-gray-600 mb-4">${ls.songArtist}</div>
-                </c:if>
+        <%-- Render each item in the leaflet --%>
+        <% 
+           com.worship.model.Leaflet leafletData = (com.worship.model.Leaflet) request.getAttribute("leaflet");
+           if (leafletData != null && leafletData.getSongs() != null) {
+               int songCounter = 0;
+               for (com.worship.model.LeafletSong ls : leafletData.getSongs()) {
+                   if (ls.isHeader()) {
+        %>
+                    <div class="print-song-header my-12 py-4 border-y-2 border-primary/20 bg-primary/5 flex justify-center items-center">
+                        <h2 class="text-2xl font-black text-primary uppercase tracking-[0.3em] font-headline text-center">
+                            === <%= ls.getHeaderText() != null ? ls.getHeaderText() : ls.getSongTitle() %> ===
+                        </h2>
+                    </div>
+        <% 
+                   } else {
+                       songCounter++; 
+        %>
+                    <div class="print-song mb-12">
+                        <div class="print-song-header flex justify-between items-baseline mb-2 pb-2 border-b border-surface-dim print:border-gray-300 print-border-b">
+                            <h3 class="text-xl font-headline font-bold text-on-surface print:text-black m-0"><%= songCounter %>. <%= ls.getSongTitle() %></h3>
+                            <span class="print-badge bg-primary text-white text-xs font-bold px-3 py-1 rounded-full font-mono tracking-widest"><%= ls.getDisplayKey() %></span>
+                        </div>
+                        
+                        <% if (ls.getSongArtist() != null && !ls.getSongArtist().trim().isEmpty()) { %>
+                            <div class="text-sm font-medium text-on-surface-variant print:text-gray-600 mb-4"><%= ls.getSongArtist() %></div>
+                        <% } %>
 
-                <%-- Parse chord/lyric lines and render them --%>
-                <div class="print-song-content font-mono text-[13px] md:text-sm leading-[1.8] whitespace-pre-wrap mt-4">
-                    <c:choose>
-                        <c:when test="${not empty ls.songChords}">
-                            <%
-                                com.worship.model.LeafletSong currentSong =
-                                    (com.worship.model.LeafletSong) pageContext.getAttribute("ls");
-                                if (currentSong != null && currentSong.getSongChords() != null) {
-                                    java.util.List<String[]> parsedLines =
-                                        ChordParser.parseFullSong(currentSong.getSongChords());
+                        <div class="print-song-content font-mono text-[13px] md:text-sm leading-[1.8] mt-4">
+                            <% 
+                                String printType = leafletData.getPrintType();
+                                if ("lyrics_only".equals(printType)) { 
+                                    if (ls.getSongLyrics() != null) {
+                                        for (String lyricLine : ls.getSongLyrics().split("\n")) {
+                            %>
+                                        <div class="lyric-line text-on-surface print:text-black whitespace-pre-wrap"><%= lyricLine %></div>
+                            <%          } 
+                                    }
+                                } else if (ls.getSongChords() != null && !ls.getSongChords().trim().isEmpty()) {
+                                    java.util.List<String[]> parsedLines = ChordParser.parseFullSong(ls.getSongChords());
                                     for (String[] line : parsedLines) {
-                                        if (line[0] != null && !line[0].trim().isEmpty()) {
+                                        if (line[0] != null && !line[0].trim().isEmpty()) { 
                             %>
-                            <div class="chord-line text-primary font-bold print:font-bold -mb-1"><%=line[0]%></div>
-                            <%          }  %>
-                            <div class="lyric-line text-on-surface print:text-black mb-1"><%=line[1]%></div>
+                                    <div class="chord-line text-primary font-bold print:font-bold -mb-1 whitespace-pre"><%= line[0] %></div>
+                            <%          } %>
+                                    <div class="lyric-line text-on-surface print:text-black mb-1 whitespace-pre-wrap"><%= line[1] %></div>
                             <%      }
-                                }
+                                } else { 
+                                    // Fallback: plain lyrics if no chords
+                                    if (ls.getSongLyrics() != null) {
+                                        for (String lyricLine : ls.getSongLyrics().split("\n")) {
                             %>
-                        </c:when>
-                        <c:otherwise>
-                            <%-- Fallback: plain lyrics if no chords --%>
-                            <c:forEach var="lyricLine" items="${fn:split(ls.songLyrics, '\n')}">
-                                <div class="lyric-line text-on-surface print:text-black">${lyricLine}</div>
-                            </c:forEach>
-                        </c:otherwise>
-                    </c:choose>
-                </div>
-            </div>
-        </c:forEach>
+                                        <div class="lyric-line text-on-surface print:text-black whitespace-pre-wrap"><%= lyricLine %></div>
+                            <%          }
+                                    }
+                                } 
+                            %>
+                        </div>
+                    </div>
+        <% 
+                   }
+               }
+           }
+        %>
 
         <c:if test="${empty leaflet.songs}">
             <div class="text-center py-16 text-on-surface-variant font-medium bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/30 print:hidden">

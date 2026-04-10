@@ -49,14 +49,30 @@ public class LeafletDAO {
      */
     public boolean addSongToLeaflet(int leafletId, int songId, int position, String customKey) {
         String sql = "INSERT INTO leaflet_songs (leaflet_id, song_id, position, custom_key) VALUES (?, ?, ?, ?)";
-
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
-
             ps.setInt(1, leafletId);
             ps.setInt(2, songId);
             ps.setInt(3, position);
             ps.setString(4, customKey);
+            return ps.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    /**
+     * Add a marker/header to a leaflet at a specific position.
+     */
+    public boolean addHeaderToLeaflet(int leafletId, String headerText, int position) {
+        String sql = "INSERT INTO leaflet_songs (leaflet_id, is_header, header_text, position) VALUES (?, ?, ?, ?)";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setInt(1, leafletId);
+            ps.setBoolean(2, true);
+            ps.setString(3, headerText);
+            ps.setInt(4, position);
             return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -178,7 +194,7 @@ public class LeafletDAO {
                 + "s.artist as song_artist, s.original_key as song_key, "
                 + "s.lyrics_original as song_lyrics "
                 + "FROM leaflet_songs ls "
-                + "INNER JOIN songs s ON ls.song_id = s.id "
+                + "LEFT JOIN songs s ON ls.song_id = s.id "
                 + "WHERE ls.leaflet_id = ? ORDER BY ls.position";
 
         try (Connection conn = DBConnection.getConnection();
@@ -190,7 +206,9 @@ public class LeafletDAO {
                     LeafletSong ls = new LeafletSong();
                     ls.setId(rs.getInt("id"));
                     ls.setLeafletId(rs.getInt("leaflet_id"));
-                    ls.setSongId(rs.getInt("song_id"));
+                    int songId = rs.getInt("song_id");
+                    if (!rs.wasNull()) ls.setSongId(songId);
+                    
                     ls.setSongTitle(rs.getString("song_title"));
                     ls.setSongArtist(rs.getString("song_artist"));
                     ls.setSongChords(rs.getString("song_chords"));
@@ -198,6 +216,9 @@ public class LeafletDAO {
                     ls.setSongOriginalKey(rs.getString("song_key"));
                     ls.setPosition(rs.getInt("position"));
                     ls.setCustomKey(rs.getString("custom_key"));
+                    
+                    ls.setHeader(rs.getBoolean("is_header"));
+                    ls.setHeaderText(rs.getString("header_text"));
                     songs.add(ls);
                 }
             }

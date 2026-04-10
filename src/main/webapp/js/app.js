@@ -4,6 +4,7 @@
 
 // ===== Transpose UI =====
 let currentSemitones = 0;
+let currentColumnCount = 1;
 
 /**
  * Transposes the song view live using AJAX.
@@ -36,8 +37,8 @@ function transposeUI(direction) {
                 const lyricLine = data.lyricLines[i] || '';
                 const noteLine = (data.noteLines && data.noteLines[i]) || '';
 
-                // Bug #6 logic: Detect if this line is a section label like [Verse]
-                const sectionMatch = lyricLine.trim().match(/^\[([^\]]+)\]$/);
+                // Bug #6 logic: Detect if this line is a section label like [Verse] or {Verse}
+                const sectionMatch = lyricLine.trim().match(/^[\[\{]([^\]\}]+)[\]\}]$/);
                 const isSectionLabel = (!chordLine.trim() && sectionMatch);
 
                 if (isSectionLabel) {
@@ -53,6 +54,7 @@ function transposeUI(direction) {
                     html += `<div class="section-label ${cssClass}">${escapeHtml(sectionMatch[1])}</div>`;
                 } else {
                     // Normal chord+lyric pair
+                    html += '<div class="song-pair">';
                     if (chordLine.trim()) {
                         html += `<div class="chord-line">${escapeHtml(chordLine)}</div>`;
                     }
@@ -61,6 +63,7 @@ function transposeUI(direction) {
                     } else {
                         html += `<div class="lyric-line blank"> </div>`;
                     }
+                    html += '</div>';
                 }
 
                 if (noteLine.trim()) {
@@ -74,6 +77,7 @@ function transposeUI(direction) {
             if (activeTab) {
                 setViewMode(activeTab.getAttribute('data-mode'));
             }
+            applyColumnCount();
         }
 
         updateKeyDisplay(data.key, data.capo);
@@ -90,12 +94,12 @@ function updateKeyDisplay(newKey, capo) {
 
     const capoHint = document.getElementById('capoHint');
     if (capoHint) {
-        capoHint.textContent = capo ? 'Capo ' + capo : '';
         capoHint.style.display = capo ? 'flex' : 'none';
-        // If it's a badge-style sibling, we might need to update its container
-        if (capoHint.parentElement && capoHint.parentElement.classList.contains('justify-between')) {
-            capoHint.parentElement.style.display = capo ? 'flex' : 'none';
-        }
+    }
+
+    const capoValue = document.getElementById('capoValue');
+    if (capoValue) {
+        capoValue.textContent = capo || '';
     }
 
     const semitoneDisplay = document.getElementById('semitoneDisplay');
@@ -154,6 +158,27 @@ function setViewMode(mode) {
     }
 }
 
+// ===== Column Controls =====
+function applyColumnCount() {
+    const songBody = document.getElementById('songBody');
+    if (!songBody) return;
+
+    const isMultiColumn = currentColumnCount > 1 && window.innerWidth >= 1024;
+    songBody.style.columnCount = isMultiColumn ? String(currentColumnCount) : '1';
+    songBody.style.columnGap = isMultiColumn ? '2.5rem' : '0';
+
+    localStorage.setItem('ws_column_count', String(currentColumnCount));
+}
+
+function setColumnCount(count) {
+    currentColumnCount = count === 2 ? 2 : 1;
+
+    document.querySelectorAll('[data-col]').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll(`[data-col="${currentColumnCount}"]`).forEach(btn => btn.classList.add('active'));
+
+    applyColumnCount();
+}
+
 // ===== Auto Scroll =====
 let scrollInterval = null;
 let scrollSpeed = 3;
@@ -166,9 +191,10 @@ function toggleAutoScroll() {
 function startAutoScroll() {
     stopAutoScroll();
     const slider = document.getElementById('scrollSpeedSlider');
-    if (slider) scrollSpeed = parseInt(slider.value, 10) || 3;
+    if (slider) scrollSpeed = parseInt(slider.value, 10) || 5;
 
-    const interval = Math.max(10, 160 - (scrollSpeed * 15));
+    // Finer speed control (1-25 range)
+    const interval = Math.max(5, 200 - (scrollSpeed * 7.5));
     scrollInterval = setInterval(() => {
         window.scrollBy(0, 1);
         if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -182,9 +208,6 @@ function startAutoScroll() {
         btn.textContent = '⏸ Stop';
     }
 
-    const speedContainer = document.getElementById('scrollSpeedContainer');
-    if (speedContainer) speedContainer.style.display = 'flex';
-    
     updateWakeLock(true);
 }
 
@@ -198,14 +221,14 @@ function stopAutoScroll() {
         btn.classList.remove('active');
         btn.textContent = '▶ Scroll';
     }
-    const speedContainer = document.getElementById('scrollSpeedContainer');
-    if (speedContainer) speedContainer.style.display = 'none';
     
     updateWakeLock(false);
 }
 
 function updateScrollSpeed(val) {
     scrollSpeed = parseInt(val, 10);
+    const valDisplay = document.getElementById('scrollSpeedVal');
+    if (valDisplay) valDisplay.textContent = 'S:' + scrollSpeed;
     if (scrollInterval) startAutoScroll();
 }
 
@@ -266,6 +289,23 @@ function insertChordAtCursor(chord) {
     const start = textarea.selectionStart;
     const end = textarea.selectionEnd;
     const text = textarea.value;
+    textarea.value = text.substring(0, start) + insertion + text.substring(end);
+    textarea.selectionStart = textarea.selectionEnd = start + insertion.length;
+    textarea.focus();
+}
+
+function insertSectionAtCursor(sectionLabel) {
+    const textarea = document.getElementById('editChords');
+    if (!textarea) return;
+    
+    // Check if the cursor is already at the start of a new line
+    const text = textarea.value;
+    const start = textarea.selectionStart;
+    const prependNewline = (start > 0 && text.charAt(start - 1) !== '\n');
+    
+    const insertion = (prependNewline ? '\n' : '') + `{${sectionLabel}}\n`;
+    
+    const end = textarea.selectionEnd;
     textarea.value = text.substring(0, start) + insertion + text.substring(end);
     textarea.selectionStart = textarea.selectionEnd = start + insertion.length;
     textarea.focus();
@@ -369,4 +409,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedSize = localStorage.getItem('ws_font_size');
     if (savedSize) { currentFontSize = parseInt(savedSize, 10); applyFontSize(); }
+
+    const savedColumns = parseInt(localStorage.getItem('ws_column_count') || '1', 10);
+    setColumnCount(savedColumns);
+
+    window.addEventListener('resize', applyColumnCount);
 });

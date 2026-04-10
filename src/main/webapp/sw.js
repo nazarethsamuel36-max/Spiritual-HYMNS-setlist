@@ -1,4 +1,4 @@
-const CACHE_NAME = 'worship-cache-v3'; // Bumped version for new CSS/JS
+const CACHE_NAME = 'worship-cache-v4';
 const ASSETS_TO_CACHE = [
   './',
   './index.jsp',
@@ -28,7 +28,8 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
-  console.log('SW: Activated v3');
+  self.clients.claim();
+  console.log('SW: Activated v4');
 });
 
 /**
@@ -39,9 +40,17 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
   // Network-First (with cache update) for dynamic content
   if (url.pathname.includes('/song') || url.pathname.includes('/search') ||
-      url.pathname.includes('/setlist') || url.pathname.includes('/transpose')) {
+      url.pathname.includes('/setlist') || url.pathname.includes('/transpose') ||
+      url.pathname.includes('/leaflet')) {
     event.respondWith(
       fetch(event.request)
         .then((networkResponse) => {

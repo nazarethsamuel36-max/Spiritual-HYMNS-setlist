@@ -164,13 +164,13 @@ public class SetlistDAO {
         return false;
     }
 
-    public boolean removeSongFromSetlist(int setlistId, int songId) {
-        String sql = "DELETE FROM setlist_songs WHERE setlist_id = ? AND song_id = ?";
+    public boolean addHeaderToSetlist(int setlistId, String text, int position) {
+        String sql = "INSERT INTO setlist_songs (setlist_id, is_header, header_text, position) VALUES (?, TRUE, ?, ?)";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
-            
             ps.setInt(1, setlistId);
-            ps.setInt(2, songId);
+            ps.setString(2, text);
+            ps.setInt(3, position);
             return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -178,35 +178,58 @@ public class SetlistDAO {
         return false;
     }
 
-    public boolean reorderSongs(int setlistId, List<Integer> orderedSongIds) {
-        String sql = "UPDATE setlist_songs SET position = ? WHERE setlist_id = ? AND song_id = ?";
+    public boolean removeSongFromSetlist(int id) {
+        String sql = "DELETE FROM setlist_songs WHERE id = ?";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
-            
-            int position = 1;
-            for (Integer songId : orderedSongIds) {
-                ps.setInt(1, position++);
-                ps.setInt(2, setlistId);
-                ps.setInt(3, songId);
-                ps.addBatch();
-            }
-            int[] results = ps.executeBatch();
-            return results.length == orderedSongIds.size();
+            ps.setInt(1, id);
+            return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
     }
 
-    public boolean updateSongKey(int setlistId, int songId, String key, int capo) {
-        String sql = "UPDATE setlist_songs SET creator_key = ?, creator_capo = ? WHERE setlist_id = ? AND song_id = ?";
+    public boolean reorderSongs(int setlistId, List<Integer> orderedIds) {
+        String sql = "UPDATE setlist_songs SET position = ? WHERE id = ? AND setlist_id = ?";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
             
+            int position = 1;
+            for (Integer id : orderedIds) {
+                ps.setInt(1, position++);
+                ps.setInt(2, id);
+                ps.setInt(3, setlistId);
+                ps.addBatch();
+            }
+            int[] results = ps.executeBatch();
+            return results.length == orderedIds.size();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public boolean updateSongKey(int recordId, String key, int capo) {
+        String sql = "UPDATE setlist_songs SET creator_key = ?, creator_capo = ? WHERE id = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, key);
             ps.setInt(2, capo);
-            ps.setInt(3, setlistId);
-            ps.setInt(4, songId);
+            ps.setInt(3, recordId);
+            return ps.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public boolean updateHeaderText(int recordId, String text) {
+        String sql = "UPDATE setlist_songs SET header_text = ? WHERE id = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, text);
+            ps.setInt(2, recordId);
             return ps.executeUpdate() > 0;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -216,11 +239,10 @@ public class SetlistDAO {
 
     public List<SetlistSong> getSongsInSetlist(int setlistId) {
         List<SetlistSong> list = new ArrayList<>();
-        // Query joins SetlistSong definition with core Song entity parameters
-        String sql = "SELECT ss.id, ss.setlist_id, ss.song_id, ss.position, ss.creator_key, ss.creator_capo, " +
+        String sql = "SELECT ss.id, ss.setlist_id, ss.song_id, ss.position, ss.creator_key, ss.creator_capo, ss.is_header, ss.header_text, " +
                      "s.title as song_title, s.artist as song_artist, s.chords, s.original_key " +
                      "FROM setlist_songs ss " +
-                     "JOIN songs s ON ss.song_id = s.id " +
+                     "LEFT JOIN songs s ON ss.song_id = s.id " +
                      "WHERE ss.setlist_id = ? " +
                      "ORDER BY ss.position ASC";
 
@@ -237,13 +259,17 @@ public class SetlistDAO {
                     ss.setPosition(rs.getInt("position"));
                     ss.setCreatorKey(rs.getString("creator_key"));
                     ss.setCreatorCapo(rs.getInt("creator_capo"));
+                    ss.setHeader(rs.getBoolean("is_header"));
+                    ss.setHeaderText(rs.getString("header_text"));
                     
-                    ss.setSongTitle(rs.getString("song_title"));
-                    ss.setSongArtist(rs.getString("song_artist"));
-                    ss.setOriginalKey(rs.getString("original_key"));
-                    
-                    // Base chords that will be pre-transposed later utilizing ChordTransposer logic
-                    ss.setLyricsChords(rs.getString("chords"));
+                    if (ss.isHeader()) {
+                        ss.setSongTitle(ss.getHeaderText());
+                    } else {
+                        ss.setSongTitle(rs.getString("song_title"));
+                        ss.setSongArtist(rs.getString("song_artist"));
+                        ss.setOriginalKey(rs.getString("original_key"));
+                        ss.setLyricsChords(rs.getString("chords"));
+                    }
                     
                     list.add(ss);
                 }

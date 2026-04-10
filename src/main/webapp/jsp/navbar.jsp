@@ -1,78 +1,81 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-100/20 dark:border-slate-800/20 shadow-sm dark:shadow-none transition-all">
-<div class="flex justify-between items-center px-6 md:px-24 py-4 max-w-[1920px] mx-auto">
-<div class="flex items-center gap-12">
-<a href="${pageContext.request.contextPath}/" class="text-2xl font-black text-[#001264] dark:text-blue-100 uppercase tracking-widest font-headline decoration-none" style="text-decoration: none;">The Resonant Archive</a>
-    <div class="hidden lg:flex items-center gap-8 font-manrope tracking-tight font-medium">
-          <a class="text-[#001264] dark:text-blue-400 pb-1 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/songs">Songs</a>
-        <c:if test="${not empty sessionScope.username}">
-            <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none font-bold" style="text-decoration: none;" href="${pageContext.request.contextPath}/song/add">Add Song</a>
-        </c:if>
-        <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/leaflet/new">Leaflet Builder</a>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+<c:set var="currentUri" value="${pageContext.request.requestURI}" />
+<nav class="sticky top-0 z-50 w-full transition-all" style="position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.18); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid rgba(255,255,255,0.35);">
+<div class="mx-auto flex max-w-[1920px] items-center justify-between px-6 py-4 md:px-24">
+<div class="flex items-center gap-8 xl:gap-12">
+<a href="${pageContext.request.contextPath}/" class="max-w-[240px] text-2xl font-black uppercase tracking-[0.16em] text-primary decoration-none leading-none font-headline" style="text-decoration: none;">The Resonant Archive</a>
+    <div class="hidden lg:flex items-center gap-2 rounded-full px-2 py-2 font-headline text-[15px] font-semibold tracking-tight" style="background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.46); backdrop-filter:blur(18px) saturate(165%); -webkit-backdrop-filter:blur(18px) saturate(165%); box-shadow:0 10px 24px rgba(39,92,138,0.10);">
+        <a class="rounded-full px-4 py-2 transition-colors ${fn:contains(currentUri, '/songs') || fn:contains(currentUri, '/search') || fn:contains(currentUri, '/song') ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-white hover:text-primary'} text-decoration-none" style="text-decoration: none; color:${fn:contains(currentUri, '/songs') || fn:contains(currentUri, '/search') || fn:contains(currentUri, '/song') ? '#ffffff' : '#21345f'};" href="${pageContext.request.contextPath}/songs">Songs</a>
+        <a class="rounded-full px-4 py-2 transition-colors ${fn:contains(currentUri, '/leaflet') ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-white hover:text-primary'} text-decoration-none" style="text-decoration: none; color:${fn:contains(currentUri, '/leaflet') ? '#ffffff' : '#21345f'};" href="${pageContext.request.contextPath}/leaflet/new">Leaflet Builder</a>
         <c:choose>
             <c:when test="${not empty sessionScope.username}">
-                <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/setlist/my">Setlists</a>
-                <a class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/account">My Account</a>
+                <a class="rounded-full px-4 py-2 transition-colors ${fn:contains(currentUri, '/setlist') ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-white hover:text-primary'} text-decoration-none" style="text-decoration: none; color:${fn:contains(currentUri, '/setlist') ? '#ffffff' : '#21345f'};" href="${pageContext.request.contextPath}/setlist/my">Setlists</a>
+                <a class="rounded-full px-4 py-2 transition-colors ${fn:contains(currentUri, '/account') ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-white hover:text-primary'} text-decoration-none" style="text-decoration: none; color:${fn:contains(currentUri, '/account') ? '#ffffff' : '#21345f'};" href="${pageContext.request.contextPath}/account">Account</a>
             </c:when>
             <c:otherwise>
-                <a href="javascript:void(0)" class="text-slate-300 dark:text-slate-600 cursor-not-allowed text-decoration-none" style="text-decoration: none;" title="Login to create setlists">Setlists</a>
+                <a href="javascript:void(0)" class="rounded-full px-4 py-2 text-outline-variant cursor-not-allowed text-decoration-none" style="text-decoration: none; color:#66748f;" title="Login to create setlists">Setlists</a>
             </c:otherwise>
         </c:choose>
     </div>
 </div>
-        
-<div class="flex items-center gap-4 font-manrope font-medium">
-    <div class="relative hidden md:block mr-2">
-        <form action="${pageContext.request.contextPath}/search" method="get">
-            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
-            <input name="q" class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-lg text-sm focus:ring-1 focus:ring-primary w-48 transition-all duration-300 focus:w-64 outline-none" placeholder="Quick search..." type="text"/>
-        </form>
-    </div>
-    
-    <!-- Desktop Auth Links -->
-    <div class="hidden lg:flex items-center gap-4">
+
+<div class="flex items-center gap-3 font-manrope font-medium">
+    <c:if test="${not empty sessionScope.username}">
+        <a href="${pageContext.request.contextPath}/song/add" class="hidden lg:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-primary-container text-decoration-none" style="text-decoration: none;">
+            <span class="material-symbols-outlined text-[18px]">add</span>
+            Add Song
+        </a>
+    </c:if>
+
+    <div class="hidden lg:flex items-center gap-3">
         <c:choose>
             <c:when test="${not empty sessionScope.username}">
-                <span class="text-sm font-bold text-primary">${sessionScope.username}</span>
-                <a href="${pageContext.request.contextPath}/logout" class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-sm text-decoration-none" style="text-decoration: none;">Logout</a>
+                <a href="${pageContext.request.contextPath}/account" class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-decoration-none" style="text-decoration: none; color:#173164; background:rgba(255,255,255,0.24); border:1px solid rgba(255,255,255,0.48); backdrop-filter:blur(18px) saturate(165%); -webkit-backdrop-filter:blur(18px) saturate(165%);">
+                    <span class="material-symbols-outlined text-[18px]">account_circle</span>
+                    ${sessionScope.username}
+                </a>
+                <a href="${pageContext.request.contextPath}/logout" class="text-sm font-semibold transition-colors hover:text-primary text-decoration-none" style="text-decoration: none; color:#21345f;">Logout</a>
             </c:when>
             <c:otherwise>
-                <a href="${pageContext.request.contextPath}/login" class="text-slate-500 dark:text-slate-400 hover:text-[#001264] transition-colors text-sm text-decoration-none" style="text-decoration: none;">Login</a>
-                <a href="${pageContext.request.contextPath}/register" class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:opacity-90 transition-opacity text-decoration-none" style="text-decoration: none;">Sign Up</a>
+                <a href="${pageContext.request.contextPath}/login" class="text-sm font-semibold transition-colors hover:text-primary text-decoration-none" style="text-decoration: none; color:#21345f;">Login</a>
+                <a href="${pageContext.request.contextPath}/register" class="rounded-full px-5 py-2.5 text-sm font-bold transition-colors hover:bg-primary hover:text-white text-decoration-none" style="text-decoration: none; color:#173164; background:rgba(255,255,255,0.24); border:1px solid rgba(255,255,255,0.48); backdrop-filter:blur(18px) saturate(165%); -webkit-backdrop-filter:blur(18px) saturate(165%);">Sign Up</a>
             </c:otherwise>
         </c:choose>
     </div>
 
-    <!-- Mobile Hamburger Button -->
-    <button id="mobile-menu-btn" class="lg:hidden p-2 text-primary focus:outline-none rounded-lg hover:bg-surface-container-low transition-colors">
-        <span class="material-symbols-outlined text-2xl pointer-events-none">menu</span>
+    <button id="mobile-menu-btn" class="rounded-xl p-2 transition-colors hover:bg-white/70 focus:outline-none lg:hidden" style="color:#173164;">
+        <span class="material-symbols-outlined pointer-events-none text-2xl">menu</span>
     </button>
 </div>
 </div>
 
 <!-- Mobile Dropdown Drawer -->
-<div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-slate-100/20 absolute w-full left-0 top-full shadow-lg">
-    <div class="flex flex-col px-6 py-4 gap-4 font-manrope font-medium">
-        <a class="text-[#001264] dark:text-blue-400 py-2 border-b border-surface-dim hover:text-primary transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/songs" onclick="closeMobileMenu()">Songs</a>
-        <a class="text-slate-600 dark:text-slate-400 py-2 border-b border-surface-dim hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/leaflet/new" onclick="closeMobileMenu()">Leaflet Builder</a>
+<div id="mobile-menu" class="surface-mist absolute left-0 top-full hidden w-full rounded-b-3xl border-b border-white/60 lg:hidden">
+    <div class="flex flex-col gap-4 px-6 py-4 font-manrope font-medium">
+        <a class="border-b border-surface-dim py-2 text-[#001264] transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/songs" onclick="closeMobileMenu()">Songs</a>
+        <c:if test="${not empty sessionScope.username}">
+            <a class="border-b border-surface-dim py-2 font-bold text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/song/add" onclick="closeMobileMenu()">Add Song</a>
+        </c:if>
+        <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/leaflet/new" onclick="closeMobileMenu()">Leaflet Builder</a>
         <c:choose>
             <c:when test="${not empty sessionScope.username}">
-                <a class="text-slate-600 dark:text-slate-400 py-2 border-b border-surface-dim hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/setlist/my" onclick="closeMobileMenu()">Setlists</a>
-                <a class="text-slate-600 dark:text-slate-400 py-2 border-b border-surface-dim hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/account" onclick="closeMobileMenu()">My Account (${sessionScope.username})</a>
+                <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/setlist/my" onclick="closeMobileMenu()">Setlists</a>
+                <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/account" onclick="closeMobileMenu()">My Account (${sessionScope.username})</a>
                 <a href="${pageContext.request.contextPath}/logout" class="text-error font-bold py-2 hover:text-error-container transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Logout</a>
             </c:when>
             <c:otherwise>
-                <a href="javascript:void(0)" class="text-slate-400 dark:text-slate-600 py-2 border-b border-surface-dim cursor-not-allowed text-decoration-none" style="text-decoration: none;" title="Login to create setlists" onclick="closeMobileMenu()">Setlists</a>
-                <a href="${pageContext.request.contextPath}/login" class="text-slate-600 dark:text-slate-400 py-2 border-b border-surface-dim hover:text-[#001264] transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Login</a>
+                <a href="javascript:void(0)" class="border-b border-surface-dim py-2 text-outline-variant cursor-not-allowed text-decoration-none" style="text-decoration: none;" title="Login to create setlists" onclick="closeMobileMenu()">Setlists</a>
+                <a href="${pageContext.request.contextPath}/login" class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Login</a>
                 <a href="${pageContext.request.contextPath}/register" class="text-primary font-bold py-2 hover:text-primary-container transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Sign Up</a>
             </c:otherwise>
         </c:choose>
-        
+
         <!-- Mobile Search -->
         <form action="${pageContext.request.contextPath}/search" method="get" class="relative mt-2 md:hidden">
             <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
-            <input name="q" class="w-full pl-10 pr-4 py-3 bg-surface-container-low border-none rounded-lg text-sm outline-none" placeholder="Search songs..." type="text"/>
+            <input name="q" class="ui-input-solid w-full rounded-xl pl-10 pr-4 py-3 text-sm outline-none" placeholder="Search songs..." type="text"/>
         </form>
     </div>
 </div>

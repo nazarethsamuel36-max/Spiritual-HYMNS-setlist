@@ -25,6 +25,16 @@ public class SessionUtil {
     }
 
     /**
+     * Shorthand to get the User from request session.
+     */
+    public static User getUser(jakarta.servlet.http.HttpServletRequest request) {
+        if (request == null) return null;
+        HttpSession session = request.getSession(false);
+        if (session == null) return null;
+        return (User) session.getAttribute(USER_KEY);
+    }
+
+    /**
      * Check if the current session belongs to a logged-in user.
      */
     public static boolean isUser(HttpSession session) {

@@ -140,9 +140,21 @@ public class SetlistServlet extends HttpServlet {
                     boolean added = (addSongId > 0) && setlistDAO.addSongToSetlist(setlistId, addSongId, pos, creatorKey, creatorCapo);
                     res.put("success", added);
                     break;
+                case "add-header":
+                    String headerText = request.getParameter("text");
+                    int headerPos = safeParseInt(request.getParameter("position"), 0);
+                    boolean hAdded = setlistDAO.addHeaderToSetlist(setlistId, headerText, headerPos);
+                    res.put("success", hAdded);
+                    break;
+                case "rename-header":
+                    int hId = safeParseInt(request.getParameter("id"), 0);
+                    String newText = request.getParameter("text");
+                    boolean renamed = (hId > 0) && setlistDAO.updateHeaderText(hId, newText);
+                    res.put("success", renamed);
+                    break;
                 case "remove":
-                    int remSongId = safeParseInt(request.getParameter("songId"), 0);
-                    boolean removed = (remSongId > 0) && setlistDAO.removeSongFromSetlist(setlistId, remSongId);
+                    int recordId = safeParseInt(request.getParameter("id"), 0);
+                    boolean removed = (recordId > 0) && setlistDAO.removeSongFromSetlist(recordId);
                     res.put("success", removed);
                     break;
                 case "reorder":
@@ -151,10 +163,10 @@ public class SetlistServlet extends HttpServlet {
                     res.put("success", reordered);
                     break;
                 case "key":
-                    int keySongId = safeParseInt(request.getParameter("songId"), 0);
+                    int keyRecordId = safeParseInt(request.getParameter("id"), 0);
                     String activeKey = request.getParameter("key");
                     int activeCapo = safeParseInt(request.getParameter("capo"), 0);
-                    boolean keyed = (keySongId > 0) && setlistDAO.updateSongKey(setlistId, keySongId, activeKey, activeCapo);
+                    boolean keyed = (keyRecordId > 0) && setlistDAO.updateSongKey(keyRecordId, activeKey, activeCapo);
                     res.put("success", keyed);
                     break;
                 case "share":
@@ -188,6 +200,8 @@ public class SetlistServlet extends HttpServlet {
 
         List<SetlistSong> songs = setlistDAO.getSongsInSetlist(s.getId());
         for (SetlistSong ss : songs) {
+            if (ss.isHeader()) continue; // Skip transposition for dividers
+            
             int offset = calculateSemitoneOffset(ss.getOriginalKey(), ss.getCreatorKey());
             
             if (ss.getLyricsChords() != null && !ss.getLyricsChords().isEmpty()) {

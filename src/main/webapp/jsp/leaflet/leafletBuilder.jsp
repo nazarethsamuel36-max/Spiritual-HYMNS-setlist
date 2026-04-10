@@ -133,10 +133,15 @@
                     Search & Add
                 </h2>
                 <div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm border border-surface-dim">
-                    <div class="relative w-full mb-4">
-                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant text-[24px]">search</span>
-                        <input type="text" id="leafletSearchInput" placeholder="Search songs..." autocomplete="off"
-                               class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl text-on-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none font-medium placeholder:text-outline-variant/70 shadow-sm">
+                    <div class="flex gap-2 mb-4">
+                        <div class="relative flex-grow">
+                            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant text-[24px]">search</span>
+                            <input type="text" id="leafletSearchInput" placeholder="Search songs..." autocomplete="off"
+                                   class="w-full pl-12 pr-4 py-3 bg-surface-container-low border border-outline-variant/30 rounded-2xl text-on-surface focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none font-medium placeholder:text-outline-variant/70 shadow-sm">
+                        </div>
+                        <button onclick="addDivider()" class="px-4 bg-tertiary-fixed text-on-tertiary-fixed font-bold rounded-2xl hover:bg-tertiary shadow-sm transition-all flex items-center gap-2 whitespace-nowrap">
+                            <span class="material-symbols-outlined text-[20px]">horizontal_rule</span> Add Divider
+                        </button>
                     </div>
                     <div id="leafletSearchResults" class="max-h-[300px] overflow-y-auto pr-2 custom-scrollbar"></div>
                 </div>
@@ -164,10 +169,33 @@
 
         <!-- Step 6: Save -->
         <div id="step6" class="hidden pb-12">
+            <div class="bg-surface-container-lowest p-6 rounded-3xl shadow-sm border border-surface-dim mb-6">
+                <h2 class="text-xl font-headline font-bold text-on-surface mb-4 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">6</span>
+                    Print Format
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <label class="cursor-pointer">
+                        <input type="radio" name="printType" value="both" class="sr-only peer" checked>
+                        <div class="h-full rounded-2xl border border-surface-dim bg-surface-container p-5 transition-all peer-checked:border-primary peer-checked:bg-primary-container/20 peer-checked:shadow-sm">
+                            <div class="font-bold text-on-surface mb-1">Lyrics + Chords</div>
+                            <div class="text-sm text-on-surface-variant">Best for musicians. Each song starts on a fresh page for clarity.</div>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer">
+                        <input type="radio" name="printType" value="lyrics_only" class="sr-only peer">
+                        <div class="h-full rounded-2xl border border-surface-dim bg-surface-container p-5 transition-all peer-checked:border-primary peer-checked:bg-primary-container/20 peer-checked:shadow-sm">
+                            <div class="font-bold text-on-surface mb-1">Lyrics Only</div>
+                            <div class="text-sm text-on-surface-variant">Cleaner handout format without chord lines.</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
             <div class="flex justify-end pt-6 border-t border-surface-dim">
                 <button onclick="saveLeaflet()" class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-primary-container transition-all flex items-center gap-2 text-lg">
                     <span class="material-symbols-outlined text-[24px]">print</span>
-                    Generate PDF Leaflet
+                    Open Print Preview
                 </button>
             </div>
         </div>
@@ -276,14 +304,27 @@
             });
         }
 
+
+        function addDivider() {
+            var text = prompt("Enter divider text (e.g., Opening Prayer, Announcements):");
+            if (text && text.trim()) {
+                leafletSongs.push({ 
+                    id: 'header-' + Date.now(), 
+                    title: text.trim(), 
+                    isHeader: true 
+                });
+                renderLeafletSongs();
+            }
+        }
+
         function addSongToLeaflet(id, title) {
-            if (leafletSongs.find(function(s) { return s.id === id; })) return;
-            leafletSongs.push({ id: id, title: title });
+            if (leafletSongs.find(function(s) { return s.id === id && !s.isHeader; })) return;
+            leafletSongs.push({ id: id, title: title, isHeader: false });
             renderLeafletSongs();
         }
 
-        function removeSongFromLeaflet(id) {
-            leafletSongs = leafletSongs.filter(function(s) { return s.id !== id; });
+        function removeSongFromLeaflet(uniqueId) {
+            leafletSongs = leafletSongs.filter(function(s) { return s.id !== uniqueId; });
             renderLeafletSongs();
         }
 
@@ -298,11 +339,26 @@
             }
 
             msg.classList.add('hidden');
+            var songCounter = 0;
+
             list.innerHTML = leafletSongs.map(function(s, i) {
-                return '<li class="bg-surface-container p-3 rounded-xl border border-surface-dim hover:border-primary/40 transition-all flex items-center justify-between gap-3 group leaflet-song-item" draggable="true" data-id="' + s.id + '">'
+                if (s.isHeader) {
+                    return '<li class="bg-surface-container-highest/30 p-3 rounded-xl border-2 border-dashed border-outline-variant/40 transition-all flex items-center justify-between gap-3 group leaflet-song-item" draggable="true" data-uid="' + s.id + '">'
+                        + '<div class="flex items-center gap-3 flex-grow overflow-hidden">'
+                        + '<span class="drag-handle material-symbols-outlined text-outline group-hover:text-tertiary text-[20px]">drag_indicator</span>'
+                        + '<div class="flex-grow text-center font-black text-[10px] text-tertiary uppercase tracking-[0.2em] py-1">=== ' + s.title + ' ===</div>'
+                        + '</div>'
+                        + '<button class="p-1.5 text-outline hover:text-error hover:bg-error-container rounded transition-colors shrink-0 flex items-center justify-center opacity-0 group-hover:opacity-100" onclick="removeSongFromLeaflet(\'' + s.id + '\')">'
+                        + '<span class="material-symbols-outlined text-[18px]">close</span>'
+                        + '</button>'
+                        + '</li>';
+                }
+
+                songCounter++;
+                return '<li class="bg-surface-container p-3 rounded-xl border border-surface-dim hover:border-primary/40 transition-all flex items-center justify-between gap-3 group leaflet-song-item" draggable="true" data-uid="' + s.id + '">'
                     + '<div class="flex items-center gap-3 overflow-hidden">'
                     + '<span class="drag-handle material-symbols-outlined text-outline group-hover:text-primary text-[20px]">drag_indicator</span>'
-                    + '<span class="w-6 h-6 rounded bg-surface-container-highest text-on-surface text-[10px] font-bold flex items-center justify-center shrink-0 border border-outline-variant/30">' + (i + 1) + '</span>'
+                    + '<span class="w-6 h-6 rounded bg-surface-container-highest text-on-surface text-[10px] font-bold flex items-center justify-center shrink-0 border border-outline-variant/30">' + songCounter + '</span>'
                     + '<span class="font-bold text-on-surface text-sm truncate">' + s.title + '</span>'
                     + '</div>'
                     + '<button class="p-1.5 text-outline hover:text-error hover:bg-error-container rounded transition-colors shrink-0 flex items-center justify-center opacity-0 group-hover:opacity-100 focus:opacity-100" onclick="removeSongFromLeaflet(' + s.id + ')" title="Remove">'
@@ -426,7 +482,7 @@
                 occasionId: selectedOccasion.id,
                 title: leafletTitle,
                 headerData: jsonHeaderData,
-                printType: 'lyrics' // Defaulting to lyrics view print
+                printType: document.querySelector('input[name="printType"]:checked').value
             };
 
             for (var k in fieldData) {
@@ -438,11 +494,43 @@
             }
 
             leafletSongs.forEach(function(s) {
-                var input = document.createElement('input');
-                input.type = 'hidden';
-                input.name = 'songIds';
-                input.value = s.id;
-                form.appendChild(input);
+                if (s.isHeader) {
+                    var inputHeader = document.createElement('input');
+                    inputHeader.type = 'hidden';
+                    inputHeader.name = 'isHeader';
+                    inputHeader.value = 'true';
+                    form.appendChild(inputHeader);
+
+                    var inputText = document.createElement('input');
+                    inputText.type = 'hidden';
+                    inputText.name = 'headerText';
+                    inputText.value = s.title;
+                    form.appendChild(inputText);
+
+                    var inputSongId = document.createElement('input');
+                    inputSongId.type = 'hidden';
+                    inputSongId.name = 'songIds';
+                    inputSongId.value = '0'; // placeholder
+                    form.appendChild(inputSongId);
+                } else {
+                    var inputHeader = document.createElement('input');
+                    inputHeader.type = 'hidden';
+                    inputHeader.name = 'isHeader';
+                    inputHeader.value = 'false';
+                    form.appendChild(inputHeader);
+
+                    var inputText = document.createElement('input');
+                    inputText.type = 'hidden';
+                    inputText.name = 'headerText';
+                    inputText.value = '';
+                    form.appendChild(inputText);
+
+                    var inputSongId = document.createElement('input');
+                    inputSongId.type = 'hidden';
+                    inputSongId.name = 'songIds';
+                    inputSongId.value = s.id;
+                    form.appendChild(inputSongId);
+                }
             });
 
             document.body.appendChild(form);

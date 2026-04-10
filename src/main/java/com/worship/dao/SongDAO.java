@@ -264,8 +264,8 @@ public class SongDAO {
     public boolean addSong(Song song) {
         String sql = "INSERT INTO songs (song_number, title, artist, composer, copyright, language, "
                 + "lyrics_original, lyrics_roman, chords, notes, original_key, capo, bpm, "
-                + "time_signature, structure, audio_url, created_by) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                + "time_signature, structure, audio_url, created_by, is_active) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, TRUE)";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {

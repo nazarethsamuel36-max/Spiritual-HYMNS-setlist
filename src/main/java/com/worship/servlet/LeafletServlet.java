@@ -142,14 +142,23 @@ public class LeafletServlet extends HttpServlet {
 
         if (leafletId > 0) {
             String[] songIds = request.getParameterValues("songIds");
+            String[] isHeaders = request.getParameterValues("isHeader");
+            String[] headerTexts = request.getParameterValues("headerText");
             String[] customKeys = request.getParameterValues("customKeys");
 
             if (songIds != null) {
                 for (int i = 0; i < songIds.length; i++) {
-                    String key = (customKeys != null && i < customKeys.length) ? customKeys[i] : null;
-                    int songId = safeParseInt(songIds[i], 0);
-                    if (songId > 0) {
-                        leafletDAO.addSongToLeaflet(leafletId, songId, i + 1, key);
+                    boolean isHeader = isHeaders != null && i < isHeaders.length && "true".equals(isHeaders[i]);
+                    
+                    if (isHeader) {
+                        String text = (headerTexts != null && i < headerTexts.length) ? headerTexts[i] : "Divider";
+                        leafletDAO.addHeaderToLeaflet(leafletId, text, i + 1);
+                    } else {
+                        int songId = safeParseInt(songIds[i], 0);
+                        if (songId > 0) {
+                            String key = (customKeys != null && i < customKeys.length) ? customKeys[i] : null;
+                            leafletDAO.addSongToLeaflet(leafletId, songId, i + 1, key);
+                        }
                     }
                 }
             }

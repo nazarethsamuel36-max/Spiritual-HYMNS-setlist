@@ -12,8 +12,8 @@ import java.util.regex.Pattern;
 public class ChordParser {
 
     // Pattern to match chord markers: [G], [Em], [C#m7], [Bb/D], etc.
-    private static final Pattern CHORD_PATTERN = Pattern.compile("\\[([A-Ga-g][#b]?[^\\]]*?)\\]");
-
+    // Negative lookahead prevents section headers like [Chorus] or [Bridge] from being matched as chords.
+    private static final Pattern CHORD_PATTERN = Pattern.compile("\\[([A-Ga-g][#b]?(?!(?i)horus|ridge|oda|nding|nd|reak|nstrumental)[^\\]]*?)\\]");
     /**
      * Parse a single line containing bracket-format chords.
      * Input:  "[G]Amazing [Em]grace how [C]sweet the [G]sound"
