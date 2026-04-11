@@ -5,8 +5,10 @@ import com.worship.util.DBConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -17,6 +19,7 @@ public class SongDAO {
 
     /**
      * Get all active songs from the database (Default Sort).
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getAllSongs() {
         List<Song> songs = new ArrayList<>();
@@ -28,17 +31,26 @@ public class SongDAO {
 
             while (rs.next()) {
                 Song song = mapResultSetToSong(rs);
-                song.setHashtags(getHashtagsForSong(song.getId()));
                 songs.add(song);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get all active songs from the database, sorted by most views.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsSortedByViews() {
         List<Song> songs = new ArrayList<>();
@@ -54,12 +66,20 @@ public class SongDAO {
 
             while (rs.next()) {
                 Song song = mapResultSetToSong(rs);
-                song.setHashtags(getHashtagsForSong(song.getId()));
                 songs.add(song);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
@@ -88,6 +108,7 @@ public class SongDAO {
 
     /**
      * Search songs by title, artist, lyrics_original, or lyrics_roman using LIKE.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> searchSongs(String query) {
         List<Song> songs = new ArrayList<>();
@@ -109,18 +130,27 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get songs that have a specific hashtag.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsByHashtag(String hashtag) {
         List<Song> songs = new ArrayList<>();
@@ -137,18 +167,27 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get songs added by a specific user (Personal Library).
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsByUser(int userId) {
         List<Song> songs = new ArrayList<>();
@@ -161,18 +200,27 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get songs filtered by language.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsByLanguage(String language) {
         List<Song> songs = new ArrayList<>();
@@ -185,18 +233,27 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get songs filtered by original key.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsByKey(String key) {
         List<Song> songs = new ArrayList<>();
@@ -209,18 +266,27 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
     /**
      * Get songs ranked by number of matching hashtags from an occasion.
+     * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> getSongsByOccasion(List<String> hashtags) {
         List<Song> songs = new ArrayList<>();
@@ -248,13 +314,21 @@ public class SongDAO {
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
                     Song song = mapResultSetToSong(rs);
-                    song.setHashtags(getHashtagsForSong(song.getId()));
                     songs.add(song);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        // BATCH: Fetch all hashtags in single query
+        if (!songs.isEmpty()) {
+            List<Integer> songIds = new ArrayList<>();
+            songs.forEach(s -> songIds.add(s.getId()));
+            Map<Integer, List<String>> hashtagMap = getHashtagsForSongs(songIds);
+            songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
+        }
+
         return songs;
     }
 
@@ -379,6 +453,48 @@ public class SongDAO {
             e.printStackTrace();
         }
         return hashtags;
+    }
+
+    /**
+     * BATCH METHOD: Get hashtags for multiple songs in a single query.
+     * Fixes N+1 query problem. Returns Map<songId, List<hashtags>>.
+     * Use this instead of looping getHashtagsForSong().
+     */
+    public Map<Integer, List<String>> getHashtagsForSongs(List<Integer> songIds) {
+        Map<Integer, List<String>> result = new HashMap<>();
+        if (songIds == null || songIds.isEmpty()) return result;
+
+        // Initialize empty lists for all song IDs
+        songIds.forEach(id -> result.put(id, new ArrayList<>()));
+
+        StringBuilder placeholders = new StringBuilder();
+        for (int i = 0; i < songIds.size(); i++) {
+            if (i > 0) placeholders.append(",");
+            placeholders.append("?");
+        }
+
+        String sql = "SELECT sh.song_id, h.name FROM hashtags h "
+                + "INNER JOIN song_hashtags sh ON h.id = sh.hashtag_id "
+                + "WHERE sh.song_id IN (" + placeholders + ")";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            for (int i = 0; i < songIds.size(); i++) {
+                ps.setInt(i + 1, songIds.get(i));
+            }
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    int songId = rs.getInt("song_id");
+                    String hashtag = rs.getString("name");
+                    result.get(songId).add(hashtag);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
     /**
