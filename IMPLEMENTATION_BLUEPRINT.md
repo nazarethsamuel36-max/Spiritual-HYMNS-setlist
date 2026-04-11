@@ -316,119 +316,177 @@ SearchController.doGet(request, response) {
 
 ---
 
-### PIPELINE: Service Layer
+### PIPELINE: Service Layer (Exact Matching & Ranking)
+
+**CRITICAL: This pipeline implements SEARCH_LOGIC_SPEC.md exactly. Any deviation is a bug.**
 
 ```
 SearchService.search(query, pageNum, pageSize) {
   
-  STEP 1: NORMALIZE QUERY
-    normalized = query
-      .toLowerCase()
-      .trim()
-      .replaceAll("\\s+", " ")
+  STEP 1: VALIDATE INPUT
+    IF query == null OR query.trim().isEmpty()
+      THROW SearchException("Query required")
     
-    IF normalized.length < 1
-      THROW SearchException("Query too short")
+    IF pageNum < 1 OR pageSize < 1 OR pageSize > 100
+      THROW SearchException("Invalid pagination")
   
-  STEP 2: CALCULATE PAGINATION
-    offset = (pageNum - 1) * pageSize
+  STEP 2: NORMALIZE QUERY (per SEARCH_LOGIC_SPEC Section A)
+    normalized = normalizeQuery(query)
+    tokens = normalized.split(" ")
+    tokens = filter(tokens, t -> !t.isEmpty())
+    
+    IF tokens.isEmpty()
+      THROW SearchException("Query empty after normalization")
   
-  STEP 3: FETCH CANDIDATE SONGS
-    candidates = songDAO.searchSongs(
-      query=normalized,
-      limit=pageSize,
-      offset=offset
-    )
+  STEP 3: GENERATE VARIANTS (per SEARCH_LOGIC_SPEC Section C)
+    FOR each token in tokens
+      variants[token] = generateVariants(token)  // Max 3 per token
+  
+  STEP 4: FETCH BROAD CANDIDATES FROM DAO
+    candidates = songDAO.searchSongs(normalized)
     
     IF candidates.isEmpty()
       RETURN empty list
   
-  STEP 4: SCORE AND RANK RESULTS
-    FOR each song IN candidates
-      score = calculateRelevanceScore(song, normalized)
-      song.relevanceScore = score
+  STEP 5: APPLY MULTI-WORD AND LOGIC (per SEARCH_LOGIC_SPEC Section E)
+    filtered = new ArrayList()
+    FOR each song in candidates
+      validForAllTokens = TRUE
+      FOR each token in tokens
+        tokenFound = FALSE
+        FOR each field in [title, artist, lyrics_roman, lyrics_original]
+          IF matchType(song[field], token, variants[token]) != NONE
+            tokenFound = TRUE
+            break
+        
+        IF NOT tokenFound
+          validForAllTokens = FALSE
+          break
+      
+      IF validForAllTokens
+        filtered.add(song)
+  
+  STEP 6: APPLY MATCHING RULES & SCORE (per SEARCH_LOGIC_SPEC Sections B & D)
+    FOR each song in filtered
+      FOR each field in [title, artist, lyrics_roman, lyrics_original]
+        bestMatchScore = 0
+        FOR each token in tokens
+          FOR each variant in variants[token]
+            matchType = determineMatchType(song[field], variant)
+            score = getScoreFromMatchType(matchType, levenshteinDistance(song[field], variant))
+            bestMatchScore = max(bestMatchScore, score)
+        
+        fieldScores[field] = bestMatchScore
+      
+      APPLY PHRASE BONUS IF query tokens consecutive in any field:
+        IF field contains all tokens in order
+          fieldScores[field] += 20
+      
+      APPLY FIELD WEIGHTS (per SEARCH_LOGIC_SPEC Section D):
+        weightedTitle = fieldScores[title] * 1.0
+        weightedArtist = fieldScores[artist] * 0.7
+        weightedLyricsRoman = fieldScores[lyrics_roman] * 0.4
+        weightedLyricsOriginal = fieldScores[lyrics_original] * 0.4
+      
+      finalScore = max(weightedTitle, weightedArtist, weightedLyricsRoman, weightedLyricsOriginal)
+      
+      APPLY THRESHOLD (per SEARCH_LOGIC_SPEC Section F):
+      IF finalScore < 50
+        REMOVE song, do not score
+      ELSE
+        song.finalScore = finalScore
+  
+  STEP 7: SORT & TIEBREAK (per SEARCH_LOGIC_SPEC Section G)
+    SORT filtered BY [finalScore DESC, matchTypePriority DESC, fieldPriority DESC, playCount DESC, recency DESC, title ASC, songId ASC]
     
-    SORT candidates BY relevanceScore DESC
+    NOTE: Use stable sort with Comparator implementing all 6 tiebreaker levels
   
-  STEP 5: EXTRACT CONTEXT
-    FOR each song IN candidates
-      matchedLine = findBestMatchLine(song, normalized)
-      song.matchedLine = matchedLine
+  STEP 8: APPLY PAGINATION
+    startIndex = (pageNum - 1) * pageSize
+    endIndex = startIndex + pageSize
+    paginated = filtered[startIndex:endIndex]
   
-  STEP 6: RETURN RESULTS
+  STEP 9: RETURN RESULTS
     RETURN {
-      results: candidates,
+      results: paginated,
       pageNum: pageNum,
       pageSize: pageSize,
-      total: songDAO.countSearchResults(normalized)
+      totalCount: filtered.size()  // Count after filtering, not from DB
     }
 }
 
-HELPER: calculateRelevanceScore(song, query) {
-  score = 0
-  
-  IF song.title.toLowerCase().contains(query)
-    score += 100  // Title match highest priority
-  
-  IF song.artist.toLowerCase().contains(query)
-    score += 50   // Artist match medium priority
-  
-  IF song.lyricsRoman.toLowerCase().contains(query)
-    score += 10   // Lyrics match lowest priority
-  
-  RETURN score
-}
+HELPER FUNCTION: normalizeQuery(query)
+  // Implement exactly per SEARCH_LOGIC_SPEC Section A
+  return implementNormalizationPipeline(query)
 
-HELPER: findBestMatchLine(song, query) {
-  IF song.title.toLowerCase().contains(query)
-    RETURN "Matched in Title: " + song.title
-  
-  IF song.artist.toLowerCase().contains(query)
-    RETURN "Artist: " + song.artist
-  
-  lines = song.lyricsRoman.split("\n")
-  FOR line IN lines
-    IF line.toLowerCase().contains(query)
-      RETURN line.trim()
-  
-  RETURN ""
-}
+HELPER FUNCTION: generateVariants(token)
+  // Implement exactly per SEARCH_LOGIC_SPEC Section C
+  return implementVariantGeneration(token)
+
+HELPER FUNCTION: matchType(fieldValue, token, variants)
+  // Return match type from SEARCH_LOGIC_SPEC Section B:
+  // EXACT, PREFIX, NORMALIZED, VARIANT, FUZZY, or NONE
+
+HELPER FUNCTION: getScoreFromMatchType(matchType, distance)
+  // Return score from SEARCH_LOGIC_SPEC Section B.2:
+  // EXACT→100, PREFIX→95, NORMALIZED→90, VARIANT→85, FUZZY(d=1)→75, FUZZY(d=2)→50, else→0
 ```
+
+**EXECUTION ORDER (MANDATORY):**
+1. Normalize query
+2. Tokenize into multi-word tokens
+3. Generate variants
+4. Fetch broad candidates from DAO
+5. Apply AND logic (all tokens required)
+6. Apply match type rules (exact/prefix/fuzzy)
+7. Score per field
+8. Apply field weights
+9. Filter by threshold
+10. Tiebreak sort
+11. Paginate
+12. Return
+
+**NO REORDERING ALLOWED.** Steps must execute in this exact sequence.
 
 ---
 
-### PIPELINE: DAO Layer
+### PIPELINE: DAO Layer (Candidate Retrieval Only)
+
+**CRITICAL RULE: DAO fetches broad candidates; Service applies exact matching logic**
 
 ```
-SongDAO.searchSongs(query, limit, offset) {
+SongDAO.searchSongs(query) {
   
-  STEP 1: BUILD SQL QUERY
+  STEP 1: BUILD SQL QUERY (BROAD CANDIDATE RETRIEVAL)
+    RULE: Use LIKE queries to fetch candidates BROADLY
+    Reason: Final matching logic (prefix, fuzzy, variant) is in Service layer
+    
     sql = """
       SELECT * FROM songs
       WHERE is_active = TRUE AND (
-        title LIKE CONCAT('%', ?, '%')
-        OR artist LIKE CONCAT('%', ?, '%')
-        OR lyrics_original LIKE CONCAT('%', ?, '%')
-        OR lyrics_roman LIKE CONCAT('%', ?, '%')
+        LOWER(title) LIKE CONCAT('%', ?, '%')
+        OR LOWER(artist) LIKE CONCAT('%', ?, '%')
+        OR LOWER(lyrics_roman) LIKE CONCAT('%', ?, '%')
+        OR LOWER(lyrics_original) LIKE CONCAT('%', ?, '%')
       )
-      ORDER BY title
-      LIMIT ? OFFSET ?
+      LIMIT 1000
     """
+    
+    NOTE: LIMIT 1000 retrieves all potential matches (no pagination here)
+    Pagination happens in Service after filtering
   
   STEP 2: EXECUTE QUERY
     connection = DBConnection.getConnection()
     preparedStatement = connection.prepareStatement(sql)
-    preparedStatement.setString(1, query)
-    preparedStatement.setString(2, query)
-    preparedStatement.setString(3, query)
-    preparedStatement.setString(4, query)
-    preparedStatement.setInt(5, limit)
-    preparedStatement.setInt(6, offset)
+    preparedStatement.setString(1, query.toLowerCase())
+    preparedStatement.setString(2, query.toLowerCase())
+    preparedStatement.setString(3, query.toLowerCase())
+    preparedStatement.setString(4, query.toLowerCase())
     
     resultSet = preparedStatement.executeQuery()
   
   STEP 3: MAP RESULTS
-    songs = new ArrayList()
+    candidates = new ArrayList()  // Use "candidates" name to reflect incomplete nature
     WHILE resultSet.next()
       song = new Song()
       song.setId(resultSet.getInt("id"))
@@ -437,13 +495,17 @@ SongDAO.searchSongs(query, limit, offset) {
       song.setLanguage(resultSet.getString("language"))
       song.setLyricsRoman(resultSet.getString("lyrics_roman"))
       song.setLyricsOriginal(resultSet.getString("lyrics_original"))
-      songs.add(song)
+      candidates.add(song)
     
     close(resultSet, preparedStatement, connection)
   
-  STEP 4: RETURN RESULTS
-    RETURN songs
+  STEP 4: RETURN RAW CANDIDATES
+    RETURN candidates  // Raw candidates, not final matches
 }
+
+CRITICAL: DAO does NOT filter by match type (exact/prefix/fuzzy).
+CRITICAL: DAO does NOT apply scoring.
+CRITICAL: Service layer applies matching rules from SEARCH_LOGIC_SPEC.md.
 
 SongDAO.countSearchResults(query) {
   
