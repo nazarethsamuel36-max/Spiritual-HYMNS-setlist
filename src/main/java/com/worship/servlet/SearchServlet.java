@@ -1,7 +1,7 @@
 package com.worship.servlet;
 
-import com.worship.dao.SongDAO;
-import com.worship.model.Song;
+import com.worship.service.SearchService;
+import com.worship.service.SearchService.SearchServiceException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.ServletException;
@@ -13,28 +13,59 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * Full text search servlet returning JSON or HTML results.
- * Searches title, artist, lyrics_original, lyrics_roman.
- * Bug #39 fix: Added Vary: Accept header for proper caching of content types.
- * Bug #41 fix: Implemented result weighting (Title > Artist > Lyrics).
+ * SearchServlet - HTTP endpoint for song search.
+ * Per IMPLEMENTATION_BLUEPRINT: Controller layer responsibilities:
+ * 1. Parse HTTP request parameters
+ * 2. Validate input format and presence
+ * 3. Delegate to service layer
+ * 4. Format HTTP response
+ * 5. Set HTTP status codes and headers
+ * 
+ * CRITICAL: No business logic here. That lives in SearchService.
+ * Servlet ONLY handles HTTP concerns.
  */
 @WebServlet(name = "SearchServlet", urlPatterns = {"/search"})
 public class SearchServlet extends HttpServlet {
 
-    private SongDAO songDAO = new SongDAO();
+    private SearchService searchService = new SearchService();
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Bug #39 fix: Signal to caches (including Service Worker) that response depends on Accept header
+        // Signal to caches that response depends on Accept header
         response.setHeader("Vary", "Accept");
 
+        // STEP 1: PARSE INPUT
         String query = request.getParameter("q");
+        String pageParam = request.getParameter("page");
+        String sizeParam = request.getParameter("size");
         String acceptHeader = request.getHeader("Accept");
         boolean expectsJson = (acceptHeader != null && acceptHeader.contains("application/json"));
 
+        // STEP 2: VALIDATE INPUT FORMAT
+        int pageNum = 1;
+        int pageSize = 20;
+        
+        if (pageParam != null) {
+            try {
+                pageNum = Integer.parseInt(pageParam);
+            } catch (NumberFormatException e) {
+                pageNum = 1;
+            }
+        }
+        
+        if (sizeParam != null) {
+            try {
+                pageSize = Integer.parseInt(sizeParam);
+                if (pageSize < 1 || pageSize > 100) pageSize = 20;
+            } catch (NumberFormatException e) {
+                pageSize = 20;
+            }
+        }
+
+        // STEP 3: HANDLE EMPTY QUERY
         if (query == null || query.trim().isEmpty()) {
             if (expectsJson) {
                 response.setContentType("application/json;charset=UTF-8");
@@ -45,74 +76,47 @@ public class SearchServlet extends HttpServlet {
             return;
         }
 
-        query = query.trim();
-        List<Song> songs = songDAO.searchSongs(query);
-
-        // Build search results with matched line and basic weighting
-        List<Map<String, Object>> results = new ArrayList<>();
-        for (Song song : songs) {
-            Map<String, Object> result = new LinkedHashMap<>();
-            result.put("id", song.getId());
-            result.put("title", song.getTitle());
-            result.put("artist", song.getArtist());
-            result.put("language", song.getLanguage());
-            result.put("key", song.getOriginalKey());
-
-            // Bug #41 fix: Identify best matched line for context
-            String matchedLine = findBestMatchedLine(song, query);
-            result.put("matchedLine", matchedLine);
-
-            results.add(result);
+        // STEP 4: DELEGATE TO SERVICE
+        Map<String, Object> serviceResult;
+        try {
+            serviceResult = searchService.search(query.trim(), pageNum, pageSize);
+        } catch (SearchServiceException e) {
+            // Service validation error → HTTP 400
+            if (expectsJson) {
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                response.setContentType("application/json;charset=UTF-8");
+                Map<String, String> error = new HashMap<>();
+                error.put("error", e.getMessage());
+                objectMapper.writeValue(response.getWriter(), error);
+            } else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
+            }
+            return;
+        } catch (Exception e) {
+            // Unexpected error → HTTP 500
+            if (expectsJson) {
+                response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                response.setContentType("application/json;charset=UTF-8");
+                Map<String, String> error = new HashMap<>();
+                error.put("error", "Internal server error");
+                objectMapper.writeValue(response.getWriter(), error);
+            } else {
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Internal server error");
+            }
+            e.printStackTrace();
+            return;
         }
 
+        // STEP 5: FORMAT RESPONSE
         if (expectsJson) {
+            response.setStatus(HttpServletResponse.SC_OK);
             response.setContentType("application/json;charset=UTF-8");
-            objectMapper.writeValue(response.getWriter(), results);
+            objectMapper.writeValue(response.getWriter(), serviceResult);
         } else {
-            request.setAttribute("searchResults", results);
+            request.setAttribute("searchResults", serviceResult.get("results"));
             request.setAttribute("searchQuery", query);
-            request.setAttribute("songs", songs);
+            request.setAttribute("paginationInfo", serviceResult);
             request.getRequestDispatcher("/jsp/search.jsp").forward(request, response);
         }
-    }
-
-    /**
-     * Find the best context line for the search results.
-     * Bug #41 logic: Weight context by Title > Artist > Lyrics.
-     */
-    private String findBestMatchedLine(Song song, String query) {
-        String lowerQuery = query.toLowerCase();
-
-        // 1. Title match (High priority)
-        if (song.getTitle() != null && song.getTitle().toLowerCase().contains(lowerQuery)) {
-            return "Matched in Title: " + song.getTitle();
-        }
-
-        // 2. Artist match
-        if (song.getArtist() != null && song.getArtist().toLowerCase().contains(lowerQuery)) {
-            return "Artist: " + song.getArtist();
-        }
-
-        // 3. Original Lyrics match
-        if (song.getLyricsOriginal() != null) {
-            String[] lines = song.getLyricsOriginal().split("\\r?\\n");
-            for (String line : lines) {
-                if (line.toLowerCase().contains(lowerQuery)) {
-                    return line.trim();
-                }
-            }
-        }
-
-        // 4. Romanized Lyrics match
-        if (song.getLyricsRoman() != null) {
-            String[] lines = song.getLyricsRoman().split("\\r?\\n");
-            for (String line : lines) {
-                if (line.toLowerCase().contains(lowerQuery)) {
-                    return line.trim();
-                }
-            }
-        }
-
-        return "";
     }
 }
