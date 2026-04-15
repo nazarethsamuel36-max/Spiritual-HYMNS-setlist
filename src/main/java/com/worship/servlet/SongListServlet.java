@@ -2,6 +2,8 @@ package com.worship.servlet;
 
 import com.worship.dao.SongDAO;
 import com.worship.model.Song;
+import com.worship.service.SearchService;
+import com.worship.service.SearchService.SearchServiceException;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -10,6 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Servlet for listing and filtering songs.
@@ -19,6 +22,7 @@ import java.util.List;
 public class SongListServlet extends HttpServlet {
 
     private SongDAO songDAO = new SongDAO();
+    private SearchService searchService = new SearchService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -36,7 +40,12 @@ public class SongListServlet extends HttpServlet {
         com.worship.model.User user = com.worship.util.SessionUtil.getUser(request);
 
         if (query != null && !query.trim().isEmpty()) {
-            songs = songDAO.searchSongs(query.trim());
+            try {
+                Map<String, Object> result = searchService.search(query.trim(), 1, 100);
+                songs = (List<Song>) result.get("results");
+            } catch (SearchServiceException e) {
+                throw new ServletException("Unable to search songs", e);
+            }
             request.setAttribute("searchQuery", query.trim());
         } else if ("personal".equals(filter) && user != null) {
             songs = songDAO.getSongsByUser(user.getId());

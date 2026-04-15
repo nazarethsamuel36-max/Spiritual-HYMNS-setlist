@@ -30,59 +30,99 @@ function transposeUI(direction) {
         }
 
         const songBody = document.getElementById('songBody');
-        if (songBody && data.chordLines && data.lyricLines) {
-            let html = '';
-            for (let i = 0; i < data.chordLines.length; i++) {
-                const chordLine = data.chordLines[i] || '';
-                const lyricLine = data.lyricLines[i] || '';
-                const noteLine = (data.noteLines && data.noteLines[i]) || '';
-
-                // Bug #6 logic: Detect if this line is a section label like [Verse] or {Verse}
-                const sectionMatch = lyricLine.trim().match(/^[\[\{]([^\]\}]+)[\]\}]$/);
-                const isSectionLabel = (!chordLine.trim() && sectionMatch);
-
-                if (isSectionLabel) {
-                    const labelText = sectionMatch[1].toLowerCase();
-                    let cssClass = 'section-other';
-                    if (labelText.startsWith('verse')) cssClass = 'section-verse';
-                    else if (labelText.startsWith('chorus')) cssClass = 'section-chorus';
-                    else if (labelText.startsWith('bridge')) cssClass = 'section-bridge';
-                    else if (labelText.startsWith('pre')) cssClass = 'section-prechorus';
-                    else if (labelText.startsWith('intro')) cssClass = 'section-intro';
-                    else if (labelText.startsWith('outro')) cssClass = 'section-outro';
-                    
-                    html += `<div class="section-label ${cssClass}">${escapeHtml(sectionMatch[1])}</div>`;
-                } else {
-                    // Normal chord+lyric pair
-                    html += '<div class="song-pair">';
-                    if (chordLine.trim()) {
-                        html += `<div class="chord-line">${escapeHtml(chordLine)}</div>`;
-                    }
-                    if (lyricLine.trim()) {
-                        html += `<div class="lyric-line">${escapeHtml(lyricLine)}</div>`;
-                    } else {
-                        html += `<div class="lyric-line blank"> </div>`;
-                    }
-                    html += '</div>';
-                }
-
-                if (noteLine.trim()) {
-                    html += `<div class="note-line" style="display:none;">${escapeHtml(noteLine)}</div>`;
-                }
-            }
-            songBody.innerHTML = html;
-            
-            // Re-apply current view mode (chords/lyrics/notes)
-            const activeTab = document.querySelector('.view-tabs button.active, .ctrl-btn.active[data-mode]');
-            if (activeTab) {
-                setViewMode(activeTab.getAttribute('data-mode'));
-            }
-            applyColumnCount();
+        if (songBody && data.structuredLines) {
+            renderSongPairs(data.structuredLines);
         }
 
         updateKeyDisplay(data.key, data.capo);
     })
     .catch(error => console.error('Transpose error:', error));
+}
+
+/**
+ * Single Rendering Pipeline for Chords and Lyrics.
+ * Renders structured lines into the DOM securely.
+ */
+function renderSongPairs(structuredLines) {
+    const songBody = document.getElementById('songBody');
+    if (!songBody || !structuredLines) return;
+
+    // Clear DOM to prevent duplication on re-renders
+    songBody.innerHTML = '';
+    let html = '';
+
+    structuredLines.forEach(function(line) {
+        const lyrics = line.lyrics || "";
+        const chords = line.chords || [];
+
+        // Detect if this line is a section label like [Verse] or {Verse}
+        const sectionMatch = lyrics.trim().match(/^[\[\{]([^\]\}]+)[\]\}]$/);
+        const isSectionLabel = (chords.length === 0 && sectionMatch);
+
+        if (isSectionLabel) {
+            const labelText = sectionMatch[1].toLowerCase();
+            let cssClass = 'section-other';
+            if (labelText.startsWith('verse')) cssClass = 'section-verse';
+            else if (labelText.startsWith('chorus')) cssClass = 'section-chorus';
+            else if (labelText.startsWith('bridge')) cssClass = 'section-bridge';
+            else if (labelText.startsWith('pre')) cssClass = 'section-prechorus';
+            else if (labelText.startsWith('intro')) cssClass = 'section-intro';
+            else if (labelText.startsWith('outro')) cssClass = 'section-outro';
+            
+            html += `<div class="section-label ${cssClass} mt-6 mb-2 block w-max">${escapeHtml(sectionMatch[1])}</div>`;
+        } else if (!lyrics.replace(/\s/g, '').length) {
+            // Chord-only line
+            if (chords.length > 0) {
+                html += '<div class="chord-only-line">';
+                chords.forEach(occ => {
+                    html += `<span>${escapeHtml(occ.chord)}</span>`;
+                });
+                html += '</div>';
+            }
+        } else {
+            // Group chords by position and calculate max height
+            const groups = {};
+            let maxStackHeight = 0;
+            chords.forEach(occ => {
+                if (!groups[occ.position]) groups[occ.position] = [];
+                groups[occ.position].push(occ.chord);
+                if (groups[occ.position].length > maxStackHeight) {
+                    maxStackHeight = groups[occ.position].length;
+                }
+            });
+
+            // Prevent collapse on empty zero-height layers
+            maxStackHeight = Math.max(1, maxStackHeight);
+
+            // Sort positions numerically
+            const sortedPositions = Object.keys(groups).sort((a, b) => parseInt(a) - parseInt(b));
+
+            const lineHeight = 1.25; // em
+            const paddingTop = maxStackHeight * lineHeight;
+
+            html += `<div class="song-pair" style="padding-top: ${paddingTop}em">`;
+            html +=   `<div class="chord-layer" style="height: ${paddingTop}em">`;
+            sortedPositions.forEach(pos => {
+                html += `<div class="chord-stack" style="left: ${pos}ch">`;
+                groups[pos].forEach(chord => {
+                    html += `<span class="chord-span">${escapeHtml(chord)}</span>`;
+                });
+                html += '</div>';
+            });
+            html +=   '</div>'; // .chord-layer
+            html +=   `<div class="lyric-line">${escapeHtml(lyrics)}</div>`;
+            html += '</div>'; // .song-pair
+        }
+    });
+    
+    songBody.innerHTML = html;
+    
+    // Re-apply current view mode (chords/lyrics/notes)
+    const activeTab = document.querySelector('.view-tabs button.active, .ctrl-btn.active[data-mode]');
+    if (activeTab) {
+        setViewMode(activeTab.getAttribute('data-mode'));
+    }
+    applyColumnCount();
 }
 
 function updateKeyDisplay(newKey, capo) {
@@ -359,8 +399,9 @@ function initLiveSearch(inputId, resultsId) {
             })
             .then(r => r.json())
             .then(data => {
+                const results = Array.isArray(data) ? data : (data.results || []);
                 let html = '';
-                data.forEach(song => {
+                results.forEach(song => {
                     html += `
                         <div class="song-card mb-2">
                             <a href="${contextPath}/song?id=${song.id}" class="song-title">${escapeHtml(song.title)}</a>
@@ -414,4 +455,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setColumnCount(savedColumns);
 
     window.addEventListener('resize', applyColumnCount);
+
+    // Initial render if data is provided from backend Single Rendering Pipeline
+    if (window.initialStructuredLines && window.initialStructuredLines.length > 0) {
+        renderSongPairs(window.initialStructuredLines);
+    }
 });

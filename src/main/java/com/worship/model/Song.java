@@ -32,6 +32,7 @@ public class Song {
     private Timestamp createdAt;
     private boolean isActive;
     private List<String> hashtags;
+    private String matchedLine;
 
     public Song() {
         this.capo = 0;
@@ -104,6 +105,15 @@ public class Song {
 
     public List<String> getHashtags() { return hashtags; }
     public void setHashtags(List<String> hashtags) { this.hashtags = hashtags; }
+
+    public String getMatchedLine() { return matchedLine; }
+    public void setMatchedLine(String matchedLine) { this.matchedLine = matchedLine; }
+
+    /**
+     * Convenience alias used by search UIs and JSON consumers.
+     */
+    public String getKey() { return originalKey; }
+    public void setKey(String key) { this.originalKey = key; }
 
     /**
      * Bug #40: Added hashCode and equals for reliable set/collection usage.

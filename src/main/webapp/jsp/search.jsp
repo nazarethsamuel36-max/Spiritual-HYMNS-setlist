@@ -40,9 +40,9 @@
                                     <p class="text-sm font-semibold text-primary/80 tracking-wide uppercase"><c:out value="${songResult['artist']}"/></p>
                                     
                                     <div class="flex items-center gap-2 flex-wrap pt-2">
-                                        <c:if test="${not empty songResult['key']}">
+                                        <c:if test="${not empty songResult['originalKey']}">
                                             <div class="px-3 py-1 bg-primary-fixed text-on-primary-fixed text-[10px] font-bold uppercase tracking-widest rounded-md">
-                                                Key of <c:out value="${songResult['key']}"/>
+                                                Key of <c:out value="${songResult['originalKey']}"/>
                                             </div>
                                         </c:if>
                                         <c:if test="${not empty songResult['language']}">

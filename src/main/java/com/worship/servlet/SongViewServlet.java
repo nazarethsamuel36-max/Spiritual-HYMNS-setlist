@@ -93,10 +93,16 @@ public class SongViewServlet extends HttpServlet {
                 }
             }
 
-            // Parse chord-lyric bracket format for display
+            // Parse into authoritative structured format
             if (song.getChords() != null && !song.getChords().isEmpty()) {
-                List<String[]> parsedLines = ChordParser.parseFullSong(song.getChords());
-                request.setAttribute("parsedLines", parsedLines);
+                java.util.List<com.worship.model.StructuredLine> structuredLines = ChordParser.parseStructuredSong(song.getChords());
+                try {
+                    com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+                    String json = mapper.writeValueAsString(structuredLines);
+                    request.setAttribute("structuredLinesJson", json);
+                } catch (Exception ex) {
+                    request.setAttribute("structuredLinesJson", "[]");
+                }
             }
 
             // Increment view count

@@ -245,10 +245,11 @@
         if (q.length < 2) return;
         fetch(contextPath + '/search?q=' + encodeURIComponent(q), { headers: { 'Accept': 'application/json' } })
         .then(function(r) { return r.json(); }).then(function(data) {
+            var results = Array.isArray(data) ? data : (data.results || []);
             var container = document.getElementById('searchResults');
             container.innerHTML = '';
-            for (var i = 0; i < data.length; i++) {
-                var song = data[i];
+            for (var i = 0; i < results.length; i++) {
+                var song = results[i];
                 var div = document.createElement('div');
                 div.className = 'p-4 border-b border-surface-dim hover:bg-surface-container-low cursor-pointer flex justify-between items-center';
                 div.innerHTML = '<div><div class="font-bold">' + song.title + '</div><div class="text-sm text-slate-400">' + song.artist + '</div></div> <button class="bg-primary text-white p-2 rounded-lg">+</button>';

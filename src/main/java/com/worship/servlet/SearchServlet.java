@@ -34,7 +34,10 @@ public class SearchServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Signal to caches that response depends on Accept header
+        // Prevent caching of search results
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Pragma", "no-cache");
+        response.setHeader("Expires", "0");
         response.setHeader("Vary", "Accept");
 
         // STEP 1: PARSE INPUT
@@ -69,7 +72,7 @@ public class SearchServlet extends HttpServlet {
         if (query == null || query.trim().isEmpty()) {
             if (expectsJson) {
                 response.setContentType("application/json;charset=UTF-8");
-                response.getWriter().write("[]");
+                objectMapper.writeValue(response.getWriter(), createEmptyJsonResponse(pageNum, pageSize));
             } else {
                 request.getRequestDispatcher("/jsp/search.jsp").forward(request, response);
             }
@@ -118,5 +121,15 @@ public class SearchServlet extends HttpServlet {
             request.setAttribute("paginationInfo", serviceResult);
             request.getRequestDispatcher("/jsp/search.jsp").forward(request, response);
         }
+    }
+
+    private Map<String, Object> createEmptyJsonResponse(int pageNum, int pageSize) {
+        Map<String, Object> payload = new LinkedHashMap<>();
+        payload.put("results", Collections.emptyList());
+        payload.put("pageNum", pageNum);
+        payload.put("pageSize", pageSize);
+        payload.put("totalCount", 0);
+        payload.put("hasMore", false);
+        return payload;
     }
 }

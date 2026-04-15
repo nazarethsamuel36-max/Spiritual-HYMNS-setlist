@@ -16,6 +16,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
+import com.fasterxml.jackson.core.type.TypeReference;
 
 /**
  * Handles setlist management and sharing.
@@ -31,7 +32,6 @@ public class SetlistServlet extends HttpServlet {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     // Enharmonic mapping for offset calculation (matches ChordTransposer modern scale)
-    private static final String[] CHORD_ORDER = { "C", "Db", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B" };
     private static final Map<String, Integer> NAME_TO_INDEX = new HashMap<>();
     static {
         NAME_TO_INDEX.put("C", 0);  NAME_TO_INDEX.put("B#", 0);
@@ -158,7 +158,7 @@ public class SetlistServlet extends HttpServlet {
                     res.put("success", removed);
                     break;
                 case "reorder":
-                    List<Integer> orderedIds = objectMapper.readValue(request.getInputStream(), List.class);
+                    List<Integer> orderedIds = objectMapper.readValue(request.getInputStream(), new TypeReference<List<Integer>>() {});
                     boolean reordered = setlistDAO.reorderSongs(setlistId, orderedIds);
                     res.put("success", reordered);
                     break;

@@ -212,11 +212,56 @@
             .song-pair {
                 margin-bottom: 0 !important;
             }
-            .chord-line,
-            .lyric-line,
-            .note-line {
-                color: #000000 !important;
-            }
+        }
+        /* --- POSITION-BASED CHORD RENDERING --- */
+        .song-pair {
+            position: relative;
+            white-space: nowrap;
+            overflow-x: auto;
+            font-family: "Courier New", Consolas, monospace !important;
+            margin-bottom: 0.5em;
+            line-height: 1.25em;
+        }
+
+        .chord-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: visible;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .chord-stack {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        .chord-span {
+            color: var(--primary);
+            font-weight: bold;
+            background: var(--surface-solid-bg); /* Opaque background to prevent lyric overlap */
+            padding: 0 1px;
+            white-space: nowrap;
+        }
+
+        .lyric-line {
+            position: relative;
+            z-index: 1;
+            min-height: 1.25em;
+        }
+
+        .chord-only-line {
+            display: flex;
+            gap: 1ch;
+            font-family: "Courier New", Consolas, monospace !important;
+            margin-bottom: 1em;
+            color: var(--primary);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -361,69 +406,9 @@
             </div>
 
             <div class="song-body font-mono text-lg text-on-surface" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;" id="songBody">
-<%
-    // Bug #2 Fix: XSS Prevention in scriptlet rendering
-    java.util.List<String[]> parsedLines = (java.util.List<String[]>) request.getAttribute("parsedLines");
-    if (parsedLines != null) {
-        java.util.regex.Pattern sectionPat = java.util.regex.Pattern.compile("^[\\{\\[]([^\\}\\]]+)[\\}\\]]\\s*$");
-        boolean inStanza = false;
-        
-        for (int i = 0; i < parsedLines.size(); i++) {
-            String[] line = parsedLines.get(i);
-            String chords = HtmlEscaper.escapeHtml(line[0]);
-            String lyrics = HtmlEscaper.escapeHtml(line[1]);
-            
-            // Bug #6 Refined: Detect section labels
-            boolean isSection = false;
-            if ((chords == null || chords.trim().isEmpty()) && lyrics != null) {
-                java.util.regex.Matcher m = sectionPat.matcher(lyrics.trim());
-                if (m.matches()) {
-                    isSection = true;
-                    if (inStanza) { 
-                        out.println("</div>"); 
-                        inStanza = false; 
-                    }
-                    
-                    String label = m.group(1).toLowerCase(Locale.ROOT);
-                    String cssClass = "section-other";
-                    if (label.startsWith("verse"))     cssClass = "section-verse";
-                    else if (label.startsWith("chorus")) cssClass = "section-chorus";
-                    else if (label.startsWith("bridge")) cssClass = "section-bridge";
-                    else if (label.startsWith("pre"))    cssClass = "section-prechorus";
-                    else if (label.startsWith("intro"))  cssClass = "section-intro";
-                    else if (label.startsWith("outro"))  cssClass = "section-outro";
-%>
-                    <div class="section-label <%=cssClass%> mt-6 mb-2 block w-max"><%=m.group(1)%></div>
-<%
-                    continue;
-                }
-            }
-            
-            // Start a new stanza if not in one
-            if (!inStanza && !isSection && ((chords != null && !chords.trim().isEmpty()) || (lyrics != null && !lyrics.trim().isEmpty()))) {
-                out.println("<div class='song-stanza'>");
-                inStanza = true;
-            }
-            
-            // Close stanza on blank line
-            if (inStanza && (chords == null || chords.trim().isEmpty()) && (lyrics == null || lyrics.trim().isEmpty())) {
-                out.println("</div>");
-                inStanza = false;
-                continue;
-            }
-
-            if (chords != null && !chords.trim().isEmpty()) {
-%>
-<div class="song-pair"><div class="chord-line text-primary font-bold" style="white-space: pre;"><%=chords%></div><div class="lyric-line"><%=lyrics != null ? lyrics : ""%></div></div>
-<%          } else if (lyrics != null && !lyrics.trim().isEmpty()) { %>
-<div class="song-pair"><div class="lyric-line"><%=lyrics%></div></div>
-<%          } else { %>
-<div class="song-pair"><div class="lyric-line blank"> </div></div>
-<%          }
-        }
-        if (inStanza) out.println("</div>");
-    }
-%>
+                <script>
+                    window.initialStructuredLines = ${not empty structuredLinesJson ? structuredLinesJson : '[]'};
+                </script>
             </div>
 
             <!-- Inline Editor -->

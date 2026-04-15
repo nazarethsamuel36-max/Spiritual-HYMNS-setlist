@@ -2,6 +2,7 @@ package com.worship.servlet;
 
 import com.worship.dao.SongDAO;
 import com.worship.model.Song;
+import com.worship.model.StructuredLine;
 import com.worship.util.ChordParser;
 import com.worship.util.ChordTransposer;
 import com.worship.util.NoteTransposer;
@@ -57,14 +58,13 @@ public class TransposeServlet extends HttpServlet {
             // Transpose the raw bracket chord-lyric text
             String transposedChords = ChordTransposer.transposeSong(song.getChords(), semitones);
 
-            // Parse into chord/lyric line pairs
-            List<String[]> parsedLines = ChordParser.parseFullSong(transposedChords);
-
-            List<String> chordLines = new ArrayList<>();
-            List<String> lyricLines = new ArrayList<>();
-            for (String[] pair : parsedLines) {
-                chordLines.add(pair[0]);
-                lyricLines.add(pair[1]);
+            // Parse into authoritative structured format
+            List<StructuredLine> structuredLines = ChordParser.parseStructuredSong(song.getChords());
+            
+            // Transpose the structured lines
+            com.worship.util.ChordTransposer.EnharmonicPref style = com.worship.util.ChordTransposer.detectStructuredStyle(structuredLines);
+            for (StructuredLine line : structuredLines) {
+                ChordTransposer.transposeStructuredLine(line, semitones, style, false);
             }
 
             // Transpose notes (Sa Re Ga) if present
@@ -77,8 +77,7 @@ public class TransposeServlet extends HttpServlet {
 
             // Build response
             Map<String, Object> result = new LinkedHashMap<>();
-            result.put("chordLines", chordLines);
-            result.put("lyricLines", lyricLines);
+            result.put("structuredLines", structuredLines);
             result.put("noteLines", noteLines);
             result.put("key", ChordTransposer.getKeyAfterTranspose(song.getOriginalKey(), semitones));
             result.put("capo", ChordTransposer.getCapoSuggestion(semitones));

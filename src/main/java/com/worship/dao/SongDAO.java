@@ -117,7 +117,7 @@ public class SongDAO {
                 + "OR artist LIKE CONCAT('%', ?, '%') "
                 + "OR lyrics_original LIKE CONCAT('%', ?, '%') "
                 + "OR lyrics_roman LIKE CONCAT('%', ?, '%')"
-                + ") ORDER BY title LIMIT 20";
+                + ") ORDER BY song_number, title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
