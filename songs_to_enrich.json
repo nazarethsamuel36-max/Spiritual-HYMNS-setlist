@@ -1,0 +1,3078 @@
+[ {
+  "id" : 547,
+  "songNumber" : 1,
+  "title" : "SPIRIT OF THE LIVING GOD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431828000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 1,
+    "songId" : 547,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 1,
+      "sectionId" : 1,
+      "text" : "Spirit of the Living God } 2",
+      "lineOrder" : 1
+    }, {
+      "id" : 2,
+      "sectionId" : 1,
+      "text" : "Fall afresh on me.",
+      "lineOrder" : 2
+    }, {
+      "id" : 3,
+      "sectionId" : 1,
+      "text" : "Break me, melt me, mould me,",
+      "lineOrder" : 3
+    }, {
+      "id" : 4,
+      "sectionId" : 1,
+      "text" : "fill me,",
+      "lineOrder" : 4
+    }, {
+      "id" : 5,
+      "sectionId" : 1,
+      "text" : "Spirit of the Living God,",
+      "lineOrder" : 5
+    }, {
+      "id" : 6,
+      "sectionId" : 1,
+      "text" : "Fall afresh on me.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 548,
+  "songNumber" : 2,
+  "title" : "SET MY SPIRIT FREE",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 2,
+    "songId" : 548,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 7,
+      "sectionId" : 2,
+      "text" : "Set my spirit free that I may",
+      "lineOrder" : 1
+    }, {
+      "id" : 8,
+      "sectionId" : 2,
+      "text" : "worship Thee,",
+      "lineOrder" : 2
+    }, {
+      "id" : 9,
+      "sectionId" : 2,
+      "text" : "Set my spirit free that I may praise",
+      "lineOrder" : 3
+    }, {
+      "id" : 10,
+      "sectionId" : 2,
+      "text" : "Thy Name,",
+      "lineOrder" : 4
+    }, {
+      "id" : 11,
+      "sectionId" : 2,
+      "text" : "Let all bondage go and let",
+      "lineOrder" : 5
+    }, {
+      "id" : 12,
+      "sectionId" : 2,
+      "text" : "deliverance flow,",
+      "lineOrder" : 6
+    }, {
+      "id" : 13,
+      "sectionId" : 2,
+      "text" : "Set my spirit free to worship Thee.",
+      "lineOrder" : 7
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 549,
+  "songNumber" : 3,
+  "title" : "SWEEP OVER MY SOUL",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 3,
+    "songId" : 549,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 14,
+      "sectionId" : 3,
+      "text" : "Sweep over my soul (2)",
+      "lineOrder" : 1
+    }, {
+      "id" : 15,
+      "sectionId" : 3,
+      "text" : "Sweet Spirit sweep over my soul,",
+      "lineOrder" : 2
+    }, {
+      "id" : 16,
+      "sectionId" : 3,
+      "text" : "My rest is complete,",
+      "lineOrder" : 3
+    }, {
+      "id" : 17,
+      "sectionId" : 3,
+      "text" : "As I sit at Thy feet;",
+      "lineOrder" : 4
+    }, {
+      "id" : 18,
+      "sectionId" : 3,
+      "text" : "Sweet Spirit sweep over my soul.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 550,
+  "songNumber" : 4,
+  "title" : "THE WINDOWS OF HEAVEN",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 4,
+    "songId" : 550,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 19,
+      "sectionId" : 4,
+      "text" : "The windows of Heaven are open,",
+      "lineOrder" : 1
+    }, {
+      "id" : 20,
+      "sectionId" : 4,
+      "text" : "The blessings are falling today,",
+      "lineOrder" : 2
+    }, {
+      "id" : 21,
+      "sectionId" : 4,
+      "text" : "There's joy, joy, joy in my heart,",
+      "lineOrder" : 3
+    }, {
+      "id" : 22,
+      "sectionId" : 4,
+      "text" : "For Jesus makes everything right;",
+      "lineOrder" : 4
+    }, {
+      "id" : 23,
+      "sectionId" : 4,
+      "text" : "I gave Him my old tattered garment,",
+      "lineOrder" : 5
+    }, {
+      "id" : 24,
+      "sectionId" : 4,
+      "text" : "He gave me a robe of pure white,",
+      "lineOrder" : 6
+    }, {
+      "id" : 25,
+      "sectionId" : 4,
+      "text" : "I'm feasting today on the Manna,",
+      "lineOrder" : 7
+    }, {
+      "id" : 26,
+      "sectionId" : 4,
+      "text" : "And that's why I'm happy today.",
+      "lineOrder" : 8
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 551,
+  "songNumber" : 5,
+  "title" : "BLESS THE LORD O MY SOUL",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 5,
+    "songId" : 551,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 27,
+      "sectionId" : 5,
+      "text" : "Bless the Lord, O my soul,",
+      "lineOrder" : 1
+    }, {
+      "id" : 28,
+      "sectionId" : 5,
+      "text" : "Magnify His wonderful Name",
+      "lineOrder" : 2
+    }, {
+      "id" : 29,
+      "sectionId" : 5,
+      "text" : "For the glory of the Lord is mine",
+      "lineOrder" : 3
+    }, {
+      "id" : 30,
+      "sectionId" : 5,
+      "text" : "forever,",
+      "lineOrder" : 4
+    }, {
+      "id" : 31,
+      "sectionId" : 5,
+      "text" : "Jesus is ever the same;",
+      "lineOrder" : 5
+    } ]
+  }, {
+    "id" : 6,
+    "songId" : 551,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 32,
+      "sectionId" : 6,
+      "text" : "For the Lord has set me free,",
+      "lineOrder" : 1
+    }, {
+      "id" : 33,
+      "sectionId" : 6,
+      "text" : "And He's given me liberty,",
+      "lineOrder" : 2
+    }, {
+      "id" : 34,
+      "sectionId" : 6,
+      "text" : "To tell the world that Jesus is mine,",
+      "lineOrder" : 3
+    }, {
+      "id" : 35,
+      "sectionId" : 6,
+      "text" : "He has given me the wine to make",
+      "lineOrder" : 4
+    }, {
+      "id" : 36,
+      "sectionId" : 6,
+      "text" : "my heart rejoice.",
+      "lineOrder" : 5
+    }, {
+      "id" : 37,
+      "sectionId" : 6,
+      "text" : "And oil to make my face to shine.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 552,
+  "songNumber" : 6,
+  "title" : "GREAT IS THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 7,
+    "songId" : 552,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 38,
+      "sectionId" : 7,
+      "text" : "Great is the Lord and greatly to be",
+      "lineOrder" : 1
+    }, {
+      "id" : 39,
+      "sectionId" : 7,
+      "text" : "praised,",
+      "lineOrder" : 2
+    }, {
+      "id" : 40,
+      "sectionId" : 7,
+      "text" : "In the city of our God,",
+      "lineOrder" : 3
+    }, {
+      "id" : 41,
+      "sectionId" : 7,
+      "text" : "In the mountain of His holiness,",
+      "lineOrder" : 4
+    }, {
+      "id" : 42,
+      "sectionId" : 7,
+      "text" : "Beautiful for situation,",
+      "lineOrder" : 5
+    }, {
+      "id" : 43,
+      "sectionId" : 7,
+      "text" : "the joy of the whole earth,",
+      "lineOrder" : 6
+    }, {
+      "id" : 44,
+      "sectionId" : 7,
+      "text" : "Is mount Zion on the sides of the",
+      "lineOrder" : 7
+    }, {
+      "id" : 45,
+      "sectionId" : 7,
+      "text" : "north,",
+      "lineOrder" : 8
+    }, {
+      "id" : 46,
+      "sectionId" : 7,
+      "text" : "The city of our great King.",
+      "lineOrder" : 9
+    } ]
+  }, {
+    "id" : 8,
+    "songId" : 552,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 47,
+      "sectionId" : 8,
+      "text" : "One body, one spirit, one faith,",
+      "lineOrder" : 1
+    }, {
+      "id" : 48,
+      "sectionId" : 8,
+      "text" : "one Lord,",
+      "lineOrder" : 2
+    }, {
+      "id" : 49,
+      "sectionId" : 8,
+      "text" : "One people, one nation, praise the",
+      "lineOrder" : 3
+    }, {
+      "id" : 50,
+      "sectionId" : 8,
+      "text" : "Lord !",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 553,
+  "songNumber" : 7,
+  "title" : "I KNOW IT WAS THE BLOOD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 9,
+    "songId" : 553,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 51,
+      "sectionId" : 9,
+      "text" : "I know it was the Blood, I know it",
+      "lineOrder" : 1
+    }, {
+      "id" : 52,
+      "sectionId" : 9,
+      "text" : "was the Blood,",
+      "lineOrder" : 2
+    }, {
+      "id" : 53,
+      "sectionId" : 9,
+      "text" : "I know it was the Blood for me;",
+      "lineOrder" : 3
+    }, {
+      "id" : 54,
+      "sectionId" : 9,
+      "text" : "One day when I was lost,",
+      "lineOrder" : 4
+    }, {
+      "id" : 55,
+      "sectionId" : 9,
+      "text" : "He died upon the Cross,",
+      "lineOrder" : 5
+    }, {
+      "id" : 56,
+      "sectionId" : 9,
+      "text" : "I know it was the Blood for me.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 554,
+  "songNumber" : 8,
+  "title" : "BURN BURN HOLY SPIRIT",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 10,
+    "songId" : 554,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 57,
+      "sectionId" : 10,
+      "text" : "Burn, burn, Holy Spirit, burn in me,",
+      "lineOrder" : 1
+    }, {
+      "id" : 58,
+      "sectionId" : 10,
+      "text" : "Set my heart on fire,",
+      "lineOrder" : 2
+    }, {
+      "id" : 59,
+      "sectionId" : 10,
+      "text" : "Fill me with the Holy Ghost,",
+      "lineOrder" : 3
+    }, {
+      "id" : 60,
+      "sectionId" : 10,
+      "text" : "And God's richest desire.",
+      "lineOrder" : 4
+    } ]
+  }, {
+    "id" : 11,
+    "songId" : 554,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 61,
+      "sectionId" : 11,
+      "text" : "Make me like the Christ of old,",
+      "lineOrder" : 1
+    }, {
+      "id" : 62,
+      "sectionId" : 11,
+      "text" : "Healing and raising the dead,",
+      "lineOrder" : 2
+    }, {
+      "id" : 63,
+      "sectionId" : 11,
+      "text" : "Give me the power that Jesus had,",
+      "lineOrder" : 3
+    }, {
+      "id" : 64,
+      "sectionId" : 11,
+      "text" : "Through the blood that was shed.",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 555,
+  "songNumber" : 9,
+  "title" : "HIS NAME IS WONDERFUL",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 12,
+    "songId" : 555,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 65,
+      "sectionId" : 12,
+      "text" : "His Name is Wonderful, (3)",
+      "lineOrder" : 1
+    }, {
+      "id" : 66,
+      "sectionId" : 12,
+      "text" : "Jesus my Lord.",
+      "lineOrder" : 2
+    }, {
+      "id" : 67,
+      "sectionId" : 12,
+      "text" : "He is the Mighty King,",
+      "lineOrder" : 3
+    }, {
+      "id" : 68,
+      "sectionId" : 12,
+      "text" : "Master of everything",
+      "lineOrder" : 4
+    }, {
+      "id" : 69,
+      "sectionId" : 12,
+      "text" : "His Name is Wonderful,",
+      "lineOrder" : 5
+    }, {
+      "id" : 70,
+      "sectionId" : 12,
+      "text" : "Jesus my Lord.",
+      "lineOrder" : 6
+    } ]
+  }, {
+    "id" : 13,
+    "songId" : 555,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 71,
+      "sectionId" : 13,
+      "text" : "He's the great Shepherd,",
+      "lineOrder" : 1
+    }, {
+      "id" : 72,
+      "sectionId" : 13,
+      "text" : "The Rock of all Ages,",
+      "lineOrder" : 2
+    }, {
+      "id" : 73,
+      "sectionId" : 13,
+      "text" : "Almighty God is He.",
+      "lineOrder" : 3
+    }, {
+      "id" : 74,
+      "sectionId" : 13,
+      "text" : "Bow down before Him,",
+      "lineOrder" : 4
+    }, {
+      "id" : 75,
+      "sectionId" : 13,
+      "text" : "Love and adore Him,",
+      "lineOrder" : 5
+    }, {
+      "id" : 76,
+      "sectionId" : 13,
+      "text" : "His Name is Wonderful,",
+      "lineOrder" : 6
+    }, {
+      "id" : 77,
+      "sectionId" : 13,
+      "text" : "Jesus my Lord.",
+      "lineOrder" : 7
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 556,
+  "songNumber" : 10,
+  "title" : "FROM GLORY TO GLORY",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 14,
+    "songId" : 556,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 78,
+      "sectionId" : 14,
+      "text" : "From glory to glory He's changing",
+      "lineOrder" : 1
+    }, {
+      "id" : 79,
+      "sectionId" : 14,
+      "text" : "me,",
+      "lineOrder" : 2
+    }, {
+      "id" : 80,
+      "sectionId" : 14,
+      "text" : "Changing me, changing me,",
+      "lineOrder" : 3
+    }, {
+      "id" : 81,
+      "sectionId" : 14,
+      "text" : "His likeness and image to perfect",
+      "lineOrder" : 4
+    }, {
+      "id" : 82,
+      "sectionId" : 14,
+      "text" : "in me,",
+      "lineOrder" : 5
+    }, {
+      "id" : 83,
+      "sectionId" : 14,
+      "text" : "The love of God shown to the world.",
+      "lineOrder" : 6
+    } ]
+  }, {
+    "id" : 15,
+    "songId" : 556,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 84,
+      "sectionId" : 15,
+      "text" : "For He's changing, changing me,",
+      "lineOrder" : 1
+    }, {
+      "id" : 85,
+      "sectionId" : 15,
+      "text" : "From earthly things to the heavenly,",
+      "lineOrder" : 2
+    }, {
+      "id" : 86,
+      "sectionId" : 15,
+      "text" : "His likeness and image to perfect",
+      "lineOrder" : 3
+    }, {
+      "id" : 87,
+      "sectionId" : 15,
+      "text" : "in me,",
+      "lineOrder" : 4
+    }, {
+      "id" : 88,
+      "sectionId" : 15,
+      "text" : "The love of God shown to the world.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 557,
+  "songNumber" : 11,
+  "title" : "I'LL PRAISE HIS NAME",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 16,
+    "songId" : 557,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 89,
+      "sectionId" : 16,
+      "text" : "I'll praise His Name for evermore,",
+      "lineOrder" : 1
+    }, {
+      "id" : 90,
+      "sectionId" : 16,
+      "text" : "I'll praise His Name for evermore,",
+      "lineOrder" : 2
+    }, {
+      "id" : 91,
+      "sectionId" : 16,
+      "text" : "I'll praise, and praise,",
+      "lineOrder" : 3
+    }, {
+      "id" : 92,
+      "sectionId" : 16,
+      "text" : "and praise and praise,",
+      "lineOrder" : 4
+    }, {
+      "id" : 93,
+      "sectionId" : 16,
+      "text" : "I'll praise His Name for evermore.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 558,
+  "songNumber" : 12,
+  "title" : "IT'S A LOVELY LOVELY NAME",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 17,
+    "songId" : 558,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 94,
+      "sectionId" : 17,
+      "text" : "It's a lovely, lovely, Name,",
+      "lineOrder" : 1
+    }, {
+      "id" : 95,
+      "sectionId" : 17,
+      "text" : "The Name of Jesus.",
+      "lineOrder" : 2
+    }, {
+      "id" : 96,
+      "sectionId" : 17,
+      "text" : "It's a lovely, lovely, Name",
+      "lineOrder" : 3
+    }, {
+      "id" : 97,
+      "sectionId" : 17,
+      "text" : "From heaven above.",
+      "lineOrder" : 4
+    }, {
+      "id" : 98,
+      "sectionId" : 17,
+      "text" : "Dispelling the clouds of doubt and",
+      "lineOrder" : 5
+    }, {
+      "id" : 99,
+      "sectionId" : 17,
+      "text" : "fear,",
+      "lineOrder" : 6
+    }, {
+      "id" : 100,
+      "sectionId" : 17,
+      "text" : "Filling the saddened heart with",
+      "lineOrder" : 7
+    }, {
+      "id" : 101,
+      "sectionId" : 17,
+      "text" : "cheer,",
+      "lineOrder" : 8
+    }, {
+      "id" : 102,
+      "sectionId" : 17,
+      "text" : "It's a lovely, lovely, Name",
+      "lineOrder" : 9
+    }, {
+      "id" : 103,
+      "sectionId" : 17,
+      "text" : "The Name I love.",
+      "lineOrder" : 10
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 559,
+  "songNumber" : 13,
+  "title" : "IN THE NAME OF JESUS",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 18,
+    "songId" : 559,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 104,
+      "sectionId" : 18,
+      "text" : "In the name of Jesus,",
+      "lineOrder" : 1
+    }, {
+      "id" : 105,
+      "sectionId" : 18,
+      "text" : "through the blood of Jesus,",
+      "lineOrder" : 2
+    }, {
+      "id" : 106,
+      "sectionId" : 18,
+      "text" : "We have the victory,",
+      "lineOrder" : 3
+    }, {
+      "id" : 107,
+      "sectionId" : 18,
+      "text" : "In the name of Jesus,",
+      "lineOrder" : 4
+    }, {
+      "id" : 108,
+      "sectionId" : 18,
+      "text" : "through the blood of Jesus,",
+      "lineOrder" : 5
+    }, {
+      "id" : 109,
+      "sectionId" : 18,
+      "text" : "Demons will have to flee!",
+      "lineOrder" : 6
+    } ]
+  }, {
+    "id" : 19,
+    "songId" : 559,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 110,
+      "sectionId" : 19,
+      "text" : "Who can tell what God can do?",
+      "lineOrder" : 1
+    }, {
+      "id" : 111,
+      "sectionId" : 19,
+      "text" : "Who can tell of His love for you?",
+      "lineOrder" : 2
+    }, {
+      "id" : 112,
+      "sectionId" : 19,
+      "text" : "In the name of Jesus, Jesus,",
+      "lineOrder" : 3
+    }, {
+      "id" : 113,
+      "sectionId" : 19,
+      "text" : "We have the victory!",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 560,
+  "songNumber" : 14,
+  "title" : "ALL OVER THE WORLD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 20,
+    "songId" : 560,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 114,
+      "sectionId" : 20,
+      "text" : "All over the world,",
+      "lineOrder" : 1
+    }, {
+      "id" : 115,
+      "sectionId" : 20,
+      "text" : "the Spirit is moving,",
+      "lineOrder" : 2
+    }, {
+      "id" : 116,
+      "sectionId" : 20,
+      "text" : "All over the world, as the prophets",
+      "lineOrder" : 3
+    }, {
+      "id" : 117,
+      "sectionId" : 20,
+      "text" : "said it would be,",
+      "lineOrder" : 4
+    }, {
+      "id" : 118,
+      "sectionId" : 20,
+      "text" : "All over the world,",
+      "lineOrder" : 5
+    }, {
+      "id" : 119,
+      "sectionId" : 20,
+      "text" : "there's a mighty revelation,",
+      "lineOrder" : 6
+    }, {
+      "id" : 120,
+      "sectionId" : 20,
+      "text" : "Of the glory of the Lord,",
+      "lineOrder" : 7
+    }, {
+      "id" : 121,
+      "sectionId" : 20,
+      "text" : "As the waters cover the sea.",
+      "lineOrder" : 8
+    }, {
+      "id" : 122,
+      "sectionId" : 20,
+      "text" : "Deep down in my heart.....",
+      "lineOrder" : 9
+    }, {
+      "id" : 123,
+      "sectionId" : 20,
+      "text" : "Right here in our midst.....",
+      "lineOrder" : 10
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 561,
+  "songNumber" : 15,
+  "title" : "REJOICE IN THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 21,
+    "songId" : 561,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 124,
+      "sectionId" : 21,
+      "text" : "Rejoice in the Lord always",
+      "lineOrder" : 1
+    }, {
+      "id" : 125,
+      "sectionId" : 21,
+      "text" : "And again I say rejoice (Repeat)",
+      "lineOrder" : 2
+    }, {
+      "id" : 126,
+      "sectionId" : 21,
+      "text" : "Rejoice, rejoice,",
+      "lineOrder" : 3
+    }, {
+      "id" : 127,
+      "sectionId" : 21,
+      "text" : "And again I say rejoice. (Repeat)",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 562,
+  "songNumber" : 16,
+  "title" : "I'LL SAY \"YES\"",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 22,
+    "songId" : 562,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 128,
+      "sectionId" : 22,
+      "text" : "I'll say yes, yes, yes, (2)",
+      "lineOrder" : 1
+    }, {
+      "id" : 129,
+      "sectionId" : 22,
+      "text" : "I'll say yes Lord, (2)",
+      "lineOrder" : 2
+    }, {
+      "id" : 130,
+      "sectionId" : 22,
+      "text" : "I'll say yes, yes, yes.",
+      "lineOrder" : 3
+    } ]
+  }, {
+    "id" : 23,
+    "songId" : 562,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 131,
+      "sectionId" : 23,
+      "text" : "Where He leads me, I will follow (3)",
+      "lineOrder" : 1
+    }, {
+      "id" : 132,
+      "sectionId" : 23,
+      "text" : "I'll go with Him, with Him,",
+      "lineOrder" : 2
+    }, {
+      "id" : 133,
+      "sectionId" : 23,
+      "text" : "All the way.",
+      "lineOrder" : 3
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 563,
+  "songNumber" : 17,
+  "title" : "WE ARE GATHERING TOGETHER",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 24,
+    "songId" : 563,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 134,
+      "sectionId" : 24,
+      "text" : "We are gathering together unto",
+      "lineOrder" : 1
+    }, {
+      "id" : 135,
+      "sectionId" : 24,
+      "text" : "Him (2)",
+      "lineOrder" : 2
+    }, {
+      "id" : 136,
+      "sectionId" : 24,
+      "text" : "Unto Him shall the gathering of",
+      "lineOrder" : 3
+    }, {
+      "id" : 137,
+      "sectionId" : 24,
+      "text" : "the people be,",
+      "lineOrder" : 4
+    }, {
+      "id" : 138,
+      "sectionId" : 24,
+      "text" : "We are gathering together unto Him.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 564,
+  "songNumber" : 18,
+  "title" : "TO BE LIKE JESUS",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 25,
+    "songId" : 564,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 139,
+      "sectionId" : 25,
+      "text" : "To be like Jesus, to be like Jesus,",
+      "lineOrder" : 1
+    }, {
+      "id" : 140,
+      "sectionId" : 25,
+      "text" : "All I ask, to be like Him",
+      "lineOrder" : 2
+    }, {
+      "id" : 141,
+      "sectionId" : 25,
+      "text" : "All thru life's journey,",
+      "lineOrder" : 3
+    }, {
+      "id" : 142,
+      "sectionId" : 25,
+      "text" : "from earth to glory,",
+      "lineOrder" : 4
+    }, {
+      "id" : 143,
+      "sectionId" : 25,
+      "text" : "All I ask, to be like Him.",
+      "lineOrder" : 5
+    } ]
+  }, {
+    "id" : 26,
+    "songId" : 564,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 144,
+      "sectionId" : 26,
+      "text" : "To be like Jesus, to be like Jesus,",
+      "lineOrder" : 1
+    }, {
+      "id" : 145,
+      "sectionId" : 26,
+      "text" : "All I ask, to be like Him,",
+      "lineOrder" : 2
+    }, {
+      "id" : 146,
+      "sectionId" : 26,
+      "text" : "Not in a measure but in His fullness,",
+      "lineOrder" : 3
+    }, {
+      "id" : 147,
+      "sectionId" : 26,
+      "text" : "All I ask, to be like Him.",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 565,
+  "songNumber" : 19,
+  "title" : "IT'S NOT BY MIGHT",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 27,
+    "songId" : 565,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 148,
+      "sectionId" : 27,
+      "text" : "It's not by might, it's not by power,",
+      "lineOrder" : 1
+    }, {
+      "id" : 149,
+      "sectionId" : 27,
+      "text" : "But by my Spirit, saith the Lord.",
+      "lineOrder" : 2
+    }, {
+      "id" : 150,
+      "sectionId" : 27,
+      "text" : "It's not by might, it's not by power,",
+      "lineOrder" : 3
+    }, {
+      "id" : 151,
+      "sectionId" : 27,
+      "text" : "But by my Spirit, saith the Lord.",
+      "lineOrder" : 4
+    }, {
+      "id" : 152,
+      "sectionId" : 27,
+      "text" : "This mountain shall be removed, (3)",
+      "lineOrder" : 5
+    }, {
+      "id" : 153,
+      "sectionId" : 27,
+      "text" : "By my Spirit, saith the Lord.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 566,
+  "songNumber" : 20,
+  "title" : "I'VE FOUND A NEW WAY OF LIVING",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 28,
+    "songId" : 566,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 154,
+      "sectionId" : 28,
+      "text" : "I've found a new way of living",
+      "lineOrder" : 1
+    }, {
+      "id" : 155,
+      "sectionId" : 28,
+      "text" : "I've found a new life divine,",
+      "lineOrder" : 2
+    }, {
+      "id" : 156,
+      "sectionId" : 28,
+      "text" : "I've found the fruit of the Spirit,",
+      "lineOrder" : 3
+    }, {
+      "id" : 157,
+      "sectionId" : 28,
+      "text" : "By abiding, abiding in the Vine.",
+      "lineOrder" : 4
+    } ]
+  }, {
+    "id" : 29,
+    "songId" : 566,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 158,
+      "sectionId" : 29,
+      "text" : "Abiding in the Vine,",
+      "lineOrder" : 1
+    }, {
+      "id" : 159,
+      "sectionId" : 29,
+      "text" : "Abiding in the Vine,",
+      "lineOrder" : 2
+    }, {
+      "id" : 160,
+      "sectionId" : 29,
+      "text" : "Love, joy, health, peace, He has",
+      "lineOrder" : 3
+    }, {
+      "id" : 161,
+      "sectionId" : 29,
+      "text" : "made them mine,",
+      "lineOrder" : 4
+    }, {
+      "id" : 162,
+      "sectionId" : 29,
+      "text" : "I've found prosperity, power and",
+      "lineOrder" : 5
+    }, {
+      "id" : 163,
+      "sectionId" : 29,
+      "text" : "victory,",
+      "lineOrder" : 6
+    }, {
+      "id" : 164,
+      "sectionId" : 29,
+      "text" : "Abiding, abiding in the Vine.",
+      "lineOrder" : 7
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 567,
+  "songNumber" : 21,
+  "title" : "WITH MY HANDS LIFTED UP",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 30,
+    "songId" : 567,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 165,
+      "sectionId" : 30,
+      "text" : "With my hands lifted up,",
+      "lineOrder" : 1
+    }, {
+      "id" : 166,
+      "sectionId" : 30,
+      "text" : "And my mouth filled with praise,",
+      "lineOrder" : 2
+    }, {
+      "id" : 167,
+      "sectionId" : 30,
+      "text" : "With a heart of thanksgiving,",
+      "lineOrder" : 3
+    }, {
+      "id" : 168,
+      "sectionId" : 30,
+      "text" : "I will bless Thee, O Lord. (3)",
+      "lineOrder" : 4
+    }, {
+      "id" : 169,
+      "sectionId" : 30,
+      "text" : "With a heart of thanksgiving,",
+      "lineOrder" : 5
+    }, {
+      "id" : 170,
+      "sectionId" : 30,
+      "text" : "I will bless Thee, O Lord.",
+      "lineOrder" : 6
+    }, {
+      "id" : 171,
+      "sectionId" : 30,
+      "text" : "We bless Thee, O Lord, (2)",
+      "lineOrder" : 7
+    }, {
+      "id" : 172,
+      "sectionId" : 30,
+      "text" : "With a heart of thanksgiving,",
+      "lineOrder" : 8
+    }, {
+      "id" : 173,
+      "sectionId" : 30,
+      "text" : "We bless Thee, O Lord.",
+      "lineOrder" : 9
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 568,
+  "songNumber" : 22,
+  "title" : "I WILL SING OF THE MERCIES OF THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 31,
+    "songId" : 568,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 174,
+      "sectionId" : 31,
+      "text" : "I will sing of the mercies of the Lord",
+      "lineOrder" : 1
+    }, {
+      "id" : 175,
+      "sectionId" : 31,
+      "text" : "forever,",
+      "lineOrder" : 2
+    }, {
+      "id" : 176,
+      "sectionId" : 31,
+      "text" : "I will sing, I will sing;",
+      "lineOrder" : 3
+    }, {
+      "id" : 177,
+      "sectionId" : 31,
+      "text" : "I will sing of the mercies of the Lord",
+      "lineOrder" : 4
+    }, {
+      "id" : 178,
+      "sectionId" : 31,
+      "text" : "forever,",
+      "lineOrder" : 5
+    }, {
+      "id" : 179,
+      "sectionId" : 31,
+      "text" : "I will sing of the mercies of the Lord.",
+      "lineOrder" : 6
+    }, {
+      "id" : 180,
+      "sectionId" : 31,
+      "text" : "With my mouth will I make known,",
+      "lineOrder" : 7
+    }, {
+      "id" : 181,
+      "sectionId" : 31,
+      "text" : "Thy faithfulness, Thy faithfulness,",
+      "lineOrder" : 8
+    }, {
+      "id" : 182,
+      "sectionId" : 31,
+      "text" : "With my mouth will I make known,",
+      "lineOrder" : 9
+    }, {
+      "id" : 183,
+      "sectionId" : 31,
+      "text" : "Thy faithfulness to all generations.",
+      "lineOrder" : 10
+    }, {
+      "id" : 184,
+      "sectionId" : 31,
+      "text" : "(Repeat first four lines)",
+      "lineOrder" : 11
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 569,
+  "songNumber" : 23,
+  "title" : "THEREFORE THE REDEEMED OF THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 32,
+    "songId" : 569,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 185,
+      "sectionId" : 32,
+      "text" : "Therefore the redeemed of the Lord",
+      "lineOrder" : 1
+    }, {
+      "id" : 186,
+      "sectionId" : 32,
+      "text" : "shall return,",
+      "lineOrder" : 2
+    }, {
+      "id" : 187,
+      "sectionId" : 32,
+      "text" : "And come with singing unto Zion,",
+      "lineOrder" : 3
+    }, {
+      "id" : 188,
+      "sectionId" : 32,
+      "text" : "And everlasting joy shall be upon",
+      "lineOrder" : 4
+    }, {
+      "id" : 189,
+      "sectionId" : 32,
+      "text" : "their head.",
+      "lineOrder" : 5
+    }, {
+      "id" : 190,
+      "sectionId" : 32,
+      "text" : "(Repeat)",
+      "lineOrder" : 6
+    } ]
+  }, {
+    "id" : 33,
+    "songId" : 569,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 191,
+      "sectionId" : 33,
+      "text" : "They shall obtain gladness and joy,",
+      "lineOrder" : 1
+    }, {
+      "id" : 192,
+      "sectionId" : 33,
+      "text" : "And sorrow and mourning shall flee",
+      "lineOrder" : 2
+    }, {
+      "id" : 193,
+      "sectionId" : 33,
+      "text" : "away,",
+      "lineOrder" : 3
+    } ]
+  }, {
+    "id" : 34,
+    "songId" : 569,
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "sectionOrder" : 3,
+    "lines" : [ {
+      "id" : 194,
+      "sectionId" : 34,
+      "text" : "Therefore the redeemed of the Lord",
+      "lineOrder" : 1
+    }, {
+      "id" : 195,
+      "sectionId" : 34,
+      "text" : "shall return,",
+      "lineOrder" : 2
+    }, {
+      "id" : 196,
+      "sectionId" : 34,
+      "text" : "And come with singing unto Zion,",
+      "lineOrder" : 3
+    }, {
+      "id" : 197,
+      "sectionId" : 34,
+      "text" : "And everlasting joy shall be upon",
+      "lineOrder" : 4
+    }, {
+      "id" : 198,
+      "sectionId" : 34,
+      "text" : "their head.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 570,
+  "songNumber" : 24,
+  "title" : "COVER ME COVER ME",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 35,
+    "songId" : 570,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 199,
+      "sectionId" : 35,
+      "text" : "Cover me, cover me",
+      "lineOrder" : 1
+    }, {
+      "id" : 200,
+      "sectionId" : 35,
+      "text" : "Extend the border of Thy mantle",
+      "lineOrder" : 2
+    }, {
+      "id" : 201,
+      "sectionId" : 35,
+      "text" : "over me,",
+      "lineOrder" : 3
+    }, {
+      "id" : 202,
+      "sectionId" : 35,
+      "text" : "Because Thou art my nearest",
+      "lineOrder" : 4
+    }, {
+      "id" : 203,
+      "sectionId" : 35,
+      "text" : "kinsman",
+      "lineOrder" : 5
+    }, {
+      "id" : 204,
+      "sectionId" : 35,
+      "text" : "Cover me, cover me, cover me.",
+      "lineOrder" : 6
+    } ]
+  }, {
+    "id" : 36,
+    "songId" : 570,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 205,
+      "sectionId" : 36,
+      "text" : "Fear not, fear not",
+      "lineOrder" : 1
+    }, {
+      "id" : 206,
+      "sectionId" : 36,
+      "text" : "My daughter I will do to thee",
+      "lineOrder" : 2
+    }, {
+      "id" : 207,
+      "sectionId" : 36,
+      "text" : "All you need,",
+      "lineOrder" : 3
+    }, {
+      "id" : 208,
+      "sectionId" : 36,
+      "text" : "Because thou art a virtuous woman",
+      "lineOrder" : 4
+    }, {
+      "id" : 209,
+      "sectionId" : 36,
+      "text" : "Fear not, fear not.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 571,
+  "songNumber" : 25,
+  "title" : "LIFT JESUS HIGHER",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 37,
+    "songId" : 571,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 210,
+      "sectionId" : 37,
+      "text" : "Lift Jesus higher,",
+      "lineOrder" : 1
+    }, {
+      "id" : 211,
+      "sectionId" : 37,
+      "text" : "Lift Jesus higher,",
+      "lineOrder" : 2
+    }, {
+      "id" : 212,
+      "sectionId" : 37,
+      "text" : "Lift Him up for the world to see.",
+      "lineOrder" : 3
+    }, {
+      "id" : 213,
+      "sectionId" : 37,
+      "text" : "He said, if I be lifted up from the",
+      "lineOrder" : 4
+    }, {
+      "id" : 214,
+      "sectionId" : 37,
+      "text" : "earth,",
+      "lineOrder" : 5
+    }, {
+      "id" : 215,
+      "sectionId" : 37,
+      "text" : "I will draw all men unto Me.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 572,
+  "songNumber" : 26,
+  "title" : "HE IS THE SAME UNCHANGING JESUS",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 38,
+    "songId" : 572,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 216,
+      "sectionId" : 38,
+      "text" : "He is the same unchanging Jesus,",
+      "lineOrder" : 1
+    }, {
+      "id" : 217,
+      "sectionId" : 38,
+      "text" : "Unchanging Jesus, unchanging",
+      "lineOrder" : 2
+    }, {
+      "id" : 218,
+      "sectionId" : 38,
+      "text" : "Jesus.",
+      "lineOrder" : 3
+    }, {
+      "id" : 219,
+      "sectionId" : 38,
+      "text" : "He is the same unchanging Jesus",
+      "lineOrder" : 4
+    }, {
+      "id" : 220,
+      "sectionId" : 38,
+      "text" : "Now and through Eternity.",
+      "lineOrder" : 5
+    }, {
+      "id" : 221,
+      "sectionId" : 38,
+      "text" : "Hallelujah.........",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 573,
+  "songNumber" : 27,
+  "title" : "JEHOVAH JIREH",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431829000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 39,
+    "songId" : 573,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 222,
+      "sectionId" : 39,
+      "text" : "Jehovah, Jireh, my Provider, } 2",
+      "lineOrder" : 1
+    }, {
+      "id" : 223,
+      "sectionId" : 39,
+      "text" : "His grace is sufficient for me.",
+      "lineOrder" : 2
+    }, {
+      "id" : 224,
+      "sectionId" : 39,
+      "text" : "My God shall supply all my needs",
+      "lineOrder" : 3
+    }, {
+      "id" : 225,
+      "sectionId" : 39,
+      "text" : "According to His riches in glory,",
+      "lineOrder" : 4
+    }, {
+      "id" : 226,
+      "sectionId" : 39,
+      "text" : "He shall give His angels charge",
+      "lineOrder" : 5
+    }, {
+      "id" : 227,
+      "sectionId" : 39,
+      "text" : "over thee;",
+      "lineOrder" : 6
+    }, {
+      "id" : 228,
+      "sectionId" : 39,
+      "text" : "Jehovah Jireh cares for me, for me,",
+      "lineOrder" : 7
+    }, {
+      "id" : 229,
+      "sectionId" : 39,
+      "text" : "for me,",
+      "lineOrder" : 8
+    }, {
+      "id" : 230,
+      "sectionId" : 39,
+      "text" : "Jehovah Jireh cares for me.",
+      "lineOrder" : 9
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 574,
+  "songNumber" : 28,
+  "title" : "FROM THE RISING OF THE SUN",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 40,
+    "songId" : 574,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 231,
+      "sectionId" : 40,
+      "text" : "From the rising of the sun",
+      "lineOrder" : 1
+    }, {
+      "id" : 232,
+      "sectionId" : 40,
+      "text" : "To the going down of the same",
+      "lineOrder" : 2
+    }, {
+      "id" : 233,
+      "sectionId" : 40,
+      "text" : "The Lord's name is to be praised.",
+      "lineOrder" : 3
+    }, {
+      "id" : 234,
+      "sectionId" : 40,
+      "text" : "Praise ye the Lord,",
+      "lineOrder" : 4
+    }, {
+      "id" : 235,
+      "sectionId" : 40,
+      "text" : "Praise Him all ye servants of the",
+      "lineOrder" : 5
+    }, {
+      "id" : 236,
+      "sectionId" : 40,
+      "text" : "Lord,",
+      "lineOrder" : 6
+    }, {
+      "id" : 237,
+      "sectionId" : 40,
+      "text" : "Praise the name of the Lord.",
+      "lineOrder" : 7
+    }, {
+      "id" : 238,
+      "sectionId" : 40,
+      "text" : "Blessed be the name of the Lord",
+      "lineOrder" : 8
+    }, {
+      "id" : 239,
+      "sectionId" : 40,
+      "text" : "From this time forth,",
+      "lineOrder" : 9
+    }, {
+      "id" : 240,
+      "sectionId" : 40,
+      "text" : "And for evermore.",
+      "lineOrder" : 10
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 575,
+  "songNumber" : 29,
+  "title" : "EVERYBODY OUGHT TO KNOW",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 41,
+    "songId" : 575,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 241,
+      "sectionId" : 41,
+      "text" : "Everybody ought to know (3)",
+      "lineOrder" : 1
+    }, {
+      "id" : 242,
+      "sectionId" : 41,
+      "text" : "Who Jesus is.",
+      "lineOrder" : 2
+    }, {
+      "id" : 243,
+      "sectionId" : 41,
+      "text" : "He's the Lily of the Valley,",
+      "lineOrder" : 3
+    }, {
+      "id" : 244,
+      "sectionId" : 41,
+      "text" : "He's the Bright and Morning Star,",
+      "lineOrder" : 4
+    }, {
+      "id" : 245,
+      "sectionId" : 41,
+      "text" : "He's the fairest of ten thousand,",
+      "lineOrder" : 5
+    }, {
+      "id" : 246,
+      "sectionId" : 41,
+      "text" : "Everybody ought to know.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 576,
+  "songNumber" : 30,
+  "title" : "SING ALLELUJAH TO THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 42,
+    "songId" : 576,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 247,
+      "sectionId" : 42,
+      "text" : "Sing Allelujah to the Lord..... } 2",
+      "lineOrder" : 1
+    }, {
+      "id" : 248,
+      "sectionId" : 42,
+      "text" : "Sing Allelujah, sing Allelujah",
+      "lineOrder" : 2
+    }, {
+      "id" : 249,
+      "sectionId" : 42,
+      "text" : "Sing Allelujah to the Lord.",
+      "lineOrder" : 3
+    } ]
+  }, {
+    "id" : 43,
+    "songId" : 576,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 250,
+      "sectionId" : 43,
+      "text" : "Jesus has conquered sin and",
+      "lineOrder" : 1
+    }, {
+      "id" : 251,
+      "sectionId" : 43,
+      "text" : "death.....",
+      "lineOrder" : 2
+    }, {
+      "id" : 252,
+      "sectionId" : 43,
+      "text" : "Jesus has risen from the dead......",
+      "lineOrder" : 3
+    }, {
+      "id" : 253,
+      "sectionId" : 43,
+      "text" : "Jesus is seated on the throne......",
+      "lineOrder" : 4
+    }, {
+      "id" : 254,
+      "sectionId" : 43,
+      "text" : "Jesus is Lord of Heaven and",
+      "lineOrder" : 5
+    }, {
+      "id" : 255,
+      "sectionId" : 43,
+      "text" : "earth......",
+      "lineOrder" : 6
+    }, {
+      "id" : 256,
+      "sectionId" : 43,
+      "text" : "Jesus is coming back again......",
+      "lineOrder" : 7
+    }, {
+      "id" : 257,
+      "sectionId" : 43,
+      "text" : "Sing Allelujah to the Lord.......",
+      "lineOrder" : 8
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 577,
+  "songNumber" : 31,
+  "title" : "I WILL SING UNTO THE LORD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 44,
+    "songId" : 577,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 258,
+      "sectionId" : 44,
+      "text" : "I will sing unto the Lord as long as",
+      "lineOrder" : 1
+    }, {
+      "id" : 259,
+      "sectionId" : 44,
+      "text" : "I live,",
+      "lineOrder" : 2
+    }, {
+      "id" : 260,
+      "sectionId" : 44,
+      "text" : "I will sing praise to my God while",
+      "lineOrder" : 3
+    }, {
+      "id" : 261,
+      "sectionId" : 44,
+      "text" : "I have my being,",
+      "lineOrder" : 4
+    }, {
+      "id" : 262,
+      "sectionId" : 44,
+      "text" : "My meditation of Him shall be",
+      "lineOrder" : 5
+    }, {
+      "id" : 263,
+      "sectionId" : 44,
+      "text" : "sweet,",
+      "lineOrder" : 6
+    }, {
+      "id" : 264,
+      "sectionId" : 44,
+      "text" : "I will be glad, I will be glad in the",
+      "lineOrder" : 7
+    }, {
+      "id" : 265,
+      "sectionId" : 44,
+      "text" : "Lord,",
+      "lineOrder" : 8
+    }, {
+      "id" : 266,
+      "sectionId" : 44,
+      "text" : "Bless thou the Lord, O my soul } 4",
+      "lineOrder" : 9
+    }, {
+      "id" : 267,
+      "sectionId" : 44,
+      "text" : "Praise ye the Lord.",
+      "lineOrder" : 10
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 578,
+  "songNumber" : 32,
+  "title" : "I WILL ENTER HIS GATES",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 45,
+    "songId" : 578,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 268,
+      "sectionId" : 45,
+      "text" : "I will enter His gates with",
+      "lineOrder" : 1
+    }, {
+      "id" : 269,
+      "sectionId" : 45,
+      "text" : "thanksgiving in my heart,",
+      "lineOrder" : 2
+    }, {
+      "id" : 270,
+      "sectionId" : 45,
+      "text" : "I will enter His courts with praise,",
+      "lineOrder" : 3
+    }, {
+      "id" : 271,
+      "sectionId" : 45,
+      "text" : "I will say this is the day that the",
+      "lineOrder" : 4
+    }, {
+      "id" : 272,
+      "sectionId" : 45,
+      "text" : "Lord has made,",
+      "lineOrder" : 5
+    }, {
+      "id" : 273,
+      "sectionId" : 45,
+      "text" : "I will rejoice for He has made me",
+      "lineOrder" : 6
+    }, {
+      "id" : 274,
+      "sectionId" : 45,
+      "text" : "glad.",
+      "lineOrder" : 7
+    } ]
+  }, {
+    "id" : 46,
+    "songId" : 578,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 275,
+      "sectionId" : 46,
+      "text" : "He has made me glad (2)",
+      "lineOrder" : 1
+    }, {
+      "id" : 276,
+      "sectionId" : 46,
+      "text" : "I will rejoice for He has",
+      "lineOrder" : 2
+    }, {
+      "id" : 277,
+      "sectionId" : 46,
+      "text" : "made me glad.",
+      "lineOrder" : 3
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 579,
+  "songNumber" : 33,
+  "title" : "COME AND PRAISE HIM",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 47,
+    "songId" : 579,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 278,
+      "sectionId" : 47,
+      "text" : "Come and praise Him,",
+      "lineOrder" : 1
+    }, {
+      "id" : 279,
+      "sectionId" : 47,
+      "text" : "royal priesthood,",
+      "lineOrder" : 2
+    }, {
+      "id" : 280,
+      "sectionId" : 47,
+      "text" : "Come and worship, holy nation,",
+      "lineOrder" : 3
+    }, {
+      "id" : 281,
+      "sectionId" : 47,
+      "text" : "Worship Jesus, our Redeemer,",
+      "lineOrder" : 4
+    }, {
+      "id" : 282,
+      "sectionId" : 47,
+      "text" : "He is Precious, King of Glory.",
+      "lineOrder" : 5
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 580,
+  "songNumber" : 34,
+  "title" : "COME INTO HIS PRESENCE SINGING",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 48,
+    "songId" : 580,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 283,
+      "sectionId" : 48,
+      "text" : "Come into His presence singing",
+      "lineOrder" : 1
+    }, {
+      "id" : 284,
+      "sectionId" : 48,
+      "text" : "Allelujah* Allelujah, Allelujah,",
+      "lineOrder" : 2
+    }, {
+      "id" : 285,
+      "sectionId" : 48,
+      "text" : "(Repeat)",
+      "lineOrder" : 3
+    }, {
+      "id" : 286,
+      "sectionId" : 48,
+      "text" : "*Jesus is Lord.",
+      "lineOrder" : 4
+    }, {
+      "id" : 287,
+      "sectionId" : 48,
+      "text" : "*Glory to God.",
+      "lineOrder" : 5
+    }, {
+      "id" : 288,
+      "sectionId" : 48,
+      "text" : "*Worthy the Lamb. etc.",
+      "lineOrder" : 6
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 581,
+  "songNumber" : 35,
+  "title" : "BLESS THE LORD O MY SOUL",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 49,
+    "songId" : 581,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 289,
+      "sectionId" : 49,
+      "text" : "Bless the Lord, O my soul, } 2",
+      "lineOrder" : 1
+    }, {
+      "id" : 290,
+      "sectionId" : 49,
+      "text" : "And all that is within me",
+      "lineOrder" : 2
+    }, {
+      "id" : 291,
+      "sectionId" : 49,
+      "text" : "Bless His holy name,",
+      "lineOrder" : 3
+    } ]
+  }, {
+    "id" : 50,
+    "songId" : 581,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 292,
+      "sectionId" : 50,
+      "text" : "For He hath done great things,",
+      "lineOrder" : 1
+    }, {
+      "id" : 293,
+      "sectionId" : 50,
+      "text" : "He hath done great things (2)",
+      "lineOrder" : 2
+    }, {
+      "id" : 294,
+      "sectionId" : 50,
+      "text" : "Bless His Holy name.",
+      "lineOrder" : 3
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 582,
+  "songNumber" : 36,
+  "title" : "JESUS TAKE ME AS I AM",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 51,
+    "songId" : 582,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 295,
+      "sectionId" : 51,
+      "text" : "Jesus take me as I am;",
+      "lineOrder" : 1
+    }, {
+      "id" : 296,
+      "sectionId" : 51,
+      "text" : "I can come no other way,",
+      "lineOrder" : 2
+    }, {
+      "id" : 297,
+      "sectionId" : 51,
+      "text" : "Take me deeper into You,",
+      "lineOrder" : 3
+    }, {
+      "id" : 298,
+      "sectionId" : 51,
+      "text" : "Make my flesh-life melt away,",
+      "lineOrder" : 4
+    }, {
+      "id" : 299,
+      "sectionId" : 51,
+      "text" : "Make me like a precious stone",
+      "lineOrder" : 5
+    }, {
+      "id" : 300,
+      "sectionId" : 51,
+      "text" : "Crystal-clear and finely-honed,",
+      "lineOrder" : 6
+    }, {
+      "id" : 301,
+      "sectionId" : 51,
+      "text" : "Life of Jesus shining through",
+      "lineOrder" : 7
+    }, {
+      "id" : 302,
+      "sectionId" : 51,
+      "text" : "Giving glory back to You.",
+      "lineOrder" : 8
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 583,
+  "songNumber" : 37,
+  "title" : "WHEN I FEEL THE TOUCH",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 52,
+    "songId" : 583,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 303,
+      "sectionId" : 52,
+      "text" : "When I feel the touch of Your hand",
+      "lineOrder" : 1
+    }, {
+      "id" : 304,
+      "sectionId" : 52,
+      "text" : "upon my life,",
+      "lineOrder" : 2
+    }, {
+      "id" : 305,
+      "sectionId" : 52,
+      "text" : "It causes me to sing a song that I",
+      "lineOrder" : 3
+    }, {
+      "id" : 306,
+      "sectionId" : 52,
+      "text" : "love you Lord,",
+      "lineOrder" : 4
+    }, {
+      "id" : 307,
+      "sectionId" : 52,
+      "text" : "So from deep within, my spirit",
+      "lineOrder" : 5
+    }, {
+      "id" : 308,
+      "sectionId" : 52,
+      "text" : "singeth unto Thee,",
+      "lineOrder" : 6
+    }, {
+      "id" : 309,
+      "sectionId" : 52,
+      "text" : "You are my King, You are my God,",
+      "lineOrder" : 7
+    }, {
+      "id" : 310,
+      "sectionId" : 52,
+      "text" : "And I love you Lord.",
+      "lineOrder" : 8
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 584,
+  "songNumber" : 38,
+  "title" : "I THANK YOU JESUS FOR YOUR LOVE TO ME",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 53,
+    "songId" : 584,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 311,
+      "sectionId" : 53,
+      "text" : "I thank you Jesus for Your love to me,",
+      "lineOrder" : 1
+    }, {
+      "id" : 312,
+      "sectionId" : 53,
+      "text" : "I thank you Jesus for Your grace",
+      "lineOrder" : 2
+    }, {
+      "id" : 313,
+      "sectionId" : 53,
+      "text" : "so free,",
+      "lineOrder" : 3
+    }, {
+      "id" : 314,
+      "sectionId" : 53,
+      "text" : "I lift my voice to praise Your Name,",
+      "lineOrder" : 4
+    }, {
+      "id" : 315,
+      "sectionId" : 53,
+      "text" : "I'll praise you again and again",
+      "lineOrder" : 5
+    } ]
+  }, {
+    "id" : 54,
+    "songId" : 584,
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "sectionOrder" : 2,
+    "lines" : [ {
+      "id" : 316,
+      "sectionId" : 54,
+      "text" : "You're everything,",
+      "lineOrder" : 1
+    }, {
+      "id" : 317,
+      "sectionId" : 54,
+      "text" : "You are my Lord.",
+      "lineOrder" : 2
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 585,
+  "songNumber" : 39,
+  "title" : "I'VE TAKEN MY HARP DOWN",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 55,
+    "songId" : 585,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 318,
+      "sectionId" : 55,
+      "text" : "I've taken my harp down from the",
+      "lineOrder" : 1
+    }, {
+      "id" : 319,
+      "sectionId" : 55,
+      "text" : "willow tree,",
+      "lineOrder" : 2
+    }, {
+      "id" : 320,
+      "sectionId" : 55,
+      "text" : "My heart is singing the victory.",
+      "lineOrder" : 3
+    }, {
+      "id" : 321,
+      "sectionId" : 55,
+      "text" : "My past is forgiven, my home is in",
+      "lineOrder" : 4
+    }, {
+      "id" : 322,
+      "sectionId" : 55,
+      "text" : "heaven.",
+      "lineOrder" : 5
+    }, {
+      "id" : 323,
+      "sectionId" : 55,
+      "text" : "All sorrow has gone the glory",
+      "lineOrder" : 6
+    }, {
+      "id" : 324,
+      "sectionId" : 55,
+      "text" : "has come,",
+      "lineOrder" : 7
+    }, {
+      "id" : 325,
+      "sectionId" : 55,
+      "text" : "And now I am free.",
+      "lineOrder" : 8
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+}, {
+  "id" : 586,
+  "songNumber" : 40,
+  "title" : "THANK YOU GOD",
+  "artist" : null,
+  "composer" : null,
+  "copyright" : null,
+  "language" : "english",
+  "lyricsOriginal" : null,
+  "lyricsRoman" : null,
+  "chords" : null,
+  "notes" : null,
+  "originalKey" : null,
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "structure" : null,
+  "audioUrl" : null,
+  "createdBy" : 1,
+  "createdAt" : 1776431830000,
+  "book" : "prime_songbook",
+  "sections" : [ {
+    "id" : 56,
+    "songId" : 586,
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "sectionOrder" : 1,
+    "lines" : [ {
+      "id" : 326,
+      "sectionId" : 56,
+      "text" : "Thank you God for sending Jesus.",
+      "lineOrder" : 1
+    }, {
+      "id" : 327,
+      "sectionId" : 56,
+      "text" : "Thank you, Jesus, that you came.",
+      "lineOrder" : 2
+    }, {
+      "id" : 328,
+      "sectionId" : 56,
+      "text" : "Holy Spirit, won't you tell me",
+      "lineOrder" : 3
+    }, {
+      "id" : 329,
+      "sectionId" : 56,
+      "text" : "More about His lovely Name.",
+      "lineOrder" : 4
+    } ]
+  } ],
+  "hashtags" : [ ],
+  "matchedLine" : null,
+  "key" : null,
+  "active" : true
+} ]

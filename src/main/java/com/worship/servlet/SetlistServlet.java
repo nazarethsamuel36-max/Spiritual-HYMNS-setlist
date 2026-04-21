@@ -54,7 +54,11 @@ public class SetlistServlet extends HttpServlet {
         if (path == null) path = "/my";
 
         if (path.startsWith("/shared/")) {
-            handleSharedView(request, response, path);
+            if (path.startsWith("/shared/performance/")) {
+                handleSharedPerformanceView(request, response, path);
+            } else {
+                handleSharedView(request, response, path);
+            }
             return;
         }
 
@@ -79,9 +83,25 @@ public class SetlistServlet extends HttpServlet {
                     return;
                 }
                 List<SetlistSong> songs = setlistDAO.getSongsInSetlist(id);
-                s.setSongs(songs);
-                request.setAttribute("setlist", s);
-                request.getRequestDispatcher("/jsp/setlist/setlistView.jsp").forward(request, response);
+                
+                // If the path ends with /performance, show the performance mode view
+                if (path.endsWith("/performance")) {
+                    for (SetlistSong ss : songs) {
+                        if (!ss.isHeader() && ss.getLyricsChords() != null) {
+                            int offset = calculateSemitoneOffset(ss.getOriginalKey(), ss.getCreatorKey());
+                            String transposed = ChordTransposer.transposeSong(ss.getLyricsChords(), offset);
+                            ss.setLyricsChords(renderHtmlFromParsedLines(ChordParser.parseFullSong(transposed)));
+                            ss.setTranspositionOffset(offset);
+                        }
+                    }
+                    s.setSongs(songs);
+                    request.setAttribute("setlist", s);
+                    request.getRequestDispatcher("/jsp/setlist/performanceMode.jsp").forward(request, response);
+                } else {
+                    s.setSongs(songs);
+                    request.setAttribute("setlist", s);
+                    request.getRequestDispatcher("/jsp/setlist/setlistView.jsp").forward(request, response);
+                }
             } else {
                 response.sendRedirect(request.getContextPath() + "/setlist/my");
             }
@@ -190,6 +210,28 @@ public class SetlistServlet extends HttpServlet {
         objectMapper.writeValue(response.getWriter(), res);
     }
 
+    private void handleSharedPerformanceView(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException {
+        String token = path.substring("/shared/performance/".length());
+        Setlist s = setlistDAO.getSetlistByToken(token);
+        if (s == null) {
+            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Setlist not found.");
+            return;
+        }
+        
+        List<SetlistSong> songs = setlistDAO.getSongsInSetlist(s.getId());
+        for (SetlistSong ss : songs) {
+            if (!ss.isHeader() && ss.getLyricsChords() != null) {
+                int offset = calculateSemitoneOffset(ss.getOriginalKey(), ss.getCreatorKey());
+                String transposed = ChordTransposer.transposeSong(ss.getLyricsChords(), offset);
+                ss.setLyricsChords(renderHtmlFromParsedLines(ChordParser.parseFullSong(transposed)));
+                ss.setTranspositionOffset(offset);
+            }
+        }
+        s.setSongs(songs);
+        request.setAttribute("setlist", s);
+        request.getRequestDispatcher("/jsp/setlist/performanceMode.jsp").forward(request, response);
+    }
+    
     private void handleSharedView(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException {
         String token = path.substring("/shared/".length());
         Setlist s = setlistDAO.getSetlistByToken(token);

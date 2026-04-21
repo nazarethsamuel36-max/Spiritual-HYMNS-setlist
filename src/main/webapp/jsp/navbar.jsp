@@ -36,6 +36,9 @@
                     <span class="material-symbols-outlined text-[18px]">account_circle</span>
                     ${sessionScope.username}
                 </a>
+                <c:if test="${sessionScope.role == 'admin'}">
+                    <a href="${pageContext.request.contextPath}/admin/bulk-import" class="text-sm font-bold text-primary transition-colors hover:text-primary-container text-decoration-none" style="text-decoration: none;">Bulk Import</a>
+                </c:if>
                 <a href="${pageContext.request.contextPath}/logout" class="text-sm font-semibold transition-colors hover:text-primary text-decoration-none" style="text-decoration: none; color:#21345f;">Logout</a>
             </c:when>
             <c:otherwise>
@@ -63,6 +66,9 @@
             <c:when test="${not empty sessionScope.username}">
                 <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/setlist/my" onclick="closeMobileMenu()">Setlists</a>
                 <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/account" onclick="closeMobileMenu()">My Account (${sessionScope.username})</a>
+                <c:if test="${sessionScope.role == 'admin'}">
+                    <a class="border-b border-surface-dim py-2 text-[#001264] font-bold transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/admin/bulk-import" onclick="closeMobileMenu()">Bulk Import</a>
+                </c:if>
                 <a href="${pageContext.request.contextPath}/logout" class="text-error font-bold py-2 hover:text-error-container transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Logout</a>
             </c:when>
             <c:otherwise>
@@ -73,8 +79,10 @@
         </c:choose>
 
         <!-- Mobile Search -->
-        <form action="${pageContext.request.contextPath}/search" method="get" class="relative mt-2 md:hidden">
-            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+        <form action="${pageContext.request.contextPath}/search" method="get" class="relative mt-2 lg:hidden">
+            <button type="submit" class="absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10">
+                <span class="material-symbols-outlined">search</span>
+            </button>
             <input name="q" class="ui-input-solid w-full rounded-xl pl-10 pr-4 py-3 text-sm outline-none" placeholder="Search songs..." type="text"/>
         </form>
     </div>

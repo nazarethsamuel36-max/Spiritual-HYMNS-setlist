@@ -59,6 +59,17 @@
         .song-card h2 { color: #1a1a2e !important; font-weight: 600; }
         .song-card p[class*="uppercase"] { color: #4a5080 !important; font-weight: 600; font-size: 11px; letter-spacing: 0.05em; }
 
+        /* Song number badge */
+        .song-number-badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+
         /* Header section glass */
         .surface-mist {
             background: rgba(255, 255, 255, 0.14) !important;
@@ -95,7 +106,9 @@
                 <div class="w-full lg:w-96">
                     <!-- Live Search Bar -->
                     <form action="${pageContext.request.contextPath}/search" method="get" class="relative group">
-                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold">search</span>
+                        <button type="submit" class="absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10 hover:text-primary transition-colors focus:outline-none">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
                         <input name="q" class="search-input ui-input-solid w-full rounded-xl pl-12 pr-4 py-4 text-md font-medium shadow-sm focus:border-primary focus:ring-2 focus:ring-primary" placeholder="Search by title, artist, or lyrics..." type="text" value="${searchQuery}"/>
                     </form>
                 </div>
@@ -199,9 +212,12 @@
                     
                     <div class="flex-grow">
                         <div class="flex justify-between items-start">
-                            <h2 class="text-xl font-headline font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">${song.title}</h2>
+                            <div class="flex-grow">
+                                <span class="song-number-badge">#${song.songNumber}</span>
+                                <h2 class="text-xl font-headline font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">${song.title}</h2>
+                            </div>
                             <!-- Audio Placeholder from Teacher's Request -->
-                            <span class="material-symbols-outlined text-outline/40 group-hover:text-primary/70 transition-colors" data-icon="play_circle">play_circle</span>
+                            <span class="material-symbols-outlined text-outline/40 group-hover:text-primary/70 transition-colors flex-shrink-0 ml-2" data-icon="play_circle">play_circle</span>
                         </div>
                         <p class="text-sm font-semibold text-primary/80 tracking-wide uppercase mt-1 mb-4">${song.artist}</p>
                     </div>

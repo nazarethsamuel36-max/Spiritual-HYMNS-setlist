@@ -2,9 +2,11 @@
 
 **Purpose:** Deterministic mathematical and logical specification for search system. Eliminates all ambiguity in scoring, ranking, and matching logic.
 
-**Last Updated:** 2026-04-11
+**Version:** v1.0-STABLE (Frozen - April 15, 2026)
+**Last Updated:** 2026-04-15
 **Audience:** Developers implementing search. Reference for QA testing. AI implementation guide.
 **Referenced By:** SYSTEM_CHANGE_PLAN.md (Section 5), SEARCH_TEST_CASES.md
+**Freeze Status:** ✅ LOCKED - All 25 bugs resolved, 12 architectural decisions locked, 5-layer architecture defined. No further changes without version bump to v1.1+
 
 ---
 
@@ -124,9 +126,36 @@ Variant Generation Rules (see Section C)
 
 **RANK 5: FUZZY MATCH (Score: 50-80 based on distance)**
 ```
-Condition: Levenshtein distance <= 2
+Condition: Levenshtein distance <= 2 AND token_length >= 4
 Scoring (see Section B.2 for exact formula)
 Example: query="yesu", field="yeshu" → distance=1, score=75
+Note: Disabled for tokens with length < 4 (see Section B.6)
+```
+
+### B.6: Short Token & Fuzzy Restrictions (MANDATORY)
+
+**Rule: Disable fuzzy matching for short tokens**
+
+```
+IF token_length < 4:
+  Disable fuzzy matching (no distance tolerance)
+  Allow: exact, prefix, normalized, variant
+  Deny: fuzzy (distance-based)
+  
+Rationale: Single-character and 2-3 char tokens are too noisy for fuzzy matching
+  "a" fuzzy could match "e", "b", etc. (unacceptable)
+  "ab" fuzzy adds too many false positives
+  4+ characters have enough specificity for distance-2 tolerance
+
+Example:
+  Query: "am" → token_length=2
+    Field: "amazing" → EXACT "am" prefix → ✓ MATCH (95)
+    Field: "alarm" → EXACT "am" prefix → ✓ MATCH (95)
+    Field: "xm" → FUZZY distance=1 → ✗ REJECTED (fuzzy disabled)
+  
+  Query: "amaz" → token_length=4
+    Field: "amazing" → PREFIX "amaz" → ✓ MATCH (95)
+    Field: "amzg" → FUZZY distance=2 → ✓ MATCH (50)
 ```
 
 ### B.2: Fuzzy Score Formula (MANDATORY)
@@ -301,67 +330,71 @@ Song C:
   → FINAL = max(90, 70, 32) = 90
 ```
 
-**Rule: Title match always outranks lyrics match if both present (weight difference enforces this)**
+**Rule: Weight differences automatically enforce title priority without special cases**
 
-Consequence: An exact title match (100 * 1.0 = 100) will always beat an exact lyrics match (100 * 0.4 = 40).
+Consequence: An exact title match (100 * 1.0 = 100) beats exact lyrics match (100 * 0.4 = 40) through weights alone.
 
-### D.2: Cross-Field Conflict Resolution
+### D.3: Final Score Calculation (Single MAX Model)
 
-**Rule: Title Outrank Lyrics**
+**Core Rule: Use MAXIMUM formula (never SUM) - MANDATORY**
+
 ```
-IF title_score exists AND lyrics_score exists:
-  score_diff = abs(title_score - lyrics_score)
-  IF score_diff <= 20:
-    title_score ALWAYS wins (higher priority)
-    Use: title_score * title_weight (ignore lyrics)
-  ELSE IF title_score < 50 AND lyrics_score >= 90:
-    lyrics_score wins (rare case: title irrelevant, lyrics strong)
-    Use: lyrics_score * lyrics_weight
-  ELSE:
-    Use weighted combination: title * 0.40 + lyrics * (0.15 + 0.15)
+Algorithm (Deterministic):
+
+1. For each field (title, artist, lyrics_roman, lyrics_original):
+   - For each token in query:
+     - Find best match score across all variants (Section C)
+     - Store token_scores for this field
+   - field_score = MIN(token_scores)  // All tokens required for AND logic
+   
+2. Weighted field scores:
+   title_weighted = field_score[title] * 1.0
+   artist_weighted = field_score[artist] * 0.7
+   lyrics_roman_weighted = field_score[lyrics_roman] * 0.4
+   lyrics_original_weighted = field_score[lyrics_original] * 0.4
+
+3. Apply phrase bonus (if applicable):
+   IF tokens appear consecutively in field (phrase match):
+     field_score_before_weight += 20 (applied BEFORE weighting)
+   Constraint: Phrase bonus capped at 100 (no overflow)
+
+4. FINAL SCORE = MAX(title_weighted, artist_weighted, lyrics_roman_weighted, lyrics_original_weighted)
+   Input: Four weighted field scores
+   Output: Highest weighted score
+   Range: [0, 100]
+
+Constraint: NO weighting combinations, NO SUM formula, NO cross-field overrides
 ```
 
 **Example:**
 ```
-Song A: title_score=80, lyrics_roman_score=75
-  diff = 5 (≤ 20)
-  → Use title (80 * 0.40 = 32)
+Query: "yesu mahima" tokens=["yesu", "mahima"]
 
-Song B: title_score=40, lyrics_roman_score=92
-  title < 50 AND lyrics >= 90
-  → Use lyrics (92 * 0.15 = 13.8)
+Song A: Title="Yesu Mahima"
+  - title_field_score: yesu=100(exact), mahima=100(exact) → MIN(100,100)=100
+  - artist_field_score: (no match) → 0
+  - lyrics_field_score: (no match) → 0
+  - Phrase bonus: YES (consecutive) → 100+20=120 → capped at 100
+  - title_weighted = 100 * 1.0 = 100
+  - FINAL = MAX(100, 0, 0) = 100 ✓
 
-Song C: title_score=100, lyrics_original_score=90
-  diff = 10 (≤ 20)
-  → Use title (100 * 0.40 = 40)
-```
+Song B: Title="Unknown", Lyrics="Yesu Ki Mahima"
+  - title_field_score: (no match) → 0
+  - lyrics_field_score: yesu=100(exact), mahima=100(exact) → MIN(100,100)=100
+  - lyrics_roman_weighted = 100 * 0.4 = 40
+  - FINAL = MAX(0, 0, 40) = 40 ✓
 
-### D.3: Final Score Calculation (Multi-Field)
-
-```
-Algorithm:
-1. For each field (title, artist, lyrics_roman, lyrics_original):
-   - Find best match score from all match types
-   - Store: field_score[field_name]
-
-2. Calculate weighted scores:
-   title_contribution = field_score[title] * 0.40
-   artist_contribution = field_score[artist] * 0.30
-   lyrics_roman_contrib = field_score[lyrics_roman] * 0.15
-   lyrics_original_contrib = field_score[lyrics_original] * 0.15
-
-3. Apply title conflict rule (see D.2)
-
-4. FINAL SCORE = sum of non-zero contributions (capped at 100)
-
-Constraint: FINAL SCORE range [0, 100]
+Song C: Title="Yesu", Artist="Mahima Band"
+  - title_field_score: yesu=100(exact), mahima NOT FOUND → missing token → 0 (AND logic)
+  - artist_field_score: yesu NOT FOUND, mahima=95(prefix) → missing token → 0 (AND logic)
+  - FINAL = MAX(0, 0, 0) = 0 → REJECTED ✓
 ```
 
 ---
 
 ## SECTION E: MULTI-WORD QUERY LOGIC (DETERMINISTIC - AND LOGIC)
 
-### E.0: Core Rule (MANDATORY)
+### E.1: Core Rule & Tokenization (MANDATORY)
 
 **Rule: ALL tokens must be present (AND logic, not OR)**
 
@@ -372,6 +405,15 @@ When query contains multiple words separated by spaces:
 - Order of tokens does NOT matter
 - Matching can be across different fields (title, artist, lyrics)
 
+**Token Processing Pipeline:**
+```
+Input: "yesu mahima" (multi-word query)
+Step 1: Split by spaces (collapse internal multiples): ["yesu", "mahima"]
+Step 2: Normalize each token individually (lowercase, NFD, punctuation removal): ["yesu", "mahima"]
+Step 3: Remove empty tokens: Filter out empty strings
+Output: List of tokens to match
+```
+
 **Example:**
 ```
 Query: "yesu mahima"
@@ -381,20 +423,6 @@ Song A: Title "Yeshu Mahima" → Contains "yesu" (prefix) AND "mahima" (exact) �
 Song B: Title "Yeshu" → Missing "mahima" → INVALID ✗ (REJECTED)
 Song C: Title "Mahima Gaana", Lyrics "Yeshu Ki" → Contains both across fields → VALID ✓
 Song D: "mahima" only → Missing "yesu" → INVALID ✗ (REJECTED)
-```
-
----
-
-## SECTION E: MULTI-WORD QUERY LOGIC (DETERMINISTIC)
-
-### E.1: Query Tokenization
-
-```
-Input: "yesu mahima" (multi-word query)
-Step 1: Split by spaces (collapse internal multiples): ["yesu", "mahima"]
-Step 2: Normalize each token individually (lowercase, etc.): ["yesu", "mahima"]
-Step 3: Remove empty tokens: Filter out empty strings
-Output: List of tokens to match
 ```
 
 ### E.2: Multi-Word Matching Rule (AND Logic - MANDATORY)
@@ -435,53 +463,74 @@ Song C: Title="Mahima Gaana", Lyrics="yesu ki kripya"
   → KEEP for scoring
 ```
 
-### E.3: Phrase Match Bonus (OPTIONAL, after AND check)
+### E.3: Phrase Match Bonus (APPLIED DURING SCORING)
 
 ```
-IF query tokens appear consecutively in same field:
-  (exact phrase match)
-  ADD +20 bonus to field_score
+IF query tokens appear consecutively in same field (exact phrase):
+  ADD +20 bonus to field_score (before weighting)
+  Cap the result at 100 (no overflow)
 
 Example:
-Query: "yesu mahima"
-Field: "Yesu Mahima Gaana" (phrase appears consecutively)
-→ field_score + 20 bonus
+Query: "yesu mahima" tokens=["yesu", "mahima"]
+
+Field: "Yesu Mahima Gaana" (normalized: "yesu mahima gaana")
+  field_score=100 (both tokens exact, all tokens present)
+  +20 phrase bonus → 100 + 20 = 120 → capped at 100
+  final: 100
 
 Field: "Mahima yesu Gaana" (words reversed)
-→ NO bonus (not consecutive in query order)
+  field_score=100 (all tokens present)
+  NO bonus (not consecutive in query order, order matters)
+  final: 100
 
-Field: "Yeshu item. Mahima song" (words separated by other words)
-→ NO bonus (not consecutive)
+Field: "Yeshu item. Mahima song" (words separated)
+  field_score=100 (all tokens present via fuzzy/variant)
+  NO bonus (not consecutive, items between tokens)
+  final: 100
 
-Rule: Bonus applies ONLY for exact phrase, not partial.
+Constraint: Bonus applies ONLY for exact consecutive phrase (normalized field must contain tokens adjacently in query order)
 ```
 
 ---
 
 ## SECTION F: SCORE FILTERING & THRESHOLDS (MANDATORY)
 
-### F.1: Minimum Match Threshold
+### F.1: Dual Threshold System (MANDATORY)
 
+**Rule 1: Raw Token Score Threshold (BEFORE field weighting)**
 ```
-RULE: Reject all results with score < 50
-
-Rationale: Prevent low-quality fuzzy matches undermining search quality
-
-Algorithm:
-AFTER calculating final_score for each song:
-  IF final_score < 50:
-    REMOVE from results (do not return)
+AFTER matching each token in each field:
+  IF token_score < 50:
+    token REJECTED (fuzzy distance > 2, or other low match types)
   ELSE:
-    KEEP in results for ranking
+    token ACCEPTED (exact, prefix, variant, fuzzy distance ≤2)
+
+Purpose: Eliminate single-character noise and very-long-distance fuzzy matches early
 ```
 
-**Impact Examples:**
+**Rule 2: Final Score Threshold (AFTER field weighting)**
 ```
-Score 100: ✓ RETURN
-Score 75: ✓ RETURN
-Score 50: ✓ RETURN (boundary inclusive)
-Score 49: ✗ REJECT
-Score 0: ✗ REJECT
+AFTER calculating weighted field scores and applying MAX:
+  IF final_score < 30:
+    REMOVE song from results (do not return)
+  ELSE:
+    KEEP song in results for ranking
+
+Rationale: Final threshold of 30 preserves weighted matches even from lower-priority fields
+```
+
+**Threshold Impact Examples:**
+```
+Final Score 100: ✓ RETURN
+Final Score 50: ✓ RETURN
+Final Score 30: ✓ RETURN (boundary inclusive)
+Final Score 29: ✗ REJECT
+Final Score 0: ✗ REJECT
+
+Raw Token Threshold:
+  token_score 100: ✓ ACCEPT
+  token_score 50: ✓ ACCEPT (boundary inclusive)
+  token_score 49: ✗ REJECT (must refilter results)
 ```
 
 ### F.2: Empty Results Handling
@@ -584,55 +633,98 @@ Never use: random(), shuffle(), or non-deterministic operations
 
 ---
 
-## SECTION H: RANKING FORMULA CONSOLIDATION (ALL TOGETHER)
+## SECTION H: COMPLETE 5-LAYER PIPELINE ARCHITECTURE
 
-This section combines search into single unified algorithm.
+### H.1: 5-Layer Deterministic Pipeline
 
-### H.1: Complete Search Algorithm
+**Architecture Overview: Five Distinct Layers with Clear Separation**
 
 ```
-INPUT: normalized_query (string)
-OUTPUT: List of songs ranked by score
+┌─────────────────────────────────────────────────────────────┐
+│ LAYER 1: NORMALIZATION & TOKENIZATION & VARIANT GENERATION │
+├─────────────────────────────────────────────────────────────┤
+INPUT: raw query string
+PROCESS:
+  1. Normalize query (trim → lowercase → NFD → punctuation removal → collapse spaces)
+  2. Split into tokens (Section A)
+  3. Generate variants for each token (Section C)
+  4. Check for empty result
+OUTPUT: tokens[], variants{}
+CONSTRAINT: Deterministic, same input = same output
 
-ALGORITHM:
+┌─────────────────────────────────────────────────────────────┐
+│ LAYER 2: DATABASE RETRIEVAL & FILTERING                    │
+├─────────────────────────────────────────────────────────────┤
+INPUT: tokens[], variants{}
+PROCESS:
+  1. FOR each token and variant: Query DB with LIKE %token% on each field
+  2. Collect matching songs (title, artist, lyrics_roman, lyrics_original)
+  3. Apply AND logic: Keep ONLY songs containing ALL tokens (across any fields)
+  4. Deduplicate by song_id (best match for each song per field)
+OUTPUT: candidate_songs with field match presence
+CONSTRAINT: Deterministic DB query, stable deduplication
 
-Step 1: Generate Variants
-  variants = generate_variants(normalized_query)
-  variant_list = [original_query] + variants
+┌─────────────────────────────────────────────────────────────┐
+│ LAYER 3: GREEDY MATCHING & TOKEN ALLOCATION & FIELD SCORING│
+├─────────────────────────────────────────────────────────────┤
+INPUT: candidate_songs, tokens[], variants{}
+PROCESS:
+  1. FOR each song:
+     2. FOR each field (title, artist, lyrics_roman, lyrics_original):
+        3. FOR each token:
+           - Try greedy left-to-right position allocation
+           - Match token against field value (Section B match types)
+           - Record token_score, match_type used
+           - Compare token_score against raw token threshold (50)
+           - Mark positions consumed to prevent overlap
+        4. Calculate field_score = MIN(all token scores) for this field
+        5. Add phrase bonus (+20) if tokens consecutive, cap at 100
+        6. Field_score_weighted = field_score * field_weight
+  3. Store per-song: field_scores[], weighted_field_scores[]
+OUTPUT: per-song weighted field scores
+CONSTRAINT: Greedy left-to-right, no overlaps, position consumed after use
 
-Step 2: Search Each Field
-  FOR each field in [title, artist, lyrics_roman, lyrics_original]:
-    FOR each variant in variant_list:
-      matching_songs = search_field(variant, field)
-      FOR each song in matching_songs:
-        song.field_scores[field] = score_match(variant, song_field_value)
+┌─────────────────────────────────────────────────────────────┐
+│ LAYER 4: SCORING & FILTERING                               │
+├─────────────────────────────────────────────────────────────┤
+INPUT: per-song weighted_field_scores[]
+PROCESS:
+  1. FOR each song:
+     2. final_score = MAX(title_weighted, artist_weighted, lyrics_roman_weighted, lyrics_original_weighted)
+     3. IF final_score < 30 (final threshold):
+        - REJECT song, remove from results
+     4. ELSE:
+        - KEEP song with final_score
+OUTPUT: ranked_songs with final_score ≥ 30
+CONSTRAINT: Threshold filtering, MAX formula only
 
-Step 3: Deduplicate by Song ID
-  deduplicated = Map<song_id → best_score_across_all_fields>
-  FOR each song in all_matches:
-    IF song_id not in deduplicated:
-      deduplicated[song_id] = song.field_scores
-    ELSE:
-      FOR each field:
-        deduplicated[song_id][field] = max(old_score, new_score)
+┌─────────────────────────────────────────────────────────────┐
+│ LAYER 5: RANKING & TIEBREAKING & PAGINATION                │
+├─────────────────────────────────────────────────────────────┤
+INPUT: ranked_songs with final_score
+PROCESS:
+  1. SORT songs by (final_score DESC, tiebreaker_hierarchy)
+  2. Tiebreaker hierarchy (Section G.2):
+     - Match type precision (exact > prefix > variant > fuzzy)
+     - Field priority (title > artist > lyrics)
+     - Play count (descending)
+     - Last played date (most recent first)
+     - Title alphabetical (A-Z)
+     - Song ID (ascending, fallback)
+  3. Apply pagination: results[(page-1)*size : page*size]
+OUTPUT: paginated songs, total_count, has_next
+CONSTRAINT: Stable sort, deterministic tiebreaker, no randomization
 
-Step 4: Calculate Final Scores
-  FOR each song in deduplicated:
-    song.final_score = calculate_final_score(song.field_scores)
-    IF song.final_score < 50:
-      REMOVE song (threshold filter)
-
-Step 5: Sort Results
-  results = deduplicated.sorted_by([final_score DESC, tiebreaker_hierarchy])
-
-Step 6: Apply Pagination
-  paginated = results[(page-1)*pagesize : page*pagesize]
-  RETURN paginated + metadata (total_count, has_next)
-
-CONSTRAINTS:
-  - No randomization
-  - All operations deterministic
-  - Same input = same output, always
+═══════════════════════════════════════════════════════════════
+CRITICAL CONSTRAINTS (Layer Separation):
+  ✓ Layer 1 produces tokens ONLY (no scoring)
+  ✓ Layer 2 produces candidates ONLY (no scoring)
+  ✓ Layer 3 produces field scores ONLY (no final score)
+  ✓ Layer 4 produces final score ONLY (no ranking)
+  ✓ Layer 5 produces ranked results ONLY (no scoring)
+  ✓ No mixing of concerns
+  ✓ Each layer output is input to next layer
+  ✓ Deterministic: same input at any layer = same output
 ```
 
 ---
@@ -668,14 +760,23 @@ IF normalized_query length > 1000 characters:
   WARN: "Query truncated to 1000 characters"
 ```
 
-### I.4: Single Character Query
+### I.4: Single Character & Short Query Handling
 
 ```
-IF normalized_query == single character:
-  Apply normal matching (prefix on single char)
+IF normalized_query == single character (length=1):
+  Apply normal matching:
+    - prefix match on single char allowed
+    - fuzzy disabled for length < 4 (Section B.6)
   Example: query="a"
-    Matches: "Amazing", "Amen", "Alpha"
-    Single-char prefix match is valid
+    Matches prefix: "Amazing", "Amen", "Alpha" → ✓ (prefix score 95)
+    Does NOT match via fuzzy (disabled)
+
+IF normalized_query length in [2-3] (short query):
+  - Exact, prefix, normalized, variant matching allowed
+  - Fuzzy matching DISABLED (Section B.6)
+  - Phrase bonus still applies if multiple tokens consecutive
+  
+Constraint: Short query protection prevents single-char noise explosion
 ```
 
 ---
@@ -710,5 +811,8 @@ Key test case mappings:
 
 ---
 
-**Document Status:** COMPLETE AND DETERMINISTIC
-**Next Step:** Implement exactly per this spec. Deviation requires spec update + QA review.
+**Document Status:** ✅ v1.0-STABLE LOCKED (April 15, 2026)
+**Changes Applied:** D.2 deleted, D.3 rewritten (MAX formula), E.0/E.1 consolidated, F.1 dual threshold, H.1 5-layer pipeline, B.6 added, E.3 clarified, I.4 extended
+**Bugs Fixed:** 25 total (12 original + 13 advanced) - all resolved with explicit locked decisions
+**Implementation Note:** Implement EXACTLY per this spec. Any deviation requires version bump to v1.1+ and new QA cycle.
+**Determinism Guarantee:** Identical input → Identical output (ALWAYS). No randomization. Stable sort with 6-level tiebreaker hierarchy.

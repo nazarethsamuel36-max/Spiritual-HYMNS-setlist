@@ -27,7 +27,9 @@
         <div class="relative z-10 w-full max-w-3xl group mb-8">
             <div class="absolute -inset-2 rounded-[2rem] bg-gradient-to-r from-white/30 via-primary/10 to-white/20 blur-2xl opacity-60 transition duration-1000 group-hover:opacity-80"></div>
             <form action="${pageContext.request.contextPath}/search" method="get" class="surface-glass relative flex items-center overflow-hidden rounded-[2rem] px-2 py-2">
-                <span class="material-symbols-outlined ml-6 text-on-surface-variant text-3xl">search</span>
+                <button type="submit" class="ml-6 flex items-center justify-center border-none bg-transparent cursor-pointer p-0 text-3xl text-on-surface-variant hover:text-primary transition-colors focus:outline-none z-10">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
                 <input name="q" 
                        class="w-full border-none bg-transparent px-6 py-7 text-xl font-light outline-none placeholder:text-outline/50 focus:ring-0 md:text-2xl" 
                        placeholder="Search songs, artists, or lyrics..." 

@@ -16,6 +16,7 @@ public class SetlistSong {
     private int transpositionOffset; // Bug #8 fix: Dedicated field for UI transposition math
     private boolean isHeader;        // New: Support for dividers
     private String headerText;       // New: Text for dividers ("Opening Prayer")
+    private int songNumber;          // The song library number (e.g. #42)
 
     // Additional original key for mathematical diffing
     private String originalKey;
@@ -59,4 +60,7 @@ public class SetlistSong {
 
     public String getHeaderText() { return headerText; }
     public void setHeaderText(String headerText) { this.headerText = headerText; }
+
+    public int getSongNumber() { return songNumber; }
+    public void setSongNumber(int songNumber) { this.songNumber = songNumber; }
 }

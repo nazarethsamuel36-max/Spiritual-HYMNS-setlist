@@ -324,6 +324,7 @@
         <!-- Left Column: Settings / Attributes / Metadata -->
         <div class="w-full md:w-56 flex-shrink-0 space-y-6 sticky top-24 self-start no-print" id="songMetaColumn">
             <div class="song-meta-panel rounded-[1.75rem] p-5">
+                <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase;display:block;margin-bottom:4px">#<c:out value="${song.songNumber}"/></span>
                 <h1 class="text-4xl font-headline font-black text-on-surface mb-2 tracking-tight"><c:out value="${song.title}"/></h1>
                 <p class="text-xl font-medium text-primary tracking-wide uppercase"><c:out value="${song.artist}"/></p>
             </div>
@@ -345,7 +346,19 @@
                 </c:if>
                 <div class="flex justify-between items-center">
                     <span class="text-sm font-semibold text-outline tracking-[0.18em] uppercase">Language</span>
-                    <span class="ui-pill-solid px-3 py-1 font-bold rounded-md capitalize"><c:out value="${song.language}"/></span>
+                    <div class="flex items-center gap-2">
+                        <span class="ui-pill-solid px-3 py-1 font-bold rounded-md capitalize"><c:out value="${song.language}"/></span>
+                        <c:if test="${fn:toLowerCase(song.language) == 'marathi' || fn:toLowerCase(song.language) == 'mr'}">
+                            <div class="flex bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/30 no-print">
+                                <a href="${pageContext.request.contextPath}/song?id=${song.id}&script=dev" 
+                                   style="text-decoration: none;"
+                                   class="px-2 py-1 text-[10px] font-bold rounded-md transition-colors text-decoration-none ${!isRomanScript ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-surface-dim'}">DEV</a>
+                                <a href="${pageContext.request.contextPath}/song?id=${song.id}&script=roman" 
+                                   style="text-decoration: none;"
+                                   class="px-2 py-1 text-[10px] font-bold rounded-md transition-colors text-decoration-none ${isRomanScript ? 'bg-primary text-white shadow-sm' : 'text-on-surface-variant hover:bg-surface-dim'}">ENG</a>
+                            </div>
+                        </c:if>
+                    </div>
                 </div>
             </div>
 
@@ -401,6 +414,7 @@
             </c:if>
 
             <div id="printSongHeader" style="display:none;">
+                <p style="font-size:9px;font-weight:800;margin:0 0 2px 0;text-transform:uppercase;letter-spacing:0.12em;color:#6b7280">#<c:out value="${song.songNumber}"/></p>
                 <h1 style="font-size: 20px; font-weight: 800; margin: 0 0 2px 0;"><c:out value="${song.title}"/></h1>
                 <p style="font-size: 11px; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.08em;"><c:out value="${song.artist}"/></p>
             </div>

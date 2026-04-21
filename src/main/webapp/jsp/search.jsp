@@ -15,7 +15,9 @@
         <!-- Search Bar -->
         <div class="w-full max-w-3xl mb-12">
             <form action="${pageContext.request.contextPath}/search" method="get" class="relative group">
-                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold">search</span>
+                <button type="submit" class="absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10 hover:text-primary transition-colors focus:outline-none">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
                 <input name="q" class="w-full pl-12 pr-4 py-4 bg-surface-container-low border border-outline-variant/30 rounded-xl text-md focus:ring-2 focus:ring-primary focus:border-primary transition-all font-medium placeholder:text-outline shadow-sm" placeholder="Search by title, artist, or lyrics..." type="text" value="<c:out value="${searchQuery}"/>" autocomplete="off"/>
             </form>
         </div>
@@ -34,8 +36,11 @@
                                aria-label="View <c:out value="${songResult['title']}"/> by <c:out value="${songResult['artist']}"/>">
                                 <div class="space-y-4">
                                     <div class="flex justify-between items-start">
-                                        <h2 class="text-xl font-headline font-bold text-on-surface leading-tight group-hover:text-primary transition-colors"><c:out value="${songResult['title']}"/></h2>
-                                        <span class="material-symbols-outlined text-outline/40 group-hover:text-primary/70 transition-colors">play_circle</span>
+                                        <div class="flex-grow">
+                                            <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase;display:block;margin-bottom:4px">#<c:out value="${songResult['songNumber']}"/></span>
+                                            <h2 class="text-xl font-headline font-bold text-on-surface leading-tight group-hover:text-primary transition-colors"><c:out value="${songResult['title']}"/></h2>
+                                        </div>
+                                        <span class="material-symbols-outlined text-outline/40 group-hover:text-primary/70 transition-colors flex-shrink-0 ml-2">play_circle</span>
                                     </div>
                                     <p class="text-sm font-semibold text-primary/80 tracking-wide uppercase"><c:out value="${songResult['artist']}"/></p>
                                     

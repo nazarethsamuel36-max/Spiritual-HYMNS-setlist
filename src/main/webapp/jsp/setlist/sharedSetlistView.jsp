@@ -32,10 +32,13 @@
         </div>
         <h1 class="text-5xl md:text-6xl font-black tracking-tight text-on-surface uppercase font-headline mb-6">${setlist.title}</h1>
         
-        <div class="no-print mt-4">
-            <button onclick="window.print()" class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-white px-6 py-3 rounded-xl font-bold shadow-md hover:shadow-lg transition-all">
+        <div class="no-print mt-4 flex justify-center gap-4">
+            <button onclick="window.print()" class="inline-flex items-center gap-2 bg-surface-container text-on-surface px-6 py-3 rounded-xl font-bold shadow-sm hover:bg-surface-dim transition-all">
                 <span class="material-symbols-outlined text-sm">print</span> Print Setlist
             </button>
+            <a href="${pageContext.request.contextPath}/setlist/shared/performance/${setlist.shareToken}" class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-xl font-bold shadow-md hover:opacity-80 transition-all text-decoration-none" style="text-decoration: none;">
+                <span class="material-symbols-outlined text-sm">play_arrow</span> Performance Mode
+            </a>
         </div>
     </div>
 

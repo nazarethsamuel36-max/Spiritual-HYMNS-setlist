@@ -240,7 +240,7 @@ public class SetlistDAO {
     public List<SetlistSong> getSongsInSetlist(int setlistId) {
         List<SetlistSong> list = new ArrayList<>();
         String sql = "SELECT ss.id, ss.setlist_id, ss.song_id, ss.position, ss.creator_key, ss.creator_capo, ss.is_header, ss.header_text, " +
-                     "s.title as song_title, s.artist as song_artist, s.chords, s.original_key " +
+                     "s.title as song_title, s.artist as song_artist, s.chords, s.original_key, s.song_number " +
                      "FROM setlist_songs ss " +
                      "LEFT JOIN songs s ON ss.song_id = s.id " +
                      "WHERE ss.setlist_id = ? " +
@@ -269,6 +269,7 @@ public class SetlistDAO {
                         ss.setSongArtist(rs.getString("song_artist"));
                         ss.setOriginalKey(rs.getString("original_key"));
                         ss.setLyricsChords(rs.getString("chords"));
+                        ss.setSongNumber(rs.getInt("song_number"));
                     }
                     
                     list.add(ss);

@@ -39,6 +39,9 @@
             <button onclick="generateShareLink()" class="inline-flex items-center gap-2 bg-surface-container text-on-surface px-5 py-2.5 rounded-xl font-bold hover:bg-surface-dim transition-colors border border-surface-dim">
                 <span class="material-symbols-outlined text-sm">share</span> Share Link
             </button>
+            <a href="<%=request.getContextPath()%>/setlist/<%=s.getId()%>/performance" class="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-xl font-bold hover:opacity-80 transition-all border border-black shadow-lg text-decoration-none" style="text-decoration: none;">
+                <span class="material-symbols-outlined text-sm">play_arrow</span> Performance Mode
+            </a>
             <% if (s.getShareToken() != null && !s.getShareToken().isEmpty()) { %>
             <a href="<%=request.getContextPath()%>/setlist/shared/<%=s.getShareToken()%>" target="_blank" class="inline-flex items-center gap-2 bg-surface-container text-on-surface px-5 py-2.5 rounded-xl font-bold hover:bg-surface-dim transition-colors border border-surface-dim text-decoration-none" style="text-decoration: none;">
                 <span class="material-symbols-outlined text-sm">print</span> Print View
@@ -99,6 +102,7 @@
                     </div>
                     <div class="w-[40px] text-center font-bold text-outline-variant text-sm"><%=songCounter%></div>
                     <div class="flex-grow min-w-0 pr-4">
+                        <span style="font-size:9px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase;display:block">#<%=ss.getSongNumber()%></span>
                         <a href="<%=request.getContextPath()%>/song?id=<%=ss.getSongId()%>" target="_blank" class="font-bold text-on-surface hover:text-primary transition-colors text-lg truncate block text-decoration-none" style="text-decoration: none;"><%=ss.getSongTitle()%></a>
                         <div class="text-on-surface-variant text-sm truncate"><%=ss.getSongArtist()%></div>
                     </div>
@@ -252,7 +256,7 @@
                 var song = results[i];
                 var div = document.createElement('div');
                 div.className = 'p-4 border-b border-surface-dim hover:bg-surface-container-low cursor-pointer flex justify-between items-center';
-                div.innerHTML = '<div><div class="font-bold">' + song.title + '</div><div class="text-sm text-slate-400">' + song.artist + '</div></div> <button class="bg-primary text-white p-2 rounded-lg">+</button>';
+                div.innerHTML = '<div><span style="font-size:9px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase">#' + (song.songNumber || '') + '</span><div class="font-bold">' + song.title + '</div><div class="text-sm text-slate-400">' + song.artist + '</div></div> <button class="bg-primary text-white p-2 rounded-lg">+</button>';
                 (function(sid, skey) {
                     div.onclick = function() { addSong(sid, skey); };
                 })(song.id, song.key || 'C');

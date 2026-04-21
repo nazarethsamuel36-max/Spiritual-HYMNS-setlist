@@ -102,6 +102,13 @@
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- ICU4J for Transliteration -->
+        <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <version>74.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -122,6 +129,14 @@
                     <source>17</source>
                     <target>17</target>
                     <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <mainClass>com.worship.util.ChordDataImporter</mainClass>
                 </configuration>
             </plugin>
         </plugins>

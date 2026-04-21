@@ -1,6 +1,8 @@
 package com.worship.dao;
 
 import com.worship.model.Song;
+import com.worship.model.Section;
+import com.worship.model.SongLine;
 import com.worship.util.DBConnection;
 
 import java.sql.*;
@@ -16,6 +18,11 @@ import java.util.Set;
  * Handles all CRUD operations, search, filtering, and hashtag associations.
  */
 public class SongDAO {
+    private static final String ACTIVE_BOOK = "prime_songbook";
+
+    private String getVisibilityFilter() {
+        return " book = '" + ACTIVE_BOOK + "' AND is_active = TRUE ";
+    }
 
     /**
      * Get all active songs from the database (Default Sort).
@@ -23,7 +30,7 @@ public class SongDAO {
      */
     public List<Song> getAllSongs() {
         List<Song> songs = new ArrayList<>();
-        String sql = "SELECT * FROM songs WHERE is_active = TRUE ORDER BY song_number, title";
+        String sql = "SELECT * FROM songs WHERE " + getVisibilityFilter() + " ORDER BY song_number, title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);
@@ -57,8 +64,8 @@ public class SongDAO {
         String sql = "SELECT s.* FROM songs s "
                 + "LEFT JOIN (SELECT song_id, COUNT(*) as view_count FROM song_views GROUP BY song_id) v "
                 + "ON s.id = v.song_id "
-                + "WHERE s.is_active = TRUE "
-                + "ORDER BY COALESCE(v.view_count, 0) DESC, s.title";
+                + "WHERE s." + getVisibilityFilter()
+                + " ORDER BY COALESCE(v.view_count, 0) DESC, s.title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);
@@ -87,7 +94,7 @@ public class SongDAO {
      * Get a single song by its ID.
      */
     public Song getSongById(int id) {
-        String sql = "SELECT * FROM songs WHERE id = ?";
+        String sql = "SELECT * FROM songs WHERE id = ? AND " + getVisibilityFilter();
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -97,6 +104,7 @@ public class SongDAO {
                 if (rs.next()) {
                     Song song = mapResultSetToSong(rs);
                     song.setHashtags(getHashtagsForSong(song.getId()));
+                    song.setSections(getSectionsForSong(song.getId()));
                     return song;
                 }
             }
@@ -107,12 +115,38 @@ public class SongDAO {
     }
 
     /**
+     * Get songs by their song number.
+     * Returns a List to maintain consistency with search interface.
+     */
+    public List<Song> getSongsByNumber(int songNumber) {
+        List<Song> songs = new ArrayList<>();
+        String sql = "SELECT * FROM songs WHERE song_number = ? AND " + getVisibilityFilter();
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, songNumber);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Song song = mapResultSetToSong(rs);
+                    song.setHashtags(getHashtagsForSong(song.getId()));
+                    song.setSections(getSectionsForSong(song.getId()));
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return songs;
+    }
+
+    /**
      * Search songs by title, artist, lyrics_original, or lyrics_roman using LIKE.
      * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
     public List<Song> searchSongs(String query) {
         List<Song> songs = new ArrayList<>();
-        String sql = "SELECT * FROM songs WHERE is_active = TRUE AND ("
+        String sql = "SELECT * FROM songs WHERE " + getVisibilityFilter() + " AND ("
                 + "title LIKE CONCAT('%', ?, '%') "
                 + "OR artist LIKE CONCAT('%', ?, '%') "
                 + "OR lyrics_original LIKE CONCAT('%', ?, '%') "
@@ -157,7 +191,7 @@ public class SongDAO {
         String sql = "SELECT s.* FROM songs s "
                 + "INNER JOIN song_hashtags sh ON s.id = sh.song_id "
                 + "INNER JOIN hashtags h ON sh.hashtag_id = h.id "
-                + "WHERE s.is_active = TRUE AND h.name = ? "
+                + "WHERE s." + getVisibilityFilter() + " AND h.name = ? "
                 + "ORDER BY s.title";
 
         try (Connection conn = DBConnection.getConnection();
@@ -191,7 +225,7 @@ public class SongDAO {
      */
     public List<Song> getSongsByUser(int userId) {
         List<Song> songs = new ArrayList<>();
-        String sql = "SELECT * FROM songs WHERE is_active = TRUE AND created_by = ? ORDER BY title";
+        String sql = "SELECT * FROM songs WHERE " + getVisibilityFilter() + " AND created_by = ? ORDER BY title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -224,7 +258,7 @@ public class SongDAO {
      */
     public List<Song> getSongsByLanguage(String language) {
         List<Song> songs = new ArrayList<>();
-        String sql = "SELECT * FROM songs WHERE is_active = TRUE AND language = ? ORDER BY title";
+        String sql = "SELECT * FROM songs WHERE " + getVisibilityFilter() + " AND language = ? ORDER BY title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -257,7 +291,7 @@ public class SongDAO {
      */
     public List<Song> getSongsByKey(String key) {
         List<Song> songs = new ArrayList<>();
-        String sql = "SELECT * FROM songs WHERE is_active = TRUE AND original_key = ? ORDER BY title";
+        String sql = "SELECT * FROM songs WHERE " + getVisibilityFilter() + " AND original_key = ? ORDER BY title";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -301,7 +335,7 @@ public class SongDAO {
         String sql = "SELECT s.*, COUNT(sh.hashtag_id) as match_count FROM songs s "
                 + "INNER JOIN song_hashtags sh ON s.id = sh.song_id "
                 + "INNER JOIN hashtags h ON sh.hashtag_id = h.id "
-                + "WHERE s.is_active = TRUE AND h.name IN (" + placeholders + ") "
+                + "WHERE s." + getVisibilityFilter() + " AND h.name IN (" + placeholders + ") "
                 + "GROUP BY s.id ORDER BY match_count DESC, s.title";
 
         try (Connection conn = DBConnection.getConnection();
@@ -338,8 +372,8 @@ public class SongDAO {
     public boolean addSong(Song song) {
         String sql = "INSERT INTO songs (song_number, title, artist, composer, copyright, language, "
                 + "lyrics_original, lyrics_roman, chords, notes, original_key, capo, bpm, "
-                + "time_signature, structure, audio_url, created_by, is_active) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, TRUE)";
+                + "time_signature, structure, audio_url, created_by, is_active, book) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, TRUE, ?)";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
@@ -361,6 +395,7 @@ public class SongDAO {
             ps.setString(15, song.getStructure());
             ps.setString(16, song.getAudioUrl());
             ps.setInt(17, song.getCreatedBy());
+            ps.setString(18, song.getBook());
 
             int rows = ps.executeUpdate();
             if (rows > 0) {
@@ -383,7 +418,7 @@ public class SongDAO {
     public boolean updateSong(Song song) {
         String sql = "UPDATE songs SET song_number=?, title=?, artist=?, composer=?, copyright=?, "
                 + "language=?, lyrics_original=?, lyrics_roman=?, chords=?, notes=?, "
-                + "original_key=?, capo=?, bpm=?, time_signature=?, structure=?, audio_url=? "
+                + "original_key=?, capo=?, bpm=?, time_signature=?, structure=?, audio_url=?, book=? "
                 + "WHERE id=?";
 
         try (Connection conn = DBConnection.getConnection();
@@ -405,7 +440,8 @@ public class SongDAO {
             ps.setString(14, song.getTimeSignature());
             ps.setString(15, song.getStructure());
             ps.setString(16, song.getAudioUrl());
-            ps.setInt(17, song.getId());
+            ps.setString(17, song.getBook());
+            ps.setInt(18, song.getId());
 
             return ps.executeUpdate() > 0;
         } catch (SQLException e) {
@@ -429,6 +465,156 @@ public class SongDAO {
             e.printStackTrace();
         }
         return false;
+    }
+
+    /**
+     * Get sections for a specific song, ordered by their sequence.
+     */
+    public List<Section> getSectionsForSong(int songId) {
+        List<Section> sections = new ArrayList<>();
+        String sql = "SELECT * FROM sections WHERE song_id = ? ORDER BY section_order";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, songId);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Section section = new Section();
+                    section.setId(rs.getInt("id"));
+                    section.setSongId(rs.getInt("song_id"));
+                    section.setType(rs.getString("type"));
+                    section.setLabel(rs.getString("label"));
+                    section.setSectionOrder(rs.getInt("section_order"));
+                    section.setLines(getLinesForSection(section.getId()));
+                    sections.add(section);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return sections;
+    }
+
+    /**
+     * Get lines for a specific section, ordered by their sequence.
+     */
+    public List<SongLine> getLinesForSection(int sectionId) {
+        List<SongLine> lines = new ArrayList<>();
+        String sql = "SELECT * FROM song_lines WHERE section_id = ? ORDER BY line_order";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, sectionId);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    SongLine line = new SongLine();
+                    line.setId(rs.getInt("id"));
+                    line.setSectionId(rs.getInt("section_id"));
+                    line.setText(rs.getString("line_text"));
+                    line.setLineOrder(rs.getInt("line_order"));
+                    lines.add(line);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return lines;
+    }
+
+    /**
+     * Check if a song exists with the given song_number, language, and book.
+     */
+    public boolean songExists(int songNumber, String language, String book) {
+        String sql = "SELECT COUNT(*) FROM songs WHERE song_number = ? AND language = ? AND book = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setInt(1, songNumber);
+            ps.setString(2, language);
+            ps.setString(3, book);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(1) > 0;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    /**
+     * Advanced Add: Inserts a song and all its sections/lines in one transaction.
+     */
+    public boolean addSongWithStructure(Song song) {
+        Connection conn = null;
+        try {
+            conn = DBConnection.getConnection();
+            conn.setAutoCommit(false);
+
+            // 1. Insert Song
+            String songSql = "INSERT INTO songs (song_number, title, language, created_by, is_active, book) "
+                    + "VALUES (?, ?, ?, ?, TRUE, ?)";
+            try (PreparedStatement ps = conn.prepareStatement(songSql, Statement.RETURN_GENERATED_KEYS)) {
+                ps.setInt(1, song.getSongNumber());
+                ps.setString(2, song.getTitle());
+                ps.setString(3, song.getLanguage());
+                ps.setInt(4, song.getCreatedBy());
+                ps.setString(5, song.getBook());
+
+                if (ps.executeUpdate() == 0) throw new SQLException("Failed to insert song");
+                try (ResultSet keys = ps.getGeneratedKeys()) {
+                    if (keys.next()) song.setId(keys.getInt(1));
+                    else throw new SQLException("No ID generated for song");
+                }
+            }
+
+            // 2. Insert Sections
+            String secSql = "INSERT INTO sections (song_id, type, label, section_order) VALUES (?, ?, ?, ?)";
+            String lineSql = "INSERT INTO song_lines (section_id, line_text, line_order) VALUES (?, ?, ?)";
+
+            try (PreparedStatement secPs = conn.prepareStatement(secSql, Statement.RETURN_GENERATED_KEYS);
+                 PreparedStatement linePs = conn.prepareStatement(lineSql)) {
+
+                for (int i = 0; i < song.getSections().size(); i++) {
+                    Section sec = song.getSections().get(i);
+                    secPs.setInt(1, song.getId());
+                    secPs.setString(2, sec.getType());
+                    secPs.setString(3, sec.getLabel());
+                    secPs.setInt(4, i + 1);
+                    secPs.executeUpdate();
+
+                    int sectionId;
+                    try (ResultSet secKeys = secPs.getGeneratedKeys()) {
+                        if (secKeys.next()) sectionId = secKeys.getInt(1);
+                        else throw new SQLException("No ID generated for section");
+                    }
+
+                    for (int j = 0; j < sec.getLines().size(); j++) {
+                        SongLine line = sec.getLines().get(j);
+                        linePs.setInt(1, sectionId);
+                        linePs.setString(2, line.getText());
+                        linePs.setInt(3, j + 1);
+                        linePs.addBatch();
+                    }
+                    linePs.executeBatch();
+                }
+            }
+
+            conn.commit();
+            return true;
+        } catch (SQLException e) {
+            if (conn != null) {
+                try { conn.rollback(); } catch (SQLException ex) { ex.printStackTrace(); }
+            }
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (conn != null) {
+                try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
+            }
+        }
     }
 
     /**
@@ -540,7 +726,7 @@ public class SongDAO {
      * Get total count of active songs.
      */
     public int getTotalSongCount() {
-        String sql = "SELECT COUNT(*) FROM songs WHERE is_active = TRUE";
+        String sql = "SELECT COUNT(*) FROM songs WHERE " + getVisibilityFilter();
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);
@@ -561,7 +747,7 @@ public class SongDAO {
      */
     public Set<String> getAllSongTitles() {
         Set<String> titles = new HashSet<>();
-        String sql = "SELECT title FROM songs";
+        String sql = "SELECT title FROM songs WHERE " + getVisibilityFilter();
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql);
@@ -601,6 +787,7 @@ public class SongDAO {
         song.setCreatedBy(rs.getInt("created_by"));
         song.setCreatedAt(rs.getTimestamp("created_at"));
         song.setActive(rs.getBoolean("is_active"));
+        song.setBook(rs.getString("book"));
         return song;
     }
 }

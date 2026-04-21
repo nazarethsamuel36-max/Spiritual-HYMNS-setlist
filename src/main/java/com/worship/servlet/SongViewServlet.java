@@ -94,8 +94,66 @@ public class SongViewServlet extends HttpServlet {
             }
 
             // Parse into authoritative structured format
+            java.util.List<com.worship.model.StructuredLine> structuredLines = null;
+
             if (song.getChords() != null && !song.getChords().isEmpty()) {
-                java.util.List<com.worship.model.StructuredLine> structuredLines = ChordParser.parseStructuredSong(song.getChords());
+                // Priority 1: User-edited or legacy flat-text chords
+                structuredLines = ChordParser.parseStructuredSong(song.getChords());
+            } else if (song.getSections() != null && !song.getSections().isEmpty()) {
+                // Priority 2 & 3: Structured relational data (with or without mapped chords)
+                com.worship.dao.LineChordDAO lineChordDAO = new com.worship.dao.LineChordDAO();
+                java.util.Map<Integer, java.util.List<com.worship.model.ChordOccurrence>> chordMap =
+                    lineChordDAO.getChordsForSong(songId);
+
+                structuredLines = new java.util.ArrayList<>();
+                for (com.worship.model.Section section : song.getSections()) {
+                    // Add section label as a special line {} for app.js to detect
+                    structuredLines.add(new com.worship.model.StructuredLine("{" + section.getLabel() + "}"));
+                    for (com.worship.model.SongLine line : section.getLines()) {
+                        com.worship.model.StructuredLine sl = new com.worship.model.StructuredLine(line.getText());
+                        // Priority 2: Attach mapped chords from alignment pipeline
+                        java.util.List<com.worship.model.ChordOccurrence> lineChords = chordMap.get(line.getId());
+                        if (lineChords != null && !lineChords.isEmpty()) {
+                            sl.setChords(lineChords);
+                        }
+                        // Priority 3: No chords — plain text (StructuredLine defaults to empty chord list)
+                        structuredLines.add(sl);
+                    }
+                }
+            }
+
+            // NEW: Transliteration Injection Point & Session Preference
+            String scriptFormat = request.getParameter("script");
+            if (scriptFormat != null) {
+                // If explicitly requested, save to session
+                request.getSession().setAttribute("preferredScript", scriptFormat);
+            } else {
+                // Otherwise retrieve from session
+                scriptFormat = (String) request.getSession().getAttribute("preferredScript");
+            }
+            // Set flag for JSP to use
+            request.setAttribute("isRomanScript", "roman".equalsIgnoreCase(scriptFormat));
+            
+            boolean isRomanScript = "roman".equalsIgnoreCase(scriptFormat);
+            String lang = song.getLanguage() != null ? song.getLanguage().trim() : "";
+            boolean isMarathi = "marathi".equalsIgnoreCase(lang) || "mr".equalsIgnoreCase(lang);
+
+            if (isRomanScript && isMarathi) {
+                com.worship.service.TransliterationService transliteService = new com.worship.service.TransliterationService();
+                
+                // 1. Transliterate structured parsing
+                if (structuredLines != null) {
+                    structuredLines = transliteService.transliterateStructuredLines(structuredLines);
+                }
+                
+                // 2. Transliterate fallback lyrics if present
+                if (song.getLyricsOriginal() != null && !song.getLyricsOriginal().isEmpty()) {
+                    song.setLyricsOriginal(transliteService.transliterateToEnglish(song.getLyricsOriginal()));
+                }
+            }
+
+
+            if (structuredLines != null) {
                 try {
                     com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
                     String json = mapper.writeValueAsString(structuredLines);

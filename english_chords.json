@@ -1,0 +1,901 @@
+[ {
+  "songNumber" : 1,
+  "title" : "SPIRIT OF THE LIVING GOD",
+  "lineChords" : [ {
+    "lineId" : 1,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 1,
+    "chord" : "G/D",
+    "position" : 14
+  }, {
+    "lineId" : 1,
+    "chord" : "D",
+    "position" : 21
+  }, {
+    "lineId" : 2,
+    "chord" : "A",
+    "position" : 0
+  }, {
+    "lineId" : 2,
+    "chord" : "D",
+    "position" : 15
+  }, {
+    "lineId" : 3,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 3,
+    "chord" : "D/F#",
+    "position" : 10
+  }, {
+    "lineId" : 3,
+    "chord" : "Em",
+    "position" : 19
+  }, {
+    "lineId" : 3,
+    "chord" : "A",
+    "position" : 25
+  }, {
+    "lineId" : 3,
+    "chord" : "D",
+    "position" : 27
+  } ]
+}, {
+  "songNumber" : 2,
+  "title" : "SET MY SPIRIT FREE",
+  "lineChords" : [ {
+    "lineId" : 7,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 7,
+    "chord" : "C",
+    "position" : 28
+  }, {
+    "lineId" : 7,
+    "chord" : "Am",
+    "position" : 28
+  }, {
+    "lineId" : 9,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 9,
+    "chord" : "C",
+    "position" : 30
+  }, {
+    "lineId" : 9,
+    "chord" : "G",
+    "position" : 35
+  } ]
+}, {
+  "songNumber" : 3,
+  "title" : "SWEEP OVER MY SOUL",
+  "lineChords" : [ {
+    "lineId" : 14,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 14,
+    "chord" : "G",
+    "position" : 14
+  }, {
+    "lineId" : 15,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 15,
+    "chord" : "G",
+    "position" : 14
+  }, {
+    "lineId" : 15,
+    "chord" : "A",
+    "position" : 28
+  }, {
+    "lineId" : 18,
+    "chord" : "D",
+    "position" : 13
+  }, {
+    "lineId" : 18,
+    "chord" : "A",
+    "position" : 27
+  } ]
+}, {
+  "songNumber" : 4,
+  "title" : "THE WINDOWS OF HEAVEN",
+  "lineChords" : [ {
+    "lineId" : 19,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 20,
+    "chord" : "F",
+    "position" : 0
+  }, {
+    "lineId" : 20,
+    "chord" : "C",
+    "position" : 27
+  }, {
+    "lineId" : 21,
+    "chord" : "G",
+    "position" : 0
+  } ]
+}, {
+  "songNumber" : 5,
+  "title" : "BLESS THE LORD O MY SOUL",
+  "lineChords" : [ {
+    "lineId" : 27,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 28,
+    "chord" : "F",
+    "position" : 0
+  }, {
+    "lineId" : 28,
+    "chord" : "C",
+    "position" : 22
+  }, {
+    "lineId" : 29,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 29,
+    "chord" : "F",
+    "position" : 21
+  } ]
+}, {
+  "songNumber" : 6,
+  "title" : "GREAT IS THE LORD",
+  "lineChords" : [ {
+    "lineId" : 38,
+    "chord" : "E",
+    "position" : 0
+  }, {
+    "lineId" : 38,
+    "chord" : "B",
+    "position" : 22
+  }, {
+    "lineId" : 40,
+    "chord" : "F#m",
+    "position" : 7
+  }, {
+    "lineId" : 40,
+    "chord" : "B",
+    "position" : 19
+  }, {
+    "lineId" : 40,
+    "chord" : "E",
+    "position" : 22
+  } ]
+}, {
+  "songNumber" : 7,
+  "title" : "I KNOW IT WAS THE BLOOD",
+  "lineChords" : [ {
+    "lineId" : 51,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 51,
+    "chord" : "G",
+    "position" : 18
+  }, {
+    "lineId" : 51,
+    "chord" : "C",
+    "position" : 31
+  }, {
+    "lineId" : 53,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 53,
+    "chord" : "F",
+    "position" : 23
+  }, {
+    "lineId" : 53,
+    "chord" : "C",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 8,
+  "title" : "BURN BURN HOLY SPIRIT",
+  "lineChords" : [ {
+    "lineId" : 57,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 57,
+    "chord" : "C",
+    "position" : 25
+  }, {
+    "lineId" : 57,
+    "chord" : "G",
+    "position" : 33
+  }, {
+    "lineId" : 58,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 58,
+    "chord" : "C",
+    "position" : 7
+  }, {
+    "lineId" : 58,
+    "chord" : "D",
+    "position" : 16
+  } ]
+}, {
+  "songNumber" : 9,
+  "title" : "HIS NAME IS WONDERFUL",
+  "lineChords" : [ {
+    "lineId" : 65,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 65,
+    "chord" : "D",
+    "position" : 21
+  }, {
+    "lineId" : 65,
+    "chord" : "G",
+    "position" : 22
+  }, {
+    "lineId" : 69,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 69,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 69,
+    "chord" : "G",
+    "position" : 12
+  } ]
+}, {
+  "songNumber" : 10,
+  "title" : "FROM GLORY TO GLORY",
+  "lineChords" : [ {
+    "lineId" : 78,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 78,
+    "chord" : "C",
+    "position" : 25
+  }, {
+    "lineId" : 78,
+    "chord" : "G",
+    "position" : 32
+  }, {
+    "lineId" : 80,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 80,
+    "chord" : "D",
+    "position" : 13
+  } ]
+}, {
+  "songNumber" : 11,
+  "title" : "I'LL PRAISE HIS NAME",
+  "lineChords" : [ {
+    "lineId" : 89,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 89,
+    "chord" : "C",
+    "position" : 25
+  }, {
+    "lineId" : 89,
+    "chord" : "G",
+    "position" : 29
+  }, {
+    "lineId" : 90,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 90,
+    "chord" : "D",
+    "position" : 25
+  }, {
+    "lineId" : 90,
+    "chord" : "G",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 12,
+  "title" : "IT'S A LOVELY LOVELY NAME",
+  "lineChords" : [ {
+    "lineId" : 94,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 94,
+    "chord" : "F",
+    "position" : 23
+  }, {
+    "lineId" : 95,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 95,
+    "chord" : "G",
+    "position" : 12
+  } ]
+}, {
+  "songNumber" : 13,
+  "title" : "IN THE NAME OF JESUS",
+  "lineChords" : [ {
+    "lineId" : 104,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 104,
+    "chord" : "F",
+    "position" : 10
+  }, {
+    "lineId" : 104,
+    "chord" : "C",
+    "position" : 15
+  }, {
+    "lineId" : 106,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 106,
+    "chord" : "G",
+    "position" : 12
+  } ]
+}, {
+  "songNumber" : 14,
+  "title" : "ALL OVER THE WORLD",
+  "lineChords" : [ {
+    "lineId" : 114,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 114,
+    "chord" : "C",
+    "position" : 17
+  }, {
+    "lineId" : 114,
+    "chord" : "G",
+    "position" : 18
+  }, {
+    "lineId" : 116,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 116,
+    "chord" : "D",
+    "position" : 27
+  }, {
+    "lineId" : 116,
+    "chord" : "G",
+    "position" : 34
+  } ]
+}, {
+  "songNumber" : 15,
+  "title" : "REJOICE IN THE LORD",
+  "lineChords" : [ {
+    "lineId" : 124,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 124,
+    "chord" : "C",
+    "position" : 20
+  }, {
+    "lineId" : 125,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 125,
+    "chord" : "G",
+    "position" : 18
+  } ]
+}, {
+  "songNumber" : 16,
+  "title" : "I'LL SAY \"YES\"",
+  "lineChords" : [ {
+    "lineId" : 128,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 128,
+    "chord" : "C",
+    "position" : 14
+  }, {
+    "lineId" : 128,
+    "chord" : "G",
+    "position" : 19
+  }, {
+    "lineId" : 129,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 129,
+    "chord" : "D",
+    "position" : 13
+  } ]
+}, {
+  "songNumber" : 17,
+  "title" : "WE ARE GATHERING TOGETHER",
+  "lineChords" : [ {
+    "lineId" : 134,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 134,
+    "chord" : "C",
+    "position" : 19
+  }, {
+    "lineId" : 134,
+    "chord" : "G",
+    "position" : 29
+  }, {
+    "lineId" : 136,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 136,
+    "chord" : "D",
+    "position" : 19
+  }, {
+    "lineId" : 136,
+    "chord" : "G",
+    "position" : 30
+  } ]
+}, {
+  "songNumber" : 18,
+  "title" : "TO BE LIKE JESUS",
+  "lineChords" : [ {
+    "lineId" : 139,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 139,
+    "chord" : "F",
+    "position" : 18
+  }, {
+    "lineId" : 140,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 140,
+    "chord" : "G",
+    "position" : 22
+  } ]
+}, {
+  "songNumber" : 19,
+  "title" : "IT'S NOT BY MIGHT",
+  "lineChords" : [ {
+    "lineId" : 148,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 148,
+    "chord" : "C",
+    "position" : 19
+  }, {
+    "lineId" : 148,
+    "chord" : "G",
+    "position" : 31
+  }, {
+    "lineId" : 149,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 149,
+    "chord" : "D",
+    "position" : 18
+  }, {
+    "lineId" : 149,
+    "chord" : "G",
+    "position" : 28
+  } ]
+}, {
+  "songNumber" : 20,
+  "title" : "I'VE FOUND A NEW WAY OF LIVING",
+  "lineChords" : [ {
+    "lineId" : 154,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 154,
+    "chord" : "C",
+    "position" : 24
+  }, {
+    "lineId" : 155,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 155,
+    "chord" : "D",
+    "position" : 24
+  } ]
+}, {
+  "songNumber" : 21,
+  "title" : "WITH MY HANDS LIFTED UP",
+  "lineChords" : [ {
+    "lineId" : 165,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 165,
+    "chord" : "F#m",
+    "position" : 8
+  }, {
+    "lineId" : 165,
+    "chord" : "Bm",
+    "position" : 21
+  }, {
+    "lineId" : 166,
+    "chord" : "A",
+    "position" : 7
+  }, {
+    "lineId" : 166,
+    "chord" : "D",
+    "position" : 25
+  } ]
+}, {
+  "songNumber" : 22,
+  "title" : "I WILL SING OF THE MERCIES OF THE LORD",
+  "lineChords" : [ {
+    "lineId" : 174,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 174,
+    "chord" : "F",
+    "position" : 37
+  }, {
+    "lineId" : 176,
+    "chord" : "G",
+    "position" : 7
+  }, {
+    "lineId" : 176,
+    "chord" : "C",
+    "position" : 20
+  } ]
+}, {
+  "songNumber" : 23,
+  "title" : "THEREFORE THE REDEEMED OF THE LORD",
+  "lineChords" : [ {
+    "lineId" : 185,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 185,
+    "chord" : "G7",
+    "position" : 16
+  }, {
+    "lineId" : 185,
+    "chord" : "C",
+    "position" : 33
+  }, {
+    "lineId" : 187,
+    "chord" : "G",
+    "position" : 14
+  }, {
+    "lineId" : 187,
+    "chord" : "D7",
+    "position" : 27
+  } ]
+}, {
+  "songNumber" : 24,
+  "title" : "COVER ME COVER ME",
+  "lineChords" : [ {
+    "lineId" : 199,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 199,
+    "chord" : "Bm",
+    "position" : 10
+  }, {
+    "lineId" : 200,
+    "chord" : "Em",
+    "position" : 0
+  }, {
+    "lineId" : 200,
+    "chord" : "A7",
+    "position" : 25
+  }, {
+    "lineId" : 200,
+    "chord" : "D",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 25,
+  "title" : "LIFT JESUS HIGHER",
+  "lineChords" : [ {
+    "lineId" : 210,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 210,
+    "chord" : "G",
+    "position" : 17
+  }, {
+    "lineId" : 212,
+    "chord" : "A7",
+    "position" : 0
+  }, {
+    "lineId" : 212,
+    "chord" : "D",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 26,
+  "title" : "HE IS THE SAME UNCHANGING JESUS",
+  "lineChords" : [ {
+    "lineId" : 216,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 217,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 217,
+    "chord" : "D",
+    "position" : 18
+  } ]
+}, {
+  "songNumber" : 27,
+  "title" : "JEHOVAH JIREH",
+  "lineChords" : [ {
+    "lineId" : 222,
+    "chord" : "Em",
+    "position" : 0
+  }, {
+    "lineId" : 222,
+    "chord" : "Am",
+    "position" : 16
+  }, {
+    "lineId" : 223,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 223,
+    "chord" : "D",
+    "position" : 13
+  }, {
+    "lineId" : 223,
+    "chord" : "Em",
+    "position" : 28
+  } ]
+}, {
+  "songNumber" : 28,
+  "title" : "FROM THE RISING OF THE SUN",
+  "lineChords" : [ {
+    "lineId" : 231,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 231,
+    "chord" : "D",
+    "position" : 23
+  }, {
+    "lineId" : 232,
+    "chord" : "C",
+    "position" : 7
+  }, {
+    "lineId" : 232,
+    "chord" : "D",
+    "position" : 13
+  }, {
+    "lineId" : 232,
+    "chord" : "G",
+    "position" : 25
+  } ]
+}, {
+  "songNumber" : 29,
+  "title" : "EVERYBODY OUGHT TO KNOW",
+  "lineChords" : [ {
+    "lineId" : 241,
+    "chord" : "F",
+    "position" : 0
+  }, {
+    "lineId" : 241,
+    "chord" : "Bb",
+    "position" : 19
+  }, {
+    "lineId" : 242,
+    "chord" : "F",
+    "position" : 4
+  }, {
+    "lineId" : 242,
+    "chord" : "C",
+    "position" : 10
+  } ]
+}, {
+  "songNumber" : 30,
+  "title" : "SING ALLELUJAH TO THE LORD",
+  "lineChords" : [ {
+    "lineId" : 247,
+    "chord" : "Bm",
+    "position" : 0
+  }, {
+    "lineId" : 247,
+    "chord" : "A",
+    "position" : 9
+  }, {
+    "lineId" : 247,
+    "chord" : "Bm",
+    "position" : 22
+  }, {
+    "lineId" : 247,
+    "chord" : "F#m",
+    "position" : 33
+  } ]
+}, {
+  "songNumber" : 31,
+  "title" : "I WILL SING UNTO THE LORD",
+  "lineChords" : [ {
+    "lineId" : 258,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 258,
+    "chord" : "C",
+    "position" : 21
+  }, {
+    "lineId" : 258,
+    "chord" : "G",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 32,
+  "title" : "I WILL ENTER HIS GATES",
+  "lineChords" : [ {
+    "lineId" : 268,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 268,
+    "chord" : "C",
+    "position" : 25
+  }, {
+    "lineId" : 268,
+    "chord" : "G",
+    "position" : 26
+  } ]
+}, {
+  "songNumber" : 33,
+  "title" : "COME AND PRAISE HIM",
+  "lineChords" : [ {
+    "lineId" : 278,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 278,
+    "chord" : "F",
+    "position" : 18
+  }, {
+    "lineId" : 278,
+    "chord" : "C",
+    "position" : 18
+  } ]
+}, {
+  "songNumber" : 34,
+  "title" : "COME INTO HIS PRESENCE SINGING",
+  "lineChords" : [ {
+    "lineId" : 283,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 283,
+    "chord" : "F",
+    "position" : 23
+  }, {
+    "lineId" : 283,
+    "chord" : "C",
+    "position" : 29
+  } ]
+}, {
+  "songNumber" : 35,
+  "title" : "BLESS THE LORD O MY SOUL",
+  "lineChords" : [ {
+    "lineId" : 289,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 290,
+    "chord" : "F",
+    "position" : 0
+  }, {
+    "lineId" : 290,
+    "chord" : "C",
+    "position" : 23
+  } ]
+}, {
+  "songNumber" : 36,
+  "title" : "JESUS TAKE ME AS I AM",
+  "lineChords" : [ {
+    "lineId" : 295,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 295,
+    "chord" : "F",
+    "position" : 19
+  }, {
+    "lineId" : 296,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 296,
+    "chord" : "G",
+    "position" : 20
+  } ]
+}, {
+  "songNumber" : 37,
+  "title" : "WHEN I FEEL THE TOUCH",
+  "lineChords" : [ {
+    "lineId" : 303,
+    "chord" : "D",
+    "position" : 0
+  }, {
+    "lineId" : 303,
+    "chord" : "G",
+    "position" : 30
+  }, {
+    "lineId" : 303,
+    "chord" : "D",
+    "position" : 33
+  } ]
+}, {
+  "songNumber" : 38,
+  "title" : "I THANK YOU JESUS FOR YOUR LOVE TO ME",
+  "lineChords" : [ {
+    "lineId" : 311,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 311,
+    "chord" : "C",
+    "position" : 27
+  }, {
+    "lineId" : 311,
+    "chord" : "G",
+    "position" : 35
+  } ]
+}, {
+  "songNumber" : 39,
+  "title" : "I'VE TAKEN MY HARP DOWN",
+  "lineChords" : [ {
+    "lineId" : 318,
+    "chord" : "G",
+    "position" : 0
+  }, {
+    "lineId" : 318,
+    "chord" : "C",
+    "position" : 30
+  }, {
+    "lineId" : 318,
+    "chord" : "G",
+    "position" : 31
+  } ]
+}, {
+  "songNumber" : 40,
+  "title" : "THANK YOU GOD",
+  "lineChords" : [ {
+    "lineId" : 326,
+    "chord" : "C",
+    "position" : 0
+  }, {
+    "lineId" : 326,
+    "chord" : "F",
+    "position" : 18
+  }, {
+    "lineId" : 326,
+    "chord" : "C",
+    "position" : 26
+  } ]
+} ]

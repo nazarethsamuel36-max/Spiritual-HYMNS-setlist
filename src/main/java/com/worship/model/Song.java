@@ -30,15 +30,18 @@ public class Song {
     private String audioUrl;
     private int createdBy;
     private Timestamp createdAt;
+    private String book; // raw_songs, prime_songbook
     private boolean isActive;
+    private List<Section> sections;
     private List<String> hashtags;
     private String matchedLine;
-
     public Song() {
         this.capo = 0;
         this.timeSignature = "4/4";
         this.isActive = true;
         this.hashtags = new ArrayList<>();
+        this.sections = new ArrayList<>();
+        this.book = "raw_songs";
     }
 
     // Getters and Setters
@@ -108,6 +111,12 @@ public class Song {
 
     public String getMatchedLine() { return matchedLine; }
     public void setMatchedLine(String matchedLine) { this.matchedLine = matchedLine; }
+
+    public String getBook() { return book; }
+    public void setBook(String book) { this.book = book; }
+
+    public List<Section> getSections() { return sections; }
+    public void setSections(List<Section> sections) { this.sections = sections; }
 
     /**
      * Convenience alias used by search UIs and JSON consumers.

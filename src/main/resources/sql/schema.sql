@@ -177,3 +177,16 @@ CREATE TABLE IF NOT EXISTS setlist_songs (
     FOREIGN KEY (setlist_id) REFERENCES setlists(id) ON DELETE CASCADE,
     FOREIGN KEY (song_id) REFERENCES songs(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- =============================================
+-- TABLE 13: Position-based chord mappings (from alignment pipeline)
+-- =============================================
+CREATE TABLE IF NOT EXISTS line_chords (
+    id         INT PRIMARY KEY AUTO_INCREMENT,
+    line_id    INT NOT NULL,
+    chord      VARCHAR(30) NOT NULL,
+    char_index INT NOT NULL,
+    confidence DECIMAL(4,3),
+    flag       VARCHAR(30),
+    FOREIGN KEY (line_id) REFERENCES song_lines(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
