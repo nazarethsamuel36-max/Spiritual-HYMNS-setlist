@@ -313,4 +313,48 @@ public class ChordParser {
         }
         return result;
     }
+
+    /**
+     * Detects if a line contains only valid chords (no brackets).
+     * Used for two-line format support.
+     */
+    public static boolean isChordOnlyLine(String line) {
+        if (line == null || line.trim().isEmpty()) return false;
+        if (line.contains("[") || line.contains("]")) return false; // Already bracketed or malformed
+        
+        String trimmed = line.trim();
+        // A single letter 'A' or 'I' could be a word. 
+        // But in a songbook, a line with just 'A' is almost certainly a chord.
+        // We look for valid chord tokens.
+        String[] tokens = trimmed.split("\\s+");
+        if (tokens.length == 0) return false;
+        
+        for (String token : tokens) {
+            if (!parseChordToken(token).isValid()) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Parses a chord-only line and extracts chords with their column positions.
+     */
+    public static List<ChordOccurrence> parseChordOnlyLine(String line) {
+        List<ChordOccurrence> chords = new ArrayList<>();
+        if (line == null || line.isEmpty()) return chords;
+        
+        // Use a matcher to find non-whitespace tokens and their start indices
+        Pattern tokenPattern = Pattern.compile("\\S+");
+        Matcher matcher = tokenPattern.matcher(line);
+        while (matcher.find()) {
+            String token = matcher.group();
+            ChordToken ct = parseChordToken(token);
+            if (ct.isValid()) {
+                // We use the raw start index as the position
+                chords.add(new ChordOccurrence(rebuild(ct), matcher.start()));
+            }
+        }
+        return chords;
+    }
 }

@@ -1,0 +1,438 @@
+{
+  "id" : 881,
+  "songNumber" : 269,
+  "title" : "GREAT AND MIGHTY IS THE LORD OUR GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Great and mighty is the Lord our God",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Great and mighty is He,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Lift up the banners, let your anthems raise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Praises to our King,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Great and mighty is the Lord our God,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Great and mighty is He.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "You are the Words and the music,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "You are the song that I sing,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "You are the melody, You are the harmony,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Praises to Your name I bring,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "You are the mighty God,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "You are the Lord of lords,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "You are the King of all kings,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Now I return to You the song that You gave to me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "You are the song that I sing.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "You are the Way and the Truth,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "You are the Head of this Church,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "You are the High Priest,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "You are the Advocate,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Glory to Your Holy Name,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "You are the Prince of Peace,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "You are our Righteousness,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "You are the coming Bridegroom,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Now we invite You Lord, come and be here with us,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "You are the One that we love.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "You are the Bread and the Water,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "You are the source of my life,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "You are my Saviour, You are my Redeemer,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Humbly before You I bow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "You are my Comforter,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "You are my Counsellor,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "You are the Strength of my life,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Now I will praise You for the joy that You gave to me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 43
+      } ]
+    }, {
+      "text" : "You are the All that I have.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  } ]
+}

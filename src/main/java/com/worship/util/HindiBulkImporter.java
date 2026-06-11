@@ -6,138 +6,149 @@ import com.worship.dao.SongDAO;
 import com.worship.model.Section;
 import com.worship.model.Song;
 import com.worship.model.SongLine;
-
 import java.io.File;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.sql.*;
+import java.util.*;
 
 /**
- * Utility to perform bulk ingestion of 232 Hindi worship songs.
- * Source: processed_songs/hindi_songs.json
- * 
- * Processing:
- * 1. Deactivates existing Hindi songs in prime_songbook
- * 2. Inserts all 232 new Hindi songs from JSON
- * 3. Preserves song structure: sections (verse/chorus) and lines
- * 4. Sets book = "prime_songbook" for all songs
- * 5. Sets language = "hindi" for all songs
+ * Utility to import Hindi songs from JSON into the database CLEANLY.
+ * Handles duplicates by activating existing records instead of inserting new ones.
  */
 public class HindiBulkImporter {
+    public static void main(String[] args) {
+        System.out.println("--- Hindi Song Bulk Import (Clean Version) Initialized ---");
+        
+        ObjectMapper mapper = new ObjectMapper();
+        SongDAO songDAO = new SongDAO();
+        File jsonFile = new File("processed_songs/hindi_songs.json");
 
-    public static void main(String[] args) throws Exception {
-        File jsonFile = new File("d:/worship-song-library/processed_songs/hindi_songs.json");
         if (!jsonFile.exists()) {
-            System.err.println("ERROR: JSON file not found: " + jsonFile.getAbsolutePath());
+            System.err.println("Error: JSON file not found at " + jsonFile.getAbsolutePath());
             return;
         }
 
-        System.out.println("========================================");
-        System.out.println("HINDI SONGS BULK IMPORTER");
-        System.out.println("========================================");
-        System.out.println("Source: " + jsonFile.getAbsolutePath());
-        System.out.println();
-
-        // Parse JSON
-        ObjectMapper mapper = new ObjectMapper();
-        List<Map<String, Object>> songMaps = mapper.readValue(jsonFile, new TypeReference<List<Map<String, Object>>>() {});
-        
-        System.out.println("Total songs loaded from JSON: " + songMaps.size());
-        System.out.println();
-
-        SongDAO songDAO = new SongDAO();
-
-        // 1. Delete existing Hindi songs in prime_songbook (both active and inactive)
-        System.out.println("Step 1: Deleting existing Hindi songs in prime_songbook...");
         try (Connection conn = DBConnection.getConnection()) {
-            String deleteSql = "DELETE FROM songs WHERE language = 'hindi' AND book = 'prime_songbook'";
-            try (PreparedStatement ps = conn.prepareStatement(deleteSql)) {
-                int count = ps.executeUpdate();
-                System.out.println("  ✓ Deleted " + count + " existing Hindi songs");
-            }
-        }
-        System.out.println();
+            // 1. Load JSON data
+            List<Map<String, Object>> rawData = mapper.readValue(jsonFile, new TypeReference<List<Map<String, Object>>>() {});
+            System.out.println("Loaded " + rawData.size() + " songs from JSON.");
 
-        // 2. Insert new songs
-        System.out.println("Step 2: Inserting " + songMaps.size() + " Hindi songs...");
-        System.out.println();
-
-        int successCount = 0;
-        int failCount = 0;
-        List<String> failedSongs = new ArrayList<>();
-
-        for (Map<String, Object> map : songMaps) {
-            Song song = new Song();
-            
-            // Set required fields
-            song.setSongNumber((Integer) map.get("number"));
-            song.setTitle((String) map.get("title"));
-            song.setLanguage("hindi");
-            song.setBook("prime_songbook");
-            song.setCreatedBy(1); // Admin user
-            song.setActive(true);
-
-            // Parse sections and lines
-            List<Map<String, Object>> sectionMaps = (List<Map<String, Object>>) map.get("sections");
-            List<Section> sections = new ArrayList<>();
-            
-            if (sectionMaps != null) {
-                for (Map<String, Object> secMap : sectionMaps) {
-                    Section section = new Section();
-                    section.setType((String) secMap.get("type"));
-                    section.setLabel((String) secMap.get("label"));
-                    
-                    // Parse lines
-                    List<String> lineTexts = (List<String>) secMap.get("lines");
-                    List<SongLine> lines = new ArrayList<>();
-                    
-                    if (lineTexts != null) {
-                        for (String text : lineTexts) {
-                            SongLine line = new SongLine();
-                            line.setText(text);
-                            lines.add(line);
-                        }
-                    }
-                    
-                    section.setLines(lines);
-                    sections.add(section);
+            // 2. Map existing Hindi songs in prime_songbook (Active or Inactive)
+            // We use title as the primary key for matching as per requirements
+            Map<String, Integer> existingSongs = new HashMap<>();
+            String fetchSql = "SELECT id, title FROM songs WHERE language = 'hindi' AND book = 'prime_songbook'";
+            try (Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(fetchSql)) {
+                while (rs.next()) {
+                    existingSongs.put(rs.getString("title").toUpperCase().trim(), rs.getInt("id"));
                 }
             }
+            System.out.println("Found " + existingSongs.size() + " existing Hindi records in prime_songbook.");
+
+            int inserted = 0;
+            int activated = 0;
+            int skipped = 0;
+
+            String activateSql = "UPDATE songs SET is_active = TRUE, song_number = ? WHERE id = ?";
+            try (PreparedStatement activatePs = conn.prepareStatement(activateSql)) {
+                
+                for (Map<String, Object> data : rawData) {
+                    String title = (String) data.get("title");
+                    if (title == null || title.trim().isEmpty()) {
+                        skipped++;
+                        continue;
+                    }
+
+                    String normTitle = title.toUpperCase().trim();
+                    Integer existingId = existingSongs.get(normTitle);
+                    int songNumber = data.get("number") != null ? (Integer) data.get("number") : 0;
+
+                    if (existingId != null) {
+                        // UPDATE / ACTIVATE
+                        activatePs.setInt(1, songNumber);
+                        activatePs.setInt(2, existingId);
+                        activatePs.executeUpdate();
+                        activated++;
+                    } else {
+                        // INSERT NEW
+                        Song song = new Song();
+                        song.setSongNumber(songNumber);
+                        song.setTitle(title);
+                        song.setLanguage("hindi");
+                        song.setBook("prime_songbook");
+                        song.setCreatedBy(1);
+                        song.setActive(true);
+
+                        List<Map<String, Object>> sectionsData = (List<Map<String, Object>>) data.get("sections");
+                        List<Section> sections = new ArrayList<>();
+                        if (sectionsData != null) {
+                            for (Map<String, Object> secMap : sectionsData) {
+                                Section section = new Section();
+                                section.setType((String) secMap.get("type"));
+                                section.setLabel((String) secMap.get("label"));
+                                List<String> linesText = (List<String>) secMap.get("lines");
+                                List<SongLine> lines = new ArrayList<>();
+                                if (linesText != null) {
+                                    int lineOrder = 1;
+                                    for (int i = 0; i < linesText.size(); i++) {
+                                        String rawLine = linesText.get(i);
+                                        
+                                        // Two-line chord format detection
+                                        if (com.worship.util.ChordParser.isChordOnlyLine(rawLine) && i + 1 < linesText.size()) {
+                                            String nextLine = linesText.get(i + 1);
+                                            if (!nextLine.trim().isEmpty() && !com.worship.util.ChordParser.isChordOnlyLine(nextLine)) {
+                                                List<com.worship.model.ChordOccurrence> chords = com.worship.util.ChordParser.parseChordOnlyLine(rawLine);
+                                                SongLine sl = new SongLine(nextLine, lineOrder++);
+                                                sl.setChords(chords);
+                                                lines.add(sl);
+                                                i++; // skip next line
+                                                continue;
+                                            }
+                                        }
+                                        
+                                        // Normal bracketed or pure lyrics
+                                        com.worship.model.StructuredLine structuredLine = com.worship.util.ChordParser.parseStructuredLine(rawLine);
+                                        if (structuredLine.getLyrics() != null && !structuredLine.getLyrics().trim().isEmpty()) {
+                                            SongLine sl = new SongLine(structuredLine.getLyrics(), lineOrder++);
+                                            sl.setChords(structuredLine.getChords());
+                                            lines.add(sl);
+                                        } else {
+                                            // Fallback for purely empty lines or unparseable lines
+                                            SongLine sl = new SongLine(rawLine, lineOrder++);
+                                            lines.add(sl);
+                                        }
+                                    }
+                                }
+                                section.setLines(lines);
+                                sections.add(section);
+                            }
+                        }
+                        song.setSections(sections);
+
+                        if (songDAO.addSongWithStructure(song)) {
+                            inserted++;
+                        }
+                    }
+                }
+            }
+
+            // 4. Final Report
+            System.out.println("\n========================================");
+            System.out.println("IMPORT COMPLETE");
+            System.out.println("========================================");
+            System.out.println("✔ Total Inserted:  " + inserted);
+            System.out.println("✔ Total Activated: " + activated + " (Existing records)");
+            System.out.println("✔ Total Skipped:   " + skipped);
             
-            song.setSections(sections);
-
-            // Insert song
-            if (songDAO.addSongWithStructure(song)) {
-                successCount++;
-                System.out.println("  ✓ [" + String.format("%3d", song.getSongNumber()) + "] " + song.getTitle());
-            } else {
-                failCount++;
-                String failMsg = "[" + song.getSongNumber() + "] " + song.getTitle();
-                failedSongs.add(failMsg);
-                System.err.println("  ✗ FAILED: " + failMsg);
+            // Verification Query
+            String verifySql = "SELECT COUNT(*) FROM songs WHERE language = 'hindi' AND book = 'prime_songbook' AND is_active = TRUE";
+            try (Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(verifySql)) {
+                if (rs.next()) {
+                    System.out.println("✔ Final Active Hindi Songs in DB: " + rs.getInt(1));
+                }
             }
-        }
+            System.out.println("========================================\n");
 
-        System.out.println();
-        System.out.println("========================================");
-        System.out.println("IMPORT SUMMARY");
-        System.out.println("========================================");
-        System.out.println("Successfully Inserted: " + successCount + " songs");
-        System.out.println("Failed: " + failCount + " songs");
-        
-        if (failCount > 0) {
-            System.out.println();
-            System.out.println("Failed Songs:");
-            for (String failedSong : failedSongs) {
-                System.out.println("  - " + failedSong);
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        
-        System.out.println();
-        System.out.println("Total: " + (successCount + failCount) + " / " + songMaps.size());
-        System.out.println("Success Rate: " + String.format("%.2f", (double) successCount / songMaps.size() * 100) + "%");
-        System.out.println("========================================");
     }
 }

@@ -1,0 +1,271 @@
+{
+  "id" : 815,
+  "songNumber" : 203,
+  "title" : "WHEN I SAW THE CLEANSING FOUNTAIN",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "When I saw the cleansing fountain",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Open wide for all my sin,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "I obeyed the Spirit's wooing",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "When He said, \"Wilt thou be clean?\"",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "I will praise Him, I will praise Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Praise the Lamb for sinners slain;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Give Him glory all ye people,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "For His blood can wash away each stain.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Though the way seemed straight and narrow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "All I claimed was swept away;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "My ambitions, plans, and wishes,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "At my feet in ashes lay.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Then God's fire upon the altar",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Of my heart was set aflame;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "I shall never cease to praise Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Glory! glory to His name!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "Blessed be the name of Jesus!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "I'm so glad He took me in;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "He's forgiven my transgressions,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "He has cleansed my heart from sin.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

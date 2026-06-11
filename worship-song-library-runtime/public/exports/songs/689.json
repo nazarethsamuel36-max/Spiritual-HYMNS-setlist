@@ -1,0 +1,88 @@
+{
+  "id" : 689,
+  "songNumber" : 8,
+  "title" : "BURN BURN HOLY SPIRIT",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Burn, burn, Holy Spirit, burn in me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Set my heart on fire,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Fill me with the Holy Ghost,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And God's richest desire.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Make me like the Christ of old,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Healing and raising the dead,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Give me the power that Jesus had,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Through the blood that was shed.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

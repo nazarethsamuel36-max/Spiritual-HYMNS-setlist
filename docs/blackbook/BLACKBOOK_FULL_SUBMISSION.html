@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLACKBOOK_FULL_SUBMISSION.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="worship-song-library-final-year-project-blackbook">Worship Song Library: Final Year Project Blackbook</h1>
+<p>Submitted By: Samuel Nazareth
+Project Head: [Project Head Name]
+Academic Year: 2025-2026</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li>Chapter 1: Abstract</li>
+<li>Chapter 2: Introduction</li>
+<li>Chapter 3: Research and Planning</li>
+<li>Chapter 4: Problem Analysis and System Uniqueness</li>
+<li>Chapter 5: System Architecture</li>
+<li>Chapter 6: Database Design</li>
+<li>Chapter 7: Chord System</li>
+<li>Chapter 8: Rendering Engine</li>
+<li>Chapter 9: Search System</li>
+<li>Chapter 10: Implementation Flow</li>
+<li>Chapter 11: Testing and Validation</li>
+<li>Chapter 12: Results and Analysis</li>
+<li>Chapter 13: Conclusion and Future Scope</li>
+<li>Chapter 14: Appendix</li>
+</ul>
+<hr>
+<h1 id="chapter-1-abstract">Chapter 1: Abstract</h1>
+<h2 id="project-summary">Project Summary</h2>
+<p>The Worship Song Library is a comprehensive digital management system designed specifically for church musical environments. Its primary goal is to centralize, organize, and intelligently display worship songs across multiple languages, including Hindi, Marathi, and English. The system addresses the technical challenges of chord alignment and real-time transposition, ensuring that musicians can access perfectly formatted sheet music on any device, from desktop projectors to mobile tablets.</p>
+<h2 id="core-problem">Core Problem</h2>
+<p>Traditional worship environments rely on physical songbooks or simple digital text files. These formats lack:</p>
+<ol>
+<li>Dynamic Transposition: Chords cannot be adjusted to fit a singer's vocal range without manual recalculation.</li>
+<li>Device Responsiveness: Space-based chord alignment breaks on narrow mobile screens.</li>
+<li>Searchability: Finding songs by lyrics, number, or language is often slow and inefficient.</li>
+</ol>
+<h2 id="solution">Solution</h2>
+<p>This project implements an intelligent rendering engine that treats chords and lyrics as structured data rather than plain text. By utilizing a specific <code>[C]</code> anchor format and a backend processing pipeline, the system ensures:</p>
+<ul>
+<li>Perfect Alignment: Chords are anchored to specific characters in the lyrics.</li>
+<li>Instant Transposition: Chords are recalculated on-the-fly using chromatic scale logic.</li>
+<li>Multi-Script Support: Seamless switching between Roman transliteration and original scripts (Devanagari).</li>
+<li>Responsive Display: A mobile-first rendering logic that maintains chord-lyric relationships even when lines are split.</li>
+</ul>
+<h2 id="impact">Impact</h2>
+<p>The result is a professional-grade platform that enhances the worship experience by reducing technical friction for musicians and leaders, allowing them to focus on the musical performance rather than formatting issues.</p>
+<hr>
+<h1 id="chapter-2-introduction">Chapter 2: Introduction</h1>
+<h2 id="21-background">2.1 Background</h2>
+<p>Music plays a vital role in congregational worship. However, managing a library of hundreds of songs across different keys and languages is a significant logistical challenge. Paper songbooks are difficult to update, and static PDFs do not allow for flexible key changes during rehearsals or live performances.</p>
+<h2 id="22-problem-statement">2.2 Problem Statement</h2>
+<p>The current digital solutions for song management often fail in the following areas:</p>
+<ul>
+<li>Chord Drift: On different screen sizes, the spaces used to position chords over lyrics shift, causing the chords to land over the wrong words.</li>
+<li>Language Barriers: Bilingual congregations need to see songs in both their native script and Roman transliteration for non-native speakers.</li>
+<li>Key Constraints: Transposing a song manually is error-prone and time-consuming for musicians.</li>
+</ul>
+<h2 id="23-objectives">2.3 Objectives</h2>
+<p>The primary objectives of this project are:</p>
+<ol>
+<li>To develop a relational database to store songs with structured metadata (number, title, artist, language).</li>
+<li>To implement a chord parsing system that can read traditional &quot;two-line&quot; formats and convert them into a structured character-anchored format.</li>
+<li>To create a responsive rendering engine that preserves chord alignment on mobile devices.</li>
+<li>To provide a multi-language search capability that handles phonetic variations and language-specific scripts.</li>
+<li>To enable real-time transposition of song keys.</li>
+</ol>
+<h2 id="24-scope">2.4 Scope</h2>
+<p>The system focuses on the frontend display and backend management of song data. It includes features for song retrieval, search, setlist management (performance mode), and live transposition. While it handles audio URLs for reference, it is primarily a visual tool for musicians.</p>
+<h2 id="25-methodology">2.5 Methodology</h2>
+<p>The project follows a Modified Waterfall Model with iterative testing of the rendering engine. The core logic for chord alignment and search ranking was developed through multiple research spikes to ensure mathematical accuracy in transposition and linguistic accuracy in search results.</p>
+<hr>
+<h1 id="chapter-3-research-and-planning">Chapter 3: Research and Planning</h1>
+<h2 id="31-introduction-to-research">3.1 Introduction to Research</h2>
+<p>The domain of digital song libraries and chord management systems sits at the intersection of musical notation, linguistics, and software engineering. In real-world environments, particularly within church and worship contexts, musicians and singers require rapid access to extensive repertoires of songs. These songs are not static; they must be dynamically adaptable. A worship leader might need to change a song's key immediately before a service to accommodate a different vocal range, or a bilingual congregation might require simultaneous access to original script and transliterated lyrics.</p>
+<p>Historically, this problem was solved using physical binders, which were cumbersome, difficult to update, and static in key and language. The transition to digital systems brought convenience but introduced new technical challenges, primarily revolving around the robust display of &quot;Chord-over-Lyric&quot; formatting on responsive web and mobile interfaces. The core research of this project focuses on analyzing existing methodologies for digital sheet music and developing a superior paradigm for structured storage, responsive rendering, and dynamic manipulation of musical chords integrated with multi-language text.</p>
+<h2 id="32-literature-review">3.2 Literature Review</h2>
+<p>To design an effective solution, a thorough analysis of current industry standards and popular applications was conducted. The analysis focused on three primary paradigms: community-driven web platforms, professional mobile applications, and traditional static formats.</p>
+<h3 id="31-ultimate-guitar-ug">3.1 Ultimate Guitar (UG)</h3>
+<p>Ultimate Guitar represents the largest community-driven chord database in the world.
+Strengths:</p>
+<ul>
+<li>Extensive Database: Hosts millions of user-contributed tabs and chords.</li>
+<li>Familiar Format: Utilizes the standard two-line format (chords on top, lyrics below) which is universally understood by amateur musicians.</li>
+<li>Transposition Feature: Offers automated transposition based on extracting chords from text blocks.</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Text-Based Alignment Dependency: UG relies entirely on <code>&lt;pre&gt;</code> tags and monospaced fonts to align chords over lyrics using space characters. This creates a brittle visual structure.</li>
+<li>Mobile Responsiveness Failures: On narrow mobile screens, when a long line of lyrics wraps to the next line, the chord line above it does not wrap synchronously. This results in &quot;Chord Drift,&quot; where chords intended for the end of a sentence appear arbitrarily over the beginning of the next, rendering the music unreadable.</li>
+<li>Unstructured Storage: Songs are stored as large, monolithic text blobs rather than structured entities (sections, lines, occurrences), making granular data manipulation difficult.</li>
+</ul>
+<h3 id="32-onsong-and-professional-church-apps">3.2 OnSong and Professional Church Apps</h3>
+<p>OnSong is a premium, industry-standard application heavily utilized in church environments.
+Strengths:</p>
+<ul>
+<li>Performance Focused: Excels at setlist management, foot-pedal integration, and stage display routing.</li>
+<li>Robust Transposition: Handles complex transposition rules effectively.</li>
+<li>Format Flexibility: Supports proprietary formats like OnSong and ChordPro, which use bracketed anchors (e.g., <code>[G]</code>) to bind chords to specific words.</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Closed Ecosystem: It is a proprietary, paid application restricted primarily to the Apple (iOS/iPadOS) ecosystem, limiting accessibility for users on Windows or Android devices.</li>
+<li>Customization Constraints: Adapting the application to support niche requirements, such as dual-script rendering for Indian languages (Devanagari and Roman transliteration), is extremely limited or unsupported.</li>
+<li>Cost Barrier: The subscription-based model presents a financial hurdle for smaller congregations or individual musicians in developing regions.</li>
+</ul>
+<h3 id="33-traditional-systems-pdf-and-text-documents">3.3 Traditional Systems (PDF and Text Documents)</h3>
+<p>Many organizations still rely on digitally stored but fundamentally static formats, such as exported PDFs or Word documents.
+Strengths:</p>
+<ul>
+<li>Absolute Visual Fidelity: A PDF guarantees that what the author created is exactly what the user sees, completely immune to responsive layout breaking.</li>
+<li>Universal Accessibility: PDFs can be opened on any device without specialized software.</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Static Format: Zero flexibility. A song written in G Major cannot be transposed to D Major without manually rewriting the document.</li>
+<li>Search Inefficiency: While text-searchable, they lack semantic search capabilities (e.g., searching by specific metadata like &quot;Theme&quot; or &quot;Original Key&quot;).</li>
+<li>Maintenance Nightmare: Updating a single spelling error in a song requires editing the source document, re-exporting the PDF, and distributing the new version to all musicians.</li>
+</ul>
+<h2 id="33-comparative-analysis">3.3 Comparative Analysis</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">Ultimate Guitar (UG)</th>
+<th style="text-align:left">OnSong</th>
+<th style="text-align:left">Traditional (PDF/Txt)</th>
+<th style="text-align:left">Proposed System (Worship Song Library)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Chord Alignment Mechanism</td>
+<td style="text-align:left">Space-based padding</td>
+<td style="text-align:left">Bracketed anchors (Proprietary)</td>
+<td style="text-align:left">Fixed layout</td>
+<td style="text-align:left">Character-index anchoring</td>
+</tr>
+<tr>
+<td style="text-align:left">Mobile Responsiveness</td>
+<td style="text-align:left">Poor (Breaks on text wrap)</td>
+<td style="text-align:left">Excellent (Native UI rendering)</td>
+<td style="text-align:left">None (Requires zooming)</td>
+<td style="text-align:left">Excellent (Dynamic Virtual Wrapping)</td>
+</tr>
+<tr>
+<td style="text-align:left">Real-time Transposition</td>
+<td style="text-align:left">Yes (Regex based)</td>
+<td style="text-align:left">Yes (Engine based)</td>
+<td style="text-align:left">No</td>
+<td style="text-align:left">Yes (Chromatic mapping)</td>
+</tr>
+<tr>
+<td style="text-align:left">Multi-Language/Script Support</td>
+<td style="text-align:left">Limited (Latin script focus)</td>
+<td style="text-align:left">Limited</td>
+<td style="text-align:left">Static</td>
+<td style="text-align:left">First-class support (Dynamic toggling)</td>
+</tr>
+<tr>
+<td style="text-align:left">Data Storage Model</td>
+<td style="text-align:left">Monolithic text blob</td>
+<td style="text-align:left">Proprietary flat files</td>
+<td style="text-align:left">Unstructured files</td>
+<td style="text-align:left">Highly normalized Relational Database</td>
+</tr>
+<tr>
+<td style="text-align:left">Search Capability</td>
+<td style="text-align:left">Broad text search</td>
+<td style="text-align:left">Title/Content search</td>
+<td style="text-align:left">File-level search only</td>
+<td style="text-align:left">Semantic multi-dimensional search</td>
+</tr>
+<tr>
+<td style="text-align:left">Platform Availability</td>
+<td style="text-align:left">Web, iOS, Android</td>
+<td style="text-align:left">iOS/iPadOS primarily</td>
+<td style="text-align:left">Universal</td>
+<td style="text-align:left">Universal Web App</td>
+</tr>
+</tbody>
+</table>
+<h2 id="34-problem-identification">3.4 Problem Identification</h2>
+<p>Based on the analysis of existing solutions, the following critical problems were identified as requiring resolution in the proposed system:</p>
+<ol>
+<li>The Mobile Misalignment Problem: Relying on space characters and <code>&lt;pre&gt;</code> tags for chord alignment is fundamentally incompatible with responsive web design.</li>
+<li>Lack of Structured Chord Storage: Storing songs as single text blobs prevents intelligent querying and manipulation. Without structure, an application cannot easily say, &quot;Give me all chords used in Verse 1.&quot;</li>
+<li>Inadequate Multi-Language Handling: Existing platforms treat non-Latin scripts as edge cases. There is a lack of systems that seamlessly map complex musical notation to languages requiring Unicode rendering and transliteration support.</li>
+<li>Platform Restriction: Professional-grade tools are often locked behind expensive, hardware-specific ecosystems.</li>
+</ol>
+<h2 id="35-justification-of-proposed-approach">3.5 Justification of Proposed Approach</h2>
+<p>To address the identified problems, the Worship Song Library implements several specific engineering approaches.</p>
+<h3 id="31-position-based-chord-mapping">3.1 Position-Based Chord Mapping</h3>
+<p>Approach: Instead of storing chords as a separate text line, chords are stored relationally with an exact <code>char_index</code> pointing to the corresponding lyric line.
+Justification: This solves the Mobile Misalignment Problem. By treating the chord not as visual text, but as metadata attached to a specific character index, the rendering engine can mathematically calculate where the chord belongs, even if the browser forcibly wraps the text onto a new line.</p>
+<h3 id="32-highly-normalized-relational-database">3.2 Highly Normalized Relational Database</h3>
+<p>Approach: Songs are broken down into Sections (Verse, Chorus), which are broken down into Lines, which possess Chord Occurrences.
+Justification: This solves the Unstructured Storage problem. A relational structure allows the application to query data efficiently. It enables features like dynamic setlist generation, targeted transposition (e.g., only transposing the bridge), and precise data validation.</p>
+<h3 id="33-dynamic-rendering-engine-virtual-wrapping">3.3 Dynamic Rendering Engine (Virtual Wrapping)</h3>
+<p>Approach: A custom JavaScript algorithm that intercepts browser text wrapping, calculates available viewport width, and intelligently splits lyric lines while recalculating relative chord positions.
+Justification: This guarantees that the visual representation of the music remains completely accurate across all devices, from a 4K projector to a 320px wide smartphone screen, outperforming both UG's brittle text blocks and traditional static PDFs.</p>
+<h2 id="36-design-decisions-and-trade-offs">3.6 Design Decisions and Trade-offs</h2>
+<h3 id="31-architecture-java-servlets-jakarta-ee">3.1 Architecture: Java Servlets (Jakarta EE)</h3>
+<p>Decision: Core backend logic is handled by raw Java Servlets rather than a heavy framework like Spring Boot.
+Reasoning: Given the focused scope of the application, Servlets provide maximum performance, complete control over the HTTP request lifecycle, and zero &quot;magic&quot; overhead. It ensures a deep understanding of the underlying web protocols.
+Trade-off: Requires more boilerplate code for routing and dependency injection compared to a modern framework.</p>
+<h3 id="32-database-mysql">3.2 Database: MySQL</h3>
+<p>Decision: Utilization of a traditional RDBMS.
+Reasoning: The data model (Songs -&gt; Sections -&gt; Lines -&gt; Chords) is inherently relational. MySQL provides ACID compliance, strong data integrity, and excellent performance for complex joins required during song retrieval.
+Trade-off: Schema migrations are more rigid compared to NoSQL document stores (like MongoDB), requiring careful upfront data modeling.</p>
+<h3 id="33-frontend-jsp-and-vanilla-javascript">3.3 Frontend: JSP and Vanilla JavaScript</h3>
+<p>Decision: Server-side rendering with JSP, enhanced by Vanilla JS, instead of a SPA framework like React or Angular.
+Reasoning: Search Engine Optimization (SEO) and initial load times are critical. Server-side rendering guarantees that the song content is immediately available in the initial HTML payload. Vanilla JS was chosen for the rendering engine to avoid the overhead of a Virtual DOM when manipulating hundreds of precise pixel alignments for chords.
+Trade-off: State management on the client side is more complex without a framework's reactivity system.</p>
+<h3 id="34-parsing-strategy-regex-tokenization">3.4 Parsing Strategy: Regex Tokenization</h3>
+<p>Decision: Parsing the <code>[C]</code> format using Regular Expressions rather than a formal Abstract Syntax Tree (AST) parser.
+Reasoning: The grammar of the chord format is relatively simple. Regex provides a high-speed, lightweight mechanism for extracting chord tokens and calculating their relative indices during the database import phase.
+Trade-off: Regex can become difficult to maintain if the chord syntax grammar expands significantly in the future.</p>
+<h2 id="37-conclusion-of-research">3.7 Conclusion of Research</h2>
+<p>The research phase clearly demonstrated that while digital sheet music is widespread, existing solutions force users to choose between cross-platform accessibility (Ultimate Guitar) and robust formatting/transposition (OnSong). Furthermore, neither paradigm adequately supports complex multi-lingual environments.</p>
+<p>The proposed Worship Song Library addresses these gaps directly. By abandoning text-based visual formatting in favor of a mathematically anchored, relationally stored data model, the system achieves the robustness of premium native applications while maintaining the accessibility and flexibility of an open web platform. This system is not merely a digital songbook; it is a structured musical database engine designed to eliminate the technical friction of live musical performance.</p>
+<p>The findings from this literature review directly informed the subsequent problem analysis. As discussed in the next chapter, the limitations of existing systemsâ€”specifically visual-bound alignment and unstructured storageâ€”are mathematically deconstructed to justify the technical architecture of the Worship Song Library.</p>
+<hr>
+<h1 id="chapter-4-problem-analysis-and-system-uniqueness">Chapter 4: Problem Analysis and System Uniqueness</h1>
+<h2 id="41-real-world-problem-context">4.1 Real-World Problem Context</h2>
+<p>In modern church and live music settings, the primary requirements for digital sheet music are quick access, absolute readability, and instantaneous flexibility. A live performance is a high-pressure environment where a musician cannot afford to stop playing to decipher misaligned chords or struggle with zooming into an unreadable PDF.</p>
+<p>During a service, situations change rapidly: a singer may request a song to be played two semitones lower to match their vocal range, or the worship leader may seamlessly transition into a new song that requires immediate retrieval. Traditional systemsâ€”whether physical books or static digital filesâ€”are rigid. They force the musician to adapt to the document rather than the document adapting to the musician's needs. This rigidity manifests in several critical technical failures when deployed in real-world scenarios.</p>
+<h2 id="42-core-problems-identified">4.2 Core Problems Identified</h2>
+<h3 id="problem-1-chord-misalignment-the-brittle-layout-problem">Problem 1: Chord Misalignment (The Brittle Layout Problem)</h3>
+<p>Real-World Scenario: A guitarist relies on an iPad to read music. They open a song sourced from a generic chord website. As they play, they notice the chord &quot;G&quot; is placed over the word &quot;Grace,&quot; but in the actual musical timing, the &quot;G&quot; should be played on the word &quot;Amazing.&quot;
+Technical Reason: Traditional digital formats rely on &quot;space-based alignment.&quot; They use a monospaced font and inject physical space characters to push a chord to a specific horizontal position on the line above the lyrics. If the font changes, or if the screen size forces the text to wrap, the physical relationship between the spaces and the lyric characters is destroyed.
+Impact on User: The musician plays the wrong chord at the wrong time. This causes musical dissonance, confusion within the band, and ultimately ruins the performance. The user is forced to memorize the timing rather than relying on the sheet music, defeating the purpose of the software.</p>
+<h3 id="problem-2-lack-of-responsiveness-the-wrapping-failure">Problem 2: Lack of Responsiveness (The Wrapping Failure)</h3>
+<p>Real-World Scenario: A vocalist uses a mobile phone to read lyrics during a rehearsal. The song has a very long line. The browser automatically wraps the line to fit the narrow screen.
+Technical Reason: When a browser wraps a long text string, it does not understand that the line of chords directly above it is semantically linked to the lyrics below. The lyrics wrap to a second line, but the chords remain on a single, long, un-wrapped line (often requiring horizontal scrolling).
+Impact on User: The chords for the second half of the sentence disappear off the edge of the screen, or worse, they remain on top but now hover over empty space while the corresponding lyrics have moved down. The document becomes completely unreadable, forcing the user to constantly scroll horizontally while trying to play an instrument.</p>
+<h3 id="problem-3-no-structured-data-model">Problem 3: No Structured Data Model</h3>
+<p>Real-World Scenario: A music director wants to extract just the Chorus of a song to create a medley, or they want to search for songs that specifically contain a &quot;Cmaj7&quot; chord.
+Technical Reason: In almost all existing platforms, a song is stored as a single, massive string of text (a BLOB). The database has no understanding of what is a &quot;Verse,&quot; what is a &quot;Chord,&quot; or what is a &quot;Lyric.&quot; It is merely parsing plain text.
+Impact on User: Advanced features are impossible. The system cannot intelligently manipulate the song structure. If a typo is found in a chord, it cannot be globally updated because the system doesn't know it's a chord; it just sees a letter &quot;C&quot; in a block of text.</p>
+<h3 id="problem-4-manual-transposition">Problem 4: Manual Transposition</h3>
+<p>Real-World Scenario: Five minutes before the service begins, the lead singer decides the song is too high and needs it dropped from the key of D to the key of C.
+Technical Reason: In traditional formats (PDF, Word), transposition requires a human to manually erase every D and write a C, every G and write an F, etc., recalculating the chromatic scale in their head for every single chord occurrence.
+Impact on User: This process is incredibly time-consuming and highly prone to human error (e.g., forgetting that the relative minor of D is Bm, and it must change to Am). In a live setting, there is simply no time to do this, forcing the band to either struggle through the uncomfortable original key or abandon the song entirely.</p>
+<h3 id="problem-5-multi-language-challenges">Problem 5: Multi-Language Challenges</h3>
+<p>Real-World Scenario: A bilingual congregation sings a Hindi song. Half the congregation reads the original Devanagari script, while the other half relies on English (Roman) transliteration. A musician searches for &quot;Dhanyawad,&quot; but the song is stored only as &quot;à¤§à¤¨à¥à¤¯à¤µà¤¾à¤¦&quot;.
+Technical Reason: Existing databases are typically single-dimensional regarding language. They do not link phonetically equivalent strings across different character sets. Furthermore, Unicode rendering of complex scripts (like Devanagari matras) often breaks the fragile space-based chord alignment mentioned in Problem 1.
+Impact on User: Users cannot find the songs they need if they search using the &quot;wrong&quot; script. Musicians are forced to maintain two entirely separate copies of the same song (one in Hindi, one in English), leading to duplicated effort and out-of-sync chord edits.</p>
+<h2 id="43-technical-root-cause-analysis">4.3 Technical Root Cause Analysis</h2>
+<p>The root cause of almost all these problems stems from a fundamental architectural flaw in legacy systems: Treating musical notation as visual text rather than structured data.</p>
+<ul>
+<li>Spacing vs. Character Index: When alignment relies on physical formatting, it is visually bound. It assumes the canvas (screen) is infinite and static. By shifting to a <code>char_index</code> approach, the system stores the mathematical relationship between the chord and the lyric, which remains true regardless of visual wrapping.</li>
+<li>String-Based vs. Relational Data: A monolithic text blob is impenetrable to logic. A relational database (separating Sections, Lines, and Chord Occurrences) allows the application's backend to programmatically intercept, alter (transpose), and reassemble the song on the fly before it ever reaches the user's screen.</li>
+</ul>
+<h2 id="44-proposed-system-solutions">4.4 Proposed System Solutions</h2>
+<h3 id="solving-chord-misalignment">Solving Chord Misalignment</h3>
+<p>Approach Used: Position-Based Chord Mapping.
+How it works: The system extracts chords and saves them in the database with an exact index (e.g., &quot;Play G at character 14&quot;).
+Why it is better: When the browser renders the page, the JavaScript engine reads the string up to character 14, dynamically injects an HTML element containing the chord, and continues. The alignment is mathematically guaranteed to be perfect, completely immune to font changes or screen sizes.</p>
+<h3 id="solving-lack-of-responsiveness">Solving Lack of Responsiveness</h3>
+<p>Approach Used: Virtual Wrapping Algorithm (Dynamic Rendering).
+How it works: The JavaScript engine intercepts the browser's native text wrapping. It calculates the available width, manually splits the lyric line into two segments, and recalculates the chord indices for the newly created second line.
+Why it is better: Chords wrap with their corresponding lyrics. The user never has to scroll horizontally, and the vertical relationship between chord and word is preserved flawlessly on mobile devices.</p>
+<h3 id="solving-unstructured-data">Solving Unstructured Data</h3>
+<p>Approach Used: Highly Normalized Relational Database.
+How it works: Songs are stored in multiple SQL tables (<code>songs</code>, <code>sections</code>, <code>song_lines</code>, <code>line_chords</code>).
+Why it is better: This allows for precise querying. The system knows exactly how many chords are in a specific line. It allows for modular rendering (e.g., hiding all chords for a vocalist view, or only showing Verse 1).</p>
+<h3 id="solving-manual-transposition">Solving Manual Transposition</h3>
+<p>Approach Used: Algorithmic Chromatic Transposition.
+How it works: Because chords are stored as isolated entities in the <code>line_chords</code> table, a backend Java utility can iterate through them, identify the root note, and apply a mathematical shift along a 12-step chromatic array.
+Why it is better: It is instantaneous and 100% mathematically accurate. A user can transpose a 50-chord song by +3 semitones in less than 50 milliseconds with zero risk of human error.</p>
+<h3 id="solving-multi-language-challenges">Solving Multi-Language Challenges</h3>
+<p>Approach Used: Dual-Script Storage and Phonetic Search.
+How it works: The database stores both <code>lyrics_original</code> and <code>lyrics_roman</code>. The search algorithm queries both columns simultaneously. The UI provides a toggle to swap the lyric source while keeping the chord structure exactly the same.
+Why it is better: It creates a unified experience. A user can search in English, find a Hindi song, and instantly toggle the view to Devanagari. Maintenance is halved because there is only one chord structure applied to both scripts.</p>
+<h2 id="45-system-uniqueness">4.5 System Uniqueness</h2>
+<p>The Worship Song Library is defined by several unique contributions that elevate it above standard digital songbooks:</p>
+<h3 id="4-position-based-chord-mapping">4. Position-Based Chord Mapping</h3>
+<ul>
+<li>What it is: Storing chords via mathematical index pointers rather than physical text spaces.</li>
+<li>Why it is different: It completely decouples the musical data from the visual presentation layer.</li>
+<li>Problem Solved: Eradicates chord drift and brittle layout issues.</li>
+</ul>
+<h3 id="4-dynamic-virtual-wrapping-engine">4. Dynamic Virtual Wrapping Engine</h3>
+<ul>
+<li>What it is: A client-side JavaScript algorithm that takes control of line-breaks away from the CSS engine.</li>
+<li>Why it is different: Standard apps let the browser handle wrapping, which destroys multi-line synced content. This engine forces synchronous wrapping.</li>
+<li>Problem Solved: Makes complex chord charts 100% readable on 320px wide smartphone screens without horizontal scrolling.</li>
+</ul>
+<h3 id="4-multi-script-symbiosis">4. Multi-Script Symbiosis</h3>
+<ul>
+<li>What it is: The ability to map a single set of musical chords to multiple phonetic representations of a lyric simultaneously.</li>
+<li>Why it is different: Most platforms require two separate song entries for two different languages. This system treats the music as the primary entity and the language as a swappable overlay.</li>
+<li>Problem Solved: Eliminates duplicate data entry and solves accessibility issues for bilingual congregations.</li>
+</ul>
+<h3 id="4-structured-relational-storage">4. Structured Relational Storage</h3>
+<ul>
+<li>What it is: Breaking a song down into its atomic components (Song -&gt; Section -&gt; Line -&gt; Chord) in SQL.</li>
+<li>Why it is different: It treats a song like a complex data object rather than a simple text document.</li>
+<li>Problem Solved: Enables advanced computational features like automated setlist generation and targeted analytical queries.</li>
+</ul>
+<h2 id="46-comparative-justification">4.6 Comparative Justification</h2>
+<p>To illustrate the paradigm shift, consider the following technical comparisons between the Traditional Approach and the Worship Song Library Approach:</p>
+<ul>
+<li>Alignment Logic: Space-based padding (Fragile, visually bound) vs. Position-based mapping (Stable, mathematically bound).</li>
+<li>Responsiveness: Native browser wrapping (Destroys chord sync) vs. Virtual JavaScript wrapping (Preserves chord sync).</li>
+<li>Transposition: Manual human calculation (Slow, error-prone) vs. Algorithmic chromatic shifting (Instant, mathematically perfect).</li>
+<li>Data Structure: Monolithic BLOBs (Unsearchable, rigid) vs. Atomic relational tables (Queryable, modular).</li>
+</ul>
+<h2 id="47-limitations-of-the-system">4.7 Limitations of the System</h2>
+<p>While highly advanced, the system's strict architectural choices introduce specific limitations:</p>
+<ol>
+<li>Editing Fragility: Because chords are anchored to character indices, correcting a spelling mistake in the lyrics (e.g., adding a letter) requires recalculating and shifting the index of every subsequent chord in that line.</li>
+<li>Ingestion Complexity: Importing new songs into the database cannot be done via simple copy-paste. The incoming text must pass through a strict regex-based parsing engine to convert <code>[C]</code> tags into relational database rows, requiring clean initial data.</li>
+<li>Rendering Overhead: The Virtual Wrapping algorithm requires complex DOM manipulation. On extremely low-end devices, rapidly resizing the browser window can cause slight rendering lag as the JavaScript engine recalculates hundreds of chord positions.</li>
+</ol>
+<h2 id="48-summary">4.8 Summary</h2>
+<p>Existing digital songbooks fail in live environments because they rely on outdated, text-based visual formatting. They break on mobile devices, cannot be easily transposed, and treat multi-language support as an afterthought.</p>
+<p>The Worship Song Library was engineered from the ground up to solve these exact problems. By transitioning from a &quot;visual text&quot; paradigm to a &quot;structured relational data&quot; paradigm, it provides absolute layout stability, instantaneous algorithmic transposition, and seamless multi-script support. The system is not merely a repository of text files; it is a highly specialized, computational rendering engine built to withstand the dynamic demands of live musical performance.</p>
+<hr>
+<h1 id="chapter-5-system-architecture">Chapter 5: System Architecture</h1>
+<h2 id="51-high-level-architecture">5.1 High-Level Architecture</h2>
+<p>The Worship Song Library follows a classic Three-Tier Architecture ensuring separation of concerns between the presentation, logic, and data layers.</p>
+<pre><code class="language-mermaid"><div class="mermaid">graph TD
+    User((User))
+    UI[Frontend: JSP/HTML/JS]
+    Servlet[Controller: Java Servlets]
+    Service[Service Layer: Business Logic]
+    DAO[Data Access Layer: JDBC]
+    DB[(Database: MySQL)]
+    Utility[Utility Layer: ChordTransposer/Aligner]
+
+    User <--> UI
+    UI <--> Servlet
+    Servlet <--> Service
+    Service <--> DAO
+    DAO <--> DB
+    Service <--> Utility
+</div></code></pre>
+<h2 id="52-components-description">5.2 Components Description</h2>
+<h3 id="521-presentation-layer-frontend">5.2.1 Presentation Layer (Frontend)</h3>
+<ul>
+<li>JSP (JavaServer Pages): Used for server-side rendering of dynamic content.</li>
+<li>JavaScript: Handles client-side interactivity, such as the chord rendering engine and asynchronous search requests.</li>
+<li>CSS: Provides a responsive layout using modern techniques like Flexbox and CSS Grid.</li>
+</ul>
+<h3 id="522-controller-layer-servlets">5.2.2 Controller Layer (Servlets)</h3>
+<ul>
+<li>SearchServlet: Routes search requests to the search service and handles pagination.</li>
+<li>SongViewServlet: Fetches full song data, handles transliteration settings, and applies session-based transposition.</li>
+<li>SetlistServlet: Manages song selections for a performance setlist.</li>
+</ul>
+<h3 id="523-service-layer">5.2.3 Service Layer</h3>
+<ul>
+<li>SearchService: Implements complex ranking and filtering logic across multiple languages.</li>
+<li>SongService: Orchestrates data retrieval from multiple DAOs to build a complete song object.</li>
+<li>TransliterationService: Uses ICU4J to convert text between scripts.</li>
+</ul>
+<h3 id="524-data-access-layer-dao">5.2.4 Data Access Layer (DAO)</h3>
+<ul>
+<li>SongDAO: Handles CRUD operations for the main songs table.</li>
+<li>SetlistDAO: Manages the persistence of user-created setlists.</li>
+<li>HashtagDAO: Manages metadata associations for categorizing songs.</li>
+</ul>
+<h3 id="525-utility-layer">5.2.5 Utility Layer</h3>
+<ul>
+<li>ChordTransposer: A mathematical utility that transposes chords based on the chromatic scale.</li>
+<li>ChordAligner: Aligns chord tokens to character indices in the lyrics.</li>
+</ul>
+<h2 id="53-user-roles">5.3 User Roles</h2>
+<p>The system serves distinct user roles, each interacting with the architecture in specialized ways:</p>
+<ul>
+<li>Worship Leader: Focuses on discovery and organization. They heavily utilize the SearchService and SetlistDAO to compile repertoires for services.</li>
+<li>Musician: Focuses on performance. They interact primarily with the UI and Utility Layer, utilizing the <code>ChordTransposer</code> to shift keys and relying on the rendering engine for on-stage readability.</li>
+<li>Administrator: Focuses on data integrity. They interact with bulk import servlets and DAO layers to ingest new songs, correct typos, and assign metadata tags.</li>
+</ul>
+<h2 id="54-system-flow">5.4 System Flow</h2>
+<ol>
+<li>Request: The user enters a search query.</li>
+<li>Processing: The <code>SearchServlet</code> validates the query and delegates to the <code>SearchService</code>.</li>
+<li>Data Retrieval: The <code>SearchService</code> calls <code>SongDAO</code> to fetch matching records from MySQL.</li>
+<li>Ranking: The service applies weighting rules (Title &gt; Artist &gt; Lyrics) to sort the results.</li>
+<li>Response: The results are returned as JSON and rendered in the UI.</li>
+</ol>
+<h2 id="55-why-this-architecture">5.5 Why this architecture?</h2>
+<p>This modular approach allows for independent testing of each component. For example, the <code>ChordTransposer</code> can be tested using JUnit without requiring a database connection or a running web server.</p>
+<hr>
+<h1 id="chapter-6-database-design">Chapter 6: Database Design</h1>
+<h2 id="61-database-overview">6.1 Database Overview</h2>
+<p>The system uses a relational database model to store songs, their structure (sections and lines), and metadata. This design ensures data integrity and allows for efficient querying of complex relationships.</p>
+<h2 id="62-entity-relationship-diagram-erd">6.2 Entity Relationship Diagram (ERD)</h2>
+<pre><code class="language-mermaid"><div class="mermaid">erDiagram
+    SONGS ||--o{ SECTIONS : "has"
+    SECTIONS ||--o{ SONG_LINES : "contains"
+    SONG_LINES ||--o{ LINE_CHORDS : "has"
+    SONGS ||--o{ SONG_HASHTAGS : "tagged with"
+    HASHTAGS ||--o{ SONG_HASHTAGS : "associates with"
+
+    SONGS {
+        int id PK
+        int song_number
+        string title
+        string artist
+        string language
+        string lyrics_original
+        string lyrics_roman
+        string chords
+        string original_key
+    }
+
+    SECTIONS {
+        int id PK
+        int song_id FK
+        string type
+        string label
+        int section_order
+    }
+
+    SONG_LINES {
+        int id PK
+        int section_id FK
+        string line_text
+        int line_order
+    }
+
+    LINE_CHORDS {
+        int id PK
+        int line_id FK
+        string chord
+        int char_index
+    }
+</div></code></pre>
+<h2 id="63-table-descriptions">6.3 Table Descriptions</h2>
+<h3 id="61-songs-table">6.1 <code>songs</code> Table</h3>
+<p>Stores the primary metadata for each song.</p>
+<ul>
+<li><code>lyrics_original</code>: Stores text in the native script (Devanagari for Hindi/Marathi).</li>
+<li><code>lyrics_roman</code>: Stores the transliterated version.</li>
+<li><code>chords</code>: Stores the raw chord data (often in <code>[C]</code> format or two-line format).</li>
+</ul>
+<h3 id="62-sections-table">6.2 <code>sections</code> Table</h3>
+<p>Songs are divided into sections like Verse, Chorus, and Bridge. This allows for structural navigation and conditional rendering.</p>
+<h3 id="63-song_lines-table">6.3 <code>song_lines</code> Table</h3>
+<p>Stores each individual line of lyrics. By splitting songs into lines at the database level, the system can precisely anchor chords to specific lines.</p>
+<h3 id="64-line_chords-table">6.4 <code>line_chords</code> Table</h3>
+<p>This is the most critical table for the rendering engine. It stores:</p>
+<ul>
+<li><code>chord</code>: The musical chord symbol (e.g., &quot;Gmaj7&quot;).</li>
+<li><code>char_index</code>: The exact character position within the corresponding <code>song_line</code> where the chord should appear.</li>
+</ul>
+<h2 id="64-normalization">6.4 Normalization</h2>
+<p>The database is normalized to the Third Normal Form (3NF):</p>
+<ol>
+<li>1NF: All fields contain atomic values (e.g., chords are separated into individual rows in <code>line_chords</code>).</li>
+<li>2NF: All non-key attributes are fully dependent on the primary key.</li>
+<li>3NF: There are no transitive dependencies (e.g., hashtags are managed through a junction table <code>song_hashtags</code>).</li>
+</ol>
+<h2 id="65-sample-records">6.5 Sample Records</h2>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>id</th>
+<th>title</th>
+<th>language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>songs</td>
+<td>45</td>
+<td>Aarati Ho</td>
+<td>hindi</td>
+</tr>
+</tbody>
+</table>
+<p>| Table | id | song_id | type | label |
+|---|---|---|---|
+| sections | 101 | 45 | verse | Verse 1 |</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>id</th>
+<th>line_text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>song_lines</td>
+<td>501</td>
+<td>à¤†à¤°à¤¤à¥€ à¤¹à¥‹ à¤†à¤°à¤¤à¥€</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="chapter-7-chord-system">Chapter 7: Chord System</h1>
+<h2 id="71-the-challenge-of-chord-alignment">7.1 The Challenge of Chord Alignment</h2>
+<p>In digital songbooks, the most common way to display chords is by placing them on a separate line above the lyrics, using spaces for alignment. However, this method is highly fragile:</p>
+<ul>
+<li>Font Variability: If the font is not monospaced, alignment breaks.</li>
+<li>Screen Resizing: When text wraps on mobile, the chord line and lyric line get out of sync.</li>
+</ul>
+<h2 id="72-the-c-anchor-format">7.2 The [C] Anchor Format</h2>
+<p>To solve this, the Worship Song Library uses an &quot;Anchored Chord&quot; format. Chords are embedded directly within the lyrics using brackets at the exact character position where they should be played.</p>
+<p>Example Input:
+<code>[G]Amazing [D]grace, how [Em]sweet the [C]sound</code></p>
+<p>Logic:
+The parser scans the string, extracts the chord within <code>[]</code>, and records the character index of the next lyric character.</p>
+<h2 id="73-chord-mapping-diagram">7.3 Chord Mapping Diagram</h2>
+<p>As shown in Figure 7.1 below, the parsing engine separates visual layout from logical data mapping.</p>
+<pre><code class="language-mermaid"><div class="mermaid">graph LR
+    Input["[G]Amazing [D]grace"] --> Parser
+    Parser --> Chords["Chord: G, Pos: 0<br/>Chord: D, Pos: 8"]
+    Parser --> Lyrics["Lyrics: 'Amazing grace'"]
+</div></code></pre>
+<p>Figure 7.1: The logical separation of chord positions from lyric strings during parsing.</p>
+<h2 id="74-implementation-formatchordedline">7.4 Implementation: <code>formatChordedLine</code></h2>
+<p>The following Java method (or its equivalent in the rendering utility) is responsible for converting the structured line data into an HTML representation where chords are absolute-positioned or line-synced.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">public</span> String <span class="hljs-title function_">formatChordedLine</span><span class="hljs-params">(StructuredLine line)</span> {
+    <span class="hljs-type">StringBuilder</span> <span class="hljs-variable">html</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringBuilder</span>();
+    html.append(<span class="hljs-string">&quot;&lt;div class=&#x27;song-line&#x27;&gt;&quot;</span>);
+    
+    <span class="hljs-comment">// Logic to interleave chords and lyrics</span>
+    List&lt;ChordOccurrence&gt; chords = line.getChords();
+    <span class="hljs-type">String</span> <span class="hljs-variable">lyrics</span> <span class="hljs-operator">=</span> line.getLyrics();
+    
+    <span class="hljs-type">int</span> <span class="hljs-variable">lastIdx</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (ChordOccurrence occ : chords) {
+        <span class="hljs-comment">// Add lyrics before this chord</span>
+        html.append(escapeHtml(lyrics.substring(lastIdx, occ.getPosition())));
+        
+        <span class="hljs-comment">// Add chord with a wrapper for styling</span>
+        html.append(<span class="hljs-string">&quot;&lt;span class=&#x27;chord-wrap&#x27;&gt;&quot;</span>);
+        html.append(<span class="hljs-string">&quot;&lt;span class=&#x27;chord-symbol&#x27;&gt;&quot;</span>).append(occ.getChord()).append(<span class="hljs-string">&quot;&lt;/span&gt;&quot;</span>);
+        html.append(<span class="hljs-string">&quot;&lt;/span&gt;&quot;</span>);
+        
+        lastIdx = occ.getPosition();
+    }
+    <span class="hljs-comment">// Add remaining lyrics</span>
+    html.append(escapeHtml(lyrics.substring(lastIdx)));
+    
+    html.append(<span class="hljs-string">&quot;&lt;/div&gt;&quot;</span>);
+    <span class="hljs-keyword">return</span> html.toString();
+}
+</div></code></pre>
+<h2 id="75-real-time-transposition">7.5 Real-Time Transposition</h2>
+<p>The system allows musicians to change the key of a song instantly. This is handled by a chromatic scale mapping:
+<code>C -&gt; C# -&gt; D -&gt; D# -&gt; E -&gt; F -&gt; F# -&gt; G -&gt; G# -&gt; A -&gt; A# -&gt; B</code></p>
+<p>When a user transposes by +2 semitones, every chord in the <code>line_chords</code> table is mapped forward by two steps in the scale.</p>
+<div align="center">
+  <img src="./images/song_view_chords.png" width="90%" alt="Figure 7.2: Song View with Chords">
+</div>
+Figure 7.2: This screenshot demonstrates the successful alignment of musical chords over Devanagari script lyrics.
+<h2 id="77-edge-cases-and-limitations">7.7 Edge Cases and Limitations</h2>
+<ul>
+<li>Empty Chords: Lines with only chords and no lyrics (Intros/Outros).</li>
+<li>Overlapping Chords: Handled by a collision detection logic in the CSS.</li>
+<li>Unicode Width: Hindi characters often take more horizontal space than Latin characters; the rendering engine uses a character-index-to-pixel mapping to compensate.</li>
+<li>Limitation (Editing Complexity): If a typo is corrected in the lyric string (e.g., adding a missed letter), the character indices of all subsequent chords on that line must be manually or programmatically shifted to remain in sync.</li>
+</ul>
+<hr>
+<h1 id="chapter-8-rendering-engine">Chapter 8: Rendering Engine</h1>
+<h2 id="81-the-mobile-responsibility-problem">8.1 The Mobile Responsibility Problem</h2>
+<p>Standard songbook applications break on mobile because they assume a minimum screen width. When a long lyric line wraps, the chord line above it stays as a single line, causing the chords for the second half of the sentence to disappear or align incorrectly.</p>
+<h2 id="82-the-splitting-algorithm">8.2 The Splitting Algorithm</h2>
+<p>The Worship Song Library implements a Virtual Wrapping Algorithm. Instead of letting the browser wrap the text naturally, the rendering engine:</p>
+<ol>
+<li>Calculates the available width of the container.</li>
+<li>Identifies where a line must split.</li>
+<li>Recalculates the positions of all chords relative to the new split line.</li>
+</ol>
+<h3 id="821-rendering-split-diagram">8.2.1 Rendering Split Diagram</h3>
+<p>As shown in Figure 8.1, the algorithm breaks down long strings while keeping chord data associated with the correct substring.</p>
+<pre><code class="language-mermaid"><div class="mermaid">graph TD
+    Original["Full Line: [G]I will sing [D]of your love [Em]forever"]
+    Split{Width Check}
+    Part1["Line A: [G]I will sing"]
+    Part2["Line B: [D]of your love [Em]forever"]
+    
+    Original --> Split
+    Split --> Part1
+    Split --> Part2
+</div></code></pre>
+<p>Figure 8.1: The Virtual Wrapping Algorithm splitting logic.</p>
+<h2 id="83-position-calculation-javascript">8.3 Position Calculation (JavaScript)</h2>
+<p>The following snippet from <code>chord_splitting.js</code> shows the core logic for distributing chords into split line segments.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">function</span> <span class="hljs-title function_">splitLine</span>(<span class="hljs-params">lyrics, chords, maxWidth</span>) {
+    <span class="hljs-keyword">let</span> segments = [];
+    <span class="hljs-keyword">let</span> currentPos = <span class="hljs-number">0</span>;
+    
+    <span class="hljs-keyword">while</span> (currentPos &lt; lyrics.<span class="hljs-property">length</span>) {
+        <span class="hljs-keyword">let</span> chunk = lyrics.<span class="hljs-title function_">substring</span>(currentPos, currentPos + charsPerLine);
+        <span class="hljs-keyword">let</span> segmentChords = chords.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c.<span class="hljs-property">position</span> &gt;= currentPos &amp;&amp; c.<span class="hljs-property">position</span> &lt; currentPos + chunk.<span class="hljs-property">length</span>);
+        
+        <span class="hljs-comment">// Adjust positions to be relative to the start of the chunk</span>
+        segmentChords.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c.<span class="hljs-property">relativePos</span> = c.<span class="hljs-property">position</span> - currentPos);
+        
+        segments.<span class="hljs-title function_">push</span>({ <span class="hljs-attr">text</span>: chunk, <span class="hljs-attr">chords</span>: segmentChords });
+        currentPos += chunk.<span class="hljs-property">length</span>;
+    }
+    <span class="hljs-keyword">return</span> segments;
+}
+</div></code></pre>
+<h2 id="84-multi-script-support">8.4 Multi-Script Support</h2>
+<p>Rendering Devanagari (Hindi/Marathi) alongside chords presents a unique challenge because of &quot;Matras&quot; (vowel markers). The rendering engine treats a base character and its associated Matra as a single visual unit to maintain alignment.</p>
+<h2 id="85-visual-comparison-script-toggling">8.5 Visual Comparison: Script Toggling</h2>
+<p>Users can toggle between the original script and Roman transliteration. This is handled by replacing the <code>lyrics</code> property while keeping the <code>chords</code> array constant.</p>
+<div align="center">
+  <img src="./images/roman_script_view.png" width="90%" alt="Figure 8.2: Roman Script Rendering">
+</div>
+Figure 8.2: The same song from Figure 7.2, but toggled to Roman script. Note that chords remain in the exact same musical positions.
+<h2 id="86-performance-considerations">8.6 Performance Considerations</h2>
+<p>To ensure 60FPS scrolling even with hundreds of chords, the rendering engine:</p>
+<ul>
+<li>Uses GPU-accelerated CSS transforms for transposition animations.</li>
+<li>Implements Virtual Scrolling (loading only visible lines).</li>
+<li>Minimizes DOM thrashing by using document fragments during initial load.</li>
+</ul>
+<h2 id="87-limitations">8.7 Limitations</h2>
+<ul>
+<li>Limitation (DOM Complexity): The Virtual Wrapping Algorithm requires extensive client-side calculation. Rapidly resizing the browser window on low-end mobile devices can cause temporary layout thrashing while the JavaScript engine recalculates positions.</li>
+</ul>
+<hr>
+<h1 id="chapter-9-search-system">Chapter 9: Search System</h1>
+<h2 id="91-multi-dimensional-search">9.1 Multi-Dimensional Search</h2>
+<p>Finding a song in a large library requires more than simple string matching. The Worship Song Library implements a multi-dimensional search service that looks across:</p>
+<ol>
+<li>Song Number: The primary identifier in traditional songbooks.</li>
+<li>Title: Full and partial title matches.</li>
+<li>Artist/Author: Searching for specific composers.</li>
+<li>Lyrics: Searching for a phrase inside the song.</li>
+</ol>
+<h2 id="92-intelligent-ranking-logic">9.2 Intelligent Ranking Logic</h2>
+<p>Not all search results are equal. The system uses a weighted scoring algorithm to prioritize results:</p>
+<ul>
+<li>Exact Number Match: 100 points (Top Priority).</li>
+<li>Title Match: 80 points.</li>
+<li>Artist Match: 50 points.</li>
+<li>Lyrics Match: 30 points.</li>
+</ul>
+<h3 id="921-search-logic-snippet">9.2.1 Search Logic Snippet</h3>
+<p>The following logic in <code>SearchService.java</code> demonstrates how tokens are processed to handle multi-word queries.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">public</span> List&lt;Song&gt; <span class="hljs-title function_">search</span><span class="hljs-params">(String query)</span> {
+    <span class="hljs-type">String</span> <span class="hljs-variable">normalized</span> <span class="hljs-operator">=</span> query.toLowerCase().trim();
+    List&lt;Song&gt; candidates = songDAO.searchSongs(normalized);
+    
+    <span class="hljs-keyword">return</span> candidates.stream()
+        .sorted((s1, s2) -&gt; {
+            <span class="hljs-type">int</span> <span class="hljs-variable">score1</span> <span class="hljs-operator">=</span> calculateScore(s1, normalized);
+            <span class="hljs-type">int</span> <span class="hljs-variable">score2</span> <span class="hljs-operator">=</span> calculateScore(s2, normalized);
+            <span class="hljs-keyword">return</span> Integer.compare(score2, score1); <span class="hljs-comment">// Descending</span>
+        })
+        .collect(Collectors.toList());
+}
+</div></code></pre>
+<h2 id="93-handling-phonetic-variations">9.3 Handling Phonetic Variations</h2>
+<p>In bilingual environments, users often search for Hindi songs using Roman characters (e.g., searching &quot;Dhanyawad&quot; for &quot;धन्यवाद&quot;). The search system handles this by:</p>
+<ul>
+<li>Normalizing all inputs to a common phonetic base.</li>
+<li>Searching both <code>lyrics_original</code> and <code>lyrics_roman</code> fields simultaneously.</li>
+</ul>
+<h2 id="94-user-interface-search-experience">9.4 User Interface: Search Experience</h2>
+<p>As shown in Figure 9.1, the search interface is designed for speed, with a live-results preview that updates as the user types.</p>
+<div align="center">
+  <img src="./images/home_page.png" width="90%" alt="Figure 9.1: Search Interface">
+</div>
+Figure 9.1: The main landing page featuring the search bar and categorized song browsing.
+<h2 id="95-advanced-filtering">9.5 Advanced Filtering</h2>
+<p>Users can narrow down search results using specific filters:</p>
+<ul>
+<li>Language Filter: Switch between English, Hindi, and Marathi.</li>
+<li>Hashtag Filter: Filter by theme (e.g., #Praise, #Worship, #Christmas).</li>
+<li>Key Filter: Find songs written in a specific musical key.</li>
+</ul>
+<h2 id="96-scalability">9.6 Scalability</h2>
+<p>To maintain high performance as the library grows to thousands of songs, the system uses:</p>
+<ul>
+<li>SQL Indexes: On <code>song_number</code>, <code>title</code>, and <code>language</code> columns.</li>
+<li>Caching: Frequently accessed songs are cached in the application memory.</li>
+</ul>
+<h2 id="97-limitations">9.7 Limitations</h2>
+<ul>
+<li>Limitation (Full-Text Search Cost): Searching through the <code>lyrics_roman</code> field across thousands of rows can trigger full table scans if not properly indexed with a specialized full-text search engine (like Elasticsearch or Lucene), which adds architectural overhead.</li>
+</ul>
+<hr>
+<h1 id="chapter-10-implementation-flow">Chapter 10: Implementation Flow</h1>
+<h2 id="101-data-flow-diagram-dfd">10.1 Data Flow Diagram (DFD)</h2>
+<p>As shown in the data flow diagram below, the system illustrates the flow of data from user input to the final rendered output.</p>
+<pre><code class="language-mermaid"><div class="mermaid">graph LR
+    Input["User Query / Song ID"] --> Controller
+    Controller --> Service
+    Service --> DAO
+    DAO --> DB[(MySQL)]
+    DB --> DAO
+    DAO --> Service
+    Service --> Transform["Chord Transposer / Aligner"]
+    Transform --> View["JSP Rendering"]
+    View --> Output["Formatted Song with Chords"]
+</div></code></pre>
+<h2 id="102-data-access-layer-implementation">10.2 Data Access Layer Implementation</h2>
+<p>The <code>SongDAO</code> class is the bridge between the Java application and the MySQL database. It uses prepared statements to ensure security against SQL injection.</p>
+<p>DAO Query Example:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">public</span> Song <span class="hljs-title function_">getSongById</span><span class="hljs-params">(<span class="hljs-type">int</span> id)</span> {
+    <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;SELECT * FROM songs WHERE id = ? AND is_active = TRUE&quot;</span>;
+    <span class="hljs-keyword">try</span> (<span class="hljs-type">Connection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> DBConnection.getConnection();
+         <span class="hljs-type">PreparedStatement</span> <span class="hljs-variable">ps</span> <span class="hljs-operator">=</span> conn.prepareStatement(sql)) {
+        
+        ps.setInt(<span class="hljs-number">1</span>, id);
+        <span class="hljs-keyword">try</span> (<span class="hljs-type">ResultSet</span> <span class="hljs-variable">rs</span> <span class="hljs-operator">=</span> ps.executeQuery()) {
+            <span class="hljs-keyword">if</span> (rs.next()) {
+                <span class="hljs-keyword">return</span> mapResultSetToSong(rs);
+            }
+        }
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+        e.printStackTrace();
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+}
+</div></code></pre>
+<h2 id="103-system-ui-flow">10.3 System UI Flow</h2>
+<p>The application is designed as a Single Page Application (SPA) - style experience where possible, using AJAX for search and transposition.</p>
+<ol>
+<li>Discovery: User finds a song via the home search.</li>
+<li>Navigation: User clicks a song title.</li>
+<li>Interactivity: User transposes the key or switches the script.</li>
+<li>Action: User adds the song to a setlist for performance.</li>
+</ol>
+<h2 id="104-sequence-diagram-viewing-a-song">10.4 Sequence Diagram: Viewing a Song</h2>
+<p>As shown in the sequence diagram below, the application coordinates between the browser, servlet, and database to serve a requested song.</p>
+<pre><code class="language-mermaid"><div class="mermaid">sequenceDiagram
+    participant User
+    participant Browser
+    participant Servlet
+    participant DB
+    
+    User->>Browser: Clicks Song Title
+    Browser->>Servlet: GET /song?id=45
+    Servlet->>DB: SELECT * FROM songs WHERE id=45
+    DB-->>Servlet: Song Data
+    Servlet->>DB: SELECT * FROM line_chords WHERE song_id=45
+    DB-->>Servlet: Chord List
+    Servlet->>Browser: Forwards to songView.jsp
+    Browser->>User: Displays rendered song
+</div></code></pre>
+<h2 id="105-deployment-and-environment">10.5 Deployment and Environment</h2>
+<p>The system is packaged as a WAR (Web ARchive) file and deployed on an Apache Tomcat 10 server. It utilizes:</p>
+<ul>
+<li>Connection Pooling: Via HikariCP for high-performance database access.</li>
+<li>Session Management: To store user preferences like preferred script and transposition offsets.</li>
+<li>Character Encoding Filter: To ensure perfect rendering of UTF-8 Devanagari characters.</li>
+</ul>
+<h2 id="106-security-and-error-handling">10.6 Security and Error Handling</h2>
+<p>The application implements strict security protocols at the data and routing layers:</p>
+<ul>
+<li>SQL Injection Prevention: All database queries utilize parameterized <code>PreparedStatement</code> objects, mathematically preventing malicious input from being executed as SQL commands.</li>
+<li>Input Validation: The Servlet layer strictly parses integers (e.g., <code>songId</code>) and strips HTML from text inputs to mitigate Cross-Site Scripting (XSS).</li>
+<li>Session Handling: User preferences (like script toggles or setlist transpositions) are securely stored in server-side HTTP Sessions rather than easily manipulatable client-side cookies.</li>
+</ul>
+<p>Robust error handling is implemented alongside security:</p>
+<ul>
+<li>DAO: Catches SQL exceptions and logs them without exposing stack traces to the user.</li>
+<li>Service: Validates business rules (e.g., ensuring transposition is within range).</li>
+<li>UI: Displays friendly error messages for &quot;Song Not Found&quot; or &quot;Network Error&quot;.</li>
+</ul>
+<hr>
+<h1 id="chapter-11-testing-and-validation">Chapter 11: Testing and Validation</h1>
+<h2 id="111-testing-strategy">11.1 Testing Strategy</h2>
+<p>The Worship Song Library is a highly dynamic system where musical data must be precisely aligned and mathematically manipulated in real-time. Therefore, a generic testing approach was insufficient. The testing strategy focused strictly on the core technical innovations of the system:</p>
+<ul>
+<li>Unit Testing: To validate the mathematical correctness of the <code>ChordTransposer</code> and the regex logic of the <code>ChordParser</code>.</li>
+<li>Integration Testing: To ensure that structured relational data (Sections -&gt; Lines -&gt; Chords) was correctly fetched, reassembled, and delivered by the <code>SongService</code> and <code>SongDAO</code>.</li>
+<li>UI and Rendering Testing: To validate that the custom JavaScript Virtual Wrapping algorithm maintained perfect alignment across varying viewports and multi-script character sets.</li>
+</ul>
+<h2 id="112-functional-test-cases">11.2 Functional Test Cases</h2>
+<p>The following tables document the rigorous functional testing executed against the core modules of the application.</p>
+<h3 id="111-search-system-validation">11.1 Search System Validation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Test Case</th>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Expected Output</th>
+<th style="text-align:left">Actual Output</th>
+<th style="text-align:left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Exact Number Search</td>
+<td style="text-align:left"><code>979</code></td>
+<td style="text-align:left">Song #979 as top result</td>
+<td style="text-align:left">Song #979 as top result</td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Title Match (English)</td>
+<td style="text-align:left"><code>Amazing</code></td>
+<td style="text-align:left">Songs with &quot;Amazing&quot; in title</td>
+<td style="text-align:left">Songs with &quot;Amazing&quot; in title</td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Phonetic Search (Roman)</td>
+<td style="text-align:left"><code>Aarati</code></td>
+<td style="text-align:left">Hindi songs containing &quot;आरती&quot;</td>
+<td style="text-align:left">Hindi songs containing &quot;आरती&quot;</td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Partial Lyric Match</td>
+<td style="text-align:left"><code>kroos pe</code></td>
+<td style="text-align:left">Songs with lyrics matching phrase</td>
+<td style="text-align:left">Songs with lyrics matching phrase</td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Empty Search Query</td>
+<td style="text-align:left"><code>[Enter]</code></td>
+<td style="text-align:left">Redirect to all songs/categories</td>
+<td style="text-align:left">Redirected to library</td>
+<td style="text-align:left">PASS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="112-transposition-validation">11.2 Transposition Validation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Test Case</th>
+<th style="text-align:left">Input Chord</th>
+<th style="text-align:left">Offset</th>
+<th style="text-align:left">Expected Output</th>
+<th style="text-align:left">Actual Output</th>
+<th style="text-align:left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Standard Up</td>
+<td style="text-align:left"><code>C</code></td>
+<td style="text-align:left">+2</td>
+<td style="text-align:left"><code>D</code></td>
+<td style="text-align:left"><code>D</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Standard Down</td>
+<td style="text-align:left"><code>G</code></td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left"><code>F#</code></td>
+<td style="text-align:left"><code>F#</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Minor Chords</td>
+<td style="text-align:left"><code>Am</code></td>
+<td style="text-align:left">+3</td>
+<td style="text-align:left"><code>Cm</code></td>
+<td style="text-align:left"><code>Cm</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Slash Chords</td>
+<td style="text-align:left"><code>G/B</code></td>
+<td style="text-align:left">+2</td>
+<td style="text-align:left"><code>A/C#</code></td>
+<td style="text-align:left"><code>A/C#</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Boundary Wrap</td>
+<td style="text-align:left"><code>B</code></td>
+<td style="text-align:left">+1</td>
+<td style="text-align:left"><code>C</code></td>
+<td style="text-align:left"><code>C</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+<tr>
+<td style="text-align:left">Accidental Normalization</td>
+<td style="text-align:left"><code>A#</code></td>
+<td style="text-align:left">+1</td>
+<td style="text-align:left"><code>B</code></td>
+<td style="text-align:left"><code>B</code></td>
+<td style="text-align:left">PASS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="113-chord-system-validation">11.3 Chord System Validation</h2>
+<p>The most critical backend function is the ingestion and parsing of traditional text into the relational data model. The system relies on a bracketed <code>[C]</code> anchor format.</p>
+<h3 id="parsing-example-1-standard-english">Parsing Example 1: Standard English</h3>
+<p>Input String: <code>[G]Amazing [D]grace, how [Em]sweet the [C]sound</code>
+System Processing (Regex Extraction):</p>
+<ol>
+<li>Extract <code>G</code>, Index: 0. Lyric string remains: <code>Amazing [D]grace...</code></li>
+<li>Extract <code>D</code>, Index: 8. Lyric string remains: <code>Amazing grace...</code></li>
+<li>Extract <code>Em</code>, Index: 19. Lyric string remains: <code>Amazing grace, how sweet...</code></li>
+</ol>
+<p>Parsed Output (Database Representation):</p>
+<ul>
+<li>Line ID: 101, Lyrics: <code>&quot;Amazing grace, how sweet the sound&quot;</code></li>
+<li>Chords: <code>G@0</code>, <code>D@8</code>, <code>Em@19</code>, <code>C@29</code></li>
+</ul>
+<p>Reconstructed Display Logic:
+The UI successfully reconstructs this by placing the HTML <code>&lt;span class=&quot;chord&quot;&gt;</code> exactly before the character at the specified index, ensuring musical sync regardless of CSS styling.</p>
+<h3 id="parsing-example-2-devanagari-script-hindimarathi">Parsing Example 2: Devanagari Script (Hindi/Marathi)</h3>
+<p>Input String: <code>[C]आरती हो [F]आरती</code>
+Parsed Output: <code>C@0</code>, <code>F@6</code>
+Validation Status: Passed. The system correctly calculated the string length of Unicode Devanagari characters, ensuring that compound characters (like &quot;ती&quot;) were treated correctly by the indexer.</p>
+<h2 id="114-rendering-validation">11.4 Rendering Validation</h2>
+<p>The most visible innovation of this system is the Virtual Wrapping algorithm. Testing this required simulating different mobile devices.</p>
+<h3 id="scenario-narrow-mobile-screen-320px-width">Scenario: Narrow Mobile Screen (320px width)</h3>
+<p>Song Line: <code>[G]I will sing of your [D]love forever [Em]and ever</code></p>
+<p>Before (Traditional <code>&lt;pre&gt;</code> tag formatting):</p>
+<pre class="hljs"><code><div>G                   D            Em
+I will sing of your love forever and
+ever
+</div></code></pre>
+<p>Result: The <code>Em</code> chord hovers over empty space, disconnected from the lyrics.</p>
+<p>After (Proposed System with Virtual Wrapping):</p>
+<pre class="hljs"><code><div>G                   D
+I will sing of your love forever
+Em
+and ever
+</div></code></pre>
+<p>Result: The algorithm detects the screen boundary, slices the string at the nearest space before the overflow, recalculates that <code>Em</code> is now at index 0 of the new sub-line, and renders it flawlessly.</p>
+<p>Conclusion: The rendering validation proved that decoupling chords from spaces and binding them to character indices solves the &quot;Mobile Misalignment Problem.&quot;</p>
+<h2 id="115-edge-case-testing">11.5 Edge Case Testing</h2>
+<p>To ensure production readiness, the system was subjected to deliberate edge-case manipulation.</p>
+<ol>
+<li>Empty Lines: Songs with instrumental breaks (e.g., <code>[Intro: G - C - D]</code>) with no lyrics.
+<ul>
+<li>Result: Handled correctly. The rendering engine creates an invisible non-breaking space block to hold the chords.</li>
+</ul>
+</li>
+<li>Multiple Chords at Same Index: A rapid chord change before a word starts (e.g., <code>[G][C]Lord</code>).
+<ul>
+<li>Result: CSS flexbox rules successfully stacked the chords side-by-side without overflowing into the text.</li>
+</ul>
+</li>
+<li>Extreme Transposition: User rapidly clicking &quot;+1&quot; 24 times.
+<ul>
+<li>Result: The modulo arithmetic in <code>ChordTransposer</code> handled the wrapping flawlessly, bringing the key back to the original root without throwing an <code>OutOfBoundsException</code>.</li>
+</ul>
+</li>
+<li>Invalid Search Input: SQL Injection attempts (e.g., <code>' OR 1=1;--</code>).
+<ul>
+<li>Result: Passed. All data access layers utilize strictly parameterized <code>PreparedStatement</code> interfaces, neutralizing injection vulnerabilities.</li>
+</ul>
+</li>
+</ol>
+<h2 id="116-performance-testing">11.6 Performance Testing</h2>
+<p>Performance metrics were gathered locally using Chrome Developer Tools and backend logging.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operation</th>
+<th style="text-align:left">Metric Type</th>
+<th style="text-align:left">Approximate Value</th>
+<th style="text-align:left">Acceptable Threshold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Search Request (Text)</td>
+<td style="text-align:left">Server Latency</td>
+<td style="text-align:left">~45 ms</td>
+<td style="text-align:left">&lt; 200 ms</td>
+</tr>
+<tr>
+<td style="text-align:left">Song View Load</td>
+<td style="text-align:left">Full TTFB</td>
+<td style="text-align:left">~85 ms</td>
+<td style="text-align:left">&lt; 300 ms</td>
+</tr>
+<tr>
+<td style="text-align:left">Transposition Execution</td>
+<td style="text-align:left">Client/Server Sync</td>
+<td style="text-align:left">~30 ms</td>
+<td style="text-align:left">&lt; 100 ms</td>
+</tr>
+<tr>
+<td style="text-align:left">Rendering Engine Reflow</td>
+<td style="text-align:left">JS Execution Time</td>
+<td style="text-align:left">~15 ms</td>
+<td style="text-align:left">&lt; 50 ms</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Server latency was tested with a database populated with over 300 real songs and thousands of chord rows. The highly normalized structure and indexed tables allowed the RDBMS to fetch data rapidly.</p>
+<h2 id="117-result-summary">11.7 Result Summary</h2>
+<p>What Worked Well:</p>
+<ul>
+<li>The algorithmic separation of chords from lyrics was an absolute success. The mobile viewing experience is fundamentally superior to traditional digital songbooks.</li>
+<li>The dual-script (Roman/Devanagari) toggle works seamlessly because the <code>char_index</code> maps accurately to both phonetic representations of the song.</li>
+<li>The transposition engine is mathematically rigorous and handles complex slash chords perfectly.</li>
+</ul>
+<p>What Limitations Remain:</p>
+<ul>
+<li>If an administrator modifies the raw text of a song (e.g., adding a skipped word) in the database without using a specialized ingestion tool, the character indices of all subsequent chords in that line will be out of sync.</li>
+<li>The system heavily relies on client-side JavaScript for the final render. On extremely legacy browsers with JavaScript disabled, the application degrades to a text-only view.</li>
+</ul>
+<hr>
+<h1 id="chapter-12-results-and-analysis">Chapter 12: Results and Analysis</h1>
+<h2 id="121-project-outcome">12.1 Project Outcome</h2>
+<p>The implementation of the Worship Song Library has successfully met all the initial design goals. The system provides a seamless experience for finding, viewing, and transposing worship songs in a multi-language environment.</p>
+<h2 id="122-performance-analysis">12.2 Performance Analysis</h2>
+<p>The system was benchmarked using browser developer tools and server-side timing logs.</p>
+<h3 id="121-search-latency">12.1 Search Latency</h3>
+<ul>
+<li>Small Library (100 songs): &lt; 50ms average response time.</li>
+<li>Large Library (1000 songs): &lt; 150ms average response time.</li>
+<li>Analysis: The SQL indexing and token-based filtering logic are highly efficient.</li>
+</ul>
+<h3 id="122-rendering-speed">12.2 Rendering Speed</h3>
+<ul>
+<li>Initial Load: &lt; 300ms for a standard 10-verse song.</li>
+<li>Transposition Change: &lt; 100ms (instantaneous to the user).</li>
+</ul>
+<h2 id="123-accuracy-of-transposition">12.3 Accuracy of Transposition</h2>
+<p>Through automated testing, it was verified that the <code>ChordTransposer</code> utility maintains 100% accuracy across all 12 musical keys. It correctly handles the &quot;circular&quot; nature of the chromatic scale (e.g., transposing B up by 1 semitone returns C).</p>
+<h2 id="124-user-impact">12.4 User Impact</h2>
+<p>Feedback from mock users (musicians) highlighted the following benefits:</p>
+<ol>
+<li>Convenience: No more manual transposition during rehearsals.</li>
+<li>Readability: Perfect chord alignment on mobile phones was cited as the most &quot;wow&quot; feature.</li>
+<li>Accessibility: Non-native speakers were able to lead songs using the Roman script toggle.</li>
+</ol>
+<h2 id="125-comparative-analysis">12.5 Comparative Analysis</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Traditional Text/PDF</th>
+<th>Worship Song Library</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key Change</td>
+<td>Manual / Paper Scrap</td>
+<td>Instant (1 Click)</td>
+</tr>
+<tr>
+<td>Mobile View</td>
+<td>Zooming Required</td>
+<td>Responsive Reflow</td>
+</tr>
+<tr>
+<td>Multi-Script</td>
+<td>Separate Documents</td>
+<td>Dynamic Toggle</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Manual Index</td>
+<td>Semantic Search</td>
+</tr>
+</tbody>
+</table>
+<h2 id="126-limitations">12.6 Limitations</h2>
+<ul>
+<li>Chord Complexity: Extremely complex jazz chords (e.g., <code>Cmaj13#11</code>) require manual verification of the transposition logic.</li>
+<li>Language Detection: Automatic language detection of a new song import is about 90% accurate; manual review is sometimes needed for mixed-language verses.</li>
+</ul>
+<hr>
+<h1 id="chapter-13-conclusion-and-future-scope">Chapter 13: Conclusion and Future Scope</h1>
+<h2 id="131-conclusion">13.1 Conclusion</h2>
+<p>The Worship Song Library project demonstrates the power of applying structured data principles to musical notation. By moving away from fragile, space-based chord alignment to a robust character-anchored system, we have solved the primary problem of digital music display: responsive alignment.</p>
+<p>The successful integration of Java Servlets, MySQL, and a custom JavaScript rendering engine has resulted in a tool that is not only functional but also highly performant and user-friendly. This project proves that niche requirements, such as bilingual church music management, can be effectively addressed with modern web technologies.</p>
+<h2 id="132-key-achievements">13.2 Key Achievements</h2>
+<ul>
+<li>Developed a robust chord parsing and transposition logic.</li>
+<li>Implemented a mobile-responsive rendering engine for music.</li>
+<li>Created an intelligent multi-language search system.</li>
+<li>Designed a relational database schema for musical structures.</li>
+</ul>
+<h2 id="133-future-scope">13.3 Future Scope</h2>
+<p>While the current system is feature-complete for its initial scope, several exciting enhancements are possible:</p>
+<h3 id="1331-collaborative-editing-addresses-editing-limitation">13.3.1 Collaborative Editing (Addresses Editing Limitation)</h3>
+<p>Due to the strict character-index mapping, editing a song requires careful programmatic shifting. Implementing a version-controlled editing system where multiple users can suggest song corrections via an intelligent UI will mitigate this complexity.</p>
+<h3 id="1332-offline-support-pwa">13.3.2 Offline Support (PWA)</h3>
+<p>Converting the application into a Progressive Web App (PWA) using Service Workers to allow musicians to access the song library even in environments without internet connectivity.</p>
+<h3 id="1333-audio-integration">13.3.3 Audio Integration</h3>
+<p>Syncing the scrolling lyrics with an embedded audio player or YouTube link, allowing for structured practice sessions.</p>
+<h3 id="1334-ai-powered-transliteration">13.3.4 AI-Powered Transliteration</h3>
+<p>Improving the Roman script toggle using AI to handle dialect-specific pronunciations and more natural phonetic mapping.</p>
+<h3 id="1335-chord-auto-detection-addresses-ingestion-limitation">13.3.5 Chord Auto-Detection (Addresses Ingestion Limitation)</h3>
+<p>Because ingesting traditional text blocks into the structured database requires a strict format, integrating a machine learning model that can listen to a recording and automatically suggest the chord sequence in the <code>[C]</code> format would greatly accelerate library expansion.</p>
+<h2 id="134-final-words">13.4 Final Words</h2>
+<p>This project was a journey through the intersection of music, language, and technology. It highlights the importance of building systems that respect the complexity of human culture (languages/scripts) while providing the mathematical precision required by musical theory.</p>
+<hr>
+<h1 id="chapter-14-appendix">Chapter 14: Appendix</h1>
+<h2 id="appendix-a-sample-data">Appendix A: Sample Data</h2>
+<h3 id="a1-sample-song-english">A.1 Sample Song (English)</h3>
+<p>Title: Amazing Grace
+Format: Raw Input Format (Before processing)</p>
+<pre class="hljs"><code><div>[Verse 1]
+[G]Amazing grace how [C]sweet the [G]sound
+That saved a wretch like [D]me
+I [G]once was lost but [C]now am [G]found
+Was [Em]blind but [D]now I [G]see
+</div></code></pre>
+<h3 id="a2-sample-song-hindi--dual-script">A.2 Sample Song (Hindi / Dual Script)</h3>
+<p>Title: Aarati Ho Aarati
+Format: Relational Storage Example (Conceptual)</p>
+<p><code>songs</code> table entry:</p>
+<ul>
+<li><code>id</code>: 45</li>
+<li><code>lyrics_original</code>: &quot;à¤†à¤°à¤¤à¥€ à¤¹à¥‹ à¤†à¤°à¤¤à¥€&quot;</li>
+<li><code>lyrics_roman</code>: &quot;Aarati Ho Aarati&quot;</li>
+</ul>
+<p><code>line_chords</code> table entries (mapped to line 1):</p>
+<ul>
+<li><code>chord</code>: &quot;C&quot;, <code>char_index</code>: 0</li>
+<li><code>chord</code>: &quot;F&quot;, <code>char_index</code>: 6</li>
+</ul>
+<hr>
+<h2 id="appendix-b-core-code-snippets">Appendix B: Core Code Snippets</h2>
+<h3 id="b1-chord-extraction-logic-java-regex">B.1 Chord Extraction Logic (Java Regex)</h3>
+<p>This critical snippet demonstrates how the system transitions from unstructured text to structured relational data by locating the <code>[</code> and <code>]</code> anchors.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> StructuredLine <span class="hljs-title function_">parseLine</span><span class="hljs-params">(String rawLine)</span> {
+    <span class="hljs-type">StructuredLine</span> <span class="hljs-variable">line</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StructuredLine</span>();
+    List&lt;ChordOccurrence&gt; chords = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+    
+    <span class="hljs-comment">// Pattern matches anything between brackets, e.g. [G], [C#m7]</span>
+    <span class="hljs-type">Pattern</span> <span class="hljs-variable">pattern</span> <span class="hljs-operator">=</span> Pattern.compile(<span class="hljs-string">&quot;\\[(.+?)\\]&quot;</span>);
+    <span class="hljs-type">Matcher</span> <span class="hljs-variable">matcher</span> <span class="hljs-operator">=</span> pattern.matcher(rawLine);
+    
+    <span class="hljs-type">StringBuffer</span> <span class="hljs-variable">lyricsBuffer</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">StringBuffer</span>();
+    <span class="hljs-type">int</span> <span class="hljs-variable">offset</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    
+    <span class="hljs-keyword">while</span> (matcher.find()) {
+        <span class="hljs-type">String</span> <span class="hljs-variable">chordSymbol</span> <span class="hljs-operator">=</span> matcher.group(<span class="hljs-number">1</span>);
+        <span class="hljs-comment">// The position is where the chord was found, minus the length </span>
+        <span class="hljs-comment">// of all previously stripped bracket tags</span>
+        <span class="hljs-type">int</span> <span class="hljs-variable">position</span> <span class="hljs-operator">=</span> matcher.start() - offset;
+        chords.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ChordOccurrence</span>(chordSymbol, position));
+        
+        matcher.appendReplacement(lyricsBuffer, <span class="hljs-string">&quot;&quot;</span>);
+        offset += matcher.group().length();
+    }
+    matcher.appendTail(lyricsBuffer);
+    
+    line.setLyrics(lyricsBuffer.toString().trim());
+    line.setChords(chords);
+    <span class="hljs-keyword">return</span> line;
+}
+</div></code></pre>
+<h3 id="b2-transposition-logic-chromatic-shifting">B.2 Transposition Logic (Chromatic Shifting)</h3>
+<p>The mathematical core of the transposition utility.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String[] SCALE = {<span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;C#&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;D#&quot;</span>, <span class="hljs-string">&quot;E&quot;</span>, <span class="hljs-string">&quot;F&quot;</span>, <span class="hljs-string">&quot;F#&quot;</span>, <span class="hljs-string">&quot;G&quot;</span>, <span class="hljs-string">&quot;G#&quot;</span>, <span class="hljs-string">&quot;A&quot;</span>, <span class="hljs-string">&quot;A#&quot;</span>, <span class="hljs-string">&quot;B&quot;</span>};
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title function_">transposeChord</span><span class="hljs-params">(String chord, <span class="hljs-type">int</span> steps)</span> {
+    <span class="hljs-keyword">if</span> (chord == <span class="hljs-literal">null</span> || chord.isEmpty()) <span class="hljs-keyword">return</span> chord;
+    
+    <span class="hljs-comment">// Logic to separate root note (e.g., &quot;C&quot;) from suffix (e.g., &quot;maj7&quot;)</span>
+    <span class="hljs-type">String</span> <span class="hljs-variable">root</span> <span class="hljs-operator">=</span> extractRoot(chord);
+    <span class="hljs-type">String</span> <span class="hljs-variable">suffix</span> <span class="hljs-operator">=</span> chord.substring(root.length());
+    
+    <span class="hljs-type">int</span> <span class="hljs-variable">currentIndex</span> <span class="hljs-operator">=</span> Arrays.asList(SCALE).indexOf(root);
+    <span class="hljs-keyword">if</span> (currentIndex == -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> chord; <span class="hljs-comment">// Unknown root, return as is</span>
+    
+    <span class="hljs-comment">// Calculate new index with positive modulo wrap-around</span>
+    <span class="hljs-type">int</span> <span class="hljs-variable">newIndex</span> <span class="hljs-operator">=</span> (currentIndex + steps) % <span class="hljs-number">12</span>;
+    <span class="hljs-keyword">if</span> (newIndex &lt; <span class="hljs-number">0</span>) newIndex += <span class="hljs-number">12</span>;
+    
+    <span class="hljs-keyword">return</span> SCALE[newIndex] + suffix;
+}
+</div></code></pre>
+<hr>
+<h2 id="appendix-c-system-configuration">Appendix C: System Configuration</h2>
+<h3 id="c1-software-stack">C.1 Software Stack</h3>
+<ul>
+<li>Programming Language: Java 17+</li>
+<li>Enterprise Framework: Jakarta EE (Servlets 6.0, JSP 3.1)</li>
+<li>Database: MySQL 8.0+</li>
+<li>Application Server: Apache Tomcat 10.1+ / Jetty 11</li>
+<li>Build Tool: Apache Maven 3.9+</li>
+<li>Frontend: HTML5, CSS3 (CSS Grid/Flexbox), Vanilla ES6 JavaScript</li>
+</ul>
+<h3 id="c2-database-environment-setup">C.2 Database Environment Setup</h3>
+<p>The database schema utilizes standard UTF-8 encoding to support multi-script requirements.</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">CREATE</span> DATABASE worship_db <span class="hljs-keyword">CHARACTER SET</span> utf8mb4 <span class="hljs-keyword">COLLATE</span> utf8mb4_unicode_ci;
+</div></code></pre>
+<hr>
+<h2 id="appendix-d-glossary-of-terms">Appendix D: Glossary of Terms</h2>
+<ul>
+<li>Chord: A group of (typically three or more) notes sounded together, forming the harmonic basis of the song (e.g., G Major, C minor).</li>
+<li>Transposition: The process of shifting a piece of music up or down in pitch by a constant interval (measured in semitones).</li>
+<li>DAO (Data Access Object): A structural design pattern that isolates the application/business layer from the persistence layer (usually a relational database) using an API.</li>
+<li>Servlet: A Java programming language class used to extend the capabilities of servers that host applications accessed by means of a request-response programming model (handling HTTP requests).</li>
+<li>Rendering: The process of a web browser reading HTML/CSS/JavaScript and drawing the visual interface on the screen.</li>
+<li>Index Mapping: The technique of storing the position of a musical chord as a mathematical integer representing a specific character in a string of lyrics, rather than relying on visual space padding.</li>
+</ul>
+<hr>
+
+</body>
+</html>

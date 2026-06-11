@@ -1,0 +1,256 @@
+{
+  "id" : 784,
+  "songNumber" : 172,
+  "title" : "WHEN JESUS COMES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "One sat alone beside the highway begging,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "His eyes were blind, the light he could not see;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "He clutched his rags and shivered in the shadows,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Then Jesus came and bade his darkness flee.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "When Jesus comes the tempter's pow'r is broken;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "When Jesus comes the tears are wiped away.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "He takes the gloom and fills the life with glory,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 43
+      } ]
+    }, {
+      "text" : "For all is changed when Jesus comes to stay.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "From home and friends the evil spirits drove him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Among the tombs he dwelt in misery;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "He cut himself as demon pow'rs possessed him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Then Jesus came and set the captive free.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Unclean ! unclean ! the leper cried in torment,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "The deaf, the dumb, in helplessness stood near;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "The fever raged, disease had gripped its victim,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Then Jesus came and cast out every fear.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "So men today have found the Saviour able,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "They could not conquer passion, lust and sin;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Their broken hearts had left them sad and lonely,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "Then Jesus came and dwelt Himself within.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    } ]
+  } ]
+}

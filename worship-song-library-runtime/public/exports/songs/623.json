@@ -1,0 +1,108 @@
+{
+  "id" : 623,
+  "songNumber" : 316,
+  "title" : "WE WILL WORSHIP THE MAKER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We will worship the maker of all things,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Almighty God, to you our voices sing,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Hallowed be thy name (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "You are the Holy One, Father, Spirit, Son,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "King of kings and Lord of lords,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Hallowed be, Hallowed be",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Hallowed be thy name.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    } ]
+  } ]
+}

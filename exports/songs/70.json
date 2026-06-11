@@ -1,0 +1,63 @@
+{
+  "id" : 948,
+  "songNumber" : 70,
+  "title" : "WE BRING A SACRIFICE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We bring a sacrifice of praise } 2",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Into the house of the Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "And we offer unto You our sacrifices of thanksgiving,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "D7",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "Gm",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "And we offer unto You",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Our sacrifices of praise.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    } ]
+  } ]
+}

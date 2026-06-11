@@ -1,0 +1,128 @@
+{
+  "id" : 846,
+  "songNumber" : 234,
+  "title" : "HE IS HERE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He is here, He is here,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "He is moving among us.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "He is here, He is here,"
+    }, {
+      "text" : "As we gather in His name.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "He is here, He is here,"
+    }, {
+      "text" : "And He wants to work a wonder.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "He is here, He is here,"
+    }, {
+      "text" : "As we gather in His name."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "He is Lord, He is Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Let us worship before Him.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "He is Lord, He is Lord,"
+    }, {
+      "text" : "As we gather in His name."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "He is Lord, He is Lord,"
+    }, {
+      "text" : "Let us praise and adore Him.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Yesterday and today,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "And for evermore the same.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

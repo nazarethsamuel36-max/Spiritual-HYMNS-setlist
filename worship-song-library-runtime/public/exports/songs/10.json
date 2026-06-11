@@ -1,0 +1,147 @@
+{
+  "id" : 596,
+  "songNumber" : 10,
+  "title" : "क्रुसास येशु टांगला, अर्पिलेला कोकरा",
+  "language" : "marathi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "क्रुसास येशु टांगला, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "स्तवू त्या स्तुत्य येशूला, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "अत्यंत प्रिय कोकरा, हे येशू नाम हो मधुर",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "ऐकुनि वाहे प्रेमपूर, अर्पिलेला कोकरा.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मदीय पाप वाहिले, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "मला ह्या नांवे तारिले, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "क्षमा पापांची पावलो, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "अतां स्वर्गास चाललो, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "ही सारि दु:खे संपूनी, अर्पिलेला कोकरा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "सदा स्तवीन गाऊनी, अर्पिलेला कोकरा.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  } ]
+}

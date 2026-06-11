@@ -1,0 +1,294 @@
+{
+  "id" : 851,
+  "songNumber" : 239,
+  "title" : "JUST AS I AM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Just as I am, without one plea,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "But that Thy blood was shed for me.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "And that Thou bidst me come to Thee,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Just as I am, and waiting not",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "To rid my soul of one dark blot,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "To Thee, whose blood can cleanse each spot.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Just as I am, though tossed about",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "With many a conflict, many a doubt,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Fightings and fears within, without,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "Just as I am, poor, wretched, blind,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Sight, riches, healing of the mind,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Yea, all I need, in Thee to find,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "Just as I am, Thou wilt receive,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Wilt welcome, pardon, cleanse, relieve,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Because Thy promise I believe,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "Just as I am, Thy love unknown",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Has broken every barrier down,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Now to be Thine, yes, Thine alone,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 7",
+    "lines" : [ {
+      "text" : "Just as I am, of that free love",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "The breadth, length, depth and height to prove,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 31
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Here for a season, then above,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "O Lamb of God, I come."
+    } ]
+  } ]
+}

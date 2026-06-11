@@ -1,0 +1,161 @@
+{
+  "id" : 838,
+  "songNumber" : 226,
+  "title" : "REJOICE EVERMORE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Rejoice evermore,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "For this is the will of God (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "In Christ Jesus concerning you.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Pray without ceasing,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "For this is the will of God (3)"
+    }, {
+      "text" : "In Christ Jesus concerning you."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "In everything give thanks",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "For this is the will of God (3)"
+    }, {
+      "text" : "In Christ Jesus concerning you."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "Quench not the Spirit,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "For this is the will of God (3)"
+    }, {
+      "text" : "In Christ Jesus concerning you."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "Prove all things,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Hold fast that which is good (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "In Christ Jesus concerning you."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "Love one another,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "For this is the will of God (3)"
+    }, {
+      "text" : "In Christ Jesus concerning you."
+    } ]
+  } ]
+}

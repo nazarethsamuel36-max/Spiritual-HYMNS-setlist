@@ -1,0 +1,37 @@
+{
+  "id" : 561,
+  "songNumber" : 15,
+  "title" : "REJOICE IN THE LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Rejoice in the Lord always",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "And again I say rejoice (Repeat)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Rejoice, rejoice,"
+    }, {
+      "text" : "And again I say rejoice. (Repeat)"
+    } ]
+  } ]
+}

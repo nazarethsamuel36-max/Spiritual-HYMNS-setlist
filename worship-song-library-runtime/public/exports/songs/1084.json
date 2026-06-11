@@ -1,0 +1,140 @@
+{
+  "id" : 1084,
+  "songNumber" : 106,
+  "title" : "GAR TUM KHAMOSH RAHOGE TO",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "गर तुम खामोश रहोगे तो, पत्थर बोल उठेंगे",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "पत्थर बोल उठेंगे, पत्थर बोल उठेंगे ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "Em",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "आत्मा को मेरी उंडेल दूँगा,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "मानव जाती पर मैं सारी",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "बेटे बेटियाँ नबुवत करेगी,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "देखेगी ये दुनिया सारी ख्वाब देखेंगे",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "बुढे और जवान दर्शन देखेंगे ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "नामसे उसके हर घटना टिकेगा,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "रुठा जो उसकी शरण आएँगा,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "हर एक की आँख उसे देखेगी,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "हर एक जुबाए कबुल करेगी",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "यीशु ही उद्धार करता, शाफि से बोल उठेंगे ।",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "Em",
+        "position" : 34
+      } ]
+    } ]
+  } ]
+}

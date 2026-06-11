@@ -1,0 +1,88 @@
+{
+  "id" : 3127,
+  "songNumber" : 2028,
+  "title" : "** Tere Bina mai kuch bhi nahi hu",
+  "language" : "hindi",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Tere bina main"
+    }, {
+      "text" : "Kuch bhi nahin hoon"
+    }, {
+      "text" : "Tere bina main adhoora hoon"
+    }, {
+      "text" : "Teri aatma se mujhko bhar de prabhu X 4"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Duniya ke bheed mein"
+    }, {
+      "text" : "Khoya hua tha"
+    }, {
+      "text" : "Tune mujhe dund liya"
+    }, {
+      "text" : "Teri raho par mujhko chalaya Yeshu X 4"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Main kya hoon prabhu"
+    }, {
+      "text" : "Jo tune mujhe"
+    }, {
+      "text" : "Tere pyar se apna liya"
+    }, {
+      "text" : "Tera beta banakar kareeb liya X 4"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "Main jo gunaho mein"
+    }, {
+      "text" : "Dooba hua tha"
+    }, {
+      "text" : "Tune mujhe bacha liya"
+    }, {
+      "text" : "Sare papon ko dhokar shuddh kiya X 4"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 5",
+    "lines" : [ {
+      "text" : "Ab main kyon daroo"
+    }, {
+      "text" : "Tu jo hai saath"
+    }, {
+      "text" : "Sada ke liye tune kaha"
+    }, {
+      "text" : "Tera anugrah mere liye kaafi hai prabhu X 4"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Teri aatma se mujhko bhar de prabhu"
+    }, {
+      "text" : "Teri raho par mujhko chalaya Yeshu"
+    }, {
+      "text" : "Tera beta banakar kareeb liya"
+    }, {
+      "text" : "Sare papon ko dhokar shuddh kiya"
+    } ]
+  } ]
+}

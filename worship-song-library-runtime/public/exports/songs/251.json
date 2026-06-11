@@ -1,0 +1,128 @@
+{
+  "id" : 863,
+  "songNumber" : 251,
+  "title" : "SHEPHERD OF LOVE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Shepherd of love, you knew I had lost my way,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 33
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Shepherd of love, you cared that I'd gone astray.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 37
+      }, {
+        "chord" : "A",
+        "position" : 44
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "You sought and found me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Placed around me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Strong arms that carried me home,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "No foe can harm me, nor alarm me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Never again will I roam.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Shepherd of love, Saviour and Lord and Guide,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 30
+      }, {
+        "chord" : "A",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Shepherd of love, forever I'll stay by your side.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "A",
+        "position" : 44
+      } ]
+    } ]
+  } ]
+}

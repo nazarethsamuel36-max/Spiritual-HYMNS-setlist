@@ -1,0 +1,170 @@
+{
+  "id" : 842,
+  "songNumber" : 230,
+  "title" : "INTO MY HEART",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Into my heart, into my heart,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Come into my heart, Lord Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Come in today, come in to stay,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Come into my heart, Lord Jesus.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Rule in my heart; rule in my heart;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Be King of my heart, Lord Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Make this your throne; rule there alone,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Be King of my heart, Lord Jesus.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Out of my life, out of my life,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Shine out of my life Lord Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Shine out today,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "Shine out always,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Shine out of my life, Lord Jesus.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

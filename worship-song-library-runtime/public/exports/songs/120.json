@@ -1,0 +1,122 @@
+{
+  "id" : 1098,
+  "songNumber" : 120,
+  "title" : "YESHU MASIH HAMARA RAJA HAI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु मसीह हमारा राजा है ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "आओ हमसब मिलकर गाये हाल्लेलुयाह",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "हाल्लेलुयाह (3) आमीन (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "उठा लिया बोझ हमारा जीवन का सारा ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "उसके लहूसे मिली है पापोंकी क्षमा ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "आनंद का दाता शांती का सोता ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "मुक्ती का दाता आमीन आमीन ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जगका वह राजा जय जय यीशु नाथ ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "शांती के कुमार को मैं करूँ प्रणाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "लाखोंमें मीठा है यीशु नाम ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "चमकीला है वह सूर्यसमान ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

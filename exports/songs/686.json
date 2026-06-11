@@ -1,0 +1,118 @@
+{
+  "id" : 686,
+  "songNumber" : 5,
+  "title" : "BLESS THE LORD O MY SOUL",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Bless the Lord, O my soul,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Magnify His wonderful Name",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "For the glory of the Lord is mine forever,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 21
+      }, {
+        "chord" : "D7",
+        "position" : 29
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "Jesus is ever the same;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "For the Lord has set me free,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And He's given me liberty,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "D7",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "To tell the world that Jesus is mine,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "He has given me the wine to make my heart rejoice.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 33
+      }, {
+        "chord" : "G",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "And oil to make my face to shine.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

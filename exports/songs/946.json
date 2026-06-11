@@ -1,0 +1,53 @@
+{
+  "id" : 946,
+  "songNumber" : 68,
+  "title" : "HE'S A MIRACLE-WORKING GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He's a miracle-working God (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "He's the Alpha and Omega",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "He's a miracle-working God.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Let us sing and praise our God. (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Let us sing, let us praise,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "Let us sing and praise our God.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,411 @@
+{
+  "id" : 610,
+  "songNumber" : 303,
+  "title" : "THE CHURCH HAS ONE FOUNDATION",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "The Church has one foundation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "'Tis Jesus Christ her Lord,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "She is His new creation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "By water and the Word,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "From Heaven He came and sought her,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "To be His Holy bride,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "With His own blood He bought her",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "And for her life He died.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Elect from every nation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Yet one o'er all the earth,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Her charter of salvation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "One Lord, one faith, one birth,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "One holy name she blesses,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Partakes the holy food,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "And to one hope she presses,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "With every grace endued.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Though with a scornful wonder,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Men see her sore oppressed,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Though foes would rend asunder,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "The rock where she doth rest.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Yet saints their faith are keeping,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Their cry goes up, \"How long?\"",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 15
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "And soon the night of weeping,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Shall be the morn of song.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "Mid toil and tribulation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "And tumult of her war,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "She waits the consummation,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Of peace for evermore,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Till the vision glorious,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Her longing eyes are blest,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "And the great church victorious,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Shall be the church at rest.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  } ]
+}

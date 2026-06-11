@@ -1,0 +1,278 @@
+{
+  "id" : 609,
+  "songNumber" : 302,
+  "title" : "A WONDERFUL SAVIOUR IS JESUS MY LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "A wonderful Saviour is Jesus my Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "A wonderful Saviour to me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "He hideth my soul in the cleft of the rock,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "Where rivers of pleasure I see.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "He hideth my soul in the cleft of the rock,"
+    }, {
+      "text" : "That shadows a dry, thirsty land,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "He hideth my life in the depths of His love,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "And covers me there with His hand.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "A wonderful Saviour is Jesus my Lord,"
+    }, {
+      "text" : "He taketh my burden away,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "He holdeth me up, and I shall not be moved,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "He giveth me strength as my day.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "With numberless blessings each moment He crowns,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "And filled with His fullness divine,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "I sing in my rapture, Oh, glory to God,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "For such a Redeemer as mine.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "When clothed in His brightness,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Transported I rise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "To meet Him in clouds of the sky,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "A",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "His perfect salvation, His wonderful love,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 27
+      }, {
+        "chord" : "A",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "I'll shout with the millions on high.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

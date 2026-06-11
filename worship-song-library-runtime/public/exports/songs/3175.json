@@ -1,0 +1,52 @@
+{
+  "id" : 3175,
+  "songNumber" : 1034,
+  "title" : "** This is the Air I Breathe",
+  "language" : "english",
+  "originalKey" : "** Bb",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "This is the Air I Breathe"
+    }, {
+      "text" : "This is the Air I Breathe"
+    }, {
+      "text" : "Your holy presence living in me"
+    }, {
+      "text" : "This is my daily bread"
+    }, {
+      "text" : "This is my daily bread"
+    }, {
+      "text" : "Your very word spoken to me"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "And I"
+    }, {
+      "text" : "I'm desperate for you"
+    }, {
+      "text" : "And I"
+    }, {
+      "text" : "I'm blessed, you found me"
+    }, {
+      "text" : "And I"
+    }, {
+      "text" : "I'm blessed, you washed me"
+    }, {
+      "text" : "And I"
+    }, {
+      "text" : "I'm blessed, you saved me"
+    } ]
+  } ]
+}

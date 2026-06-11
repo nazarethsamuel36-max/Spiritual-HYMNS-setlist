@@ -1,0 +1,113 @@
+{
+  "id" : 983,
+  "songNumber" : 5,
+  "title" : "YESHU NE KAHA \"JEEVAN KI ROTI\"",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "यीशु ने कहा ''जीवन की रोटी,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "जीवन की रोटी, मैं ही हूँ'' । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु ने कहा ''जगत का उजाला,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "जगत्न का उजाला, मैं ही हूँ'' । (2)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "यीशु ने कहा- ''सच्चा-गडरिया,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "सच्चा गडरिया, मैं ही हूँ'' । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "यीशु ने कहा- ''मार्ग और फाटक,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "मार्ग और फाटक, मैं ही हूँ'' । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,88 @@
+{
+  "id" : 915,
+  "songNumber" : 12,
+  "title" : "ITâ€™S A LOVELY LOVELY NAME",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Itâ€™s a lovely, lovely, Name,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "The Name of Jesus.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Itâ€™s a lovely, lovely, Name"
+    }, {
+      "text" : "From heaven above.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "Dispelling the clouds of doubt and fear,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Filling the saddened heart with cheer,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Itâ€™s a lovely, lovely, Name"
+    }, {
+      "text" : "The Name I love.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 11
+      } ]
+    } ]
+  } ]
+}

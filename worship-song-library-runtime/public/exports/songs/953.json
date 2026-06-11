@@ -1,0 +1,63 @@
+{
+  "id" : 953,
+  "songNumber" : 75,
+  "title" : "LET YOUR WORD BE BORN",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Let Your Word be born in the manger of my heart,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "Let it live in me, let it shine,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Live inside this house of clay,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "D7",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "And mould me every day,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Let Your Word be born in the manger of my heart.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    } ]
+  } ]
+}

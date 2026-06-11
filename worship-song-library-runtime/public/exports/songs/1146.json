@@ -1,0 +1,104 @@
+{
+  "id" : 1146,
+  "songNumber" : 168,
+  "title" : "KAL AUR AAJ AUR YUGANUYUG TAK",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "कल और आज और युगानुयुग तक, यीशु एक सा है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हम बदलते वो न कभी, उसके नाम की जय",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "उसके नाम की जय, उसके नाम की जय",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हम बदलते वो न कभी, उसके नाम की जय।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "वो है मेरा भला चरवाहा, मेरा प्रभु है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हरी हरी चराईयों में वह मुझे ले चलता है",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मुझे ले चलता है, मुझे ले चलता है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हरी हरी चराईयों में वह, मुझे ले चलता है।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "वो है मेरा मुक्तिदाता, मेरा प्रेमी है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "घायल मन को चंगा करता, शांति देता है",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "शांति देता है, शांति देता है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "घायल मन को चंगा करता, शांति देता है।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,161 @@
+{
+  "id" : 903,
+  "songNumber" : 291,
+  "title" : "HEAR MY CRY O LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Hear my cry O Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Attend unto my prayer,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "From the end of the earth,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Will I cry unto thee,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "When my heart is overwhelmed,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Lead me to the rock that is higher than I,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "A",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "that is higher than I.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "For Thou O Lord hast been",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "A shelter unto me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "A tower O Lord against the enemy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "When my heart is overwhelmed",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Lead me to the rock that is higher than I",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "A",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "that is higher than I."
+    } ]
+  } ]
+}

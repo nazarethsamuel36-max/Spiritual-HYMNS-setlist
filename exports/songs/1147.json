@@ -1,0 +1,109 @@
+{
+  "id" : 1147,
+  "songNumber" : 169,
+  "title" : "HE YESHU MAHAN, HE YESHU MAHAN",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "हे यीशु महान, हे यीशु महान",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरी जय - तेरी जय - तेरी जय।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तू कितना दयालु है प्रेमी पिता",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरे प्रेमकी गहराई है अथाह",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "दी तूने गुनाहगारों को जान",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरी जय, तेरी जय, तेरी जय।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जब तेरी प्रशंसा करने चले",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जब तेरे गुणोंको गिनने चले",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरा हो न सका कभी हमसे बयान",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरी जय, तेरी जय, तेरी जय।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "हर दिल में तेरा ही मान बड़ा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पाने का तुझे अरमान बड़ा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हे यीशु महान तू कितना महान",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरी जय, तेरी जय, तेरी जय।"
+    } ]
+  } ]
+}

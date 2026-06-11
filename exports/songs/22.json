@@ -1,0 +1,129 @@
+{
+  "id" : 1000,
+  "songNumber" : 22,
+  "title" : "YESHU HAI SACCHA GADARIYA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "यीशु है सच्चा गडरिया, उसकी हम भेंडें है,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "Bb",
+        "position" : 22
+      }, {
+        "chord" : "F",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "हरी चराईंयों में हमें चराता है ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "वादी पहाडी में ले चलता है,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "जहाँ पर सुखदायी झरने बहते हैं ।",
+      "chords" : [ {
+        "chord" : "Bb",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "मार्गों में मेरी रक्षा वो करता है,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "शैतान के हाथों से हमें छुडाता है ।",
+      "chords" : [ {
+        "chord" : "Bb",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "F",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "हमको किसीका अब तो डर नहीं है,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "क्योंकि यीशु जो मेरा साथी है ।",
+      "chords" : [ {
+        "chord" : "Bb",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "हाल्लेलुयाह, आमीन (4)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 8
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "F",
+        "position" : 18
+      } ]
+    } ]
+  } ]
+}

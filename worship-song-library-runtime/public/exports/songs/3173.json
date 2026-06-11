@@ -1,0 +1,76 @@
+{
+  "id" : 3173,
+  "songNumber" : 1032,
+  "title" : "** Give me that old time religion",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Give me that old time religion (3)"
+    }, {
+      "text" : "It's good enough for me"
+    }, {
+      "text" : "Give me that old time religion (3)"
+    }, {
+      "text" : "It's good enough for me"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "It was good for Paul and Silas (3)"
+    }, {
+      "text" : "It's good enough for me"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "It was good for our mothers,"
+    }, {
+      "text" : "It was good for our fathers,"
+    }, {
+      "text" : "It was good for the prophets,"
+    }, {
+      "text" : "It's good enough for me."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "It will take us all to heaven (3)"
+    }, {
+      "text" : "It's good enough for us"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "It will save us from the devil (3)"
+    }, {
+      "text" : "It's good enough for us"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "Give us that old time religion (2)"
+    }, {
+      "text" : "We'll go back to that..."
+    }, {
+      "text" : "Old time religion,"
+    }, {
+      "text" : "It's good enough for us"
+    } ]
+  } ]
+}

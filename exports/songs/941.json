@@ -1,0 +1,68 @@
+{
+  "id" : 941,
+  "songNumber" : 62,
+  "title" : "FLOW THROUGH ME",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Flow through me, Holy Spirit,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 17
+      }, {
+        "chord" : "Bm",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "flow through me (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "As I lift my hands to worship",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "D7",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "And magnify Thy Name,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "Gm",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Flow through me, Holy Spirit,"
+    }, {
+      "text" : "flow through me.",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    } ]
+  } ]
+}

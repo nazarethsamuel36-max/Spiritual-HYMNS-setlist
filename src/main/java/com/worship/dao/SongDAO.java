@@ -21,7 +21,7 @@ public class SongDAO {
     private static final String ACTIVE_BOOK = "prime_songbook";
 
     private String getVisibilityFilter() {
-        return " book = '" + ACTIVE_BOOK + "' AND is_active = TRUE ";
+        return " book != 'raw_songbook' AND is_active = TRUE AND song_number > 0 ";
     }
 
     /**
@@ -141,6 +141,33 @@ public class SongDAO {
     }
 
     /**
+     * Get songs by their song number and language (exact match).
+     * Used for number search layer.
+     */
+    public List<Song> getSongsByNumberAndLanguage(int songNumber, String language) {
+        List<Song> songs = new ArrayList<>();
+        String sql = "SELECT * FROM songs WHERE song_number = ? AND language = ? AND " + getVisibilityFilter();
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, songNumber);
+            ps.setString(2, language);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Song song = mapResultSetToSong(rs);
+                    song.setHashtags(getHashtagsForSong(song.getId()));
+                    song.setSections(getSectionsForSong(song.getId()));
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return songs;
+    }
+
+    /**
      * Search songs by title, artist, lyrics_original, or lyrics_roman using LIKE.
      * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
@@ -183,6 +210,93 @@ public class SongDAO {
     }
 
     /**
+     * STABILIZATION: Lightweight search for candidate retrieval.
+     * 1. Joins with hashtags for unified matching.
+     * 2. Limits candidates to 100 rows to prevent memory pressure.
+     * 3. Fetches only essential fields (Two-Stage Retrieval Stage 1).
+     * 4. Enforces strict AND logic across tokens.
+     */
+    public List<Song> searchSongsLightweight(List<String> tokens, java.util.Map<String, List<String>> variantMap) {
+        List<Song> songs = new ArrayList<>();
+        if (tokens == null || tokens.isEmpty()) return songs;
+
+        StringBuilder sql = new StringBuilder();
+        // GROUP_CONCAT for hashtags integration
+        sql.append("SELECT s.id, s.song_number, s.title, s.artist, s.lyrics_original, s.lyrics_roman, ")
+           .append("s.original_key, s.language, ")
+           .append("GROUP_CONCAT(h.name, ' ') as aggregated_hashtags ")
+           .append("FROM songs s ")
+           .append("LEFT JOIN song_hashtags sh ON s.id = sh.song_id ")
+           .append("LEFT JOIN hashtags h ON sh.hashtag_id = h.id ")
+           .append("WHERE ").append(getVisibilityFilter().replace("book =", "s.book =").replace("is_active =", "s.is_active ="));
+
+        List<Object> params = new ArrayList<>();
+
+        for (String token : tokens) {
+            sql.append(" AND (");
+            
+            List<String> variants = variantMap.getOrDefault(token, java.util.Collections.singletonList(token));
+            
+            for (int i = 0; i < variants.size(); i++) {
+                if (i > 0) sql.append(" OR ");
+                String variant = variants.get(i);
+                sql.append("s.title LIKE ? OR ");
+                sql.append("s.artist LIKE ? OR ");
+                sql.append("s.lyrics_original LIKE ? OR ");
+                sql.append("s.lyrics_roman LIKE ? OR ");
+                sql.append("h.name LIKE ?"); // Hashtag matching
+                
+                String likeParam = "%" + variant + "%";
+                params.add(likeParam);
+                params.add(likeParam);
+                params.add(likeParam);
+                params.add(likeParam);
+                params.add(likeParam);
+            }
+            
+            sql.append(")");
+        }
+        
+        sql.append(" GROUP BY s.id ");
+        sql.append(" ORDER BY s.song_number, s.title ");
+        sql.append(" LIMIT 100"); // STABILIZATION: Limit candidates
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql.toString())) {
+             
+            for (int i = 0; i < params.size(); i++) {
+                ps.setObject(i + 1, params.get(i));
+            }
+            
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Song song = new Song();
+                    song.setId(rs.getInt("id"));
+                    song.setSongNumber(rs.getInt("song_number"));
+                    song.setTitle(rs.getString("title"));
+                    song.setArtist(rs.getString("artist"));
+                    song.setLyricsOriginal(rs.getString("lyrics_original"));
+                    song.setLyricsRoman(rs.getString("lyrics_roman"));
+                    song.setOriginalKey(rs.getString("original_key"));
+                    song.setLanguage(rs.getString("language"));
+                    
+                    // Store hashtags temporarily in a transient list or field if available
+                    String tagString = rs.getString("aggregated_hashtags");
+                    if (tagString != null) {
+                        song.setHashtags(java.util.Arrays.asList(tagString.split(" ")));
+                    }
+                    
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return songs;
+    }
+
+    /**
      * Get songs that have a specific hashtag.
      * FIXED: Uses batch hashtag retrieval (CHANGE 2.1 - eliminates N+1 queries).
      */
@@ -216,6 +330,47 @@ public class SongDAO {
             songs.forEach(s -> s.setHashtags(hashtagMap.getOrDefault(s.getId(), new ArrayList<>())));
         }
 
+        return songs;
+    }
+
+    /**
+     * LIVE SEARCH: Fast prefix-based suggestions.
+     * - Only matches title or artist starting with the query (prefix).
+     * - Returns minimal fields for speed.
+     * - Strict limit (max 10) for UI responsiveness.
+     */
+    public List<Song> searchLiveSuggestions(String query, int limit) {
+        List<Song> songs = new ArrayList<>();
+        if (query == null || query.isEmpty()) return songs;
+
+        // Optimized query: Prefix match on title or artist
+        // Use s.title LIKE 'query%' for index-friendly search
+        String sql = "SELECT id, song_number, title FROM songs "
+                + "WHERE " + getVisibilityFilter()
+                + " AND (title LIKE ? OR artist LIKE ?) "
+                + "ORDER BY song_number ASC, title ASC "
+                + "LIMIT ?";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            String prefixParam = query + "%";
+            ps.setString(1, prefixParam);
+            ps.setString(2, prefixParam);
+            ps.setInt(3, limit);
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    Song song = new Song();
+                    song.setId(rs.getInt("id"));
+                    song.setSongNumber(rs.getInt("song_number"));
+                    song.setTitle(rs.getString("title"));
+                    songs.add(song);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return songs;
     }
 
@@ -573,9 +728,11 @@ public class SongDAO {
             // 2. Insert Sections
             String secSql = "INSERT INTO sections (song_id, type, label, section_order) VALUES (?, ?, ?, ?)";
             String lineSql = "INSERT INTO song_lines (section_id, line_text, line_order) VALUES (?, ?, ?)";
+            String chordSql = "INSERT INTO line_chords (line_id, chord, char_index, confidence) VALUES (?, ?, ?, 1.0)";
 
             try (PreparedStatement secPs = conn.prepareStatement(secSql, Statement.RETURN_GENERATED_KEYS);
-                 PreparedStatement linePs = conn.prepareStatement(lineSql)) {
+                 PreparedStatement linePs = conn.prepareStatement(lineSql, Statement.RETURN_GENERATED_KEYS);
+                 PreparedStatement chordPs = conn.prepareStatement(chordSql)) {
 
                 for (int i = 0; i < song.getSections().size(); i++) {
                     Section sec = song.getSections().get(i);
@@ -596,10 +753,26 @@ public class SongDAO {
                         linePs.setInt(1, sectionId);
                         linePs.setString(2, line.getText());
                         linePs.setInt(3, j + 1);
-                        linePs.addBatch();
+                        linePs.executeUpdate(); // Insert line one by one to get its ID
+                        
+                        int lineId;
+                        try (ResultSet lineKeys = linePs.getGeneratedKeys()) {
+                            if (lineKeys.next()) lineId = lineKeys.getInt(1);
+                            else throw new SQLException("No ID generated for song_line");
+                        }
+                        
+                        // Insert chords for this line if any
+                        if (line.getChords() != null && !line.getChords().isEmpty()) {
+                            for (com.worship.model.ChordOccurrence co : line.getChords()) {
+                                chordPs.setInt(1, lineId);
+                                chordPs.setString(2, co.getChord());
+                                chordPs.setInt(3, co.getPosition());
+                                chordPs.addBatch();
+                            }
+                        }
                     }
-                    linePs.executeBatch();
                 }
+                chordPs.executeBatch();
             }
 
             conn.commit();

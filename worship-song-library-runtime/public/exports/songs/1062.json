@@ -1,0 +1,207 @@
+{
+  "id" : 1062,
+  "songNumber" : 84,
+  "title" : "ARADHANA HUM YESHU KI KARE",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "आराधना हम यीशु की करे (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "सुख की छाया, दुःख की घडी,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "हरपल उसी में जीए (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "दुःख में सदा साथ रहता है वो,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "हाथ में हरदम उठाता है वो,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "दिल के सदा पास रहता है वो,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "F",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "पास में हरदम है मसीह वो ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "पापों से हमको छुडाता है वो,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "अपने पापों से तुम भी बचो,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "शैतान से हमको बचाता वो,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "जगत के शैतान से तुम भी बचो ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "C",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "यीशु ने कितने दुःख है सहे,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "F",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "कोडे भी खाए थुके रहे,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "उसने हमारे पापो के लिए,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "किले ठुकवाए सहते हुए ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    } ]
+  } ]
+}

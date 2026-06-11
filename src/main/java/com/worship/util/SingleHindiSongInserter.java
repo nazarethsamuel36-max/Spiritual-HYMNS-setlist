@@ -94,10 +94,33 @@ public class SingleHindiSongInserter {
                 section.setLabel(label);
 
                 List<SongLine> lines = new ArrayList<>();
-                for (JsonNode lineNode : linesNode) {
-                    SongLine line = new SongLine();
-                    line.setText(lineNode.asText()); // Do not modify lyrics text
-                    lines.add(line);
+                int lineOrder = 1;
+                for (int i = 0; i < linesNode.size(); i++) {
+                    String rawLine = linesNode.get(i).asText();
+                    
+                    // Two-line chord format detection
+                    if (com.worship.util.ChordParser.isChordOnlyLine(rawLine) && i + 1 < linesNode.size()) {
+                        String nextLine = linesNode.get(i + 1).asText();
+                        if (!nextLine.trim().isEmpty() && !com.worship.util.ChordParser.isChordOnlyLine(nextLine)) {
+                            List<com.worship.model.ChordOccurrence> chords = com.worship.util.ChordParser.parseChordOnlyLine(rawLine);
+                            SongLine sl = new SongLine(nextLine, lineOrder++);
+                            sl.setChords(chords);
+                            lines.add(sl);
+                            i++; // skip next line
+                            continue;
+                        }
+                    }
+                    
+                    // Normal bracketed or pure lyrics
+                    com.worship.model.StructuredLine structuredLine = com.worship.util.ChordParser.parseStructuredLine(rawLine);
+                    if (structuredLine.getLyrics() != null && !structuredLine.getLyrics().trim().isEmpty()) {
+                        SongLine sl = new SongLine(structuredLine.getLyrics(), lineOrder++);
+                        sl.setChords(structuredLine.getChords());
+                        lines.add(sl);
+                    } else {
+                        SongLine sl = new SongLine(rawLine, lineOrder++);
+                        lines.add(sl);
+                    }
                 }
                 section.setLines(lines);
                 sections.add(section);

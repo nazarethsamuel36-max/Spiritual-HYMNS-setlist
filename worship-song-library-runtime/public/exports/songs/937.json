@@ -1,0 +1,84 @@
+{
+  "id" : 937,
+  "songNumber" : 58,
+  "title" : "ALL HAIL KING JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "All hail King Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "All hail Emmanuel,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "King of kings, Lord of lords,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Bright Morning Star,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "And throughout eternity,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "F#m",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "I'll sing Your praises,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "And I'll reign with You",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Throughout Eternity.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    } ]
+  } ]
+}

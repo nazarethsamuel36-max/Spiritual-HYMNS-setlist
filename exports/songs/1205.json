@@ -1,0 +1,139 @@
+{
+  "id" : 1205,
+  "songNumber" : 227,
+  "title" : "AAO GAO YESHU KE LIYE STUTI AUR MAHIMA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "आओ गाओ यीशु के लिए स्तुति और महिमा (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "पिता की भलाई सदा के लिए, हम पर बनी रहती है (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "धन्यवाद मैं देता हूँ, मेरे महान प्रभु (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "तू राजाओं का राजा, प्रभुओं का प्रभु (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "न्याय करने आने वाला है।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "धन्यवाद मैं देता हूँ, तेरी बुलाहट को (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "प्रकाश में बुलाया, याजक बनाया (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "स्तुति के गुण प्रकट करूँ ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरी गवाही मैं हूँ, संसार के लोगों को (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "अभिषेक कर दे, साहस से भर दे । (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तू आने तक प्रचार मैं करू।"
+    } ]
+  } ]
+}

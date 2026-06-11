@@ -1,0 +1,211 @@
+{
+  "id" : 756,
+  "songNumber" : 144,
+  "title" : "I AM THINE O LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I am Thine, O Lord, I have heard Thy voice,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "And it told Thy love to me;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "But I long to rise in the arms of faith,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "And be closer drawn to Thee.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Draw me nearer, nearer, nearer, blessed Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "To the cross where Thou hast died;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Draw me nearer, nearer, nearer, blessed Lord,"
+    }, {
+      "text" : "To Thy precious, bleeding side.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Consecrate me now to Thy service Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "By the pow'r of grace divine;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Let my soul look up with a steadfast hope,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "And my will be lost in Thine.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Oh, the pure delight of a single hour",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "That before Thy throne I spend,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "When I kneel in prayer, and with Thee, my God,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "I commune as friend with friend.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "There are depths of love that I cannot know",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Till I cross the narrow sea,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "There are heights of joy that I may not reach,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 36
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "Till I rest in peace with Thee.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    } ]
+  } ]
+}

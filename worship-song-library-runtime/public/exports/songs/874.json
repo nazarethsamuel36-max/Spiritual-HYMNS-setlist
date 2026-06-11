@@ -1,0 +1,297 @@
+{
+  "id" : 874,
+  "songNumber" : 262,
+  "title" : "I'M PRESSING ON THE UPWARD WAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I'm pressing on the upward way,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "New heights I'm gaining every day,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Still praying as I'm onward bound,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Lord, plant my feet on higher ground.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Lord lift me up and let me stand,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "By faith on heaven's tableland;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "A higher plane than I have found,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Lord, plant my feet on higher ground."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "My heart has no desire to stay,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Where doubts arise and fears dismay,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Tho' some may dwell where these abound",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "A",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "My prayer, my aim is higher ground.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "I want to live above the world,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Tho' Satan's darts at me are hurled",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "For faith has caught the joyful sound",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "The song of saints on higher ground.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "I want to scale the utmost height,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And catch a gleam of glory bright,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "But still I'll pray till heaven I've found.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "Lord, lead me on to higher ground.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  } ]
+}

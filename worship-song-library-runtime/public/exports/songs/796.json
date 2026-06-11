@@ -1,0 +1,291 @@
+{
+  "id" : 796,
+  "songNumber" : 184,
+  "title" : "O HAPPY DAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "O happy day, that fixed my choice",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "On Thee, my Saviour and my God !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Well may this glowing heart rejoice,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "And tell its raptures all abroad.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "Happy day, happy day,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "When Jesus washed my sins away!",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "He taught me how to watch and pray,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "And live rejoicing every day.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Happy day, happy day,"
+    }, {
+      "text" : "When Jesus washed my sins away !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "O happy bond, that seals my vows",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "To Him who merits all my love !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Let cheerful anthems fill His house,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "While to that sacred shrine I move.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "'Tis done ; the great transaction's done !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "I am my Lord's and He is mine ;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "He drew me, and I followed on,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Charmed to confess the voice divine.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "Now rest my long-divided heart,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Fixed on this blissful centre rest ;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Nor ever from thy Lord depart",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "With Him of every good possessed.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    } ]
+  } ]
+}

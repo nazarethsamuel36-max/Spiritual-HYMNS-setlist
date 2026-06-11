@@ -54,6 +54,24 @@
         .song-card {
             max-width: 800px;
             margin: 0 auto;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+            position: relative;
+        }
+        .song-card:hover {
+            opacity: 0.85;
+        }
+        .song-card::after {
+            content: '↗';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            opacity: 0.5;
+            transition: opacity 0.2s;
+        }
+        .song-card:hover::after {
+            opacity: 1;
         }
         .song-header {
             border-bottom: 2px solid #333;
@@ -247,7 +265,7 @@
                         </c:when>
                         <c:otherwise>
                             <!-- SONG SLIDE -->
-                            <div class="song-card" id="song-container-${item.songId}">
+                            <div class="song-card" id="song-container-${item.songId}" data-song-id="${item.songId}" data-transpose="${item.transpositionOffset}" onclick="openSongView(${item.songId}, ${item.transpositionOffset})">
                                 <div class="song-header">
                                     <h1 class="song-title">${item.songTitle}</h1>
                                     <p class="song-artist">${item.songArtist}</p>
@@ -448,11 +466,36 @@
                     wakeLock = await navigator.wakeLock.request('screen');
                     console.log('Wake Lock is active');
                 } catch (err) {
-                    console.error(`${err.name}, ${err.message}`);
+                    console.error(err.name + ', ' + err.message);
                 }
             }
         }
         requestWakeLock();
+
+        // Song Navigation from Setlist
+        async function openSongView(songId, transpose) {
+            try {
+                // Store transpose in session via setlist servlet
+                const response = await fetch(`${contextPath}/setlist/setTranspose`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: `songId=${songId}&semitones=${transpose}`
+                });
+
+                if (response.ok) {
+                    // Navigate to song view with transpose applied
+                    window.location.href = `${contextPath}/song?id=${songId}`;
+                } else {
+                    console.error('Failed to store transpose');
+                    // Still navigate even if transpose storage failed
+                    window.location.href = `${contextPath}/song?id=${songId}`;
+                }
+            } catch (err) {
+                console.error('Error opening song:', err);
+                // Fallback: navigate directly to song
+                window.location.href = `${contextPath}/song?id=${songId}`;
+            }
+        }
 
         // Initial UI State
         updateUI();

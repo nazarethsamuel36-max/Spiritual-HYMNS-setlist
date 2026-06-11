@@ -1,0 +1,114 @@
+{
+  "id" : 656,
+  "songNumber" : 349,
+  "title" : "HIS NAME IS HIGHER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "His name is higher than any other,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "His name is Jesus, His name is Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "His name is Wonderful,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "His name is Counsellor,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "His name is Prince of peace,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "The Mighty God.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "His name is higher than any other",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "His name is Jesus, His name is Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    } ]
+  } ]
+}

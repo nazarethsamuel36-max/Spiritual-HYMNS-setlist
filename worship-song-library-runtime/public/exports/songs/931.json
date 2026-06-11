@@ -1,0 +1,93 @@
+{
+  "id" : 931,
+  "songNumber" : 52,
+  "title" : "LET THERE BE LOVE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Let there be love shared among us,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Let there be love in our eyes,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "May now your love sweep this nation",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "C7",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Cause us O Lord, to arise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Give us a fresh understanding;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Of brotherly love that is real,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Let there be love shared among us",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "C7",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Let there be love.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    } ]
+  } ]
+}

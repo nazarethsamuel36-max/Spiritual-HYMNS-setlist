@@ -1,0 +1,94 @@
+{
+  "id" : 970,
+  "songNumber" : 92,
+  "title" : "UNTO THEE O LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Unto thee, O Lord, do I lift up my soul (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "O my God, I trust in Thee,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Let me not be ashamed,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "Bm",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Let not mine enemies triumph over me.",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Show me Thy ways, Thy ways O Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Teach me Thy paths, Thy paths O Lord... O my God...",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Remember not the sins of my youth (2)...O my God...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "The secret of the Lord is with Them that fear Him. (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    } ]
+  } ]
+}

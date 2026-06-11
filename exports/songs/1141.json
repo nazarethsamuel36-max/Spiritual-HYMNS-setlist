@@ -1,0 +1,135 @@
+{
+  "id" : 1141,
+  "songNumber" : 163,
+  "title" : "TUHI DULHAN HAI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "तूही दुल्हन है,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ये सबको बताऊँगा,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "छोटी झुंड है मेरी,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पर तुमसे ही प्रेम करूँगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तेरी आँखों से, अब मैं देखूँगा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरे होठों से, अब मैं बोलूँगा,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मेरी सामर्थ्य को मैं तुम में उंडेलूँगा,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "क्योंकि मैं जीवित हूँ, अब तुमको जिलाऊँगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 38
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "डरना नही अब तू, तेरे बीच में हूँ,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जो काम मुझमें हुए, अब मैं तुम में करूँ",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जो भी मेरा है, मैं तुमको ही दूँगा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पास हमेशा मेरे, तुमको मैं रखूँगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "जीवन का है समय, अब मैं आया हूँ,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "भय और हार नहीं, पर प्रेम को लाया हूँ,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "सिर्फ तू शब्द को कहना, पूरा मैं करूँगा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ये है वादा मेरा, उसको ना भूलूंगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

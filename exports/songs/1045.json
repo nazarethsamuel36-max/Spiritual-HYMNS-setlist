@@ -1,0 +1,97 @@
+{
+  "id" : 1045,
+  "songNumber" : 67,
+  "title" : "YAHOVA NISSI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यहोवा निस्सी (6)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "धन्य तेरा नाम, धन्य धन्य धन्य तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 15
+      }, {
+        "chord" : "E",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "शत्रुओकी सेना को हराता तू,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जय का झण्डा है हमारा तू,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "धन्य धन्य धन्य तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 10
+      }, {
+        "chord" : "E",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "शैतान के सीर को कुचल के तू,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मृत्यु पे जयवंत हुआ है तू",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "धन्य धन्य धन्य तेरा नाम ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "जय के उत्सव में लिए चलाता तू,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "सुगंध वचन हमसे है फैलाता तू,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "धन्य धन्य धन्य तेरा नाम ।"
+    } ]
+  } ]
+}

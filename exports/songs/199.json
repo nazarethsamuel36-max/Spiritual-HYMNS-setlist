@@ -1,0 +1,161 @@
+{
+  "id" : 1177,
+  "songNumber" : 199,
+  "title" : "PYARO, HIMMAT BANDHO, AAGE BADHO",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "प्यारो, हिम्मत बांधो, आगे बढ़ो क्रूस लो निशान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "जीतेंगे हम प्यारो, हारेगा शैतान । (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "लड़ो, लड़ो, फुरती करो, यीशु है कमान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "हिम्मत बांधो, आशा रखो, भागेगा शैतान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "पाप और दुःख में चारों तरफ मरते हैं इन्सान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "दया करो भारत पर वह हुआ परेशान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "घर-घर जाकर करो प्यारो, यीशु का बयान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "वह है राजा, मुक्तिदाता, सब पर मेहरबान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "जल्दी करो, सुनाओ सबको, यीशु का फरमान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "पापी बचते जाते, लाते जो उस पर ईमान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "दास कहें बैरी शरमाते, सुन यीशु का ज्ञान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "लोग मसीह को मानते जाते, हारता है शैतान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    } ]
+  } ]
+}

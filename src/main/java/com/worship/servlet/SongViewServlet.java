@@ -1,10 +1,14 @@
 package com.worship.servlet;
 
+import com.worship.chord.ChordAligner;
+import com.worship.dao.LineChordDAO;
 import com.worship.dao.SongDAO;
 import com.worship.dao.UserSongDAO;
 import com.worship.model.Song;
 import com.worship.model.UserSong;
 import com.worship.util.ChordParser;
+import com.worship.util.SongFormatDetector;
+import com.worship.util.ChordLineMerger;
 import com.worship.util.SessionUtil;
 import com.worship.model.User;
 
@@ -19,10 +23,11 @@ import java.util.Map;
 
 /**
  * Servlet for viewing a single song with parsed chord/lyric alignment.
- * Checks for personal user versions (logged-in: user_songs table, guest: session).
+ * Checks for personal user versions (logged-in: user_songs table, guest:
+ * session).
  * Increments view count on each load.
  */
-@WebServlet(name = "SongViewServlet", urlPatterns = {"/song"})
+@WebServlet(name = "SongViewServlet", urlPatterns = { "/song" })
 public class SongViewServlet extends HttpServlet {
 
     private SongDAO songDAO = new SongDAO();
@@ -93,33 +98,40 @@ public class SongViewServlet extends HttpServlet {
                 }
             }
 
-            // Parse into authoritative structured format
+            // UNIFIED: Parse into authoritative structured format from relational schema
             java.util.List<com.worship.model.StructuredLine> structuredLines = null;
 
+            // Check if user has custom chord overrides (personal version)
             if (song.getChords() != null && !song.getChords().isEmpty()) {
-                // Priority 1: User-edited or legacy flat-text chords
-                structuredLines = ChordParser.parseStructuredSong(song.getChords());
+                // User-edited chords stored as flat text in user_songs.custom_chords
+                String chordText = song.getChords();
+                if (SongFormatDetector.detect(chordText) == SongFormatDetector.Format.CHORDS_ABOVE) {
+                    chordText = ChordLineMerger.convertToInline(chordText);
+                }
+                structuredLines = ChordParser.parseStructuredSong(chordText);
             } else if (song.getSections() != null && !song.getSections().isEmpty()) {
-                // Priority 2 & 3: Structured relational data (with or without mapped chords)
-                com.worship.dao.LineChordDAO lineChordDAO = new com.worship.dao.LineChordDAO();
-                java.util.Map<Integer, java.util.List<com.worship.model.ChordOccurrence>> chordMap =
-                    lineChordDAO.getChordsForSong(songId);
+                // PRIMARY PATH: Relational schema (sections → song_lines → line_chords)
+                LineChordDAO lineChordDAO = new LineChordDAO();
+                java.util.Map<Integer, java.util.List<com.worship.model.ChordOccurrence>> chordMap = lineChordDAO
+                        .getChordsForSong(songId);
+                structuredLines = ChordAligner.buildStructuredLines(song.getSections(), chordMap);
+            }
 
-                structuredLines = new java.util.ArrayList<>();
-                for (com.worship.model.Section section : song.getSections()) {
-                    // Add section label as a special line {} for app.js to detect
-                    structuredLines.add(new com.worship.model.StructuredLine("{" + section.getLabel() + "}"));
-                    for (com.worship.model.SongLine line : section.getLines()) {
-                        com.worship.model.StructuredLine sl = new com.worship.model.StructuredLine(line.getText());
-                        // Priority 2: Attach mapped chords from alignment pipeline
-                        java.util.List<com.worship.model.ChordOccurrence> lineChords = chordMap.get(line.getId());
-                        if (lineChords != null && !lineChords.isEmpty()) {
-                            sl.setChords(lineChords);
+            // SETLIST TRANSPOSE: Apply transpose from setlist navigation
+            int setlistTranspose = SessionUtil.getSetlistTranspose(request.getSession(false), songId);
+            if (setlistTranspose != 0 && structuredLines != null) {
+                // Transpose all chords in structured lines
+                for (com.worship.model.StructuredLine line : structuredLines) {
+                    if (line.getChords() != null) {
+                        for (com.worship.model.ChordOccurrence occ : line.getChords()) {
+                            if (occ.getChord() != null && !occ.getChord().isEmpty()) {
+                                occ.setChord(com.worship.util.ChordTransposer.transposeChord(occ.getChord(), setlistTranspose));
+                            }
                         }
-                        // Priority 3: No chords — plain text (StructuredLine defaults to empty chord list)
-                        structuredLines.add(sl);
                     }
                 }
+                // Clear transpose from session after applying
+                SessionUtil.clearSetlistTranspose(request.getSession(false), songId);
             }
 
             // NEW: Transliteration Injection Point & Session Preference
@@ -133,25 +145,24 @@ public class SongViewServlet extends HttpServlet {
             }
             // Set flag for JSP to use
             request.setAttribute("isRomanScript", "roman".equalsIgnoreCase(scriptFormat));
-            
+
             boolean isRomanScript = "roman".equalsIgnoreCase(scriptFormat);
             String lang = song.getLanguage() != null ? song.getLanguage().trim() : "";
             boolean isMarathi = "marathi".equalsIgnoreCase(lang) || "mr".equalsIgnoreCase(lang);
 
             if (isRomanScript && isMarathi) {
                 com.worship.service.TransliterationService transliteService = new com.worship.service.TransliterationService();
-                
+
                 // 1. Transliterate structured parsing
                 if (structuredLines != null) {
                     structuredLines = transliteService.transliterateStructuredLines(structuredLines);
                 }
-                
+
                 // 2. Transliterate fallback lyrics if present
                 if (song.getLyricsOriginal() != null && !song.getLyricsOriginal().isEmpty()) {
                     song.setLyricsOriginal(transliteService.transliterateToEnglish(song.getLyricsOriginal()));
                 }
             }
-
 
             if (structuredLines != null) {
                 try {

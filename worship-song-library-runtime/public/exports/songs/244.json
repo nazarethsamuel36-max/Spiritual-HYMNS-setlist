@@ -1,0 +1,326 @@
+{
+  "id" : 856,
+  "songNumber" : 244,
+  "title" : "OH WHAT A WONDERFUL WONDERFUL DAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Oh, what a wonderful, wonderful day,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Day I will never forget,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "After I'd wandered in darkness away,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Jesus my Saviour I met,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Oh, what a tender, compassionate friend,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "He met the need of my heart,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Shadows dispelling, with joy I am telling.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "He made all the darkness depart!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Heaven came down and glory filled my soul.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "When at the cross the Saviour made me whole",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "My sins were washed away,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "And my night was turned to day.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Heaven came down and glory filled my soul."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Born of the Spirit with life from above,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Into God's family divine,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Justified fully through Calvary's love,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Oh, what a standing is mine!",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "And the transaction so quickly was made.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "When as a sinner I came,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Took of the offer of grace He did proffer.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "He saved me, Oh praise His dear name!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Now I've a hope that will surely endure",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "After the passing of time,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "I have a future in Heaven for sure,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "There in those mansions sublime,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And it's because of that wonderful day",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "When at the cross I believed,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Riches eternal and blessings supernal",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "From His precious hand I received!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

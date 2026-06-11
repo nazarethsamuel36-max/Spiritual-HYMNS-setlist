@@ -1,0 +1,109 @@
+{
+  "id" : 1093,
+  "songNumber" : 115,
+  "title" : "SATH YESHU KA MIL JAYE TO",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "साथ यीशु का मिल जाए तो (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "होगा जीवन तुम्हारा सफल (3)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "जीवन में यीशु को अपने ले लों",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "सारा जीवन उसे अर्पण कर दो (3)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "ऐ मेरे दिल तू क्यों है उदास",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "रख ले अभी तू यीशु पे आस (3)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "दुःखपिडा आसुओंका अंत है जरूर ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "शांति-प्यार आनंद का यीशु हुजुर (3)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "आत्माकी तेल से बर्तन भर दो ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "आस्मानी उड़डाण की मलमल पहन लो (3)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

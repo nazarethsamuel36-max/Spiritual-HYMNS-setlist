@@ -1,0 +1,187 @@
+{
+  "id" : 739,
+  "songNumber" : 127,
+  "title" : "OH HOW I LOVE JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "There is a name I love to hear,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "I love to sing its worth;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "It sounds like music in mine ear,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "The sweetest name on earth.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Oh, how I love Jesus, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Because He first loved me.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "(I'll never forsake Him....)"
+    }, {
+      "text" : ""
+    }, {
+      "text" : "It tells me of a Saviour's love,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Who died to set me free;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "It tells me of His precious blood;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "The sinner's perfect plea.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "It tells me what my Father hath",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "In store for every day;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "And though I tread a darksome path,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Yields sunshine all the way.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "It tells of One whose loving heart",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Can feel my deepest woe;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Who in each sorrow bears a part,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "That none can bear below.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

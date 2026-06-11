@@ -1,0 +1,110 @@
+{
+  "id" : 866,
+  "songNumber" : 254,
+  "title" : "I WILL GIVE THANKS TO THEE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I will give thanks to Thee, O Lord, among the people;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "I will sing praises to Thee among the nations.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 29
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "For Thy steadfast love is great, is great to the heavens,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 36
+      }, {
+        "chord" : "A",
+        "position" : 49
+      } ]
+    }, {
+      "text" : "And Thy faithfulness, Thy faithfulness, to the clouds.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "A",
+        "position" : 40
+      }, {
+        "chord" : "D",
+        "position" : 47
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Be exalted, O God, above the heavens !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Let Thy glory be over all the earth !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Be exalted, O God, above the heavens !"
+    }, {
+      "text" : "Let Thy glory be over all the earth !"
+    } ]
+  } ]
+}

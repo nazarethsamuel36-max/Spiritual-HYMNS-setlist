@@ -1,0 +1,89 @@
+{
+  "id" : 727,
+  "songNumber" : 115,
+  "title" : "THE MOVE IS ON",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "The move is on my Lord } 2",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "The move is on",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "I can hear the rustle in the mulberry tree",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "And I know, I know",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "I know the move is on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 2
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Move on brother, move on sister.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "This is the moving time,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "You've got to move a little closer.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Where the streams are flowing,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Move on brother move on.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Move on sister move on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  } ]
+}

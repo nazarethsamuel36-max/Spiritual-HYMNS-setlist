@@ -1,0 +1,251 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 EXTENDED - ADDITIONAL PAGES]
+
+5.8 Detailed Rendering Pipeline
+
+5.8.1 Step-by-Step Rendering Process
+
+The rendering pipeline converts structured database data into a visual chord chart on the user's screen. This section traces the complete pipeline from raw SQL results to final pixel-level display.
+
+Stage 1: Data Retrieval (Server-Side, Java)
+The SongDAO executes a multi-table JOIN query that retrieves all data for a requested song in a single database round-trip. The query uses ORDER BY clauses on section_order, line_order, and char_index to ensure the data arrives in the correct sequence.
+
+The SQL query structure:
+   SELECT s.*, sec.id as sec_id, sec.type, sec.label, sec.section_order,
+          sl.id as line_id, sl.line_text, sl.line_order,
+          lc.id as chord_id, lc.chord, lc.char_index
+   FROM songs s
+   LEFT JOIN sections sec ON s.id = sec.song_id
+   LEFT JOIN song_lines sl ON sec.id = sl.section_id
+   LEFT JOIN line_chords lc ON sl.id = lc.line_id
+   WHERE s.id = ? AND s.is_active = TRUE
+   ORDER BY sec.section_order, sl.line_order, lc.char_index
+
+Stage 2: Object Assembly (Server-Side, Java)
+The SongDAO iterates through the ResultSet and assembles a hierarchical Song object. It uses a nested loop pattern:
+- The outer loop tracks the current section (by sec_id).
+- The middle loop tracks the current line (by line_id).
+- The inner loop collects all chords for the current line.
+When a new section or line is encountered in the ResultSet, the current collection is finalized and a new one is started.
+
+Stage 3: Transposition (Server-Side, Java)
+If the HTTP session contains a transpose offset, the SongService iterates through every ChordOccurrence in the Song object and calls ChordTransposer.transposeChord() on each one. The char_index values are NOT modified during transposition; only the chord symbol strings change.
+
+Stage 4: HTML Generation (Server-Side, JSP)
+The songView.jsp page iterates through the Song's sections and lines. For each line, it calls a rendering function that interleaves chord HTML elements with lyric text based on the char_index values.
+
+The JSP generates HTML like:
+   <div class="section" data-type="verse">
+     <div class="section-label">Verse 1</div>
+     <div class="song-line" data-original="..." data-roman="...">
+       <span class="chord-wrap"><span class="chord-symbol">G</span></span>
+       <span class="lyric-segment">I will </span>
+       <span class="chord-wrap"><span class="chord-symbol">C</span></span>
+       <span class="lyric-segment">sing of your </span>
+       ...
+     </div>
+   </div>
+
+Stage 5: Client-Side Enhancement (Browser, JavaScript)
+After the HTML is loaded in the browser, the chord_rendering.js script executes. It performs the following steps:
+1. Queries all .song-line elements in the DOM.
+2. For each line, measures the rendered width using getBoundingClientRect().
+3. Compares the rendered width against the container width.
+4. If the line overflows, triggers the Virtual Wrapping Algorithm.
+5. The algorithm splits the line at a word boundary and redistributes chords.
+
+Stage 6: Visual Display (Browser, CSS)
+CSS positions the chord symbols above the lyrics using one of two strategies:
+- Inline Strategy: Each chord-wrap span is rendered as an inline element with the chord-symbol positioned absolutely above it using position: relative on the wrapper and position: absolute with bottom: 100% on the chord text.
+- Flexbox Strategy: Each song-line is a flex container with flex-direction: column, containing a chord row and a lyric row.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+5.9 Detailed Search Algorithm
+
+5.9.1 Query Normalization
+
+Before searching, the input query undergoes normalization:
+
+Step 1: Trim whitespace from both ends.
+Step 2: Convert to lowercase for case-insensitive matching.
+Step 3: Remove duplicate spaces (replace multiple spaces with a single space).
+Step 4: Check if the query is a pure integer (for song number lookup).
+
+5.9.2 SQL Query Construction
+
+The search uses a single SQL query that checks multiple columns:
+
+   SELECT * FROM songs
+   WHERE is_active = TRUE
+   AND (
+       song_number = ?
+       OR LOWER(title) LIKE ?
+       OR LOWER(artist) LIKE ?
+       OR LOWER(lyrics_roman) LIKE ?
+       OR LOWER(lyrics_original) LIKE ?
+   )
+
+The LIKE parameter is constructed as "%" + query + "%" to match the query anywhere within the column value.
+
+5.9.3 Post-Query Ranking
+
+After the database returns matching rows, the Java service layer applies the weighted ranking algorithm. Each song receives a cumulative score based on which dimensions matched:
+
+   int score = 0;
+   if (exactNumberMatch) score += 100;
+   if (exactTitleMatch) score += 90;
+   if (partialTitleMatch) score += 70;
+   if (artistMatch) score += 50;
+   if (lyricsMatch) score += 30;
+
+Songs are then sorted in descending order of score. In case of a tie, songs are sorted alphabetically by title.
+
+5.9.4 Search Result Presentation
+
+The top 20 results are returned as a JSON array to the frontend. Each result includes:
+- song_id: For navigation to the song view page.
+- song_number: Displayed as a badge for quick identification.
+- title: The primary display text.
+- artist: Displayed as a subtitle.
+- language: Displayed as a color-coded tag (blue for English, orange for Hindi, green for Marathi).
+- match_type: Indicates which dimension matched (number, title, artist, lyrics) for user context.
+
+5.9.5 Real-World Search Examples
+
+Example 1: Searching for a song number
+Input: "979"
+Process: Query is detected as a pure integer. The database searches song_number = 979.
+Result: Song #979 "Aarati Ho Aarati" is returned with score 100 (exact number match).
+
+Example 2: Searching by partial title
+Input: "amazing"
+Process: Query is a string. The database searches LOWER(title) LIKE '%amazing%'.
+Result: "Amazing Grace" (score 70, partial title) and any other songs with "amazing" in their title or lyrics.
+
+Example 3: Cross-script search
+Input: "dhanyawad"
+Process: Query is a string. The database searches LOWER(lyrics_roman) LIKE '%dhanyawad%'.
+Result: Hindi songs where the Roman transliteration contains "dhanyawad", even though the song is primarily stored in Devanagari.
+
+Example 4: Artist search
+Input: "hillsong"
+Process: The database searches LOWER(artist) LIKE '%hillsong%'.
+Result: All songs by Hillsong are returned with score 50 (artist match).
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+5.10 Multi-Script Rendering: Technical Details
+
+5.10.1 Unicode Character Handling
+
+Devanagari text in Unicode uses characters from the range U+0900 to U+097F. Some characters are combining characters (matras) that visually attach to the preceding consonant. For example:
+
+- क (ka) + ी (ee matra) = की (kee)
+- The combined form "की" appears as a single visual unit but occupies 2 Unicode code points.
+
+This has a direct impact on the char_index system. If the indexing counts code points, then char_index = 2 in the string "की" points past the visible character. If the indexing counts visual units (grapheme clusters), then char_index = 1 points to the next visual unit.
+
+The Worship Song Library uses Java's String.length() for indexing, which counts UTF-16 code units. For characters in the Basic Multilingual Plane (which includes all Devanagari characters), one code unit equals one code point. This means the system counts code points, which aligns with JavaScript's string indexing in the browser.
+
+The key insight is: both the Java backend (which stores the char_index) and the JavaScript frontend (which reads the char_index to position chords) use the same string indexing mechanism (UTF-16 code units). This ensures consistency between storage and display.
+
+5.10.2 Transliteration Service
+
+The system uses ICU4J (International Components for Unicode for Java) to provide automated transliteration between Devanagari and Roman scripts. The ICU4J Transliterator class supports bidirectional conversion:
+
+   Transliterator toRoman = Transliterator.getInstance("Devanagari-Latin");
+   String roman = toRoman.transliterate("आरती हो आरती");
+   // Result: "aaratee ho aaratee"
+
+However, automated transliteration does not always produce phonetically natural results. For example, ICU4J may render "प्रभु" as "prabhu" or "prbhu" depending on the transliteration rules. For this reason, the system stores manually reviewed transliterations in the lyrics_roman column rather than generating them dynamically.
+
+5.10.3 Script Toggle Implementation
+
+The toggle is implemented as a client-side operation for instant responsiveness:
+
+1. Both script versions are embedded in the HTML as data attributes during server-side rendering.
+2. A toggle button switches between the two versions by reading the appropriate data attribute and setting it as the text content.
+3. The chord elements are NOT part of the toggle operation. They remain in their DOM positions throughout the toggle.
+
+This approach ensures that the script toggle completes in under 5ms regardless of song length, because it only involves reading attributes and setting text content, with no server communication, no DOM restructuring, and no chord recalculation.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+5.11 Bulk Import Pipeline
+
+5.11.1 Import Workflow
+
+The bulk import pipeline enables administrators to add multiple songs to the database efficiently. The workflow is:
+
+Step 1: The administrator prepares a text file containing one or more songs in the [C] bracket format. Each song is separated by a delimiter line (e.g., "---").
+
+Step 2: The administrator uploads the file through the BulkImportServlet.
+
+Step 3: The servlet reads the file and splits it into individual song blocks.
+
+Step 4: For each song block:
+   a. Extract metadata from the header lines (title, artist, language, key).
+   b. Split the content into sections based on section header markers ([Verse 1], [Chorus], etc.).
+   c. Split each section into individual lines.
+   d. For each line, run the ChordParser to extract chords and clean lyrics.
+   e. Begin a database transaction.
+   f. INSERT into songs table, retrieve the generated song_id.
+   g. INSERT into sections table for each section, retrieve each section_id.
+   h. INSERT into song_lines table for each line, retrieve each line_id.
+   i. INSERT into line_chords table for each chord occurrence.
+   j. COMMIT the transaction.
+
+Step 5: If any step fails within a song's transaction, ROLLBACK to prevent partial data. Log the error and continue with the next song.
+
+Step 6: Return an import summary showing the number of songs successfully imported and any errors encountered.
+
+5.11.2 Transaction Safety
+
+The use of database transactions ensures that a song is either completely imported or not imported at all. This prevents a scenario where a song has its sections inserted but its chords are missing due to a mid-import error.
+
+The transaction boundary is set at the individual song level. If Song A imports successfully but Song B fails, Song A remains in the database while Song B is rolled back. This allows administrators to fix the problematic song and re-import only the failed entries.
+
+5.11.3 Error Handling During Import
+
+Common import errors and their handling:
+
+Error 1: Malformed bracket syntax (e.g., "[G" without closing "]")
+Handling: The regex parser simply does not match the incomplete bracket. The text is treated as lyrics. A warning is logged.
+
+Error 2: Missing section headers
+Handling: If no section headers are found, the entire song content is placed into a single "default" section.
+
+Error 3: Duplicate song number
+Handling: The system checks for existing songs with the same song_number and language combination. If a duplicate is found, the administrator is warned and can choose to overwrite or skip.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+5.12 Performance Optimization Techniques
+
+5.12.1 Single-Query Song Retrieval
+Instead of executing separate queries for each table (one for the song, one for its sections, one for each section's lines, one for each line's chords), the system uses a single multi-JOIN query. This reduces the number of database round-trips from potentially dozens to exactly one.
+
+For a song with 4 sections, 12 lines, and 30 chords, the naive approach would require:
+- 1 query for the song
+- 1 query for sections (returns 4 rows)
+- 4 queries for lines (one per section, returns 12 rows total)
+- 12 queries for chords (one per line, returns 30 rows total)
+Total: 18 queries
+
+The optimized single-JOIN approach: 1 query returning 30 rows (one per chord occurrence, with song/section/line data duplicated). The DAO reconstructs the hierarchy from the flat result set.
+
+5.12.2 Connection Pooling
+HikariCP maintains a pool of 10 pre-established database connections. When a Servlet needs a database connection, it borrows one from the pool (3ms) rather than establishing a new TCP connection to MySQL (200ms). This 98.5% reduction in connection overhead is critical for concurrent access during a worship service.
+
+5.12.3 Document Fragments for DOM Manipulation
+The Virtual Wrapping Algorithm creates new DOM elements (chord spans, lyric text nodes, wrapper divs) when splitting lines. Instead of appending each element individually (which triggers a browser reflow after each append), the algorithm builds the entire sub-line structure in a DocumentFragment and appends the fragment in a single operation. This reduces DOM thrashing and ensures smooth rendering.
+
+5.12.4 Debounced Resize Handler
+The Virtual Wrapping Algorithm must re-execute whenever the browser window is resized. To prevent excessive recalculation during a continuous resize drag, the resize event handler uses a debounce pattern: it waits 250ms after the last resize event before triggering the recalculation. This ensures that the algorithm runs at most 4 times per second during active resizing, rather than hundreds of times.
+
+[PAGE BORDER: ACADEMIC STYLE]

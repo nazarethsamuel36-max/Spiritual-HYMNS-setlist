@@ -1,0 +1,108 @@
+{
+  "id" : 1130,
+  "songNumber" : 152,
+  "title" : "JYOTI SE YESHU KI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ज्योति से यीशु की, दुर हुई अंधियारी",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "फूल उठी मन में प्रेम की फुलवारी।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तन-मन तू सब धन तू, मालिक तू जीवन है तू",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जल-थल में बादल में, शक्ति तेरी गर्जन है तू",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कण-कण में दीख पडी, छबि तेरी न्यारी।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "मार सही क्रूस चढा, रक्त बहा कुछ न कहा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कृपा तेरी मुक्ति मेरी, तेरा वचन साथ रहा",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "पापिन से प्रभुजी, प्रीति तेरी न्यारी।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "शब्द तेरा गूंज उठा, जाग उठी तेरी लगन",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "सप्त-सुरन प्यार की धुन, झूम उठा सारा गगन",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "बंधन में डुब गई, यह दुनिया सारी।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

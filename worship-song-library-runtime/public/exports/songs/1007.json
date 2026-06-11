@@ -1,0 +1,165 @@
+{
+  "id" : 1007,
+  "songNumber" : 29,
+  "title" : "GHATAYON PAR SAWAR HOKAR",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "घटाओं पर सवार होकर, ऊपर से उतरेगा (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "आयेगा हमारा यीशु मसीह आयेगा (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "दुनिया के सभी देखेंगे, उसको जब आवेगा (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "पूरब से पश्चिम तक वो, अपने को दिखलायेगा (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "आखिर ऐसा होगा (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "आयेगा हमारा यीशु मसीह आयेगा (2)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जो ईमान से सोये हैं, वे पहिले उठ जायेंगे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "यीशु के साथ आयेंगे, और अपने बदन बदलेंगे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जो चाहते हैं यीशु को, वे राज्य हमेशा करेंगे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "जिनके मन में है यीशु, वे जिन्दा हमेशा रहेंगे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,133 @@
+{
+  "id" : 982,
+  "songNumber" : 4,
+  "title" : "MUKTI DILAYE YESHU NAAM",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "मुक्ति दिलाये यीशु नाम",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "शान्ति दिलाये यीशु नाम",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "चरणी में तुने जनम लिया यीशु (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "सुली पे किया विश्राम (4)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "E",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "यीशु दया का बहता सागर (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "यीशु है दाता महान (4)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "हम सब के पापों को मिटाने (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "यीशु हुआ बलिदान (4)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "नर तन धार लियो अवतरा (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "प्रेम है उस का महान (4)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "E",
+        "position" : 16
+      } ]
+    } ]
+  } ]
+}

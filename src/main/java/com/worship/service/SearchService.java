@@ -41,6 +41,7 @@ public class SearchService {
     private static final double WEIGHT_TITLE = 1.0;
     private static final double WEIGHT_ARTIST = 0.7;
     private static final double WEIGHT_LYRICS = 0.4;
+    private static final double WEIGHT_HASHTAGS = 0.4;
     
     // Thresholds (per SEARCH_LOGIC_SPEC Section F.1)
     private static final int RAW_TOKEN_THRESHOLD = 50;   // Before weighting
@@ -75,23 +76,7 @@ public class SearchService {
             pageSize = 20;
         }
 
-        // NEW: Numeric search detection (Bug Fix)
-        if (query.trim().matches("^\\d+$")) {
-            try {
-                int songNumber = Integer.parseInt(query.trim());
-                List<Song> numberResults = songDAO.getSongsByNumber(songNumber);
-                
-                Map<String, Object> result = new LinkedHashMap<>();
-                result.put("results", numberResults);
-                result.put("pageNum", pageNum);
-                result.put("pageSize", pageSize);
-                result.put("totalCount", numberResults.size());
-                result.put("hasMore", false);
-                return result;
-            } catch (NumberFormatException e) {
-                // Should not happen due to regex, but fallback to text search
-            }
-        }
+
 
         try {
             // LAYER 1: Normalization, tokenization, variant generation
@@ -108,7 +93,8 @@ public class SearchService {
             Map<String, List<String>> variantMap = buildVariantMap(tokens);
             
             // LAYER 2: Database retrieval, AND logic, deduplication
-            List<Song> candidates = songDAO.searchSongs(normalizedQuery);
+            // STABILIZATION: Use lightweight fetch with 100-limit and hashtag integration
+            List<Song> candidates = songDAO.searchSongsLightweight(java.util.Arrays.asList(tokens), variantMap);
             if (candidates.isEmpty()) {
                 return buildEmptyResult(pageNum, pageSize);
             }
@@ -163,10 +149,7 @@ public class SearchService {
         }
     }
 
-    /**
-     * LAYER 1: Normalize query (5-step pipeline per SEARCH_LOGIC_SPEC Section A)
-     */
-    private String normalizeQuery(String query) {
+    public String normalizeQuery(String query) {
         // Step 1: Trim whitespace
         String result = query.strip();
         
@@ -283,7 +266,8 @@ public class SearchService {
             song.getTitle(),
             song.getArtist(),
             song.getLyricsRoman(),
-            song.getLyricsOriginal()
+            song.getLyricsOriginal(),
+            song.getHashtags() != null ? String.join(" ", song.getHashtags()) : ""
         };
         
         for (String field : fields) {
@@ -356,8 +340,8 @@ public class SearchService {
             song.getLyricsOriginal()
         };
         
-        double[] fieldWeights = {WEIGHT_TITLE, WEIGHT_ARTIST, WEIGHT_LYRICS, WEIGHT_LYRICS};
-        int[] bestMatchTypes = new int[4];
+        double[] fieldWeights = {WEIGHT_TITLE, WEIGHT_ARTIST, WEIGHT_LYRICS, WEIGHT_LYRICS, WEIGHT_HASHTAGS};
+        int[] bestMatchTypes = new int[5];
         
         // Score each field independently
         for (int i = 0; i < fieldValues.length; i++) {
@@ -391,8 +375,8 @@ public class SearchService {
                 fieldScore = 0;
             }
             
-            // Apply phrase bonus if tokens consecutive
-            if (fieldScore > 0 && isPhrasePresentConsecutive(normalizedField, tokens, variantMap)) {
+            // Apply phrase bonus if tokens consecutive (skip for hashtags as order is arbitrary)
+            if (i < 4 && fieldScore > 0 && isPhrasePresentConsecutive(normalizedField, tokens, variantMap)) {
                 fieldScore = Math.min(fieldScore + PHRASE_BONUS, MAX_SCORE_CAP);
             }
             
@@ -401,16 +385,16 @@ public class SearchService {
         }
         
         // Apply field weights
-        double[] weightedScores = new double[4];
-        for (int i = 0; i < 4; i++) {
+        double[] weightedScores = new double[5];
+        for (int i = 0; i < 5; i++) {
             weightedScores[i] = result.fieldScores[i] * fieldWeights[i];
         }
         
         // Final score = MAX of weighted field scores (per SEARCH_LOGIC_SPEC D.3)
-        result.finalScore = Math.max(
-            Math.max(weightedScores[0], weightedScores[1]),
-            Math.max(weightedScores[2], weightedScores[3])
-        );
+        result.finalScore = weightedScores[0];
+        for (int i = 1; i < 5; i++) {
+            result.finalScore = Math.max(result.finalScore, weightedScores[i]);
+        }
         
         // Track which field gave best score for tiebreaking
         result.bestFieldIndex = findBestFieldIndex(weightedScores);
@@ -625,7 +609,7 @@ public class SearchService {
      * Helper class to store song score with detailed information
      */
     private static class SongScore {
-        double[] fieldScores = new double[4];  // title, artist, lyrics_roman, lyrics_original
+        double[] fieldScores = new double[5];  // title, artist, lyrics_roman, lyrics_original, hashtags
         double finalScore = 0;
         int bestFieldIndex = 0;  // Which field gave the final score
         int bestMatchType = 0;   // For tiebreaking

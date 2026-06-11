@@ -1,0 +1,167 @@
+{
+  "id" : 1003,
+  "songNumber" : 25,
+  "title" : "TERI ICCHA POORI HO JAYE",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "तेरी इच्छा पूरी हो जाए",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "हाथों में तेरे जीवन है ये",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 15
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "मैं मिट्टी हूँ तू है कुम्हार",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "मुझको बना, मुझको सजाँ ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "अपनी मर्जी पर मैं चलता रहा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "तुझको कभी भी अपना ना कहा",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "लेकिन मसीह आज से मैं",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "तेरे क्रूस को ले लेता हूँ ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "बढ़ता ही रहूँ तेरी मर्जी में",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "महिमा तेरी करूँ मैं अपनी जीवन से",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "गाता ही रहूँ तेरा अनुग्रह",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मेरे लिए काफी है ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    } ]
+  } ]
+}

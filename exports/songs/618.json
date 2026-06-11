@@ -1,0 +1,114 @@
+{
+  "id" : 618,
+  "songNumber" : 311,
+  "title" : "HOSANNA HOSANNA",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Hosanna, Hosanna, Hosanna in the highest",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Lord we lift up Your Name,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "With hearts full of praise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Be exalted Oh Lord my God,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Hosanna in the highest.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Glory, Glory, Glory to the King of Kings",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Glory, Glory, Glory to the King of Kings"
+    }, {
+      "text" : "Lord we lift up Your Name,"
+    }, {
+      "text" : "With hearts full of praise,"
+    }, {
+      "text" : "Be exalted Oh Lord my God,"
+    }, {
+      "text" : "Glory to the King of Kings.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

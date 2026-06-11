@@ -1,0 +1,278 @@
+{
+  "id" : 649,
+  "songNumber" : 342,
+  "title" : "THESE ARE THE DAYS OF ELIJAH",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "These are the days of Elijah,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Declaring the word of the Lord:",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "And these are the days of Your servant Moses,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Righteousness being restored.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "And though these are days of great trial,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Of famine and darkness and sword,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Still, we are the voice in the desert crying",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "G",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "'Prepare ye the way of the Lord!'",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Behold He comes riding on the clouds,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Shining like the sun at the trumpet call;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Lift your voice, it's the year of jubilee,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "And out of Zion's hill salvation comes.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "These are the days of Ezekiel,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "The dry bones becoming as flesh;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "And these are the days of Your servant David,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Rebuilding a temple of praise.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "These are the days of the harvest,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "The fields are as white in Your world,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "And we are the labourers in Your vineyard,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Declaring the word of the Lord!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    } ]
+  } ]
+}

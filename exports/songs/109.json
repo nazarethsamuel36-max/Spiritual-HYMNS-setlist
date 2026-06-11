@@ -1,0 +1,120 @@
+{
+  "id" : 1087,
+  "songNumber" : 109,
+  "title" : "MAHIMA DENGE TUJHKO PRABHU",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "महिमा देंगे तुझको प्रभु, महिमा तुझको प्रभु ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 12
+      }, {
+        "chord" : "Bm",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "तेरा नाम महान और सबसे ऊँचा है ।",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "C#",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पावन कहते तुझको प्रभु, पावन तुझको प्रभु ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 10
+      }, {
+        "chord" : "Bm",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "तेरा नाम महान और सबसे ऊँचा है ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "आदर देंगे तुझको प्रभु, आदर तुझको प्रभु ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 10
+      }, {
+        "chord" : "Bm",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "तेरा नाम महान और सबसे ऊँचा है ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "यीशु कहते तुझको प्रभु, यीशु तुझको प्रभु ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 10
+      }, {
+        "chord" : "Bm",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "तेरा नाम महान और सबसे ऊँचा है ।"
+    } ]
+  } ]
+}

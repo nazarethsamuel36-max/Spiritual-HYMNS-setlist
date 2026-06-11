@@ -1,0 +1,245 @@
+{
+  "id" : 1150,
+  "songNumber" : 172,
+  "title" : "JUNGLI DARAKHTO KE DARMIYAN",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "जंगली दरख्तो के दरमियान",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "एक सेब के पेड के समान",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "नजर आता है मुझे ऐ मसीह",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "सारे संतों के बीच में तू,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "हम्द करू तेरी ऐ प्रभु",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "अपने जीवन भर इस जंगल के सफर में",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "गाऊँ शुक्र गुजारिसे मैं। (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तू ही है नरगिस खास शारोन का",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "हां, तू सोसन भी वादियों का,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "संतो में तू है अति पवित्र",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "कैसा कामिल और शान से भरा।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "इत्र के समान है तेरा नाम",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "खुशबू फैलाता है जहाँ में",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "तंगी मुसीबत और बदनामी में",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "बना खुशबूदार तेरे समान।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "घबराहट के लहरों से गर",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "डूबूं दु:खों के सागर में",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "अपने जोरावर हाथ को बढ़ा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "मुझे अपने सीने से लगा।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "अभी आ रहा हूँ तेरे पास",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "पूरी करने को तेरी मर्जी",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "ताकि दे दूँ मैं काम को अंजाम",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "पाऊं तेरे दीदार में इनाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  } ]
+}

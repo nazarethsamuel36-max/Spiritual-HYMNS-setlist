@@ -1,0 +1,131 @@
+{
+  "id" : 1088,
+  "songNumber" : 110,
+  "title" : "DHANYAVAD DHANYAVAD DHANYAVAD",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "धन्यवाद धन्यवाद धन्यवाद (6)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "मुझसे यीशु तूने प्यार किया धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "मुझको तूने उद्धार दिया धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "मेरे पापों के लिए, तूने लहू बहाया धन्यवाद (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 24
+      }, {
+        "chord" : "E",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "धन्यवाद धन्यवाद ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "हर खतरों से बचाता है, धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "हर बंधन से छुड़ाता है, धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "तेरे वचनो से मुझे तू बल देता धन्यवाद (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "हर बिनती को तू सुनता है, धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "चंगाई क्षमा तू देता है, धन्यवाद",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "मेरी हर एक इच्छा को तू पूरा करता धन्यवाद (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 23
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    } ]
+  } ]
+}

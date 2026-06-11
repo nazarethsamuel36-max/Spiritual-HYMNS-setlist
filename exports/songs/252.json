@@ -1,0 +1,196 @@
+{
+  "id" : 864,
+  "songNumber" : 252,
+  "title" : "MAKE ME A CHANNEL OF YOUR PEACE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Make me a channel of your peace,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Where there is hatred let me bring your love,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "Where there is injury your pardon, Lord,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And where there's doubt, true faith in you.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Oh, Master, grant that I may never seek,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "So much to be consoled as to console,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "To be understood as to understand,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "To be loved, as to love with all my soul.",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Make me a channel of your peace,"
+    }, {
+      "text" : "Where there's despair in life let me bring hope,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 43
+      } ]
+    }, {
+      "text" : "Where there is darkness, only light",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "And where there's sadness, ever joy.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Make me a channel of your peace,"
+    }, {
+      "text" : "It is in pardoning that we are pardoned,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "In giving to all men that we receive,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "And in dying that we're born to Eternal Life.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    } ]
+  } ]
+}

@@ -151,4 +151,44 @@ public class SessionUtil {
             session.removeAttribute(GUEST_EDITS_KEY);
         }
     }
+
+    /**
+     * Store transpose offset in session when navigating from setlist to song view.
+     * This allows the setlist to pass transposition state to the song view.
+     * @param session HttpSession to store in
+     * @param songId Song ID being transposed
+     * @param semitones Number of semitones to transpose (can be negative)
+     */
+    public static void setSetlistTranspose(HttpSession session, int songId, int semitones) {
+        if (session == null) return;
+        String key = "setlist_transpose_" + songId;
+        session.setAttribute(key, semitones);
+    }
+
+    /**
+     * Retrieve transpose offset from session for a song coming from setlist.
+     * @param session HttpSession to read from
+     * @param songId Song ID to check
+     * @return semitones to transpose, or 0 if not set
+     */
+    public static int getSetlistTranspose(HttpSession session, int songId) {
+        if (session == null) return 0;
+        String key = "setlist_transpose_" + songId;
+        Object value = session.getAttribute(key);
+        if (value instanceof Integer) {
+            return (Integer) value;
+        }
+        return 0;
+    }
+
+    /**
+     * Clear transpose state for a song (after viewing).
+     * @param session HttpSession to clear from
+     * @param songId Song ID to clear transpose for
+     */
+    public static void clearSetlistTranspose(HttpSession session, int songId) {
+        if (session == null) return;
+        String key = "setlist_transpose_" + songId;
+        session.removeAttribute(key);
+    }
 }

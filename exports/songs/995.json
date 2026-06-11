@@ -1,0 +1,160 @@
+{
+  "id" : 995,
+  "songNumber" : 17,
+  "title" : "NEELE AASMAN KE PAAR JAYENGE",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "नीले आसमान के पार जायेंगे,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "मेरा यीशु रहता वहाँ",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "हम मिलेंगे बादलो पर,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "देखेंगा सारा जहाँ ।",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "उसका कोई भी वादा न होगा अधूरा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "हर एक वादा उसका होगा पूरा,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "उसका कोई भी वादा...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "उसके आने का वादा भी होगा पूरा",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "देखेगा सारा जहाँ...",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "ये विश्वास है मेरा जो होगा पूरा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "सपना ये मेरा ना रहेगा अधूरा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "ये विश्वास है मेरा...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "तेरे संग हम रहेंगे अपने यीशु के",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "देखेंगा सारा जहाँ..."
+    } ]
+  } ]
+}

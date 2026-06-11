@@ -1,0 +1,52 @@
+{
+  "id" : 3169,
+  "songNumber" : 1028,
+  "title" : "** He Knows my Name",
+  "language" : "english",
+  "originalKey" : "** F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "I have a Maker"
+    }, {
+      "text" : "He formed my heart"
+    }, {
+      "text" : "Before even time began"
+    }, {
+      "text" : "My life was in his hands"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "He knows my name"
+    }, {
+      "text" : "He knows my every thought"
+    }, {
+      "text" : "He sees each tear that falls"
+    }, {
+      "text" : "And He hears me when I call"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I have a Father"
+    }, {
+      "text" : "He calls me His own"
+    }, {
+      "text" : "He'll never leave me"
+    }, {
+      "text" : "No matter where I go"
+    } ]
+  } ]
+}

@@ -1,0 +1,169 @@
+{
+  "id" : 1069,
+  "songNumber" : 91,
+  "title" : "HOVEGI BARKAT KI BARISH",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "होवेगी बरकत की बारिश,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "वायदा पुर-प्यार है सही,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "आवेगी ताजगी आसमान से,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "भेजेगा जिसको मसिह",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "बरकत की बारिश,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "बरकत की बारिश भरपूर,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "रहम की बूंदे टपकती,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पर बारिश हमको जरूर ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "होवेगी बरकत की बारिश,"
+    }, {
+      "text" : "होगी नई कूव्वत जरूर,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "वादी पहाड़ और मैदान पर,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जब बारिश होगी भरपूर ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "होवेगी बरकत की बारिश,"
+    }, {
+      "text" : "काश अभी पावे हम सब,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "यीशु तू ताजी अब बरखा दे,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "वायदे को पूरा कर अब ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "होवेगी बरकत की बारिश,"
+    }, {
+      "text" : "भेज उसे अभी, हां अब,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "मानते गुनाह जब हम अपने,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "दे बारिश यीशु, ऐ रब्ब ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    } ]
+  } ]
+}

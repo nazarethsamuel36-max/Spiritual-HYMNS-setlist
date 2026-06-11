@@ -10,29 +10,17 @@
 <body class="font-body text-on-surface flex min-h-screen flex-col">
     <jsp:include page="/jsp/navbar.jsp"/>
 
-    <main class="relative z-10 flex flex-grow flex-col items-center justify-center px-6 py-24">
-        <!-- Hero Content -->
-        <div class="relative z-10 mt-12 mb-12 w-full max-w-5xl text-center">
-            <div class="surface-glass mx-auto max-w-3xl rounded-[2rem] px-8 py-10 md:px-12">
-            <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 leading-tight">
-                Every lyric. <span class="text-primary">Every chord.</span><br/>One archive.
-            </h1>
-            <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                Access a premium digital library of worship songs curated for the modern sanctuary. Search by title, theme, or artist.
-            </p>
-            </div>
-        </div>
-
+    <main class="relative z-10 flex flex-grow flex-col items-center px-4 py-6 md:px-8 md:py-10">
         <!-- Central Search Bar -->
-        <div class="relative z-10 w-full max-w-3xl group mb-8">
+        <div class="relative z-10 w-full max-w-3xl group mb-5">
             <div class="absolute -inset-2 rounded-[2rem] bg-gradient-to-r from-white/30 via-primary/10 to-white/20 blur-2xl opacity-60 transition duration-1000 group-hover:opacity-80"></div>
             <form action="${pageContext.request.contextPath}/search" method="get" class="surface-glass relative flex items-center overflow-hidden rounded-[2rem] px-2 py-2">
-                <button type="submit" class="ml-6 flex items-center justify-center border-none bg-transparent cursor-pointer p-0 text-3xl text-on-surface-variant hover:text-primary transition-colors focus:outline-none z-10">
+                <button type="submit" class="ml-4 flex min-h-10 min-w-10 items-center justify-center border-none bg-transparent cursor-pointer p-0 text-3xl text-on-surface-variant hover:text-primary transition-colors focus:outline-none z-10">
                     <span class="material-symbols-outlined">search</span>
                 </button>
-                <input name="q" 
-                       class="w-full border-none bg-transparent px-6 py-7 text-xl font-light outline-none placeholder:text-outline/50 focus:ring-0 md:text-2xl" 
-                       placeholder="Search songs, artists, or lyrics..." 
+                <input name="q"
+                       class="w-full border-none bg-transparent px-4 py-5 text-lg font-light outline-none placeholder:text-outline/50 focus:ring-0 md:px-6 md:py-6 md:text-2xl"
+                       placeholder="Search songs, artists, or lyrics..."
                        type="text"
                        aria-label="Search the song archive"
                        title="Search input"/>
@@ -40,6 +28,18 @@
                     <button type="submit" class="rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-sm transition-all hover:bg-primary-container">Search Archive</button>
                 </div>
             </form>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 mb-5 w-full max-w-5xl text-center">
+            <div class="surface-glass mx-auto max-w-3xl rounded-[2rem] px-5 py-5 md:px-10 md:py-7">
+            <h1 class="font-headline text-3xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-3 leading-tight">
+                Every lyric. <span class="text-primary">Every chord.</span><br/>One archive.
+            </h1>
+            <p class="text-on-surface-variant text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Access a premium digital library of worship songs curated for the modern sanctuary. Search by title, theme, or artist.
+            </p>
+            </div>
         </div>
 
         <!-- Bug #4: Popular Tags (Accessibility + Semantic Links) -->

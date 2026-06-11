@@ -1,0 +1,188 @@
+{
+  "id" : 861,
+  "songNumber" : 249,
+  "title" : "TO GOD BE THE GLORY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "To God be the glory, great things He hath done,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "So loved He the world that He gave us His Son,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Who yielded His life an atonement for sin,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "And opened the life-gate that all may go in.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Praise the Lord, praise the Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Let the earth hear His voice,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Praise the Lord, praise the Lord,"
+    }, {
+      "text" : "Let the people rejoice!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "O come to the Father through Jesus the Son,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "And give Him the glory, great things He hath done.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 45
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "O perfect redemption, the purchase of blood,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "To every believer the promise of God;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "The vilest offender who truly believes,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "That moment from Jesus a pardon receives.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Great things He hath taught us, great things He hath done.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "And great our rejoicing through Jesus the Son,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "But purer, and higher, and greater will be,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Our wonder, our transport when Jesus we see.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 31
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    } ]
+  } ]
+}

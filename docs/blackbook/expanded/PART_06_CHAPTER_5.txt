@@ -1,0 +1,499 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 60]
+
+CHAPTER 5: IMPLEMENTATION
+
+5.1 Chord Extraction and Parsing
+
+5.1.1 The Ingestion Problem
+
+Before a song can be displayed with position-based chord alignment, it must be imported from its raw text format into the structured relational database. This process is called ingestion. Ingestion is the bridge between the human-readable [C] anchor format and the machine-queryable relational schema.
+
+The raw input format uses square brackets to embed chord symbols directly within the lyric text:
+
+   [G]Amazing [D]grace, how [Em]sweet the [C]sound
+
+The ingestion process must:
+1. Identify all chord symbols within brackets.
+2. Calculate the character position of each chord relative to the bracket-free lyric string.
+3. Extract the pure lyric text with all brackets and chord symbols removed.
+4. Create database records for the line, the lyrics, and each chord occurrence with its calculated position.
+
+5.1.2 Step-by-Step Parsing Example
+
+Input String: [G]Amazing [D]grace, how [Em]sweet the [C]sound
+
+Step 1: The parser scans from left to right. It encounters "[" at position 0.
+
+Step 2: It reads characters until it finds "]" at position 2. The content between brackets is "G". This is the first chord symbol.
+
+Step 3: The chord "G" was found at position 0 in the original string. However, since the bracket tag "[G]" itself is 3 characters long and will be removed from the final lyric string, the chord's position in the clean lyrics is 0 (no preceding text).
+
+Step 4: The parser continues. It reads "Amazing " (8 characters of lyrics). Then it encounters "[D]" at position 11 in the original string.
+
+Step 5: In the clean lyric string (after removing "[G]"), "Amazing " starts at position 0 and is 8 characters long. Therefore, chord "D" maps to character index 8 in the clean string.
+
+Step 6: The parser continues, reading "grace, how " (11 characters). It encounters "[Em]" at position 26 in the original string.
+
+Step 7: In the clean lyric string (after removing "[G]" and "[D]"), the cumulative lyrics are "Amazing grace, how " which is 19 characters. Therefore, chord "Em" maps to character index 19.
+
+Step 8: The parser reads "sweet the " (10 characters). It encounters "[C]" at position 39.
+
+Step 9: Cumulative clean lyrics: "Amazing grace, how sweet the " = 29 characters. Chord "C" maps to index 29.
+
+Step 10: The parser reads the remaining lyrics "sound" and reaches the end of the string.
+
+Final Output:
+- Clean Lyrics: "Amazing grace, how sweet the sound"
+- Chord List: G at index 0, D at index 8, Em at index 19, C at index 29
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 61]
+
+5.2 Regex Tokenization Engine
+
+5.2.1 The Regular Expression Pattern
+
+The chord extraction uses Java's Pattern and Matcher classes with the following regex pattern:
+
+   Pattern: \[(.+?)\]
+
+Explanation of the pattern components:
+- \[ : Matches a literal opening bracket character. The backslash escapes the bracket because brackets have special meaning in regex (character classes).
+- (.+?) : A capturing group that matches one or more characters (.+) in non-greedy mode (?). Non-greedy mode ensures that the match stops at the first closing bracket rather than extending to the last closing bracket on the line.
+- \] : Matches a literal closing bracket character.
+
+5.2.2 Why Non-Greedy Matching Is Essential
+
+Consider a line with multiple chords:
+   [G]Amazing [D]grace
+
+With greedy matching (.+), the regex would match from the first "[" to the LAST "]", capturing "G]Amazing [D" as a single match. This is incorrect.
+
+With non-greedy matching (.+?), the regex matches from the first "[" to the NEAREST "]", correctly capturing "G" as the first match and "D" as the second match.
+
+5.2.3 Implementation Code
+
+The following Java method implements the complete parsing pipeline:
+
+   public static StructuredLine parseLine(String rawLine) {
+       StructuredLine line = new StructuredLine();
+       List<ChordOccurrence> chords = new ArrayList<>();
+
+       Pattern pattern = Pattern.compile("\\[(.+?)\\]");
+       Matcher matcher = pattern.matcher(rawLine);
+
+       StringBuffer lyricsBuffer = new StringBuffer();
+       int offset = 0;
+
+       while (matcher.find()) {
+           String chordSymbol = matcher.group(1);
+           int position = matcher.start() - offset;
+           chords.add(new ChordOccurrence(chordSymbol, position));
+
+           matcher.appendReplacement(lyricsBuffer, "");
+           offset += matcher.group().length();
+       }
+       matcher.appendTail(lyricsBuffer);
+
+       line.setLyrics(lyricsBuffer.toString().trim());
+       line.setChords(chords);
+       return line;
+   }
+
+5.2.4 Code Walkthrough
+
+Line by line explanation:
+
+Pattern.compile("\\[(.+?)\\]"): Compiles the regex pattern. The double backslashes are necessary because Java string literals require escaping the backslash character itself.
+
+matcher.find(): Searches for the next match in the input string. Returns true if a match is found, false when all matches have been processed.
+
+matcher.group(1): Returns the content of the first capturing group (the chord symbol without brackets).
+
+matcher.start(): Returns the start position of the current match in the ORIGINAL string.
+
+position = matcher.start() - offset: Calculates the chord's position in the CLEAN string by subtracting the cumulative length of all previously removed bracket tags.
+
+matcher.appendReplacement(lyricsBuffer, ""): Appends all text between the previous match and the current match to the lyrics buffer, then appends the replacement string (empty string, effectively removing the bracket tag).
+
+offset += matcher.group().length(): Adds the length of the current bracket tag (e.g., 3 for "[G]", 4 for "[Em]") to the running offset.
+
+matcher.appendTail(lyricsBuffer): After all matches are processed, appends the remaining text after the last match to the lyrics buffer.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 62]
+
+5.2.5 Parsing Devanagari Text
+
+The same parsing algorithm works for Devanagari text because the regex pattern targets only ASCII bracket characters, which are never part of Devanagari script.
+
+Example Input: [C]आरती हो [F]आरती
+
+Step 1: Regex finds "[C]" at position 0. Chord "C" at clean index 0. Offset becomes 3.
+
+Step 2: Text "आरती हो " is appended to lyrics buffer (6 characters in this case, as each Devanagari character is counted as one character by Java's String.length(), though some compound characters may use combining marks).
+
+Step 3: Regex finds "[F]" at position 12 in original string. Clean index = 12 - 3 = 9. But the actual clean text "आरती हो " may have different character counts depending on Unicode normalization.
+
+This is where the system must be careful about Devanagari combining characters. The char_index refers to Java's internal string indexing (UTF-16 code units), which the JavaScript rendering engine must match when positioning chords in the browser.
+
+5.2.6 Handling Edge Cases in Parsing
+
+Edge Case 1: Empty Brackets
+Input: []Amazing grace
+Behavior: The regex captures an empty string. The system discards chord occurrences with empty symbols.
+
+Edge Case 2: Nested Brackets
+Input: [[G]]Amazing grace
+Behavior: The non-greedy match captures "[G" as the chord symbol (from the first "[" to the first "]"). The remaining "]" is treated as literal text. The system validates chord symbols against a known chord pattern and rejects invalid ones.
+
+Edge Case 3: Line with Only Chords (Instrumental)
+Input: [G] [C] [D] [G]
+Behavior: The clean lyrics string is "   " (spaces). The chords are mapped to positions 0, 1, 2, and 3. The rendering engine detects that the line is whitespace-only and renders it as a chord-only line with appropriate spacing.
+
+Edge Case 4: No Chords
+Input: Amazing grace how sweet the sound
+Behavior: The regex finds no matches. The line is stored with its lyrics text and an empty chord list. It renders as a lyrics-only line.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 63]
+
+5.3 Transposition Algorithm
+
+5.3.1 Music Theory Foundation
+
+Musical transposition is the process of shifting every note in a piece of music by a constant interval, measured in semitones. The Western chromatic scale consists of 12 distinct notes arranged in a circular sequence:
+
+   C -> C# -> D -> D# -> E -> F -> F# -> G -> G# -> A -> A# -> B -> (back to C)
+
+This circular nature is critical: after B, the scale wraps back to C. Transposing B up by 1 semitone gives C, not some note beyond B.
+
+A chord symbol consists of two parts:
+- Root Note: The fundamental note of the chord (e.g., C, G#, Bb).
+- Suffix: The quality and extensions of the chord (e.g., m for minor, 7 for seventh, sus4 for suspended fourth, maj7 for major seventh).
+
+When transposing a chord, only the root note changes. The suffix remains constant. For example, transposing "Am7" up by 3 semitones:
+- Root: A -> A# -> B -> C (3 steps up)
+- Suffix: m7 (unchanged)
+- Result: Cm7
+
+5.3.2 The Chromatic Scale Array
+
+The transposition engine uses a static array of 12 elements:
+
+   SCALE = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+
+Each note has an index from 0 (C) to 11 (B). Transposition is implemented as modular arithmetic on these indices:
+
+   new_index = (current_index + steps) % 12
+   if new_index < 0: new_index += 12
+
+The modulo operation (% 12) ensures circular wrapping. Adding 1 to index 11 (B) gives 12 % 12 = 0 (C). Subtracting 1 from index 0 (C) gives -1; adding 12 gives 11 (B).
+
+5.3.3 Implementation Code
+
+   private static final String[] SCALE = {
+       "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"
+   };
+
+   public static String transposeChord(String chord, int steps) {
+       if (chord == null || chord.isEmpty()) return chord;
+
+       String root = extractRoot(chord);
+       String suffix = chord.substring(root.length());
+
+       int currentIndex = Arrays.asList(SCALE).indexOf(root);
+       if (currentIndex == -1) return chord;
+
+       int newIndex = (currentIndex + steps) % 12;
+       if (newIndex < 0) newIndex += 12;
+
+       return SCALE[newIndex] + suffix;
+   }
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 64]
+
+5.3.4 Root Note Extraction
+
+The extractRoot method must correctly identify the root note from complex chord symbols. The root is either:
+- A single letter (A through G): e.g., C, D, G
+- A letter followed by # (sharp): e.g., C#, F#, G#
+- A letter followed by b (flat): e.g., Bb, Eb, Ab
+
+The extraction logic:
+
+   private static String extractRoot(String chord) {
+       if (chord.length() >= 2) {
+           char second = chord.charAt(1);
+           if (second == '#' || second == 'b') {
+               return chord.substring(0, 2);
+           }
+       }
+       return chord.substring(0, 1);
+   }
+
+5.3.5 Handling Flat Notes
+
+The chromatic scale array uses sharps (C#, D#, F#, G#, A#) but not flats (Db, Eb, Gb, Ab, Bb). Since flats and sharps are enharmonic equivalents (C# = Db, D# = Eb, etc.), the system normalizes flat inputs to their sharp equivalents before looking up the index:
+
+   Bb -> A#, Db -> C#, Eb -> D#, Gb -> F#, Ab -> G#
+
+5.3.6 Handling Slash Chords
+
+Slash chords like G/B indicate a chord (G) played over a specific bass note (B). Both the chord root and the bass note must be transposed independently.
+
+Example: Transpose G/B by +2 semitones
+- Chord root G: index 7, new index = (7+2) % 12 = 9 = A
+- Bass note B: index 11, new index = (11+2) % 12 = 1 = C#
+- Result: A/C#
+
+5.3.7 Transposition Verification Table
+
+Table 5.2: Transposition Examples
+
+| Input Chord | Offset | Expected Output | Mechanism |
+| C | +2 | D | Index 0 + 2 = 2 |
+| G | -1 | F# | Index 7 - 1 = 6 |
+| Am | +3 | Cm | Root A(9) + 3 = 12%12 = 0(C), suffix m |
+| F#m7 | +1 | Gm7 | Root F#(6) + 1 = 7(G), suffix m7 |
+| G/B | +2 | A/C# | Root G->A, Bass B->C# |
+| B | +1 | C | Index 11 + 1 = 12%12 = 0 (wrapping) |
+| Dsus4 | -3 | Bsus4 | Root D(2) - 3 = -1+12 = 11(B), suffix sus4 |
+| A# | +1 | B | Index 10 + 1 = 11 |
+| Cmaj7 | +5 | Fmaj7 | Root C(0) + 5 = 5(F), suffix maj7 |
+| Edim | +6 | A#dim | Root E(4) + 6 = 10(A#), suffix dim |
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 65]
+
+5.4 Virtual Wrapping Rendering Engine
+
+5.4.1 Problem Recap
+
+On mobile devices, a line of lyrics that is too long for the screen will be wrapped by the browser to the next visual line. However, the chords associated with the wrapped portion of the lyrics will not wrap with them. This causes chords to hover over the wrong lyrics or disappear off-screen.
+
+The Virtual Wrapping Algorithm solves this by taking control of the wrapping process. Instead of letting the browser decide where to break the line, the algorithm:
+1. Measures the available width of the song container in pixels.
+2. Calculates how many characters of the lyric line can fit within that width.
+3. Finds the nearest word boundary (space character) before the overflow point.
+4. Splits the lyric line into two (or more) sub-lines at that word boundary.
+5. Redistributes the chords across the sub-lines, adjusting their char_index values to be relative to the start of each sub-line.
+
+5.4.2 Algorithm Pseudocode
+
+   FUNCTION virtualWrap(lyrics, chords, containerWidth):
+       characterWidth = measureAverageCharWidth(containerFont)
+       charsPerLine = FLOOR(containerWidth / characterWidth)
+
+       segments = []
+       currentPosition = 0
+
+       WHILE currentPosition < LENGTH(lyrics):
+           endPosition = currentPosition + charsPerLine
+
+           IF endPosition >= LENGTH(lyrics):
+               chunk = SUBSTRING(lyrics, currentPosition, LENGTH(lyrics))
+           ELSE:
+               // Find nearest space before endPosition for clean word break
+               spacePosition = LAST_INDEX_OF(lyrics, " ", endPosition)
+               IF spacePosition > currentPosition:
+                   endPosition = spacePosition + 1
+               chunk = SUBSTRING(lyrics, currentPosition, endPosition)
+
+           // Filter chords that belong to this chunk
+           chunkChords = []
+           FOR EACH chord IN chords:
+               IF chord.position >= currentPosition AND chord.position < endPosition:
+                   adjustedChord = NEW ChordOccurrence(
+                       chord.symbol,
+                       chord.position - currentPosition  // Relative position
+                   )
+                   chunkChords.ADD(adjustedChord)
+
+           segments.ADD(NEW Segment(chunk, chunkChords))
+           currentPosition = endPosition
+
+       RETURN segments
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 66]
+
+5.4.3 Worked Example
+
+Input:
+- Lyrics: "I will sing of your love forever and ever"
+- Chords: G at 0, D at 21, Em at 34
+- Container width fits approximately 30 characters per line
+
+Step 1: First chunk starts at position 0, target end at position 30.
+
+Step 2: Character at position 30 is "r" in "forever". Find last space before position 30: space at position 29 (after "forever"). But "forever" ends at position 33, so the last space before 30 is at position 25 (after "love").
+
+Step 3: Wait - let us count carefully.
+"I will sing of your love forever and ever"
+ 0123456789...
+Position 21 = "l" in "love", position 25 = " " after "love", position 26 = "f" in "forever"
+
+Step 4: Last space at or before position 30 is at position 33 (after "forever"). Actually, let us use the space at position 25 for a clean break.
+
+Segment 1: "I will sing of your love " (positions 0-25)
+- Chord G at position 0 -> relative position 0
+- Chord D at position 21 -> relative position 21
+- No Em (position 34 is outside this segment)
+
+Segment 2: "forever and ever" (positions 26-42)
+- Chord Em at position 34 -> relative position 34 - 26 = 8
+
+Rendered Output:
+   G                    D
+   I will sing of your love
+           Em
+   forever and ever
+
+The chords wrap perfectly with their corresponding lyrics.
+
+5.4.4 Character Width Measurement
+
+The algorithm needs to know the average width of a character in the current font. This is measured dynamically using a hidden HTML element:
+
+   function measureAverageCharWidth() {
+       var testElement = document.createElement('span');
+       testElement.style.visibility = 'hidden';
+       testElement.style.position = 'absolute';
+       testElement.style.whiteSpace = 'nowrap';
+       testElement.textContent = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+       document.body.appendChild(testElement);
+       var avgWidth = testElement.offsetWidth / 52;
+       document.body.removeChild(testElement);
+       return avgWidth;
+   }
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 67]
+
+5.5 Search Engine Implementation
+
+5.5.1 Multi-Dimensional Search
+
+The search engine queries across four dimensions simultaneously:
+
+Dimension 1: Song Number
+If the search query is a pure integer (e.g., "979"), the system first checks for an exact match against the song_number column. This is the highest priority match because musicians commonly identify songs by their traditional songbook number.
+
+Dimension 2: Title
+The query is compared against the title column using a case-insensitive LIKE clause. Both exact matches ("Amazing Grace") and partial matches ("Amazing") are supported.
+
+Dimension 3: Artist
+The query is compared against the artist column using the same case-insensitive LIKE clause.
+
+Dimension 4: Lyrics
+The query is compared against both lyrics_original and lyrics_roman columns. This enables cross-script search: a user searching for "Prabhu" (Roman) will find songs where lyrics_roman contains "Prabhu" even if the song's primary language is Hindi with Devanagari lyrics.
+
+5.5.2 Weighted Ranking Algorithm
+
+Not all matches are equally relevant. A title match should rank higher than a lyric match because a song titled "Amazing Grace" is more likely the intended result than a song that merely contains the word "amazing" somewhere in its lyrics.
+
+The ranking weights are:
+
+Table 5.3: Search Weight Configuration
+
+| Match Dimension | Weight | Justification |
+| Exact Number Match | 100 | Highest priority - specific identifier |
+| Exact Title Match | 90 | Very likely the intended song |
+| Partial Title Match | 70 | Strong relevance |
+| Artist Match | 50 | Moderate relevance |
+| Lyrics Match (original) | 30 | Low but valid relevance |
+| Lyrics Match (roman) | 30 | Same weight as original script |
+
+The scoring algorithm:
+
+   public int calculateScore(Song song, String query) {
+       int score = 0;
+
+       if (String.valueOf(song.getSongNumber()).equals(query)) {
+           score += 100;
+       }
+       if (song.getTitle().equalsIgnoreCase(query)) {
+           score += 90;
+       } else if (song.getTitle().toLowerCase().contains(query)) {
+           score += 70;
+       }
+       if (song.getArtist() != null &&
+           song.getArtist().toLowerCase().contains(query)) {
+           score += 50;
+       }
+       if (song.getLyricsRoman() != null &&
+           song.getLyricsRoman().toLowerCase().contains(query)) {
+           score += 30;
+       }
+       return score;
+   }
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 5 - PAGE 68]
+
+5.6 Multi-Script Rendering
+
+5.6.1 The Script Toggle Mechanism
+
+The song view page provides a toggle button that switches the displayed lyrics between the original Devanagari script and the Roman transliteration. This toggle operates entirely on the client side without requiring a server round-trip.
+
+How it works:
+
+Step 1: When the SongViewServlet renders the songView.jsp page, it embeds both versions of the lyrics into the HTML as data attributes on each line element:
+
+   <div class="song-line"
+        data-original="आरती हो आरती"
+        data-roman="Aarati Ho Aarati">
+       <!-- chord elements positioned here -->
+       <span class="lyric-text">आरती हो आरती</span>
+   </div>
+
+Step 2: When the user clicks the Script Toggle button, JavaScript iterates through all line elements and swaps the text content:
+
+   function toggleScript(useRoman) {
+       var lines = document.querySelectorAll('.song-line');
+       lines.forEach(function(line) {
+           var textSpan = line.querySelector('.lyric-text');
+           if (useRoman) {
+               textSpan.textContent = line.dataset.roman;
+           } else {
+               textSpan.textContent = line.dataset.original;
+           }
+       });
+   }
+
+Step 3: The chord elements are NOT modified during the toggle. They remain in their original positions within the HTML structure. Because the chords are anchored to character indices and the indices correspond to the same musical positions in both scripts, the chords remain correctly aligned after the toggle.
+
+5.6.2 Limitation: Index Correspondence
+
+The character indices must correspond between the two script versions. If the Devanagari lyrics have a chord at index 6, the Roman transliteration must also have the musically equivalent position at approximately index 6. This is ensured during the ingestion process by using the Roman transliteration as the reference for chord positioning and mapping the positions to the Devanagari text.
+
+
+5.7 Security and Error Handling
+
+5.7.1 SQL Injection Prevention
+All database queries use JDBC PreparedStatement with parameterized inputs. User-provided values are never concatenated into SQL strings. This makes SQL injection mathematically impossible.
+
+5.7.2 Input Validation
+The Servlet layer validates all inputs: song IDs must be positive integers, transpose values must be within the range -11 to +11, and search queries are trimmed and length-limited.
+
+5.7.3 XSS Prevention
+User inputs displayed in the UI are escaped using HTML entity encoding. Characters like <, >, and & are converted to their entity equivalents before rendering.
+
+5.7.4 Error Handling Strategy
+- DAO Layer: Catches SQLException, logs the error with stack trace, and returns null or empty collections.
+- Service Layer: Checks for null returns from DAOs and throws descriptive business exceptions.
+- Servlet Layer: Catches exceptions and forwards to an error JSP page that displays a user-friendly message without exposing technical details.
+
+[PAGE BORDER: ACADEMIC STYLE]

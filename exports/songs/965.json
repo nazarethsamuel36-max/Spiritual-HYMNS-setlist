@@ -1,0 +1,120 @@
+{
+  "id" : 965,
+  "songNumber" : 87,
+  "title" : "I'M FOLLOWING JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I'm following Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "One step at a time;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "I live for the moment,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "In His love divine,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Why think of tomorrow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Just live for today,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "I'm following Jesus,"
+    }, {
+      "text" : "Each step of the way.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "The pathway is narrow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "But He leads me on;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "I walk in His shadow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "My fears are all gone,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "My spirit grows stronger,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    }, {
+      "text" : "Each moment, each day,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "For Jesus is leading",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Each step of the way."
+    } ]
+  } ]
+}

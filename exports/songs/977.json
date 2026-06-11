@@ -1,0 +1,115 @@
+{
+  "id" : 977,
+  "songNumber" : 99,
+  "title" : "AH LORD GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Ah Lord God thou has made the heavens,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "and the earth by Thy great power,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Ah Lord God thou has made the heavens,"
+    }, {
+      "text" : "and the earth by Thy outstretched arm.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Nothing is too difficult for thee. (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Great and Mighty God,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Great in counsel and mighty indeed,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Nothing, nothing, absolutely nothing,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Nothing is too difficult for Thee !",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Let God arise and His enemies be scattered, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Let God, let God arise.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    } ]
+  } ]
+}

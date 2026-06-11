@@ -1,0 +1,108 @@
+{
+  "id" : 3168,
+  "songNumber" : 1027,
+  "title" : "** Goodness of God | I Love you Lord",
+  "language" : "english",
+  "originalKey" : "**",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "... I love You, Lord"
+    }, {
+      "text" : "For Your mercy never fails me"
+    }, {
+      "text" : "All my days, I've been held in Your hands"
+    }, {
+      "text" : "From the moment that I wake up"
+    }, {
+      "text" : "Until I lay my head"
+    }, {
+      "text" : "Oh, I will sing of the goodness of God"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "... And all my life You have been faithful"
+    }, {
+      "text" : "And all my life You have been so, so good"
+    }, {
+      "text" : "With every breath that I am able"
+    }, {
+      "text" : "Oh, I will sing of the goodness of God"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "... I love Your voice"
+    }, {
+      "text" : "You have led me through the fire"
+    }, {
+      "text" : "In the darkest night"
+    }, {
+      "text" : "You are close like no other"
+    }, {
+      "text" : "I've known You as a Father"
+    }, {
+      "text" : "I've known You as a Friend"
+    }, {
+      "text" : "And I have lived in the goodness of God (yeah)"
+    } ]
+  }, {
+    "type" : "bridge",
+    "label" : "Bridge",
+    "lines" : [ {
+      "text" : "... 'Cause Your goodness is running after"
+    }, {
+      "text" : "It's running after me"
+    }, {
+      "text" : "Your goodness is running after"
+    }, {
+      "text" : "It's running after me"
+    }, {
+      "text" : "With my life laid down"
+    }, {
+      "text" : "I'm surrendered now"
+    }, {
+      "text" : "I give You everything"
+    }, {
+      "text" : "'Cause Your goodness is running after"
+    }, {
+      "text" : "It's running after me (oh-oh)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "... And all my life You have been faithful"
+    }, {
+      "text" : "And all my life You have been so, so good"
+    }, {
+      "text" : "With every breath that I am able"
+    }, {
+      "text" : "Oh, I'm gonna sing of the goodness of God"
+    }, {
+      "text" : "(I'm gonna sing, I'm gonna sing)"
+    }, {
+      "text" : "... 'Cause all my life You have been faithful"
+    }, {
+      "text" : "And all my life You have been so, so good"
+    }, {
+      "text" : "With every breath that I am able"
+    }, {
+      "text" : "Oh, I'm gonna sing of the goodness of God"
+    }, {
+      "text" : "Oh, I'm gonna sing of the goodness of God"
+    } ]
+  } ]
+}

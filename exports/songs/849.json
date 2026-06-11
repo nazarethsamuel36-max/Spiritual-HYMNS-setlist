@@ -1,0 +1,252 @@
+{
+  "id" : 849,
+  "songNumber" : 237,
+  "title" : "WE ARE ONE IN THE SPIRIT",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We are one in the Spirit, we are one in the Lord (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "And we praise God our unity is now being restored.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 31
+      }, {
+        "chord" : "D",
+        "position" : 43
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "And they'll know we are Christians,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "By our love, by our love,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Yes, they'll know we are Christians",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "By our love.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "We will walk with each other, we will walk hand in hand (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 38
+      }, {
+        "chord" : "D",
+        "position" : 51
+      } ]
+    }, {
+      "text" : "And together we'll spread the news",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "That Christ is in our land.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "We will work with each other, we will work side by side (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 38
+      }, {
+        "chord" : "D",
+        "position" : 51
+      } ]
+    }, {
+      "text" : "In this Holy Ghost revival",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "In God's Spirit we'll abide.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "We are being built together, we are being built in love (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 36
+      }, {
+        "chord" : "D",
+        "position" : 51
+      } ]
+    }, {
+      "text" : "And we know that this love is coming down from above.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 48
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "Now the Lord is that Spirit, and the Spirit is the Lord (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 37
+      }, {
+        "chord" : "D",
+        "position" : 51
+      } ]
+    }, {
+      "text" : "And He dwells in our spirit and we're all in one accord.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 38
+      }, {
+        "chord" : "D",
+        "position" : 51
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "Give all praise to the Father from whom all blessings come",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 35
+      }, {
+        "chord" : "D",
+        "position" : 54
+      } ]
+    }, {
+      "text" : "And all praise to Christ Jesus the Father's firstborn Son",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "And all praise to the Spirit who makes us one.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    } ]
+  } ]
+}

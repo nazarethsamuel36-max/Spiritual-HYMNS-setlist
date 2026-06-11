@@ -1,0 +1,68 @@
+{
+  "id" : 701,
+  "songNumber" : 25,
+  "title" : "LIFT JESUS HIGHER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Lift Jesus higher,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Lift Jesus higher,"
+    }, {
+      "text" : "Lift Him up for the world to see.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "He said, if I be lifted up from the earth,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "I will draw all men unto Me.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    } ]
+  } ]
+}

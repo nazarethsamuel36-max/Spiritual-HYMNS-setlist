@@ -55,19 +55,55 @@ public class TransposeServlet extends HttpServlet {
                 return;
             }
 
-            // Transpose the raw bracket chord-lyric text
-            String transposedChords = ChordTransposer.transposeSong(song.getChords(), semitones);
+            // 1. Get structured lines (handle both legacy column and relational tables)
+            List<StructuredLine> structuredLines = new ArrayList<>();
+            String lang = song.getLanguage() != null ? song.getLanguage().trim() : "";
+            boolean isMarathi = "marathi".equalsIgnoreCase(lang) || "mr".equalsIgnoreCase(lang);
 
-            // Parse into authoritative structured format
-            List<StructuredLine> structuredLines = ChordParser.parseStructuredSong(song.getChords());
-            
-            // Transpose the structured lines
-            com.worship.util.ChordTransposer.EnharmonicPref style = com.worship.util.ChordTransposer.detectStructuredStyle(structuredLines);
-            for (StructuredLine line : structuredLines) {
-                ChordTransposer.transposeStructuredLine(line, semitones, style, false);
+            if (song.getChords() != null && !song.getChords().isEmpty()) {
+                // Priority 1: Legacy bracket chords
+                String chordText = song.getChords();
+                if (com.worship.util.SongFormatDetector.detect(chordText) == com.worship.util.SongFormatDetector.Format.CHORDS_ABOVE) {
+                    chordText = com.worship.util.ChordLineMerger.convertToInline(chordText);
+                }
+                structuredLines = ChordParser.parseStructuredSong(chordText);
+            } else if (song.getSections() != null && !song.getSections().isEmpty()) {
+                // Priority 2: Relational sections/lines
+                com.worship.dao.LineChordDAO lineChordDAO = new com.worship.dao.LineChordDAO();
+                Map<Integer, List<com.worship.model.ChordOccurrence>> chordMap = lineChordDAO.getChordsForSong(songId);
+
+                for (com.worship.model.Section section : song.getSections()) {
+                    // Include section headers
+                    structuredLines.add(new StructuredLine("{" + section.getLabel() + "}"));
+                    for (com.worship.model.SongLine line : section.getLines()) {
+                        StructuredLine sl = ChordParser.parseStructuredLine(line.getText());
+                        List<com.worship.model.ChordOccurrence> lineChords = chordMap.get(line.getId());
+                        if (lineChords != null) {
+                            sl.setChords(lineChords);
+                        }
+                        structuredLines.add(sl);
+                    }
+                }
             }
 
-            // Transpose notes (Sa Re Ga) if present
+            // 2. Transpose the structured lines
+            if (!structuredLines.isEmpty()) {
+                com.worship.util.ChordTransposer.EnharmonicPref style = ChordTransposer.detectStructuredStyle(structuredLines);
+                for (StructuredLine line : structuredLines) {
+                    // Don't transpose section labels
+                    if (line.getLyrics() != null && line.getLyrics().startsWith("{") && line.getLyrics().endsWith("}")) continue;
+                    ChordTransposer.transposeStructuredLine(line, semitones, style, false);
+                }
+            }
+
+            // 3. Handle Transliteration (Roman Script) if active in session
+            String scriptFormat = (String) request.getSession().getAttribute("preferredScript");
+            if ("roman".equalsIgnoreCase(scriptFormat) && isMarathi) {
+                com.worship.service.TransliterationService transliteService = new com.worship.service.TransliterationService();
+                structuredLines = transliteService.transliterateStructuredLines(structuredLines);
+            }
+
+            // 4. Transpose notes (Sa Re Ga) if present
             List<String> noteLines = new ArrayList<>();
             if (song.getNotes() != null && !song.getNotes().isEmpty()) {
                 String transposedNotes = NoteTransposer.transposeSongNotes(song.getNotes(), semitones);
@@ -75,7 +111,7 @@ public class TransposeServlet extends HttpServlet {
                 noteLines = Arrays.asList(noteLinesArr);
             }
 
-            // Build response
+            // 5. Build response
             Map<String, Object> result = new LinkedHashMap<>();
             result.put("structuredLines", structuredLines);
             result.put("noteLines", noteLines);

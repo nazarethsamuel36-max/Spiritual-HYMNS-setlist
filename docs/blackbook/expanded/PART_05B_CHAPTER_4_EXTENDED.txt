@@ -1,0 +1,221 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 EXTENDED - ADDITIONAL PAGES]
+
+4.11 Detailed Table Relationship Analysis
+
+4.11.1 One-to-Many: Songs to Sections
+
+The relationship between the songs table and the sections table is a one-to-many relationship. One song can have multiple sections (Verse 1, Verse 2, Chorus, Bridge, etc.), but each section belongs to exactly one song.
+
+This relationship is enforced through a foreign key constraint: sections.song_id references songs.id. If a song is deleted, the ON DELETE CASCADE constraint ensures that all associated sections are automatically removed, preventing orphaned section records.
+
+Real-World Example:
+The hymn "Amazing Grace" has the following section structure:
+- Section 1: Verse 1 (section_order = 1)
+- Section 2: Verse 2 (section_order = 2)
+- Section 3: Verse 3 (section_order = 3)
+- Section 4: Verse 4 (section_order = 4)
+
+A contemporary worship song like "How Great Is Our God" might have:
+- Section 1: Verse 1 (section_order = 1)
+- Section 2: Pre-Chorus (section_order = 2)
+- Section 3: Chorus (section_order = 3)
+- Section 4: Verse 2 (section_order = 4)
+- Section 5: Pre-Chorus (section_order = 5)
+- Section 6: Chorus (section_order = 6)
+- Section 7: Bridge (section_order = 7)
+- Section 8: Chorus (section_order = 8)
+
+Note that the same section type (Chorus) can appear multiple times in the ordering. The section_order column preserves the exact performance sequence, allowing the rendering engine to display sections in the correct order.
+
+4.11.2 One-to-Many: Sections to Song Lines
+
+Each section contains one or more lines of lyrics. The sections table relates to the song_lines table through the foreign key song_lines.section_id.
+
+Typical line counts per section type:
+- Verse: 2 to 6 lines
+- Chorus: 2 to 4 lines
+- Bridge: 1 to 3 lines
+- Intro/Outro: 0 to 1 lines (may contain only chords)
+
+The line_order column within each section ensures that lyrics are displayed in the correct sequence. This is important because SQL does not guarantee the order of rows returned by a SELECT query unless an ORDER BY clause is specified.
+
+4.11.3 One-to-Many: Song Lines to Line Chords
+
+Each line of lyrics can have zero or more chord occurrences. The song_lines table relates to the line_chords table through the foreign key line_chords.line_id.
+
+Typical chord counts per line:
+- Simple songs: 1 to 2 chords per line
+- Moderate songs: 2 to 4 chords per line
+- Complex songs: 4 to 8 chords per line
+- Instrumental sections: 2 to 6 chords with no lyrics
+
+This relationship is the most critical in the entire database because it implements the position-based chord mapping. Each record in line_chords represents a single musical instruction: "Play this chord when you reach this character in the lyrics."
+
+4.11.4 Many-to-Many: Songs to Hashtags
+
+Songs and hashtags have a many-to-many relationship: one song can have multiple hashtags (such as Praise, Christmas, and Slow), and one hashtag can be associated with multiple songs.
+
+This relationship is implemented through the song_hashtags junction table, which contains two foreign keys: song_id and hashtag_id. The combination of these two columns forms a composite unique constraint, preventing duplicate associations.
+
+Hashtags serve as a classification and filtering mechanism. Worship leaders can filter the song library by theme (Praise, Worship, Thanksgiving), occasion (Christmas, Easter, Good Friday), or tempo (Fast, Slow, Medium) to quickly narrow down song selections for a specific service.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+4.12 Sample Data Walkthrough
+
+To demonstrate how the normalized structure works in practice, this section traces the complete data representation of a single song through all four tables.
+
+Song: "I Will Sing of Your Love" (English, Key of G)
+
+4.12.1 Songs Table Record
+
+| Column | Value |
+| id | 100 |
+| song_number | 256 |
+| title | I Will Sing of Your Love |
+| artist | Unknown |
+| language | english |
+| lyrics_original | (NULL - English songs use lyrics_roman) |
+| lyrics_roman | I will sing of your love forever... |
+| chords | [G]I will [C]sing of your [D]love... |
+| original_key | G |
+| is_active | TRUE |
+
+4.12.2 Sections Table Records
+
+| id | song_id | type | label | section_order |
+| 201 | 100 | verse | Verse 1 | 1 |
+| 202 | 100 | chorus | Chorus | 2 |
+| 203 | 100 | verse | Verse 2 | 3 |
+| 204 | 100 | chorus | Chorus | 4 |
+
+4.12.3 Song Lines Table Records (Verse 1 only)
+
+| id | section_id | line_text | line_order |
+| 301 | 201 | I will sing of your love forever | 1 |
+| 302 | 201 | I will worship you with all my heart | 2 |
+
+4.12.4 Line Chords Table Records (Line 301 only)
+
+| id | line_id | chord | char_index |
+| 401 | 301 | G | 0 |
+| 402 | 301 | C | 7 |
+| 403 | 301 | D | 19 |
+| 404 | 301 | Em | 24 |
+
+4.12.5 How This Data Produces the Display
+
+The rendering engine processes line 301 as follows:
+
+1. Read line_text: "I will sing of your love forever"
+2. Fetch chords ordered by char_index: G@0, C@7, D@19, Em@24
+3. Build HTML by interleaving:
+   - Position 0: Insert chord "G", then read characters 0-6 ("I will ")
+   - Position 7: Insert chord "C", then read characters 7-18 ("sing of your ")
+   - Position 19: Insert chord "D", then read characters 19-23 ("love ")
+   - Position 24: Insert chord "Em", then read characters 24-31 ("forever")
+4. Final HTML output:
+   <div class="song-line">
+     <span class="chord-wrap"><span class="chord-symbol">G</span></span>I will
+     <span class="chord-wrap"><span class="chord-symbol">C</span></span>sing of your
+     <span class="chord-wrap"><span class="chord-symbol">D</span></span>love
+     <span class="chord-wrap"><span class="chord-symbol">Em</span></span>forever
+   </div>
+
+5. CSS positions the chord-symbol spans above the lyric text using absolute positioning or flexbox column layout.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+4.13 Database Indexing Strategy
+
+Indexes are critical for maintaining query performance as the song library grows. Without proper indexing, queries that currently execute in 45ms could degrade to several seconds with a library of 5,000+ songs.
+
+4.13.1 Primary Key Indexes
+All tables have auto-incrementing integer primary keys, which MySQL automatically indexes using a clustered B-tree index. These indexes support the JOIN operations used in song retrieval.
+
+4.13.2 Foreign Key Indexes
+MySQL automatically creates indexes on foreign key columns (song_id, section_id, line_id). These indexes accelerate the cascading queries used when assembling a complete Song object.
+
+4.13.3 Search-Optimized Indexes
+
+Index 1: songs.song_number
+   - Type: B-tree
+   - Purpose: Supports exact-match lookups when users search by song number
+   - Query benefit: SELECT * FROM songs WHERE song_number = 979 executes in under 1ms
+
+Index 2: songs.title
+   - Type: B-tree
+   - Purpose: Supports LIKE queries for title search
+   - Query benefit: SELECT * FROM songs WHERE title LIKE '%Amazing%' uses index scan
+
+Index 3: songs.language
+   - Type: B-tree
+   - Purpose: Supports language filtering
+   - Query benefit: SELECT * FROM songs WHERE language = 'hindi' uses index scan
+
+Index 4: sections.section_order
+   - Type: B-tree
+   - Purpose: Supports ORDER BY section_order in section retrieval
+   - Query benefit: Sections returned in correct sequence without file sort
+
+Index 5: song_lines.line_order
+   - Type: B-tree
+   - Purpose: Supports ORDER BY line_order in line retrieval
+   - Query benefit: Lines returned in correct sequence without file sort
+
+Index 6: line_chords.char_index
+   - Type: B-tree
+   - Purpose: Supports ORDER BY char_index in chord retrieval
+   - Query benefit: Chords returned in left-to-right order for rendering
+
+4.13.4 Full-Text Search Consideration
+For lyrics search, a full-text index on lyrics_roman and lyrics_original would significantly improve performance for LIKE '%keyword%' queries, which cannot use standard B-tree indexes efficiently. This is documented as a future optimization opportunity.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+4.14 User Roles and Access Patterns
+
+The system serves three distinct user roles, each interacting with the architecture in different ways:
+
+4.14.1 Worship Leader (Primary User)
+Typical Workflow:
+1. Opens the application on a laptop or tablet 30 minutes before the service.
+2. Searches for songs by title or number.
+3. Opens each selected song to verify the key and chord structure.
+4. If necessary, transposes the song to match the vocalist's range.
+5. Creates a setlist by adding songs in performance order.
+6. During the service, navigates through the setlist sequentially.
+
+Access Pattern: Heavy use of the Search Engine and Song View features. Moderate use of Transposition. Light use of Script Toggle.
+
+Performance Requirements: Search must return results within 200ms. Song view must load within 300ms. Transposition must be instant (under 100ms).
+
+4.14.2 Musician (Instrumentalist)
+Typical Workflow:
+1. Opens the application on a phone or tablet on a music stand.
+2. Receives the setlist from the worship leader.
+3. Opens individual songs and adjusts the key to their instrument's preference.
+4. During the service, reads chord charts from the device.
+
+Access Pattern: Heavy use of Song View and Transposition. Moderate use of Script Toggle (for Hindi/Marathi songs). Light use of Search.
+
+Performance Requirements: Rendering must be perfect on mobile screens. Font size must be readable from arm's length. No horizontal scrolling.
+
+4.14.3 Administrator (Data Manager)
+Typical Workflow:
+1. Sources new songs from physical songbooks, websites, or other digital formats.
+2. Converts songs to the [C] bracket format.
+3. Uses the Bulk Import feature to add songs to the database.
+4. Verifies the imported songs by viewing them in the application.
+5. Corrects any parsing errors by re-importing the affected songs.
+
+Access Pattern: Heavy use of Bulk Import. Moderate use of Song View (for verification). Light use of Search and Transposition.
+
+Performance Requirements: Import process should handle songs of any length. Error messages should be clear and specific.
+
+
+[PAGE BORDER: ACADEMIC STYLE]

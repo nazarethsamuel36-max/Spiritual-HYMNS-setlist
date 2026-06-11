@@ -1,0 +1,45 @@
+{
+  "id" : 582,
+  "songNumber" : 36,
+  "title" : "JESUS TAKE ME AS I AM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Jesus take me as I am;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "I can come no other way,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Take me deeper into You,"
+    }, {
+      "text" : "Make my flesh-life melt away,"
+    }, {
+      "text" : "Make me like a precious stone"
+    }, {
+      "text" : "Crystal-clear and finely-honed,"
+    }, {
+      "text" : "Life of Jesus shining through"
+    }, {
+      "text" : "Giving glory back to You."
+    } ]
+  } ]
+}

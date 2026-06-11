@@ -1,0 +1,46 @@
+{
+  "id" : 3171,
+  "songNumber" : 1030,
+  "title" : "** You deserve the glory",
+  "language" : "english",
+  "originalKey" : "** D",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "You deserve the glory"
+    }, {
+      "text" : "And the honour"
+    }, {
+      "text" : "Lord we lift our hands in worship"
+    }, {
+      "text" : "As we lift your holy name"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "For you are great, You do miracles so great"
+    }, {
+      "text" : "There is no one else like you,"
+    }, {
+      "text" : "...there is no one else like You"
+    }, {
+      "text" : "For you are great, You do miracles so great"
+    }, {
+      "text" : "There is no one else like you,"
+    }, {
+      "text" : "...there is no one else like You"
+    } ]
+  } ]
+}

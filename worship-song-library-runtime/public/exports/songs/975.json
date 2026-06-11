@@ -1,0 +1,127 @@
+{
+  "id" : 975,
+  "songNumber" : 97,
+  "title" : "BLESSED BE THE NAME OF THE LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Blessed be the Name of the Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "He is worthy to be praised and adored",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "So we lift up holy hands in one accord",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Singing Blessed be the Name,",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Blessed be the Name,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Blessed be the Name of the Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 15
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Worthy, You are worthy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "King of kings, Lord of lords,"
+    }, {
+      "text" : "You are worthy.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Worthy, You are worthy,"
+    }, {
+      "text" : "King of kings, Lords of lords,"
+    }, {
+      "text" : "I worship You.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Holy, You are holy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "King of kings, Lord of lords,"
+    }, {
+      "text" : "You are holy.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Holy, You are holy,"
+    }, {
+      "text" : "King of kings, Lord of lords,"
+    }, {
+      "text" : "I worship You."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Jesus, You are Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "King of kings, Lord of lords,"
+    }, {
+      "text" : "You are Jesus.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Jesus, You are Jesus,"
+    }, {
+      "text" : "King of kings, Lord of lords,"
+    }, {
+      "text" : "I worship You."
+    } ]
+  } ]
+}

@@ -1,0 +1,143 @@
+{
+  "id" : 1185,
+  "songNumber" : 207,
+  "title" : "MERE JEEVAN KA MAKSAD TU HAI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मेरे जीवन का मकसद तू है",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मेरे जीने का कारण तू है",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मैं जीऊँ या मरूँ, वो तेरे लिये है तू मेरा प्रभु",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 45
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पिछला सब भूलकर, मैं आगे दौड़ा चलूँ",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "जो मेरे लिये धन था, उसको मैं त्याग दूँ (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "कि मैं पाऊँ उससे पुरस्कार, दौड़ा मैं जाऊँ (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "मैं जीऊँ...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 6
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "मुझ पर है कृपा, बेकार ना जाने दूँ",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "जिसने मुझे चुना, उसकी और मैं बढूँ (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "देखूँ तेरी सलीब पर, खिंचा मैं जाऊँ (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

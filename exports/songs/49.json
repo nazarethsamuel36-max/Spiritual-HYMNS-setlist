@@ -1,0 +1,211 @@
+{
+  "id" : 1027,
+  "songNumber" : 49,
+  "title" : "MAHIMA SE TU JO BHARA HUA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "महिमा से तू जो भरा हुआ,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "ज्योति में सदा रहने वाला,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "मनुष्यों में तूने जन्म लिया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "फिर से यीशु जग में तू आएगा । यीशु आएगा...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "भूमि आकाश में समा न सका,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "मन्दिरों में तू रह न सका,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "नम्र होकर चरनी में पैदा हुआ,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "मनों में हमारे घर तू बना । यीशु घर तू बना...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "खेमे में आकर तू ही बसा,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "लोगों को अपने लिए फिरा,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "अग्नि और बादल में तू ही दिखा,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "फिर से यीशु अपना जलवा दिखा । यीशु जलवा दिखा...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "दानिएल की तूने प्रार्थना सुनी,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "एंद्री की तूने सहायता की,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "बाबुल में तूने बेदारी भेजी,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "अपने लोगों को फिर से दे रिहाई । यीशु दे रिहाई...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "तू ही हमारा राजा है,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "तू ही मुक्ति दाता है,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "फिर से आने वाला है,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "प्यारे प्रभु यीशु तू जल्दी आ । यीशु जल्दी आ...",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

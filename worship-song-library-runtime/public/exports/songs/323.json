@@ -1,0 +1,125 @@
+{
+  "id" : 630,
+  "songNumber" : 323,
+  "title" : "SOME TRUST IN CHARIOTS AND SOME IN HORSES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Some trust in chariots and some in horses,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 27
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "But we will remember the name of the Lord our God,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 37
+      }, {
+        "chord" : "A",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "Some trust in chariots and some in horses,"
+    }, {
+      "text" : "But we will remember the name of the Lord our God,"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Now know I that the Lord saveth His anointed,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 32
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "He will hear them from His holy heaven,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "With the saving strength of his right hand,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 32
+      }, {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "They are brought down and fallen,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "But we are risen and stand upright.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    } ]
+  } ]
+}

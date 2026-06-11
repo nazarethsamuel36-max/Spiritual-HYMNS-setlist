@@ -1,0 +1,166 @@
+{
+  "id" : 1012,
+  "songNumber" : 34,
+  "title" : "DHANYA DHANYA TUJKHO, PRABHU HUM KAHTE BAAR BAAR",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "धन्य धन्य तुझको, प्रभु हम कहते बारम्बार ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "तेरी होवे जय जयकार, तुझे हम कहते बारम्बार",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "अंधियारे जीवन में हमारे, प्रेम का दीप जलाया",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "पाप कपट सब दूर हुए, हृदय में तेज जगाया ।",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पर्वत तेरी शान बताते, सागर प्रेम तिहारा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "चाँद सितारों में जो देखा, पाया रूप तिहारा",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "सब जीवन के आधार (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "तुझे हम कहते बारम्बार ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "कृपा दीन दयाल करो, अब द्वार तिहारे आये",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "आत्म दान बलिदान करो, हम कबसे आस लगाए"
+    }, {
+      "text" : "तेरी महिमा अपरम्पार, तुझे हम कहते बारम्बार ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    } ]
+  } ]
+}

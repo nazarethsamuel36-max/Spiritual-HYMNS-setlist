@@ -1,0 +1,168 @@
+{
+  "id" : 1068,
+  "songNumber" : 90,
+  "title" : "CHHOD NA MUJHE PYARE YESHU",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "छोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "औरों पर तू दया करता, कर तू मुझ पर भी ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "B",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "यीशु, यीशु ! बिनंती सुन मेरी,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "E",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "औरों पर तू दया करता, कर तू मुझ पर भी ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरे पास, हे दयासिंधु, शांति पाऊंगा,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "B",
+        "position" : 23
+      }, {
+        "chord" : "E",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "तेरे सामने झुका हूँ मैं, अब विश्वास दिला ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 38
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "तुझ पर पूरी आंस मैं रखता,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "अपना मुख दिखला,",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "चंगा कर इस घायल मन को, इसे ले बचा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "B",
+        "position" : 23
+      }, {
+        "chord" : "E",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "तू है शांति का चिर सोता, प्यारा प्राण से भी,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "तुझे छोड अब कौन है मेरा, जग या स्वर्ग में भी ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 42
+      } ]
+    } ]
+  } ]
+}

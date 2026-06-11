@@ -1,0 +1,76 @@
+{
+  "id" : 3132,
+  "songNumber" : 2033,
+  "title" : "** Gin Gin ke stuti karu",
+  "language" : "hindi",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Aandhiyan ban ke aayein,"
+    }, {
+      "text" : "Zindagi ke fikr, (2)"
+    }, {
+      "text" : "Kaun hai tera rachnewala,"
+    }, {
+      "text" : "Hai bharosa tera kidher |"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Gin Gin ke stuti karoon,"
+    }, {
+      "text" : "Beshumar tere daanon ke liye,"
+    }, {
+      "text" : "Ab tak tune sambhala mujhe,"
+    }, {
+      "text" : "Apni baahon mein liye hue |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Tere shatru ka nishana,"
+    }, {
+      "text" : "Tujh par hoga na safal, (2)"
+    }, {
+      "text" : "Aankhon ki putli jaise,"
+    }, {
+      "text" : "Vo rakhega, tujhe har pal |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Aaye tujhe jo mitane,"
+    }, {
+      "text" : "Ve shastra honge beasar, (2)"
+    }, {
+      "text" : "Tera rachnewala tujhpar,"
+    }, {
+      "text" : "Rakhta hai apni nazar |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "https://youtu.be/yWvBdLdvTFc"
+    } ]
+  } ]
+}

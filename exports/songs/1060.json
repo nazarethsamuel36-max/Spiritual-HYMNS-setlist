@@ -1,0 +1,95 @@
+{
+  "id" : 1060,
+  "songNumber" : 82,
+  "title" : "AA YESHU PASS AA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "आ यीशु पास आ, यीशु बुलाता तुझे",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "सुनके आ यीशु पास, फिर ना होगा निराश ।",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जिंदगी को दे दे, हाथों में प्रभु यीशु के",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "संभालेगा वो तुझे, जीवन के हर खतरों से ।",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरे लिए क्रुस पर, यीशु ने जान अपनी दी",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "ताकि तुझे मिल जाये, शांति, नयी जिंदगी ।",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    } ]
+  } ]
+}

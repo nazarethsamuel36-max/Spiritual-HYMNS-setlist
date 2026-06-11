@@ -1,0 +1,94 @@
+{
+  "id" : 945,
+  "songNumber" : 66,
+  "title" : "GIVE THANKS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Give thanks, with a grateful heart.",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Give thanks to the Holy One.",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 5
+      }, {
+        "chord" : "Am",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Give thanks because He's given",
+      "chords" : [ {
+        "chord" : "Bb",
+        "position" : 5
+      }, {
+        "chord" : "F",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Jesus Christ, His Son.",
+      "chords" : [ {
+        "chord" : "Eb",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "(Repeat)"
+    }, {
+      "text" : "And now let the weak say \"I am strong\",",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 4
+      }, {
+        "chord" : "Dm",
+        "position" : 16
+      }, {
+        "chord" : "Gm",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "Let the poor say \"I am rich\",",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 8
+      }, {
+        "chord" : "Am",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Because of what the Lord has done for us.",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 11
+      }, {
+        "chord" : "Eb",
+        "position" : 29
+      }, {
+        "chord" : "C",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "(Repeat)"
+    }, {
+      "text" : "Give thanks (last time)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

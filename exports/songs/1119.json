@@ -1,0 +1,94 @@
+{
+  "id" : 1119,
+  "songNumber" : 141,
+  "title" : "DAYEIN NA BAYEIN MUDNA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "दायें ना बायें मुडना आगे ही आगे बढना",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "यीशु तुम्हारे संग है, संग संग उसके चलना।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "अनमोल जीवन तुम्हारा, यूँही इसे ना गवाना (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "दुःख के थपेडों से प्यारो तुम ना कभी घबराना। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तुफानों से हर दिन तुमको अब जूझना।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "यीशु तुम्हारे संग है-संगसंग उसके चलना।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जो मार्ग तुमने चुना है, चित्त तुम उसपे लगाना।(2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ये गुलगाथा की राह है, क्रूस तुम्हें है उठाना। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "यीशु के आदेश को अब तुम पूरा करना।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "यीशु तुम्हारे संग है-संगसंग उसके चलना।"
+    } ]
+  } ]
+}

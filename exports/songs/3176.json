@@ -1,0 +1,44 @@
+{
+  "id" : 3176,
+  "songNumber" : 1035,
+  "title" : "** I will celebrate, sing unto the Lord",
+  "language" : "english",
+  "originalKey" : "** Em",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "I will celebrate, sing unto the Lord"
+    }, {
+      "text" : "I will sing to Him a new Song"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I will praise Him, I will sing to Him a new song"
+    }, {
+      "text" : "I will praise Him, I will sing to Him a new song"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "I will celebrate, sing unto the Lord"
+    }, {
+      "text" : "I will sing to Him a new Song"
+    } ]
+  } ]
+}

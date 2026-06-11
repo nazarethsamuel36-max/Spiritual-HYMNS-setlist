@@ -1,0 +1,50 @@
+{
+  "id" : 3152,
+  "songNumber" : 1010,
+  "title" : "** I Enter The Holy Of Holies",
+  "language" : "english",
+  "originalKey" : "** F#M",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "I enter the Holy of Holies"
+    }, {
+      "text" : "I enter through the blood of the Lamb"
+    }, {
+      "text" : "I enter to worship You only"
+    }, {
+      "text" : "I enter to honor I Am"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Lord I worship You,"
+    }, {
+      "text" : "I worship You,"
+    }, {
+      "text" : "For Your name is Holy, Holy Lord"
+    }, {
+      "text" : "For Your name is Holy, Holy Lord"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "A Chord"
+    }, {
+      "text" : "Who was and Who is"
+    }, {
+      "text" : "And Who is to Come"
+    } ]
+  } ]
+}

@@ -1,0 +1,164 @@
+{
+  "id" : 873,
+  "songNumber" : 261,
+  "title" : "IT'S THE HOLY GHOST AND FIRE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "It's the Holy Ghost and fire that is",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Keeping me alive (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "It's the Holy Ghost and fire that is"
+    }, {
+      "text" : "Keeping me alive,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Jesus is keeping me alive.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Alleluia (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Alleluia, Alleluia",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Praise the Lord. } 2",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "He is all over me and He's",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Keeping me alive (3)"
+    }, {
+      "text" : "He is all over me and He's"
+    }, {
+      "text" : "Keeping me alive",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Jesus is keeping me alive."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "I have been baptized in the water",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "In the name of the Lord (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "I have been baptized in the water"
+    }, {
+      "text" : "In the name of the Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "In the name of the Saviour Jesus Christ.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "I have been baptized in the Spirit",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "In the name of the Lord (3)"
+    }, {
+      "text" : "I have been baptized in the Spirit"
+    }, {
+      "text" : "In the name of the Lord",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "In the name of the Saviour Jesus Christ."
+    } ]
+  } ]
+}

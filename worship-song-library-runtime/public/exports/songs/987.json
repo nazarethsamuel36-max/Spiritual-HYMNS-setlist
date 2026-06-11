@@ -1,0 +1,61 @@
+{
+  "id" : 987,
+  "songNumber" : 9,
+  "title" : "AAYE HAIN HUM TERE CHARANO MEIN",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "आये हैं हम तेरे चरणों में, लेकर हम, स्तुति (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 27
+      }, {
+        "chord" : "C",
+        "position" : 36
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "हाल्लेलुयाह (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "प्यारे मसीहा आशिष दे हमें,आत्मा से तू भर दे हमें"
+    }, {
+      "text" : "हम बच्चे हैं परम पिता के, बढ़ना हैं हमें वचनों में",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "C",
+        "position" : 41
+      }, {
+        "chord" : "G",
+        "position" : 47
+      } ]
+    }, {
+      "text" : "हम तैयार है यीशु तेरे लिए,जल्दी आ तू हम को लेने"
+    } ]
+  } ]
+}

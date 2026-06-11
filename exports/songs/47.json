@@ -1,0 +1,209 @@
+{
+  "id" : 1025,
+  "songNumber" : 47,
+  "title" : "MERE DIL MEIN NAYA GANA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "मेरे दिल में नया गाना, मुझे यीशु देता है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "आनन्द से गाऊँगा, जीवन भर अपने",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "प्रभु की स्तुति करूँगा ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "मेरे दिल में नया गाना, मुझे यीशु देता है ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "पाप की गन्दगी से मुझे उठाया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "दिया उसने नया गीत मेरे जीवन में ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "कीच से उसने मेरे प्राण को खींच के निकाला",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "खून से उसने बदबू सारा बिल्कुल दूर किया ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "माता पिता भाई बहन सब कुछ वही है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "निन्दा लेकर उसकी महिमा करता रहूँगा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "इस जहाँ की मुसीबतें क्या करेंगी",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "G",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "उस जहाँ की जिन्दगी पर आशा रखता हूँ ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "मेरे लिए जल्दी वह आने वाला है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "उसके साथ हमेशा मैं गाता रहूँगा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    } ]
+  } ]
+}

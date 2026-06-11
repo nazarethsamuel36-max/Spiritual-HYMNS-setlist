@@ -1,0 +1,80 @@
+{
+  "id" : 3166,
+  "songNumber" : 1025,
+  "title" : "** What shall I render unto Jehovah",
+  "language" : "english",
+  "originalKey" : "** D/E",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "You've done so much for me"
+    }, {
+      "text" : "I cannot tell it all"
+    }, {
+      "text" : "Narekele mo ( Take my thanksgiving )"
+    }, {
+      "text" : "If I had ten thousand tongues"
+    }, {
+      "text" : "It still won't be enough"
+    }, {
+      "text" : "Narekele mo ( Take my thanksgiving )"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "The God that heals my sickness"
+    }, {
+      "text" : "When You heal, You heal completely"
+    }, {
+      "text" : "Narekele mo ( Take my thanksgiving )"
+    }, {
+      "text" : "Chukwu mara obim o (The God that knows my heart )"
+    }, {
+      "text" : "Isi ikendu le ( Living Water )"
+    }, {
+      "text" : "We sing now"
+    }, {
+      "text" : "Narekele mo"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "What shall I render to Jehovah?"
+    }, {
+      "text" : "For He has done so very much for me"
+    }, {
+      "text" : "What shall I render to Jehovah?"
+    }, {
+      "text" : "For He has done so very much for me"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "Nara, nara eh (Take, take, take thanksgiving)"
+    }, {
+      "text" : "Narekele"
+    }, {
+      "text" : "Narekele mo"
+    }, {
+      "text" : "We sing Nara, nara, eh"
+    }, {
+      "text" : "Narekele"
+    }, {
+      "text" : "Narekele mo"
+    }, {
+      "text" : "{genre:Praise}"
+    } ]
+  } ]
+}

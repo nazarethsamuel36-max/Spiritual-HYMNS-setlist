@@ -1,0 +1,132 @@
+{
+  "id" : 964,
+  "songNumber" : 86,
+  "title" : "FATHER IN HEAVEN",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Father in Heaven how we love you;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 10
+      }, {
+        "chord" : "F",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "We lift Your Name in all the earth,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 3
+      }, {
+        "chord" : "Am",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 29
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "May Your Kingdom be established in our praises,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "Em",
+        "position" : 22
+      }, {
+        "chord" : "F",
+        "position" : 39
+      }, {
+        "chord" : "G",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "As Your people declare Your mighty works.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 8
+      }, {
+        "chord" : "Am",
+        "position" : 17
+      }, {
+        "chord" : "F",
+        "position" : 35
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Blessed be the Lord God Almighty,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Who was and is and is to come,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 4
+      }, {
+        "chord" : "Am",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "Blessed be the Lord God Almighty",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Who reigns for evermore.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,97 @@
+{
+  "id" : 731,
+  "songNumber" : 119,
+  "title" : "LORD GIVE ME ALSO SPRINGS OF WATER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Lord give me also springs of water (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "That I may overflow (2)"
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Lord, let the desert blossom as a rose,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Lord, let the wilderness rejoice !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "We see the harvest field shining in the sun,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Lord, let me overflow. (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 10
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "O Lord together let us overflow,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Lord, let Your people be glad",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Lord, let the world know that you are alive,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Lord, let the river overflow. (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Hallelujah! Hallelujah !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Hallelujah! Hallelu.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Halelujah! Hallelujah !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Lord, let me overflow. (2)"
+    } ]
+  } ]
+}

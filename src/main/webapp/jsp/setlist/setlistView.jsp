@@ -103,7 +103,7 @@
                     <div class="w-[40px] text-center font-bold text-outline-variant text-sm"><%=songCounter%></div>
                     <div class="flex-grow min-w-0 pr-4">
                         <span style="font-size:9px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase;display:block">#<%=ss.getSongNumber()%></span>
-                        <a href="<%=request.getContextPath()%>/song?id=<%=ss.getSongId()%>" target="_blank" class="font-bold text-on-surface hover:text-primary transition-colors text-lg truncate block text-decoration-none" style="text-decoration: none;"><%=ss.getSongTitle()%></a>
+                        <a href="#" onclick="openSongFromSetlist(<%=ss.getSongId()%>, <%=ss.getTranspositionOffset()%>); return false;" class="font-bold text-on-surface hover:text-primary transition-colors text-lg truncate block text-decoration-none" style="text-decoration: none;"><%=ss.getSongTitle()%></a>
                         <div class="text-on-surface-variant text-sm truncate"><%=ss.getSongArtist()%></div>
                     </div>
                     <div class="w-[120px] px-2">
@@ -271,6 +271,31 @@
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: 'songId=' + songId + '&position=999&creatorKey=' + encodeURIComponent(defaultKey) + '&creatorCapo=0'
         }).then(function() { window.location.reload(); });
+    }
+
+    // Navigate to song view with transpose from setlist
+    async function openSongFromSetlist(songId, transpose) {
+        try {
+            // Store transpose in session via setlist servlet
+            const response = await fetch(contextPath + '/setlist/setTranspose', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: 'songId=' + songId + '&semitones=' + transpose
+            });
+
+            if (response.ok) {
+                // Navigate to song view
+                window.location.href = contextPath + '/song?id=' + songId;
+            } else {
+                console.error('Failed to store transpose');
+                // Still navigate even if transpose storage failed
+                window.location.href = contextPath + '/song?id=' + songId;
+            }
+        } catch (err) {
+            console.error('Error opening song:', err);
+            // Fallback: navigate directly to song
+            window.location.href = contextPath + '/song?id=' + songId;
+        }
     }
 </script>
 

@@ -1,0 +1,51 @@
+{
+  "id" : 715,
+  "songNumber" : 103,
+  "title" : "I'M SO GLAD JESUS SET ME FREE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I'm so glad Jesus set me free. (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Singing glory, Hallelujah,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Jesus lifted me.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "Satan had me bound, but Jesus set me free (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Once I was a sinner but Jesus set me free (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "I'm on my way to heaven, shouting victory. (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

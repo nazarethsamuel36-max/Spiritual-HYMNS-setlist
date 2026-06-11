@@ -1,0 +1,72 @@
+{
+  "id" : 3156,
+  "songNumber" : 1014,
+  "title" : "** In Your Presence",
+  "language" : "english",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "In Your presence"
+    }, {
+      "text" : "That's where I am strong"
+    }, {
+      "text" : "In Your presence"
+    }, {
+      "text" : "O Lord my God"
+    }, {
+      "text" : "In Your presence"
+    }, {
+      "text" : "That's where I belong"
+    }, {
+      "text" : "Seeking Your face"
+    }, {
+      "text" : "Touching Your grace"
+    }, {
+      "text" : "In the cleft of the Rock"
+    }, {
+      "text" : "In Your presence O God"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I want to go, where the rivers"
+    }, {
+      "text" : "Cannot overflow me"
+    }, {
+      "text" : "Where my feet are on the rock"
+    }, {
+      "text" : "I want to hide, where the blazing fire cannot"
+    }, {
+      "text" : "burn me"
+    }, {
+      "text" : "In Your presence O God"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "I want to hide, where the flood of"
+    }, {
+      "text" : "Evil cannot reach me"
+    }, {
+      "text" : "Where I'm covered by the blood"
+    }, {
+      "text" : "I want to be where the schemes of darkness"
+    }, {
+      "text" : "Cannot touch me"
+    }, {
+      "text" : "In Your presence O God"
+    } ]
+  } ]
+}

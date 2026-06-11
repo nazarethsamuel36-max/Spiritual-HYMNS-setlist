@@ -1,0 +1,51 @@
+{
+  "id" : 726,
+  "songNumber" : 114,
+  "title" : "HE'S SETTING ME FREE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He's setting me free, this Holy Ghost power,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "He's setting me free, this very hour,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "He's flooding my soul, He's making me whole,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "He's setting me free, free, free,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "This Holy Ghost power.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    } ]
+  } ]
+}

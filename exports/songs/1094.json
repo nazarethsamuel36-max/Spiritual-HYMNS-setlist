@@ -1,0 +1,164 @@
+{
+  "id" : 1094,
+  "songNumber" : 116,
+  "title" : "HAI KHUDAKI YE TAMANNA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "है खुदाकी ये तमन्ना,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "इन्सा उसको प्यार करे । (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "है करम उसका जमानेपर,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "उसका धन्यवाद करे।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "वह सभी दुखोंके आलममें,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "खुशियाँ भरता है। (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "खुशियाँ मिलती है मुफतमें,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "उसका धन्यवाद करे।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "साँसे चलती है जीवनमें,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "उसकी मर्जीसे (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "जिन्दगी बक्षी है उसने,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "उसका धन्यवाद करो।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "इस जमाने में वो देता है,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "वक्त पापीय़ों को (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "पाया है मौतसे जीवन,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "उसका धन्यवाद करे ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 14
+      } ]
+    } ]
+  } ]
+}

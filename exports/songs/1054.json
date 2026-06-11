@@ -1,0 +1,171 @@
+{
+  "id" : 1054,
+  "songNumber" : 76,
+  "title" : "YESHU HAI MERA MUKTIDHAM",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु है मेरा मुक्तिधाम,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "उसमें मैं पाता पूरा विश्राम",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "आए विपत्ति चाहे तुफान,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "उसमें मैं पाता शरणस्थान (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पापों की लहरों से घिरा हुआ था",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "न कोई मंजिल और न किनारा (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "वह आया बनकर मेरा सहारा,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "पापों की लहरों से मुझे उभारा ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 26
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जीवन था मेरा पाप की खाई,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "संपूर्ण निराशा राहें अंधेरी (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "क्रुस की ओर जब दृष्टी उठाई,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "किरण जीवनकी हृदय में आयी ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "अब कोई डर नहीं और न निराशा,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "यीशु ही केवल धन्य आशा (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "शिघ्र वह आए लेने मुझे,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "यही है दिल की अभिलाषा ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 19
+      } ]
+    } ]
+  } ]
+}

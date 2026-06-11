@@ -1,0 +1,228 @@
+{
+  "id" : 990,
+  "songNumber" : 12,
+  "title" : "HUM TO JALTE DEEP HAI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "हम तो जलते दीप हैं, यीशु की ज्योती के",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "Am",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "जब तक हम है इस जहाँ में जलते जाना है ।",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 24
+      }, {
+        "chord" : "Am",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "अंधियारे डगर पे हो, आँधियाँ कई",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 20
+      }, {
+        "chord" : "Am",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "हर डगर पे ज्योत यीशु की फैलाना है ।",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "Am",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "जलना जिन्दगी हमारी यीशु के लिए"
+    }, {
+      "text" : "जिसने दाग हर गुनाह के मेरे धो दिए"
+    }, {
+      "text" : "जिसने सुलीपर जलाई ज्योत प्रेम की",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "F",
+        "position" : 24
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "वही ज्योत आज मेरे दिल में जल रही",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "कोई भटका हो डगर पे बेपनाह सा",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 22
+      }, {
+        "chord" : "Am",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "आज सुली के तले उसे बुलाना है ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 15
+      }, {
+        "chord" : "Am",
+        "position" : 26
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जल रही थी जिन्दगी यहां गुनाहो में",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 25
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "प्रभुने तुमको ही रखा अपनी निगाहो में",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "Am",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "दे रहा आवाजं सबको, आओ मेरे पास",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "F",
+        "position" : 19
+      }, {
+        "chord" : "Am",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "पास रखुंगा हमेशा, होते क्यो निराश",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 18
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "जिसने पाया है हमे, दे के अपनी जान",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "F",
+        "position" : 27
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "उस मसीह की हर घडी महिमा गाना है।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 18
+      }, {
+        "chord" : "Am",
+        "position" : 29
+      } ]
+    } ]
+  } ]
+}

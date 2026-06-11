@@ -1,0 +1,122 @@
+{
+  "id" : 706,
+  "songNumber" : 30,
+  "title" : "SING ALLELUJAH TO THE LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Sing Allelujah to the Lord..... } 2",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Sing Allelujah, sing Allelujah",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Sing Allelujah to the Lord.",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "Bm",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Jesus has conquered sin and death.....",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Jesus has risen from the dead......",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Jesus is seated on the throne......",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Jesus is Lord of Heaven and earth......",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Jesus is coming back again......",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Sing Allelujah to the Lord......."
+    } ]
+  } ]
+}

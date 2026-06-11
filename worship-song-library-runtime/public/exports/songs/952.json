@@ -1,0 +1,55 @@
+{
+  "id" : 952,
+  "songNumber" : 74,
+  "title" : "KNOW YE NOT",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Know ye not, know ye not, ye are a temple (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Ye are a temple of the Holy Ghost.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Full of praise, full of power,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "full of glory (3)"
+    }, {
+      "text" : "Ye are a temple of the Holy Ghost."
+    }, {
+      "text" : "Yes, I know, Yes I know, I'm the temple (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "I am the temple of the Holy Ghost.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

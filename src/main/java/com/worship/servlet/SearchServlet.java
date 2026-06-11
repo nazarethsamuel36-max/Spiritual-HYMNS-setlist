@@ -28,6 +28,7 @@ import java.util.*;
 public class SearchServlet extends HttpServlet {
 
     private SearchService searchService = new SearchService();
+    private com.worship.service.NumberSearchService numberSearchService = new com.worship.service.NumberSearchService();
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
@@ -68,21 +69,30 @@ public class SearchServlet extends HttpServlet {
             }
         }
 
-        // STEP 3: HANDLE EMPTY QUERY
-        if (query == null || query.trim().isEmpty()) {
+        // STEP 3: HANDLE EMPTY OR SHORT QUERY
+        if (query == null || query.trim().isEmpty() || query.trim().length() < 2) {
+            // STABILIZATION: Block queries < 2 chars to prevent noisy results
             if (expectsJson) {
                 response.setContentType("application/json;charset=UTF-8");
                 objectMapper.writeValue(response.getWriter(), createEmptyJsonResponse(pageNum, pageSize));
             } else {
+                request.setAttribute("searchQuery", query != null ? query : "");
                 request.getRequestDispatcher("/jsp/search.jsp").forward(request, response);
             }
             return;
         }
 
-        // STEP 4: DELEGATE TO SERVICE
+        // STEP 4: QUERY CLASSIFICATION (Numeric vs Text)
         Map<String, Object> serviceResult;
+        String trimmedQuery = query.trim();
+        
         try {
-            serviceResult = searchService.search(query.trim(), pageNum, pageSize);
+            if (trimmedQuery.matches("^\\d+$")) {
+                // BYPASS SearchService for numeric lookups
+                serviceResult = numberSearchService.search(trimmedQuery, "All");
+            } else {
+                serviceResult = searchService.search(trimmedQuery, pageNum, pageSize);
+            }
         } catch (SearchServiceException e) {
             // Service validation error → HTTP 400
             if (expectsJson) {

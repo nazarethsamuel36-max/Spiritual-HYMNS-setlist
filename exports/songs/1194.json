@@ -1,0 +1,74 @@
+{
+  "id" : 1194,
+  "songNumber" : 216,
+  "title" : "MAHIMA HO TERI, MAHIMA HO TERI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "महिमा हो तेरी, महिमा हो तेरी (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "करते है तेरी हम स्तुति, हृदय की गहराईयों से (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "यीशु तुही है, तुही है हमारा प्रभु (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "आत्मा और सच्चाई से, तेरी आराधना करे (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "ऊँचा और ऊँचा सबसे ऊँचा रहे तेरा नाम (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

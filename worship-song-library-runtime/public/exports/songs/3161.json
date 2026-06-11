@@ -1,0 +1,52 @@
+{
+  "id" : 3161,
+  "songNumber" : 1020,
+  "title" : "** Still (Hide Me Now)",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Hide me now"
+    }, {
+      "text" : "Under Your wings"
+    }, {
+      "text" : "Cover me"
+    }, {
+      "text" : "Within Your mighty hand"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "When the oceans rise and thunders roar"
+    }, {
+      "text" : "I will soar with you above the storm"
+    }, {
+      "text" : "Father, You are King over the flood"
+    }, {
+      "text" : "I will be still and know You are God"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Find rest my soul"
+    }, {
+      "text" : "In Christ alone"
+    }, {
+      "text" : "Know His power"
+    }, {
+      "text" : "In quietness and trust"
+    } ]
+  } ]
+}

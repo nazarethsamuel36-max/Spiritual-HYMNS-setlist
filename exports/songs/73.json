@@ -1,0 +1,78 @@
+{
+  "id" : 951,
+  "songNumber" : 73,
+  "title" : "JESUS WE ENTHRONE YOU",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Jesus, we enthrone You,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "We proclaim You are King,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Standing here in the midst of us",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "We lift You up with our praise.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "And as we worship build Your throne (3)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "G",
+        "position" : 29
+      }, {
+        "chord" : "Em",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Come Lord Jesus and take Your place.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

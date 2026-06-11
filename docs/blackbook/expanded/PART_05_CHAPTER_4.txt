@@ -1,0 +1,507 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 40]
+
+CHAPTER 4: SYSTEM DESIGN
+
+4.1 High-Level Architecture
+
+The Worship Chord and Lyrics Management System follows a classic Three-Tier Architecture that ensures clean separation of concerns between the user interface, the application logic, and the data storage layers. This architectural pattern was chosen because it allows each layer to be developed, tested, and maintained independently.
+
+The three tiers are:
+
+Presentation Tier (Frontend): Responsible for rendering the user interface and handling user interactions. This tier consists of JSP pages for server-side HTML generation, CSS for styling, and JavaScript for client-side interactivity including the Virtual Wrapping rendering engine.
+
+Application Tier (Backend): Responsible for processing business logic, routing HTTP requests, and coordinating data flow between the presentation and data tiers. This tier consists of Java Servlets (controllers), Service classes (business logic), and Utility classes (chord parsing, transposition).
+
+Data Tier (Database): Responsible for persistent storage of all song data, metadata, and structural information. This tier consists of a MySQL database with normalized tables connected by foreign key relationships.
+
+Figure 4.1: System Architecture Diagram
+
+[DIAGRAM DESCRIPTION]
+The architecture diagram shows:
+- User at the top, connecting to a Browser
+- Browser connects to the Presentation Layer (JSP / HTML / CSS / JavaScript)
+- Presentation Layer connects to the Controller Layer (SearchServlet, SongViewServlet, BulkImportServlet)
+- Controller Layer connects to the Service Layer (SearchService, SongService, TransliterationService)
+- Service Layer connects bidirectionally to the Utility Layer (ChordTransposer, ChordParser, ChordAligner)
+- Service Layer connects to the Data Access Layer (SongDAO, SetlistDAO, HashtagDAO)
+- Data Access Layer connects to the Database (MySQL) at the bottom
+[END DIAGRAM]
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 41]
+
+4.2 Three-Tier Architecture Explanation
+
+4.2.1 Presentation Tier
+
+The Presentation Tier is the only layer that the end user interacts with directly. Its primary responsibility is to present song data in a readable, responsive format and to capture user inputs (search queries, transposition requests, script toggle actions).
+
+Components of the Presentation Tier:
+
+songView.jsp: The primary display page for individual songs. It receives a fully assembled Song object from the SongViewServlet and renders it as HTML with chord elements positioned according to their character indices. The JSP iterates through sections, then lines within each section, and for each line, it interleaves chord HTML spans with lyric text.
+
+index.jsp: The home page and search interface. It provides a search bar, language filter buttons, and a grid display of categorized songs. Search results are loaded asynchronously using JavaScript fetch calls.
+
+chord_rendering.js: The client-side JavaScript module that implements the Virtual Wrapping Algorithm. After the JSP generates the initial HTML, this script measures the rendered width of each song line, determines if wrapping is needed, and recalculates chord positions for split lines.
+
+style.css: The stylesheet that defines the visual appearance of the entire application. It uses CSS custom properties (variables) for consistent theming, Flexbox for chord-lyric alignment, and media queries for responsive breakpoints.
+
+4.2.2 Application Tier
+
+The Application Tier contains all business logic and serves as the intermediary between the user interface and the database. It is subdivided into three sub-layers:
+
+Controller Sub-Layer (Servlets):
+Each Servlet maps to a specific URL pattern and handles the HTTP request-response cycle for a specific feature. The Servlet validates input parameters, delegates to the appropriate Service class, and forwards the result to a JSP page or returns JSON.
+
+Service Sub-Layer:
+Service classes contain the core business logic. The SearchService implements the weighted ranking algorithm. The SongService orchestrates data retrieval from multiple DAOs to assemble a complete Song object with all its sections, lines, and chords. The TransliterationService uses the ICU4J library to convert text between Devanagari and Roman scripts.
+
+Utility Sub-Layer:
+Utility classes provide stateless, reusable algorithms. The ChordTransposer applies chromatic scale arithmetic. The ChordParser extracts chord symbols and positions from raw text. The ChordAligner validates that chord positions are within valid bounds and resolves collisions.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 42]
+
+4.2.3 Data Tier
+
+The Data Tier is responsible for all persistent storage operations. It consists of the MySQL database and the Data Access Object (DAO) classes that provide a Java interface to the database.
+
+DAO Pattern:
+The Data Access Object pattern encapsulates all database interaction logic within dedicated classes. Each DAO class handles CRUD (Create, Read, Update, Delete) operations for a specific table or group of related tables. This pattern ensures that SQL queries are never written in Servlet or Service classes, maintaining clean separation of concerns.
+
+SongDAO: Handles queries against the songs table and joins with sections, song_lines, and line_chords tables. Key methods include getSongById(int id), searchSongs(String query), and getAllSongs(String language).
+
+SetlistDAO: Manages user-created setlists for performance sessions. Methods include createSetlist(), addSongToSetlist(), and getSetlistSongs().
+
+HashtagDAO: Manages the many-to-many relationship between songs and hashtags through the song_hashtags junction table.
+
+Connection Management:
+Database connections are managed through HikariCP, a high-performance JDBC connection pool. The pool is configured with:
+- Maximum pool size: 10 connections
+- Minimum idle connections: 2
+- Connection timeout: 30 seconds
+- Maximum lifetime: 30 minutes
+
+These settings ensure that the application can handle concurrent requests from multiple users without exhausting database connections or creating excessive connection overhead.
+
+
+4.3 Component Interaction Flow
+
+The following describes the complete data flow for the most common user action: viewing a song.
+
+Step 1: The user clicks a song title on the home page. The browser sends an HTTP GET request to /song?id=45.
+
+Step 2: The SongViewServlet receives the request, extracts the song ID parameter, and validates it as a positive integer.
+
+Step 3: The Servlet calls SongService.getFullSong(45). The SongService delegates to SongDAO.getSongById(45).
+
+Step 4: The SongDAO executes a SQL query that JOINs the songs, sections, song_lines, and line_chords tables. It returns a complete Song object with nested Section objects, each containing Line objects, each containing a list of ChordOccurrence objects.
+
+Step 5: The SongService checks the HTTP session for a stored transposition offset. If the user previously set a transpose of +2, the service calls ChordTransposer.transposeSong(song, +2) to shift all chord symbols by two semitones.
+
+Step 6: The Servlet stores the Song object as a request attribute and forwards to songView.jsp.
+
+Step 7: The JSP iterates through the Song's sections and lines, generating HTML with chord spans positioned at the correct character indices.
+
+Step 8: The browser receives the HTML and renders it. The chord_rendering.js script executes, measures each line's rendered width, and applies virtual wrapping if any line exceeds the container width.
+
+Step 9: The user sees the fully rendered song with perfectly aligned chords on their device.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 43]
+
+4.4 Database Design
+
+4.4.1 Design Philosophy
+
+The database design follows the principle that a song is not a document but a structured data object with hierarchical relationships. This principle drives the decomposition of songs into their atomic components, enabling the application to query and manipulate song data at any level of granularity.
+
+The decomposition hierarchy is:
+Song (1) -> Sections (many) -> Song Lines (many) -> Line Chords (many)
+
+Each level of the hierarchy captures a specific aspect of the song's structure:
+- Song Level: Metadata that applies to the entire song (title, artist, language, key).
+- Section Level: Structural divisions within the song (Verse 1, Chorus, Bridge).
+- Line Level: Individual lines of lyrics within a section.
+- Chord Level: Individual chord occurrences within a line, each with a precise character position.
+
+4.4.2 Why This Level of Decomposition
+
+The decision to decompose songs to the individual chord occurrence level was driven by specific functional requirements:
+
+Requirement 1 - Precise Transposition: To transpose a song, the system must identify and modify every chord individually. If chords were embedded in text strings, the system would need to parse the strings every time a transposition is requested. By storing chords as separate records, transposition becomes a simple database traversal with no parsing overhead.
+
+Requirement 2 - Rendering Engine Input: The Virtual Wrapping Algorithm needs to know the exact position of each chord relative to its lyric line. Storing chords with explicit char_index values provides this information directly, without runtime parsing.
+
+Requirement 3 - Data Integrity: Storing chords as separate records allows the database to enforce constraints (e.g., char_index must be a non-negative integer less than the length of the corresponding line_text). This prevents data corruption that could cause rendering errors.
+
+Requirement 4 - Analytical Queries: Structured storage enables queries like "Which chord is most commonly used across all songs?" or "How many chord changes does the average verse have?" These analytical capabilities support future features like chord complexity ratings and difficulty-based song suggestions.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 44]
+
+4.4.3 Entity Relationship Diagram
+
+Figure 4.2: Entity Relationship Diagram
+
+[DIAGRAM DESCRIPTION - ER DIAGRAM]
+
+SONGS (1) ----has----> (many) SECTIONS
+   - id (PK, INT, AUTO_INCREMENT)
+   - song_number (INT, INDEXED)
+   - title (VARCHAR 255, NOT NULL)
+   - artist (VARCHAR 255)
+   - language (VARCHAR 20, NOT NULL)
+   - lyrics_original (TEXT)
+   - lyrics_roman (TEXT)
+   - chords (TEXT)
+   - original_key (VARCHAR 10)
+   - is_active (BOOLEAN, DEFAULT TRUE)
+
+SECTIONS (1) ----contains----> (many) SONG_LINES
+   - id (PK, INT, AUTO_INCREMENT)
+   - song_id (FK -> songs.id, NOT NULL)
+   - type (VARCHAR 50, e.g. 'verse', 'chorus', 'bridge')
+   - label (VARCHAR 100, e.g. 'Verse 1', 'Chorus')
+   - section_order (INT, NOT NULL)
+
+SONG_LINES (1) ----has----> (many) LINE_CHORDS
+   - id (PK, INT, AUTO_INCREMENT)
+   - section_id (FK -> sections.id, NOT NULL)
+   - line_text (TEXT, NOT NULL)
+   - line_order (INT, NOT NULL)
+
+LINE_CHORDS
+   - id (PK, INT, AUTO_INCREMENT)
+   - line_id (FK -> song_lines.id, NOT NULL)
+   - chord (VARCHAR 20, NOT NULL)
+   - char_index (INT, NOT NULL)
+
+SONGS (many) <----tagged with----> (many) HASHTAGS
+   Through junction table: SONG_HASHTAGS
+   - song_id (FK -> songs.id)
+   - hashtag_id (FK -> hashtags.id)
+
+HASHTAGS
+   - id (PK, INT, AUTO_INCREMENT)
+   - name (VARCHAR 100, UNIQUE, NOT NULL)
+
+[END DIAGRAM]
+
+The ER diagram shows five primary entities connected by one-to-many and many-to-many relationships. The core chain (Songs -> Sections -> Song Lines -> Line Chords) represents the hierarchical decomposition of a song. The Hashtags entity provides a classification mechanism through a many-to-many junction table.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 45]
+
+4.5 Table Descriptions
+
+4.5.1 Songs Table
+
+The songs table is the root entity in the data model. Each row represents a single song in the library.
+
+Table 4.1: Songs Table Schema
+
+| Column | Data Type | Constraints | Description |
+| id | INT | PRIMARY KEY, AUTO_INCREMENT | Unique identifier for each song |
+| song_number | INT | INDEXED | The traditional songbook number |
+| title | VARCHAR(255) | NOT NULL | The title of the song |
+| artist | VARCHAR(255) | NULLABLE | The composer or artist |
+| language | VARCHAR(20) | NOT NULL | Language code: english, hindi, marathi |
+| lyrics_original | TEXT | NULLABLE | Full lyrics in original script |
+| lyrics_roman | TEXT | NULLABLE | Full lyrics in Roman transliteration |
+| chords | TEXT | NULLABLE | Raw chord data in [C] format |
+| original_key | VARCHAR(10) | NULLABLE | The original musical key |
+| is_active | BOOLEAN | DEFAULT TRUE | Soft delete flag |
+
+Design Decisions:
+
+lyrics_original vs lyrics_roman: Two separate text columns are used instead of a single lyrics column because the system must support instant toggling between scripts. Storing both versions in the same record eliminates the need for runtime transliteration (which can be slow and imprecise for musical text) and avoids the data duplication problem of maintaining two separate song records.
+
+chords column: This column stores the raw chord data in its original [C] anchor format. It serves as a backup and audit trail. The actual chord data used by the rendering engine is stored in the normalized line_chords table. If the structured data is ever corrupted, the raw text in this column can be re-parsed to regenerate the line_chords records.
+
+is_active column: Instead of physically deleting songs from the database (which would cascade-delete all related sections, lines, and chords), the system uses a soft delete approach. Setting is_active to FALSE hides the song from search results and display while preserving the data for potential recovery.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 46]
+
+4.5.2 Sections Table
+
+The sections table stores the structural divisions within a song.
+
+Table 4.2: Sections Table Schema
+
+| Column | Data Type | Constraints | Description |
+| id | INT | PRIMARY KEY, AUTO_INCREMENT | Unique section identifier |
+| song_id | INT | FOREIGN KEY -> songs.id, NOT NULL | Parent song reference |
+| type | VARCHAR(50) | NOT NULL | Section type: verse, chorus, bridge, intro, outro |
+| label | VARCHAR(100) | NOT NULL | Display label: Verse 1, Chorus, Bridge |
+| section_order | INT | NOT NULL | Position in the song sequence |
+
+Design Decisions:
+
+type vs label: The type column contains a standardized enumeration (verse, chorus, bridge) that the application uses for logic (e.g., styling choruses differently from verses). The label column contains the human-readable display text that may include numbering (Verse 1, Verse 2). This separation allows the application to apply consistent styling to all verses while displaying unique labels for each.
+
+section_order: This integer column determines the sequence in which sections appear in the song. Using an explicit ordering column rather than relying on the insertion order or the primary key ensures that sections can be reordered without modifying their primary keys or foreign key references.
+
+4.5.3 Song Lines Table
+
+The song_lines table stores individual lines of lyrics within a section.
+
+Table 4.3: Song Lines Table Schema
+
+| Column | Data Type | Constraints | Description |
+| id | INT | PRIMARY KEY, AUTO_INCREMENT | Unique line identifier |
+| section_id | INT | FOREIGN KEY -> sections.id, NOT NULL | Parent section reference |
+| line_text | TEXT | NOT NULL | The lyric text for this line |
+| line_order | INT | NOT NULL | Position within the section |
+
+Design Decisions:
+
+Granularity Choice: Storing each line as a separate record (rather than storing all lines of a section as a single text block) is the critical design decision that enables position-based chord mapping. Each line is an independent entity with its own set of chords. This means that if a chord position needs to be corrected, only the specific line's chords are affected; other lines remain untouched.
+
+line_text Content: The line_text column contains the pure lyric text WITHOUT any chord symbols. The chord symbols are stored separately in the line_chords table. This separation is essential for clean rendering and for features like lyrics-only display mode (where chords are hidden for vocalists).
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 47]
+
+4.5.4 Line Chords Table
+
+The line_chords table is the most critical table in the entire database design. It stores individual chord occurrences with their exact positions within the lyric text.
+
+Table 4.4: Line Chords Table Schema
+
+| Column | Data Type | Constraints | Description |
+| id | INT | PRIMARY KEY, AUTO_INCREMENT | Unique chord occurrence ID |
+| line_id | INT | FOREIGN KEY -> song_lines.id, NOT NULL | Parent line reference |
+| chord | VARCHAR(20) | NOT NULL | The chord symbol (e.g., G, C#m7, Dsus4) |
+| char_index | INT | NOT NULL, >= 0 | Character position in the lyric string |
+
+Design Decisions:
+
+char_index: This is the architectural cornerstone of the entire system. The char_index value represents the zero-based position in the line_text string where this chord should be visually displayed. For example, if line_text is "Amazing grace how sweet" and a chord has char_index = 8, the chord should appear above the character at position 8 (the "g" in "grace").
+
+This approach completely decouples the chord data from any visual formatting. The same char_index works regardless of the font, screen size, or rendering engine. It is a mathematical relationship between the chord and the lyric text.
+
+chord Data Type: VARCHAR(20) was chosen to accommodate complex chord symbols including slash chords (G/B = 3 characters), extended chords (Cmaj13 = 6 characters), and chords with multiple modifiers (C#m7b5 = 6 characters).
+
+Example Data:
+
+Consider the lyric line: "Amazing grace how sweet the sound"
+
+The line_chords entries would be:
+| id | line_id | chord | char_index |
+| 1001 | 501 | G | 0 |
+| 1002 | 501 | D | 8 |
+| 1003 | 501 | Em | 19 |
+| 1004 | 501 | C | 29 |
+
+When the rendering engine processes this line, it reads the lyrics character by character. At position 0, it finds chord "G" and injects a chord element. At position 8, it finds chord "D" and injects another element. The result is perfectly aligned chords regardless of the display conditions.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 48]
+
+4.6 Data Normalization
+
+The database is normalized to the Third Normal Form (3NF) to eliminate data redundancy and ensure data integrity.
+
+4.6.1 First Normal Form (1NF)
+
+1NF requires that all columns contain atomic (indivisible) values and that there are no repeating groups.
+
+How the design satisfies 1NF:
+- Each chord is stored as a separate row in the line_chords table, not as a comma-separated list within the song_lines table.
+- Each section is stored as a separate row in the sections table, not as a delimited string within the songs table.
+- Hashtags are stored in a separate table with a junction table for the many-to-many relationship, not as a comma-separated list in the songs table.
+
+Violation that was avoided: An earlier prototype stored all chords for a line as a JSON string within the song_lines table (e.g., "[{chord: G, pos: 0}, {chord: D, pos: 8}]"). This violated 1NF because the column contained a complex, non-atomic value. Extracting individual chords required JSON parsing rather than SQL querying. The design was refactored to use the separate line_chords table.
+
+4.6.2 Second Normal Form (2NF)
+
+2NF requires that 1NF is satisfied and that all non-key attributes are fully functionally dependent on the entire primary key (not just part of a composite key).
+
+How the design satisfies 2NF:
+- In the line_chords table, the chord and char_index attributes are fully dependent on the primary key (id). They are not dependent on just the line_id (which is a foreign key, not part of the primary key).
+- In the song_hashtags junction table, there are no non-key attributes beyond the two foreign keys, so 2NF is trivially satisfied.
+
+4.6.3 Third Normal Form (3NF)
+
+3NF requires that 2NF is satisfied and that there are no transitive dependencies (non-key attributes that depend on other non-key attributes).
+
+How the design satisfies 3NF:
+- In the songs table, the language attribute depends directly on the song's primary key, not on any other non-key attribute. A song's language is an inherent property of the song, not derived from its title, artist, or any other field.
+- The hashtags are managed through a separate table rather than being stored as attributes of the songs table. This eliminates the transitive dependency that would exist if hashtag names were stored directly in the songs table.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 49]
+
+4.7 Data Flow Diagrams
+
+4.7.1 Level 0 DFD (Context Diagram)
+
+Figure 4.3: Level 0 Data Flow Diagram
+
+[DIAGRAM DESCRIPTION]
+The context diagram shows a single process (Worship Song Library System) at the center with three external entities:
+
+External Entity 1: Musician/User
+- Sends: Search Query, Song Request, Transposition Request, Script Toggle Request
+- Receives: Search Results, Rendered Song with Chords
+
+External Entity 2: Administrator
+- Sends: Raw Song Data (in [C] format), Metadata Updates
+- Receives: Import Confirmation, Error Reports
+
+External Entity 3: MySQL Database
+- Receives: INSERT/UPDATE/SELECT queries
+- Sends: Song Data, Search Results, Chord Data
+[END DIAGRAM]
+
+The Level 0 DFD provides an overview of the system's boundaries. It shows that the system interacts with two types of human actors (Musicians and Administrators) and one data store (MySQL Database).
+
+4.7.2 Level 1 DFD
+
+Figure 4.4: Level 1 Data Flow Diagram
+
+[DIAGRAM DESCRIPTION]
+The Level 1 DFD decomposes the central process into five sub-processes:
+
+Process 1.0: Search Engine
+- Input: Search Query from User
+- Output: Ranked Song List to User
+- Data Store Access: Reads from Songs table
+
+Process 2.0: Song Retrieval
+- Input: Song ID from User
+- Output: Complete Song Object (with sections, lines, chords)
+- Data Store Access: Reads from Songs, Sections, Song_Lines, Line_Chords tables
+
+Process 3.0: Transposition Engine
+- Input: Song Object + Semitone Offset from User
+- Output: Modified Song Object with transposed chords
+- No Data Store Access (pure computation)
+
+Process 4.0: Rendering Engine
+- Input: Song Object (possibly transposed)
+- Output: HTML with positioned chord elements
+- No Data Store Access (client-side computation)
+
+Process 5.0: Song Import
+- Input: Raw song text from Administrator
+- Output: Structured records inserted into all four tables
+- Data Store Access: Writes to Songs, Sections, Song_Lines, Line_Chords tables
+[END DIAGRAM]
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 50]
+
+4.8 User Interface Design
+
+4.8.1 Design Principles
+
+The user interface was designed according to four principles derived from the operational requirements of live worship environments:
+
+Principle 1 - Readability First: The primary user (a musician on stage) needs to read chord symbols and lyrics from a distance of 1 to 3 feet while playing an instrument. This requires large, high-contrast text with ample spacing between lines.
+
+Principle 2 - Minimal Interaction: During a performance, the musician's hands are occupied with their instrument. The interface must minimize the number of taps or clicks required for common operations. One-tap transposition and one-tap script toggling are essential.
+
+Principle 3 - Distraction-Free: The song view must be clean and uncluttered. Navigation bars, advertisements, and decorative elements must not compete for visual attention with the chord chart.
+
+Principle 4 - Responsive Layout: The same interface must work on a 4K projector (3840px width), a laptop (1366px), a tablet (768px), and a smartphone (320px to 390px) without requiring separate designs or manual configuration.
+
+4.8.2 Home Page / Search Interface
+
+Figure 4.6: Search Interface Wireframe
+
+[WIREFRAME DESCRIPTION]
+The home page layout consists of:
+- Top Section: Application title bar with language filter buttons (All, English, Hindi, Marathi)
+- Center Section: Large search input field with real-time suggestions dropdown
+- Below Search: Grid of categorized song cards showing song number, title, and language badge
+- Bottom: Pagination controls for browsing the full library
+[END WIREFRAME]
+
+The search interface is designed for speed. As the user types, an AJAX request is sent after each keystroke (with a 300ms debounce to avoid excessive requests). The SearchServlet processes the query and returns a JSON array of matching songs. The JavaScript frontend renders these results as clickable cards below the search bar.
+
+4.8.3 Song View Interface
+
+Figure 4.5: Song View Wireframe
+
+[WIREFRAME DESCRIPTION]
+The song view layout consists of:
+- Top Bar: Song title, artist, and original key display
+- Control Row: Transpose buttons (minus, reset, plus) and Script Toggle button
+- Main Content Area: Song sections rendered vertically with section labels (Verse 1, Chorus, etc.)
+- Each Line: Chord symbols displayed above the corresponding lyric text using inline HTML elements
+- Footer: Navigation back to search, and Add to Setlist button
+[END WIREFRAME]
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 4 - PAGE 51]
+
+4.9 Sequence Diagrams
+
+4.9.1 Song View Sequence
+
+Figure 4.7: Song View Sequence Diagram
+
+[SEQUENCE DIAGRAM DESCRIPTION]
+Participants: User, Browser, SongViewServlet, SongService, SongDAO, MySQL DB, ChordTransposer
+
+1. User clicks song title
+2. Browser sends GET /song?id=45 to SongViewServlet
+3. SongViewServlet calls SongService.getFullSong(45)
+4. SongService calls SongDAO.getSongById(45)
+5. SongDAO executes SQL: SELECT with JOINs across 4 tables
+6. MySQL DB returns result set
+7. SongDAO maps ResultSet to Song object with nested Sections, Lines, Chords
+8. SongDAO returns Song object to SongService
+9. SongService checks session for transpose offset
+10. If offset exists: SongService calls ChordTransposer.transposeSong(song, offset)
+11. ChordTransposer returns modified Song with shifted chords
+12. SongService returns Song to SongViewServlet
+13. SongViewServlet sets Song as request attribute
+14. SongViewServlet forwards to songView.jsp
+15. Browser receives rendered HTML
+16. JavaScript executes Virtual Wrapping Algorithm
+17. User sees fully rendered song with aligned chords
+[END SEQUENCE DIAGRAM]
+
+4.9.2 Transposition Sequence
+
+Figure 4.8: Transposition Sequence Diagram
+
+[SEQUENCE DIAGRAM DESCRIPTION]
+Participants: User, Browser (JS), SongViewServlet, ChordTransposer, Session
+
+1. User clicks Transpose +1 button
+2. Browser JavaScript sends AJAX POST /song?id=45&transpose=1
+3. SongViewServlet reads current session transpose value (e.g., 0)
+4. SongViewServlet calculates new offset: 0 + 1 = 1
+5. SongViewServlet stores new offset (1) in HTTP Session
+6. SongViewServlet calls SongService.getFullSong(45) (same as song view)
+7. SongService applies transpose offset of 1 via ChordTransposer
+8. ChordTransposer iterates through all chord occurrences
+9. For each chord: extract root, find index in chromatic array, add offset, apply modulo 12
+10. Return transposed Song object
+11. SongViewServlet returns updated HTML or JSON
+12. Browser re-renders song with new chords
+13. User sees transposed song instantly
+[END SEQUENCE DIAGRAM]
+
+4.10 Summary of System Design
+
+The system design chapter has documented the complete architectural blueprint of the Worship Song Library. The three-tier architecture provides clean separation between presentation, logic, and data. The normalized database schema decomposes songs to the atomic chord level, enabling precise rendering and mathematical transposition. The data flow diagrams illustrate how user requests propagate through the system layers. The UI wireframes demonstrate a design optimized for live performance readability. The sequence diagrams trace the exact execution path for the two most common operations: viewing a song and transposing a key.
+
+[PAGE BORDER: ACADEMIC STYLE]

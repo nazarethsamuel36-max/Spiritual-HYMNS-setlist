@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-mono: 'Noto Sans Mono', monospace;
+
+  /* Premium Workflow Palette */
+  --color-brand: #0F172A;        /* Slate-900: Professional & Focused */
+  --color-brand-soft: #F1F5F9;   /* Slate-100: Soft & Clean */
+  --color-accent: #3B82F6;      /* Blue-500: Actionable but Calm */
+  
+  --color-text: #0F172A;
+  --color-text-muted: #64748B;
+  
+  --color-chord: #2563EB;       /* Deep Blue: Distinct but not harsh */
+
+  /* Calm Section States - Low Saturation */
+  --color-verse-bg: #F8FAFC;   
+  --color-verse-text: #475569;
+  --color-chorus-bg: #F0F9FF;  
+  --color-chorus-text: #0369A1;
+  --color-bridge-bg: #F0FDF4;  
+  --color-bridge-text: #15803D;
+  --color-prechorus-bg: #FFFBEB; 
+  --color-prechorus-text: #B45309;
+  --color-outro-bg: #FAF5FF;   
+  --color-outro-text: #7E22CE;
+  --color-intro-bg: #F9FAFB;   
+  --color-intro-text: #374151;
+}
+
+/* ═══════════════════════════════════════════════════
+   LAYOUT ARCHITECTURE — App Shell + Pane System
+   ═══════════════════════════════════════════════════ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8FAFC;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(220,100%,95%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(200,100%,95%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(240,100%,95%,1) 0, transparent 50%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  /* CRITICAL: Prevent body scroll on mobile */
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* App Shell — viewport-locked, never scrolls */
+.app-shell {
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+}
+
+/* ═══ DESKTOP: Side-by-side split pane ═══ */
+@media (min-width: 768px) {
+  .app-shell {
+    flex-direction: row;
+  }
+}
+
+/* ═══ SIDEBAR PANE ═══ */
+.sidebar-pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #F8FAFC;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .sidebar-pane {
+    width: 400px;
+    border-right: 1px solid #E2E8F0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-pane {
+    width: 100%;
+  }
+}
+
+/* Sidebar Header — sticky within sidebar */
+.sidebar-header {
+  background-color: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 0.75rem 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Safe area for notch */
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+/* Sidebar Content — independent scroll region */
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  padding: 0.5rem 1rem;
+  position: relative;
+  /* Safe area for bottom bar */
+  padding-bottom: max(2rem, env(safe-area-inset-bottom));
+}
+
+/* ═══ READER PANE ═══ */
+.reader-pane {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .reader-pane {
+    width: 100%;
+    /* Safe area for bottom */
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ═══════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════ */
+
+/* Operational Utility: High-Density Meta */
+.meta-operational {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.65rem;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth Transitions for Workflow Switching */
+.mode-transition {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ═══════════════════════════════════════════════════
+   SCROLL CONTAINMENT — Prevent body scroll bleed
+   ═══════════════════════════════════════════════════ */
+
+#root {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}

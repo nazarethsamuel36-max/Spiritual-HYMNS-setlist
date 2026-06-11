@@ -1,0 +1,103 @@
+{
+  "id" : 940,
+  "songNumber" : 61,
+  "title" : "CHANGE MY HEART O LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Change my heart, O Lord,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "Dm",
+        "position" : 19
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "Am",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Make it ever new,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "Am",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Change my heart, O Lord,"
+    }, {
+      "text" : "May I be like You.",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 14
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "You are the potter, I am the clay,",
+      "chords" : [ {
+        "chord" : "E7",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 12
+      }, {
+        "chord" : "Dm",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Mould me and make me,",
+      "chords" : [ {
+        "chord" : "E7",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "This is what I pray.",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "G7",
+        "position" : 20
+      } ]
+    } ]
+  } ]
+}

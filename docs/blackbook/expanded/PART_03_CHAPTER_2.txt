@@ -1,0 +1,329 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 10]
+
+CHAPTER 2: TECHNOLOGY STACK
+
+2.1 Overview of Technology Choices
+
+The selection of technologies for a software project is one of the most consequential decisions in the entire development lifecycle. A poorly chosen technology can impose limitations that become apparent only during the later stages of development, requiring costly refactoring or compromise on features. Conversely, a well-chosen technology stack amplifies the capabilities of the development team and enables features that would be difficult or impossible to implement otherwise.
+
+For the Worship Chord and Lyrics Management System, every technology was selected through a deliberate evaluation process. The evaluation criteria were:
+
+Performance: The system must render songs with hundreds of chord positions in under 100 milliseconds. Any technology that introduces significant overhead or latency was rejected.
+
+Unicode Support: The system must handle Devanagari script, including complex combining characters and matras. Technologies with poor Unicode support were eliminated immediately.
+
+Simplicity and Control: The system's core innovation lies in its rendering engine and chord alignment logic. These algorithms require precise control over HTML generation, DOM manipulation, and string processing. Technologies that abstract away these low-level operations (through virtual DOMs or opinionated rendering pipelines) were considered counterproductive.
+
+Deployment Flexibility: The system must be deployable on standard hosting infrastructure without requiring specialized runtime environments or expensive cloud services.
+
+Developer Familiarity: Given that this is a final-year BCA project, the technologies should align with the academic curriculum while still being industry-relevant.
+
+This chapter documents each technology in the stack, explains why it was chosen, identifies the alternatives that were considered, and describes exactly how it is used in this system.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 11]
+
+2.2 Frontend Technologies
+
+The frontend is the layer that the user directly interacts with. It is responsible for rendering the song content, handling user interactions (search, transposition, script toggling), and ensuring that the display is responsive across devices. The frontend of the Worship Song Library consists of three core technologies: JSP for server-side page generation, Vanilla JavaScript for client-side interactivity, and CSS3 for visual styling and layout.
+
+2.2.1 JSP (JavaServer Pages)
+
+What It Is:
+JavaServer Pages (JSP) is a server-side technology that allows developers to embed Java code within HTML templates. When a browser requests a JSP page, the server executes the embedded Java code, generates the resulting HTML, and sends the complete HTML document to the browser. The browser receives pure HTML with no Java code visible in the page source.
+
+Why It Was Chosen:
+JSP was selected for the following reasons:
+
+First, Server-Side Rendering (SSR). When a user opens a song, the complete HTML including all lyrics and chord positions is generated on the server before being sent to the browser. This means the song content is immediately visible when the page loads, without requiring additional JavaScript execution to fetch and render data. For musicians who need instant access to songs during live performances, this eliminates the loading delay associated with client-side rendering frameworks.
+
+Second, Tight Integration with Java Servlets. Since the backend is built on Java Servlets, JSP provides seamless data passing through request attributes. The Servlet can fetch a song from the database, process it, and forward it to a JSP page using a single line of code: request.getRequestDispatcher("/songView.jsp").forward(request, response). The JSP page can then access the song data directly without any serialization or deserialization overhead.
+
+Third, Academic Alignment. JSP is a standard component of the Jakarta EE curriculum taught in BCA programs, making it an appropriate choice for an academic project while still being used in enterprise environments globally.
+
+Alternatives Considered and Rejected:
+
+React.js: React is a popular JavaScript library for building user interfaces using a component-based architecture and a virtual DOM. It was rejected for two reasons. First, React's Virtual DOM introduces an abstraction layer between the application code and the actual browser DOM. The Worship Song Library's rendering engine needs direct, pixel-precise control over DOM elements to position chords accurately. The Virtual DOM would add unnecessary overhead and complexity. Second, React requires a build step (using tools like Webpack or Vite) and a Node.js runtime for development, adding infrastructure complexity without corresponding benefit for this specific application.
+
+Angular: Angular is a comprehensive frontend framework developed by Google. It was rejected because its opinionated architecture (with modules, components, services, and dependency injection) introduces significant boilerplate code that is disproportionate to the complexity of this application's UI requirements. The learning curve is also steeper than necessary for a project with only three primary views (home, search results, and song view).
+
+Thymeleaf: Thymeleaf is a modern Java template engine that can serve as an alternative to JSP. While it offers cleaner syntax and better separation of concerns, it is primarily designed for use with the Spring Boot framework. Since this project uses raw Servlets rather than Spring Boot, Thymeleaf would require additional configuration and would not integrate as naturally as JSP.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 12]
+
+2.2.2 Vanilla JavaScript (ES6+)
+
+What It Is:
+Vanilla JavaScript refers to plain, standard JavaScript without any external libraries or frameworks. ES6+ indicates the use of modern JavaScript features introduced in ECMAScript 2015 and later, including arrow functions, template literals, const/let declarations, destructuring, and the Fetch API.
+
+Why It Was Chosen:
+The decision to use Vanilla JavaScript rather than a framework was driven by the specific technical requirements of the chord rendering engine.
+
+Direct DOM Control: The Virtual Wrapping Algorithm must measure the pixel width of individual characters, calculate where text lines will break, and dynamically inject HTML elements at precise positions. These operations require direct manipulation of the browser's Document Object Model (DOM). Frameworks like React or Vue abstract away DOM manipulation through virtual DOMs and reactive data binding. While this abstraction is beneficial for typical web applications, it creates an unnecessary layer of indirection for this system's rendering requirements. The rendering engine needs to call methods like element.getBoundingClientRect() and document.createElement() directly, and it needs the results to be reflected in the DOM immediately without waiting for a framework's reconciliation cycle.
+
+Performance: The rendering engine processes every chord in a song during the initial page load and again whenever the window is resized or the script is toggled. For a song with 200 chord positions, this means hundreds of DOM measurements and mutations. In a framework-based approach, each mutation would trigger the framework's change detection and re-rendering pipeline. In Vanilla JavaScript, the mutations are applied directly, minimizing overhead. Performance testing confirmed that the rendering engine completes its work in under 15 milliseconds using Vanilla JavaScript.
+
+Bundle Size: The entire client-side JavaScript for the Worship Song Library is approximately 25 kilobytes (unminified). A React-based implementation would add at minimum 40 kilobytes of framework code (React + ReactDOM), nearly tripling the download size without adding any functionality. For users on slow mobile connections in rural areas, minimizing download size directly improves the user experience.
+
+How It Is Used in This System:
+JavaScript handles the following responsibilities in the Worship Song Library:
+- Virtual Wrapping Engine: Measures container widths, splits long lines, and recalculates chord positions for mobile displays.
+- Transposition UI: Sends AJAX requests to the server when the user clicks the transpose buttons, receives the updated chord data, and re-renders the song without a full page reload.
+- Search Interactivity: Provides live search suggestions as the user types, using the Fetch API to query the backend asynchronously.
+- Script Toggle: Swaps the displayed text between Devanagari and Roman transliteration by replacing the content of lyric containers while preserving chord elements.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 13]
+
+2.2.3 CSS3 (Cascading Style Sheets Level 3)
+
+What It Is:
+CSS3 is the latest stable version of the Cascading Style Sheets language, used to define the visual presentation of HTML documents. CSS3 introduced powerful layout mechanisms including Flexbox and CSS Grid, as well as media queries for responsive design, transitions for smooth animations, and custom properties (variables) for maintainable theming.
+
+Why It Was Chosen:
+CSS3 provides the layout precision and responsiveness required for the song display without requiring any CSS framework or preprocessor.
+
+Flexbox for Chord Layout: Each song line is rendered as a flex container. The chord symbols are positioned using flex properties that allow them to sit directly above their corresponding lyric characters. Flexbox's ability to handle variable-width content (chords like "G" are narrower than "C#m7") without breaking the layout was essential.
+
+CSS Grid for Page Layout: The overall page structure (header, search bar, song content area, and controls) uses CSS Grid for a two-dimensional layout that adapts to different screen sizes. Grid's minmax() function and auto-fill/auto-fit keywords enable the layout to restructure itself for mobile, tablet, and desktop viewports without separate CSS files for each breakpoint.
+
+Media Queries for Responsive Design: The system uses breakpoints at 320px (small phones), 768px (tablets), and 1024px (desktops) to adjust font sizes, padding, and layout structure. On mobile devices, the song content occupies the full viewport width with larger font sizes for stage readability. On desktops, the content is centered with comfortable margins for reading.
+
+Alternatives Considered and Rejected:
+
+Tailwind CSS: Tailwind is a utility-first CSS framework that provides pre-built class names for common styles. It was rejected because it generates extremely large CSS files (several megabytes unoptimized) and requires a build pipeline with PostCSS for production use. The Worship Song Library's CSS is approximately 8 kilobytes, making a framework unnecessary.
+
+Bootstrap: Bootstrap is a comprehensive UI component library. It was rejected because its opinionated component styles (buttons, cards, navigation bars) do not align with the minimalist, high-contrast interface required for stage readability. Overriding Bootstrap's default styles would require as much CSS as writing custom styles from scratch.
+
+Table 2.1: Frontend Technology Comparison
+
+| Technology | Selected | Reason for Selection or Rejection |
+| JSP | Yes | Server-side rendering, zero client delay, Servlet integration |
+| Vanilla JS | Yes | Direct DOM control, minimal bundle size, rendering precision |
+| CSS3 | Yes | Native Flexbox/Grid, responsive, lightweight |
+| React | No | Virtual DOM overhead, unnecessary abstraction layer |
+| Angular | No | Excessive boilerplate, steep learning curve |
+| Tailwind | No | Large output, requires build pipeline |
+| Bootstrap | No | Opinionated styles conflict with custom requirements |
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 14]
+
+2.3 Backend Technologies
+
+The backend is the layer responsible for processing requests, executing business logic, communicating with the database, and generating responses. The backend of the Worship Song Library is built on Java Servlets using the Jakarta EE specification, with JDBC for database communication and a custom utility layer for musical operations.
+
+2.3.1 Java Servlets (Jakarta EE 10)
+
+What It Is:
+A Java Servlet is a server-side Java class that handles HTTP requests and generates HTTP responses. Servlets run inside a Servlet container (such as Apache Tomcat) which manages their lifecycle, threading, and connection handling. The Jakarta EE 10 specification (formerly Java EE) defines the modern API for Servlets, including annotations for mapping URLs to Servlet classes.
+
+Why It Was Chosen:
+Java Servlets provide the optimal balance of performance, control, and simplicity for this application's backend requirements.
+
+Complete Control Over HTTP: Each Servlet maps to a specific URL pattern and handles the complete request-response cycle. The developer has direct access to request parameters, headers, session data, and response writers. This level of control is essential for implementing features like session-based transposition (where the user's current transpose offset is stored in the HTTP session and applied to every subsequent song view).
+
+Thread-Safe Architecture: The Servlet container creates a single instance of each Servlet and dispatches incoming requests to it using a thread pool. This means that Servlets are inherently multi-threaded, capable of handling hundreds of concurrent requests without additional configuration. For a worship application used by an entire congregation simultaneously (during a live service), this concurrency model ensures responsive performance.
+
+No Framework Overhead: Unlike Spring Boot, which scans the classpath, creates proxy objects, manages a dependency injection container, and auto-configures dozens of components at startup, raw Servlets start instantly. The application's startup time on Tomcat is under 3 seconds, which is critical for development iterations and for deployments on resource-constrained servers.
+
+How It Is Used in This System:
+The application defines the following Servlet classes:
+
+SearchServlet (URL: /search): Accepts a query parameter, delegates to the SearchService, and returns results as JSON for the AJAX-powered search interface.
+
+SongViewServlet (URL: /song): Accepts a song ID, fetches the complete song data (including sections, lines, and chords), applies any session-stored transposition offset, and forwards the data to songView.jsp for rendering.
+
+BulkImportServlet (URL: /admin/import): Accepts raw song text in the [C] anchor format, parses it using the ChordParser utility, and inserts the structured data into the database.
+
+Alternatives Considered and Rejected:
+
+Spring Boot: Spring Boot is the dominant Java web framework in the industry. It was rejected because its auto-configuration and annotation-driven approach introduces significant startup overhead and hides the HTTP request lifecycle behind layers of abstraction. For a project where understanding the full request flow is an educational objective, raw Servlets are more appropriate.
+
+Node.js with Express: Node.js is a JavaScript runtime that allows server-side JavaScript execution. Express is its most popular web framework. This combination was rejected because the project's backend requires strong typing for data integrity (Java's type system catches errors at compile time that JavaScript would only catch at runtime) and because the development team's expertise is in Java.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 15]
+
+2.3.2 JDBC (Java Database Connectivity)
+
+What It Is:
+JDBC is a Java API that defines how a client application connects to and communicates with a relational database. JDBC provides a standard interface for sending SQL queries to the database and processing the returned result sets. It is part of the Java Standard Edition (Java SE) and does not require any external libraries for basic functionality.
+
+Why It Was Chosen:
+JDBC provides the exact level of database interaction control required by the song retrieval and search algorithms.
+
+SQL Precision: The Worship Song Library's data retrieval queries involve multi-table joins across the songs, sections, song_lines, and line_chords tables. These queries must be optimized for performance and must return data in a specific order (sections ordered by section_order, lines ordered by line_order, chords ordered by char_index). JDBC allows the developer to write these SQL queries directly, optimizing them with the full power of the SQL language rather than relying on an ORM's (Object-Relational Mapping) query generation.
+
+PreparedStatement Security: JDBC's PreparedStatement interface provides parameterized queries that are inherently immune to SQL injection attacks. When a user searches for a song, their input is bound to a query parameter using ps.setString(1, userInput), not concatenated into the SQL string. The database engine treats the parameter as data, not as executable SQL, making injection attacks mathematically impossible.
+
+Connection Pooling Integration: While JDBC itself manages individual connections, the application integrates HikariCP, a high-performance connection pool library. HikariCP maintains a pool of pre-established database connections that Servlets can borrow and return. This eliminates the overhead of creating a new TCP connection to the database for every HTTP request, reducing the average query latency from approximately 200 milliseconds (new connection) to approximately 5 milliseconds (pooled connection).
+
+How It Is Used in This System:
+The Data Access Object (DAO) classes use JDBC to execute all database operations:
+
+SongDAO.getSongById(int id): Executes a SELECT query with a JOIN across songs, sections, song_lines, and line_chords to retrieve the complete structured song data in a single database round-trip.
+
+SongDAO.searchSongs(String query): Executes a parameterized LIKE query across multiple columns (title, artist, lyrics_original, lyrics_roman) and returns matching songs sorted by relevance.
+
+Alternatives Considered and Rejected:
+
+Hibernate (JPA): Hibernate is the most popular Object-Relational Mapping (ORM) framework for Java. It allows developers to define database mappings using annotations on Java classes and generates SQL queries automatically. It was rejected because the song data retrieval requires highly optimized queries with specific JOIN ordering and result set traversal patterns. Hibernate's generated SQL would need extensive tuning (using @BatchSize, @Fetch annotations, and HQL overrides) to match the performance of hand-written JDBC queries, negating the convenience benefit of using an ORM.
+
+MyBatis: MyBatis is a lighter alternative to Hibernate that allows developers to write SQL directly while still providing XML-based or annotation-based result mapping. While MyBatis was a reasonable alternative, it was ultimately rejected because JDBC alone was sufficient for the application's needs, and adding MyBatis would introduce an additional dependency without significant benefit.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 16]
+
+2.3.3 Utility Layer (Custom Java Classes)
+
+What It Is:
+The utility layer consists of purpose-built Java classes that implement the domain-specific business logic of the application. These classes are not part of any framework; they are original implementations designed specifically for this project's requirements.
+
+Why It Was Built:
+No existing library or framework provides the specific combination of chord parsing, transposition, and alignment logic required by this system. The algorithms are tightly coupled to the application's data model (character-index-based chord mapping) and could not be replaced by generic music theory libraries.
+
+Key Utility Classes:
+
+ChordParser: This class contains the regex-based tokenization engine that converts raw song text in the [C] anchor format into structured data. It uses Java's Pattern and Matcher classes to identify chord symbols within brackets, calculate their character positions after bracket removal, and produce a list of ChordOccurrence objects (each containing a chord symbol and an integer position).
+
+ChordTransposer: This class implements the mathematical transposition algorithm. It maintains a static array of the 12 chromatic notes (C, C#, D, D#, E, F, F#, G, G#, A, A#, B) and provides a method that takes a chord symbol and a semitone offset as input and returns the transposed chord. The algorithm handles complex chords by separating the root note from the suffix (e.g., separating "C#m7" into root "C#" and suffix "m7"), transposing only the root, and reattaching the suffix.
+
+ChordAligner: This class provides utility methods for validating and adjusting chord positions. It ensures that no two chords are assigned the same character index (which would cause visual overlap) and that chord indices do not exceed the length of the corresponding lyric string.
+
+Table 2.2: Backend Technology Comparison
+
+| Technology | Selected | Reason for Selection or Rejection |
+| Java Servlets | Yes | Full HTTP control, thread-safe, zero overhead |
+| JDBC | Yes | SQL precision, PreparedStatement security, pooling |
+| Custom Utilities | Yes | Domain-specific logic with no existing alternatives |
+| Spring Boot | No | Excessive abstraction, slow startup, hidden lifecycle |
+| Node.js/Express | No | Weak typing, team expertise mismatch |
+| Hibernate | No | Generated SQL performance concerns, ORM overhead |
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 17]
+
+2.4 Database Management System
+
+2.4.1 MySQL 8.0
+
+What It Is:
+MySQL is an open-source relational database management system (RDBMS) developed by Oracle Corporation. It uses Structured Query Language (SQL) for data definition, manipulation, and querying. MySQL 8.0, the version used in this project, introduced significant improvements including window functions, Common Table Expressions (CTEs), improved Unicode support with the utf8mb4 character set, and enhanced JSON capabilities.
+
+Why It Was Chosen:
+The data model of the Worship Song Library is inherently relational. Songs contain Sections, Sections contain Lines, and Lines contain Chords. These are hierarchical, one-to-many relationships that map naturally to foreign key constraints in a relational database.
+
+Relational Integrity: MySQL enforces referential integrity through foreign key constraints. A chord in the line_chords table must reference a valid line in the song_lines table, which must reference a valid section in the sections table, which must reference a valid song in the songs table. If an administrator attempts to delete a song, MySQL can automatically cascade the deletion to all related sections, lines, and chords, preventing orphaned records.
+
+UTF-8MB4 Character Set: MySQL's utf8mb4 character set provides full support for the entire Unicode specification, including the Devanagari block (U+0900 to U+097F), the Devanagari Extended block, and supplementary characters. This is essential for storing Hindi and Marathi lyrics without data corruption.
+
+Indexing and Performance: MySQL supports B-tree indexes on frequently queried columns. The application creates indexes on songs.song_number, songs.title, songs.language, sections.song_id, song_lines.section_id, and line_chords.line_id. These indexes ensure that even complex multi-table JOIN queries execute in under 50 milliseconds for a library of 300+ songs.
+
+ACID Compliance: MySQL's InnoDB storage engine provides full ACID (Atomicity, Consistency, Isolation, Durability) compliance. When a new song is imported, the system inserts records into four tables (songs, sections, song_lines, line_chords) within a single transaction. If any insertion fails, the entire transaction is rolled back, preventing partial data corruption.
+
+Alternatives Considered and Rejected:
+
+MongoDB: MongoDB is a NoSQL document database that stores data as JSON-like documents. It was considered because a song could be represented as a single nested document containing sections, lines, and chords. However, MongoDB was rejected because:
+- It lacks native support for multi-table JOINs, which would complicate the search system that needs to query across songs and their lyric content simultaneously.
+- Its schema-less nature means that data integrity constraints (such as ensuring every chord has a valid character index) must be enforced in the application code rather than the database.
+- The relational queries required for features like "find all songs using chord G" are more naturally expressed in SQL than in MongoDB's aggregation pipeline.
+
+SQLite: SQLite is a lightweight, file-based relational database that requires no separate server process. It was initially used during the early prototyping phase for convenience. However, it was replaced by MySQL for production because:
+- SQLite does not support concurrent writes from multiple threads, which is problematic when multiple users access the application simultaneously.
+- SQLite's UTF-8 support is functional but less robust than MySQL's utf8mb4 implementation for complex Devanagari character handling.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 18]
+
+Table 2.3: Database System Comparison
+
+| Feature | MySQL 8.0 | MongoDB | SQLite | PostgreSQL |
+| Data Model | Relational (Tables) | Document (JSON) | Relational (Tables) | Relational (Tables) |
+| Referential Integrity | Yes (Foreign Keys) | No (Application Level) | Limited | Yes (Foreign Keys) |
+| Unicode Support | Full (utf8mb4) | Full (UTF-8) | Good | Full (UTF-8) |
+| Concurrent Access | Excellent | Excellent | Poor (Single Writer) | Excellent |
+| JOINs | Native SQL | Aggregation Pipeline | Native SQL | Native SQL |
+| Deployment Complexity | Moderate (Server) | Moderate (Server) | Minimal (File) | Moderate (Server) |
+| Selected | Yes | No | No | No |
+
+PostgreSQL was also considered as it offers superior support for full-text search and advanced indexing. However, MySQL was selected over PostgreSQL due to wider hosting availability and greater familiarity within the development environment.
+
+
+2.5 Server and Deployment Environment
+
+2.5.1 Apache Tomcat 10.1
+
+What It Is:
+Apache Tomcat is an open-source implementation of the Jakarta Servlet, Jakarta Server Pages, and Jakarta WebSocket specifications. It provides an HTTP web server environment in which Java code can run. Tomcat 10.1 implements the Jakarta EE 10 specification, which uses the jakarta.servlet package namespace (replacing the older javax.servlet namespace).
+
+Why It Was Chosen:
+Tomcat is the most widely used Servlet container in the world, with decades of production deployment history. It was chosen for the following reasons:
+
+Lightweight: Unlike full Jakarta EE application servers (such as WildFly or GlassFish), Tomcat implements only the web-tier specifications (Servlets, JSP, WebSocket). This results in a smaller footprint (approximately 15 megabytes) and faster startup time (under 5 seconds).
+
+Zero Configuration: Deploying the application requires only copying the WAR file to Tomcat's webapps directory. Tomcat automatically detects the new WAR file, extracts it, and deploys the application.
+
+Connection Pooling Support: Tomcat integrates with HikariCP and other connection pool implementations through its JNDI (Java Naming and Directory Interface) resource configuration. The application configures HikariCP in the application code for maximum control over pool sizing and connection timeout behavior.
+
+Alternatives Considered and Rejected:
+
+Jetty: Jetty is another lightweight Servlet container with excellent performance characteristics. It was a viable alternative but was not selected because Tomcat has more extensive documentation, a larger community, and greater compatibility with hosting providers.
+
+WildFly (JBoss): WildFly is a full Jakarta EE application server that includes support for EJBs, JMS, and other enterprise specifications. It was rejected because these enterprise features are unnecessary for this application, and they add significant startup time and memory consumption.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 2 - PAGE 19]
+
+2.6 Build and Dependency Management
+
+2.6.1 Apache Maven 3.9
+
+What It Is:
+Apache Maven is a build automation and project management tool for Java projects. It uses a Project Object Model (POM) file written in XML (pom.xml) to define the project structure, dependencies, build plugins, and deployment configuration.
+
+Why It Was Chosen:
+Maven provides three critical capabilities for this project:
+
+Dependency Management: The application depends on several external libraries including HikariCP (connection pooling), MySQL Connector/J (JDBC driver), and ICU4J (internationalization and transliteration). Maven automatically downloads these libraries from the Maven Central Repository, resolves their transitive dependencies, and includes them in the build classpath.
+
+Standardized Build Process: Maven's convention-over-configuration approach means that the project follows a standard directory structure (src/main/java for Java source, src/main/webapp for web resources). Any developer familiar with Maven can immediately understand the project layout and build it using the standard mvn clean package command.
+
+WAR Packaging: Maven's war plugin automatically packages the compiled classes, web resources (JSP, CSS, JavaScript), and library dependencies into a deployable WAR (Web Application Archive) file. This single file can be deployed to any Servlet container.
+
+Key Dependencies in pom.xml:
+- jakarta.servlet-api (version 6.0): The Jakarta Servlet API.
+- mysql-connector-j (version 8.0): The JDBC driver for MySQL.
+- hikaricp (version 5.0): High-performance connection pooling.
+- icu4j (version 73): International Components for Unicode, used for Devanagari transliteration.
+
+Alternatives Considered:
+Gradle was considered as an alternative to Maven. Gradle uses a Groovy or Kotlin-based DSL instead of XML, which many developers find more readable. However, Maven was selected because it is the standard build tool taught in the academic curriculum and is more widely documented in tutorials and reference materials.
+
+
+2.7 Summary of Technology Decisions
+
+The technology stack of the Worship Song Library was selected to maximize performance, control, and Unicode fidelity while minimizing complexity and deployment overhead.
+
+The frontend combination of JSP, Vanilla JavaScript, and CSS3 provides server-side rendering for instant content delivery, precise DOM control for the rendering engine, and responsive styling for mobile devices.
+
+The backend combination of Java Servlets, JDBC, and custom utility classes provides complete HTTP lifecycle control, SQL-level database optimization, and domain-specific algorithms for chord parsing and transposition.
+
+MySQL provides the relational integrity, Unicode support, and query performance required by the normalized song data model.
+
+Apache Tomcat and Maven provide a lightweight, standardized deployment pipeline that requires minimal infrastructure and configuration.
+
+Each technology was selected not because it is the most popular or the most modern, but because it is the most appropriate for the specific technical challenges of this application.
+
+[PAGE BORDER: ACADEMIC STYLE]

@@ -151,6 +151,18 @@ public class SetlistServlet extends HttpServlet {
         Map<String, Object> res = new HashMap<>();
         try {
             switch (action) {
+                case "setTranspose":
+                    // Store transpose offset in session for setlist-to-song navigation
+                    int transpSongId = safeParseInt(request.getParameter("songId"), 0);
+                    int semitones = safeParseInt(request.getParameter("semitones"), 0);
+                    if (transpSongId > 0) {
+                        SessionUtil.setSetlistTranspose(request.getSession(true), transpSongId, semitones);
+                        res.put("success", true);
+                    } else {
+                        res.put("success", false);
+                        res.put("error", "Invalid songId");
+                    }
+                    break;
                 case "add":
                     // Bug #31 fix: Safe parsing for integers
                     int addSongId = safeParseInt(request.getParameter("songId"), 0);

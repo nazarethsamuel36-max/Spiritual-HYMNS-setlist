@@ -6,8 +6,11 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/live-search.css?v=<%= cacheBuster %>">
+<script src="${pageContext.request.contextPath}/js/live-search.js?v=<%= cacheBuster %>" defer></script>
 <link rel="manifest" href="${pageContext.request.contextPath}/manifest.json?v=<%= cacheBuster %>">
 <meta name="theme-color" content="#001264">
+<script>window.CONTEXT_PATH = '${pageContext.request.contextPath}';</script>
 <script id="tailwind-config">
 tailwind.config = {
     darkMode: "class",
@@ -71,11 +74,82 @@ body {
 nav {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 9999 !important;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     background: rgba(255, 255, 255, 0.18);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Mobile Menu Glassmorphism - STURDIER VERSION */
+#mobile-menu {
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4) !important;
+    margin: 12px;
+    width: calc(100% - 24px) !important;
+    left: 0 !important;
+    top: 64px !important;
+    z-index: 10000 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 12px 0 !important;
+}
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998 !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav-item {
+    display: flex !important;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 24px !important;
+    margin: 6px 14px;
+    border-radius: 16px;
+    color: #173164 !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+.mobile-nav-item:hover {
+    background: rgba(0, 0, 0, 0.08);
+    transform: translateX(6px);
+}
+
+.mobile-nav-item .material-symbols-outlined {
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.mobile-nav-item.text-error {
+    color: #b91c1c !important;
+    background: rgba(239, 68, 68, 0.06);
+    border-color: rgba(239, 68, 68, 0.1);
 }
 
 /* ============================================================

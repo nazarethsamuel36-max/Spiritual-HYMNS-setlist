@@ -1,0 +1,75 @@
+{
+  "id" : 725,
+  "songNumber" : 113,
+  "title" : "HALLELUJAH MY FATHER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Hallelujah, my Father, for giving us Your Son,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "Sending Him into the world to be given up for men,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Knowing we would bruise Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And smite Him from the earth,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Hallelujah, my Father, in His death is my birth,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "Hallelujah, my Father, in His life is my life !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 30
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,154 @@
+{
+  "id" : 721,
+  "songNumber" : 109,
+  "title" : "HEAVENLY FATHER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Heavenly Father I worship You, (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "I love You, adore You,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Bow down before You,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Heavenly Father I worship You.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Son of God, what a wonder",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "You are (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "You saved me from sin",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Put your Holy Ghost within,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Son of God what a wonder You are.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Holy Ghost, what a comfort",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "You are (2)"
+    }, {
+      "text" : "You lead us and guide us,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "You live right inside us",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Holy Ghost, what a comfort"
+    }, {
+      "text" : "You are.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Brother, Sister, I appreciate you, (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "With God's love inside us,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "We'll glorify Jesus",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Brother, Sister, I appreciate you.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

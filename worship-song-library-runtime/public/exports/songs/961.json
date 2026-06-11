@@ -1,0 +1,100 @@
+{
+  "id" : 961,
+  "songNumber" : 83,
+  "title" : "WHEN I LOOK INTO YOUR HOLINESS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "When I look into Your holiness,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 7
+      }, {
+        "chord" : "F",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "When I gaze into Your loveliness,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 7
+      }, {
+        "chord" : "Em",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "When all things that surround me",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "C7",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Form shadows in the light of You.",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "When I find the joy of reaching Your heart,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 7
+      }, {
+        "chord" : "F",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "When my will becomes enthroned in your life,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 8
+      }, {
+        "chord" : "Em",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "When all things that surround me"
+    }, {
+      "text" : "Form shadows in the light of You."
+    }, {
+      "text" : "I worship You, I worship You } 2",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "Em",
+        "position" : 25
+      }, {
+        "chord" : "Am",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "The reason I live is to worship You.",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "C",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

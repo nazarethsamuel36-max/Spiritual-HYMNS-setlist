@@ -8,6 +8,7 @@ public class SongLine {
     private int sectionId;
     private String text;
     private int lineOrder;
+    private java.util.List<ChordOccurrence> chords = new java.util.ArrayList<>();
 
     public SongLine() {}
 
@@ -15,6 +16,9 @@ public class SongLine {
         this.text = text;
         this.lineOrder = lineOrder;
     }
+
+    public java.util.List<ChordOccurrence> getChords() { return chords; }
+    public void setChords(java.util.List<ChordOccurrence> chords) { this.chords = chords; }
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }

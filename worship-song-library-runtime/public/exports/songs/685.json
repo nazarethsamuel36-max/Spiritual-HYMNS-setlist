@@ -1,0 +1,62 @@
+{
+  "id" : 685,
+  "songNumber" : 4,
+  "title" : "THE WINDOWS OF HEAVEN",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "The windows of heaven are open,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "The blessings are falling to night;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "There's joy, joy, joy in my heart,"
+    }, {
+      "text" : "For Jesus makes everything right.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "I gave Him my old tattered garment,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 2
+      } ]
+    }, {
+      "text" : "He gave me a robe of pure white;",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "I'm feasting on manna from heaven,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And that's why I'm happy to night.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "C",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

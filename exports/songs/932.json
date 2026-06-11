@@ -1,0 +1,64 @@
+{
+  "id" : 932,
+  "songNumber" : 53,
+  "title" : "FOR THOU O LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "For Thou, O Lord, art high above all the earth,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 4
+      }, {
+        "chord" : "F",
+        "position" : 22
+      }, {
+        "chord" : "C",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Thou art exalted far above all gods.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "C",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "For Thou, O Lord, art high above all the earth,"
+    }, {
+      "text" : "Thou art exalted far above all gods."
+    }, {
+      "text" : "I exalt Thee, I exalt Thee,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "I exalt Thee, O Lord. (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      } ]
+    } ]
+  } ]
+}

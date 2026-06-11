@@ -1,0 +1,344 @@
+{
+  "id" : 733,
+  "songNumber" : 121,
+  "title" : "THEY COME FROM THE EAST AND WEST",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "They come from the East and West,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "They come from the lands afar,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "To feast with the King, to dine as His guest;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "How blessed these pilgrims are!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Beholding His hallowed face",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Aglow with light divine;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Blest partakers of His grace,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "As gems in His crown to shine.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Since Jesus has set me free,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "I'm happy as heart can be;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "No longer I bear the burden of care,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "His yoke is so sweet to me.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "My soul was as black as night,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "But darkness has taken flight;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "Now I shout the victory,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "For Jesus has set me free.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "I look on the great white throne,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Before it the ransom'd stand;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 2
+      } ]
+    }, {
+      "text" : "No longer are tears, no sorrow is known",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Nor death in that goodly land.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "My Saviour has gone before,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Preparing the way for me;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Soon we'll meet to part no more",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Thru time or eternity.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "The gates of that holy place",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Stand open by night and day;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "O look to the Lord who \"giveth more grace,\"",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Whose love has prepared the way",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "A home in those mansions fair",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "His hand hath reserved for all,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "For the wedding feast prepare,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Obeying the gracious call.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Oh, Jesus is coming soon,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Our trials will then be o'er.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "What if our Lord this moment should come.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "For those who are free from sin?",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "Then would it bring you joy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Or sorrow and deep despair?",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "When our Lord in glory comes,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "We'll meet Him up in the air.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    } ]
+  } ]
+}

@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
 <c:set var="currentUri" value="${pageContext.request.requestURI}" />
-<nav class="sticky top-0 z-50 w-full transition-all" style="position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.18); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid rgba(255,255,255,0.35);">
+<nav class="sticky top-0 w-full transition-all" style="position:sticky; top:0; z-index:9999 !important; background:rgba(255,255,255,0.18); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid rgba(255,255,255,0.35);">
 <div class="mx-auto flex max-w-[1920px] items-center justify-between px-6 py-4 md:px-24">
 <div class="flex items-center gap-8 xl:gap-12">
 <a href="${pageContext.request.contextPath}/" class="max-w-[240px] text-2xl font-black uppercase tracking-[0.16em] text-primary decoration-none leading-none font-headline" style="text-decoration: none;">The Resonant Archive</a>
@@ -22,6 +22,13 @@
 </div>
 
 <div class="flex items-center gap-3 font-manrope font-medium">
+    <c:if test="${not empty song && fn:contains(currentUri, '/song') && not fn:contains(currentUri, '/song/edit')}">
+        <a href="${pageContext.request.contextPath}/song/edit?songId=${song.id}" class="hidden lg:inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold transition-colors hover:bg-white text-decoration-none" style="text-decoration: none; color:#173164; background:rgba(255,255,255,0.24); border:1px solid rgba(255,255,255,0.48);">
+            <span class="material-symbols-outlined text-[18px]">edit</span>
+            Edit Song
+        </a>
+    </c:if>
+
     <c:if test="${not empty sessionScope.username}">
         <a href="${pageContext.request.contextPath}/song/add" class="hidden lg:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-primary-container text-decoration-none" style="text-decoration: none;">
             <span class="material-symbols-outlined text-[18px]">add</span>
@@ -54,37 +61,80 @@
 </div>
 </div>
 
+<!-- Mobile Blur Overlay -->
+<div id="mobile-overlay" class="mobile-overlay" onclick="closeMobileMenu()"></div>
+
 <!-- Mobile Dropdown Drawer -->
-<div id="mobile-menu" class="surface-mist absolute left-0 top-full hidden w-full rounded-b-3xl border-b border-white/60 lg:hidden">
-    <div class="flex flex-col gap-4 px-6 py-4 font-manrope font-medium">
-        <a class="border-b border-surface-dim py-2 text-[#001264] transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/songs" onclick="closeMobileMenu()">Songs</a>
-        <c:if test="${not empty sessionScope.username}">
-            <a class="border-b border-surface-dim py-2 font-bold text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/song/add" onclick="closeMobileMenu()">Add Song</a>
+<div id="mobile-menu" class="hidden absolute lg:hidden">
+    <div class="flex flex-col px-4 py-4 font-manrope">
+        <a class="mobile-nav-item" href="${pageContext.request.contextPath}/songs" onclick="closeMobileMenu()">
+            <span class="material-symbols-outlined">library_music</span>
+            Songs
+        </a>
+        <c:if test="${not empty song && fn:contains(currentUri, '/song') && not fn:contains(currentUri, '/song/edit')}">
+            <a class="mobile-nav-item" href="${pageContext.request.contextPath}/song/edit?songId=${song.id}" onclick="closeMobileMenu()">
+                <span class="material-symbols-outlined">edit</span>
+                Edit Song
+            </a>
         </c:if>
-        <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/leaflet/new" onclick="closeMobileMenu()">Leaflet Builder</a>
+        <c:if test="${not empty sessionScope.username}">
+            <a class="mobile-nav-item" href="${pageContext.request.contextPath}/song/add" onclick="closeMobileMenu()">
+                <span class="material-symbols-outlined">add_circle</span>
+                Add Song
+            </a>
+        </c:if>
+        <a class="mobile-nav-item" href="${pageContext.request.contextPath}/leaflet/new" onclick="closeMobileMenu()">
+            <span class="material-symbols-outlined">auto_stories</span>
+            Leaflet Builder
+        </a>
         <c:choose>
             <c:when test="${not empty sessionScope.username}">
-                <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/setlist/my" onclick="closeMobileMenu()">Setlists</a>
-                <a class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/account" onclick="closeMobileMenu()">My Account (${sessionScope.username})</a>
+                <a class="mobile-nav-item" href="${pageContext.request.contextPath}/setlist/my" onclick="closeMobileMenu()">
+                    <span class="material-symbols-outlined">format_list_bulleted</span>
+                    Setlists
+                </a>
+                <a class="mobile-nav-item" href="${pageContext.request.contextPath}/account" onclick="closeMobileMenu()">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    My Account (${sessionScope.username})
+                </a>
                 <c:if test="${sessionScope.role == 'admin'}">
-                    <a class="border-b border-surface-dim py-2 text-[#001264] font-bold transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" href="${pageContext.request.contextPath}/admin/bulk-import" onclick="closeMobileMenu()">Bulk Import</a>
+                    <a class="mobile-nav-item" href="${pageContext.request.contextPath}/admin/bulk-import" onclick="closeMobileMenu()">
+                        <span class="material-symbols-outlined">upload_file</span>
+                        Bulk Import
+                    </a>
                 </c:if>
-                <a href="${pageContext.request.contextPath}/logout" class="text-error font-bold py-2 hover:text-error-container transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Logout</a>
+                <a href="${pageContext.request.contextPath}/logout" class="mobile-nav-item text-error" onclick="closeMobileMenu()">
+                    <span class="material-symbols-outlined">logout</span>
+                    Logout
+                </a>
             </c:when>
             <c:otherwise>
-                <a href="javascript:void(0)" class="border-b border-surface-dim py-2 text-outline-variant cursor-not-allowed text-decoration-none" style="text-decoration: none;" title="Login to create setlists" onclick="closeMobileMenu()">Setlists</a>
-                <a href="${pageContext.request.contextPath}/login" class="border-b border-surface-dim py-2 text-on-surface-variant transition-colors hover:text-primary text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Login</a>
-                <a href="${pageContext.request.contextPath}/register" class="text-primary font-bold py-2 hover:text-primary-container transition-colors text-decoration-none" style="text-decoration: none;" onclick="closeMobileMenu()">Sign Up</a>
+                <a class="mobile-nav-item opacity-50 cursor-not-allowed" href="javascript:void(0)" title="Login to create setlists" onclick="closeMobileMenu()">
+                    <span class="material-symbols-outlined">lock</span>
+                    Setlists
+                </a>
+                <a class="mobile-nav-item" href="${pageContext.request.contextPath}/login" onclick="closeMobileMenu()">
+                    <span class="material-symbols-outlined">login</span>
+                    Login
+                </a>
+                <a class="mobile-nav-item" href="${pageContext.request.contextPath}/register" onclick="closeMobileMenu()" style="color: var(--color-brand) !important;">
+                    <span class="material-symbols-outlined">person_add</span>
+                    Sign Up
+                </a>
             </c:otherwise>
         </c:choose>
 
         <!-- Mobile Search -->
-        <form action="${pageContext.request.contextPath}/search" method="get" class="relative mt-2 lg:hidden">
-            <button type="submit" class="absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10">
-                <span class="material-symbols-outlined">search</span>
-            </button>
-            <input name="q" class="ui-input-solid w-full rounded-xl pl-10 pr-4 py-3 text-sm outline-none" placeholder="Search songs..." type="text"/>
-        </form>
+        <div class="px-3 mt-4">
+            <form action="${pageContext.request.contextPath}/search" method="get" class="relative">
+                <button type="submit" class="absolute left-4 top-1/2 -translate-y-1/2 text-outline border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10" style="color: #173164; opacity: 0.5;">
+                    <span class="material-symbols-outlined text-[20px]">search</span>
+                </button>
+                <input name="q" class="w-full rounded-xl pl-12 pr-4 py-3.5 text-sm outline-none border-none" 
+                       style="background: rgba(0, 0, 0, 0.05); color: #173164; font-weight: 600;" 
+                       placeholder="Search songs..." type="text"/>
+            </form>
+        </div>
     </div>
 </div>
 </nav>
@@ -92,19 +142,23 @@
 <script>
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
     const menuIcon = mobileBtn.querySelector('.material-symbols-outlined');
 
     mobileBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        if (mobileMenu.classList.contains('hidden')) {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        if (isHidden) {
             menuIcon.textContent = 'menu';
+            mobileOverlay.classList.remove('visible');
         } else {
             menuIcon.textContent = 'close';
+            mobileOverlay.classList.add('visible');
         }
     });
 
     function closeMobileMenu() {
         mobileMenu.classList.add('hidden');
+        mobileOverlay.classList.remove('visible');
         menuIcon.textContent = 'menu';
     }
 </script>

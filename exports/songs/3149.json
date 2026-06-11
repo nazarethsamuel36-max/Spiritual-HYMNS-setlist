@@ -1,0 +1,50 @@
+{
+  "id" : 3149,
+  "songNumber" : 1007,
+  "title" : "** Every Praise Is To Our God",
+  "language" : "english",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Every praise is to our God."
+    }, {
+      "text" : "Every word of worship with one accord..repeat"
+    }, {
+      "text" : "Every praise every praise"
+    }, {
+      "text" : "Is to our God"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Sing hallelujah to our God"
+    }, {
+      "text" : "Glory hallelujah is due our God"
+    }, {
+      "text" : "Every praise every praise is to our God."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "God my Savior"
+    }, {
+      "text" : "God my Healer"
+    }, {
+      "text" : "God my Deliverer"
+    }, {
+      "text" : "Yes He is, yes He is"
+    } ]
+  } ]
+}

@@ -15,15 +15,18 @@ public class DBConnection {
     private static final HikariDataSource dataSource;
 
     static {
-        // Bug #1: Use environment variables, with defaults to avoid immediate breakage
         String dbUrl = System.getenv("DB_URL");
-        if (dbUrl == null) dbUrl = "jdbc:mysql://localhost:3306/worship_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-        
         String dbUser = System.getenv("DB_USER");
-        if (dbUser == null) dbUser = "root";
-        
         String dbPass = System.getenv("DB_PASSWORD");
-        if (dbPass == null) dbPass = "root123";
+        
+        if (dbUrl != null) {
+            System.out.println("[DB] Using PRODUCTION environment variables for connection.");
+        } else {
+            System.out.println("[DB] Using LOCALHOST fallback configuration.");
+            dbUrl = "jdbc:mysql://localhost:3306/worship_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            dbUser = "root";
+            dbPass = "root123"; // Updated to match user's known local password
+        }
 
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");

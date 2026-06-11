@@ -1,0 +1,246 @@
+{
+  "id" : 782,
+  "songNumber" : 170,
+  "title" : "YOU HAVE HEARD OF LITTLE MOSES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "You have heard of little Moses in the bulrush,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "You have heard of fearless David and his sling;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "You have heard the story told of dreaming Joseph,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "And of Jonah and the whale you often sing.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "There are many, many others through the Bible,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "I should like to meet them all, I do declare !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "By and by the Lord will surely let us meet them",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "At the meeting in the air.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "There is going to be a meeting in the air,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "In the sweet, sweet by and by;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "I am going to meet you, meet you there",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "In that home beyond the sky;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Such singing you will hear, never heard by mortal ear,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "'Twill be glorious, I do declare !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And God's own Son will be the leading One",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "At the meeting in the air."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Many things will there be missing, in that meeting,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "For the mourners bench will have no place at all,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 45
+      } ]
+    }, {
+      "text" : "There will never be a sermon preached to sinners,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "For the sinner had refused to heed the call.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "There will be no mourning over wayward loved ones,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "There will be no lonely nights of pleading prayer;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 43
+      } ]
+    }, {
+      "text" : "All our burdens and our anguish will be lifted",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "At the meeting in the air."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "There the doubters will be missing altogether,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "All the skeptics will be absent on that day;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "There will be no grumblers present to disturb us,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "And the Achans will be busy far away.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "There the saints will have His \"seal upon their foreheads,\"",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Dressed in raiment none but ransomed ones can wear;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "All who have the wedding garments will be present",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "At the meeting in the air."
+    } ]
+  } ]
+}

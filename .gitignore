@@ -34,3 +34,6 @@ artifacts/
 # Never upload DB secrets
 src/main/resources/config.properties
 # Or any other sensitive data
+
+# Ignore large blackbook files that exceed GitHub limit
+docs/blackbook/FINAL_BLACKBOOK.md

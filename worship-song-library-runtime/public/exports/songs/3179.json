@@ -1,0 +1,96 @@
+{
+  "id" : 3179,
+  "songNumber" : 1038,
+  "title" : "** Thank you Lord for your blessings on me!",
+  "language" : "english",
+  "originalKey" : "** D",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "While the world looks upon me"
+    }, {
+      "text" : "As I struggle along"
+    }, {
+      "text" : "They say I've got nothing"
+    }, {
+      "text" : "But they are so wrong"
+    }, {
+      "text" : "In my heart I'm rejoicing"
+    }, {
+      "text" : "How I wish they could see"
+    }, {
+      "text" : "Thank you Lord"
+    }, {
+      "text" : "For your blessing on me!"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "There's a roof up above me"
+    }, {
+      "text" : "I've a good place to sleep"
+    }, {
+      "text" : "There's food on my table"
+    }, {
+      "text" : "And shoes on my feet"
+    }, {
+      "text" : "You gave me your love Lord"
+    }, {
+      "text" : "And a fine family"
+    }, {
+      "text" : "Thank you Lord"
+    }, {
+      "text" : "For your blessings on me!"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I know I'm not wealthy"
+    }, {
+      "text" : "These clothes, they're not new"
+    }, {
+      "text" : "I don't have much money"
+    }, {
+      "text" : "But Lord I have you"
+    }, {
+      "text" : "And that's all that matters"
+    }, {
+      "text" : "Though the world may not see"
+    }, {
+      "text" : "Thank you Lord"
+    }, {
+      "text" : "For your blessings on me!"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "There's a roof up above me"
+    }, {
+      "text" : "I've a good place to sleep"
+    }, {
+      "text" : "There's food on my table"
+    }, {
+      "text" : "And shoes on my feet"
+    }, {
+      "text" : "You gave me your love Lord"
+    }, {
+      "text" : "And a fine family"
+    }, {
+      "text" : "Thank you Lord"
+    }, {
+      "text" : "For all your blessings on me!"
+    } ]
+  } ]
+}

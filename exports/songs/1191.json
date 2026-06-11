@@ -1,0 +1,135 @@
+{
+  "id" : 1191,
+  "songNumber" : 213,
+  "title" : "DUNIYA BANANE WALE TERI JAI HO",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "दुनिया बनाने वाले तेरी जय हो (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "जय हो सदा के लिये (4)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तुम्हारे कहने से ये दुनिया बनी,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "तुम्हारे कहने से ये आँधी थमी,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "तुम्हारे जैसा सर्व सामर्थि नही,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "ओ मेरे प्यारे पिता।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "दुनिया सजानेवाले तेरी जय हो (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "जय हो सदा के लिये (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "यीशु को तूने कुर्बान किया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "पापों को मेरे स्विकार किया,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "तुम्हारे जैसा कोई मसीह नही,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "ओ मेरे प्यारे पिता",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "हमको बचानेवाले तेरी जय हो (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "जय हो सदा के लिये (4)"
+    } ]
+  } ]
+}

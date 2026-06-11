@@ -1,0 +1,46 @@
+{
+  "id" : 3104,
+  "songNumber" : 2005,
+  "title" : "हे स्वर्गीय पिता",
+  "language" : "hindi",
+  "originalKey" : "F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "हे स्वर्गीय पिता"
+    }, {
+      "text" : "तेरे नाम की स्तुति हो"
+    }, {
+      "text" : "हे जीवनदाता"
+    }, {
+      "text" : "तेरे सन्मुख आते हम"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "आराधना, हो.. आराधना"
+    }, {
+      "text" : "आराधना, हो.. आराधना"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "तेरे सिवा कोई नही"
+    }, {
+      "text" : "आराधना के योग्य"
+    }, {
+      "text" : "तेरे समान कोई नही"
+    }, {
+      "text" : "स्वर्ग में या पृथ्वी में"
+    } ]
+  } ]
+}

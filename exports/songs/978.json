@@ -1,0 +1,92 @@
+{
+  "id" : 978,
+  "songNumber" : 100,
+  "title" : "WE HAVE COME INTO HIS HOUSE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We have come into His house,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "And gathered in His Name to worship Him } 2",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "We have come into this house,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "And gathered in His Name,"
+    }, {
+      "text" : "To worship Christ the Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Worship Christ the Lord.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "So forget about yourself and",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "Concentrate on Him and worship Him.....",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "He is all my Righteousness, I Stand",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "Complete in Him and worship Him.....",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Let us lift up Holy hands and",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "Magnify His Name and worship Him......",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

@@ -1,9 +1,13 @@
 package com.worship.servlet;
 
+import com.worship.chord.ChordAligner;
+import com.worship.dao.LineChordDAO;
 import com.worship.dao.ReportDAO;
 import com.worship.dao.SongDAO;
 import com.worship.dao.UserSongDAO;
+import com.worship.model.ChordOccurrence;
 import com.worship.model.ChordReport;
+import com.worship.model.Section;
 import com.worship.model.Song;
 import com.worship.model.User;
 import com.worship.model.UserSong;
@@ -18,18 +22,20 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
  * Handles personal song version operations.
- * Bug #23 fix: Removed unsafe (int) casts of session attributes.
- * Replaced with safe User object retrieval to prevent NullPointerExceptions.
+ * UNIFIED CHORD SYSTEM: All chord data is sourced from the relational schema
+ * (sections → song_lines → line_chords). Legacy songs.chords column is no longer used.
  */
 @WebServlet(name = "UserSongServlet", urlPatterns = {"/song/edit", "/song/save", "/song/reset", "/song/suggest"})
 public class UserSongServlet extends HttpServlet {
 
     private SongDAO songDAO = new SongDAO();
     private UserSongDAO userSongDAO = new UserSongDAO();
+    private LineChordDAO lineChordDAO = new LineChordDAO();
     private ReportDAO reportDAO = new ReportDAO();
     private ObjectMapper objectMapper = new ObjectMapper();
 
@@ -37,10 +43,12 @@ public class UserSongServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        response.setContentType("application/json;charset=UTF-8");
-
         String songIdStr = request.getParameter("songId");
         if (songIdStr == null) {
+            songIdStr = request.getParameter("id");
+        }
+        if (songIdStr == null) {
+            response.setContentType("application/json;charset=UTF-8");
             sendError(response, "songId is required");
             return;
         }
@@ -52,6 +60,7 @@ public class UserSongServlet extends HttpServlet {
 
             Song masterSong = songDAO.getSongById(songId);
             if (masterSong == null) {
+                response.setContentType("application/json;charset=UTF-8");
                 sendError(response, "Song not found");
                 return;
             }
@@ -60,23 +69,29 @@ public class UserSongServlet extends HttpServlet {
             result.put("songId", songId);
             result.put("title", masterSong.getTitle());
 
+            // UNIFIED: Reconstruct chords and lyrics from relational schema
+            List<Section> sections = masterSong.getSections();
+            Map<Integer, List<ChordOccurrence>> chordMap = lineChordDAO.getChordsForSong(songId);
+            String masterChords = ChordAligner.reconstructInlineChordText(sections, chordMap);
+            String masterLyrics = ChordAligner.reconstructPlainLyrics(sections);
+
             // Check for user's personal version
             if (user != null) {
                 UserSong userVersion = userSongDAO.getUserVersion(user.getId(), songId);
                 if (userVersion != null) {
                     result.put("isPersonalVersion", true);
                     result.put("chords", userVersion.getCustomChords() != null ?
-                            userVersion.getCustomChords() : masterSong.getChords());
+                            userVersion.getCustomChords() : masterChords);
                     result.put("lyrics", userVersion.getCustomLyrics() != null ?
-                            userVersion.getCustomLyrics() : masterSong.getLyricsOriginal());
+                            userVersion.getCustomLyrics() : masterLyrics);
                     result.put("key", userVersion.getCustomKey() != null ?
                             userVersion.getCustomKey() : masterSong.getOriginalKey());
                     result.put("notes", userVersion.getCustomNotes() != null ?
                             userVersion.getCustomNotes() : masterSong.getNotes());
                 } else {
                     result.put("isPersonalVersion", false);
-                    result.put("chords", masterSong.getChords());
-                    result.put("lyrics", masterSong.getLyricsOriginal());
+                    result.put("chords", masterChords);
+                    result.put("lyrics", masterLyrics);
                     result.put("key", masterSong.getOriginalKey());
                     result.put("notes", masterSong.getNotes());
                 }
@@ -86,25 +101,46 @@ public class UserSongServlet extends HttpServlet {
                 if (guestEdits != null) {
                     result.put("isPersonalVersion", true);
                     result.put("chords", guestEdits.get("customChords") != null ?
-                            guestEdits.get("customChords") : masterSong.getChords());
+                            guestEdits.get("customChords") : masterChords);
                     result.put("lyrics", guestEdits.get("customLyrics") != null ?
-                            guestEdits.get("customLyrics") : masterSong.getLyricsOriginal());
+                            guestEdits.get("customLyrics") : masterLyrics);
                     result.put("key", guestEdits.get("customKey") != null ?
                             guestEdits.get("customKey") : masterSong.getOriginalKey());
                 } else {
                     result.put("isPersonalVersion", false);
-                    result.put("chords", masterSong.getChords());
-                    result.put("lyrics", masterSong.getLyricsOriginal());
+                    result.put("chords", masterChords);
+                    result.put("lyrics", masterLyrics);
                     result.put("key", masterSong.getOriginalKey());
                 }
                 result.put("isGuest", true);
             }
 
-            objectMapper.writeValue(response.getWriter(), result);
+            if (wantsJson(request)) {
+                response.setContentType("application/json;charset=UTF-8");
+                objectMapper.writeValue(response.getWriter(), result);
+                return;
+            }
+
+            request.setAttribute("song", masterSong);
+            request.setAttribute("editChords", result.get("chords"));
+            request.setAttribute("editLyrics", result.get("lyrics"));
+            request.setAttribute("editKey", result.get("key"));
+            request.setAttribute("editNotes", result.get("notes"));
+            request.setAttribute("isPersonalVersion", result.get("isPersonalVersion"));
+            request.setAttribute("isGuest", result.get("isGuest"));
+            request.getRequestDispatcher("/jsp/songEdit.jsp").forward(request, response);
 
         } catch (NumberFormatException e) {
+            response.setContentType("application/json;charset=UTF-8");
             sendError(response, "Invalid songId");
         }
+    }
+
+    private boolean wantsJson(HttpServletRequest request) {
+        String accept = request.getHeader("Accept");
+        String requestedWith = request.getHeader("X-Requested-With");
+        return (accept != null && accept.contains("application/json")) ||
+                "XMLHttpRequest".equalsIgnoreCase(requestedWith);
     }
 
     @Override

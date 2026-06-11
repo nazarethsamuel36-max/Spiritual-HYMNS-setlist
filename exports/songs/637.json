@@ -1,0 +1,224 @@
+{
+  "id" : 637,
+  "songNumber" : 330,
+  "title" : "I COME BEFORE YOU TODAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I come before you today,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "And there's just one thing that I want to say,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Thank You Lord,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Thank You Lord.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "For all You've given to me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "For all the blessings I cannot see;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Thank You Lord,"
+    }, {
+      "text" : "Thank You Lord."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "With a grateful heart,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "With a song of praise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "With an outstretched arm,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "I will bless Your name.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "Thank You Lord,"
+    }, {
+      "text" : "I just wanna thank You Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Thank You Lord,"
+    }, {
+      "text" : "I just wanna thank You Lord",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Thank You Lord."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "For all You've done in my life",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "You took my darkness and gave me Your light,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Thank You Lord",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Thank You Lord."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "You took my sin and my shame,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "You took my sickness and healed all my pain,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Thank You Lord,"
+    }, {
+      "text" : "Thank You Lord."
+    } ]
+  } ]
+}

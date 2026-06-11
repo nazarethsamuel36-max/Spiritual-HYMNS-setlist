@@ -1,0 +1,53 @@
+{
+  "id" : 927,
+  "songNumber" : 48,
+  "title" : "PRAISE HIM PRAISE HIM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Praise Him, praise Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Praise Him in the morning,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Praise Him in the noontime,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Praise Him, praise Him,"
+    }, {
+      "text" : "Praise Him when the sun goes down.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "...Love Him,...Serve,...Meet etc.etc.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    } ]
+  } ]
+}

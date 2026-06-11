@@ -1,0 +1,52 @@
+{
+  "id" : 3150,
+  "songNumber" : 1008,
+  "title" : "** He Looked Beyond My Faults",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Amazing Grace shall always be my song of praise"
+    }, {
+      "text" : "For it was grace that bought my liberty"
+    }, {
+      "text" : "I do not know just why He came to love me so"
+    }, {
+      "text" : "He looked beyond my faults and saw my need"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I shall forever lift mine eyes to Calvary"
+    }, {
+      "text" : "To view the cross where Jesus died for me"
+    }, {
+      "text" : "How marvelous the grace that caught my falling soul"
+    }, {
+      "text" : "He looked beyond my faults and saw my need"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "If not for grace, my soul would be a drifting ship"
+    }, {
+      "text" : "With no safe harbor from the angry waves"
+    }, {
+      "text" : "But Calvary's Cross shines brightest through the darkest storm"
+    }, {
+      "text" : "And just in time His mercy rescued me"
+    } ]
+  } ]
+}

@@ -1,0 +1,48 @@
+{
+  "id" : 3160,
+  "songNumber" : 1019,
+  "title" : "** Take Me Past The Outer Court",
+  "language" : "english",
+  "originalKey" : "** EM",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Take me past the outer courts,"
+    }, {
+      "text" : "Into the holy place,"
+    }, {
+      "text" : "Past the brazen altar."
+    }, {
+      "text" : "Lord I want to see Your face."
+    }, {
+      "text" : "Pass me by the crowds of people"
+    }, {
+      "text" : "And the priests who sing Your praise."
+    }, {
+      "text" : "I hunger and thirst for Your righteousness,"
+    }, {
+      "text" : "But it's only found in one place."
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Take me in to the holy of holies."
+    }, {
+      "text" : "Take me in by the blood of the lamb."
+    }, {
+      "text" : "Take me in to the holy of holies."
+    }, {
+      "text" : "Take the coal, touch my lips, here I am."
+    } ]
+  } ]
+}

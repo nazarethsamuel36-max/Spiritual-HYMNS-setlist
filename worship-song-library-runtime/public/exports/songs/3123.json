@@ -1,0 +1,64 @@
+{
+  "id" : 3123,
+  "songNumber" : 2024,
+  "title" : "तुमसा कोई नहीं",
+  "language" : "hindi",
+  "originalKey" : "E",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "तुमसा कोई नहीं, तुमसा कहीं नहीं,"
+    }, {
+      "text" : "अब है पुरा यकीन, तुमसा कोई नहीं"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "येशु मसिह, हो महिमा तेरी"
+    }, {
+      "text" : "गाये आसमा, गाये ये जमीन"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "तुमसा कोई नहीं, तुमसा कहीं नहीं,"
+    }, {
+      "text" : "अब है पुरा यकीन, तुमसा कोई नहीं"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "येशु मसिह, हो महिमा तेरी"
+    }, {
+      "text" : "गाये आसमा, गाये ये जमीन"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 5",
+    "lines" : [ {
+      "text" : "अंधेरो में तूं रोशनी है, तूं ही मंझील तू रास्ता भी है,"
+    }, {
+      "text" : "तु है जहाँ ना कुछ कमी है, तेरा ही नाम जिन्दगी है"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 6",
+    "lines" : [ {
+      "text" : "हालेलुयाह, हालेलुयाह...."
+    } ]
+  } ]
+}

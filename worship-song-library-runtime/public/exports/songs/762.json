@@ -1,0 +1,150 @@
+{
+  "id" : 762,
+  "songNumber" : 150,
+  "title" : "BRINGING IN THE SHEAVES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Sowing in the morning, sowing seeds of kindness,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "Sowing in the noontide and the dewy eve;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "Waiting for the harvest and the time of reaping,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "We shall come rejoicing, bringing in the sheaves.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Bringing in the sheaves, bringing in the sheaves",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "We shall come rejoicing, bringing in the sheaves;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 25
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Bringing in the sheaves, bringing in the sheaves,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "We shall come rejoicing, bringing in the sheaves."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Sowing in the sunshine, sowing in the shadows,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "Fearing neither clouds nor winter's chilling breeze;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 45
+      } ]
+    }, {
+      "text" : "By and by the harvest and the labor ended,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "We shall come rejoicing, bringing in the sheaves."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Going forth with weeping, sowing for the Master,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Though the loss sustained, our spirit often grieves;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "When our weeping's over, He will bid us welcome,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "We shall come rejoicing, bringing in the sheaves."
+    } ]
+  } ]
+}

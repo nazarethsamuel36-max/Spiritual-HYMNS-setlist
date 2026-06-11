@@ -1,0 +1,168 @@
+{
+  "id" : 1096,
+  "songNumber" : 118,
+  "title" : "MAHIMA KE KHUDA PRABHU YESHU MASIH",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "महिमा के खुदा प्रभु यीशु मसीह तेरे नाम की",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "प्रशंसा हो । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    }, {
+      "text" : "तेरे नाम की प्रशंसा हो, यीशु नाम की प्रशंसा हो।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "महिमा के खुदा .....SS",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "हमें ज्ञान दो हे प्यारे प्रभु,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "रुहानी जीवन पायेगा।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "तू सपना उठाकर इस जगह में,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "तेरे पिछे पिछे जायें हम (2) SS",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरा धन्य वचन ये प्यारे प्रभु,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "हृदयमें हमारे बना रहे ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "तेरी इच्छा जगमें पूरी हो,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "विश्वास यही हमारा रहो (2) SS",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "हम ठहरे हैं प्रभु तेरे लिये,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तूं फिर दुनियाँ में आयेगा ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "अपनी महिमा के साथ हमें",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "तूं स्वर्गवास ले जायेगा । (2) SS",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  } ]
+}

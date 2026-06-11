@@ -1,0 +1,44 @@
+{
+  "id" : 3162,
+  "songNumber" : 1021,
+  "title" : "** Open The Eyes Of My Heart",
+  "language" : "english",
+  "originalKey" : "** E",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Open the eyes of my heart Lord"
+    }, {
+      "text" : "Open the eyes of my heart"
+    }, {
+      "text" : "I want to see you"
+    }, {
+      "text" : "......repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "To see you higher and lifted up"
+    }, {
+      "text" : "Shining in the light of your glory"
+    }, {
+      "text" : "Lord pour out your power and love"
+    }, {
+      "text" : "As we sing holy holy holy"
+    }, {
+      "text" : "Holy holy holy (2)"
+    }, {
+      "text" : "I want to see you"
+    } ]
+  } ]
+}

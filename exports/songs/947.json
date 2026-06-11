@@ -1,0 +1,94 @@
+{
+  "id" : 947,
+  "songNumber" : 69,
+  "title" : "HE IS LORD HE IS LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He is Lord, He is Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "He has risen from the dead and He is Lord",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "Every knee shall bow, every tongue confess",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "D7",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "That Jesus Christ is Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "He's my Lord, He's my Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "He has risen from the dead",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And He's my Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Yes, my knee shall bow and my tongue confess",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "D7",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "That Jesus Christ is Lord."
+    } ]
+  } ]
+}

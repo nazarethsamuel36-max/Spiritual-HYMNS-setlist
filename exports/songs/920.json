@@ -1,0 +1,78 @@
+{
+  "id" : 920,
+  "songNumber" : 41,
+  "title" : "LET THE BEAUTY OF JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Let the beauty of Jesus be seen in me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "All His wondrous compassion and purity",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "O Thou Spirit Divine,",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "all my nature refine,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "B7",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "Till the beauty of Jesus be seen in me.",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

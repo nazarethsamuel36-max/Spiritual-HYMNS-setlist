@@ -87,17 +87,17 @@
 <body class="font-body text-on-surface flex min-h-screen flex-col">
     <jsp:include page="/jsp/navbar.jsp"/>
 
-    <main class="relative z-10 mx-auto w-full max-w-[1920px] flex-grow px-6 py-12 md:px-24">
+    <main class="relative z-10 mx-auto w-full max-w-[1920px] flex-grow px-4 py-6 md:px-8 md:py-8">
         <!-- Header & Search -->
-        <div class="surface-mist mb-8 flex flex-col gap-6 rounded-[2rem] p-6 lg:flex-row lg:items-end lg:justify-between">
+        <div class="surface-mist relative z-20 mb-5 flex flex-col gap-4 rounded-2xl p-4 lg:flex-row lg:items-end lg:justify-between">
             <div class="flex-grow">
-                <h1 class="text-4xl font-headline font-extrabold tracking-tight text-on-surface mb-2">Song Library</h1>
-                <p class="text-on-surface-variant text-lg font-medium">Browse and transpose songs for your worship service.</p>
+                <h1 class="text-3xl font-headline font-extrabold tracking-tight text-on-surface mb-1 md:text-4xl">Song Library</h1>
+                <p class="text-on-surface-variant text-base font-medium md:text-lg">Browse and transpose songs for your worship service.</p>
             </div>
             
-            <div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-max">
+            <div class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-max">
                 <c:if test="${not empty sessionScope.username}">
-                    <a href="${pageContext.request.contextPath}/song/add" class="flex items-center gap-2 rounded-2xl bg-primary px-6 py-4 text-sm font-black uppercase tracking-widest text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-primary-container text-decoration-none" style="text-decoration: none;">
+                    <a href="${pageContext.request.contextPath}/song/add" class="flex min-h-10 items-center gap-2 rounded-xl bg-primary px-4 py-3 text-sm font-black uppercase tracking-widest text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-primary-container text-decoration-none" style="text-decoration: none;">
                         <span class="material-symbols-outlined">add</span>
                         Add New Song
                     </a>
@@ -109,25 +109,25 @@
                         <button type="submit" class="absolute left-4 top-1/2 -translate-y-1/2 text-outline/60 text-xl font-bold border-none bg-transparent cursor-pointer p-0 flex items-center justify-center z-10 hover:text-primary transition-colors focus:outline-none">
                             <span class="material-symbols-outlined">search</span>
                         </button>
-                        <input name="q" class="search-input ui-input-solid w-full rounded-xl pl-12 pr-4 py-4 text-md font-medium shadow-sm focus:border-primary focus:ring-2 focus:ring-primary" placeholder="Search by title, artist, or lyrics..." type="text" value="${searchQuery}"/>
+                        <input name="q" class="search-input ui-input-solid w-full rounded-xl pl-12 pr-4 py-3 text-md font-medium shadow-sm focus:border-primary focus:ring-2 focus:ring-primary" placeholder="Search by title, artist, or lyrics..." type="text" value="${searchQuery}"/>
                     </form>
                 </div>
             </div>
         </div>
 
         <!-- Filter & Sort Header -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-5">
             <!-- Filter Pills & Key Dropdown -->
-            <div class="surface-mist flex flex-wrap items-center gap-4 rounded-[1.75rem] p-4 text-sm font-semibold tracking-wide">
+            <div class="surface-mist flex flex-wrap items-center gap-3 rounded-2xl p-3 text-sm font-semibold tracking-wide">
                 <div class="flex flex-wrap gap-2 items-center">
                     <span class="text-outline uppercase text-xs tracking-[0.18em] mr-2">Library:</span>
-                    <a href="${pageContext.request.contextPath}/songs" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${empty filter && empty filterHashtag && empty filterLanguage ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">All Master</a>
+                    <a href="${pageContext.request.contextPath}/songs" class="px-4 py-2 rounded-full cursor-pointer transition-colors ${empty filter && empty filterHashtag && empty filterLanguage ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">All Master</a>
                     <c:if test="${not empty sessionScope.username}">
-                        <a href="${pageContext.request.contextPath}/songs?filter=personal" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${filter == 'personal' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">My Additions</a>
+                        <a href="${pageContext.request.contextPath}/songs?filter=personal" class="px-4 py-2 rounded-full cursor-pointer transition-colors ${filter == 'personal' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">My Additions</a>
                     </c:if>
-                    <a href="${pageContext.request.contextPath}/songs?language=english" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'english' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">English</a>
-                    <a href="${pageContext.request.contextPath}/songs?language=hindi" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'hindi' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">Hindi</a>
-                    <a href="${pageContext.request.contextPath}/songs?language=marathi" class="px-5 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'marathi' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">Marathi</a>
+                    <a href="${pageContext.request.contextPath}/songs?language=english" class="px-4 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'english' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">English</a>
+                    <a href="${pageContext.request.contextPath}/songs?language=hindi" class="px-4 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'hindi' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">Hindi</a>
+                    <a href="${pageContext.request.contextPath}/songs?language=marathi" class="px-4 py-2 rounded-full cursor-pointer transition-colors ${param.language == 'marathi' ? 'bg-primary text-white shadow-sm' : 'ui-pill-solid'} text-decoration-none" style="text-decoration: none;">Marathi</a>
                 </div>
 
                 <!-- Key Dropdown -->
@@ -205,10 +205,10 @@
 
         <!-- Song Grid -->
         <div id="songsWrapper" class="">
-        <div id="songsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+        <div id="songsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 md:gap-4">
             <c:forEach var="song" items="${songs}">
                 <!-- Premium Tailored Song Card -->
-                <div class="song-card group flex cursor-pointer flex-col justify-between p-6 transition-all duration-300" onclick="window.location='${pageContext.request.contextPath}/song?id=${song.id}'">
+                <div class="song-card group flex cursor-pointer flex-col justify-between p-4 transition-all duration-300" onclick="window.location='${pageContext.request.contextPath}/song?id=${song.id}'">
                     
                     <div class="flex-grow">
                         <div class="flex justify-between items-start">
@@ -219,10 +219,10 @@
                             <!-- Audio Placeholder from Teacher's Request -->
                             <span class="material-symbols-outlined text-outline/40 group-hover:text-primary/70 transition-colors flex-shrink-0 ml-2" data-icon="play_circle">play_circle</span>
                         </div>
-                        <p class="text-sm font-semibold text-primary/80 tracking-wide uppercase mt-1 mb-4">${song.artist}</p>
+                        <p class="text-xs font-semibold text-primary/80 tracking-wide uppercase mt-1 mb-3">${song.artist}</p>
                     </div>
 
-                    <div class="song-card-meta flex flex-wrap items-center gap-2 border-t border-slate-200/80 pt-4">
+                    <div class="song-card-meta flex flex-wrap items-center gap-2 border-t border-slate-200/80 pt-3">
                         <c:if test="${not empty song.originalKey}">
                             <div class="ui-pill-solid rounded-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed">
                                 Key of ${song.originalKey}
@@ -243,7 +243,7 @@
             </c:forEach>
 
             <c:if test="${empty songs}">
-                <div class="surface-mist col-span-full rounded-3xl border border-dashed border-outline-variant/40 py-24 text-center">
+                <div class="surface-mist col-span-full rounded-2xl border border-dashed border-outline-variant/40 py-10 text-center">
                     <span class="material-symbols-outlined text-6xl text-outline-variant mb-4">music_off</span>
                     <h3 class="text-2xl font-headline font-bold text-on-surface mb-2">No songs found</h3>
                     <p class="text-on-surface-variant max-w-md mx-auto">Try adjusting your filters or searching for a different title or artist.</p>

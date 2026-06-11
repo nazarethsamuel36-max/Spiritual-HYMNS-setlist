@@ -5,6 +5,8 @@
 // ===== Transpose UI =====
 let currentSemitones = 0;
 let currentColumnCount = 1;
+let currentSongViewMode = 'lyrics';
+let currentStructuredLines = [];
 
 /**
  * Transposes the song view live using AJAX.
@@ -39,6 +41,12 @@ function transposeUI(direction) {
     .catch(error => console.error('Transpose error:', error));
 }
 
+function resetTranspose() {
+    if (currentSemitones !== 0) {
+        transposeUI(-currentSemitones);
+    }
+}
+
 /**
  * Single Rendering Pipeline for Chords and Lyrics.
  * Renders structured lines into the DOM securely.
@@ -47,15 +55,30 @@ function renderSongPairs(structuredLines) {
     const songBody = document.getElementById('songBody');
     if (!songBody || !structuredLines) return;
 
-    // Clear DOM to prevent duplication on re-renders
-    songBody.innerHTML = '';
-    let html = '';
+    currentStructuredLines = structuredLines;
+    renderSongBody();
+}
 
-    structuredLines.forEach(function(line) {
+async function renderSongBody() {
+    const songBody = document.getElementById('songBody');
+    if (!songBody || !currentStructuredLines) return;
+
+    // Requirement 7: Ensure fonts are loaded before measuring
+    if (document.fonts && document.fonts.ready) {
+        await document.fonts.ready;
+    }
+
+    let html = '';
+    const showChords = currentSongViewMode === 'lyrics-chords';
+    
+    // JS decides layout: get available width
+    const maxWidth = songBody.clientWidth || 800; 
+    const font = currentFontSize + "px monospace"; // Requirement 2: Font match
+
+    currentStructuredLines.forEach(function(line) {
         const lyrics = line.lyrics || "";
         const chords = line.chords || [];
 
-        // Detect if this line is a section label like [Verse] or {Verse}
         const sectionMatch = lyrics.trim().match(/^[\[\{]([^\]\}]+)[\]\}]$/);
         const isSectionLabel = (chords.length === 0 && sectionMatch);
 
@@ -71,58 +94,80 @@ function renderSongPairs(structuredLines) {
             
             html += `<div class="section-label ${cssClass} mt-6 mb-2 block w-max">${escapeHtml(sectionMatch[1])}</div>`;
         } else if (!lyrics.replace(/\s/g, '').length) {
-            // Chord-only line
-            if (chords.length > 0) {
-                html += '<div class="chord-only-line">';
-                chords.forEach(occ => {
-                    html += `<span>${escapeHtml(occ.chord)}</span>`;
-                });
+            if (showChords && chords.length > 0) {
+                const chordLine = buildChordLine(lyrics, chords);
+                html += '<div class="song-pair">';
+                html += `<div class="chord-line">${escapeHtml(chordLine).replace(/ /g, '&nbsp;')}</div>`;
                 html += '</div>';
+            } else {
+                html += '<div class="song-stanza-gap"></div>';
             }
         } else {
-            // Group chords by position and calculate max height
-            const groups = {};
-            let maxStackHeight = 0;
-            chords.forEach(occ => {
-                if (!groups[occ.position]) groups[occ.position] = [];
-                groups[occ.position].push(occ.chord);
-                if (groups[occ.position].length > maxStackHeight) {
-                    maxStackHeight = groups[occ.position].length;
+            // Requirement 5: structuredLines → splitStructuredLine() → segments → render
+            const segments = splitStructuredLine({ lyrics, chords }, maxWidth, font);
+            
+            segments.forEach(seg => {
+                if (showChords) {
+                    const chordLine = buildChordLine(seg.text, seg.chords);
+                    html += '<div class="song-pair">';
+                    html += `<div class="chord-line">${escapeHtml(chordLine).replace(/ /g, '&nbsp;')}</div>`;
+                    html += `<div class="lyrics-line">${escapeHtml(seg.text).replace(/ /g, '&nbsp;')}</div>`;
+                    html += '</div>';
+                } else {
+                    html += `<div class="lyrics-line lyrics-only-line">${escapeHtml(seg.text).replace(/ /g, '&nbsp;')}</div>`;
                 }
             });
-
-            // Prevent collapse on empty zero-height layers
-            maxStackHeight = Math.max(1, maxStackHeight);
-
-            // Sort positions numerically
-            const sortedPositions = Object.keys(groups).sort((a, b) => parseInt(a) - parseInt(b));
-
-            const lineHeight = 1.25; // em
-            const paddingTop = maxStackHeight * lineHeight;
-
-            html += `<div class="song-pair" style="padding-top: ${paddingTop}em">`;
-            html +=   `<div class="chord-layer" style="height: ${paddingTop}em">`;
-            sortedPositions.forEach(pos => {
-                html += `<div class="chord-stack" style="left: ${pos}ch">`;
-                groups[pos].forEach(chord => {
-                    html += `<span class="chord-span">${escapeHtml(chord)}</span>`;
-                });
-                html += '</div>';
-            });
-            html +=   '</div>'; // .chord-layer
-            html +=   `<div class="lyric-line">${escapeHtml(lyrics)}</div>`;
-            html += '</div>'; // .song-pair
         }
     });
     
     songBody.innerHTML = html;
-    
-    // Re-apply current view mode (chords/lyrics/notes)
-    const activeTab = document.querySelector('.view-tabs button.active, .ctrl-btn.active[data-mode]');
-    if (activeTab) {
-        setViewMode(activeTab.getAttribute('data-mode'));
-    }
     applyColumnCount();
+}
+
+function buildChordLine(lyrics, chords) {
+    if (!chords || chords.length === 0) return '';
+
+    const line = lyrics.split('');
+    const sortedChords = chords
+        .slice()
+        .sort((a, b) => (parseInt(a.position, 10) || 0) - (parseInt(b.position, 10) || 0));
+
+    let output = '';
+    let cursor = 0;
+
+    sortedChords.forEach(occ => {
+        const position = Math.max(0, parseInt(occ.position, 10) || 0);
+        const chord = occ.chord || '';
+        const target = position;
+
+        if (target > cursor) {
+            output += ' '.repeat(target - cursor);
+            cursor = target;
+        } else if (target < cursor) {
+            // Chord is at or before current cursor, ensure at least one space if not at start
+            if (output.length > 0 && !output.endsWith(' ')) {
+                output += ' ';
+                cursor += 1;
+            }
+        }
+
+        output += chord;
+        cursor += chord.length;
+    });
+
+    console.log("OUTPUT:", output);
+    return output;
+}
+
+function setSongViewMode(mode) {
+    currentSongViewMode = mode === 'lyrics-chords' ? 'lyrics-chords' : 'lyrics';
+    localStorage.setItem('ws_view_mode', currentSongViewMode);
+
+    document.querySelectorAll('[data-view-mode]').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-view-mode') === currentSongViewMode);
+    });
+
+    renderSongBody();
 }
 
 function updateKeyDisplay(newKey, capo) {
@@ -150,9 +195,14 @@ function updateKeyDisplay(newKey, capo) {
 
 // ===== Font Size Controls =====
 let currentFontSize = 16;
+let fontScale = 1; // placeholder for future control
 
 function applyFontSize() {
     localStorage.setItem('ws_font_size', currentFontSize);
+    
+    // apply scale to root for responsive REM system
+    document.documentElement.style.fontSize = (16 * fontScale) + "px";
+    
     const songBody = document.getElementById('songBody');
     if (songBody) {
         songBody.style.fontSize = currentFontSize + 'px';
@@ -245,7 +295,7 @@ function startAutoScroll() {
     const btn = document.getElementById('scrollToggle');
     if (btn) {
         btn.classList.add('active');
-        btn.textContent = '⏸ Stop';
+        btn.textContent = 'Stop';
     }
 
     updateWakeLock(true);
@@ -259,7 +309,7 @@ function stopAutoScroll() {
     const btn = document.getElementById('scrollToggle');
     if (btn) {
         btn.classList.remove('active');
-        btn.textContent = '▶ Scroll';
+        btn.textContent = 'Scroll';
     }
     
     updateWakeLock(false);
@@ -380,36 +430,107 @@ function resetToOriginal() {
     }).then(() => window.location.reload());
 }
 
-// ===== Live Search (Bug #39 / #41) =====
+// ===== Live Search (Bug #39 / #41 / New Spec) =====
 function initLiveSearch(inputId, resultsId) {
     const input = document.getElementById(inputId);
-    if (!input) return;
+    const resultsContainer = document.getElementById(resultsId);
+    if (!input || !resultsContainer) return;
 
     let timeout = null;
+    let requestCounter = 0;
+
+    // Loading indicator element
+    const loaderId = resultsId + '-loader';
+    let loader = document.getElementById(loaderId);
+    if (!loader) {
+        loader = document.createElement('div');
+        loader.id = loaderId;
+        loader.className = 'hidden text-center p-2 mt-2';
+        loader.innerHTML = '<span class="material-symbols-outlined animate-spin text-primary">autorenew</span>';
+        input.parentNode.appendChild(loader);
+    }
+
     input.addEventListener('input', () => {
         clearTimeout(timeout);
-        const query = input.value.trim();
-        if (query.length < 2) {
-            document.getElementById(resultsId).innerHTML = '';
+        const rawQuery = input.value;
+        const query = rawQuery.trim();
+        
+        if (query.length === 0) {
+            resultsContainer.innerHTML = '';
+            loader.classList.add('hidden');
             return;
         }
+
+        // Debounce
         timeout = setTimeout(() => {
-            fetch(`${contextPath}/search?q=${encodeURIComponent(query)}`, {
-                headers: { 'Accept': 'application/json' }
+            const isNumber = /^\\d+$/.test(query);
+            const type = isNumber ? 'number' : 'text';
+            
+            // Extract language if there is a language filter dropdown
+            const langSelect = document.getElementById('languageFilter');
+            const language = langSelect ? langSelect.value : '';
+
+            const currentRequestId = ++requestCounter;
+            
+            loader.classList.remove('hidden');
+
+            fetch(`${contextPath}/api/live-search`, {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json' 
+                },
+                body: JSON.stringify({
+                    query: query,
+                    type: type,
+                    language: language,
+                    requestId: String(currentRequestId)
+                })
             })
             .then(r => r.json())
             .then(data => {
+                // Ignore older responses
+                if (data.requestId && parseInt(data.requestId, 10) !== currentRequestId) {
+                    return;
+                }
+                
+                loader.classList.add('hidden');
+                
                 const results = Array.isArray(data) ? data : (data.results || []);
                 let html = '';
-                results.forEach(song => {
-                    html += `
-                        <div class="song-card mb-2">
-                            <a href="${contextPath}/song?id=${song.id}" class="song-title">${escapeHtml(song.title)}</a>
-                            <div class="song-artist">${escapeHtml(song.artist || 'Unknown')}</div>
-                            <div class="mt-2 text-xs text-muted-worship">${song.matchedLine ? '...' + escapeHtml(song.matchedLine) + '...' : ''}</div>
-                        </div>`;
-                });
-                document.getElementById(resultsId).innerHTML = html || '<div class="p-4 text-center text-muted">No results found</div>';
+                
+                if (results.length === 0) {
+                    if (type === 'number') {
+                        html = `<div class="p-4 text-center text-muted">No song ${escapeHtml(query)} in selected language</div>`;
+                    } else {
+                        html = `<div class="p-4 text-center text-muted">No results found</div>`;
+                    }
+                } else {
+                    results.forEach(song => {
+                        html += `
+                            <div class="song-card group bg-surface-container-lowest p-4 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl border border-surface-dim hover:border-primary/20 flex flex-col justify-between text-decoration-none mb-3 cursor-pointer" onclick="window.location.href='${contextPath}/song?id=${song.id}'">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex-grow">
+                                        <span style="font-size:10px;font-weight:800;letter-spacing:0.12em;color:#9ca3af;text-transform:uppercase;display:block;margin-bottom:4px">#${escapeHtml(String(song.songNumber))}</span>
+                                        <h2 class="text-lg font-headline font-bold text-on-surface leading-tight group-hover:text-primary transition-colors">${escapeHtml(song.title)}</h2>
+                                    </div>
+                                </div>
+                                <p class="text-xs font-semibold text-primary/80 tracking-wide uppercase">${escapeHtml(song.artist || 'Unknown')}</p>
+                                ${song.matchedLine ? `<div class="mt-2 text-xs font-mono text-on-surface-variant">...${escapeHtml(song.matchedLine)}...</div>` : ''}
+                            </div>`;
+                    });
+                }
+                
+                // Replace smoothly (we could add a simple CSS animation class if we wanted)
+                resultsContainer.style.opacity = '0.8';
+                setTimeout(() => {
+                    resultsContainer.innerHTML = html;
+                    resultsContainer.style.opacity = '1';
+                }, 50);
+            })
+            .catch(error => {
+                console.error("Live search error:", error);
+                loader.classList.add('hidden');
             });
         }, 300);
     });
@@ -453,6 +574,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedColumns = parseInt(localStorage.getItem('ws_column_count') || '1', 10);
     setColumnCount(savedColumns);
+
+    const savedMode = localStorage.getItem('ws_view_mode');
+    currentSongViewMode = savedMode || 'lyrics-chords';
+    
+    document.querySelectorAll('[data-view-mode]').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-view-mode') === currentSongViewMode);
+    });
 
     window.addEventListener('resize', applyColumnCount);
 

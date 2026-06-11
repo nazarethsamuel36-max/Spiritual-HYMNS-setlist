@@ -1,0 +1,60 @@
+{
+  "id" : 688,
+  "songNumber" : 7,
+  "title" : "I KNOW IT WAS THE BLOOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I know it was the Blood, I know it",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "was the Blood,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "I know it was the Blood for me;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "One day when I was lost,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "He died upon the Cross,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "I know it was the Blood for me.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "C",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,97 @@
+{
+  "id" : 714,
+  "songNumber" : 102,
+  "title" : "I'VE GOT THE JOY DOWN IN MY HEART",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I've got the joy, joy, joy, joy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "Down in my heart........Where?"
+    }, {
+      "text" : "Down in my heart.......Where?"
+    }, {
+      "text" : "Down in my heart."
+    }, {
+      "text" : "I've got the joy, joy, joy, joy",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "Down in my heart,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Glory to His name.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "I've got the peace that passes understanding.....",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "I hear the Spirit crying 'Abba, Father'....",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "I know the Father, Son and Spirit's living.......",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "And I'm so happy",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "So very happy",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "I have the love of Jesus",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "In my heart.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "} 2"
+    } ]
+  } ]
+}

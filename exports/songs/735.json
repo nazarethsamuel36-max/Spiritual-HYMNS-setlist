@@ -1,0 +1,159 @@
+{
+  "id" : 735,
+  "songNumber" : 123,
+  "title" : "I LOVE HIM I LOVE HIM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Gone from my heart the world and all its charms;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Now, through the blood, I'm saved from all alarms;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "Down at the cross my heart is bending low;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "The precious blood of Jesus cleanses white as snow.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 37
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "I love Him, I love Him",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      } ]
+    }, {
+      "text" : "Because He first loved me",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 2
+      }, {
+        "chord" : "D",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "And purchased my salvation",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "On Calvary's tree.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Once I was lost, and way down deep in sin;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Once was a slave to passions fierce within;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "Once was afraid to trust a loving God;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "But now I'm cleansed from every stain through Jesus' blood.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 46
+      }, {
+        "chord" : "D",
+        "position" : 53
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Once I was bound, but now I am set free;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Once I was blind, but now the light I see;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "Once I was dead, but now in Christ I live;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "To tell the world around the peace that He doth give.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "G",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 48
+      } ]
+    } ]
+  } ]
+}

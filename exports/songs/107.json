@@ -1,0 +1,48 @@
+{
+  "id" : 719,
+  "songNumber" : 107,
+  "title" : "SHUT IN WITH GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Shut in with God in the secret place,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "There in the Spirit beholding His face,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Gaining new power to run in the race,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "I love to be shut in with God.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 26
+      } ]
+    } ]
+  } ]
+}

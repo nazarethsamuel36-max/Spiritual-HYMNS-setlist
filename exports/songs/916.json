@@ -1,0 +1,51 @@
+{
+  "id" : 916,
+  "songNumber" : 17,
+  "title" : "WE ARE GATHERING TOGETHER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We are gathering together unto Him (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "Unto Him shall the gathering of the people be,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "We are gathering together unto Him.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  } ]
+}

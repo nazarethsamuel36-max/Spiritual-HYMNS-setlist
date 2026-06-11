@@ -1,0 +1,168 @@
+{
+  "id" : 1172,
+  "songNumber" : 194,
+  "title" : "MERE GUNAHON KO DHO DIYA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मेरे गुनाहों को धो दिया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "अपने बदन का लहू दिया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "प्रभु यीशु मेरा सच्चा है खुदा।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "इतना प्रेम किया लोगों से, कोडों की मार सहा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "ताज रखा कांटो का सरपर, कुछ न जुबां से कहा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "ऐसा अनोखा प्यार किया, आज तलक न किसी ने किया।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तू न अकेला अब मेरे साथी, यीशु है तेरे लिए",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "ना घबराना मौत के डर से, यीशु है तेरे लिए",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "उसने मौत को जित लिया, हमको जीवन दान दिया।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "हे मेरे दाता हे मेरे स्वामी, तेरी दया है अपार",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "कौन है ऐसा जिसने किया हो, दुश्मनों से भी प्यार",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "तुझ पर सदा इमान रखूं, सच्चाई पर सदा चलूं।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 29
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    } ]
+  } ]
+}

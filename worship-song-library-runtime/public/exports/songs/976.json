@@ -1,0 +1,33 @@
+{
+  "id" : 976,
+  "songNumber" : 98,
+  "title" : "HE CARETH FOR YOU",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He careth for you, (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    }, {
+      "text" : "Through sunshine or shadow,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "He careth for you.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    } ]
+  } ]
+}

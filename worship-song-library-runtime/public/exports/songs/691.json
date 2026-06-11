@@ -1,0 +1,115 @@
+{
+  "id" : 691,
+  "songNumber" : 10,
+  "title" : "FROM GLORY TO GLORY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "From glory to glory He's changing me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Changing me, changing me,",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D7",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "His likeness and image to perfect in me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 34
+      }, {
+        "chord" : "Em",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "The love of God shown to the world.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "For He's changing, changing me,",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "From earthly things to the heavenly,",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "His likeness and image to perfect in me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 34
+      }, {
+        "chord" : "Em",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "The love of God shown to the world.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    } ]
+  } ]
+}

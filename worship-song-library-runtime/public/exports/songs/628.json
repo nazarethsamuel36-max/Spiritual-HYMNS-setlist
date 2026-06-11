@@ -1,0 +1,115 @@
+{
+  "id" : 628,
+  "songNumber" : 321,
+  "title" : "MORE LOVE MORE POWER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "More love more power;",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "More of you in my life,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "More love more power,"
+    }, {
+      "text" : "More of you in my life."
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "And I will worship you,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "With all of my heart,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "And I will worship you,"
+    }, {
+      "text" : "With all of my mind,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "And I will worship you,"
+    }, {
+      "text" : "With all of my strength,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "For you are my Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 8
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "And I will seek Your face,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "With all of my heart,"
+    }, {
+      "text" : "And I will seek Your face,"
+    }, {
+      "text" : "With all of my mind,"
+    }, {
+      "text" : "And I will seek Your face,"
+    }, {
+      "text" : "With all of my strength,"
+    }, {
+      "text" : "For you are my Lord."
+    } ]
+  } ]
+}

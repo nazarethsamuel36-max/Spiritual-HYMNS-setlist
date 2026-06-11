@@ -1,0 +1,82 @@
+{
+  "id" : 971,
+  "songNumber" : 93,
+  "title" : "THANK YOU JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Thank you Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Thank you Jesus,"
+    }, {
+      "text" : "Thank you Lord for loving me.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "(Repeat)"
+    }, {
+      "text" : ""
+    }, {
+      "text" : "You went to Calvary,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "There you died for me,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Thank you Lord for loving me."
+    }, {
+      "text" : "(Repeat)"
+    }, {
+      "text" : ""
+    }, {
+      "text" : "You rose up from the grave,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "To me new life you gave,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Thank you Lord for loving me."
+    }, {
+      "text" : "(Repeat)"
+    } ]
+  } ]
+}

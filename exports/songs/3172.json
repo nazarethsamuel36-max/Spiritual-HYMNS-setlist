@@ -1,0 +1,74 @@
+{
+  "id" : 3172,
+  "songNumber" : 1031,
+  "title" : "** Shout to the Lord, all the earth let us sing",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "My Jesus, my savior"
+    }, {
+      "text" : "Lord, there is none like You"
+    }, {
+      "text" : "All of my days, I want to praise"
+    }, {
+      "text" : "The wonders of Your mighty love"
+    }, {
+      "text" : "My comfort, my shelter"
+    }, {
+      "text" : "Tower of refuge and strength"
+    }, {
+      "text" : "Let every breath, all that I am"
+    }, {
+      "text" : "Never cease to worship You"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Shout to the Lord, all the earth let us sing"
+    }, {
+      "text" : "Power and majesty, praise to the King"
+    }, {
+      "text" : "Mountains bow down and the seas will roar"
+    }, {
+      "text" : "At the sound of Your name"
+    }, {
+      "text" : "I sing for joy at the work of Your hands"
+    }, {
+      "text" : "Forever I'll love You, forever I'll stand"
+    }, {
+      "text" : "Nothing compares to the promise I have in You"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "My Jesus, my savior"
+    }, {
+      "text" : "Lord, there is none like You"
+    }, {
+      "text" : "All of my days, I want to praise"
+    }, {
+      "text" : "The wonders of Your mighty love"
+    }, {
+      "text" : "You're my comfort, You're my shelter"
+    }, {
+      "text" : "You're my tower of refuge and strength"
+    }, {
+      "text" : "Let every breath, all that I am"
+    }, {
+      "text" : "Never cease to worship You"
+    } ]
+  } ]
+}

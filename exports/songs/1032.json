@@ -1,0 +1,142 @@
+{
+  "id" : 1032,
+  "songNumber" : 54,
+  "title" : "RABB KI HOWE SANNA HAMESHA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "रब्ब की होवे सन्ना हमेशा, रब्ब की होवे सन्ना ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 40
+      }, {
+        "chord" : "G",
+        "position" : 45
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "रब्ब की होवे मदद सराई, उसके नाम की सन्ना ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "रब्ब के घर में होवे सिताइश, उसकी हम्दओ सन्ना ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "जय के जोर से फूँको नरसिंगे, बरबत बीन बजा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "G",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "तारदार साजों पर रागनी छेड़ो, डफ और तबला बजा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 29
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "बांसुरी पर सुना सुरें सुरीली, झन झन झांज बजा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 30
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "कामों में है वह कैसा कादिर, उसकी कुदरत बता ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "सारे मिलकर ताली बजाओ, गाओ रब्ब की सन्ना ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    } ]
+  } ]
+}

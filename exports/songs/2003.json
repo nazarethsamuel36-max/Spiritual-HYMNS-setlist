@@ -1,0 +1,54 @@
+{
+  "id" : 3102,
+  "songNumber" : 2003,
+  "title" : "** Dhanyawad ke saath stuti gaunga",
+  "language" : "hindi",
+  "originalKey" : "** D",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Dhanyawad ke saath stuti gaunga"
+    }, {
+      "text" : "Hey Yeshu mere khuda"
+    }, {
+      "text" : "Upkar tere hai beshumar"
+    }, {
+      "text" : "Koti koti stuti dhanyawad"
+    }, {
+      "text" : "..Repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Yogyata se badh ke diya"
+    }, {
+      "text" : "Hai apni daya se tune mujhe...2"
+    }, {
+      "text" : "Mangne se jyada mila mujhe"
+    }, {
+      "text" : "Aabhari hoon prabhu main...2"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Tu hai saccha zinda khuda"
+    }, {
+      "text" : "Tujh par hi bharosa mera...2"
+    }, {
+      "text" : "Sewa poori karke paaon inaam"
+    }, {
+      "text" : "Prabhu aisa do vardan...2"
+    } ]
+  } ]
+}

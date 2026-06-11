@@ -1,0 +1,118 @@
+{
+  "id" : 996,
+  "songNumber" : 18,
+  "title" : "UTHATE HAIN TERA NAAM",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "उठाते हैं तेरा नाम, तेरी स्तुति करते हुए",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "Em",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "घुटनों पर हम आकर, करते हैं तुझसे प्रार्थना (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "Em",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मिलकर हम गायें, प्रभु की स्तुति हो",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "Em",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "मिलकर हम गायें, हाल्लेलुयाह (4)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "Em",
+        "position" : 24
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "आयेगा मेरा यीशु, हमें लेने एक दिन",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "Em",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "जायेंगे हम उसके संग,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "जहाँपर होगा अनंतजीवन",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "मिलकर हम गायें, हाल्लेलुयाह (4)"
+    } ]
+  } ]
+}

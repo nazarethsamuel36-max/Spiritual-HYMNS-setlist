@@ -1,0 +1,55 @@
+{
+  "id" : 718,
+  "songNumber" : 106,
+  "title" : "O COME LET US ADORE HIM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "O come let us adore Him, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Christ the Lord,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "For He alone is worthy, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Christ the Lord,"
+    }, {
+      "text" : "He's altogether lovely, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "Christ the Lord,"
+    }, {
+      "text" : "We'll give Him all the glory, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Christ the Lord.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    } ]
+  } ]
+}

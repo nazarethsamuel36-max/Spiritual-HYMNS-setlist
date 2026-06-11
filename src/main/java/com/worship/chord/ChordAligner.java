@@ -100,7 +100,9 @@ public class ChordAligner {
         List<ExtSection> sections = new ArrayList<>();
         ExtSection current = new ExtSection("unknown", "");
 
-        for (String rawLine : rawText.split("\\r?\\n")) {
+        String[] lines = rawText.split("\\r?\\n");
+        for (int i = 0; i < lines.length; i++) {
+            String rawLine = lines[i];
             String trimmed = rawLine.trim();
             if (trimmed.isEmpty()) continue;
 
@@ -111,7 +113,25 @@ public class ChordAligner {
                 continue;
             }
 
-            // Parse as chord+lyric line
+            // Two-line detection:
+            // If current line is chord-only AND next line exists AND is NOT chord-only AND NOT a header
+            if (ChordParser.isChordOnlyLine(rawLine) && i + 1 < lines.length) {
+                String nextLine = lines[i + 1];
+                if (!nextLine.trim().isEmpty() && 
+                    !SECTION_HEADER.matcher(nextLine.trim()).matches() && 
+                    !ChordParser.isChordOnlyLine(nextLine)) {
+                    
+                    // Combine them
+                    List<ChordOccurrence> chords = ChordParser.parseChordOnlyLine(rawLine);
+                    StructuredLine sl = new StructuredLine(nextLine); // Keep spaces for alignment
+                    sl.setChords(chords);
+                    current.lines.add(sl);
+                    i++; // Skip the next line
+                    continue;
+                }
+            }
+
+            // Parse as chord+lyric line (bracketed format)
             StructuredLine sl = ChordParser.parseStructuredLine(rawLine);
             if (sl.getLyrics() != null && !sl.getLyrics().trim().isEmpty()) {
                 current.lines.add(sl);
@@ -487,5 +507,123 @@ public class ChordAligner {
         }
         sb.append(text.substring(lastPos));
         return sb.toString();
+    }
+
+    /**
+     * Reconstruct the full inline-chorded song text from the relational schema.
+     * This is the SINGLE SOURCE OF TRUTH for building editable/displayable chord text.
+     *
+     * Output format (matches what the edit textarea expects):
+     *   {Verse 1}
+     *   [G]Amazing [C]grace how [D]sweet the sound
+     *   That [G]saved a [C]wretch like [G]me
+     *
+     * @param sections The song's sections with their lines loaded
+     * @param chordMap Map of lineId → List<ChordOccurrence> from LineChordDAO.getChordsForSong()
+     * @return Full inline-chorded text, or plain lyrics if no chords exist
+     */
+    public static String reconstructInlineChordText(List<Section> sections,
+                                                     Map<Integer, List<ChordOccurrence>> chordMap) {
+        if (sections == null || sections.isEmpty()) return "";
+
+        ChordAligner aligner = new ChordAligner();
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < sections.size(); i++) {
+            Section section = sections.get(i);
+
+            // Section header
+            sb.append("{").append(section.getLabel()).append("}").append("\n");
+
+            // Lines with chords
+            for (SongLine line : section.getLines()) {
+                String text = line.getText();
+                if (text == null) text = "";
+
+                List<ChordOccurrence> lineChords = chordMap != null
+                        ? chordMap.get(line.getId()) : null;
+
+                if (lineChords != null && !lineChords.isEmpty()) {
+                    sb.append(aligner.formatChordedLine(text, lineChords));
+                } else {
+                    sb.append(text);
+                }
+                sb.append("\n");
+            }
+
+            // Blank line between sections (not after the last one)
+            if (i < sections.size() - 1) {
+                sb.append("\n");
+            }
+        }
+
+        return sb.toString().trim();
+    }
+
+    /**
+     * Reconstruct plain lyrics text from the relational schema (no chords).
+     * Preserves section structure and line ordering.
+     *
+     * @param sections The song's sections with their lines loaded
+     * @return Plain lyrics text with section headers
+     */
+    public static String reconstructPlainLyrics(List<Section> sections) {
+        if (sections == null || sections.isEmpty()) return "";
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < sections.size(); i++) {
+            Section section = sections.get(i);
+
+            for (SongLine line : section.getLines()) {
+                String text = line.getText();
+                if (text == null) text = "";
+                sb.append(text).append("\n");
+            }
+
+            if (i < sections.size() - 1) {
+                sb.append("\n");
+            }
+        }
+
+        return sb.toString().trim();
+    }
+
+    /**
+     * Build the list of StructuredLine objects from relational data for the song view page.
+     * This is the SINGLE SOURCE OF TRUTH for building the view-page structured representation.
+     *
+     * @param sections The song's sections with their lines loaded
+     * @param chordMap Map of lineId → List<ChordOccurrence> from LineChordDAO.getChordsForSong()
+     * @return List of StructuredLine objects ready for JSON serialization to the JSP
+     */
+    public static List<StructuredLine> buildStructuredLines(List<Section> sections,
+                                                             Map<Integer, List<ChordOccurrence>> chordMap) {
+        if (sections == null || sections.isEmpty()) return new ArrayList<>();
+
+        List<StructuredLine> structuredLines = new ArrayList<>();
+
+        for (Section section : sections) {
+            // Section header marker for app.js detection
+            structuredLines.add(new StructuredLine("{" + section.getLabel() + "}"));
+
+            for (SongLine line : section.getLines()) {
+                String text = line.getText();
+                if (text == null) text = "";
+
+                StructuredLine sl = ChordParser.parseStructuredLine(text);
+
+                // Attach mapped chords from the relational pipeline
+                List<ChordOccurrence> lineChords = chordMap != null
+                        ? chordMap.get(line.getId()) : null;
+                if (lineChords != null && !lineChords.isEmpty()) {
+                    sl.setChords(lineChords);
+                }
+
+                structuredLines.add(sl);
+            }
+        }
+
+        return structuredLines;
     }
 }

@@ -1,0 +1,155 @@
+{
+  "id" : 1090,
+  "songNumber" : 112,
+  "title" : "MERE DIL MEIN YESHU AAYA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मेरे दिलमें यीशु आया (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "मेरा जीवन बदल गया ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "मेरे दिलमें यीशु आया ।",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "दूर किये है मेरे गुनाह",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "देता है मुझको पाप क्षमा",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "जबसे मैंने उसको पाया (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "मेरा जीवन बदल गया (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मेरे दिलमें यीशु आया ।"
+    }, {
+      "text" : "यीशुने मुझसे प्रेम किया",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मेरे लिये अपना प्राण दिया",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "कैसा अनोखा ये प्यार किया (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "मेरा जीवन बदल दिया (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "मेरे दिलमें यीशु आया ।"
+    }, {
+      "text" : "दुख संकटमे रहता है वो साथ",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "देता वो मुझको जीवन दान",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "जीवन को सहारा दिया (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "मेरा जीवन बदल गया (2)"
+    } ]
+  } ]
+}

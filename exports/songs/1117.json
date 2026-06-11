@@ -1,0 +1,104 @@
+{
+  "id" : 1117,
+  "songNumber" : 139,
+  "title" : "GAUNGA MAIN TERE HI GEET",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "गाऊंगा मैं तेरे ही गीत,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हे यीशु तू है महान।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरा ही नाम मेरे मसिह,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "लेता हूं सुबह और शाम।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जब मैं गुनाहों में पडा, तेरे प्रेम से मैं दूर था",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरे सन्मुख आने के लायक, मैं कदापि योग्य न था",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पर तू ही मेरा सहारा बना, अपने पास मुझे बुलाया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "इस लिए मसिह होठों से अपनी, स्तुति तेरी करूंगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरे अनुग्रह तेरी दया को, कैसे भूलूं मैं मसिह",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मेरे श्राप को तूने हटाकर, खुद श्रापित बना मसिह",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तूने क्रूस पर लहू बहाकर मुझे, पापों को शुद्ध किया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मेरे आंसुओं को पोंछकर, सारे दुःख दूर किया।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    } ]
+  } ]
+}

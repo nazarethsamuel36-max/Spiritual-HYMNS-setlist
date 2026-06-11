@@ -1,0 +1,82 @@
+{
+  "id" : 963,
+  "songNumber" : 85,
+  "title" : "EVERY PROMISE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Every promise in the book is mine",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "Every chapter, every verse, every line",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Every promise of His Love Divine,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Every promise in the Book is mine.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Every promise for the Bride is mine,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "Every Message, every quote, every line",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Every promise of His Love Divine,"
+    }, {
+      "text" : "Every promise for the Bride is mine.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    } ]
+  } ]
+}

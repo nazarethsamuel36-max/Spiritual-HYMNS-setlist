@@ -1,0 +1,35 @@
+{
+  "id" : 579,
+  "songNumber" : 33,
+  "title" : "COME AND PRAISE HIM",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Come and praise Him,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 18
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "royal priesthood,"
+    }, {
+      "text" : "Come and worship, holy nation,"
+    }, {
+      "text" : "Worship Jesus, our Redeemer,"
+    }, {
+      "text" : "He is Precious, King of Glory."
+    } ]
+  } ]
+}

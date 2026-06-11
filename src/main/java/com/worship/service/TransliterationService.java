@@ -38,9 +38,10 @@ public class TransliterationService {
         List<StructuredLine> transliteratedLines = new ArrayList<>();
         for (StructuredLine originalLine : originalLines) {
             String transliteratedText = transliterateToEnglish(originalLine.getLyrics());
-            StructuredLine newLine = new StructuredLine(transliteratedText);
-            // Crucial: preserve any parsed chords, they don't need transliteration
-            if (originalLine.getChords() != null) {
+            // Parse chord-containing text using ChordParser to ensure chords are extracted
+            StructuredLine newLine = com.worship.util.ChordParser.parseStructuredLine(transliteratedText);
+            // If no chords extracted from transliterated text, preserve original chords
+            if ((newLine.getChords() == null || newLine.getChords().isEmpty()) && originalLine.getChords() != null) {
                 newLine.setChords(new ArrayList<>(originalLine.getChords()));
             }
             transliteratedLines.add(newLine);

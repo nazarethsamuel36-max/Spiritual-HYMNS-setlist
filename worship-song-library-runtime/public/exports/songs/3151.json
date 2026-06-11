@@ -1,0 +1,66 @@
+{
+  "id" : 3151,
+  "songNumber" : 1009,
+  "title" : "** Here I Am To Worship",
+  "language" : "english",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Light of the World"
+    }, {
+      "text" : "You stepped down into darkness"
+    }, {
+      "text" : "Open my eyes, Let me see"
+    }, {
+      "text" : "Beauty that made"
+    }, {
+      "text" : "This heart adore You"
+    }, {
+      "text" : "Hope of a life"
+    }, {
+      "text" : "Spent with You"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Here I am to worship"
+    }, {
+      "text" : "Here I am to bow down"
+    }, {
+      "text" : "Here I am to say that You're my God"
+    }, {
+      "text" : "You're altogether lovely"
+    }, {
+      "text" : "Altogether worthy"
+    }, {
+      "text" : "Altogether wonderful to me"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "King of all days"
+    }, {
+      "text" : "Oh, so highly exalted"
+    }, {
+      "text" : "Glorious in Heaven above"
+    }, {
+      "text" : "Humbly You came"
+    }, {
+      "text" : "To the earth You created"
+    }, {
+      "text" : "All for love's sake became poor"
+    } ]
+  } ]
+}
