@@ -102,7 +102,7 @@ export class SyncService {
    */
   static async downloadAllSongs(onProgress: (current: number, total: number) => void) {
     const allSongs = await db.songIndex.toArray();
-    const total = allSongs.size || allSongs.length;
+    const total = allSongs.length;
     let downloaded = 0;
     const batchSize = 10;
 

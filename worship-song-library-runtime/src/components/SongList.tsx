@@ -6,6 +6,7 @@ import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
+import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi'];
@@ -13,6 +14,7 @@ const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi'];
 export function SongList() {
   const [search, setSearch] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
+  const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
 
@@ -26,11 +28,25 @@ export function SongList() {
     }
 
     if (!search.trim()) {
+      // Apply sorting
+      if (sortBy === 'title') {
+        allSongs.sort((a, b) => a.title.localeCompare(b.title));
+      } else {
+        // Number sort (default, already ordered by songNumber from DB)
+        allSongs.sort((a, b) => a.songNumber - b.songNumber);
+      }
       return allSongs;
     }
 
-    return SearchEngine.search(allSongs, search);
-  }, [search, selectedLanguage]);
+    // Apply search then sort
+    const searched = SearchEngine.search(allSongs, search);
+    if (sortBy === 'title') {
+      searched.sort((a, b) => a.title.localeCompare(b.title));
+    } else {
+      searched.sort((a, b) => a.songNumber - b.songNumber);
+    }
+    return searched;
+  }, [search, selectedLanguage, sortBy]);
 
   return (
     <div className="w-full">
@@ -39,12 +55,16 @@ export function SongList() {
         <SearchBar
           value={search}
           onChange={setSearch}
-          placeholder="Search songs, numbers, lyrics..."
+          placeholder="Search Songs..."
         />
         <LanguageTabs
           languages={LANGUAGES}
           selected={selectedLanguage}
           onSelect={setSelectedLanguage}
+        />
+        <SortSelector
+          value={sortBy}
+          onChange={setSortBy}
         />
       </div>
 

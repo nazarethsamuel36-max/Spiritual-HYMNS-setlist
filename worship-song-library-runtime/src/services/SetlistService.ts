@@ -1,4 +1,4 @@
-import { db, type Setlist, type SetlistItem } from '../db/Database';
+import { db, type SetlistItem } from '../db/Database';
 
 export class SetlistService {
   static async createSetlist(title: string): Promise<string> {
