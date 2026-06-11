@@ -140,19 +140,19 @@ function App() {
           {/* Sidebar Content — Independent Scroll */}
           <div className="sidebar-content hide-scrollbar">
             {(sidebar.panel === 'library') && (
-              <div className="animate-in fade-in duration-300">
+              <div className="animate-in fade-in duration-300 px-1 pt-2">
                 <SongList />
               </div>
             )}
 
             {(sidebar.panel === 'setlist-list') && (
-              <div className="animate-in fade-in slide-in-from-right-4 duration-300">
+              <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-2">
                 <SetlistManager />
               </div>
             )}
 
             {(sidebar.panel === 'setlist-detail') && (
-              <div className="animate-in fade-in slide-in-from-right-4 duration-300">
+              <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-2">
                 <SetlistView setlistId={sidebar.setlistId} />
               </div>
             )}
