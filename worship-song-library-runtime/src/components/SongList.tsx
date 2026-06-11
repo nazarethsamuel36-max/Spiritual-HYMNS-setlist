@@ -51,7 +51,7 @@ export function SongList() {
   return (
     <div className="w-full">
       {/* Search + Filters */}
-      <div className="bg-slate-50 pb-2 pt-2 sticky top-0 z-40 transition-all border-b border-slate-200/60 shadow-sm relative mb-0 px-1">
+      <div className="bg-slate-50 pb-3 pt-2 sticky top-0 z-40 transition-all border-b border-slate-200/60 shadow-sm relative mb-0 px-1">
         <SearchBar
           value={search}
           onChange={setSearch}
