@@ -16,11 +16,12 @@ export class SearchEngine {
 
   static async indexSongs(songs: SongIndex[]) {
     this.miniSearch.removeAll();
-    // Deduplicate by ID to prevent MiniSearch duplicate key errors
-    const seen = new Set<number>();
+    // Deduplicate by ID to prevent MiniSearch duplicate key errors (handle string/number mismatches)
+    const seen = new Set<string>();
     const unique = songs.filter(s => {
-      if (seen.has(s.id)) return false;
-      seen.add(s.id);
+      const idStr = String(s.id);
+      if (seen.has(idStr)) return false;
+      seen.add(idStr);
       return true;
     });
     await this.miniSearch.addAllAsync(unique);
@@ -44,7 +45,14 @@ export class SearchEngine {
 
     // 2. Fallback to MiniSearch
     if (!this.isIndexed && songs.length > 0) {
-      this.miniSearch.addAll(songs);
+      const seen = new Set<string>();
+      const unique = songs.filter(s => {
+        const idStr = String(s.id);
+        if (seen.has(idStr)) return false;
+        seen.add(idStr);
+        return true;
+      });
+      this.miniSearch.addAll(unique);
       this.isIndexed = true;
     }
 
