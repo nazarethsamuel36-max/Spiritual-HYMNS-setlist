@@ -57,6 +57,12 @@ export default defineConfig({
         type: 'module',
         navigateFallback: 'index.html',
       }
-    })
+    }),
+    {
+      name: 'remove-crossorigin',
+      transformIndexHtml(html) {
+        return html.replace(/\s+crossorigin(="")?/g, '')
+      }
+    }
   ],
 })
