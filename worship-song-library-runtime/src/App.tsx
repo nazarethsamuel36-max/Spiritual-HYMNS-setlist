@@ -62,6 +62,13 @@ function App() {
 
       await SyncService.sync();
       setSyncing(false);
+
+      // Kick off background download of all song details to ensure 100% offline access
+      SyncService.downloadAllSongs((current, total) => {
+        console.log(`Background caching progress: ${current}/${total}`);
+      }).catch(err => {
+        console.error('Background song cache prefetch failed:', err);
+      });
     };
     init();
   }, []);
