@@ -36,4 +36,5 @@ Thumbs.db
 .next/
 .nuxt/
 public/
+!worship-song-library-runtime/public/
 ```
