@@ -9,7 +9,7 @@ public class ExportRunner {
             System.out.println("=== Starting Hardened Export Process (Workspace Copy) ===");
             
             // Path to the runtime exports directory
-            String outputDir = "d:/worship-song-library - Copy/worship-song-library-runtime/public/exports";
+            String outputDir = "d:/spiritual setlist/Spiritual-HYMNS-setlist/worship-song-library-runtime/public/exports";
             
             ExportService exportService = new ExportService();
             exportService.exportFull(outputDir);

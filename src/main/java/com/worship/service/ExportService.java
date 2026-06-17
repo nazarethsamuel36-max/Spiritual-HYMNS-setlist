@@ -170,7 +170,7 @@ public class ExportService {
                     for (int i = 0; i < structuredLines.size(); i++) {
                         com.worship.model.StructuredLine sl = structuredLines.get(i);
                         SongLine line = new SongLine();
-                        line.setText(sl.getText());
+                        line.setText(sl.getLyrics());
                         // Use negative temporary IDs to avoid collision with DB IDs in chordMap
                         int tempLineId = -(i + 1);
                         line.setId(tempLineId);

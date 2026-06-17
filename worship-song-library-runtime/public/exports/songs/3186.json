@@ -1,0 +1,29 @@
+{
+  "id" : 3186,
+  "songNumber" : 381,
+  "title" : "SORVESPORA DEVA",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Sorvespora sorg ani Sounvsar"
+    }, {
+      "text" : "Tuvem rochlai tujeach hatan"
+    }, {
+      "text" : "Kainch kotin nhoi Tuka (2)"
+    }, {
+      "text" : "Dhonia tum Sorvpodvedar"
+    }, {
+      "text" : "Tunch amcho dhir ani adar"
+    }, {
+      "text" : "Kainch kotin nhoi (2)"
+    }, {
+      "text" : "Kainch kotin nhoi Tuka"
+    } ]
+  } ]
+}

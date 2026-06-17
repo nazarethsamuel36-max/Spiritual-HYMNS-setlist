@@ -1,0 +1,27 @@
+{
+  "id" : 3190,
+  "songNumber" : 385,
+  "title" : "VOI DEV BORO (YES GOD IS GOOD)",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Voi Dev boro (3)"
+    }, {
+      "text" : "Maka Bhou boro"
+    }, {
+      "text" : "Sorvesporak Jai Jai"
+    }, {
+      "text" : "Sasnak, Sasnak Jai Jai"
+    }, {
+      "text" : "Soglea kallzan mhonnuia Jai Jai"
+    }, {
+      "text" : "Sorvesporak sodamkal Jai, Jai, Jai"
+    } ]
+  } ]
+}

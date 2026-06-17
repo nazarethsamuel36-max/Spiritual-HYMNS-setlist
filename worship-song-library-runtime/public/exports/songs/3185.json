@@ -1,0 +1,47 @@
+{
+  "id" : 3185,
+  "songNumber" : 380,
+  "title" : "ARGAM TUKA SOMIA",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Argam Tuka, Somia,"
+    }, {
+      "text" : "Argam Tuka, Dhonia,"
+    }, {
+      "text" : "Argam Tuka, argam Tuka"
+    }, {
+      "text" : "Atam anim sasnnak."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Tuvem mhaka rochloi Tuzo mog korcheak,"
+    }, {
+      "text" : "Tuvem mhaka posloi Tuzi chakri korcheak,"
+    }, {
+      "text" : "Tuvem mhaka vinchloi sasnak sukak pavcheak,"
+    }, {
+      "text" : "Tori mhaka favo nhoi, Somia mhaka favo nhoi."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Nimannea tea jevnnar ho sacrifice goddloi,"
+    }, {
+      "text" : "Mhojem taronn korcheak Jezuk hettoun diloi,"
+    }, {
+      "text" : "Sasnachea mornantlo mhaka tuvem rakhloi,"
+    }, {
+      "text" : "Tori maka favo nhoi, Somia maka favo nhoi."
+    } ]
+  } ]
+}

@@ -1,0 +1,41 @@
+{
+  "id" : 3183,
+  "songNumber" : 378,
+  "title" : "JEZU TUJIM UTRAM",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Jezu, tujim utram kallzacho sontos,"
+    }, {
+      "text" : "Jezu, tujim utram dolleancho uzvadd,"
+    }, {
+      "text" : "Jezu, tujim utram jinnecho visvas!"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Jezu, tujim utram tanel'leank udok,"
+    }, {
+      "text" : "Jezu, tujim utram bhukel'leank jevonn,"
+    }, {
+      "text" : "Jezu, tujim utram meloleank jivit!"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Jezu, tujim utram roddteleank buzvonn,"
+    }, {
+      "text" : "Jezu, tujim utram opradeank mafi,"
+    }, {
+      "text" : "Jezu, tujim utram gulamank suttka!"
+    } ]
+  } ]
+}

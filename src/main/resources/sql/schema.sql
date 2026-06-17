@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS songs (
     artist           VARCHAR(255),
     composer         VARCHAR(255),
     copyright        VARCHAR(255),
-    language         ENUM('english','hindi','marathi','bengali','other'),
+    language         ENUM('english','hindi','marathi','bengali','konkani','other'),
     lyrics_original  TEXT,
     lyrics_roman     TEXT,
     chords           TEXT,
