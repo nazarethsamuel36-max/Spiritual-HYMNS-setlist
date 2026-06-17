@@ -117,18 +117,22 @@ function App() {
 
           {/* Sidebar Header */}
           <header className="sidebar-header">
+            {/* Desktop: Show title + tabs. Mobile: Show only status dot */}
             <div className="flex justify-between items-center w-full">
-              <h1 className="text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">Worship Library</h1>
+              <h1 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">Worship Library</h1>
+              {/* Mobile: spacer so dot aligns right */}
+              <span className="md:hidden" />
               <button
                 onClick={() => setShowSettings(true)}
                 className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all"
+                aria-label="Settings"
               >
-                <div className={`w-2 h-2 rounded-full ${syncing ? 'bg-amber-400 animate-pulse' : 'bg-emerald-400'}`} />
+                <div className={`w-2.5 h-2.5 rounded-full ${syncing ? 'bg-amber-400 animate-pulse' : 'bg-emerald-400'}`} />
               </button>
             </div>
 
-            {/* Nav Tabs */}
-            <nav className="flex items-center space-x-1 mt-2 bg-slate-200/50 p-1 rounded-lg">
+            {/* Nav Tabs — desktop only */}
+            <nav className="hidden md:flex items-center space-x-1 mt-2 bg-slate-200/50 p-1 rounded-lg">
               <button
                 onClick={() => setSidebarPanel('library')}
                 className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSongsTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}
@@ -196,6 +200,34 @@ function App() {
       {/* ═══ CONTEXT RAIL PANE ═══ */}
       {!isMobile && showContextRail && hasActiveSong && (
         <ContextRail />
+      )}
+
+      {/* ═══ MOBILE BOTTOM NAV ═══ */}
+      {isMobile && mobileActivePane === 'sidebar' && (
+        <nav className="mobile-bottom-nav">
+          <button
+            id="mobile-nav-songs"
+            onClick={() => setSidebarPanel('library')}
+            className={`mobile-bottom-nav-btn ${isSongsTab ? 'mobile-bottom-nav-btn--active' : ''}`}
+          >
+            {/* Music note icon */}
+            <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={isSongsTab ? 2.5 : 1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+            <span>Songs</span>
+          </button>
+          <button
+            id="mobile-nav-setlists"
+            onClick={() => setSidebarPanel('setlist-list')}
+            className={`mobile-bottom-nav-btn ${isSetlistTab ? 'mobile-bottom-nav-btn--active' : ''}`}
+          >
+            {/* List icon */}
+            <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={isSetlistTab ? 2.5 : 1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h10" />
+            </svg>
+            <span>Setlists</span>
+          </button>
+        </nav>
       )}
 
       {/* Global Overlays */}

@@ -9,7 +9,7 @@ import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 
-const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi'];
+const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
 export function SongList() {
   const [search, setSearch] = useState('');
@@ -52,15 +52,15 @@ export function SongList() {
     <div className="w-full">
       {/* Search + Filters */}
       <div className="bg-slate-50 pb-3 pt-2 sticky top-0 z-40 transition-all border-b border-slate-200/60 shadow-sm relative mb-0 px-1">
-        <SearchBar
-          value={search}
-          onChange={setSearch}
-          placeholder="Search Songs..."
-        />
         <LanguageTabs
           languages={LANGUAGES}
           selected={selectedLanguage}
           onSelect={setSelectedLanguage}
+        />
+        <SearchBar
+          value={search}
+          onChange={setSearch}
+          placeholder="Search Songs..."
         />
         <SortSelector
           value={sortBy}
