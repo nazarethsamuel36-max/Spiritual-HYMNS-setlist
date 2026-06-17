@@ -50,22 +50,31 @@ export function SongList() {
 
   return (
     <div className="w-full">
-      {/* Search + Filters */}
-      <div className="bg-slate-50 pb-3 pt-2 sticky top-0 z-40 transition-all border-b border-slate-200/60 shadow-sm relative mb-0 px-1">
-        <LanguageTabs
-          languages={LANGUAGES}
-          selected={selectedLanguage}
-          onSelect={setSelectedLanguage}
-        />
-        <SearchBar
-          value={search}
-          onChange={setSearch}
-          placeholder="Search Songs..."
-        />
-        <SortSelector
-          value={sortBy}
-          onChange={setSortBy}
-        />
+      {/* Search + Filters — sticky header */}
+      <div className="bg-slate-50/98 backdrop-blur-sm pb-2.5 pt-2 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
+        {/* Language pills */}
+        <div className="px-3">
+          <LanguageTabs
+            languages={LANGUAGES}
+            selected={selectedLanguage}
+            onSelect={setSelectedLanguage}
+          />
+        </div>
+        {/* Search bar — prominent */}
+        <div className="px-3 mt-2.5">
+          <SearchBar
+            value={search}
+            onChange={setSearch}
+            placeholder="Search songs, numbers, lyrics..."
+          />
+        </div>
+        {/* Sort control */}
+        <div className="px-4 mt-2">
+          <SortSelector
+            value={sortBy}
+            onChange={setSortBy}
+          />
+        </div>
       </div>
 
       {/* Song List */}

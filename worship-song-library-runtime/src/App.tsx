@@ -120,8 +120,8 @@ function App() {
             {/* Desktop: Show title + tabs. Mobile: Show only status dot */}
             <div className="flex justify-between items-center w-full">
               <h1 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">Worship Library</h1>
-              {/* Mobile: spacer so dot aligns right */}
-              <span className="md:hidden" />
+              {/* Mobile: Spiritual Hymns compact title */}
+              <span className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none">Spiritual Hymns</span>
               <button
                 onClick={() => setShowSettings(true)}
                 className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all"
