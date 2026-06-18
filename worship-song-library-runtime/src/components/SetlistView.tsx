@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../db/Database';
+import { db, getSongIndexById } from '../db/Database';
 import { SetlistService } from '../services/SetlistService';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
@@ -100,7 +100,12 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
 export function SetlistView({ setlistId }: SetlistViewProps) {
   const [search, setSearch] = useState('');
   const closeSetlist = useWorkflowStore((s) => s.closeSetlist);
-  const setlist = useLiveQuery(() => db.setlists.get(setlistId), [setlistId]);
+  
+  const setlist = useLiveQuery(async () => {
+    const local = await db.setlists.get(setlistId);
+    if (local) return local;
+    return await db.sharedSetlists.get(setlistId);
+  }, [setlistId]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
@@ -109,12 +114,12 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
 
   const songDetails = useLiveQuery(async () => {
     if (!setlist) return [];
-    const ids = setlist.songs.map(s => s.songId);
-    const items = await db.songIndex.where('id').anyOf(ids).toArray();
-    return setlist.songs.map(s => {
-      const detail = items.find(d => d.id === s.songId);
-      return { ...s, detail };
-    });
+    const items = [];
+    for (const s of setlist.songs) {
+      const detail = await getSongIndexById(s.songId);
+      items.push({ ...s, detail });
+    }
+    return items;
   }, [setlist]);
 
   const searchResults = useLiveQuery(async () => {
@@ -153,11 +158,31 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
         </div>
 
         <button
-          onClick={() => {
-            const ids = setlist.songs.map(s => s.songId).join(',');
-            const url = `${window.location.origin}${window.location.pathname}?setlist=${ids}`;
-            navigator.clipboard.writeText(url);
-            alert('Workflow link copied!');
+          onClick={async () => {
+            try {
+              const sharedSongsList = [];
+              for (const s of setlist.songs) {
+                const sharedSong = await db.sharedSongs.get(s.songId);
+                if (sharedSong) {
+                  sharedSongsList.push(sharedSong);
+                }
+              }
+              const payload = {
+                id: setlist.id,
+                title: setlist.title,
+                createdAt: setlist.createdAt,
+                songs: setlist.songs,
+                sharedSongsList
+              };
+              const json = JSON.stringify(payload);
+              const b64 = btoa(unescape(encodeURIComponent(json)));
+              const url = `${window.location.origin}${window.location.pathname}?import_setlist=${b64}`;
+              navigator.clipboard.writeText(url);
+              alert('Shareable workflow link copied to clipboard!');
+            } catch (e) {
+              console.error(e);
+              alert('Failed to share workflow.');
+            }
           }}
           className="flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"
         >

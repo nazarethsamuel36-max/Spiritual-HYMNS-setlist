@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, type SongDetail } from '../db/Database';
+import { db, type SongDetail, getSongById } from '../db/Database';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { ReaderContent } from './reader/ReaderContent';
@@ -120,14 +120,9 @@ export function SongView() {
       setError(null);
 
       try {
-        let data = await db.songs.get(songId);
-        if (!data) {
-          const res = await fetch(`/exports/songs/${songId}.json`);
-          if (!res.ok) throw new Error('Song data not found');
-          data = await res.json();
-          if (data) await db.songs.put(data);
-        }
-        setSong(data || null);
+        const data = await getSongById(songId);
+        if (!data) throw new Error('Song data not found');
+        setSong(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load song');
       } finally {

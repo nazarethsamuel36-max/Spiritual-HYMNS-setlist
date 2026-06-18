@@ -2,12 +2,13 @@ import { create } from 'zustand';
 
 export type SidebarView =
   | { panel: 'library' }
+  | { panel: 'shared' }
   | { panel: 'setlist-list' }
   | { panel: 'setlist-detail'; setlistId: string };
 
 export type ReaderView =
   | { type: 'empty' }
-  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist'; activeArrangementId: string | null };
+  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist' | 'shared'; activeArrangementId: string | null };
 
 export type ReaderMode = 'chords' | 'lyrics' | 'edit';
 
@@ -19,12 +20,12 @@ interface WorkflowStore {
   showSettings: boolean;
   showContextRail: boolean;
 
-  openSong: (id: number, source: 'library' | 'setlist', transpose?: number) => void;
+  openSong: (id: number, source: 'library' | 'setlist' | 'shared', transpose?: number) => void;
   closeReader: () => void;
   openSetlist: (id: string) => void;
   closeSetlist: () => void;
   adjustTranspose: (delta: number) => void;
-  setSidebarPanel: (panel: 'library' | 'setlist-list') => void;
+  setSidebarPanel: (panel: 'library' | 'setlist-list' | 'shared') => void;
   setReaderMode: (mode: ReaderMode) => void;
   setShowSettings: (show: boolean) => void;
   setShowContextRail: (show: boolean) => void;
@@ -63,7 +64,7 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   }),
 
   setSidebarPanel: (panel) => set({
-    sidebar: panel === 'library' ? { panel: 'library' } : { panel: 'setlist-list' },
+    sidebar: panel === 'library' ? { panel: 'library' } : panel === 'shared' ? { panel: 'shared' } : { panel: 'setlist-list' },
   }),
 
   setReaderMode: (mode) => set({ readerMode: mode }),

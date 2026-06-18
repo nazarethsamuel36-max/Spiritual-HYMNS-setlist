@@ -4,12 +4,14 @@ import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
+import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
 import { ContextRail } from './components/ContextRail';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { useState } from 'react';
+import { db } from './db/Database';
 
 function App() {
   const [syncing, setSyncing] = useState(true);
@@ -40,6 +42,56 @@ function App() {
   useEffect(() => {
     const init = async () => {
       const params = new URLSearchParams(window.location.search);
+      
+      // Handle import_song
+      const importSongData = params.get('import_song');
+      if (importSongData) {
+        try {
+          const decoded = decodeURIComponent(escape(atob(importSongData)));
+          const songObj = JSON.parse(decoded);
+          const targetId = songObj.id || (Math.floor(Date.now() / 1000) + Math.floor(Math.random() * 100000));
+          await db.sharedSongs.put({ ...songObj, id: targetId });
+          alert(`Imported shared song: "${songObj.title}"`);
+          setSidebarPanel('shared');
+          window.history.replaceState({}, '', window.location.pathname);
+        } catch (e) {
+          console.error('Failed to import song:', e);
+          alert('Failed to import song. Link might be corrupted.');
+        }
+      }
+
+      // Handle import_setlist
+      const importSetlistData = params.get('import_setlist');
+      if (importSetlistData) {
+        try {
+          const decoded = decodeURIComponent(escape(atob(importSetlistData)));
+          const setlistObj = JSON.parse(decoded);
+          
+          if (setlistObj.sharedSongsList && Array.isArray(setlistObj.sharedSongsList)) {
+            for (const s of setlistObj.sharedSongsList) {
+              await db.sharedSongs.put(s);
+            }
+          }
+
+          const targetSetlistId = setlistObj.id || crypto.randomUUID();
+          await db.sharedSetlists.put({
+            id: targetSetlistId,
+            title: setlistObj.title,
+            createdAt: setlistObj.createdAt || Date.now(),
+            updatedAt: Date.now(),
+            songs: setlistObj.songs || []
+          });
+
+          alert(`Imported shared workflow: "${setlistObj.title}"`);
+          setSidebarPanel('shared');
+          openSetlist(targetSetlistId);
+          window.history.replaceState({}, '', window.location.pathname);
+        } catch (e) {
+          console.error('Failed to import setlist:', e);
+          alert('Failed to import setlist. Link might be corrupted.');
+        }
+      }
+
       const sharedSetlist = params.get('setlist');
       if (sharedSetlist) {
         const ids = sharedSetlist.split(',').map(Number).filter(n => !isNaN(n));
@@ -140,6 +192,12 @@ function App() {
                 Songs
               </button>
               <button
+                onClick={() => setSidebarPanel('shared')}
+                className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}
+              >
+                Shared
+              </button>
+              <button
                 onClick={() => setSidebarPanel('setlist-list')}
                 className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSetlistTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}
               >
@@ -153,6 +211,12 @@ function App() {
             {(sidebar.panel === 'library') && (
               <div className="animate-in fade-in duration-300 px-1 pt-3">
                 <SongList />
+              </div>
+            )}
+
+            {(sidebar.panel === 'shared') && (
+              <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3">
+                <SharedManager />
               </div>
             )}
 
@@ -215,6 +279,17 @@ function App() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
             </svg>
             <span>Songs</span>
+          </button>
+          <button
+            id="mobile-nav-shared"
+            onClick={() => setSidebarPanel('shared')}
+            className={`mobile-bottom-nav-btn ${sidebar.panel === 'shared' ? 'mobile-bottom-nav-btn--active' : ''}`}
+          >
+            {/* Shared users/network icon */}
+            <svg className="w-5 h-5 mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={sidebar.panel === 'shared' ? 2.5 : 1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+            <span>Shared</span>
           </button>
           <button
             id="mobile-nav-setlists"
