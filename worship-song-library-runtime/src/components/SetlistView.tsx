@@ -68,7 +68,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         className="flex-1 text-left min-w-0 flex items-center justify-between"
       >
         <div className="flex-1 min-w-0 pr-4">
-          <div className="font-semibold text-slate-800 text-sm md:text-base leading-snug overflow-visible truncate group-hover:text-slate-900 transition-colors font-poppins py-0.5">
+          <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors font-poppins py-1">
             {formatSongTitle(item.detail?.title || 'Unknown Song')}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
@@ -182,7 +182,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               alert('Shareable setlist link copied to clipboard!');
             } catch (e) {
               console.error(e);
-              alert('Failed to share workflow.');
+              alert('Failed to share setlist.');
             }
           }}
           className="flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"

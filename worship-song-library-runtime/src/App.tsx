@@ -82,7 +82,7 @@ function App() {
             songs: setlistObj.songs || []
           });
 
-          alert(`Imported shared workflow: "${setlistObj.title}"`);
+          alert(`Imported shared setlist: "${setlistObj.title}"`);
           setSidebarPanel('shared');
           openSetlist(targetSetlistId);
           window.history.replaceState({}, '', window.location.pathname);
@@ -250,7 +250,7 @@ function App() {
                 </svg>
                 <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">Spiritual Hymns</h2>
                 <p className="text-sm text-slate-500 mb-10 leading-relaxed">
-                  Select a song from the library or choose a workflow sequence to begin reading.
+                  Select a song from the library or choose a setlist sequence to begin reading.
                 </p>
                 <div className="text-xs font-medium text-slate-400 italic leading-loose">
                   "Sing to Him a new song;<br/>play skillfully, and shout for joy."<br/>— Psalm 33:3

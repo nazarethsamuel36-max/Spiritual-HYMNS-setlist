@@ -30,14 +30,30 @@ export function normalizeImportedText(value: string | undefined): string {
   if (!value) return '';
 
   return value
-    .replace(/'/g, "'")
-    .replace(/'/g, "'")
-    .replace(/"/g, '"')
-    .replace(/"/g, '"')
+    // Double UTF-8 encoding artifacts (mojibake)
+    .replace(/aÌ‚â‚¬â„¢/g, "'")
+    .replace(/aÌ‚â‚¬Å“/g, '"')
+    .replace(/aÌ‚â‚¬Â/g, '"')
+    // Single UTF-8 encoding artifacts
+    .replace(/â€™/g, "'")
+    .replace(/â€˜/g, "'")
+    .replace(/â€œ/g, '"')
+    .replace(/â€/g, '"')
+    .replace(/â€/g, "'")
+    .replace(/â€/g, "'")
+    .replace(/â€/g, '"')
+    .replace(/â€/g, '"')
+    .replace(/â€”/g, '-')
+    .replace(/â€“/g, '-')
     .replace(/â€"/g, '-')
     .replace(/â€–/g, '-')
-    .replace(/.../g, '...')
-    .replace(/ /g, ' ');
+    .replace(/â€¦/g, '...')
+    // Smart quotes normalization
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201C\u201D]/g, '"')
+    .replace(/[\u2014\u2013]/g, '-')
+    .replace(/\u00a0/g, ' ')
+    .trim();
 }
 
 function capitalizeWord(word: string): string {

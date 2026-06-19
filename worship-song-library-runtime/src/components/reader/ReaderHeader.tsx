@@ -83,7 +83,7 @@ export function ReaderHeader({
 
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 max-w-4xl mx-auto w-full">
         <div className="flex-1 min-w-0">
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight leading-snug overflow-visible truncate font-poppins py-0.5">{formatSongTitle(song.title)}</h1>
+          <h1 className="text-2xl font-bold text-slate-900 tracking-tight leading-normal truncate font-poppins py-1.5">{formatSongTitle(song.title)}</h1>
           <div className="flex items-center space-x-2 mt-1">
             <span className="text-slate-500 text-xs font-semibold uppercase tracking-wider truncate">
               {song.artist || 'Unknown Artist'}
