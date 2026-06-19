@@ -8,6 +8,7 @@ import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
+import { formatSongTitle } from '../utils/SongFormatter';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
@@ -30,7 +31,7 @@ export function SongList() {
     if (!search.trim()) {
       // Apply sorting
       if (sortBy === 'title') {
-        allSongs.sort((a, b) => a.title.localeCompare(b.title));
+        allSongs.sort((a, b) => formatSongTitle(a.title).localeCompare(formatSongTitle(b.title)));
       } else {
         // Number sort (default, already ordered by songNumber from DB)
         allSongs.sort((a, b) => a.songNumber - b.songNumber);
@@ -41,7 +42,7 @@ export function SongList() {
     // Apply search then sort
     const searched = SearchEngine.search(allSongs, search);
     if (sortBy === 'title') {
-      searched.sort((a, b) => a.title.localeCompare(b.title));
+      searched.sort((a, b) => formatSongTitle(a.title).localeCompare(formatSongTitle(b.title)));
     } else {
       searched.sort((a, b) => a.songNumber - b.songNumber);
     }

@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../../db/Database';
 import { SetlistService } from '../../services/SetlistService';
 import { ChordTransposer } from '../../utils/ChordTransposer';
+import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
 
@@ -82,7 +83,7 @@ export function ReaderHeader({
 
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 max-w-4xl mx-auto w-full">
         <div className="flex-1 min-w-0">
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight truncate">{song.title}</h1>
+          <h1 className="text-2xl font-bold text-slate-900 tracking-tight truncate font-poppins">{formatSongTitle(song.title)}</h1>
           <div className="flex items-center space-x-2 mt-1">
             <span className="text-slate-500 text-xs font-semibold uppercase tracking-wider truncate">
               {song.artist || 'Unknown Artist'}
@@ -130,7 +131,7 @@ export function ReaderHeader({
             <div className="flex flex-col justify-center items-center px-3 border-x border-slate-100 bg-slate-50/50 min-w-[3.5rem] h-full">
               <span className="text-[8px] uppercase font-bold text-slate-400 leading-none mb-0.5">Key</span>
               <span className="text-xs font-black text-slate-800 leading-none">
-                {ChordTransposer.transposeChord(song.originalKey || 'C', transpose)}
+                {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
               </span>
             </div>
             <button

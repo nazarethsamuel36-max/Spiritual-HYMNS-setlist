@@ -1,6 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
 import { useWorkflowStore } from '../store/workflowStore';
+import { formatSongTitle } from '../utils/SongFormatter';
 
 export function SharedManager() {
   const openSong = useWorkflowStore((s) => s.openSong);
@@ -41,7 +42,7 @@ export function SharedManager() {
                 className="group flex items-center justify-between p-3.5 hover:bg-slate-50 border-b border-slate-100 last:border-b-0 cursor-pointer transition-colors"
               >
                 <div className="min-w-0 pr-4">
-                  <div className="font-semibold text-slate-800 text-sm truncate">{song.title}</div>
+                  <div className="font-semibold text-slate-800 text-sm truncate font-poppins">{formatSongTitle(song.title)}</div>
                   <div className="flex items-center space-x-1.5 mt-0.5 text-xs text-slate-500 font-medium">
                     <span>{song.artist || 'Unknown Artist'}</span>
                     <span>•</span>
@@ -79,7 +80,7 @@ export function SharedManager() {
                 className="group flex items-center justify-between p-3.5 hover:bg-slate-50 border-b border-slate-100 last:border-b-0 cursor-pointer transition-colors"
               >
                 <div className="min-w-0 pr-4">
-                  <div className="font-semibold text-slate-800 text-sm truncate">{list.title}</div>
+                  <div className="font-semibold text-slate-800 text-sm truncate font-poppins">{list.title}</div>
                   <div className="text-[11px] text-slate-400 font-medium mt-0.5">
                     {list.songs.length} songs • Updated {new Date(list.updatedAt).toLocaleDateString()}
                   </div>

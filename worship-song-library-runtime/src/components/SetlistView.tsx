@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSongIndexById } from '../db/Database';
 import { SetlistService } from '../services/SetlistService';
 import { SearchEngine } from '../utils/SearchEngine';
+import { formatSongTitle } from '../utils/SongFormatter';
 import { useWorkflowStore } from '../store/workflowStore';
 import {
   DndContext,
@@ -67,8 +68,8 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         className="flex-1 text-left min-w-0 flex items-center justify-between"
       >
         <div className="flex-1 min-w-0 pr-4">
-          <div className="font-semibold text-slate-800 text-sm md:text-base truncate group-hover:text-slate-900 transition-colors">
-            {item.detail?.title || 'Unknown Song'}
+          <div className="font-semibold text-slate-800 text-sm md:text-base truncate group-hover:text-slate-900 transition-colors font-poppins">
+            {formatSongTitle(item.detail?.title || 'Unknown Song')}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
             <span className="text-xs font-medium text-slate-500">{item.detail?.language}</span>

@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icons.svg'],
       manifest: {
-        name: 'Worship Song Library',
-        short_name: 'WorshipApp',
+        name: 'Spiritual Hymns',
+        short_name: 'Spiritual Hymns',
         description: 'Offline-First Worship Song Library PWA',
         theme_color: '#ffffff',
         background_color: '#ffffff',

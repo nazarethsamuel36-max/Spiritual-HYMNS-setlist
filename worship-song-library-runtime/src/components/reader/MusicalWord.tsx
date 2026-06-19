@@ -54,7 +54,7 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: 
           ))}
 
           {/* Lyric Layer */}
-          <span className={`text-[1.25rem] text-[var(--color-text)] leading-[1.6] ${mode === 'lyrics' ? 'font-medium' : ''}`}>
+          <span className={`text-[1.25rem] text-[var(--color-text)] leading-[1.6] font-lora ${mode === 'lyrics' ? 'font-medium' : 'font-normal'}`}>
             {segment.text}
           </span>
         </span>

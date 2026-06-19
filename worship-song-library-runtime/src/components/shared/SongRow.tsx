@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongIndex } from '../../db/Database';
 import { SetlistService } from '../../services/SetlistService';
+import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 
 interface SongRowProps {
   song: SongIndex;
@@ -110,12 +111,12 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongR
         </div>
 
         <div className="flex-1 min-w-0 pr-10">
-          <h3 className="font-semibold text-slate-800 text-base leading-tight truncate group-hover:text-slate-900 transition-colors">
-            {song.title}
+          <h3 className="font-semibold text-slate-800 text-base leading-tight truncate group-hover:text-slate-900 transition-colors font-poppins">
+            {formatSongTitle(song.title)}
           </h3>
           <div className="flex items-center space-x-1.5 mt-0.5">
             <span className="text-xs font-medium text-slate-500 truncate">
-              Key {song.originalKey || 'C'}
+              Key {formatKey(song.originalKey)}
             </span>
             <span className="text-slate-300 text-[10px]">•</span>
             <span className="text-xs font-medium text-slate-500">

@@ -171,7 +171,7 @@ function App() {
           <header className="sidebar-header">
             {/* Desktop: Show title + tabs. Mobile: Show only status dot */}
             <div className="flex justify-between items-center w-full">
-              <h1 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">Worship Library</h1>
+              <h1 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">Spiritual Hymns</h1>
               {/* Mobile: Spiritual Hymns compact title */}
               <span className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none">Spiritual Hymns</span>
               <button
@@ -248,7 +248,7 @@ function App() {
                 <svg className="w-16 h-16 mx-auto mb-6 text-slate-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                 </svg>
-                <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">Worship Workspace</h2>
+                <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">Spiritual Hymns</h2>
                 <p className="text-sm text-slate-500 mb-10 leading-relaxed">
                   Select a song from the library or choose a workflow sequence to begin reading.
                 </p>

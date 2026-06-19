@@ -35,7 +35,7 @@ interface WorkflowStore {
 export const useWorkflowStore = create<WorkflowStore>((set) => ({
   sidebar: { panel: 'library' },
   reader: { type: 'empty' },
-  readerMode: 'chords',
+  readerMode: 'lyrics',
   mobileActivePane: 'sidebar',
   showSettings: false,
   showContextRail: false,
