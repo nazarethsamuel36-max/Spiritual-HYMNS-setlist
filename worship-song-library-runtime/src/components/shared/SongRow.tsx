@@ -111,10 +111,10 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongR
         </div>
 
         <div className="flex-1 min-w-0 pr-10">
-          <h3 className="font-semibold text-slate-800 text-base leading-tight truncate group-hover:text-slate-900 transition-colors font-poppins">
+          <h3 className="font-semibold text-slate-800 text-base leading-snug overflow-visible truncate group-hover:text-slate-900 transition-colors font-poppins py-0.5">
             {formatSongTitle(song.title)}
           </h3>
-          <div className="flex items-center space-x-1.5 mt-0.5">
+          <div className="flex items-center space-x-1.5 mt-0.5 min-h-5">
             <span className="text-xs font-medium text-slate-500 truncate">
               Key {formatKey(song.originalKey)}
             </span>

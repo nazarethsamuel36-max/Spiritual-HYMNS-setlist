@@ -9,6 +9,7 @@ import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { formatSongTitle } from '../utils/SongFormatter';
+import { normalizeSongIndex } from '../db/Database';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
@@ -22,7 +23,7 @@ export function SongList() {
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
   const songs = useLiveQuery(async () => {
-    let allSongs = await db.songIndex.orderBy('songNumber').toArray();
+    let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
 
     if (selectedLanguage !== 'All') {
       allSongs = allSongs.filter(s => s.language?.toLowerCase() === selectedLanguage.toLowerCase());
@@ -31,7 +32,7 @@ export function SongList() {
     if (!search.trim()) {
       // Apply sorting
       if (sortBy === 'title') {
-        allSongs.sort((a, b) => formatSongTitle(a.title).localeCompare(formatSongTitle(b.title)));
+        allSongs.sort(compareSongsByTitle);
       } else {
         // Number sort (default, already ordered by songNumber from DB)
         allSongs.sort((a, b) => a.songNumber - b.songNumber);
@@ -42,7 +43,7 @@ export function SongList() {
     // Apply search then sort
     const searched = SearchEngine.search(allSongs, search);
     if (sortBy === 'title') {
-      searched.sort((a, b) => formatSongTitle(a.title).localeCompare(formatSongTitle(b.title)));
+      searched.sort(compareSongsByTitle);
     } else {
       searched.sort((a, b) => a.songNumber - b.songNumber);
     }
@@ -99,4 +100,13 @@ export function SongList() {
       </div>
     </div>
   );
+}
+
+function compareSongsByTitle(a: SongIndex, b: SongIndex) {
+  const titleCompare = formatSongTitle(a.title).localeCompare(formatSongTitle(b.title), 'en', {
+    sensitivity: 'base',
+    numeric: true
+  });
+  if (titleCompare !== 0) return titleCompare;
+  return a.songNumber - b.songNumber;
 }

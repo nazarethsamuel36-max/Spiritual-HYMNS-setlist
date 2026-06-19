@@ -2,7 +2,7 @@ export function formatSongTitle(title: string): string {
   if (!title) return '';
   
   // 1. Strip leading and trailing asterisks, hyphens, underscores and extra whitespace
-  let clean = title
+  let clean = normalizeImportedText(title)
     .replace(/^[\s\*\-\_]+/, '')
     .replace(/[\s\*\-\_]+$/, '')
     .trim();
@@ -26,6 +26,20 @@ export function formatSongTitle(title: string): string {
   return formattedWords.join(' ');
 }
 
+export function normalizeImportedText(value: string | undefined): string {
+  if (!value) return '';
+
+  return value
+    .replace(/'/g, "'")
+    .replace(/'/g, "'")
+    .replace(/"/g, '"')
+    .replace(/"/g, '"')
+    .replace(/â€"/g, '-')
+    .replace(/â€–/g, '-')
+    .replace(/.../g, '...')
+    .replace(/ /g, ' ');
+}
+
 function capitalizeWord(word: string): string {
   if (!word) return '';
   // Check for internal capitals (e.g. "I've", "PWA")
@@ -39,5 +53,5 @@ function capitalizeWord(word: string): string {
 
 export function formatKey(key: string | undefined): string {
   if (!key) return 'C';
-  return key.replace(/[\s\*\-\_]+/g, '').trim();
+  return normalizeImportedText(key).replace(/[\s\*\-\_]+/g, '').trim();
 }

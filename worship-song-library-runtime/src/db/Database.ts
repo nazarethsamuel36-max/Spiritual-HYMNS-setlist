@@ -1,4 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie';
+import { normalizeImportedText } from '../utils/SongFormatter';
 
 export type SongIndex = {
   id: number;
@@ -117,24 +118,57 @@ export const db = new WorshipDatabase();
 
 export async function getSongById(id: number): Promise<SongDetail | null> {
   let song = await db.songs.get(id);
-  if (song) return song;
+  if (song) return normalizeSongDetail(song);
 
   song = await db.sharedSongs.get(id);
-  if (song) return song;
+  if (song) return normalizeSongDetail(song);
 
   try {
     const res = await fetch(`/exports/songs/${id}.json`);
     if (res.ok) {
       const data = await res.json();
       if (data) {
-        await db.songs.put(data);
-        return data;
+        const normalized = normalizeSongDetail(data);
+        await db.songs.put(normalized);
+        return normalized;
       }
     }
   } catch (e) {
     console.error('Failed to fetch song from exports:', e);
   }
   return null;
+}
+
+export function normalizeSongIndex(song: SongIndex): SongIndex {
+  return {
+    ...song,
+    title: normalizeImportedText(song.title),
+    artist: normalizeImportedText(song.artist),
+    originalKey: normalizeImportedText(song.originalKey),
+    searchTokens: normalizeImportedText(song.searchTokens)
+  };
+}
+
+export function normalizeSongDetail(song: SongDetail): SongDetail {
+  return {
+    ...song,
+    title: normalizeImportedText(song.title),
+    artist: normalizeImportedText(song.artist),
+    composer: normalizeImportedText(song.composer),
+    originalKey: normalizeImportedText(song.originalKey),
+    sections: song.sections?.map(section => ({
+      ...section,
+      label: normalizeImportedText(section.label),
+      lines: section.lines?.map(line => ({
+        ...line,
+        text: normalizeImportedText(line.text),
+        chords: line.chords?.map(chord => ({
+          ...chord,
+          chord: normalizeImportedText(chord.chord)
+        }))
+      })) || []
+    })) || []
+  };
 }
 
 export async function getSongIndexById(id: number): Promise<SongIndex | null> {
@@ -146,10 +180,10 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
     return {
       id: shared.id,
       songNumber: shared.songNumber,
-      title: shared.title,
-      artist: shared.artist,
+      title: normalizeImportedText(shared.title),
+      artist: normalizeImportedText(shared.artist),
       language: shared.language,
-      originalKey: shared.originalKey,
+      originalKey: normalizeImportedText(shared.originalKey),
       hashtags: shared.hashtags,
       searchTokens: ''
     };

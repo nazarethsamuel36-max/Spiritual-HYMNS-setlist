@@ -68,7 +68,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         className="flex-1 text-left min-w-0 flex items-center justify-between"
       >
         <div className="flex-1 min-w-0 pr-4">
-          <div className="font-semibold text-slate-800 text-sm md:text-base truncate group-hover:text-slate-900 transition-colors font-poppins">
+          <div className="font-semibold text-slate-800 text-sm md:text-base leading-snug overflow-visible truncate group-hover:text-slate-900 transition-colors font-poppins py-0.5">
             {formatSongTitle(item.detail?.title || 'Unknown Song')}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
@@ -179,7 +179,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               const b64 = btoa(unescape(encodeURIComponent(json)));
               const url = `${window.location.origin}${window.location.pathname}?import_setlist=${b64}`;
               navigator.clipboard.writeText(url);
-              alert('Shareable workflow link copied to clipboard!');
+              alert('Shareable setlist link copied to clipboard!');
             } catch (e) {
               console.error(e);
               alert('Failed to share workflow.');
@@ -188,15 +188,15 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
           className="flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
-          <span>Share Flow</span>
+          <span>Share Setlist</span>
         </button>
       </div>
 
-      {/* Add to Workflow */}
+      {/* Add to Setlist */}
       <div className="relative mb-8">
         <input
           type="text"
-          placeholder="Add song to this workflow..."
+          placeholder="Add song to this setlist..."
           className="w-full pl-11 pr-4 py-3.5 rounded-xl border-2 border-slate-100 bg-slate-50/50 focus:outline-none focus:border-[var(--color-brand)] focus:bg-white transition-all text-sm font-bold text-[var(--color-text)]"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -228,13 +228,13 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
       {/* Sortable Sequence */}
       <div className="space-y-1">
         <div className="text-[10px] font-black text-slate-300 uppercase tracking-[0.2em] mb-4 px-1 flex justify-between">
-          <span>Workflow Sequence</span>
+          <span>Setlist Sequence</span>
           <span>{songDetails?.length} Songs</span>
         </div>
 
         {songDetails?.length === 0 ? (
           <div className="p-16 text-center text-slate-300 bg-slate-50 rounded-2xl border border-slate-100 italic text-sm">
-            Empty workflow. Use the search above to add songs.
+            Empty setlist. Use the search above to add songs.
           </div>
         ) : (
           <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>

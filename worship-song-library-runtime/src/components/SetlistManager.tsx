@@ -26,24 +26,24 @@ export function SetlistManager() {
     <div className="w-full">
       <div className="flex flex-col mb-4 bg-slate-50 border-b border-slate-200/60 pb-3 pt-1 sticky top-0 z-40">
         <div className="flex justify-between items-center px-2">
-          <h2 className="text-lg font-bold text-slate-800 tracking-tight">Workflows</h2>
+          <h2 className="text-lg font-bold text-slate-800 tracking-tight">Setlists</h2>
           <button
             onClick={() => setIsCreating(true)}
             className="text-[var(--color-brand)] bg-[var(--color-brand-soft)] hover:bg-slate-200 px-3 py-1.5 rounded-full font-bold text-[11px] transition-all"
           >
-            + New Flow
+            + New Setlist
           </button>
         </div>
       </div>
 
       {isCreating && (
         <form onSubmit={handleCreate} className="mb-4 bg-white border border-slate-200 p-4 rounded-xl shadow-sm animate-in zoom-in-95 duration-200 mx-2">
-          <label className="block text-xs font-bold text-slate-500 mb-2">Sequence Name</label>
-          <div className="flex space-x-2">
+          <label className="block text-xs font-bold text-slate-500 mb-2">Setlist Name</label>
+          <div className="flex flex-col sm:flex-row gap-2">
             <input
               autoFocus
               type="text"
-              className="flex-1 px-3 py-2 rounded-lg border border-slate-200 focus:border-slate-400 outline-none transition-all font-medium text-sm text-slate-800"
+              className="flex-1 min-w-0 px-3 py-2 rounded-lg border border-slate-200 focus:border-slate-400 outline-none transition-all font-medium text-sm text-slate-800"
               placeholder="E.g. Sunday Worship..."
               value={newTitle}
               onChange={e => setNewTitle(e.target.value)}
@@ -51,7 +51,7 @@ export function SetlistManager() {
             <button
               type="button"
               onClick={() => setIsCreating(false)}
-              className="px-3 py-2 text-slate-500 font-bold text-xs"
+              className="px-3 py-2 text-slate-500 font-bold text-xs rounded-lg"
             >
               Cancel
             </button>
@@ -70,7 +70,7 @@ export function SetlistManager() {
           <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
         ) : setlists.length === 0 ? (
           <div className="p-10 text-center text-slate-500 font-medium text-sm">
-            No workflows established.
+            No setlists created.
           </div>
         ) : (
           setlists.map(list => (

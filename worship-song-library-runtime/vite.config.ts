@@ -12,8 +12,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icons.svg'],
       manifest: {
+        id: '/',
         name: 'Spiritual Hymns',
         short_name: 'Spiritual Hymns',
+        categories: ['music', 'books', 'productivity'],
         description: 'Offline-First Worship Song Library PWA',
         theme_color: '#ffffff',
         background_color: '#ffffff',

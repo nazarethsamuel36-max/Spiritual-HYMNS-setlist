@@ -1,4 +1,4 @@
-import { db } from '../db/Database';
+import { db, normalizeSongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 
 const EXPORTS_BASE_URL = '/exports';
@@ -27,7 +27,7 @@ export class SyncService {
         console.log('Local index is up to date.');
         // Still need to warm up the search index in memory
         const songs = await db.songIndex.toArray();
-        await SearchEngine.indexSongs(songs);
+        await SearchEngine.indexSongs(songs.map(normalizeSongIndex));
       }
     } catch (error) {
       console.error('Sync check failed:', error);
@@ -62,13 +62,15 @@ export class SyncService {
         throw new Error('CORRUPTION DETECTED: Index items missing required fields');
       }
 
-      console.log(`Validation PASSED. Swapping ${indexData.songs.length} songs into local database...`);
+      const normalizedSongs = indexData.songs.map(normalizeSongIndex);
+
+      console.log(`Validation PASSED. Swapping ${normalizedSongs.length} songs into local database...`);
 
       // --- SWAP LAYER ---
       await db.transaction('rw', [db.songIndex, db.syncMeta], async () => {
         // Clear and refill metadata index
         await db.songIndex.clear();
-        await db.songIndex.bulkAdd(indexData.songs);
+        await db.songIndex.bulkAdd(normalizedSongs);
 
         // Update sync metadata
         await db.syncMeta.put({
@@ -81,7 +83,7 @@ export class SyncService {
       });
 
       // Update in-memory engine
-      await SearchEngine.indexSongs(indexData.songs);
+      await SearchEngine.indexSongs(normalizedSongs);
       console.log('Sync complete. System is stable.');
 
     } catch (err) {
@@ -91,7 +93,7 @@ export class SyncService {
       const existing = await db.songIndex.toArray();
       if (existing.length > 0) {
         console.warn('Falling back to last known good local dataset.');
-        await SearchEngine.indexSongs(existing);
+        await SearchEngine.indexSongs(existing.map(normalizeSongIndex));
       }
       throw err;
     }
