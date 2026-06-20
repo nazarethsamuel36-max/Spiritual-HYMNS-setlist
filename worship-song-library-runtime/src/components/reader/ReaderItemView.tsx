@@ -1,5 +1,11 @@
-import { useState } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '../../db/Database';
+import { useWorkflowStore } from '../../store/workflowStore';
 import { SetlistService } from '../../services/SetlistService';
+
+const SWIPE_THRESHOLD = 60;
+const SWIPE_MAX_VERTICAL = 80;
 
 interface ReaderItemViewProps {
   item: {
@@ -17,6 +23,96 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
   const [label, setLabel] = useState(item.label);
   const [content, setContent] = useState(item.content || '');
 
+  // Reset editing/label/content when item changes (e.g. on navigation)
+  useEffect(() => {
+    setIsEditing(false);
+    setLabel(item.label);
+    setContent(item.content || '');
+  }, [item.itemId, item.label, item.content]);
+
+  const openSong = useWorkflowStore((s) => s.openSong);
+  const openMarker = useWorkflowStore((s) => s.openMarker);
+  const openNote = useWorkflowStore((s) => s.openNote);
+
+  // Load the setlist items when in setlist context for swipe navigation
+  const setlistItems = useLiveQuery(async () => {
+    const local = await db.setlists.get(item.setlistId);
+    const setlist = local || await db.sharedSetlists.get(item.setlistId);
+    if (!setlist) return null;
+    return [...setlist.songs].sort((a, b) => a.order - b.order);
+  }, [item.setlistId]);
+
+  const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
+    if (!setlistItems) return;
+    const currentIdx = setlistItems.findIndex(i => i.id === item.itemId);
+    if (currentIdx === -1) return;
+
+    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
+    if (targetIdx < 0 || targetIdx >= setlistItems.length) return;
+
+    const target = setlistItems[targetIdx];
+    if (!target.type || target.type === 'song') {
+      openSong(target.songId!, 'setlist', target.transpose ?? 0, item.setlistId, target.id);
+    } else if (target.type === 'marker') {
+      openMarker(target.label || 'Event Marker', item.setlistId, target.id);
+    } else if (target.type === 'note') {
+      openNote(target.label || 'Note', target.content || '', item.setlistId, target.id);
+    }
+  }, [setlistItems, item.setlistId, item.itemId, openSong, openMarker, openNote]);
+
+  // Pointer gesture tracking
+  const pointerStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
+  const isHorizontalSwipeRef = useRef<boolean | null>(null);
+  const [swipeOffset, setSwipeOffset] = useState(0);
+
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (isEditing) return;
+    e.currentTarget.setPointerCapture(e.pointerId);
+    pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now() };
+    isHorizontalSwipeRef.current = null;
+    setSwipeOffset(0);
+  };
+
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!pointerStartRef.current || isEditing) return;
+    const dx = e.clientX - pointerStartRef.current.x;
+    const dy = e.clientY - pointerStartRef.current.y;
+
+    if (isHorizontalSwipeRef.current === null) {
+      if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
+        isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
+      }
+    }
+
+    if (isHorizontalSwipeRef.current) {
+      e.stopPropagation();
+      setSwipeOffset(dx);
+    }
+  };
+
+  const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch (err) {}
+
+    if (!pointerStartRef.current || isEditing) return;
+
+    const start = pointerStartRef.current;
+    pointerStartRef.current = null;
+
+    const deltaX = e.clientX - start.x;
+    const deltaY = Math.abs(e.clientY - start.y);
+    const absDx = Math.abs(deltaX);
+
+    setSwipeOffset(0);
+    isHorizontalSwipeRef.current = null;
+
+    if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
+      const direction = deltaX < 0 ? 'next' : 'prev';
+      navigateSetlist(direction);
+    }
+  };
+
   const handleSave = async () => {
     if (item.type === 'marker') {
       await SetlistService.updateItem(item.setlistId, item.itemId, { label });
@@ -25,6 +121,27 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
     }
     setIsEditing(false);
   };
+
+  // Page indicator calculation
+  const currentIdx = setlistItems
+    ? setlistItems.findIndex(i => i.id === item.itemId)
+    : -1;
+  const totalItems = setlistItems?.length || 0;
+
+  const maxDots = 7;
+  let startDot = 0;
+  let endDot = totalItems;
+  if (totalItems > maxDots) {
+    const half = Math.floor(maxDots / 2);
+    startDot = currentIdx - half;
+    if (startDot < 0) startDot = 0;
+    endDot = startDot + maxDots;
+    if (endDot > totalItems) {
+      endDot = totalItems;
+      startDot = endDot - maxDots;
+    }
+  }
+  const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
   return (
     <div className="flex flex-col h-full bg-[#FAFAFA] text-slate-800">
@@ -71,8 +188,35 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
         </div>
       </div>
 
+      {/* Position Page Indicator */}
+      {totalItems > 1 && (
+        <div className="flex items-center justify-center space-x-1.5 py-2 bg-white border-b border-slate-100 select-none">
+          {visibleDots.map((idx) => (
+            <div
+              key={idx}
+              className={`rounded-full transition-all duration-200 ${
+                idx === currentIdx
+                  ? 'w-4 h-1.5 bg-[var(--color-brand)]'
+                  : 'w-1.5 h-1.5 bg-slate-200'
+              }`}
+            />
+          ))}
+        </div>
+      )}
+
       {/* Content Area */}
-      <div className="flex-1 flex flex-col items-center justify-center p-6 max-w-2xl mx-auto w-full">
+      <div
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+        style={{
+          transform: swipeOffset !== 0 ? `translateX(${swipeOffset * 0.3}px)` : undefined,
+          transition: swipeOffset === 0 ? 'transform 0.2s ease-out' : 'none',
+          touchAction: 'pan-y',
+        }}
+        className="flex-1 flex flex-col items-center justify-center p-6 max-w-2xl mx-auto w-full select-none"
+      >
         {item.type === 'marker' ? (
           /* Marker View */
           <div className="w-full text-center space-y-6">
