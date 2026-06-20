@@ -21,6 +21,8 @@ interface WorkflowStore {
   mobileActivePane: 'sidebar' | 'reader';
   showSettings: boolean;
   showContextRail: boolean;
+  libraryLanguage: string;
+  setLibraryLanguage: (lang: string) => void;
 
   openSong: (id: number, source: 'library' | 'setlist' | 'shared', transpose?: number, setlistId?: string, itemId?: string) => void;
   openMarker: (label: string, setlistId: string, itemId: string) => void;
@@ -43,6 +45,8 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   mobileActivePane: 'sidebar',
   showSettings: false,
   showContextRail: false,
+  libraryLanguage: 'All',
+  setLibraryLanguage: (lang) => set({ libraryLanguage: lang }),
 
   openSong: (id, source, transpose = 0, setlistId, itemId) => set({
     reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },

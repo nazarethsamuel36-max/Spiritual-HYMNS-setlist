@@ -15,7 +15,8 @@ const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
 export function SongList() {
   const [search, setSearch] = useState('');
-  const [selectedLanguage, setSelectedLanguage] = useState('All');
+  const selectedLanguage = useWorkflowStore((s) => s.libraryLanguage);
+  const setSelectedLanguage = useWorkflowStore((s) => s.setLibraryLanguage);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
@@ -24,7 +25,6 @@ export function SongList() {
 
   const songs = useLiveQuery(async () => {
     let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
-
     if (selectedLanguage !== 'All') {
       allSongs = allSongs.filter(s => s.language?.toLowerCase() === selectedLanguage.toLowerCase());
     }

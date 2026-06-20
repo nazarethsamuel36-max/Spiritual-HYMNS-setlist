@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, type SongDetail, getSongById } from '../db/Database';
+import { db, type SongDetail, getSongById, normalizeSongIndex } from '../db/Database';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { ReaderContent } from './reader/ReaderContent';
@@ -26,9 +26,34 @@ export function SongView() {
   const currentItemId = reader.type === 'song' ? reader.itemId : undefined;
   const isSetlistContext = reader.type === 'song' && reader.source === 'setlist' && !!setlistId;
 
+  const libraryLanguage = useWorkflowStore((s) => s.libraryLanguage);
+
   const [song, setSong] = useState<SongDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showSwipeHint, setShowSwipeHint] = useState(false);
+
+  useEffect(() => {
+    const hasSeen = localStorage.getItem('worship-swipe-hint-seen');
+    if (!hasSeen) {
+      setShowSwipeHint(true);
+      const timer = setTimeout(() => {
+        setShowSwipeHint(false);
+        localStorage.setItem('worship-swipe-hint-seen', 'true');
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  const librarySongs = useLiveQuery(async () => {
+    if (isSetlistContext) return null;
+    let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
+    if (libraryLanguage !== 'All') {
+      allSongs = allSongs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
+    }
+    allSongs.sort((a, b) => a.songNumber - b.songNumber);
+    return allSongs;
+  }, [isSetlistContext, libraryLanguage]);
 
   // Swipe indicator state
   const [swipeOffset, setSwipeOffset] = useState(0); // live drag offset in px
@@ -113,6 +138,18 @@ export function SongView() {
     }
   }, [setlistItems, setlistId, currentItemId, songId, openSong, openMarker, openNote]);
 
+  const navigateLibrary = useCallback(async (direction: 'prev' | 'next') => {
+    if (!songId || !librarySongs) return;
+    const currentIdx = librarySongs.findIndex(s => s.id === songId);
+    if (currentIdx === -1) return;
+
+    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
+    if (targetIdx < 0 || targetIdx >= librarySongs.length) return;
+
+    const target = librarySongs[targetIdx];
+    openSong(target.id, 'library');
+  }, [songId, librarySongs, openSong]);
+
   // ─── Pointer / Touch swipe tracking ──────────────────────────────────────
   const pointerStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
   const isHorizontalSwipeRef = useRef<boolean | null>(null); // null = undecided
@@ -124,7 +161,7 @@ export function SongView() {
   };
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (!pointerStartRef.current || !isSetlistContext) return;
+    if (!pointerStartRef.current) return;
     const dx = e.clientX - pointerStartRef.current.x;
     const dy = e.clientY - pointerStartRef.current.y;
 
@@ -163,12 +200,13 @@ export function SongView() {
       return;
     }
 
-    // Swipe navigation — only in setlist context
-    if (isSetlistContext && absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
-      if (deltaX < 0) {
-        navigateSetlist('next');  // swipe left = next
+    // Swipe navigation
+    if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
+      const direction = deltaX < 0 ? 'next' : 'prev';
+      if (isSetlistContext) {
+        navigateSetlist(direction);
       } else {
-        navigateSetlist('prev');  // swipe right = prev
+        navigateLibrary(direction);
       }
     }
   };
@@ -219,15 +257,36 @@ export function SongView() {
 
   const displaySections = arrangement?.overrides?.sections || song.sections;
   const displayTranspose = transpose + (arrangement?.overrides?.capo || 0);
-
   // Setlist position for the nav indicator
   const currentIdx = setlistItems
     ? (currentItemId
         ? setlistItems.findIndex(i => i.id === currentItemId)
         : setlistItems.findIndex(i => i.songId === songId))
     : -1;
-  const hasPrev = isSetlistContext && currentIdx > 0;
-  const hasNext = isSetlistContext && setlistItems != null && currentIdx < setlistItems.length - 1;
+
+  // Page indicator calculation
+  const totalItems = isSetlistContext
+    ? (setlistItems?.length || 0)
+    : (librarySongs?.length || 0);
+
+  const activeIdx = isSetlistContext
+    ? currentIdx
+    : (librarySongs ? librarySongs.findIndex(s => s.id === songId) : -1);
+
+  const maxDots = 7;
+  let startDot = 0;
+  let endDot = totalItems;
+  if (totalItems > maxDots) {
+    const half = Math.floor(maxDots / 2);
+    startDot = activeIdx - half;
+    if (startDot < 0) startDot = 0;
+    endDot = startDot + maxDots;
+    if (endDot > totalItems) {
+      endDot = totalItems;
+      startDot = endDot - maxDots;
+    }
+  }
+  const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
   return (
     <div className="flex-col h-full w-full bg-[#FAFAFA] flex">
@@ -241,14 +300,14 @@ export function SongView() {
         onBack={closeReader}
       />
 
-      {/* Setlist Position Indicator */}
-      {isSetlistContext && setlistItems && setlistItems.length > 1 && (
-        <div className="flex items-center justify-center space-x-1 py-1.5 bg-white border-b border-slate-100">
-          {setlistItems.map((_, idx) => (
+      {/* Position Page Indicator */}
+      {totalItems > 1 && (
+        <div className="flex items-center justify-center space-x-1.5 py-2 bg-white border-b border-slate-100">
+          {visibleDots.map((idx) => (
             <div
               key={idx}
               className={`rounded-full transition-all duration-200 ${
-                idx === currentIdx
+                idx === activeIdx
                   ? 'w-4 h-1.5 bg-[var(--color-brand)]'
                   : 'w-1.5 h-1.5 bg-slate-200'
               }`}
@@ -278,32 +337,10 @@ export function SongView() {
         </div>
       </div>
 
-      {/* Setlist Swipe Nav Arrows (visible hints) */}
-      {isSetlistContext && readerMode !== 'edit' && (
-        <>
-          {hasPrev && (
-            <button
-              onClick={() => navigateSetlist('prev')}
-              className="fixed left-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 rounded-full bg-white/80 backdrop-blur-sm border border-slate-200 shadow-md flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-white hover:shadow-lg transition-all active:scale-90"
-              aria-label="Previous in setlist"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-          )}
-          {hasNext && (
-            <button
-              onClick={() => navigateSetlist('next')}
-              className="fixed right-3 top-1/2 -translate-y-1/2 z-30 w-9 h-9 rounded-full bg-white/80 backdrop-blur-sm border border-slate-200 shadow-md flex items-center justify-center text-slate-400 hover:text-slate-700 hover:bg-white hover:shadow-lg transition-all active:scale-90"
-              aria-label="Next in setlist"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          )}
-        </>
+      {showSwipeHint && (
+        <div className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg pointer-events-none transition-all duration-500 animate-pulse">
+          ← Swipe to navigate →
+        </div>
       )}
 
       {/* Floating Auto Scroll Control HUD */}
