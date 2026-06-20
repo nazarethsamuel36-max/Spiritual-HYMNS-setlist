@@ -9,6 +9,8 @@ import com.worship.model.ChordOccurrence;
 import com.worship.model.Section;
 import com.worship.model.Song;
 import com.worship.model.SongLine;
+import com.ibm.icu.text.Transliterator;
+import java.text.Normalizer;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +23,20 @@ public class ExportService {
     private final LineChordDAO lineChordDAO;
     private final SearchService searchService;
     private final ObjectMapper mapper;
+
+    private static final Transliterator latinToDevanagari = Transliterator.getInstance("Latin-Devanagari");
+    private static final Transliterator devanagariToLatin = Transliterator.getInstance("Devanagari-Latin");
+
+    private String convertHindiTitleToDevanagari(String title) {
+        if (title == null || title.isEmpty()) return title;
+        return latinToDevanagari.transliterate(title.toLowerCase());
+    }
+
+    private String stripDiacritics(String str) {
+        if (str == null) return null;
+        String normalized = Normalizer.normalize(str, Normalizer.Form.NFD);
+        return normalized.replaceAll("\\p{M}", "");
+    }
 
     public ExportService() {
         this.songDAO = new SongDAO();
@@ -185,6 +201,11 @@ public class ExportService {
                 }
             }
 
+            String displayTitle = s.getTitle();
+            if ("hindi".equalsIgnoreCase(s.getLanguage())) {
+                displayTitle = convertHindiTitleToDevanagari(s.getTitle());
+            }
+
             // Build search tokens (normalized title + artist + first lyric line)
             String firstLine = "";
             if (sections != null && !sections.isEmpty()) {
@@ -195,14 +216,43 @@ public class ExportService {
             }
             
             String artistPart = (s.getArtist() != null) ? s.getArtist() : "";
-            String rawTokens = s.getSongNumber() + " " + s.getTitle() + " " + artistPart + " " + (firstLine != null ? firstLine : "");
-            String searchTokens = searchService.normalizeQuery(rawTokens);
+            
+            StringBuilder rawTokensBuilder = new StringBuilder();
+            rawTokensBuilder.append(s.getSongNumber()).append(" ");
+            rawTokensBuilder.append(displayTitle).append(" ");
+            
+            if ("hindi".equalsIgnoreCase(s.getLanguage())) {
+                rawTokensBuilder.append(s.getTitle()).append(" ");
+                if (firstLine != null && !firstLine.isEmpty()) {
+                    rawTokensBuilder.append(firstLine).append(" ");
+                    try {
+                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine));
+                        rawTokensBuilder.append(romanFirstLine).append(" ");
+                    } catch (Exception e) {}
+                }
+            } else if ("marathi".equalsIgnoreCase(s.getLanguage())) {
+                if (firstLine != null && !firstLine.isEmpty()) {
+                    rawTokensBuilder.append(firstLine).append(" ");
+                    try {
+                        String romanTitle = stripDiacritics(devanagariToLatin.transliterate(displayTitle));
+                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine));
+                        rawTokensBuilder.append(romanTitle).append(" ").append(romanFirstLine).append(" ");
+                    } catch (Exception e) {}
+                }
+            } else {
+                if (firstLine != null && !firstLine.isEmpty()) {
+                    rawTokensBuilder.append(firstLine).append(" ");
+                }
+            }
+            rawTokensBuilder.append(artistPart);
+            
+            String searchTokens = searchService.normalizeQuery(rawTokensBuilder.toString());
 
             // Index Entry
             IndexSongDto idxSong = new IndexSongDto();
             idxSong.id = s.getId();
             idxSong.songNumber = s.getSongNumber();
-            idxSong.title = s.getTitle();
+            idxSong.title = displayTitle;
             idxSong.artist = s.getArtist();
             idxSong.language = s.getLanguage();
             idxSong.originalKey = s.getOriginalKey();
@@ -214,7 +264,7 @@ public class ExportService {
             FullSongDto fullSong = new FullSongDto();
             fullSong.id = s.getId();
             fullSong.songNumber = s.getSongNumber();
-            fullSong.title = s.getTitle();
+            fullSong.title = displayTitle;
             fullSong.artist = s.getArtist();
             fullSong.composer = s.getComposer();
             fullSong.language = s.getLanguage();

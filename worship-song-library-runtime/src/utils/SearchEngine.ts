@@ -24,7 +24,7 @@ export class SearchEngine {
       seen.add(idStr);
       return true;
     });
-    await this.miniSearch.addAllAsync(unique);
+    this.miniSearch.addAll(unique);
     this.isIndexed = true;
   }
 
