@@ -52,8 +52,12 @@ export type Setlist = {
 }
 
 export type SetlistItem = {
-  songId: number;
-  transpose: number;
+  id: string; // Unique UUID for each item in the setlist
+  type?: 'song' | 'marker' | 'note'; // defaults to 'song' if undefined
+  songId?: number; // Only for 'song' type
+  transpose?: number; // Only for 'song' type
+  label?: string; // For 'marker' or 'note' title
+  content?: string; // For 'note' text content
   order: number;
 }
 

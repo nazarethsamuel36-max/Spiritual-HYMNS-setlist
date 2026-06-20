@@ -8,7 +8,9 @@ export type SidebarView =
 
 export type ReaderView =
   | { type: 'empty' }
-  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist' | 'shared'; activeArrangementId: string | null };
+  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist' | 'shared'; activeArrangementId: string | null; setlistId?: string; itemId?: string }
+  | { type: 'marker'; label: string; setlistId: string; itemId: string }
+  | { type: 'note'; label: string; content: string; setlistId: string; itemId: string };
 
 export type ReaderMode = 'chords' | 'lyrics' | 'edit';
 
@@ -20,7 +22,9 @@ interface WorkflowStore {
   showSettings: boolean;
   showContextRail: boolean;
 
-  openSong: (id: number, source: 'library' | 'setlist' | 'shared', transpose?: number) => void;
+  openSong: (id: number, source: 'library' | 'setlist' | 'shared', transpose?: number, setlistId?: string, itemId?: string) => void;
+  openMarker: (label: string, setlistId: string, itemId: string) => void;
+  openNote: (label: string, content: string, setlistId: string, itemId: string) => void;
   closeReader: () => void;
   openSetlist: (id: string) => void;
   closeSetlist: () => void;
@@ -40,8 +44,18 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   showSettings: false,
   showContextRail: false,
 
-  openSong: (id, source, transpose = 0) => set({
-    reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null },
+  openSong: (id, source, transpose = 0, setlistId, itemId) => set({
+    reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
+    mobileActivePane: 'reader',
+  }),
+
+  openMarker: (label, setlistId, itemId) => set({
+    reader: { type: 'marker', label, setlistId, itemId },
+    mobileActivePane: 'reader',
+  }),
+
+  openNote: (label, content, setlistId, itemId) => set({
+    reader: { type: 'note', label, content, setlistId, itemId },
     mobileActivePane: 'reader',
   }),
 

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { SyncService } from './services/SyncService';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
+import { ReaderItemView } from './components/reader/ReaderItemView';
 import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
@@ -36,7 +37,7 @@ function App() {
   // Visibility logic
   const showSidebar = !isMobile || mobileActivePane === 'sidebar';
   const showReader = !isMobile || mobileActivePane === 'reader';
-  const hasActiveSong = reader.type === 'song';
+  const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
 
   // Initialize: sync + handle shared setlist URL + popstate for mobile back
   useEffect(() => {
@@ -240,7 +241,19 @@ function App() {
         <div className="reader-pane">
           {hasActiveSong ? (
             <div className="flex-1 flex flex-col h-full w-full overflow-hidden animate-in fade-in zoom-in-95 duration-500">
-              <SongView />
+              {reader.type === 'song' && <SongView />}
+              {(reader.type === 'marker' || reader.type === 'note') && (
+                <ReaderItemView
+                  item={{
+                    type: reader.type,
+                    label: reader.label,
+                    content: reader.type === 'note' ? reader.content : undefined,
+                    setlistId: reader.setlistId,
+                    itemId: reader.itemId,
+                  }}
+                  onClose={closeReader}
+                />
+              )}
             </div>
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center bg-[#FAFAFA] h-full">
