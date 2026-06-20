@@ -155,6 +155,7 @@ export function SongView() {
   const isHorizontalSwipeRef = useRef<boolean | null>(null); // null = undecided
 
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    e.currentTarget.setPointerCapture(e.pointerId);
     pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now() };
     isHorizontalSwipeRef.current = null;
     setSwipeOffset(0);
@@ -179,6 +180,10 @@ export function SongView() {
   };
 
   const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch (err) {}
+
     if (!pointerStartRef.current) return;
 
     const start = pointerStartRef.current;
@@ -322,9 +327,11 @@ export function SongView() {
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
         style={{
           transform: swipeOffset !== 0 ? `translateX(${swipeOffset * 0.3}px)` : undefined,
           transition: swipeOffset === 0 ? 'transform 0.2s ease-out' : 'none',
+          touchAction: 'pan-y',
         }}
         className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain select-none"
       >
