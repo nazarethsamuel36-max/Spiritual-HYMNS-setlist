@@ -38,6 +38,15 @@ public class ExportService {
         return normalized.replaceAll("\\p{M}", "");
     }
 
+    private String cleanFirstLineAsTitle(String firstLine) {
+        if (firstLine == null || firstLine.trim().isEmpty()) return "";
+        String clean = firstLine.trim();
+        clean = clean.replaceAll("\\s*\\([0-9\\u0966-\\u096F]+\\)\\s*$", "");
+        clean = clean.replaceAll("\\s*\\[[0-9\\u0966-\\u096F]+\\]\\s*$", "");
+        clean = clean.replaceAll("[,.!?;:|!\\\"\\'\\(\\)\\[\\]\\{\\}—\\-\\–\\—\\s]+$", "");
+        return clean.trim();
+    }
+
     public ExportService() {
         this.songDAO = new SongDAO();
         this.lineChordDAO = new LineChordDAO();
@@ -201,17 +210,22 @@ public class ExportService {
                 }
             }
 
-            String displayTitle = s.getTitle();
-            if ("hindi".equalsIgnoreCase(s.getLanguage())) {
-                displayTitle = convertHindiTitleToDevanagari(s.getTitle());
-            }
-
             // Build search tokens (normalized title + artist + first lyric line)
             String firstLine = "";
             if (sections != null && !sections.isEmpty()) {
                 Section firstSec = sections.get(0);
                 if (firstSec.getLines() != null && !firstSec.getLines().isEmpty()) {
                     firstLine = firstSec.getLines().get(0).getText();
+                }
+            }
+
+            String displayTitle = s.getTitle();
+            if ("hindi".equalsIgnoreCase(s.getLanguage())) {
+                String cleanedFirstLine = cleanFirstLineAsTitle(firstLine);
+                if (cleanedFirstLine != null && !cleanedFirstLine.isEmpty()) {
+                    displayTitle = cleanedFirstLine;
+                } else {
+                    displayTitle = convertHindiTitleToDevanagari(s.getTitle());
                 }
             }
             
