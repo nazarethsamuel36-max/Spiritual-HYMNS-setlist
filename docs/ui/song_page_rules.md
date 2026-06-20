@@ -43,6 +43,7 @@ Performance mode must follow this structure:
 - Notes UI.
 - Floating buttons inside lyrics.
 - Floating buttons above lyrics.
+- Visible previous/next buttons (e.g. `< VERSE 2 >` or floating nav arrows).
 - Metadata panels that compete with lyrics and chords.
 - Account, admin, or management controls.
 
@@ -96,6 +97,15 @@ The bottom bar must be fixed only when it reserves enough page space to avoid co
 - A user must always know which mode they are in.
 - Entering edit mode must remove performance controls.
 - Returning to performance mode must remove editing controls.
+
+### Swipe Navigation
+
+- **Default Interaction**: Reader navigation relies on swipe gestures instead of visible buttons.
+- **Library Mode**: Swipe left navigates to the next song number; swipe right navigates to the previous song number. Navigation follows the current language/filter context (e.g., Marathi #1 → Marathi #2 → Marathi #3). Do NOT navigate through search results (search is a discovery tool, opening a song from search results still navigates by song-number order).
+- **Setlist Mode**: Swipe follows the setlist service flow order (e.g., Opening Prayer → Song → Scripture Reading → Sermon). The reader must detect `Current Context = Setlist` and navigate through the service flow instead of song numbers.
+- **Swipe Onboarding Hint**: On first song open only, display a lightweight onboarding hint `← Swipe to navigate →`. Dismiss it automatically after a few seconds and persist the completion status so it is not shown again.
+- **Persistent Hint**: Keep a lightweight page indicator near the top (e.g., `○ ● ○ ○` or `● ○ ○ ○`) to communicate that additional pages/items exist (works for song, setlist, and future service-flow navigation).
+- **Future Service Flow Integration**: Once Service Flow Markers are implemented, they must participate in the same swipe navigation system to keep the experience unified.
 
 ### Viewport Behavior
 
