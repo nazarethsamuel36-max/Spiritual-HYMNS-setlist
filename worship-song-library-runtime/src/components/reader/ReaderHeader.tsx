@@ -89,7 +89,7 @@ export function ReaderHeader({
               {song.artist || 'Unknown Artist'}
             </span>
             <span className="text-slate-300 text-[10px]">•</span>
-            <span className="text-slate-500 text-xs font-medium">#{song.songNumber}</span>
+            <span className="text-slate-500 text-xs font-medium">{song.songNumber}</span>
           </div>
         </div>
 

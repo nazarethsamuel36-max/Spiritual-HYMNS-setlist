@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Mukta:wght@400;500;600;700;800&family=Rozha+One&display=swap');
 
 @import "tailwindcss";
 
@@ -7,6 +7,8 @@
   --font-mono: 'Noto Sans Mono', monospace;
   --font-poppins: 'Poppins', sans-serif;
   --font-lora: 'Lora', Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-devanagari: 'Mukta', 'Poppins', sans-serif;
+  --font-devanagari-serif: 'Rozha One', 'Lora', serif;
 
   /* Premium Workflow Palette */
   --color-brand: #0F172A;        /* Slate-900: Professional & Focused */
@@ -250,4 +252,21 @@ body {
 
 .font-lora {
   font-family: var(--font-lora);
+}
+
+/* Devanagari & Global Title Typography Polish */
+h1,
+h3,
+.font-poppins,
+.lang-hindi h1, 
+.lang-hindi h3, 
+.lang-marathi h1, 
+.lang-marathi h3 {
+  font-family: var(--font-devanagari) !important;
+}
+
+.lang-hindi .font-lora, 
+.lang-marathi .font-lora {
+  font-family: var(--font-devanagari) !important;
+  font-weight: 500;
 }

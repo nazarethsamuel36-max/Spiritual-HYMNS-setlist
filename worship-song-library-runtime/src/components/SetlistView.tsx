@@ -75,7 +75,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
           <div className="flex items-center space-x-1.5 mt-0.5">
             <span className="text-xs font-medium text-slate-500">{item.detail?.language}</span>
             <span className="text-slate-300 text-[10px]">•</span>
-            <span className="text-xs font-medium text-slate-500">#{item.detail?.songNumber}</span>
+            <span className="text-xs font-medium text-slate-500">{item.detail?.songNumber}</span>
           </div>
         </div>
 
@@ -375,7 +375,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
                 className="w-full flex items-center justify-between p-4 hover:bg-[var(--color-brand-soft)] transition-colors border-b border-slate-50 last:border-0"
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">#{song.songNumber}</span>
+                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">{song.songNumber}</span>
                   <div className="font-bold text-slate-800 text-sm">{song.title}</div>
                 </div>
                 <div className="text-[var(--color-brand)] font-black text-[10px] uppercase">Add</div>

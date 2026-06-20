@@ -27,19 +27,25 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
     );
   }
 
+  const containerSpacing = mode === 'lyrics' ? 'space-y-5' : 'space-y-8';
+  const lineSpacing = mode === 'lyrics' ? 'space-y-1.5' : 'space-y-4';
+
   return (
-    <div className="space-y-7">
+    <div className={containerSpacing}>
       {sections.map((section, idx) => {
         const sectionType = section.type?.toLowerCase() || 'other';
-        const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-100';
+        const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
 
         return (
           <div key={idx} className="relative w-full px-4 md:px-0">
+            {idx > 0 && (
+              <div className="w-full border-t border-slate-300 my-6" />
+            )}
             <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
               {section.label}
             </div>
 
-            <div className="w-full space-y-4">
+            <div className={`w-full ${lineSpacing}`}>
               {section.lines.map((line, lIdx) => (
                 <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} />
               ))}

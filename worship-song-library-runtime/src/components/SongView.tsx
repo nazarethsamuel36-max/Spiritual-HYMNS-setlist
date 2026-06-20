@@ -293,8 +293,10 @@ export function SongView() {
   }
   const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
+  const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
+
   return (
-    <div className="flex-col h-full w-full bg-[#FAFAFA] flex">
+    <div className={`flex-col h-full w-full bg-[#FAFAFA] flex ${langClass}`}>
       <ReaderHeader
         song={song}
         transpose={displayTranspose}

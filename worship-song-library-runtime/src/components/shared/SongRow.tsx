@@ -100,14 +100,14 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongR
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={`relative group ${isActive ? 'bg-slate-100' : ''}`}>
+    <div className={`relative group lang-${song.language?.toLowerCase()} ${isActive ? 'bg-slate-100' : ''}`}>
       <button
         onClick={() => onSelect(song.id)}
         className="flex items-center text-left py-3 px-2 hover:bg-slate-100 border-b border-slate-100 transition-none w-full group last:border-b-0"
       >
         {/* Avatar */}
         <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-full text-xs font-bold text-slate-600 mr-3">
-          #{song.songNumber}
+          {song.songNumber}
         </div>
 
         <div className="flex-1 min-w-0 pr-10">

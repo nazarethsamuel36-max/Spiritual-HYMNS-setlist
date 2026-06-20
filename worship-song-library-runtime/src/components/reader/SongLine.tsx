@@ -11,12 +11,16 @@ interface SongLineProps {
 }
 
 export const SongLine = memo(function SongLine({ line, transpose, mode }: SongLineProps) {
+  if (mode === 'lyrics' && (!line.text || !line.text.trim())) {
+    return null;
+  }
+
   const words = segmentMusicalLine(line.text, line.chords || []);
   const hasChords = !!(line.chords && line.chords.length > 0);
 
-  let paddingClass = 'pt-1';
+  let paddingClass = 'pt-0.5';
   let fontClass = 'font-sans';
-  let gapClass = 'gap-y-1';
+  let gapClass = 'gap-y-0.5';
 
   if (mode !== 'lyrics') {
     fontClass = 'font-mono';
@@ -30,7 +34,7 @@ export const SongLine = memo(function SongLine({ line, transpose, mode }: SongLi
   }
 
   return (
-    <div className={`relative pb-1 group w-full ${paddingClass} ${fontClass}`}>
+    <div className={`relative ${mode === 'lyrics' ? 'pb-0.5' : 'pb-1'} group w-full ${paddingClass} ${fontClass}`}>
       <div className={`flex flex-wrap items-end relative w-full ${gapClass}`}>
         {words.map((word, wIdx) => (
           <MusicalWord key={wIdx} word={word} transpose={transpose} mode={mode} />
