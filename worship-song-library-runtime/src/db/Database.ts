@@ -122,7 +122,14 @@ export const db = new WorshipDatabase();
 
 export async function getSongById(id: number): Promise<SongDetail | null> {
   let song = await db.songs.get(id);
-  if (song) return normalizeSongDetail(song);
+  if (song) {
+    // Use title from songIndex as source of truth (it has the correct formatting)
+    const indexEntry = await db.songIndex.get(id);
+    if (indexEntry) {
+      song.title = indexEntry.title;
+    }
+    return normalizeSongDetail(song);
+  }
 
   song = await db.sharedSongs.get(id);
   if (song) return normalizeSongDetail(song);

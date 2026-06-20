@@ -7,7 +7,14 @@ export function formatSongTitle(title: string): string {
     .replace(/[\s\*\-\_]+$/, '')
     .trim();
 
-  // 2. Convert to Title Case
+  // 2. Check if text contains non-Latin scripts (Hindi/Devanagari, etc.)
+  // If it does, skip title-case formatting as it corrupts these scripts
+  const devanagariRegex = /[\u0900-\u097F]/;
+  if (devanagariRegex.test(clean)) {
+    return clean;
+  }
+
+  // 3. Convert to Title Case (Latin scripts only)
   const minorWords = new Set(['a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor', 'on', 'at', 'to', 'from', 'by', 'of', 'in', 'with']);
   
   const words = clean.split(/\s+/);
