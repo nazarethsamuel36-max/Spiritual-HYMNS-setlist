@@ -39,7 +39,7 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
         return (
           <div key={idx} className="relative w-full px-4 md:px-0">
             {idx > 0 && (
-              <div className="w-full border-t border-slate-300 my-6" />
+              <div className="my-4" />
             )}
             <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
               {section.label}

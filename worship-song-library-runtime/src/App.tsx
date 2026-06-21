@@ -210,7 +210,7 @@ function App() {
           {/* Sidebar Content — Independent Scroll */}
           <div className="sidebar-content hide-scrollbar">
             {(sidebar.panel === 'library') && (
-              <div className="animate-in fade-in duration-300 px-1 pt-3">
+              <div className="animate-in fade-in duration-300">
                 <SongList />
               </div>
             )}

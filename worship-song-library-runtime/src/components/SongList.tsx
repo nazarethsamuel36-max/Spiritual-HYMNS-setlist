@@ -53,7 +53,7 @@ export function SongList() {
   return (
     <div className="w-full">
       {/* Search + Filters — sticky header */}
-      <div className="bg-slate-50/98 backdrop-blur-sm pb-2.5 pt-2 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
+      <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
         {/* Language pills */}
         <div className="px-3">
           <LanguageTabs

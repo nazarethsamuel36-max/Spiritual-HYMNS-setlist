@@ -66,7 +66,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
 
       <button
         onClick={() => openSong(item.songId, 'setlist', item.transpose, setlistId, item.id)}
-        className="flex-1 text-left min-w-0 flex items-center justify-between"
+        className="flex-1 text-left min-w-0 flex items-center justify-between outline-none focus:outline-none"
       >
         <div className="flex-1 min-w-0 pr-4">
           <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors font-poppins py-1">

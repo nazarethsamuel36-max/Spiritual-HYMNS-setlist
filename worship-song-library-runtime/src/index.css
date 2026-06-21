@@ -254,6 +254,10 @@ body {
   font-family: var(--font-lora);
 }
 
+.font-mukta {
+  font-family: 'Mukta', sans-serif;
+}
+
 /* Devanagari & Global Title Typography Polish */
 h1,
 h3,
@@ -263,6 +267,7 @@ h3,
 .lang-marathi h1, 
 .lang-marathi h3 {
   font-family: var(--font-devanagari) !important;
+  font-weight: 700 !important;
 }
 
 .lang-hindi .font-lora, 

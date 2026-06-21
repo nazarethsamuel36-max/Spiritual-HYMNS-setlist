@@ -19,7 +19,7 @@ export const SongLine = memo(function SongLine({ line, transpose, mode }: SongLi
   const hasChords = !!(line.chords && line.chords.length > 0);
 
   let paddingClass = 'pt-0.5';
-  let fontClass = 'font-sans';
+  let fontClass = 'font-mukta font-normal';
   let gapClass = 'gap-y-0.5';
 
   if (mode !== 'lyrics') {
