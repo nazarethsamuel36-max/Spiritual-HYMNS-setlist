@@ -13,10 +13,16 @@ import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { useState } from 'react';
 import { db } from './db/Database';
+import { useRegisterSW } from 'virtual:pwa-register/react';
 
 function App() {
   const [syncing, setSyncing] = useState(true);
   const isMobile = useIsMobile();
+
+  const {
+    needRefresh: [needRefresh, setNeedRefresh],
+    updateServiceWorker,
+  } = useRegisterSW();
 
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -320,6 +326,30 @@ function App() {
 
       {/* Global Overlays */}
       {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
+
+      {/* PWA Update Banner */}
+      {needRefresh && (
+        <div className="fixed bottom-20 left-4 right-4 md:bottom-6 md:right-6 md:left-auto bg-slate-900/95 backdrop-blur-md text-white p-4 rounded-xl shadow-2xl z-50 flex items-center justify-between border border-slate-700/50 animate-in fade-in slide-in-from-bottom-5 duration-300 max-w-sm">
+          <div className="flex flex-col pr-4 text-left">
+            <span className="font-semibold text-xs text-white">Update Available</span>
+            <span className="text-[10px] text-slate-300 mt-0.5">A new version is ready. Click to apply updates.</span>
+          </div>
+          <div className="flex items-center space-x-2 flex-shrink-0">
+            <button
+              onClick={() => updateServiceWorker(true)}
+              className="bg-white text-slate-900 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-wider hover:bg-slate-100 transition-colors shadow"
+            >
+              Update
+            </button>
+            <button
+              onClick={() => setNeedRefresh(false)}
+              className="text-slate-400 hover:text-white px-2 py-1.5 rounded text-[10px] font-semibold"
+            >
+              Dismiss
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
