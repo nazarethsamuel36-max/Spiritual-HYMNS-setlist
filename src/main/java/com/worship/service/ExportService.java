@@ -236,21 +236,41 @@ public class ExportService {
             rawTokensBuilder.append(displayTitle).append(" ");
             
             if ("hindi".equalsIgnoreCase(s.getLanguage())) {
+                // Include original DB title (may be Latin transliteration already)
                 rawTokensBuilder.append(s.getTitle()).append(" ");
+                // Include Devanagari first line
                 if (firstLine != null && !firstLine.isEmpty()) {
                     rawTokensBuilder.append(firstLine).append(" ");
+                    // Transliterate first line to Latin for English keyboard search
                     try {
-                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine));
+                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine))
+                            .toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
                         rawTokensBuilder.append(romanFirstLine).append(" ");
                     } catch (Exception e) {}
                 }
+                // Also transliterate the display title for Hindi so users can search "yehova" etc.
+                try {
+                    String romanDisplayTitle = stripDiacritics(devanagariToLatin.transliterate(displayTitle))
+                        .toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+                    rawTokensBuilder.append(romanDisplayTitle).append(" ");
+                } catch (Exception e) {}
             } else if ("marathi".equalsIgnoreCase(s.getLanguage())) {
+                // Always append Devanagari first line
                 if (firstLine != null && !firstLine.isEmpty()) {
                     rawTokensBuilder.append(firstLine).append(" ");
+                }
+                // Transliterate BEFORE calling normalizeQuery (which would strip diacritics)
+                // Append Latin (Roman) forms of both title and first line for English keyboard search
+                try {
+                    String romanTitle = stripDiacritics(devanagariToLatin.transliterate(displayTitle))
+                        .toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+                    rawTokensBuilder.append(romanTitle).append(" ");
+                } catch (Exception e) {}
+                if (firstLine != null && !firstLine.isEmpty()) {
                     try {
-                        String romanTitle = stripDiacritics(devanagariToLatin.transliterate(displayTitle));
-                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine));
-                        rawTokensBuilder.append(romanTitle).append(" ").append(romanFirstLine).append(" ");
+                        String romanFirstLine = stripDiacritics(devanagariToLatin.transliterate(firstLine))
+                            .toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+                        rawTokensBuilder.append(romanFirstLine).append(" ");
                     } catch (Exception e) {}
                 }
             } else {

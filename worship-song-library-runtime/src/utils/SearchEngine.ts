@@ -1,6 +1,52 @@
 import MiniSearch from 'minisearch';
 import type { SongIndex } from '../db/Database';
 
+// Worship-word synonym groups (bidirectional).
+// Each group contains the canonical form first, followed by common variants.
+// Applied to the user's query before passing to MiniSearch.
+const WORSHIP_SYNONYM_GROUPS: string[][] = [
+  ['yeshu', 'yesu', 'yeshoo', 'yeesu'],
+  ['yahova', 'yehova', 'jehova', 'yahveh'],
+  ['prabhu', 'prabu', 'prabhoo', 'prbhu'],
+  ['masih', 'maseeh', 'mashih', 'masiha'],
+  ['khrista', 'krista', 'christa', 'kristh', 'christ'],
+  ['krus', 'kruus', 'cruz', 'krusas', 'kroos'],
+  ['dhanyavad', 'dhanyawad', 'dhanyabad'],
+  ['jai', 'jay'],
+  ['aakash', 'akash', 'asman', 'aasman'],
+  ['aadi', 'adi'],
+  ['jeevan', 'jivan', 'jiwan'],
+  ['vande', 'bande'],
+  ['hallelujah', 'halleluya', 'halleluja', 'alleluia'],
+  ['stuti', 'stooti', 'stotri'],
+  ['aradhana', 'aaradhana', 'aradhan', 'aaradhan'],
+  ['mahima', 'mahimaa'],
+  ['atma', 'aatma', 'atmaa'],
+  ['swarg', 'swarga', 'svarg'],
+  ['pavitra', 'pawitra'],
+];
+
+/**
+ * Normalize a user search query:
+ * 1. Lowercase
+ * 2. Map any worship variant to canonical form
+ * Returns the normalized query string.
+ */
+function normalizeSearchQuery(query: string): string {
+  const lower = query.toLowerCase().trim();
+  // Split into tokens, normalize each, rejoin
+  const tokens = lower.split(/\s+/);
+  const normalized = tokens.map(token => {
+    for (const group of WORSHIP_SYNONYM_GROUPS) {
+      if (group.includes(token)) {
+        return group[0]; // canonical is always first in the group
+      }
+    }
+    return token;
+  });
+  return normalized.join(' ');
+}
+
 export class SearchEngine {
   private static miniSearch = new MiniSearch<SongIndex>({
     fields: ['title', 'artist', 'songNumber', 'searchTokens'], // fields to index for full-text search
@@ -43,7 +89,10 @@ export class SearchEngine {
       if (results.length > 0) return results;
     }
 
-    // 2. Fallback to MiniSearch
+    // 2. Apply worship-word normalization before MiniSearch
+    const normalizedQuery = normalizeSearchQuery(query);
+
+    // 3. Fallback to MiniSearch
     if (!this.isIndexed && songs.length > 0) {
       const seen = new Set<string>();
       const unique = songs.filter(s => {
@@ -56,7 +105,7 @@ export class SearchEngine {
       this.isIndexed = true;
     }
 
-    const searchResults = this.miniSearch.search(query);
+    const searchResults = this.miniSearch.search(normalizedQuery);
     
     // Map results and filter by the provided 'songs' list to respect language filters
     const validIds = new Set(songs.map(s => s.id));

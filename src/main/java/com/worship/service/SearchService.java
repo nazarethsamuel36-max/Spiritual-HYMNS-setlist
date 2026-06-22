@@ -207,40 +207,86 @@ public class SearchService {
     }
 
     /**
-     * Generate variants for a token (Hindi vowel pairs + Marathi consonants)
-     * Max 3 total (original + 2 variants)
+     * Worship-word synonym groups (bidirectional).
+     * Any form in a group maps to ALL other forms in the same group.
+     * Used for common spelling variations of Hindi/Marathi worship words.
+     */
+    private static final List<List<String>> WORSHIP_SYNONYM_GROUPS = Arrays.asList(
+        Arrays.asList("yeshu", "yesu", "yeshoo", "yeesu"),
+        Arrays.asList("yahova", "yehova", "jehova", "yahveh"),
+        Arrays.asList("prabhu", "prabu", "prabhoo", "prbhu"),
+        Arrays.asList("masih", "maseeh", "mashih", "masiha"),
+        Arrays.asList("khrista", "krista", "christa", "kristh", "christ"),
+        Arrays.asList("krus", "kruus", "cruz", "krusas", "kroos"),
+        Arrays.asList("dhanyavad", "dhanyawad", "dhanyabad"),
+        Arrays.asList("jai", "jay"),
+        Arrays.asList("aakash", "akash", "asman", "aasman"),
+        Arrays.asList("aadi", "adi"),
+        Arrays.asList("jeevan", "jivan", "jiwan"),
+        Arrays.asList("aaye", "aye", "aao", "aao"),
+        Arrays.asList("vande", "bande"),
+        Arrays.asList("hallelujah", "halleluya", "halleluja", "alleluia"),
+        Arrays.asList("stuti", "stooti", "stotri"),
+        Arrays.asList("aradhan", "aaradhan", "aradhana", "aaradhana"),
+        Arrays.asList("mahima", "mahimaa", "mahamma"),
+        Arrays.asList("pita", "pitaa", "peetaa"),
+        Arrays.asList("atma", "aatma", "atmaa"),
+        Arrays.asList("swarg", "swarga", "svarg"),
+        Arrays.asList("pavitra", "pawitra"),
+        Arrays.asList("raksha", "rakshaa"),
+        Arrays.asList("sannata", "sannaa", "hosanna"),
+        Arrays.asList("yesu", "yeshu") // duplicate to handle both as canonical
+    );
+
+    /**
+     * Generate variants for a token (Hindi/Marathi worship synonyms + vowel length pairs)
+     * No hard limit on variants — all synonym group members are included.
      */
     private List<String> generateVariants(String token) {
         List<String> variants = new ArrayList<>();
         variants.add(token);
-        
-        if (variants.size() >= 3) return variants;
-        
-        // Hindi vowel pairs (bidirectional)
+
+        // 1. Check worship synonym groups first
+        for (List<String> group : WORSHIP_SYNONYM_GROUPS) {
+            boolean inGroup = false;
+            for (String member : group) {
+                if (member.equalsIgnoreCase(token)) {
+                    inGroup = true;
+                    break;
+                }
+            }
+            if (inGroup) {
+                for (String member : group) {
+                    if (!member.equalsIgnoreCase(token) && !variants.contains(member)) {
+                        variants.add(member);
+                    }
+                }
+                break; // Only one group match needed
+            }
+        }
+
+        // 2. Hindi/Marathi vowel length pairs (bidirectional)
         String[][] vowelPairs = {
             {"i", "ii"}, {"e", "ee"}, {"u", "uu"}, {"a", "aa"}, {"o", "oo"}
         };
         
         for (String[] pair : vowelPairs) {
-            if (variants.size() >= 3) break;
-            
-            // Replace first with second
+            // Replace short with long vowel
             if (token.contains(pair[0])) {
                 String variant = token.replace(pair[0], pair[1]);
                 if (!variants.contains(variant)) {
                     variants.add(variant);
                 }
             }
-            
-            // Replace second with first
-            if (variants.size() < 3 && token.contains(pair[1])) {
+            // Replace long with short vowel
+            if (token.contains(pair[1])) {
                 String variant = token.replace(pair[1], pair[0]);
                 if (!variants.contains(variant)) {
                     variants.add(variant);
                 }
             }
         }
-        
+
         return variants;
     }
 
