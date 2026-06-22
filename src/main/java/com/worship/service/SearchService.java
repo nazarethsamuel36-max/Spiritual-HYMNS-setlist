@@ -212,7 +212,7 @@ public class SearchService {
      * Used for common spelling variations of Hindi/Marathi worship words.
      */
     private static final List<List<String>> WORSHIP_SYNONYM_GROUPS = Arrays.asList(
-        Arrays.asList("yeshu", "yesu", "yeshoo", "yeesu"),
+        Arrays.asList("yeshu", "yesu", "yeshoo", "yeesu", "yesh"),
         Arrays.asList("yahova", "yehova", "jehova", "yahveh"),
         Arrays.asList("prabhu", "prabu", "prabhoo", "prbhu"),
         Arrays.asList("masih", "maseeh", "mashih", "masiha"),
@@ -235,6 +235,7 @@ public class SearchService {
         Arrays.asList("pavitra", "pawitra"),
         Arrays.asList("raksha", "rakshaa"),
         Arrays.asList("sannata", "sannaa", "hosanna"),
+        Arrays.asList("mazha", "majha", "maja", "maajha"),
         Arrays.asList("yesu", "yeshu") // duplicate to handle both as canonical
     );
 

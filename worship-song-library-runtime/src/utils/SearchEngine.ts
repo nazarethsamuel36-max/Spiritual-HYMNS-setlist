@@ -5,7 +5,7 @@ import type { SongIndex } from '../db/Database';
 // Each group contains the canonical form first, followed by common variants.
 // Applied to the user's query before passing to MiniSearch.
 const WORSHIP_SYNONYM_GROUPS: string[][] = [
-  ['yeshu', 'yesu', 'yeshoo', 'yeesu'],
+  ['yeshu', 'yesu', 'yeshoo', 'yeesu', 'yesh'],
   ['yahova', 'yehova', 'jehova', 'yahveh'],
   ['prabhu', 'prabu', 'prabhoo', 'prbhu'],
   ['masih', 'maseeh', 'mashih', 'masiha'],
@@ -24,6 +24,7 @@ const WORSHIP_SYNONYM_GROUPS: string[][] = [
   ['atma', 'aatma', 'atmaa'],
   ['swarg', 'swarga', 'svarg'],
   ['pavitra', 'pawitra'],
+  ['mazha', 'majha', 'maja', 'maajha'],
 ];
 
 /**
@@ -49,10 +50,10 @@ function normalizeSearchQuery(query: string): string {
 
 export class SearchEngine {
   private static miniSearch = new MiniSearch<SongIndex>({
-    fields: ['title', 'artist', 'songNumber', 'searchTokens'], // fields to index for full-text search
-    storeFields: ['id', 'title', 'artist', 'songNumber', 'language'], // fields to return with search results
+    fields: ['title', 'romanTitle', 'artist', 'songNumber', 'searchTokens'], // fields to index for full-text search
+    storeFields: ['id', 'title', 'artist', 'songNumber', 'language', 'romanTitle'], // fields to return with search results
     searchOptions: {
-      boost: { title: 2, songNumber: 5, artist: 1.2 },
+      boost: { title: 3, romanTitle: 3, songNumber: 5, artist: 1.2 },
       fuzzy: 0.2,
       prefix: true
     }

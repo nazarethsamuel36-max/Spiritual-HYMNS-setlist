@@ -42,11 +42,16 @@ export function SongList() {
 
     // Apply search then sort
     const searched = SearchEngine.search(allSongs, search);
-    if (sortBy === 'title') {
-      searched.sort(compareSongsByTitle);
-    } else {
-      searched.sort((a, b) => a.songNumber - b.songNumber);
-    }
+    searched.sort((a, b) => {
+      const scoreDiff = b.score - a.score;
+      if (Math.abs(scoreDiff) > 0.0001) {
+        return scoreDiff;
+      }
+      if (sortBy === 'title') {
+        return compareSongsByTitle(a, b);
+      }
+      return a.songNumber - b.songNumber;
+    });
     return searched;
   }, [search, selectedLanguage, sortBy]);
 

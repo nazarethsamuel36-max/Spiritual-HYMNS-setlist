@@ -87,6 +87,7 @@ public class ExportService {
         public String originalKey;
         public List<String> hashtags;
         public String searchTokens;
+        public String romanTitle;
     }
 
     public static class FullSongDto {
@@ -281,6 +282,17 @@ public class ExportService {
             rawTokensBuilder.append(artistPart);
             
             String searchTokens = searchService.normalizeQuery(rawTokensBuilder.toString());
+            String romanTitle = "";
+            if ("english".equalsIgnoreCase(s.getLanguage())) {
+                romanTitle = displayTitle.toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+            } else {
+                try {
+                    romanTitle = stripDiacritics(devanagariToLatin.transliterate(displayTitle))
+                        .toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+                } catch (Exception e) {
+                    romanTitle = displayTitle.toLowerCase().replaceAll("[^a-z0-9\\s]", "").replaceAll("\\s+", " ").trim();
+                }
+            }
 
             // Index Entry
             IndexSongDto idxSong = new IndexSongDto();
@@ -292,6 +304,7 @@ public class ExportService {
             idxSong.originalKey = s.getOriginalKey();
             idxSong.hashtags = s.getHashtags() != null ? s.getHashtags() : new ArrayList<>();
             idxSong.searchTokens = searchTokens;
+            idxSong.romanTitle = romanTitle;
             index.songs.add(idxSong);
 
             // Full Song Entry

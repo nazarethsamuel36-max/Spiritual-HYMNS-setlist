@@ -10,6 +10,7 @@ export type SongIndex = {
   originalKey?: string;
   hashtags?: string[];
   searchTokens: string;
+  romanTitle?: string;
 }
 
 export type SongDetail = {
@@ -156,7 +157,8 @@ export function normalizeSongIndex(song: SongIndex): SongIndex {
     title: normalizeImportedText(song.title),
     artist: normalizeImportedText(song.artist),
     originalKey: normalizeImportedText(song.originalKey),
-    searchTokens: normalizeImportedText(song.searchTokens)
+    searchTokens: normalizeImportedText(song.searchTokens),
+    romanTitle: normalizeImportedText(song.romanTitle)
   };
 }
 
