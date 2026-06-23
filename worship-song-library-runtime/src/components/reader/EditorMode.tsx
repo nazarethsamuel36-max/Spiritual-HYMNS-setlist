@@ -114,7 +114,7 @@ export function EditorMode({ song }: EditorModeProps) {
   };
 
   return (
-    <div className="w-full flex flex-col bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+    <div className="w-full flex flex-col bg-white rounded-xl shadow-sm border border-slate-200">
       {/* Sticky Header */}
       <div className="bg-amber-50 border-b border-amber-100 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
         <div>
@@ -141,8 +141,7 @@ export function EditorMode({ song }: EditorModeProps) {
       {/* Workspace Textarea */}
       <div className="flex flex-col">
         <textarea
-          className="w-full p-5 font-mono text-sm resize-none outline-none text-slate-800 leading-loose bg-white"
-          style={{ minHeight: 'min(65vh, calc(100dvh - 120px))' }}
+          className="w-full p-5 font-mono text-sm resize-none outline-none text-slate-800 leading-loose bg-white overflow-y-hidden"
           value={text}
           onChange={(e) => setText(e.target.value)}
           spellCheck={false}
@@ -153,6 +152,6 @@ export function EditorMode({ song }: EditorModeProps) {
           <span>{text.split('\n').length} lines</span>
         </div>
       </div>
-    </div>s
+    </div>
   );
 }
