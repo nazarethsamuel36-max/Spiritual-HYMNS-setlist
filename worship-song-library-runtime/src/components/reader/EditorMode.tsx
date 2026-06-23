@@ -153,6 +153,6 @@ export function EditorMode({ song }: EditorModeProps) {
           <span>{text.split('\n').length} lines</span>
         </div>
       </div>
-    </div>
+    </div>s
   );
 }

@@ -8,10 +8,12 @@ import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
 import { ContextRail } from './components/ContextRail';
+import { UpdateBanner } from './components/UpdateBanner';
 import { SetlistService } from './services/SetlistService';
 import { AdminEditorDemo } from './components/admin/AdminEditorDemo';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
+import { useUpdateChecker } from './hooks/useUpdateChecker';
 import { useState } from 'react';
 import { db } from './db/Database';
 import { useRegisterSW } from 'virtual:pwa-register/react';
@@ -19,6 +21,9 @@ import { useRegisterSW } from 'virtual:pwa-register/react';
 function App() {
   const [syncing, setSyncing] = useState(true);
   const isMobile = useIsMobile();
+
+  // Start checking for updates on app startup and resume
+  useUpdateChecker();
 
   // Quick route to admin editor demo
   if (window.location.pathname === '/admin') {
@@ -333,7 +338,10 @@ function App() {
       {/* Global Overlays */}
       {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
 
-      {/* PWA Update Banner */}
+      {/* Content Version Update Banner */}
+      <UpdateBanner />
+
+      {/* PWA Service Worker Update Banner */}
       {needRefresh && (
         <div className="fixed bottom-20 left-4 right-4 md:bottom-6 md:right-6 md:left-auto bg-slate-900/95 backdrop-blur-md text-white p-4 rounded-xl shadow-2xl z-50 flex items-center justify-between border border-slate-700/50 animate-in fade-in slide-in-from-bottom-5 duration-300 max-w-sm">
           <div className="flex flex-col pr-4 text-left">
