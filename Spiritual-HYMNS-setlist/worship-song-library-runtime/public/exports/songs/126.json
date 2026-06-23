@@ -1,0 +1,130 @@
+{
+  "id" : 738,
+  "songNumber" : 126,
+  "title" : "TEACH ME LORD TO WAIT DOWN ON MY KNEES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Teach me, Lord, to wait down on my knees,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Till in Your own good time You answer my pleas;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Teach me not to rely on what others do,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "But to wait in prayer for an answer from You.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 29
+      }, {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "They that wait upon the Lord, shall renew their strength,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 48
+      } ]
+    }, {
+      "text" : "They shall mount up with wings as an eagle,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "They shall run and not be weary, they shall walk and not faint;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 57
+      } ]
+    }, {
+      "text" : "Teach me, Lord, teach me, Lord, to wait.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Teach me, Lord, to wait while hearts are aflame,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "Help me humble my pride and call on Your Name;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Keep my faith renewed, keep my eyes on Thee,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "Let me be on this earth what You want me to be.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 44
+      } ]
+    } ]
+  } ]
+}

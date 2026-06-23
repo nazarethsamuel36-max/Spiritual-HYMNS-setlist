@@ -1,0 +1,407 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 22]
+
+CHAPTER 3: ANALYSIS (EXISTING VS PROPOSED SYSTEM)
+
+3.1 Introduction to Domain Analysis
+
+The domain of digital music management, specifically the sub-domain of chord-over-lyric display systems, has evolved significantly over the past two decades. What began as simple ASCII text files shared on internet forums in the 1990s has grown into a multi-million dollar industry with dedicated platforms, mobile applications, and proprietary file formats.
+
+However, despite this evolution, the fundamental technical approach to displaying chords over lyrics has remained largely unchanged since its inception. The overwhelming majority of platforms, from free community websites to premium professional applications, still rely on some variation of the "space-based alignment" paradigm. In this paradigm, chord symbols are placed on a line above the lyrics, and horizontal spacing (using space characters, tab characters, or CSS padding) is used to visually position each chord above its corresponding word or syllable.
+
+This chapter presents a comprehensive analysis of three representative systems from the current market: Ultimate Guitar (a community-driven web platform), OnSong (a professional mobile application), and traditional static formats (PDF and Word documents). For each system, the analysis covers the following dimensions:
+
+- Core Architecture: How the system stores and represents song data internally.
+- Chord Alignment Mechanism: The technical approach used to position chords over lyrics.
+- Mobile Responsiveness: How the system behaves when viewed on narrow screens.
+- Transposition Capability: Whether and how the system supports key changes.
+- Multi-Language Support: The system's ability to handle non-Latin scripts.
+- Limitations: Specific technical failures observed during evaluation.
+
+Following the individual analyses, a comparative matrix is presented, and the specific problems that the proposed Worship Song Library addresses are formally identified and justified.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 23]
+
+3.2 Analysis of Ultimate Guitar (UG)
+
+3.2.1 Platform Overview
+
+Ultimate Guitar (ultimateguitar.com) is the largest community-driven guitar chord and tablature database in the world. Founded in 1998, it hosts millions of user-contributed chord charts and tablatures for popular songs across virtually every genre. The platform is available as a website and as mobile applications for iOS and Android.
+
+Ultimate Guitar's business model is freemium: basic access to chord charts is free, while advanced features such as offline access, official tabs, and an ad-free experience require a paid subscription (UG Pro).
+
+3.2.2 Data Storage Model
+
+Ultimate Guitar stores song data as monolithic text blobs. Each song submission is a single string of text that includes section headers, chord lines, and lyric lines. There is no structural decomposition of the song into sections, lines, or chord occurrences at the database level.
+
+When a contributor submits a chord chart, they type or paste the entire song as plain text. The platform stores this text essentially as-is, with minimal processing. Section headers like "[Verse 1]" or "[Chorus]" are recognized by the display layer for visual formatting (bold, colored text), but they are not extracted into separate database entities.
+
+This monolithic storage approach has a significant advantage: simplicity. Contributors can submit songs quickly without learning a structured format, and the platform can display them with minimal server-side processing. However, it also means that the platform cannot perform intelligent operations on the song data. It cannot, for example, extract just the chorus of a song, list all chords used in a specific verse, or programmatically modify the song structure.
+
+3.2.3 Chord Alignment Mechanism
+
+Ultimate Guitar uses the classic two-line format with space-based alignment. Chord symbols are placed on a line directly above the lyrics, and space characters are used to push each chord to the correct horizontal position.
+
+Example as stored in the database:
+   G                 C        G
+   Amazing grace how sweet the sound
+
+The display layer renders this text inside a pre-formatted text block (HTML pre tag) with a monospaced font (typically Courier New or a similar fixed-width typeface). The pre tag preserves all whitespace characters exactly as they appear in the source text, and the monospaced font ensures that each character (including spaces) occupies exactly the same horizontal width.
+
+This approach works correctly under the following conditions:
+- The browser renders the text in the specified monospaced font.
+- The browser window is wide enough to display the entire line without wrapping.
+- The user does not zoom in or out.
+- The text does not contain any characters with non-standard widths.
+
+When any of these conditions is violated, the alignment breaks.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 24]
+
+3.2.4 Mobile Responsiveness Analysis
+
+The most critical failure of Ultimate Guitar's approach manifests on mobile devices. The analysis was conducted using a standard smartphone (iPhone 13, viewport width 390px) and a budget Android phone (viewport width 320px).
+
+Test Scenario 1: Standard English Song
+Song tested: "Amazing Grace" (Key of G)
+Line tested: "G                 C        G"
+           "Amazing grace how sweet the sound"
+
+On a desktop browser with sufficient width, the chords appear correctly positioned above their corresponding words. However, on a mobile viewport of 390px:
+
+Observed Behavior: The lyric line "Amazing grace how sweet the sound" wraps at the word "sweet" because the line is too long to fit the screen width. The lyrics now occupy two visual lines:
+   Line 1: "Amazing grace how"
+   Line 2: "sweet the sound"
+
+However, the chord line "G                 C        G" does NOT wrap at the same point. Depending on the CSS overflow settings, one of two things happens:
+- If overflow is set to scroll, the chord line extends beyond the screen edge, requiring horizontal scrolling to see the C and G chords. The user must scroll right to see which chords correspond to "sweet the sound."
+- If overflow is set to hidden, the C and G chords simply disappear, cut off by the screen edge.
+
+In neither case do the chords correctly correspond to the wrapped lyrics. The G chord that should appear above "sweet" is either invisible or requires scrolling to find.
+
+Test Scenario 2: Long Hindi Song Title (Transliterated)
+Line tested: A Hindi worship song with a long line of transliterated text.
+
+Observed Behavior: The problem is amplified with longer lines common in Hindi worship songs. A typical Hindi lyric line in Roman transliteration can be 60 to 80 characters long, compared to 40 to 50 for typical English songs. This means that Hindi songs wrap more aggressively on mobile screens, and the chord misalignment is more severe.
+
+3.2.5 Transposition Capability
+
+Ultimate Guitar does provide a transposition feature. The implementation works by scanning the chord line text for recognized chord patterns using regular expressions, extracting them, applying a semitone offset, and replacing them in the text.
+
+Strengths of this approach:
+- It works for standard chords (C, D, Em, G7, etc.).
+- The transposition is applied instantly in the browser without a server round-trip.
+
+Limitations of this approach:
+- Because the chords are embedded in a text blob, the regex must distinguish between chord symbols and regular text. This can produce false positives. For example, the word "Am" in "Amazing" could be incorrectly identified as an A minor chord.
+- After transposition, the chord text may be longer or shorter than the original (e.g., "G" becomes "G#"), which shifts the spacing and breaks the alignment. Ultimate Guitar does not recalculate the spacing after transposition, leading to progressive misalignment as chords are transposed.
+- Slash chords (e.g., "G/B") and complex jazz chords (e.g., "Cmaj13") are sometimes parsed incorrectly.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 25]
+
+3.2.6 Multi-Language Support
+
+Ultimate Guitar's database is overwhelmingly English-centric. While the platform does not technically prevent non-English submissions, its infrastructure is not designed for multi-script content:
+
+- The search engine does not support Unicode-aware collation. Searching for "आरती" (Aarati in Devanagari) returns zero results even if the song exists in the database, because the search algorithm does not normalize across scripts.
+- The monospaced font used for chord display (Courier New) has limited Devanagari glyph support. On many systems, Devanagari characters fall back to a proportional font, immediately breaking the space-based alignment.
+- There is no concept of dual-script storage. A song submitted in Devanagari and the same song submitted in Roman transliteration are treated as two entirely separate, unrelated entries.
+
+3.2.7 Summary of Ultimate Guitar Limitations
+
+Limitation 1 - Brittle Alignment: Space-based positioning breaks on any non-standard display condition (mobile, proportional font, zoom).
+Limitation 2 - Wrapping Failure: Chord lines and lyric lines wrap independently, destroying the visual relationship on narrow screens.
+Limitation 3 - Monolithic Storage: Songs as text blobs prevent structural querying and intelligent manipulation.
+Limitation 4 - Transposition Artifacts: Post-transposition spacing errors accumulate with each key change.
+Limitation 5 - No Multi-Script Support: Devanagari and other non-Latin scripts are effectively unsupported.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 26]
+
+3.3 Analysis of OnSong
+
+3.3.1 Platform Overview
+
+OnSong is a premium, professional-grade music management application designed primarily for live performance environments. It is widely used in churches, worship teams, and professional bands across North America and Europe. OnSong is available exclusively on Apple devices (iPad and iPhone), with pricing that includes both a one-time purchase fee and optional subscription tiers for advanced features.
+
+OnSong represents the current gold standard for professional chord chart management. Its feature set includes setlist management, foot-pedal integration for hands-free page turning, stage display routing (sending different views to different monitors), MIDI program changes for triggering instrument presets, and robust transposition.
+
+3.3.2 Data Storage Model
+
+OnSong uses a proprietary file format that is an extension of the ChordPro format. ChordPro is an open standard that embeds chord symbols directly within lyric text using square brackets:
+
+   [G]Amazing [D]grace, how [Em]sweet the [C]sound
+
+In this format, the chord symbol is placed immediately before the word (or syllable) where it should be played. The brackets serve as delimiters that separate the chord from the surrounding lyrics. When OnSong renders the song, it parses the brackets, extracts the chords, and displays them above the corresponding text.
+
+This approach is fundamentally different from Ultimate Guitar's space-based alignment. Instead of using physical spacing to visually align chords, the ChordPro format semantically binds each chord to a specific position in the lyrics. This binding is maintained regardless of font, screen size, or text wrapping.
+
+The Worship Song Library's [C] anchor format is inspired by and compatible with the ChordPro standard. However, the Worship Song Library goes further by decomposing the ChordPro-formatted text into a normalized relational database structure, whereas OnSong stores it as flat files.
+
+3.3.3 Chord Alignment Mechanism
+
+OnSong's chord alignment is significantly more robust than Ultimate Guitar's because it inherits the ChordPro format's semantic binding. When OnSong renders a song, it:
+1. Parses the ChordPro text to extract chord positions.
+2. Generates a native UI layout (using Apple's UIKit framework) where each chord is anchored to its corresponding text element.
+3. Uses the native text layout engine to handle wrapping, ensuring that chords move with their associated text.
+
+Because OnSong is a native iOS application (not a web application), it has access to Apple's Core Text framework, which provides precise typographic measurements. OnSong can measure the exact pixel width of each character in the lyrics and position chord elements with sub-pixel accuracy. This level of rendering precision is extremely difficult to achieve in a web browser environment.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 27]
+
+3.3.4 Mobile Responsiveness
+
+OnSong excels at responsive display because it is a native application running on a fixed set of Apple devices with known screen dimensions. The application's layout engine is optimized for the specific screen sizes of the iPad (10.2 inch, 10.9 inch, 11 inch, 12.9 inch) and iPhone (6.1 inch, 6.7 inch).
+
+When a song is displayed on a smaller screen, OnSong's rendering engine:
+- Adjusts the font size to fit the content within the viewport.
+- Uses pinch-to-zoom for fine-grained size control.
+- Splits long lines at word boundaries while maintaining chord positions.
+
+This native rendering approach produces visually excellent results on Apple devices. However, it is entirely non-transferable to other platforms.
+
+3.3.5 Transposition Capability
+
+OnSong's transposition engine is one of its strongest features. Because chords are stored as semantic entities (not as text within a visual layout), OnSong can:
+- Transpose all chords in a song by any number of semitones.
+- Support Nashville Number System notation.
+- Handle capo calculations (displaying both the actual chord and the capo-relative shape).
+- Preserve transposition settings per-song within a setlist.
+
+The transposition is mathematically accurate for all standard chord types including major, minor, diminished, augmented, seventh, ninth, suspended, and slash chords.
+
+3.3.6 Multi-Language Support
+
+OnSong's multi-language support is limited. While the application can display Unicode text (including Devanagari, Chinese, Korean, and other scripts), it does not provide:
+- Dual-script storage (maintaining both original script and transliteration for the same song).
+- Cross-script search (searching in Roman characters to find a Devanagari song).
+- Script toggling (switching between Devanagari and Roman views while maintaining chord positions).
+
+For Indian worship environments where bilingual display is essential, OnSong requires maintaining two separate song entries for each multilingual song, doubling the data maintenance burden.
+
+3.3.7 Platform Restriction
+
+The most significant limitation of OnSong is its exclusive availability on Apple devices. This creates several barriers for Indian worship environments:
+
+Cost Barrier: An iPad costs between INR 30,000 and INR 1,50,000. For small churches and individual musicians in India, this represents a substantial financial investment solely for accessing a chord chart application. A web-based solution accessible on any device (including budget Android phones costing INR 8,000 to INR 15,000) dramatically lowers the barrier to entry.
+
+Ecosystem Lock-in: Musicians who use OnSong are locked into the Apple ecosystem. Their song data is stored in OnSong's proprietary format, making it difficult to export and use on other platforms. If a musician switches from an iPad to an Android tablet, they lose access to their entire song library.
+
+No Shared Display: In many Indian churches, the song is projected from a single computer connected to a projector. OnSong's iOS-only design means that the projection computer (typically running Windows) cannot run OnSong. The worship leader must use a separate workflow for the projector display.
+
+3.3.8 Summary of OnSong Limitations
+
+Limitation 1 - Platform Exclusivity: Available only on Apple devices, excluding the majority of users in cost-sensitive markets.
+Limitation 2 - Proprietary Format: Song data is stored in a proprietary format, creating vendor lock-in.
+Limitation 3 - No Dual-Script Support: Cannot maintain two script versions of the same song as a single entity.
+Limitation 4 - Cost Barrier: Requires expensive Apple hardware plus application purchase/subscription fees.
+Limitation 5 - No Web Access: Cannot be accessed from a web browser on Windows, Linux, or Android devices.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 28]
+
+3.4 Analysis of Traditional Static Formats (PDF and Word Documents)
+
+3.4.1 Overview
+
+Despite the availability of dedicated music applications, a significant portion of Indian churches still rely on traditional document formats for managing their song libraries. These formats include:
+- Microsoft Word documents (.docx) with manually formatted chord charts.
+- PDF files exported from Word or created using desktop publishing software.
+- Google Docs shared within a congregation.
+- Printed paper songbooks digitized as scanned PDFs.
+
+This category of solutions is included in the analysis because it represents the baseline against which digital solutions must be compared. Many churches have been using printed songbooks for decades and have only recently begun exploring digital alternatives.
+
+3.4.2 Data Storage Model
+
+In traditional formats, a song is stored as a single document file. The file contains the complete visual representation of the song, including section headers, chord lines, lyric lines, and any decorative formatting (borders, backgrounds, fonts).
+
+There is no structural data model. The document does not distinguish between a chord symbol and a regular text character. It does not know that "[Verse 1]" is a section header or that "G" on the chord line is a musical chord. Everything is simply formatted text.
+
+3.4.3 Chord Alignment Mechanism
+
+Chord alignment in Word and PDF documents is achieved through manual formatting. The document author types the chord symbols, then uses spaces, tabs, or manual positioning to place them above the correct lyrics. In some cases, the author uses a table with invisible borders, placing chords in one row and lyrics in the row below.
+
+The alignment is "baked in" to the document at creation time. It is static and absolute: it looks correct on the specific screen size, zoom level, and font configuration that the author used when creating the document.
+
+3.4.4 Mobile Responsiveness
+
+PDF files have zero responsiveness. A PDF renders at a fixed page size (typically A4 or Letter). On a mobile device, the user must zoom in to read the content and then scroll horizontally and vertically to navigate the page. This is extremely cumbersome during a live performance, where the musician needs to see the current section of the song at a glance without pinching, zooming, or scrolling.
+
+Word documents opened in mobile viewing applications (Microsoft Word for Android or Google Docs) reflow the text to fit the screen width. However, this reflow destroys the chord alignment because the chords and lyrics are independent text elements that reflow independently.
+
+3.4.5 Transposition Capability
+
+Static documents have zero transposition capability. Changing the key of a song requires:
+1. Opening the original document in an editor.
+2. Manually identifying every chord symbol in the document.
+3. Mentally calculating the new chord for each symbol using music theory knowledge.
+4. Replacing each chord symbol with the new one.
+5. Adjusting the spacing if the new chord name is longer or shorter than the original.
+6. Saving and redistributing the modified document.
+
+For a song with 40 chord changes, this process takes approximately 10 to 15 minutes for an experienced musician and 20 to 30 minutes for a novice. It is highly error-prone: a single missed chord change results in a musical clash during performance that can disrupt the entire band.
+
+3.4.6 Multi-Language Support
+
+Static documents can contain text in any language and any script, as long as the appropriate fonts are installed. However, they cannot provide:
+- Dynamic script toggling (a single document shows only one script version).
+- Cross-script search (searching the file system by phonetic approximation is not possible).
+- Shared chord structure (two document versions of the same song must maintain their chords independently).
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 29]
+
+3.4.7 Maintenance Challenges
+
+The operational burden of maintaining a song library in static document format is severe:
+
+Version Control: When a chord error is found in a song, the corrected version must be distributed to all musicians. In practice, different musicians often have different versions of the same song on their devices, leading to confusion during rehearsals.
+
+Update Propagation: Adding a new song to the library requires creating a document, formatting it, distributing it via email or messaging applications, and hoping that every musician downloads and saves it. There is no centralized source of truth.
+
+Searchability: Finding a specific song requires either remembering the file name or opening documents one by one to check their contents. There is no full-text search across the library unless all documents are stored in a search-capable system like Google Drive.
+
+3.4.8 Summary of Static Format Limitations
+
+Limitation 1 - Zero Flexibility: No transposition, no script toggling, no responsive layout.
+Limitation 2 - Manual Maintenance: Every update requires manual editing and redistribution.
+Limitation 3 - No Search: Finding songs is slow and relies on file naming conventions.
+Limitation 4 - Alignment Fragility: Manual formatting breaks on different devices and zoom levels.
+Limitation 5 - Version Drift: Multiple copies lead to inconsistent song versions across the congregation.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 30]
+
+3.5 Comparative Analysis Matrix
+
+The following comprehensive comparison summarizes the findings across all three existing systems and the proposed Worship Song Library:
+
+Table 3.1: Feature Comparison Matrix
+
+| Feature | Ultimate Guitar | OnSong | PDF/Word | Worship Song Library |
+| Chord Alignment | Space-based padding | ChordPro brackets | Manual spacing | Character-index anchoring |
+| Mobile Responsive | Poor (Wrapping breaks) | Excellent (Native UI) | None (Fixed layout) | Excellent (Virtual Wrapping) |
+| Transposition | Yes (Regex, artifacts) | Yes (Engine, accurate) | No | Yes (Chromatic, accurate) |
+| Multi-Script | Not supported | Limited | Static only | Full (Dual-script toggle) |
+| Data Model | Text blob | Proprietary flat file | Document file | Normalized relational DB |
+| Search | Text search | Title/content search | File-level only | Weighted multi-dimensional |
+| Platform | Web, iOS, Android | iOS/iPadOS only | Universal (reader) | Universal web app |
+| Cost | Freemium | Paid (USD 20+) | Free | Free / Open |
+| Cross-Script Search | No | No | No | Yes |
+| Concurrent Updates | N/A (User-contributed) | Single device | Manual redistribution | Centralized, instant |
+| Chord Querying | Not possible | Limited | Not possible | Full SQL querying |
+| Section-level Control | Display only | Display only | Not possible | Database-level granularity |
+
+
+3.6 Problem Identification
+
+Based on the comprehensive analysis of existing systems, the following five critical problems have been formally identified as the targets for the proposed system:
+
+Problem ID P1: The Mobile Misalignment Problem
+Source: Ultimate Guitar, PDF/Word
+Description: Space-based chord alignment breaks when text wraps on narrow mobile screens because the chord line and lyric line are independent text elements with no semantic relationship.
+Impact: Musicians cannot trust the chord positions displayed on their mobile devices, leading to musical errors during live performance.
+
+Problem ID P2: The Unstructured Data Problem
+Source: Ultimate Guitar, PDF/Word
+Description: Songs stored as text blobs or document files cannot be programmatically queried or manipulated. The system has no understanding of the internal structure of a song.
+Impact: Advanced features such as section-level rendering, chord frequency analysis, and targeted transposition are impossible.
+
+Problem ID P3: The Manual Transposition Problem
+Source: PDF/Word
+Description: Changing the key of a song in a static document requires manual recalculation of every chord, a process that is slow and error-prone.
+Impact: Last-minute key changes before a service cause stress, delays, and musical errors.
+
+Problem ID P4: The Platform Restriction Problem
+Source: OnSong
+Description: Professional-grade chord management tools are locked behind expensive, platform-specific ecosystems (Apple iOS).
+Impact: The majority of musicians in cost-sensitive markets cannot access professional chord management features.
+
+Problem ID P5: The Multi-Script Problem
+Source: All three systems
+Description: No existing system provides integrated dual-script storage with script toggling and cross-script search for Indian languages.
+Impact: Bilingual congregations must maintain duplicate song entries or choose a single script, excluding members who cannot read it.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 31]
+
+3.7 Proposed System Overview
+
+The Worship Chord and Lyrics Management System addresses each of the five identified problems through specific architectural decisions:
+
+Solution to P1 (Mobile Misalignment): Position-Based Chord Mapping
+Instead of using spaces for alignment, each chord is stored with an integer character_index that mathematically binds it to a specific character in the lyric string. The rendering engine reads this index and injects the chord HTML element at the correct position, regardless of screen width, font, or zoom level. A custom Virtual Wrapping Algorithm detects when a line must split on a mobile screen, divides the lyric string at a word boundary, and recalculates the chord indices for each resulting sub-line.
+
+Solution to P2 (Unstructured Data): Normalized Relational Database
+Songs are decomposed into four levels of granularity: Song (metadata), Sections (verse, chorus, bridge), Song Lines (individual lines of text), and Line Chords (individual chord occurrences with positions). This structure is stored in MySQL tables connected by foreign keys, enabling SQL queries at any level of detail. For example, a query can retrieve all chords used in the chorus of a specific song, count the number of chord changes per line, or find all songs that use a particular chord progression.
+
+Solution to P3 (Manual Transposition): Algorithmic Chromatic Transposition
+Because chords are stored as isolated entities in the line_chords table, a Java utility class can iterate through them, identify the root note, and apply a mathematical offset along a 12-element chromatic scale array. The transposition is instantaneous (under 30 milliseconds for an entire song) and mathematically perfect. It handles major, minor, seventh, diminished, augmented, suspended, and slash chords.
+
+Solution to P4 (Platform Restriction): Universal Web Application
+The system is a standard web application accessible from any device with a modern web browser. It runs on Windows, macOS, Linux, Android, and iOS. The only requirement is an internet connection (or local network access to the server). There is no app to install, no subscription to pay, and no hardware lock-in.
+
+Solution to P5 (Multi-Script): Dual-Script Storage with Shared Chords
+Each song record stores two versions of the lyrics: lyrics_original (Devanagari) and lyrics_roman (transliteration). Both versions share the same set of chord data (stored once in the line_chords table). The UI provides a toggle button that swaps the displayed text while keeping the chord overlay constant. The search engine queries both fields simultaneously, enabling cross-script discovery.
+
+
+[PAGE BORDER: ACADEMIC STYLE]
+[CHAPTER 3 - PAGE 32]
+
+3.8 Justification of Proposed Approach
+
+3.8.1 Why Character-Index Anchoring Over Space-Based Alignment
+
+The fundamental insight that drives the entire system architecture is this: chord alignment should be encoded in the data, not in the visual layout.
+
+In space-based alignment, the relationship between a chord and its corresponding lyric is encoded visually. If there are 18 space characters before the chord "C" on the chord line, and 18 characters of lyrics on the lyric line, the "C" appears above the 19th character. But this relationship exists only in the visual rendering. If the visual rendering changes (different font, different screen width, different zoom level), the relationship is destroyed.
+
+In character-index anchoring, the relationship is encoded in the data. The database record states: "Chord C belongs at character index 18 of this lyric line." This relationship is independent of any visual rendering. The rendering engine reads this data and positions the chord correctly, no matter what the visual conditions are. The relationship survives font changes, screen resizing, text wrapping, and zooming because it is a mathematical fact, not a visual coincidence.
+
+3.8.2 Why Relational Database Over Document Storage
+
+A song is not a document; it is a structured data object with hierarchical relationships. Treating it as a document (a text blob or a file) discards this structure and makes it invisible to the application.
+
+By storing songs in a relational database with normalized tables, the application gains the ability to:
+- Query at any granularity level (song, section, line, or chord).
+- Enforce data integrity through foreign key constraints.
+- Perform aggregate operations (counting chords, finding most common chord progressions).
+- Update chord data independently of lyric data.
+- Support transactional imports that either succeed completely or fail completely.
+
+3.8.3 Why Virtual Wrapping Over Native Browser Wrapping
+
+The browser's native text wrapping algorithm is designed for prose text, not for synchronized multi-line content. When the browser wraps a paragraph of text, it simply finds the last space character that fits within the container width and moves the remaining text to the next line. This works perfectly for prose because each line is independent.
+
+But in a chord chart, the chord line and the lyric line are semantically linked. They must wrap at the same point, and the chords must be redistributed across the resulting sub-lines. The browser has no mechanism for this synchronized wrapping because it does not understand the relationship between the two lines.
+
+The Virtual Wrapping Algorithm takes control of this process. It measures the container width, calculates where the lyric line must break, manually splits the string, and distributes the chords to the correct sub-lines with recalculated relative positions. The result is a display where chords and lyrics always wrap together, maintaining their musical relationship on any screen size.
+
+3.8.4 Problem-Solution Mapping Summary
+
+Table 3.2: Problem-Solution Mapping
+
+| Problem ID | Problem Description | Proposed Solution | Technical Mechanism |
+| P1 | Chord misalignment on mobile | Position-based mapping | char_index in line_chords table |
+| P2 | Unstructured data storage | Normalized relational DB | songs/sections/song_lines/line_chords |
+| P3 | Manual transposition | Algorithmic chromatic shift | 12-element array with modulo arithmetic |
+| P4 | Platform restriction | Universal web application | Java Servlets + JSP + standard browser |
+| P5 | No multi-script support | Dual-script with shared chords | lyrics_original + lyrics_roman fields |
+
+This concludes the analysis chapter. The identified problems and their proposed solutions directly inform the system design documented in the next chapter.
+
+[PAGE BORDER: ACADEMIC STYLE]

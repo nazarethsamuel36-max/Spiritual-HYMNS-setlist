@@ -1,0 +1,205 @@
+{
+  "id" : 1102,
+  "songNumber" : 124,
+  "title" : "ऐ शाहों के शहंशाह",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ऐ शाहों के शहंशाह,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "इल्लाहो का तू है इल्लाह",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कर दूर मेरी खामियां,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "घटियों को तू कर पुरा।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "फानी जग से मुझे तुने मोल लिया,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "बडा रहम यह कितना किया",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "अब मैं गाऊंगा और बताऊंगा,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "यीशु है हकीकी खुदा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तूने रहम कियो, रुह अपना दिया,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "रहने को पाक सदा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "यीशु मेरे खुदा, है यह मेरी दुआ,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "मुझे लायक-इ-सैय्युनबना।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "मेरे सैय्युनी राजा,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "तू कब तक आयेगा,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "और कितना समय है रहा",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "लहरे आजमाइशों की,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कैसे कैसे उठती,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मुझे थाम अब हाथ बढा।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "देख दुल्हन तेरी मुनतजिर है खडी,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "पास अपने तू इसको उठा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "तू मिरास इसकी, और आस इसकी,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "आबदियत में अबदी जलाल।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 19
+      } ]
+    } ]
+  } ]
+}

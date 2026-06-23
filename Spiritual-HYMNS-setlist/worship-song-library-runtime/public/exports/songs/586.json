@@ -1,0 +1,33 @@
+{
+  "id" : 586,
+  "songNumber" : 40,
+  "title" : "THANK YOU GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Thank you God for sending Jesus.",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 18
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Thank you, Jesus, that you came."
+    }, {
+      "text" : "Holy Spirit, won't you tell me"
+    }, {
+      "text" : "More about His lovely Name."
+    } ]
+  } ]
+}

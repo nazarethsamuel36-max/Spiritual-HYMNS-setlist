@@ -1,0 +1,196 @@
+{
+  "id" : 774,
+  "songNumber" : 162,
+  "title" : "MINE EYES HAVE SEEN THE GLORY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Mine eyes have seen the glory of the coming of the Lord;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "He is trampling out the vintage where the grapes of wrath are stored;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 62
+      } ]
+    }, {
+      "text" : "He hath loosed the fateful lightning of His terrible swift sword;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 44
+      }, {
+        "chord" : "D",
+        "position" : 59
+      } ]
+    }, {
+      "text" : "His truth is marching on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "Glory ! glory, hallelujah !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Glory ! glory, hallelujah !"
+    }, {
+      "text" : "Glory ! glory, hallelujah !"
+    }, {
+      "text" : "His Truth is marching on."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I have seen Him in the watchfires of a hundred circling camps;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "They have builded Him an altar in the evening dews and damps;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 55
+      } ]
+    }, {
+      "text" : "I can read His righteous sentence by the dim and flaring lamps;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 41
+      }, {
+        "chord" : "D",
+        "position" : 57
+      } ]
+    }, {
+      "text" : "His day is marching on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "He has sounded forth the trumpet that shall never sound retreat;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "He is sifting out the hearts of men before His judgment seat;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 56
+      } ]
+    }, {
+      "text" : "O be swift, my soul, to answer Him !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "be jubilant, my feet !",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Our God is marching on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "In the beauty of the lilies Christ was born across the sea,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "With a glory in His bosom that transfigures you and me;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 52
+      } ]
+    }, {
+      "text" : "As He died to make men holy, let us die to make men free;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "A",
+        "position" : 36
+      }, {
+        "chord" : "D",
+        "position" : 52
+      } ]
+    }, {
+      "text" : "While God is marching on.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 22
+      } ]
+    } ]
+  } ]
+}

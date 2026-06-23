@@ -1,0 +1,68 @@
+{
+  "id" : 3133,
+  "songNumber" : 2034,
+  "title" : "** तॆरि तअरिफ़् हॊ",
+  "language" : "hindi",
+  "originalKey" : "** Gm",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Dil mein basa liya hai tujhko,"
+    }, {
+      "text" : "Rooh mein samā liya tujhko |"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Teri tarif ho, teri tarif ho,"
+    }, {
+      "text" : "Teri tarif ho, ai Yeshu |"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Mere liye tu mara, mere liye tu gada, (2)"
+    }, {
+      "text" : "Yeshu tu kaisa piya, lahu se mol liya |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Vandana ho ab teri, aaradhana ho ab teri, (2)"
+    }, {
+      "text" : "Bhakti karoon main teri, aasha yahi Naasari |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "Tu hai sakoon mera, tu hi hai meri shifa, (2)"
+    }, {
+      "text" : "Jeevan basar saath ho, yahi hai meri dua |"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "https://youtu.be/66mTDr_Qq78"
+    } ]
+  } ]
+}

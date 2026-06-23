@@ -1,0 +1,163 @@
+{
+  "id" : 1009,
+  "songNumber" : 31,
+  "title" : "जय जय प्रभु यीशु की",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "जय जय प्रभु यीशु की (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हमको बचाने आया जगत में,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "उसकी स्तुति करो,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "हाल्लेलुयाह आमीन (4)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "C",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "खून की धारा बहती सूली से, जिसमें धुले सब पाप,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "धो लो अब तुम अपने हृदय को, जिसमें रहे न दाग ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 27
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "ग्रहण करो तुम आज प्रभु को, प्रेम की बहती धार,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 27
+      }, {
+        "chord" : "G",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "उसको बनालो खेवनहारा, नाव लगालो पार ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "वापस आता मेरा प्रभु जी, ले जायेगा साथ,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "आशा मेरी अब तो यही है, चलो तुम मेरे साथ ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "हर दम होंगे साथ यीशु के, खुशी और शान्ति, आराम,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "आयेगा वह लेने तुम्हें भी, रहना तुम भी तैयार ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 26
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    } ]
+  } ]
+}

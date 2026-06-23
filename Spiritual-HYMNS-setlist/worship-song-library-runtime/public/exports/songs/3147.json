@@ -1,0 +1,76 @@
+{
+  "id" : 3147,
+  "songNumber" : 1005,
+  "title" : "** Come Thou Fount Of Every Blessing",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Come, Thou Fount of every blessing"
+    }, {
+      "text" : "Tune my heart to sing Thy grace"
+    }, {
+      "text" : "Streams of mercy, never ceasing"
+    }, {
+      "text" : "Call for songs of loudest praise"
+    }, {
+      "text" : "Teach me some melodious sonnet"
+    }, {
+      "text" : "Sung by flaming tongues above"
+    }, {
+      "text" : "Praise the mount, I'm fixed upon it"
+    }, {
+      "text" : "Mount of Thy redeeming love"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Here I raise my Ebenezer"
+    }, {
+      "text" : "Here there by Thy great help I've come"
+    }, {
+      "text" : "And I hope, by Thy good pleasure"
+    }, {
+      "text" : "Safely to arrive at home"
+    }, {
+      "text" : "Jesus sought me when a stranger"
+    }, {
+      "text" : "Wandering from the fold of God"
+    }, {
+      "text" : "He, to rescue me from danger"
+    }, {
+      "text" : "Interposed His precious blood"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Oh, to grace how great a debtor"
+    }, {
+      "text" : "Daily I'm constrained to be"
+    }, {
+      "text" : "Let that goodness like a fetter"
+    }, {
+      "text" : "Bind my wandering heart to Thee"
+    }, {
+      "text" : "Prone to wander, Lord, I feel it"
+    }, {
+      "text" : "Prone to leave the God I love"
+    }, {
+      "text" : "Here's my heart, oh, take and seal it"
+    }, {
+      "text" : "Seal it for Thy courts above"
+    } ]
+  } ]
+}

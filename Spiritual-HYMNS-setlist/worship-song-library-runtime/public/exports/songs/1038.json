@@ -1,0 +1,219 @@
+{
+  "id" : 1038,
+  "songNumber" : 60,
+  "title" : "सम्पूर्ण जीवन मेरा, प्रभु तुम्हारा है",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "सम्पूर्ण जीवन मेरा, प्रभु तुम्हारा है,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "प्यारे प्रभु जी मेरे, जीवन का सहारा है ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जब मैं गुनाहों में खोया था,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "पापों में बिलकुल सोया था,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "अपने पवित्र लहू से,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "धोया तूने मेरे पापों को;",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "धोकर मुझे अब शुद्ध किया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "मेरे हृदय को साफ़ किया । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तुझ से जब मैं भटक गया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "जीवन को तूने सहारा दिया,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "अच्छा चरवाहा बनकर,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "तुने मुझे अब ढूँढ लिया,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "अब से प्रभु मैं गाऊँगा,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "तेरा समाचार सुनाऊँगा । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "प्रभु ने मुझे बचा लिया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "पापों का बोझ हटा दिया,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "अनुग्रह, शान्ति और प्रेम दिया,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "अपने जीवन से भर दिया",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "पापों से मन फिराओ अब,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "दिल से विश्वास लाओ सब । (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,261 @@
+{
+  "id" : 1026,
+  "songNumber" : 48,
+  "title" : "मैं यीशु के नूर में साथ चलूँगा",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मैं यीशु के नूर में साथ चलूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "F",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "दिन और रात उसके पीछे, मैं चलूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "नूर में चलूँगा, पीछे चलूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 12
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "यीशु मेरा मुन्जी मसरूब ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 10
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "चलते चलते नूर में यीशु के साथ-हाल्लेलुयाह",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "चलते चलते थामते यीशु के साथ,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "नूर में मैं रहूँगा, फतह पाऊँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 13
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "F",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "मैं नूर में चलता चलूँगा ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "मैं यीशु के नूर में साथ चलूँगा,"
+    }, {
+      "text" : "हो अन्धेरी रात मैं न डरूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 11
+      }, {
+        "chord" : "F",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "पैर उठाऊँगा, दिल से गाऊँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "यीशु मेरा मुन्जी मसरूब ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "मैं यीशु के नूर में साथ चलूँगा,"
+    }, {
+      "text" : "जब कभी आवाज उसकी सुनूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 8
+      }, {
+        "chord" : "F",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "उससे कहूंगा, तुझे सब दूँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 9
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "यीशु मेरा मुन्जी मसरूब ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "मैं यीशु के नूर में साथ चलूँगा,"
+    }, {
+      "text" : "ताकते ताकते रोज मदद पाऊँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "रंज या खुशी हो, या नजदीक हो मौत,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 12
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "F",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "यीशु मेरा मुन्जी मसरूब ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 6",
+    "lines" : [ {
+      "text" : "मैं यीशु के नूर में साथ चलूँगा,"
+    }, {
+      "text" : "अपनी आँख उसकी तरफ लगाऊँगा,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "F",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "हाथ में ले सलीब झण्डा है अजीब,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 12
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "यीशु मेरा मुन्जी मसरूब ।"
+    } ]
+  } ]
+}

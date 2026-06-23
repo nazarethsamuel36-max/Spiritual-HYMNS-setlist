@@ -1,0 +1,82 @@
+{
+  "id" : 648,
+  "songNumber" : 341,
+  "title" : "LET'S GO UP TO ZION",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Let's go up to Zion,"
+    }, {
+      "text" : "Let's go up to Zion,"
+    }, {
+      "text" : "Let's go up to Zion,"
+    }, {
+      "text" : "The city of our God.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "There's oil and wine in Zion,"
+    }, {
+      "text" : "There's oil and wine in Zion,"
+    }, {
+      "text" : "There's oil and wine in Zion,"
+    }, {
+      "text" : "The city of our God."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "Sing hallelujah",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Sing hallelujah"
+    }, {
+      "text" : "Sing hallelujah"
+    }, {
+      "text" : "There's joy in the Lord."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "We'll sing and dance in Zion,"
+    }, {
+      "text" : "We'll sing and dance in Zion,"
+    }, {
+      "text" : "We'll sing and dance in Zion,"
+    }, {
+      "text" : "The city of our God."
+    } ]
+  } ]
+}

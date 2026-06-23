@@ -1,0 +1,51 @@
+{
+  "id" : 955,
+  "songNumber" : 77,
+  "title" : "OPEN MY EYES LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Open my eyes, Lord,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "I want to see Jesus,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "To reach out and touch Him"
+    }, {
+      "text" : "And say that I love Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Open my ears, Lord,"
+    }, {
+      "text" : "And teach me to listen,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Open my heart, Lord,"
+    }, {
+      "text" : "I want to love Jesus.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

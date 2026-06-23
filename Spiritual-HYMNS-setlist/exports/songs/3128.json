@@ -1,0 +1,66 @@
+{
+  "id" : 3128,
+  "songNumber" : 2029,
+  "title" : "** धंयवद् करॆ, प्रभु कि महिम करॆ",
+  "language" : "hindi",
+  "originalKey" : "** F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Dhanyawad kare, Prabhu ki mahima kare,"
+    }, {
+      "text" : "Aur kare stuti aaradhna"
+    }, {
+      "text" : "Kyonki uski karuna sada ki hai !"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Dhanyawad kare, prabhu ka"
+    }, {
+      "text" : "Kyonki jeevan usine diya hai"
+    }, {
+      "text" : "Dhanyawad kare, prabhu ka"
+    }, {
+      "text" : "Jeevan mein bahutayat usi ne di hain"
+    }, {
+      "text" : "To chalo aao sabhi"
+    }, {
+      "text" : "Hath uthakar sabhi"
+    }, {
+      "text" : "Bolo Yeshu Masih ki jay"
+    }, {
+      "text" : "Kyonki uski karuna sada ki hai"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Dhanyawad kare, prabhu ka"
+    }, {
+      "text" : "Kyonki jeevan mein aman diya hai"
+    }, {
+      "text" : "Dhanyawad kare, prabhu ka"
+    }, {
+      "text" : "Jeevan mein vishwas usine diya hai"
+    }, {
+      "text" : "To chalo aao sabhi"
+    }, {
+      "text" : "Hath uthakar sabhi"
+    }, {
+      "text" : "Bolo Yeshu Masih ki jay"
+    }, {
+      "text" : "Kyonki uski karuna sada ki hai"
+    } ]
+  } ]
+}

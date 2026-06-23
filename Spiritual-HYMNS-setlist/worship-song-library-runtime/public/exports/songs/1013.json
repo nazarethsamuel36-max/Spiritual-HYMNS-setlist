@@ -1,0 +1,194 @@
+{
+  "id" : 1013,
+  "songNumber" : 35,
+  "title" : "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "C",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "संसार के सब प्राणी, उसका ही नाम लेंगे",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "C",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "धरती आकाश दोनों ।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "प्रभु का समय आता है, धरती मगन होगी",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "C",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "उसकी दया बरसेगी, और दूर जलन होगी",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "C",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "उसके वचन की महिमा, और शक्ति हम देखेंगे ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 19
+      }, {
+        "chord" : "C",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "प्रभु का वचन ऐसा है, जो चिराग सा जलता है",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "C",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "उसपर कोई चलता है, जीवन उसे मिलता है",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 11
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "C",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "उसके नियम को जो माने, कभी भी ना वो भटकेंगे ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "C",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "आँखे उठाकर देखो, प्रभु का दिन आवेगा",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 13
+      }, {
+        "chord" : "G",
+        "position" : 17
+      }, {
+        "chord" : "C",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "उसको ग्रहण जो करेगा, वही साथ जावेगा",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 15
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "C",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "जिसने प्रभु को न माना, वही एक दिन रोएगा ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 19
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "C",
+        "position" : 37
+      } ]
+    } ]
+  } ]
+}

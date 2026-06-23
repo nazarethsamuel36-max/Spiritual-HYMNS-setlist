@@ -1,0 +1,86 @@
+{
+  "id" : 3163,
+  "songNumber" : 1022,
+  "title" : "** Thank You For The Cross, Lord",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Thank you for the cross, Lord"
+    }, {
+      "text" : "Thank you for the price You paid"
+    }, {
+      "text" : "Bearing all my sin and shame"
+    }, {
+      "text" : "In love You came"
+    }, {
+      "text" : "And gave amazing grace"
+    }, {
+      "text" : "Thank you for this love, Lord"
+    }, {
+      "text" : "Thank you for the nail pierced hands"
+    }, {
+      "text" : "Washed me in Your cleansing flow"
+    }, {
+      "text" : "Now all I know"
+    }, {
+      "text" : "Your forgiveness and embrace"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Worthy is the Lamb"
+    }, {
+      "text" : "Seated on the throne"
+    }, {
+      "text" : "Crown You now with many crowns"
+    }, {
+      "text" : "You reign victorious"
+    }, {
+      "text" : "High and lifted up"
+    }, {
+      "text" : "Jesus Son of God"
+    }, {
+      "text" : "The treasure of Heaven crucified"
+    }, {
+      "text" : "Worthy is the Lamb"
+    }, {
+      "text" : "Worthy is the Lamb"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Thank you for the cross, Lord"
+    }, {
+      "text" : "Thank you for the price You paid"
+    }, {
+      "text" : "Bearing all my sin and shame"
+    }, {
+      "text" : "In love You came"
+    }, {
+      "text" : "And gave amazing grace"
+    }, {
+      "text" : "Thank you for this love, Lord"
+    }, {
+      "text" : "Thank you for the nail pierced hands"
+    }, {
+      "text" : "Washed me in Your cleansing flow"
+    }, {
+      "text" : "Now all I know"
+    }, {
+      "text" : "Your forgiveness and embrace"
+    } ]
+  } ]
+}

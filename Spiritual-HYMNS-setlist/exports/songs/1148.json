@@ -1,0 +1,103 @@
+{
+  "id" : 1148,
+  "songNumber" : 170,
+  "title" : "हृदय भेट चढाये प्रभु को स्तुति प्रशंसा करें",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "हृदय भेट चढाये प्रभु को स्तुति प्रशंसा करें,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हम सब संत जन मिलकर ! (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पाप का भार उठाने आया मसीह जगमें।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पापियों के सब पाप मिटाने, जीवन सनातन दिया।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "संकट क्लेश उठाया नम्र और दीन बनकर।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "द्वार उद्धार का खोला प्रभुजीने, सनातन आशा दी।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "आश्चर्य स्वर्गीय प्रेम हम पापीयों के लिए।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "फिर मत जाना पापी जगत में, पाप में ना पडकर।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "अर्पण करते हैं तुझको आत्मा प्राण और देह भी।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "रक्षा करो प्रभू इस जीवन की, बिनती हमारी यही।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 40
+      } ]
+    } ]
+  } ]
+}

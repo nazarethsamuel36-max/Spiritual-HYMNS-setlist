@@ -1,0 +1,103 @@
+{
+  "id" : 1080,
+  "songNumber" : 102,
+  "title" : "धारा जो बहती सलीब से, यीशु के पाक लहू कि",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "धारा जो बहती सलीब से, यीशु के पाक लहू कि",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "C",
+        "position" : 24
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "उसके घायल जिस्म से, धोये जो सबके गुनाह ।",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 35
+      }, {
+        "chord" : "Em",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "कितने सितम, जुल्म सहे, कोडे खाए,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "C",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "दर्द सहे मेरे गुनाह के लिए । (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "Em",
+        "position" : 25
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "बोझ थे सारे पापों के,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "लिया कन्धे पे हमारे, मेरे शिफा के लिए । (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 15
+      }, {
+        "chord" : "Em",
+        "position" : 34
+      } ]
+    } ]
+  } ]
+}

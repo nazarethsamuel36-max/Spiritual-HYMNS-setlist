@@ -1,0 +1,54 @@
+{
+  "id" : 724,
+  "songNumber" : 112,
+  "title" : "HAVE YOUR WAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Have your way, Have your way,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Holy Spirit fill our hearts and have your way,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "As we wait (wait on You Lord)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "And as we pray, (pray to you)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "Speak your words into our hearts and have your way.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 47
+      } ]
+    } ]
+  } ]
+}

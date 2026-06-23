@@ -1,0 +1,181 @@
+{
+  "id" : 1092,
+  "songNumber" : 114,
+  "title" : "ऐ दुनिया के लोगो, ऊँची आवाज करो",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ऐ दुनिया के लोगो, ऊँची आवाज करो",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      }, {
+        "chord" : "Am",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "गावो खुशी के गीत, उसका गनगान करो",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "Am",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "इबादत करो उसकी, इबादत करो",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "Am",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "याद रखो कि वही एक खुदा है"
+    }, {
+      "text" : "हमको ये जीवन उसी ने दिया है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "उस चारागाँसे हम सब है आये",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "हमदो सन्ना के हम गीत गाये",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "रब्ब का तुम शुकर करो, ऊँची आवाज करो,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "Am",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "गावो खुशी के गीत, उसका गुनगान करो ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "Am",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "नामे खुदावन्द कितना मुबारक",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "मेरा खुदावन्द कितना भला है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "रेहमत है उसकी सदीयों पुरानी",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "वफाँ का अज़ल से सही सिलसिला है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "उसपर इमान धरो, उसके घर आवो चलो",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "Am",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "गावो खुशी के गीत, उसका गुनगान करो",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "Am",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "इबादत करो उसकी।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 12
+      } ]
+    } ]
+  } ]
+}

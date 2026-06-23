@@ -1,0 +1,181 @@
+{
+  "id" : 1072,
+  "songNumber" : 94,
+  "title" : "KUS KE PASS TU MUJHE RAKH",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "कुस के पास तू मुझे रख",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "यीशु प्यारे त्राता, पापी वहाँ सोते से",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 12
+      }, {
+        "chord" : "E",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "मुफ्त में मुक्ति पाता ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "क्रुस की मैं, कुस की मैं, नित बडाई करूँगा,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "E",
+        "position" : 26
+      }, {
+        "chord" : "B",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "जब तक मैं आनंदित हो, पार न पहूँचेंगा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "B",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "कुस के पास जब आया मैं",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "प्रेम और कृपा पाई, वहां किरण सूर्य की",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 14
+      }, {
+        "chord" : "E",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "मेरे दिलमें आई ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 12
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरी दया कुस के पास",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "सदा मुझे रखे, और सदा मेरे उपर",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 10
+      }, {
+        "chord" : "E",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "क्रुस की छाया रहे ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "क्रुसके पास मैं ठहरूँगा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "नित भरोसा रखके, जब तक मैं न देखूँगा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 11
+      }, {
+        "chord" : "E",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "हर्ष को तेरे घर के ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 16
+      } ]
+    } ]
+  } ]
+}

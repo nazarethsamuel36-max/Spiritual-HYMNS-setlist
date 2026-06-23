@@ -1,0 +1,135 @@
+{
+  "id" : 1053,
+  "songNumber" : 75,
+  "title" : "सबसे ऊँचा नाम प्रभु, यीशु तेरा नाम ।",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "सबसे ऊँचा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "शांती देता नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "मुक्ति देता नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "जिवन देता नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "चंगा करता नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "अच्छा तेरा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "सच्चा तेरा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "मिठा तेरा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "धन्य तेरा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "पवित्र तेरा नाम प्रभु, यीशु तेरा नाम ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 23
+      }, {
+        "chord" : "A",
+        "position" : 33
+      } ]
+    } ]
+  } ]
+}

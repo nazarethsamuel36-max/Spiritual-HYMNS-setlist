@@ -1,0 +1,145 @@
+{
+  "id" : 1200,
+  "songNumber" : 222,
+  "title" : "आखरी नरसिंगा, फूंका जाने वाला है।",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "आखरी नरसिंगा, फूंका जाने वाला है।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तेरा मेरा सबका, यीशु आने वाला है। (Repeat)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तू कहाँ होगा, मैं वहा रहूँगा (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "पहले जो मसीह में, मुर्दे जी उठेंगे",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "बाकी जो जिन्दा है, बदल जाएंगे। (Repeat)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "पल भर में देखो सब कुछ होने वाला है। (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "तू कहाँ होगा...",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरे दिल के सारे गम, बदल जाएंगे",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "बीत गये जो लम्हे, तेरे पास न आएंगे (Repeat)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "दुनिया की बनायी, यही रहने वाली है। (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "तू कहाँ होगा..."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "तेरी दौलत तेरी शोहरत, काम न आयेंगी",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "ये सब चीजे प्यारे तेरे, साथ न जाएंगी (Repeat)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "सब चीजों का खत्म जल्दी होने वाला है। (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "तू कहाँ होगा..."
+    } ]
+  } ]
+}

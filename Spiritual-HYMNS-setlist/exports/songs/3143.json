@@ -1,0 +1,60 @@
+{
+  "id" : 3143,
+  "songNumber" : 1001,
+  "title" : "** Above All Powers",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Above all powers"
+    }, {
+      "text" : "Above all kings"
+    }, {
+      "text" : "Above all nature and all created things"
+    }, {
+      "text" : "Above all wisdom and all the ways of man"
+    }, {
+      "text" : "You were here before the world began"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Above all kingdoms"
+    }, {
+      "text" : "Above all thrones"
+    }, {
+      "text" : "Above all wonders the world has ever known"
+    }, {
+      "text" : "Above all wealth and treasures of the earth"
+    }, {
+      "text" : "There's no way to measure what You're worth"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Crucified, laid behind the stone"
+    }, {
+      "text" : "You lived to die, rejected and alone"
+    }, {
+      "text" : "Like a rose trampled on the ground"
+    }, {
+      "text" : "You took the fall"
+    }, {
+      "text" : "And thought of me"
+    }, {
+      "text" : "Above all"
+    } ]
+  } ]
+}

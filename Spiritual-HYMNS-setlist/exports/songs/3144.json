@@ -1,0 +1,42 @@
+{
+  "id" : 3144,
+  "songNumber" : 1002,
+  "title" : "** Alive, Alive, Alive Forevermore",
+  "language" : "english",
+  "originalKey" : "** F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Alive, alive, alive forevermore"
+    }, {
+      "text" : "My Jesus is alive, alive forevermore"
+    }, {
+      "text" : "Alive, alive, alive forevermore"
+    }, {
+      "text" : "My Jesus is alive, alive forevermore"
+    }, {
+      "text" : "My Jesus is alive forevermore"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Sing hallelujah, sing hallelujah"
+    }, {
+      "text" : "My Jesus is alive forevermore"
+    }, {
+      "text" : "Sing hallelujah, sing hallelujah"
+    }, {
+      "text" : "My Jesus is alive forevermore"
+    } ]
+  } ]
+}

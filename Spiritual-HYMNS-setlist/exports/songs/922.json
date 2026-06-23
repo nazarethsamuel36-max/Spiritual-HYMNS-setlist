@@ -1,0 +1,39 @@
+{
+  "id" : 922,
+  "songNumber" : 43,
+  "title" : "I HAVE DECIDED TO FOLLOW JESUS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I have decided to follow Jesus (3)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "No turning back, no turning back !",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "C",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "The world behind me, the cross before me (3)"
+    }, {
+      "text" : "Though no one joins me, still I will follow (3)"
+    }, {
+      "text" : "You take the whole world, but give me Jesus (3)"
+    } ]
+  } ]
+}

@@ -1,0 +1,147 @@
+{
+  "id" : 1057,
+  "songNumber" : 79,
+  "title" : "राहों में काँटे अगर हों, रुकना नही चलते जाना",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "राहों में काँटे अगर हों, रुकना नही चलते जाना",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "यीशु तेरे साथ है, ये तू विश्वास करना",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 10
+      }, {
+        "chord" : "Am",
+        "position" : 18
+      }, {
+        "chord" : "Dm",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "संसार के अंत तक, वो तेरे साथ है ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 20
+      }, {
+        "chord" : "Am",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "आँधी आने दो, या आने दो तूफान (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      }, {
+        "chord" : "Am",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "वो नैया क्या डुबेगी, जिसमें है यीशु महान !",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      }, {
+        "chord" : "E",
+        "position" : 21
+      }, {
+        "chord" : "Am",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "दुःख से भरी है जिंदगी, मुसीबत भरे रास्ते है (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      }, {
+        "chord" : "Am",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "दुःख दूर हो जाएगें तेरे, गर तू यीशु के साथ है !",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "E",
+        "position" : 25
+      }, {
+        "chord" : "Am",
+        "position" : 39
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "गर मौत का डर सताए तुझे, सलीब पर तू गौर कर (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "Am",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "यीशु ने मौत को जित लिया है, उस पर तू विश्वास कर ।",
+      "chords" : [ {
+        "chord" : "Dm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      }, {
+        "chord" : "E",
+        "position" : 28
+      }, {
+        "chord" : "Am",
+        "position" : 45
+      } ]
+    } ]
+  } ]
+}

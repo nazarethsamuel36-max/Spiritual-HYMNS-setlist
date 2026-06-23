@@ -1,0 +1,117 @@
+import { useState } from 'react';
+import { useLiveQuery } from 'dexie-react-hooks';
+import { db } from '../db/Database';
+import type { SongIndex } from '../db/Database';
+import { SearchEngine } from '../utils/SearchEngine';
+import { useWorkflowStore } from '../store/workflowStore';
+import { SearchBar } from './shared/SearchBar';
+import { LanguageTabs } from './shared/LanguageTabs';
+import { SortSelector } from './shared/SortSelector';
+import { SongRow } from './shared/SongRow';
+import { formatSongTitle } from '../utils/SongFormatter';
+import { normalizeSongIndex } from '../db/Database';
+
+const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
+
+export function SongList() {
+  const [search, setSearch] = useState('');
+  const selectedLanguage = useWorkflowStore((s) => s.libraryLanguage);
+  const setSelectedLanguage = useWorkflowStore((s) => s.setLibraryLanguage);
+  const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
+  const openSong = useWorkflowStore((s) => s.openSong);
+  const reader = useWorkflowStore((s) => s.reader);
+
+  const activeSongId = reader.type === 'song' ? reader.songId : null;
+
+  const songs = useLiveQuery(async () => {
+    let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
+    if (selectedLanguage !== 'All') {
+      allSongs = allSongs.filter(s => s.language?.toLowerCase() === selectedLanguage.toLowerCase());
+    }
+
+    if (!search.trim()) {
+      // Apply sorting
+      if (sortBy === 'title') {
+        allSongs.sort(compareSongsByTitle);
+      } else {
+        // Number sort (default, already ordered by songNumber from DB)
+        allSongs.sort((a, b) => a.songNumber - b.songNumber);
+      }
+      return allSongs;
+    }
+
+    // Apply search then sort
+    const searched = SearchEngine.search(allSongs, search);
+    searched.sort((a, b) => {
+      const scoreDiff = b.score - a.score;
+      if (Math.abs(scoreDiff) > 0.0001) {
+        return scoreDiff;
+      }
+      if (sortBy === 'title') {
+        return compareSongsByTitle(a, b);
+      }
+      return a.songNumber - b.songNumber;
+    });
+    return searched;
+  }, [search, selectedLanguage, sortBy]);
+
+  return (
+    <div className="w-full">
+      {/* Search + Filters — sticky header */}
+      <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
+        {/* Language pills */}
+        <div className="px-3">
+          <LanguageTabs
+            languages={LANGUAGES}
+            selected={selectedLanguage}
+            onSelect={setSelectedLanguage}
+          />
+        </div>
+        {/* Search bar — prominent */}
+        <div className="px-3 mt-2.5">
+          <SearchBar
+            value={search}
+            onChange={setSearch}
+            placeholder="Search songs, numbers, lyrics..."
+          />
+        </div>
+        {/* Sort control */}
+        <div className="px-4 mt-2">
+          <SortSelector
+            value={sortBy}
+            onChange={setSortBy}
+          />
+        </div>
+      </div>
+
+      {/* Song List */}
+      <div className="flex flex-col pb-32">
+        {!songs ? (
+          <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
+        ) : songs.length === 0 ? (
+          <div className="p-10 text-center text-slate-500 font-medium text-sm">
+            No songs found.
+          </div>
+        ) : (
+          songs.map((song: SongIndex) => (
+            <SongRow
+              key={song.id}
+              song={song}
+              onSelect={(id) => openSong(id, 'library')}
+              isActive={song.id === activeSongId}
+            />
+          ))
+        )}
+      </div>
+    </div>
+  );
+}
+
+function compareSongsByTitle(a: SongIndex, b: SongIndex) {
+  const titleCompare = formatSongTitle(a.title).localeCompare(formatSongTitle(b.title), 'en', {
+    sensitivity: 'base',
+    numeric: true
+  });
+  if (titleCompare !== 0) return titleCompare;
+  return a.songNumber - b.songNumber;
+}

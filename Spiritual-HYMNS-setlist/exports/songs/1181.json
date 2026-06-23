@@ -1,0 +1,101 @@
+{
+  "id" : 1181,
+  "songNumber" : 203,
+  "title" : "क्रूस ही है तेरा निशान, आगे बढ़ ए जवान",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "क्रूस ही है तेरा निशान, आगे बढ़ ए जवान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "पीछे न हटना कभी, यीशु है तेरी चट्टान ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "नैय्या मेरी मझधार में डूबी, कौन लगाएगा पार,"
+    }, {
+      "text" : "केवल यीशु हो सकता है, तेरी नैय्या की पतवार ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 38
+      }, {
+        "chord" : "G",
+        "position" : 43
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तेरे ही खातिर आया जगत में, तुझ को बचाने को,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "तेरे ही लिये यीशु ने खोला मुक्ति के द्वार को।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 42
+      }, {
+        "chord" : "G",
+        "position" : 44
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "सब के लिये है यह समाचार, उसी के प्यार का,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "सब के दिलों का प्यारा मसीहा, राजा है शान्ति का।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 44
+      }, {
+        "chord" : "G",
+        "position" : 46
+      } ]
+    } ]
+  } ]
+}

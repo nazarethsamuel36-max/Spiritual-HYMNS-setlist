@@ -1,0 +1,101 @@
+{
+  "id" : 1097,
+  "songNumber" : 119,
+  "title" : "MAIN PAPI HUN PRABHUJI",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मैं पापी हूँ प्रभुजी, तूने मुझे अपनाया ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "C#m",
+        "position" : 22
+      }, {
+        "chord" : "E",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "फिर भी मेरे मसिहा, मैंने तुझे ठुकराया",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "मैं पापी हूँ प्रभुजी।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मैंने छोड़ा तुझको, पाप को मैंने ना छोड़ा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "C#m",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "फिर भी मेरे मसीहा, तूने ना मुझको छोड़ा",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "याद आता हैं मुझको, क्रूस का वह नजारा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "C#m",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "मेरे गुनाहों के खातिर, बहती है खून की धार",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 23
+      }, {
+        "chord" : "E",
+        "position" : 40
+      } ]
+    } ]
+  } ]
+}

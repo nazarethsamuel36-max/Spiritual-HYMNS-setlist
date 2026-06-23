@@ -1,0 +1,134 @@
+{
+  "id" : 1004,
+  "songNumber" : 26,
+  "title" : "आवाज उठायेंगे, हम साज बजायेंगे",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "आवाज उठायेंगे, हम साज बजायेंगे,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "है यीशु महान अपना, यह गीत सुनायेंगे ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "संसार की सुन्दरता में, है रूप तो तेरा ही,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "इन चाँद सितारों में, है अक्स तो तेरा ही,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "महिमा की तेरी बातें, हम सबको बतायेंगे ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 21
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "दिल तेरा खज़ाना है, एक पाक मुहब्बत का,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "थाह पा न सका कोई, सागर है तू उल्फत का,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "हम तेरी मुहब्बत से, दिल अपना सजायेंगे ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 20
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "न देख सका हमको, तू पाप के सागर में,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "और बन के मनुष्य आया, आकाश से सागर में,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मुक्ति का तू दाता है, हम सबको बतायेंगे ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 31
+      } ]
+    } ]
+  } ]
+}

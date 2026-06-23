@@ -1,0 +1,40 @@
+```gitignore
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.js.map
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+.nyc_output/
+istanbul-reports/
+
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
+
+# TypeScript/JavaScript specific
+.next/
+.nuxt/
+public/
+!worship-song-library-runtime/public/
+```

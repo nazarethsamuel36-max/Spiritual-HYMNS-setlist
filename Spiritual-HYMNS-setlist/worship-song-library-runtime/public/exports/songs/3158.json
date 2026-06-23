@@ -1,0 +1,78 @@
+{
+  "id" : 3158,
+  "songNumber" : 1017,
+  "title" : "** Lord I Come To Thee",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Lord I come to You"
+    }, {
+      "text" : "Let my heart be changed, renewed"
+    }, {
+      "text" : "Flowing from the grace"
+    }, {
+      "text" : "That I've found in You"
+    }, {
+      "text" : "Lord I've come to know"
+    }, {
+      "text" : "The weaknesses I see in me"
+    }, {
+      "text" : "Will be stripped away"
+    }, {
+      "text" : "By the power of Your love"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Hold me close"
+    }, {
+      "text" : "Let Your love surround me"
+    }, {
+      "text" : "Bring me near"
+    }, {
+      "text" : "Draw me to Your side"
+    }, {
+      "text" : "And as I wait"
+    }, {
+      "text" : "I'll rise up like the eagle"
+    }, {
+      "text" : "And I will soar with You"
+    }, {
+      "text" : "Your Spirit leads me on"
+    }, {
+      "text" : "In the power of Your love"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Lord unveil my eyes"
+    }, {
+      "text" : "Let me see You face to face"
+    }, {
+      "text" : "The knowledge of Your love"
+    }, {
+      "text" : "As You live in me"
+    }, {
+      "text" : "Lord renew my mind"
+    }, {
+      "text" : "As Your will unfolds in my life"
+    }, {
+      "text" : "In living every day"
+    }, {
+      "text" : "By the power of Your love"
+    } ]
+  } ]
+}

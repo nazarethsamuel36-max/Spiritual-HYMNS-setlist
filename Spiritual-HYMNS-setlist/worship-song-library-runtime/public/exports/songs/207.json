@@ -1,0 +1,123 @@
+{
+  "id" : 819,
+  "songNumber" : 207,
+  "title" : "THERE IS COMING A DAY",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "There is coming a day when no heartaches shall come,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "No more clouds in the sky, no more tears to dim the eye;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 52
+      } ]
+    }, {
+      "text" : "All is peace forevermore on that happy golden shore,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 33
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "What a day, glorious day that will be.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "What a day that will be when my Jesus I shall see,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 32
+      }, {
+        "chord" : "D",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "And I look upon His face, the One who saved me by His grace;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "When He takes me by the Hand, and leads me through the Promised Land,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 55
+      } ]
+    }, {
+      "text" : "What a day, glorious day that will be."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "There'll be no sorrow there, no more burdens to bear,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "No more sickness, no pain, no more parting over there;",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 48
+      } ]
+    }, {
+      "text" : "And forever I will be with the One who died for me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 31
+      }, {
+        "chord" : "D",
+        "position" : 48
+      } ]
+    }, {
+      "text" : "What a day, glorious day that will be."
+    } ]
+  } ]
+}

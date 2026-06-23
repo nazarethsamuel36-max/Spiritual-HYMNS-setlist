@@ -1,0 +1,123 @@
+{
+  "id" : 1056,
+  "songNumber" : 78,
+  "title" : "यीशु नाम में उद्धार हमको - हाल्लेलुयाह",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु नाम में उद्धार हमको - हाल्लेलुयाह",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 27
+      }, {
+        "chord" : "E",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "यीशु नाम में अनंत जीवन - हाल्लेलुयाह",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "राजाओं का राजा यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "E",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "प्रभुआ का प्रभु यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "चंगा करनेवाला यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "छुटकारा देनेवाला यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 22
+      }, {
+        "chord" : "E",
+        "position" : 30
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "अदभुत काम करनेवाला यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 24
+      }, {
+        "chord" : "E",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "शांति देनेवाला यीशु-हाल्लेलुयाह (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 20
+      }, {
+        "chord" : "E",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

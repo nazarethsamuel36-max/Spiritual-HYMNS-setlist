@@ -1,0 +1,113 @@
+{
+  "id" : 1099,
+  "songNumber" : 121,
+  "title" : "गाता रहे मेरा दिल, तेरी प्रशंसा बारंबार",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "गाता रहे मेरा दिल, तेरी प्रशंसा बारंबार,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "कैसे करु मैं धन्यवाद, उपकार मिले प्रभु हजार।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 40
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "तुमको धन्यवाद कहते है प्रभु",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "कृतज्ञ दिल से कहते तुमको धन्यवाद,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "आज धन्यवाद कहते प्रभु,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "आभारी दिल से कहते तुमको धन्यवाद। (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तुमसे मिली हर खुशी, तुमसे मिली है जिंदगी",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "काबिल मैं ना था कभी, फिर भी दिया तुने सभी।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "आनंद भरा ये जीवन, तुमसे मिला है, वरदान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "भुलो कभी ना तुमको हम, दिल से करे प्रभु प्रणाम।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 42
+      } ]
+    } ]
+  } ]
+}

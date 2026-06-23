@@ -1,0 +1,79 @@
+{
+  "id" : 712,
+  "songNumber" : 67,
+  "title" : "THY LOVING KINDNESS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Thy loving kindness, } 2",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "Is better than life.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "My lips shall praise Thee"
+    }, {
+      "text" : "Thus will I bless Thee,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Thy loving kindness,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 11
+      }, {
+        "chord" : "Em",
+        "position" : 11
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Is better than life."
+    }, {
+      "text" : "I lift my hands up unto",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "D7",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Thy Name, (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "My lips shall praise Thee,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "Thus will I bless Thee,"
+    }, {
+      "text" : "Thy loving kindness,"
+    }, {
+      "text" : "Is better than life."
+    } ]
+  } ]
+}

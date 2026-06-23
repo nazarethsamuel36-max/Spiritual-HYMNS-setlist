@@ -1,0 +1,68 @@
+{
+  "id" : 3165,
+  "songNumber" : 1024,
+  "title" : "** Sometimes Hallelujah",
+  "language" : "english",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Sometimes Hallelujah"
+    }, {
+      "text" : "Sometimes Praise The Lord"
+    }, {
+      "text" : "Sometimes Gently Singing,"
+    }, {
+      "text" : "Our Hearts In One Accord"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Oh let us lift our voices,"
+    }, {
+      "text" : "Look toward the sky and start to sing"
+    }, {
+      "text" : "Oh let us now return His love,"
+    }, {
+      "text" : "Just let our voices ring"
+    }, {
+      "text" : "Oh let us feel His presence,"
+    }, {
+      "text" : "Let the sound of praises fill the air"
+    }, {
+      "text" : "Oh let us sing the song of Jesus' love,"
+    }, {
+      "text" : "To people everywhere."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Oh let our joy be unconfined,"
+    }, {
+      "text" : "Let us sing with freedom unrestrained"
+    }, {
+      "text" : "Let's take this feeling that we're feeling now,"
+    }, {
+      "text" : "Outside these walls and let it rain."
+    }, {
+      "text" : "Oh let the Spirit overflow,"
+    }, {
+      "text" : "As we are filled from head to toe."
+    }, {
+      "text" : "We love you Lord with all our Hearts,"
+    }, {
+      "text" : "And we want this world to know."
+    } ]
+  } ]
+}

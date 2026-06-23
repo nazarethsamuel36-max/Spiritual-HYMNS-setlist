@@ -1,0 +1,168 @@
+{
+  "id" : 1035,
+  "songNumber" : 57,
+  "title" : "हाल्लेलुयाह स्तुति गाये हम",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "हाल्लेलुयाह स्तुति गाये हम,",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 12
+      }, {
+        "chord" : "F#m",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "यीशु की स्तुति गाये हम (2)",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 8
+      }, {
+        "chord" : "F#m",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "हा SSS हाल्लेलुयाह, हाल्लेलुयाह, हाल्लेलुयाह, (2)",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 15
+      }, {
+        "chord" : "C#",
+        "position" : 28
+      }, {
+        "chord" : "F#m",
+        "position" : 41
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "क्रूस पर बलि द्वारा अपना लहू बहाया,",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 13
+      }, {
+        "chord" : "F#m",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "पाप को हटा कर साफ है किया",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "और हमको बचा लिया ।",
+      "chords" : [ {
+        "chord" : "C#",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 12
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "इस जीवन भर में सदा तुझको ध्यान करूँगा,",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 8
+      }, {
+        "chord" : "F#m",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तेरी आत्मा पाके तेरी इच्छा जान के",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "आगे ही बढ़ता रहूँगा ।",
+      "chords" : [ {
+        "chord" : "C#",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 13
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "यीशु के पास आओ और मुक्ति को अपनाओ,",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 8
+      }, {
+        "chord" : "F#m",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "आशीष वह देगा साथ अपने लेगा",
+      "chords" : [ {
+        "chord" : "F#m",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 8
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "कभी नहीं छोड़ेगा ।",
+      "chords" : [ {
+        "chord" : "C#",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 11
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,77 @@
+{
+  "id" : 3189,
+  "songNumber" : 384,
+  "title" : "TUKA AMIM POLEUNK NAM",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Tuka amim polleunk nam,"
+    }, {
+      "text" : "Punn tujer amcho bhavart"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Jezu sorv utram tujim"
+    }, {
+      "text" : "Sasnachea Jivitachim,"
+    }, {
+      "text" : "Konnazim vochum amim"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Tuka amim poleunk nam,"
+    }, {
+      "text" : "Punn Tujer visvas thevtaum"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "Jezu tum eklo amkam"
+    }, {
+      "text" : "Bhasaitai sasnik jivit"
+    }, {
+      "text" : "Bhasaunnim pett'ta visvas"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 5",
+    "lines" : [ {
+      "text" : "Tuka amim polleunk nam"
+    }, {
+      "text" : "Tori mog tuzo kortaum"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 6",
+    "lines" : [ {
+      "text" : "Jezu tum chodd chodd boro,"
+    }, {
+      "text" : "Soglo mog tuka favo,"
+    }, {
+      "text" : "Amchem sukh tujea mogan"
+    }, {
+      "text" : "Jezu amchea Taroka (4)"
+    } ]
+  } ]
+}

@@ -1,0 +1,189 @@
+{
+  "id" : 1019,
+  "songNumber" : 41,
+  "title" : "तेरे पाप धुल सकेंगे आज ही मसीह के द्वारा",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "तेरे पाप धुल सकेंगे आज ही मसीह के द्वारा,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "B",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "सिर्फ एक नजर उठा के देख ले लहू की धारा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "B",
+        "position" : 27
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "तेरे कोशिशों के बदले क्या बता तुझे मिला है?",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "B",
+        "position" : 27
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "जिन्दगी खुशी से भरदे कोई ऐसा सिलसिला है?",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "तुझे कुछ न दे सकेगा, तेरे भाग्य का सितारा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "B",
+        "position" : 26
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "कोई है आवाज जिसकी तेरा पीछा कर रही है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 12
+      }, {
+        "chord" : "B",
+        "position" : 23
+      }, {
+        "chord" : "E",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "है, तेरा हितैषी जिससे तेरी आत्मा डर रही है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "B",
+        "position" : 27
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "तेरा नाम लेके उसने, तुझे आज फिर पुकारा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "प्रभु की सलीब है जो तेरी प्यास बुझा सकेगी,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "तेरे दिल की हर मुसीबत वही तुझ से छीन लेगी,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      }, {
+        "chord" : "B",
+        "position" : 26
+      }, {
+        "chord" : "E",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "वो खुशी के साथ देगी, नये जीवन का किनारा ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "B",
+        "position" : 25
+      }, {
+        "chord" : "E",
+        "position" : 35
+      } ]
+    } ]
+  } ]
+}

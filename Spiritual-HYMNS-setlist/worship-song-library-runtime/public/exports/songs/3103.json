@@ -1,0 +1,54 @@
+{
+  "id" : 3103,
+  "songNumber" : 2004,
+  "title" : "** अअरधन मॆ है छुत्कर",
+  "language" : "hindi",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Aaradhana me hai chutkara, aaradhana me hai changai"
+    }, {
+      "text" : "Shareer pran aatma me shanti anand deta hai"
+    }, {
+      "text" : "Jaan se pyara prabhu |"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Prarthana kare aaradhana kare, wo aata hai kitna bhala hai -(2)"
+    }, {
+      "text" : "Chutkara paaye hamesha -(2)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Mangoge to milega, dhundoge to paoge - 2"
+    }, {
+      "text" : "Khatkhatao khulengi swarg ki aashishe"
+    }, {
+      "text" : "Pao tum use abhi |"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Prarthana karo nirantar, prarthana karo vishwas se - 2"
+    }, {
+      "text" : "Dharmi jan ki prarthana vishwas ki prarthana"
+    }, {
+      "text" : "Kholti hai sare bandhan ko |"
+    } ]
+  } ]
+}

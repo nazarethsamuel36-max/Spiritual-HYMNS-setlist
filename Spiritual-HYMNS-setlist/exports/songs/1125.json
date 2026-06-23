@@ -1,0 +1,129 @@
+{
+  "id" : 1125,
+  "songNumber" : 147,
+  "title" : "यीशु का प्रेम है, जीवन का आधार",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु का प्रेम है, जीवन का आधार",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "महासागर से भी है गहरा, जीवन करता पार।",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 23
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "प्रेम जगत में आया,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पाप का बोझ उठाया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "प्रेम में उसके अमृत जीवन",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जिससे मिले उद्धार।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जिसने प्रेम ये पाया,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "उसमें छल ना माया",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "दिल की वीणा गूंजे स्वर में",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "प्रेम का बजता तार।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "प्रेम कनक और मोती,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "नवजीवन की ज्योति,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "प्रेम के इन रत्नों से आओ",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "अपना करें श्रृंगार।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 17
+      } ]
+    } ]
+  } ]
+}

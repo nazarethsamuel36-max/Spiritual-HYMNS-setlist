@@ -1,0 +1,81 @@
+{
+  "id" : 620,
+  "songNumber" : 313,
+  "title" : "CELEBRATE JESUS CELEBRATE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Celebrate Jesus celebrate",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Celebrate Jesus celebrate"
+    }, {
+      "text" : "Celebrate Jesus celebrate"
+    }, {
+      "text" : "Celebrate Jesus celebrate"
+    }, {
+      "text" : "He is risen He is risen",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "And He lives forevermore",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "B",
+        "position" : 16
+      }, {
+        "chord" : "E",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "He is risen He is risen"
+    }, {
+      "text" : "Come on and celebrate",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Come on and celebrate"
+    }, {
+      "text" : "Come on and celebrate"
+    }, {
+      "text" : "The resurrection of our Lord",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 24
+      } ]
+    } ]
+  } ]
+}

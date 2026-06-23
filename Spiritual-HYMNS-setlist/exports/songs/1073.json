@@ -1,0 +1,94 @@
+{
+  "id" : 1073,
+  "songNumber" : 95,
+  "title" : "अपने घुटनों पे हम आकर",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "अपने घुटनों पे हम आकर,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "और नम्रता में आकर",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "झुकतें है प्रभु तेरे सामने,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 16
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "अपने हाथों को उठा ले",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "नया प्यार हम बनाले",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Dm",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "करे आत्मा में प्रार्थना,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "करे सत्य में प्रार्थना",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "हम सब को प्रभु अपनी स्तुति बना (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

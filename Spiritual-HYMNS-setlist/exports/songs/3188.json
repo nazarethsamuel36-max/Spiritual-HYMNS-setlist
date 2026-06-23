@@ -1,0 +1,31 @@
+{
+  "id" : 3188,
+  "songNumber" : 383,
+  "title" : "ASSONDHI MOG",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Assondhi mog amchea modhem"
+    }, {
+      "text" : "Assondhi mog amchea kallzanim"
+    }, {
+      "text" : "Vistarunk dhi mog amchea dhesant"
+    }, {
+      "text" : "Magtam somia dhi amkam kurpa"
+    }, {
+      "text" : "Dhi amkam bori somzoni"
+    }, {
+      "text" : "Zanna zaumcheak mog bhav-boinancho"
+    }, {
+      "text" : "Assondhi mog amchea modhem"
+    }, {
+      "text" : "Assondhi mog."
+    } ]
+  } ]
+}

@@ -1,0 +1,111 @@
+{
+  "id" : 1175,
+  "songNumber" : 197,
+  "title" : "एक टूटे हुए दिलने, तुझको ही पुकारा है",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "एक टूटे हुए दिलने, तुझको ही पुकारा है",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "आजके मसीह मुझको, तेरा ही सहारा है।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 17
+      }, {
+        "chord" : "Am",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जब साथ मेरे तू है, संसारकी सागरमें (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "तुफ़ान का डर क्या है, हर मौज किनारा है।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      }, {
+        "chord" : "Am",
+        "position" : 32
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "थोडासा इशारा भी मेरे लिए काफी है (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "एक डूबनेवाले को, यीशु का सहारा है।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 17
+      }, {
+        "chord" : "Am",
+        "position" : 28
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "सच्चाई के राहों से, ना मेरे कदम बहके (2)",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "मुझको तेरी राहोंमें, हरवक्त गँवाना है।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      }, {
+        "chord" : "Am",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,79 @@
+{
+  "id" : 1180,
+  "songNumber" : 202,
+  "title" : "रक्तम् जयम्, रक्तम् जयम्, रक्तम् जयम्",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "रक्तम् जयम्, रक्तम् जयम्, रक्तम् जयम्,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "रक्तम् जयम्, रक्तम् जयम् ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "यीशु मेरा चरवाहा है, यीशु मेरा चरवाहा है",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "यीशु मेरा चरवाहा है बोलो है ना, ...हाँ ||१||",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "जीवन का जल देता मुझे .... ||२ ||",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मेरा आनंद यीशु ही है .... ||३ ||",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मुझको शिफा देता मसीह.... ||४ ||",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पवित्र आत्मा देता मसीह.... ||५ ||",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "आयेगा लेने मुझको मसिह.... ||६ ||",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

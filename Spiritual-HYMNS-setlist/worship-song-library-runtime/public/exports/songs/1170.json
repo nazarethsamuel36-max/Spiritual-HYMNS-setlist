@@ -1,0 +1,65 @@
+{
+  "id" : 1170,
+  "songNumber" : 192,
+  "title" : "जीवित जीवित जीवित है सदा।",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "जीवित जीवित जीवित है सदा।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मेरा यीशु मसीह जीवित है सदा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 24
+      }, {
+        "chord" : "C",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "जीवित जीवित जीवित है सदा।"
+    }, {
+      "text" : "मेरा यीशु मसीह जीवित है।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "गाओ हाल्लेलुयाह, गाओ हाल्लेलुयाह।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मेरा यीशु मसीह जीवित है सदा।"
+    }, {
+      "text" : "गाओ हाल्लेलुयाह, गाओ हाल्लेलुयाह।"
+    }, {
+      "text" : "मेरा यीशु मसीह जीवित है।"
+    } ]
+  } ]
+}

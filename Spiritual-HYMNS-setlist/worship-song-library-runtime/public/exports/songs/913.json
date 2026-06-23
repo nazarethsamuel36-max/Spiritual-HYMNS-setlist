@@ -1,0 +1,99 @@
+{
+  "id" : 913,
+  "songNumber" : 1,
+  "title" : "SPIRIT OF THE LIVING GOD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Spirit of the living God,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Fmaj7",
+        "position" : 10
+      }, {
+        "chord" : "F7",
+        "position" : 14
+      }, {
+        "chord" : "Gm",
+        "position" : 17
+      }, {
+        "chord" : "F",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Fall afresh on me.",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 6
+      }, {
+        "chord" : "C7",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Break me, melt me, mould me, fill me!",
+      "chords" : [ {
+        "chord" : "Bb",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 10
+      }, {
+        "chord" : "G7",
+        "position" : 19
+      }, {
+        "chord" : "Em",
+        "position" : 29
+      }, {
+        "chord" : "C",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "Spirit of the living God,",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "F7",
+        "position" : 10
+      }, {
+        "chord" : "D7",
+        "position" : 14
+      }, {
+        "chord" : "Gm",
+        "position" : 17
+      }, {
+        "chord" : "Am",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Fall afresh on me.",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "Bb",
+        "position" : 6
+      }, {
+        "chord" : "D7",
+        "position" : 12
+      }, {
+        "chord" : "F",
+        "position" : 15
+      } ]
+    } ]
+  } ]
+}

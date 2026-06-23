@@ -1,0 +1,124 @@
+{
+  "id" : 1043,
+  "songNumber" : 65,
+  "title" : "PAVITRA ATMA AA",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "पवित्र आत्मा आ, पवित्र आत्मा आ,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "मुझे ले जाओ यीशु के चरणों में,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "पवित्र आत्मा आ,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "सिर्फ तेरे लिए, यीशु तेरे लिए, मैं हाथ उठाता हूं ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 16
+      }, {
+        "chord" : "C",
+        "position" : 31
+      }, {
+        "chord" : "D",
+        "position" : 44
+      }, {
+        "chord" : "D",
+        "position" : 45
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "घुटने टिकाकर, सिर झुकाकर,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "हाथ उठाता तेरे लिए",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "सिर्फ तेरे लिए, यीशु तेरे लिए,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "मैं सिर झुकाता हूँ ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "यीशु ही मार्ग है, यीशु ही सत्य है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "यीशु ही जीवन है, यीशु मेरा प्रभु",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "सिर्फ तेरे लिए, यीशु तेरे लिए, मै हाथ उठाता हूँ ।"
+    } ]
+  } ]
+}

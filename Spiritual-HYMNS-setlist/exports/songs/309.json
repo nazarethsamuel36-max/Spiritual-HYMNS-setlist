@@ -1,0 +1,171 @@
+{
+  "id" : 616,
+  "songNumber" : 309,
+  "title" : "ONE DAY AT A TIME",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I'm only human - I'm just a man,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Help me to believe in all I could be,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "And all that I am,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "Show me the stairway I have to climb,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "Lord for my sake, teach me to take,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "One day at a time.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "One day at a time, sweet Jesus,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "That's all I'm asking from you,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Just give me the strength to do everyday,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "What you'd have me do,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Yesterday's gone, sweet Jesus",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "And tomorrow may never be mine,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "Lord help me today, show me the way,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "One day at a time."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "Do you remember when you walked among men,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "Well Jesus you know, looking below,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "It's worse now than then,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "Pushing and shoving, crowding my mind,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "So for my sake, teach me to take,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "One day at a time."
+    } ]
+  } ]
+}

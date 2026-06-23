@@ -1,0 +1,114 @@
+{
+  "id" : 3131,
+  "songNumber" : 2032,
+  "title" : "** Bhavan ke beech mey | Chattan",
+  "language" : "hindi",
+  "originalKey" : "** D",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Udhte hue ufano mein,"
+    }, {
+      "text" : "Tu hi mera chattan"
+    }, {
+      "text" : "Behti hui lahero pe"
+    }, {
+      "text" : "Tere kadmo ke nishan"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Bhavar ke bich mein"
+    }, {
+      "text" : "Tu kehta hai thamja"
+    }, {
+      "text" : "Tu meri taakat hai"
+    }, {
+      "text" : "Tu hi mera eeman"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Beete kal mein tu,"
+    }, {
+      "text" : "Saath mere tha"
+    }, {
+      "text" : "Aaj bhi mere"
+    }, {
+      "text" : "Saath hai khada"
+    }, {
+      "text" : "Aane wale kal mein bhi hoga"
+    } ]
+  }, {
+    "type" : "bridge",
+    "label" : "Bridge 1",
+    "lines" : [ {
+      "text" : "Udhte hue ufano mein........"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Bimariyon mein,"
+    }, {
+      "text" : "Tu kehta hai uthja"
+    }, {
+      "text" : "Yehova Rafa"
+    }, {
+      "text" : "Tu hi mera shifa"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "bridge",
+    "label" : "Bridge 2",
+    "lines" : [ {
+      "text" : "Beete kal mein tu,"
+    }, {
+      "text" : "Saath mere tha"
+    }, {
+      "text" : "Aaj bhi mere"
+    }, {
+      "text" : "Saath hai khada"
+    }, {
+      "text" : "Aane wale kal mein bhi hoga"
+    } ]
+  }, {
+    "type" : "bridge",
+    "label" : "Bridge 3",
+    "lines" : [ {
+      "text" : "Udhte hue ufano mein........"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 4",
+    "lines" : [ {
+      "text" : "Bimari, dekh tera sar jhuka"
+    }, {
+      "text" : "Mujh par tera bas na chal saka"
+    }, {
+      "text" : "Aisa koi shastra na bana"
+    }, {
+      "text" : "Jo kar sakega mera samna"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Outro",
+    "lines" : [ {
+      "text" : "Udhte hue ufano mein........"
+    } ]
+  } ]
+}

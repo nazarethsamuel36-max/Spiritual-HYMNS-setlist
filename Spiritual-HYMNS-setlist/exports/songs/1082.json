@@ -1,0 +1,115 @@
+{
+  "id" : 1082,
+  "songNumber" : 104,
+  "title" : "यीशु मसीह ने मुझे, खुशी आनंद दे दिया",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु मसीह ने मुझे, खुशी आनंद दे दिया",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "मुझ को बचाने को, बलिदान हो गया ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 17
+      }, {
+        "chord" : "E",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "शैतान की बन्धन से, मुझे छुडा ले लिया,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "कितना महान है वो, मेरा प्रभु यीशु ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 18
+      }, {
+        "chord" : "E",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मुझे आजाद कर दिया, बहते हुए लहू से,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "E",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "मुझे चंगाई दि, उसी के कोडे खाने से ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 15
+      }, {
+        "chord" : "E",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "संसार कि अभिलाषा से, पाप की गंदगी से,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 21
+      }, {
+        "chord" : "E",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "मुझे पवित्र किया, उसी के महान प्रेम से ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 18
+      }, {
+        "chord" : "E",
+        "position" : 36
+      } ]
+    } ]
+  } ]
+}

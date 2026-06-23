@@ -1,0 +1,40 @@
+{
+  "id" : 3148,
+  "songNumber" : 1006,
+  "title" : "** El Elah, Elohim",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "El Elah, Elohim"
+    }, {
+      "text" : "How we long to worship You"
+    }, {
+      "text" : "El Elah, Elohim"
+    }, {
+      "text" : "How we long to worship You"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Lord, we come to You in worship"
+    }, {
+      "text" : "No matter what the circumstance"
+    }, {
+      "text" : "No matter what the situation"
+    }, {
+      "text" : "We will lift up holy hands."
+    } ]
+  } ]
+}

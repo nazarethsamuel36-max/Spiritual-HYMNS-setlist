@@ -1,0 +1,12 @@
+{
+  "name": "playwright-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local Playwright setup for browser automation and screenshots",
+  "scripts": {
+    "screenshot": "node screenshot.js"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}

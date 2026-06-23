@@ -1,0 +1,38 @@
+{
+  "id" : 3125,
+  "songNumber" : 2026,
+  "title" : "** उस्कॆ फतकॊ मॆ प्रवॆश् करुन्ग",
+  "language" : "hindi",
+  "originalKey" : "** F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Uske phatako me pravesh karunga dhanyawaad ke saath"
+    }, {
+      "text" : "Uske aanganon mein stuti karunga"
+    }, {
+      "text" : "Mai kahunga ye din Yehovah ne banaya"
+    }, {
+      "text" : "Mai khush hua ki aanandit kiya"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Aanandit kiya mujhe aanandit kiya"
+    }, {
+      "text" : "Mai khush hua ki aanandit kiya"
+    }, {
+      "text" : "(2)"
+    } ]
+  } ]
+}

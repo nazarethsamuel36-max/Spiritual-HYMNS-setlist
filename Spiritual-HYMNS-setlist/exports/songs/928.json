@@ -1,0 +1,92 @@
+{
+  "id" : 928,
+  "songNumber" : 49,
+  "title" : "JESUS TOOK MY BURDENS",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Jesus took my burdens,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And rolled them in the sea",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Rolled them in the sea (2)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Jesus took my burdens,"
+    }, {
+      "text" : "And rolled them in the sea"
+    }, {
+      "text" : "Never to remember anymore.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Now I am so happy,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "As happy as can be (3)",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Now I am so happy,"
+    }, {
+      "text" : "As happy as can be,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 3
+      } ]
+    }, {
+      "text" : "Jesus gives me joy for evermore.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,570 @@
+/* ========================================
+   Worship Song Library — Core Stylesheet
+   ======================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===== CSS Variables ===== */
+:root {
+    /* Brand Colors */
+    --color-brand: #534AB7;
+    --color-brand-light: #6C63FF;
+    --color-brand-dark: #3D3590;
+    --color-brand-soft: #EEF2FF;
+    
+    /* Functional Colors */
+    --color-chord: #185FA5;
+    --color-note: #3B6D11;
+    --color-success: #059669;
+    --color-success-soft: #ECFDF5;
+    --color-danger: #DC2626;
+    --color-warning: #D97706;
+    --color-warning-soft: #FEF3C7;
+    
+    /* Neutral / Surface */
+    --color-bg: #FAFBFE;
+    --color-surface: #FFFFFF;
+    --color-surface-hover: #F3F4F8;
+    --color-text: #1A1A2E;
+    --color-text-muted: #6B7280;
+    --color-border: #E5E7EB;
+    
+    /* Section Labels (Bug #1 Fix: Variable-ized) */
+    --color-verse-bg: #E8F4FD;   --color-verse-text: #1565C0;
+    --color-chorus-bg: #FDE8F4;  --color-chorus-text: #880E4F;
+    --color-bridge-bg: #E8FDF0;  --color-bridge-text: #1B5E20;
+    --color-prechorus-bg: #FDF6E8; --color-prechorus-text: #7A4100;
+    --color-outro-bg: #F3E8FD;   --color-outro-text: #4A148C;
+    --color-intro-bg: #E8F4E8;   --color-intro-text: #2E7D32;
+    
+    /* Typography */
+    --font-song: 'Noto Sans Mono', monospace;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Glassmorphism Tokens */
+    --surface-glass-bg: rgba(255, 255, 255, 0.15);
+    --surface-glass-border: rgba(255, 255, 255, 0.2);
+    --surface-glass-blur: blur(12px);
+    --surface-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    
+    /* Layout Tokens */
+    --radius-card: 12px;
+    --radius-pill: 20px;
+    --radius-btn: 8px;
+    --bottom-bar-height: 88px; /* adjust based on actual height */
+    
+    /* Shadows */
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.12);
+    --shadow-nav: 0 1px 3px rgba(0,0,0,0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mobile Menu Glassmorphism - STURDIER VERSION */
+#mobile-menu {
+    background: rgba(255, 255, 255, 0.95) !important; /* Nearly opaque to prevent overlap confusion */
+    backdrop-filter: blur(20px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(160%) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3) !important;
+    margin: 12px;
+    width: calc(100% - 24px) !important;
+    left: 0 !important;
+    top: 64px !important;
+    z-index: 10000;
+    transition: var(--transition);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9998; /* Below menu and navbar, but above page content */
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.mobile-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav-item {
+    display: flex !important;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px !important;
+    margin: 4px 12px;
+    border-radius: 12px;
+    color: #173164 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-item:hover {
+    background: rgba(0, 0, 0, 0.08);
+    transform: translateX(4px);
+}
+
+.mobile-nav-item .material-symbols-outlined {
+    font-size: 22px;
+    opacity: 0.7;
+}
+
+.mobile-nav-item.text-error {
+    color: #b91c1c !important;
+    background: rgba(239, 68, 68, 0.05);
+}
+
+/* ===== Base Reset ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.song-page-content {
+    padding-bottom: calc(var(--bottom-bar-height) + 24px);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar-worship {
+    background: var(--color-surface);
+    box-shadow: var(--shadow-nav);
+    padding: 0.75rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-worship .navbar-brand {
+    font-weight: 700;
+    color: var(--color-brand);
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.navbar-worship .nav-link {
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-btn);
+    transition: var(--transition);
+}
+
+.navbar-worship .nav-link:hover {
+    color: var(--color-brand);
+    background: var(--color-surface-hover);
+}
+
+/* ===== Buttons ===== */
+.btn-brand {
+    background: var(--color-brand);
+    color: white;
+    border: none;
+    border-radius: var(--radius-btn);
+    padding: 0.625rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: var(--transition);
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.btn-brand:hover {
+    background: var(--color-brand-dark);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(83, 74, 183, 0.3);
+}
+
+.btn-outline-brand {
+    background: transparent;
+    color: var(--color-brand);
+    border: 2px solid var(--color-brand);
+    border-radius: var(--radius-btn);
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: var(--transition);
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.btn-outline-brand:hover {
+    background: var(--color-brand);
+    color: white;
+}
+
+/* ===== Song Cards (Glass Variant) ===== */
+.song-card {
+    background: var(--surface-glass-bg);
+    border-radius: 1.5rem;
+    box-shadow: var(--surface-glass-shadow);
+    padding: 16px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--surface-glass-border);
+    backdrop-filter: var(--surface-glass-blur);
+    -webkit-backdrop-filter: var(--surface-glass-blur);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.song-card:hover {
+    box-shadow: 0 24px 48px rgba(34, 84, 128, 0.18);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.song-card .song-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-text);
+}
+
+.song-card .song-artist {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ===== Badges & Pills ===== */
+.badge-key {
+    background: var(--color-brand);
+    color: white;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-song);
+}
+
+.badge-bpm {
+    background: var(--color-brand-soft);
+    color: var(--color-brand);
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge-language {
+    background: var(--color-success-soft);
+    color: var(--color-success);
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.hashtag-pill {
+    background: var(--color-surface-hover);
+    color: var(--color-text-muted);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0.125rem;
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hashtag-pill:hover {
+    background: var(--color-brand);
+    color: white;
+}
+
+/* ===== Song View ===== */
+.song-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.song-body, .lyrics-container {
+    font-family: var(--font-song);
+    padding: 0.5rem 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Chord + lyric pair */
+.song-pair {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.chord-line,
+.lyrics-line {
+    font-family: monospace;
+    white-space: pre;
+    display: block;
+}
+
+/* Default sizes */
+.lyrics-line {
+    font-size: 1.25rem;   /* ~20px */
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.chord-line {
+    font-size: 1rem;      /* ~16px */
+    color: var(--color-chord);
+    font-weight: 700;
+    margin-bottom: 4px;
+    user-select: none;
+}
+
+/* Spacer between stanzas */
+.lyric-line:empty,
+.lyric-line.blank {
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.note-line {
+    color: var(--color-note);
+    font-weight: 500;
+    line-height: 1.3;
+    display: block;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    font-family: monospace;
+}
+
+/* ===== Section Labels (Bug #1 Fix) ===== */
+.section-label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.125rem 0.625rem;
+    border-radius: 4px;
+    margin: 1rem 0 0.375rem 0;
+    white-space: normal;
+}
+.section-verse   { background: var(--color-verse-bg); color: var(--color-verse-text); }
+.section-chorus  { background: var(--color-chorus-bg); color: var(--color-chorus-text); }
+.section-bridge  { background: var(--color-bridge-bg); color: var(--color-bridge-text); }
+.section-prechorus { background: var(--color-prechorus-bg); color: var(--color-prechorus-text); }
+.section-outro   { background: var(--color-outro-bg); color: var(--color-outro-text); }
+.section-intro   { background: var(--color-intro-bg); color: var(--color-intro-text); }
+.section-other   { background: var(--color-surface-hover); color: var(--color-text-muted); }
+
+/* ===== Song Controls ===== */
+.song-controls {
+    background: var(--color-surface);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0.625rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 56px;
+    z-index: 100;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.transpose-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.transpose-controls button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--color-brand);
+    background: transparent;
+    color: var(--color-brand);
+    font-weight: 700;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.transpose-controls button:hover {
+    background: var(--color-brand);
+    color: white;
+}
+
+/* ===== Search Bar ===== */
+.search-bar {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-card);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: var(--transition);
+    background: var(--color-surface);
+    min-height: 44px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--color-brand);
+    box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.15);
+}
+
+/* ===== Personal Version Banner ===== */
+.personal-banner {
+    background: var(--color-warning-soft);
+    border: 1px solid var(--color-warning);
+    border-radius: var(--radius-btn);
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== Shared View Adjustments ===== */
+.shared-song-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+    .song-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 1024px) {
+    .song-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .no-print { display: none !important; }
+    body { background: white; color: black; }
+    .chord-line { color: black; font-size: 11px; }
+}
+
+/* ===== Chord Palette (Inline Editor) ===== */
+.chord-palette {
+    background: var(--md-sys-color-surface-container-low);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--md-sys-color-outline-variant);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.chord-palette-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--md-sys-color-primary);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.chord-palette-label::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: var(--md-sys-color-outline-variant);
+}
+.chord-types, .chord-roots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chord-root-btn, .chord-type-btn {
+    background: var(--md-sys-color-surface-container-lowest);
+    color: var(--md-sys-color-on-surface-variant);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    padding: 0.6rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.chord-type-btn:hover, .chord-root-btn:hover {
+    background: var(--md-sys-color-surface-dim);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.chord-root-btn.selected {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border-color: var(--md-sys-color-primary);
+}
+
+/* ===== Song Sections ===== */
+.section-label {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px; /* pill shape */
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--font-sans);
+    border: 1px solid #bbf7d0;
+}

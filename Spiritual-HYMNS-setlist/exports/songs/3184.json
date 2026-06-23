@@ -1,0 +1,39 @@
+{
+  "id" : 3184,
+  "songNumber" : 379,
+  "title" : "ZANNAIM TUM (Know Ye Not)",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Zannaim Tum, Zannaim Tum"
+    }, {
+      "text" : "Devachem mondir"
+    }, {
+      "text" : "Dev Spiritachem Mondir Tum."
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "Mellun Mog, Mellun Mog,"
+    }, {
+      "text" : "Mellun Jivit (3)"
+    }, {
+      "text" : "Dev Spiritachem Mondir Tum"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Hallelu, Hallelu, Hallelujah (3)"
+    }, {
+      "text" : "Dev Spiritachem Mondir Tum."
+    } ]
+  } ]
+}

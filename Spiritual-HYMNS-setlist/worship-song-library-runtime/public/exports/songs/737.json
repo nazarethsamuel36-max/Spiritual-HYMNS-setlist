@@ -1,0 +1,145 @@
+{
+  "id" : 737,
+  "songNumber" : 125,
+  "title" : "I AM THINKING OF THE RAPTURE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "I am thinking of the rapture in our blessed home on high,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 52
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "How we'll raise the heavenly anthem in that city in the sky,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 56
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "When the redeemed are gathering in,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "Washed like the snow, and free from all sin;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "How we will shout, and how we will sing,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "There will be a great procession over on the streets of gold,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 56
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in;"
+    }, {
+      "text" : "O what music, O what singing, o'er the city will be rolled,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Saints will sing redemption's story with their voices clear and strong,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 64
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in;"
+    }, {
+      "text" : "Then the angels all will listen, For they cannot join that song,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in."
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Then the Saviour will give orders to prepare the banquet board,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 57
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in;"
+    }, {
+      "text" : "And we'll hear His invitation, \"Come, ye blessed of the Lord,\"",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "When the redeemed are gathering in."
+    } ]
+  } ]
+}

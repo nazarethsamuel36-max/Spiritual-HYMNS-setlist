@@ -1,0 +1,72 @@
+{
+  "id" : 914,
+  "songNumber" : 2,
+  "title" : "SET MY SPIRIT FREE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Set my spirit free that I may",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "worship Thee,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Set my spirit free that I may praise",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Thy Name,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Let all bondage go and let",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "deliverance flow,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Am",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Set my spirit free to worship Thee.",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

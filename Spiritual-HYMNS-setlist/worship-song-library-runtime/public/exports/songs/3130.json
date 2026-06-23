@@ -1,0 +1,50 @@
+{
+  "id" : 3130,
+  "songNumber" : 2031,
+  "title" : "** कुछ् नहि, कुछ् नहि छहियॆ यॆशु",
+  "language" : "hindi",
+  "originalKey" : "** D",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Kuch nahin kuch nahin chahiye Yeshu,"
+    }, {
+      "text" : "Bas tu hi tu chahiye"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Tu mera pita , main tera beta,"
+    }, {
+      "text" : "Ye rishta kaafi hai mujhe"
+    }, {
+      "text" : "...repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Tu chale to phir main chaalu"
+    }, {
+      "text" : "Tu ruke to main bhi rukoo,"
+    }, {
+      "text" : "Tu kahe vo hi main sunoo"
+    }, {
+      "text" : "Dikhae jo mujhe dekhoo"
+    }, {
+      "text" : "...repeat"
+    } ]
+  } ]
+}

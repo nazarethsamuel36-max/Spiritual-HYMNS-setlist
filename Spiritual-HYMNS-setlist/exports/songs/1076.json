@@ -1,0 +1,165 @@
+{
+  "id" : 1076,
+  "songNumber" : 98,
+  "title" : "सारे जगत से प्यार किया",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "सारे जगत से प्यार किया,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "क्रुस पर अपना जीवन दिया ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "मेरा प्रभु, मेरा प्रभु, मेरा प्रभु मुक्ति दाता ।",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 35
+      }, {
+        "chord" : "Em",
+        "position" : 44
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "दिल में अंधेरा रहा, तूने दी रोशनी,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "जिसने भी पाया तुझे, उसको मिली जिंदगी,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "पापी से उसने प्यार किया,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "सारे जहाँ का उद्धार किया ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "धन्य है परमेश्वर, तेरा वचन धन्य है,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "पाऊँ मैं आशीष तेरी, तेरी दया धन्य है,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "तेरी सदा मैं वंदन करूँ,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "तेरा ही नाम मैं गाता रहूँ ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "ओ सोनेवालो उठो, यीशु करीब है,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "खुदा से तुम क्यों दूर हो, वो मन के करीब है,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "सबको शिफाएँ देता वो है,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "आत्मा का भी दान देता वो है ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 18
+      } ]
+    } ]
+  } ]
+}

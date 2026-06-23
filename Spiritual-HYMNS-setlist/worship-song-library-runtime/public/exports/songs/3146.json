@@ -1,0 +1,46 @@
+{
+  "id" : 3146,
+  "songNumber" : 1004,
+  "title" : "** Alleluia, For The Lord God Almighty Reigns",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Alleluia, Alleluia, alleluia"
+    }, {
+      "text" : "For the Lord God Almighty reigns"
+    }, {
+      "text" : "Alleluia, Alleluia"
+    }, {
+      "text" : "For the Lord God Almighty reigns"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Alleluia, holy, holy"
+    }, {
+      "text" : "You Lord God Almighty"
+    }, {
+      "text" : "Worthy is the Lamb, worthy is the Lamb"
+    }, {
+      "text" : "You are holy, holy"
+    }, {
+      "text" : "You Lord God Almighty"
+    }, {
+      "text" : "Worthy is the Lamb, worthy is the Lamb"
+    }, {
+      "text" : "Amen"
+    } ]
+  } ]
+}

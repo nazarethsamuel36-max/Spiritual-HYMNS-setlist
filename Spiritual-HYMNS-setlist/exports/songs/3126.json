@@ -1,0 +1,52 @@
+{
+  "id" : 3126,
+  "songNumber" : 2027,
+  "title" : "** छॊत्तॆय् बछ्हॊ कॊ पअस् अअनॆ दॊ",
+  "language" : "hindi",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Chote bachon ko paas aane do,"
+    }, {
+      "text" : "Aashish unhen bhi pane do"
+    }, {
+      "text" : "Unhen mana mat karo mere paas aane do"
+    }, {
+      "text" : "Swarg ka rajya hai aison ka। (२)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Nanha balak aaya Yeshu paas,"
+    }, {
+      "text" : "Apna khana laya Yeshu paas"
+    }, {
+      "text" : "Aashish maagi Prabhu Yeshu ne,"
+    }, {
+      "text" : "Khaya paanch hajar logon ne। (२)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Dena seekhen apne Prabhu ko,"
+    }, {
+      "text" : "Apna sab kuch de den usi ko"
+    }, {
+      "text" : "Dena lene se dhanya hai,"
+    }, {
+      "text" : "Yeshu ka yah anmol vachan hai। (२)"
+    } ]
+  } ]
+}

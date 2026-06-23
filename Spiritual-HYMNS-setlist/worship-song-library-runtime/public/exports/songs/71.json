@@ -1,0 +1,99 @@
+{
+  "id" : 949,
+  "songNumber" : 71,
+  "title" : "IN MOMENTS LIKE THESE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "In moments like these I sing out a song",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 16
+      }, {
+        "chord" : "Em",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "I sing out a love song to Jesus;",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "A",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "In moments like these I lift up my hands",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 16
+      }, {
+        "chord" : "Em",
+        "position" : 24
+      }, {
+        "chord" : "A",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "I lift up my hands to the Lord.",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 2
+      }, {
+        "chord" : "A",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 26
+      }, {
+        "chord" : "D7",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "Singing I love You Lord, (3)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 15
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "I love You.",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 2
+      }, {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    } ]
+  } ]
+}

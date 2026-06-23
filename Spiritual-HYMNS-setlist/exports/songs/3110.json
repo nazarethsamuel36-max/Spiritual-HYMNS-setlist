@@ -1,0 +1,40 @@
+{
+  "id" : 3110,
+  "songNumber" : 2011,
+  "title" : "यीशु तू है सबसे महान",
+  "language" : "hindi",
+  "originalKey" : "F",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "यीशु तू है सबसे महान"
+    }, {
+      "text" : "करते है हम तेरी आराधना...२"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "तेरा ही नाम पवित्र है"
+    }, {
+      "text" : "सर्वशक्तिमान यीशु तू है"
+    }, {
+      "text" : "हाल्लेलुयाह (4)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "प्यारे यीशु तू आजा दिल में"
+    }, {
+      "text" : "ले चल हमें तेरे रहो में"
+    }, {
+      "text" : "हाल्लेलुयाह (4)"
+    } ]
+  } ]
+}

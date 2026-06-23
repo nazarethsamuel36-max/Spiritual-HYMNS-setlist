@@ -1,0 +1,28 @@
+{
+  "id" : 3159,
+  "songNumber" : 1018,
+  "title" : "** Our God Is An Awesome God",
+  "language" : "english",
+  "originalKey" : "** EM",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Our God is an awesome God"
+    }, {
+      "text" : "He reigns from heaven above"
+    }, {
+      "text" : "With wisdom, power, and love"
+    }, {
+      "text" : "Our God is an awesome God"
+    } ]
+  } ]
+}

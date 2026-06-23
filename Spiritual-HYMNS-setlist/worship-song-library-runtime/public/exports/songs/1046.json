@@ -1,0 +1,124 @@
+{
+  "id" : 1046,
+  "songNumber" : 68,
+  "title" : "मिलकर हम सन्ना तेरी गाते",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मिलकर हम सन्ना तेरी गाते",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "सारे जहान को सुनाते",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "जय-जय हो तेरी महिमा हो तेरी, प्रभु",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "हम सबको यह गीत सुनाते ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "चारों तरफ हैं घटाएँ, घनघोर बादल छाए",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "सूझे नहीं अब किनारा, तू ही हमारा सहारा",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "ले चल किनारे ले जा बनकर तू माँझी ले जा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "हम सबको पार लगा दे, हाल्लेलुयाह ।",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "पापों में जीवन हमारा, कष्टो को झेल रहा है",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "कैसे बचेंगे सारे, पापी है जीवन हमारे",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "तूही हमारी आशा, तू ही हमारा राजा",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "हम सबको पार लगा दे, हाल्लेलुयाह ।"
+    } ]
+  } ]
+}

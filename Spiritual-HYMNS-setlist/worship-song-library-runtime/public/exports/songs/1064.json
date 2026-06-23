@@ -1,0 +1,93 @@
+{
+  "id" : 1064,
+  "songNumber" : 86,
+  "title" : "अनुग्रह, अनुग्रह, अनुग्रह",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "अनुग्रह, अनुग्रह, अनुग्रह,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "परमेश्वरका अनुग्रह (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 14
+      }, {
+        "chord" : "G",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "पापो से बचाता हमे, नवजीवन देता हमे (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 32
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "वचन से संभालता हमे, विश्राम देता हमे (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 34
+      }, {
+        "chord" : "G",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "लहु से धोता हमे, छुटकारा देता हमे (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 31
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "आत्मासे जिलाता हमे, सामर्थ देता हमे (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 33
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    } ]
+  } ]
+}

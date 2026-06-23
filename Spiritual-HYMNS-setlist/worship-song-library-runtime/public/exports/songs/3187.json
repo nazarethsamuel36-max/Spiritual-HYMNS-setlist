@@ -1,0 +1,57 @@
+{
+  "id" : 3187,
+  "songNumber" : 382,
+  "title" : "TO MOJEM SOGLLEM DAIZ (He Is My Everything)",
+  "language" : "konkani",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Toch mojem sogllem Daiz,"
+    }, {
+      "text" : "Toch mojem dhyan"
+    }, {
+      "text" : "Toch, mojem sogllem Daiz"
+    }, {
+      "text" : "Vodd ani lhan"
+    }, {
+      "text" : "Moje passun koxtt sosun"
+    }, {
+      "text" : "Dilo Tannem prann"
+    }, {
+      "text" : "Sogleanch novem korun, Zalo mojem khann."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Khoddpantlea mhonva bhaxen"
+    }, {
+      "text" : "Ghodd ruchik mhonva bhaxen"
+    }, {
+      "text" : "To unch khoddpantlea mhonva bhaxen"
+    }, {
+      "text" : "Chakun polleiat, Somi kai boro"
+    }, {
+      "text" : "Khodpantulem mhon'unch khoro"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Lokan amkam vincharlear"
+    }, {
+      "text" : "Lokan mhonnlear"
+    }, {
+      "text" : "Konn vortouta Jezu, tumchea kallzak?"
+    }, {
+      "text" : "Moje passot melo To, Maka novo korcheak"
+    }, {
+      "text" : "Aikat sangtam tumkam, To ixtt mozo."
+    } ]
+  } ]
+}

@@ -1,0 +1,106 @@
+{
+  "id" : 1145,
+  "songNumber" : 167,
+  "title" : "अपना बोझ प्रभु पर डाल",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "अपना बोझ प्रभु पर डाल",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कभी ना घबराना",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरा वो आदरमान करेगा",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "आश्चर्य कर्म करेगा।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "करता हर रोज वो चिंता तेरी",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "प्रार्थना तेरी वो न भूलेगा। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "चिड़ियों और फूलों पर है ध्यान उसका",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "फिर कैसे तुम को वो छोड़ेगा। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "संतो को वो भूलेगा नहीं,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हमेशा उनको संभालेगा। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "माता पिता यदि छोड़ भी देंगे",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "वो तो गले से लगायेगा। (2)",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

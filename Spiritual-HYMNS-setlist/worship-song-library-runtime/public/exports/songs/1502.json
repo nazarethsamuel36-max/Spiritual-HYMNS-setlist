@@ -1,0 +1,46 @@
+{
+  "id" : 3097,
+  "songNumber" : 1502,
+  "title" : "तुझंसा कोणी नाही",
+  "language" : "marathi",
+  "originalKey" : "E",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "तुझंसा कोणी नाही, तुझंसा कुठे नाही"
+    }, {
+      "text" : "विश्वास हा मणी, तुझंसा कोणी नाही"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ख्रिस्त येसू हो महिमा तुझी"
+    }, {
+      "text" : "गाते आकाश, गाते ही धरती"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "अंधकारत प्रकाश तू आहे"
+    }, {
+      "text" : "तूच मुकाम, तू प्रवास रे"
+    }, {
+      "text" : "तू जिथे, ना कहि कामे अहे"
+    }, {
+      "text" : "तुझं नव हे जीवन रे"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "हालेलुयाह, हालेलुयाह..."
+    } ]
+  } ]
+}

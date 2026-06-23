@@ -1,0 +1,172 @@
+{
+  "id" : 732,
+  "songNumber" : 120,
+  "title" : "AMAZING GRACE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Amazing grace ! how sweet the sound,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 1
+      }, {
+        "chord" : "G",
+        "position" : 20
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "That saved a wretch like me !",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "I once was lost, but now am found,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 21
+      }, {
+        "chord" : "D",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Was blind, but now I see.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "'Twas grace that taught my heart to fear,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "And grace my fears relieved;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "How precious did that grace appear",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "The hour I first believed !",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "Through many dangers, toils and snares,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "I have already come;",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "'Tis grace hath brought me safe thus far,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      }, {
+        "chord" : "G",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "And grace will lead me home.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 23
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "When we've been there ten thousand years,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    }, {
+      "text" : "Bright shining as the sun;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "We've no less days to sing God's praise",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 22
+      }, {
+        "chord" : "D",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "Than when we first begun.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "Praise God (7)2"
+    }, {
+      "text" : "Alleluia (7)2"
+    } ]
+  } ]
+}

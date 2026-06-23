@@ -1,0 +1,155 @@
+{
+  "id" : 744,
+  "songNumber" : 132,
+  "title" : "MY SHEEP KNOW MY VOICE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "My sheep know My voice,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "And the path that I take,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "They follow wherever I go;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "My sheep know My voice"
+    }, {
+      "text" : "And come at My call,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "But a stranger's voice do they not know.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "My sheep know My voice,"
+    }, {
+      "text" : "And day by day,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "They abide in the fold,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    }, {
+      "text" : "And go not astray;"
+    }, {
+      "text" : "They love Me because",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "I have made them My choice,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "And they follow My call,"
+    }, {
+      "text" : "For My sheep know My voice.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 21
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "My sheep know My voice.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "And the pastures of green,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Where I lead them so often to feed;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "My sheep know My voice,"
+    }, {
+      "text" : "And the cool sparkling stream,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "Where beside its still waters I lead.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      } ]
+    }, {
+      "text" : ""
+    }, {
+      "text" : "My sheep know My voice,"
+    }, {
+      "text" : "And the valley of death,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 8
+      } ]
+    }, {
+      "text" : "Thru which I shall lead them some day;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "But no danger nor harm"
+    }, {
+      "text" : "Can touch one of them,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "For I will be with them alway.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 6
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,283 @@
+[PAGE BORDER: ACADEMIC STYLE]
+[PAGE 1 - COVER PAGE]
+
+[CENTERED]
+
+[COLLEGE NAME]
+
+DEPARTMENT OF COMPUTER APPLICATIONS
+
+FINAL YEAR PROJECT REPORT
+(Academic Year 2025-2026)
+
+PROJECT TITLE:
+WORSHIP CHORD AND LYRICS MANAGEMENT SYSTEM
+A Web-Based Platform for Structured Song Display,
+Real-Time Transposition, and Multi-Language Support
+
+Submitted in partial fulfillment of the requirements
+for the degree of Bachelor of Computer Applications (BCA)
+
+Submitted By:
+[STUDENT NAME]
+Roll No: [ROLL NUMBER]
+
+Under the Guidance of:
+[GUIDE NAME]
+[GUIDE DESIGNATION]
+
+[COLLEGE NAME]
+[UNIVERSITY NAME]
+
+[CENTERED]
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[PAGE 2 - CERTIFICATE]
+
+[CENTERED]
+CERTIFICATE
+[CENTERED]
+
+This is to certify that the project entitled "Worship Chord and Lyrics Management System" is a bonafide work carried out by [STUDENT NAME], Roll No: [ROLL NUMBER], a student of the Bachelor of Computer Applications (BCA) program at [COLLEGE NAME], during the academic year 2025-2026, in partial fulfillment of the requirements for the award of the degree of Bachelor of Computer Applications.
+
+This project work is original and has not been submitted elsewhere for the award of any other degree or diploma.
+
+
+Date: _______________
+
+
+______________________
+[GUIDE NAME]
+Project Guide
+Department of Computer Applications
+
+
+______________________
+[HOD NAME]
+Head of Department
+Department of Computer Applications
+
+
+______________________
+External Examiner
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[PAGE 3 - ACKNOWLEDGEMENT]
+
+[CENTERED]
+ACKNOWLEDGEMENT
+[CENTERED]
+
+I would like to express my sincere gratitude to all those who have contributed to the successful completion of this project.
+
+First and foremost, I am deeply thankful to my project guide, [GUIDE NAME], whose constant encouragement, insightful guidance, and constructive feedback were instrumental throughout the development of this project. Their expertise in software engineering and web technologies helped shape the technical direction of this work.
+
+I extend my heartfelt thanks to [HOD NAME], Head of the Department of Computer Applications, for providing the necessary infrastructure and academic environment that made this project possible.
+
+I am grateful to the faculty members of the Department of Computer Applications at [COLLEGE NAME] for imparting the foundational knowledge in programming, database management, and software development that formed the basis of this project.
+
+I would also like to acknowledge the musicians, worship leaders, and church community members who provided invaluable real-world feedback during the testing phase of this application. Their insights into the practical challenges of managing worship music directly influenced the design decisions documented in this report.
+
+Special thanks to my family and friends for their unwavering support and patience throughout this academic journey.
+
+Finally, I thank the Almighty for giving me the strength, wisdom, and perseverance to complete this work.
+
+
+[STUDENT NAME]
+[ROLL NUMBER]
+[COLLEGE NAME]
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[PAGE 4 - ABSTRACT]
+
+[CENTERED]
+ABSTRACT
+[CENTERED]
+
+The Worship Chord and Lyrics Management System is a comprehensive web-based application designed to address the critical challenges faced by musicians and worship leaders in church environments. The system centralizes the storage, retrieval, and display of worship songs across multiple languages, including Hindi, Marathi, and English, while providing advanced features such as real-time chord transposition and responsive mobile rendering.
+
+The core innovation of this project lies in its approach to chord alignment. Traditional digital songbooks rely on space-based formatting, where physical space characters are used to position chord symbols above the corresponding lyrics. This method is fundamentally fragile: it breaks when the font changes, when the screen size varies, or when the browser wraps text to a new line. The Worship Song Library replaces this outdated paradigm with a Position-Based Chord Mapping system. In this approach, each chord is stored in a relational database with an exact character index pointing to the specific position in the lyric string where it should be played. This mathematical binding ensures that chord alignment remains perfect regardless of the display device or screen width.
+
+The system is built on a three-tier architecture using Java Servlets (Jakarta EE) for the backend, MySQL for structured data storage, and JSP with Vanilla JavaScript for the frontend. The database is normalized to the Third Normal Form, with songs decomposed into atomic components: Songs, Sections, Song Lines, and Line Chords. This granular structure enables features that are impossible in traditional text-based systems, including targeted transposition, modular section rendering, and precise chord querying.
+
+A custom Virtual Wrapping Algorithm implemented in JavaScript solves the mobile responsiveness problem by intercepting the browser's native text wrapping behavior. When a long lyric line must be split to fit a narrow screen, the algorithm recalculates the chord positions for each resulting sub-line, ensuring that chords always appear above the correct syllable.
+
+The system also provides multi-script support, allowing users to toggle between the original Devanagari script and Roman transliteration while maintaining the same underlying chord structure. A weighted search engine enables rapid song discovery across multiple dimensions including song number, title, artist, and lyrics.
+
+Testing confirmed that the transposition engine maintains 100% mathematical accuracy across all 12 musical keys, the rendering engine preserves chord alignment on screens as narrow as 320 pixels, and search operations complete in under 50 milliseconds with a library of over 300 songs.
+
+Keywords: Chord Alignment, Music Management, Responsive Rendering, Transposition, Multi-Language, Web Application, Java Servlets, MySQL
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[PAGE 5-6 - TABLE OF CONTENTS]
+
+[CENTERED]
+TABLE OF CONTENTS
+[CENTERED]
+
+Certificate .................................................. ii
+Acknowledgement .............................................. iii
+Abstract ..................................................... iv
+Table of Contents ............................................ v
+List of Figures .............................................. vii
+List of Tables ............................................... viii
+
+Chapter 1: Introduction ...................................... 1
+   1.1 Background ............................................ 1
+   1.2 Role of Music in Worship Systems ...................... 2
+   1.3 Challenges in Managing Multilingual Songs ............. 3
+   1.4 Problems with Traditional Chord Formats ............... 4
+   1.5 Problem Statement ..................................... 5
+   1.6 Objectives ............................................ 6
+   1.7 Project Scope ......................................... 7
+   1.8 Methodology ........................................... 8
+   1.9 Organization of the Report ............................ 9
+
+Chapter 2: Technology Stack .................................. 10
+   2.1 Overview of Technology Choices ........................ 10
+   2.2 Frontend Technologies ................................. 11
+   2.3 Backend Technologies .................................. 14
+   2.4 Database Management System ............................ 17
+   2.5 Server and Deployment Environment ..................... 19
+   2.6 Build and Dependency Management ....................... 20
+   2.7 Summary of Technology Decisions ....................... 21
+
+Chapter 3: Analysis (Existing vs Proposed System) ............ 22
+   3.1 Introduction to Domain Analysis ....................... 22
+   3.2 Analysis of Ultimate Guitar ........................... 24
+   3.3 Analysis of OnSong ................................... 28
+   3.4 Analysis of Traditional Static Formats ................ 31
+   3.5 Comparative Analysis Table ............................ 34
+   3.6 Problem Identification ................................ 35
+   3.7 Proposed System Overview .............................. 37
+   3.8 Justification of Proposed Approach .................... 38
+
+Chapter 4: System Design ..................................... 40
+   4.1 High-Level Architecture ............................... 40
+   4.2 Three-Tier Architecture Explanation ................... 41
+   4.3 Database Design ....................................... 44
+   4.4 Entity Relationship Diagram ........................... 46
+   4.5 Table Descriptions .................................... 48
+   4.6 Data Normalization .................................... 52
+   4.7 Data Flow Diagrams .................................... 54
+   4.8 User Interface Design ................................. 56
+   4.9 Sequence Diagrams ..................................... 58
+
+Chapter 5: Implementation .................................... 60
+   5.1 Chord Extraction and Parsing .......................... 60
+   5.2 Regex Tokenization Engine ............................. 63
+   5.3 Transposition Algorithm ............................... 66
+   5.4 Virtual Wrapping Rendering Engine ..................... 70
+   5.5 Search Engine Implementation .......................... 74
+   5.6 Multi-Script Rendering ................................ 77
+   5.7 Security and Error Handling ........................... 79
+
+Chapter 6: Testing and Validation ............................ 82
+   6.1 Testing Strategy ...................................... 82
+   6.2 Unit Testing .......................................... 83
+   6.3 Integration Testing ................................... 87
+   6.4 Rendering Validation .................................. 89
+   6.5 Edge Case Testing ..................................... 91
+   6.6 Performance Testing ................................... 93
+   6.7 Security Testing ...................................... 94
+
+Chapter 7: Conclusion and Future Scope ....................... 96
+   7.1 Summary ............................................... 96
+   7.2 Key Achievements ...................................... 97
+   7.3 Limitations ........................................... 98
+   7.4 Future Scope .......................................... 99
+   7.5 Final Reflection ...................................... 101
+
+Appendix A: Sample Data ...................................... 102
+Appendix B: Core Code Snippets ............................... 104
+Appendix C: System Configuration ............................. 107
+Appendix D: Glossary of Terms ................................ 108
+References ................................................... 110
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[LIST OF FIGURES]
+
+[CENTERED]
+LIST OF FIGURES
+[CENTERED]
+
+Figure 1.1: Traditional Songbook vs Digital System ........... 3
+Figure 1.2: Space-Based Chord Alignment Failure .............. 5
+Figure 2.1: Three-Tier Architecture Overview ................. 10
+Figure 2.2: JSP Request-Response Lifecycle ................... 12
+Figure 2.3: JDBC Connection Flow ............................. 15
+Figure 3.1: Ultimate Guitar Mobile Rendering Failure ......... 25
+Figure 3.2: OnSong Interface Screenshot ...................... 29
+Figure 3.3: PDF Static Layout Limitations .................... 32
+Figure 3.4: Comparative Analysis Matrix ...................... 34
+Figure 4.1: System Architecture Diagram ...................... 40
+Figure 4.2: Entity Relationship Diagram ...................... 46
+Figure 4.3: Level 0 Data Flow Diagram ....................... 54
+Figure 4.4: Level 1 Data Flow Diagram ....................... 55
+Figure 4.5: Song View UI Wireframe .......................... 56
+Figure 4.6: Search Interface Wireframe ....................... 57
+Figure 4.7: Song View Sequence Diagram ...................... 58
+Figure 4.8: Transposition Sequence Diagram .................. 59
+Figure 5.1: Chord Parsing Pipeline .......................... 60
+Figure 5.2: Regex Extraction Flow ........................... 63
+Figure 5.3: Chromatic Scale Circular Diagram ................. 67
+Figure 5.4: Virtual Wrapping Split Logic ..................... 71
+Figure 5.5: Search Ranking Flowchart ........................ 74
+Figure 5.6: Script Toggle Data Flow ......................... 77
+Figure 6.1: Test Coverage Summary ........................... 82
+Figure 6.2: Mobile Rendering Before and After ............... 89
+Figure 6.3: Performance Benchmark Chart ..................... 93
+Figure 7.1: Future Architecture with PWA .................... 100
+
+[PAGE BORDER: ACADEMIC STYLE]
+
+---
+
+[PAGE BORDER: ACADEMIC STYLE]
+[LIST OF TABLES]
+
+[CENTERED]
+LIST OF TABLES
+[CENTERED]
+
+Table 2.1: Frontend Technology Comparison .................... 13
+Table 2.2: Backend Framework Comparison ...................... 16
+Table 2.3: Database System Comparison ........................ 18
+Table 3.1: Feature Comparison Matrix ......................... 34
+Table 3.2: Problem-Solution Mapping .......................... 36
+Table 4.1: Songs Table Schema ............................... 48
+Table 4.2: Sections Table Schema ............................ 49
+Table 4.3: Song Lines Table Schema .......................... 50
+Table 4.4: Line Chords Table Schema ......................... 51
+Table 4.5: Sample Song Records .............................. 53
+Table 5.1: Chromatic Scale Mapping .......................... 67
+Table 5.2: Transposition Examples ........................... 69
+Table 5.3: Search Weight Configuration ...................... 75
+Table 6.1: Search System Test Cases ......................... 84
+Table 6.2: Transposition Test Cases ......................... 85
+Table 6.3: Chord Parsing Test Cases ......................... 86
+Table 6.4: Integration Test Results ......................... 88
+Table 6.5: Edge Case Test Results ........................... 92
+Table 6.6: Performance Metrics Summary ...................... 93
+
+[PAGE BORDER: ACADEMIC STYLE]

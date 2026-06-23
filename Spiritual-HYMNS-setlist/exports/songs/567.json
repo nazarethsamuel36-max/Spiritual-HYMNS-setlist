@@ -1,0 +1,50 @@
+{
+  "id" : 567,
+  "songNumber" : 21,
+  "title" : "WITH MY HANDS LIFTED UP",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "With my hands lifted up,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 8
+      }, {
+        "chord" : "Bm",
+        "position" : 21
+      } ]
+    }, {
+      "text" : "And my mouth filled with praise,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "With a heart of thanksgiving,"
+    }, {
+      "text" : "I will bless Thee, O Lord. (3)"
+    }, {
+      "text" : "With a heart of thanksgiving,"
+    }, {
+      "text" : "I will bless Thee, O Lord."
+    }, {
+      "text" : "We bless Thee, O Lord, (2)"
+    }, {
+      "text" : "With a heart of thanksgiving,"
+    }, {
+      "text" : "We bless Thee, O Lord."
+    } ]
+  } ]
+}

@@ -1,0 +1,124 @@
+{
+  "id" : 687,
+  "songNumber" : 6,
+  "title" : "GREAT IS THE LORD",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Great is the Lord and greatly to be praised,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 13
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "In the city of our God,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "In the mountain of His holiness,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 7
+      }, {
+        "chord" : "C",
+        "position" : 23
+      }, {
+        "chord" : "D",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "Beautiful for situation, the joy of the whole earth,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "Bm",
+        "position" : 18
+      }, {
+        "chord" : "C",
+        "position" : 29
+      }, {
+        "chord" : "G",
+        "position" : 46
+      } ]
+    }, {
+      "text" : "Is mount Zion on the sides of the north,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 3
+      }, {
+        "chord" : "D",
+        "position" : 21
+      }, {
+        "chord" : "G",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "The city of our great King.",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 4
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "G",
+        "position" : 22
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "One body, one spirit, one faith, one Lord,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "C",
+        "position" : 22
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "One people, one nation, praise the Lord !",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 12
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "G",
+        "position" : 35
+      } ]
+    } ]
+  } ]
+}

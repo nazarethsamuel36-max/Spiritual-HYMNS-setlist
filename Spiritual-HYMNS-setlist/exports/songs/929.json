@@ -1,0 +1,69 @@
+{
+  "id" : 929,
+  "songNumber" : 50,
+  "title" : "JESUS NAME ABOVE ALL NAMES",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Jesus, Name above all names,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 7
+      }, {
+        "chord" : "Bm",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Beautiful Saviour, Glorious Lord !",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "Em",
+        "position" : 19
+      }, {
+        "chord" : "A",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "Emmanuel, God is with us,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 10
+      }, {
+        "chord" : "Bm",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "Blessed Redeemer, Living Word!",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    } ]
+  } ]
+}

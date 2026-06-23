@@ -1,0 +1,52 @@
+{
+  "id" : 3154,
+  "songNumber" : 1012,
+  "title" : "** I Know The Master Of The Winds",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "My boat of life sails on a troubled sea"
+    }, {
+      "text" : "Whenever there's a wind in my sail."
+    }, {
+      "text" : "But I have a friend who watches over me"
+    }, {
+      "text" : "When the breeze turns into a gale."
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "I know the Master of the wind."
+    }, {
+      "text" : "I know the Maker of the rain."
+    }, {
+      "text" : "He can calm a storm, make the sun shine again."
+    }, {
+      "text" : "I know the Master of the wind."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Sometimes I soar like an eagle through the sky"
+    }, {
+      "text" : "Above the peaks my soul can be found."
+    }, {
+      "text" : "An unexpected storm may drive me from the heights"
+    }, {
+      "text" : "Brings me low, but never brings me down."
+    } ]
+  } ]
+}

@@ -1,0 +1,160 @@
+{
+  "id" : 775,
+  "songNumber" : 163,
+  "title" : "WHEN THE ROLL IS CALLED UP YONDER",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "When the trumpet of the Lord shall sound, and time shall be no more,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 46
+      }, {
+        "chord" : "D",
+        "position" : 63
+      } ]
+    }, {
+      "text" : "And the morning breaks eternal, bright and fair,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 43
+      } ]
+    }, {
+      "text" : "When the saved of earth shall gather over on the other shore,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 42
+      }, {
+        "chord" : "D",
+        "position" : 55
+      } ]
+    }, {
+      "text" : "And the roll is called up yonder, I'll be there.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 26
+      }, {
+        "chord" : "D",
+        "position" : 42
+      } ]
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "Chorus",
+    "lines" : [ {
+      "text" : "When the roll is called up yonder, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "When the roll is called up yonder, I'll be there.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 27
+      }, {
+        "chord" : "D",
+        "position" : 43
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "On that bright and cloudless morning when the dead in Christ shall rise,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "G",
+        "position" : 46
+      }, {
+        "chord" : "D",
+        "position" : 67
+      } ]
+    }, {
+      "text" : "And the glory of His resurrection share;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 8
+      }, {
+        "chord" : "A",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "When His chosen ones shall gather to their home beyond the skies,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "G",
+        "position" : 43
+      }, {
+        "chord" : "D",
+        "position" : 59
+      } ]
+    }, {
+      "text" : "And the roll is called up yonder, I'll be there."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Let us labor for the Master from the dawn till setting sun,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "G",
+        "position" : 37
+      }, {
+        "chord" : "D",
+        "position" : 55
+      } ]
+    }, {
+      "text" : "Let us talk of all His wondrous love and care;",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 41
+      } ]
+    }, {
+      "text" : "Then when all of life is over, and our work on earth is done,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      }, {
+        "chord" : "G",
+        "position" : 39
+      }, {
+        "chord" : "D",
+        "position" : 56
+      } ]
+    }, {
+      "text" : "And the roll is called up yonder, I'll be there."
+    } ]
+  } ]
+}

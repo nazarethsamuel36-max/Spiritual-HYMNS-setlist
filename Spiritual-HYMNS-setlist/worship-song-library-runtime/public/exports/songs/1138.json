@@ -1,0 +1,60 @@
+{
+  "id" : 1138,
+  "songNumber" : 160,
+  "title" : "यीशु तेरा नाम है महान",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यीशु तेरा नाम है महान,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "यीशु तेरी स्तुति मैं गाऊँ",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तू आया स्वर्ग से धरती पर,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मुझको राह दिखाने को",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "धरती से क्रूस पर, मेरा कर्ज चुकाने को",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "क्रूस से कब्र में, कब्र से आसमान",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "यीशु तेरा नाम है महान।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,94 @@
+{
+  "id" : 1089,
+  "songNumber" : 111,
+  "title" : "प्रार्थना में जो भी माँगे प्रार्थना को सुन",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "प्रार्थना में जो भी माँगे प्रार्थना को सुन,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "विश्वास योग्य है तू प्रभु प्रार्थना को सुन ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 39
+      } ]
+    }, {
+      "text" : "माँगो दिया जायेगा, तूने कहा हमसे",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ढूँढो तो तुम पाओगे, ये भी कहा हमसे",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "खटखटाओ तो खोला जायेगा,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तूने कहा हमसे पूरा होवेगा, पूरा होवेगा ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 36
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "एलिया की प्रार्थना सुनी, हमारी भी प्रार्थना सुन",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "दानीएल की प्रार्थना सुनी, हमारी भी प्रार्थना तू सुन",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 48
+      } ]
+    }, {
+      "text" : "ये है हमारा विश्वास प्रार्थना सुनेगा सदा",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "आज कल युगानुयुग एकसा रहता ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 23
+      } ]
+    } ]
+  } ]
+}

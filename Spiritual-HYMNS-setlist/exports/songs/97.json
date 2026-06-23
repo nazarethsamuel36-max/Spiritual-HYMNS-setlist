@@ -1,0 +1,175 @@
+{
+  "id" : 1075,
+  "songNumber" : 97,
+  "title" : "SWARGIYA ASHISH DE",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "स्वर्गीय आशीष दे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "स्वर्ग को तू खोल,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "हाथ अपना बढा,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "स्वर्गीय आशीष दे ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "आत्मा की चंगाई दे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "आत्मा पवित्र शुद्ध कर चरित्र ,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 13
+      } ]
+    }, {
+      "text" : "आत्मा की चंगाई दे ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 13
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "यीशु मेरे दिल में आ (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "खोलता हूँ द्वार करता इकरार,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 10
+      } ]
+    }, {
+      "text" : "यीशु मेरे दिल में आ ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 18
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "पवित्र आत्मा तू दे (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "भर दे मुझे सामर्थ से,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "पवित्र आत्मा तू दे ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "हमको ग्रहण कर प्रभु (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "F#m",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "जैसे भी है हम है तेरे,",
+      "chords" : [ {
+        "chord" : "Bm",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "हमको ग्रहण कर प्रभु ।",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    } ]
+  } ]
+}

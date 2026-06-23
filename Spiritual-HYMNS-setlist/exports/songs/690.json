@@ -1,0 +1,106 @@
+{
+  "id" : 690,
+  "songNumber" : 9,
+  "title" : "HIS NAME IS WONDERFUL",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "His Name is Wonderful, (3)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Jesus my Lord.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "He is the Mighty King,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Master of everything",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 7
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "His Name is Wonderful,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Jesus my Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "He's the great Shepherd,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "The Rock of all Ages,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Almighty God is He.",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Bow down before Him,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Love and adore Him,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 5
+      }, {
+        "chord" : "D",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "His Name is Wonderful,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 12
+      } ]
+    }, {
+      "text" : "Jesus my Lord.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    } ]
+  } ]
+}

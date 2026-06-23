@@ -1,0 +1,84 @@
+{
+  "id" : 1067,
+  "songNumber" : 89,
+  "title" : "YEHOVA YIRE, UPAYA KARNE WALE",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "यहोवा थिरें, उपाय करने वाले,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "तेरा अनुग्रह काफी है (2)",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "तू अपनी महिमा के धन से,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "करेगा दूर मेरी सारी घटी",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "तेरे दूत करते मेरी पहरेदारी,",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 14
+      } ]
+    }, {
+      "text" : "तू चिन्ता करता है मेरी",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "मेरी, मेरी, तू चिन्ता करता है मेरी ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 6
+      }, {
+        "chord" : "F",
+        "position" : 12
+      }, {
+        "chord" : "G",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

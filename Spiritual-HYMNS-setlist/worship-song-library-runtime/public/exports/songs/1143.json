@@ -1,0 +1,83 @@
+{
+  "id" : 1143,
+  "songNumber" : 165,
+  "title" : "हे खुदा, तेरी शरण सबसे प्यारी है",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "हे खुदा, तेरी शरण सबसे प्यारी है",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "तेरे बिना हरपल यहाँ अधूरा लगता है।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तेरी शरण में कितने लोग आते जाते है,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "कोई आता, कोई जाता, कोई भूल जाता",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ले चल मुझे तू वही, जीवन की राहों पर",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मिट्टी हूँ मैं कुछ भी नही, तेरे हाथों की",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "टूटे हुए दिल तेरी शरण में खुशियाँ पाते है",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "हर एक भटके मुसाफिरों को तू ढूँढ लाता है",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "उन आंसुओं को लेकर तू, एक गीत बनाता है",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जीवन सफर में वह गीत, हम गुनगुनाते है।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    } ]
+  } ]
+}

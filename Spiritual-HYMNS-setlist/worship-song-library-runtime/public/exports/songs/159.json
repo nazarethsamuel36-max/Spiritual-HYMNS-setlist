@@ -1,0 +1,126 @@
+{
+  "id" : 1137,
+  "songNumber" : 159,
+  "title" : "ISHWAR SATH HO JAB TAK NA MILEIN",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ईश्वर साथ हो जब तक न मिलें,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "अपने वचन से संभाले",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "अपनी भेडों संग चराए,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ईश्वर साथ हो जब तक न मिलें।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 23
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जब तक न फिर मिलें (2)",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "स्वर्ग में प्यारे यीशु पास",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "जब तक न फिर मिलें (2)"
+    }, {
+      "text" : "ईश्वर साथ हो जब तक न मिलें।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "ईश्वर साथ हो जब तक न मिलें",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "पंख के तले नित छुपाए",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "प्रतिदिन मन्ना खिलाए,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ईश्वर साथ हो जब तक न मिलें।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "ईश्वर साथ हो जब तक न मिलें,"
+    }, {
+      "text" : "यदि जोखिम में तू आए",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "वो बांह से तुझे थामे,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ईश्वर साथ हो जब तक न मिलें।"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 5",
+    "lines" : [ {
+      "text" : "ईश्वर साथ हो जब तक न मिलें,"
+    }, {
+      "text" : "प्रेम का झंडा वह फहवाए",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "लहरें मृत्यु की वह थामे,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "ईश्वर साथ हो जब तक न मिलें।"
+    } ]
+  } ]
+}

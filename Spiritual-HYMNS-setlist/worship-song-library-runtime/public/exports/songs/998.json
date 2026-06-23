@@ -1,0 +1,138 @@
+{
+  "id" : 998,
+  "songNumber" : 20,
+  "title" : "हम यीशु के संग एक दिन, स्वर्ग जायेंगे",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "हम यीशु के संग एक दिन, स्वर्ग जायेंगे",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 11
+      }, {
+        "chord" : "Gm",
+        "position" : 23
+      } ]
+    }, {
+      "text" : "पिता को देखेंगे धन्य हो जायेंगे...",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 10
+      }, {
+        "chord" : "Gm",
+        "position" : 16
+      }, {
+        "chord" : "F",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "हाल्लेलुयाह...",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 8
+      }, {
+        "chord" : "Gm",
+        "position" : 14
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "दुःख से भरे ये दिन बीत जायेंगे,",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 15
+      }, {
+        "chord" : "Gm",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "हर पल हम यीशु के संग आनंद मनायेंगे ।",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 17
+      }, {
+        "chord" : "Gm",
+        "position" : 29
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "रहना नहीं यहाँ हमेशा के लिए,",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 15
+      }, {
+        "chord" : "Gm",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "परदेसी हैं हम यहाँ थोडे दिनों के लिए ।",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 14
+      }, {
+        "chord" : "Gm",
+        "position" : 33
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तैयारी हम करें वहाँ जाने के लिए,",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 10
+      }, {
+        "chord" : "Gm",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "यीशु जल्द आता है हमको लेने के लिए ।",
+      "chords" : [ {
+        "chord" : "Gm",
+        "position" : 0
+      }, {
+        "chord" : "F",
+        "position" : 10
+      }, {
+        "chord" : "Gm",
+        "position" : 30
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,64 @@
+{
+  "id" : 3153,
+  "songNumber" : 1011,
+  "title" : "** Holy Words Long Preserved",
+  "language" : "english",
+  "originalKey" : "** G",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Holy words long preserved"
+    }, {
+      "text" : "For our walk in this world,"
+    }, {
+      "text" : "They resound with God's own heart"
+    }, {
+      "text" : "Oh, let the Word of God impart."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "Holy words ever true"
+    }, {
+      "text" : "Changing me, and changing you."
+    }, {
+      "text" : "We have come with open hearts"
+    }, {
+      "text" : "Oh let the Word of God impart."
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "Words of Life, words of Hope"
+    }, {
+      "text" : "Give us strength, help us cope"
+    }, {
+      "text" : "In this world, where e'er we roam"
+    }, {
+      "text" : "Word of God will guide us Home."
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 3",
+    "lines" : [ {
+      "text" : "Holy words of our Faith"
+    }, {
+      "text" : "Handed down to this age."
+    }, {
+      "text" : "Came to us through sacrifice"
+    }, {
+      "text" : "Oh heed the faithful words of Christ."
+    } ]
+  } ]
+}

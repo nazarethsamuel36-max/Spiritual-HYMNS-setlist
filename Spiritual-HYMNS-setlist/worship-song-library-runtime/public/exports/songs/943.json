@@ -1,0 +1,102 @@
+{
+  "id" : 943,
+  "songNumber" : 64,
+  "title" : "HE IS MY EVERYTHING",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "He is my everything, He is my all,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      }, {
+        "chord" : "A",
+        "position" : 30
+      } ]
+    }, {
+      "text" : "He is my everything, both great and small,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 36
+      } ]
+    }, {
+      "text" : "He gave His life for me,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 12
+      }, {
+        "chord" : "D7",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "Made everything new,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "He is my everything,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 9
+      } ]
+    }, {
+      "text" : "None other will do.",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Like honey in the rock,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 5
+      } ]
+    }, {
+      "text" : "Sweet honey in the rock,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "Jesus tastes like honey in the rock,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "O taste and see that the Lord is good",
+      "chords" : [ {
+        "chord" : "D7",
+        "position" : 25
+      }, {
+        "chord" : "G",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "For He tastes like honey in the rock.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "D",
+        "position" : 32
+      } ]
+    } ]
+  } ]
+}

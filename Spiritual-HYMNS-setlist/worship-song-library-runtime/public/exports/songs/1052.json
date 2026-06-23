@@ -1,0 +1,140 @@
+{
+  "id" : 1052,
+  "songNumber" : 74,
+  "title" : "प्रभु का आनंद है मेरी ताकत",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "प्रभु का आनंद है मेरी ताकत",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "संसार में यीशु है मेरी ताकत",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "वो मेरा आनंद हर एक दिन में वो मेरा सहारा है (2)",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      }, {
+        "chord" : "B",
+        "position" : 27
+      }, {
+        "chord" : "E",
+        "position" : 38
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "जब मैंने सोचा मैं अकेला हूं,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "तब प्रभु यीशु ने मुझसे कहा (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "संसार के अंत तक साथ रहने वाला,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "मैं तेरे साथ हूं । (2)",
+      "chords" : [ {
+        "chord" : "B",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 13
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "जब मैंने सोचा मैं निर्बल हूं",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तब प्रभु यीशु ने मुझसे कहा (2)"
+    }, {
+      "text" : "शक्ती देनेवाला सामर्थ्य देनेवाला",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "मैं तेरे साथ हूं । (2)"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 4",
+    "lines" : [ {
+      "text" : "जब मैंने सोचा कि असंभव है ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "तब प्रभु यीशु ने मुझसे कहा (2)"
+    }, {
+      "text" : "असंभव को संभव करने वाला यीशु",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "मैं तेरे साथ हूं । (2)"
+    } ]
+  } ]
+}

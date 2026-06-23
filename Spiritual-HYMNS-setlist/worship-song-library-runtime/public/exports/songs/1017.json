@@ -1,0 +1,189 @@
+{
+  "id" : 1017,
+  "songNumber" : 39,
+  "title" : "प्रभु तेरे नाम के लिये",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "प्रभु तेरे नाम के लिये,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 11
+      }, {
+        "chord" : "E",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "तन मन मेरा होगा बलिदान,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "और तेरी महिमा के लिये,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 8
+      }, {
+        "chord" : "E",
+        "position" : 19
+      } ]
+    }, {
+      "text" : "जीवन के हर चुने हुए दान ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 20
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मेरे जीवन पर तेरा बड़ा है उपकार,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 18
+      }, {
+        "chord" : "E",
+        "position" : 28
+      } ]
+    }, {
+      "text" : "पापों से जो मुझे मिला है उद्धार,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "मेरा हृदय तेरे गीत गाता है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "तूने ही जो मेरा बदला है विधान ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 26
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मेरी तेरे क्रूस पर दृष्टी जाती है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "E",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "वही हर दुखों में जी बहलाती है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 22
+      } ]
+    }, {
+      "text" : "क्रूस की महिमा मेरे जीवन का उद्देश्य,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "E",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "वहीं मेरे लिये जीवन का निदान ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 25
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "तूही मेरे लिये जीवन रोटी है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 20
+      }, {
+        "chord" : "E",
+        "position" : 25
+      } ]
+    }, {
+      "text" : "तेरे ही वचन मेरे लिये मोती है,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "तेरे जीवन जल से हुआ मैं भरपूर,",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 16
+      }, {
+        "chord" : "E",
+        "position" : 26
+      } ]
+    }, {
+      "text" : "तूने जो बहाया क्रूस पर देकर प्राण ।",
+      "chords" : [ {
+        "chord" : "E",
+        "position" : 0
+      }, {
+        "chord" : "B",
+        "position" : 28
+      } ]
+    } ]
+  } ]
+}

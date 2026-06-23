@@ -1,0 +1,168 @@
+{
+  "id" : 1048,
+  "songNumber" : 70,
+  "title" : "आदि में वचन था, वचन खुदा के साथ था",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "आदि में वचन था, वचन खुदा के साथ था,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 8
+      }, {
+        "chord" : "C",
+        "position" : 16
+      }, {
+        "chord" : "D",
+        "position" : 28
+      }, {
+        "chord" : "Em",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "वचन ही तो था खुदा,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 7
+      }, {
+        "chord" : "Em",
+        "position" : 15
+      } ]
+    }, {
+      "text" : "वो ही वचन देहधारी हुआ, मनुष्यों के बीच में रहा (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "Em",
+        "position" : 44
+      } ]
+    }, {
+      "text" : "उसमें ही जीवन था, जीवन की ज्योति थी (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 9
+      }, {
+        "chord" : "D",
+        "position" : 18
+      }, {
+        "chord" : "Em",
+        "position" : 33
+      } ]
+    }, {
+      "text" : "ज्योति ने सबको बनाया, अंधकार सब दुर हुआ",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "Em",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "वो ही वचन देहधारी हुआ, मनुष्यों के बीच में रहा (2)"
+    }, {
+      "text" : "उस के लिए ही था, उसके ही द्वारा हुआ (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 13
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "Em",
+        "position" : 34
+      } ]
+    }, {
+      "text" : "सब कुछ रचा गया, तेज उभरकर आया",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 16
+      }, {
+        "chord" : "Em",
+        "position" : 27
+      } ]
+    }, {
+      "text" : "वो ही वचन देहधारी हुआ, मनुष्यों के बीच में रहा । (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 23
+      }, {
+        "chord" : "Em",
+        "position" : 44
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "मनुष्यों के मध्य में, खुदा ने किया डेरा (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 17
+      }, {
+        "chord" : "D",
+        "position" : 22
+      }, {
+        "chord" : "Em",
+        "position" : 37
+      } ]
+    }, {
+      "text" : "कोई नहीं पहचाना, कोई नहीं उसे जाना",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 17
+      }, {
+        "chord" : "Em",
+        "position" : 32
+      } ]
+    }, {
+      "text" : "अपने ही घर में, बन के रहा वो, जैसे पतित अनजाना । (2)",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 30
+      }, {
+        "chord" : "Em",
+        "position" : 44
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,36 @@
+{
+  "id" : 3178,
+  "songNumber" : 1037,
+  "title" : "** Welcome Holy Spirit, be here with Your Presence",
+  "language" : "english",
+  "originalKey" : "** C",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "Welcome Holy Spirit be here with Your presence"
+    }, {
+      "text" : "Fill me with Your power"
+    }, {
+      "text" : "Live inside of me"
+    }, {
+      "text" : "..repeat"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "You're the living water Never-drying fountain"
+    }, {
+      "text" : "Comforter and Counsellor take complete control"
+    } ]
+  } ]
+}

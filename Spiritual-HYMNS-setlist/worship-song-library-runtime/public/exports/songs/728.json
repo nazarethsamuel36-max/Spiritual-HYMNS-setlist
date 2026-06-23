@@ -1,0 +1,48 @@
+{
+  "id" : 728,
+  "songNumber" : 116,
+  "title" : "WE ARE STANDING ON HOLY GROUND",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "We are standing on Holy ground,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "And I know that there are Angels all around,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 6
+      }, {
+        "chord" : "D",
+        "position" : 38
+      } ]
+    }, {
+      "text" : "Let us pray to Jesus now,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 7
+      } ]
+    }, {
+      "text" : "For we are standing in His presence",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "On Holy ground.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 3
+      } ]
+    } ]
+  } ]
+}

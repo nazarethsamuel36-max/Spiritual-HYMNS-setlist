@@ -1,0 +1,88 @@
+{
+  "id" : 1182,
+  "songNumber" : 204,
+  "title" : "ले चल मेरी आत्मा को तू",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "ले चल मेरी आत्मा को तू",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "कैसा कठिन रास्ता है ।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 10
+      }, {
+        "chord" : "Am",
+        "position" : 17
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 2",
+    "lines" : [ {
+      "text" : "तेरा ही तो प्रेम है, आया इस जहाँ में,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 11
+      }, {
+        "chord" : "D",
+        "position" : 29
+      } ]
+    }, {
+      "text" : "तेरा इन्तजार है, लेकिन मसीह के प्यार में।",
+      "chords" : [ {
+        "chord" : "F",
+        "position" : 0
+      }, {
+        "chord" : "E",
+        "position" : 13
+      }, {
+        "chord" : "Am",
+        "position" : 31
+      } ]
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "VERSE 3",
+    "lines" : [ {
+      "text" : "उद्धार-मुक्ति केवल यीशु में, मिलेगी आज हमें,",
+      "chords" : [ {
+        "chord" : "Am",
+        "position" : 0
+      }, {
+        "chord" : "G",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 24
+      }, {
+        "chord" : "F",
+        "position" : 40
+      } ]
+    }, {
+      "text" : "तेरा इन्तजार है, लेकिन मसीह के प्यार में।"
+    } ]
+  } ]
+}

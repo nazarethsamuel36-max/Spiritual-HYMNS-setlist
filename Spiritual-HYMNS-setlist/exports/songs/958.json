@@ -1,0 +1,50 @@
+{
+  "id" : 958,
+  "songNumber" : 80,
+  "title" : "VICTORY IS MINE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Victory* is mine (2)",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "Victory today is mine,",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "I told Satan to get behind,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 2
+      }, {
+        "chord" : "G",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "Victory today is mine.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 10
+      }, {
+        "chord" : "D",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "(*Joy......Peace......Jesus)"
+    } ]
+  } ]
+}

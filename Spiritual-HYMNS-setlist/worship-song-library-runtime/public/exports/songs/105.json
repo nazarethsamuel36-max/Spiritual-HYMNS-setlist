@@ -1,0 +1,45 @@
+{
+  "id" : 717,
+  "songNumber" : 105,
+  "title" : "JESUS WHAT A WONDER YOU ARE",
+  "language" : "english",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "Jesus, what a wonder you are,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      } ]
+    }, {
+      "text" : "You are so gentle, so pure and so kind",
+      "chords" : [ {
+        "chord" : "A",
+        "position" : 11
+      } ]
+    }, {
+      "text" : "You shine like the Morning Star,",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 4
+      } ]
+    }, {
+      "text" : "Jesus, what a wonder you are.",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "A",
+        "position" : 14
+      }, {
+        "chord" : "D",
+        "position" : 25
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,56 @@
+{
+  "id" : 3174,
+  "songNumber" : 1033,
+  "title" : "** I come to the garden alone",
+  "language" : "english",
+  "originalKey" : "** A",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "SECTIONS",
+    "lines" : [ ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 1",
+    "lines" : [ {
+      "text" : "I come to the garden alone"
+    }, {
+      "text" : "While the dew is still on the roses"
+    }, {
+      "text" : "And the voice I hear, falling on my ear"
+    }, {
+      "text" : "The son of God discloses"
+    } ]
+  }, {
+    "type" : "chorus",
+    "label" : "CHORUS",
+    "lines" : [ {
+      "text" : "And he walks with me"
+    }, {
+      "text" : "And he talks with me"
+    }, {
+      "text" : "And he tells me I am his own"
+    }, {
+      "text" : "And the joy we share as we tarry there"
+    }, {
+      "text" : "None other has ever known"
+    } ]
+  }, {
+    "type" : "verse",
+    "label" : "Verse 2",
+    "lines" : [ {
+      "text" : "I'd stay in the garden with him"
+    }, {
+      "text" : "Though the night around me is falling"
+    }, {
+      "text" : "But he bids me go"
+    }, {
+      "text" : "Through the voice of woe"
+    }, {
+      "text" : "His voice to me is calling"
+    } ]
+  } ]
+}

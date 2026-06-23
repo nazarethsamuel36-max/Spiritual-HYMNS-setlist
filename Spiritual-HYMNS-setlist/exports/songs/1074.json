@@ -1,0 +1,90 @@
+{
+  "id" : 1074,
+  "songNumber" : 96,
+  "title" : "मेरी प्यासी आँखे, तेरी और उठती है",
+  "language" : "hindi",
+  "capo" : 0,
+  "bpm" : 0,
+  "timeSignature" : "4/4",
+  "hashtags" : [ ],
+  "sections" : [ {
+    "type" : "verse",
+    "label" : "VERSE 1",
+    "lines" : [ {
+      "text" : "मेरी प्यासी आँखे, तेरी और उठती है",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "तेरे ही करम की, तमन्ना रखती है ।",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 17
+      } ]
+    }, {
+      "text" : "जीवन मेरा टुटा, खुशियाँ भी है रुठी,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 16
+      } ]
+    }, {
+      "text" : "पापों में डूबा, हर तरफ है विरानी,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 20
+      } ]
+    }, {
+      "text" : "मेरे प्रभु, तुम बिन जिन्दगी है बेशक एकगम ।",
+      "chords" : [ {
+        "chord" : "G",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 31
+      } ]
+    }, {
+      "text" : "नजरे मेरी तुझ पर, अब रहम कर तू मुझपे,",
+      "chords" : [ {
+        "chord" : "Em",
+        "position" : 0
+      }, {
+        "chord" : "C",
+        "position" : 18
+      } ]
+    }, {
+      "text" : "प्यासा है ये जीवन, पावन कर दे ये मन,",
+      "chords" : [ {
+        "chord" : "D",
+        "position" : 0
+      }, {
+        "chord" : "Em",
+        "position" : 24
+      } ]
+    }, {
+      "text" : "आजा प्यारे यीशु, अब पुकारु मैं तुझको ।",
+      "chords" : [ {
+        "chord" : "C",
+        "position" : 0
+      }, {
+        "chord" : "D",
+        "position" : 20
+      }, {
+        "chord" : "Em",
+        "position" : 34
+      } ]
+    } ]
+  } ]
+}
