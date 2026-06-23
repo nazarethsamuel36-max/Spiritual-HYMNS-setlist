@@ -1,3 +1,9 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"refactor: update EditorMode to match chord view layout with inline editable textareas\" ; git push origin main$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }

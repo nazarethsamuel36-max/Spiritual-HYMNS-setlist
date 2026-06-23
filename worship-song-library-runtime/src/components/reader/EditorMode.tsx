@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { db, type SongDetail, type Section, type Chord, type Arrangement } from '../../db/Database';
 import { useWorkflowStore } from '../../store/workflowStore';
 
@@ -78,6 +78,15 @@ function markupToSections(markup: string): Section[] {
   return sections;
 }
 
+const SECTION_STYLES: Record<string, string> = {
+  verse: 'bg-[var(--color-verse-bg)] text-[var(--color-verse-text)] border-[var(--color-verse-bg)]',
+  chorus: 'bg-[var(--color-chorus-bg)] text-[var(--color-chorus-text)] border-[var(--color-chorus-bg)]',
+  bridge: 'bg-[var(--color-bridge-bg)] text-[var(--color-bridge-text)] border-[var(--color-bridge-bg)]',
+  prechorus: 'bg-[var(--color-prechorus-bg)] text-[var(--color-prechorus-text)] border-[var(--color-prechorus-bg)]',
+  outro: 'bg-[var(--color-outro-bg)] text-[var(--color-outro-text)] border-[var(--color-outro-bg)]',
+  intro: 'bg-[var(--color-intro-bg)] text-[var(--color-intro-text)] border-[var(--color-intro-bg)]',
+};
+
 export function EditorMode({ song }: EditorModeProps) {
   const setActiveArrangementId = useWorkflowStore(s => s.setActiveArrangementId);
   const setReaderMode = useWorkflowStore(s => s.setReaderMode);
@@ -113,44 +122,106 @@ export function EditorMode({ song }: EditorModeProps) {
     }
   };
 
+  const sections = markupToSections(text);
+
+  const updateLine = useCallback((sectionIdx: number, lineIdx: number, newValue: string) => {
+    const lines = text.split('\n');
+    const headerRegex = /^\[(Verse|Chorus|Bridge|Pre-Chorus|Intro|Outro|Tag|Ending|Interlude|V|C|B|P|I|O|Misc)[^\]]*\]$/i;
+    
+    let currentSectionIdx = 0;
+    let currentLineIdxInSection = 0;
+    
+    for (let i = 0; i < lines.length; i++) {
+      const trimmed = lines[i].trim();
+      
+      if (headerRegex.test(trimmed)) {
+        if (currentSectionIdx === sectionIdx && currentLineIdxInSection === lineIdx) {
+          // Found the line to update
+          lines[i] = newValue;
+          setText(lines.join('\n'));
+          return;
+        }
+        currentSectionIdx++;
+        currentLineIdxInSection = 0;
+      } else if (currentSectionIdx === sectionIdx && trimmed) {
+        if (currentLineIdxInSection === lineIdx) {
+          lines[i] = newValue;
+          setText(lines.join('\n'));
+          return;
+        }
+        currentLineIdxInSection++;
+      }
+    }
+  }, [text]);
+
   return (
-    <div className="w-full flex flex-col bg-white rounded-xl shadow-sm border border-slate-200">
-      {/* Sticky Header */}
-      <div className="bg-amber-50 border-b border-amber-100 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
-        <div>
-          <span className="text-xs font-bold text-amber-800 uppercase tracking-widest">Arrangement Workspace</span>
-          <p className="text-[10px] text-amber-600 mt-0.5">Edit chords and lyrics in markup format</p>
-        </div>
+    <div className="w-full flex flex-col bg-white">
+      {/* Minimal Header with Controls */}
+      <div className="sticky top-0 z-10 bg-white border-b border-slate-200 px-4 md:px-0 py-3 flex items-center justify-between">
+        <span className="text-xs font-semibold text-slate-500">Editing...</span>
         <div className="flex items-center space-x-2">
           <button
             onClick={() => setReaderMode('chords')}
-            className="text-xs font-bold text-amber-700 px-3 py-1.5 rounded border border-amber-300 hover:bg-amber-100 transition-colors"
+            className="text-xs font-semibold text-slate-600 px-3 py-1.5 rounded hover:bg-slate-100 transition-colors"
           >
             Cancel
           </button>
           <button
             onClick={handleSave}
             disabled={saving}
-            className="text-xs font-bold bg-amber-600 text-white px-4 py-1.5 rounded shadow-sm hover:bg-amber-700 transition-colors disabled:opacity-50"
+            className="text-xs font-semibold bg-blue-600 text-white px-4 py-1.5 rounded hover:bg-blue-700 transition-colors disabled:opacity-50"
           >
-            {saving ? 'Saving...' : 'Save Overlay'}
+            {saving ? 'Saving...' : 'Save'}
           </button>
         </div>
       </div>
 
-      {/* Workspace Textarea */}
-      <div className="flex flex-col">
-        <textarea
-          className="w-full p-5 font-mono text-sm resize-none outline-none text-slate-800 leading-loose bg-white overflow-y-hidden"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          spellCheck={false}
-          placeholder={`[Verse 1]\n[C] Amazing [F] grace how [Am] sweet the sound\n\n[Chorus]\n[G] Hallelujah...`}
-        />
-        <div className="px-5 py-2 border-t border-slate-100 bg-slate-50 text-[10px] text-slate-400 font-mono flex items-center justify-between">
-          <span>Format: <span className="text-slate-600">[SectionLabel]</span> on its own line, then <span className="text-slate-600">[Chord]</span> inline with lyrics</span>
-          <span>{text.split('\n').length} lines</span>
-        </div>
+      {/* Editable Content - Same layout as normal view */}
+      <div className="space-y-8 px-4 md:px-0 py-6">
+        {sections.map((section, sIdx) => {
+          const sectionType = section.type?.toLowerCase() || 'other';
+          const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
+
+          return (
+            <div key={sIdx} className="relative w-full">
+              <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
+                {section.label}
+              </div>
+
+              <div className="space-y-4 font-mono text-sm">
+                {section.lines.map((line, lIdx) => {
+                  const lineMarkup = line.chords && line.chords.length > 0
+                    ? (() => {
+                        let out = '';
+                        let lastPos = 0;
+                        const sortedChords = [...line.chords].sort((a, b) => a.position - b.position);
+                        for (const chord of sortedChords) {
+                          out += line.text.substring(lastPos, chord.position);
+                          out += `[${chord.chord}]`;
+                          lastPos = chord.position;
+                        }
+                        out += line.text.substring(lastPos);
+                        return out;
+                      })()
+                    : line.text;
+
+                  const rowCount = (lineMarkup.match(/\n/g) || []).length + 1;
+
+                  return (
+                    <textarea
+                      key={lIdx}
+                      value={lineMarkup}
+                      onChange={(e) => updateLine(sIdx, lIdx, e.target.value)}
+                      className="w-full bg-transparent outline-none resize-none text-slate-800 pb-2 border-b border-slate-200 focus:border-blue-400 transition-colors hover:bg-slate-50 focus:bg-slate-50"
+                      spellCheck={false}
+                      rows={Math.max(1, rowCount)}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
