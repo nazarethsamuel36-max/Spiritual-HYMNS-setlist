@@ -228,7 +228,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
         onMouseDown={saveCursorPosition}
         contentEditable
         suppressContentEditableWarning
-        className="flex-1 overflow-y-auto px-4 md:px-0 py-6 font-mono text-sm whitespace-pre-wrap break-words outline-none text-slate-800 focus:ring-0"
+        className="flex-1 overflow-y-auto px-4 md:px-0 py-6 font-mono text-sm whitespace-pre-wrap break-words outline-none text-slate-800 focus:ring-0 pb-32"
         spellCheck={false}
       />
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface ChordPaletteProps {
   onChordInsert: (chord: string) => void;
@@ -31,6 +31,37 @@ export function ChordPalette({
   songKey,
 }: ChordPaletteProps) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>('key');
+  const [bottomOffset, setBottomOffset] = useState(0);
+  const paletteRef = useRef<HTMLDivElement>(null);
+
+  // Keyboard-aware floating behavior
+  useEffect(() => {
+    if (!isVisible || !window.visualViewport) return;
+
+    const updatePosition = () => {
+      const viewport = window.visualViewport;
+      if (!viewport) return;
+      
+      const screenHeight = window.innerHeight;
+      const viewportHeight = viewport.height;
+      
+      // Calculate keyboard height (difference between screen and viewport)
+      const keyboardHeight = screenHeight - viewportHeight;
+      
+      // Palette floats above keyboard with small gap
+      // If keyboard is closed (height < 50px), use default bottom position
+      const newBottom = keyboardHeight > 50 ? keyboardHeight + 8 : 0;
+      setBottomOffset(newBottom);
+    };
+
+    // Listen for viewport height changes (keyboard open/close)
+    window.visualViewport.addEventListener('resize', updatePosition);
+    updatePosition(); // Initial check
+
+    return () => {
+      window.visualViewport?.removeEventListener('resize', updatePosition);
+    };
+  }, [isVisible]);
 
   const categories = [
     { key: 'key', label: `Key ${songKey}` },
@@ -62,8 +93,19 @@ export function ChordPalette({
   const expandedChords = expandedCategory ? getChords(expandedCategory) : [];
 
   return (
-    <div className="flex-shrink-0 bg-white border-t border-slate-200 px-4 py-3 shadow-lg">
-      {/* Expanded Chord Row */}
+    <div
+      ref={paletteRef}
+      style={{
+        position: 'fixed',
+        bottom: `${bottomOffset}px`,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        transition: bottomOffset > 0 ? 'none' : 'bottom 200ms ease-out',
+      }}
+      className="bg-white border-t border-slate-200 shadow-lg px-4 py-3"
+    >
+      {/* Expanded Chord Row - Uniform button sizing */}
       {expandedChords.length > 0 && (
         <div className="mb-3 flex flex-wrap gap-2">
           {expandedChords.map((chord) => (
@@ -73,7 +115,8 @@ export function ChordPalette({
                 e.preventDefault();
                 handleChordClick(chord);
               }}
-              className="px-3 py-1.5 text-xs font-semibold bg-slate-100 text-slate-800 rounded-full hover:bg-slate-200 active:scale-95 transition-colors"
+              className="w-12 h-10 flex items-center justify-center text-xs font-semibold bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 active:scale-95 transition-colors"
+              title={chord}
             >
               {chord}
             </button>
@@ -81,7 +124,7 @@ export function ChordPalette({
         </div>
       )}
 
-      {/* Category Buttons Row */}
+      {/* Category Buttons Row - Consistent height, variable width */}
       <div className="flex flex-wrap gap-2">
         {categories.map((category) => (
           <button
@@ -90,7 +133,7 @@ export function ChordPalette({
               e.preventDefault();
               handleCategoryClick(category.key);
             }}
-            className={`px-3 py-1.5 text-xs font-semibold rounded-full transition-colors ${
+            className={`px-3 h-10 flex items-center justify-center text-xs font-semibold rounded-lg transition-colors ${
               expandedCategory === category.key
                 ? 'bg-slate-800 text-white'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
