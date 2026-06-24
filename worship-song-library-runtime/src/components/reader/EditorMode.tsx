@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { ChordPalette } from './ChordPalette';
 import { db, type SongDetail, type Section, type Chord, type Arrangement } from '../../db/Database';
 import { useWorkflowStore } from '../../store/workflowStore';
@@ -90,6 +90,13 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   // Ref-based architecture for cursor tracking
   const editorRef = useRef<HTMLDivElement>(null);
   const cursorStateRef = useRef<Range | null>(null);
+
+  // Initialize editor content on mount
+  useEffect(() => {
+    if (editorRef.current && !editorRef.current.textContent?.trim()) {
+      editorRef.current.textContent = text;
+    }
+  }, [text]);
 
   // Track cursor position before palette buttons steal focus
   const saveCursorPosition = useCallback(() => {
