@@ -8,6 +8,10 @@
         "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"fix: stick editing header without gaps and fix scroll behavior\" ; git push origin main$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"refactor: replace textarea inputs with single contentEditable div for unified song editing\" ; git push origin main$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

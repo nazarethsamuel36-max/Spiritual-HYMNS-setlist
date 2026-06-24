@@ -78,20 +78,16 @@ function markupToSections(markup: string): Section[] {
   return sections;
 }
 
-const SECTION_STYLES: Record<string, string> = {
-  verse: 'bg-[var(--color-verse-bg)] text-[var(--color-verse-text)] border-[var(--color-verse-bg)]',
-  chorus: 'bg-[var(--color-chorus-bg)] text-[var(--color-chorus-text)] border-[var(--color-chorus-bg)]',
-  bridge: 'bg-[var(--color-bridge-bg)] text-[var(--color-bridge-text)] border-[var(--color-bridge-bg)]',
-  prechorus: 'bg-[var(--color-prechorus-bg)] text-[var(--color-prechorus-text)] border-[var(--color-prechorus-bg)]',
-  outro: 'bg-[var(--color-outro-bg)] text-[var(--color-outro-text)] border-[var(--color-outro-bg)]',
-  intro: 'bg-[var(--color-intro-bg)] text-[var(--color-intro-text)] border-[var(--color-intro-bg)]',
-};
-
 export function EditorMode({ song }: EditorModeProps) {
   const setActiveArrangementId = useWorkflowStore(s => s.setActiveArrangementId);
   const setReaderMode = useWorkflowStore(s => s.setReaderMode);
   const [text, setText] = useState(() => sectionsToMarkup(song.sections));
   const [saving, setSaving] = useState(false);
+  const contentRef = useCallback((el: HTMLDivElement | null) => {
+    if (el && el.textContent !== text) {
+      el.textContent = text;
+    }
+  }, [text]);
 
   const handleSave = async () => {
     setSaving(true);
@@ -122,41 +118,14 @@ export function EditorMode({ song }: EditorModeProps) {
     }
   };
 
-  const sections = markupToSections(text);
-
-  const updateLine = useCallback((sectionIdx: number, lineIdx: number, newValue: string) => {
-    const lines = text.split('\n');
-    const headerRegex = /^\[(Verse|Chorus|Bridge|Pre-Chorus|Intro|Outro|Tag|Ending|Interlude|V|C|B|P|I|O|Misc)[^\]]*\]$/i;
-    
-    let currentSectionIdx = 0;
-    let currentLineIdxInSection = 0;
-    
-    for (let i = 0; i < lines.length; i++) {
-      const trimmed = lines[i].trim();
-      
-      if (headerRegex.test(trimmed)) {
-        if (currentSectionIdx === sectionIdx && currentLineIdxInSection === lineIdx) {
-          // Found the line to update
-          lines[i] = newValue;
-          setText(lines.join('\n'));
-          return;
-        }
-        currentSectionIdx++;
-        currentLineIdxInSection = 0;
-      } else if (currentSectionIdx === sectionIdx && trimmed) {
-        if (currentLineIdxInSection === lineIdx) {
-          lines[i] = newValue;
-          setText(lines.join('\n'));
-          return;
-        }
-        currentLineIdxInSection++;
-      }
-    }
-  }, [text]);
+  const handleInput = (e: React.FormEvent<HTMLDivElement>) => {
+    const newText = (e.currentTarget as HTMLDivElement).textContent || '';
+    setText(newText);
+  };
 
   return (
     <div className="w-full flex flex-col bg-white h-screen overflow-hidden">
-      {/* Sticky Header with Controls - Fixed to top */}
+      {/* Header with Controls - Fixed to top */}
       <div className="flex-shrink-0 bg-white border-b border-slate-200 px-4 md:px-0 py-3 flex items-center justify-between shadow-md">
         <span className="text-xs font-semibold text-slate-500">Editing...</span>
         <div className="flex items-center space-x-2">
@@ -176,53 +145,15 @@ export function EditorMode({ song }: EditorModeProps) {
         </div>
       </div>
 
-      {/* Editable Content - Scrollable container */}
-      <div className="flex-1 overflow-y-auto space-y-8 px-4 md:px-0 py-6">
-        {sections.map((section, sIdx) => {
-          const sectionType = section.type?.toLowerCase() || 'other';
-          const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
-
-          return (
-            <div key={sIdx} className="relative w-full">
-              <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
-                {section.label}
-              </div>
-
-              <div className="space-y-4 font-mono text-sm">
-                {section.lines.map((line, lIdx) => {
-                  const lineMarkup = line.chords && line.chords.length > 0
-                    ? (() => {
-                        let out = '';
-                        let lastPos = 0;
-                        const sortedChords = [...line.chords].sort((a, b) => a.position - b.position);
-                        for (const chord of sortedChords) {
-                          out += line.text.substring(lastPos, chord.position);
-                          out += `[${chord.chord}]`;
-                          lastPos = chord.position;
-                        }
-                        out += line.text.substring(lastPos);
-                        return out;
-                      })()
-                    : line.text;
-
-                  const rowCount = (lineMarkup.match(/\n/g) || []).length + 1;
-
-                  return (
-                    <textarea
-                      key={lIdx}
-                      value={lineMarkup}
-                      onChange={(e) => updateLine(sIdx, lIdx, e.target.value)}
-                      className="w-full bg-transparent outline-none resize-none text-slate-800 pb-2 border-b border-slate-200 focus:border-blue-400 transition-colors hover:bg-slate-50 focus:bg-slate-50"
-                      spellCheck={false}
-                      rows={Math.max(1, rowCount)}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      {/* Editable Content - Single contentEditable block */}
+      <div
+        ref={contentRef}
+        onInput={handleInput}
+        contentEditable
+        suppressContentEditableWarning
+        className="flex-1 overflow-y-auto px-4 md:px-0 py-6 font-mono text-sm whitespace-pre-wrap break-words outline-none text-slate-800 focus:ring-0"
+        spellCheck={false}
+      />
     </div>
   );
 }
