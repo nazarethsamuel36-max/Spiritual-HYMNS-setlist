@@ -4,6 +4,10 @@
         "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"refactor: update EditorMode to match chord view layout with inline editable textareas\" ; git push origin main$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"fix: stick editing header without gaps and fix scroll behavior\" ; git push origin main$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

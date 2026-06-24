@@ -155,9 +155,9 @@ export function EditorMode({ song }: EditorModeProps) {
   }, [text]);
 
   return (
-    <div className="w-full flex flex-col bg-white">
-      {/* Minimal Header with Controls */}
-      <div className="sticky top-0 z-10 bg-white border-b border-slate-200 px-4 md:px-0 py-3 flex items-center justify-between">
+    <div className="w-full flex flex-col bg-white h-screen overflow-hidden">
+      {/* Sticky Header with Controls - Fixed to top */}
+      <div className="flex-shrink-0 bg-white border-b border-slate-200 px-4 md:px-0 py-3 flex items-center justify-between shadow-md">
         <span className="text-xs font-semibold text-slate-500">Editing...</span>
         <div className="flex items-center space-x-2">
           <button
@@ -176,8 +176,8 @@ export function EditorMode({ song }: EditorModeProps) {
         </div>
       </div>
 
-      {/* Editable Content - Same layout as normal view */}
-      <div className="space-y-8 px-4 md:px-0 py-6">
+      {/* Editable Content - Scrollable container */}
+      <div className="flex-1 overflow-y-auto space-y-8 px-4 md:px-0 py-6">
         {sections.map((section, sIdx) => {
           const sectionType = section.type?.toLowerCase() || 'other';
           const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
