@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 interface ChordPaletteProps {
-  editorRef: React.RefObject<HTMLDivElement>;
   onChordInsert: (chord: string) => void;
   onCursorSave: () => void;
   isVisible: boolean;
@@ -26,7 +25,6 @@ const KEY_CHORDS: Record<string, string[]> = {
 };
 
 export function ChordPalette({
-  editorRef,
   onChordInsert,
   onCursorSave,
   isVisible,

@@ -225,9 +225,8 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
         spellCheck={false}
       />
 
-      {/* Chord Palette - Receives ref and song key */}
+      {/* Chord Palette - Receives song key */}
       <ChordPalette
-        editorRef={editorRef}
         onChordInsert={insertChordAtCursor}
         onCursorSave={saveCursorPosition}
         isVisible={isEditing}
