@@ -3,6 +3,7 @@
   "songNumber" : 33,
   "title" : "COME AND PRAISE HIM",
   "language" : "english",
+  "originalKey" : "G",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,13 +14,13 @@
     "lines" : [ {
       "text" : "Come and praise Him,",
       "chords" : [ {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "F",
+        "chord" : "G",
         "position" : 18
       }, {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 18
       } ]
     }, {

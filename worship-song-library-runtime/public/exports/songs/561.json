@@ -3,6 +3,7 @@
   "songNumber" : 15,
   "title" : "REJOICE IN THE LORD",
   "language" : "english",
+  "originalKey" : "F",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,19 +14,19 @@
     "lines" : [ {
       "text" : "Rejoice in the Lord always",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 20
       } ]
     }, {
       "text" : "And again I say rejoice (Repeat)",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 18
       } ]
     }, {

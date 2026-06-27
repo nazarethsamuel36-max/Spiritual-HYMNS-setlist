@@ -3,6 +3,7 @@
   "songNumber" : 102,
   "title" : "I'VE GOT THE JOY DOWN IN MY HEART",
   "language" : "english",
+  "originalKey" : "G",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,7 +14,7 @@
     "lines" : [ {
       "text" : "I've got the joy, joy, joy, joy,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 13
       } ]
     }, {
@@ -25,22 +26,22 @@
     }, {
       "text" : "I've got the joy, joy, joy, joy",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 13
       } ]
     }, {
       "text" : "Down in my heart,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 11
       } ]
     }, {
       "text" : "Glory to His name.",
       "chords" : [ {
-        "chord" : "A",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 13
       } ]
     }, {
@@ -48,46 +49,46 @@
     }, {
       "text" : "I've got the peace that passes understanding.....",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 13
       } ]
     }, {
       "text" : "I hear the Spirit crying 'Abba, Father'....",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 11
       } ]
     }, {
       "text" : "I know the Father, Son and Spirit's living.......",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 2
       }, {
-        "chord" : "A",
+        "chord" : "D",
         "position" : 27
       } ]
     }, {
       "text" : "And I'm so happy",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 4
       } ]
     }, {
       "text" : "So very happy",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 8
       } ]
     }, {
       "text" : "I have the love of Jesus",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 11
       } ]
     }, {
       "text" : "In my heart.",
       "chords" : [ {
-        "chord" : "A",
+        "chord" : "D",
         "position" : 6
       } ]
     }, {

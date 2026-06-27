@@ -3,6 +3,7 @@
   "songNumber" : 40,
   "title" : "THANK YOU GOD",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,13 +14,13 @@
     "lines" : [ {
       "text" : "Thank you God for sending Jesus.",
       "chords" : [ {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "F",
+        "chord" : "G",
         "position" : 18
       }, {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 26
       } ]
     }, {

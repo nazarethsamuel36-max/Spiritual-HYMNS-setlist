@@ -3,6 +3,7 @@
   "songNumber" : 13,
   "title" : "IN THE NAME OF JESUS",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,28 +14,28 @@
     "lines" : [ {
       "text" : "In the name of Jesus,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       } ]
     }, {
       "text" : "through the blood of Jesus,",
       "chords" : [ {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 0
       } ]
     }, {
       "text" : "We have the victory,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 3
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 12
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 12
       } ]
     }, {
@@ -44,40 +45,40 @@
     }, {
       "text" : "Demons will have to flee!",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 20
       } ]
     }, {
       "text" : "Who can tell what God can do?",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 18
       } ]
     }, {
       "text" : "Who can tell of His love for you?",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 20
       } ]
     }, {
       "text" : "In the name of Jesus, Jesus,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 15
       } ]
     }, {

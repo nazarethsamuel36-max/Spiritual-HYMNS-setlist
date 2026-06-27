@@ -3,6 +3,7 @@
   "songNumber" : 38,
   "title" : "I THANK YOU JESUS FOR YOUR LOVE TO ME",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,70 +14,70 @@
     "lines" : [ {
       "text" : "I thank you Jesus for Your love to me,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 27
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 35
       } ]
     }, {
       "text" : "I thank you Jesus for Your grace so free,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 27
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 36
       } ]
     }, {
       "text" : "I lift my voice to praise Your Name,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 19
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 31
       } ]
     }, {
       "text" : "I'll praise you again and again",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 17
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 27
       } ]
     }, {
       "text" : "You're my everything,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 10
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 15
       } ]
     }, {
       "text" : "You are my Lord.",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 11
       } ]
     } ]

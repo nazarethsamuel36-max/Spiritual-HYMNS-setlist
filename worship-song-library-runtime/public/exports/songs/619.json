@@ -3,6 +3,7 @@
   "songNumber" : 312,
   "title" : "GOD SAID \"SET MY PEOPLE FREE\"",
   "language" : "english",
+  "originalKey" : "G",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,25 +14,25 @@
     "lines" : [ {
       "text" : "God said \"set my people free and let them go\" (3)",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 42
       } ]
     }, {
       "text" : "Into the promised land.",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 0
       }, {
-        "chord" : "A",
+        "chord" : "D",
         "position" : 9
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 18
       } ]
     } ]

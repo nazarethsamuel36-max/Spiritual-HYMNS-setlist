@@ -3,6 +3,7 @@
   "songNumber" : 35,
   "title" : "BLESS THE LORD O MY SOUL",
   "language" : "english",
+  "originalKey" : "F",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,61 +14,61 @@
     "lines" : [ {
       "text" : "Bless the Lord, O my soul,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 16
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 21
       } ]
     }, {
       "text" : "And all that is within me } 2",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 16
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 23
       } ]
     }, {
       "text" : "Bless His holy name,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 10
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 15
       } ]
     }, {
       "text" : "For He hath done great things,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 12
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 23
       } ]
     }, {
       "text" : "He hath done great things (2)",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 8
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 19
       } ]
     }, {

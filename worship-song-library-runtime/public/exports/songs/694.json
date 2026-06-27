@@ -3,6 +3,7 @@
   "songNumber" : 14,
   "title" : "ALL OVER THE WORLD",
   "language" : "english",
+  "originalKey" : "C",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,34 +14,34 @@
     "lines" : [ {
       "text" : "All over the world,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 13
       } ]
     }, {
       "text" : "the Spirit is moving,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 14
       } ]
     }, {
       "text" : "All over the world, as the prophets said it would be,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 27
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 36
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 50
       } ]
     }, {
@@ -48,34 +49,34 @@
     }, {
       "text" : "thereâ€™s a mighty revelation,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 17
       } ]
     }, {
       "text" : "Of the glory of the Lord,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 20
       } ]
     }, {
       "text" : "As the waters cover the sea.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 24
       } ]
     }, {
