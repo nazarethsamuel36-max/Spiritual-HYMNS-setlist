@@ -3,6 +3,7 @@
   "songNumber" : 36,
   "title" : "JESUS TAKE ME AS I AM",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,19 +14,19 @@
     "lines" : [ {
       "text" : "Jesus take me as I am;",
       "chords" : [ {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "F",
+        "chord" : "G",
         "position" : 19
       } ]
     }, {
       "text" : "I can come no other way,",
       "chords" : [ {
-        "chord" : "C",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "A",
         "position" : 20
       } ]
     }, {

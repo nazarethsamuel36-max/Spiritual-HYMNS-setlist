@@ -3,6 +3,7 @@
   "songNumber" : 110,
   "title" : "GIVE HEED TO MY WORDS O LORD",
   "language" : "english",
+  "originalKey" : "F",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,16 +14,16 @@
     "lines" : [ {
       "text" : "Give heed to my words, O Lord,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       } ]
     }, {
       "text" : "Consider my meditation.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 3
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 16
       } ]
     }, {
@@ -30,37 +31,37 @@
     }, {
       "text" : "My King and my God,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 3
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 15
       } ]
     }, {
       "text" : "For Lord unto Thee will I pray.",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       } ]
     }, {
       "text" : "My voice shall Thou hear in the morning.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 3
       } ]
     }, {
       "text" : "O Lord in the morning will I direct my prayer",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 14
       } ]
     }, {
       "text" : "Unto Thee, and will look up ! (repeat)",
       "chords" : [ {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 5
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 25
       } ]
     } ]

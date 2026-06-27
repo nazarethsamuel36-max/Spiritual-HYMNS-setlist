@@ -2,6 +2,7 @@ package com.worship.dao;
 
 import com.worship.model.ChordOccurrence;
 import com.worship.model.LineMappingResult;
+import com.worship.util.ChordTransposer;
 import com.worship.util.DBConnection;
 
 import java.sql.*;
@@ -174,6 +175,54 @@ public class LineChordDAO {
             e.printStackTrace();
         }
         return chordMap;
+    }
+
+    /**
+     * Transpose every chord mapping for a song in the relational line_chords table.
+     */
+    public int transposeChordsForSong(int songId, int semitones) {
+        List<Integer> chordIds = new ArrayList<>();
+        List<String> originalChords = new ArrayList<>();
+
+        String selectSql = "SELECT lc.id, lc.chord " +
+                "FROM line_chords lc " +
+                "INNER JOIN song_lines sl ON lc.line_id = sl.id " +
+                "INNER JOIN sections s ON sl.section_id = s.id " +
+                "WHERE s.song_id = ?";
+
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(selectSql)) {
+            ps.setInt(1, songId);
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) {
+                    chordIds.add(rs.getInt("id"));
+                    originalChords.add(rs.getString("chord"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+
+        if (chordIds.isEmpty()) {
+            return 0;
+        }
+
+        String updateSql = "UPDATE line_chords SET chord = ? WHERE id = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(updateSql)) {
+            for (int i = 0; i < chordIds.size(); i++) {
+                String transposed = ChordTransposer.transposeChord(originalChords.get(i), semitones);
+                ps.setString(1, transposed);
+                ps.setInt(2, chordIds.get(i));
+                ps.addBatch();
+            }
+            ps.executeBatch();
+            return chordIds.size();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 
     /**

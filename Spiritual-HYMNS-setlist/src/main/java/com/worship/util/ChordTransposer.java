@@ -167,6 +167,18 @@ public class ChordTransposer {
         return transposeChord(originalKey, semitones);
     }
 
+    public static int getKeyIndex(String key) {
+        if (key == null || key.isBlank()) {
+            return -1;
+        }
+        String normalized = key.trim()
+                .replace("♭", "b")
+                .replace("♯", "#")
+                .replace("♌", "")
+                .replaceAll("\\s+", "");
+        return NAME_TO_INDEX.getOrDefault(normalized, -1);
+    }
+
     public static String getCapoSuggestion(int semitones) {
         int normalized = ((semitones % 12) + 12) % 12;
         if (normalized == 0) return "";

@@ -3,6 +3,7 @@
   "songNumber" : 32,
   "title" : "I WILL ENTER HIS GATES",
   "language" : "english",
+  "originalKey" : "E",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,76 +14,76 @@
     "lines" : [ {
       "text" : "I will enter His gates with thanksgiving in my heart,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 17
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 34
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 47
       } ]
     }, {
       "text" : "I will enter His courts with praise,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 17
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 29
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 36
       } ]
     }, {
       "text" : "I will say this is the day that the Lord has made,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 23
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 36
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 45
       } ]
     }, {
       "text" : "I will rejoice for He has made me glad.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 9
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 19
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 26
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 34
       } ]
     }, {
       "text" : "He has made me glad (2)",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 15
       } ]
     }, {

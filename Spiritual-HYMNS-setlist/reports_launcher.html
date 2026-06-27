@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detected Song Key Reports</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      margin: 0;
+      padding: 32px;
+    }
+    .card {
+      max-width: 560px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      padding: 24px;
+      margin: 0 auto;
+    }
+    h1 { margin-top: 0; }
+    .button-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-weight: 600;
+    }
+    a.button.secondary { background: #0f766e; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Detected Song Key Reports</h1>
+    <p>Click either button to open the report directly.</p>
+    <div class="button-row">
+      <a class="button" href="detected_song_keys_722.txt" target="_blank">Open TXT Report</a>
+      <a class="button secondary" href="detected_song_keys_722.csv" target="_blank">Open CSV Report</a>
+    </div>
+  </div>
+</body>
+</html>

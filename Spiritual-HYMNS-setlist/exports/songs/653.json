@@ -3,6 +3,7 @@
   "songNumber" : 346,
   "title" : "BLESS THE LORD O MY SOUL",
   "language" : "english",
+  "originalKey" : "C",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,40 +14,40 @@
     "lines" : [ {
       "text" : "Bless the Lord, O my soul",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 10
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 18
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 21
       } ]
     }, {
       "text" : "And all that is within me,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 16
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 23
       } ]
     }, {
       "text" : "Bless His Holy name.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 0
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 6
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 15
       } ]
     }, {
@@ -54,19 +55,19 @@
     }, {
       "text" : "And forget not all his benefits.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 11
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 19
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 23
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 27
       } ]
     } ]
@@ -76,67 +77,67 @@
     "lines" : [ {
       "text" : "Who forgiveth all thy iniquities;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 14
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 18
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 28
       } ]
     }, {
       "text" : "Who healeth all thy diseases ;",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 4
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 12
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 16
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 23
       } ]
     }, {
       "text" : "Who redeemeth thy life from destruction;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 6
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 14
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 18
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 23
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 31
       } ]
     }, {
       "text" : "Who crowneth thee with loving kindness.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 4
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 13
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 18
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 30
       } ]
     } ]
@@ -146,79 +147,79 @@
     "lines" : [ {
       "text" : "He hath not dealt with us after our sins;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 3
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 12
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 23
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 26
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 36
       } ]
     }, {
       "text" : "Nor rewarded us according to our iniquities",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 6
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 13
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 18
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 29
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 35
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 39
       } ]
     }, {
       "text" : "For as the heaven is high above the earth,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 4
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 21
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 27
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 36
       } ]
     }, {
       "text" : "So great is His mercy toward them that",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 3
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 16
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 22
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 34
       } ]
     }, {
       "text" : "Fear Him.",
       "chords" : [ {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       } ]
     } ]

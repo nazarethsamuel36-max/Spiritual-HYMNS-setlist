@@ -3,6 +3,7 @@
   "songNumber" : 34,
   "title" : "COME INTO HIS PRESENCE SINGING",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,34 +14,34 @@
     "lines" : [ {
       "text" : "Come into His presence singing",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 14
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 23
       } ]
     }, {
       "text" : "Hallelujah* Hallelujah, Hallelujah,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 7
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 12
       }, {
-        "chord" : "C",
+        "chord" : "F",
         "position" : 19
       }, {
-        "chord" : "G",
+        "chord" : "C",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "G",
         "position" : 31
       } ]
     }, {

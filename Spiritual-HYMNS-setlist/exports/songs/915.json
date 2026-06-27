@@ -3,6 +3,7 @@
   "songNumber" : 12,
   "title" : "ITâ€™S A LOVELY LOVELY NAME",
   "language" : "english",
+  "originalKey" : "D",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,22 +14,22 @@
     "lines" : [ {
       "text" : "Itâ€™s a lovely, lovely, Name,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 15
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 23
       } ]
     }, {
       "text" : "The Name of Jesus.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 12
       } ]
     }, {
@@ -36,37 +37,37 @@
     }, {
       "text" : "From heaven above.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 13
       } ]
     }, {
       "text" : "Dispelling the clouds of doubt and fear,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 15
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 25
       } ]
     }, {
       "text" : "Filling the saddened heart with cheer,",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "C",
+        "chord" : "G",
         "position" : 12
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 21
       } ]
     }, {
@@ -74,13 +75,13 @@
     }, {
       "text" : "The Name I love.",
       "chords" : [ {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 0
       }, {
-        "chord" : "D",
+        "chord" : "A",
         "position" : 4
       }, {
-        "chord" : "G",
+        "chord" : "D",
         "position" : 11
       } ]
     } ]

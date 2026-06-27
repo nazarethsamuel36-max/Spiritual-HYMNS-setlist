@@ -3,6 +3,7 @@
   "songNumber" : 178,
   "title" : "O LORD MY GOD",
   "language" : "english",
+  "originalKey" : "C",
   "capo" : 0,
   "bpm" : 0,
   "timeSignature" : "4/4",
@@ -13,43 +14,43 @@
     "lines" : [ {
       "text" : "O Lord my God ! When I in awesome wonder",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 2
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 26
       } ]
     }, {
       "text" : "Consider all the works Thy hand hath made,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 3
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 17
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 37
       } ]
     }, {
       "text" : "I see the stars, I hear the mighty thunder",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 2
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 28
       } ]
     }, {
       "text" : "Thy power throughout the universe displayed ;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 17
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 37
       } ]
     } ]
@@ -59,25 +60,25 @@
     "lines" : [ {
       "text" : "Then sings my soul, my Saviour God to Thee,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 23
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 38
       } ]
     }, {
       "text" : "How great Thou art, how great Thou art !",
       "chords" : [ {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 4
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 35
       } ]
     }, {
@@ -91,43 +92,43 @@
     "lines" : [ {
       "text" : "When through the woods and forest glades I wander",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 34
       } ]
     }, {
       "text" : "And hear the birds sing sweetly in the trees ;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 39
       } ]
     }, {
       "text" : "When I look down from lofty mountain grandeur,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 28
       } ]
     }, {
       "text" : "And hear the brook, and feel the gentle breeze ;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 24
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 40
       } ]
     } ]
@@ -137,43 +138,43 @@
     "lines" : [ {
       "text" : "And when I think that God His Son not sparing,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 30
       } ]
     }, {
       "text" : "Sent Him to die I scarce can take it in ;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 18
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 37
       } ]
     }, {
       "text" : "That on the cross my burden gladly bearing,",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 28
       } ]
     }, {
       "text" : "He bled and died to take away my sin ;",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 3
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 20
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 33
       } ]
     } ]
@@ -183,43 +184,43 @@
     "lines" : [ {
       "text" : "When Christ shall come with shout of acclamation",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 37
       } ]
     }, {
       "text" : "And take me home what joy shall fill my heart !",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 22
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 40
       } ]
     }, {
       "text" : "Then shall I bow in humble adoration",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 5
       }, {
-        "chord" : "G",
+        "chord" : "F",
         "position" : 27
       } ]
     }, {
       "text" : "And there proclaim, my God, how great Thou art !",
       "chords" : [ {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 4
       }, {
-        "chord" : "A",
+        "chord" : "G",
         "position" : 23
       }, {
-        "chord" : "D",
+        "chord" : "C",
         "position" : 43
       } ]
     } ]
