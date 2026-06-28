@@ -7,9 +7,10 @@ interface MusicalWordProps {
   word: MusicalWordType;
   transpose: number;
   mode: ReaderMode;
+  isChorus?: boolean;
 }
 
-export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: MusicalWordProps) {
+export const MusicalWord = memo(function MusicalWord({ word, transpose, mode, isChorus }: MusicalWordProps) {
   const transposedChords = word.chords.map(c => ({
     ...c,
     name: ChordTransposer.transposeChord(c.chord, transpose, EnharmonicPref.AUTO)
@@ -54,7 +55,11 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: 
           ))}
 
           {/* Lyric Layer */}
-          <span className={`text-[1.25rem] text-[var(--color-text)] leading-[1.6] font-lora ${mode === 'lyrics' ? 'font-medium' : 'font-normal'}`}>
+          <span className={`text-[1.25rem] text-[var(--color-text)] leading-[1.4] font-lora ${
+            mode === 'lyrics'
+              ? (isChorus ? 'font-semibold italic text-slate-800' : 'font-medium')
+              : 'font-normal'
+          }`}>
             {segment.text}
           </span>
         </span>

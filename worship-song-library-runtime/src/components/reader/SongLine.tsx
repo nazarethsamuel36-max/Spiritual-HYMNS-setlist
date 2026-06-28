@@ -8,9 +8,10 @@ interface SongLineProps {
   line: Line;
   transpose: number;
   mode: ReaderMode;
+  isChorus?: boolean;
 }
 
-export const SongLine = memo(function SongLine({ line, transpose, mode }: SongLineProps) {
+export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus }: SongLineProps) {
   if (mode === 'lyrics' && (!line.text || !line.text.trim())) {
     return null;
   }
@@ -37,7 +38,7 @@ export const SongLine = memo(function SongLine({ line, transpose, mode }: SongLi
     <div className={`relative ${mode === 'lyrics' ? 'pb-0.5' : 'pb-1'} group w-full ${paddingClass} ${fontClass}`}>
       <div className={`flex flex-wrap items-end relative w-full ${gapClass}`}>
         {words.map((word, wIdx) => (
-          <MusicalWord key={wIdx} word={word} transpose={transpose} mode={mode} />
+          <MusicalWord key={wIdx} word={word} transpose={transpose} mode={mode} isChorus={isChorus} />
         ))}
       </div>
     </div>

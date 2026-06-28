@@ -27,27 +27,28 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
     );
   }
 
-  const containerSpacing = mode === 'lyrics' ? 'space-y-5' : 'space-y-8';
-  const lineSpacing = mode === 'lyrics' ? 'space-y-1.5' : 'space-y-4';
+  const containerSpacing = mode === 'lyrics' ? 'space-y-4' : 'space-y-6';
+  const lineSpacing = mode === 'lyrics' ? 'space-y-1' : 'space-y-3';
 
   return (
     <div className={containerSpacing}>
       {sections.map((section, idx) => {
         const sectionType = section.type?.toLowerCase() || 'other';
+        const isChorus = sectionType === 'chorus';
         const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
 
         return (
           <div key={idx} className="relative w-full px-4 md:px-0">
             {idx > 0 && (
-              <div className="my-4" />
+              <div className="border-t border-slate-100/80 my-3" />
             )}
             <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
               {section.label}
             </div>
 
-            <div className={`w-full ${lineSpacing}`}>
+            <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3.5 bg-slate-50/40 rounded-r py-0.5' : ''}`}>
               {section.lines.map((line, lIdx) => (
-                <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} />
+                <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} isChorus={isChorus} />
               ))}
             </div>
           </div>
