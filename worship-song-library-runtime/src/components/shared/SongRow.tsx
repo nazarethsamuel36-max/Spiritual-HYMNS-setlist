@@ -111,7 +111,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongR
         </div>
 
         <div className="flex-1 min-w-0 pr-10">
-          <h3 className="font-semibold text-slate-800 text-base leading-normal truncate group-hover:text-slate-900 transition-colors font-poppins py-1">
+          <h3 className="font-semibold text-slate-800 text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
             {formatSongTitle(song.title)}
           </h3>
           <div className="flex items-center space-x-1.5 mt-0.5 min-h-5">

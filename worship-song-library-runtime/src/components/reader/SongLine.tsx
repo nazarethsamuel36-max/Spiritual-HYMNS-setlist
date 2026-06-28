@@ -20,11 +20,10 @@ export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus
   const hasChords = !!(line.chords && line.chords.length > 0);
 
   let paddingClass = 'pt-0.5';
-  let fontClass = 'font-mukta font-normal';
+  let fontClass = 'font-normal';
   let gapClass = 'gap-y-0.5';
 
   if (mode !== 'lyrics') {
-    fontClass = 'font-mono';
     if (hasChords) {
       paddingClass = 'pt-[1.3rem]';
       gapClass = 'gap-y-5';

@@ -234,13 +234,13 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                   autoFocus
                   value={label}
                   onChange={(e) => setLabel(e.target.value)}
-                  className="w-full text-center text-2xl font-bold font-poppins border-b-2 border-slate-300 focus:border-slate-800 outline-none pb-2 bg-transparent text-slate-900"
+                  className="w-full text-center text-2xl font-bold border-b-2 border-slate-300 focus:border-slate-800 outline-none pb-2 bg-transparent text-slate-900"
                 />
               </div>
             ) : (
               <div className="space-y-2">
                 <div className="text-[10px] font-black text-[var(--color-brand)] uppercase tracking-[0.2em]">Service Event</div>
-                <h1 className="text-3xl md:text-4xl font-extrabold font-poppins text-slate-900 leading-normal">
+                <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-normal">
                   {item.label}
                 </h1>
               </div>
@@ -261,7 +261,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                     type="text"
                     value={label}
                     onChange={(e) => setLabel(e.target.value)}
-                    className="w-full text-lg font-bold font-poppins border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-900 bg-[#FAFAFA]"
+                    className="w-full text-lg font-bold border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-900 bg-[#FAFAFA]"
                   />
                 </div>
                 <div className="space-y-1">
@@ -270,7 +270,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                     rows={8}
                     value={content}
                     onChange={(e) => setContent(e.target.value)}
-                    className="w-full font-lora border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-700 bg-[#FAFAFA] text-base leading-relaxed"
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-700 bg-[#FAFAFA] text-base leading-relaxed"
                     placeholder="Enter instructions, cues, or announcements..."
                   />
                 </div>
@@ -285,11 +285,11 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                   </div>
                   <div>
                     <div className="text-[10px] font-black text-amber-600 uppercase tracking-widest">Service Note</div>
-                    <h1 className="text-xl font-bold font-poppins text-slate-800">{item.label}</h1>
+                    <h1 className="text-xl font-bold text-slate-800">{item.label}</h1>
                   </div>
                 </div>
 
-                <div className="font-lora text-slate-600 text-lg leading-relaxed whitespace-pre-wrap min-h-24">
+                <div className="text-slate-600 text-lg leading-relaxed whitespace-pre-wrap min-h-24">
                   {item.content || <span className="italic text-slate-400 text-sm">No instructions entered. Click Edit to write.</span>}
                 </div>
 

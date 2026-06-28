@@ -389,7 +389,7 @@ export function SongView() {
               >
                 -
               </button>
-              <span className="w-6 text-center font-black text-slate-700 font-mono">{scrollSpeed}</span>
+              <span className="w-6 text-center font-black text-slate-700">{scrollSpeed}</span>
               <button
                 disabled={scrollSpeed >= 10}
                 onClick={() => adjustSpeed(1)}

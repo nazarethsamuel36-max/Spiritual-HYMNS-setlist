@@ -88,7 +88,7 @@ export function ReaderHeader({
             )}
 
             <div className="min-w-0">
-              <h1 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight truncate font-poppins">
+              <h1 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight truncate">
                 {formatSongTitle(song.title)}
               </h1>
               <div className="flex items-center space-x-1.5">
@@ -314,7 +314,7 @@ export function ReaderHeader({
         </div>
 
         {/* ── BOTTOM ROW: Chords/Lyrics toggle (left) + Transpose (right) ── */}
-        <div className="flex items-center justify-between">
+        <div className={`flex items-center justify-between ${onBack ? 'pl-10' : ''}`}>
           {/* Left: Mode Selector */}
           <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
             <button
@@ -337,7 +337,7 @@ export function ReaderHeader({
 
           {/* Right: Transpose Hub */}
           {mode === 'lyrics' ? (
-            <div className="flex flex-col items-center justify-center h-8 min-w-[5.5rem]">
+            <div className="flex flex-col items-end justify-center h-8 w-8 text-right">
               <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
               <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
                 {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}

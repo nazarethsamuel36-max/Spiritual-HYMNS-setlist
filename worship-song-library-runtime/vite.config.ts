@@ -13,8 +13,8 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'icons.svg'],
       manifest: {
         id: '/',
-        name: 'Spiritual Hymns',
-        short_name: 'Spiritual Hymns',
+        name: 'BBF Song book',
+        short_name: 'BBF Song book',
         categories: ['music', 'books', 'productivity'],
         description: 'Offline-First Worship Song Library PWA',
         theme_color: '#ffffff',

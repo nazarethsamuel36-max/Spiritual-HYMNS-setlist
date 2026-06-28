@@ -69,7 +69,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         className="flex-1 text-left min-w-0 flex items-center justify-between outline-none focus:outline-none"
       >
         <div className="flex-1 min-w-0 pr-4">
-          <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors font-poppins py-1">
+          <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
             {formatSongTitle(item.detail?.title || 'Unknown Song')}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
