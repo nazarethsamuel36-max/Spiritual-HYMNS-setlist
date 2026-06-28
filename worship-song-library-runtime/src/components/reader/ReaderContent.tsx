@@ -3,15 +3,6 @@ import { SongLine } from './SongLine';
 import type { Section } from '../../db/Database';
 import type { ReaderMode } from '../../store/workflowStore';
 
-const SECTION_STYLES: Record<string, string> = {
-  verse: 'bg-[var(--color-verse-bg)] text-[var(--color-verse-text)] border-[var(--color-verse-bg)]',
-  chorus: 'bg-[var(--color-chorus-bg)] text-[var(--color-chorus-text)] border-[var(--color-chorus-bg)]',
-  bridge: 'bg-[var(--color-bridge-bg)] text-[var(--color-bridge-text)] border-[var(--color-bridge-bg)]',
-  prechorus: 'bg-[var(--color-prechorus-bg)] text-[var(--color-prechorus-text)] border-[var(--color-prechorus-bg)]',
-  outro: 'bg-[var(--color-outro-bg)] text-[var(--color-outro-text)] border-[var(--color-outro-bg)]',
-  intro: 'bg-[var(--color-intro-bg)] text-[var(--color-intro-text)] border-[var(--color-intro-bg)]',
-};
-
 interface ReaderContentProps {
   sections: Section[];
   transpose: number;
@@ -35,7 +26,6 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
       {sections.map((section, idx) => {
         const sectionType = section.type?.toLowerCase() || 'other';
         const isChorus = sectionType === 'chorus';
-        const pillClass = SECTION_STYLES[sectionType] || 'bg-slate-50 text-slate-400 border-slate-200';
 
         return (
           <div key={idx} className="relative w-full px-4 md:px-0">
