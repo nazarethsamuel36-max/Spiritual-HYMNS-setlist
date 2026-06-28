@@ -14,7 +14,6 @@ interface ReaderHeaderProps {
   onTransposeUp: () => void;
   onTransposeDown: () => void;
   onModeChange: (mode: ReaderMode) => void;
-  onBack?: () => void;
 }
 
 export function ReaderHeader({
@@ -23,8 +22,7 @@ export function ReaderHeader({
   mode,
   onTransposeUp,
   onTransposeDown,
-  onModeChange,
-  onBack
+  onModeChange
 }: ReaderHeaderProps) {
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
@@ -71,22 +69,10 @@ export function ReaderHeader({
     <div className="flex-shrink-0 bg-[#FAFAFA]/95 backdrop-blur-md border-b border-slate-200/60 z-40 relative px-4 md:px-8 py-1.5 shadow-sm flex flex-col w-full">
       <div className="max-w-4xl mx-auto w-full flex flex-col gap-1.5">
 
-        {/* ── TOP ROW: Back + Title + More ── */}
+        {/* ── TOP ROW: Title + More ── */}
         <div className="flex items-center justify-between gap-2">
-          {/* Left: Back + Title */}
+          {/* Left: Title */}
           <div className="flex items-center space-x-2 min-w-0 flex-1">
-            {onBack && (
-              <button
-                onClick={onBack}
-                className="flex items-center justify-center p-1.5 text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-lg transition-all active:scale-95 flex-shrink-0"
-                aria-label="Back"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-            )}
-
             <div className="min-w-0">
               <h1 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight truncate">
                 {formatSongTitle(song.title)}
@@ -314,7 +300,7 @@ export function ReaderHeader({
         </div>
 
         {/* ── BOTTOM ROW: Chords/Lyrics toggle (left) + Transpose (right) ── */}
-        <div className={`flex items-center justify-between ${onBack ? 'pl-10' : ''}`}>
+        <div className="flex items-center justify-between pl-10">
           {/* Left: Mode Selector */}
           <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
             <button

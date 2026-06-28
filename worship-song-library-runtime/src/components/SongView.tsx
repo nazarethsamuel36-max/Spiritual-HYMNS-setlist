@@ -13,7 +13,6 @@ export function SongView() {
   const reader = useWorkflowStore((s) => s.reader);
   const readerMode = useWorkflowStore((s) => s.readerMode);
   const adjustTranspose = useWorkflowStore((s) => s.adjustTranspose);
-  const closeReader = useWorkflowStore((s) => s.closeReader);
   const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
   const openSong = useWorkflowStore((s) => s.openSong);
   const openMarker = useWorkflowStore((s) => s.openMarker);
@@ -304,7 +303,6 @@ export function SongView() {
         onTransposeUp={() => adjustTranspose(1)}
         onTransposeDown={() => adjustTranspose(-1)}
         onModeChange={setReaderMode}
-        onBack={closeReader}
       />
 
       {/* Position Page Indicator */}
