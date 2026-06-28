@@ -42,11 +42,8 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
             {idx > 0 && (
               <div className="border-t border-slate-100/80 my-3" />
             )}
-            <div className={`inline-block text-[9px] font-black tracking-[0.2em] uppercase px-3 py-1 rounded-full mb-3 border shadow-sm ${pillClass}`}>
-              {section.label}
-            </div>
 
-            <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3.5 bg-slate-50/40 rounded-r py-0.5' : ''}`}>
+            <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3 bg-slate-50/50 rounded-r py-0.5' : ''}`}>
               {section.lines.map((line, lIdx) => (
                 <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} isChorus={isChorus} />
               ))}
