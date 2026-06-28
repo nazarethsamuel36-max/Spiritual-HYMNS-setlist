@@ -336,36 +336,43 @@ export function ReaderHeader({
           </div>
 
           {/* Right: Transpose Hub */}
-          <div
-            className={`flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden transition-opacity ${
-              mode === 'lyrics' ? 'opacity-30 pointer-events-none' : 'opacity-100'
-            }`}
-          >
-            <button
-              onClick={onTransposeDown}
-              className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
-              aria-label="Transpose down"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
-              </svg>
-            </button>
-            <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
+          {mode === 'lyrics' ? (
+            <div className="flex flex-col items-end justify-center pr-1.5 h-8">
               <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
               <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
                 {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
               </span>
             </div>
-            <button
-              onClick={onTransposeUp}
-              className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
-              aria-label="Transpose up"
+          ) : (
+            <div
+              className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden"
             >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
-              </svg>
-            </button>
-          </div>
+              <button
+                onClick={onTransposeDown}
+                className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
+                aria-label="Transpose down"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
+                </svg>
+              </button>
+              <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
+                <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
+                <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
+                  {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
+                </span>
+              </div>
+              <button
+                onClick={onTransposeUp}
+                className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
+                aria-label="Transpose up"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
 
       </div>

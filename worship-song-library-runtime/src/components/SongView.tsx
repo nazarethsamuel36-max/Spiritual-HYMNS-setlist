@@ -353,7 +353,7 @@ export function SongView() {
       )}
 
       {/* Floating Auto Scroll Control HUD */}
-      {readerMode !== 'edit' && (
+      {readerMode === 'chords' && (
         <div
           onClick={(e) => e.stopPropagation()}
           className="fixed bottom-6 right-6 z-40 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl rounded-full px-4 py-2 flex items-center space-x-4 transition-all duration-300 hover:shadow-2xl hover:scale-102"
