@@ -124,10 +124,14 @@ export const db = new WorshipDatabase();
 export async function getSongById(id: number): Promise<SongDetail | null> {
   let song = await db.songs.get(id);
   if (song) {
-    // Use title from songIndex as source of truth (it has the correct formatting)
+    // Use title AND originalKey from songIndex as source of truth
+    // (song detail JSONs may be missing originalKey while the index has it)
     const indexEntry = await db.songIndex.get(id);
     if (indexEntry) {
       song.title = indexEntry.title;
+      if (!song.originalKey && indexEntry.originalKey) {
+        song.originalKey = indexEntry.originalKey;
+      }
     }
     return normalizeSongDetail(song);
   }
@@ -141,6 +145,13 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
       const data = await res.json();
       if (data) {
         const normalized = normalizeSongDetail(data);
+        // Also merge originalKey from songIndex if the detail JSON lacks it
+        if (!normalized.originalKey) {
+          const indexEntry = await db.songIndex.get(id);
+          if (indexEntry?.originalKey) {
+            normalized.originalKey = indexEntry.originalKey;
+          }
+        }
         await db.songs.put(normalized);
         return normalized;
       }

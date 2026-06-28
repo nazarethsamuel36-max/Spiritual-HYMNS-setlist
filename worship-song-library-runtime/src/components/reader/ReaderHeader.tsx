@@ -337,7 +337,7 @@ export function ReaderHeader({
 
           {/* Right: Transpose Hub */}
           {mode === 'lyrics' ? (
-            <div className="flex flex-col items-end justify-center pr-1.5 h-8">
+            <div className="flex flex-col items-center justify-center h-8 min-w-[5.5rem]">
               <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
               <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
                 {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
