@@ -14,6 +14,14 @@ export type ReaderView =
 
 export type ReaderMode = 'chords' | 'lyrics' | 'edit';
 
+const READER_MODE_STORAGE_KEY = 'worship-reader-mode';
+
+function getSavedReaderMode(): Exclude<ReaderMode, 'edit'> {
+  if (typeof window === 'undefined') return 'lyrics';
+  const saved = window.localStorage.getItem(READER_MODE_STORAGE_KEY);
+  return saved === 'chords' || saved === 'lyrics' ? saved : 'lyrics';
+}
+
 interface WorkflowStore {
   sidebar: SidebarView;
   reader: ReaderView;
@@ -41,7 +49,7 @@ interface WorkflowStore {
 export const useWorkflowStore = create<WorkflowStore>((set) => ({
   sidebar: { panel: 'library' },
   reader: { type: 'empty' },
-  readerMode: 'lyrics',
+  readerMode: getSavedReaderMode(),
   mobileActivePane: 'sidebar',
   showSettings: false,
   showContextRail: false,
@@ -50,6 +58,7 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
 
   openSong: (id, source, transpose = 0, setlistId, itemId) => set({
     reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
+    readerMode: getSavedReaderMode(),
     mobileActivePane: 'reader',
   }),
 
@@ -85,7 +94,12 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
     sidebar: panel === 'library' ? { panel: 'library' } : panel === 'shared' ? { panel: 'shared' } : { panel: 'setlist-list' },
   }),
 
-  setReaderMode: (mode) => set({ readerMode: mode }),
+  setReaderMode: (mode) => {
+    if (mode === 'chords' || mode === 'lyrics') {
+      window.localStorage.setItem(READER_MODE_STORAGE_KEY, mode);
+    }
+    set({ readerMode: mode });
+  },
 
   setShowSettings: (show) => set({ showSettings: show }),
 
