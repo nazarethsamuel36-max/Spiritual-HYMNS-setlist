@@ -8,13 +8,6 @@ export const LIST_CACHE_DURATION = 6 * 60 * 60 * 1000; // 6 hours in ms
 export const MAX_CACHE_SIZE = 100 * 1024 * 1024; // 100 MB
 export const STALE_WHILE_REVALIDATE = true;
 
-// Cache entry structure
-interface CacheEntry<T> {
-  data: T;
-  timestamp: number;
-  size: number;
-}
-
 // Song list cache entry
 interface SongListCacheEntry {
   data: SongIndex[];
@@ -36,34 +29,6 @@ function estimateSize(data: unknown): number {
 // Check if cache entry is still valid
 function isCacheValid(timestamp: number, duration: number): boolean {
   return Date.now() - timestamp < duration;
-}
-
-// Update cache with size management
-async function updateCache<T>(key: string, data: T, duration: number): Promise<void> {
-  const size = estimateSize(data);
-  const entry: CacheEntry<T> = {
-    data,
-    timestamp: Date.now(),
-    size
-  };
-
-  // Check if cache would exceed limit
-  const currentCache = await db.cache.toArray();
-  const totalSize = currentCache.reduce((sum, item) => sum + item.size, 0);
-  
-  if (totalSize + size > MAX_CACHE_SIZE) {
-    // Remove oldest entries until space is available
-    const sortedEntries = currentCache.sort((a, b) => a.timestamp - b.timestamp);
-    let freedSpace = 0;
-    
-    for (const entry of sortedEntries) {
-      if (totalSize + size - freedSpace <= MAX_CACHE_SIZE) break;
-      await db.cache.delete(entry.id);
-      freedSpace += entry.size;
-    }
-  }
-
-  await db.cache.put({ ...entry, id: key });
 }
 
 // Get cached song list
@@ -306,7 +271,6 @@ export async function backgroundSync(): Promise<void> {
   
   for (const entry of cachedSongs) {
     const songId = parseInt(entry.id.replace('song_', ''));
-    const cachedData = entry.data as SongCacheEntry;
     
     // Fetch fresh version from Supabase
     const freshData = await fetchSongFromSupabase(songId);
