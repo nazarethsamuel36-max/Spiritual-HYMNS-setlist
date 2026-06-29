@@ -1,59 +1,104 @@
-import { useState } from 'react';
-import { useLiveQuery } from 'dexie-react-hooks';
-import { db } from '../db/Database';
+import { useEffect, useState } from 'react';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
+import { getSongList } from '../services/CacheService';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
-import { formatSongTitle } from '../utils/SongFormatter';
-import { normalizeSongIndex } from '../db/Database';
+import { formatSongTitle, normalizeImportedText } from '../utils/SongFormatter';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
+
+const LANGUAGE_ALIASES: Record<string, string[]> = {
+  english: ['english', 'eng', 'en'],
+  hindi: ['hindi', 'hin', 'hi'],
+  marathi: ['marathi', 'mar', 'mr'],
+  konkani: ['konkani', 'kok', 'kn'],
+};
+
+function toCanonicalLanguage(value: string | undefined): string | undefined {
+  const normalized = normalizeImportedText(value).toLowerCase();
+  if (!normalized) return undefined;
+
+  for (const [canonical, aliases] of Object.entries(LANGUAGE_ALIASES)) {
+    if (aliases.includes(normalized)) {
+      return canonical;
+    }
+  }
+
+  return normalized;
+}
+
+function songMatchesLanguageFilter(songLanguage: string | undefined, selectedLanguage: string): boolean {
+  const filter = toCanonicalLanguage(selectedLanguage);
+  if (!filter || filter === 'all') return true;
+
+  const songLang = toCanonicalLanguage(songLanguage);
+  return songLang === filter;
+}
 
 export function SongList() {
   const [search, setSearch] = useState('');
   const selectedLanguage = useWorkflowStore((s) => s.libraryLanguage);
   const setSelectedLanguage = useWorkflowStore((s) => s.setLibraryLanguage);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
+  const [allSongs, setAllSongs] = useState<SongIndex[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
 
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
-  const songs = useLiveQuery(async () => {
-    let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
-    if (selectedLanguage !== 'All') {
-      allSongs = allSongs.filter(s => s.language?.toLowerCase() === selectedLanguage.toLowerCase());
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadSongs() {
+      setIsLoading(true);
+      setLoadError(null);
+
+      try {
+        console.log('Loading songs with cache service...');
+        const songs = await getSongList();
+        
+        if (cancelled) return;
+
+        console.log('Songs loaded:', songs.length);
+        console.log(
+          'Unique languages:',
+          [...new Set(songs.map((song) => song.language ?? '(missing)'))]
+        );
+        setAllSongs(songs);
+        await SearchEngine.indexSongs(songs);
+      } catch (err) {
+        if (cancelled) return;
+        console.error('Unexpected error loading songs:', err);
+        setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
+        setAllSongs([]);
+      } finally {
+        if (!cancelled) {
+          setIsLoading(false);
+        }
+      }
     }
 
-    if (!search.trim()) {
-      // Apply sorting
-      if (sortBy === 'title') {
-        allSongs.sort(compareSongsByTitle);
-      } else {
-        // Number sort (default, already ordered by songNumber from DB)
-        allSongs.sort((a, b) => a.songNumber - b.songNumber);
-      }
-      return allSongs;
-    }
+    void loadSongs();
 
-    // Apply search then sort
-    const searched = SearchEngine.search(allSongs, search);
-    searched.sort((a, b) => {
-      const scoreDiff = b.score - a.score;
-      if (Math.abs(scoreDiff) > 0.0001) {
-        return scoreDiff;
-      }
-      if (sortBy === 'title') {
-        return compareSongsByTitle(a, b);
-      }
-      return a.songNumber - b.songNumber;
-    });
-    return searched;
-  }, [search, selectedLanguage, sortBy]);
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const songs = getVisibleSongs(allSongs, selectedLanguage, search, sortBy);
+
+  useEffect(() => {
+    if (isLoading) return;
+    console.log('Songs from Supabase:', allSongs);
+    console.log('Filtered songs:', songs);
+    console.log('Active language filter:', selectedLanguage);
+  }, [allSongs, songs, selectedLanguage, isLoading]);
 
   return (
     <div className="w-full">
@@ -86,8 +131,10 @@ export function SongList() {
 
       {/* Song List */}
       <div className="flex flex-col pb-32">
-        {!songs ? (
+        {isLoading ? (
           <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
+        ) : loadError ? (
+          <div className="p-10 text-center text-red-500 font-medium text-sm">{loadError}</div>
         ) : songs.length === 0 ? (
           <div className="p-10 text-center text-slate-500 font-medium text-sm">
             No songs found.
@@ -105,6 +152,48 @@ export function SongList() {
       </div>
     </div>
   );
+}
+
+function getVisibleSongs(
+  allSongs: SongIndex[] | null,
+  selectedLanguage: string,
+  search: string,
+  sortBy: 'number' | 'title'
+) {
+  if (!allSongs) return [];
+
+  const normalizedLanguage = selectedLanguage?.trim().toLowerCase();
+  const shouldFilterByLanguage = normalizedLanguage && normalizedLanguage !== 'all';
+
+  let visibleSongs = [...allSongs];
+  if (shouldFilterByLanguage) {
+    visibleSongs = visibleSongs.filter((song) =>
+      songMatchesLanguageFilter(song.language, selectedLanguage)
+    );
+  }
+
+  if (search.trim()) {
+    const searched = SearchEngine.search(visibleSongs, search);
+    searched.sort((a, b) => {
+      const scoreDiff = b.score - a.score;
+      if (Math.abs(scoreDiff) > 0.0001) {
+        return scoreDiff;
+      }
+      if (sortBy === 'title') {
+        return compareSongsByTitle(a, b);
+      }
+      return a.songNumber - b.songNumber;
+    });
+    return searched;
+  }
+
+  if (sortBy === 'title') {
+    visibleSongs.sort(compareSongsByTitle);
+  } else {
+    visibleSongs.sort((a, b) => a.songNumber - b.songNumber);
+  }
+
+  return visibleSongs;
 }
 
 function compareSongsByTitle(a: SongIndex, b: SongIndex) {

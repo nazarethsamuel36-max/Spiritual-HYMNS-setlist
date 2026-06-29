@@ -85,6 +85,14 @@ export type Arrangement = {
   updatedAt: number;
 }
 
+export type CacheEntry = {
+  id: string;
+  data: unknown;
+  timestamp: number;
+  size: number;
+  cachedAt?: string;
+}
+
 
 export class WorshipDatabase extends Dexie {
   songs!: EntityTable<SongDetail, 'id'>;
@@ -92,18 +100,20 @@ export class WorshipDatabase extends Dexie {
   syncMeta!: EntityTable<SyncMetadata, 'id'>;
   setlists!: EntityTable<Setlist, 'id'>;
   arrangements!: EntityTable<Arrangement, 'id'>;
+  cache!: EntityTable<CacheEntry, 'id'>;
 
   sharedSongs!: EntityTable<SongDetail, 'id'>;
   sharedSetlists!: EntityTable<Setlist, 'id'>;
 
   constructor() {
     super('WorshipDatabase');
-    this.version(4).stores({
+    this.version(5).stores({
       songs: 'id, songNumber, language',
       songIndex: 'id, songNumber, title, language, searchTokens',
       syncMeta: 'id',
       setlists: 'id, title, updatedAt',
       arrangements: 'id, songId, type, updatedAt',
+      cache: 'id, timestamp',
       sharedSongs: 'id, songNumber, title, language',
       sharedSetlists: 'id, title, updatedAt'
     });
