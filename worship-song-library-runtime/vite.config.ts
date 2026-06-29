@@ -70,4 +70,9 @@ export default defineConfig({
       }
     }
   ],
+  build: {
+    rollupOptions: {
+      // Use legacy Rollup instead of Rolldown for better compatibility
+    }
+  }
 })
