@@ -26,6 +26,8 @@ export type SongDetail = {
   timeSignature?: string;
   hashtags?: string[];
   sections: Section[];
+  chords?: string; // Raw chords text with markers like [G]
+  lyrics?: string; // Plain lyrics text without chords
 }
 
 export type Section = {

@@ -83,8 +83,16 @@ async function fetchSongFromSupabase(songId: number): Promise<SongDetail | null>
       bpm: data.bpm,
       timeSignature: data.time_signature,
       hashtags: [],
-      sections: parseLyricsToSections(data.lyrics_original || data.lyrics_roman || '')
+      sections: parseLyricsToSections(data.lyrics || data.lyrics_original || data.lyrics_roman || ''),
+      chords: data.chords || undefined, // Raw chords with markers
+      lyrics: data.lyrics || undefined // Plain lyrics without chords
     };
+    
+    console.log(`[Cache] Fetched song ${songId} from Supabase:`, {
+      hasLyrics: !!data.lyrics,
+      lyricsLength: data.lyrics?.length || 0,
+      sectionsCount: songDetail.sections.length
+    });
     
     return songDetail;
   } catch (e) {

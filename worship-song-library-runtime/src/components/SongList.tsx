@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
-import { getSongList } from '../services/CacheService';
+// import { getSongList } from '../services/CacheService'; // TEMPORARILY DISABLED FOR DEBUGGING
+import { supabase } from '../lib/supabaseClient';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
@@ -60,16 +61,40 @@ export function SongList() {
       setLoadError(null);
 
       try {
-        console.log('Loading songs with cache service...');
-        const songs = await getSongList();
-        
+        console.log('Loading songs DIRECTLY from Supabase (cache disabled)...');
+        // TEMPORARY: Direct Supabase fetch to bypass IndexedDB cache
+        const { data, error } = await supabase
+          .from('songs')
+          .select('*') // Include all columns including lyrics
+          .eq('is_active', true)
+          .order('song_number', { ascending: true });
+
+        if (error) {
+          throw new Error(`Supabase error: ${error.message}`);
+        }
+
+        if (!data) {
+          throw new Error('No data returned from Supabase');
+        }
+
+        // Transform to SongIndex format
+        const songs = data.map((song: any) => ({
+          id: song.id,
+          songNumber: song.song_number,
+          title: song.title,
+          artist: song.artist,
+          language: song.language,
+          originalKey: song.original_key,
+          hashtags: [],
+          searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+          romanTitle: song.title
+        }));
+
         if (cancelled) return;
 
-        console.log('Songs loaded:', songs.length);
-        console.log(
-          'Unique languages:',
-          [...new Set(songs.map((song) => song.language ?? '(missing)'))]
-        );
+        console.log('Songs loaded from Supabase:', songs.length);
+        console.log('Unique languages:', [...new Set(songs.map((song) => song.language ?? '(missing)'))]);
+        console.log('Sample song data:', songs[0]);
         setAllSongs(songs);
         await SearchEngine.indexSongs(songs);
       } catch (err) {

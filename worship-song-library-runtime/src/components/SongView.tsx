@@ -1,14 +1,128 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail, normalizeSongIndex } from '../db/Database';
-import { getSong } from '../services/CacheService';
+// import { getSong } from '../services/CacheService'; // TEMPORARILY DISABLED FOR DEBUGGING
+import { supabase } from '../lib/supabaseClient';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
-import { ReaderContent } from './reader/ReaderContent';
 import { EditorMode } from './reader/EditorMode';
+import { ChordTransposer } from '../utils/ChordTransposer';
 
 const SWIPE_THRESHOLD = 60; // px horizontal travel required
 const SWIPE_MAX_VERTICAL = 80; // px — abort if too much vertical movement
+
+// Parse lyrics string to sections (copied from CacheService for direct fetch)
+function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
+  if (!lyrics) return [];
+
+  const sections: Array<{ type: string; label: string; lines: Array<{ text: string }> }> = [];
+  const lines = lyrics.split('\n');
+  let currentSection: { type: string; label: string; lines: Array<{ text: string }> } | null = null;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+
+    // Detect section headers (e.g., [Verse 1], [Chorus])
+    const sectionMatch = trimmed.match(/^\[([^\]]+)\]$/);
+    if (sectionMatch) {
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+      currentSection = {
+        type: 'verse',
+        label: sectionMatch[1],
+        lines: []
+      };
+    } else if (currentSection) {
+      currentSection.lines.push({ text: trimmed });
+    } else {
+      // First line without section header
+      currentSection = {
+        type: 'verse',
+        label: 'Verse 1',
+        lines: [{ text: trimmed }]
+      };
+    }
+  }
+
+  if (currentSection) {
+    sections.push(currentSection);
+  }
+
+  return sections;
+}
+
+// ChordPro parser and renderer - Split & Group Algorithm
+interface ChordProViewProps {
+  chords?: string;
+  transpose: number;
+}
+
+const parseChordLine = (line: string, transpose: number) => {
+  if (!line) return [];
+  const parts = line.split(/(\[[^\]]+\])/);
+  const segments: Array<{ chord: string | null; text: string }> = [];
+  let currentChord: string | null = '';
+
+  for (const part of parts) {
+    if (part.startsWith('[') && part.endsWith(']')) {
+      const chord = part.slice(1, -1);
+      // Transpose chord if needed
+      currentChord = transpose !== 0 ? ChordTransposer.transposeChord(chord, transpose) : chord;
+    } else if (part.length > 0) {
+      segments.push({ chord: currentChord, text: part });
+      currentChord = '';
+    }
+  }
+  // Handle case where line ends with a chord
+  if (currentChord) {
+    segments.push({ chord: currentChord, text: ' ' });
+  }
+  return segments;
+};
+
+function ChordProView({ chords, transpose }: ChordProViewProps) {
+  if (!chords) {
+    return (
+      <div className="text-slate-400 italic text-center py-12">
+        No chords available
+      </div>
+    );
+  }
+
+  const lines = chords.split('\n');
+
+  return (
+    <div className="space-y-4">
+      {lines.map((line, idx) => {
+        const segments = parseChordLine(line, transpose);
+
+        // Skip empty lines
+        if (segments.length === 0 || segments.every(s => !s.text.trim())) {
+          return <div key={idx} className="h-4" />;
+        }
+
+        return (
+          <div key={idx} className="chord-line" style={{ fontFamily: 'sans-serif', lineHeight: '1.5', marginBottom: '10px' }}>
+            {segments.map((segment, sIdx) => (
+              <span key={sIdx} className="chord-segment" style={{ display: 'inline-block', position: 'relative', whiteSpace: 'pre' }}>
+                {segment.chord && (
+                  <span className="chord-name" style={{ display: 'block', fontWeight: 'bold', color: '#2563eb', fontSize: '0.9em', height: '1.2em', whiteSpace: 'pre' }}>
+                    {segment.chord}
+                  </span>
+                )}
+                <span className="chord-text" style={{ display: 'block', whiteSpace: 'pre' }}>
+                  {segment.text}
+                </span>
+              </span>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
 export function SongView() {
   const reader = useWorkflowStore((s) => s.reader);
@@ -32,6 +146,7 @@ export function SongView() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
+  // viewMode is now controlled by readerMode from store
 
   useEffect(() => {
     const hasSeen = localStorage.getItem('worship-swipe-hint-seen');
@@ -237,9 +352,48 @@ export function SongView() {
       setError(null);
 
       try {
-        const data = await getSong(songId);
-        if (!data) throw new Error('Song data not found');
-        setSong(data);
+        console.log('Loading song DIRECTLY from Supabase (cache disabled)...');
+        // TEMPORARY: Direct Supabase fetch to bypass IndexedDB cache
+        const { data, error } = await supabase
+          .from('songs')
+          .select('*')
+          .eq('id', songId)
+          .single();
+
+        if (error) {
+          throw new Error(`Supabase error: ${error.message}`);
+        }
+
+        if (!data) {
+          throw new Error('Song data not found');
+        }
+
+        // Transform Supabase data to SongDetail format
+        const songDetail: SongDetail = {
+          id: data.id,
+          songNumber: data.song_number,
+          title: data.title,
+          artist: data.artist,
+          composer: data.composer,
+          language: data.language,
+          originalKey: data.original_key,
+          capo: data.capo,
+          bpm: data.bpm,
+          timeSignature: data.time_signature,
+          hashtags: [],
+          sections: parseLyricsToSections(data.lyrics || ''),
+          chords: data.chords || undefined,
+          lyrics: data.lyrics || undefined
+        };
+
+        console.log('Song Data from Supabase:', songDetail);
+        console.log('Lyrics present:', !!songDetail.lyrics);
+        console.log('Lyrics length:', songDetail.lyrics?.length || 0);
+        console.log('Sections count:', songDetail.sections?.length || 0);
+        console.log('Chords present:', !!songDetail.chords);
+        console.log('Chords length:', songDetail.chords?.length || 0);
+        console.log('Chords preview:', songDetail.chords?.substring(0, 100));
+        setSong(songDetail);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to load song');
       } finally {
@@ -339,8 +493,28 @@ export function SongView() {
         <div className="max-w-4xl mx-auto w-full min-h-full">
           {readerMode === 'edit' ? (
             <EditorMode song={{ ...song, sections: displaySections }} />
+          ) : readerMode === 'lyrics' ? (
+            <div className="text-slate-800 leading-relaxed font-medium">
+              {song.lyrics ? (
+                song.lyrics.split('\n').map((line, idx) => {
+                  const isChorus = line.startsWith('* ');
+                  const displayLine = isChorus ? line.slice(2) : line;
+                  const isBlank = line.trim() === '';
+                  return (
+                    <div
+                      key={idx}
+                      style={isBlank ? { height: '0.5em' } : isChorus ? { fontStyle: 'italic', paddingLeft: '20px' } : {}}
+                    >
+                      {!isBlank && displayLine}
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="text-slate-400 italic text-center py-12">No lyrics available</div>
+              )}
+            </div>
           ) : (
-            <ReaderContent sections={displaySections} transpose={displayTranspose} mode={readerMode} />
+            <ChordProView chords={song.chords} transpose={displayTranspose} />
           )}
         </div>
       </div>
