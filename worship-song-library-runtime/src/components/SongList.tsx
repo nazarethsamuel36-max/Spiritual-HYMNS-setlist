@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
-// import { getSongList } from '../services/CacheService'; // TEMPORARILY DISABLED FOR DEBUGGING
-import { supabase } from '../lib/supabaseClient';
+import { loadSongs } from '../services/OfflineCache';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
@@ -48,6 +47,7 @@ export function SongList() {
   const [allSongs, setAllSongs] = useState<SongIndex[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [isOffline, setIsOffline] = useState(false);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
 
@@ -56,44 +56,19 @@ export function SongList() {
   useEffect(() => {
     let cancelled = false;
 
-    async function loadSongs() {
+    async function loadLibrarySongs() {
       setIsLoading(true);
       setLoadError(null);
 
       try {
-        console.log('Loading songs DIRECTLY from Supabase (cache disabled)...');
-        // TEMPORARY: Direct Supabase fetch to bypass IndexedDB cache
-        const { data, error } = await supabase
-          .from('songs')
-          .select('*') // Include all columns including lyrics
-          .eq('is_active', true)
-          .order('song_number', { ascending: true });
-
-        if (error) {
-          throw new Error(`Supabase error: ${error.message}`);
-        }
-
-        if (!data) {
-          throw new Error('No data returned from Supabase');
-        }
-
-        // Transform to SongIndex format
-        const songs = data.map((song: any) => ({
-          id: song.id,
-          songNumber: song.song_number,
-          title: song.title,
-          artist: song.artist,
-          language: song.language,
-          originalKey: song.original_key,
-          hashtags: [],
-          searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-          romanTitle: song.title
-        }));
+        const result = await loadSongs();
 
         if (cancelled) return;
 
-        console.log('Songs loaded from Supabase:', songs.length);
-        console.log('Unique languages:', [...new Set(songs.map((song) => song.language ?? '(missing)'))]);
+        const songs = result.songs;
+        setIsOffline(result.isOffline);
+        console.log(`Songs loaded from ${result.source}:`, songs.length);
+        console.log('Unique languages:', [...new Set(songs.map((song: SongIndex) => song.language ?? '(missing)'))]);
         console.log('Sample song data:', songs[0]);
         setAllSongs(songs);
         await SearchEngine.indexSongs(songs);
@@ -109,7 +84,7 @@ export function SongList() {
       }
     }
 
-    void loadSongs();
+    void loadLibrarySongs();
 
     return () => {
       cancelled = true;
@@ -153,6 +128,12 @@ export function SongList() {
           />
         </div>
       </div>
+
+      {isOffline && (
+        <div className="mx-3 mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700">
+          Offline mode: showing the latest cached songs.
+        </div>
+      )}
 
       {/* Song List */}
       <div className="flex flex-col pb-32">
