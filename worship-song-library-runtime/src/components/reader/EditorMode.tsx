@@ -303,7 +303,6 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               TEST BUTTON
             </button>
           </div>
-          <div className="mt-4 grid gap-3 md:grid-cols-2">
 
           {/* FEATURE 3: Key Corrector Section */}
           <div className="mt-4 grid gap-3 md:grid-cols-2">
