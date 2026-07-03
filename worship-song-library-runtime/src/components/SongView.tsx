@@ -301,12 +301,11 @@ export function SongView() {
   }, [songId, librarySongs, openSong]);
 
   // ─── Pointer / Touch swipe tracking ──────────────────────────────────────
-  const pointerStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
+  const pointerStartRef = useRef<{ x: number; y: number; time: number; pointerId: number } | null>(null);
   const isHorizontalSwipeRef = useRef<boolean | null>(null); // null = undecided
 
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    e.currentTarget.setPointerCapture(e.pointerId);
-    pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now() };
+    pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now(), pointerId: e.pointerId };
     isHorizontalSwipeRef.current = null;
     setSwipeOffset(0);
   };
@@ -319,7 +318,13 @@ export function SongView() {
     // Decide lock direction on first meaningful move
     if (isHorizontalSwipeRef.current === null) {
       if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
-        isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
+        const isHorizontal = Math.abs(dx) > Math.abs(dy);
+        isHorizontalSwipeRef.current = isHorizontal;
+        if (isHorizontal) {
+          try {
+            e.currentTarget.setPointerCapture(pointerStartRef.current.pointerId);
+          } catch (err) {}
+        }
       }
     }
 

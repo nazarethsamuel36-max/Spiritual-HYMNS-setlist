@@ -43,18 +43,19 @@ body {
   background-attachment: fixed;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-  overflow-x: hidden;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
 }
 
-/* App Shell — allows natural page scroll */
+/* App Shell — bound to viewport */
 .app-shell {
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: var(--font-sans);
   background-color: #F8FAFC;
 }
@@ -122,14 +123,12 @@ body {
 /* ═══ READER PANE ═══ */
 .reader-pane {
   flex: 1;
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -171,10 +170,9 @@ body {
    ═══════════════════════════════════════════════════ */
 
 #root {
-  min-height: 100vh;
-  min-height: 100dvh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 /* ═══════════════════════════════════════════════════
