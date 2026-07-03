@@ -162,7 +162,7 @@ function App() {
 
     titleTapTimerRef.current = window.setTimeout(() => {
       titleTapCountRef.current = 0;
-    }, 700);
+    }, 1500);
   };
 
   // Mobile back button support
@@ -199,7 +199,7 @@ function App() {
               <button
                 type="button"
                 onClick={handleTitleTap}
-                className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic"
+                className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none"
               >
                 BBF Song book
               </button>
@@ -207,7 +207,7 @@ function App() {
               <button
                 type="button"
                 onClick={handleTitleTap}
-                className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95"
+                className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none"
                 title="Tap 5 times to unlock admin mode"
               >
                 BBF Song book
