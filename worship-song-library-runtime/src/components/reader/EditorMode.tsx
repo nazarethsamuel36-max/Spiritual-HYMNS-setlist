@@ -125,7 +125,6 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
   const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
-  const [showTransposer, setShowTransposer] = useState(false);
   const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
 
@@ -191,7 +190,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     <div className="w-full flex flex-col bg-white min-h-0">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          {/* ROW 1: Title & Publish (Same height, side-by-side) */}
+          {/* ROW 1: Title, Key & Publish */}
           <div className="flex gap-3 h-12 mb-4">
             <input
               value={title}
@@ -199,9 +198,31 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                 setTitle(e.target.value);
                 debouncedAutoSave({ title: e.target.value });
               }}
-              placeholder="Song Title..."
               className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-white text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
+              placeholder="Song Title..."
             />
+
+            <select
+              value={keyValue}
+              onChange={(e) => {
+                const newKey = e.target.value;
+                const shift = calculateSemitoneShift(currentTextKey, newKey);
+                const corrected = shiftChordsInText(chordsText, shift);
+                setKeyValue(newKey);
+                setChordsText(corrected);
+                setCurrentTextKey(newKey);
+                debouncedAutoSave({ original_key: newKey, chords: corrected });
+              }}
+              className="w-20 h-full px-2 rounded-lg border border-slate-300 bg-white text-sm font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select>
 
             <button
               type="button"
@@ -228,106 +249,63 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             </button>
           </div>
 
-          {/* ROW 2: Key & Collapsed Transposer */}
-          <div className="flex gap-3 items-center mb-6 flex-wrap">
-            <div className="flex flex-col">
-              <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Key</label>
+          {/* ROW 2: Key Corrector */}
+          <div className="flex items-center gap-3 mb-6 bg-slate-50 p-3 rounded-lg border border-slate-200">
+            <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Corrector:</span>
+
+            <div className="flex items-center gap-2">
+              <label className="text-[10px] font-bold text-slate-400 uppercase">Current</label>
               <select
-                value={keyValue}
-                onChange={(e) => {
-                  const newKey = e.target.value;
-                  const shift = calculateSemitoneShift(currentTextKey, newKey);
-                  const corrected = shiftChordsInText(chordsText, shift);
-                  setKeyValue(newKey);
-                  setChordsText(corrected);
-                  setCurrentTextKey(newKey);
-                  debouncedAutoSave({ original_key: newKey, chords: corrected });
-                }}
-                className="w-20 px-2 py-1.5 rounded-md border border-slate-300 bg-white text-sm font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={currentTextKey}
+                onChange={(e) => setCurrentTextKey(e.target.value)}
+                className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="C">C</option>
+                <option value="C#">C#</option>
                 <option value="D">D</option>
+                <option value="D#">D#</option>
                 <option value="E">E</option>
                 <option value="F">F</option>
+                <option value="F#">F#</option>
                 <option value="G">G</option>
+                <option value="G#">G#</option>
                 <option value="A">A</option>
+                <option value="A#">A#</option>
                 <option value="B">B</option>
               </select>
             </div>
 
-            {!showTransposer ? (
-              <button
-                type="button"
-                onClick={() => setShowTransposer(true)}
-                className="mt-4 text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+            <span className="text-slate-400 font-bold">→</span>
+
+            <div className="flex items-center gap-2">
+              <label className="text-[10px] font-bold text-slate-400 uppercase">Shift To</label>
+              <select
+                value={correctorTargetKey}
+                onChange={(e) => {
+                  const newTarget = e.target.value;
+                  const shift = calculateSemitoneShift(currentTextKey, newTarget);
+                  const corrected = shiftChordsInText(chordsText, shift);
+                  setCorrectorTargetKey(newTarget);
+                  setChordsText(corrected);
+                  setCurrentTextKey(newTarget);
+                  debouncedAutoSave({ chords: corrected });
+                }}
+                className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm font-bold bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                + Show Transposer
-              </button>
-            ) : (
-              <div className="flex-1 flex flex-wrap items-end gap-2 bg-slate-50 p-2 rounded-lg border border-slate-200">
-                <div className="flex flex-col">
-                  <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Current</label>
-                  <select
-                    value={currentTextKey}
-                    onChange={(e) => setCurrentTextKey(e.target.value)}
-                    className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="C">C</option>
-                    <option value="C#">C#</option>
-                    <option value="D">D</option>
-                    <option value="D#">D#</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="F#">F#</option>
-                    <option value="G">G</option>
-                    <option value="G#">G#</option>
-                    <option value="A">A</option>
-                    <option value="A#">A#</option>
-                    <option value="B">B</option>
-                  </select>
-                </div>
-
-                <span className="text-slate-400 font-bold pb-2">→</span>
-
-                <div className="flex flex-col">
-                  <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Shift To</label>
-                  <select
-                    value={correctorTargetKey}
-                    onChange={(e) => {
-                      const newTarget = e.target.value;
-                      const shift = calculateSemitoneShift(currentTextKey, newTarget);
-                      const corrected = shiftChordsInText(chordsText, shift);
-                      setCorrectorTargetKey(newTarget);
-                      setChordsText(corrected);
-                      setCurrentTextKey(newTarget);
-                      debouncedAutoSave({ chords: corrected });
-                    }}
-                    className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm font-bold bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="C">C</option>
-                    <option value="C#">C#</option>
-                    <option value="D">D</option>
-                    <option value="D#">D#</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="F#">F#</option>
-                    <option value="G">G</option>
-                    <option value="G#">G#</option>
-                    <option value="A">A</option>
-                    <option value="A#">A#</option>
-                    <option value="B">B</option>
-                  </select>
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => setShowTransposer(false)}
-                  className="pb-2 text-xs text-red-500 hover:text-red-700 font-semibold ml-2"
-                >
-                  ✕ Hide
-                </button>
-              </div>
-            )}
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+              </select>
+            </div>
           </div>
 
           {/* ROW 3: Big Editor Boxes */}
