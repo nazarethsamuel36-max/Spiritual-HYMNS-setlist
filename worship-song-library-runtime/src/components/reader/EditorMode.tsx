@@ -233,26 +233,48 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             </label>
             <div className="flex items-center gap-3">
               <button
+                type="button"
                 onClick={async () => {
+                  console.log('🔘 BUTTON CLICKED!');
+                  console.log('Current isHidden:', isHidden);
+                  console.log('Song ID:', song.id);
+                  console.log('Supabase client:', supabase);
+
                   const newHiddenState = !isHidden;
                   const newIsActive = !newHiddenState;
+
+                  console.log('New is_active value:', newIsActive);
+
                   setIsPublishLoading(true);
                   try {
-                    const { error } = await supabase
+                    console.log('🔄 Attempting database update...');
+
+                    const { data, error } = await supabase
                       .from('songs')
                       .update({ is_active: newIsActive })
-                      .eq('id', song.id);
-                    if (error) throw error;
+                      .eq('id', song.id)
+                      .select();
+
+                    console.log('Database response:', { data, error });
+
+                    if (error) {
+                      console.error('❌ Database error:', error);
+                      alert('Database error: ' + error.message);
+                      throw error;
+                    }
+
+                    console.log('✅ Update successful!');
                     setIsHidden(newHiddenState);
                     console.log(newIsActive ? '✅ Song published' : '🔒 Song hidden');
-                  } catch (err) {
+                  } catch (err: any) {
                     console.error('❌ Failed to toggle publish state', err);
+                    alert('Failed: ' + (err?.message || err));
                   } finally {
                     setIsPublishLoading(false);
                   }
                 }}
                 disabled={isPublishLoading}
-                className={`px-3 py-2 rounded-md border font-medium transition-colors ${
+                className={`px-3 py-2 rounded-md border font-medium transition-colors cursor-pointer ${
                   isHidden
                     ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
                     : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
