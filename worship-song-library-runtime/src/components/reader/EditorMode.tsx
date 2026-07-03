@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
-import { useIsMobile } from '../../hooks/useMediaQuery';
 
 console.log('📍 EDITORMODE FILE LOADED');
 
@@ -119,7 +118,6 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
 }
 
 export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
-  const isMobile = useIsMobile();
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
