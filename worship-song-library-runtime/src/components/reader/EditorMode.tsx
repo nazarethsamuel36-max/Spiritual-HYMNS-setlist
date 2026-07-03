@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
 
+console.log('📍 EDITORMODE FILE LOADED');
+
 // Simple debounce utility
 function debounce<T extends (...args: any[]) => any>(func: T, wait: number): T {
   let timeout: ReturnType<typeof setTimeout> | null = null;
@@ -180,7 +182,9 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   // FEATURE 2: Calculate diffs for each line
   const previewLinesWithDiffs = useMemo(() => previewLines.map((line) => ({ line, changedSegments: undefined })), [previewLines]);
 
-  
+  console.log('🔍 EditorMode RENDERING');
+  console.log('🔍 isHidden state:', isHidden);
+  console.log('🔍 isPublishLoading state:', isPublishLoading);
 
   return (
     <div className="w-full flex flex-col bg-white min-h-screen">
@@ -233,10 +237,17 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             </label>
           </div>
 
-          <div className="mt-4 flex items-center gap-3">
+          <div 
+            className="mt-4 flex items-center gap-3"
+            onClick={(e) => {
+              e.stopPropagation();
+              console.log('🎯 WRAPPER DIV CLICKED');
+            }}
+          >
             <button
               type="button"
-              onClick={async () => {
+              onClick={async (e) => {
+                e.stopPropagation();
                 console.log('🔘 BUTTON CLICKED!');
                 console.log('Current isHidden:', isHidden);
                 console.log('Song ID:', song.id);
@@ -297,8 +308,12 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
           <div className="mt-2">
             <button
               type="button"
-              onClick={() => alert('TEST BUTTON WORKS!')}
-              className="bg-red-500 text-white px-4 py-2 rounded-md"
+              onClick={(e) => {
+                e.stopPropagation();
+                console.log('🔘 BUTTON CLICKED!');
+                alert('Button works!');
+              }}
+              className="bg-red-500 text-white px-4 py-2 rounded"
             >
               TEST BUTTON
             </button>

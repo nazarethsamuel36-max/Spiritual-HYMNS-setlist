@@ -388,12 +388,8 @@ export function SongView() {
 
       try {
         console.log('🎵 Loading song DIRECTLY from Supabase (cache disabled)...');
-        const { data, error } = await supabase
-          .from('songs')
-          .select('*')
-          .eq('id', songId)
-          .eq('is_active', true)
-          .single();
+        const query = supabase.from('songs').select('*').eq('id', songId);
+        const { data, error } = await (isAdminAuthenticated ? query : query.eq('is_active', true)).single();
 
         if (error) {
           throw new Error(`Supabase error: ${error.message}`);
@@ -425,7 +421,8 @@ export function SongView() {
           sections: parseLyricsToSections(data.lyrics || ''),
           chords: data.chords || undefined,
           lyrics: data.lyrics || undefined,
-          isPublished: data.is_published ?? true
+          isPublished: data.is_published ?? true,
+          is_active: data.is_active ?? true
         };
 
         console.log('🎵 Song Data from Supabase:', songDetail);
@@ -521,20 +518,25 @@ export function SongView() {
       {/* Calm Typography Area — Independent Scroll Region */}
       <div
         ref={scrollContainerRef}
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerUp}
-        onPointerCancel={handlePointerUp}
+        onPointerDown={isAdminAuthenticated ? undefined : handlePointerDown}
+        onPointerMove={isAdminAuthenticated ? undefined : handlePointerMove}
+        onPointerUp={isAdminAuthenticated ? undefined : handlePointerUp}
+        onPointerCancel={isAdminAuthenticated ? undefined : handlePointerUp}
         style={{
           transform: swipeOffset !== 0 ? `translateX(${swipeOffset * 0.3}px)` : undefined,
           transition: swipeOffset === 0 ? 'transform 0.2s ease-out' : 'none',
-          touchAction: 'pan-y',
+          touchAction: isAdminAuthenticated ? 'auto' : 'pan-y',
         }}
-        className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain select-none"
+        className={`flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain ${isAdminAuthenticated ? '' : 'select-none'}`}
       >
         <div className="max-w-4xl mx-auto w-full min-h-full">
           {isAdminAuthenticated ? (
-            <EditorMode song={{ ...song, sections: displaySections }} />
+            (() => {
+              console.log('📦 Parent component rendering EditorMode');
+              console.log('🎵 Song ID:', song.id);
+              console.log('🎵 Song is_active:', song.is_active);
+              return <EditorMode song={{ ...song, sections: displaySections }} />;
+            })()
           ) : readerMode === 'lyrics' ? (
             <div className="text-slate-800 leading-relaxed font-medium">
               {song.lyrics ? (
