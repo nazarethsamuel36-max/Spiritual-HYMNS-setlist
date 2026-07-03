@@ -8,6 +8,7 @@ import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
+import { InstallPrompt } from './components/InstallPrompt';
 import { ContextRail } from './components/ContextRail';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
@@ -368,6 +369,9 @@ function App() {
 
       {/* Global Overlays */}
       {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
+      
+      {/* PWA Install Prompt */}
+      <InstallPrompt />
     </div>
   );
 }
