@@ -532,8 +532,7 @@ export function SongView() {
               console.log('🎵 Song is_active:', song.is_active);
               return (
                 <EditorMode 
-                  song={{ ...song, sections: displaySections }} 
-                  onBackClick={() => setReaderMode('lyrics')}
+                  song={{ ...song, sections: displaySections }}
                 />
               );
             })()

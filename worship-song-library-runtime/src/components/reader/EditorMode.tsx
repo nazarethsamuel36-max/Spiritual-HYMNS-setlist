@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
-import { useWorkflowStore } from '../../store/workflowStore';
 import { useIsMobile } from '../../hooks/useMediaQuery';
 
 console.log('📍 EDITORMODE FILE LOADED');
@@ -61,7 +60,6 @@ function shiftChordsInText(text: string, shift: number): string {
 interface EditorModeProps {
   song: SongDetail;
   songKey?: string;
-  onBackClick?: () => void;
 }
 
 interface PreviewChordLineProps {
@@ -120,9 +118,8 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   );
 }
 
-export function EditorMode({ song, songKey = 'D', onBackClick }: EditorModeProps) {
+export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const isMobile = useIsMobile();
-  const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
@@ -191,33 +188,8 @@ export function EditorMode({ song, songKey = 'D', onBackClick }: EditorModeProps
   console.log('🔍 isHidden state:', isHidden);
   console.log('🔍 isPublishLoading state:', isPublishLoading);
 
-  const handleBackClick = () => {
-    if (onBackClick) {
-      onBackClick();
-    } else {
-      setReaderMode('lyrics');
-    }
-  };
-
   return (
-    <div className="w-full flex flex-col bg-white min-h-screen">
-      {/* Mobile Header with Back Button */}
-      {isMobile && (
-        <div className="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center gap-3">
-          <button
-            onClick={handleBackClick}
-            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition-colors active:scale-95"
-            title="Back to song view"
-            aria-label="Back to song view"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <h2 className="text-base font-bold text-slate-900 truncate">Edit Song</h2>
-        </div>
-      )}
-
+    <div className="w-full flex flex-col bg-white min-h-screen overflow-y-auto">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
@@ -318,7 +290,7 @@ export function EditorMode({ song, songKey = 'D', onBackClick }: EditorModeProps
               }}
               disabled={isPublishLoading}
               style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
-              className={`px-4 py-3 md:py-2 rounded-md border font-medium transition-colors cursor-pointer w-full md:w-auto min-h-[44px] md:min-h-auto flex items-center justify-center gap-2 ${
+              className={`px-3 py-2 md:px-4 md:py-3 rounded-md border font-medium transition-colors cursor-pointer w-full md:w-auto min-h-[44px] md:min-h-auto flex items-center justify-center gap-2 text-sm md:text-base ${
                 isHidden
                   ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
                   : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
@@ -326,29 +298,16 @@ export function EditorMode({ song, songKey = 'D', onBackClick }: EditorModeProps
             >
               {isPublishLoading ? (
                 <>
-                  <div className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full" />
-                  <span>Saving...</span>
+                  <div className="animate-spin h-3 w-3 md:h-4 md:w-4 border-2 border-current border-t-transparent rounded-full" />
+                  <span className="text-xs md:text-sm">Saving...</span>
                 </>
               ) : (
                 <>
-                  <span>{isHidden ? '🔒 Hidden' : '✅ Published'}</span>
+                  <span className="text-xs md:text-sm">{isHidden ? '🔒 Hidden' : '✅ Published'}</span>
                 </>
               )}
             </button>
             <span className={`text-xs text-slate-500 ${isMobile ? 'px-2' : ''}`}>Toggle visibility in library</span>
-          </div>
-          <div className="mt-2">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                console.log('🔘 BUTTON CLICKED!');
-                alert('Button works!');
-              }}
-              className="bg-red-500 text-white px-4 py-2 rounded"
-            >
-              TEST BUTTON
-            </button>
           </div>
 
           {/* FEATURE 3: Key Corrector Section */}
