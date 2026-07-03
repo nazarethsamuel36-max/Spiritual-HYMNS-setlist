@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { checkForUpdate, performUpdate, dismissUpdate, type UpdateCheckResult } from '../../services/UpdateChecker';
+import { checkForUpdate, performUpdate, dismissUpdate, type UpdateCheckResult } from '../services/UpdateChecker';
 
 export function UpdateBanner() {
   const [updateAvailable, setUpdateAvailable] = useState(false);
@@ -8,7 +8,7 @@ export function UpdateBanner() {
 
   useEffect(() => {
     // Check for update on component mount
-    checkForUpdate().then(result => {
+    checkForUpdate().then((result: UpdateCheckResult) => {
       if (result.hasUpdate) {
         setUpdateAvailable(true);
         setUpdateInfo(result);

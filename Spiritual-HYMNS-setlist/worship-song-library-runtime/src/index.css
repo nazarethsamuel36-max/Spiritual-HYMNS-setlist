@@ -199,8 +199,28 @@ body {
 #root {
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* NUCLEAR SCROLL FIX: Force page containers to permit vertical scrolling */
+html,
+body,
+#root,
+.app-shell {
+  min-height: 100vh !important;
+  min-height: 100dvh !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.reader-pane,
+.sidebar-pane,
+.sidebar-content,
+.reader-pane > *,
+.sidebar-pane > * {
+  min-height: 0 !important;
+  overflow: visible !important;
 }
 
 /* ═══════════════════════════════════════════════════
