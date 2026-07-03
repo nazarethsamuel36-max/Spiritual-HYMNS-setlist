@@ -127,6 +127,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
   const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
+  const [showTransposer, setShowTransposer] = useState(false);
   const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
 
@@ -192,34 +193,59 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     <div className="w-full flex flex-col bg-white min-h-0">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
-            <label className="text-sm font-medium text-slate-700">
-              <div className="mb-1">Title</div>
-              <input
-                value={title}
-                onChange={(e) => {
-                  setTitle(e.target.value);
-                  debouncedAutoSave({ title: e.target.value });
-                }}
-                className="w-full rounded-lg border border-slate-200 px-3 py-2.5 md:py-2 text-sm outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
-              />
-            </label>
-            <label className="text-sm font-medium text-slate-700">
-              <div className="mb-1">Key</div>
+          {/* ROW 1: Title & Publish (Same height, side-by-side) */}
+          <div className="flex gap-3 h-12 mb-4">
+            <input
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+                debouncedAutoSave({ title: e.target.value });
+              }}
+              placeholder="Song Title..."
+              className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-white text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
+            />
+
+            <button
+              type="button"
+              onClick={async () => {
+                const newIsActive = !isHidden;
+                setIsPublishLoading(true);
+                try {
+                  const { error } = await supabase
+                    .from('songs')
+                    .update({ is_active: newIsActive })
+                    .eq('id', song.id);
+                  if (error) throw error;
+                  setIsHidden(!newIsActive);
+                } catch (err) {
+                  console.error('Failed to toggle', err);
+                } finally {
+                  setIsPublishLoading(false);
+                }
+              }}
+              disabled={isPublishLoading}
+              className="w-36 h-full flex items-center justify-center px-4 rounded-lg border border-slate-300 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-50"
+            >
+              {isPublishLoading ? 'Saving...' : isHidden ? 'Hidden' : 'Published'}
+            </button>
+          </div>
+
+          {/* ROW 2: Key & Collapsed Transposer */}
+          <div className="flex gap-3 items-center mb-6 flex-wrap">
+            <div className="flex flex-col">
+              <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Key</label>
               <select
                 value={keyValue}
                 onChange={(e) => {
                   const newKey = e.target.value;
                   const shift = calculateSemitoneShift(currentTextKey, newKey);
                   const corrected = shiftChordsInText(chordsText, shift);
-
                   setKeyValue(newKey);
                   setChordsText(corrected);
                   setCurrentTextKey(newKey);
-
                   debouncedAutoSave({ original_key: newKey, chords: corrected });
                 }}
-                className="w-full rounded-lg border border-slate-200 px-3 py-2.5 md:py-2 text-sm outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
+                className="w-20 px-2 py-1.5 rounded-md border border-slate-300 bg-white text-sm font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="C">C</option>
                 <option value="D">D</option>
@@ -228,180 +254,110 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                 <option value="G">G</option>
                 <option value="A">A</option>
                 <option value="B">B</option>
-                <option value="Am">Am</option>
-                <option value="Bm">Bm</option>
-                <option value="Cm">Cm</option>
-                <option value="Dm">Dm</option>
-                <option value="Em">Em</option>
-                <option value="Fm">Fm</option>
-                <option value="Gm">Gm</option>
               </select>
-            </label>
-          </div>
+            </div>
 
-          <div 
-            className="mt-4 flex flex-col md:flex-row items-stretch md:items-center gap-3"
-            onClick={(e) => {
-              e.stopPropagation();
-              console.log('🎯 WRAPPER DIV CLICKED');
-            }}
-          >
-            <button
-              type="button"
-              onClick={async (e) => {
-                e.stopPropagation();
-                console.log('🔘 BUTTON CLICKED!');
-                console.log('Current isHidden:', isHidden);
-                console.log('Song ID:', song.id);
-                console.log('Supabase client:', supabase);
-
-                const newHiddenState = !isHidden;
-                const newIsActive = !newHiddenState;
-
-                console.log('New is_active value:', newIsActive);
-
-                setIsPublishLoading(true);
-                try {
-                  console.log('🔄 Attempting database update...');
-
-                  const { data, error } = await supabase
-                    .from('songs')
-                    .update({ is_active: newIsActive })
-                    .eq('id', song.id)
-                    .select();
-
-                  console.log('Database response:', { data, error });
-
-                  if (error) {
-                    console.error('❌ Database error:', error);
-                    alert('Database error: ' + error.message);
-                    throw error;
-                  }
-
-                  console.log('✅ Update successful!');
-                  setIsHidden(newHiddenState);
-                  console.log(newIsActive ? '✅ Song published' : '🔒 Song hidden');
-                } catch (err: any) {
-                  console.error('❌ Failed to toggle publish state', err);
-                  alert('Failed: ' + (err?.message || err));
-                } finally {
-                  setIsPublishLoading(false);
-                }
-              }}
-              disabled={isPublishLoading}
-              style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
-              className={`px-3 py-2 md:px-4 md:py-3 rounded-md border font-medium transition-colors cursor-pointer w-full md:w-auto min-h-[44px] md:min-h-auto flex items-center justify-center gap-2 text-sm md:text-base ${
-                isHidden
-                  ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
-                  : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
-              } disabled:opacity-50 disabled:cursor-not-allowed`}
-            >
-              {isPublishLoading ? (
-                <>
-                  <div className="animate-spin h-3 w-3 md:h-4 md:w-4 border-2 border-current border-t-transparent rounded-full" />
-                  <span className="text-xs md:text-sm">Saving...</span>
-                </>
-              ) : (
-                <>
-                  <span className="text-xs md:text-sm">{isHidden ? '🔒 Hidden' : '✅ Published'}</span>
-                </>
-              )}
-            </button>
-            <span className={`text-xs text-slate-500 ${isMobile ? 'px-2' : ''}`}>Toggle visibility in library</span>
-          </div>
-
-          {/* FEATURE 3: Key Corrector Section */}
-          <div className="mt-4 grid gap-3 grid-cols-1 md:grid-cols-2">
-            <label className="block text-xs font-medium text-slate-700">
-              <div className="mb-1">Chords are currently written in:</div>
-              <select
-                value={currentTextKey}
-                onChange={(e) => setCurrentTextKey(e.target.value)}
-                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2.5 md:py-2 text-sm text-slate-800 outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
+            {!showTransposer ? (
+              <button
+                type="button"
+                onClick={() => setShowTransposer(true)}
+                className="mt-4 text-xs text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                <option value="C">C</option>
-                <option value="C#">C#</option>
-                <option value="Db">Db</option>
-                <option value="D">D</option>
-                <option value="D#">D#</option>
-                <option value="Eb">Eb</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="F#">F#</option>
-                <option value="Gb">Gb</option>
-                <option value="G">G</option>
-                <option value="G#">G#</option>
-                <option value="Ab">Ab</option>
-                <option value="A">A</option>
-                <option value="A#">A#</option>
-                <option value="Bb">Bb</option>
-                <option value="B">B</option>
-              </select>
-            </label>
+                + Show Transposer
+              </button>
+            ) : (
+              <div className="flex-1 flex flex-wrap items-end gap-2 bg-slate-50 p-2 rounded-lg border border-slate-200">
+                <div className="flex flex-col">
+                  <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Current</label>
+                  <select
+                    value={currentTextKey}
+                    onChange={(e) => setCurrentTextKey(e.target.value)}
+                    className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="B">B</option>
+                  </select>
+                </div>
 
-            <label className="block text-xs font-medium text-slate-700">
-              <div className="mb-1">Shift chords to:</div>
-              <select
-                value={correctorTargetKey}
-                onChange={(e) => {
-                  const newTarget = e.target.value;
-                  const shift = calculateSemitoneShift(currentTextKey, newTarget);
-                  const corrected = shiftChordsInText(chordsText, shift);
+                <span className="text-slate-400 font-bold pb-2">→</span>
 
-                  setCorrectorTargetKey(newTarget);
-                  setChordsText(corrected);
-                  setCurrentTextKey(newTarget);
+                <div className="flex flex-col">
+                  <label className="text-[10px] font-bold text-slate-500 mb-1 uppercase">Shift To</label>
+                  <select
+                    value={correctorTargetKey}
+                    onChange={(e) => {
+                      const newTarget = e.target.value;
+                      const shift = calculateSemitoneShift(currentTextKey, newTarget);
+                      const corrected = shiftChordsInText(chordsText, shift);
+                      setCorrectorTargetKey(newTarget);
+                      setChordsText(corrected);
+                      setCurrentTextKey(newTarget);
+                      debouncedAutoSave({ chords: corrected });
+                    }}
+                    className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm font-bold bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="B">B</option>
+                  </select>
+                </div>
 
-                  debouncedAutoSave({ chords: corrected });
-                }}
-                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2.5 md:py-2 text-sm text-slate-800 outline-none focus:border-blue-400 font-semibold min-h-[44px] md:min-h-auto"
-              >
-                <option value="C">C</option>
-                <option value="C#">C#</option>
-                <option value="Db">Db</option>
-                <option value="D">D</option>
-                <option value="D#">D#</option>
-                <option value="Eb">Eb</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="F#">F#</option>
-                <option value="Gb">Gb</option>
-                <option value="G">G</option>
-                <option value="G#">G#</option>
-                <option value="Ab">Ab</option>
-                <option value="A">A</option>
-                <option value="A#">A#</option>
-                <option value="Bb">Bb</option>
-                <option value="B">B</option>
-              </select>
-            </label>
+                <button
+                  type="button"
+                  onClick={() => setShowTransposer(false)}
+                  className="pb-2 text-xs text-red-500 hover:text-red-700 font-semibold ml-2"
+                >
+                  ✕ Hide
+                </button>
+              </div>
+            )}
           </div>
 
-          {/* FEATURE 2: Fixed layout with consistent heights - Responsive */}
-          <div className="mt-4 grid gap-4 grid-cols-1 lg:grid-cols-2">
-            <label className="block text-sm font-medium text-slate-700">
-              <div className="mb-1">Raw database chords</div>
+          {/* ROW 3: Big Editor Boxes */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="flex flex-col">
+              <label className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">Raw Database Chords</label>
               <textarea
                 value={chordsText}
                 onChange={(e) => {
                   setChordsText(e.target.value);
                   debouncedAutoSave({ chords: e.target.value });
                 }}
-                rows={isMobile ? 12 : 20}
+                rows={25}
                 spellCheck={false}
-                className={`w-full resize-none rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none focus:border-blue-400 overflow-auto min-h-[44px] ${isMobile ? 'h-[300px]' : 'h-[500px]'}`}
+                className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-white font-mono text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+                placeholder="Paste lyrics and chords here..."
               />
-            </label>
+            </div>
 
-            <div className="block text-sm font-medium text-slate-700">
-              <div className="mb-1">Live user preview</div>
-              <div className={`rounded-lg border border-slate-200 bg-slate-50 p-3 overflow-auto ${isMobile ? 'h-[300px]' : 'h-[500px]'}`}>
+            <div className="flex flex-col">
+              <label className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">Live User Preview</label>
+              <div className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-slate-50 overflow-y-auto">
                 {previewLines.length === 0 ? (
-                  <div className="rounded-lg border border-dashed border-slate-200 p-6 text-center text-sm text-slate-400">
-                    Preview will appear here as you type the raw chord text.
+                  <div className="text-center text-sm text-slate-400 py-10">
+                    Preview will appear here as you type.
                   </div>
                 ) : (
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     {previewLinesWithDiffs.map((item, index) => (
                       <PreviewChordLine
                         key={`${item.line}-${index}`}
