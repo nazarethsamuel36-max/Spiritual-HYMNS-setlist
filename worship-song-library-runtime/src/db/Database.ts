@@ -30,6 +30,7 @@ export type SongDetail = {
   chords?: string; // Raw chords text with markers like [G]
   lyrics?: string; // Plain lyrics text without chords
   isPublished?: boolean; // Publication status for admin control
+  is_active?: boolean; // Whether the song is active and visible in the app
 }
 
 export type Section = {

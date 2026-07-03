@@ -123,7 +123,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
   const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
-  const [isHidden, setIsHidden] = useState(!song.isPublished);
+  const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
 
   useEffect(() => {
@@ -134,8 +134,8 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     setCurrentTextKey(song.originalKey || songKey || 'C');
     setSongNumber(song.songNumber || 0);
     setChordsText(song.chords || '');
-    setIsHidden(!song.isPublished);
-  }, [song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey]);
+    setIsHidden(!song.is_active);
+  }, [song.title, song.language, song.originalKey, song.songNumber, song.chords, song.is_active, songKey]);
 
   useEffect(() => {
     console.log('📝 Editor form changed:', {
@@ -234,16 +234,17 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             <div className="flex items-center gap-3">
               <button
                 onClick={async () => {
-                  const publishState = !isHidden;
+                  const newHiddenState = !isHidden;
+                  const newIsActive = !newHiddenState;
                   setIsPublishLoading(true);
                   try {
                     const { error } = await supabase
                       .from('songs')
-                      .update({ is_published: publishState })
+                      .update({ is_active: newIsActive })
                       .eq('id', song.id);
                     if (error) throw error;
-                    setIsHidden(!publishState);
-                    console.log(publishState ? '✅ Song published' : '🔒 Song hidden');
+                    setIsHidden(newHiddenState);
+                    console.log(newIsActive ? '✅ Song published' : '🔒 Song hidden');
                   } catch (err) {
                     console.error('❌ Failed to toggle publish state', err);
                   } finally {
