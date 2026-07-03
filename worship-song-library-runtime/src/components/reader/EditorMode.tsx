@@ -231,67 +231,79 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                 <option value="Gm">Gm</option>
               </select>
             </label>
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                onClick={async () => {
-                  console.log('🔘 BUTTON CLICKED!');
-                  console.log('Current isHidden:', isHidden);
-                  console.log('Song ID:', song.id);
-                  console.log('Supabase client:', supabase);
-
-                  const newHiddenState = !isHidden;
-                  const newIsActive = !newHiddenState;
-
-                  console.log('New is_active value:', newIsActive);
-
-                  setIsPublishLoading(true);
-                  try {
-                    console.log('🔄 Attempting database update...');
-
-                    const { data, error } = await supabase
-                      .from('songs')
-                      .update({ is_active: newIsActive })
-                      .eq('id', song.id)
-                      .select();
-
-                    console.log('Database response:', { data, error });
-
-                    if (error) {
-                      console.error('❌ Database error:', error);
-                      alert('Database error: ' + error.message);
-                      throw error;
-                    }
-
-                    console.log('✅ Update successful!');
-                    setIsHidden(newHiddenState);
-                    console.log(newIsActive ? '✅ Song published' : '🔒 Song hidden');
-                  } catch (err: any) {
-                    console.error('❌ Failed to toggle publish state', err);
-                    alert('Failed: ' + (err?.message || err));
-                  } finally {
-                    setIsPublishLoading(false);
-                  }
-                }}
-                disabled={isPublishLoading}
-                className={`px-3 py-2 rounded-md border font-medium transition-colors cursor-pointer ${
-                  isHidden
-                    ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
-                    : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
-                } disabled:opacity-50 disabled:cursor-not-allowed`}
-              >
-                {isPublishLoading ? (
-                  <span className="flex items-center gap-2">
-                    <div className="animate-spin h-3 w-3 border-2 border-current border-t-transparent rounded-full" />
-                    Saving...
-                  </span>
-                ) : (
-                  isHidden ? 'Hidden' : 'Published'
-                )}
-              </button>
-              <span className="text-xs text-slate-500">Toggle visibility in library</span>
-            </div>
           </div>
+
+          <div className="mt-4 flex items-center gap-3">
+            <button
+              type="button"
+              onClick={async () => {
+                console.log('🔘 BUTTON CLICKED!');
+                console.log('Current isHidden:', isHidden);
+                console.log('Song ID:', song.id);
+                console.log('Supabase client:', supabase);
+
+                const newHiddenState = !isHidden;
+                const newIsActive = !newHiddenState;
+
+                console.log('New is_active value:', newIsActive);
+
+                setIsPublishLoading(true);
+                try {
+                  console.log('🔄 Attempting database update...');
+
+                  const { data, error } = await supabase
+                    .from('songs')
+                    .update({ is_active: newIsActive })
+                    .eq('id', song.id)
+                    .select();
+
+                  console.log('Database response:', { data, error });
+
+                  if (error) {
+                    console.error('❌ Database error:', error);
+                    alert('Database error: ' + error.message);
+                    throw error;
+                  }
+
+                  console.log('✅ Update successful!');
+                  setIsHidden(newHiddenState);
+                  console.log(newIsActive ? '✅ Song published' : '🔒 Song hidden');
+                } catch (err: any) {
+                  console.error('❌ Failed to toggle publish state', err);
+                  alert('Failed: ' + (err?.message || err));
+                } finally {
+                  setIsPublishLoading(false);
+                }
+              }}
+              disabled={isPublishLoading}
+              style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
+              className={`px-3 py-2 rounded-md border font-medium transition-colors cursor-pointer ${
+                isHidden
+                  ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
+                  : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
+              } disabled:opacity-50 disabled:cursor-not-allowed`}
+            >
+              {isPublishLoading ? (
+                <span className="flex items-center gap-2">
+                  <div className="animate-spin h-3 w-3 border-2 border-current border-t-transparent rounded-full" />
+                  Saving...
+                </span>
+              ) : (
+                isHidden ? 'Hidden' : 'Published'
+              )}
+            </button>
+            <span className="text-xs text-slate-500">Toggle visibility in library</span>
+          </div>
+          <div className="mt-2">
+            <button
+              type="button"
+              onClick={() => alert('TEST BUTTON WORKS!')}
+              className="bg-red-500 text-white px-4 py-2 rounded-md"
+            >
+              TEST BUTTON
+            </button>
+          </div>
+          <div className="mt-4 grid gap-3 md:grid-cols-2">
 
           {/* FEATURE 3: Key Corrector Section */}
           <div className="mt-4 grid gap-3 md:grid-cols-2">
