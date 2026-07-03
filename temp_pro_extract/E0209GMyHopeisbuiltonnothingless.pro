@@ -1,0 +1,35 @@
+{t:E-0209 (G) My Hope is built on nothing less}
+{st:}
+
+E-0209 - F CHORD
+
+My hope is built on nothing less
+Than Jesus' blood and righteousness;
+I dare not trust the sweetest frame,
+But wholly lean on Jesus' name.
+
+On Christ, the solid Rock,I stand;
+All other ground is sinking sand,
+All other ground is sinking sand.
+
+When darkness seems to hide His face,
+I rest on his unchanging grace;
+In every high and stormy gale,
+My anchor holds within the veil.
+
+His oath, His covenant, His blood,
+Support me in the whelming flood;
+When all around my soul gives way,
+He then is all my hope and stay.
+
+When He shall come with trumpet sound,
+Oh, may I then in Him be found;
+Dressed in His righteousness alone,
+Faultless to stand before the throne.
+
+
+{tempo:0}
+
+{key:G}
+
+{scrollspeed:6}

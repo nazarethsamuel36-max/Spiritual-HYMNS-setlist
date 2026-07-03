@@ -205,8 +205,8 @@ export function SongView() {
     loadLibrarySongs();
   }, [isSetlistContext, libraryLanguage]);
 
-  // Swipe indicator state
-  const [swipeOffset, setSwipeOffset] = useState(0); // live drag offset in px
+  // Swipe indicator state - tracks offset during gesture
+  const [_swipeOffset, setSwipeOffset] = useState(0);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -522,7 +522,8 @@ export function SongView() {
         onPointerMove={isAdminAuthenticated ? undefined : handlePointerMove}
         onPointerUp={isAdminAuthenticated ? undefined : handlePointerUp}
         onPointerCancel={isAdminAuthenticated ? undefined : handlePointerUp}
-      <div className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain" style={{ touchAction: 'auto' }}>
+      >
+        <div className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain" style={{ touchAction: 'auto' }}>
         <div className="max-w-4xl mx-auto w-full min-h-full">
           {isAdminAuthenticated ? (
             (() => {
@@ -560,6 +561,7 @@ export function SongView() {
             <ChordProView chords={song.chords} transpose={displayTranspose} />
           )}
         </div>
+      </div>
       </div>
 
       {showSwipeHint && (

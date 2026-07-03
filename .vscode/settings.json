@@ -12,6 +12,27 @@
         "/^cd \"d:\\\\spiritual setlist\" ; git add -A ; git commit -m \"refactor: replace textarea inputs with single contentEditable div for unified song editing\" ; git push origin main$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "Test-NetConnection": true,
+        "Get-Command": true,
+        "New-Item": true,
+        "Out-Null": true,
+        "javac": true,
+        "ForEach-Object": true,
+        "java": true,
+        "Test-Path": true,
+        "/^powershell -NoProfile -Command \"python --version; Get-Item 'C:\\\\Users\\\\Lenovo\\\\Downloads\\\\song_titles_keys_sorted_cleaned\\.txt' \\| Select-Object FullName,Length\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^powershell -NoProfile -Command \"Set-Location -LiteralPath 'D:\\\\spiritual setlist\\\\Spiritual-HYMNS-setlist'; & java -cp 'target\\\\\\\\classes;C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\\\.m2\\\\\\\\repository\\\\\\\\com\\\\\\\\mysql\\\\\\\\mysql-connector-j\\\\\\\\8\\.3\\.0\\\\\\\\mysql-connector-j-8\\.3\\.0\\.jar;C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\\\.m2\\\\\\\\repository\\\\\\\\org\\\\\\\\slf4j\\\\\\\\slf4j-api\\\\\\\\2\\.0\\.12\\\\\\\\slf4j-api-2\\.0\\.12\\.jar;C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\\\.m2\\\\\\\\repository\\\\\\\\org\\\\\\\\slf4j\\\\\\\\slf4j-simple\\\\\\\\2\\.0\\.12\\\\\\\\slf4j-simple-2\\.0\\.12\\.jar;C:\\\\\\\\Users\\\\\\\\Lenovo\\\\\\\\\\.m2\\\\\\\\repository\\\\\\\\com\\\\\\\\zaxxer\\\\\\\\HikariCP\\\\\\\\5\\.1\\.0\\\\\\\\HikariCP-5\\.1\\.0\\.jar' com\\.worship\\.util\\.ReferenceChordAlignmentRunner\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npm run build": true,
+        "git remote": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true
     }
 }

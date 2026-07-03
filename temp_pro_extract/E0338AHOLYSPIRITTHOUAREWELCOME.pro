@@ -1,0 +1,41 @@
+{t:E-0338 (A) HOLY SPIRIT THOU ARE WELCOME}
+{st:}
+
+SONG 0338
+A Chord
+
+Holy Spirit Thou art welcome in
+this place,
+Holy Spirit Thou art welcome in
+this place,
+Omnipotent Father of Mercy and
+Grace,
+Thou art welcome in this place.
+
+Lord in Thy presence there's healing
+divine,
+No other power can save Lord, but
+Thine,
+Holy Spirit Thou art welcome in
+this place,
+Thou art welcome in this place.
+
+Fill all the hungry and empty
+within,
+Restore us, oh Father revive us
+again,
+Holy Spirit Thou art welcome in
+this place,
+Thou art welcome in this place.
+
+
+
+
+
+
+
+{tempo:0}
+
+{key:A}
+
+{scrollspeed:6}

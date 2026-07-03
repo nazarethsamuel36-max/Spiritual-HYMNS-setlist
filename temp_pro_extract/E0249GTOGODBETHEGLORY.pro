@@ -1,0 +1,43 @@
+{t:E-0249 (G) TO GOD BE THE GLORY}
+{st:}
+
+SONG 249
+CHORD G
+
+To God be the glory, great things He hath done, 
+So loved He the world that He gave us His Son, 
+Who yielded His life an atonement for sin, 
+And opened the life-gate that all may go in.
+
+CHORUS :
+Praise the Lord, praise the Lord,
+Let the earth hear His voice,
+Praise the Lord, praise the Lord, 
+Let the people rejoice!
+O come to the Father through Jesus the Son, 
+And give Him the glory, great things He hath done.
+
+O perfect redemption, the purchase of blood, 
+To every believer the promise of God; 
+The vilest offender who truly believes, 
+That moment from Jesus a pardon receives.
+
+Great things He hath taught us, great things He hath done.
+And great our rejoicing through Jesus the Son, 
+But purer, and higher, and greater will be, 
+Our wonder, our transport when Jesus we see.
+
+
+
+
+
+
+
+
+
+
+{tempo:120}
+
+{key:G}
+
+{scrollspeed:6}

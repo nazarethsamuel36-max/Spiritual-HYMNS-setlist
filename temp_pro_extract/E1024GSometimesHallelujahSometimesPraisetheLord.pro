@@ -1,0 +1,35 @@
+{t:E-1024 (G) Sometimes Hallelujah, Sometimes Praise the Lord}
+{st:}
+
+E-1024
+G Chord
+
+Sometimes Hallelujah
+Sometimes Praise The Lord
+Sometimes Gently Singing,
+Our Hearts In One Accord
+
+Oh let us lift our voices,
+Look toward the sky and start to sing
+Oh let us now return His love,
+Just let our voices ring
+Oh let us feel His presence,
+Let the sound of praises fill the air
+Oh let us sing the song of Jesus' love,
+To people everywhere.
+
+Oh let our joy be unconfined,
+Let us sing with freedom unrestrained
+Let's take this feeling that we're feeling now,
+Outside these walls and let it rain.
+Oh let the Spirit overflow,
+As we are filled from head to toe.
+We love you Lord with all our Hearts,
+And we want this world to know.
+
+
+{tempo:0}
+
+{key:G}
+
+{scrollspeed:6}
