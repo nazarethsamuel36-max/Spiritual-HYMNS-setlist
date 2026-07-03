@@ -6,6 +6,7 @@ import { ChordTransposer } from '../../utils/ChordTransposer';
 import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
+import { PWAInstallButton } from '../PWAInstallButton';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -103,6 +104,9 @@ export function ReaderHeader({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </button>
+
+            {/* PWA Install Button */}
+            <PWAInstallButton />
 
             {/* ⋮ More Button & Dropdown */}
             <div className="relative">

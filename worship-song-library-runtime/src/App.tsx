@@ -9,6 +9,7 @@ import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
+import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
@@ -224,6 +225,7 @@ function App() {
                   🔑
                 </button>
               )}
+              <PWAInstallButton />
               <button
                 onClick={() => setShowSettings(true)}
                 className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all"
