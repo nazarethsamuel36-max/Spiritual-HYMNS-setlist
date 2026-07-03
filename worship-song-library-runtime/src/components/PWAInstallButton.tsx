@@ -2,14 +2,13 @@ import { useState } from 'react';
 import { usePWA } from '../hooks/usePWA';
 
 export function PWAInstallButton() {
-  const { showInstallPrompt, isInstalled, isIOS, installApp } = usePWA();
+  const { isInstalled, isIOS, installApp } = usePWA();
   const [showIOSModal, setShowIOSModal] = useState(false);
 
   if (isInstalled) {
     return null;
   }
 
-  // iOS: Show instructions modal
   if (isIOS && showIOSModal) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
@@ -72,30 +71,24 @@ export function PWAInstallButton() {
   }
 
   return (
-    <>
-      {isIOS ? (
-        // iOS: Show button that opens instructions
-        <button
-          onClick={() => setShowIOSModal(true)}
-          className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors font-medium text-sm whitespace-nowrap"
-          title="Install BBF Song book to your home screen"
-        >
-          <span className="text-lg">📱</span>
-          <span className="hidden md:inline">Install App</span>
-          <span className="md:hidden">Install</span>
-        </button>
-      ) : showInstallPrompt ? (
-        // Android/Chrome: Show button that triggers install
-        <button
-          onClick={installApp}
-          className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border border-emerald-600 bg-emerald-500 text-white hover:bg-emerald-600 transition-colors font-medium text-sm whitespace-nowrap"
-          title="Download and install the app"
-        >
-          <span className="text-lg">⬇️</span>
-          <span className="hidden md:inline">Install App</span>
-          <span className="md:hidden">Install</span>
-        </button>
-      ) : null}
-    </>
+    <button
+      onClick={() => {
+        if (isIOS) {
+          setShowIOSModal(true);
+        } else {
+          installApp();
+        }
+      }}
+      className={`flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors ${
+        isIOS
+          ? 'border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100'
+          : 'border-emerald-600 bg-emerald-500 text-white hover:bg-emerald-600'
+      }`}
+      title="Install BBF Song book"
+    >
+      <span className="text-lg">{isIOS ? '📱' : '⬇️'}</span>
+      <span className="hidden md:inline">Install App</span>
+      <span className="md:hidden">Install</span>
+    </button>
   );
 }

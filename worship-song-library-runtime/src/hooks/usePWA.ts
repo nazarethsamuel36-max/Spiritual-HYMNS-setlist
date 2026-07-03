@@ -11,19 +11,23 @@ export function usePWA() {
   const [isInstalled, setIsInstalled] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
 
+  const getInstallState = () => {
+    const standalone = (window.navigator as any).standalone === true;
+    const displayModeStandalone = window.matchMedia('(display-mode: standalone)').matches;
+    return standalone || displayModeStandalone;
+  };
+
   useEffect(() => {
-    // Detect iOS
     const userAgent = window.navigator.userAgent.toLowerCase();
     const isIOSDevice = /iphone|ipad|ipod/.test(userAgent);
     setIsIOS(isIOSDevice);
 
-    // Check if app is installed
-    const isInStandaloneMode =
-      (window.navigator as any).standalone === true ||
-      window.matchMedia('(display-mode: standalone)').matches;
-    setIsInstalled(isInStandaloneMode);
+    const updateInstallState = () => {
+      setIsInstalled(getInstallState());
+    };
 
-    // Handle beforeinstallprompt (Android/Chrome)
+    updateInstallState();
+
     const handleBeforeInstallPrompt = (e: any) => {
       console.log('📱 beforeinstallprompt event triggered');
       e.preventDefault();
@@ -31,9 +35,6 @@ export function usePWA() {
       setShowInstallPrompt(true);
     };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-
-    // Handle app installed event
     const handleAppInstalled = () => {
       console.log('✅ App installed successfully');
       setIsInstalled(true);
@@ -41,29 +42,41 @@ export function usePWA() {
       setDeferredPrompt(null);
     };
 
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        updateInstallState();
+      }
+    };
+
+    const handleWindowFocus = () => {
+      updateInstallState();
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
     window.addEventListener('appinstalled', handleAppInstalled);
+    window.addEventListener('focus', handleWindowFocus);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
       window.removeEventListener('appinstalled', handleAppInstalled);
+      window.removeEventListener('focus', handleWindowFocus);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, []);
 
   const installApp = async () => {
     if (!deferredPrompt) {
-      console.error('Install prompt not available');
+      console.warn('Install prompt not available. Use the browser menu to add to Home Screen.');
+      alert('Install not available. Use your browser menu and choose "Add to Home Screen".');
       return;
     }
 
     try {
-      // Show the install prompt
       await deferredPrompt.prompt();
-
-      // Get the user's response
       const { outcome } = await deferredPrompt.userChoice;
       console.log(`User response to install prompt: ${outcome}`);
 
-      // Clear the deferred prompt
       setDeferredPrompt(null);
       setShowInstallPrompt(false);
 
