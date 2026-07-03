@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
-import { loadSongs } from '../services/OfflineCache';
+import { supabase } from '../lib/supabaseClient';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
@@ -48,8 +48,18 @@ export function SongList() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [isOffline, setIsOffline] = useState(false);
+  const [isAddingNewSong, setIsAddingNewSong] = useState(false);
+  const [newSongLanguage, setNewSongLanguage] = useState<string>(
+    selectedLanguage && selectedLanguage !== 'All' ? selectedLanguage : 'English'
+  );
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [newSongTitle, setNewSongTitle] = useState('Untitled Draft');
+  const [newSongKey, setNewSongKey] = useState('C');
+  const [newSongChords, setNewSongChords] = useState('');
+  const [newSongIsPublished, setNewSongIsPublished] = useState(false);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
+  const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
 
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
@@ -59,17 +69,43 @@ export function SongList() {
     async function loadLibrarySongs() {
       setIsLoading(true);
       setLoadError(null);
+      setIsOffline(false); // Force online-only mode
 
       try {
-        const result = await loadSongs();
+        // 🔥 BURN THE CACHE: Direct Supabase only
+        // 📋 For regular users: only published songs. For admins: all songs (including drafts)
+        let query = supabase
+          .from('songs')
+          .select('id, song_number, title, artist, language, original_key, is_published')
+          .eq('is_active', true);
+
+        // Regular users: filter by is_published = true only
+        if (!isAdminAuthenticated) {
+          query = query.eq('is_published', true);
+        }
+
+        const { data, error } = await query.order('song_number', { ascending: true });
+
+        if (error) throw new Error(`Supabase error: ${error.message}`);
+        if (!data) throw new Error('No data returned from Supabase');
 
         if (cancelled) return;
 
-        const songs = result.songs;
-        setIsOffline(result.isOffline);
-        console.log(`Songs loaded from ${result.source}:`, songs.length);
-        console.log('Unique languages:', [...new Set(songs.map((song: SongIndex) => song.language ?? '(missing)'))]);
-        console.log('Sample song data:', songs[0]);
+        const songs: SongIndex[] = (data as any[]).map((song: any) => ({
+          id: Number(song.id ?? 0),
+          songNumber: Number(song.song_number ?? 0),
+          title: typeof song.title === 'string' ? song.title : '',
+          artist: typeof song.artist === 'string' ? song.artist : undefined,
+          language: typeof song.language === 'string' ? song.language : undefined,
+          originalKey: typeof song.original_key === 'string' ? song.original_key : undefined,
+          hashtags: [],
+          searchTokens: `${typeof song.title === 'string' ? song.title : ''} ${typeof song.artist === 'string' ? song.artist : ''}`.toLowerCase(),
+          romanTitle: typeof song.title === 'string' ? song.title : undefined,
+          isPublished: song.is_published ?? true
+        }));
+
+        console.log(`🌐 Songs loaded from SUPABASE ONLY:`, songs.length);
+        console.log('Admin:', isAdminAuthenticated, '- Showing drafts:', isAdminAuthenticated);
         setAllSongs(songs);
         await SearchEngine.indexSongs(songs);
       } catch (err) {
@@ -89,7 +125,87 @@ export function SongList() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [isAdminAuthenticated]);
+
+  const handleAddNewSong = async (
+    languageArg?: string,
+    opts?: { title?: string; key?: string; chords?: string; isPublished?: boolean }
+  ) => {
+    setIsAddingNewSong(true);
+    try {
+      // Get the next song number for the selected language
+      const rawLanguage = languageArg ?? selectedLanguage;
+      const languageToUse = rawLanguage === 'All' ? 'english' : (rawLanguage || 'english').toLowerCase();
+      console.log('🔍 Searching for max song number in language:', languageToUse);
+
+      const { data: maxData, error: maxError } = await supabase
+        .from('songs')
+        .select('song_number, language')
+        .ilike('language', languageToUse)
+        .order('song_number', { ascending: false })
+        .limit(1);
+
+      console.log('📊 Supabase returned max data:', maxData);
+
+      if (maxError) {
+        console.warn('⚠️ Could not find max song number:', maxError);
+      }
+
+      const nextSongNumber = (maxData?.[0]?.song_number || 0) + 1;
+
+      // Create a new draft song in Supabase (use provided form values if present)
+      const titleToUse = opts?.title ?? 'Untitled Draft';
+      const keyToUse = opts?.key ?? 'C';
+      const chordsToUse = opts?.chords ?? '';
+      const isPublishedToUse = !!opts?.isPublished;
+
+      const { data, error } = await supabase
+        .from('songs')
+        .insert({
+          title: titleToUse,
+          song_number: nextSongNumber,
+          language: languageToUse,
+          is_published: isPublishedToUse,
+          is_active: true,
+          chords: chordsToUse,
+          lyrics: '',
+          artist: '',
+          original_key: keyToUse
+        })
+        .select()
+        .single();
+
+      if (error) {
+        alert('❌ Failed to create new song: ' + error.message);
+        return;
+      }
+
+      if (data) {
+        console.log('✅ New draft song created:', data);
+        // Add to local state immediately
+        const newSong: SongIndex = {
+          id: data.id,
+          songNumber: data.song_number,
+          title: data.title,
+          artist: data.artist,
+          language: data.language,
+          originalKey: data.original_key,
+          hashtags: [],
+          searchTokens: data.title.toLowerCase(),
+          romanTitle: data.title,
+          isPublished: false
+        };
+        setAllSongs([...allSongs, newSong]);
+        // Open the new song in the editor
+        openSong(data.id, 'library');
+      }
+    } catch (err) {
+      console.error('❌ Error creating new song:', err);
+      alert('Failed to create new song');
+    } finally {
+      setIsAddingNewSong(false);
+    }
+  };
 
   const songs = getVisibleSongs(allSongs, selectedLanguage, search, sortBy);
 
@@ -100,8 +216,129 @@ export function SongList() {
     console.log('Active language filter:', selectedLanguage);
   }, [allSongs, songs, selectedLanguage, isLoading]);
 
+  // keep the new-song language selector in sync with the overall filter
+  useEffect(() => {
+    if (selectedLanguage && selectedLanguage !== 'All') {
+      setNewSongLanguage(selectedLanguage);
+    }
+  }, [selectedLanguage]);
+
   return (
     <div className="w-full">
+      {/* Admin Add New Song Button */}
+      {isAdminAuthenticated && (
+        <div className="px-3 pt-3">
+          {!showAddForm ? (
+            <button
+              onClick={() => setShowAddForm(true)}
+              className="w-full py-2.5 px-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors flex items-center justify-center space-x-2"
+            >
+              <>
+                <span>✚</span>
+                <span>Add New Song</span>
+              </>
+            </button>
+          ) : (
+            <div className="w-full rounded-lg border border-slate-200 bg-white p-4">
+              <div className="grid gap-3 md:grid-cols-2">
+                <label className="text-sm font-medium text-slate-700">
+                  <div className="mb-1">Language</div>
+                  <select
+                    value={newSongLanguage}
+                    onChange={(e) => setNewSongLanguage(e.target.value)}
+                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
+                  >
+                    {LANGUAGES.filter((l) => l !== 'All').map((lang) => (
+                      <option key={lang} value={lang}>
+                        {lang}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="text-sm font-medium text-slate-700">
+                  <div className="mb-1">Title</div>
+                  <input
+                    value={newSongTitle}
+                    onChange={(e) => setNewSongTitle(e.target.value)}
+                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
+                  />
+                </label>
+              </div>
+
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <label className="text-sm font-medium text-slate-700">
+                  <div className="mb-1">Key</div>
+                  <select
+                    value={newSongKey}
+                    onChange={(e) => setNewSongKey(e.target.value)}
+                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
+                  >
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                  </select>
+                </label>
+
+                <label className="text-sm font-medium text-slate-700">
+                  <div className="mb-1">Publish</div>
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => setNewSongIsPublished((v) => !v)}
+                      className={`px-3 py-1 rounded-md border ${newSongIsPublished ? 'bg-emerald-500 text-white' : 'bg-white'}`}
+                    >
+                      {newSongIsPublished ? 'Published' : 'Hidden'}
+                    </button>
+                    <span className="text-xs text-slate-500">Toggle visibility in library</span>
+                  </div>
+                </label>
+              </div>
+
+              <div className="mt-3">
+                <label className="text-sm font-medium text-slate-700 block">
+                  <div className="mb-1">Chords & Lyrics</div>
+                  <textarea
+                    value={newSongChords}
+                    onChange={(e) => setNewSongChords(e.target.value)}
+                    rows={12}
+                    className="w-full rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none"
+                    placeholder="[C]Verse 1\n[G]Jesus is my friend\n[Am]His love will never end\n[F]He saves my soul"
+                  />
+                </label>
+              </div>
+
+              <div className="mt-4 flex gap-2">
+                <button
+                  onClick={async () => {
+                      // submit form
+                      await handleAddNewSong(newSongLanguage, {
+                        title: newSongTitle,
+                        key: newSongKey,
+                        chords: newSongChords,
+                        isPublished: newSongIsPublished,
+                      });
+                    }}
+                  disabled={isAddingNewSong}
+                  className="px-4 py-2 bg-emerald-500 text-white rounded-md"
+                >
+                  Create
+                </button>
+                <button
+                  onClick={() => setShowAddForm(false)}
+                  className="px-4 py-2 border rounded-md"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Search + Filters — sticky header */}
       <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
         {/* Language pills */}
