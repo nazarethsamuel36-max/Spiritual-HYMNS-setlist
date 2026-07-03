@@ -207,7 +207,8 @@ function App() {
               <button
                 type="button"
                 onClick={handleTitleTap}
-                className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none"
+                className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95"
+                title="Tap 5 times to unlock admin mode"
               >
                 BBF Song book
               </button>

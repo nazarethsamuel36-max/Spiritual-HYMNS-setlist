@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
+import { useWorkflowStore } from '../../store/workflowStore';
+import { useIsMobile } from '../../hooks/useMediaQuery';
 
 console.log('📍 EDITORMODE FILE LOADED');
 
@@ -59,6 +61,7 @@ function shiftChordsInText(text: string, shift: number): string {
 interface EditorModeProps {
   song: SongDetail;
   songKey?: string;
+  onBackClick?: () => void;
 }
 
 interface PreviewChordLineProps {
@@ -117,7 +120,9 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   );
 }
 
-export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
+export function EditorMode({ song, songKey = 'D', onBackClick }: EditorModeProps) {
+  const isMobile = useIsMobile();
+  const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
@@ -186,11 +191,36 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   console.log('🔍 isHidden state:', isHidden);
   console.log('🔍 isPublishLoading state:', isPublishLoading);
 
+  const handleBackClick = () => {
+    if (onBackClick) {
+      onBackClick();
+    } else {
+      setReaderMode('lyrics');
+    }
+  };
+
   return (
     <div className="w-full flex flex-col bg-white min-h-screen">
+      {/* Mobile Header with Back Button */}
+      {isMobile && (
+        <div className="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center gap-3">
+          <button
+            onClick={handleBackClick}
+            className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition-colors active:scale-95"
+            title="Back to song view"
+            aria-label="Back to song view"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <h2 className="text-base font-bold text-slate-900 truncate">Edit Song</h2>
+        </div>
+      )}
+
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
             <label className="text-sm font-medium text-slate-700">
               <div className="mb-1">Title</div>
               <input
@@ -199,7 +229,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                   setTitle(e.target.value);
                   debouncedAutoSave({ title: e.target.value });
                 }}
-                className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-blue-400"
+                className="w-full rounded-lg border border-slate-200 px-3 py-2.5 md:py-2 text-sm outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
               />
             </label>
             <label className="text-sm font-medium text-slate-700">
@@ -217,7 +247,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
 
                   debouncedAutoSave({ original_key: newKey, chords: corrected });
                 }}
-                className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-blue-400"
+                className="w-full rounded-lg border border-slate-200 px-3 py-2.5 md:py-2 text-sm outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
               >
                 <option value="C">C</option>
                 <option value="D">D</option>
@@ -238,7 +268,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
           </div>
 
           <div 
-            className="mt-4 flex items-center gap-3"
+            className="mt-4 flex flex-col md:flex-row items-stretch md:items-center gap-3"
             onClick={(e) => {
               e.stopPropagation();
               console.log('🎯 WRAPPER DIV CLICKED');
@@ -288,22 +318,24 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               }}
               disabled={isPublishLoading}
               style={{ position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
-              className={`px-3 py-2 rounded-md border font-medium transition-colors cursor-pointer ${
+              className={`px-4 py-3 md:py-2 rounded-md border font-medium transition-colors cursor-pointer w-full md:w-auto min-h-[44px] md:min-h-auto flex items-center justify-center gap-2 ${
                 isHidden
                   ? 'bg-slate-200 text-slate-700 border-slate-300 hover:bg-slate-300'
                   : 'bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600'
               } disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {isPublishLoading ? (
-                <span className="flex items-center gap-2">
-                  <div className="animate-spin h-3 w-3 border-2 border-current border-t-transparent rounded-full" />
-                  Saving...
-                </span>
+                <>
+                  <div className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full" />
+                  <span>Saving...</span>
+                </>
               ) : (
-                isHidden ? 'Hidden' : 'Published'
+                <>
+                  <span>{isHidden ? '🔒 Hidden' : '✅ Published'}</span>
+                </>
               )}
             </button>
-            <span className="text-xs text-slate-500">Toggle visibility in library</span>
+            <span className={`text-xs text-slate-500 ${isMobile ? 'px-2' : ''}`}>Toggle visibility in library</span>
           </div>
           <div className="mt-2">
             <button
@@ -320,13 +352,13 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
           </div>
 
           {/* FEATURE 3: Key Corrector Section */}
-          <div className="mt-4 grid gap-3 md:grid-cols-2">
+          <div className="mt-4 grid gap-3 grid-cols-1 md:grid-cols-2">
             <label className="block text-xs font-medium text-slate-700">
               <div className="mb-1">Chords are currently written in:</div>
               <select
                 value={currentTextKey}
                 onChange={(e) => setCurrentTextKey(e.target.value)}
-                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2 text-sm text-white outline-none focus:border-blue-400"
+                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2.5 md:py-2 text-sm text-slate-800 outline-none focus:border-blue-400 min-h-[44px] md:min-h-auto"
               >
                 <option value="C">C</option>
                 <option value="C#">C#</option>
@@ -363,7 +395,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
 
                   debouncedAutoSave({ chords: corrected });
                 }}
-                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2 text-sm text-white outline-none focus:border-blue-400 font-semibold"
+                className="w-full rounded-lg border border-slate-700/30 bg-slate-900/10 px-3 py-2.5 md:py-2 text-sm text-slate-800 outline-none focus:border-blue-400 font-semibold min-h-[44px] md:min-h-auto"
               >
                 <option value="C">C</option>
                 <option value="C#">C#</option>
@@ -386,9 +418,8 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             </label>
           </div>
 
-          {/* FEATURE 2: Fixed layout with consistent heights */}
-
-          <div className="mt-4 grid gap-4 xl:grid-cols-2">
+          {/* FEATURE 2: Fixed layout with consistent heights - Responsive */}
+          <div className="mt-4 grid gap-4 grid-cols-1 lg:grid-cols-2">
             <label className="block text-sm font-medium text-slate-700">
               <div className="mb-1">Raw database chords</div>
               <textarea
@@ -397,15 +428,15 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                   setChordsText(e.target.value);
                   debouncedAutoSave({ chords: e.target.value });
                 }}
-                rows={20}
+                rows={isMobile ? 12 : 20}
                 spellCheck={false}
-                className="w-full h-[500px] resize-none rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none focus:border-blue-400 overflow-auto"
+                className={`w-full resize-none rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none focus:border-blue-400 overflow-auto min-h-[44px] ${isMobile ? 'h-[300px]' : 'h-[500px]'}`}
               />
             </label>
 
             <div className="block text-sm font-medium text-slate-700">
               <div className="mb-1">Live user preview</div>
-              <div className="h-[500px] rounded-lg border border-slate-200 bg-slate-50 p-3 overflow-auto">
+              <div className={`rounded-lg border border-slate-200 bg-slate-50 p-3 overflow-auto ${isMobile ? 'h-[300px]' : 'h-[500px]'}`}>
                 {previewLines.length === 0 ? (
                   <div className="rounded-lg border border-dashed border-slate-200 p-6 text-center text-sm text-slate-400">
                     Preview will appear here as you type the raw chord text.

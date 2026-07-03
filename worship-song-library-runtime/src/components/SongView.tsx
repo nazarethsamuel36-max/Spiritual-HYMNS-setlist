@@ -522,20 +522,19 @@ export function SongView() {
         onPointerMove={isAdminAuthenticated ? undefined : handlePointerMove}
         onPointerUp={isAdminAuthenticated ? undefined : handlePointerUp}
         onPointerCancel={isAdminAuthenticated ? undefined : handlePointerUp}
-        style={{
-          transform: swipeOffset !== 0 ? `translateX(${swipeOffset * 0.3}px)` : undefined,
-          transition: swipeOffset === 0 ? 'transform 0.2s ease-out' : 'none',
-          touchAction: isAdminAuthenticated ? 'auto' : 'pan-y',
-        }}
-        className={`flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain ${isAdminAuthenticated ? '' : 'select-none'}`}
-      >
+      <div className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain" style={{ touchAction: 'auto' }}>
         <div className="max-w-4xl mx-auto w-full min-h-full">
           {isAdminAuthenticated ? (
             (() => {
               console.log('📦 Parent component rendering EditorMode');
               console.log('🎵 Song ID:', song.id);
               console.log('🎵 Song is_active:', song.is_active);
-              return <EditorMode song={{ ...song, sections: displaySections }} />;
+              return (
+                <EditorMode 
+                  song={{ ...song, sections: displaySections }} 
+                  onBackClick={() => setReaderMode('lyrics')}
+                />
+              );
             })()
           ) : readerMode === 'lyrics' ? (
             <div className="text-slate-800 leading-relaxed font-medium">

@@ -28,6 +28,7 @@ export function ReaderHeader({
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
   const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
+  const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
 
   // Dropdown states
   const [isMoreOpen, setIsMoreOpen] = useState(false);
@@ -154,15 +155,17 @@ export function ReaderHeader({
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                           </svg>
                         </button>
-                        <button
-                          onClick={() => {
-                            onModeChange('edit');
-                            setIsMoreOpen(false);
-                          }}
-                          className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                        >
-                          Edit Overlay
-                        </button>
+                        {isAdminAuthenticated && (
+                          <button
+                            onClick={() => {
+                              onModeChange('edit');
+                              setIsMoreOpen(false);
+                            }}
+                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-amber-600 transition-colors border-l-2 border-amber-600"
+                          >
+                            ✏️ Edit Song
+                          </button>
+                        )}
                         <button
                           onClick={() => setMoreTab('details')}
                           className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
