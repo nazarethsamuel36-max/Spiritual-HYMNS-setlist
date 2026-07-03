@@ -37,6 +37,8 @@ function parseLineMarkup(text: string): { text: string; chords: Chord[] } {
 }
 
 export function EditorMode({ song }: EditorModeProps) {
+  console.log('🔍 EditorMode loaded');
+  console.log('🔍 Song:', song);
   const setActiveArrangementId = useWorkflowStore(s => s.setActiveArrangementId);
   const setReaderMode = useWorkflowStore(s => s.setReaderMode);
   const [sections, setSections] = useState<Section[]>(song.sections);

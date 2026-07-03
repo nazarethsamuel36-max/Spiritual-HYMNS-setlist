@@ -189,7 +189,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   console.log('🔍 isPublishLoading state:', isPublishLoading);
 
   return (
-    <div className="w-full flex flex-col bg-white min-h-screen overflow-y-auto">
+    <div className="w-full flex flex-col bg-white min-h-0">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
