@@ -62,7 +62,7 @@ export function AdminLyricsEditor({ song, onSongUpdate }: AdminLyricsEditorProps
   };
 
   return (
-    <div className="flex flex-col h-full overflow-hidden">
+    <div className="flex flex-col flex-1">
       <div className="flex-1 overflow-y-auto pr-4 -mr-4">
         <div className="space-y-6">
           {song.sections.map((section) => (

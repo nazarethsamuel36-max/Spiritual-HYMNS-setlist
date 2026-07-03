@@ -51,21 +51,18 @@ body {
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  /* CRITICAL: Prevent body scroll on mobile */
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-/* App Shell — viewport-locked, never scrolls */
+/* App Shell — flexible viewport container */
 .app-shell {
-  height: 100vh;
-  height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
   width: 100vw;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: var(--font-sans);
   background-color: #F8FAFC;
 }
@@ -133,12 +130,12 @@ body {
 /* ═══ READER PANE ═══ */
 .reader-pane {
   flex: 1;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
@@ -162,6 +159,26 @@ body {
   font-size: 0.65rem;
 }
 
+/* Normal scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -180,9 +197,10 @@ body {
    ═══════════════════════════════════════════════════ */
 
 #root {
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* ═══════════════════════════════════════════════════

@@ -106,7 +106,7 @@ export function AdminChordEditor({ song, onSongUpdate }: AdminChordEditorProps) 
   };
 
   return (
-    <div className="flex flex-col h-full overflow-hidden">
+    <div className="flex flex-col flex-1">
       <div className="flex-1 overflow-y-auto">
         <div className="space-y-6">
           {song.sections.map((section) => (

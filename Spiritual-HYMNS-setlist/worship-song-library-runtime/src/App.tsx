@@ -257,7 +257,7 @@ function App() {
       {showReader && (
         <div className="reader-pane">
           {hasActiveSong ? (
-            <div className="flex-1 flex flex-col h-full w-full overflow-hidden animate-in fade-in zoom-in-95 duration-500">
+            <div className="flex-1 flex flex-col min-h-screen w-full animate-in fade-in zoom-in-95 duration-500">
               {reader.type === 'song' && <SongView />}
               {(reader.type === 'marker' || reader.type === 'note') && (
                 <ReaderItemView

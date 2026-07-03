@@ -9,7 +9,7 @@ import { AdminSongEditor } from './AdminSongEditor';
 
 export function AdminEditorDemo() {
   return (
-    <div className="h-screen w-screen">
+    <div className="min-h-screen min-w-full">
       <AdminSongEditor
         onClose={() => {
           console.log('Editor closed');

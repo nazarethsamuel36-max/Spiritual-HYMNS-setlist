@@ -94,7 +94,7 @@ export function AdminSongEditor({ initialSong, onClose }: AdminSongEditorProps) 
   };
 
   return (
-    <div className="flex flex-col h-screen bg-white dark:bg-slate-950">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-slate-950">
       {/* Header */}
       <AdminEditorHeader
         title={song.title}
@@ -107,7 +107,7 @@ export function AdminSongEditor({ initialSong, onClose }: AdminSongEditorProps) 
       <AdminEditorModeToggle currentMode={mode} onModeChange={setMode} />
 
       {/* Main Editor Area - Split view on desktop, stacked on mobile */}
-      <div className="flex-1 overflow-hidden flex flex-col lg:flex-row gap-4 p-4 lg:p-6">
+      <div className="flex-1 flex flex-col lg:flex-row gap-4 p-4 lg:p-6">
         {/* Editor Pane */}
         <div className="flex-1 flex flex-col min-h-0 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-700 p-4">
           {mode === 'chords' ? (
