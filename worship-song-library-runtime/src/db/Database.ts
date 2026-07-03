@@ -11,6 +11,7 @@ export type SongIndex = {
   hashtags?: string[];
   searchTokens: string;
   romanTitle?: string;
+  isPublished?: boolean;
 }
 
 export type SongDetail = {
@@ -28,6 +29,7 @@ export type SongDetail = {
   sections: Section[];
   chords?: string; // Raw chords text with markers like [G]
   lyrics?: string; // Plain lyrics text without chords
+  isPublished?: boolean; // Publication status for admin control
 }
 
 export type Section = {

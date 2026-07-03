@@ -1,13 +1,10 @@
-import { useState } from 'react';
 import { db, fullSystemReset } from '../db/Database';
-import { SyncService } from '../services/SyncService';
+// 🔥 BURN THE CACHE: SyncService disabled
+// import { SyncService } from '../services/SyncService';
 import { useLiveQuery } from 'dexie-react-hooks';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
-  const [resetting, setResetting] = useState(false);
-  const [syncing, setSyncing] = useState(false);
-  const [downloading, setDownloading] = useState(false);
-  const [progress, setProgress] = useState({ current: 0, total: 0 });
+  // 🔥 BURN THE CACHE: All sync/download state removed - online only
 
   const stats = useLiveQuery(async () => {
     const songCount = await db.songIndex.count();
@@ -16,31 +13,13 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   }, []);
 
   const handleDownloadAll = async () => {
-    setDownloading(true);
-    try {
-      await SyncService.downloadAllSongs((current, total) => {
-        setProgress({ current, total });
-      });
-      alert('All songs have been downloaded for offline use!');
-    } catch (err) {
-      alert('Download failed: ' + err);
-    } finally {
-      setDownloading(false);
-    }
+    // 🔥 BURN THE CACHE: Download disabled - online only
+    alert('Offline downloading is disabled. The app now requires an internet connection.');
   };
 
   const handleResetCache = async () => {
-    if (!confirm('This will clear your local song cache and search index. Setlists will be preserved. Proceed?')) return;
-    setResetting(true);
-    try {
-      await db.resetCache();
-      await SyncService.sync(true);
-      alert('Cache successfully rebuilt!');
-    } catch (err) {
-      alert('Failed to reset cache: ' + err);
-    } finally {
-      setResetting(false);
-    }
+    // 🔥 BURN THE CACHE: Cache reset disabled - no offline cache
+    alert('Cache reset is disabled. The app no longer uses offline caching.');
   };
 
   const handleFullReset = async () => {
@@ -49,15 +28,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   };
 
   const handleForceSync = async () => {
-    setSyncing(true);
-    try {
-      await SyncService.sync(true);
-      alert('Sync completed!');
-    } catch (err) {
-      alert('Sync failed: ' + err);
-    } finally {
-      setSyncing(false);
-    }
+    // 🔥 BURN THE CACHE: Sync disabled - online only
+    alert('Sync is disabled. The app now requires a direct internet connection.');
   };
 
   return (
@@ -91,54 +63,42 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             
             <button 
               onClick={handleDownloadAll}
-              disabled={downloading}
-              className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group"
+              disabled
+              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
             >
               <div className="text-left">
-                <div className="font-bold text-slate-700 group-hover:text-blue-600">Download Entire Library</div>
-                <div className="text-xs text-slate-400">
-                  {downloading 
-                    ? `Downloading: ${progress.current} / ${progress.total}` 
-                    : 'Download every song for 100% offline security'}
-                </div>
+                <div className="font-bold text-slate-500">Download Entire Library</div>
+                <div className="text-xs text-slate-400">⚠️ Offline downloading disabled - requires internet connection</div>
               </div>
-              {downloading ? (
-                 <div className="animate-spin h-5 w-5 border-2 border-blue-500 border-t-transparent rounded-full"></div>
-              ) : (
-                <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              )}
+              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
             </button>
 
             <button 
               onClick={handleForceSync}
-              disabled={syncing}
-              className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-[var(--color-brand)] hover:bg-[var(--color-brand-soft)] transition-all group"
+              disabled
+              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
             >
               <div className="text-left">
-                <div className="font-bold text-slate-700 group-hover:text-[var(--color-brand)]">Force Update</div>
-                <div className="text-xs text-slate-400">Fetch latest song database from server</div>
+                <div className="font-bold text-slate-500">Force Update</div>
+                <div className="text-xs text-slate-400">⚠️ Sync disabled - app is online-only</div>
               </div>
-              {syncing ? (
-                 <div className="animate-spin h-5 w-5 border-2 border-[var(--color-brand)] border-t-transparent rounded-full"></div>
-              ) : (
-                <svg className="w-5 h-5 text-slate-300 group-hover:text-[var(--color-brand)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-              )}
+              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
             </button>
 
             <button 
               onClick={handleResetCache}
-              disabled={resetting}
-              className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-orange-400 hover:bg-orange-50 transition-all group"
+              disabled
+              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
             >
               <div className="text-left">
-                <div className="font-bold text-slate-700 group-hover:text-orange-600">Rebuild Local Cache</div>
-                <div className="text-xs text-slate-400">Clear and refetch all song metadata</div>
+                <div className="font-bold text-slate-500">Rebuild Local Cache</div>
+                <div className="text-xs text-slate-400">⚠️ Caching disabled - online only</div>
               </div>
-              <svg className="w-5 h-5 text-slate-300 group-hover:text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
               </svg>
             </button>

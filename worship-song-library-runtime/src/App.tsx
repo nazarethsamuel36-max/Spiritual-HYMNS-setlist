@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
-import { SyncService } from './services/SyncService';
+import { useEffect, useRef } from 'react';
+// 🔥 BURN THE CACHE: SyncService disabled
+// import { SyncService } from './services/SyncService';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { ReaderItemView } from './components/reader/ReaderItemView';
@@ -11,30 +12,26 @@ import { ContextRail } from './components/ContextRail';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
-import { useState } from 'react';
 import { db } from './db/Database';
-import { useRegisterSW } from 'virtual:pwa-register/react';
 
 function App() {
-  const [syncing, setSyncing] = useState(true);
   const isMobile = useIsMobile();
-
-  const {
-    needRefresh: [needRefresh, setNeedRefresh],
-    updateServiceWorker,
-  } = useRegisterSW();
 
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
   const mobileActivePane = useWorkflowStore((s) => s.mobileActivePane);
   const showSettings = useWorkflowStore((s) => s.showSettings);
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
+  const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
+  const setAdminAuthenticated = useWorkflowStore((s) => s.setAdminAuthenticated);
 
   const openSong = useWorkflowStore((s) => s.openSong);
   const openSetlist = useWorkflowStore((s) => s.openSetlist);
   const setSidebarPanel = useWorkflowStore((s) => s.setSidebarPanel);
   const setShowSettings = useWorkflowStore((s) => s.setShowSettings);
   const closeReader = useWorkflowStore((s) => s.closeReader);
+  const titleTapCountRef = useRef(0);
+  const titleTapTimerRef = useRef<number | null>(null);
 
   // Determine which sidebar tab is active
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
@@ -45,9 +42,10 @@ function App() {
   const showReader = !isMobile || mobileActivePane === 'reader';
   const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
 
-  // Initialize: sync + handle shared setlist URL + popstate for mobile back
+  // Initialize: handle shared setlist URL + popstate for mobile back (sync disabled)
   useEffect(() => {
     const init = async () => {
+      // 🔥 BURN THE CACHE: Removed SyncService.sync() call
       const params = new URLSearchParams(window.location.search);
       
       // Handle import_song
@@ -119,15 +117,7 @@ function App() {
         openSong(parseInt(songMatch[1], 10), 'library');
       }
 
-      await SyncService.sync();
-      setSyncing(false);
-
-      // Kick off background download of all song details to ensure 100% offline access
-      SyncService.downloadAllSongs((current, total) => {
-        console.log(`Background caching progress: ${current}/${total}`);
-      }).catch(err => {
-        console.error('Background song cache prefetch failed:', err);
-      });
+      // 🔥 BURN THE CACHE: Removed all SyncService calls - online only
     };
     init();
   }, []);
@@ -146,6 +136,34 @@ function App() {
       history.replaceState(null, '', '/');
     }
   }, [reader, sidebar]);
+
+  const handleTitleTap = () => {
+    titleTapCountRef.current += 1;
+
+    if (titleTapTimerRef.current) {
+      window.clearTimeout(titleTapTimerRef.current);
+    }
+
+    if (titleTapCountRef.current >= 5) {
+      const username = window.prompt('Admin username')?.trim();
+      const password = window.prompt('Admin password')?.trim();
+      if (username === 'church' && password === 'shalom') {
+        setAdminAuthenticated(true);
+        alert('Admin unlocked');
+      } else {
+        alert('Invalid admin credentials');
+      }
+      titleTapCountRef.current = 0;
+      if (titleTapTimerRef.current) {
+        window.clearTimeout(titleTapTimerRef.current);
+      }
+      return;
+    }
+
+    titleTapTimerRef.current = window.setTimeout(() => {
+      titleTapCountRef.current = 0;
+    }, 700);
+  };
 
   // Mobile back button support
   useEffect(() => {
@@ -178,15 +196,38 @@ function App() {
           <header className="sidebar-header">
             {/* Desktop: Show title + tabs. Mobile: Show only status dot */}
             <div className="flex justify-between items-center w-full">
-              <h1 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic">BBF Song book</h1>
+              <button
+                type="button"
+                onClick={handleTitleTap}
+                className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic"
+              >
+                BBF Song book
+              </button>
               {/* Mobile: BBF Song book compact title */}
-              <span className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none">BBF Song book</span>
+              <button
+                type="button"
+                onClick={handleTitleTap}
+                className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none"
+              >
+                BBF Song book
+              </button>
+              {isAdminAuthenticated && (
+                <button
+                  type="button"
+                  onClick={() => setAdminAuthenticated(false)}
+                  className="mr-2 text-base transition-transform hover:scale-110"
+                  title="Exit admin"
+                  aria-label="Exit admin"
+                >
+                  🔑
+                </button>
+              )}
               <button
                 onClick={() => setShowSettings(true)}
                 className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all"
                 aria-label="Settings"
               >
-                <div className={`w-2.5 h-2.5 rounded-full ${syncing ? 'bg-amber-400 animate-pulse' : 'bg-emerald-400'}`} />
+                <div className='w-2.5 h-2.5 rounded-full bg-emerald-400' />
               </button>
             </div>
 
@@ -326,30 +367,6 @@ function App() {
 
       {/* Global Overlays */}
       {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
-
-      {/* PWA Update Banner */}
-      {needRefresh && (
-        <div className="fixed bottom-20 left-4 right-4 md:bottom-6 md:right-6 md:left-auto bg-slate-900/95 backdrop-blur-md text-white p-4 rounded-xl shadow-2xl z-50 flex items-center justify-between border border-slate-700/50 animate-in fade-in slide-in-from-bottom-5 duration-300 max-w-sm">
-          <div className="flex flex-col pr-4 text-left">
-            <span className="font-semibold text-xs text-white">Update Available</span>
-            <span className="text-[10px] text-slate-300 mt-0.5">A new version is ready. Click to apply updates.</span>
-          </div>
-          <div className="flex items-center space-x-2 flex-shrink-0">
-            <button
-              onClick={() => updateServiceWorker(true)}
-              className="bg-white text-slate-900 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-wider hover:bg-slate-100 transition-colors shadow"
-            >
-              Update
-            </button>
-            <button
-              onClick={() => setNeedRefresh(false)}
-              className="text-slate-400 hover:text-white px-2 py-1.5 rounded text-[10px] font-semibold"
-            >
-              Dismiss
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

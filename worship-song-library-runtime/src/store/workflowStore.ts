@@ -30,7 +30,9 @@ interface WorkflowStore {
   showSettings: boolean;
   showContextRail: boolean;
   libraryLanguage: string;
+  isAdminAuthenticated: boolean;
   setLibraryLanguage: (lang: string) => void;
+  setAdminAuthenticated: (value: boolean) => void;
 
   openSong: (id: number, source: 'library' | 'setlist' | 'shared', transpose?: number, setlistId?: string, itemId?: string) => void;
   openMarker: (label: string, setlistId: string, itemId: string) => void;
@@ -54,11 +56,13 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   showSettings: false,
   showContextRail: false,
   libraryLanguage: 'All',
+  isAdminAuthenticated: false,
   setLibraryLanguage: (lang) => set({ libraryLanguage: lang }),
+  setAdminAuthenticated: (value) => set({ isAdminAuthenticated: value }),
 
   openSong: (id, source, transpose = 0, setlistId, itemId) => set({
     reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
-    readerMode: getSavedReaderMode(),
+    readerMode: 'edit',
     mobileActivePane: 'reader',
   }),
 

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, type SongDetail, normalizeSongIndex } from '../db/Database';
-// import { getSong } from '../services/CacheService'; // TEMPORARILY DISABLED FOR DEBUGGING
+import { db, type SongDetail } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
@@ -127,6 +126,7 @@ function ChordProView({ chords, transpose }: ChordProViewProps) {
 export function SongView() {
   const reader = useWorkflowStore((s) => s.reader);
   const readerMode = useWorkflowStore((s) => s.readerMode);
+  const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const adjustTranspose = useWorkflowStore((s) => s.adjustTranspose);
   const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
   const openSong = useWorkflowStore((s) => s.openSong);
@@ -144,6 +144,7 @@ export function SongView() {
 
   const [song, setSong] = useState<SongDetail | null>(null);
   const [loading, setLoading] = useState(true);
+  const [librarySongs, setLibrarySongs] = useState<Array<{ id: number; songNumber: number; title: string; language?: string | null }> | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
   // viewMode is now controlled by readerMode from store
@@ -160,14 +161,48 @@ export function SongView() {
     }
   }, []);
 
-  const librarySongs = useLiveQuery(async () => {
-    if (isSetlistContext) return null;
-    let allSongs = (await db.songIndex.orderBy('songNumber').toArray()).map(normalizeSongIndex);
-    if (libraryLanguage !== 'All') {
-      allSongs = allSongs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
+  useEffect(() => {
+    if (isSetlistContext) {
+      setLibrarySongs(null);
+      return;
     }
-    allSongs.sort((a, b) => a.songNumber - b.songNumber);
-    return allSongs;
+
+    const loadLibrarySongs = async () => {
+      console.log('📚 Loading library songs DIRECTLY from Supabase (cache disabled)...');
+      try {
+        let query = supabase
+          .from('songs')
+          .select('id, song_number, title, language')
+          .eq('is_active', true)
+          .order('song_number', { ascending: true });
+
+        const { data, error } = await query;
+
+        if (error) {
+          throw error;
+        }
+
+        let allSongs = (data ?? []).map((row: any) => ({
+          id: row.id,
+          songNumber: Number(row.song_number ?? 0),
+          title: row.title ?? 'Untitled',
+          language: row.language ?? 'English',
+        }));
+
+        if (libraryLanguage !== 'All') {
+          allSongs = allSongs.filter((s) => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
+        }
+
+        allSongs.sort((a, b) => a.songNumber - b.songNumber);
+        setLibrarySongs(allSongs);
+        console.log('📚 Library songs loaded from Supabase:', allSongs.length);
+      } catch (err) {
+        console.error('❌ Failed to load library songs from Supabase:', err);
+        setLibrarySongs([]);
+      }
+    };
+
+    loadLibrarySongs();
   }, [isSetlistContext, libraryLanguage]);
 
   // Swipe indicator state
@@ -352,12 +387,12 @@ export function SongView() {
       setError(null);
 
       try {
-        console.log('Loading song DIRECTLY from Supabase (cache disabled)...');
-        // TEMPORARY: Direct Supabase fetch to bypass IndexedDB cache
+        console.log('🎵 Loading song DIRECTLY from Supabase (cache disabled)...');
         const { data, error } = await supabase
           .from('songs')
           .select('*')
           .eq('id', songId)
+          .eq('is_active', true)
           .single();
 
         if (error) {
@@ -366,6 +401,12 @@ export function SongView() {
 
         if (!data) {
           throw new Error('Song data not found');
+        }
+
+        // Check if song is published (unless user is admin)
+        if (!isAdminAuthenticated && data.is_published === false) {
+          console.log('🚫 User attempted to access unpublished song');
+          throw new Error('This song is not yet published');
         }
 
         // Transform Supabase data to SongDetail format
@@ -383,11 +424,12 @@ export function SongView() {
           hashtags: [],
           sections: parseLyricsToSections(data.lyrics || ''),
           chords: data.chords || undefined,
-          lyrics: data.lyrics || undefined
+          lyrics: data.lyrics || undefined,
+          isPublished: data.is_published ?? true
         };
 
-        console.log('Song Data from Supabase:', songDetail);
-        console.log('Lyrics present:', !!songDetail.lyrics);
+        console.log('🎵 Song Data from Supabase:', songDetail);
+        console.log('🎵 Lyrics present:', !!songDetail.lyrics);
         console.log('Lyrics length:', songDetail.lyrics?.length || 0);
         console.log('Sections count:', songDetail.sections?.length || 0);
         console.log('Chords present:', !!songDetail.chords);
@@ -491,7 +533,7 @@ export function SongView() {
         className="flex-1 overflow-y-auto w-full px-4 md:px-8 pt-8 pb-40 overscroll-contain select-none"
       >
         <div className="max-w-4xl mx-auto w-full min-h-full">
-          {readerMode === 'edit' ? (
+          {isAdminAuthenticated ? (
             <EditorMode song={{ ...song, sections: displaySections }} />
           ) : readerMode === 'lyrics' ? (
             <div className="text-slate-800 leading-relaxed font-medium">
