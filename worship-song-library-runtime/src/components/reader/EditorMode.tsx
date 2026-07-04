@@ -213,7 +213,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                 setCurrentTextKey(newKey);
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
-              className="w-20 h-full px-2 rounded-lg border border-slate-300 bg-white text-sm font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-12 h-12 px-0 rounded-lg border border-slate-300 bg-white text-base font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
             >
               <option value="C">C</option>
               <option value="D">D</option>
@@ -258,7 +258,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               <select
                 value={currentTextKey}
                 onChange={(e) => setCurrentTextKey(e.target.value)}
-                className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-12 h-12 px-0 rounded-lg border border-slate-300 text-base font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
               >
                 <option value="C">C</option>
                 <option value="C#">C#</option>
@@ -290,7 +290,7 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                   setCurrentTextKey(newTarget);
                   debouncedAutoSave({ chords: corrected });
                 }}
-                className="w-20 px-2 py-1.5 rounded border border-slate-300 text-sm font-bold bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-12 h-12 px-0 rounded-lg border border-slate-300 text-base font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
               >
                 <option value="C">C</option>
                 <option value="C#">C#</option>
