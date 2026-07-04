@@ -1,16 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then((registrations) => {
-    registrations.forEach((registration) => {
-      registration.unregister();
-      console.log('🚨 Service Worker Unregistered');
-    });
-  });
-}
+registerSW({
+  onNeedRefresh() {
+    console.log('🔄 New app update available. Refresh recommended.');
+  },
+  onOfflineReady() {
+    console.log('✅ App is ready to work offline.');
+  }
+})
 
 console.log('🚀 App starting...');
 console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL);
