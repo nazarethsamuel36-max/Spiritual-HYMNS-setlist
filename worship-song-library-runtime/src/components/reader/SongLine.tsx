@@ -20,7 +20,7 @@ export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus
   const hasChords = !!(line.chords && line.chords.length > 0);
 
   // Reduced padding because chords are rendered inline above syllables
-  const paddingClass = mode === 'lyrics' ? 'pt-0' : (hasChords ? 'pt-0.5' : 'pt-0');
+  const paddingClass = mode === 'lyrics' ? 'pt-0' : (hasChords ? 'pt-0.25' : 'pt-0');
   const fontClass = 'font-normal';
   const gapClass = 'gap-y-0';
 
