@@ -228,16 +228,28 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               type="button"
               onClick={async () => {
                 const newIsActive = !isHidden;
+                
+                // 1. Optimistic update - update UI immediately
+                setIsHidden(!newIsActive);
                 setIsPublishLoading(true);
+                
                 try {
+                  // 2. Update IndexedDB immediately (optional but recommended)
+                  // await db.songs.update(song.id, { is_active: newIsActive });
+                  
+                  // 3. Update Supabase (this will trigger realtime for other users)
                   const { error } = await supabase
                     .from('songs')
                     .update({ is_active: newIsActive })
                     .eq('id', song.id);
+                  
                   if (error) throw error;
-                  setIsHidden(!newIsActive);
+                  console.log('✅ Song updated in database');
                 } catch (err) {
-                  console.error('Failed to toggle', err);
+                  console.error('❌ Failed to update:', err);
+                  // Revert optimistic update on error
+                  setIsHidden(!newIsActive);
+                  alert('Failed to update song: ' + (err as Error).message);
                 } finally {
                   setIsPublishLoading(false);
                 }

@@ -11,7 +11,9 @@ import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
+import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetlistService } from './services/SetlistService';
+import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db } from './db/Database';
@@ -43,6 +45,26 @@ function App() {
   const showSidebar = !isMobile || mobileActivePane === 'sidebar';
   const showReader = !isMobile || mobileActivePane === 'reader';
   const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
+
+  // Initialize Realtime Service on app start
+  useEffect(() => {
+    RealtimeService.initialize();
+
+    // Listen for song updates and dispatch events
+    const handleSongUpdate = (event: Event) => {
+      const customEvent = event as CustomEvent;
+      console.log('🔄 Song update event received:', customEvent.detail);
+      // Dispatch a store event to refresh the UI if needed
+      window.dispatchEvent(new CustomEvent('app-data-changed', { detail: customEvent.detail }));
+    };
+
+    window.addEventListener('song-updated', handleSongUpdate);
+
+    return () => {
+      window.removeEventListener('song-updated', handleSongUpdate);
+      RealtimeService.destroy();
+    };
+  }, []);
 
   // Initialize: handle shared setlist URL + popstate for mobile back (sync disabled)
   useEffect(() => {
@@ -374,6 +396,9 @@ function App() {
       
       {/* PWA Install Prompt */}
       <InstallPrompt />
+
+      {/* Connection Status Indicator */}
+      <ConnectionStatus />
     </div>
   );
 }
