@@ -8,9 +8,10 @@ interface SyncProgressProps {
   percentage: number;
   status: SyncStatus;
   message: string;
+  onRetry?: () => void;
 }
 
-export function SyncProgress({ currentMB, totalMB, percentage, status, message }: SyncProgressProps) {
+export function SyncProgress({ currentMB, totalMB, percentage, status, message, onRetry }: SyncProgressProps) {
   const isVisible = status !== 'idle' && status !== 'complete';
 
   if (!isVisible) {
@@ -70,7 +71,7 @@ export function SyncProgress({ currentMB, totalMB, percentage, status, message }
 
         {status === 'error' && (
           <button
-            onClick={() => window.location.reload()}
+            onClick={() => onRetry?.()}
             className="mt-4 w-full rounded-lg bg-blue-600 px-4 py-3 font-bold text-white transition-colors hover:bg-blue-700"
           >
             Try Again

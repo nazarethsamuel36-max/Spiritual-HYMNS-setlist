@@ -53,6 +53,15 @@ export function useDownloadProgress() {
   };
 
   const downloadAllSongs = async () => {
+    if (!navigator.onLine) {
+      setStats(prev => ({
+        ...prev,
+        status: 'error',
+        message: 'You appear to be offline. Connect to the internet and try again.',
+      }));
+      return null;
+    }
+
     setStats(prev => ({ ...prev, status: 'downloading', message: 'Downloading app data...' }));
 
     const { totalSongs, estimatedBytes } = await estimateTotalSize();
