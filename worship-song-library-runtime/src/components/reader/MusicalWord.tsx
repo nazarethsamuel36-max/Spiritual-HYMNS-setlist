@@ -10,7 +10,7 @@ interface MusicalWordProps {
   isChorus?: boolean;
 }
 
-export const MusicalWord = memo(function MusicalWord({ word, transpose, mode, isChorus }: MusicalWordProps) {
+export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: MusicalWordProps) {
   const transposedChords = word.chords.map(c => ({
     ...c,
     name: ChordTransposer.transposeChord(c.chord, transpose, EnharmonicPref.AUTO)
@@ -25,7 +25,8 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode, is
     const end = splitPoints[i + 1];
     segments.push({
       start,
-      text: word.text.slice(start, end).replace(/ /g, '\u00A0'),
+      // allow normal spaces so lines can wrap naturally
+      text: word.text.slice(start, end),
       chords: transposedChords.filter(c => c.position === start)
     });
   }
@@ -41,25 +42,22 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode, is
   }
 
   return (
-    <div className="inline-flex relative align-bottom whitespace-nowrap">
+    <div className="inline-flex align-bottom whitespace-pre-wrap leading-none">
       {segments.map((segment, idx) => (
-        <span key={idx} className="relative inline-flex flex-col justify-end">
-          {/* Chord Layer */}
+        <span key={idx} className="inline-flex flex-col items-center" style={{ marginRight: '0.25em', gap: '0.125em' }}>
+          {/* Chord Layer (above text) */}
           {mode === 'chords' && segment.chords.map((chord, i) => (
             <span
               key={i}
-              className="absolute bottom-full left-0 font-bold text-[1rem] text-[var(--color-chord)] leading-none mb-1 whitespace-nowrap z-10"
+              className="font-bold text-[18px] text-[var(--color-chord)] leading-[1.2]"
+              style={{ marginBottom: '2px' }}
             >
               {chord.name}
             </span>
           ))}
 
           {/* Lyric Layer */}
-          <span className={`text-[1.25rem] text-[var(--color-text)] leading-[1.4] ${
-            mode === 'lyrics'
-              ? (isChorus ? 'font-semibold italic text-slate-800' : 'font-medium')
-              : 'font-normal'
-          }`}>
+          <span className={`text-[21px] text-[var(--color-text)]`} style={{ lineHeight: '1.6' }}>
             {segment.text}
           </span>
         </span>

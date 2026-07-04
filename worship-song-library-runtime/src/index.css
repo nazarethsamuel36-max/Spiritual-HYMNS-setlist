@@ -235,3 +235,35 @@ body {
     min-height: unset;
   }
 }
+
+/* Reader typography improvements for worship readability */
+.lyrics-text {
+  font-size: 16pt;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.chord-name {
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--color-chord);
+  line-height: 1.2;
+}
+
+.song-title {
+  font-size: 20pt;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.chord-line {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .lyrics-text { font-size: 15pt; }
+  .chord-name { font-size: 13pt; }
+  .song-title { font-size: 18pt; }
+}

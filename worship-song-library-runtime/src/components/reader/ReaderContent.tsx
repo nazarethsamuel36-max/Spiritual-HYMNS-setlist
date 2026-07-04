@@ -18,17 +18,16 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
     );
   }
 
-  const containerSpacing = mode === 'lyrics' ? 'space-y-4' : 'space-y-6';
   const lineSpacing = mode === 'lyrics' ? 'space-y-1' : 'space-y-3';
 
   return (
-    <div className={containerSpacing}>
+    <div className="max-w-3xl mx-auto px-4 py-6">
       {sections.map((section, idx) => {
         const sectionType = section.type?.toLowerCase() || 'other';
         const isChorus = sectionType === 'chorus';
 
         return (
-          <div key={idx} className="relative w-full px-4 md:px-0">
+          <div key={idx} className="relative w-full">
             {idx > 0 && (
               <div className="border-t border-slate-100/80 my-3" />
             )}

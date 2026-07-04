@@ -19,23 +19,14 @@ export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus
   const words = segmentMusicalLine(line.text, line.chords || []);
   const hasChords = !!(line.chords && line.chords.length > 0);
 
-  let paddingClass = 'pt-0.5';
-  let fontClass = 'font-normal';
-  let gapClass = 'gap-y-0.5';
-
-  if (mode !== 'lyrics') {
-    if (hasChords) {
-      paddingClass = 'pt-[1.3rem]';
-      gapClass = 'gap-y-5';
-    } else {
-      paddingClass = 'pt-1';
-      gapClass = 'gap-y-1';
-    }
-  }
+  // Reduced padding because chords are rendered inline above syllables
+  const paddingClass = mode === 'lyrics' ? 'pt-0' : (hasChords ? 'pt-0.5' : 'pt-0');
+  const fontClass = 'font-normal';
+  const gapClass = 'gap-y-0';
 
   return (
     <div className={`relative ${mode === 'lyrics' ? 'pb-0.5' : 'pb-1'} group w-full ${paddingClass} ${fontClass}`}>
-      <div className={`flex flex-wrap items-end relative w-full ${gapClass}`}>
+      <div className={`flex flex-wrap items-baseline relative w-full ${gapClass}`}>
         {words.map((word, wIdx) => (
           <MusicalWord key={wIdx} word={word} transpose={transpose} mode={mode} isChorus={isChorus} />
         ))}
