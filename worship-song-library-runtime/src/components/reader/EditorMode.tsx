@@ -1,20 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
 
 console.log('📍 EDITORMODE FILE LOADED');
-
-// Simple debounce utility
-function debounce<T extends (...args: any[]) => any>(func: T, wait: number): T {
-  let timeout: ReturnType<typeof setTimeout> | null = null;
-  return ((...args: any[]) => {
-    if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(() => {
-      func(...args);
-      timeout = null;
-    }, wait);
-  }) as T;
-}
 
 // ============================================
 // KEY CORRECTOR: Admin tool to fix mismatched metadata keys
@@ -127,9 +115,10 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
   const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
+  const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    console.log('📝 EditorMode mounted with song:', song);
+    console.log('📝 Loading new song into editor:', song.id);
     setTitle(song.title || '');
     setLanguage(song.language || 'English');
     setKeyValue(song.originalKey || songKey || 'C');
@@ -137,7 +126,22 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     setSongNumber(song.songNumber || 0);
     setChordsText(song.chords || '');
     setIsHidden(!song.is_active);
-  }, [song.title, song.language, song.originalKey, song.songNumber, song.chords, song.is_active, songKey]);
+
+    if (saveTimeoutRef.current) {
+      console.log('🛑 Cancelling pending auto-save for song:', song.id);
+      clearTimeout(saveTimeoutRef.current);
+      saveTimeoutRef.current = null;
+    }
+  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, song.is_active, songKey]);
+
+  useEffect(() => {
+    return () => {
+      if (saveTimeoutRef.current) {
+        clearTimeout(saveTimeoutRef.current);
+        saveTimeoutRef.current = null;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     console.log('📝 Editor form changed:', {
@@ -149,15 +153,14 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     });
   }, [title, language, keyValue, songNumber, chordsText]);
 
-  // Auto-save function
-  const autoSave = async (updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+  const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
     try {
-      console.log('💾 Auto-saving:', updates);
+      console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
 
       const { error } = await supabase
         .from('songs')
         .update(updates)
-        .eq('id', song.id);
+        .eq('id', currentSongId);
 
       if (error) {
         console.error('❌ Auto-save failed:', error);
@@ -165,17 +168,23 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
         return;
       }
 
-      console.log('✅ Auto-save successful');
+      console.log(`✅ Auto-save successful for song ${currentSongId}`);
     } catch (err) {
       console.error('❌ Auto-save exception:', err);
       alert('Failed to save changes');
     }
   };
 
-  // NOTE: manual Key Corrector button removed. Instant transpose runs when metadata Key changes.
+  const debouncedAutoSave = (updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+    }
 
-  // Debounced auto-save (1.5 second delay)
-  const debouncedAutoSave = useMemo(() => debounce(autoSave, 1500), []);
+    saveTimeoutRef.current = setTimeout(() => {
+      void performSave(song.id, updates);
+      saveTimeoutRef.current = null;
+    }, 1500);
+  };
 
   const previewLines = useMemo(() => chordsText.split('\n').filter((line) => line.length > 0), [chordsText]);
 

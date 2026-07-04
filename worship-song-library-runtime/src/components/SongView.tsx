@@ -99,15 +99,15 @@ function ChordProView({ chords, transpose }: ChordProViewProps) {
 
         // Skip empty lines
         if (segments.length === 0 || segments.every(s => !s.text.trim())) {
-          return <div key={idx} className="h-4" />;
+          return <div key={idx} className="h-8" />;
         }
 
         return (
-          <div key={idx} className="chord-line" style={{ fontFamily: 'sans-serif', lineHeight: '1.5', marginBottom: '10px' }}>
+          <div key={idx} className="chord-line" style={{ fontFamily: 'sans-serif', lineHeight: '1.5', marginBottom: '16px' }}>
             {segments.map((segment, sIdx) => (
               <span key={sIdx} className="chord-segment" style={{ display: 'inline-block', position: 'relative', whiteSpace: 'pre' }}>
                 {segment.chord && (
-                  <span className="chord-name" style={{ display: 'block', fontWeight: 'bold', color: '#2563eb', fontSize: '0.9em', height: '1.2em', whiteSpace: 'pre' }}>
+                  <span className="chord-name" style={{ display: 'block', fontWeight: 'bold', color: '#2563eb', fontSize: '0.9em', height: '1.2em', marginBottom: '4px', whiteSpace: 'pre' }}>
                     {segment.chord}
                   </span>
                 )}

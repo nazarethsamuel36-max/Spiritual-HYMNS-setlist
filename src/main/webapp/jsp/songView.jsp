@@ -112,7 +112,7 @@
 
         .song-pair {
             display: block;
-            margin-bottom: 0.125rem;
+            margin-bottom: 0.85rem;
         }
 
         .chord-line, .lyrics-line, .lyrics-only-line {
@@ -125,10 +125,11 @@
         .chord-line {
             color: #001264;
             font-weight: bold;
+            margin-bottom: 0.35rem;
         }
 
         .song-stanza-gap {
-            height: 0.85em;
+            height: 1.8em;
         }
 
         .section-label {
