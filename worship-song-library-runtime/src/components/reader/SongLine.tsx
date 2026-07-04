@@ -12,8 +12,8 @@ interface SongLineProps {
 }
 
 export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus }: SongLineProps) {
-  if (mode === 'lyrics' && (!line.text || !line.text.trim())) {
-    return null;
+  if (!line.text || !line.text.trim()) {
+    return <div className="h-4" />;
   }
 
   const words = segmentMusicalLine(line.text, line.chords || []);
