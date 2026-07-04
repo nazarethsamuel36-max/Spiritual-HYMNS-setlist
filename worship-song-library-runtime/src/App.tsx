@@ -19,6 +19,7 @@ import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db } from './db/Database';
 import { useDownloadProgress } from './hooks/useDownloadProgress';
+import { debugDownloadAllSongs } from './utils/debugDownload';
 
 function App() {
   const isMobile = useIsMobile();
@@ -266,6 +267,13 @@ function App() {
                 className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none"
               >
                 BBF Song book
+              </button>
+              <button
+                type="button"
+                onClick={() => void debugDownloadAllSongs()}
+                className="rounded-lg border border-red-500 bg-red-500 px-3 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-sm transition hover:bg-red-600"
+              >
+                Debug Download
               </button>
               {/* Mobile: BBF Song book compact title */}
               <button
