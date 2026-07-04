@@ -28,14 +28,12 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
 
         return (
           <div key={idx} className="relative w-full">
-            {idx > 0 && (
-              <div className="border-t border-slate-100/80 my-2" />
-            )}
-
-            <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3 bg-slate-50/50 rounded-r py-0.5' : ''}`}>
-              {section.lines.map((line, lIdx) => (
-                <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} isChorus={isChorus} />
-              ))}
+            <div className={`${idx > 0 ? 'mt-4' : ''} ${isChorus ? 'mb-3' : 'mb-4'}`}>
+              <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3 bg-slate-50/50 rounded-r py-0.5' : ''}`}>
+                {section.lines.map((line, lIdx) => (
+                  <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} isChorus={isChorus} />
+                ))}
+              </div>
             </div>
           </div>
         );
