@@ -93,29 +93,40 @@ function ChordProView({ chords, transpose }: ChordProViewProps) {
   const lines = chords.split('\n');
 
   return (
-    <div className="space-y-4">
+    <div className="max-w-4xl mx-auto px-4 py-6">
       {lines.map((line, idx) => {
         const segments = parseChordLine(line, transpose);
 
-        // Skip empty lines
         if (segments.length === 0 || segments.every(s => !s.text.trim())) {
-          return <div key={idx} className="h-8" />;
+          return <div key={idx} className="h-2" />;
         }
 
         return (
-          <div key={idx} className="chord-line" style={{ fontFamily: 'sans-serif', lineHeight: '1.5', marginBottom: '16px' }}>
-            {segments.map((segment, sIdx) => (
-              <span key={sIdx} className="chord-segment" style={{ display: 'inline-block', position: 'relative', whiteSpace: 'pre' }}>
-                {segment.chord && (
-                  <span className="chord-name" style={{ display: 'block', fontWeight: 'bold', color: '#2563eb', fontSize: '0.9em', height: '1.2em', marginBottom: '4px', whiteSpace: 'pre' }}>
-                    {segment.chord}
+          <div
+            key={idx}
+            className="mb-1"
+            style={{ lineHeight: '1.4' }}
+          >
+            <div className="flex flex-wrap items-baseline" style={{ gap: '0.5em' }}>
+              {segments.map((segment, sIdx) => (
+                <span key={sIdx} className="inline-flex flex-col flex-shrink-0">
+                  {segment.chord && (
+                    <span
+                      className="font-bold text-blue-600"
+                      style={{ fontSize: '14pt', lineHeight: '1.2', marginBottom: '2px' }}
+                    >
+                      {segment.chord}
+                    </span>
+                  )}
+                  <span
+                    className="text-slate-800"
+                    style={{ fontSize: '16pt', lineHeight: '1.6' }}
+                  >
+                    {segment.text}
                   </span>
-                )}
-                <span className="chord-text" style={{ display: 'block', whiteSpace: 'pre' }}>
-                  {segment.text}
                 </span>
-              </span>
-            ))}
+              ))}
+            </div>
           </div>
         );
       })}
