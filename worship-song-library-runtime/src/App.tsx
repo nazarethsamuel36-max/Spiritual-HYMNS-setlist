@@ -16,7 +16,8 @@ import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
-import { db } from './db/Database';
+import { db, normalizeSongIndex } from './db/Database';
+import { supabase } from './lib/supabaseClient';
 
 function App() {
   const isMobile = useIsMobile();
@@ -48,7 +49,67 @@ function App() {
 
   // Initialize Realtime Service on app start
   useEffect(() => {
-    RealtimeService.initialize();
+    const initializeAppData = async () => {
+      try {
+        const cachedCount = await db.songs.count();
+
+        if (cachedCount === 0 && navigator.onLine) {
+          console.log('🔄 Cache empty. Auto-loading songs into IndexedDB...');
+          const { data, error } = await supabase
+            .from('songs')
+            .select('*')
+            .eq('is_active', true)
+            .order('song_number', { ascending: true });
+
+          if (!error && data && data.length > 0) {
+            const songDetails = data.map((row: any) => ({
+              id: row.id,
+              songNumber: row.song_number,
+              title: row.title,
+              artist: row.artist,
+              composer: row.composer,
+              language: row.language,
+              originalKey: row.original_key,
+              capo: row.capo,
+              bpm: row.bpm,
+              timeSignature: row.time_signature,
+              hashtags: [],
+              sections: [],
+              chords: row.chords || undefined,
+              lyrics: row.lyrics || undefined,
+              isPublished: row.is_published ?? true,
+              is_active: row.is_active ?? true,
+            }));
+
+            const songIndexes = data.map((row: any) => normalizeSongIndex({
+              id: row.id,
+              songNumber: row.song_number,
+              title: row.title,
+              artist: row.artist,
+              language: row.language,
+              originalKey: row.original_key,
+              hashtags: [],
+              searchTokens: `${row.title || ''} ${row.artist || ''}`.toLowerCase(),
+              romanTitle: row.title,
+              isPublished: row.is_published ?? true,
+            }));
+
+            await db.transaction('rw', db.songs, db.songIndex, async () => {
+              await db.songs.bulkPut(songDetails);
+              await db.songIndex.bulkPut(songIndexes);
+            });
+
+            console.log(`✅ Auto-loaded ${songDetails.length} songs into IndexedDB`);
+          }
+        }
+      } catch (err) {
+        console.error('⚠️ Failed to auto-load songs into IndexedDB:', err);
+      }
+
+      RealtimeService.initialize();
+    };
+
+    void initializeAppData();
 
     // Listen for song updates and dispatch events
     const handleSongUpdate = (event: Event) => {
