@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePWA } from '../hooks/usePWA';
 
 export function PWAInstallButton() {
   const { isInstalled, isIOS, installApp } = usePWA();
   const [showIOSModal, setShowIOSModal] = useState(false);
+  const [showSuccessToast, setShowSuccessToast] = useState(false);
+
+  useEffect(() => {
+    if (!isInstalled) {
+      return;
+    }
+
+    setShowSuccessToast(true);
+    const timer = window.setTimeout(() => setShowSuccessToast(false), 3000);
+    return () => window.clearTimeout(timer);
+  }, [isInstalled]);
 
   if (isInstalled) {
     return null;
@@ -71,24 +82,32 @@ export function PWAInstallButton() {
   }
 
   return (
-    <button
-      onClick={() => {
-        if (isIOS) {
-          setShowIOSModal(true);
-        } else {
-          installApp();
-        }
-      }}
-      className={`flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors ${
-        isIOS
-          ? 'border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100'
-          : 'border-emerald-600 bg-emerald-500 text-white hover:bg-emerald-600'
-      }`}
-      title="Install BBF Song book"
-    >
-      <span className="text-lg">{isIOS ? '📱' : '⬇️'}</span>
-      <span className="hidden md:inline">Install App</span>
-      <span className="md:hidden">Install</span>
-    </button>
+    <>
+      <button
+        onClick={() => {
+          if (isIOS) {
+            setShowIOSModal(true);
+          } else {
+            void installApp();
+          }
+        }}
+        className={`flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors ${
+          isIOS
+            ? 'border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100'
+            : 'border-emerald-600 bg-emerald-500 text-white hover:bg-emerald-600'
+        }`}
+        title="Install BBF Song book"
+      >
+        <span className="text-lg">{isIOS ? '📱' : '⬇️'}</span>
+        <span className="hidden md:inline">Install App</span>
+        <span className="md:hidden">Install</span>
+      </button>
+
+      {showSuccessToast && (
+        <div className="fixed left-1/2 top-4 z-[70] -translate-x-1/2 rounded-full bg-emerald-500 px-5 py-2 text-sm font-bold text-white shadow-lg">
+          ✅ App Installed Successfully!
+        </div>
+      )}
+    </>
   );
 }

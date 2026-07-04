@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 // 🔥 BURN THE CACHE: SyncService disabled
 // import { SyncService } from './services/SyncService';
 import { SongList } from './components/SongList';
@@ -12,6 +12,7 @@ import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
+import { SyncProgress, type SyncStatus } from './components/SyncProgress';
 import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
@@ -37,6 +38,8 @@ function App() {
   const closeReader = useWorkflowStore((s) => s.closeReader);
   const titleTapCountRef = useRef(0);
   const titleTapTimerRef = useRef<number | null>(null);
+  const [syncStatus, setSyncStatus] = useState<SyncStatus>('idle');
+  const [syncProgress, setSyncProgress] = useState({ current: 0, total: 0 });
 
   // Determine which sidebar tab is active
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
@@ -55,55 +58,95 @@ function App() {
 
         if (cachedCount === 0 && navigator.onLine) {
           console.log('🔄 Cache empty. Auto-loading songs into IndexedDB...');
-          const { data, error } = await supabase
+          setSyncStatus('downloading');
+
+          const { count: totalSongs, error: countError } = await supabase
             .from('songs')
-            .select('*')
-            .eq('is_active', true)
-            .order('song_number', { ascending: true });
+            .select('*', { count: 'exact', head: true })
+            .eq('is_active', true);
 
-          if (!error && data && data.length > 0) {
-            const songDetails = data.map((row: any) => ({
-              id: row.id,
-              songNumber: row.song_number,
-              title: row.title,
-              artist: row.artist,
-              composer: row.composer,
-              language: row.language,
-              originalKey: row.original_key,
-              capo: row.capo,
-              bpm: row.bpm,
-              timeSignature: row.time_signature,
-              hashtags: [],
-              sections: [],
-              chords: row.chords || undefined,
-              lyrics: row.lyrics || undefined,
-              isPublished: row.is_published ?? true,
-              is_active: row.is_active ?? true,
-            }));
-
-            const songIndexes = data.map((row: any) => normalizeSongIndex({
-              id: row.id,
-              songNumber: row.song_number,
-              title: row.title,
-              artist: row.artist,
-              language: row.language,
-              originalKey: row.original_key,
-              hashtags: [],
-              searchTokens: `${row.title || ''} ${row.artist || ''}`.toLowerCase(),
-              romanTitle: row.title,
-              isPublished: row.is_published ?? true,
-            }));
-
-            await db.transaction('rw', db.songs, db.songIndex, async () => {
-              await db.songs.bulkPut(songDetails);
-              await db.songIndex.bulkPut(songIndexes);
-            });
-
-            console.log(`✅ Auto-loaded ${songDetails.length} songs into IndexedDB`);
+          if (countError) {
+            throw countError;
           }
+
+          setSyncProgress({ current: 0, total: totalSongs || 0 });
+
+          const pageSize = 100;
+          const allSongs: any[] = [];
+          let page = 0;
+          let hasMore = true;
+
+          while (hasMore) {
+            const start = page * pageSize;
+            const end = start + pageSize - 1;
+            const { data, error } = await supabase
+              .from('songs')
+              .select('*')
+              .eq('is_active', true)
+              .order('id')
+              .range(start, end);
+
+            if (error) {
+              throw error;
+            }
+
+            if (!data || data.length === 0) {
+              hasMore = false;
+              break;
+            }
+
+            allSongs.push(...data);
+            setSyncProgress({ current: allSongs.length, total: totalSongs || allSongs.length });
+            page += 1;
+          }
+
+          setSyncStatus('saving');
+          const songDetails = allSongs.map((row: any) => ({
+            id: row.id,
+            songNumber: row.song_number,
+            title: row.title,
+            artist: row.artist,
+            composer: row.composer,
+            language: row.language,
+            originalKey: row.original_key,
+            capo: row.capo,
+            bpm: row.bpm,
+            timeSignature: row.time_signature,
+            hashtags: [],
+            sections: [],
+            chords: row.chords || undefined,
+            lyrics: row.lyrics || undefined,
+            isPublished: row.is_published ?? true,
+            is_active: row.is_active ?? true,
+          }));
+
+          const songIndexes = allSongs.map((row: any) => normalizeSongIndex({
+            id: row.id,
+            songNumber: row.song_number,
+            title: row.title,
+            artist: row.artist,
+            language: row.language,
+            originalKey: row.original_key,
+            hashtags: [],
+            searchTokens: `${row.title || ''} ${row.artist || ''}`.toLowerCase(),
+            romanTitle: row.title,
+            isPublished: row.is_published ?? true,
+          }));
+
+          await db.transaction('rw', db.songs, db.songIndex, async () => {
+            await db.songs.bulkPut(songDetails);
+            await db.songIndex.bulkPut(songIndexes);
+          });
+
+          console.log(`✅ Auto-loaded ${songDetails.length} songs into IndexedDB`);
+          setSyncStatus('complete');
+          setTimeout(() => setSyncStatus('idle'), 800);
+        } else {
+          setSyncStatus('idle');
         }
       } catch (err) {
         console.error('⚠️ Failed to auto-load songs into IndexedDB:', err);
+        setSyncStatus('error');
       }
 
       RealtimeService.initialize();
@@ -272,6 +315,7 @@ function App() {
 
   return (
     <div className="app-shell">
+      <SyncProgress current={syncProgress.current} total={syncProgress.total} status={syncStatus} />
 
       {/* ═══ SIDEBAR PANE ═══ */}
       {showSidebar && (
