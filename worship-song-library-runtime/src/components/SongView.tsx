@@ -386,15 +386,34 @@ export function SongView() {
       return;
     }
 
+    let cancelled = false;
+
     const loadSong = async () => {
-      setLoading(true);
-      setSong(null);
       setError(null);
 
+      const cachedSong = await db.songs.get(songId);
+      if (cancelled) return;
+
+      if (cachedSong) {
+        setSong(cachedSong);
+        setLoading(false);
+      } else {
+        setLoading(true);
+      }
+
+      if (!navigator.onLine) {
+        if (!cachedSong) {
+          setError('Offline and no cached song is available.');
+        }
+        return;
+      }
+
       try {
-        console.log('🎵 Loading song DIRECTLY from Supabase (cache disabled)...');
+        console.log('🎵 Background fetch song from Supabase...');
         const query = supabase.from('songs').select('*').eq('id', songId);
         const { data, error } = await (isAdminAuthenticated ? query : query.eq('is_active', true)).single();
+
+        if (cancelled) return;
 
         if (error) {
           throw new Error(`Supabase error: ${error.message}`);
@@ -404,13 +423,14 @@ export function SongView() {
           throw new Error('Song data not found');
         }
 
-        // Check if song is published (unless user is admin)
         if (!isAdminAuthenticated && data.is_published === false) {
           console.log('🚫 User attempted to access unpublished song');
-          throw new Error('This song is not yet published');
+          if (!cachedSong) {
+            throw new Error('This song is not yet published');
+          }
+          return;
         }
 
-        // Transform Supabase data to SongDetail format
         const songDetail: SongDetail = {
           id: data.id,
           songNumber: data.song_number,
@@ -430,22 +450,29 @@ export function SongView() {
           is_active: data.is_active ?? true
         };
 
-        console.log('🎵 Song Data from Supabase:', songDetail);
-        console.log('🎵 Lyrics present:', !!songDetail.lyrics);
-        console.log('Lyrics length:', songDetail.lyrics?.length || 0);
-        console.log('Sections count:', songDetail.sections?.length || 0);
-        console.log('Chords present:', !!songDetail.chords);
-        console.log('Chords length:', songDetail.chords?.length || 0);
-        console.log('Chords preview:', songDetail.chords?.substring(0, 100));
-        setSong(songDetail);
+        await db.songs.put(songDetail);
+        if (!cancelled) {
+          setSong(songDetail);
+          setLoading(false);
+        }
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load song');
+        console.warn('⚠️ Failed to fetch song from Supabase, using cache if available:', err);
+        if (!cachedSong) {
+          setError(err instanceof Error ? err.message : 'Failed to load song');
+        }
       } finally {
-        setLoading(false);
+        if (!cancelled && !cachedSong) {
+          setLoading(false);
+        }
       }
     };
-    loadSong();
-  }, [songId]);
+
+    void loadSong();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [songId, isAdminAuthenticated]);
 
   if (loading) return (
     <div className="p-12 text-center flex flex-col items-center">

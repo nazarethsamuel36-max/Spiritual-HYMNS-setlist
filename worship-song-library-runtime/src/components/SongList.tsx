@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { db, normalizeSongIndex } from '../db/Database';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
@@ -67,29 +68,48 @@ export function SongList() {
     let cancelled = false;
 
     async function loadLibrarySongs() {
-      setIsLoading(true);
       setLoadError(null);
-      setIsOffline(false); // Force online-only mode
+      setIsOffline(false);
 
       try {
-        // 🔥 BURN THE CACHE: Direct Supabase only
-        // 📋 For regular users: only published songs. For admins: all songs (including drafts)
+        const cachedSongs = await db.songIndex.toArray();
+        if (cancelled) return;
+
+        if (cachedSongs.length > 0) {
+          setAllSongs(cachedSongs.map(normalizeSongIndex));
+          setIsLoading(false);
+        } else {
+          setIsLoading(true);
+        }
+
+        if (!navigator.onLine) {
+          if (cachedSongs.length === 0) {
+            setAllSongs([]);
+          }
+          setIsOffline(true);
+          return;
+        }
+
         let query = supabase
           .from('songs')
           .select('id, song_number, title, artist, language, original_key, is_published')
           .eq('is_active', true);
 
-        // Regular users: filter by is_published = true only
         if (!isAdminAuthenticated) {
           query = query.eq('is_published', true);
         }
 
         const { data, error } = await query.order('song_number', { ascending: true });
 
-        if (error) throw new Error(`Supabase error: ${error.message}`);
-        if (!data) throw new Error('No data returned from Supabase');
-
         if (cancelled) return;
+
+        if (error) {
+          throw new Error(`Supabase error: ${error.message}`);
+        }
+
+        if (!data) {
+          throw new Error('No data returned from Supabase');
+        }
 
         const songs: SongIndex[] = (data as any[]).map((song: any) => ({
           id: Number(song.id ?? 0),
@@ -104,17 +124,21 @@ export function SongList() {
           isPublished: song.is_published ?? true
         }));
 
-        console.log(`🌐 Songs loaded from SUPABASE ONLY:`, songs.length);
-        console.log('Admin:', isAdminAuthenticated, '- Showing drafts:', isAdminAuthenticated);
-        setAllSongs(songs);
-        await SearchEngine.indexSongs(songs);
+        const normalizedSongs = songs.map(normalizeSongIndex);
+        await db.songIndex.bulkPut(normalizedSongs);
+        setAllSongs(normalizedSongs);
+        await SearchEngine.indexSongs(normalizedSongs);
       } catch (err) {
         if (cancelled) return;
         console.error('Unexpected error loading songs:', err);
-        setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
-        setAllSongs([]);
+        if (!allSongs.length) {
+          setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
+        }
+        if (!navigator.onLine) {
+          setIsOffline(true);
+        }
       } finally {
-        if (!cancelled) {
+        if (!cancelled && allSongs.length === 0) {
           setIsLoading(false);
         }
       }
