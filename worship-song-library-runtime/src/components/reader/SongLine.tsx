@@ -13,7 +13,7 @@ interface SongLineProps {
 
 export const SongLine = memo(function SongLine({ line, transpose, mode, isChorus }: SongLineProps) {
   if (!line.text || !line.text.trim()) {
-    return <div className="h-4" />;
+    return <div style={{ height: '1.6em' }} />;
   }
 
   const words = segmentMusicalLine(line.text, line.chords || []);

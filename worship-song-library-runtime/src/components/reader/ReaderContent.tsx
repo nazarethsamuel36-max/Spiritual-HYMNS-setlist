@@ -18,8 +18,6 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
     );
   }
 
-  const lineSpacing = mode === 'lyrics' ? 'space-y-1' : 'space-y-3';
-
   return (
     <div className="max-w-3xl mx-auto px-4 py-4">
       {sections.map((section, idx) => {
@@ -27,8 +25,8 @@ export const ReaderContent = memo(function ReaderContent({ sections, transpose, 
         const isChorus = sectionType === 'chorus';
 
         return (
-          <div key={idx} className={`relative w-full ${idx > 0 ? 'mt-4' : ''}`}>
-            <div className={`w-full ${lineSpacing} ${isChorus ? 'border-l-2 border-slate-300 pl-3 bg-slate-50/50 rounded-r py-0.5' : ''}`}>
+          <div key={idx} className={`relative w-full ${idx > 0 ? 'mt-6' : ''}`}>
+            <div className={`w-full ${isChorus ? 'border-l-2 border-slate-300 pl-3 bg-slate-50/50 rounded-r py-0.5' : ''}`}>
               {section.lines.map((line, lIdx) => (
                 <SongLine key={lIdx} line={line} transpose={transpose} mode={mode} isChorus={isChorus} />
               ))}
