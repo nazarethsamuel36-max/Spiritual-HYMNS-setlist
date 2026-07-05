@@ -44,20 +44,16 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: 
   return (
     <div className="inline-flex align-bottom whitespace-pre-wrap leading-none">
       {segments.map((segment, idx) => (
-        <span key={idx} className="inline-flex flex-col items-center" style={{ marginRight: '0.25em', gap: '0.125em' }}>
+        <span key={idx} className="inline-flex flex-col items-center mr-1 gap-0.5">
           {/* Chord Layer (above text) */}
           {mode === 'chords' && segment.chords.map((chord, i) => (
-            <span
-              key={i}
-              className="font-bold text-[18px] text-[var(--color-chord)] leading-[1.2]"
-              style={{ marginBottom: '2px' }}
-            >
+            <span key={i} className="mb-1 text-sm font-bold leading-tight text-[var(--color-chord)]">
               {chord.name}
             </span>
           ))}
 
           {/* Lyric Layer */}
-          <span className={`text-[21px] text-[var(--color-text)]`} style={{ lineHeight: '1.6' }}>
+          <span className="text-base leading-relaxed text-[var(--color-text)]">
             {segment.text}
           </span>
         </span>
