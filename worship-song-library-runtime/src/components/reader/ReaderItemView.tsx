@@ -60,13 +60,20 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
     }
   }, [setlistItems, item.setlistId, item.itemId, openSong, openMarker, openNote]);
 
-  // Pointer gesture tracking
+  // Pointer gesture tracking (desktop/mouse/pen only)
   const pointerStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
   const isHorizontalSwipeRef = useRef<boolean | null>(null);
   const [swipeOffset, setSwipeOffset] = useState(0);
+  const contentAreaRef = useRef<HTMLDivElement>(null);
+
+  // Refs so native (non-passive) touch listeners can access latest callbacks
+  const navigateSetlistRef = useRef(navigateSetlist);
+  const isEditingRef = useRef(isEditing);
+  useEffect(() => { navigateSetlistRef.current = navigateSetlist; }, [navigateSetlist]);
+  useEffect(() => { isEditingRef.current = isEditing; }, [isEditing]);
 
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (isEditing) return;
+    if (isEditing || e.pointerType === 'touch') return;
     e.currentTarget.setPointerCapture(e.pointerId);
     pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now() };
     isHorizontalSwipeRef.current = null;
@@ -74,7 +81,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
   };
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (!pointerStartRef.current || isEditing) return;
+    if (!pointerStartRef.current || isEditing || e.pointerType === 'touch') return;
     const dx = e.clientX - pointerStartRef.current.x;
     const dy = e.clientY - pointerStartRef.current.y;
 
@@ -91,6 +98,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
   };
 
   const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === 'touch') return;
     try {
       e.currentTarget.releasePointerCapture(e.pointerId);
     } catch (err) {}
@@ -112,6 +120,67 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
       navigateSetlist(direction);
     }
   };
+
+  // Non-passive native touch listeners — fixes swipe on mobile
+  useEffect(() => {
+    const el = contentAreaRef.current;
+    if (!el) return;
+
+    let touchStart: { x: number; y: number; time: number } | null = null;
+    let lockedHorizontal: boolean | null = null;
+
+    const onTouchStart = (e: TouchEvent) => {
+      if (isEditingRef.current) return;
+      const t = e.touches[0];
+      touchStart = { x: t.clientX, y: t.clientY, time: performance.now() };
+      lockedHorizontal = null;
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (!touchStart || isEditingRef.current) return;
+      const t = e.touches[0];
+      const dx = t.clientX - touchStart.x;
+      const dy = t.clientY - touchStart.y;
+
+      if (lockedHorizontal === null) {
+        if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
+          lockedHorizontal = Math.abs(dx) > Math.abs(dy);
+        }
+      }
+
+      if (lockedHorizontal === true) {
+        e.preventDefault();
+      }
+    };
+
+    const onTouchEnd = (e: TouchEvent) => {
+      if (!touchStart || isEditingRef.current) return;
+      const start = touchStart;
+      touchStart = null;
+
+      const t = e.changedTouches[0];
+      const deltaX = t.clientX - start.x;
+      const deltaY = Math.abs(t.clientY - start.y);
+      const absDx = Math.abs(deltaX);
+      const wasHorizontal = lockedHorizontal;
+      lockedHorizontal = null;
+
+      if (wasHorizontal && absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
+        const direction = deltaX < 0 ? 'next' : 'prev';
+        navigateSetlistRef.current(direction);
+      }
+    };
+
+    el.addEventListener('touchstart', onTouchStart, { passive: true });
+    el.addEventListener('touchmove', onTouchMove, { passive: false });
+    el.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart);
+      el.removeEventListener('touchmove', onTouchMove);
+      el.removeEventListener('touchend', onTouchEnd);
+    };
+  }, [contentAreaRef]);
 
   const handleSave = async () => {
     if (item.type === 'marker') {
@@ -206,6 +275,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
 
       {/* Content Area */}
       <div
+        ref={contentAreaRef}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}

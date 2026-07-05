@@ -313,29 +313,44 @@ export function SongView() {
   }, [songId, librarySongs, openSong]);
 
   // ─── Pointer / Touch swipe tracking ──────────────────────────────────────
+  // NOTE: We use native (non-passive) touch listeners via useEffect because
+  // React 17+ registers synthetic onTouchMove as passive, making
+  // e.preventDefault() a no-op — which means horizontal swipes get consumed
+  // by the browser's pan-y scroll behavior on mobile before we can intercept.
   const pointerStartRef = useRef<{ x: number; y: number; time: number; pointerId: number } | null>(null);
   const isHorizontalSwipeRef = useRef<boolean | null>(null); // null = undecided
 
+  // navigateSetlist / navigateLibrary refs so native handlers can call latest version
+  const navigateSetlistRef = useRef(navigateSetlist);
+  const navigateLibraryRef = useRef(navigateLibrary);
+  const isSetlistContextRef = useRef(isSetlistContext);
+  const isScrollingRef = useRef(isScrolling);
+  useEffect(() => { navigateSetlistRef.current = navigateSetlist; }, [navigateSetlist]);
+  useEffect(() => { navigateLibraryRef.current = navigateLibrary; }, [navigateLibrary]);
+  useEffect(() => { isSetlistContextRef.current = isSetlistContext; }, [isSetlistContext]);
+  useEffect(() => { isScrollingRef.current = isScrolling; }, [isScrolling]);
+
+  // Pointer handlers (desktop / stylus — pointer API works fine on desktop)
   const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    // Only handle mouse/pen; touch is handled by native listeners below
+    if (e.pointerType === 'touch') return;
     pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now(), pointerId: e.pointerId };
     isHorizontalSwipeRef.current = null;
     setSwipeOffset(0);
   };
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === 'touch') return;
     if (!pointerStartRef.current) return;
     const dx = e.clientX - pointerStartRef.current.x;
     const dy = e.clientY - pointerStartRef.current.y;
 
-    // Decide lock direction on first meaningful move
     if (isHorizontalSwipeRef.current === null) {
       if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
         const isHorizontal = Math.abs(dx) > Math.abs(dy);
         isHorizontalSwipeRef.current = isHorizontal;
         if (isHorizontal) {
-          try {
-            e.currentTarget.setPointerCapture(pointerStartRef.current.pointerId);
-          } catch (err) {}
+          try { e.currentTarget.setPointerCapture(pointerStartRef.current.pointerId); } catch (_) {}
         }
       }
     }
@@ -347,12 +362,10 @@ export function SongView() {
   };
 
   const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
-    try {
-      e.currentTarget.releasePointerCapture(e.pointerId);
-    } catch (err) {}
+    if (e.pointerType === 'touch') return;
+    try { e.currentTarget.releasePointerCapture(e.pointerId); } catch (_) {}
 
     if (!pointerStartRef.current) return;
-
     const start = pointerStartRef.current;
     pointerStartRef.current = null;
 
@@ -364,86 +377,89 @@ export function SongView() {
     setSwipeOffset(0);
     isHorizontalSwipeRef.current = null;
 
-    // Tap to stop autoscroll
     if (absDx < 8 && deltaY < 8 && duration < 250) {
-      if (isScrolling) {
-        setIsScrolling(false);
-      }
+      if (isScrolling) setIsScrolling(false);
       return;
     }
 
-    // Swipe navigation
     if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
       const direction = deltaX < 0 ? 'next' : 'prev';
-      if (isSetlistContext) {
-        navigateSetlist(direction);
-      } else {
-        navigateLibrary(direction);
-      }
+      if (isSetlistContext) navigateSetlist(direction);
+      else navigateLibrary(direction);
     }
   };
 
-  // Touch event handlers for mobile
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    const touch = e.touches[0];
-    pointerStartRef.current = { x: touch.clientX, y: touch.clientY, time: performance.now(), pointerId: 0 };
-    isHorizontalSwipeRef.current = null;
-    setSwipeOffset(0);
-  };
+  // ─── Non-passive native touch listeners (the real mobile fix) ──────────────
+  useEffect(() => {
+    const el = scrollContainerRef.current;
+    if (!el) return;
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!pointerStartRef.current) return;
-    const touch = e.touches[0];
-    const dx = touch.clientX - pointerStartRef.current.x;
-    const dy = touch.clientY - pointerStartRef.current.y;
+    let touchStart: { x: number; y: number; time: number } | null = null;
+    let lockedHorizontal: boolean | null = null;
 
-    // Decide lock direction on first meaningful move
-    if (isHorizontalSwipeRef.current === null) {
-      if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
-        const isHorizontal = Math.abs(dx) > Math.abs(dy);
-        isHorizontalSwipeRef.current = isHorizontal;
+    const onTouchStart = (e: TouchEvent) => {
+      const t = e.touches[0];
+      touchStart = { x: t.clientX, y: t.clientY, time: performance.now() };
+      lockedHorizontal = null;
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (!touchStart) return;
+      const t = e.touches[0];
+      const dx = t.clientX - touchStart.x;
+      const dy = t.clientY - touchStart.y;
+
+      // Determine direction lock on first meaningful movement
+      if (lockedHorizontal === null) {
+        if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
+          lockedHorizontal = Math.abs(dx) > Math.abs(dy);
+        }
       }
-    }
 
-    if (isHorizontalSwipeRef.current) {
-      e.preventDefault();
-      setSwipeOffset(dx);
-    }
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!pointerStartRef.current) return;
-
-    const start = pointerStartRef.current;
-    pointerStartRef.current = null;
-
-    const touch = e.changedTouches[0];
-    const deltaX = touch.clientX - start.x;
-    const deltaY = Math.abs(touch.clientY - start.y);
-    const absDx = Math.abs(deltaX);
-    const duration = performance.now() - start.time;
-
-    setSwipeOffset(0);
-    isHorizontalSwipeRef.current = null;
-
-    // Tap to stop autoscroll
-    if (absDx < 8 && deltaY < 8 && duration < 250) {
-      if (isScrolling) {
-        setIsScrolling(false);
+      // If we decided it's horizontal, prevent vertical scroll takeover
+      if (lockedHorizontal === true) {
+        e.preventDefault();
       }
-      return;
-    }
+    };
 
-    // Swipe navigation
-    if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
-      const direction = deltaX < 0 ? 'next' : 'prev';
-      if (isSetlistContext) {
-        navigateSetlist(direction);
-      } else {
-        navigateLibrary(direction);
+    const onTouchEnd = (e: TouchEvent) => {
+      if (!touchStart) return;
+      const start = touchStart;
+      touchStart = null;
+
+      const t = e.changedTouches[0];
+      const deltaX = t.clientX - start.x;
+      const deltaY = Math.abs(t.clientY - start.y);
+      const absDx = Math.abs(deltaX);
+      const duration = performance.now() - start.time;
+      const wasHorizontal = lockedHorizontal;
+      lockedHorizontal = null;
+
+      // Tap: stop autoscroll
+      if (absDx < 8 && deltaY < 8 && duration < 250) {
+        if (isScrollingRef.current) setIsScrolling(false);
+        return;
       }
-    }
-  };
+
+      // Horizontal swipe: navigate
+      if (wasHorizontal && absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
+        const direction = deltaX < 0 ? 'next' : 'prev';
+        if (isSetlistContextRef.current) navigateSetlistRef.current(direction);
+        else navigateLibraryRef.current(direction);
+      }
+    };
+
+    // { passive: false } is the key — lets us call e.preventDefault()
+    el.addEventListener('touchstart', onTouchStart, { passive: true });
+    el.addEventListener('touchmove', onTouchMove, { passive: false });
+    el.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart);
+      el.removeEventListener('touchmove', onTouchMove);
+      el.removeEventListener('touchend', onTouchEnd);
+    };
+  }, [scrollContainerRef]); // re-run only if the ref element changes
 
   const adjustSpeed = (delta: number) => {
     setScrollSpeed(prev => {
@@ -628,13 +644,10 @@ export function SongView() {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
         style={{ touchAction: 'pan-y' }}
       >
-        <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-y-auto overscroll-contain" style={{ touchAction: 'auto' }}>
+        <div className="w-full px-4 md:px-8 pt-8 pb-40" style={{ touchAction: 'pan-y' }}>
           <div className="max-w-4xl mx-auto w-full">
           {isAdminAuthenticated ? (
             (() => {
