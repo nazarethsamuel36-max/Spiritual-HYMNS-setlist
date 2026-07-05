@@ -111,17 +111,11 @@ function ChordProView({ chords, transpose }: ChordProViewProps) {
               {segments.map((segment, sIdx) => (
                 <span key={sIdx} className="inline-flex flex-col flex-shrink-0">
                   {segment.chord && (
-                    <span
-                      className="font-bold text-blue-600"
-                      style={{ fontSize: '14pt', lineHeight: '1.2', marginBottom: '2px' }}
-                    >
+                    <span className="mb-1 text-sm font-bold text-blue-600 leading-tight">
                       {segment.chord}
                     </span>
                   )}
-                  <span
-                    className="text-slate-800"
-                    style={{ fontSize: '16pt', lineHeight: '1.6' }}
-                  >
+                  <span className="text-base leading-relaxed text-slate-800">
                     {segment.text}
                   </span>
                 </span>
@@ -581,7 +575,7 @@ export function SongView() {
               );
             })()
           ) : readerMode === 'lyrics' ? (
-            <div className="text-slate-800 leading-relaxed font-medium">
+            <div className="text-base leading-relaxed text-slate-800 font-medium">
               {song.lyrics ? (
                 song.lyrics.split('\n').map((line, idx) => {
                   const isChorus = line.startsWith('* ');
@@ -590,7 +584,7 @@ export function SongView() {
                   return (
                     <div
                       key={idx}
-                      style={isBlank ? { height: '0.5em' } : isChorus ? { fontStyle: 'italic', paddingLeft: '20px' } : {}}
+                      className={isBlank ? 'h-2' : isChorus ? 'mb-1 italic pl-5' : 'mb-1'}
                     >
                       {!isBlank && displayLine}
                     </div>
