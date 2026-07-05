@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
@@ -131,6 +131,9 @@ export function SongView() {
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const adjustTranspose = useWorkflowStore((s) => s.adjustTranspose);
   const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
+  const openSong = useWorkflowStore((s) => s.openSong);
+  const openMarker = useWorkflowStore((s) => s.openMarker);
+  const openNote = useWorkflowStore((s) => s.openNote);
 
   const songId = reader.type === 'song' ? reader.songId : null;
   const transpose = reader.type === 'song' ? reader.transpose : 0;
@@ -192,6 +195,8 @@ export function SongView() {
   }, [isSetlistContext, libraryLanguage]);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
+  const isHorizontalSwipeRef = useRef<boolean | null>(null);
   const [isScrolling, setIsScrolling] = useState(false);
   const [scrollSpeed, setScrollSpeed] = useState(() => {
     const saved = localStorage.getItem('worship-autoscroll-speed');
@@ -257,6 +262,114 @@ export function SongView() {
       return Math.min(10, Math.max(1, next));
     });
     setIsScrolling(true);
+  };
+
+  // ─── Navigation functions for swipe ───────────────────────────────────────
+  const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
+    if (!setlistItems || !setlistId) return;
+    const currentIdx = currentItemId
+      ? setlistItems.findIndex(i => i.id === currentItemId)
+      : setlistItems.findIndex(i => i.songId === songId);
+
+    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
+    if (targetIdx < 0 || targetIdx >= setlistItems.length) return;
+
+    const target = setlistItems[targetIdx];
+    if (!target.type || target.type === 'song') {
+      openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id);
+    } else if (target.type === 'marker') {
+      openMarker(target.label || 'Event Marker', setlistId, target.id);
+    } else if (target.type === 'note') {
+      openNote(target.label || 'Note', target.content || '', setlistId, target.id);
+    }
+  }, [setlistItems, setlistId, currentItemId, songId]);
+
+  const navigateLibrary = useCallback((direction: 'prev' | 'next') => {
+    if (!songId || !librarySongs || librarySongs.length === 0) {
+      console.warn('Library songs not loaded yet');
+      return;
+    }
+
+    const currentIdx = librarySongs.findIndex(s => s.id === songId);
+    if (currentIdx === -1) return;
+
+    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
+
+    if (targetIdx >= 0 && targetIdx < librarySongs.length) {
+      const target = librarySongs[targetIdx];
+      if (navigator.vibrate) navigator.vibrate(10);
+      openSong(target.id, 'library');
+    }
+  }, [songId, librarySongs]);
+
+  // ─── Touch event handlers for swipe navigation ───────────────────────────────
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    const touch = e.touches[0];
+    touchStartRef.current = {
+      x: touch.clientX,
+      y: touch.clientY,
+      time: Date.now()
+    };
+    isHorizontalSwipeRef.current = null;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!touchStartRef.current) return;
+    const touch = e.touches[0];
+    const dx = touch.clientX - touchStartRef.current.x;
+    const dy = touch.clientY - touchStartRef.current.y;
+
+    // Determine swipe direction on first meaningful movement
+    if (isHorizontalSwipeRef.current === null) {
+      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) {
+        isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
+      }
+    }
+
+    // If horizontal swipe detected, prevent vertical scroll
+    if (isHorizontalSwipeRef.current === true) {
+      e.preventDefault();
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!touchStartRef.current) return;
+
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartRef.current.x;
+    const deltaY = Math.abs(touch.clientY - touchStartRef.current.y);
+    const deltaTime = Date.now() - touchStartRef.current.time;
+
+    // Reset refs
+    const wasHorizontal = isHorizontalSwipeRef.current;
+    touchStartRef.current = null;
+    isHorizontalSwipeRef.current = null;
+
+    // Only trigger if:
+    // - It was a horizontal swipe
+    // - Horizontal distance > 50px
+    // - Vertical distance < 100px (not scrolling)
+    // - Completed in under 500ms (quick gesture)
+    if (
+      wasHorizontal === true &&
+      Math.abs(deltaX) > 50 &&
+      deltaY < 100 &&
+      deltaTime < 500
+    ) {
+      const direction = deltaX < 0 ? 'next' : 'prev';
+
+      // Use the appropriate navigation function based on context
+      if (isSetlistContext) {
+        navigateSetlist(direction);
+      } else {
+        navigateLibrary(direction);
+      }
+
+      // Optional: haptic feedback on mobile
+      if (navigator.vibrate) {
+        navigator.vibrate(10);
+      }
+    }
   };
 
   useEffect(() => {
@@ -431,6 +544,10 @@ export function SongView() {
       <div
         ref={scrollContainerRef}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
+        style={{ touchAction: 'pan-y' }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         <div className="w-full px-4 md:px-8 pt-8 pb-40">
           <div className="max-w-4xl mx-auto w-full">
