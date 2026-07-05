@@ -5,7 +5,33 @@ import { supabase } from '../lib/supabaseClient';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
-import { ChordTransposer } from '../utils/ChordTransposer';
+import { DeterministicSongView } from './reader/DeterministicSongView';
+
+// Parse ChordPro format to chord positions
+function parseChordProToPositions(chordPro: string): Array<{ chord: string; position: number }> {
+  if (!chordPro) return [];
+  
+  const chords: Array<{ chord: string; position: number }> = [];
+  const lines = chordPro.split('\n');
+  let charIndex = 0;
+  
+  for (const line of lines) {
+    const chordRegex = /\[([^\]]+)\]/g;
+    let match;
+    
+    while ((match = chordRegex.exec(line)) !== null) {
+      chords.push({
+        chord: match[1],
+        position: charIndex + match.index
+      });
+    }
+    
+    // Add newline character to character index
+    charIndex += line.length + 1;
+  }
+  
+  return chords;
+}
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -47,82 +73,6 @@ function parseLyricsToSections(lyrics: string): Array<{ type: string; label: str
   }
 
   return sections;
-}
-
-// ChordPro parser and renderer - Split & Group Algorithm
-interface ChordProViewProps {
-  chords?: string;
-  transpose: number;
-}
-
-const parseChordLine = (line: string, transpose: number) => {
-  if (!line) return [];
-  const parts = line.split(/(\[[^\]]+\])/);
-  const segments: Array<{ chord: string | null; text: string }> = [];
-  let currentChord: string | null = '';
-
-  for (const part of parts) {
-    if (part.startsWith('[') && part.endsWith(']')) {
-      const chord = part.slice(1, -1);
-      // Transpose chord if needed
-      currentChord = transpose !== 0 ? ChordTransposer.transposeChord(chord, transpose) : chord;
-    } else if (part.length > 0) {
-      segments.push({ chord: currentChord, text: part });
-      currentChord = '';
-    }
-  }
-  // Handle case where line ends with a chord
-  if (currentChord) {
-    segments.push({ chord: currentChord, text: ' ' });
-  }
-  return segments;
-};
-
-function ChordProView({ chords, transpose }: ChordProViewProps) {
-  if (!chords) {
-    return (
-      <div className="text-slate-400 italic text-center py-12">
-        No chords available
-      </div>
-    );
-  }
-
-  const lines = chords.split('\n');
-
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-6">
-      {lines.map((line, idx) => {
-        const segments = parseChordLine(line, transpose);
-
-        if (segments.length === 0 || segments.every(s => !s.text.trim())) {
-          return <div key={idx} className="h-2" />;
-        }
-
-        return (
-          <div
-            key={idx}
-            className="mb-1"
-            style={{ lineHeight: '1.4' }}
-          >
-            <div className="flex flex-wrap items-baseline" style={{ gap: '0.5em' }}>
-              {segments.map((segment, sIdx) => (
-                <span key={sIdx} className="inline-flex flex-col flex-shrink-0">
-                  {segment.chord && (
-                    <span className="mb-1 text-sm font-bold text-blue-600 leading-tight">
-                      {segment.chord}
-                    </span>
-                  )}
-                  <span className="text-[20px] leading-relaxed text-slate-800">
-                    {segment.text}
-                  </span>
-                </span>
-              ))}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
 }
 
 export function SongView() {
@@ -583,7 +533,10 @@ export function SongView() {
               )}
             </div>
           ) : (
-            <ChordProView chords={song.chords} transpose={displayTranspose} />
+            <DeterministicSongView 
+              lyrics={song.lyrics || ''}
+              chords={parseChordProToPositions(song.chords || '')}
+            />
           )}
         </div>
       </div>
