@@ -92,7 +92,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro 
       </div>
 
       {/* Step 5: Render tree using targeted inline styles for absolute layout consistency */}
-      <div style={{ ...styles.songSheet, fontSize: ${fontSize}px }}>
+      <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
         {parsedSongLines.map((line, lineIndex) => {
           if (line.isDirective) {
             // Render basic structural titles/headers differently
