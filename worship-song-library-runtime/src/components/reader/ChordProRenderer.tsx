@@ -92,7 +92,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro 
       </div>
 
       {/* Step 5: Render tree using targeted inline styles for absolute layout consistency */}
-      <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
+      <div style={{ ...styles.songSheet, fontSize: ${fontSize}px }}>
         {parsedSongLines.map((line, lineIndex) => {
           if (line.isDirective) {
             // Render basic structural titles/headers differently
@@ -146,8 +146,6 @@ const styles: Record<string, React.CSSProperties> = {
     cursor: 'pointer',
   },
   songSheet: {
-    backgroundColor: '#ffffff',
-    borderRadius: '8px',
     padding: '12px',
     lineHeight: 1,
   },
@@ -165,7 +163,7 @@ const styles: Record<string, React.CSSProperties> = {
   songLine: {
     display: 'block',
     width: '100%',
-    paddingBottom: '1.2em', // Creates exact vertical clearing room for subsequent rows
+    paddingBottom: '0.5em', // Reduced vertical spacing between lines
     wordWrap: 'break-word',
   },
   chordWordGroup: {
@@ -173,6 +171,7 @@ const styles: Record<string, React.CSSProperties> = {
     flexDirection: 'column', // Stacks chords strictly over lyric tokens vertically
     verticalAlign: 'bottom',
     whiteSpace: 'nowrap',   // CRITICAL: Forces full word units to break to new line together
+    gap: '0.3em', // Increased distance between chords and lyrics
   },
   chordSlot: {
     fontWeight: 'bold',
