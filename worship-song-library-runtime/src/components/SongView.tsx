@@ -7,7 +7,7 @@ import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordTransposer } from '../utils/ChordTransposer';
 
-const SWIPE_THRESHOLD = 50; // px horizontal travel required (lowered for mobile)
+const SWIPE_THRESHOLD = 30; // Lowered from 50 for easier mobile swipe
 const SWIPE_MAX_VERTICAL = 100; // px — abort if too much vertical movement (increased for mobile)
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
@@ -383,6 +383,68 @@ export function SongView() {
     }
   };
 
+  // Touch event handlers for mobile
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    const touch = e.touches[0];
+    pointerStartRef.current = { x: touch.clientX, y: touch.clientY, time: performance.now(), pointerId: 0 };
+    isHorizontalSwipeRef.current = null;
+    setSwipeOffset(0);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!pointerStartRef.current) return;
+    const touch = e.touches[0];
+    const dx = touch.clientX - pointerStartRef.current.x;
+    const dy = touch.clientY - pointerStartRef.current.y;
+
+    // Decide lock direction on first meaningful move
+    if (isHorizontalSwipeRef.current === null) {
+      if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
+        const isHorizontal = Math.abs(dx) > Math.abs(dy);
+        isHorizontalSwipeRef.current = isHorizontal;
+      }
+    }
+
+    if (isHorizontalSwipeRef.current) {
+      e.preventDefault();
+      setSwipeOffset(dx);
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!pointerStartRef.current) return;
+
+    const start = pointerStartRef.current;
+    pointerStartRef.current = null;
+
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - start.x;
+    const deltaY = Math.abs(touch.clientY - start.y);
+    const absDx = Math.abs(deltaX);
+    const duration = performance.now() - start.time;
+
+    setSwipeOffset(0);
+    isHorizontalSwipeRef.current = null;
+
+    // Tap to stop autoscroll
+    if (absDx < 8 && deltaY < 8 && duration < 250) {
+      if (isScrolling) {
+        setIsScrolling(false);
+      }
+      return;
+    }
+
+    // Swipe navigation
+    if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
+      const direction = deltaX < 0 ? 'next' : 'prev';
+      if (isSetlistContext) {
+        navigateSetlist(direction);
+      } else {
+        navigateLibrary(direction);
+      }
+    }
+  };
+
   const adjustSpeed = (delta: number) => {
     setScrollSpeed(prev => {
       const next = prev + delta;
@@ -533,7 +595,7 @@ export function SongView() {
   const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
 
   return (
-    <div className={`flex-col min-h-full w-full bg-[#FAFAFA] flex ${langClass}`}>
+    <div className={`flex-col min-h-full w-full bg-[#FAFAFA] flex song-view-container ${langClass}`}>
       <ReaderHeader
         song={song}
         transpose={displayTranspose}
@@ -566,6 +628,9 @@ export function SongView() {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
         style={{ touchAction: 'pan-y' }}
       >

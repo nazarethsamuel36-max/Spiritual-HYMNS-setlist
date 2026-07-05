@@ -267,3 +267,12 @@ body {
   .chord-name { font-size: 13pt; }
   .song-title { font-size: 18pt; }
 }
+
+/* Prevent mobile browser navigation gestures on song view */
+.song-view-container {
+  overscroll-behavior-x: none;
+}
+
+html, body {
+  overscroll-behavior-x: none;
+}
