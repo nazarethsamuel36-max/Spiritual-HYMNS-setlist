@@ -115,7 +115,7 @@ function ChordProView({ chords, transpose }: ChordProViewProps) {
                       {segment.chord}
                     </span>
                   )}
-                  <span className="text-[18px] leading-relaxed text-slate-800">
+                  <span className="text-[20px] leading-relaxed text-slate-800">
                     {segment.text}
                   </span>
                 </span>
@@ -575,7 +575,7 @@ export function SongView() {
               );
             })()
           ) : readerMode === 'lyrics' ? (
-            <div className="text-[18px] leading-relaxed text-slate-800 font-medium">
+            <div className="text-[20px] leading-relaxed text-slate-800 font-medium">
               {song.lyrics ? (
                 song.lyrics.split('\n').map((line, idx) => {
                   const isChorus = line.startsWith('* ');
