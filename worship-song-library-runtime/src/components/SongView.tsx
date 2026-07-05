@@ -293,16 +293,23 @@ export function SongView() {
     }
   }, [setlistItems, setlistId, currentItemId, songId, openSong, openMarker, openNote]);
 
-  const navigateLibrary = useCallback(async (direction: 'prev' | 'next') => {
-    if (!songId || !librarySongs) return;
+  const navigateLibrary = useCallback((direction: 'prev' | 'next') => {
+    if (!songId || !librarySongs || librarySongs.length === 0) {
+      console.warn('Library songs not loaded yet');
+      return;
+    }
+
     const currentIdx = librarySongs.findIndex(s => s.id === songId);
     if (currentIdx === -1) return;
 
     const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
-    if (targetIdx < 0 || targetIdx >= librarySongs.length) return;
 
-    const target = librarySongs[targetIdx];
-    openSong(target.id, 'library');
+    if (targetIdx >= 0 && targetIdx < librarySongs.length) {
+      const target = librarySongs[targetIdx];
+      // Trigger haptic feedback if on mobile
+      if (navigator.vibrate) navigator.vibrate(10);
+      openSong(target.id, 'library');
+    }
   }, [songId, librarySongs, openSong]);
 
   // ─── Pointer / Touch swipe tracking ──────────────────────────────────────
@@ -555,13 +562,14 @@ export function SongView() {
       {/* Calm Typography Area — Independent Scroll Region */}
       <div
         ref={scrollContainerRef}
-        onPointerDown={isAdminAuthenticated ? undefined : handlePointerDown}
-        onPointerMove={isAdminAuthenticated ? undefined : handlePointerMove}
-        onPointerUp={isAdminAuthenticated ? undefined : handlePointerUp}
-        onPointerCancel={isAdminAuthenticated ? undefined : handlePointerUp}
-        className={`flex-1 flex flex-col ${isAdminAuthenticated ? 'overflow-y-auto' : 'overflow-hidden'}`}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+        className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
+        style={{ touchAction: 'pan-y' }}
       >
-        <div className={`w-full px-4 md:px-8 pt-8 pb-40 ${isAdminAuthenticated ? 'overflow-visible' : 'overflow-y-auto overscroll-contain'}`} style={{ touchAction: 'auto' }}>
+        <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-y-auto overscroll-contain" style={{ touchAction: 'auto' }}>
           <div className="max-w-4xl mx-auto w-full">
           {isAdminAuthenticated ? (
             (() => {
