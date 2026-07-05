@@ -7,8 +7,8 @@ import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordTransposer } from '../utils/ChordTransposer';
 
-const SWIPE_THRESHOLD = 60; // px horizontal travel required
-const SWIPE_MAX_VERTICAL = 80; // px — abort if too much vertical movement
+const SWIPE_THRESHOLD = 50; // px horizontal travel required (lowered for mobile)
+const SWIPE_MAX_VERTICAL = 100; // px — abort if too much vertical movement (increased for mobile)
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -567,7 +567,7 @@ export function SongView() {
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
-        style={{ touchAction: 'pan-y' }}
+        style={{ touchAction: 'none' }}
       >
         <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-y-auto overscroll-contain" style={{ touchAction: 'auto' }}>
           <div className="max-w-4xl mx-auto w-full">
