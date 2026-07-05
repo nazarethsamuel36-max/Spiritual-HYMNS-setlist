@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
@@ -6,9 +6,6 @@ import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordTransposer } from '../utils/ChordTransposer';
-
-const SWIPE_THRESHOLD = 30; // Lowered from 50 for easier mobile swipe
-const SWIPE_MAX_VERTICAL = 100; // px — abort if too much vertical movement (increased for mobile)
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -134,9 +131,6 @@ export function SongView() {
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const adjustTranspose = useWorkflowStore((s) => s.adjustTranspose);
   const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
-  const openSong = useWorkflowStore((s) => s.openSong);
-  const openMarker = useWorkflowStore((s) => s.openMarker);
-  const openNote = useWorkflowStore((s) => s.openNote);
 
   const songId = reader.type === 'song' ? reader.songId : null;
   const transpose = reader.type === 'song' ? reader.transpose : 0;
@@ -151,20 +145,7 @@ export function SongView() {
   const [loading, setLoading] = useState(true);
   const [librarySongs, setLibrarySongs] = useState<Array<{ id: number; songNumber: number; title: string; language?: string | null }> | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [showSwipeHint, setShowSwipeHint] = useState(false);
   // viewMode is now controlled by readerMode from store
-
-  useEffect(() => {
-    const hasSeen = localStorage.getItem('worship-swipe-hint-seen');
-    if (!hasSeen) {
-      setShowSwipeHint(true);
-      const timer = setTimeout(() => {
-        setShowSwipeHint(false);
-        localStorage.setItem('worship-swipe-hint-seen', 'true');
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, []);
 
   useEffect(() => {
     if (isSetlistContext) {
@@ -209,9 +190,6 @@ export function SongView() {
 
     loadLibrarySongs();
   }, [isSetlistContext, libraryLanguage]);
-
-  // Swipe indicator state - tracks offset during gesture
-  const [_swipeOffset, setSwipeOffset] = useState(0);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -272,194 +250,6 @@ export function SongView() {
     animationFrameId = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(animationFrameId);
   }, [isScrolling, scrollSpeed]);
-
-  // ─── Navigate to setlist neighbour ───────────────────────────────────────
-  const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
-    if (!setlistItems || !setlistId) return;
-    const currentIdx = currentItemId
-      ? setlistItems.findIndex(i => i.id === currentItemId)
-      : setlistItems.findIndex(i => i.songId === songId);
-
-    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
-    if (targetIdx < 0 || targetIdx >= setlistItems.length) return;
-
-    const target = setlistItems[targetIdx];
-    if (!target.type || target.type === 'song') {
-      openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id);
-    } else if (target.type === 'marker') {
-      openMarker(target.label || 'Event Marker', setlistId, target.id);
-    } else if (target.type === 'note') {
-      openNote(target.label || 'Note', target.content || '', setlistId, target.id);
-    }
-  }, [setlistItems, setlistId, currentItemId, songId, openSong, openMarker, openNote]);
-
-  const navigateLibrary = useCallback((direction: 'prev' | 'next') => {
-    if (!songId || !librarySongs || librarySongs.length === 0) {
-      console.warn('Library songs not loaded yet');
-      return;
-    }
-
-    const currentIdx = librarySongs.findIndex(s => s.id === songId);
-    if (currentIdx === -1) return;
-
-    const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
-
-    if (targetIdx >= 0 && targetIdx < librarySongs.length) {
-      const target = librarySongs[targetIdx];
-      // Trigger haptic feedback if on mobile
-      if (navigator.vibrate) navigator.vibrate(10);
-      openSong(target.id, 'library');
-    }
-  }, [songId, librarySongs, openSong]);
-
-  // ─── Pointer / Touch swipe tracking ──────────────────────────────────────
-  // NOTE: We use native (non-passive) touch listeners via useEffect because
-  // React 17+ registers synthetic onTouchMove as passive, making
-  // e.preventDefault() a no-op — which means horizontal swipes get consumed
-  // by the browser's pan-y scroll behavior on mobile before we can intercept.
-  const pointerStartRef = useRef<{ x: number; y: number; time: number; pointerId: number } | null>(null);
-  const isHorizontalSwipeRef = useRef<boolean | null>(null); // null = undecided
-
-  // navigateSetlist / navigateLibrary refs so native handlers can call latest version
-  const navigateSetlistRef = useRef(navigateSetlist);
-  const navigateLibraryRef = useRef(navigateLibrary);
-  const isSetlistContextRef = useRef(isSetlistContext);
-  const isScrollingRef = useRef(isScrolling);
-  useEffect(() => { navigateSetlistRef.current = navigateSetlist; }, [navigateSetlist]);
-  useEffect(() => { navigateLibraryRef.current = navigateLibrary; }, [navigateLibrary]);
-  useEffect(() => { isSetlistContextRef.current = isSetlistContext; }, [isSetlistContext]);
-  useEffect(() => { isScrollingRef.current = isScrolling; }, [isScrolling]);
-
-  // Pointer handlers (desktop / stylus — pointer API works fine on desktop)
-  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    // Only handle mouse/pen; touch is handled by native listeners below
-    if (e.pointerType === 'touch') return;
-    pointerStartRef.current = { x: e.clientX, y: e.clientY, time: performance.now(), pointerId: e.pointerId };
-    isHorizontalSwipeRef.current = null;
-    setSwipeOffset(0);
-  };
-
-  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (e.pointerType === 'touch') return;
-    if (!pointerStartRef.current) return;
-    const dx = e.clientX - pointerStartRef.current.x;
-    const dy = e.clientY - pointerStartRef.current.y;
-
-    if (isHorizontalSwipeRef.current === null) {
-      if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
-        const isHorizontal = Math.abs(dx) > Math.abs(dy);
-        isHorizontalSwipeRef.current = isHorizontal;
-        if (isHorizontal) {
-          try { e.currentTarget.setPointerCapture(pointerStartRef.current.pointerId); } catch (_) {}
-        }
-      }
-    }
-
-    if (isHorizontalSwipeRef.current) {
-      e.stopPropagation();
-      setSwipeOffset(dx);
-    }
-  };
-
-  const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (e.pointerType === 'touch') return;
-    try { e.currentTarget.releasePointerCapture(e.pointerId); } catch (_) {}
-
-    if (!pointerStartRef.current) return;
-    const start = pointerStartRef.current;
-    pointerStartRef.current = null;
-
-    const deltaX = e.clientX - start.x;
-    const deltaY = Math.abs(e.clientY - start.y);
-    const absDx = Math.abs(deltaX);
-    const duration = performance.now() - start.time;
-
-    setSwipeOffset(0);
-    isHorizontalSwipeRef.current = null;
-
-    if (absDx < 8 && deltaY < 8 && duration < 250) {
-      if (isScrolling) setIsScrolling(false);
-      return;
-    }
-
-    if (absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
-      const direction = deltaX < 0 ? 'next' : 'prev';
-      if (isSetlistContext) navigateSetlist(direction);
-      else navigateLibrary(direction);
-    }
-  };
-
-  // ─── Non-passive native touch listeners (the real mobile fix) ──────────────
-  useEffect(() => {
-    const el = scrollContainerRef.current;
-    if (!el) return;
-
-    let touchStart: { x: number; y: number; time: number } | null = null;
-    let lockedHorizontal: boolean | null = null;
-
-    const onTouchStart = (e: TouchEvent) => {
-      const t = e.touches[0];
-      touchStart = { x: t.clientX, y: t.clientY, time: performance.now() };
-      lockedHorizontal = null;
-    };
-
-    const onTouchMove = (e: TouchEvent) => {
-      if (!touchStart) return;
-      const t = e.touches[0];
-      const dx = t.clientX - touchStart.x;
-      const dy = t.clientY - touchStart.y;
-
-      // Determine direction lock on first meaningful movement
-      if (lockedHorizontal === null) {
-        if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
-          lockedHorizontal = Math.abs(dx) > Math.abs(dy);
-        }
-      }
-
-      // If we decided it's horizontal, prevent vertical scroll takeover
-      if (lockedHorizontal === true) {
-        e.preventDefault();
-      }
-    };
-
-    const onTouchEnd = (e: TouchEvent) => {
-      if (!touchStart) return;
-      const start = touchStart;
-      touchStart = null;
-
-      const t = e.changedTouches[0];
-      const deltaX = t.clientX - start.x;
-      const deltaY = Math.abs(t.clientY - start.y);
-      const absDx = Math.abs(deltaX);
-      const duration = performance.now() - start.time;
-      const wasHorizontal = lockedHorizontal;
-      lockedHorizontal = null;
-
-      // Tap: stop autoscroll
-      if (absDx < 8 && deltaY < 8 && duration < 250) {
-        if (isScrollingRef.current) setIsScrolling(false);
-        return;
-      }
-
-      // Horizontal swipe: navigate
-      if (wasHorizontal && absDx >= SWIPE_THRESHOLD && deltaY <= SWIPE_MAX_VERTICAL) {
-        const direction = deltaX < 0 ? 'next' : 'prev';
-        if (isSetlistContextRef.current) navigateSetlistRef.current(direction);
-        else navigateLibraryRef.current(direction);
-      }
-    };
-
-    // { passive: false } is the key — lets us call e.preventDefault()
-    el.addEventListener('touchstart', onTouchStart, { passive: true });
-    el.addEventListener('touchmove', onTouchMove, { passive: false });
-    el.addEventListener('touchend', onTouchEnd, { passive: true });
-
-    return () => {
-      el.removeEventListener('touchstart', onTouchStart);
-      el.removeEventListener('touchmove', onTouchMove);
-      el.removeEventListener('touchend', onTouchEnd);
-    };
-  }, [scrollContainerRef]); // re-run only if the ref element changes
 
   const adjustSpeed = (delta: number) => {
     setScrollSpeed(prev => {
@@ -611,7 +401,7 @@ export function SongView() {
   const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
 
   return (
-    <div className={`flex-col min-h-full w-full bg-[#FAFAFA] flex song-view-container ${langClass}`}>
+    <div className={`flex-col min-h-full w-full bg-[#FAFAFA] flex ${langClass}`}>
       <ReaderHeader
         song={song}
         transpose={displayTranspose}
@@ -640,14 +430,9 @@ export function SongView() {
       {/* Calm Typography Area — Independent Scroll Region */}
       <div
         ref={scrollContainerRef}
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerUp}
-        onPointerCancel={handlePointerUp}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
-        style={{ touchAction: 'pan-y' }}
       >
-        <div className="w-full px-4 md:px-8 pt-8 pb-40" style={{ touchAction: 'pan-y' }}>
+        <div className="w-full px-4 md:px-8 pt-8 pb-40">
           <div className="max-w-4xl mx-auto w-full">
           {isAdminAuthenticated ? (
             (() => {
@@ -686,12 +471,6 @@ export function SongView() {
         </div>
       </div>
       </div>
-
-      {showSwipeHint && (
-        <div className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg pointer-events-none transition-all duration-500 animate-pulse">
-          ← Swipe to navigate →
-        </div>
-      )}
 
       {/* Floating Auto Scroll Control HUD */}
       {readerMode === 'chords' && (
