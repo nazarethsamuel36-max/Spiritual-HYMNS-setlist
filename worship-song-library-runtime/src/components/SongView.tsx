@@ -567,7 +567,7 @@ export function SongView() {
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerUp}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
-        style={{ touchAction: 'none' }}
+        style={{ touchAction: 'pan-y' }}
       >
         <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-y-auto overscroll-contain" style={{ touchAction: 'auto' }}>
           <div className="max-w-4xl mx-auto w-full">
