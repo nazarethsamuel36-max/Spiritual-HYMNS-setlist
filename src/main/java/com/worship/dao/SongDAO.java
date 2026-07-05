@@ -141,6 +141,39 @@ public class SongDAO {
     }
 
     /**
+     * Returns [prevSongId, nextSongId] by song_number ordering in the same language.
+     * 0 means no neighbour. Used for swipe navigation in songView.
+     */
+    public int[] getAdjacentSongs(int songNumber, String language) {
+        int[] result = {0, 0};
+        // Prev: largest song_number strictly less than current
+        String prevSql = "SELECT id FROM songs WHERE " + getVisibilityFilter()
+                + " AND language = ? AND song_number < ? ORDER BY song_number DESC LIMIT 1";
+        // Next: smallest song_number strictly greater than current
+        String nextSql = "SELECT id FROM songs WHERE " + getVisibilityFilter()
+                + " AND language = ? AND song_number > ? ORDER BY song_number ASC LIMIT 1";
+        try (Connection conn = DBConnection.getConnection()) {
+            try (PreparedStatement ps = conn.prepareStatement(prevSql)) {
+                ps.setString(1, language);
+                ps.setInt(2, songNumber);
+                try (ResultSet rs = ps.executeQuery()) {
+                    if (rs.next()) result[0] = rs.getInt("id");
+                }
+            }
+            try (PreparedStatement ps = conn.prepareStatement(nextSql)) {
+                ps.setString(1, language);
+                ps.setInt(2, songNumber);
+                try (ResultSet rs = ps.executeQuery()) {
+                    if (rs.next()) result[1] = rs.getInt("id");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    /**
      * Get songs by their song number and language (exact match).
      * Used for number search layer.
      */

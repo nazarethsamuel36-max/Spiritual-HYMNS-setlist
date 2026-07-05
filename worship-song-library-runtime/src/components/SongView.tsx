@@ -5,33 +5,7 @@ import { supabase } from '../lib/supabaseClient';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
-import { DeterministicSongView } from './reader/DeterministicSongView';
-
-// Parse ChordPro format to chord positions
-function parseChordProToPositions(chordPro: string): Array<{ chord: string; position: number }> {
-  if (!chordPro) return [];
-  
-  const chords: Array<{ chord: string; position: number }> = [];
-  const lines = chordPro.split('\n');
-  let charIndex = 0;
-  
-  for (const line of lines) {
-    const chordRegex = /\[([^\]]+)\]/g;
-    let match;
-    
-    while ((match = chordRegex.exec(line)) !== null) {
-      chords.push({
-        chord: match[1],
-        position: charIndex + match.index
-      });
-    }
-    
-    // Add newline character to character index
-    charIndex += line.length + 1;
-  }
-  
-  return chords;
-}
+import { ChordProRenderer } from './reader/ChordProRenderer';
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -533,9 +507,8 @@ export function SongView() {
               )}
             </div>
           ) : (
-            <DeterministicSongView 
-              lyrics={song.lyrics || ''}
-              chords={parseChordProToPositions(song.chords || '')}
+            <ChordProRenderer 
+              rawChordPro={song.chords || ''}
             />
           )}
         </div>
