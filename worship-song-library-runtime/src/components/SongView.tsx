@@ -6,7 +6,6 @@ import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
-import { useLibrarySongs } from '../hooks/useLibrarySongs';
 
 // Parse lyrics string to sections (copied from CacheService for direct fetch)
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -71,18 +70,53 @@ export function SongView() {
 
   const [song, setSong] = useState<SongDetail | null>(null);
   const [loading, setLoading] = useState(true);
+  const [librarySongs, setLibrarySongs] = useState<Array<{ id: number; songNumber: number; title: string; language?: string | null }> | null>(null);
   const [error, setError] = useState<string | null>(null);
-  
-  // Use the new hook for library songs (cached in IndexedDB)
-  const { librarySongs: allLibrarySongs } = useLibrarySongs();
-  
-  // Filter library songs by language
-  const filteredLibrarySongs = allLibrarySongs.filter((s) => 
-    libraryLanguage === 'All' || s.language?.toLowerCase() === libraryLanguage.toLowerCase()
-  ).sort((a, b) => a.songNumber - b.songNumber);
-  
-  // In setlist context, don't use library songs
-  const librarySongs = isSetlistContext ? null : filteredLibrarySongs;
+  // viewMode is now controlled by readerMode from store
+
+  useEffect(() => {
+    if (isSetlistContext) {
+      setLibrarySongs(null);
+      return;
+    }
+
+    const loadLibrarySongs = async () => {
+      console.log('📚 Loading library songs DIRECTLY from Supabase (cache disabled)...');
+      try {
+        let query = supabase
+          .from('songs')
+          .select('id, song_number, title, language')
+          .eq('is_active', true)
+          .order('song_number', { ascending: true });
+
+        const { data, error } = await query;
+
+        if (error) {
+          throw error;
+        }
+
+        let allSongs = (data ?? []).map((row: any) => ({
+          id: row.id,
+          songNumber: Number(row.song_number ?? 0),
+          title: row.title ?? 'Untitled',
+          language: row.language ?? 'English',
+        }));
+
+        if (libraryLanguage !== 'All') {
+          allSongs = allSongs.filter((s) => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
+        }
+
+        allSongs.sort((a, b) => a.songNumber - b.songNumber);
+        setLibrarySongs(allSongs);
+        console.log('📚 Library songs loaded from Supabase:', allSongs.length);
+      } catch (err) {
+        console.error('❌ Failed to load library songs from Supabase:', err);
+        setLibrarySongs([]);
+      }
+    };
+
+    loadLibrarySongs();
+  }, [isSetlistContext, libraryLanguage]);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
