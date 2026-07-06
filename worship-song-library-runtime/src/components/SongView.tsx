@@ -75,7 +75,7 @@ export function SongView() {
   // viewMode is now controlled by readerMode from store
 
   useEffect(() => {
-    if (isSetlistContext || songId) {
+    if (isSetlistContext) {
       setLibrarySongs(null);
       return;
     }
@@ -116,7 +116,7 @@ export function SongView() {
     };
 
     loadLibrarySongs();
-  }, [isSetlistContext, libraryLanguage, songId]);
+  }, [isSetlistContext, libraryLanguage]);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
@@ -308,21 +308,20 @@ export function SongView() {
     const loadSong = async () => {
       setError(null);
 
-      // TEMPORARY: Disable IndexedDB - fetch directly from Supabase
-      // const cachedSong = await db.songs.get(songId);
+      const cachedSong = await db.songs.get(songId);
       if (cancelled) return;
 
-      // if (cachedSong) {
-      //   setSong(cachedSong);
-      //   setLoading(false);
-      // } else {
+      if (cachedSong) {
+        setSong(cachedSong);
+        setLoading(false);
+      } else {
         setLoading(true);
-      // }
+      }
 
       if (!navigator.onLine) {
-        // if (!cachedSong) {
+        if (!cachedSong) {
           setError('Offline and no cached song is available.');
-        // }
+        }
         return;
       }
 
@@ -343,9 +342,9 @@ export function SongView() {
 
         if (!isAdminAuthenticated && data.is_published === false) {
           console.log('🚫 User attempted to access unpublished song');
-          // if (!cachedSong) {
+          if (!cachedSong) {
             throw new Error('This song is not yet published');
-          // }
+          }
           return;
         }
 
@@ -368,22 +367,19 @@ export function SongView() {
           is_active: data.is_active ?? true
         };
 
-        // TEMPORARY: Disable IndexedDB write
-        // await db.songs.put(songDetail);
+        await db.songs.put(songDetail);
         if (!cancelled) {
           setSong(songDetail);
           setLoading(false);
         }
       } catch (err) {
-        console.warn('⚠️ Failed to fetch song from Supabase:', err);
-        // if (!cachedSong) {
+        console.warn('⚠️ Failed to fetch song from Supabase, using cache if available:', err);
+        if (!cachedSong) {
           setError(err instanceof Error ? err.message : 'Failed to load song');
-        // }
+        }
       } finally {
-        if (!cancelled) {
-          // if (!cachedSong) {
-            setLoading(false);
-          // }
+        if (!cancelled && !cachedSong) {
+          setLoading(false);
         }
       }
     };
