@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 
 interface ChordWordUnit {
   chord: string;
@@ -17,7 +17,7 @@ interface ChordProRendererProps {
 }
 
 export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro }) => {
-  const [fontSize, setFontSize] = useState<number>(16);
+  const fontSize = 16;
 
   const parsedSongLines = useMemo<SongLine[]>(() => {
     if (!rawChordPro) return [];
@@ -65,7 +65,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro 
   }, [rawChordPro]);
 
   return (
-    <div style={{ ...styles.songSheet, fontSize: ${fontSize}px }}>
+    <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
       {parsedSongLines.map((line, lineIndex) => {
         if (line.isDirective) {
           if (line.directiveType === 'title' || line.directiveType === 't') {
