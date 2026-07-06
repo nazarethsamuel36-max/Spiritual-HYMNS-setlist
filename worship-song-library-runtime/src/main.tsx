@@ -4,16 +4,26 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 
+// TEMPORARY: Unregister service worker for development
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const registration of registrations) {
+      registration.unregister();
+      console.log('??? Service worker unregistered');
+    }
+  });
+}
+
 // registerSW({
 //   onNeedRefresh() {
-//     console.log('🔄 New app update available. Refresh recommended.');
+//     console.log('?? New app update available. Refresh recommended.');
 //   },
 //   onOfflineReady() {
-//     console.log('✅ App is ready to work offline.');
+//     console.log('? App is ready to work offline.');
 //   }
 // })
 
-console.log('🚀 App starting...');
+console.log('?? App starting...');
 console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL);
 console.log('VITE_SUPABASE_ANON_KEY length:', import.meta.env.VITE_SUPABASE_ANON_KEY?.length);
 console.log('Is key present?', !!import.meta.env.VITE_SUPABASE_ANON_KEY);
