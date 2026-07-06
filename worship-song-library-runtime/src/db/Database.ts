@@ -99,6 +99,13 @@ export type CacheEntry = {
 }
 
 
+export type LibrarySong = {
+  id: number;
+  songNumber: number;
+  title: string;
+  language: string;
+}
+
 export class WorshipDatabase extends Dexie {
   songs!: EntityTable<SongDetail, 'id'>;
   songIndex!: EntityTable<SongIndex, 'id'>;
@@ -106,19 +113,21 @@ export class WorshipDatabase extends Dexie {
   setlists!: EntityTable<Setlist, 'id'>;
   arrangements!: EntityTable<Arrangement, 'id'>;
   cache!: EntityTable<CacheEntry, 'id'>;
+  librarySongs!: EntityTable<LibrarySong, 'id'>;
 
   sharedSongs!: EntityTable<SongDetail, 'id'>;
   sharedSetlists!: EntityTable<Setlist, 'id'>;
 
   constructor() {
     super('WorshipDatabase');
-    this.version(5).stores({
+    this.version(6).stores({
       songs: 'id, songNumber, language',
       songIndex: 'id, songNumber, title, language, searchTokens',
       syncMeta: 'id',
       setlists: 'id, title, updatedAt',
       arrangements: 'id, songId, type, updatedAt',
       cache: 'id, timestamp',
+      librarySongs: 'id, songNumber, title, language',
       sharedSongs: 'id, songNumber, title, language',
       sharedSetlists: 'id, title, updatedAt'
     });
