@@ -75,7 +75,7 @@ export function SongView() {
   // viewMode is now controlled by readerMode from store
 
   useEffect(() => {
-    if (isSetlistContext) {
+    if (isSetlistContext || songId) {
       setLibrarySongs(null);
       return;
     }
@@ -116,7 +116,7 @@ export function SongView() {
     };
 
     loadLibrarySongs();
-  }, [isSetlistContext, libraryLanguage]);
+  }, [isSetlistContext, libraryLanguage, songId]);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
