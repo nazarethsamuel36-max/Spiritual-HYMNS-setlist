@@ -70,52 +70,23 @@ export function SongView() {
 
   const [song, setSong] = useState<SongDetail | null>(null);
   const [loading, setLoading] = useState(true);
-  const [librarySongs, setLibrarySongs] = useState<Array<{ id: number; songNumber: number; title: string; language?: string | null }> | null>(null);
   const [error, setError] = useState<string | null>(null);
   // viewMode is now controlled by readerMode from store
 
-  useEffect(() => {
-    if (isSetlistContext) {
-      setLibrarySongs(null);
-      return;
+  // 🔥 REPLACE WITH useLiveQuery to read instantly from cache
+  const librarySongs = useLiveQuery(async () => {
+    if (isSetlistContext) return null;
+    const songs = await db.songIndex.toArray();
+    let filtered = songs;
+    if (libraryLanguage !== 'All') {
+       filtered = songs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
     }
-
-    const loadLibrarySongs = async () => {
-      console.log('📚 Loading library songs DIRECTLY from Supabase (cache disabled)...');
-      try {
-        let query = supabase
-          .from('songs')
-          .select('id, song_number, title, language')
-          .eq('is_active', true)
-          .order('song_number', { ascending: true });
-
-        const { data, error } = await query;
-
-        if (error) {
-          throw error;
-        }
-
-        let allSongs = (data ?? []).map((row: any) => ({
-          id: row.id,
-          songNumber: Number(row.song_number ?? 0),
-          title: row.title ?? 'Untitled',
-          language: row.language ?? 'English',
-        }));
-
-        if (libraryLanguage !== 'All') {
-          allSongs = allSongs.filter((s) => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
-        }
-
-        allSongs.sort((a, b) => a.songNumber - b.songNumber);
-        setLibrarySongs(allSongs);
-        console.log('📚 Library songs loaded from Supabase:', allSongs.length);
-      } catch (err) {
-        console.error('❌ Failed to load library songs from Supabase:', err);
-        setLibrarySongs([]);
-      }
-    };
-
-    loadLibrarySongs();
+    return filtered.map(s => ({
+      id: s.id,
+      songNumber: s.songNumber,
+      title: s.title,
+      language: s.language ?? null
+    })).sort((a, b) => a.songNumber - b.songNumber);
   }, [isSetlistContext, libraryLanguage]);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -303,49 +274,48 @@ export function SongView() {
       return;
     }
 
-    let cancelled = false;
+    // 🔥 CRITICAL FIX: Create an AbortController to kill the network request
+    const controller = new AbortController();
 
     const loadSong = async () => {
       setError(null);
 
-      const cachedSong = await db.songs.get(songId);
-      if (cancelled) return;
-
-      if (cachedSong) {
-        setSong(cachedSong);
-        setLoading(false);
-      } else {
-        setLoading(true);
-      }
-
-      if (!navigator.onLine) {
-        if (!cachedSong) {
-          setError('Offline and no cached song is available.');
-        }
-        return;
-      }
-
       try {
-        console.log('🎵 Background fetch song from Supabase...');
-        const query = supabase.from('songs').select('*').eq('id', songId);
-        const { data, error } = await (isAdminAuthenticated ? query : query.eq('is_active', true)).single();
+        const cachedSong = await db.songs.get(songId);
+        if (controller.signal.aborted) return;
 
-        if (cancelled) return;
-
-        if (error) {
-          throw new Error(`Supabase error: ${error.message}`);
+        if (cachedSong) {
+          setSong(cachedSong);
+          setLoading(false);
+        } else {
+          setLoading(true);
         }
 
-        if (!data) {
-          throw new Error('Song data not found');
-        }
-
-        if (!isAdminAuthenticated && data.is_published === false) {
-          console.log('🚫 User attempted to access unpublished song');
+        if (!navigator.onLine) {
           if (!cachedSong) {
-            throw new Error('This song is not yet published');
+            setError('Offline and no cached song is available.');
+            setLoading(false); // 🔥 FIX: Was missing this, causing infinite loading!
           }
           return;
+        }
+
+        console.log('🎵 Background fetch song from Supabase...');
+        let query = supabase.from('songs').select('*').eq('id', songId);
+        if (!isAdminAuthenticated) {
+           query = query.eq('is_active', true);
+        }
+        
+        // 🔥 Check abort signal before making request
+        if (controller.signal.aborted) return;
+        
+        const { data, error } = await query.single();
+
+        if (error) throw new Error(`Supabase error: ${error.message}`);
+        if (!data) throw new Error('Song data not found');
+
+        if (!isAdminAuthenticated && data.is_published === false) {
+          if (!cachedSong) throw new Error('This song is not yet published');
+          return; 
         }
 
         const songDetail: SongDetail = {
@@ -368,18 +338,19 @@ export function SongView() {
         };
 
         await db.songs.put(songDetail);
-        if (!cancelled) {
+        
+        if (!controller.signal.aborted) {
           setSong(songDetail);
           setLoading(false);
         }
-      } catch (err) {
-        console.warn('⚠️ Failed to fetch song from Supabase, using cache if available:', err);
-        if (!cachedSong) {
+      } catch (err: any) {
+        // 🔥 Silently ignore cancelled requests so they don't trigger error states
+        if (err.name === 'AbortError') return; 
+        
+        console.warn('⚠️ Failed to fetch song from Supabase:', err);
+        if (!controller.signal.aborted) {
           setError(err instanceof Error ? err.message : 'Failed to load song');
-        }
-      } finally {
-        if (!cancelled && !cachedSong) {
-          setLoading(false);
+          setLoading(false); // 🔥 Ensure loading stops even on error
         }
       }
     };
@@ -387,7 +358,7 @@ export function SongView() {
     void loadSong();
 
     return () => {
-      cancelled = true;
+      controller.abort(); // 🔥 KILLS the network request instantly on cleanup
     };
   }, [songId, isAdminAuthenticated]);
 

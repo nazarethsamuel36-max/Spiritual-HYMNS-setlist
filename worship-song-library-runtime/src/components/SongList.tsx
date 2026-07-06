@@ -65,7 +65,7 @@ export function SongList() {
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
   useEffect(() => {
-    let cancelled = false;
+    const controller = new AbortController(); // 🔥 CRITICAL FIX
 
     async function loadLibrarySongs() {
       setLoadError(null);
@@ -73,7 +73,7 @@ export function SongList() {
 
       try {
         const cachedSongs = await db.songIndex.toArray();
-        if (cancelled) return;
+        if (controller.signal.aborted) return;
 
         if (cachedSongs.length > 0) {
           setAllSongs(cachedSongs.map(normalizeSongIndex));
@@ -83,9 +83,7 @@ export function SongList() {
         }
 
         if (!navigator.onLine) {
-          if (cachedSongs.length === 0) {
-            setAllSongs([]);
-          }
+          if (cachedSongs.length === 0) setAllSongs([]);
           setIsOffline(true);
           return;
         }
@@ -99,17 +97,13 @@ export function SongList() {
           query = query.eq('is_published', true);
         }
 
+        // 🔥 Check abort signal before making request
+        if (controller.signal.aborted) return;
+        
         const { data, error } = await query.order('song_number', { ascending: true });
 
-        if (cancelled) return;
-
-        if (error) {
-          throw new Error(`Supabase error: ${error.message}`);
-        }
-
-        if (!data) {
-          throw new Error('No data returned from Supabase');
-        }
+        if (error) throw new Error(`Supabase error: ${error.message}`);
+        if (!data) throw new Error('No data returned from Supabase');
 
         const songs: SongIndex[] = (data as any[]).map((song: any) => ({
           id: Number(song.id ?? 0),
@@ -128,18 +122,13 @@ export function SongList() {
         await db.songIndex.bulkPut(normalizedSongs);
         setAllSongs(normalizedSongs);
         await SearchEngine.indexSongs(normalizedSongs);
-      } catch (err) {
-        if (cancelled) return;
+      } catch (err: any) {
+        if (err.name === 'AbortError') return; // Ignore cancelled requests
+        
         console.error('Unexpected error loading songs:', err);
-        if (!allSongs.length) {
+        if (!controller.signal.aborted) {
           setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
-        }
-        if (!navigator.onLine) {
-          setIsOffline(true);
-        }
-      } finally {
-        if (!cancelled && allSongs.length === 0) {
-          setIsLoading(false);
+          setIsLoading(false); // 🔥 Ensure loading stops on error
         }
       }
     }
@@ -147,7 +136,7 @@ export function SongList() {
     void loadLibrarySongs();
 
     return () => {
-      cancelled = true;
+      controller.abort(); // 🔥 Physically kills the network request
     };
   }, [isAdminAuthenticated]);
 
