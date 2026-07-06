@@ -39,7 +39,7 @@ function App() {
   const closeReader = useWorkflowStore((s) => s.closeReader);
   const titleTapCountRef = useRef(0);
   const titleTapTimerRef = useRef<number | null>(null);
-  const { stats, downloadAllSongs, saveToDatabase, reset } = useDownloadProgress();
+  const { stats, reset } = useDownloadProgress();
 
   // Determine which sidebar tab is active
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
@@ -51,20 +51,7 @@ function App() {
   const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
 
   const runInitialDownload = async () => {
-    try {
-      const cachedCount = await db.songs.count();
-
-      if (cachedCount === 0 && navigator.onLine) {
-        console.log('🔄 Cache empty. Auto-loading songs into IndexedDB...');
-        const songs = await downloadAllSongs();
-        if (songs) {
-          await saveToDatabase(songs);
-        }
-      }
-    } catch (err) {
-      console.error('⚠️ Failed to auto-load songs into IndexedDB:', err);
-    }
-
+    // Skip auto-download since caching is disabled
     RealtimeService.initialize();
   };
 
