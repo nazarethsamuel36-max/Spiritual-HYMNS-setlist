@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import { bootstrapApp, wakeUpSync } from './services/DataService';
+import { useEffect, useRef, useState } from 'react';
+import { wakeUpSync } from './services/DataService';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { ReaderItemView } from './components/reader/ReaderItemView';
@@ -11,6 +11,7 @@ import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
+import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
@@ -19,6 +20,7 @@ import { db } from './db/Database';
 
 function App() {
   const isMobile = useIsMobile();
+  const [showGatekeeper, setShowGatekeeper] = useState(true);
 
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -48,9 +50,6 @@ function App() {
   // Initialize DataService and Realtime Service on app start
   useEffect(() => {
     const initializeAppData = async () => {
-      // Silent bootstrap - downloads all songs on first visit if on fast network
-      await bootstrapApp();
-      
       // Wake-up delta sync - fetches only changed songs since last sync
       await wakeUpSync();
       
@@ -217,8 +216,12 @@ function App() {
   }, [isMobile, mobileActivePane]);
 
   return (
-    <div className="app-shell">
-      {/* ═══ SIDEBAR PANE ═══ */}
+    <>
+      {showGatekeeper ? (
+        <SetupGatekeeper onComplete={() => setShowGatekeeper(false)} />
+      ) : (
+        <div className="app-shell">
+          {/* ═══ SIDEBAR PANE ═══ */}
       {showSidebar && (
         <div className="sidebar-pane">
 
@@ -406,6 +409,8 @@ function App() {
       {/* Connection Status Indicator */}
       <ConnectionStatus />
     </div>
+      )}
+    </>
   );
 }
 

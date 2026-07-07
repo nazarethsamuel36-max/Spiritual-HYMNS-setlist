@@ -6,88 +6,104 @@ import { SearchEngine } from '../utils/SearchEngine';
 const LAST_SYNC_TIME_KEY = 'last_sync_time';
 
 /**
- * Silent Bootstrap - Downloads all songs on first visit if on fast network
- * This runs once when the app is first opened
+ * Batched Download - Downloads all songs in batches with progress callback
+ * This is triggered only when user explicitly clicks download button
  */
-export async function bootstrapApp(): Promise<void> {
+export async function batchDownloadSongs(onProgress?: (percent: number) => void): Promise<void> {
   try {
-    console.log('🚀 Bootstrap: Checking if data already exists...');
-    
-    // Check if we already have songs
-    const existingSongs = await db.songs.count();
-    if (existingSongs > 0) {
-      console.log('✅ Bootstrap: Data already exists, skipping download');
+    console.log('� Batch Download: Starting...');
+
+    // Get total count first
+    const { count, error: countError } = await supabase
+      .from('songs')
+      .select('*', { count: 'exact', head: true })
+      .eq('is_active', true);
+
+    if (countError) {
+      throw new Error(`Supabase count error: ${countError.message}`);
+    }
+
+    if (!count || count === 0) {
+      console.warn('⚠️ Batch Download: No songs found');
       return;
     }
 
-    console.log('📡 Bootstrap: No data found, checking network conditions...');
+    console.log(`📊 Batch Download: Total songs to download: ${count}`);
 
-    // Check network conditions
-    const connection = (navigator as any).connection;
-    if (connection) {
-      const { saveData, effectiveType } = connection;
-      if (saveData || effectiveType === '2g' || effectiveType === '3g') {
-        console.log('⚠️ Bootstrap: Slow network detected, skipping download to save bandwidth');
-        return;
+    const BATCH_SIZE = 50;
+    let downloadedCount = 0;
+    const allSongDetails: SongDetail[] = [];
+    const allSongIndices: SongIndex[] = [];
+
+    // Download in batches
+    while (downloadedCount < count) {
+      const { data, error } = await supabase
+        .from('songs')
+        .select('*')
+        .eq('is_active', true)
+        .range(downloadedCount, downloadedCount + BATCH_SIZE - 1)
+        .order('id', { ascending: true });
+
+      if (error) {
+        throw new Error(`Supabase fetch error: ${error.message}`);
+      }
+
+      if (!data || data.length === 0) {
+        break;
+      }
+
+      // Transform batch
+      const batchDetails: SongDetail[] = data.map((song: any) => ({
+        id: song.id,
+        songNumber: song.song_number,
+        title: song.title,
+        artist: song.artist,
+        composer: song.composer,
+        language: song.language,
+        originalKey: song.original_key,
+        capo: song.capo,
+        bpm: song.bpm,
+        timeSignature: song.time_signature,
+        hashtags: [],
+        sections: parseLyricsToSections(song.lyrics || ''),
+        chords: song.chords,
+        lyrics: song.lyrics,
+        isPublished: song.is_published !== false,
+        is_active: song.is_active !== false,
+        updated_at: song.updated_at
+      }));
+
+      const batchIndices: SongIndex[] = data.map((song: any) => ({
+        id: song.id,
+        songNumber: song.song_number,
+        title: song.title,
+        artist: song.artist,
+        language: song.language,
+        originalKey: song.original_key,
+        hashtags: [],
+        searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+        romanTitle: song.title,
+        isPublished: song.is_published !== false
+      }));
+
+      allSongDetails.push(...batchDetails);
+      allSongIndices.push(...batchIndices);
+      downloadedCount += data.length;
+
+      // Update progress
+      const percent = Math.round((downloadedCount / count) * 100);
+      console.log(`📥 Batch Download: Progress ${percent}% (${downloadedCount}/${count})`);
+      if (onProgress) {
+        onProgress(percent);
       }
     }
 
-    // Fetch all active songs from Supabase in one query
-    console.log('📥 Bootstrap: Fetching all songs from Supabase...');
-    const { data, error } = await supabase
-      .from('songs')
-      .select('*')
-      .eq('is_active', true);
-
-    if (error) {
-      throw new Error(`Supabase error: ${error.message}`);
-    }
-
-    if (!data || data.length === 0) {
-      console.warn('⚠️ Bootstrap: No songs returned from Supabase');
-      return;
-    }
-
-    console.log(`📊 Bootstrap: Downloaded ${data.length} songs, saving to IndexedDB...`);
-
-    // Transform and save to IndexedDB
-    const songDetails: SongDetail[] = data.map((song: any) => ({
-      id: song.id,
-      songNumber: song.song_number,
-      title: song.title,
-      artist: song.artist,
-      composer: song.composer,
-      language: song.language,
-      originalKey: song.original_key,
-      capo: song.capo,
-      bpm: song.bpm,
-      timeSignature: song.time_signature,
-      hashtags: [],
-      sections: parseLyricsToSections(song.lyrics || ''),
-      chords: song.chords,
-      lyrics: song.lyrics,
-      isPublished: song.is_published !== false,
-      is_active: song.is_active !== false,
-      updated_at: song.updated_at
-    }));
-
-    const songIndices: SongIndex[] = data.map((song: any) => ({
-      id: song.id,
-      songNumber: song.song_number,
-      title: song.title,
-      artist: song.artist,
-      language: song.language,
-      originalKey: song.original_key,
-      hashtags: [],
-      searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-      romanTitle: song.title,
-      isPublished: song.is_published !== false
-    }));
+    console.log(`💾 Batch Download: Saving ${allSongDetails.length} songs to IndexedDB...`);
 
     // Bulk save to IndexedDB
     await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
-      await db.songs.bulkPut(songDetails);
-      await db.songIndex.bulkPut(songIndices.map(normalizeSongIndex));
+      await db.songs.bulkPut(allSongDetails);
+      await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
       
       // Save sync timestamp
       await db.meta.put({
@@ -97,11 +113,11 @@ export async function bootstrapApp(): Promise<void> {
     });
 
     // Update search engine
-    await SearchEngine.indexSongs(songIndices.map(normalizeSongIndex));
+    await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
 
-    console.log('✅ Bootstrap: Successfully downloaded and cached all songs');
+    console.log('✅ Batch Download: Successfully downloaded and cached all songs');
   } catch (error) {
-    console.error('❌ Bootstrap failed:', error);
+    console.error('❌ Batch Download failed:', error);
     throw error;
   }
 }
@@ -215,6 +231,93 @@ export async function wakeUpSync(): Promise<void> {
     console.error('❌ Wake-Up Sync failed:', error);
     // Don't throw - allow app to continue with cached data
   }
+}
+
+/**
+ * Get songs - Web Mode (Supabase) or App Mode (IndexedDB)
+ */
+export async function getSongs(): Promise<SongIndex[]> {
+  const localSongs = await db.songIndex.toArray();
+  
+  if (localSongs.length > 0) {
+    console.log('📱 App Mode: Returning songs from IndexedDB');
+    return localSongs.map(normalizeSongIndex);
+  }
+  
+  console.log('🌐 Web Mode: Fetching songs from Supabase');
+  const { data, error } = await supabase
+    .from('songs')
+    .select('*')
+    .eq('is_active', true)
+    .order('song_number', { ascending: true });
+
+  if (error) {
+    throw new Error(`Supabase error: ${error.message}`);
+  }
+
+  if (!data || data.length === 0) {
+    return [];
+  }
+
+  return data.map((song: any) => ({
+    id: song.id,
+    songNumber: song.song_number,
+    title: song.title,
+    artist: song.artist,
+    language: song.language,
+    originalKey: song.original_key,
+    hashtags: [],
+    searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+    romanTitle: song.title,
+    isPublished: song.is_published !== false
+  }));
+}
+
+/**
+ * Get song by ID - Web Mode (Supabase) or App Mode (IndexedDB)
+ */
+export async function getSongById(id: number): Promise<SongDetail | null> {
+  const localSong = await db.songs.get(id);
+  
+  if (localSong) {
+    console.log('📱 App Mode: Returning song from IndexedDB');
+    return localSong;
+  }
+  
+  console.log('🌐 Web Mode: Fetching song from Supabase');
+  const { data, error } = await supabase
+    .from('songs')
+    .select('*')
+    .eq('id', id)
+    .single();
+
+  if (error) {
+    throw new Error(`Supabase error: ${error.message}`);
+  }
+
+  if (!data) {
+    return null;
+  }
+
+  return {
+    id: data.id,
+    songNumber: data.song_number,
+    title: data.title,
+    artist: data.artist,
+    composer: data.composer,
+    language: data.language,
+    originalKey: data.original_key,
+    capo: data.capo,
+    bpm: data.bpm,
+    timeSignature: data.time_signature,
+    hashtags: [],
+    sections: parseLyricsToSections(data.lyrics || ''),
+    chords: data.chords,
+    lyrics: data.lyrics,
+    isPublished: data.is_published !== false,
+    is_active: data.is_active !== false,
+    updated_at: data.updated_at
+  };
 }
 
 /**

@@ -31,6 +31,7 @@ export type SongDetail = {
   lyrics?: string; // Plain lyrics text without chords
   isPublished?: boolean; // Publication status for admin control
   is_active?: boolean; // Whether the song is active and visible in the app
+  updated_at?: string; // Timestamp for delta sync
 }
 
 export type Section = {

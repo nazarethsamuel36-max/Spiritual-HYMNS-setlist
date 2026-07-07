@@ -1,6 +1,5 @@
 import { db, fullSystemReset } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { UpdateStorageButton } from './UpdateStorageButton';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
   const stats = useLiveQuery(async () => {
@@ -43,7 +42,14 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
           <div className="space-y-3">
             <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1">Storage Management</h3>
             
-            <UpdateStorageButton />
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <p className="text-sm text-slate-600 mb-2">
+                Songs currently saved for offline use: <strong>{stats?.songCount ?? 0}</strong>
+              </p>
+              <p className="text-xs text-slate-500">
+                Last sync: {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
+              </p>
+            </div>
 
             <button 
               onClick={handleFullReset}
