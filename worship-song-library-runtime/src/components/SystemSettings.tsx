@@ -1,7 +1,6 @@
 import { db, fullSystemReset } from '../db/Database';
-// 🔥 BURN THE CACHE: SyncService disabled
-// import { SyncService } from '../services/SyncService';
 import { useLiveQuery } from 'dexie-react-hooks';
+import { debugDownloadAllSongs } from '../utils/debugDownload';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
   // 🔥 BURN THE CACHE: All sync/download state removed - online only
@@ -13,8 +12,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   }, []);
 
   const handleDownloadAll = async () => {
-    // 🔥 BURN THE CACHE: Download disabled - online only
-    alert('Offline downloading is disabled. The app now requires an internet connection.');
+    await debugDownloadAllSongs();
   };
 
   const handleResetCache = async () => {
@@ -63,14 +61,13 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             
             <button 
               onClick={handleDownloadAll}
-              disabled
-              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
+              className="w-full flex items-center justify-between p-4 bg-slate-50 border border-slate-200 rounded-2xl hover:bg-slate-100 transition-colors"
             >
               <div className="text-left">
-                <div className="font-bold text-slate-500">Download Entire Library</div>
-                <div className="text-xs text-slate-400">⚠️ Offline downloading disabled - requires internet connection</div>
+                <div className="font-bold text-slate-700">Download / Sync Entire Library</div>
+                <div className="text-xs text-slate-500">Download all songs for instant offline search and load</div>
               </div>
-              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </button>

@@ -6,7 +6,6 @@ import { ChordTransposer } from '../../utils/ChordTransposer';
 import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
-import { PWAInstallButton } from '../PWAInstallButton';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -104,9 +103,6 @@ export function ReaderHeader({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </button>
-
-            {/* PWA Install Button */}
-            <PWAInstallButton />
 
             {/* ⋮ More Button & Dropdown */}
             <div className="relative">
@@ -311,20 +307,20 @@ export function ReaderHeader({
           {/* Left: Mode Selector */}
           <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
             <button
-              onClick={() => onModeChange('chords')}
-              className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
-                mode === 'chords' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
-              }`}
-            >
-              Chords
-            </button>
-            <button
               onClick={() => onModeChange('lyrics')}
               className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
                 mode === 'lyrics' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
               }`}
             >
               Lyrics
+            </button>
+            <button
+              onClick={() => onModeChange('chords')}
+              className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
+                mode === 'chords' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+              }`}
+            >
+              Chords
             </button>
           </div>
 

@@ -24,3 +24,10 @@ dev-dist
 *.njsproj
 *.sln
 *.sw?
+
+# Database dumps and backups
+*.sql
+*.csv
+*report.json
+test_anon.js
+upload_to_supabase.js

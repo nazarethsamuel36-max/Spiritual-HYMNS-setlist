@@ -1,147 +1,358 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 
-interface ChordPaletteProps {
-  onChordInsert: (chord: string) => void;
-  onCursorSave: () => void;
-  isVisible: boolean;
-  songKey: string;
+// ─── Constants & Helpers ──────────────────────────────────────────────────────
+
+const ROOTS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+
+const CATEGORIES = [
+  'Key',
+  'Major',
+  'Minor',
+  '7th',
+  'maj7',
+  'm7',
+  'Suspended',
+  'Added',
+  'Diminished',
+  'Augmented',
+  'Slash',
+];
+
+// Helper to get notes of a major scale (for Key category)
+const SEMITONE_SHIFTS = [0, 2, 4, 5, 7, 9, 11];
+const DIATONIC_QUALITIES = ['', 'm', 'm', '', '', 'm', 'dim'];
+
+function getDiatonicChords(key: string): string[] {
+  const normalizedKey = key.replace(/min|m/i, '').trim();
+  const rootIdx = ROOTS.indexOf(normalizedKey);
+  if (rootIdx === -1) return ROOTS; // Fallback to raw roots
+
+  return SEMITONE_SHIFTS.map((shift, i) => {
+    const noteIdx = (rootIdx + shift) % 12;
+    return ROOTS[noteIdx] + DIATONIC_QUALITIES[i];
+  });
 }
 
-const CHORD_DATA = {
-  major: ['C', 'D', 'E', 'F', 'G', 'A', 'B'],
-  minor: ['Cm', 'Dm', 'Em', 'Fm', 'Gm', 'Am', 'Bm'],
-  seventh: ['C7', 'D7', 'E7', 'F7', 'G7', 'A7', 'B7'],
-  sus: ['Csus4', 'Dsus4', 'Esus4', 'Fsus4', 'Gsus4', 'Asus4', 'Bsus4'],
-};
+function detectChordAtCursor(
+  text: string,
+  pos: number
+): { start: number; end: number; chord: string } | null {
+  let start = pos - 1;
+  while (start >= 0 && text[start] !== '[' && text[start] !== ']') start--;
+  if (start < 0 || text[start] !== '[') return null;
 
-const KEY_CHORDS: Record<string, string[]> = {
-  C: ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'Bdim'],
-  D: ['D', 'Em', 'F#m', 'G', 'A', 'Bm', 'C#dim'],
-  E: ['E', 'F#m', 'G#m', 'A', 'B', 'C#m', 'D#dim'],
-  F: ['F', 'Gm', 'Am', 'Bb', 'C', 'Dm', 'Edim'],
-  G: ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#dim'],
-  A: ['A', 'Bm', 'C#m', 'D', 'E', 'F#m', 'G#dim'],
-  B: ['B', 'C#m', 'D#m', 'E', 'F#', 'G#m', 'A#dim'],
-};
+  let end = pos;
+  while (end < text.length && text[end] !== ']' && text[end] !== '[') end++;
+  if (end >= text.length || text[end] !== ']') return null;
 
-export function ChordPalette({
-  onChordInsert,
-  onCursorSave,
-  isVisible,
-  songKey,
-}: ChordPaletteProps) {
-  const [expandedCategory, setExpandedCategory] = useState<string | null>('key');
+  const chord = text.slice(start + 1, end);
+  return { start, end: end + 1, chord };
+}
+
+// ─── Component ────────────────────────────────────────────────────────────────
+
+export interface ChordPaletteProps {
+  textareaRef: React.RefObject<HTMLTextAreaElement>;
+  value: string;
+  onChange: (newValue: string) => void;
+  visible: boolean;
+  songKey?: string; // Passed from parent to compute Key category chords
+}
+
+export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 'C' }: ChordPaletteProps) {
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [detectedRange, setDetectedRange] = useState<{ start: number; end: number } | null>(null);
   const [bottomOffset, setBottomOffset] = useState(0);
-  const paletteRef = useRef<HTMLDivElement>(null);
+  const savedPos = useRef<number>(0);
 
-  // Keyboard-aware floating behavior
+  // Slash chord builder local state
+  const [slashRoot, setSlashRoot] = useState('G');
+  const [slashQuality, setSlashQuality] = useState('');
+  const [slashBass, setSlashBass] = useState('B');
+
+  // ── Keyboard height calculation ────────────────────────────────────────────
   useEffect(() => {
-    if (!isVisible || !window.visualViewport) return;
-
-    const updatePosition = () => {
-      const viewport = window.visualViewport;
-      if (!viewport) return;
-      
-      const screenHeight = window.innerHeight;
-      const viewportHeight = viewport.height;
-      
-      // Calculate keyboard height (difference between screen and viewport)
-      const keyboardHeight = screenHeight - viewportHeight;
-      
-      // Palette floats above keyboard with small gap
-      // If keyboard is closed (height < 50px), use default bottom position
-      const newBottom = keyboardHeight > 50 ? keyboardHeight + 8 : 0;
-      setBottomOffset(newBottom);
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const handler = () => {
+      const keyboardHeight = window.innerHeight - vv.height - vv.offsetTop;
+      setBottomOffset(Math.max(0, keyboardHeight));
     };
-
-    // Listen for viewport height changes (keyboard open/close)
-    window.visualViewport.addEventListener('resize', updatePosition);
-    updatePosition(); // Initial check
-
+    vv.addEventListener('resize', handler);
+    vv.addEventListener('scroll', handler);
+    handler();
     return () => {
-      window.visualViewport?.removeEventListener('resize', updatePosition);
+      vv.removeEventListener('resize', handler);
+      vv.removeEventListener('scroll', handler);
     };
-  }, [isVisible]);
+  }, []);
 
-  const categories = [
-    { key: 'key', label: `Key ${songKey}` },
-    { key: 'major', label: 'Major' },
-    { key: 'minor', label: 'Minor' },
-    { key: 'seventh', label: '7th' },
-    { key: 'sus', label: 'Sus' },
-  ];
+  // ── Selection/cursor monitoring ────────────────────────────────────────────
+  const handleCursorMove = useCallback(() => {
+    const ta = textareaRef.current;
+    if (!ta) return;
+    const pos = ta.selectionStart;
+    savedPos.current = pos;
 
-  const getChords = (category: string): string[] => {
-    if (category === 'key') {
-      return KEY_CHORDS[songKey] || KEY_CHORDS['D'];
+    const detected = detectChordAtCursor(value, pos);
+    if (detected) {
+      setDetectedRange({ start: detected.start, end: detected.end });
+    } else {
+      setDetectedRange(null);
     }
-    return CHORD_DATA[category as keyof typeof CHORD_DATA] || [];
+  }, [value, textareaRef]);
+
+  useEffect(() => {
+    const ta = textareaRef.current;
+    if (!ta) return;
+    ta.addEventListener('click', handleCursorMove);
+    ta.addEventListener('keyup', handleCursorMove);
+    ta.addEventListener('selectionchange', handleCursorMove);
+    return () => {
+      ta.removeEventListener('click', handleCursorMove);
+      ta.removeEventListener('keyup', handleCursorMove);
+      ta.removeEventListener('selectionchange', handleCursorMove);
+    };
+  }, [handleCursorMove, textareaRef]);
+
+  // ── Core Insertion Logic ────────────────────────────────────────────────────
+  const handleInsert = (chord: string) => {
+    const ta = textareaRef.current;
+    const pos = savedPos.current;
+
+    let newText: string;
+    let newCursor: number;
+
+    if (detectedRange) {
+      newText =
+        value.slice(0, detectedRange.start) +
+        `[${chord}]` +
+        value.slice(detectedRange.end);
+      newCursor = detectedRange.start + chord.length + 2;
+    } else {
+      newText = value.slice(0, pos) + `[${chord}]` + value.slice(pos);
+      newCursor = pos + chord.length + 2;
+    }
+
+    onChange(newText);
+    setDetectedRange(null);
+    setActiveCategory(null); // Close secondary toolbar
+
+    // Restore focus and position cursor right after the closing bracket
+    setTimeout(() => {
+      if (ta) {
+        ta.focus();
+        ta.setSelectionRange(newCursor, newCursor);
+        savedPos.current = newCursor;
+      }
+    }, 30);
   };
 
-  const handleChordClick = (chord: string) => {
-    onCursorSave();
-    onChordInsert(chord);
-    setExpandedCategory(null);
-  };
+  // ── Compute Chords for Active Category ──────────────────────────────────────
+  const categoryChords = useMemo(() => {
+    if (!activeCategory) return [];
 
-  const handleCategoryClick = (category: string) => {
-    setExpandedCategory(expandedCategory === category ? null : category);
-  };
+    switch (activeCategory) {
+      case 'Key':
+        return getDiatonicChords(songKey);
+      case 'Major':
+        return ROOTS;
+      case 'Minor':
+        return ROOTS.map(r => r + 'm');
+      case '7th':
+        return ROOTS.map(r => r + '7');
+      case 'maj7':
+        return ROOTS.map(r => r + 'maj7');
+      case 'm7':
+        return ROOTS.map(r => r + 'm7');
+      case 'Suspended':
+        return ROOTS.flatMap(r => [r + 'sus2', r + 'sus4']);
+      case 'Added':
+        return ROOTS.flatMap(r => [r + '5', r + '6', r + '9', r + 'm9', r + 'add9']);
+      case 'Diminished':
+        return ROOTS.map(r => r + 'dim');
+      case 'Augmented':
+        return ROOTS.map(r => r + 'aug');
+      default:
+        return [];
+    }
+  }, [activeCategory, songKey]);
 
-  if (!isVisible) return null;
-
-  const expandedChords = expandedCategory ? getChords(expandedCategory) : [];
+  if (!visible) return null;
 
   return (
     <div
-      ref={paletteRef}
       style={{
         position: 'fixed',
-        bottom: `${bottomOffset}px`,
         left: 0,
         right: 0,
-        zIndex: 1000,
-        transition: bottomOffset > 0 ? 'none' : 'bottom 200ms ease-out',
+        bottom: bottomOffset,
+        zIndex: 200,
       }}
-      className="bg-white border-t border-slate-200 shadow-lg px-4 py-3"
     >
-      {/* Expanded Chord Row - Uniform button sizing */}
-      {expandedChords.length > 0 && (
-        <div className="mb-3 flex flex-wrap gap-2">
-          {expandedChords.map((chord) => (
+      <div style={{
+        background: '#0f172a',
+        boxShadow: '0 -8px 30px rgba(0,0,0,0.5)',
+        display: 'flex',
+        flexDirection: 'column',
+        userSelect: 'none',
+      }}>
+
+        {/* ── Layer 2: Secondary Toolbar (Chords List or Slash Builder) ──────── */}
+        {activeCategory && (
+          <div style={{
+            background: '#1e293b',
+            borderBottom: '1px solid #334155',
+            padding: '8px 12px',
+            display: 'flex',
+            gap: '8px',
+            overflowX: 'auto',
+            alignItems: 'center',
+            minHeight: '48px',
+          }}>
+            {activeCategory === 'Slash' ? (
+              // Dedicated Slash Chord Builder
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', width: '100%' }}>
+                {/* Base Note */}
+                <select
+                  value={slashRoot}
+                  onChange={(e) => setSlashRoot(e.target.value)}
+                  style={{
+                    background: '#0f172a',
+                    color: '#fff',
+                    border: '1px solid #475569',
+                    borderRadius: '6px',
+                    padding: '4px 8px',
+                    fontSize: '13px',
+                    fontWeight: 700,
+                  }}
+                >
+                  {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
+                </select>
+
+                {/* Quality */}
+                <select
+                  value={slashQuality}
+                  onChange={(e) => setSlashQuality(e.target.value)}
+                  style={{
+                    background: '#0f172a',
+                    color: '#fff',
+                    border: '1px solid #475569',
+                    borderRadius: '6px',
+                    padding: '4px 8px',
+                    fontSize: '13px',
+                  }}
+                >
+                  <option value="">Major</option>
+                  <option value="m">m</option>
+                  <option value="7">7</option>
+                  <option value="maj7">maj7</option>
+                  <option value="m7">m7</option>
+                  <option value="sus4">sus4</option>
+                </select>
+
+                <span style={{ color: '#94a3b8', fontWeight: 800 }}>/</span>
+
+                {/* Bass Note */}
+                <select
+                  value={slashBass}
+                  onChange={(e) => setSlashBass(e.target.value)}
+                  style={{
+                    background: '#0f172a',
+                    color: '#fff',
+                    border: '1px solid #475569',
+                    borderRadius: '6px',
+                    padding: '4px 8px',
+                    fontSize: '13px',
+                    fontWeight: 700,
+                  }}
+                >
+                  {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
+                </select>
+
+                <button
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleInsert(`${slashRoot}${slashQuality}/${slashBass}`);
+                  }}
+                  style={{
+                    marginLeft: 'auto',
+                    background: '#3b82f6',
+                    color: '#fff',
+                    border: 'none',
+                    borderRadius: '6px',
+                    padding: '6px 14px',
+                    fontWeight: 700,
+                    fontSize: '13px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Insert {slashRoot}{slashQuality}/{slashBass}
+                </button>
+              </div>
+            ) : (
+              // Simple Horizontal List of Chords
+              categoryChords.map(chord => (
+                <button
+                  key={chord}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleInsert(chord);
+                  }}
+                  style={{
+                    flex: '0 0 auto',
+                    background: '#0f172a',
+                    color: '#60a5fa',
+                    border: '1px solid #3b82f6',
+                    borderRadius: '6px',
+                    padding: '6px 14px',
+                    fontWeight: 800,
+                    fontSize: '14px',
+                    fontFamily: 'monospace',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {chord}
+                </button>
+              ))
+            )}
+          </div>
+        )}
+
+        {/* ── Layer 1: Primary Toolbar (Categories) ─────────────────────────── */}
+        <div style={{
+          background: '#0f172a',
+          borderTop: '1px solid #334155',
+          padding: '8px 12px',
+          display: 'flex',
+          gap: '8px',
+          overflowX: 'auto',
+          minHeight: '44px',
+        }}>
+          {CATEGORIES.map(cat => (
             <button
-              key={chord}
+              key={cat}
               onMouseDown={(e) => {
                 e.preventDefault();
-                handleChordClick(chord);
+                setActiveCategory(activeCategory === cat ? null : cat);
               }}
-              className="w-12 h-10 flex items-center justify-center text-xs font-semibold bg-slate-100 text-slate-800 rounded-lg hover:bg-slate-200 active:scale-95 transition-colors"
-              title={chord}
+              style={{
+                flex: '0 0 auto',
+                background: activeCategory === cat ? '#3b82f6' : '#1e293b',
+                color: activeCategory === cat ? '#fff' : '#94a3b8',
+                border: 'none',
+                borderRadius: '6px',
+                padding: '6px 14px',
+                fontWeight: 700,
+                fontSize: '13px',
+                cursor: 'pointer',
+              }}
             >
-              {chord}
+              {cat}
             </button>
           ))}
         </div>
-      )}
 
-      {/* Category Buttons Row - Consistent height, variable width */}
-      <div className="flex flex-wrap gap-2">
-        {categories.map((category) => (
-          <button
-            key={category.key}
-            onMouseDown={(e) => {
-              e.preventDefault();
-              handleCategoryClick(category.key);
-            }}
-            className={`px-3 h-10 flex items-center justify-center text-xs font-semibold rounded-lg transition-colors ${
-              expandedCategory === category.key
-                ? 'bg-slate-800 text-white'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            {category.label}
-          </button>
-        ))}
       </div>
     </div>
   );

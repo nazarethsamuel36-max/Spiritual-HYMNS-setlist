@@ -37,4 +37,10 @@ Thumbs.db
 .nuxt/
 public/
 !worship-song-library-runtime/public/
-```
+
+# Database dumps, reports, and backups
+*.sql
+*.csv
+*report.json
+test_anon.js
+upload_to_supabase.js

@@ -19,10 +19,10 @@ export class RealtimeService {
     window.addEventListener('online', () => this.handleOnline());
     window.addEventListener('offline', () => this.handleOffline());
 
-    // Subscribe to songs table changes
-    this.subscribeToSongs();
+    // 🔥 TEMPORARY: Comment out WebSocket subscription to prevent connection spam
+    // this.subscribeToSongs();
 
-    console.log('✅ Realtime Service initialized');
+    console.log('✅ Realtime Service initialized (WebSocket disabled for testing)');
   }
 
   /**

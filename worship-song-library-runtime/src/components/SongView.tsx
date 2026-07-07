@@ -1,55 +1,37 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { db, type SongDetail } from '../db/Database';
+import { db } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
 
-// Parse lyrics string to sections (copied from CacheService for direct fetch)
+// Parse lyrics helper
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
   if (!lyrics) return [];
-
   const sections: Array<{ type: string; label: string; lines: Array<{ text: string }> }> = [];
   const lines = lyrics.split('\n');
   let currentSection: { type: string; label: string; lines: Array<{ text: string }> } | null = null;
-
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed) continue;
-
-    // Detect section headers (e.g., [Verse 1], [Chorus])
     const sectionMatch = trimmed.match(/^\[([^\]]+)\]$/);
     if (sectionMatch) {
-      if (currentSection) {
-        sections.push(currentSection);
-      }
-      currentSection = {
-        type: 'verse',
-        label: sectionMatch[1],
-        lines: []
-      };
+      if (currentSection) sections.push(currentSection);
+      currentSection = { type: 'verse', label: sectionMatch[1], lines: [] };
     } else if (currentSection) {
       currentSection.lines.push({ text: trimmed });
     } else {
-      // First line without section header
-      currentSection = {
-        type: 'verse',
-        label: 'Verse 1',
-        lines: [{ text: trimmed }]
-      };
+      currentSection = { type: 'verse', label: 'Verse 1', lines: [{ text: trimmed }] };
     }
   }
-
-  if (currentSection) {
-    sections.push(currentSection);
-  }
-
+  if (currentSection) sections.push(currentSection);
   return sections;
 }
 
 export function SongView() {
+  // 1. Store Connections
   const reader = useWorkflowStore((s) => s.reader);
   const readerMode = useWorkflowStore((s) => s.readerMode);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
@@ -58,22 +40,25 @@ export function SongView() {
   const openSong = useWorkflowStore((s) => s.openSong);
   const openMarker = useWorkflowStore((s) => s.openMarker);
   const openNote = useWorkflowStore((s) => s.openNote);
+  const libraryLanguage = useWorkflowStore((s) => s.libraryLanguage);
 
   const songId = reader.type === 'song' ? reader.songId : null;
   const transpose = reader.type === 'song' ? reader.transpose : 0;
-  const activeArrangementId = reader.type === 'song' ? reader.activeArrangementId : null;
   const setlistId = reader.type === 'song' ? reader.setlistId : undefined;
   const currentItemId = reader.type === 'song' ? reader.itemId : undefined;
   const isSetlistContext = reader.type === 'song' && reader.source === 'setlist' && !!setlistId;
 
-  const libraryLanguage = useWorkflowStore((s) => s.libraryLanguage);
-
-  const [song, setSong] = useState<SongDetail | null>(null);
+  // 2. Core State
+  const [song, setSong] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  // viewMode is now controlled by readerMode from store
+  
+  // 3. Auto-scroll & Swipe State
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
+  const isHorizontalSwipeRef = useRef<boolean | null>(null);
 
-  // 🔥 REPLACE WITH useLiveQuery to read instantly from cache
+  // 🔥 SAFE LOCAL DATA: Read from Dexie instead of Supabase to prevent network choke
   const librarySongs = useLiveQuery(async () => {
     if (isSetlistContext) return null;
     const songs = await db.songIndex.toArray();
@@ -81,28 +66,9 @@ export function SongView() {
     if (libraryLanguage !== 'All') {
        filtered = songs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
     }
-    return filtered.map(s => ({
-      id: s.id,
-      songNumber: s.songNumber,
-      title: s.title,
-      language: s.language ?? null
-    })).sort((a, b) => a.songNumber - b.songNumber);
+    return filtered.sort((a, b) => a.songNumber - b.songNumber);
   }, [isSetlistContext, libraryLanguage]);
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
-  const isHorizontalSwipeRef = useRef<boolean | null>(null);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [scrollSpeed, setScrollSpeed] = useState(() => {
-    const saved = localStorage.getItem('worship-autoscroll-speed');
-    return saved ? parseInt(saved, 10) : 3;
-  });
-
-  const arrangement = useLiveQuery(() =>
-    activeArrangementId ? db.arrangements.get(activeArrangementId) : undefined
-  , [activeArrangementId]);
-
-  // Load the setlist items when in setlist context for swipe navigation
   const setlistItems = useLiveQuery(async () => {
     if (!isSetlistContext || !setlistId) return null;
     const local = await db.setlists.get(setlistId);
@@ -111,100 +77,69 @@ export function SongView() {
     return [...setlist.songs].sort((a, b) => a.order - b.order);
   }, [isSetlistContext, setlistId]);
 
+  // 4. The Bulletproof Fetch Logic
   useEffect(() => {
-    localStorage.setItem('worship-autoscroll-speed', scrollSpeed.toString());
-  }, [scrollSpeed]);
+    if (!songId) { setLoading(false); return; }
+    const controller = new AbortController();
+    setLoading(true);
+    setError(null);
 
-  useEffect(() => {
-    if (!isScrolling || !scrollContainerRef.current) return;
+    const fetchSong = async () => {
+      try {
+        let query = supabase.from('songs').select('*').eq('id', songId);
+        if (!isAdminAuthenticated) query = query.eq('is_active', true);
 
-    let animationFrameId: number;
-    let lastTime = performance.now();
-    let accumulatedScroll = 0;
+        // Check abort signal before making request
+        if (controller.signal.aborted) return;
 
-    const scrollContainer = scrollContainerRef.current;
+        const { data, error } = await query.single();
+        if (error) throw error;
+        if (!data) throw new Error('Song not found');
 
-    const loop = (time: number) => {
-      const delta = time - lastTime;
-      lastTime = time;
-
-      const pixelsPerMs = scrollSpeed * 0.005;
-      accumulatedScroll += delta * pixelsPerMs;
-
-      if (accumulatedScroll >= 1) {
-        const scrollAmt = Math.floor(accumulatedScroll);
-        scrollContainer.scrollTop += scrollAmt;
-        accumulatedScroll -= scrollAmt;
+        const songDetail = {
+          ...data,
+          sections: parseLyricsToSections(data.lyrics || ''),
+          chords: data.chords || '',
+          lyrics: data.lyrics || ''
+        };
+        setSong(songDetail);
+      } catch (err: any) {
+        if (err.name === 'AbortError' || controller.signal.aborted) return;
+        setError(err.message || 'Failed to load song');
+      } finally {
+        if (!controller.signal.aborted) setLoading(false);
       }
-
-      const isScrollable = scrollContainer.scrollHeight > scrollContainer.clientHeight;
-      const isAtBottom = isScrollable && (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight - 4);
-      if (isAtBottom) {
-        setIsScrolling(false);
-        return;
-      }
-
-      animationFrameId = requestAnimationFrame(loop);
     };
+    fetchSong();
+    return () => controller.abort();
+  }, [songId, isAdminAuthenticated]);
 
-    animationFrameId = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [isScrolling, scrollSpeed]);
-
-  const adjustSpeed = (delta: number) => {
-    setScrollSpeed(prev => {
-      const next = prev + delta;
-      return Math.min(10, Math.max(1, next));
-    });
-    setIsScrolling(true);
-  };
-
-  // ─── Navigation functions for swipe ───────────────────────────────────────
+  // 6. Swipe Navigation Logic
   const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
     if (!setlistItems || !setlistId) return;
-    const currentIdx = currentItemId
-      ? setlistItems.findIndex(i => i.id === currentItemId)
-      : setlistItems.findIndex(i => i.songId === songId);
-
+    const currentIdx = currentItemId ? setlistItems.findIndex(i => i.id === currentItemId) : setlistItems.findIndex(i => i.songId === songId);
     const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
     if (targetIdx < 0 || targetIdx >= setlistItems.length) return;
-
     const target = setlistItems[targetIdx];
-    if (!target.type || target.type === 'song') {
-      openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id);
-    } else if (target.type === 'marker') {
-      openMarker(target.label || 'Event Marker', setlistId, target.id);
-    } else if (target.type === 'note') {
-      openNote(target.label || 'Note', target.content || '', setlistId, target.id);
-    }
-  }, [setlistItems, setlistId, currentItemId, songId]);
+    if (!target.type || target.type === 'song') openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id);
+    else if (target.type === 'marker') openMarker(target.label || 'Marker', setlistId, target.id);
+    else if (target.type === 'note') openNote(target.label || 'Note', target.content || '', setlistId, target.id);
+  }, [setlistItems, setlistId, currentItemId, songId, openSong, openMarker, openNote]);
 
   const navigateLibrary = useCallback((direction: 'prev' | 'next') => {
-    if (!songId || !librarySongs || librarySongs.length === 0) {
-      console.warn('Library songs not loaded yet');
-      return;
-    }
-
-    const currentIdx = librarySongs.findIndex(s => s.id === songId);
+    if (!songId || !librarySongs || librarySongs.length === 0) return;
+    const currentIdx = librarySongs.findIndex((s: any) => s.id === songId);
     if (currentIdx === -1) return;
-
     const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
-
     if (targetIdx >= 0 && targetIdx < librarySongs.length) {
-      const target = librarySongs[targetIdx];
       if (navigator.vibrate) navigator.vibrate(10);
-      openSong(target.id, 'library');
+      openSong(librarySongs[targetIdx].id, 'library');
     }
-  }, [songId, librarySongs]);
+  }, [songId, librarySongs, openSong]);
 
-  // ─── Touch event handlers for swipe navigation ───────────────────────────────
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     const touch = e.touches[0];
-    touchStartRef.current = {
-      x: touch.clientX,
-      y: touch.clientY,
-      time: Date.now()
-    };
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
     isHorizontalSwipeRef.current = null;
   };
 
@@ -213,155 +148,28 @@ export function SongView() {
     const touch = e.touches[0];
     const dx = touch.clientX - touchStartRef.current.x;
     const dy = touch.clientY - touchStartRef.current.y;
-
-    // Determine swipe direction on first meaningful movement
-    if (isHorizontalSwipeRef.current === null) {
-      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) {
-        isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
-      }
+    if (isHorizontalSwipeRef.current === null && (Math.abs(dx) > 10 || Math.abs(dy) > 10)) {
+      isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
     }
-
-    // If horizontal swipe detected, prevent vertical scroll
-    if (isHorizontalSwipeRef.current === true) {
-      e.preventDefault();
-    }
+    if (isHorizontalSwipeRef.current === true) e.preventDefault();
   };
 
   const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
     if (!touchStartRef.current) return;
-
     const touch = e.changedTouches[0];
     const deltaX = touch.clientX - touchStartRef.current.x;
     const deltaY = Math.abs(touch.clientY - touchStartRef.current.y);
     const deltaTime = Date.now() - touchStartRef.current.time;
-
-    // Reset refs
     const wasHorizontal = isHorizontalSwipeRef.current;
-    touchStartRef.current = null;
-    isHorizontalSwipeRef.current = null;
+    touchStartRef.current = null; isHorizontalSwipeRef.current = null;
 
-    // Only trigger if:
-    // - It was a horizontal swipe
-    // - Horizontal distance > 50px
-    // - Vertical distance < 100px (not scrolling)
-    // - Completed in under 500ms (quick gesture)
-    if (
-      wasHorizontal === true &&
-      Math.abs(deltaX) > 50 &&
-      deltaY < 100 &&
-      deltaTime < 500
-    ) {
+    if (wasHorizontal === true && Math.abs(deltaX) > 50 && deltaY < 100 && deltaTime < 500) {
       const direction = deltaX < 0 ? 'next' : 'prev';
-
-      // Use the appropriate navigation function based on context
-      if (isSetlistContext) {
-        navigateSetlist(direction);
-      } else {
-        navigateLibrary(direction);
-      }
-
-      // Optional: haptic feedback on mobile
-      if (navigator.vibrate) {
-        navigator.vibrate(10);
-      }
+      if (isSetlistContext) navigateSetlist(direction); else navigateLibrary(direction);
     }
   };
 
-  useEffect(() => {
-    if (!songId) {
-      setSong(null);
-      setLoading(false);
-      return;
-    }
-
-    // 🔥 CRITICAL FIX: Create an AbortController to kill the network request
-    const controller = new AbortController();
-
-    const loadSong = async () => {
-      setError(null);
-
-      try {
-        const cachedSong = await db.songs.get(songId);
-        if (controller.signal.aborted) return;
-
-        if (cachedSong) {
-          setSong(cachedSong);
-          setLoading(false);
-        } else {
-          setLoading(true);
-        }
-
-        if (!navigator.onLine) {
-          if (!cachedSong) {
-            setError('Offline and no cached song is available.');
-            setLoading(false); // 🔥 FIX: Was missing this, causing infinite loading!
-          }
-          return;
-        }
-
-        console.log('🎵 Background fetch song from Supabase...');
-        let query = supabase.from('songs').select('*').eq('id', songId);
-        if (!isAdminAuthenticated) {
-           query = query.eq('is_active', true);
-        }
-        
-        // 🔥 Check abort signal before making request
-        if (controller.signal.aborted) return;
-        
-        const { data, error } = await query.single();
-
-        if (error) throw new Error(`Supabase error: ${error.message}`);
-        if (!data) throw new Error('Song data not found');
-
-        if (!isAdminAuthenticated && data.is_published === false) {
-          if (!cachedSong) throw new Error('This song is not yet published');
-          return; 
-        }
-
-        const songDetail: SongDetail = {
-          id: data.id,
-          songNumber: data.song_number,
-          title: data.title,
-          artist: data.artist,
-          composer: data.composer,
-          language: data.language,
-          originalKey: data.original_key,
-          capo: data.capo,
-          bpm: data.bpm,
-          timeSignature: data.time_signature,
-          hashtags: [],
-          sections: parseLyricsToSections(data.lyrics || ''),
-          chords: data.chords || undefined,
-          lyrics: data.lyrics || undefined,
-          isPublished: data.is_published ?? true,
-          is_active: data.is_active ?? true
-        };
-
-        await db.songs.put(songDetail);
-        
-        if (!controller.signal.aborted) {
-          setSong(songDetail);
-          setLoading(false);
-        }
-      } catch (err: any) {
-        // 🔥 Silently ignore cancelled requests so they don't trigger error states
-        if (err.name === 'AbortError') return; 
-        
-        console.warn('⚠️ Failed to fetch song from Supabase:', err);
-        if (!controller.signal.aborted) {
-          setError(err instanceof Error ? err.message : 'Failed to load song');
-          setLoading(false); // 🔥 Ensure loading stops even on error
-        }
-      }
-    };
-
-    void loadSong();
-
-    return () => {
-      controller.abort(); // 🔥 KILLS the network request instantly on cleanup
-    };
-  }, [songId, isAdminAuthenticated]);
-
+  // 7. Render
   if (loading) return (
     <div className="p-12 text-center flex flex-col items-center">
       <div className="animate-spin h-8 w-8 border-4 border-[var(--color-brand)] border-t-transparent rounded-full mb-4"></div>
@@ -373,168 +181,60 @@ export function SongView() {
     <div className="p-12 text-center text-red-500 font-bold text-sm">{error || 'Song not found'}</div>
   );
 
-  const displaySections = arrangement?.overrides?.sections || song.sections;
-  const displayTranspose = transpose + (arrangement?.overrides?.capo || 0);
-  // Setlist position for the nav indicator
-  const currentIdx = setlistItems
-    ? (currentItemId
-        ? setlistItems.findIndex(i => i.id === currentItemId)
-        : setlistItems.findIndex(i => i.songId === songId))
-    : -1;
-
-  // Page indicator calculation
-  const totalItems = isSetlistContext
-    ? (setlistItems?.length || 0)
-    : (librarySongs?.length || 0);
-
-  const activeIdx = isSetlistContext
-    ? currentIdx
-    : (librarySongs ? librarySongs.findIndex(s => s.id === songId) : -1);
+  const displayTranspose = transpose + (song.capo || 0);
+  const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
+  
+  // Page Dots Calculation
+  const totalItems = isSetlistContext ? (setlistItems?.length || 0) : (librarySongs?.length || 0);
+  const activeIdx = isSetlistContext 
+    ? (currentItemId ? setlistItems?.findIndex(i => i.id === currentItemId) : setlistItems?.findIndex(i => i.songId === songId))
+    : (librarySongs ? librarySongs.findIndex((s: any) => s.id === songId) : -1);
 
   const maxDots = 7;
-  let startDot = 0;
-  let endDot = totalItems;
+  let startDot = 0, endDot = totalItems;
   if (totalItems > maxDots) {
     const half = Math.floor(maxDots / 2);
-    startDot = activeIdx - half;
-    if (startDot < 0) startDot = 0;
-    endDot = startDot + maxDots;
-    if (endDot > totalItems) {
-      endDot = totalItems;
-      startDot = endDot - maxDots;
-    }
+    startDot = Math.max(0, (activeIdx || 0) - half);
+    endDot = Math.min(totalItems, startDot + maxDots);
+    if (endDot === totalItems) startDot = Math.max(0, totalItems - maxDots);
   }
   const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
-
-  const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
 
   return (
     <div className={`flex-col min-h-full w-full bg-[#FAFAFA] flex ${langClass}`}>
       <ReaderHeader
-        song={song}
-        transpose={displayTranspose}
-        mode={readerMode}
-        onTransposeUp={() => adjustTranspose(1)}
-        onTransposeDown={() => adjustTranspose(-1)}
-        onModeChange={setReaderMode}
+        song={song} transpose={displayTranspose} mode={readerMode}
+        onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
       />
 
-      {/* Position Page Indicator */}
-      {totalItems > 1 && (
+      {/* Page Indicator Dots */}
+      {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
         <div className="flex items-center justify-center space-x-1.5 py-2 bg-white border-b border-slate-100">
           {visibleDots.map((idx) => (
-            <div
-              key={idx}
-              className={`rounded-full transition-all duration-200 ${
-                idx === activeIdx
-                  ? 'w-4 h-1.5 bg-[var(--color-brand)]'
-                  : 'w-1.5 h-1.5 bg-slate-200'
-              }`}
-            />
+            <div key={idx} className={`rounded-full transition-all duration-200 ${idx === activeIdx ? 'w-4 h-1.5 bg-[var(--color-brand)]' : 'w-1.5 h-1.5 bg-slate-200'}`} />
           ))}
         </div>
       )}
 
-      {/* Calm Typography Area — Independent Scroll Region */}
       <div
         ref={scrollContainerRef}
         className="flex-1 flex flex-col overflow-y-auto overscroll-contain"
         style={{ touchAction: 'pan-y' }}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
+        onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}
       >
         <div className="w-full px-4 md:px-8 pt-8 pb-40">
           <div className="max-w-4xl mx-auto w-full">
-          {isAdminAuthenticated ? (
-            (() => {
-              console.log('📦 Parent component rendering EditorMode');
-              console.log('🎵 Song ID:', song.id);
-              console.log('🎵 Song is_active:', song.is_active);
-              return (
-                <EditorMode 
-                  song={{ ...song, sections: displaySections }}
-                />
-              );
-            })()
-          ) : readerMode === 'lyrics' ? (
-            <div className="text-[20px] leading-relaxed text-slate-800 font-medium">
-              {song.lyrics ? (
-                song.lyrics.split('\n').map((line, idx) => {
-                  const isChorus = line.startsWith('* ');
-                  const displayLine = isChorus ? line.slice(2) : line;
-                  const isBlank = line.trim() === '';
-                  return (
-                    <div
-                      key={idx}
-                      className={isBlank ? 'h-2' : isChorus ? 'mb-1 italic pl-5' : 'mb-1'}
-                    >
-                      {!isBlank && displayLine}
-                    </div>
-                  );
-                })
-              ) : (
-                <div className="text-slate-400 italic text-center py-12">No lyrics available</div>
-              )}
-            </div>
-          ) : (
-            <ChordProRenderer 
-              rawChordPro={song.chords || ''}
-            />
-          )}
-        </div>
-      </div>
-      </div>
-
-      {/* Floating Auto Scroll Control HUD */}
-      {readerMode === 'chords' && (
-        <div
-          onClick={(e) => e.stopPropagation()}
-          className="fixed bottom-6 right-6 z-40 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl rounded-full px-4 py-2 flex items-center space-x-4 transition-all duration-300 hover:shadow-2xl hover:scale-102"
-        >
-          <button
-            onClick={() => setIsScrolling(!isScrolling)}
-            className={`w-9 h-9 rounded-full flex items-center justify-center text-white transition-all shadow-md active:scale-95 ${
-              isScrolling
-                ? 'bg-red-500 hover:bg-red-600'
-                : 'bg-emerald-600 hover:bg-emerald-700'
-            }`}
-            title={isScrolling ? 'Pause Scroll' : 'Start Auto Scroll'}
-          >
-            {isScrolling ? (
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <rect x="4" y="4" width="4" height="16" rx="1" />
-                <rect x="16" y="4" width="4" height="16" rx="1" />
-              </svg>
+            {/* 🔥 FIXED RENDER LOGIC: Admins get Editor, Non-Admins get Chords/Lyrics */}
+            {isAdminAuthenticated ? (
+              <EditorMode song={{ ...song, sections: song.sections }} />
+            ) : readerMode === 'lyrics' ? (
+              <ChordProRenderer rawChordPro={song.chords || ''} hideChords={true} />
             ) : (
-              <svg className="w-4 h-4 fill-current ml-0.5" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+              <ChordProRenderer rawChordPro={song.chords || ''} hideChords={false} />
             )}
-          </button>
-
-          <div className="flex items-center space-x-2 text-xs">
-            <span className="text-slate-400 font-bold uppercase tracking-wider text-[9px]">Speed</span>
-            <div className="flex items-center space-x-1 bg-slate-100 rounded-full p-0.5 border border-slate-200">
-              <button
-                disabled={scrollSpeed <= 1}
-                onClick={() => adjustSpeed(-1)}
-                className="w-6 h-6 rounded-full flex items-center justify-center hover:bg-white text-slate-600 disabled:opacity-30 disabled:hover:bg-transparent font-bold transition-all"
-              >
-                -
-              </button>
-              <span className="w-6 text-center font-black text-slate-700">{scrollSpeed}</span>
-              <button
-                disabled={scrollSpeed >= 10}
-                onClick={() => adjustSpeed(1)}
-                className="w-6 h-6 rounded-full flex items-center justify-center hover:bg-white text-slate-600 disabled:opacity-30 disabled:hover:bg-transparent font-bold transition-all"
-              >
-                +
-              </button>
-            </div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

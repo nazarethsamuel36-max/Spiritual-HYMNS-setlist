@@ -91,16 +91,16 @@ export function PWAInstallButton() {
             void installApp();
           }
         }}
-        className={`flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors ${
+        className={`flex items-center justify-center w-8 h-8 rounded-lg border transition-all ${
           isIOS
             ? 'border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100'
-            : 'border-emerald-600 bg-emerald-500 text-white hover:bg-emerald-600'
+            : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
         }`}
-        title="Install BBF Song book"
+        title="Install App"
       >
-        <span className="text-lg">{isIOS ? '📱' : '⬇️'}</span>
-        <span className="hidden md:inline">Install App</span>
-        <span className="md:hidden">Install</span>
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
       </button>
 
       {showSuccessToast && (

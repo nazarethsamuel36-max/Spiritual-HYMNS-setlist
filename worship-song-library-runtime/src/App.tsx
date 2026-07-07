@@ -255,13 +255,6 @@ function App() {
               >
                 BBF Song book
               </button>
-              <button
-                type="button"
-                onClick={() => void debugDownloadAllSongs()}
-                className="rounded-lg border border-red-500 bg-red-500 px-3 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-sm transition hover:bg-red-600"
-              >
-                Debug Download
-              </button>
               {/* Mobile: BBF Song book compact title */}
               <button
                 type="button"

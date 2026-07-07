@@ -62,7 +62,7 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
 
   openSong: (id, source, transpose = 0, setlistId, itemId) => set({
     reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
-    readerMode: 'edit',
+    readerMode: 'lyrics',
     mobileActivePane: 'reader',
   }),
 

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
+import { ChordPalette } from './ChordPalette';
 
 console.log('📍 EDITORMODE FILE LOADED');
 
@@ -116,6 +117,61 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [paletteVisible, setPaletteVisible] = useState(false);
+
+  const insertMarker = (marker: string) => {
+    const textarea = textareaRef.current;
+    if (!textarea) return;
+
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const text = chordsText;
+    
+    const before = text.substring(0, start);
+    const after = text.substring(end);
+    
+    let markerToInsert = marker;
+    if (start > 0 && !before.endsWith('\n')) {
+      markerToInsert = '\n' + markerToInsert;
+    }
+    if (!after.startsWith('\n')) {
+      markerToInsert = markerToInsert + '\n';
+    }
+    
+    const newText = before + markerToInsert + after;
+    setChordsText(newText);
+    debouncedAutoSave({ chords: newText });
+
+    setTimeout(() => {
+      textarea.focus();
+      const newCursorPos = start + markerToInsert.length;
+      textarea.setSelectionRange(newCursorPos, newCursorPos);
+    }, 50);
+  };
+
+  const handleTextareaDoubleClick = (e: React.MouseEvent<HTMLTextAreaElement>) => {
+    const textarea = e.currentTarget;
+    const pos = textarea.selectionStart;
+    const text = textarea.value;
+    
+    // Matches any bracketed ChordPro tag, e.g. [G], [Am7/E], [Verse], [Chorus]
+    const regex = /\[([^\]]+)\]/g;
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      const start = match.index;
+      const end = regex.lastIndex;
+      if (pos >= start && pos <= end) {
+        let newText = text.substring(0, start) + text.substring(end);
+        
+        setChordsText(newText);
+        debouncedAutoSave({ chords: newText });
+        
+        e.preventDefault();
+        break;
+      }
+    }
+  };
 
   useEffect(() => {
     console.log('📝 Loading new song into editor:', song.id);
@@ -327,6 +383,23 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
                 <option value="B">B</option>
               </select>
             </div>
+
+            <div className="ml-auto flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => insertMarker('[Verse]')}
+                className="h-12 px-3 text-xs font-semibold rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200 transition-colors flex-shrink-0"
+              >
+                + [Verse]
+              </button>
+              <button
+                type="button"
+                onClick={() => insertMarker('[Chorus]')}
+                className="h-12 px-3 text-xs font-semibold rounded-lg bg-green-50 text-green-600 hover:bg-green-100 border border-green-200 transition-colors flex-shrink-0"
+              >
+                + [Chorus]
+              </button>
+            </div>
           </div>
 
           {/* ROW 3: Big Editor Boxes */}
@@ -334,7 +407,11 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
             <div className="flex flex-col">
               <label className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">Raw Database Chords</label>
               <textarea
+                ref={textareaRef}
                 value={chordsText}
+                onFocus={() => setPaletteVisible(true)}
+                onBlur={() => setTimeout(() => setPaletteVisible(false), 150)}
+                onDoubleClick={handleTextareaDoubleClick}
                 onChange={(e) => {
                   setChordsText(e.target.value);
                   debouncedAutoSave({ chords: e.target.value });
@@ -369,6 +446,17 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
           </div>
         </div>
       </div>
+
+      <ChordPalette
+        textareaRef={textareaRef}
+        value={chordsText}
+        onChange={(newVal) => {
+          setChordsText(newVal);
+          debouncedAutoSave({ chords: newVal });
+        }}
+        visible={paletteVisible}
+        songKey={keyValue}
+      />
     </div>
   );
 }
