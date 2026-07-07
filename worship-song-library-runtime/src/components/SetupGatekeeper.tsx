@@ -1,12 +1,31 @@
 import { useState, useEffect } from 'react';
 import { SmartDownloadButton } from './SmartDownloadButton';
+import { debugDownloadAllSongs } from '../utils/debugDownload';
 import { db } from '../db/Database';
 
 export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
   const [isChecking, setIsChecking] = useState(true);
   const [hasData, setHasData] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [songCount, setSongCount] = useState(0);
+  const [isDebugDownloading, setIsDebugDownloading] = useState(false);
+
+  const handleDebugDownload = async () => {
+    setIsDebugDownloading(true);
+    try {
+      await debugDownloadAllSongs();
+      const count = await db.songs.count();
+      setSongCount(count);
+      setHasData(count >= 724);
+      if (count >= 724) {
+        onComplete();
+      }
+    } catch (error) {
+      console.error('Debug download failed:', error);
+      alert('Debug download failed. Check console for details.');
+    } finally {
+      setIsDebugDownloading(false);
+    }
+  };
 
   useEffect(() => {
     const checkData = async () => {
@@ -15,11 +34,6 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
       setHasData(count >= 724);
       setIsChecking(false);
     };
-
-    // Check if mobile device
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    const isMobileDevice = /android|iphone|ipad|ipod/.test(userAgent);
-    setIsMobile(isMobileDevice);
 
     checkData();
   }, []);
@@ -79,6 +93,20 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
               <span className="text-slate-700">Real-time updates when online</span>
             </li>
           </ul>
+
+          {/* Debug Manual Download Button */}
+          <div className="pt-4 border-t border-slate-100">
+            <button
+              onClick={handleDebugDownload}
+              disabled={isDebugDownloading}
+              className="w-full px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium hover:bg-emerald-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isDebugDownloading ? '⏳ Downloading...' : '🔧 Manual Download (Debug)'}
+            </button>
+            <p className="text-xs text-slate-500 mt-2 text-center">
+              Use if main download fails
+            </p>
+          </div>
         </div>
 
         {/* Download Button */}
