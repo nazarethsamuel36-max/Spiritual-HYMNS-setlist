@@ -1,33 +1,17 @@
 import { db, fullSystemReset } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { debugDownloadAllSongs } from '../utils/debugDownload';
+import { UpdateStorageButton } from './UpdateStorageButton';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
-  // 🔥 BURN THE CACHE: All sync/download state removed - online only
-
   const stats = useLiveQuery(async () => {
-    const songCount = await db.songIndex.count();
-    const manifest = await db.syncMeta.get('manifest');
-    return { songCount, manifest };
+    const songCount = await db.songs.count();
+    const syncMeta = await db.meta.get('last_sync_time');
+    return { songCount, syncMeta };
   }, []);
-
-  const handleDownloadAll = async () => {
-    await debugDownloadAllSongs();
-  };
-
-  const handleResetCache = async () => {
-    // 🔥 BURN THE CACHE: Cache reset disabled - no offline cache
-    alert('Cache reset is disabled. The app no longer uses offline caching.');
-  };
 
   const handleFullReset = async () => {
     if (!confirm('CRITICAL: This will delete EVERYTHING including your setlists. This cannot be undone. Proceed?')) return;
     await fullSystemReset();
-  };
-
-  const handleForceSync = async () => {
-    // 🔥 BURN THE CACHE: Sync disabled - online only
-    alert('Sync is disabled. The app now requires a direct internet connection.');
   };
 
   return (
@@ -51,54 +35,15 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
               <span className="text-xs font-bold text-slate-700">
-                {stats?.manifest?.lastSyncedAt ? new Date(stats.manifest.lastSyncedAt).toLocaleDateString() : 'Never'}
+                {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
               </span>
             </div>
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1">Maintenance</h3>
+            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1">Storage Management</h3>
             
-            <button 
-              onClick={handleDownloadAll}
-              className="w-full flex items-center justify-between p-4 bg-slate-50 border border-slate-200 rounded-2xl hover:bg-slate-100 transition-colors"
-            >
-              <div className="text-left">
-                <div className="font-bold text-slate-700">Download / Sync Entire Library</div>
-                <div className="text-xs text-slate-500">Download all songs for instant offline search and load</div>
-              </div>
-              <svg className="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </button>
-
-            <button 
-              onClick={handleForceSync}
-              disabled
-              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
-            >
-              <div className="text-left">
-                <div className="font-bold text-slate-500">Force Update</div>
-                <div className="text-xs text-slate-400">⚠️ Sync disabled - app is online-only</div>
-              </div>
-              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            </button>
-
-            <button 
-              onClick={handleResetCache}
-              disabled
-              className="w-full flex items-center justify-between p-4 bg-slate-100 border border-slate-200 rounded-2xl opacity-50 cursor-not-allowed"
-            >
-              <div className="text-left">
-                <div className="font-bold text-slate-500">Rebuild Local Cache</div>
-                <div className="text-xs text-slate-400">⚠️ Caching disabled - online only</div>
-              </div>
-              <svg className="w-5 h-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-              </svg>
-            </button>
+            <UpdateStorageButton />
 
             <button 
               onClick={handleFullReset}
