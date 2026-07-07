@@ -32,11 +32,7 @@ export default defineConfig({
           },
           {
             urlPattern: /^https:\/\/.*\.supabase\.co\/rest\/v1\/.*$/i,
-            handler: 'NetworkOnly',
-            options: {
-              cacheName: 'supabase-api-bypass',
-              networkTimeoutSeconds: 3
-            }
+            handler: 'NetworkOnly'
           }
         ]
       }
