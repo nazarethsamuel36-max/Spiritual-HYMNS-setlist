@@ -31,17 +31,11 @@ export default defineConfig({
             }
           },
           {
-            urlPattern: /^https:\/\/.*\.supabase\.co\/.*$/i,
-            handler: 'NetworkFirst',
+            urlPattern: /^https:\/\/.*\.supabase\.co\/rest\/v1\/.*$/i,
+            handler: 'NetworkOnly',
             options: {
-              cacheName: 'supabase-api-cache',
-              expiration: {
-                maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
-              }
+              cacheName: 'supabase-api-bypass',
+              networkTimeoutSeconds: 3
             }
           }
         ]

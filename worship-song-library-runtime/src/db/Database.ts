@@ -106,19 +106,21 @@ export class WorshipDatabase extends Dexie {
   setlists!: EntityTable<Setlist, 'id'>;
   arrangements!: EntityTable<Arrangement, 'id'>;
   cache!: EntityTable<CacheEntry, 'id'>;
+  meta!: EntityTable<{ id: string; value: string | number }, 'id'>;
 
   sharedSongs!: EntityTable<SongDetail, 'id'>;
   sharedSetlists!: EntityTable<Setlist, 'id'>;
 
   constructor() {
     super('WorshipDatabase');
-    this.version(5).stores({
-      songs: 'id, songNumber, language',
+    this.version(6).stores({
+      songs: 'id, songNumber, language, updated_at',
       songIndex: 'id, songNumber, title, language, searchTokens',
       syncMeta: 'id',
       setlists: 'id, title, updatedAt',
       arrangements: 'id, songId, type, updatedAt',
       cache: 'id, timestamp',
+      meta: 'id',
       sharedSongs: 'id, songNumber, title, language',
       sharedSetlists: 'id, title, updatedAt'
     });

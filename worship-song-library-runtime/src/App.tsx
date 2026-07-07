@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
-// 🔥 BURN THE CACHE: SyncService disabled
-// import { SyncService } from './services/SyncService';
+import { bootstrapApp, wakeUpSync } from './services/DataService';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { ReaderItemView } from './components/reader/ReaderItemView';
@@ -12,13 +11,11 @@ import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
-import { SyncProgress } from './components/SyncProgress';
 import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db } from './db/Database';
-import { useDownloadProgress } from './hooks/useDownloadProgress';
 
 function App() {
   const isMobile = useIsMobile();
@@ -38,7 +35,6 @@ function App() {
   const closeReader = useWorkflowStore((s) => s.closeReader);
   const titleTapCountRef = useRef(0);
   const titleTapTimerRef = useRef<number | null>(null);
-  const { stats, reset } = useDownloadProgress();
 
   // Determine which sidebar tab is active
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
@@ -49,20 +45,17 @@ function App() {
   const showReader = !isMobile || mobileActivePane === 'reader';
   const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
 
-  const runInitialDownload = async () => {
-    // Skip auto-download since caching is disabled
-    RealtimeService.initialize();
-  };
-
-  const handleRetryDownload = () => {
-    reset();
-    void runInitialDownload();
-  };
-
-  // Initialize Realtime Service on app start
+  // Initialize DataService and Realtime Service on app start
   useEffect(() => {
     const initializeAppData = async () => {
-      await runInitialDownload();
+      // Silent bootstrap - downloads all songs on first visit if on fast network
+      await bootstrapApp();
+      
+      // Wake-up delta sync - fetches only changed songs since last sync
+      await wakeUpSync();
+      
+      // Initialize Realtime Service for live updates
+      RealtimeService.initialize();
     };
 
     void initializeAppData();
@@ -83,10 +76,9 @@ function App() {
     };
   }, []);
 
-  // Initialize: handle shared setlist URL + popstate for mobile back (sync disabled)
+  // Initialize: handle shared setlist URL + popstate for mobile back
   useEffect(() => {
     const init = async () => {
-      // 🔥 BURN THE CACHE: Removed SyncService.sync() call
       const params = new URLSearchParams(window.location.search);
       
       // Handle import_song
@@ -157,8 +149,6 @@ function App() {
       if (songMatch) {
         openSong(parseInt(songMatch[1], 10), 'library');
       }
-
-      // 🔥 BURN THE CACHE: Removed all SyncService calls - online only
     };
     init();
   }, []);
@@ -228,17 +218,6 @@ function App() {
 
   return (
     <div className="app-shell">
-      {stats.status !== 'idle' && stats.status !== 'complete' && (
-        <SyncProgress
-          currentMB={stats.downloadedBytes}
-          totalMB={stats.totalBytes}
-          percentage={stats.percentage}
-          status={stats.status}
-          message={stats.message}
-          onRetry={handleRetryDownload}
-        />
-      )}
-
       {/* ═══ SIDEBAR PANE ═══ */}
       {showSidebar && (
         <div className="sidebar-pane">

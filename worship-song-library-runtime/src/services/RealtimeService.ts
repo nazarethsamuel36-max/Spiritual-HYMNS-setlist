@@ -19,10 +19,10 @@ export class RealtimeService {
     window.addEventListener('online', () => this.handleOnline());
     window.addEventListener('offline', () => this.handleOffline());
 
-    // 🔥 TEMPORARY: Comment out WebSocket subscription to prevent connection spam
-    // this.subscribeToSongs();
+    // Subscribe to songs table changes via Supabase Realtime
+    this.subscribeToSongs();
 
-    console.log('✅ Realtime Service initialized (WebSocket disabled for testing)');
+    console.log('✅ Realtime Service initialized');
   }
 
   /**
