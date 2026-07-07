@@ -19,7 +19,6 @@ import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db } from './db/Database';
 import { useDownloadProgress } from './hooks/useDownloadProgress';
-import { debugDownloadAllSongs } from './utils/debugDownload';
 
 function App() {
   const isMobile = useIsMobile();

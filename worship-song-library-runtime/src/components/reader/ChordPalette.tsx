@@ -52,7 +52,7 @@ function detectChordAtCursor(
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export interface ChordPaletteProps {
-  textareaRef: React.RefObject<HTMLTextAreaElement>;
+  textareaRef: React.RefObject<HTMLTextAreaElement | null>;
   value: string;
   onChange: (newValue: string) => void;
   visible: boolean;
