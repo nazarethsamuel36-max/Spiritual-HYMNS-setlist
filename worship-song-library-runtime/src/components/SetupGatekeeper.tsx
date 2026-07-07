@@ -6,11 +6,13 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
   const [isChecking, setIsChecking] = useState(true);
   const [hasData, setHasData] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [songCount, setSongCount] = useState(0);
 
   useEffect(() => {
     const checkData = async () => {
-      const songCount = await db.songs.count();
-      setHasData(songCount > 0);
+      const count = await db.songs.count();
+      setSongCount(count);
+      setHasData(count >= 724);
       setIsChecking(false);
     };
 
@@ -34,7 +36,7 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
   }
 
   if (hasData) {
-    // Data exists, proceed to app
+    // Data exists (>= 724 songs), proceed to app
     onComplete();
     return null;
   }
@@ -45,11 +47,13 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
       <div className="max-w-lg w-full space-y-8">
         {/* Header */}
         <div className="text-center space-y-4">
-          <div className="text-6xl">🎵</div>
+          <div className="flex justify-center">
+            <img src="/pwa-192x192.png" alt="BBF Song book" className="w-24 h-24" />
+          </div>
           <h1 className="text-3xl font-bold text-slate-900">BBF Song book</h1>
           <p className="text-slate-600">
-            {isMobile 
-              ? 'Download the app for instant offline access to 728+ songs'
+            {songCount > 0 
+              ? `Download complete songs (${songCount}/728) for full offline access`
               : 'Download the library for instant offline access to 728+ songs'}
           </p>
         </div>
