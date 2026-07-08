@@ -6,7 +6,7 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-export function SmartDownloadButton({ onComplete }: { onComplete?: () => void }) {
+export function SmartDownloadButton({ onComplete, forceShow = false }: { onComplete?: () => void; forceShow?: boolean }) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
@@ -86,8 +86,8 @@ export function SmartDownloadButton({ onComplete }: { onComplete?: () => void })
     }
   };
 
-  if (isInstalled) {
-    return null; // Don't show button if already installed
+  if (isInstalled && !forceShow) {
+    return null; // Only hide if it's NOT forced to show
   }
 
   if (showIOSInstructions) {

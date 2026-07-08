@@ -110,7 +110,7 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
         </div>
 
         {/* Download Button */}
-        <SmartDownloadButton onComplete={onComplete} />
+        <SmartDownloadButton onComplete={onComplete} forceShow={true} />
 
         {/* Skip option */}
         <div className="text-center">
