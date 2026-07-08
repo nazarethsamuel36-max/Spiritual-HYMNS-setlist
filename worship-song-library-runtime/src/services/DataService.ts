@@ -9,7 +9,9 @@ const LAST_SYNC_TIME_KEY = 'last_sync_time';
  * Batched Download - Downloads all songs in batches with progress callback
  * This is triggered only when user explicitly clicks download button
  */
-export async function batchDownloadSongs(onProgress?: (percent: number) => void): Promise<void> {
+export async function batchDownloadSongs(
+  onProgress?: (percent: number, message: string) => void
+): Promise<'completed' | 'skipped' | 'error'> {
   try {
     console.log('� Batch Download: Starting...');
 
@@ -24,11 +26,21 @@ export async function batchDownloadSongs(onProgress?: (percent: number) => void)
     }
 
     if (!count || count === 0) {
-      console.warn('⚠️ Batch Download: No songs found');
-      return;
+      onProgress?.(0, 'No songs found on server.');
+      return 'error';
     }
 
-    console.log(`📊 Batch Download: Total songs to download: ${count}`);
+    // 🛑 Check how many we already have in IndexedDB
+    const localCount = await db.songIndex.count();
+
+    // If we already have them all, SKIP downloading!
+    if (localCount >= count) {
+      console.log(`✅ Library already fully downloaded (${localCount}/${count} songs).`);
+      onProgress?.(100, `Already downloaded! (${localCount} songs offline)`);
+      return 'skipped';
+    }
+
+    console.log(`📊 Batch Download: Server has ${count} songs. Local has ${localCount}. Starting download...`);
 
     const BATCH_SIZE = 50;
     let downloadedCount = 0;
@@ -94,7 +106,7 @@ export async function batchDownloadSongs(onProgress?: (percent: number) => void)
       const percent = Math.round((downloadedCount / count) * 100);
       console.log(`📥 Batch Download: Progress ${percent}% (${downloadedCount}/${count})`);
       if (onProgress) {
-        onProgress(percent);
+        onProgress(percent, `Downloading ${downloadedCount}/${count} songs...`);
       }
     }
 
@@ -116,9 +128,12 @@ export async function batchDownloadSongs(onProgress?: (percent: number) => void)
     await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
 
     console.log('✅ Batch Download: Successfully downloaded and cached all songs');
+    onProgress?.(100, 'Successfully downloaded all songs!');
+    return 'completed';
   } catch (error) {
     console.error('❌ Batch Download failed:', error);
-    throw error;
+    onProgress?.(0, 'Download failed. Check connection.');
+    return 'error';
   }
 }
 

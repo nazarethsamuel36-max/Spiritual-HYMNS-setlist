@@ -53,7 +53,7 @@ export function SmartDownloadButton({ onComplete }: { onComplete?: () => void })
 
     try {
       // Step 1: Download songs
-      await batchDownloadSongs((percent) => {
+      await batchDownloadSongs((percent, message) => {
         setDownloadProgress(percent);
       });
 
