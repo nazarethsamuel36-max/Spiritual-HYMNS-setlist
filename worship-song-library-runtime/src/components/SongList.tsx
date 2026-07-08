@@ -48,7 +48,6 @@ export function SongList() {
   const [allSongs, setAllSongs] = useState<SongIndex[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [isOffline, setIsOffline] = useState(false);
   const [isAddingNewSong, setIsAddingNewSong] = useState(false);
   const [newSongLanguage, setNewSongLanguage] = useState<string>(
     selectedLanguage && selectedLanguage !== 'All' ? selectedLanguage : 'English'
@@ -68,17 +67,16 @@ export function SongList() {
     async function loadLibrarySongs() {
       setLoadError(null);
       setIsLoading(true);
-      setIsOffline(false);
 
       try {
         // This checks db.songIndex first. If empty, falls back to Supabase.
         const songs = await getSongs();
-        
+
         // Filter by admin authentication status
-        const filteredSongs = isAdminAuthenticated 
-          ? songs 
+        const filteredSongs = isAdminAuthenticated
+          ? songs
           : songs.filter(song => song.isPublished);
-        
+
         // 1. Render the UI immediately!
         setAllSongs(filteredSongs);
 
@@ -86,10 +84,6 @@ export function SongList() {
         setTimeout(() => {
           SearchEngine.indexSongs(filteredSongs);
         }, 500);
-        
-        if (!navigator.onLine) {
-          setIsOffline(true);
-        }
       } catch (err: any) {
         console.error('Failed to load songs:', err);
         setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
@@ -340,11 +334,6 @@ export function SongList() {
         </div>
       </div>
 
-      {isOffline && (
-        <div className="mx-3 mt-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-medium text-amber-700">
-          Offline mode: showing the latest cached songs.
-        </div>
-      )}
 
       {/* Song List */}
       <div className="flex flex-col pb-32">
