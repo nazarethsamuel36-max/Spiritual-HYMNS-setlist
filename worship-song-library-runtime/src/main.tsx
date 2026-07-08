@@ -1,27 +1,30 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import { registerSW } from 'virtual:pwa-register'
+import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
 
-// TEMPORARY: Unregister service worker for development
-if ('serviceWorker' in navigator) {
+// Unregister service worker ONLY during local development to make hot reloading easier
+if (import.meta.env.DEV && 'serviceWorker' in navigator) {
   navigator.serviceWorker.getRegistrations().then((registrations) => {
     for (const registration of registrations) {
       registration.unregister();
-      console.log('??? Service worker unregistered');
+      console.log('⚡ Dev Mode: Service worker unregistered');
     }
   });
 }
 
-// registerSW({
-//   onNeedRefresh() {
-//     console.log('?? New app update available. Refresh recommended.');
-//   },
-//   onOfflineReady() {
-//     console.log('? App is ready to work offline.');
-//   }
-// })
+// Register service worker in production/app mode
+if (import.meta.env.PROD) {
+  registerSW({
+    onNeedRefresh() {
+      console.log('🔄 New app update available. Refresh recommended.');
+    },
+    onOfflineReady() {
+      console.log('⭐ App is ready to work offline.');
+    }
+  })
+}
 
 console.log('?? App starting...');
 console.log('VITE_SUPABASE_URL:', import.meta.env.VITE_SUPABASE_URL);
