@@ -54,11 +54,30 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const initializeAppData = async () => {
-      await wakeUpSync();
-      RealtimeService.initialize();
-    };
-    void initializeAppData();
+    // 🛑 DEFER INITIALIZATION: Let the UI paint and buttons register first!
+    const timer = setTimeout(() => {
+      const initializeAppData = async () => {
+        try {
+          // Only sync if we are genuinely online
+          if (navigator.onLine) {
+            await wakeUpSync();
+          }
+        } catch (e) {
+          console.warn("Wake up sync skipped/failed:", e);
+        }
+
+        try {
+          // Only start websockets if online
+          if (navigator.onLine) {
+            RealtimeService.initialize();
+          }
+        } catch (e) {
+          console.warn("Realtime init skipped/failed:", e);
+        }
+      };
+
+      void initializeAppData();
+    }, 1000); // Wait 1 second after app loads
 
     const handleSongUpdate = (event: Event) => {
       const customEvent = event as CustomEvent;
@@ -66,6 +85,7 @@ function App() {
     };
     window.addEventListener('song-updated', handleSongUpdate);
     return () => {
+      clearTimeout(timer); // Clean up timer
       window.removeEventListener('song-updated', handleSongUpdate);
       RealtimeService.destroy();
     };

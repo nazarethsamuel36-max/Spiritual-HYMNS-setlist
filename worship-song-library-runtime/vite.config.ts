@@ -15,6 +15,9 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         navigateFallback: 'index.html',
+        // 🛑 Tell Workbox to completely ignore Supabase API calls
+        // This prevents the "no-response" error when offline
+        navigateFallbackDenylist: [/^\/rest\/v1/],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*$/i,

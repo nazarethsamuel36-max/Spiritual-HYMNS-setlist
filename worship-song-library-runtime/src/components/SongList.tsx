@@ -79,8 +79,13 @@ export function SongList() {
           ? songs 
           : songs.filter(song => song.isPublished);
         
+        // 1. Render the UI immediately!
         setAllSongs(filteredSongs);
-        await SearchEngine.indexSongs(filteredSongs);
+
+        // 2. Defer the heavy search indexing so it doesn't freeze mobile clicks
+        setTimeout(() => {
+          SearchEngine.indexSongs(filteredSongs);
+        }, 500);
         
         if (!navigator.onLine) {
           setIsOffline(true);
