@@ -1,20 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { usePWA } from '../hooks/usePWA';
 
 export function PWAInstallButton() {
   const { isInstalled, isIOS, installApp } = usePWA();
   const [showIOSModal, setShowIOSModal] = useState(false);
-  const [showSuccessToast, setShowSuccessToast] = useState(false);
 
-  useEffect(() => {
-    if (!isInstalled) {
-      return;
-    }
+  // Temporarily removed success toast to test mobile cold-start click issue
+  // const [showSuccessToast, setShowSuccessToast] = useState(false);
 
-    setShowSuccessToast(true);
-    const timer = window.setTimeout(() => setShowSuccessToast(false), 3000);
-    return () => window.clearTimeout(timer);
-  }, [isInstalled]);
+  // useEffect(() => {
+  //   if (!isInstalled) {
+  //     return;
+  //   }
+
+  //   setShowSuccessToast(true);
+  //   const timer = window.setTimeout(() => setShowSuccessToast(false), 3000);
+  //   return () => window.clearTimeout(timer);
+  // }, [isInstalled]);
 
   if (isInstalled) {
     return null;
