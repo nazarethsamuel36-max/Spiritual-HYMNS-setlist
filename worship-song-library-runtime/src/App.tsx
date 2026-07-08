@@ -7,10 +7,10 @@ import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
-import { InstallPrompt } from './components/InstallPrompt';
+// import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
-import { ConnectionStatus } from './components/ConnectionStatus';
+// import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
@@ -54,30 +54,27 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // 🛑 DEFER INITIALIZATION: Let the UI paint and buttons register first!
-    const timer = setTimeout(() => {
-      const initializeAppData = async () => {
-        try {
-          // Only sync if we are genuinely online
-          if (navigator.onLine) {
-            await wakeUpSync();
-          }
-        } catch (e) {
-          console.warn("Wake up sync skipped/failed:", e);
+    const initializeAppData = async () => {
+      try {
+        // Only sync if we are genuinely online
+        if (navigator.onLine) {
+          await wakeUpSync();
         }
+      } catch (e) {
+        console.warn("Wake up sync skipped/failed:", e);
+      }
 
-        try {
-          // Only start websockets if online
-          if (navigator.onLine) {
-            RealtimeService.initialize();
-          }
-        } catch (e) {
-          console.warn("Realtime init skipped/failed:", e);
+      try {
+        // Only start websockets if online
+        if (navigator.onLine) {
+          RealtimeService.initialize();
         }
-      };
+      } catch (e) {
+        console.warn("Realtime init skipped/failed:", e);
+      }
+    };
 
-      void initializeAppData();
-    }, 1000); // Wait 1 second after app loads
+    void initializeAppData();
 
     const handleSongUpdate = (event: Event) => {
       const customEvent = event as CustomEvent;
@@ -85,7 +82,6 @@ function App() {
     };
     window.addEventListener('song-updated', handleSongUpdate);
     return () => {
-      clearTimeout(timer); // Clean up timer
       window.removeEventListener('song-updated', handleSongUpdate);
       RealtimeService.destroy();
     };
@@ -273,8 +269,9 @@ function App() {
           )}
 
           {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
-          <InstallPrompt />
-          <ConnectionStatus />
+          {/* Temporarily removed InstallPrompt and ConnectionStatus to test mobile cold-start click issue */}
+          {/* <InstallPrompt /> */}
+          {/* <ConnectionStatus /> */}
         </div>
       )}
     </>
