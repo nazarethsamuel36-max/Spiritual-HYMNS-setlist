@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { db, normalizeSongIndex } from '../db/Database';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { supabase } from '../lib/supabaseClient';
+import { getSongs } from '../services/DataService';
 import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
@@ -65,79 +65,35 @@ export function SongList() {
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
   useEffect(() => {
-    const controller = new AbortController(); // 🔥 CRITICAL FIX
-
     async function loadLibrarySongs() {
       setLoadError(null);
+      setIsLoading(true);
       setIsOffline(false);
 
       try {
-        const cachedSongs = await db.songIndex.toArray();
-        if (controller.signal.aborted) return;
-
-        if (cachedSongs.length > 0) {
-          setAllSongs(cachedSongs.map(normalizeSongIndex));
-          setIsLoading(false);
-        } else {
-          setIsLoading(true);
-        }
-
+        // This checks db.songIndex first. If empty, falls back to Supabase.
+        const songs = await getSongs();
+        
+        // Filter by admin authentication status
+        const filteredSongs = isAdminAuthenticated 
+          ? songs 
+          : songs.filter(song => song.isPublished);
+        
+        setAllSongs(filteredSongs);
+        await SearchEngine.indexSongs(filteredSongs);
+        
         if (!navigator.onLine) {
-          if (cachedSongs.length === 0) setAllSongs([]);
           setIsOffline(true);
-          return;
         }
-
-        let query = supabase
-          .from('songs')
-          .select('id, song_number, title, artist, language, original_key, is_published')
-          .eq('is_active', true);
-
-        if (!isAdminAuthenticated) {
-          query = query.eq('is_published', true);
-        }
-
-        // 🔥 Check abort signal before making request
-        if (controller.signal.aborted) return;
-        
-        const { data, error } = await query.order('song_number', { ascending: true });
-
-        if (error) throw new Error(`Supabase error: ${error.message}`);
-        if (!data) throw new Error('No data returned from Supabase');
-
-        const songs: SongIndex[] = (data as any[]).map((song: any) => ({
-          id: Number(song.id ?? 0),
-          songNumber: Number(song.song_number ?? 0),
-          title: typeof song.title === 'string' ? song.title : '',
-          artist: typeof song.artist === 'string' ? song.artist : undefined,
-          language: typeof song.language === 'string' ? song.language : undefined,
-          originalKey: typeof song.original_key === 'string' ? song.original_key : undefined,
-          hashtags: [],
-          searchTokens: `${typeof song.title === 'string' ? song.title : ''} ${typeof song.artist === 'string' ? song.artist : ''}`.toLowerCase(),
-          romanTitle: typeof song.title === 'string' ? song.title : undefined,
-          isPublished: song.is_published ?? true
-        }));
-
-        const normalizedSongs = songs.map(normalizeSongIndex);
-        await db.songIndex.bulkPut(normalizedSongs);
-        setAllSongs(normalizedSongs);
-        await SearchEngine.indexSongs(normalizedSongs);
       } catch (err: any) {
-        if (err.name === 'AbortError') return; // Ignore cancelled requests
-        
-        console.error('Unexpected error loading songs:', err);
-        if (!controller.signal.aborted) {
-          setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
-          setIsLoading(false); // 🔥 Ensure loading stops on error
-        }
+        console.error('Failed to load songs:', err);
+        setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
+      } finally {
+        setIsLoading(false);
       }
     }
 
     void loadLibrarySongs();
-
-    return () => {
-      controller.abort(); // 🔥 Physically kills the network request
-    };
   }, [isAdminAuthenticated]);
 
   const handleAddNewSong = async (

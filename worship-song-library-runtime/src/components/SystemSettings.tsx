@@ -1,5 +1,7 @@
 import { db, fullSystemReset } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
+import { batchDownloadSongs } from '../services/DataService';
+import { useState } from 'react';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
   const stats = useLiveQuery(async () => {
@@ -8,9 +10,30 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     return { songCount, syncMeta };
   }, []);
 
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+
   const handleFullReset = async () => {
     if (!confirm('CRITICAL: This will delete EVERYTHING including your setlists. This cannot be undone. Proceed?')) return;
     await fullSystemReset();
+  };
+
+  const handleDownloadSongs = async () => {
+    if (!confirm('Download all songs for offline use? This may take a moment.')) return;
+    setIsDownloading(true);
+    setDownloadProgress(0);
+    
+    try {
+      await batchDownloadSongs((percent) => {
+        setDownloadProgress(percent);
+      });
+      alert('✅ Songs downloaded successfully!');
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('❌ Download failed. Please check your internet connection.');
+    } finally {
+      setIsDownloading(false);
+    }
   };
 
   return (
@@ -50,6 +73,24 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 Last sync: {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
               </p>
             </div>
+
+            <button 
+              onClick={handleDownloadSongs}
+              disabled={isDownloading}
+              className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <div className="text-left">
+                <div className="font-bold text-slate-700 group-hover:text-emerald-600">
+                  {isDownloading ? `Downloading... ${downloadProgress}%` : 'Download Songs Offline'}
+                </div>
+                <div className="text-xs text-slate-400">
+                  {isDownloading ? 'Please wait...' : 'Download ~728 songs (5MB) for offline use'}
+                </div>
+              </div>
+              <svg className="w-5 h-5 text-slate-300 group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </button>
 
             <button 
               onClick={handleFullReset}

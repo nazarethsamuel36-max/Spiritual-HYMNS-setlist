@@ -1,11 +1,11 @@
 import { supabase } from '../lib/supabaseClient';
 import { db } from '../db/Database';
 import type { SongDetail } from '../db/Database';
+import { wakeUpSync } from './DataService';
 
 export class RealtimeService {
   private static channel: any = null;
   private static isOnline = navigator.onLine;
-  private static syncInProgress = false;
 
   /**
    * Initialize Realtime Service
@@ -29,7 +29,7 @@ export class RealtimeService {
    * Handle coming back online
    */
   private static async handleOnline() {
-    console.log('🌐 App is back online - syncing...');
+    console.log('🌐 App is back online');
     this.isOnline = true;
 
     // Re-subscribe if needed
@@ -37,8 +37,8 @@ export class RealtimeService {
       this.subscribeToSongs();
     }
 
-    // Perform full sync to catch any missed changes
-    await this.syncFromDatabase();
+    // Run the lightweight delta sync instead of downloading everything
+    await wakeUpSync();
   }
 
   /**
@@ -170,45 +170,6 @@ export class RealtimeService {
       lyrics: record.lyrics || '',
       is_active: record.is_active !== false,
     };
-  }
-
-  /**
-   * Full sync from database (called when coming online)
-   */
-  private static async syncFromDatabase() {
-    if (this.syncInProgress) {
-      console.log('⏳ Sync already in progress, skipping...');
-      return;
-    }
-
-    this.syncInProgress = true;
-    console.log('🔄 Performing full sync from database...');
-
-    try {
-      const { data, error } = await supabase
-        .from('songs')
-        .select('*')
-        .eq('is_active', true);
-
-      if (error) throw error;
-
-      if (data && data.length > 0) {
-        // Update all songs in IndexedDB
-        await db.transaction('rw', db.songs, db.songIndex, async () => {
-          for (const record of data) {
-            await db.songs.put(this.transformSong(record));
-            if (record.song_number) {
-              await db.songIndex.put(this.transformSongIndex(record));
-            }
-          }
-        });
-        console.log(`✅ Synced ${data.length} songs from database`);
-      }
-    } catch (error) {
-      console.error('❌ Sync failed:', error);
-    } finally {
-      this.syncInProgress = false;
-    }
   }
 
   /**

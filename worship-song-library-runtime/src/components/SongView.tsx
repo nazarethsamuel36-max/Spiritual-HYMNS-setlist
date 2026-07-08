@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
-import { supabase } from '../lib/supabaseClient';
+import { getSongById } from '../services/DataService';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
@@ -80,39 +80,33 @@ export function SongView() {
   // 4. The Bulletproof Fetch Logic
   useEffect(() => {
     if (!songId) { setLoading(false); return; }
-    const controller = new AbortController();
     setLoading(true);
     setError(null);
 
     const fetchSong = async () => {
       try {
-        let query = supabase.from('songs').select('*').eq('id', songId);
-        if (!isAdminAuthenticated) query = query.eq('is_active', true);
-
-        // Check abort signal before making request
-        if (controller.signal.aborted) return;
-
-        const { data, error } = await query.single();
-        if (error) throw error;
-        if (!data) throw new Error('Song not found');
+        // This checks db.songs first. If empty, falls back to Supabase.
+        const song = await getSongById(songId);
+        
+        if (!song) {
+          throw new Error('Song not found');
+        }
 
         const songDetail = {
-          ...data,
-          sections: parseLyricsToSections(data.lyrics || ''),
-          chords: data.chords || '',
-          lyrics: data.lyrics || ''
+          ...song,
+          sections: parseLyricsToSections(song.lyrics || ''),
+          chords: song.chords || '',
+          lyrics: song.lyrics || ''
         };
         setSong(songDetail);
       } catch (err: any) {
-        if (err.name === 'AbortError' || controller.signal.aborted) return;
         setError(err.message || 'Failed to load song');
       } finally {
-        if (!controller.signal.aborted) setLoading(false);
+        setLoading(false);
       }
     };
     fetchSong();
-    return () => controller.abort();
-  }, [songId, isAdminAuthenticated]);
+  }, [songId]);
 
   // 6. Swipe Navigation Logic
   const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
