@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Remove 300ms tap delay on mobile devices for native-feeling clicks */
+* {
+  touch-action: manipulation;
+}
+
 @theme {
   --font-sans: 'Noto Sans', system-ui, sans-serif;
 

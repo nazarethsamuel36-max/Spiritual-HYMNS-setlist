@@ -15,8 +15,8 @@ export function InstallPrompt() {
   // Show iOS instructions
   if (isIOS && showIOSInstructions) {
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-        <div className="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4">
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pointer-events-none">
+        <div className="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
           <div className="text-center space-y-2">
             <div className="text-3xl">📱</div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>
