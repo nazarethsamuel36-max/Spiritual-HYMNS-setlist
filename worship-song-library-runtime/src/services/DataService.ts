@@ -127,6 +127,12 @@ export async function batchDownloadSongs(onProgress?: (percent: number) => void)
  * This runs on every app mount
  */
 export async function wakeUpSync(): Promise<void> {
+  // 🛑 Don't even try if offline
+  if (!navigator.onLine) {
+    console.log('⚠️ Wake-Up Sync: Offline, skipping.');
+    return;
+  }
+
   try {
     console.log('🔄 Wake-Up Sync: Checking for updates...');
 
@@ -238,12 +244,18 @@ export async function wakeUpSync(): Promise<void> {
  */
 export async function getSongs(): Promise<SongIndex[]> {
   const localSongs = await db.songIndex.toArray();
-  
+
   if (localSongs.length > 0) {
     console.log('📱 App Mode: Returning songs from IndexedDB');
     return localSongs.map(normalizeSongIndex);
   }
-  
+
+  // 🛑 Prevent Supabase call if offline
+  if (!navigator.onLine) {
+    console.warn('⚠️ Offline and no local data. Returning empty list.');
+    return [];
+  }
+
   console.log('🌐 Web Mode: Fetching songs from Supabase');
   const { data, error } = await supabase
     .from('songs')
@@ -278,12 +290,18 @@ export async function getSongs(): Promise<SongIndex[]> {
  */
 export async function getSongById(id: number): Promise<SongDetail | null> {
   const localSong = await db.songs.get(id);
-  
+
   if (localSong) {
     console.log('📱 App Mode: Returning song from IndexedDB');
     return localSong;
   }
-  
+
+  // 🛑 Prevent Supabase call if offline
+  if (!navigator.onLine) {
+    console.warn('⚠️ Offline and song not in local DB.');
+    return null;
+  }
+
   console.log('🌐 Web Mode: Fetching song from Supabase');
   const { data, error } = await supabase
     .from('songs')

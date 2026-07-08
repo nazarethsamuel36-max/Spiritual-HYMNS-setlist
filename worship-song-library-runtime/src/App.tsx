@@ -20,7 +20,8 @@ import { db } from './db/Database';
 
 function App() {
   const isMobile = useIsMobile();
-  const [showGatekeeper, setShowGatekeeper] = useState(true);
+  // Change to null initially so we can show a brief splash while checking DB
+  const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
 
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -37,6 +38,28 @@ function App() {
   const closeReader = useWorkflowStore((s) => s.closeReader);
   const titleTapCountRef = useRef(0);
   const titleTapTimerRef = useRef<number | null>(null);
+
+  // Check if user already has songs before showing Gatekeeper
+  useEffect(() => {
+    async function checkDatabase() {
+      const count = await db.songIndex.count();
+      // If they have songs, bypass the gatekeeper (false). If empty, show it (true).
+      setShowGatekeeper(count === 0);
+    }
+    checkDatabase();
+  }, []);
+
+  // Show a simple splash screen while checking the DB
+  if (showGatekeeper === null) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="text-center">
+          <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song book</h1>
+          <p className="text-slate-400 mt-2">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   // Determine which sidebar tab is active
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
