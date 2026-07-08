@@ -80,10 +80,11 @@ export function SongList() {
         // 1. Render the UI immediately!
         setAllSongs(filteredSongs);
 
-        // 2. Defer the heavy search indexing so it doesn't freeze mobile clicks
-        setTimeout(() => {
-          SearchEngine.indexSongs(filteredSongs);
-        }, 500);
+        // 2. Temporarily removed deferred search indexing to test mobile cold-start click issue
+        // setTimeout(() => {
+        //   SearchEngine.indexSongs(filteredSongs);
+        // }, 500);
+        SearchEngine.indexSongs(filteredSongs);
       } catch (err: any) {
         console.error('Failed to load songs:', err);
         setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');

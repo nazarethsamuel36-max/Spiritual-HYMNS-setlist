@@ -103,11 +103,12 @@ export function PWAInstallButton() {
         </svg>
       </button>
 
-      {showSuccessToast && (
+      {/* Temporarily removed success toast to test mobile cold-start click issue */}
+      {/* {showSuccessToast && (
         <div className="fixed left-1/2 top-4 z-[70] -translate-x-1/2 rounded-full bg-emerald-500 px-5 py-2 text-sm font-bold text-white shadow-lg">
           ✅ App Installed Successfully!
         </div>
-      )}
+      )} */}
     </>
   );
 }

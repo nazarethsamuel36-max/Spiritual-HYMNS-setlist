@@ -7,10 +7,10 @@ import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { SystemSettings } from './components/SystemSettings';
-// import { InstallPrompt } from './components/InstallPrompt';
+import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
-// import { ConnectionStatus } from './components/ConnectionStatus';
+import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { RealtimeService } from './services/RealtimeService';
@@ -269,9 +269,8 @@ function App() {
           )}
 
           {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
-          {/* Temporarily removed InstallPrompt and ConnectionStatus to test mobile cold-start click issue */}
-          {/* <InstallPrompt /> */}
-          {/* <ConnectionStatus /> */}
+          <InstallPrompt />
+          <ConnectionStatus />
         </div>
       )}
     </>
