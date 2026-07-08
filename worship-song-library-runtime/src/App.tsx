@@ -49,33 +49,12 @@ function App() {
     checkDatabase();
   }, []);
 
-  // Show a simple splash screen while checking the DB
-  if (showGatekeeper === null) {
-    return (
-      <div className="flex items-center justify-center h-screen bg-white">
-        <div className="text-center">
-          <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song book</h1>
-          <p className="text-slate-400 mt-2">Loading...</p>
-        </div>
-      </div>
-    );
-  }
-
-  // Determine which sidebar tab is active
-  const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
-  const isSetlistTab = sidebar.panel === 'setlist-list' || sidebar.panel === 'setlist-detail' || (reader.type === 'song' && reader.source === 'setlist');
-
-  // Visibility logic
-  const showSidebar = !isMobile || mobileActivePane === 'sidebar';
-  const showReader = !isMobile || mobileActivePane === 'reader';
-  const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
-
   // Initialize DataService and Realtime Service on app start
   useEffect(() => {
     const initializeAppData = async () => {
       // Wake-up delta sync - fetches only changed songs since last sync
       await wakeUpSync();
-      
+
       // Initialize Realtime Service for live updates
       RealtimeService.initialize();
     };
@@ -102,7 +81,7 @@ function App() {
   useEffect(() => {
     const init = async () => {
       const params = new URLSearchParams(window.location.search);
-      
+
       // Handle import_song
       const importSongData = params.get('import_song');
       if (importSongData) {
@@ -126,7 +105,7 @@ function App() {
         try {
           const decoded = decodeURIComponent(escape(atob(importSetlistData)));
           const setlistObj = JSON.parse(decoded);
-          
+
           if (setlistObj.sharedSongsList && Array.isArray(setlistObj.sharedSongsList)) {
             for (const s of setlistObj.sharedSongsList) {
               await db.sharedSongs.put(s);
@@ -177,18 +156,39 @@ function App() {
 
   // URL sync: reflect workflow state in URL
   useEffect(() => {
-    if (reader.type === 'song') {
+    if (reader.type === 'song' && 'songId' in reader) {
       let url = `/song/${reader.songId}`;
-      if (reader.activeArrangementId) {
+      if ('activeArrangementId' in reader && reader.activeArrangementId) {
         url += `/arrangement/${reader.activeArrangementId}`;
       }
       history.replaceState(null, '', url);
-    } else if (sidebar.panel === 'setlist-detail') {
+    } else if (sidebar.panel === 'setlist-detail' && 'setlistId' in sidebar) {
       history.replaceState(null, '', `/setlist/${sidebar.setlistId}`);
     } else {
       history.replaceState(null, '', '/');
     }
   }, [reader, sidebar]);
+
+  // Determine which sidebar tab is active
+  const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
+  const isSetlistTab = sidebar.panel === 'setlist-list' || sidebar.panel === 'setlist-detail' || (reader.type === 'song' && reader.source === 'setlist');
+
+  // Visibility logic
+  const showSidebar = !isMobile || mobileActivePane === 'sidebar';
+  const showReader = !isMobile || mobileActivePane === 'reader';
+  const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
+
+  // Show a simple splash screen while checking the DB
+  if (showGatekeeper === null) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <div className="text-center">
+          <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song book</h1>
+          <p className="text-slate-400 mt-2">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   const handleTitleTap = () => {
     titleTapCountRef.current += 1;
