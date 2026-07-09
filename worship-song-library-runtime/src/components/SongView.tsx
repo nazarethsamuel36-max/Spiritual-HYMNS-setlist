@@ -57,8 +57,10 @@ export function SongView() {
   
   // 3. Auto-scroll & Swipe State
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const touchStartRef = useRef<{ x: number; y: number; time: number } | null>(null);
-  const isHorizontalSwipeRef = useRef<boolean | null>(null);
+
+  // Smooth slide direction tracking
+  const [prevActiveIdx, setPrevActiveIdx] = useState<number | null>(null);
+  const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null);
 
   // 🔥 SAFE LOCAL DATA: Read from Dexie based on active context
   const activeNavigationList = useLiveQuery(async () => {
@@ -96,6 +98,22 @@ export function SongView() {
     if (!setlist) return null;
     return [...setlist.songs].sort((a, b) => a.order - b.order);
   }, [isSetlistContext, setlistId]);
+
+  // Dynamic slide direction calculation based on indices
+  // (must be run before early returns)
+  const totalItems = isSetlistContext ? (setlistItems?.length || 0) : (activeNavigationList?.length || 0);
+  const activeIdx = isSetlistContext
+    ? (currentItemId ? setlistItems?.findIndex(i => i.id === currentItemId) : setlistItems?.findIndex(i => i.songId === songId))
+    : (activeNavigationList ? activeNavigationList.findIndex((s: any) => s.id === songId) : -1);
+
+  useEffect(() => {
+    if (activeIdx !== undefined && activeIdx !== -1) {
+      if (prevActiveIdx !== null && prevActiveIdx !== activeIdx) {
+        setSlideDir(activeIdx > prevActiveIdx ? 'next' : 'prev');
+      }
+      setPrevActiveIdx(activeIdx);
+    }
+  }, [activeIdx, prevActiveIdx]);
 
   // 4. The Bulletproof Fetch Logic
   useEffect(() => {
@@ -159,37 +177,57 @@ export function SongView() {
     }
   }, [songId, activeNavigationList, openSong, source]);
 
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    const touch = e.touches[0];
-    touchStartRef.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
-    isHorizontalSwipeRef.current = null;
-  };
+  // Swipe navigation — document-level so it works regardless of
+  // loading state or DOM mount order. Refs ensure callbacks are always fresh.
+  const navigateSetlistRef = useRef(navigateSetlist);
+  const navigateLibraryRef = useRef(navigateLibrary);
+  const isSetlistContextRef = useRef(isSetlistContext);
+  useEffect(() => { navigateSetlistRef.current = navigateSetlist; }, [navigateSetlist]);
+  useEffect(() => { navigateLibraryRef.current = navigateLibrary; }, [navigateLibrary]);
+  useEffect(() => { isSetlistContextRef.current = isSetlistContext; }, [isSetlistContext]);
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!touchStartRef.current) return;
-    const touch = e.touches[0];
-    const dx = touch.clientX - touchStartRef.current.x;
-    const dy = touch.clientY - touchStartRef.current.y;
-    if (isHorizontalSwipeRef.current === null && (Math.abs(dx) > 10 || Math.abs(dy) > 10)) {
-      isHorizontalSwipeRef.current = Math.abs(dx) > Math.abs(dy);
-    }
-    if (isHorizontalSwipeRef.current === true) e.preventDefault();
-  };
+  useEffect(() => {
+    let startX = 0;
+    let startY = 0;
+    let startTime = 0;
 
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!touchStartRef.current) return;
-    const touch = e.changedTouches[0];
-    const deltaX = touch.clientX - touchStartRef.current.x;
-    const deltaY = Math.abs(touch.clientY - touchStartRef.current.y);
-    const deltaTime = Date.now() - touchStartRef.current.time;
-    const wasHorizontal = isHorizontalSwipeRef.current;
-    touchStartRef.current = null; isHorizontalSwipeRef.current = null;
+    const onTouchStart = (e: TouchEvent) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      startTime = Date.now();
+    };
 
-    if (wasHorizontal === true && Math.abs(deltaX) > 50 && deltaY < 100 && deltaTime < 500) {
-      const direction = deltaX < 0 ? 'next' : 'prev';
-      if (isSetlistContext) navigateSetlist(direction); else navigateLibrary(direction);
-    }
-  };
+    const onTouchEnd = (e: TouchEvent) => {
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      const dt = Date.now() - startTime;
+
+      // Horizontal swipe: dx must dominate dy by 1.5x, travel ≥40px, within 600ms
+      if (
+        Math.abs(dx) >= 40 &&
+        Math.abs(dx) > Math.abs(dy) * 1.5 &&
+        dt < 600
+      ) {
+        const direction = dx < 0 ? 'next' : 'prev';
+        if (isSetlistContextRef.current) {
+          navigateSetlistRef.current(direction);
+        } else {
+          navigateLibraryRef.current(direction);
+        }
+      }
+    };
+
+    document.addEventListener('touchstart', onTouchStart, { passive: true });
+    document.addEventListener('touchend', onTouchEnd, { passive: true });
+
+    return () => {
+      document.removeEventListener('touchstart', onTouchStart);
+      document.removeEventListener('touchend', onTouchEnd);
+    };
+  // Empty deps: document always exists, callbacks kept fresh via refs above
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   // 7. Render
   if (loading) return (
@@ -224,24 +262,6 @@ export function SongView() {
   const hasContent = rawContent.trim().length > 0;
 
   // Page Dots Calculation
-  const totalItems = isSetlistContext ? (setlistItems?.length || 0) : (activeNavigationList?.length || 0);
-  const activeIdx = isSetlistContext
-    ? (currentItemId ? setlistItems?.findIndex(i => i.id === currentItemId) : setlistItems?.findIndex(i => i.songId === songId))
-    : (activeNavigationList ? activeNavigationList.findIndex((s: any) => s.id === songId) : -1);
-
-  // Smooth slide direction tracking
-  const [prevActiveIdx, setPrevActiveIdx] = useState<number | null>(null);
-  const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null);
-
-  useEffect(() => {
-    if (activeIdx !== undefined && activeIdx !== -1) {
-      if (prevActiveIdx !== null && prevActiveIdx !== activeIdx) {
-        setSlideDir(activeIdx > prevActiveIdx ? 'next' : 'prev');
-      }
-      setPrevActiveIdx(activeIdx);
-    }
-  }, [activeIdx]);
-
   const maxDots = 7;
   let startDot = 0, endDot = totalItems;
   if (totalItems > maxDots) {
@@ -272,7 +292,6 @@ export function SongView() {
         ref={scrollContainerRef}
         className="flex-1 overflow-y-auto overscroll-contain"
         style={{ touchAction: 'pan-y' }}
-        onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}
       >
         <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-x-hidden">
           <div 
