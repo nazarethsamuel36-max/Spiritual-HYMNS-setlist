@@ -273,7 +273,7 @@ export function SongView() {
   const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
   return (
-    <div className={`flex h-full w-full flex-col bg-[#FAFAFA] ${langClass}`}>
+    <div className={`relative flex h-full w-full flex-col bg-[#FAFAFA] ${langClass}`}>
       <ReaderHeader
         song={song} transpose={displayTranspose} mode={readerMode}
         onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
@@ -342,6 +342,7 @@ export function SongView() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
