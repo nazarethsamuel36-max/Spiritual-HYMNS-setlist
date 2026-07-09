@@ -60,4 +60,4 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: 
       ))}
     </div>
   );
-}
+});

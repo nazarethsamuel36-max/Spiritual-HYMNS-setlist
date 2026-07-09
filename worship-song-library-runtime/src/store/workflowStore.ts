@@ -77,11 +77,15 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
     set({ fontSize: clampedSize });
   },
 
-  openSong: (id, source, transpose = 0, setlistId, itemId) => set({
-    reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
-    readerMode: 'lyrics',
-    mobileActivePane: 'reader',
-  }),
+  openSong: (id, source, transpose = 0, setlistId, itemId) => {
+    // Reset font size to default 18 every time a new song is checked
+    set({
+      reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
+      readerMode: 'lyrics',
+      mobileActivePane: 'reader',
+      fontSize: 18
+    });
+  },
 
   openMarker: (label, setlistId, itemId) => set({
     reader: { type: 'marker', label, setlistId, itemId },

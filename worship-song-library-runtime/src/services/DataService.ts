@@ -301,23 +301,35 @@ export async function getSongs(): Promise<SongIndex[]> {
 }
 
 /**
- * Get song by ID - Web Mode (Supabase) or App Mode (IndexedDB)
+ * Get song by ID - IndexedDB first, then Supabase fallback.
+ * If the cached song has no displayable content and we are online,
+ * we bypass the cache and re-fetch from Supabase so any newly-added
+ * content is picked up immediately without requiring a full re-download.
  */
 export async function getSongById(id: number): Promise<SongDetail | null> {
   const localSong = await db.songs.get(id);
 
   if (localSong) {
-    console.log('📱 App Mode: Returning song from IndexedDB');
-    return localSong;
+    const hasContent = localSong.chords || localSong.lyrics;
+    if (hasContent) {
+      console.log('📱 App Mode: Returning song from IndexedDB');
+      return localSong;
+    }
+    // Local cache hit but empty content — try Supabase if online
+    if (!navigator.onLine) {
+      console.warn('⚠️ Song cached but has no content, and we are offline.');
+      return localSong; // Return what we have — caller shows appropriate message
+    }
+    console.log('🔄 Song in IndexedDB has no content — re-fetching fresh from Supabase...');
+  } else {
+    // Not in IndexedDB at all
+    if (!navigator.onLine) {
+      console.warn('⚠️ Offline and song not in local DB.');
+      return null;
+    }
+    console.log('🌐 Web Mode: Song not in IndexedDB, fetching from Supabase...');
   }
 
-  // 🛑 Prevent Supabase call if offline
-  if (!navigator.onLine) {
-    console.warn('⚠️ Offline and song not in local DB.');
-    return null;
-  }
-
-  console.log('🌐 Web Mode: Fetching song from Supabase');
   const { data, error } = await supabase
     .from('songs')
     .select('*')
@@ -329,10 +341,10 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
   }
 
   if (!data) {
-    return null;
+    return localSong ?? null; // Return stale local copy if we have one
   }
 
-  return {
+  const fresh: SongDetail = {
     id: data.id,
     songNumber: data.song_number,
     title: data.title,
@@ -351,6 +363,16 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
     is_active: data.is_active !== false,
     updated_at: data.updated_at
   };
+
+  // If Supabase now has content, update IndexedDB so next time is instant
+  if (fresh.chords || fresh.lyrics) {
+    console.log('✅ Supabase has content — updating IndexedDB cache.');
+    await db.songs.put(fresh);
+  } else {
+    console.warn(`⚠️ Song #${id} has no chords or lyrics in Supabase either (database content gap).`);
+  }
+
+  return fresh;
 }
 
 /**

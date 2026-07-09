@@ -151,6 +151,17 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
     return processedLines;
   }, [parsedSongLines, hideChords]);
 
+  // Safety net: if no lines were produced, show a diagnostic instead of blank
+  if (renderedLines.filter(l => l.renderType !== 'skip').length === 0) {
+    return (
+      <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
+        <p style={{ color: '#94a3b8', fontStyle: 'italic', fontSize: '0.9em' }}>
+          No content to display.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
       {renderedLines.map((line, lineIndex) => {
