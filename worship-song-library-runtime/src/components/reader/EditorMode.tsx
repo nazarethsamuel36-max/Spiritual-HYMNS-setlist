@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { SongDetail } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
+import { db } from '../../db/Database';
 import { ChordPalette } from './ChordPalette';
+
+interface HistoryState {
+  chords: string;
+  cursorPosition?: number;
+}
 
 console.log('📍 EDITORMODE FILE LOADED');
 
@@ -48,6 +54,7 @@ function shiftChordsInText(text: string, shift: number): string {
 interface EditorModeProps {
   song: SongDetail;
   songKey?: string;
+  source?: 'library' | 'setlist' | 'shared' | 'personal';
 }
 
 interface PreviewChordLineProps {
@@ -106,7 +113,7 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   );
 }
 
-export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
+export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorModeProps) {
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
@@ -114,11 +121,60 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
   const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
-  const [isHidden, setIsHidden] = useState(!song.is_active);
-  const [isPublishLoading, setIsPublishLoading] = useState(false);
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [paletteVisible, setPaletteVisible] = useState(false);
+  const [isCorrectorExpanded, setIsCorrectorExpanded] = useState(false);
+
+  // Undo/Redo history
+  const [history, setHistory] = useState<HistoryState[]>([]);
+  const [historyIndex, setHistoryIndex] = useState(-1);
+  const isUndoRef = useRef(false);
+
+  const addToHistory = (newChords: string) => {
+    if (isUndoRef.current) {
+      isUndoRef.current = false;
+      return;
+    }
+
+    const textarea = textareaRef.current;
+    const cursorPosition = textarea?.selectionStart;
+
+    const newHistory = history.slice(0, historyIndex + 1);
+    newHistory.push({ chords: newChords, cursorPosition });
+
+    // Limit history to 50 states
+    if (newHistory.length > 50) {
+      newHistory.shift();
+    }
+
+    setHistory(newHistory);
+    setHistoryIndex(newHistory.length - 1);
+  };
+
+  const handleUndo = () => {
+    if (historyIndex > 0) {
+      isUndoRef.current = true;
+      const prevState = history[historyIndex - 1];
+      setChordsText(prevState.chords);
+      setHistoryIndex(historyIndex - 1);
+      debouncedAutoSave({ chords: prevState.chords });
+
+      // Restore cursor position if available
+      if (prevState.cursorPosition !== undefined && textareaRef.current) {
+        setTimeout(() => {
+          textareaRef.current?.setSelectionRange(prevState.cursorPosition ?? null, prevState.cursorPosition ?? null);
+        }, 0);
+      }
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
+      e.preventDefault();
+      handleUndo();
+    }
+  };
 
   const insertMarker = (marker: string) => {
     const textarea = textareaRef.current;
@@ -127,10 +183,10 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     const start = textarea.selectionStart;
     const end = textarea.selectionEnd;
     const text = chordsText;
-    
+
     const before = text.substring(0, start);
     const after = text.substring(end);
-    
+
     let markerToInsert = marker;
     if (start > 0 && !before.endsWith('\n')) {
       markerToInsert = '\n' + markerToInsert;
@@ -138,9 +194,10 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     if (!after.startsWith('\n')) {
       markerToInsert = markerToInsert + '\n';
     }
-    
+
     const newText = before + markerToInsert + after;
     setChordsText(newText);
+    addToHistory(newText);
     debouncedAutoSave({ chords: newText });
 
     setTimeout(() => {
@@ -181,14 +238,13 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     setCurrentTextKey(song.originalKey || songKey || 'C');
     setSongNumber(song.songNumber || 0);
     setChordsText(song.chords || '');
-    setIsHidden(!song.is_active);
 
     if (saveTimeoutRef.current) {
       console.log('🛑 Cancelling pending auto-save for song:', song.id);
       clearTimeout(saveTimeoutRef.current);
       saveTimeoutRef.current = null;
     }
-  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, song.is_active, songKey]);
+  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey]);
 
   useEffect(() => {
     return () => {
@@ -213,18 +269,32 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
     try {
       console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
 
-      const { error } = await supabase
-        .from('songs')
-        .update(updates)
-        .eq('id', currentSongId);
+      if (source === 'personal') {
+        // Save to IndexedDB for personal songs
+        const existingSong = await db.personalSongs.get(currentSongId);
+        if (existingSong) {
+          await db.personalSongs.update(currentSongId, {
+            ...updates,
+            originalKey: updates.original_key,
+            updated_at: new Date().toISOString()
+          });
+          console.log(`✅ Auto-save successful for personal song ${currentSongId}`);
+        }
+      } else {
+        // Save to Supabase for library songs
+        const { error } = await supabase
+          .from('songs')
+          .update(updates)
+          .eq('id', currentSongId);
 
-      if (error) {
-        console.error('❌ Auto-save failed:', error);
-        alert('Failed to save changes: ' + error.message);
-        return;
+        if (error) {
+          console.error('❌ Auto-save failed:', error);
+          alert('Failed to save changes: ' + error.message);
+          return;
+        }
+
+        console.log(`✅ Auto-save successful for song ${currentSongId}`);
       }
-
-      console.log(`✅ Auto-save successful for song ${currentSongId}`);
     } catch (err) {
       console.error('❌ Auto-save exception:', err);
       alert('Failed to save changes');
@@ -248,14 +318,12 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
   const previewLinesWithDiffs = useMemo(() => previewLines.map((line) => ({ line, changedSegments: undefined })), [previewLines]);
 
   console.log('🔍 EditorMode RENDERING');
-  console.log('🔍 isHidden state:', isHidden);
-  console.log('🔍 isPublishLoading state:', isPublishLoading);
 
   return (
     <div className="w-full flex flex-col bg-white min-h-0">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
         <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          {/* ROW 1: Title, Key & Publish */}
+          {/* ROW 1: Title & Key */}
           <div className="flex gap-3 h-12 mb-4">
             <input
               value={title}
@@ -288,46 +356,10 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               <option value="A">A</option>
               <option value="B">B</option>
             </select>
-
-            <button
-              type="button"
-              onClick={async () => {
-                const newIsActive = !isHidden;
-                
-                // 1. Optimistic update - update UI immediately
-                setIsHidden(!newIsActive);
-                setIsPublishLoading(true);
-                
-                try {
-                  // 2. Update IndexedDB immediately (optional but recommended)
-                  // await db.songs.update(song.id, { is_active: newIsActive });
-                  
-                  // 3. Update Supabase (this will trigger realtime for other users)
-                  const { error } = await supabase
-                    .from('songs')
-                    .update({ is_active: newIsActive })
-                    .eq('id', song.id);
-                  
-                  if (error) throw error;
-                  console.log('✅ Song updated in database');
-                } catch (err) {
-                  console.error('❌ Failed to update:', err);
-                  // Revert optimistic update on error
-                  setIsHidden(!newIsActive);
-                  alert('Failed to update song: ' + (err as Error).message);
-                } finally {
-                  setIsPublishLoading(false);
-                }
-              }}
-              disabled={isPublishLoading}
-              className="w-36 h-full flex items-center justify-center px-4 rounded-lg border border-slate-300 bg-white text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-50"
-            >
-              {isPublishLoading ? 'Saving...' : isHidden ? 'Hidden' : 'Published'}
-            </button>
           </div>
 
-          {/* ROW 2: Key Corrector */}
-          <div className="flex items-center gap-3 mb-6 bg-slate-50 p-3 rounded-lg border border-slate-200">
+          {/* ROW 2: Key Corrector - Desktop Inline Layout */}
+          <div className="hidden md:flex items-center gap-3 mb-4 bg-slate-50 p-3 rounded-lg border border-slate-200">
             <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Corrector:</span>
 
             <div className="flex items-center gap-2">
@@ -388,32 +420,135 @@ export function EditorMode({ song, songKey = 'D' }: EditorModeProps) {
               <button
                 type="button"
                 onClick={() => insertMarker('[Verse]')}
-                className="h-12 px-3 text-xs font-semibold rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 border border-blue-200 transition-colors flex-shrink-0"
+                className="h-12 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors flex-shrink-0"
               >
                 + [Verse]
               </button>
               <button
                 type="button"
                 onClick={() => insertMarker('[Chorus]')}
-                className="h-12 px-3 text-xs font-semibold rounded-lg bg-green-50 text-green-600 hover:bg-green-100 border border-green-200 transition-colors flex-shrink-0"
+                className="h-12 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors flex-shrink-0"
               >
                 + [Chorus]
               </button>
             </div>
           </div>
 
+          {/* ROW 2: Key Corrector - Mobile Collapsed Layout */}
+          <div className="md:hidden mb-4">
+            <button
+              onClick={() => setIsCorrectorExpanded(!isCorrectorExpanded)}
+              className="w-full flex items-center justify-between px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-600 uppercase tracking-wide hover:bg-slate-100 transition-colors"
+            >
+              <span>Correcting Tools</span>
+              <svg
+                className={`w-4 h-4 text-slate-400 transition-transform ${isCorrectorExpanded ? 'rotate-180' : ''}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {isCorrectorExpanded && (
+              <div className="mt-2 bg-slate-50 border border-slate-200 rounded-lg p-3 space-y-3">
+                {/* Row 1: Key Corrector */}
+                <div className="flex items-center gap-2">
+                  <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Current</label>
+                  <select
+                    value={currentTextKey}
+                    onChange={(e) => setCurrentTextKey(e.target.value)}
+                    className="flex-1 h-10 px-2 rounded-lg border border-slate-300 text-sm font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                  >
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="B">B</option>
+                  </select>
+                  <span className="text-slate-400 font-bold">→</span>
+                  <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Shift To</label>
+                  <select
+                    value={correctorTargetKey}
+                    onChange={(e) => {
+                      const newTarget = e.target.value;
+                      const shift = calculateSemitoneShift(currentTextKey, newTarget);
+                      const corrected = shiftChordsInText(chordsText, shift);
+                      setCorrectorTargetKey(newTarget);
+                      setChordsText(corrected);
+                      setCurrentTextKey(newTarget);
+                      debouncedAutoSave({ chords: corrected });
+                    }}
+                    className="flex-1 h-10 px-2 rounded-lg border border-slate-300 text-sm font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                  >
+                    <option value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="B">B</option>
+                  </select>
+                </div>
+
+                {/* Row 2: Verse/Chorus Buttons */}
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => insertMarker('[Verse]')}
+                    className="flex-1 h-10 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors"
+                  >
+                    + [Verse]
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => insertMarker('[Chorus]')}
+                    className="flex-1 h-10 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors"
+                  >
+                    + [Chorus]
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+
           {/* ROW 3: Big Editor Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="flex flex-col">
-              <label className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">Raw Database Chords</label>
+            <div className="flex flex-col relative">
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">Raw Database Chords</label>
+                <button
+                  onClick={handleUndo}
+                  disabled={historyIndex <= 0}
+                  className="px-2 py-1 text-[10px] font-semibold rounded border border-slate-300 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  title="Undo (Ctrl+Z)"
+                >
+                  ↶ Undo
+                </button>
+              </div>
               <textarea
                 ref={textareaRef}
                 value={chordsText}
                 onFocus={() => setPaletteVisible(true)}
                 onBlur={() => setTimeout(() => setPaletteVisible(false), 150)}
                 onDoubleClick={handleTextareaDoubleClick}
+                onKeyDown={handleKeyDown}
                 onChange={(e) => {
                   setChordsText(e.target.value);
+                  addToHistory(e.target.value);
                   debouncedAutoSave({ chords: e.target.value });
                 }}
                 rows={25}

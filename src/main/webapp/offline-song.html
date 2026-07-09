@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Song — Offline Viewer</title>
+    <meta name="theme-color" content="#001264"/>
+    <style>
+        /* ============================================================
+           Minimal critical CSS — works with zero external resources.
+           Mirrors the design of songView.jsp so it feels identical.
+           ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html, body {
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #c9d6f0 0%, #f0c9d6 100%);
+            background-attachment: fixed;
+        }
+
+        /* Nav */
+        nav {
+            position: sticky; top: 0; z-index: 999;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 0.5px solid rgba(255,255,255,0.35);
+            padding: 0.9rem 1.25rem;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .nav-brand {
+            font-weight: 900; font-size: 1rem; letter-spacing: 0.12em;
+            text-transform: uppercase; color: #001264; text-decoration: none;
+        }
+        .nav-offline-badge {
+            background: rgba(234,179,8,0.15); border: 1px solid rgba(234,179,8,0.4);
+            color: #78350f; padding: 0.2rem 0.65rem; border-radius: 999px;
+            font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+        }
+        .nav-back {
+            background: rgba(255,255,255,0.35); border: 0.5px solid rgba(255,255,255,0.5);
+            color: #001264; padding: 0.4rem 1rem; border-radius: 999px;
+            font-size: 0.8rem; font-weight: 700; cursor: pointer; text-decoration: none;
+        }
+
+        /* Main layout */
+        main {
+            max-width: 900px; margin: 0 auto;
+            padding: 1rem 1rem calc(6rem + 24px);
+        }
+
+        /* Header */
+        .song-header {
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.42);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-radius: 1rem; padding: 1rem 1.25rem; margin-bottom: 1rem;
+        }
+        .song-number {
+            font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em;
+            text-transform: uppercase; color: #6b7280;
+        }
+        .song-title {
+            font-size: 2rem; font-weight: 900; line-height: 1.15;
+            color: #1a1a2e; margin-top: 0.35rem;
+        }
+        @media (min-width: 640px) { .song-title { font-size: 2.75rem; } }
+        .key-badge {
+            display: inline-block; margin-top: 0.5rem;
+            background: rgba(255,255,255,0.35);
+            border: 0.5px solid rgba(26,26,46,0.2);
+            padding: 0.2rem 0.7rem; border-radius: 6px;
+            font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+            color: #1a1a2e;
+        }
+
+        /* Song sheet */
+        .song-sheet {
+            background: rgba(255,255,255,0.28);
+            border: 1px solid rgba(255,255,255,0.48);
+            box-shadow: 0 18px 48px rgba(28,36,76,0.08);
+            border-radius: 1rem; padding: 1.25rem;
+        }
+
+        /* Transpose section */
+        .transpose-row {
+            display: flex; align-items: center; gap: 0.5rem;
+            margin-bottom: 1rem; padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .transpose-label {
+            font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em;
+            text-transform: uppercase; color: #6b7280;
+        }
+        .transpose-btn {
+            background: rgba(255,255,255,0.4); border: 0.5px solid rgba(26,26,46,0.18);
+            color: #001264; font-weight: 900; font-size: 1rem;
+            width: 2rem; height: 2rem; border-radius: 50%; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .transpose-btn:active { background: rgba(255,255,255,0.7); }
+        #semitoneDisplay {
+            min-width: 2.2rem; text-align: center;
+            font-weight: 900; font-size: 1.1rem; color: #001264;
+        }
+        .reset-btn {
+            background: none; border: none; color: #6b7280; cursor: pointer;
+            font-size: 0.65rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+            margin-left: 0.5rem; opacity: 0.6;
+        }
+        .reset-btn:hover { opacity: 1; }
+
+        /* Song body */
+        #songBody {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                         'Liberation Mono', 'Courier New', monospace;
+            font-size: 16px; color: #1a1a2e;
+        }
+        .song-pair      { display: block; margin-bottom: 0.85rem; }
+        .chord-line     { color: #001264; font-weight: bold; white-space: pre; display: block; min-height: 1.2em; margin-bottom: 0.35rem; }
+        .lyrics-line    { white-space: pre; display: block; min-height: 1.2em; }
+        .lyrics-only-line { white-space: pre; display: block; min-height: 1.2em; margin-bottom: 0.1rem; }
+        .song-stanza-gap { height: 1.8em; }
+        .section-label {
+            display: inline-block; margin-top: 1.1rem; margin-bottom: 0.35rem;
+            background: rgba(255,255,255,0.35); border: 0.5px solid rgba(26,26,46,0.2);
+            padding: 0.2rem 0.7rem; border-radius: 999px;
+            font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+        }
+
+        /* Bottom control bar */
+        .ctrl-shell {
+            position: fixed; left: 50%; bottom: 0.75rem;
+            transform: translateX(-50%); z-index: 50;
+            display: flex; justify-content: center; width: 100%; padding: 0 0.5rem;
+            pointer-events: none;
+        }
+        .ctrl-bar {
+            background: rgba(255,255,255,0.32);
+            backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255,255,255,0.56); border-radius: 1.25rem;
+            padding: 0.35rem; display: flex; align-items: center; gap: 0.25rem;
+            max-width: calc(100vw - 1rem); overflow-x: auto;
+            box-shadow: 0 18px 40px rgba(28,36,76,0.18); pointer-events: auto;
+        }
+        .ctrl-bar::-webkit-scrollbar { display: none; }
+        .ctrl-btn {
+            background: transparent; border: none; color: #21345f;
+            font-weight: 800; font-size: 0.82rem; padding: 0.5rem 0.75rem;
+            border-radius: 999px; cursor: pointer; white-space: nowrap;
+        }
+        .ctrl-btn:hover  { background: rgba(255,255,255,0.8); }
+        .ctrl-btn.active { background: #dee0ff; color: #00105c; }
+        .ctrl-divider { width:1px; height:22px; background:#c6c6cc; flex-shrink:0; }
+        .ctrl-slider  { width:68px; accent-color:#001264; }
+
+        /* Loading / error states */
+        .status-card {
+            background: rgba(255,255,255,0.28); border: 1px solid rgba(255,255,255,0.48);
+            border-radius: 1rem; padding: 3rem 2rem; text-align: center; margin-top: 2rem;
+        }
+        .status-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .status-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .status-msg   { color: #6b7280; line-height: 1.5; }
+        .back-link {
+            display: inline-block; margin-top: 1.5rem;
+            background: #001264; color: #fff; padding: 0.6rem 1.5rem;
+            border-radius: 999px; font-weight: 700; font-size: 0.85rem; text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a class="nav-back" href="javascript:history.back()">← Back</a>
+    <span class="nav-brand">The Resonant Archive</span>
+    <span class="nav-offline-badge">✈ Offline</span>
+</nav>
+
+<!-- Song content rendered here by JS -->
+<main id="main"></main>
+
+<!-- Bottom control bar (hidden until song loads) -->
+<div class="ctrl-shell" id="ctrlShell" style="display:none">
+    <div class="ctrl-bar">
+        <button class="ctrl-btn view-mode-btn active" data-view-mode="lyrics"
+                onclick="setSongViewMode('lyrics')">Lyrics</button>
+        <button class="ctrl-btn view-mode-btn" data-view-mode="lyrics-chords"
+                onclick="setSongViewMode('lyrics-chords')">Lyrics + Chords</button>
+
+        <div class="ctrl-divider"></div>
+
+        <button class="ctrl-btn" onclick="decreaseFontSize()">A-</button>
+        <span id="fontSizeDisplay" style="min-width:28px;text-align:center;font-size:0.65rem;font-weight:900">16</span>
+        <button class="ctrl-btn" onclick="increaseFontSize()">A+</button>
+
+        <div class="ctrl-divider"></div>
+
+        <button class="ctrl-btn" id="scrollToggle" onclick="toggleAutoScroll()">Scroll</button>
+        <input type="range" id="scrollSpeedSlider" min="1" max="25" value="5" class="ctrl-slider"
+               oninput="updateScrollSpeed(this.value)">
+    </div>
+</div>
+
+<script>
+/* ================================================================
+   offline-song.html — Standalone offline song viewer
+   Loads song data from IndexedDB (populated by offline-db.js)
+   and renders it without ANY server requests.
+   ================================================================ */
+
+// ---- State ----
+let currentSemitones  = 0;
+let currentSongViewMode = localStorage.getItem('ws_view_mode') || 'lyrics-chords';
+let currentStructuredLines = [];
+let currentFontSize   = parseInt(localStorage.getItem('ws_font_size') || '16', 10);
+let scrollInterval    = null;
+let scrollSpeed       = 5;
+
+// ---- Helpers ----
+function escapeHtml(text) {
+    if (!text) return '';
+    const d = document.createElement('div');
+    d.textContent = text;
+    return d.innerHTML;
+}
+
+function buildChordLine(lyrics, chords) {
+    if (!chords || chords.length === 0) return '';
+    const sorted = [...chords].sort((a,b)=>(parseInt(a.position,10)||0)-(parseInt(b.position,10)||0));
+    let output = '', cursor = 0;
+    sorted.forEach(occ => {
+        const pos   = Math.max(0, parseInt(occ.position,10)||0);
+        const chord = occ.chord || '';
+        if (pos > cursor)  { output += ' '.repeat(pos-cursor); cursor = pos; }
+        else if (pos < cursor && output.length > 0 && !output.endsWith(' ')) { output += ' '; cursor++; }
+        output += chord; cursor += chord.length;
+    });
+    return output;
+}
+
+function splitStructuredLineSimple(line) {
+    // Simple pass-through (no width-based wrapping needed for viewer)
+    return [{ text: line.lyrics || '', chords: line.chords || [] }];
+}
+
+// ---- Render song body ----
+function renderSongBody() {
+    const songBody = document.getElementById('songBody');
+    if (!songBody || !currentStructuredLines) return;
+
+    const showChords = currentSongViewMode === 'lyrics-chords';
+    let html = '';
+
+    currentStructuredLines.forEach(line => {
+        const lyrics = line.lyrics || '';
+        const chords = line.chords || [];
+        const sectionMatch = lyrics.trim().match(/^[\[{]([^\]{}]+)[\]}]$/);
+        const isSectionLabel = chords.length === 0 && sectionMatch;
+
+        if (isSectionLabel) {
+            html += `<div class="section-label">${escapeHtml(sectionMatch[1])}</div>`;
+        } else if (!lyrics.replace(/\s/g,'').length) {
+            if (showChords && chords.length > 0) {
+                const cl = buildChordLine(lyrics, chords);
+                html += `<div class="song-pair"><div class="chord-line">${escapeHtml(cl).replace(/ /g,'&nbsp;')}</div></div>`;
+            } else {
+                html += '<div class="song-stanza-gap"></div>';
+            }
+        } else {
+            const segs = splitStructuredLineSimple({ lyrics, chords });
+            segs.forEach(seg => {
+                if (showChords) {
+                    const cl = buildChordLine(seg.text, seg.chords);
+                    html += `<div class="song-pair">`;
+                    html += `<div class="chord-line">${escapeHtml(cl).replace(/ /g,'&nbsp;')}</div>`;
+                    html += `<div class="lyrics-line">${escapeHtml(seg.text).replace(/ /g,'&nbsp;')}</div>`;
+                    html += `</div>`;
+                } else {
+                    html += `<div class="lyrics-only-line">${escapeHtml(seg.text).replace(/ /g,'&nbsp;')}</div>`;
+                }
+            });
+        }
+    });
+
+    songBody.innerHTML = html;
+    songBody.style.fontSize = currentFontSize + 'px';
+}
+
+// ---- Transpose (client-side) ----
+const NOTES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const ALT   = {'Db':'C#','Eb':'D#','Fb':'E','Gb':'F#','Ab':'G#','Bb':'A#','Cb':'B'};
+
+function transposeNote(note, semitones) {
+    const n = ALT[note] || note;
+    const i = NOTES.indexOf(n);
+    if (i === -1) return note;
+    return NOTES[(i + semitones + 120) % 12];
+}
+
+function transposeChord(chord, semitones) {
+    if (!chord || semitones === 0) return chord;
+    // Match root note (e.g. C, C#, Db) + optional suffix
+    return chord.replace(/^([A-G][#b]?)(.*)$/, (_, root, suffix) => {
+        return transposeNote(root, semitones) + suffix;
+    });
+}
+
+function applyTranspose(lines, semitones) {
+    return lines.map(line => ({
+        lyrics: line.lyrics,
+        chords: (line.chords || []).map(c => ({
+            position: c.position,
+            chord: transposeChord(c.chord, semitones)
+        }))
+    }));
+}
+
+// ---- UI Controls ----
+function transposeUI(direction) {
+    currentSemitones += direction;
+    document.getElementById('semitoneDisplay').textContent =
+        (currentSemitones >= 0 ? '+' : '') + currentSemitones;
+    const original = window._originalStructuredLines || currentStructuredLines;
+    currentStructuredLines = applyTranspose(original, currentSemitones);
+    renderSongBody();
+}
+
+function resetTranspose() {
+    if (currentSemitones !== 0) {
+        currentSemitones = 0;
+        document.getElementById('semitoneDisplay').textContent = '+0';
+        currentStructuredLines = window._originalStructuredLines || currentStructuredLines;
+        renderSongBody();
+    }
+}
+
+function setSongViewMode(mode) {
+    currentSongViewMode = mode === 'lyrics-chords' ? 'lyrics-chords' : 'lyrics';
+    localStorage.setItem('ws_view_mode', currentSongViewMode);
+    document.querySelectorAll('[data-view-mode]').forEach(btn =>
+        btn.classList.toggle('active', btn.getAttribute('data-view-mode') === currentSongViewMode));
+    renderSongBody();
+}
+
+function increaseFontSize() {
+    currentFontSize = Math.min(28, currentFontSize + 2);
+    localStorage.setItem('ws_font_size', currentFontSize);
+    document.getElementById('fontSizeDisplay').textContent = currentFontSize;
+    const b = document.getElementById('songBody');
+    if (b) b.style.fontSize = currentFontSize + 'px';
+}
+
+function decreaseFontSize() {
+    currentFontSize = Math.max(10, currentFontSize - 2);
+    localStorage.setItem('ws_font_size', currentFontSize);
+    document.getElementById('fontSizeDisplay').textContent = currentFontSize;
+    const b = document.getElementById('songBody');
+    if (b) b.style.fontSize = currentFontSize + 'px';
+}
+
+function toggleAutoScroll() {
+    if (scrollInterval) {
+        clearInterval(scrollInterval); scrollInterval = null;
+        document.getElementById('scrollToggle').textContent = 'Scroll';
+        document.getElementById('scrollToggle').classList.remove('active');
+    } else {
+        const interval = Math.max(5, 200 - (scrollSpeed * 7.5));
+        scrollInterval = setInterval(() => {
+            window.scrollBy(0, 1);
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+                clearInterval(scrollInterval); scrollInterval = null;
+                document.getElementById('scrollToggle').textContent = 'Scroll';
+                document.getElementById('scrollToggle').classList.remove('active');
+            }
+        }, interval);
+        document.getElementById('scrollToggle').textContent = 'Stop';
+        document.getElementById('scrollToggle').classList.add('active');
+    }
+}
+
+function updateScrollSpeed(val) {
+    scrollSpeed = parseInt(val, 10);
+    if (scrollInterval) { toggleAutoScroll(); toggleAutoScroll(); }
+}
+
+// ---- Render full page from song data ----
+function renderSong(song) {
+    window._originalStructuredLines = JSON.parse(JSON.stringify(song.structuredLines || []));
+    currentStructuredLines = song.structuredLines || [];
+
+    const main = document.getElementById('main');
+    main.innerHTML = `
+        <div class="song-header">
+            <div class="song-number">#${escapeHtml(String(song.songNumber || ''))}</div>
+            <h1 class="song-title">${escapeHtml(song.title || 'Untitled')}</h1>
+            ${song.originalKey ? `<span class="key-badge">${escapeHtml(song.originalKey)}</span>` : ''}
+        </div>
+        <div class="song-sheet">
+            <div class="transpose-row">
+                <span class="transpose-label">Transpose</span>
+                <button class="transpose-btn" onclick="transposeUI(-1)" aria-label="Transpose down">−</button>
+                <span id="semitoneDisplay">+0</span>
+                <button class="transpose-btn" onclick="transposeUI(1)" aria-label="Transpose up">+</button>
+                <button class="reset-btn" onclick="resetTranspose()">Reset</button>
+            </div>
+            <div id="songBody"></div>
+        </div>`;
+
+    // Apply saved preferences
+    document.getElementById('fontSizeDisplay').textContent = currentFontSize;
+    document.querySelectorAll('[data-view-mode]').forEach(btn =>
+        btn.classList.toggle('active', btn.getAttribute('data-view-mode') === currentSongViewMode));
+
+    renderSongBody();
+    document.getElementById('ctrlShell').style.display = 'flex';
+    document.title = (song.title || 'Song') + ' — Offline Viewer';
+}
+
+// ---- Show error ----
+function showError(title, msg, showBackButton) {
+    const main = document.getElementById('main');
+    main.innerHTML = `
+        <div class="status-card">
+            <div class="status-icon">📵</div>
+            <div class="status-title">${escapeHtml(title)}</div>
+            <div class="status-msg">${escapeHtml(msg)}</div>
+            ${showBackButton ? '<a class="back-link" href="javascript:history.back()">Go Back</a>' : ''}
+        </div>`;
+}
+
+// ---- Main: load song from IDB ----
+async function loadSong() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    if (!id) {
+        showError('No song specified', 'Open a song from the song list to view it offline.', true);
+        return;
+    }
+
+    try {
+        // Open IndexedDB
+        const db = await new Promise((resolve, reject) => {
+            const req = indexedDB.open('worship_offline_v1', 1);
+            req.onsuccess = e => resolve(e.target.result);
+            req.onerror   = e => reject(e.target.error);
+            // If DB doesn't exist yet, onupgradeneeded fires (empty store)
+            req.onupgradeneeded = e => {
+                const d = e.target.result;
+                if (!d.objectStoreNames.contains('songs')) {
+                    const store = d.createObjectStore('songs', { keyPath: 'id' });
+                    store.createIndex('songNumber', 'songNumber', { unique: false });
+                    store.createIndex('language',   'language',   { unique: false });
+                }
+                if (!d.objectStoreNames.contains('meta')) {
+                    d.createObjectStore('meta', { keyPath: 'key' });
+                }
+            };
+        });
+
+        const song = await new Promise((resolve, reject) => {
+            const tx  = db.transaction('songs', 'readonly');
+            const req = tx.objectStore('songs').get(Number(id));
+            req.onsuccess = e => resolve(e.target.result || null);
+            req.onerror   = e => reject(e.target.error);
+        });
+
+        db.close();
+
+        if (!song) {
+            showError(
+                'Song not available offline',
+                'This song hasn\'t been cached yet. Please open the app while connected to the internet, browse the song list, and then try again offline.',
+                true
+            );
+            return;
+        }
+
+        renderSong(song);
+
+    } catch (err) {
+        console.error('[OfflineSong]', err);
+        showError(
+            'Could not load song',
+            'An error occurred loading from offline storage: ' + err.message,
+            true
+        );
+    }
+}
+
+// Boot
+loadSong();
+</script>
+</body>
+</html>

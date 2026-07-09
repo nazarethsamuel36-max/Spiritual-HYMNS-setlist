@@ -268,7 +268,25 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
 
   const searchResults = useLiveQuery(async () => {
     if (!search.trim()) return [];
-    const allSongs = await db.songIndex.toArray();
+    const librarySongs = await db.songIndex.toArray();
+    const personalSongs = await db.personalSongs.toArray();
+    
+    // Convert personal songs to SongIndex format for search
+    const personalSongsIndex = personalSongs.map(song => ({
+      id: song.id,
+      songNumber: song.songNumber,
+      title: song.title,
+      artist: song.artist,
+      language: song.language,
+      originalKey: song.originalKey,
+      hashtags: song.hashtags,
+      searchTokens: song.title.toLowerCase(),
+      romanTitle: song.title,
+      isPublished: false,
+      isPersonal: true // Flag to distinguish
+    }));
+
+    const allSongs = [...librarySongs, ...personalSongsIndex];
     return SearchEngine.search(allSongs, search);
   }, [search]);
 
@@ -372,11 +390,14 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
                   await SetlistService.addSongToSetlist(setlistId, song.id);
                   setSearch('');
                 }}
-                className="w-full flex items-center justify-between p-4 hover:bg-[var(--color-brand-soft)] transition-colors border-b border-slate-50 last:border-0"
+                className={`w-full flex items-center justify-between p-4 hover:bg-[var(--color-brand-soft)] transition-colors border-b border-slate-50 last:border-0 ${song.isPersonal ? 'border-l-4 border-l-[#3B2F2E]' : ''}`}
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">{song.songNumber}</span>
+                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">{song.songNumber || '—'}</span>
                   <div className="font-bold text-slate-800 text-sm">{song.title}</div>
+                  {song.isPersonal && (
+                    <span className="text-[9px] font-bold px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">PERSONAL</span>
+                  )}
                 </div>
                 <div className="text-[var(--color-brand)] font-black text-[10px] uppercase">Add</div>
               </button>

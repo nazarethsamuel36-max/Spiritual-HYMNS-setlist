@@ -6,6 +6,7 @@ import { ChordTransposer } from '../../utils/ChordTransposer';
 import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
+import { supabase } from '../../lib/supabaseClient';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -29,6 +30,10 @@ export function ReaderHeader({
   const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
+  const fontSize = useWorkflowStore((s) => s.fontSize);
+  const setFontSize = useWorkflowStore((s) => s.setFontSize);
+  const [isHidden, setIsHidden] = useState(!song.is_active);
+  const [isPublishLoading, setIsPublishLoading] = useState(false);
 
   // Dropdown states
   const [isMoreOpen, setIsMoreOpen] = useState(false);
@@ -38,6 +43,27 @@ export function ReaderHeader({
   const arrangements = useLiveQuery(() =>
     db.arrangements.where({ songId: song.id }).toArray()
   , [song.id]) || [];
+
+  const handlePublishToggle = async () => {
+    const newIsActive = !isHidden;
+    setIsHidden(!newIsActive);
+    setIsPublishLoading(true);
+
+    try {
+      const { error } = await supabase
+        .from('songs')
+        .update({ is_active: newIsActive })
+        .eq('id', song.id);
+
+      if (error) throw error;
+    } catch (err) {
+      console.error('Failed to update:', err);
+      setIsHidden(!newIsActive);
+      alert('Failed to update song: ' + (err as Error).message);
+    } finally {
+      setIsPublishLoading(false);
+    }
+  };
 
   const handleShare = () => {
     try {
@@ -324,46 +350,73 @@ export function ReaderHeader({
             </button>
           </div>
 
-          {/* Right: Transpose Hub */}
-          {mode === 'lyrics' ? (
-            <div className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
-              <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
-                <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
-                <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
-                  {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
-                </span>
+          {/* Right: Transpose Hub + Font Size + Published Button */}
+          <div className="flex items-center gap-2">
+            {mode === 'lyrics' ? (
+              <div className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden">
+                <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
+                  <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
+                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
+                    {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
+                  </span>
+                </div>
               </div>
-            </div>
-          ) : (
-            <div
-              className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden"
-            >
-              <button
-                onClick={onTransposeDown}
-                className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
-                aria-label="Transpose down"
+            ) : (
+              <div
+                className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden"
               >
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
-                </svg>
-              </button>
-              <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
-                <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
-                <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
-                  {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
-                </span>
+                <button
+                  onClick={onTransposeDown}
+                  className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
+                  aria-label="Transpose down"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
+                  </svg>
+                </button>
+                <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
+                  <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
+                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
+                    {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
+                  </span>
+                </div>
+                <button
+                  onClick={onTransposeUp}
+                  className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
+                  aria-label="Transpose up"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                  </svg>
+                </button>
               </div>
-              <button
-                onClick={onTransposeUp}
-                className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100"
-                aria-label="Transpose up"
-              >
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
-                </svg>
-              </button>
+            )}
+
+            {/* Font Size Slider */}
+            <div className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm px-2 gap-2">
+              <span className="text-[8px] font-bold text-slate-400">A</span>
+              <input
+                type="range"
+                min="12"
+                max="24"
+                value={fontSize}
+                onChange={(e) => setFontSize(parseInt(e.target.value, 10))}
+                className="w-16 sm:w-20 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer"
+                title="Font Size"
+              />
+              <span className="text-[10px] font-bold text-slate-600 w-6 text-center">{fontSize}</span>
             </div>
-          )}
+
+            {isAdminAuthenticated && (
+              <button
+                onClick={handlePublishToggle}
+                disabled={isPublishLoading}
+                className="h-8 px-3 flex items-center justify-center rounded-lg border border-slate-300 bg-white text-[10px] font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-50 whitespace-nowrap"
+              >
+                {isPublishLoading ? 'Saving...' : isHidden ? 'Unhide' : 'Hide'}
+              </button>
+            )}
+          </div>
         </div>
 
       </div>

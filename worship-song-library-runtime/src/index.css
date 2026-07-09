@@ -8,27 +8,27 @@
 @theme {
   --font-sans: 'Noto Sans', system-ui, sans-serif;
 
-  /* Premium Workflow Palette */
+  /* Neutral Palette */
   --color-brand: #0F172A;        /* Slate-900: Professional & Focused */
   --color-brand-soft: #F1F5F9;   /* Slate-100: Soft & Clean */
-  --color-accent: #3B82F6;      /* Blue-500: Actionable but Calm */
+  --color-accent: #64748B;      /* Slate-500: Neutral Gray */
   
   --color-text: #0F172A;
   --color-text-muted: #64748B;
   
-  --color-chord: #2563EB;       /* Deep Blue: Distinct but not harsh */
+  --color-chord: #475569;       /* Slate-600: Neutral Gray */
 
-  /* Calm Section States - Low Saturation */
+  /* Neutral Section States */
   --color-verse-bg: #F8FAFC;   
   --color-verse-text: #475569;
-  --color-chorus-bg: #F0F9FF;  
-  --color-chorus-text: #0369A1;
-  --color-bridge-bg: #F0FDF4;  
-  --color-bridge-text: #15803D;
-  --color-prechorus-bg: #FFFBEB; 
-  --color-prechorus-text: #B45309;
-  --color-outro-bg: #FAF5FF;   
-  --color-outro-text: #7E22CE;
+  --color-chorus-bg: #F1F5F9;  
+  --color-chorus-text: #475569;
+  --color-bridge-bg: #F8FAFC;  
+  --color-bridge-text: #475569;
+  --color-prechorus-bg: #F8FAFC; 
+  --color-prechorus-text: #475569;
+  --color-outro-bg: #F8FAFC;   
+  --color-outro-text: #475569;
   --color-intro-bg: #F9FAFB;   
   --color-intro-text: #374151;
 }
@@ -207,8 +207,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 0 0.5rem;
-  gap: 2px;
+  padding: 0.5rem 0 0.75rem;
+  gap: 4px;
   font-size: 0.625rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -228,10 +228,14 @@ body {
   color: #0F172A;
 }
 
+.mobile-bottom-nav-btn--active svg {
+  stroke: #0F172A;
+}
+
 /* On mobile, add bottom padding to sidebar-content equal to bottom-nav height */
 @media (max-width: 767px) {
   .sidebar-content {
-    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
   }
 
   /* Slim down sidebar header on mobile — no title row space needed */

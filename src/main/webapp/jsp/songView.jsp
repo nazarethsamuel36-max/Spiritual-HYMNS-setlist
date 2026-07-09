@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<% long cacheBuster = System.currentTimeMillis(); %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html class="light" lang="en">
@@ -301,7 +300,7 @@
 
 
     <script>const contextPath = '${pageContext.request.contextPath}';</script>
-    <script src="${pageContext.request.contextPath}/js/chord_splitting.js?v=<%= cacheBuster %>"></script>
-    <script src="${pageContext.request.contextPath}/js/app.js?v=<%= cacheBuster %>"></script>
+    <script src="${pageContext.request.contextPath}/js/chord_splitting.js"></script>
+    <script src="${pageContext.request.contextPath}/js/app.js"></script>
 </body>
 </html>

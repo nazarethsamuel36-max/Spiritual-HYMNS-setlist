@@ -9,6 +9,7 @@ interface SongRowProps {
   song: SongIndex;
   onSelect: (id: number) => void;
   isActive?: boolean;
+  onDelete?: () => void;
 }
 
 interface PopoverPos {
@@ -95,7 +96,7 @@ function SetlistPopover({
   );
 }
 
-export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongRowProps) {
+export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelete }: SongRowProps) {
   const [showAddMenu, setShowAddMenu] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -134,22 +135,37 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive }: SongR
         </div>
       </button>
 
-      {/* Quick-Add Trigger */}
-      <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 md:opacity-0 group-hover:opacity-100 transition-opacity">
-        <button
-          ref={triggerRef}
-          onClick={(e) => {
-            e.stopPropagation();
-            setShowAddMenu(prev => !prev);
-          }}
-          className={`w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 ${
-            showAddMenu ? 'bg-slate-800 text-white shadow-md' : 'bg-transparent text-slate-400 hover:bg-slate-200 hover:text-slate-700'
-          }`}
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v12M6 12h12" />
-          </svg>
-        </button>
+      {/* Quick-Add Trigger or Delete Button */}
+      <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 md:opacity-0 group-hover:opacity-100 transition-opacity flex gap-1">
+        {onDelete ? (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onDelete();
+            }}
+            className="w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 bg-red-100 text-red-600 hover:bg-red-200"
+            title="Delete"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+          </button>
+        ) : (
+          <button
+            ref={triggerRef}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowAddMenu(prev => !prev);
+            }}
+            className={`w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 ${
+              showAddMenu ? 'bg-slate-800 text-white shadow-md' : 'bg-transparent text-slate-400 hover:bg-slate-200 hover:text-slate-700'
+            }`}
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v12M6 12h12" />
+            </svg>
+          </button>
+        )}
       </div>
 
       {/* Portal Popover — rendered at document.body, immune to overflow/z-index */}

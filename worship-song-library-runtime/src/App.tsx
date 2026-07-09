@@ -6,6 +6,7 @@ import { ReaderItemView } from './components/reader/ReaderItemView';
 import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
+import { PersonalSongs } from './components/PersonalSongs';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
 import { PWAInstallButton } from './components/PWAInstallButton';
@@ -163,9 +164,12 @@ function App() {
   // ==========================================
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
   const isSetlistTab = sidebar.panel === 'setlist-list' || sidebar.panel === 'setlist-detail' || (reader.type === 'song' && reader.source === 'setlist');
+  const isPersonalTab = sidebar.panel === 'personal' || (reader.type === 'song' && reader.source === 'personal');
   const showSidebar = !isMobile || mobileActivePane === 'sidebar';
   const showReader = !isMobile || mobileActivePane === 'reader';
   const hasActiveSong = reader.type === 'song' || reader.type === 'marker' || reader.type === 'note';
+
+  console.log('Layout debug:', { isMobile, showSidebar, showReader, sidebarPanel: sidebar.panel });
 
   const handleTitleTap = () => {
     titleTapCountRef.current += 1;
@@ -227,6 +231,7 @@ function App() {
                   <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSongsTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Songs</button>
                   <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Shared</button>
                   <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSetlistTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Setlists</button>
+                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isPersonalTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
                 </nav>
               </header>
               <div className="sidebar-content hide-scrollbar">
@@ -234,6 +239,7 @@ function App() {
                 {(sidebar.panel === 'shared') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SharedManager /></div>}
                 {(sidebar.panel === 'setlist-list') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistManager /></div>}
                 {(sidebar.panel === 'setlist-detail') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistView setlistId={sidebar.setlistId} /></div>}
+                {(sidebar.panel === 'personal') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><PersonalSongs /></div>}
               </div>
             </div>
           )}
@@ -262,9 +268,30 @@ function App() {
 
           {isMobile && mobileActivePane === 'sidebar' && (
             <nav className="mobile-bottom-nav">
-              <button id="mobile-nav-songs" onClick={() => setSidebarPanel('library')} className={`mobile-bottom-nav-btn ${isSongsTab ? 'mobile-bottom-nav-btn--active' : ''}`}><span>Songs</span></button>
-              <button id="mobile-nav-shared" onClick={() => setSidebarPanel('shared')} className={`mobile-bottom-nav-btn ${sidebar.panel === 'shared' ? 'mobile-bottom-nav-btn--active' : ''}`}><span>Shared</span></button>
-              <button id="mobile-nav-setlists" onClick={() => setSidebarPanel('setlist-list')} className={`mobile-bottom-nav-btn ${isSetlistTab ? 'mobile-bottom-nav-btn--active' : ''}`}><span>Setlists</span></button>
+              <button id="mobile-nav-songs" onClick={() => setSidebarPanel('library')} className={`mobile-bottom-nav-btn ${isSongsTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+                <span>Songs</span>
+              </button>
+              <button id="mobile-nav-shared" onClick={() => setSidebarPanel('shared')} className={`mobile-bottom-nav-btn ${sidebar.panel === 'shared' ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+                <span>Shared</span>
+              </button>
+              <button id="mobile-nav-setlists" onClick={() => setSidebarPanel('setlist-list')} className={`mobile-bottom-nav-btn ${isSetlistTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+                <span>Setlists</span>
+              </button>
+              <button id="mobile-nav-personal" onClick={() => setSidebarPanel('personal')} className={`mobile-bottom-nav-btn ${isPersonalTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span>Personal</span>
+              </button>
             </nav>
           )}
 

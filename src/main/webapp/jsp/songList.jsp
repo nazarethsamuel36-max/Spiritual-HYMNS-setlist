@@ -207,9 +207,12 @@
         <div id="songsWrapper" class="">
         <div id="songsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3 md:gap-4">
             <c:forEach var="song" items="${songs}">
-                <!-- Premium Tailored Song Card -->
-                <div class="song-card group flex cursor-pointer flex-col justify-between p-4 transition-all duration-300" onclick="window.location='${pageContext.request.contextPath}/song?id=${song.id}'">
-                    
+                <!-- Premium Tailored Song Card — uses <a> for native mobile tap reliability -->
+                <a href="${pageContext.request.contextPath}/song?id=${song.id}"
+                   class="song-card group flex flex-col justify-between p-4 transition-all duration-300"
+                   style="cursor:pointer; text-decoration:none; display:flex;"
+                   aria-label="Open song ${song.songNumber}: ${song.title}">
+
                     <div class="flex-grow">
                         <div class="flex justify-between items-start">
                             <div class="flex-grow">
@@ -239,7 +242,7 @@
                             </div>
                         </c:if>
                     </div>
-                </div>
+                </a>
             </c:forEach>
 
             <c:if test="${empty songs}">

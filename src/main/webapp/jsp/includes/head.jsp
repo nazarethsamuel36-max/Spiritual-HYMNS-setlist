@@ -1,42 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<% long cacheBuster = System.currentTimeMillis(); %>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="${pageContext.request.contextPath}/css/tailwind-output.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/live-search.css?v=<%= cacheBuster %>">
-<script src="${pageContext.request.contextPath}/js/live-search.js?v=<%= cacheBuster %>" defer></script>
-<link rel="manifest" href="${pageContext.request.contextPath}/manifest.json?v=<%= cacheBuster %>">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/live-search.css">
+<script src="${pageContext.request.contextPath}/js/live-search.js" defer></script>
+<link rel="manifest" href="${pageContext.request.contextPath}/manifest.json">
 <meta name="theme-color" content="#001264">
 <script>window.CONTEXT_PATH = '${pageContext.request.contextPath}';</script>
-<script id="tailwind-config">
-tailwind.config = {
-    darkMode: "class",
-    theme: {
-        extend: {
-            colors: {
-                "primary": "#001264",
-                "on-primary": "#ffffff",
-                "surface": "#ffffff",
-                "on-surface": "#1a1a2e",
-                "surface-variant": "#f1f3f4",
-                "on-surface-variant": "#4a5080",
-                "outline": "#76777c",
-                "outline-variant": "#c6c6cc"
-            },
-            fontFamily: {
-                "headline": ["Manrope", "sans-serif"],
-                "body": ["Inter", "sans-serif"],
-                "label": ["Inter", "sans-serif"],
-                "mono": ["Noto Sans Mono", "monospace"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-        },
-    },
-}
-</script>
+
 <style>
 /* ============================================================
    CHANGE 1: Full-page animated backdrop — TWO pastel colors
@@ -567,9 +541,12 @@ if ('serviceWorker' in navigator) {
             return;
         }
 
+        // Register SW — URL must NOT have cache-buster params (SW scope depends on it)
         navigator.serviceWorker.register('${pageContext.request.contextPath}/sw.js')
-            .then(reg => console.log('Service Worker registered', reg))
+            .then(reg => console.log('Service Worker v5 registered', reg))
             .catch(err => console.log('Service Worker registration failed', err));
     });
 }
 </script>
+<!-- offline-db: syncs all songs to IndexedDB when online (3s delay, 12h cache) -->
+<script src="${pageContext.request.contextPath}/js/offline-db.js" defer></script>

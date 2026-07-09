@@ -18,9 +18,10 @@ interface SongLine {
 interface ChordProRendererProps {
   rawChordPro: string;
   hideChords?: boolean;
+  fontSize?: number;
 }
 
-export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro, hideChords = false }) => {
+export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro, hideChords = false, fontSize = 18 }) => {
   const parsedSongLines = useMemo<SongLine[]>(() => {
     if (!rawChordPro) return [];
     
@@ -151,7 +152,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
   }, [parsedSongLines, hideChords]);
 
   return (
-    <div style={{ ...styles.songSheet, fontSize: `16px` }}>
+    <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
       {renderedLines.map((line, lineIndex) => {
         if (line.renderType === 'skip') {
           return null;

@@ -12,6 +12,7 @@ export type SongIndex = {
   searchTokens: string;
   romanTitle?: string;
   isPublished?: boolean;
+  isPersonal?: boolean;
 }
 
 export type SongDetail = {
@@ -112,9 +113,11 @@ export class WorshipDatabase extends Dexie {
   sharedSongs!: EntityTable<SongDetail, 'id'>;
   sharedSetlists!: EntityTable<Setlist, 'id'>;
 
+  personalSongs!: EntityTable<SongDetail, 'id'>;
+
   constructor() {
     super('WorshipDatabase');
-    this.version(6).stores({
+    this.version(7).stores({
       songs: 'id, songNumber, language, updated_at',
       songIndex: 'id, songNumber, title, language, searchTokens',
       syncMeta: 'id',
@@ -123,7 +126,8 @@ export class WorshipDatabase extends Dexie {
       cache: 'id, timestamp',
       meta: 'id',
       sharedSongs: 'id, songNumber, title, language',
-      sharedSetlists: 'id, title, updatedAt'
+      sharedSetlists: 'id, title, updatedAt',
+      personalSongs: 'id, title, language'
     });
   }
 
@@ -157,25 +161,43 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
   song = await db.sharedSongs.get(id);
   if (song) return normalizeSongDetail(song);
 
+  // Fallback to Supabase if online (no JSON file reading)
+  if (!navigator.onLine) {
+    console.warn('⚠️ Offline: song not in IndexedDB and cannot reach Supabase.');
+    return null;
+  }
+
   try {
-    const res = await fetch(`/exports/songs/${id}.json`);
-    if (res.ok) {
-      const data = await res.json();
-      if (data) {
-        const normalized = normalizeSongDetail(data);
-        // Also merge originalKey from songIndex if the detail JSON lacks it
-        if (!normalized.originalKey) {
-          const indexEntry = await db.songIndex.get(id);
-          if (indexEntry?.originalKey) {
-            normalized.originalKey = indexEntry.originalKey;
-          }
-        }
-        await db.songs.put(normalized);
-        return normalized;
-      }
-    }
+    const { createClient } = await import('@supabase/supabase-js');
+    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+    const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+    const client = createClient(supabaseUrl, supabaseKey);
+    const { data, error } = await client.from('songs').select('*').eq('id', id).single();
+    if (error || !data) return null;
+    const normalized = normalizeSongDetail({
+      id: data.id,
+      songNumber: data.song_number,
+      title: data.title,
+      artist: data.artist,
+      composer: data.composer,
+      language: data.language,
+      originalKey: data.original_key,
+      capo: data.capo,
+      bpm: data.bpm,
+      timeSignature: data.time_signature,
+      hashtags: [],
+      sections: [],
+      chords: data.chords,
+      lyrics: data.lyrics,
+      isPublished: data.is_published !== false,
+      is_active: data.is_active !== false,
+      updated_at: data.updated_at
+    });
+    // Cache in IndexedDB for next time
+    await db.songs.put(normalized);
+    return normalized;
   } catch (e) {
-    console.error('Failed to fetch song from exports:', e);
+    console.error('Failed to fetch song from Supabase:', e);
   }
   return null;
 }
@@ -230,6 +252,22 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
       searchTokens: ''
     };
   }
+
+  const personal = await db.personalSongs.get(id);
+  if (personal) {
+    return {
+      id: personal.id,
+      songNumber: personal.songNumber,
+      title: normalizeImportedText(personal.title),
+      artist: normalizeImportedText(personal.artist),
+      language: personal.language,
+      originalKey: normalizeImportedText(personal.originalKey),
+      hashtags: personal.hashtags,
+      searchTokens: '',
+      isPersonal: true
+    };
+  }
+
   return null;
 }
 

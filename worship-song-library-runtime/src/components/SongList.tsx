@@ -337,7 +337,7 @@ export function SongList() {
 
 
       {/* Song List */}
-      <div className="flex flex-col pb-32">
+      <div className="flex flex-col pb-32" style={{ minHeight: '500px' }}>
         {isLoading ? (
           <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
         ) : loadError ? (
@@ -347,14 +347,17 @@ export function SongList() {
             No songs found.
           </div>
         ) : (
-          songs.map((song: SongIndex) => (
-            <SongRow
-              key={song.id}
-              song={song}
-              onSelect={(id) => openSong(id, 'library')}
-              isActive={song.id === activeSongId}
-            />
-          ))
+          <>
+            <div className="p-4 text-xs text-slate-400">Showing {songs.length} songs</div>
+            {songs.map((song: SongIndex) => (
+              <SongRow
+                key={song.id}
+                song={song}
+                onSelect={(id) => openSong(id, 'library')}
+                isActive={song.id === activeSongId}
+              />
+            ))}
+          </>
         )}
       </div>
     </div>

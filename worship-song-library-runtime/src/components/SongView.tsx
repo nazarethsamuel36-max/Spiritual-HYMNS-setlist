@@ -41,11 +41,13 @@ export function SongView() {
   const openMarker = useWorkflowStore((s) => s.openMarker);
   const openNote = useWorkflowStore((s) => s.openNote);
   const libraryLanguage = useWorkflowStore((s) => s.libraryLanguage);
+  const fontSize = useWorkflowStore((s) => s.fontSize);
 
   const songId = reader.type === 'song' ? reader.songId : null;
   const transpose = reader.type === 'song' ? reader.transpose : 0;
   const setlistId = reader.type === 'song' ? reader.setlistId : undefined;
   const currentItemId = reader.type === 'song' ? reader.itemId : undefined;
+  const source = reader.type === 'song' ? reader.source : 'library';
   const isSetlistContext = reader.type === 'song' && reader.source === 'setlist' && !!setlistId;
 
   // 2. Core State
@@ -85,9 +87,16 @@ export function SongView() {
 
     const fetchSong = async () => {
       try {
-        // This checks db.songs first. If empty, falls back to Supabase.
-        const song = await getSongById(songId);
-        
+        let song;
+
+        if (source === 'personal') {
+          // Fetch from personalSongs table in IndexedDB
+          song = await db.personalSongs.get(songId);
+        } else {
+          // This checks db.songs first. If empty, falls back to Supabase.
+          song = await getSongById(songId);
+        }
+
         if (!song) {
           throw new Error('Song not found');
         }
@@ -220,11 +229,11 @@ export function SongView() {
           <div className="max-w-4xl mx-auto w-full">
             {/* 🔥 FIXED RENDER LOGIC: Admins get Editor, Non-Admins get Chords/Lyrics */}
             {isAdminAuthenticated ? (
-              <EditorMode song={{ ...song, sections: song.sections }} />
+              <EditorMode song={{ ...song, sections: song.sections }} source={source} />
             ) : readerMode === 'lyrics' ? (
-              <ChordProRenderer rawChordPro={song.chords || ''} hideChords={true} />
+              <ChordProRenderer rawChordPro={song.chords || song.lyrics || ''} hideChords={true} fontSize={fontSize} />
             ) : (
-              <ChordProRenderer rawChordPro={song.chords || ''} hideChords={false} />
+              <ChordProRenderer rawChordPro={song.chords || song.lyrics || ''} hideChords={false} fontSize={fontSize} />
             )}
           </div>
         </div>

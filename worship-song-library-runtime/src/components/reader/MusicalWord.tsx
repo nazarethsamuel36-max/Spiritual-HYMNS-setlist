@@ -42,22 +42,22 @@ export const MusicalWord = memo(function MusicalWord({ word, transpose, mode }: 
   }
 
   return (
-    <div className="inline-flex align-bottom whitespace-pre-wrap leading-none">
+    <div className="inline-flex align-bottom whitespace-normal leading-none">
       {segments.map((segment, idx) => (
         <span key={idx} className="inline-flex flex-col items-center mr-1 gap-0.5">
           {/* Chord Layer (above text) */}
           {mode === 'chords' && segment.chords.map((chord, i) => (
-            <span key={i} className="mb-1 text-sm font-bold leading-tight text-[var(--color-chord)]">
+            <span key={i} className="mb-1 font-bold leading-tight text-[var(--color-chord)] text-[1rem]">
               {chord.name}
             </span>
           ))}
 
           {/* Lyric Layer */}
-          <span className="text-base leading-relaxed text-[var(--color-text)]">
+          <span className="leading-relaxed text-[var(--color-text)] text-[1.25rem] leading-[1.6]">
             {segment.text}
           </span>
         </span>
       ))}
     </div>
   );
-});
+}
