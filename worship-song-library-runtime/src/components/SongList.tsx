@@ -75,7 +75,7 @@ export function SongList() {
         // Filter by admin authentication status
         const filteredSongs = isAdminAuthenticated
           ? songs
-          : songs.filter(song => song.isPublished);
+          : songs.filter(song => song.is_active !== false);
 
         // 1. Render the UI immediately!
         setAllSongs(filteredSongs);
@@ -134,8 +134,7 @@ export function SongList() {
           title: titleToUse,
           song_number: nextSongNumber,
           language: languageToUse,
-          is_published: isPublishedToUse,
-          is_active: true,
+          is_active: isPublishedToUse,
           chords: chordsToUse,
           lyrics: '',
           artist: '',

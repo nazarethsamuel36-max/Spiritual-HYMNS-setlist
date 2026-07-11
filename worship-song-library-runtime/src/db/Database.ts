@@ -13,6 +13,7 @@ export type SongIndex = {
   romanTitle?: string;
   isPublished?: boolean;
   isPersonal?: boolean;
+  is_active?: boolean;
 }
 
 export type SongDetail = {

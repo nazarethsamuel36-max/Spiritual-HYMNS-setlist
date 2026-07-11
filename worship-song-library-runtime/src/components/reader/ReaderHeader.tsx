@@ -411,7 +411,11 @@ export function ReaderHeader({
               <button
                 onClick={handlePublishToggle}
                 disabled={isPublishLoading}
-                className="h-8 px-3 flex items-center justify-center rounded-lg border border-slate-300 bg-white text-[10px] font-semibold text-slate-700 hover:bg-slate-50 transition-colors disabled:opacity-50 whitespace-nowrap"
+                className={`h-8 px-3 flex items-center justify-center rounded-lg border text-[10px] font-semibold transition-colors disabled:opacity-50 whitespace-nowrap ${
+                  isHidden
+                    ? 'bg-white border-slate-300 text-slate-700 hover:bg-slate-50'
+                    : 'bg-emerald-500 border-emerald-500 text-white hover:bg-emerald-600'
+                }`}
               >
                 {isPublishLoading ? 'Saving...' : isHidden ? 'Unhide' : 'Hide'}
               </button>

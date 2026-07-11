@@ -161,6 +161,7 @@ export class RealtimeService {
    */
   private static transformSongIndex(record: any): any {
     return {
+      id: record.id,
       songNumber: record.song_number,
       title: record.title,
       artist: record.artist || '',
