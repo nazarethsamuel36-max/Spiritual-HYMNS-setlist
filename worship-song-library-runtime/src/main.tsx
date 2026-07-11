@@ -4,10 +4,8 @@ import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
 
-// Load diagnostics tools in development only
-if (import.meta.env.DEV) {
-  import('./debug/SyncVerification');
-}
+// Load verification tools in both dev and production
+import('./debug/SyncVerification');
 
 // Unregister service worker ONLY during local development to make hot reloading easier
 if (import.meta.env.DEV && 'serviceWorker' in navigator) {

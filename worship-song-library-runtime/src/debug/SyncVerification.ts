@@ -31,7 +31,8 @@ let wakeUpSyncState: {
   startTime: null
 };
 
-if (import.meta.env.DEV) {
+// Load verification tools in both dev and production
+{
   /**
    * Helper: Format timestamp for display
    */
