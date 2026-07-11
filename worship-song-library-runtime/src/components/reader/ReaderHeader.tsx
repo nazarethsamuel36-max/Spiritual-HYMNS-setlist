@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../../db/Database';
 import { SetlistService } from '../../services/SetlistService';
@@ -34,6 +34,11 @@ export function ReaderHeader({
   const setFontSize = useWorkflowStore((s) => s.setFontSize);
   const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
+
+  // Sync local state with song's is_active when song changes
+  useEffect(() => {
+    setIsHidden(!song.is_active);
+  }, [song.is_active]);
 
   // Dropdown states
   const [isMoreOpen, setIsMoreOpen] = useState(false);
