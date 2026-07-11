@@ -250,7 +250,7 @@ if (import.meta.env.DEV) {
     try {
       const songs = await db.songs.get(songId);
       const songIndex = await db.songIndex.get(songId);
-      return { songs, songIndex };
+      return { songs: songs || null, songIndex: songIndex || null };
     } catch (error) {
       console.error('❌ Failed to read IndexedDB:', error);
       return { songs: null, songIndex: null };
