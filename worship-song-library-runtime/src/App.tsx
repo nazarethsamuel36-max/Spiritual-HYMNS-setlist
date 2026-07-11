@@ -59,7 +59,7 @@ function App() {
       try {
         // Only sync if we are genuinely online
         if (navigator.onLine) {
-          await wakeUpSync();
+          await wakeUpSync('app-start');
         }
       } catch (e) {
         console.warn("Wake up sync skipped/failed:", e);

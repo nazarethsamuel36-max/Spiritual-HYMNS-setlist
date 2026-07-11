@@ -38,7 +38,7 @@ export class RealtimeService {
     }
 
     // Run the lightweight delta sync instead of downloading everything
-    await wakeUpSync();
+    await wakeUpSync('online-event');
   }
 
   /**

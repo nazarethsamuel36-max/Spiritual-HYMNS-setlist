@@ -6,6 +6,7 @@ import { SearchEngine } from '../utils/SearchEngine';
 const LAST_SYNC_TIME_KEY = 'last_sync_time';
 
 type SyncState = 'IDLE' | 'CHECKING' | 'DOWNLOADING' | 'UPDATING_INDEXDB' | 'UPDATING_SEARCH' | 'SAVING_LAST_SYNC' | 'READY' | 'FAILED';
+type SyncTrigger = 'app-start' | 'online-event' | 'manual';
 
 /**
  * Batched Download - Downloads all songs in batches with progress callback
@@ -143,23 +144,46 @@ export async function batchDownloadSongs(
  * Wake-Up Delta Sync - Fetches only changed songs since last sync
  * This runs on every app mount
  */
-export async function wakeUpSync(): Promise<void> {
+export async function wakeUpSync(trigger: SyncTrigger = 'app-start'): Promise<void> {
+  console.log('\n═══════════════════════════════');
+  console.log('WAKE-UP SYNC AUDIT');
+  console.log('═══════════════════════════════');
+  console.log(`[1] Trigger Source: ${trigger}`);
+  
   // 🛑 Don't even try if offline
   if (!navigator.onLine) {
-    console.log('⚠️ Wake-Up Sync: Offline, skipping.');
+    console.log('[1] FAILED: Offline, skipping');
+    console.log('═══════════════════════════════');
     return;
   }
+  
+  console.log('[2] wakeUpSync() started');
 
   // Sync state machine
   let syncState: SyncState = 'IDLE';
+  let currentStage = 0;
   const setSyncState = (newState: SyncState) => {
     console.log(`🔄 Sync State: ${syncState} → ${newState}`);
     syncState = newState;
   };
+  
+  const logStage = (stage: number, message: string) => {
+    currentStage = stage;
+    console.log(`[${stage}] ${message}`);
+  };
+  
+  const logFailure = (stage: number, reason: string, error: any) => {
+    console.log('\n═══════════════════════════════');
+    console.log('FAILED AT STAGE:');
+    console.log(`Stage: [${stage}] ${reason}`);
+    console.log(`Exception: ${error instanceof Error ? error.message : String(error)}`);
+    if (error instanceof Error && error.stack) {
+      console.log(`Stack trace: ${error.stack}`);
+    }
+    console.log('═══════════════════════════════');
+  };
 
   try {
-    console.log('🔄 Wake-Up Sync: Checking for updates...');
-    
     // Add metrics tracking at start of wakeUpSync()
     const syncStartTime = Date.now();
     let metrics = {
@@ -169,21 +193,25 @@ export async function wakeUpSync(): Promise<void> {
       indexedDBWrites: 0,
       searchIndexUpdates: 0,
       duration: 0,
-      status: 'pending'
+      status: 'pending',
+      supabaseQuerySuccess: false,
+      lastSyncTimeSaved: false
     };
     
     setSyncState('CHECKING');
 
     // Get last sync time
+    logStage(3, 'Reading lastSyncTime...');
     const syncMeta = await db.meta.get(LAST_SYNC_TIME_KEY);
     if (!syncMeta) {
       const localCount = await db.songIndex.count();
       if (localCount === 0) {
-        console.log('⚠️ Wake-Up Sync: No lastSyncTime and empty DB - triggering initial download');
+        logStage(4, 'Sync mode: First-run (empty DB)');
+        logStage(4, 'Triggering initial download');
         await batchDownloadSongs();
         return;
       } else {
-        console.log('⚠️ Wake-Up Sync: No lastSyncTime but has data - performing full reconciliation');
+        logStage(4, 'Sync mode: Full reconciliation (has data, no lastSyncTime)');
         // Derive timestamp from newest cached record
         const allSongs = await db.songs.toArray();
         let newestSong: SongDetail | null = null;
@@ -198,10 +226,10 @@ export async function wakeUpSync(): Promise<void> {
             id: LAST_SYNC_TIME_KEY,
             value: newestTimestamp
           });
-          console.log(`✅ Wake-Up Sync: Derived lastSyncTime from newest song: ${newestSong.title}`);
+          logStage(4, `Derived lastSyncTime from newest song: ${newestSong.title}`);
           return; // Skip delta sync this time, will run on next app start
         } else {
-          console.log('⚠️ Wake-Up Sync: Cannot derive timestamp - triggering full download');
+          logStage(4, 'Cannot derive timestamp - triggering full download');
           await batchDownloadSongs();
           return;
         }
@@ -211,12 +239,13 @@ export async function wakeUpSync(): Promise<void> {
     const lastSyncTime = syncMeta.value as number;
     const lastSyncDate = new Date(lastSyncTime).toISOString();
     metrics.lastSyncTime = lastSyncTime;
-
-    console.log('🔄 Wake-Up Sync Stage: Read lastSyncTime');
-    console.log(`📅 Wake-Up Sync: Last sync was at ${lastSyncDate}`);
+    logStage(3, `Reading lastSyncTime... Value: ${lastSyncDate}`);
+    logStage(4, 'Sync mode: Delta Sync');
 
     setSyncState('DOWNLOADING');
-    console.log('🔄 Wake-Up Sync Stage: Query Supabase for changes');
+    logStage(5, 'Building Supabase query...');
+    logStage(5, `updated_at > ${lastSyncDate}`);
+    logStage(6, 'Executing query...');
     // Query for changed song IDs only
     const { data: changedIds, error } = await supabase
       .from('songs')
@@ -225,17 +254,23 @@ export async function wakeUpSync(): Promise<void> {
       .eq('is_active', true);
 
     if (error) {
+      logFailure(6, 'Supabase query failed', error);
       throw new Error(`Supabase error: ${error.message}`);
     }
+    
+    metrics.supabaseQuerySuccess = true;
+    logStage(7, `Query complete. Changed songs returned: ${changedIds?.length || 0}`);
 
     if (!changedIds || changedIds.length === 0) {
-      console.log('✅ Wake-Up Sync: No changes detected');
+      logStage(7, 'No changes detected');
+      logStage(14, 'Wake-Up Sync complete (no changes)');
+      console.log('═══════════════════════════════');
       return;
     }
 
-    console.log(`📝 Wake-Up Sync: Found ${changedIds.length} changed songs`);
     metrics.changedSongsFound = changedIds.length;
-    console.log('🔄 Wake-Up Sync Stage: Fetch full song data');
+    logStage(7, `Query complete. Changed songs returned: ${changedIds.length}`);
+    logStage(7, 'Fetching full song data...');
 
     // Fetch full data for changed songs using .in()
     const ids = changedIds.map((item: any) => item.id);
@@ -249,11 +284,13 @@ export async function wakeUpSync(): Promise<void> {
     }
 
     if (!changedSongs || changedSongs.length === 0) {
+      logFailure(7, 'No song data returned for changed IDs', new Error('Empty result set'));
       console.warn('⚠️ Wake-Up Sync: No song data returned for changed IDs');
       return;
     }
 
-    console.log('🔄 Wake-Up Sync Stage: Transform records');
+    logStage(7, `Fetched ${changedSongs.length} songs from Supabase`);
+    logStage(8, 'Processing changed songs...');
     // Transform and update IndexedDB
     const songDetails: SongDetail[] = changedSongs.map((song: any) => ({
       id: song.id,
@@ -288,69 +325,97 @@ export async function wakeUpSync(): Promise<void> {
       isPublished: song.is_published !== false
     }));
 
+    logStage(9, 'transformSong() success');
+    
     setSyncState('UPDATING_INDEXDB');
-    console.log('🔄 Wake-Up Sync Stage: Update IndexedDB songs');
+    logStage(10, 'Writing db.songs...');
     // Update IndexedDB
     await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
       await db.songs.bulkPut(songDetails);
+      logStage(10, 'Writing db.songs... SUCCESS');
+      
+      logStage(11, 'Writing db.songIndex...');
       await db.songIndex.bulkPut(songIndices.map(normalizeSongIndex));
       metrics.indexedDBWrites = songDetails.length;
+      logStage(11, 'Writing db.songIndex... SUCCESS');
       
-      console.log('🔄 Wake-Up Sync Stage: Update IndexedDB songIndex');
       // Update sync timestamp
+      logStage(13, 'Saving lastSyncTime...');
       await db.meta.put({
         id: LAST_SYNC_TIME_KEY,
         value: Date.now()
       });
-      console.log('🔄 Wake-Up Sync Stage: Save new lastSyncTime');
+      metrics.lastSyncTimeSaved = true;
+      logStage(13, 'Saving lastSyncTime... SUCCESS');
     });
     setSyncState('SAVING_LAST_SYNC');
 
     setSyncState('UPDATING_SEARCH');
-    console.log('🔄 Wake-Up Sync Stage: Update search engine');
+    logStage(12, 'Updating SearchEngine...');
     // Update search engine - only index changed songs
     await SearchEngine.indexSongs(songIndices.map(normalizeSongIndex));
+    logStage(12, 'Updating SearchEngine... SUCCESS');
     metrics.searchIndexUpdates = songIndices.length;
     metrics.songsDownloaded = changedSongs?.length || 0;
     metrics.duration = Date.now() - syncStartTime;
     metrics.status = 'success';
 
-    console.log('✅ Wake-Up Sync: Successfully synced changes');
+    logStage(14, 'Wake-Up Sync complete');
     
-    // Sync Integrity Verification
-    console.log('═══════════════════════════════');
-    console.log('Sync Verification');
-    console.log('═══════════════════════════════');
-    console.log(`Supabase Changed Songs: ${changedIds.length}`);
-    console.log(`Downloaded: ${changedSongs?.length || 0}`);
-    console.log(`IndexedDB Updated: ${songDetails.length}`);
-    console.log(`Search Updated: ${songIndices.length}`);
-    console.log(`Deleted: 0`); // Will be implemented after deletion rules defined
-
+    // Data Integrity Verification for each changed song
+    console.log('\n--- Data Integrity Verification ---');
+    for (const song of changedSongs) {
+      console.log(`\nSupabase:`);
+      console.log(`ID: ${song.id}`);
+      console.log(`Title: "${song.title}"`);
+      console.log(`updated_at: ${song.updated_at}`);
+      
+      console.log(`\n↓`);
+      
+      const dbSong = await db.songs.get(song.id);
+      if (dbSong) {
+        console.log(`\nIndexedDB:`);
+        console.log(`ID: ${dbSong.id}`);
+        console.log(`Title: "${dbSong.title}"`);
+        console.log(`updated_at: ${dbSong.updated_at}`);
+        
+        console.log(`\n↓`);
+        
+        const titleMatch = dbSong.title === song.title;
+        const updatedAtMatch = dbSong.updated_at === song.updated_at;
+        console.log(`\nMATCH: ${titleMatch && updatedAtMatch ? 'YES' : 'NO'}`);
+      } else {
+        console.log(`\nIndexedDB: Song not found`);
+        console.log(`\n↓`);
+        console.log(`\nMATCH: NO`);
+      }
+    }
+    
+    // Final Audit Report
+    console.log('\n==========================');
+    console.log('WAKE-UP SYNC AUDIT');
+    console.log('==========================');
+    console.log(`Trigger Source: ${trigger}`);
+    console.log(`\nlastSyncTime: ${new Date(metrics.lastSyncTime).toISOString()}`);
+    console.log(`\nSupabase Query: ${metrics.supabaseQuerySuccess ? 'SUCCESS' : 'FAIL'}`);
+    console.log(`\nChanged Songs: ${metrics.changedSongsFound}`);
+    console.log(`\nIndexedDB Writes: ${metrics.indexedDBWrites}`);
+    console.log(`\nsongIndex Writes: ${metrics.indexedDBWrites}`);
+    console.log(`\nSearch Updates: ${metrics.searchIndexUpdates}`);
+    console.log(`\nlastSyncTime Saved: ${metrics.lastSyncTimeSaved ? 'YES' : 'NO'}`);
+    
     const allMatch = 
       changedIds.length === (changedSongs?.length || 0) &&
       (changedSongs?.length || 0) === songDetails.length &&
       songDetails.length === songIndices.length;
-
-    console.log(`Status: ${allMatch ? 'PASS' : 'FAIL'}`);
-    console.log('═══════════════════════════════');
     
-    // Print metrics at end
-    console.log('═══════════════════════════════');
-    console.log('Wake-Up Sync Metrics');
-    console.log('═══════════════════════════════');
-    console.log(`Last Sync: ${new Date(metrics.lastSyncTime).toISOString()}`);
-    console.log(`Changed Songs: ${metrics.changedSongsFound}`);
-    console.log(`Downloaded: ${metrics.songsDownloaded}`);
-    console.log(`IndexedDB Writes: ${metrics.indexedDBWrites}`);
-    console.log(`Search Index Updates: ${metrics.searchIndexUpdates}`);
-    console.log(`Duration: ${metrics.duration}ms`);
-    console.log(`Status: ${metrics.status}`);
-    console.log('═══════════════════════════════');
+    console.log(`\nOverall Result: ${allMatch ? 'PASS' : 'FAIL'}`);
+    console.log(`\nDuration: ${metrics.duration}ms`);
+    console.log('==========================');
     setSyncState('READY');
   } catch (error) {
     setSyncState('FAILED');
-    console.error('❌ Wake-Up Sync failed:', error);
+    logFailure(currentStage, 'Wake-Up Sync failed', error);
     // Don't throw - allow app to continue with cached data
   }
 }

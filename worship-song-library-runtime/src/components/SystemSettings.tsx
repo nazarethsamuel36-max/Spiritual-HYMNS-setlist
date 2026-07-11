@@ -59,7 +59,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     setIsSyncing(true);
     setSyncStatus('Syncing...');
     try {
-      await wakeUpSync();
+      await wakeUpSync('manual');
       const syncMeta = await db.meta.get('last_sync_time');
       setLastSyncTime(syncMeta?.value ? Number(syncMeta.value) : null);
       setSyncStatus('Success');
