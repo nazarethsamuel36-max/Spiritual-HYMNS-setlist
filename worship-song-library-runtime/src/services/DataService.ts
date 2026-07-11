@@ -270,6 +270,18 @@ export async function wakeUpSync(trigger: SyncTrigger = 'app-start'): Promise<vo
 
     metrics.changedSongsFound = changedIds.length;
     logStage(7, `Query complete. Changed songs returned: ${changedIds.length}`);
+    
+    console.log('\n═══════════════════════════════');
+    console.log('Wake-Up Sync Change Audit');
+    console.log('═══════════════════════════════');
+    console.log(`Found ${changedIds.length} changed song(s).`);
+
+    if (changedIds.length > 0) {
+      for (const item of changedIds) {
+        console.log(`\nSong #${item.id}`);
+      }
+    }
+    
     logStage(7, 'Fetching full song data...');
 
     // Fetch full data for changed songs using .in()
@@ -290,6 +302,58 @@ export async function wakeUpSync(trigger: SyncTrigger = 'app-start'): Promise<vo
     }
 
     logStage(7, `Fetched ${changedSongs.length} songs from Supabase`);
+    
+    console.log('\n─────────────────────────────');
+    console.log('Comparing changes...');
+    console.log('─────────────────────────────');
+
+    for (const supabaseSong of changedSongs) {
+      const songId = supabaseSong.id;
+      const songNumber = supabaseSong.song_number;
+      
+      console.log(`\nSong #${songNumber} (ID: ${songId})`);
+      console.log('UPDATE');
+      
+      // Read current IndexedDB version
+      const currentDbSong = await db.songs.get(songId);
+      
+      if (currentDbSong) {
+        console.log('Changes Found\n');
+        
+        // Compare fields
+        const fieldsToCompare = [
+          { name: 'Title', supabase: supabaseSong.title, db: currentDbSong.title },
+          { name: 'Key', supabase: supabaseSong.original_key, db: currentDbSong.originalKey },
+          { name: 'is_published', supabase: supabaseSong.is_published, db: currentDbSong.isPublished },
+          { name: 'is_active', supabase: supabaseSong.is_active, db: currentDbSong.is_active },
+          { name: 'Capo', supabase: supabaseSong.capo, db: currentDbSong.capo },
+          { name: 'BPM', supabase: supabaseSong.bpm, db: currentDbSong.bpm },
+        ];
+        
+        let hasChanges = false;
+        for (const field of fieldsToCompare) {
+          if (field.supabase !== field.db) {
+            hasChanges = true;
+            console.log(`${field.name}`);
+            console.log(`${field.db} → ${field.supabase}`);
+          }
+        }
+        
+        // Compare lyrics (show if changed)
+        if (supabaseSong.lyrics !== currentDbSong.lyrics) {
+          hasChanges = true;
+          console.log('Lyrics');
+          console.log('+ Changed');
+        }
+        
+        if (!hasChanges) {
+          console.log('No field changes detected');
+        }
+      } else {
+        console.log('INSERT (new song)');
+      }
+    }
+    
     logStage(8, 'Processing changed songs...');
     // Transform and update IndexedDB
     const songDetails: SongDetail[] = changedSongs.map((song: any) => ({
@@ -350,6 +414,49 @@ export async function wakeUpSync(trigger: SyncTrigger = 'app-start'): Promise<vo
     });
     setSyncState('SAVING_LAST_SYNC');
 
+    console.log('\n─────────────────────────────');
+    console.log('Verifying IndexedDB updates...');
+    console.log('─────────────────────────────');
+
+    let verificationPassed = true;
+    let updatedCount = 0;
+    let insertedCount = 0;
+
+    for (const supabaseSong of changedSongs) {
+      const songId = supabaseSong.id;
+      const songNumber = supabaseSong.song_number;
+      
+      console.log(`\nSong #${songNumber} (ID: ${songId})`);
+      
+      // Read back from IndexedDB
+      const dbSong = await db.songs.get(songId);
+      
+      if (!dbSong) {
+        console.log('❌ Verification FAILED - Song not found in IndexedDB');
+        verificationPassed = false;
+        continue;
+      }
+      
+      console.log('IndexedDB Updated');
+      console.log('\nVerification');
+      
+      // Compare key fields
+      const titleMatch = dbSong.title === supabaseSong.title;
+      const keyMatch = dbSong.originalKey === supabaseSong.original_key;
+      const updatedAtMatch = dbSong.updated_at === supabaseSong.updated_at && dbSong.updated_at !== null;
+      
+      if (titleMatch && keyMatch && updatedAtMatch) {
+        console.log('MATCH ✓');
+        updatedCount++;
+      } else {
+        console.log('FAILED ❌');
+        if (!titleMatch) console.log(`  Title mismatch: DB="${dbSong.title}" vs Supabase="${supabaseSong.title}"`);
+        if (!keyMatch) console.log(`  Key mismatch: DB="${dbSong.originalKey}" vs Supabase="${supabaseSong.original_key}"`);
+        if (!updatedAtMatch) console.log(`  updated_at mismatch`);
+        verificationPassed = false;
+      }
+    }
+
     setSyncState('UPDATING_SEARCH');
     logStage(12, 'Updating SearchEngine...');
     // Update search engine - only index changed songs
@@ -361,6 +468,17 @@ export async function wakeUpSync(trigger: SyncTrigger = 'app-start'): Promise<vo
     metrics.status = 'success';
 
     logStage(14, 'Wake-Up Sync complete');
+    
+    console.log('\n═══════════════════════════════');
+    console.log('Wake-Up Sync Summary');
+    console.log('═══════════════════════════════');
+    console.log(`Songs Returned: ${changedSongs.length}`);
+    console.log(`Updated: ${updatedCount}`);
+    console.log(`Inserted: ${insertedCount}`);
+    console.log(`Deleted: 0`);
+    console.log(`Failed: ${verificationPassed ? 0 : 1}`);
+    console.log(`\nStatus: ${verificationPassed ? 'PASS' : 'FAIL'}`);
+    console.log('═══════════════════════════════');
     
     // Data Integrity Verification for each changed song
     console.log('\n--- Data Integrity Verification ---');
