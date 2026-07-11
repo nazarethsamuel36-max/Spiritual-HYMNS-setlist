@@ -55,7 +55,7 @@ if (import.meta.env.DEV) {
     try {
       const songs = await db.songs.get(songId);
       const songIndex = await db.songIndex.get(songId);
-      return { songs, songIndex };
+      return { songs: songs || null, songIndex: songIndex || null };
     } catch (error) {
       console.error('❌ Failed to read IndexedDB:', error);
       return { songs: null, songIndex: null };
@@ -510,28 +510,6 @@ if (import.meta.env.DEV) {
   console.log('  window.runWakeUpSyncTest()');
   console.log('  window.runConsistencyReport()');
   console.log('  window.findMissingSongs()');
-}
-
-import { supabase } from '../lib/supabaseClient';
-import { db } from '../db/Database';
-import type { SongDetail, SongIndex } from '../db/Database';
-import { wakeUpSync } from '../services/DataService';
-
-interface TestSong {
-  id: number;
-  songNumber: number;
-  title: string;
-  updated_at: string;
-}
-
-interface IndexedDBState {
-  songs: SongDetail | null;
-  songIndex: SongIndex | null;
-}
-
-interface ComparisonResult {
-  match: boolean;
-  differences: string[];
 }
 
 // Global state for wake-up sync verification
