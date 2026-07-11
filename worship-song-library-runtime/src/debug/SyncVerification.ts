@@ -503,6 +503,7 @@ if (import.meta.env.DEV) {
   (window as any).runDatabaseComparison = runDatabaseComparison;
   (window as any).runConsistencyReport = runConsistencyReport;
   (window as any).findMissingSongs = findMissingSongs;
+  (window as any).runWakeUpSync = wakeUpSync;
 
   console.log('🔧 Sync Verification Tool loaded. Use:');
   console.log('  window.runSyncVerification()');
@@ -510,6 +511,7 @@ if (import.meta.env.DEV) {
   console.log('  window.runWakeUpSyncTest()');
   console.log('  window.runConsistencyReport()');
   console.log('  window.findMissingSongs()');
+  console.log('  window.runWakeUpSync() - Manually trigger Wake-Up Sync');
 }
 
 // Global state for wake-up sync verification
