@@ -1,7 +1,7 @@
 import { db, fullSystemReset } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
-import { batchDownloadSongs } from '../services/DataService';
-import { useState } from 'react';
+import { batchDownloadSongs, wakeUpSync } from '../services/DataService';
+import { useState, useEffect } from 'react';
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
   const stats = useLiveQuery(async () => {
@@ -10,9 +10,20 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     return { songCount, syncMeta };
   }, []);
 
+  useEffect(() => {
+    const loadSyncInfo = async () => {
+      const syncMeta = await db.meta.get('last_sync_time');
+      setLastSyncTime(syncMeta?.value ? Number(syncMeta.value) : null);
+    };
+    loadSyncInfo();
+  }, []);
+
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [statusMsg, setStatusMsg] = useState('');
+  const [lastSyncTime, setLastSyncTime] = useState<number | null>(null);
+  const [syncStatus, setSyncStatus] = useState<string>('Idle');
+  const [isSyncing, setIsSyncing] = useState(false);
 
   const handleFullReset = async () => {
     if (!confirm('CRITICAL: This will delete EVERYTHING including your setlists. This cannot be undone. Proceed?')) return;
@@ -44,6 +55,21 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     setIsDownloading(false);
   };
 
+  const handleSyncNow = async () => {
+    setIsSyncing(true);
+    setSyncStatus('Syncing...');
+    try {
+      await wakeUpSync();
+      const syncMeta = await db.meta.get('last_sync_time');
+      setLastSyncTime(syncMeta?.value ? Number(syncMeta.value) : null);
+      setSyncStatus('Success');
+    } catch (error) {
+      setSyncStatus('Failed');
+    } finally {
+      setIsSyncing(false);
+    }
+  };
+
   return (
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[200] flex items-center justify-center p-4 pointer-events-none">
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto">
@@ -71,7 +97,36 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1">Storage Management</h3>
+            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1">Synchronization</h3>
+            
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+              <p className="text-sm text-slate-600 mb-2">
+                Last Synced: {lastSyncTime ? new Date(lastSyncTime).toLocaleString() : 'Never'}
+              </p>
+              <p className="text-xs text-slate-500">
+                Status: {syncStatus}
+              </p>
+            </div>
+
+            <button
+              onClick={handleSyncNow}
+              disabled={isSyncing}
+              className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <div className="text-left">
+                <div className="font-bold text-slate-700 group-hover:text-blue-600">
+                  {isSyncing ? 'Syncing...' : 'Sync Now'}
+                </div>
+                <div className="text-xs text-slate-400">
+                  Check for updates from server
+                </div>
+              </div>
+              <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </button>
+
+            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-1 mt-6">Storage Management</h3>
             
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
               <p className="text-sm text-slate-600 mb-2">
