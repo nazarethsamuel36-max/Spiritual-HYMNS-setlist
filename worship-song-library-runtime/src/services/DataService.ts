@@ -186,9 +186,12 @@ export async function wakeUpSync(): Promise<void> {
         console.log('⚠️ Wake-Up Sync: No lastSyncTime but has data - performing full reconciliation');
         // Derive timestamp from newest cached record
         const allSongs = await db.songs.toArray();
-        const newestSong = allSongs.reduce((newest, song) => {
-          return (!newest || song.updated_at > newest.updated_at) ? song : newest;
-        }, null);
+        let newestSong: SongDetail | null = null;
+        for (const song of allSongs) {
+          if (!newestSong || (song.updated_at && newestSong.updated_at && song.updated_at > newestSong.updated_at)) {
+            newestSong = song;
+          }
+        }
         if (newestSong && newestSong.updated_at) {
           const newestTimestamp = new Date(newestSong.updated_at).getTime();
           await db.meta.put({
