@@ -158,7 +158,6 @@ export class RealtimeService {
       sections: [],
       chords: record.chords || '',
       lyrics: record.lyrics || '',
-      isPublished: record.is_published !== false,
       is_active: record.is_active !== false,
       updated_at: record.updated_at,
     };

@@ -69,7 +69,6 @@ export function PersonalSongs() {
         chords: newSongChords,
         lyrics: '',
         sections: [],
-        isPublished: false,
         is_active: true,
         updated_at: new Date().toISOString(),
       };
@@ -280,7 +279,6 @@ export function PersonalSongs() {
                   hashtags: song.hashtags,
                   searchTokens: song.title.toLowerCase(),
                   romanTitle: song.title,
-                  isPublished: false,
                 }}
                 onSelect={(id) => openSong(id, 'personal')}
                 isActive={song.id === activeSongId}

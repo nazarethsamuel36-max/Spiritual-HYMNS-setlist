@@ -56,7 +56,7 @@ export function SongList() {
   const [newSongTitle, setNewSongTitle] = useState('Untitled Draft');
   const [newSongKey, setNewSongKey] = useState('C');
   const [newSongChords, setNewSongChords] = useState('');
-  const [newSongIsPublished, setNewSongIsPublished] = useState(false);
+  const [newSongIsActive, setNewSongIsActive] = useState(false);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
@@ -98,7 +98,7 @@ export function SongList() {
 
   const handleAddNewSong = async (
     languageArg?: string,
-    opts?: { title?: string; key?: string; chords?: string; isPublished?: boolean }
+    opts?: { title?: string; key?: string; chords?: string; is_active?: boolean }
   ) => {
     setIsAddingNewSong(true);
     try {
@@ -126,7 +126,7 @@ export function SongList() {
       const titleToUse = opts?.title ?? 'Untitled Draft';
       const keyToUse = opts?.key ?? 'C';
       const chordsToUse = opts?.chords ?? '';
-      const isPublishedToUse = !!opts?.isPublished;
+      const isActiveToUse = opts?.is_active !== false;
 
       const { data, error } = await supabase
         .from('songs')
@@ -134,7 +134,7 @@ export function SongList() {
           title: titleToUse,
           song_number: nextSongNumber,
           language: languageToUse,
-          is_active: isPublishedToUse,
+          is_active: isActiveToUse,
           chords: chordsToUse,
           lyrics: '',
           artist: '',
@@ -160,8 +160,7 @@ export function SongList() {
           originalKey: data.original_key,
           hashtags: [],
           searchTokens: data.title.toLowerCase(),
-          romanTitle: data.title,
-          isPublished: false
+          romanTitle: data.title
         };
         setAllSongs([...allSongs, newSong]);
         // Open the new song in the editor
@@ -256,10 +255,10 @@ export function SongList() {
                   <div className="mb-1">Publish</div>
                   <div className="flex items-center gap-3">
                     <button
-                      onClick={() => setNewSongIsPublished((v) => !v)}
-                      className={`px-3 py-1 rounded-md border ${newSongIsPublished ? 'bg-emerald-500 text-white' : 'bg-white'}`}
+                      onClick={() => setNewSongIsActive((v) => !v)}
+                      className={`px-3 py-1 rounded-md border ${newSongIsActive ? 'bg-emerald-500 text-white' : 'bg-white'}`}
                     >
-                      {newSongIsPublished ? 'Published' : 'Hidden'}
+                      {newSongIsActive ? 'Published' : 'Hidden'}
                     </button>
                     <span className="text-xs text-slate-500">Toggle visibility in library</span>
                   </div>
@@ -287,7 +286,7 @@ export function SongList() {
                         title: newSongTitle,
                         key: newSongKey,
                         chords: newSongChords,
-                        isPublished: newSongIsPublished,
+                        is_active: newSongIsActive,
                       });
                     }}
                   disabled={isAddingNewSong}

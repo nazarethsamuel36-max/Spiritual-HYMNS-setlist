@@ -123,7 +123,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
             <span className="text-xs font-medium text-slate-500">
               {song.language}
             </span>
-            {song.isPublished === false && (
+            {song.is_active === false && (
               <>
                 <span className="text-slate-300 text-[10px]">•</span>
                 <span className="text-xs font-bold px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">

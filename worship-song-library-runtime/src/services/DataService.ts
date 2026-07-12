@@ -93,7 +93,6 @@ export async function batchDownloadSongs(
         sections: parseLyricsToSections(song.lyrics || ''),
         chords: song.chords,
         lyrics: song.lyrics,
-        isPublished: song.is_published !== false,
         is_active: song.is_active !== false,
         updated_at: song.updated_at
       }));
@@ -107,8 +106,7 @@ export async function batchDownloadSongs(
         originalKey: song.original_key,
         hashtags: [],
         searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-        romanTitle: song.title,
-        isPublished: song.is_published !== false
+        romanTitle: song.title
       }));
 
       allSongDetails.push(...batchDetails);
@@ -238,7 +236,6 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       sections: parseLyricsToSections(song.lyrics || ''),
       chords: song.chords,
       lyrics: song.lyrics,
-      isPublished: song.is_published !== false,
       is_active: song.is_active !== false,
       updated_at: song.updated_at
     }));
@@ -252,8 +249,7 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       originalKey: song.original_key,
       hashtags: [],
       searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-      romanTitle: song.title,
-      isPublished: song.is_published !== false
+      romanTitle: song.title
     }));
 
     // 6. Write to IndexedDB (atomic transaction)
@@ -354,8 +350,7 @@ export async function getSongs(): Promise<SongIndex[]> {
     originalKey: song.original_key,
     hashtags: [],
     searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-    romanTitle: song.title,
-    isPublished: song.is_published !== false
+    romanTitle: song.title
   }));
 }
 
@@ -418,7 +413,6 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
     sections: parseLyricsToSections(data.lyrics || ''),
     chords: data.chords,
     lyrics: data.lyrics,
-    isPublished: data.is_published !== false,
     is_active: data.is_active !== false,
     updated_at: data.updated_at
   };

@@ -1,7 +1,6 @@
 # Complete Admin Workflow Testing Guide
 
 ## ✅ Prerequisites
-- [ ] Supabase SQL schema updated: `ALTER TABLE songs ADD COLUMN is_published BOOLEAN DEFAULT false;`
 - [ ] Dev server running: `http://localhost:5173/`
 - [ ] Admin authenticated (check browser console for `isAdminAuthenticated: true`)
 
@@ -64,11 +63,11 @@
 5. Observe:
    - ✅ Button shows spinner briefly
    - ✅ Button text changes to **"✓ Published"** (emerald background)
-6. Verify in Supabase: `is_published` column updated to `true`
+6. Verify in Supabase: `is_active` column updated to `true`
 7. Click toggle again
 8. Observe:
    - ✅ Button reverts to **"⊘ Hidden"** (amber)
-9. Verify in Supabase: `is_published` back to `false`
+9. Verify in Supabase: `is_active` back to `false`
 
 **Console Logs to Verify:**
 ```
@@ -171,21 +170,6 @@ All tests pass when:
 | "+ Add New Song" button not visible | Check `isAdminAuthenticated` in browser DevTools → Zustand store |
 | Auto-save not triggering | Check browser console for errors; verify Supabase permissions |
 | Publish toggle disabled | Ensure song is loaded; check Supabase connection |
-| Unpublished songs still visible to users | Clear browser cache; verify `is_published` column exists in Supabase |
+| Unpublished songs still visible to users | Clear browser cache; verify `is_active` column exists in Supabase |
 | DRAFT badge not showing | Check admin status; reload page |
 
----
-
-## 🔧 Required Supabase Schema
-
-```sql
-ALTER TABLE songs ADD COLUMN is_published BOOLEAN DEFAULT false;
-CREATE INDEX idx_songs_is_published ON songs(is_published);
-UPDATE songs SET is_published = true WHERE is_published IS NULL;
-```
-
-Verify in Supabase console:
-```sql
-SELECT COUNT(*) FROM songs WHERE is_published = true;
-SELECT COUNT(*) FROM songs WHERE is_published = false;
-```

@@ -41,7 +41,6 @@ export async function debugDownloadAllSongs() {
       sections: [],
       chords: row.chords || undefined,
       lyrics: row.lyrics || undefined,
-      isPublished: row.is_published ?? true,
       is_active: row.is_active ?? true,
     }));
 

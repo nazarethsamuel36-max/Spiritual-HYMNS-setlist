@@ -11,7 +11,6 @@ export type SongIndex = {
   hashtags?: string[];
   searchTokens: string;
   romanTitle?: string;
-  isPublished?: boolean;
   isPersonal?: boolean;
   is_active?: boolean;
 }
@@ -31,7 +30,6 @@ export type SongDetail = {
   sections: Section[];
   chords?: string; // Raw chords text with markers like [G]
   lyrics?: string; // Plain lyrics text without chords
-  isPublished?: boolean; // Publication status for admin control
   is_active?: boolean; // Whether the song is active and visible in the app
   updated_at?: string; // Timestamp for delta sync
 }
@@ -190,7 +188,6 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
       sections: [],
       chords: data.chords,
       lyrics: data.lyrics,
-      isPublished: data.is_published !== false,
       is_active: data.is_active !== false,
       updated_at: data.updated_at
     });
