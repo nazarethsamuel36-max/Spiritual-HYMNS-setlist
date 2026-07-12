@@ -50,17 +50,49 @@ export function ReaderHeader({
   , [song.id]) || [];
 
   const handlePublishToggle = async () => {
+    console.log('\n═══════════════════════════════');
+    console.log('HIDE/UNHIDE BUTTON AUDIT');
+    console.log('═══════════════════════════════');
+    console.log('Hide button clicked');
+    console.log('handlePublishToggle() entered');
+    console.log(`Updating Song ID: ${song.id}`);
+    console.log(`Song Title: ${song.title}`);
+
     const newIsActive = !isHidden;
+    console.log(`New is_active: ${newIsActive}`);
     setIsHidden(!newIsActive);
     setIsPublishLoading(true);
 
     try {
-      const { error } = await supabase
+      console.log('Executing Supabase UPDATE...');
+      const { error, data } = await supabase
         .from('songs')
         .update({ is_active: newIsActive })
-        .eq('id', song.id);
+        .eq('id', song.id)
+        .select();
+
+      console.log('Supabase Response:');
+      console.log(`Success: ${error === null}`);
+      console.log(`Error: ${error ? error.message : 'None'}`);
+      console.log(`Data returned:`, data);
 
       if (error) throw error;
+
+      // Read the row back to verify changes
+      console.log('Reading row back from Supabase...');
+      const { data: updatedRow } = await supabase
+        .from('songs')
+        .select('id, is_active, updated_at')
+        .eq('id', song.id)
+        .single();
+
+      if (updatedRow) {
+        console.log('Row after update:');
+        console.log(`is_active: ${updatedRow.is_active}`);
+        console.log(`updated_at: ${updatedRow.updated_at}`);
+      }
+
+      console.log('═══════════════════════════════');
     } catch (err) {
       console.error('Failed to update:', err);
       setIsHidden(!newIsActive);
