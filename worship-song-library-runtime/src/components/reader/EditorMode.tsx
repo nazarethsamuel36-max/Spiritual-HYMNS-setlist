@@ -284,7 +284,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
         // Save to Supabase for library songs
         const { error } = await supabase
           .from('songs')
-          .update(updates)
+          .update({
+            ...updates,
+            updated_at: new Date().toISOString()
+          })
           .eq('id', currentSongId);
 
         if (error) {
