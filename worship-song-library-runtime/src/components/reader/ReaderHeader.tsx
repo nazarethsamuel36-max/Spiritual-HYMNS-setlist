@@ -452,7 +452,7 @@ export function ReaderHeader({
                   {isPublishLoading ? 'Saving...' : song.is_active ? 'Visible' : 'Hidden'}
                 </span>
                 <VisibilitySwitch
-                  checked={song.is_active}
+                  checked={song.is_active !== false}
                   onChange={handlePublishToggle}
                   disabled={isPublishLoading}
                 />
