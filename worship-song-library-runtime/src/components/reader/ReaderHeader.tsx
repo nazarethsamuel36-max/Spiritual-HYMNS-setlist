@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../../db/Database';
 import { SetlistService } from '../../services/SetlistService';
@@ -32,13 +32,7 @@ export function ReaderHeader({
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const fontSize = useWorkflowStore((s) => s.fontSize);
   const setFontSize = useWorkflowStore((s) => s.setFontSize);
-  const [isHidden, setIsHidden] = useState(!song.is_active);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
-
-  // Sync local state with song's is_active when song changes
-  useEffect(() => {
-    setIsHidden(!song.is_active);
-  }, [song.is_active]);
 
   // Dropdown states
   const [isMoreOpen, setIsMoreOpen] = useState(false);
@@ -57,10 +51,10 @@ export function ReaderHeader({
     console.log('handlePublishToggle() entered');
     console.log(`Updating Song ID: ${song.id}`);
     console.log(`Song Title: ${song.title}`);
+    console.log(`Current is_active: ${song.is_active}`);
 
-    const newIsActive = !isHidden;
+    const newIsActive = !song.is_active;
     console.log(`New is_active: ${newIsActive}`);
-    setIsHidden(!newIsActive);
     setIsPublishLoading(true);
 
     try {
@@ -95,7 +89,6 @@ export function ReaderHeader({
       console.log('═══════════════════════════════');
     } catch (err) {
       console.error('Failed to update:', err);
-      setIsHidden(!newIsActive);
       alert('Failed to update song: ' + (err as Error).message);
     } finally {
       setIsPublishLoading(false);
@@ -449,12 +442,12 @@ export function ReaderHeader({
                 onClick={handlePublishToggle}
                 disabled={isPublishLoading}
                 className={`h-8 px-3 flex items-center justify-center rounded-lg border text-[10px] font-semibold transition-colors disabled:opacity-50 whitespace-nowrap ${
-                  isHidden
+                  !song.is_active
                     ? 'bg-white border-slate-300 text-slate-700 hover:bg-slate-50'
                     : 'bg-emerald-500 border-emerald-500 text-white hover:bg-emerald-600'
                 }`}
               >
-                {isPublishLoading ? 'Saving...' : isHidden ? 'Unhide' : 'Hide'}
+                {isPublishLoading ? 'Saving...' : !song.is_active ? 'Unhide' : 'Hide'}
               </button>
             )}
           </div>
