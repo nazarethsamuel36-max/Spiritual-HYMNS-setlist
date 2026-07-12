@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { wakeUpSync } from './services/DataService';
+import { SearchEngine } from './utils/SearchEngine';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { ReaderItemView } from './components/reader/ReaderItemView';
@@ -59,7 +60,15 @@ function App() {
       try {
         // Only sync if we are genuinely online
         if (navigator.onLine) {
-          await wakeUpSync('app-start');
+          const syncResult = await wakeUpSync('app-start');
+          console.log('App startup sync result:', syncResult);
+
+          // Update search engine if songs were changed
+          if (syncResult.success && syncResult.changedSongs > 0) {
+            const { getSongs } = await import('./services/DataService');
+            const songs = await getSongs();
+            await SearchEngine.indexSongs(songs);
+          }
         }
       } catch (e) {
         console.warn("Wake up sync skipped/failed:", e);

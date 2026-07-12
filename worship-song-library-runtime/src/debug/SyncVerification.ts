@@ -249,7 +249,8 @@ if (import.meta.env.DEV) {
     });
 
     console.log('\nRunning wakeUpSync()...');
-    await wakeUpSync();
+    const syncResult = await wakeUpSync();
+    console.log('Sync Result:', syncResult);
 
     // Read IndexedDB again
     console.log('Reading IndexedDB after wakeUpSync()...');
@@ -634,7 +635,8 @@ let wakeUpSyncState: {
 
       // Execute wake-up sync
       console.log('\nExecuting wakeUpSync()...');
-      await wakeUpSync();
+      const syncResult = await wakeUpSync();
+      console.log('Sync Result:', syncResult);
       const afterSyncTime = Date.now();
       console.log(`Downloaded changes: ${formatTime(new Date(afterSyncTime))}`);
 
@@ -939,7 +941,8 @@ let wakeUpSyncState: {
     });
 
     console.log('\nRunning wakeUpSync()...');
-    await wakeUpSync();
+    const syncResult = await wakeUpSync();
+    console.log('Sync Result:', syncResult);
 
     // Read IndexedDB again
     console.log('Reading IndexedDB after wakeUpSync()...');

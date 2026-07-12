@@ -2,6 +2,7 @@ import { supabase } from '../lib/supabaseClient';
 import { db } from '../db/Database';
 import type { SongDetail } from '../db/Database';
 import { wakeUpSync } from './DataService';
+import { SearchEngine } from '../utils/SearchEngine';
 
 export class RealtimeService {
   private static channel: any = null;
@@ -38,7 +39,14 @@ export class RealtimeService {
     }
 
     // Run the lightweight delta sync instead of downloading everything
-    await wakeUpSync('online-event');
+    const syncResult = await wakeUpSync('online-event');
+    console.log('Sync result:', syncResult);
+
+    // Update search engine if songs were changed
+    if (syncResult.success && syncResult.changedSongs > 0) {
+      const changedSongs = await db.songIndex.toArray();
+      await SearchEngine.indexSongs(changedSongs);
+    }
   }
 
   /**
