@@ -116,43 +116,42 @@ export function SongView() {
   }, [activeIdx, prevActiveIdx]);
 
   // 4. The Bulletproof Fetch Logic
-  useEffect(() => {
-    if (!songId) { setLoading(false); return; }
+  const refreshSong = useCallback(async () => {
+    if (!songId) return;
     setLoading(true);
     setError(null);
 
-    const fetchSong = async () => {
-      try {
-        let song;
+    try {
+      let song;
 
-        if (source === 'personal') {
-          // Fetch from personalSongs table in IndexedDB
-          song = await db.personalSongs.get(songId);
-        } else {
-          // This checks db.songs first. If empty, falls back to Supabase.
-          song = await getSongById(songId);
-        }
-
-        if (!song) {
-          throw new Error('Song not found');
-        }
-
-        const songDetail = {
-          ...song,
-          sections: parseLyricsToSections(song.lyrics || ''),
-          chords: song.chords || '',
-          lyrics: song.lyrics || ''
-        };
-        console.log(`[SongView] Song #${songDetail.id} loaded — chords.length=${songDetail.chords.length} lyrics.length=${songDetail.lyrics.length} sections=${songDetail.sections.length}`);
-        setSong(songDetail);
-      } catch (err: any) {
-        setError(err.message || 'Failed to load song');
-      } finally {
-        setLoading(false);
+      if (source === 'personal') {
+        song = await db.personalSongs.get(songId);
+      } else {
+        song = await getSongById(songId);
       }
-    };
-    fetchSong();
-  }, [songId]);
+
+      if (!song) {
+        throw new Error('Song not found');
+      }
+
+      const songDetail = {
+        ...song,
+        sections: parseLyricsToSections(song.lyrics || ''),
+        chords: song.chords || '',
+        lyrics: song.lyrics || ''
+      };
+      console.log(`[SongView] Song #${songDetail.id} refreshed — chords.length=${songDetail.chords.length} lyrics.length=${songDetail.lyrics.length} sections=${songDetail.sections.length}`);
+      setSong(songDetail);
+    } catch (err: any) {
+      setError(err.message || 'Failed to load song');
+    } finally {
+      setLoading(false);
+    }
+  }, [songId, source]);
+
+  useEffect(() => {
+    refreshSong();
+  }, [songId, refreshSong]);
 
   // 6. Swipe Navigation Logic
   const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
@@ -277,6 +276,7 @@ export function SongView() {
       <ReaderHeader
         song={song} transpose={displayTranspose} mode={readerMode}
         onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
+        onRefreshSong={refreshSong}
       />
 
       {/* Page Indicator Dots */}

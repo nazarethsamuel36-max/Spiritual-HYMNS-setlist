@@ -7,6 +7,7 @@ import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
 import { supabase } from '../../lib/supabaseClient';
+import { VisibilitySwitch } from '../shared/VisibilitySwitch';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -15,6 +16,7 @@ interface ReaderHeaderProps {
   onTransposeUp: () => void;
   onTransposeDown: () => void;
   onModeChange: (mode: ReaderMode) => void;
+  onRefreshSong?: () => void;
 }
 
 export function ReaderHeader({
@@ -23,7 +25,8 @@ export function ReaderHeader({
   mode,
   onTransposeUp,
   onTransposeDown,
-  onModeChange
+  onModeChange,
+  onRefreshSong
 }: ReaderHeaderProps) {
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
@@ -84,6 +87,12 @@ export function ReaderHeader({
         console.log('Row after update:');
         console.log(`is_active: ${updatedRow.is_active}`);
         console.log(`updated_at: ${updatedRow.updated_at}`);
+      }
+
+      // Refresh song data to update UI
+      if (onRefreshSong) {
+        console.log('Refreshing song data...');
+        onRefreshSong();
       }
 
       console.log('═══════════════════════════════');
@@ -438,17 +447,16 @@ export function ReaderHeader({
             </div>
 
             {isAdminAuthenticated && (
-              <button
-                onClick={handlePublishToggle}
-                disabled={isPublishLoading}
-                className={`h-8 px-3 flex items-center justify-center rounded-lg border text-[10px] font-semibold transition-colors disabled:opacity-50 whitespace-nowrap ${
-                  !song.is_active
-                    ? 'bg-white border-slate-300 text-slate-700 hover:bg-slate-50'
-                    : 'bg-emerald-500 border-emerald-500 text-white hover:bg-emerald-600'
-                }`}
-              >
-                {isPublishLoading ? 'Saving...' : !song.is_active ? 'Unhide' : 'Hide'}
-              </button>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-medium text-slate-600">
+                  {isPublishLoading ? 'Saving...' : song.is_active ? 'Visible' : 'Hidden'}
+                </span>
+                <VisibilitySwitch
+                  checked={song.is_active}
+                  onChange={handlePublishToggle}
+                  disabled={isPublishLoading}
+                />
+              </div>
             )}
           </div>
         </div>

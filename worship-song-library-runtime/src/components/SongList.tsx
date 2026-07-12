@@ -8,6 +8,7 @@ import { SearchBar } from './shared/SearchBar';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
+import { VisibilitySwitch } from './shared/VisibilitySwitch';
 import { formatSongTitle, normalizeImportedText } from '../utils/SongFormatter';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
@@ -252,15 +253,15 @@ export function SongList() {
                 </label>
 
                 <label className="text-sm font-medium text-slate-700">
-                  <div className="mb-1">Publish</div>
+                  <div className="mb-1">Visibility</div>
                   <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => setNewSongIsActive((v) => !v)}
-                      className={`px-3 py-1 rounded-md border ${newSongIsActive ? 'bg-emerald-500 text-white' : 'bg-white'}`}
-                    >
-                      {newSongIsActive ? 'Published' : 'Hidden'}
-                    </button>
-                    <span className="text-xs text-slate-500">Toggle visibility in library</span>
+                    <VisibilitySwitch
+                      checked={newSongIsActive}
+                      onChange={setNewSongIsActive}
+                    />
+                    <span className="text-xs text-slate-500">
+                      {newSongIsActive ? 'Visible in library' : 'Hidden from library'}
+                    </span>
                   </div>
                 </label>
               </div>
