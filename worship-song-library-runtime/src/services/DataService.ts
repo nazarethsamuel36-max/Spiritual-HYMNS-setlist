@@ -292,7 +292,18 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       return result;
     }
 
-    // 8. Commit checkpoint (only after successful verification)
+    // 8. Update search engine if songs were changed
+    if (result.success && result.changedSongs > 0) {
+      try {
+        const songs = await getSongs();
+        await SearchEngine.indexSongs(songs);
+        console.log('[DataService] SearchEngine indexed', songs.length, 'songs');
+      } catch (error) {
+        result.errors.push(`SearchEngine indexing failed: ${error}`);
+      }
+    }
+
+    // 9. Commit checkpoint (only after successful verification)
     await db.meta.put({
       id: LAST_SYNC_TIME_KEY,
       value: Date.now()

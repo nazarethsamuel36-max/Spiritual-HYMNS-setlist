@@ -276,3 +276,8 @@ export async function fullSystemReset() {
   await db.delete();
   window.location.reload();
 }
+
+export async function needsInitialDownload(): Promise<boolean> {
+  const count = await db.songIndex.count();
+  return count === 0;
+}

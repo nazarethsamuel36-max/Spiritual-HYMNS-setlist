@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { wakeUpSync } from './services/DataService';
-import { SearchEngine } from './utils/SearchEngine';
+import { AppInitializer } from './services/AppInitializer';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
 import { ReaderItemView } from './components/reader/ReaderItemView';
@@ -15,7 +14,6 @@ import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
-import { RealtimeService } from './services/RealtimeService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db } from './db/Database';
@@ -47,53 +45,29 @@ function App() {
   // 2. ALL USE_EFFECTS MUST BE HERE
   // ==========================================
   
-  useEffect(() => {
-    async function checkDatabase() {
-      const count = await db.songIndex.count();
-      setShowGatekeeper(count === 0);
-    }
-    checkDatabase();
-  }, []);
 
   useEffect(() => {
-    const initializeAppData = async () => {
-      try {
-        // Only sync if we are genuinely online
-        if (navigator.onLine) {
-          const syncResult = await wakeUpSync('app-start');
-          console.log('App startup sync result:', syncResult);
-
-          // Update search engine if songs were changed
-          if (syncResult.success && syncResult.changedSongs > 0) {
-            const { getSongs } = await import('./services/DataService');
-            const songs = await getSongs();
-            await SearchEngine.indexSongs(songs);
-          }
-        }
-      } catch (e) {
-        console.warn("Wake up sync skipped/failed:", e);
-      }
-
-      try {
-        // Only start websockets if online
-        if (navigator.onLine) {
-          RealtimeService.initialize();
-        }
-      } catch (e) {
-        console.warn("Realtime init skipped/failed:", e);
+    const initializeApp = async () => {
+      const result = await AppInitializer.initialize();
+      
+      // Set UI state based on database check
+      if (result.needsInitialDownload) {
+        setShowGatekeeper(true);
       }
     };
 
-    void initializeAppData();
+    void initializeApp();
 
+    // Keep existing event forwarding unchanged
     const handleSongUpdate = (event: Event) => {
       const customEvent = event as CustomEvent;
       window.dispatchEvent(new CustomEvent('app-data-changed', { detail: customEvent.detail }));
     };
     window.addEventListener('song-updated', handleSongUpdate);
+  
     return () => {
       window.removeEventListener('song-updated', handleSongUpdate);
-      RealtimeService.destroy();
+      AppInitializer.destroy();
     };
   }, []);
 
