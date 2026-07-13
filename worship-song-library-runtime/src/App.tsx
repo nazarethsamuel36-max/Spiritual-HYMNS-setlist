@@ -50,10 +50,21 @@ function App() {
     const initializeApp = async () => {
       const result = await AppInitializer.initialize();
       
+      console.log('App.tsx received InitializationResult');
+      console.log('Result status:', result.status);
+      console.log('Needs initial download:', result.needsInitialDownload);
+      console.log('Errors:', result.errors);
+      console.log('Duration:', result.duration);
+      
       // Set UI state based on database check
+      console.log('Setting showGatekeeper:');
+      console.log(result.needsInitialDownload ? 'true' : 'false');
       if (result.needsInitialDownload) {
         setShowGatekeeper(true);
+      } else {
+        setShowGatekeeper(false);
       }
+      console.log('showGatekeeper updated');
     };
 
     void initializeApp();

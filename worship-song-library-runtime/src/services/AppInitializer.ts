@@ -26,55 +26,91 @@ export class AppInitializer {
       };
     }
 
+    console.log('══════════════════════════════════');
+    console.log('APP INITIALIZATION');
+    console.log('══════════════════════════════════');
+
     AppInitializer.isRunning = true;
     const startTime = Date.now();
     const errors: string[] = [];
     let needsDownload = false;
 
-    console.log('[AppInitializer] Starting application...');
-    console.log('[AppInitializer] ════════════════════════════════');
-
     // Stage 1: Check IndexedDB state
-    console.log('[AppInitializer] Stage 1: Database');
+    console.log('Stage 1');
+    console.log('Database Check');
+    console.log('START');
+    const stage1Start = Date.now();
     try {
-      console.log('[Database] Checking...');
       needsDownload = await needsInitialDownload();
-      console.log('[Database]', needsDownload ? '✗ Empty' : '✓ Ready');
+      const stage1Duration = Date.now() - stage1Start;
+      console.log('Stage 1');
+      console.log('Database Check');
+      console.log('END');
+      console.log(`Duration: ${stage1Duration} ms`);
+      console.log(needsDownload ? 'Database empty: true' : 'Database empty: false');
     } catch (error) {
+      const stage1Duration = Date.now() - stage1Start;
+      console.log('Stage 1');
+      console.log('Database Check');
+      console.log('END');
+      console.log(`Duration: ${stage1Duration} ms`);
       const errorMsg = `Database check failed: ${error}`;
-      console.error('[Database]', `✗ ${errorMsg}`);
+      console.error('Database helper error:', error);
       errors.push(errorMsg);
     }
 
     // Stage 2: Run Wake-Up Sync
     // Note: wakeUpSync decides internally whether it can sync (checks navigator.onLine)
     // Note: wakeUpSync handles SearchEngine indexing internally if songs changed
-    console.log('[AppInitializer] Stage 2: WakeUpSync');
+    console.log('Stage 2');
+    console.log('Wake-Up Sync');
+    console.log('START');
+    const stage2Start = Date.now();
     try {
-      console.log('[WakeUpSync] Starting...');
       const syncResult = await wakeUpSync('app-start');
+      const stage2Duration = Date.now() - stage2Start;
+      console.log('Stage 2');
+      console.log('Wake-Up Sync');
+      console.log('END');
+      console.log(`Duration: ${stage2Duration} ms`);
       if (syncResult.success) {
-        console.log('[WakeUpSync]', `✓ Completed (${syncResult.changedSongs} changed)`);
+        console.log(`Changed songs: ${syncResult.changedSongs}`);
       } else {
-        console.log('[WakeUpSync]', `✗ Failed: ${syncResult.errors.join(', ')}`);
+        console.log(`Wake-Up Sync failed: ${syncResult.errors.join(', ')}`);
         errors.push(`WakeUpSync failed: ${syncResult.errors.join(', ')}`);
       }
     } catch (error) {
+      const stage2Duration = Date.now() - stage2Start;
+      console.log('Stage 2');
+      console.log('Wake-Up Sync');
+      console.log('END');
+      console.log(`Duration: ${stage2Duration} ms`);
       const errorMsg = `WakeUpSync failed: ${error}`;
-      console.error('[WakeUpSync]', `✗ ${errorMsg}`);
+      console.error('Wake-Up Sync error:', error);
       errors.push(errorMsg);
     }
 
     // Stage 3: Initialize Realtime Service
     // Note: RealtimeService.initialize() decides internally whether connection is possible
-    console.log('[AppInitializer] Stage 3: Realtime');
+    console.log('Stage 3');
+    console.log('Realtime initialization');
+    console.log('START');
+    const stage3Start = Date.now();
     try {
-      console.log('[Realtime] Connecting...');
       RealtimeService.initialize();
-      console.log('[Realtime]', '✓ Connected');
+      const stage3Duration = Date.now() - stage3Start;
+      console.log('Stage 3');
+      console.log('Realtime initialization');
+      console.log('END');
+      console.log(`Duration: ${stage3Duration} ms`);
     } catch (error) {
+      const stage3Duration = Date.now() - stage3Start;
+      console.log('Stage 3');
+      console.log('Realtime initialization');
+      console.log('END');
+      console.log(`Duration: ${stage3Duration} ms`);
       const errorMsg = `Realtime init failed: ${error}`;
-      console.error('[Realtime]', `✗ ${errorMsg}`);
+      console.error('Realtime initialization error:', error);
       errors.push(errorMsg);
     }
 
@@ -85,18 +121,24 @@ export class AppInitializer {
     let status: StartupStatus;
     if (errors.length === 0) {
       status = 'READY';
-      console.log('[AppInitializer] ✓ Application ready');
+      console.log('══════════════════════════');
+      console.log('APPLICATION READY');
+      console.log('══════════════════════════');
     } else {
       status = 'READY_WITH_WARNINGS';
-      console.log('[AppInitializer] ⚠ Application ready with warnings');
+      console.log('══════════════════════════');
+      console.log('APPLICATION READY WITH WARNINGS');
+      console.log('══════════════════════════');
     }
 
-    console.log('[AppInitializer] ════════════════════════════════');
-    console.log(`[AppInitializer] Duration: ${duration}ms`);
-    console.log(`[AppInitializer] Status: ${status}`);
+    console.log(`Total Duration: ${duration}ms`);
+    console.log(`Status: ${status}`);
     if (errors.length > 0) {
-      console.log(`[AppInitializer] Warnings: ${errors.length}`);
+      console.log(`Warnings: ${errors.length}`);
+      console.log('Errors:', errors);
     }
+
+    console.log('AppInitializer returning InitializationResult');
 
     return {
       status,

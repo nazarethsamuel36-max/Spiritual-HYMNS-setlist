@@ -278,6 +278,16 @@ export async function fullSystemReset() {
 }
 
 export async function needsInitialDownload(): Promise<boolean> {
-  const count = await db.songIndex.count();
-  return count === 0;
+  console.log('Database helper START');
+  try {
+    const count = await db.songIndex.count();
+    console.log('Database helper END');
+    console.log('Song count:', count);
+    console.log('Database empty:', count === 0 ? 'true' : 'false');
+    return count === 0;
+  } catch (error) {
+    console.log('Database helper END');
+    console.error('Database helper error:', error);
+    throw error;
+  }
 }

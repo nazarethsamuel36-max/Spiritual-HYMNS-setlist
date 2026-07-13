@@ -165,10 +165,15 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
     errors: []
   };
 
+  console.log('Wake-Up Sync START');
+
   try {
     // 1. Check connectivity
+    console.log('Online:', navigator.onLine);
     if (!navigator.onLine) {
       result.errors.push('Offline - skipping sync');
+      console.log('Wake-Up Sync END');
+      console.log('Reason: Offline');
       return result;
     }
 
@@ -176,6 +181,8 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
     const syncMeta = await db.meta.get(LAST_SYNC_TIME_KEY);
     if (!syncMeta) {
       result.errors.push('No lastSyncTime found - initial sync required');
+      console.log('Wake-Up Sync END');
+      console.log('Reason: No lastSyncTime found');
       return result;
     }
 
@@ -183,14 +190,19 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
     const lastSyncDate = new Date(lastSyncTime).toISOString();
 
     // 3. Query Supabase for changed records
+    console.log('Query starting');
     const { data: changedIds, error } = await supabase
       .from('songs')
       .select('id')
       .gt('updated_at', lastSyncDate)
       .eq('is_active', true);
 
+    console.log('Query completed');
+
     if (error) {
       result.errors.push(`Supabase query failed: ${error.message}`);
+      console.log('Wake-Up Sync END');
+      console.log('Error:', error.message);
       return result;
     }
 
@@ -198,10 +210,13 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       result.success = true;
       result.verificationPassed = true;
       result.duration = Date.now() - startTime;
+      console.log('Changed songs: 0');
+      console.log('Wake-Up Sync END');
       return result;
     }
 
     result.changedSongs = changedIds.length;
+    console.log('Changed songs:', changedIds.length);
 
     // 4. Fetch full song data for changed IDs
     const ids = changedIds.map((item: any) => item.id);
@@ -289,6 +304,8 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
 
     if (!allVerified) {
       result.errors.push('Verification failed - aborting sync');
+      console.log('Wake-Up Sync END');
+      console.log('Reason: Verification failed');
       return result;
     }
 
@@ -311,11 +328,16 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
 
     result.success = true;
     result.duration = Date.now() - startTime;
+    console.log('Wake-Up Sync END');
+    console.log(`Duration: ${result.duration} ms`);
     return result;
 
   } catch (error) {
     result.errors.push(error instanceof Error ? error.message : String(error));
     result.duration = Date.now() - startTime;
+    console.log('Wake-Up Sync END');
+    console.log('Error:', error);
+    console.log(`Duration: ${result.duration} ms`);
     return result;
   }
 }
