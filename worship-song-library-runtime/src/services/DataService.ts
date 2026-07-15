@@ -7,6 +7,18 @@ const LAST_SYNC_TIME_KEY = 'last_sync_time';
 
 type SyncTrigger = 'app-start' | 'online-event' | 'manual';
 
+/**
+ * Manually update the sync timestamp to current time
+ * Use this to force wakeUpSync to detect all recent changes
+ */
+export async function updateSyncTimestamp(): Promise<void> {
+  await db.meta.put({
+    id: LAST_SYNC_TIME_KEY,
+    value: Date.now()
+  });
+  console.log('✅ Sync timestamp updated to current time');
+}
+
 interface SyncResult {
   success: boolean;
   changedSongs: number;
@@ -106,7 +118,6 @@ export async function batchDownloadSongs(
         originalKey: song.original_key,
         hashtags: [],
         searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-        romanTitle: song.title
       }));
 
       allSongDetails.push(...batchDetails);
@@ -264,7 +275,6 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       originalKey: song.original_key,
       hashtags: [],
       searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-      romanTitle: song.title
     }));
 
     // 6. Write to IndexedDB (atomic transaction)
@@ -383,7 +393,6 @@ export async function getSongs(): Promise<SongIndex[]> {
     originalKey: song.original_key,
     hashtags: [],
     searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-    romanTitle: song.title
   }));
 }
 

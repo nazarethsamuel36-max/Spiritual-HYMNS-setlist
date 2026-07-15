@@ -3,9 +3,16 @@ import { createRoot } from 'react-dom/client'
 import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
+import { updateSyncTimestamp } from './services/DataService'
 
 // Load verification tools in both dev and production
 import('./debug/SyncVerification');
+
+// Expose debug functions to window for console access
+if (import.meta.env.DEV) {
+  (window as any).updateSyncTimestamp = updateSyncTimestamp;
+  console.log('🔧 Debug tools available: window.updateSyncTimestamp()');
+}
 
 // Unregister service worker ONLY during local development to make hot reloading easier
 if (import.meta.env.DEV && 'serviceWorker' in navigator) {

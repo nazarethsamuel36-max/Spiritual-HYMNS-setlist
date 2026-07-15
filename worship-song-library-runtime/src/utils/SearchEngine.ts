@@ -1,5 +1,6 @@
 import MiniSearch from 'minisearch';
 import type { SongIndex } from '../db/Database';
+import { buildSearchDocuments, type SearchDocument } from './SearchDocumentBuilder';
 
 // Worship-word synonym groups (bidirectional).
 // Each group contains the canonical form first, followed by common variants.
@@ -28,6 +29,15 @@ const WORSHIP_SYNONYM_GROUPS: string[][] = [
 ];
 
 /**
+ * Normalize a stored field for phrase comparison.
+ * Strips non-alphanumeric chars, collapses whitespace, lowercases.
+ */
+function normalizeForPhrase(text: string | undefined | null): string {
+  if (!text) return '';
+  return text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+/**
  * Normalize a user search query:
  * 1. Lowercase
  * 2. Map any worship variant to canonical form
@@ -45,15 +55,6 @@ function normalizeSearchQuery(query: string): string {
     return token;
   });
   return normalized.join(' ');
-}
-
-/**
- * Normalize a stored field for phrase comparison.
- * Strips non-alphanumeric chars, collapses whitespace, lowercases.
- */
-function normalizeForPhrase(text: string | undefined | null): string {
-  if (!text) return '';
-  return text.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
 }
 
 /**
@@ -98,82 +99,108 @@ function expandQueryPhrases(query: string): string[] {
 }
 
 /**
- * Compute phrase-aware ranking bonus for a song against the query.
+ * Compute ranking score according to Search Engine 1.0 Ranking Contract:
  * 
- * Ranking tiers (bonuses are additive on top of MiniSearch base score):
- *   Tier 1: romanTitle starts with query phrase     → +10000
- *   Tier 2: romanTitle contains full query phrase    → +5000
- *   Tier 3: searchTokens starts with query phrase    → +3000
- *   Tier 4: searchTokens contains full query phrase  → +1000
- *   Tier 5: Individual token matches (MiniSearch)    → base score only
+ * Primary Rank: Songs whose title contains a word that starts with the user's query
+ * Secondary Rank: Songs where the query appears elsewhere in the title
+ * 
+ * Architectural rule: Treat original script and transliteration as the same title for ranking.
+ * Primary Rank is absolute - all songs with word-starting matches must be shown before any Secondary Rank songs.
+ * 
+ * Ranking order (absolute score ranges that cannot be overridden):
+ * 1. Title starts with query in either script: 10000000+ (Tier 1 - NO LIMIT)
+ * 2. Word starts with query inside title in either script: 1000000+ (Tier 2 - NO LIMIT)
+ * 3. Word appears later in title in either script (substring): 100000+ (Tier 3 - Secondary Rank)
+ * 4. Everything else (MiniSearch base score): <100000 (lowest priority)
  */
-function computePhraseBonus(
-  song: SongIndex,
+function computeRankingScore(
+  searchDoc: SearchDocument,
   queryPhrases: string[],
-  normalizedQuery: string
+  normalizedQuery: string,
+  miniSearchScore: number
 ): number {
-  const romanTitle = normalizeForPhrase(song.romanTitle);
-  const searchTokens = normalizeForPhrase(song.searchTokens);
+  const title = normalizeForPhrase(searchDoc.title); // Original script (Devanagari)
+  const transliteratedTitle = normalizeForPhrase(searchDoc.transliteratedTitle); // Transliterated title
   
-  let bestBonus = 0;
+  const queryWords = normalizedQuery.split(/\s+/);
+  const firstQueryWord = queryWords[0];
   
-  for (const phrase of queryPhrases) {
-    // Tier 1: romanTitle starts with query phrase
-    if (romanTitle && romanTitle.startsWith(phrase)) {
-      bestBonus = Math.max(bestBonus, 10000);
-      break; // Can't do better than this
-    }
-    
-    // Tier 2: romanTitle contains full query phrase
-    if (romanTitle && romanTitle.includes(phrase)) {
-      bestBonus = Math.max(bestBonus, 5000);
-    }
-    
-    // Tier 3: searchTokens starts with query phrase
-    if (searchTokens && searchTokens.startsWith(phrase)) {
-      bestBonus = Math.max(bestBonus, 3000);
-    }
-    
-    // Tier 4: searchTokens contains full query phrase
-    if (searchTokens && searchTokens.includes(phrase)) {
-      bestBonus = Math.max(bestBonus, 1000);
-    }
+  // Check both original script and transliteration for prefix matching
+  const titleWords = title.split(/\s+/);
+  const transliteratedTitleWords = transliteratedTitle.split(/\s+/);
+  
+  // DEBUG LOGGING
+  console.log(`[RANKING DEBUG] Song ID: ${searchDoc.id}, Title: "${searchDoc.title}"`);
+  console.log(`[RANKING DEBUG] Transliterated Title: "${searchDoc.transliteratedTitle}"`);
+  console.log(`[RANKING DEBUG] Normalized Title: "${title}"`);
+  console.log(`[RANKING DEBUG] Normalized Transliterated: "${transliteratedTitle}"`);
+  console.log(`[RANKING DEBUG] First Query Word: "${firstQueryWord}"`);
+  console.log(`[RANKING DEBUG] Title Words:`, titleWords);
+  console.log(`[RANKING DEBUG] Transliterated Words:`, transliteratedTitleWords);
+  
+  // Tier 1: Title starts with the query phrase (or any of its synonym permutations)
+  const titleStartsPhrase = queryPhrases.some(phrase => 
+    title.startsWith(phrase) || transliteratedTitle.startsWith(phrase)
+  );
+  
+  if (titleStartsPhrase) {
+    console.log(`[RANKING DEBUG] TIER 1 MATCH (Title starts with query): Score = 10000000 + ${miniSearchScore}`);
+    return 10000000 + miniSearchScore;
   }
   
-  // If multi-word query but no phrase match found, also check the canonical form
-  if (bestBonus === 0 && normalizedQuery.includes(' ')) {
-    if (romanTitle && romanTitle.startsWith(normalizedQuery)) {
-      bestBonus = 10000;
-    } else if (romanTitle && romanTitle.includes(normalizedQuery)) {
-      bestBonus = 5000;
-    } else if (searchTokens && searchTokens.startsWith(normalizedQuery)) {
-      bestBonus = 3000;
-    } else if (searchTokens && searchTokens.includes(normalizedQuery)) {
-      bestBonus = 1000;
-    }
+  // Tier 2: A word inside the title starts with the query phrase at a word boundary
+  const wordStartsPhrase = queryPhrases.some(phrase => 
+    title.startsWith(phrase) || 
+    title.includes(' ' + phrase) || 
+    transliteratedTitle.startsWith(phrase) || 
+    transliteratedTitle.includes(' ' + phrase)
+  );
+  
+  if (wordStartsPhrase) {
+    console.log(`[RANKING DEBUG] TIER 2 MATCH (Word starts with query): Score = 1000000 + ${miniSearchScore}`);
+    return 1000000 + miniSearchScore;
   }
   
-  return bestBonus;
+  // Tier 3: Query appears as a substring inside the title (contains but not starting at a word boundary)
+  const substringMatch = queryPhrases.some(phrase => 
+    title.includes(phrase) || transliteratedTitle.includes(phrase)
+  );
+  
+  if (substringMatch) {
+    console.log(`[RANKING DEBUG] TIER 3 MATCH (Substring match): Score = 100000 + ${miniSearchScore}`);
+    return 100000 + miniSearchScore;
+  }
+  
+  // Everything else (pure MiniSearch score)
+  console.log(`[RANKING DEBUG] MINISEARCH ONLY: Score = ${miniSearchScore}`);
+  return miniSearchScore;
 }
 
+
 export class SearchEngine {
-  private static miniSearch = new MiniSearch<SongIndex>({
-    fields: ['title', 'romanTitle', 'artist', 'songNumber', 'searchTokens'],
-    storeFields: ['id', 'title', 'artist', 'songNumber', 'language', 'romanTitle'],
+  private static miniSearch = new MiniSearch<SearchDocument>({
+    fields: ['transliteratedTitle', 'artistSearch', 'songNumber'],
+    storeFields: ['id', 'title', 'artist', 'songNumber', 'language', 'transliteratedTitle'],
     searchOptions: {
-      boost: { title: 3, romanTitle: 3, songNumber: 5, artist: 1.2 },
+      boost: { transliteratedTitle: 3, songNumber: 5, artistSearch: 1.2 },
       fuzzy: 0.2,
       prefix: true
     }
   });
 
   private static isIndexed = false;
+  private static searchDocCache: Map<number, SearchDocument> = new Map();
 
   static async indexSongs(songs: SongIndex[]) {
+    console.log('[SearchEngine] indexSongs: Building SearchDocuments for', songs.length, 'songs');
     this.miniSearch.removeAll();
+    
+    // Build SearchDocuments using SearchDocumentBuilder
+    const searchDocuments = buildSearchDocuments(songs);
+    
     // Deduplicate by ID to prevent MiniSearch duplicate key errors (handle string/number mismatches)
     const seen = new Set<string>();
-    const unique = songs.filter(s => {
+    const unique = searchDocuments.filter(s => {
       const idStr = String(s.id);
       if (seen.has(idStr)) return false;
       seen.add(idStr);
@@ -181,69 +208,133 @@ export class SearchEngine {
     });
     this.miniSearch.addAll(unique);
     this.isIndexed = true;
+    
+    // Cache SearchDocuments for reuse during search (avoid rebuilding on every keystroke)
+    this.searchDocCache = new Map(unique.map(s => [s.id, s]));
+    console.log('[SearchEngine] indexSongs: Cached', this.searchDocCache.size, 'SearchDocuments');
   }
 
   static search(songs: SongIndex[], query: string): (SongIndex & { score: number })[] {
-    if (!query.trim()) return [];
+    return this.searchWithLimit(songs, query, Infinity);
+  }
+
+  static searchWithLimit(songs: SongIndex[], query: string, limit: number = 10): (SongIndex & { score: number })[] {
+    const startTime = performance.now();
+    
+    // === AUDIT LOGGING ===
+    console.log('\n=== SEARCH AUDIT START ===');
+    console.log(`User Query: "${query}"`);
+    console.log(`Songs in scope: ${songs.length}`);
+    console.log(`Limit: ${limit}`);
+    
+    if (!query.trim()) {
+      console.log('=== SEARCH AUDIT END (empty query) ===\n');
+      return [];
+    }
 
     // 1. Numeric Search Bypass (Rule agx004)
-    // If the query is just a number, do a deterministic exact match or prefix match on songNumber
     const numericQuery = query.trim();
     if (/^\d+$/.test(numericQuery)) {
+      console.log(`Numeric Query Detected: "${numericQuery}"`);
+      const numericStart = performance.now();
       const results = songs
         .filter(s => s.songNumber.toString() === numericQuery || s.songNumber.toString().startsWith(numericQuery))
         .map(s => ({ ...s, score: s.songNumber.toString() === numericQuery ? 1000 : 900 }))
         .sort((a, b) => b.score - a.score || a.songNumber - b.songNumber);
+      const numericEnd = performance.now();
       
-      if (results.length > 0) return results;
+      console.log(`Numeric Search Results: ${results.length} songs (took ${(numericEnd - numericStart).toFixed(2)}ms)`);
+      results.forEach(r => {
+        console.log(`  - Song #${r.songNumber} (ID: ${r.id}): "${r.title}" [score: ${r.score}]`);
+      });
+      console.log(`=== SEARCH AUDIT END (numeric) ===\n`);
+      
+      return results.slice(0, limit);
     }
 
     // 2. Apply worship-word normalization before MiniSearch
     const normalizedQuery = normalizeSearchQuery(query);
+    console.log(`Normalized Query: "${normalizedQuery}"`);
 
     // 3. Ensure index is built
-    if (!this.isIndexed && songs.length > 0) {
-      const seen = new Set<string>();
-      const unique = songs.filter(s => {
-        const idStr = String(s.id);
-        if (seen.has(idStr)) return false;
-        seen.add(idStr);
-        return true;
-      });
-      this.miniSearch.addAll(unique);
-      this.isIndexed = true;
+    if (!this.isIndexed) {
+      console.warn('ERROR: Search called before indexSongs was initialized');
+      console.log('=== SEARCH AUDIT END (not indexed) ===\n');
+      return [];
     }
 
-    // 4. MiniSearch for discovery (which songs match at all)
+    console.log(`Cached SearchDocuments: ${this.searchDocCache.size}`);
+
+    // 4. MiniSearch for discovery
+    const miniSearchStart = performance.now();
     const searchResults = this.miniSearch.search(normalizedQuery);
+    const miniSearchEnd = performance.now();
+    
+    console.log(`MiniSearch Results: ${searchResults.length} matches`);
+    console.log(`MiniSearch Duration: ${(miniSearchEnd - miniSearchStart).toFixed(2)}ms`);
     
     // 5. Build phrase variants for re-ranking
     const queryPhrases = expandQueryPhrases(query);
-    const isMultiWord = normalizedQuery.includes(' ');
+    console.log(`Query Phrase Variants: ${queryPhrases.length}`);
+    queryPhrases.slice(0, 5).forEach((p, i) => console.log(`  ${i + 1}. "${p}"`));
+    if (queryPhrases.length > 5) console.log(`  ... and ${queryPhrases.length - 5} more`);
     
-    // 6. Map results, apply phrase-aware re-ranking bonuses
+    // 6. Map results with detailed audit logging
     const validIds = new Set(songs.map(s => s.id));
     const songMap = new Map(songs.map(s => [s.id, s]));
+    const searchDocMap = this.searchDocCache;
     
-    return searchResults
+    console.log('\n=== MATCHED SEARCHDOCUMENTS ===');
+    
+    const rankedResults = searchResults
       .filter(res => validIds.has(res.id as any))
       .map(res => {
         const original = songMap.get(res.id as any);
-        if (!original) return null;
+        const searchDoc = searchDocMap.get(res.id as any);
+        if (!original || !searchDoc) return null;
         
-        // Compute phrase bonus on top of MiniSearch base score
-        const phraseBonus = isMultiWord
-          ? computePhraseBonus(original, queryPhrases, normalizedQuery)
-          : 0;
+        // Compute ranking score
+        const rankingScore = computeRankingScore(searchDoc, queryPhrases, normalizedQuery, res.score);
+        
+        // AUDIT LOGGING: Log which SearchDocument matched
+        console.log(`\nSong #${searchDoc.songNumber} (ID: ${searchDoc.id})`);
+        console.log(`  Title: "${searchDoc.title}"`);
+        console.log(`  Transliterated Title: "${searchDoc.transliteratedTitle}"`);
+        console.log(`  Language: ${searchDoc.language}`);
+        console.log(`  artistSearch: "${searchDoc.artistSearch}"`);
+        console.log(`  MiniSearch Score: ${res.score.toFixed(2)}`);
+        console.log(`  Ranking Score: ${rankingScore.toFixed(2)}`);
+        console.log(`  Matched Terms: ${Object.keys(res.matchTerms || {}).join(', ')}`);
         
         return {
           ...original,
-          ...res,
-          score: res.score + phraseBonus
+          score: rankingScore
         };
       })
       .filter((r): r is NonNullable<typeof r> => r !== null)
       .sort((a, b) => b.score - a.score) as unknown as (SongIndex & { score: number })[];
+
+    // Search Engine 1.0: Separate Primary Rank and Secondary Rank
+    // Primary Rank (score >= 1000000): NO LIMIT - show all songs starting with query word
+    // Secondary Rank (score < 1000000): Apply limit
+    const primaryRankResults = rankedResults.filter(r => r.score >= 1000000);
+    const secondaryRankResults = rankedResults.filter(r => r.score < 1000000);
+    
+    console.log(`\nPrimary Rank Results (NO LIMIT): ${primaryRankResults.length}`);
+    console.log(`Secondary Rank Results (limited to ${limit}): ${Math.min(secondaryRankResults.length, limit)}`);
+    
+    const finalResults = [...primaryRankResults, ...secondaryRankResults.slice(0, limit)];
+
+    console.log('\n=== FINAL RESULTS ===');
+    finalResults.forEach((r, i) => {
+      console.log(`${i + 1}. Song #${r.songNumber} (ID: ${r.id}): "${r.title}" [score: ${r.score.toFixed(2)}]`);
+    });
+    
+    const endTime = performance.now();
+    console.log(`\nTotal Duration: ${(endTime - startTime).toFixed(2)}ms`);
+    console.log(`=== SEARCH AUDIT END ===\n`);
+    
+    return finalResults;
   }
 }
 

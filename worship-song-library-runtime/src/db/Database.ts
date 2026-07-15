@@ -10,7 +10,6 @@ export type SongIndex = {
   originalKey?: string;
   hashtags?: string[];
   searchTokens: string;
-  romanTitle?: string;
   isPersonal?: boolean;
   is_active?: boolean;
 }
@@ -207,7 +206,6 @@ export function normalizeSongIndex(song: SongIndex): SongIndex {
     artist: normalizeImportedText(song.artist),
     originalKey: normalizeImportedText(song.originalKey),
     searchTokens: normalizeImportedText(song.searchTokens),
-    romanTitle: normalizeImportedText(song.romanTitle)
   };
 }
 

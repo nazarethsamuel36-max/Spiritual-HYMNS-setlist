@@ -278,7 +278,6 @@ export function PersonalSongs() {
                   originalKey: song.originalKey,
                   hashtags: song.hashtags,
                   searchTokens: song.title.toLowerCase(),
-                  romanTitle: song.title,
                 }}
                 onSelect={(id) => openSong(id, 'personal')}
                 isActive={song.id === activeSongId}

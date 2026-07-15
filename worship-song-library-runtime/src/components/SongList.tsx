@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import type { SongIndex } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { supabase } from '../lib/supabaseClient';
 import { getSongs } from '../services/DataService';
-import { SearchBar } from './shared/SearchBar';
+import { SearchWithOverlay } from './shared/SearchWithOverlay';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
@@ -42,7 +42,10 @@ function songMatchesLanguageFilter(songLanguage: string | undefined, selectedLan
 }
 
 export function SongList() {
-  const [search, setSearch] = useState('');
+  const renderCount = useRef(0);
+  renderCount.current++;
+  console.log(`[PERF] SongList render #${renderCount.current}`);
+
   const selectedLanguage = useWorkflowStore((s) => s.libraryLanguage);
   const setSelectedLanguage = useWorkflowStore((s) => s.setLibraryLanguage);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
@@ -161,7 +164,6 @@ export function SongList() {
           originalKey: data.original_key,
           hashtags: [],
           searchTokens: data.title.toLowerCase(),
-          romanTitle: data.title
         };
         setAllSongs([...allSongs, newSong]);
         // Open the new song in the editor
@@ -175,7 +177,7 @@ export function SongList() {
     }
   };
 
-  const songs = getVisibleSongs(allSongs, selectedLanguage, search, sortBy);
+  const songs = getVisibleSongs(allSongs, selectedLanguage, sortBy);
 
   useEffect(() => {
     if (isLoading) return;
@@ -308,7 +310,7 @@ export function SongList() {
       )}
 
       {/* Search + Filters — sticky header */}
-      <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
+      <div id="song-list-filters-header" className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
         {/* Language pills */}
         <div className="px-3">
           <LanguageTabs
@@ -319,10 +321,10 @@ export function SongList() {
         </div>
         {/* Search bar — prominent */}
         <div className="px-3 mt-2.5">
-          <SearchBar
-            value={search}
-            onChange={setSearch}
-            placeholder="Search songs, numbers, lyrics..."
+          <SearchWithOverlay
+            songs={allSongs}
+            selectedLanguage={selectedLanguage}
+            onSelectSong={(id) => openSong(id, 'library')}
           />
         </div>
         {/* Sort control */}
@@ -366,7 +368,6 @@ export function SongList() {
 function getVisibleSongs(
   allSongs: SongIndex[] | null,
   selectedLanguage: string,
-  search: string,
   sortBy: 'number' | 'title'
 ) {
   if (!allSongs) return [];
@@ -379,21 +380,6 @@ function getVisibleSongs(
     visibleSongs = visibleSongs.filter((song) =>
       songMatchesLanguageFilter(song.language, selectedLanguage)
     );
-  }
-
-  if (search.trim()) {
-    const searched = SearchEngine.search(visibleSongs, search);
-    searched.sort((a, b) => {
-      const scoreDiff = b.score - a.score;
-      if (Math.abs(scoreDiff) > 0.0001) {
-        return scoreDiff;
-      }
-      if (sortBy === 'title') {
-        return compareSongsByTitle(a, b);
-      }
-      return a.songNumber - b.songNumber;
-    });
-    return searched;
   }
 
   if (sortBy === 'title') {

@@ -281,7 +281,6 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
       originalKey: song.originalKey,
       hashtags: song.hashtags,
       searchTokens: song.title.toLowerCase(),
-      romanTitle: song.title,
       isPersonal: true // Flag to distinguish
     }));
 
