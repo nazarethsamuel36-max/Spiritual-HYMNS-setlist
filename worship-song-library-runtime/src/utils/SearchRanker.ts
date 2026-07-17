@@ -116,13 +116,6 @@ function computeRankingScore(
   const title = normalizeForPhrase(searchDoc.title); // Original script (Devanagari)
   const transliteratedTitle = normalizeForPhrase(searchDoc.transliteratedTitle); // Transliterated title
   
-  const queryWords = normalizedQuery.split(/\s+/);
-  const firstQueryWord = queryWords[0];
-  
-  // Check both original script and transliteration for prefix matching
-  const titleWords = title.split(/\s+/);
-  const transliteratedTitleWords = transliteratedTitle.split(/\s+/);
-  
   // Tier 1: Title starts with the query phrase (or any of its synonym permutations)
   const titleStartsPhrase = queryPhrases.some(phrase => 
     title.startsWith(phrase) || transliteratedTitle.startsWith(phrase)

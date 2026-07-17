@@ -120,7 +120,7 @@ export function buildLyricsDocuments(songs: SongDetail[]): LyricsDocument[] {
  * Extract a snippet of lyrics around a search term
  * Returns the longest matching phrase from the query
  */
-export function extractLyricsSnippet(lyricsSearch: string, query: string, maxLength: number = 100): string {
+export function extractLyricsSnippet(lyricsSearch: string, query: string): string {
   if (!lyricsSearch || !query) return '';
 
   // Normalize the query to match what cleanLyricsForSearch stored:

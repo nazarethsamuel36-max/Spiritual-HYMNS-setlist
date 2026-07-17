@@ -53,9 +53,6 @@ export function SearchBar({
         onSearchResults([]);
       }
     }
-    
-    const endTime = performance.now();
-    console.log(`[PERF] SearchBar handleChange total took ${(endTime - startTime).toFixed(2)}ms`);
   };
 
   const handleClear = () => {

@@ -4,7 +4,7 @@ import { buildSearchDocuments, type SearchDocument } from './SearchDocumentBuild
 import { buildLyricsDocuments, type LyricsDocument } from './LyricsDocumentBuilder';
 import { SearchRanker } from './SearchRanker';
 
-import { canonicalizeToken, canonicalizeQuery } from '../search/HindiMarathiDictionary';
+import { canonicalizeQuery } from '../search/HindiMarathiDictionary';
 
 /**
  * Normalize a user search query:
