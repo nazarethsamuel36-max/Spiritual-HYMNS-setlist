@@ -307,6 +307,7 @@ export function SongView() {
                 rawChordPro={rawContent}
                 hideChords={readerMode === 'lyrics'}
                 fontSize={fontSize}
+                transpose={displayTranspose}
               />
             ) : (
               /* No content available fallback */

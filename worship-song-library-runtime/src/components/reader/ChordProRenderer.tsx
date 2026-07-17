@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { ChordTransposer } from '../../utils/ChordTransposer';
 
 interface ChordWordUnit {
   chord: string;
@@ -19,9 +20,10 @@ interface ChordProRendererProps {
   rawChordPro: string;
   hideChords?: boolean;
   fontSize?: number;
+  transpose?: number;
 }
 
-export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro, hideChords = false, fontSize = 18 }) => {
+export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro, hideChords = false, fontSize = 18, transpose = 0 }) => {
   const parsedSongLines = useMemo<SongLine[]>(() => {
     if (!rawChordPro) return [];
     
@@ -194,7 +196,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
               <div key={wordIndex} style={styles.chordWordGroup}>
                 {!hideChords && (
                   <span style={styles.chordSlot}>
-                    {wordUnit.chord ? wordUnit.chord : '\u00A0'}
+                    {wordUnit.chord ? ChordTransposer.transposeChord(wordUnit.chord, transpose) : '\u00A0'}
                   </span>
                 )}
                 <span style={styles.lyricSlot}>
