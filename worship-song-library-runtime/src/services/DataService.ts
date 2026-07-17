@@ -146,8 +146,11 @@ export async function batchDownloadSongs(
       });
     });
 
-    // Update search engine
+    // Update search engine (title index)
     await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
+    
+    // Update lyrics search index
+    await SearchEngine.indexLyrics(allSongDetails);
 
     console.log('✅ Batch Download: Successfully downloaded and cached all songs');
     onProgress?.(100, 'Successfully downloaded all songs!');
@@ -325,6 +328,11 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
         const songs = await getSongs();
         await SearchEngine.indexSongs(songs);
         console.log('[DataService] SearchEngine indexed', songs.length, 'songs');
+        
+        // Also update lyrics index with full song details
+        const songDetails = await db.songs.toArray();
+        await SearchEngine.indexLyrics(songDetails);
+        console.log('[DataService] SearchEngine indexed lyrics for', songDetails.length, 'songs');
       } catch (error) {
         result.errors.push(`SearchEngine indexing failed: ${error}`);
       }

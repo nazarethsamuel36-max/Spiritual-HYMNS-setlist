@@ -6,7 +6,7 @@ import { SetlistService } from '../../services/SetlistService';
 import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 
 interface SongRowProps {
-  song: SongIndex;
+  song: SongIndex & { matchType?: 'title' | 'lyrics' | 'both'; lyricsSnippet?: string };
   onSelect: (id: number) => void;
   isActive?: boolean;
   onDelete?: () => void;
@@ -123,6 +123,14 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
             <span className="text-xs font-medium text-slate-500">
               {song.language}
             </span>
+            {song.matchType === 'lyrics' && (
+              <>
+                <span className="text-slate-300 text-[10px]">•</span>
+                <span className="text-xs font-bold px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">
+                  Lyrics Match
+                </span>
+              </>
+            )}
             {song.is_active === false && (
               <>
                 <span className="text-slate-300 text-[10px]">•</span>
@@ -132,6 +140,11 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               </>
             )}
           </div>
+          {song.matchType === 'lyrics' && song.lyricsSnippet && (
+            <div className="mt-1 text-xs text-slate-500 italic truncate">
+              "{song.lyricsSnippet}"
+            </div>
+          )}
         </div>
       </button>
 

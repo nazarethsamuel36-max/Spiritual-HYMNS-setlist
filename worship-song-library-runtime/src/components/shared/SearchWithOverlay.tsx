@@ -1,12 +1,14 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import type { SongIndex } from '../../db/Database';
 import { SearchBar } from './SearchBar';
 import { SearchOverlay } from './SearchOverlay';
+import { SearchEngine } from '../../utils/SearchEngine';
 
 interface SearchWithOverlayProps {
   songs: SongIndex[];
   selectedLanguage: string;
   onSelectSong: (id: number) => void;
+  onSearchActiveChange?: (isActive: boolean) => void;
 }
 
 const LANGUAGE_ALIASES: Record<string, string[]> = {
@@ -37,39 +39,76 @@ function songMatchesLanguageFilter(songLanguage: string | undefined, selectedLan
   return songLang === filter;
 }
 
-export function SearchWithOverlay({ songs, selectedLanguage, onSelectSong }: SearchWithOverlayProps) {
+export function SearchWithOverlay({ songs, selectedLanguage, onSelectSong, onSearchActiveChange }: SearchWithOverlayProps) {
   const [searchResults, setSearchResults] = useState<SongIndex[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOverlayVisible, setIsSearchOverlayVisible] = useState(false);
   const searchBarRef = useRef<HTMLDivElement>(null);
 
-  const renderCount = useRef(0);
-  renderCount.current++;
-  console.log(`[PERF] SearchWithOverlay render #${renderCount.current}`);
+  // The search is active if the overlay is visible OR if there is an active search query.
+  const isSearchActive = isSearchOverlayVisible || searchQuery.trim().length > 0;
 
-  // Filter songs by selected language for search
-  const filteredSongs = songs.filter(song => 
-    songMatchesLanguageFilter(song.language, selectedLanguage)
-  );
+  // Notify parent when search state changes
+  useEffect(() => {
+    onSearchActiveChange?.(isSearchActive);
+  }, [isSearchActive, onSearchActiveChange]);
+
+  // Memoize filtered songs to maintain reference stability and prevent infinite render loops
+  const filteredSongs = useMemo(() => {
+    return songs.filter(song => 
+      songMatchesLanguageFilter(song.language, selectedLanguage)
+    );
+  }, [songs, selectedLanguage]);
+
+
+  // Sync search results whenever the query OR the filtered songs list (due to language switch) changes
+  useEffect(() => {
+    if (searchQuery.trim()) {
+      try {
+        const results = SearchEngine.searchWithLimit(filteredSongs, searchQuery, 25);
+        setSearchResults(results);
+      } catch (err) {
+        // Swallow MiniSearch errors (e.g. special regex chars in query) to prevent app crash
+        console.warn('[Search] Search error suppressed:', err);
+        setSearchResults([]);
+      }
+    } else {
+      setSearchResults([]);
+    }
+  }, [searchQuery, filteredSongs]);
 
   return (
     <>
       <div ref={searchBarRef}>
         <SearchBar
           songs={filteredSongs}
-          onSearchResults={setSearchResults}
-          onOverlayVisibilityChange={setIsSearchOverlayVisible}
+          value={searchQuery}
+          onChange={(val) => {
+            setSearchQuery(val);
+            setIsSearchOverlayVisible(val.trim().length > 0);
+          }}
+          // The search results are now synced via useEffect above, but we pass this to avoid duplicate triggers
+          onSearchResults={() => {}} 
           placeholder="Search songs, numbers, lyrics..."
         />
       </div>
 
-      {isSearchOverlayVisible && (
+      {isSearchActive && (
+
         <SearchOverlay
           results={searchResults}
           onSelectSong={onSelectSong}
-          onClose={() => setIsSearchOverlayVisible(false)}
+          onClose={() => {
+            // Only allow closing if query is empty
+            if (searchQuery.trim().length === 0) {
+              setIsSearchOverlayVisible(false);
+            }
+          }}
           searchBarRef={searchBarRef}
+          hasQuery={searchQuery.trim().length > 0}
         />
       )}
     </>
   );
 }
+

@@ -4,13 +4,14 @@ import { createPortal } from 'react-dom';
 import { SongRow } from './SongRow';
 
 interface SearchOverlayProps {
-  results: SongIndex[];
+  results: (SongIndex & { matchType?: 'title' | 'lyrics' | 'both'; lyricsSnippet?: string })[];
   onSelectSong: (id: number) => void;
   onClose: () => void;
   searchBarRef: React.RefObject<HTMLDivElement | null>;
+  hasQuery?: boolean;
 }
 
-export function SearchOverlay({ results, onSelectSong, onClose, searchBarRef }: SearchOverlayProps) {
+export function SearchOverlay({ results, onSelectSong, onClose, searchBarRef, hasQuery = false }: SearchOverlayProps) {
   const [position, setPosition] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const renderCount = useRef(0);
@@ -37,6 +38,9 @@ export function SearchOverlay({ results, onSelectSong, onClose, searchBarRef }: 
   // Close on click outside
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
+      // If there is active query text, do not close the overlay on click outside!
+      if (hasQuery) return;
+
       if (
         overlayRef.current &&
         !overlayRef.current.contains(e.target as Node) &&
@@ -49,7 +53,8 @@ export function SearchOverlay({ results, onSelectSong, onClose, searchBarRef }: 
 
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, [onClose, searchBarRef]);
+  }, [onClose, searchBarRef, hasQuery]);
+
 
   // Close on Escape key
   useEffect(() => {
@@ -80,6 +85,9 @@ export function SearchOverlay({ results, onSelectSong, onClose, searchBarRef }: 
       <div className="bg-slate-50 border-b border-slate-100 px-4 py-3">
         <div className="text-sm font-semibold text-slate-700">Search Results</div>
         <div className="text-xs text-slate-500">{results.length} songs found</div>
+        {results.some(r => r.matchType === 'lyrics') && (
+          <div className="text-xs text-blue-600 mt-1">Searching titles and lyrics</div>
+        )}
       </div>
 
       {/* Results - scrollable like SongList, scrollbar hidden */}

@@ -180,6 +180,8 @@ function buildArtistSearch(artist: string | undefined, language?: string): strin
   return normalizedArtist;
 }
 
+import { canonicalizeForIndex } from '../search/HindiMarathiDictionary';
+
 /**
  * Build a SearchDocument from a SongIndex
  * This is the only module that should generate search fields
@@ -196,16 +198,22 @@ export function buildSearchDocument(song: SongIndex): SearchDocument {
     transliteratedTitle = searchDoc.transliteratedTitle;
   }
   
+  // Canonicalize the transliterated title so spelling variants in indices match query variants
+  const canonicalTransliteratedTitle = transliteratedTitle 
+    ? canonicalizeForIndex(transliteratedTitle) 
+    : undefined;
+  
   return {
     id: song.id,
     title: normalizedTitle || song.title, // Use normalized title from Search_1.0.json, fallback to original
     artist: song.artist,
     songNumber: song.songNumber,
     language: song.language,
-    transliteratedTitle,
+    transliteratedTitle: canonicalTransliteratedTitle,
     artistSearch: buildArtistSearch(song.artist, song.language),
   };
 }
+
 
 /**
  * Build SearchDocuments from an array of SongIndex

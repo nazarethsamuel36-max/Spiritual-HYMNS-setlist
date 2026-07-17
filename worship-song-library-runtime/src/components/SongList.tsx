@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import type { SongIndex } from '../db/Database';
+import { db } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { supabase } from '../lib/supabaseClient';
@@ -61,6 +62,7 @@ export function SongList() {
   const [newSongKey, setNewSongKey] = useState('C');
   const [newSongChords, setNewSongChords] = useState('');
   const [newSongIsActive, setNewSongIsActive] = useState(false);
+  const [isSearchActive, setIsSearchActive] = useState(false);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
@@ -89,6 +91,11 @@ export function SongList() {
         //   SearchEngine.indexSongs(filteredSongs);
         // }, 500);
         SearchEngine.indexSongs(filteredSongs);
+        
+        // 3. Build lyrics index from full song details
+        const songDetails = await db.songs.toArray();
+        await SearchEngine.indexLyrics(songDetails);
+        console.log('[SongList] SearchEngine indexed lyrics for', songDetails.length, 'songs');
       } catch (err: any) {
         console.error('Failed to load songs:', err);
         setLoadError(err instanceof Error ? err.message : 'Failed to load songs.');
@@ -325,6 +332,7 @@ export function SongList() {
             songs={allSongs}
             selectedLanguage={selectedLanguage}
             onSelectSong={(id) => openSong(id, 'library')}
+            onSearchActiveChange={setIsSearchActive}
           />
         </div>
         {/* Sort control */}
@@ -337,9 +345,10 @@ export function SongList() {
       </div>
 
 
-      {/* Song List */}
-      <div className="flex flex-col pb-32" style={{ minHeight: '500px' }}>
-        {isLoading ? (
+      {/* Song List - hidden when search is active */}
+      {!isSearchActive && (
+        <div className="flex flex-col pb-32" style={{ minHeight: '500px' }}>
+          {isLoading ? (
           <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
         ) : loadError ? (
           <div className="p-10 text-center text-red-500 font-medium text-sm">{loadError}</div>
@@ -359,8 +368,9 @@ export function SongList() {
               />
             ))}
           </>
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

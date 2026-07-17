@@ -25,11 +25,6 @@ export function SearchBar({
   const value = isControlled ? controlledValue : internalValue;
   
   const inputRef = useRef<HTMLInputElement>(null);
-  const renderCount = useRef(0);
-  renderCount.current++;
-
-  console.log(`[PERF] SearchBar render #${renderCount.current}`);
-
   useEffect(() => {
     if (autoFocus && inputRef.current) {
       inputRef.current.focus();
@@ -37,9 +32,6 @@ export function SearchBar({
   }, [autoFocus]);
 
   const handleChange = (newValue: string) => {
-    const startTime = performance.now();
-    console.log(`[PERF] SearchBar handleChange start: "${newValue}"`);
-    
     if (controlledOnChange) {
       controlledOnChange(newValue);
     } else {
