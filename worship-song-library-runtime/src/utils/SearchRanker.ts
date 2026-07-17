@@ -110,7 +110,6 @@ export interface RankedResult {
 function computeRankingScore(
   searchDoc: SearchDocument,
   queryPhrases: string[],
-  normalizedQuery: string,
   miniSearchScore: number
 ): { score: number; tier: number; reason: string } {
   const title = normalizeForPhrase(searchDoc.title); // Original script (Devanagari)
@@ -198,7 +197,7 @@ export class SearchRanker {
           return null;
         }
         
-        const ranking = computeRankingScore(searchDoc, queryPhrases, normalizedQuery, candidate.score);
+        const ranking = computeRankingScore(searchDoc, queryPhrases, candidate.score);
         
         return {
           id: candidate.id,
