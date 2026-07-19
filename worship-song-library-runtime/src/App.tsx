@@ -59,11 +59,8 @@ function App() {
       // Set UI state based on database check
       console.log('Setting showGatekeeper:');
       console.log(result.needsInitialDownload ? 'true' : 'false');
-      if (result.needsInitialDownload) {
-        setShowGatekeeper(true);
-      } else {
-        setShowGatekeeper(false);
-      }
+      // Always disable gatekeeper - show download button in SongList header instead
+      setShowGatekeeper(false);
       console.log('showGatekeeper updated');
     };
 
