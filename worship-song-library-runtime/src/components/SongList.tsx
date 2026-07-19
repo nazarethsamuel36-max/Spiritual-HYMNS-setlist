@@ -11,7 +11,6 @@ import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { VisibilitySwitch } from './shared/VisibilitySwitch';
 import { formatSongTitle, normalizeImportedText } from '../utils/SongFormatter';
-import { SmartDownloadButton } from './SmartDownloadButton';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
@@ -319,10 +318,6 @@ export function SongList() {
 
       {/* Search + Filters — sticky header */}
       <div id="song-list-filters-header" className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
-        {/* Download Button */}
-        <div className="px-3 mb-2">
-          <SmartDownloadButton forceShow={true} />
-        </div>
         {/* Language pills */}
         <div className="px-3">
           <LanguageTabs
