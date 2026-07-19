@@ -72,8 +72,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[200] flex items-center justify-center p-4 pointer-events-none">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto">
-        <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto flex flex-col">
+        <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50 flex-shrink-0">
           <h2 className="text-xl font-bold text-slate-800">System Status</h2>
           <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-colors">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,8 +81,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             </svg>
           </button>
         </div>
-        
-        <div className="p-6 space-y-6">
+
+        <div className="p-6 space-y-6 overflow-y-auto flex-1">
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
@@ -178,8 +178,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             </button>
           </div>
         </div>
-        
-        <div className="p-4 bg-slate-50 text-center">
+
+        <div className="p-4 bg-slate-50 text-center flex-shrink-0">
           <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Runtime Version 1.2.0 • Build Stable</p>
         </div>
       </div>

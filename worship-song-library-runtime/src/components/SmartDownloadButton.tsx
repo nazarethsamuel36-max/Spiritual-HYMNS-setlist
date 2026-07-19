@@ -6,7 +6,7 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-export function SmartDownloadButton({ onComplete, forceShow = false }: { onComplete?: () => void; forceShow?: boolean }) {
+export function SmartDownloadButton({ onComplete, forceShow = false, compact = false }: { onComplete?: () => void; forceShow?: boolean; compact?: boolean }) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
@@ -88,6 +88,29 @@ export function SmartDownloadButton({ onComplete, forceShow = false }: { onCompl
 
   if (isInstalled && !forceShow) {
     return null; // Only hide if it's NOT forced to show
+  }
+
+  // Compact mode for header - small green icon button
+  if (compact) {
+    return (
+      <button
+        onClick={handleDownloadAndInstall}
+        disabled={isDownloading}
+        className="flex items-center justify-center w-8 h-8 rounded-lg border border-emerald-300 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        title="Download songs for offline use"
+      >
+        {isDownloading ? (
+          <svg className="animate-spin w-4 h-4" viewBox="0 0 24 24">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+          </svg>
+        ) : (
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        )}
+      </button>
+    );
   }
 
   if (showIOSInstructions) {
