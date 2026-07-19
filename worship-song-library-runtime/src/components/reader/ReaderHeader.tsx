@@ -169,225 +169,229 @@ export function ReaderHeader({
               </svg>
             </button>
 
-            {/* ⋮ More Button & Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => {
-                  setIsMoreOpen(!isMoreOpen);
-                  setMoreTab('main');
-                }}
-                className={`w-8 h-8 border rounded-lg shadow-sm transition-all flex items-center justify-center active:scale-95 ${
-                  isMoreOpen
-                    ? 'bg-slate-900 border-slate-900 text-white'
-                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
-                }`}
-                title="More Actions"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                </svg>
-              </button>
+            {/* ⋮ More Button & Dropdown - hide in admin mode */}
+            {!isAdminAuthenticated && (
+              <div className="relative">
+                <button
+                  onClick={() => {
+                    setIsMoreOpen(!isMoreOpen);
+                    setMoreTab('main');
+                  }}
+                  className={`w-8 h-8 border rounded-lg shadow-sm transition-all flex items-center justify-center active:scale-95 ${
+                    isMoreOpen
+                      ? 'bg-slate-900 border-slate-900 text-white'
+                      : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                  }`}
+                  title="More Actions"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                  </svg>
+                </button>
 
-              {isMoreOpen && (
-                <>
-                  <div className="fixed inset-0 z-40" onClick={() => setIsMoreOpen(false)} />
-                  <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-xl shadow-xl z-50 p-2 animate-in fade-in slide-in-from-top-2">
-                    
-                    {/* MAIN TAB */}
-                    {moreTab === 'main' && (
-                      <div className="space-y-0.5">
-                        <button
-                          onClick={() => setMoreTab('setlist')}
-                          className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                        >
-                          <span>Add to Setlist</span>
-                          <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                        <button
-                          onClick={handleShare}
-                          className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                        >
-                          Share Song
-                        </button>
-                        <button
-                          onClick={() => setMoreTab('versions')}
-                          className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                        >
-                          <span>Versions</span>
-                          <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                        {isAdminAuthenticated && (
+                {isMoreOpen && (
+                  <>
+                    <div className="fixed inset-0 z-40" onClick={() => setIsMoreOpen(false)} />
+                    <div className="absolute right-0 top-full mt-2 w-56 bg-white border border-slate-200 rounded-xl shadow-xl z-50 p-2 animate-in fade-in slide-in-from-top-2">
+
+                      {/* MAIN TAB */}
+                      {moreTab === 'main' && (
+                        <div className="space-y-0.5">
                           <button
-                            onClick={() => {
-                              onModeChange('edit');
-                              setIsMoreOpen(false);
-                            }}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-amber-600 transition-colors border-l-2 border-amber-600"
+                            onClick={() => setMoreTab('setlist')}
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
                           >
-                            ✏️ Edit Song
-                          </button>
-                        )}
-                        <button
-                          onClick={() => setMoreTab('details')}
-                          className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                        >
-                          <span>Song Details</span>
-                          <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                          </svg>
-                        </button>
-                      </div>
-                    )}
-
-                    {/* SETLIST TAB */}
-                    {moreTab === 'setlist' && (
-                      <div>
-                        <div className="flex items-center space-x-1.5 mb-2 px-1 border-b border-slate-100 pb-1.5">
-                          <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
-                            <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                            <span>Add to Setlist</span>
+                            <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
                           </button>
-                          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Add to Setlist</span>
-                        </div>
-                        <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
-                          {setlists?.length === 0 ? (
-                            <div className="text-xs text-center py-4 text-slate-400 font-medium">No setlists found</div>
-                          ) : (
-                            setlists?.map(list => (
-                              <button
-                                key={list.id}
-                                onClick={async () => {
-                                  await SetlistService.addSongToSetlist(list.id, song.id);
-                                  setIsMoreOpen(false);
-                                  alert(`Added "${song.title}" to setlist: "${list.title}"`);
-                                }}
-                                className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                              >
-                                {list.title}
-                              </button>
-                            ))
-                          )}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* VERSIONS TAB */}
-                    {moreTab === 'versions' && (
-                      <div>
-                        <div className="flex items-center space-x-1.5 mb-2 px-1 border-b border-slate-100 pb-1.5">
-                          <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
-                            <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                          <button
+                            onClick={handleShare}
+                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                          >
+                            Share Song
+                          </button>
+                          <button
+                            onClick={() => setMoreTab('versions')}
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                          >
+                            <span>Versions</span>
+                            <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
                           </button>
-                          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Versions</span>
-                        </div>
-                        <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
-                          <button
-                            onClick={() => {
-                              setActiveArrangementId(null);
-                              setIsMoreOpen(false);
-                            }}
-                            className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                              !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                            }`}
-                          >
-                            Original Version
-                          </button>
-                          {arrangements.map(arr => (
+                          {isAdminAuthenticated && (
                             <button
-                              key={arr.id}
                               onClick={() => {
-                                setActiveArrangementId(arr.id);
+                                onModeChange('edit');
+                                setIsMoreOpen(false);
+                              }}
+                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-amber-600 transition-colors border-l-2 border-amber-600"
+                            >
+                              ✏️ Edit Song
+                            </button>
+                          )}
+                          <button
+                            onClick={() => setMoreTab('details')}
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                          >
+                            <span>Song Details</span>
+                            <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7-7" />
+                            </svg>
+                          </button>
+                        </div>
+                      )}
+
+                      {/* SETLIST TAB */}
+                      {moreTab === 'setlist' && (
+                        <div>
+                          <div className="flex items-center space-x-1.5 mb-2 px-1 border-b border-slate-100 pb-1.5">
+                            <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
+                              <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                              </svg>
+                            </button>
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Add to Setlist</span>
+                          </div>
+                          <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
+                            {setlists?.length === 0 ? (
+                              <div className="text-xs text-center py-4 text-slate-400 font-medium">No setlists found</div>
+                            ) : (
+                              setlists?.map(list => (
+                                <button
+                                  key={list.id}
+                                  onClick={async () => {
+                                    await SetlistService.addSongToSetlist(list.id, song.id);
+                                    setIsMoreOpen(false);
+                                    alert(`Added "${song.title}" to setlist: "${list.title}"`);
+                                  }}
+                                  className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                                >
+                                  {list.title}
+                                </button>
+                              ))
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* VERSIONS TAB */}
+                      {moreTab === 'versions' && (
+                        <div>
+                          <div className="flex items-center space-x-1.5 mb-2 px-1 border-b border-slate-100 pb-1.5">
+                            <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
+                              <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                              </svg>
+                            </button>
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Versions</span>
+                          </div>
+                          <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
+                            <button
+                              onClick={() => {
+                                setActiveArrangementId(null);
                                 setIsMoreOpen(false);
                               }}
                               className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                activeArrangementId === arr.id ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
                               }`}
                             >
-                              {arr.name}
+                              Original Version
                             </button>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* DETAILS TAB */}
-                    {moreTab === 'details' && (
-                      <div className="text-xs text-slate-600 p-2 space-y-2">
-                        <div className="flex items-center space-x-1.5 mb-2 border-b border-slate-100 pb-1.5">
-                          <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
-                            <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                            </svg>
-                          </button>
-                          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Details</span>
-                        </div>
-                        <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 font-medium">
-                          <div className="text-slate-400">Key:</div>
-                          <div className="font-bold text-slate-800">{song.originalKey || 'C'}</div>
-                          <div className="text-slate-400">BPM:</div>
-                          <div className="font-bold text-slate-800">{song.bpm || 'N/A'}</div>
-                          <div className="text-slate-400">Time:</div>
-                          <div className="font-bold text-slate-800">{song.timeSignature || '4/4'}</div>
-                          {song.composer && (
-                            <>
-                              <div className="text-slate-400">Composer:</div>
-                              <div className="font-bold text-slate-800 truncate">{song.composer}</div>
-                            </>
-                          )}
-                          {song.capo !== undefined && (
-                            <>
-                              <div className="text-slate-400">Capo:</div>
-                              <div className="font-bold text-slate-800">{song.capo}</div>
-                            </>
-                          )}
-                        </div>
-                        {song.hashtags && song.hashtags.length > 0 && (
-                          <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-1">
-                            {song.hashtags.map(t => (
-                              <span key={t} className="px-1.5 py-0.5 bg-slate-100 rounded text-[9px] font-semibold text-slate-500">
-                                #{t}
-                              </span>
+                            {arrangements.map(arr => (
+                              <button
+                                key={arr.id}
+                                onClick={() => {
+                                  setActiveArrangementId(arr.id);
+                                  setIsMoreOpen(false);
+                                }}
+                                className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                                  activeArrangementId === arr.id ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                }`}
+                              >
+                                {arr.name}
+                              </button>
                             ))}
                           </div>
-                        )}
-                      </div>
-                    )}
+                        </div>
+                      )}
 
-                  </div>
-                </>
-              )}
-            </div>
+                      {/* DETAILS TAB */}
+                      {moreTab === 'details' && (
+                        <div className="text-xs text-slate-600 p-2 space-y-2">
+                          <div className="flex items-center space-x-1.5 mb-2 border-b border-slate-100 pb-1.5">
+                            <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
+                              <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+                              </svg>
+                            </button>
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Details</span>
+                          </div>
+                          <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 font-medium">
+                            <div className="text-slate-400">Key:</div>
+                            <div className="font-bold text-slate-800">{song.originalKey || 'C'}</div>
+                            <div className="text-slate-400">BPM:</div>
+                            <div className="font-bold text-slate-800">{song.bpm || 'N/A'}</div>
+                            <div className="text-slate-400">Time:</div>
+                            <div className="font-bold text-slate-800">{song.timeSignature || '4/4'}</div>
+                            {song.composer && (
+                              <>
+                                <div className="text-slate-400">Composer:</div>
+                                <div className="font-bold text-slate-800 truncate">{song.composer}</div>
+                              </>
+                            )}
+                            {song.capo !== undefined && (
+                              <>
+                                <div className="text-slate-400">Capo:</div>
+                                <div className="font-bold text-slate-800">{song.capo}</div>
+                              </>
+                            )}
+                          </div>
+                          {song.hashtags && song.hashtags.length > 0 && (
+                            <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-1">
+                              {song.hashtags.map(t => (
+                                <span key={t} className="px-1.5 py-0.5 bg-slate-100 rounded text-[9px] font-semibold text-slate-500">
+                                  #{t}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
         {/* ── BOTTOM ROW: Chords/Lyrics toggle (left) + Transpose (right) ── */}
         <div className="flex items-center justify-between">
-          {/* Left: Mode Selector */}
-          <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
-            <button
-              onClick={() => onModeChange('lyrics')}
-              className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
-                mode === 'lyrics' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
-              }`}
-            >
-              Lyrics
-            </button>
-            <button
-              onClick={() => onModeChange('chords')}
-              className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
-                mode === 'chords' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
-              }`}
-            >
-              Chords
-            </button>
-          </div>
+          {/* Left: Mode Selector - hide in admin mode */}
+          {!isAdminAuthenticated && (
+            <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
+              <button
+                onClick={() => onModeChange('lyrics')}
+                className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
+                  mode === 'lyrics' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                Lyrics
+              </button>
+              <button
+                onClick={() => onModeChange('chords')}
+                className={`px-2.5 py-0.5 h-full text-[10px] sm:text-xs font-bold rounded-md transition-all ${
+                  mode === 'chords' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                Chords
+              </button>
+            </div>
+          )}
 
           {/* Right: Transpose Hub + Font Size + Published Button */}
           <div className="flex items-center gap-2">
@@ -431,20 +435,22 @@ export function ReaderHeader({
               </div>
             )}
 
-            {/* Font Size Slider */}
-            <div className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm px-2 gap-2">
-              <span className="text-[8px] font-bold text-slate-400">A</span>
-              <input
-                type="range"
-                min="12"
-                max="24"
-                value={fontSize}
-                onChange={(e) => setFontSize(parseInt(e.target.value, 10))}
-                className="w-16 sm:w-20 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer"
-                title="Font Size"
-              />
-              <span className="text-[10px] font-bold text-slate-600 w-6 text-center">{fontSize}</span>
-            </div>
+            {/* Font Size Slider - hide in admin mode */}
+            {!isAdminAuthenticated && (
+              <div className="flex items-center h-8 bg-white border border-slate-200 rounded-lg shadow-sm px-2 gap-2">
+                <span className="text-[8px] font-bold text-slate-400">A</span>
+                <input
+                  type="range"
+                  min="12"
+                  max="24"
+                  value={fontSize}
+                  onChange={(e) => setFontSize(parseInt(e.target.value, 10))}
+                  className="w-16 sm:w-20 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer"
+                  title="Font Size"
+                />
+                <span className="text-[10px] font-bold text-slate-600 w-6 text-center">{fontSize}</span>
+              </div>
+            )}
 
             {isAdminAuthenticated && (
               <div className="flex items-center gap-2">
