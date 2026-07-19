@@ -57,8 +57,8 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
 
   // No data - show setup screen
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-4">
-      <div className="max-w-lg w-full space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 overflow-y-auto p-4">
+      <div className="max-w-lg w-full space-y-8 py-8">
         {/* Header */}
         <div className="text-center space-y-4">
           <div className="flex justify-center">
@@ -93,20 +93,6 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
               <span className="text-slate-700">Real-time updates when online</span>
             </li>
           </ul>
-
-          {/* Debug Manual Download Button */}
-          <div className="pt-4 border-t border-slate-100">
-            <button
-              onClick={handleDebugDownload}
-              disabled={isDebugDownloading}
-              className="w-full px-4 py-2 bg-emerald-50 text-emerald-700 rounded-lg text-sm font-medium hover:bg-emerald-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isDebugDownloading ? '⏳ Downloading...' : '🔧 Manual Download (Debug)'}
-            </button>
-            <p className="text-xs text-slate-500 mt-2 text-center">
-              Use if main download fails
-            </p>
-          </div>
         </div>
 
         {/* Download Button */}
