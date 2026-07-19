@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { batchDownloadSongs } from '../services/DataService';
+import { db } from '../db/Database';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -13,6 +14,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   const [isIOS, setIsIOS] = useState(false);
   const [showIOSInstructions, setShowIOSInstructions] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
+  const [hasSongs, setHasSongs] = useState(false);
 
   useEffect(() => {
     // Detect iOS
@@ -24,6 +26,13 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
     const standalone = (window.navigator as any).standalone === true;
     const displayModeStandalone = window.matchMedia('(display-mode: standalone)').matches;
     setIsInstalled(standalone || displayModeStandalone);
+
+    // Check if songs are already downloaded
+    const checkSongs = async () => {
+      const count = await db.songs.count();
+      setHasSongs(count >= 700); // Consider downloaded if we have 700+ songs
+    };
+    checkSongs();
 
     // Listen for beforeinstallprompt
     const handleBeforeInstallPrompt = (e: any) => {
@@ -57,6 +66,10 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
         setDownloadProgress(percent);
       });
 
+      // Update hasSongs after download
+      const count = await db.songs.count();
+      setHasSongs(count >= 700);
+
       // Step 2: Install PWA (if not iOS and prompt available)
       if (!isIOS && deferredPrompt) {
         await deferredPrompt.prompt();
@@ -85,6 +98,11 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
       setIsDownloading(false);
     }
   };
+
+  // Hide button if songs are already downloaded (unless forced)
+  if (hasSongs && !forceShow) {
+    return null;
+  }
 
   if (isInstalled && !forceShow) {
     return null; // Only hide if it's NOT forced to show
