@@ -1,31 +1,11 @@
 import { useState, useEffect } from 'react';
 import { SmartDownloadButton } from './SmartDownloadButton';
-import { debugDownloadAllSongs } from '../utils/debugDownload';
 import { db } from '../db/Database';
 
 export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
   const [isChecking, setIsChecking] = useState(true);
   const [hasData, setHasData] = useState(false);
   const [songCount, setSongCount] = useState(0);
-  const [isDebugDownloading, setIsDebugDownloading] = useState(false);
-
-  const handleDebugDownload = async () => {
-    setIsDebugDownloading(true);
-    try {
-      await debugDownloadAllSongs();
-      const count = await db.songs.count();
-      setSongCount(count);
-      setHasData(count >= 724);
-      if (count >= 724) {
-        onComplete();
-      }
-    } catch (error) {
-      console.error('Debug download failed:', error);
-      alert('Debug download failed. Check console for details.');
-    } finally {
-      setIsDebugDownloading(false);
-    }
-  };
 
   useEffect(() => {
     const checkData = async () => {
