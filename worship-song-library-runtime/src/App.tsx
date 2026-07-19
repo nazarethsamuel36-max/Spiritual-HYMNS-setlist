@@ -9,7 +9,6 @@ import { SharedManager } from './components/SharedManager';
 import { PersonalSongs } from './components/PersonalSongs';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
-import { PWAInstallButton } from './components/PWAInstallButton';
 import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
@@ -213,9 +212,11 @@ function App() {
                   {isAdminAuthenticated && (
                     <button type="button" onClick={() => setAdminAuthenticated(false)} className="mr-2 text-base transition-transform hover:scale-110" title="Exit admin" aria-label="Exit admin">🔑</button>
                   )}
-                  <PWAInstallButton />
                   <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings">
-                    <div className='w-2.5 h-2.5 rounded-full bg-emerald-400' />
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
                   </button>
                 </div>
                 <nav className="hidden md:flex items-center space-x-1 mt-2 bg-slate-200/50 p-1 rounded-lg">
