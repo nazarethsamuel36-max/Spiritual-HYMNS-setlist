@@ -62,6 +62,79 @@ interface PreviewChordLineProps {
   changedSegments?: Array<{ text: string; isChanged: boolean }>;
 }
 
+const KEY_OPTIONS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+
+function CustomKeyPicker({
+  value,
+  onChange,
+  label = 'Key',
+  buttonClassName = '',
+  className = '',
+}: {
+  value: string;
+  onChange: (nextKey: string) => void;
+  label?: string;
+  buttonClassName?: string;
+  className?: string;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const pickerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handlePointerDown = (event: MouseEvent) => {
+      if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handlePointerDown);
+    return () => document.removeEventListener('mousedown', handlePointerDown);
+  }, [isOpen]);
+
+  return (
+    <div ref={pickerRef} className={`relative ${className}`}>
+      <button
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-blue-500' : ''} ${buttonClassName}`}
+      >
+        {value}
+      </button>
+
+      {isOpen && (
+        <div className="absolute left-0 top-[calc(100%+0.5rem)] z-30 min-w-[96px] max-h-[240px] overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-white p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            {label}
+          </div>
+          {KEY_OPTIONS.map((option) => {
+            const isSelected = value === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                role="option"
+                aria-selected={isSelected}
+                className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isSelected ? 'bg-slate-100 text-slate-900' : 'text-slate-600 hover:bg-slate-50'}`}
+                onClick={() => {
+                  onChange(option);
+                  setIsOpen(false);
+                }}
+              >
+                <span>{option}</span>
+                {isSelected ? <span className="text-base">✓</span> : null}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   const parts = line.split(/(\[[^\]]+\])/);
   const segments: Array<{ chord: string | null; text: string }> = [];
@@ -338,10 +411,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
               placeholder="Song Title..."
             />
 
-            <select
+            <CustomKeyPicker
               value={keyValue}
-              onChange={(e) => {
-                const newKey = e.target.value;
+              label="Set Root Key"
+              onChange={(newKey) => {
                 const shift = calculateSemitoneShift(currentTextKey, newKey);
                 const corrected = shiftChordsInText(chordsText, shift);
                 setKeyValue(newKey);
@@ -349,16 +422,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 setCurrentTextKey(newKey);
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
-              className="w-12 h-12 px-0 rounded-lg border border-slate-300 bg-white text-base font-bold text-center focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
-            >
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-              <option value="G">G</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-            </select>
+            />
           </div>
 
           {/* ROW 2: Key Corrector - Desktop Inline Layout */}
@@ -367,34 +431,21 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
 
             <div className="flex items-center gap-2">
               <label className="text-[10px] font-bold text-slate-400 uppercase">Current</label>
-              <select
+              <CustomKeyPicker
                 value={currentTextKey}
-                onChange={(e) => setCurrentTextKey(e.target.value)}
-                className="w-12 h-12 px-0 rounded-lg border border-slate-300 text-base font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
-              >
-                <option value="C">C</option>
-                <option value="C#">C#</option>
-                <option value="D">D</option>
-                <option value="D#">D#</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="F#">F#</option>
-                <option value="G">G</option>
-                <option value="G#">G#</option>
-                <option value="A">A</option>
-                <option value="A#">A#</option>
-                <option value="B">B</option>
-              </select>
+                label="Current Key"
+                onChange={(newKey) => setCurrentTextKey(newKey)}
+              />
             </div>
 
             <span className="text-slate-400 font-bold">→</span>
 
             <div className="flex items-center gap-2">
               <label className="text-[10px] font-bold text-slate-400 uppercase">Shift To</label>
-              <select
+              <CustomKeyPicker
                 value={correctorTargetKey}
-                onChange={(e) => {
-                  const newTarget = e.target.value;
+                label="Transpose To"
+                onChange={(newTarget) => {
                   const shift = calculateSemitoneShift(currentTextKey, newTarget);
                   const corrected = shiftChordsInText(chordsText, shift);
                   setCorrectorTargetKey(newTarget);
@@ -402,21 +453,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                   setCurrentTextKey(newTarget);
                   debouncedAutoSave({ chords: corrected });
                 }}
-                className="w-12 h-12 px-0 rounded-lg border border-slate-300 text-base font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0"
-              >
-                <option value="C">C</option>
-                <option value="C#">C#</option>
-                <option value="D">D</option>
-                <option value="D#">D#</option>
-                <option value="E">E</option>
-                <option value="F">F</option>
-                <option value="F#">F#</option>
-                <option value="G">G</option>
-                <option value="G#">G#</option>
-                <option value="A">A</option>
-                <option value="A#">A#</option>
-                <option value="B">B</option>
-              </select>
+              />
             </div>
 
             <div className="ml-auto flex items-center gap-2">
@@ -459,30 +496,19 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 {/* Row 1: Key Corrector */}
                 <div className="flex items-center gap-2">
                   <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Current</label>
-                  <select
+                  <CustomKeyPicker
                     value={currentTextKey}
-                    onChange={(e) => setCurrentTextKey(e.target.value)}
-                    className="flex-1 h-10 px-2 rounded-lg border border-slate-300 text-sm font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-                  >
-                    <option value="C">C</option>
-                    <option value="C#">C#</option>
-                    <option value="D">D</option>
-                    <option value="D#">D#</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="F#">F#</option>
-                    <option value="G">G</option>
-                    <option value="G#">G#</option>
-                    <option value="A">A</option>
-                    <option value="A#">A#</option>
-                    <option value="B">B</option>
-                  </select>
+                    label="Current Key"
+                    buttonClassName="h-10 w-full min-w-[60px]"
+                    onChange={(newKey) => setCurrentTextKey(newKey)}
+                  />
                   <span className="text-slate-400 font-bold">→</span>
                   <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Shift To</label>
-                  <select
+                  <CustomKeyPicker
                     value={correctorTargetKey}
-                    onChange={(e) => {
-                      const newTarget = e.target.value;
+                    label="Transpose To"
+                    buttonClassName="h-10 w-full min-w-[60px]"
+                    onChange={(newTarget) => {
                       const shift = calculateSemitoneShift(currentTextKey, newTarget);
                       const corrected = shiftChordsInText(chordsText, shift);
                       setCorrectorTargetKey(newTarget);
@@ -490,21 +516,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                       setCurrentTextKey(newTarget);
                       debouncedAutoSave({ chords: corrected });
                     }}
-                    className="flex-1 h-10 px-2 rounded-lg border border-slate-300 text-sm font-bold text-center bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
-                  >
-                    <option value="C">C</option>
-                    <option value="C#">C#</option>
-                    <option value="D">D</option>
-                    <option value="D#">D#</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="F#">F#</option>
-                    <option value="G">G</option>
-                    <option value="G#">G#</option>
-                    <option value="A">A</option>
-                    <option value="A#">A#</option>
-                    <option value="B">B</option>
-                  </select>
+                  />
                 </div>
 
                 {/* Row 2: Verse/Chorus Buttons */}

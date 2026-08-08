@@ -11,6 +11,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
+  const [downloadMessage, setDownloadMessage] = useState('Preparing download...');
   const [isIOS, setIsIOS] = useState(false);
   const [showIOSInstructions, setShowIOSInstructions] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
@@ -59,11 +60,13 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   const handleDownloadAndInstall = async () => {
     setIsDownloading(true);
     setDownloadProgress(0);
+    setDownloadMessage('Preparing download...');
 
     try {
       // Step 1: Download songs
-      await batchDownloadSongs((percent, _message) => {
+      await batchDownloadSongs((percent, message) => {
         setDownloadProgress(percent);
+        setDownloadMessage(message || 'Downloading songs...');
       });
 
       // Update hasSongs after download
@@ -108,17 +111,41 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
     return null; // Only hide if it's NOT forced to show
   }
 
+  const overlay = isDownloading ? (
+    <div className="fixed inset-x-0 top-4 z-[60] flex justify-center px-3 pointer-events-none">
+      <div className="w-full max-w-md rounded-2xl border border-emerald-200 bg-white/95 shadow-xl backdrop-blur">
+        <div className="flex items-center justify-between px-4 py-3">
+          <div className="flex items-center gap-2">
+            <div className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
+            <span className="text-sm font-semibold text-slate-700">Downloading library</span>
+          </div>
+          <span className="text-sm font-medium text-slate-500">{downloadProgress}%</span>
+        </div>
+        <div className="h-2 w-full overflow-hidden rounded-b-2xl bg-slate-200">
+          <div
+            className="h-full rounded-b-2xl bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300"
+            style={{ width: `${downloadProgress}%` }}
+          />
+        </div>
+        <div className="px-4 py-2 text-xs text-slate-600">{downloadMessage}</div>
+      </div>
+    </div>
+  ) : null;
+
   // Compact mode for header - bright green button with text
   if (compact) {
     return (
-      <button
-        onClick={handleDownloadAndInstall}
-        disabled={isDownloading}
-        className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-        title="Download songs for offline use"
-      >
-        {isDownloading ? 'Downloading...' : 'Download'}
-      </button>
+      <>
+        {overlay}
+        <button
+          onClick={handleDownloadAndInstall}
+          disabled={isDownloading}
+          className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          title="Download songs for offline use"
+        >
+          {isDownloading ? 'Downloading...' : 'Download'}
+        </button>
+      </>
     );
   }
 
@@ -185,6 +212,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
 
   return (
     <div className="flex flex-col items-center space-y-4">
+      {overlay}
       <button
         onClick={handleDownloadAndInstall}
         disabled={isDownloading}
@@ -207,15 +235,6 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
           </span>
         )}
       </button>
-
-      {isDownloading && (
-        <div className="w-full max-w-md bg-slate-200 rounded-full h-2">
-          <div
-            className="bg-emerald-500 h-2 rounded-full transition-all duration-300"
-            style={{ width: `${downloadProgress}%` }}
-          />
-        </div>
-      )}
     </div>
   );
 }

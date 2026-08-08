@@ -47,6 +47,15 @@ function App() {
   
 
   useEffect(() => {
+    const savedTheme = window.localStorage.getItem('app-theme-mode');
+    if (savedTheme === 'dark') {
+      document.body.dataset.theme = 'dark';
+    } else {
+      document.body.dataset.theme = 'light';
+    }
+  }, []);
+
+  useEffect(() => {
     const initializeApp = async () => {
       const result = await AppInitializer.initialize();
       
@@ -150,6 +159,21 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [isMobile, mobileActivePane]);
 
+  useEffect(() => {
+    if (!isAdminAuthenticated) return;
+
+    const handlePopState = () => {
+      setAdminAuthenticated(false);
+      closeReader();
+      setSidebarPanel('library');
+      window.history.replaceState({ adminMode: false }, '', '/');
+    };
+
+    window.history.pushState({ adminMode: true }, '', window.location.pathname + window.location.search);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [isAdminAuthenticated, setAdminAuthenticated, closeReader, setSidebarPanel]);
+
   // ==========================================
   // 3. VARIABLES & FUNCTIONS
   // ==========================================
@@ -179,6 +203,13 @@ function App() {
       return;
     }
     titleTapTimerRef.current = window.setTimeout(() => { titleTapCountRef.current = 0; }, 1500);
+  };
+
+  const handleExitAdminMode = () => {
+    setAdminAuthenticated(false);
+    closeReader();
+    setSidebarPanel('library');
+    window.history.replaceState({ adminMode: false }, '', '/');
   };
 
   // ==========================================
@@ -211,7 +242,7 @@ function App() {
                   <button type="button" onClick={handleTitleTap} className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
                   <button type="button" onClick={handleTitleTap} className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none" title="Tap 5 times to unlock admin mode">BBF Song book</button>
                   {isAdminAuthenticated && (
-                    <button type="button" onClick={() => setAdminAuthenticated(false)} className="mr-2 text-base transition-transform hover:scale-110" title="Exit admin" aria-label="Exit admin">🔑</button>
+                    <button type="button" onClick={handleExitAdminMode} className="mr-2 text-base transition-transform hover:scale-110" title="Exit admin" aria-label="Exit admin">🔑</button>
                   )}
                   <SmartDownloadButton compact={true} />
                   <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings">
