@@ -228,7 +228,7 @@ const styles: Record<string, React.CSSProperties> = {
   chorusLine: {
     fontStyle: 'italic',
     paddingLeft: '24px',
-    color: '#475569',
+    color: 'var(--color-chord)',
   },
   chordWordGroup: {
     display: 'inline-flex',

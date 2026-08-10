@@ -67,7 +67,7 @@ function SetlistPopover({
     <div
       ref={popoverRef}
       style={{ top: pos.top, left: pos.left, position: 'fixed', width: 192, zIndex: 9999 }}
-      className="bg-white border border-slate-200 rounded-xl shadow-2xl p-2 overflow-hidden"
+      className="bg-[var(--color-surface)] border border-slate-200 rounded-xl shadow-2xl p-2 overflow-hidden"
     >
       <div className="text-[10px] font-bold text-slate-400 uppercase mb-2 px-2 tracking-wider">Add to Setlist</div>
       <div className="max-h-40 overflow-y-auto space-y-0.5">
@@ -104,7 +104,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
     <div className={`relative group lang-${song.language?.toLowerCase()} ${isActive ? 'bg-slate-100' : ''}`}>
       <button
         onClick={() => onSelect(song.id)}
-        className="flex items-center text-left py-3 px-2 hover:bg-slate-100 border-b border-slate-400 transition-none w-full group last:border-b-0"
+        className="flex items-center text-left py-3 px-2 hover:bg-slate-100 transition-none w-full group"
       >
         {/* Avatar */}
         <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-full text-xs font-bold text-slate-600 mr-3">
@@ -171,7 +171,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               setShowAddMenu(prev => !prev);
             }}
             className={`w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 ${
-              showAddMenu ? 'bg-slate-800 text-white shadow-md' : 'bg-transparent text-slate-400 hover:bg-slate-200 hover:text-slate-700'
+              showAddMenu ? 'bg-slate-800 text-[var(--color-on-inverse)] shadow-md' : 'bg-transparent text-slate-400 hover:bg-slate-200 hover:text-slate-700'
             }`}
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

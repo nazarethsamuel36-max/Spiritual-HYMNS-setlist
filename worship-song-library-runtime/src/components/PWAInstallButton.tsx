@@ -25,7 +25,7 @@ export function PWAInstallButton() {
   if (isIOS && showIOSModal) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pointer-events-none">
-        <div className="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
           <div className="text-center space-y-2">
             <div className="text-3xl">📱</div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>
@@ -96,7 +96,7 @@ export function PWAInstallButton() {
         className={`flex items-center justify-center w-8 h-8 rounded-lg border transition-all ${
           isIOS
             ? 'border-blue-300 bg-blue-50 text-blue-700 hover:bg-blue-100'
-            : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+            : 'border-slate-200 bg-[var(--color-surface)] text-slate-600 hover:bg-slate-50'
         }`}
         title="Install App"
       >

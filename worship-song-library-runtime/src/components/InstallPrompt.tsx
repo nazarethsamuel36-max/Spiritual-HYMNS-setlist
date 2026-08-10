@@ -16,7 +16,7 @@ export function InstallPrompt() {
   if (isIOS && showIOSInstructions) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pointer-events-none">
-        <div className="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
           <div className="text-center space-y-2">
             <div className="text-3xl">📱</div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>
@@ -89,18 +89,18 @@ export function InstallPrompt() {
   // Show iOS prompt
   if (isIOS && !showIOSInstructions) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 to-slate-800 text-white p-4 space-y-3 shadow-lg border-t border-slate-700 max-w-md mx-auto md:max-w-none md:bottom-4 md:right-4 md:left-auto md:rounded-lg md:shadow-xl">
+      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-[#0F172A] to-[#1E293B] text-white p-4 space-y-3 shadow-lg border-t border-[#334155] max-w-md mx-auto md:max-w-none md:bottom-4 md:right-4 md:left-auto md:rounded-lg md:shadow-xl">
         <div className="flex items-start gap-3">
           <div className="text-2xl flex-shrink-0">📱</div>
           <div className="flex-1">
             <h3 className="font-semibold text-sm md:text-base">Install BBF Song book</h3>
-            <p className="text-xs md:text-sm text-slate-300 mt-1">
+            <p className="text-xs md:text-sm text-[#CBD5E1] mt-1">
               Access your songbook anytime, even offline
             </p>
           </div>
           <button
             onClick={() => setShowIOSInstructions(false)}
-            className="text-slate-400 hover:text-white flex-shrink-0"
+            className="text-[#94A3B8] hover:text-white flex-shrink-0"
           >
             ✕
           </button>
@@ -108,7 +108,7 @@ export function InstallPrompt() {
         <div className="flex gap-2">
           <button
             onClick={() => setShowIOSInstructions(false)}
-            className="flex-1 px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium text-sm transition-colors"
+            className="flex-1 px-3 py-2 bg-[#334155] hover:bg-[#475569] rounded-lg font-medium text-sm transition-colors"
           >
             Dismiss
           </button>
@@ -151,7 +151,7 @@ export function InstallPrompt() {
           </button>
           <button
             onClick={installApp}
-            className="flex-1 px-3 py-2 bg-white hover:bg-slate-100 text-emerald-900 font-bold rounded-lg text-sm transition-colors"
+            className="flex-1 px-3 py-2 bg-white hover:bg-[#F1F5F9] text-emerald-900 font-bold rounded-lg text-sm transition-colors"
           >
             Install App
           </button>

@@ -28,7 +28,7 @@ export function SortSelector({ value, onChange }: SortSelectorProps) {
       {open && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="absolute top-7 left-0 z-50 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden min-w-[180px] animate-in fade-in zoom-in-95 duration-150">
+          <div className="absolute top-7 left-0 z-50 bg-[var(--color-surface)] rounded-2xl border border-slate-100 overflow-hidden min-w-[180px] animate-in fade-in zoom-in-95 duration-150">
             <div className="px-4 pt-3 pb-2">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Sort Songs</span>
             </div>

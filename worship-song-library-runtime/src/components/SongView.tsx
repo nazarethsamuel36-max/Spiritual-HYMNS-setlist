@@ -6,6 +6,8 @@ import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
+import { ChordTransposer } from '../utils/ChordTransposer';
+import { formatKey } from '../utils/SongFormatter';
 
 // Parse lyrics helper
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -57,6 +59,11 @@ export function SongView() {
   
   // 3. Auto-scroll & Swipe State
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [autoScrollEnabled, setAutoScrollEnabled] = useState(false);
+  const [autoScrollSpeed, setAutoScrollSpeed] = useState(1);
+  const autoScrollSpeedRef = useRef(1);
+  const autoScrollAccumRef = useRef(0);
+  const autoScrollTimerRef = useRef<number | null>(null);
 
   // Smooth slide direction tracking
   const [prevActiveIdx, setPrevActiveIdx] = useState<number | null>(null);
@@ -118,6 +125,7 @@ export function SongView() {
   // 4. The Bulletproof Fetch Logic
   const refreshSong = useCallback(async () => {
     if (!songId) return;
+    setAutoScrollEnabled(false);
     setLoading(true);
     setError(null);
 
@@ -227,6 +235,52 @@ export function SongView() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // 6b. Auto Scroll — mobile reader footer control
+  // Speed is read from a ref so changing it adjusts the active scroll
+  // without tearing down/restarting the interval.
+  useEffect(() => {
+    autoScrollSpeedRef.current = autoScrollSpeed;
+  }, [autoScrollSpeed]);
+
+  useEffect(() => {
+    if (!autoScrollEnabled) return;
+
+    const el = scrollContainerRef.current;
+    if (!el) return;
+
+    // Fractional speeds (e.g. 0.5x) must be genuinely slower than 1x.
+    // scrollTop rounds to integers, so accumulate sub-pixel deltas and
+    // apply whole-pixel steps instead of relying on fractional writes.
+    autoScrollAccumRef.current = 0;
+
+    const tick = () => {
+      const container = scrollContainerRef.current;
+      if (!container) {
+        setAutoScrollEnabled(false);
+        return;
+      }
+      const remaining = container.scrollHeight - (container.scrollTop + container.clientHeight);
+      if (remaining <= 1) {
+        setAutoScrollEnabled(false);
+        return;
+      }
+      autoScrollAccumRef.current += autoScrollSpeedRef.current;
+      const step = Math.floor(autoScrollAccumRef.current);
+      if (step > 0) {
+        container.scrollTop += step;
+        autoScrollAccumRef.current -= step;
+      }
+    };
+
+    autoScrollTimerRef.current = window.setInterval(tick, 35);
+    return () => {
+      if (autoScrollTimerRef.current) {
+        window.clearInterval(autoScrollTimerRef.current);
+        autoScrollTimerRef.current = null;
+      }
+    };
+  }, [autoScrollEnabled]);
+
 
   // 7. Render
   if (loading) return (
@@ -241,6 +295,7 @@ export function SongView() {
   );
 
   const displayTranspose = transpose + (song.capo || 0);
+  const currentKey = ChordTransposer.transposeChord(formatKey(song.originalKey), displayTranspose);
   const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
 
   // --- Content resolution: chords → lyrics → sections reconstruction ---
@@ -272,21 +327,12 @@ export function SongView() {
   const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
   return (
-    <div className={`relative flex h-full w-full flex-col bg-[#FAFAFA] ${langClass}`}>
+    <div className={`relative flex h-full w-full flex-col bg-[var(--color-reader-surface)] ${langClass}`}>
       <ReaderHeader
         song={song} transpose={displayTranspose} mode={readerMode}
         onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
         onRefreshSong={refreshSong}
       />
-
-      {/* Page Indicator Dots */}
-      {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
-        <div className="flex items-center justify-center space-x-1.5 py-2 bg-white border-b border-slate-100">
-          {visibleDots.map((idx) => (
-            <div key={idx} className={`rounded-full transition-all duration-200 ${idx === activeIdx ? 'w-4 h-1.5 bg-[var(--color-brand)]' : 'w-1.5 h-1.5 bg-slate-200'}`} />
-          ))}
-        </div>
-      )}
 
       <div
         ref={scrollContainerRef}
@@ -300,6 +346,15 @@ export function SongView() {
               slideDir === 'next' ? 'animate-slide-next' : slideDir === 'prev' ? 'animate-slide-prev' : ''
             }`}
           >
+            {/* Mobile-only Key metadata — part of the song's opening, not a UI control */}
+            {!isAdminAuthenticated && (
+              <div className="md:hidden mb-5 pl-2">
+                <span className="text-sm font-semibold tracking-wide text-slate-500">
+                  Key: <span className="font-bold text-slate-700">{currentKey}</span>
+                </span>
+              </div>
+            )}
+
             {isAdminAuthenticated ? (
               <EditorMode song={{ ...song, sections: song.sections }} source={source} />
             ) : hasContent ? (
@@ -332,7 +387,7 @@ export function SongView() {
                     </p>
                     <button
                       onClick={() => window.dispatchEvent(new CustomEvent('open-download-library'))}
-                      className="mt-2 px-4 py-2 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-700 transition-colors"
+                      className="mt-2 px-4 py-2 bg-slate-900 text-[var(--color-on-inverse)] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-700 transition-colors"
                     >
                       Download Library
                     </button>
@@ -343,6 +398,72 @@ export function SongView() {
           </div>
         </div>
       </div>
+
+      {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll */}
+      {!isAdminAuthenticated && (
+        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-[#E2E8F0]/60 z-40 px-4 pt-1 pb-2 shadow-sm">
+          {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
+            <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1.5 select-none">
+              {visibleDots.map((idx) => (
+                <div key={idx} className={`rounded-full transition-all duration-200 ${idx === activeIdx ? 'w-4 h-1.5 bg-[var(--color-brand)]' : 'w-1.5 h-1.5 bg-slate-200'}`} />
+              ))}
+            </div>
+          )}
+          <div className="max-w-4xl mx-auto w-full flex items-center justify-between gap-3">
+            {/* Mode Selector */}
+            <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
+              <button
+                onClick={() => setReaderMode('lyrics')}
+                className={`px-3 py-0.5 h-full text-xs font-bold rounded-md transition-all ${
+                  readerMode === 'lyrics' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                Lyrics
+              </button>
+              <button
+                onClick={() => setReaderMode('chords')}
+                className={`px-3 py-0.5 h-full text-xs font-bold rounded-md transition-all ${
+                  readerMode === 'chords' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                Chords
+              </button>
+            </div>
+
+            {/* Auto Scroll — single pill with inline speed control */}
+            <div className={`flex items-center h-8 rounded-full overflow-hidden border flex-shrink-0 transition-all ${
+              autoScrollEnabled
+                ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-sm'
+                : 'bg-[var(--color-surface)] border-slate-200 text-slate-600'
+            }`}>
+              <button
+                onClick={() => setAutoScrollSpeed((s) => Math.max(0.5, +(s - 0.5).toFixed(1)))}
+                className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
+                aria-label="Decrease auto scroll speed"
+              >
+                −
+              </button>
+              <button
+                onClick={() => setAutoScrollEnabled(!autoScrollEnabled)}
+                className="flex items-center gap-1.5 px-2 h-full text-xs font-bold transition-colors active:opacity-70"
+                title="Toggle auto scroll"
+              >
+                <span className={autoScrollEnabled ? 'opacity-90' : ''}>Scroll</span>
+                <span className="w-7 text-center text-[10px] font-black rounded-full bg-black/10 px-1 py-0.5">
+                  {autoScrollSpeed}x
+                </span>
+              </button>
+              <button
+                onClick={() => setAutoScrollSpeed((s) => Math.min(3, +(s + 0.5).toFixed(1)))}
+                className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
+                aria-label="Increase auto scroll speed"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );

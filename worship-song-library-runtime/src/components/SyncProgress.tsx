@@ -27,7 +27,7 @@ export function SyncProgress({ currentMB, totalMB, percentage, status, message, 
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 px-6 py-8 backdrop-blur-sm">
-      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-[var(--color-surface)] p-8 shadow-2xl">
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 shadow-lg">
           <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

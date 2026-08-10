@@ -1,11 +1,10 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import type { SongIndex } from '../db/Database';
 import { db } from '../db/Database';
 import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { supabase } from '../lib/supabaseClient';
 import { getSongs } from '../services/DataService';
-import { SearchWithOverlay } from './shared/SearchWithOverlay';
 import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
@@ -62,10 +61,12 @@ export function SongList() {
   const [newSongKey, setNewSongKey] = useState('C');
   const [newSongChords, setNewSongChords] = useState('');
   const [newSongIsActive, setNewSongIsActive] = useState(false);
-  const [isSearchActive, setIsSearchActive] = useState(false);
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
+  const librarySearchActive = useWorkflowStore((s) => s.librarySearchActive);
+  const librarySearchQuery = useWorkflowStore((s) => s.librarySearchQuery);
+  const closeLibrarySearch = useWorkflowStore((s) => s.closeLibrarySearch);
 
   const activeSongId = reader.type === 'song' ? reader.songId : null;
 
@@ -208,7 +209,7 @@ export function SongList() {
           {!showAddForm ? (
             <button
               onClick={() => setShowAddForm(true)}
-              className="w-full py-2.5 px-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors flex items-center justify-center space-x-2"
+              className="w-full py-2.5 px-4 bg-[var(--color-brand)] hover:opacity-80 text-[var(--color-on-inverse)] font-semibold rounded-lg transition-all flex items-center justify-center space-x-2"
             >
               <>
                 <span>✚</span>
@@ -216,7 +217,7 @@ export function SongList() {
               </>
             </button>
           ) : (
-            <div className="w-full rounded-lg border border-slate-200 bg-white p-4">
+            <div className="w-full rounded-lg border border-slate-200 bg-[var(--color-surface)] p-4">
               <div className="grid gap-3 md:grid-cols-2">
                 <label className="text-sm font-medium text-slate-700">
                   <div className="mb-1">Language</div>
@@ -300,7 +301,7 @@ export function SongList() {
                       });
                     }}
                   disabled={isAddingNewSong}
-                  className="px-4 py-2 bg-emerald-500 text-white rounded-md"
+                  className="px-4 py-2 bg-[var(--color-brand)] text-[var(--color-on-inverse)] rounded-md"
                 >
                   Create
                 </button>
@@ -316,37 +317,19 @@ export function SongList() {
         </div>
       )}
 
-      {/* Search + Filters — sticky header */}
-      <div id="song-list-filters-header" className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
-        {/* Language pills */}
-        <div className="px-3">
-          <LanguageTabs
-            languages={LANGUAGES}
-            selected={selectedLanguage}
-            onSelect={setSelectedLanguage}
-          />
-        </div>
-        {/* Search bar — prominent */}
-        <div className="px-3 mt-2.5">
-          <SearchWithOverlay
-            songs={allSongs}
-            selectedLanguage={selectedLanguage}
-            onSelectSong={(id) => openSong(id, 'library')}
-            onSearchActiveChange={setIsSearchActive}
-          />
-        </div>
-        {/* Sort control */}
-        <div className="px-4 mt-2">
-          <SortSelector
-            value={sortBy}
-            onChange={setSortBy}
-          />
-        </div>
-      </div>
-
-
-      {/* Song List - hidden when search is active */}
-      {!isSearchActive && (
+      {/* Search results — shown inline when the header search state is active */}
+      {librarySearchActive && librarySearchQuery.trim().length > 0 ? (
+        <SearchResults
+          query={librarySearchQuery}
+          songs={allSongs}
+          selectedLanguage={selectedLanguage}
+          activeSongId={activeSongId}
+          onSelectSong={(id) => {
+            openSong(id, 'library');
+            closeLibrarySearch();
+          }}
+        />
+      ) : (
         <div className="flex flex-col pb-32" style={{ minHeight: '500px' }}>
           {isLoading ? (
           <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
@@ -358,7 +341,22 @@ export function SongList() {
           </div>
         ) : (
           <>
-            <div className="p-4 text-xs text-slate-400">Showing {songs.length} songs</div>
+            {/* Language pills — scrolls with the list */}
+            <div className="px-3 pt-3">
+              <LanguageTabs
+                languages={LANGUAGES}
+                selected={selectedLanguage}
+                onSelect={setSelectedLanguage}
+              />
+            </div>
+            {/* Sort control — scrolls with the list */}
+            <div className="px-4 pt-2.5">
+              <SortSelector
+                value={sortBy}
+                onChange={setSortBy}
+              />
+            </div>
+            <div className="pt-3 pb-2 px-2 text-xs text-slate-400">Showing {songs.length} songs</div>
             {songs.map((song: SongIndex) => (
               <SongRow
                 key={song.id}
@@ -408,4 +406,48 @@ function compareSongsByTitle(a: SongIndex, b: SongIndex) {
   });
   if (titleCompare !== 0) return titleCompare;
   return a.songNumber - b.songNumber;
+}
+
+interface SearchResultsProps {
+  query: string;
+  songs: SongIndex[];
+  selectedLanguage: string;
+  activeSongId: number | null;
+  onSelectSong: (id: number) => void;
+}
+
+function SearchResults({ query, songs, selectedLanguage, activeSongId, onSelectSong }: SearchResultsProps) {
+  const results = useMemo(() => {
+    const filtered = songs.filter(song => songMatchesLanguageFilter(song.language, selectedLanguage));
+    try {
+      return SearchEngine.searchWithLimit(filtered, query, 100);
+    } catch (err) {
+      console.warn('[Search] Search error suppressed:', err);
+      return [];
+    }
+  }, [query, songs, selectedLanguage]);
+
+  return (
+    <div className="flex flex-col pb-32">
+      <div className="px-4 pt-3 pb-2">
+        <div className="text-sm font-semibold text-slate-700">Search Results</div>
+        <div className="text-xs text-slate-500">
+          {results.length} song{results.length === 1 ? '' : 's'} found
+          {results.some(r => r.matchType === 'lyrics') && <span className="text-blue-600 ml-1">· searching titles and lyrics</span>}
+        </div>
+      </div>
+      {results.length === 0 ? (
+        <div className="p-10 text-center text-slate-400 text-sm">No results found</div>
+      ) : (
+        results.map((song) => (
+          <SongRow
+            key={song.id}
+            song={song}
+            onSelect={onSelectSong}
+            isActive={song.id === activeSongId}
+          />
+        ))
+      )}
+    </div>
+  );
 }

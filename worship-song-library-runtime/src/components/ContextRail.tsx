@@ -18,7 +18,7 @@ export function ContextRail() {
 
   return (
     <div className="context-rail-pane bg-slate-50 border-l border-slate-200">
-      <header className="px-4 py-3 border-b border-slate-200 bg-white flex justify-between items-center sticky top-0 z-10">
+      <header className="px-4 py-3 border-b border-slate-200 bg-[var(--color-surface)] flex justify-between items-center sticky top-0 z-10">
         <h2 className="text-sm font-bold text-slate-800 tracking-tight uppercase">Context Rail</h2>
         <button
           onClick={() => setShowContextRail(false)}
@@ -37,7 +37,7 @@ export function ContextRail() {
           <div className="space-y-2">
             <button 
               onClick={() => setActiveArrangementId(null)}
-              className={`w-full text-left px-3 py-2 rounded-lg border text-sm font-semibold transition-colors ${!activeArrangementId ? 'bg-white border-slate-200 shadow-sm text-slate-800' : 'bg-transparent border-transparent hover:bg-slate-200/50 text-slate-500'}`}
+              className={`w-full text-left px-3 py-2 rounded-lg border text-sm font-semibold transition-colors ${!activeArrangementId ? 'bg-[var(--color-surface)] border-slate-200 shadow-sm text-slate-800' : 'bg-transparent border-transparent hover:bg-slate-200/50 text-slate-500'}`}
             >
               Original Version
             </button>
@@ -67,7 +67,7 @@ export function ContextRail() {
         <div>
           <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3">Personal Notes</h3>
           <textarea 
-            className="w-full h-32 p-3 text-sm rounded-lg border border-slate-200 bg-white resize-none focus:ring-1 focus:ring-slate-300 focus:border-slate-300 outline-none placeholder:text-slate-400"
+            className="w-full h-32 p-3 text-sm rounded-lg border border-slate-200 bg-[var(--color-surface)] resize-none focus:ring-1 focus:ring-slate-300 focus:border-slate-300 outline-none placeholder:text-slate-400"
             placeholder="Add notes for this song..."
           />
         </div>

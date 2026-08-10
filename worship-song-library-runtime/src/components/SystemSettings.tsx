@@ -85,9 +85,9 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[200] flex items-center justify-center p-4 pointer-events-none">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto flex flex-col">
-        <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50 flex-shrink-0">
+    <div className="fixed inset-0 bg-[rgba(15,23,42,0.6)] backdrop-blur-sm z-[200] flex items-center justify-center p-4 pointer-events-none">
+      <div className="bg-[var(--color-surface)] rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto flex flex-col">
+        <div className="p-6 border-b border-[#F1F5F9] flex justify-between items-center bg-slate-50 flex-shrink-0">
           <h2 className="text-xl font-bold text-slate-800">System Status</h2>
           <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-colors">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -98,11 +98,11 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
         <div className="p-6 space-y-6 overflow-y-auto flex-1">
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+            <div className="bg-slate-50 p-4 rounded-2xl border border-[#F1F5F9]">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
               <span className="text-lg font-bold text-slate-700">{stats?.songCount ?? 0} Songs</span>
             </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+            <div className="bg-slate-50 p-4 rounded-2xl border border-[#F1F5F9]">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
               <span className="text-xs font-bold text-slate-700">
                 {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
@@ -112,7 +112,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
           <div className="space-y-3">
             {/* Song Management */}
-            <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+            <div className="bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl overflow-hidden">
               <button
                 type="button"
                 onClick={() => setShowSongManagement((prev) => !prev)}
@@ -122,12 +122,12 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 <span className="text-slate-400">{showSongManagement ? '▾' : '▸'}</span>
               </button>
               {showSongManagement && (
-                <div className="border-t border-slate-100 px-4 py-3 space-y-2">
+                <div className="border-t border-[#F1F5F9] px-4 py-3 space-y-2">
                   {hasOfflineLibrary ? (
                     <button
                       type="button"
                       onClick={handleDeleteOfflineLibrary}
-                      className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-red-400 hover:bg-red-50 transition-all group"
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-red-400 hover:bg-red-50 transition-all group"
                     >
                       <div className="text-left">
                         <div className="font-bold text-slate-700 group-hover:text-red-600">Delete Offline Library</div>
@@ -142,7 +142,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                       type="button"
                       onClick={handleDownloadSongs}
                       disabled={isDownloading}
-                      className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       <div className="text-left">
                         <div className="font-bold text-slate-700 group-hover:text-emerald-600">
@@ -162,7 +162,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                     type="button"
                     onClick={handleSyncNow}
                     disabled={isSyncing}
-                    className="w-full flex items-center justify-between p-4 bg-white border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="text-left">
                       <div className="font-bold text-slate-700 group-hover:text-blue-600">
@@ -176,7 +176,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                   </button>
 
                   {isDownloading && downloadProgress > 0 && (
-                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <div className="rounded-2xl border border-[#E2E8F0] bg-slate-50 p-4">
                       <div className="mb-2 flex items-center justify-between text-xs font-bold text-slate-600">
                         <span>{statusMsg}</span>
                         <span>{downloadProgress}%</span>
@@ -200,25 +200,24 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             </div>
 
             {/* Appearance */}
-            <div className="bg-white p-4 rounded-2xl border border-slate-200">
+            <div className="bg-[var(--color-surface)] p-4 rounded-2xl border border-[#E2E8F0]">
               <div className="mb-2 text-sm font-bold text-slate-700">Appearance</div>
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setTheme('light')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-white border-slate-900 shadow-sm' : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1] hover:bg-slate-50'}`}
                 >
-                  ☀ Light
+                  Light
                 </button>
                 <button
                   type="button"
                   onClick={() => setTheme('dark')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-white border-slate-900 shadow-sm' : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1] hover:bg-slate-50'}`}
                 >
-                  🌙 Dark
+                  Dark
                 </button>
               </div>
-              <p className="mt-2 text-xs text-slate-400">Select your preferred viewing theme: Light or Dark.</p>
             </div>
           </div>
         </div>

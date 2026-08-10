@@ -37,7 +37,7 @@ export function SetlistManager() {
       </div>
 
       {isCreating && (
-        <form onSubmit={handleCreate} className="mb-4 bg-white border border-slate-200 p-4 rounded-xl shadow-sm animate-in zoom-in-95 duration-200 mx-2">
+        <form onSubmit={handleCreate} className="mb-4 bg-[var(--color-surface)] border border-slate-200 p-4 rounded-xl shadow-sm animate-in zoom-in-95 duration-200 mx-2">
           <label className="block text-xs font-bold text-slate-500 mb-2">Setlist Name</label>
           <div className="flex flex-col sm:flex-row gap-2">
             <input
@@ -57,7 +57,7 @@ export function SetlistManager() {
             </button>
             <button
               type="submit"
-              className="bg-slate-800 text-white px-4 py-2 rounded-lg font-bold text-xs shadow-sm"
+              className="bg-slate-800 text-[var(--color-on-inverse)] px-4 py-2 rounded-lg font-bold text-xs shadow-sm"
             >
               Create
             </button>

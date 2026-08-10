@@ -213,9 +213,9 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
   const visibleDots = Array.from({ length: endDot - startDot }, (_, i) => startDot + i);
 
   return (
-    <div className="flex flex-col h-full bg-[#FAFAFA] text-slate-800">
+    <div className="flex flex-col h-full bg-[var(--color-reader-surface)] text-slate-800">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200/60 bg-white sticky top-0 z-30">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-[#E2E8F0]/60 bg-[var(--color-surface)] sticky top-0 z-30">
         <button
           onClick={onClose}
           className="flex items-center space-x-1 text-slate-500 hover:text-slate-800 font-bold uppercase text-[10px] tracking-widest transition-all active:scale-95"
@@ -241,7 +241,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
               </button>
               <button
                 onClick={handleSave}
-                className="bg-slate-900 text-white px-4 py-1.5 rounded-full hover:bg-slate-800 text-[10px] font-black uppercase tracking-wider transition-all shadow-sm"
+                className="bg-slate-900 text-[var(--color-on-inverse)] px-4 py-1.5 rounded-full hover:bg-slate-800 text-[10px] font-black uppercase tracking-wider transition-all shadow-sm"
               >
                 Save
               </button>
@@ -259,7 +259,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
 
       {/* Position Page Indicator */}
       {totalItems > 1 && (
-        <div className="flex items-center justify-center space-x-1.5 py-2 bg-white border-b border-slate-100 select-none">
+        <div className="flex items-center justify-center space-x-1.5 py-2 bg-[var(--color-surface)] border-b border-slate-100 select-none">
           {visibleDots.map((idx) => (
             <div
               key={idx}
@@ -322,7 +322,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
           </div>
         ) : (
           /* Note View */
-          <div className="w-full bg-white border border-slate-200/80 rounded-2xl shadow-xl p-8 space-y-6">
+          <div className="w-full bg-[var(--color-surface)] border border-slate-200/80 rounded-2xl shadow-xl p-8 space-y-6">
             {isEditing ? (
               <div className="space-y-4">
                 <div className="space-y-1">
@@ -331,7 +331,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                     type="text"
                     value={label}
                     onChange={(e) => setLabel(e.target.value)}
-                    className="w-full text-lg font-bold border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-900 bg-[#FAFAFA]"
+                    className="w-full text-lg font-bold border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-900 bg-[var(--color-reader-surface)]"
                   />
                 </div>
                 <div className="space-y-1">
@@ -340,7 +340,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
                     rows={8}
                     value={content}
                     onChange={(e) => setContent(e.target.value)}
-                    className="w-full border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-700 bg-[#FAFAFA] text-base leading-relaxed"
+                    className="w-full border border-slate-200 rounded-lg px-3 py-2 focus:border-slate-400 outline-none text-slate-700 bg-[var(--color-reader-surface)] text-base leading-relaxed"
                     placeholder="Enter instructions, cues, or announcements..."
                   />
                 </div>

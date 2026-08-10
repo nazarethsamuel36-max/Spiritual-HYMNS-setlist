@@ -54,7 +54,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
     >
       {/* Drag Handle */}
       <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-white border border-slate-200 text-slate-600 rounded-lg text-sm font-bold mr-2">
+        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-slate-200 text-slate-600 rounded-lg text-sm font-bold mr-2">
           {item.order + 1}
         </div>
         <div className="text-slate-300 group-hover:text-slate-500 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
@@ -127,7 +127,7 @@ function SortableMarkerItem({ item, setlistId }: { item: any, setlistId: string 
     >
       {/* Drag Handle */}
       <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-white border border-[var(--color-brand)]/30 text-[var(--color-brand)] rounded-lg text-sm font-bold mr-2">
+        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-[var(--color-brand)]/30 text-[var(--color-brand)] rounded-lg text-sm font-bold mr-2">
           {item.order + 1}
         </div>
         <div className="text-[var(--color-brand)]/40 group-hover:text-[var(--color-brand)]/70 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
@@ -193,7 +193,7 @@ function SortableNoteItem({ item, setlistId }: { item: any, setlistId: string })
     >
       {/* Drag Handle */}
       <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-white border border-amber-200 text-amber-600 rounded-lg text-sm font-bold mr-2">
+        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-amber-200 text-amber-600 rounded-lg text-sm font-bold mr-2">
           {item.order + 1}
         </div>
         <div className="text-amber-300 group-hover:text-amber-500 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
@@ -361,7 +361,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               alert('Failed to share setlist.');
             }
           }}
-          className="flex items-center space-x-2 bg-slate-900 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"
+          className="flex items-center space-x-2 bg-slate-900 text-[var(--color-on-inverse)] px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
           <span>Share Setlist</span>
@@ -373,14 +373,14 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
         <input
           type="text"
           placeholder="Search songs to add..."
-          className="w-full pl-11 pr-4 py-3.5 rounded-xl border-2 border-slate-100 bg-slate-50/50 focus:outline-none focus:border-[var(--color-brand)] focus:bg-white transition-all text-sm font-bold text-[var(--color-text)]"
+          className="w-full pl-11 pr-4 py-3.5 rounded-xl border-2 border-slate-100 bg-slate-50/50 focus:outline-none focus:border-[var(--color-brand)] focus:bg-[var(--color-surface)] transition-all text-sm font-bold text-[var(--color-text)]"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
         <svg className="w-5 h-5 absolute left-3.5 top-3.5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0" /></svg>
 
         {search.trim() && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-slate-200 z-[100] max-h-72 overflow-y-auto">
+          <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--color-surface)] rounded-xl shadow-2xl border border-slate-200 z-[100] max-h-72 overflow-y-auto">
             {searchResults?.map((song) => (
               <button
                 key={song.id}
@@ -422,12 +422,12 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               autoFocus
               type="text"
               placeholder="Marker name (e.g. Sermon, Prayer)..."
-              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-[var(--color-brand)]/40 bg-white focus:outline-none focus:border-[var(--color-brand)] text-sm font-medium"
+              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-[var(--color-brand)]/40 bg-[var(--color-surface)] focus:outline-none focus:border-[var(--color-brand)] text-sm font-medium"
               value={markerLabel}
               onChange={(e) => setMarkerLabel(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter') handleAddMarker(); if (e.key === 'Escape') setAddingMarker(false); }}
             />
-            <button onClick={handleAddMarker} className="bg-[var(--color-brand)] text-white px-3 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider">Add</button>
+            <button onClick={handleAddMarker} className="bg-[var(--color-brand)] text-[var(--color-on-inverse)] px-3 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider">Add</button>
             <button onClick={() => setAddingMarker(false)} className="px-3 py-2 rounded-lg border border-slate-200 text-[10px] font-black uppercase tracking-wider text-slate-500">Cancel</button>
           </div>
         )}
@@ -450,7 +450,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               autoFocus
               type="text"
               placeholder="Note title (e.g. Announcements)..."
-              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-amber-300 bg-white focus:outline-none focus:border-amber-500 text-sm font-medium"
+              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-amber-300 bg-[var(--color-surface)] focus:outline-none focus:border-amber-500 text-sm font-medium"
               value={noteLabel}
               onChange={(e) => setNoteLabel(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter') handleAddNote(); if (e.key === 'Escape') setAddingNote(false); }}

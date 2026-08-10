@@ -12,7 +12,6 @@ import { InstallPrompt } from './components/InstallPrompt';
 import { ContextRail } from './components/ContextRail';
 import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
-import { SmartDownloadButton } from './components/SmartDownloadButton';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
@@ -37,6 +36,12 @@ function App() {
   const setSidebarPanel = useWorkflowStore((s) => s.setSidebarPanel);
   const setShowSettings = useWorkflowStore((s) => s.setShowSettings);
   const closeReader = useWorkflowStore((s) => s.closeReader);
+  const librarySearchActive = useWorkflowStore((s) => s.librarySearchActive);
+  const librarySearchQuery = useWorkflowStore((s) => s.librarySearchQuery);
+  const setLibrarySearchActive = useWorkflowStore((s) => s.setLibrarySearchActive);
+  const setLibrarySearchQuery = useWorkflowStore((s) => s.setLibrarySearchQuery);
+  const closeLibrarySearch = useWorkflowStore((s) => s.closeLibrarySearch);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   
   const titleTapCountRef = useRef(0);
   const titleTapTimerRef = useRef<number | null>(null);
@@ -159,6 +164,32 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [isMobile, mobileActivePane]);
 
+  // Focus the search input as soon as the search header state opens
+  useEffect(() => {
+    if (librarySearchActive) {
+      requestAnimationFrame(() => searchInputRef.current?.focus());
+    }
+  }, [librarySearchActive]);
+
+  // Close the search header with the Escape key (desktop)
+  useEffect(() => {
+    if (!librarySearchActive) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        closeLibrarySearch();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [librarySearchActive, closeLibrarySearch]);
+
+  // Close search when the user navigates away from the Songs tab
+  useEffect(() => {
+    if (sidebar.panel !== 'library' && librarySearchActive) {
+      closeLibrarySearch();
+    }
+  }, [sidebar.panel, librarySearchActive, closeLibrarySearch]);
+
   useEffect(() => {
     if (!isAdminAuthenticated) return;
 
@@ -217,7 +248,7 @@ function App() {
   // ==========================================
   if (showGatekeeper === null) {
     return (
-      <div className="flex items-center justify-center h-screen bg-white">
+      <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
         <div className="text-center">
           <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song book</h1>
           <p className="text-slate-400 mt-2">Loading library...</p>
@@ -238,26 +269,67 @@ function App() {
           {showSidebar && (
             <div className="sidebar-pane">
               <header className="sidebar-header">
+                {librarySearchActive && isSongsTab ? (
+                  /* Search header state — occupies the entire header */
+                  <div className="flex items-center w-full gap-2">
+                    <button
+                      type="button"
+                      onClick={closeLibrarySearch}
+                      className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all active:scale-95"
+                      aria-label="Close search"
+                      title="Close search"
+                    >
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <div className="relative flex-1 min-w-0">
+                      <input
+                        ref={searchInputRef}
+                        id="library-search-input"
+                        type="text"
+                        value={librarySearchQuery}
+                        onChange={(e) => setLibrarySearchQuery(e.target.value)}
+                        placeholder="Search songs, numbers, lyrics..."
+                        className="w-full pl-4 pr-10 py-2.5 rounded-full border-none bg-slate-100 focus:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all text-[15px] font-medium text-slate-800 placeholder-slate-400"
+                      />
+                      <svg className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                ) : (
+                  <>
                 <div className="flex justify-between items-center w-full">
                   <button type="button" onClick={handleTitleTap} className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
                   <button type="button" onClick={handleTitleTap} className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none" title="Tap 5 times to unlock admin mode">BBF Song book</button>
                   {isAdminAuthenticated && (
                     <button type="button" onClick={handleExitAdminMode} className="mr-2 text-base transition-transform hover:scale-110" title="Exit admin" aria-label="Exit admin">🔑</button>
                   )}
-                  <SmartDownloadButton compact={true} />
-                  <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings">
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </button>
+                  <div className="flex items-center gap-1">
+                    {isSongsTab && (
+                      <button onClick={() => setLibrarySearchActive(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Search songs" title="Search songs">
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </button>
+                    )}
+                    <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings" title="Settings">
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
                 <nav className="hidden md:flex items-center space-x-1 mt-2 bg-slate-200/50 p-1 rounded-lg">
-                  <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSongsTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Songs</button>
-                  <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Shared</button>
-                  <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSetlistTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Setlists</button>
-                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isPersonalTab ? 'bg-white text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
+                  <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSongsTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Songs</button>
+                  <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Shared</button>
+                  <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isSetlistTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Setlists</button>
+                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black uppercase tracking-widest transition-all ${isPersonalTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
                 </nav>
+                  </>
+                )}
               </header>
               <div className="sidebar-content hide-scrollbar">
                 {(sidebar.panel === 'library') && <div className="animate-in fade-in duration-300"><SongList /></div>}
@@ -279,7 +351,7 @@ function App() {
                   )}
                 </div>
               ) : (
-                <div className="flex-1 flex flex-col items-center justify-center bg-[#FAFAFA] h-full">
+                <div className="flex-1 flex flex-col items-center justify-center bg-[var(--color-reader-surface)] h-full">
                   <div className="max-w-md text-center px-6">
                     <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">BBF Song book</h2>
                     <p className="text-sm text-slate-500 mb-10 leading-relaxed">Select a song from the library or choose a setlist sequence to begin reading.</p>
@@ -322,7 +394,7 @@ function App() {
 
           {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
           <InstallPrompt />
-          <ConnectionStatus />
+          {!(isMobile && reader.type === 'song') && <ConnectionStatus />}
         </div>
       )}
     </>

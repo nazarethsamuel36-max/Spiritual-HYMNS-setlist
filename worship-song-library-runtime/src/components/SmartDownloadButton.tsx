@@ -113,7 +113,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
 
   const overlay = isDownloading ? (
     <div className="fixed inset-x-0 top-4 z-[60] flex justify-center px-3 pointer-events-none">
-      <div className="w-full max-w-md rounded-2xl border border-emerald-200 bg-white/95 shadow-xl backdrop-blur">
+      <div className="w-full max-w-md rounded-2xl border border-emerald-200 bg-[var(--color-surface)]/95 shadow-xl backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <div className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -140,7 +140,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
         <button
           onClick={handleDownloadAndInstall}
           disabled={isDownloading}
-          className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+          className="h-9 px-3 flex items-center justify-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           title="Download songs for offline use"
         >
           {isDownloading ? 'Downloading...' : 'Download'}
@@ -152,7 +152,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   if (showIOSInstructions) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-        <div className="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4">
+        <div className="bg-[var(--color-surface)] rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4">
           <div className="text-center space-y-2">
             <div className="text-3xl">📱</div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>

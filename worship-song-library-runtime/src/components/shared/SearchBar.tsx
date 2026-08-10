@@ -76,7 +76,7 @@ export function SearchBar({
         id="song-search-input"
         type="text"
         placeholder={placeholder}
-        className="w-full pl-11 pr-4 py-3 rounded-2xl border-none bg-slate-100 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all text-[15px] font-medium text-slate-800 placeholder-slate-400"
+        className="w-full pl-11 pr-4 py-3 rounded-full border-none bg-slate-100 focus:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all text-[15px] font-medium text-slate-800 placeholder-slate-400"
         value={value}
         onChange={(e) => handleChange(e.target.value)}
       />

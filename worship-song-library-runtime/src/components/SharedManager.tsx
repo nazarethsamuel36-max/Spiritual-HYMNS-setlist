@@ -29,7 +29,7 @@ export function SharedManager() {
       {/* Shared Songs Section */}
       <div className="mb-8">
         <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 px-1">Shared Songs</h2>
-        <div className="flex flex-col bg-white border border-slate-100 rounded-xl overflow-hidden shadow-sm">
+        <div className="flex flex-col bg-[var(--color-surface)] border border-slate-100 rounded-xl overflow-hidden shadow-sm">
           {!sharedSongs ? (
             <div className="p-6 text-center text-slate-400 text-xs">Loading...</div>
           ) : sharedSongs.length === 0 ? (
@@ -67,7 +67,7 @@ export function SharedManager() {
       {/* Shared Setlists Section */}
       <div>
         <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 px-1">Shared Setlists</h2>
-        <div className="flex flex-col bg-white border border-slate-100 rounded-xl overflow-hidden shadow-sm">
+        <div className="flex flex-col bg-[var(--color-surface)] border border-slate-100 rounded-xl overflow-hidden shadow-sm">
           {!sharedSetlists ? (
             <div className="p-6 text-center text-slate-400 text-xs">Loading...</div>
           ) : sharedSetlists.length === 0 ? (

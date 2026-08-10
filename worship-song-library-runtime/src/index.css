@@ -31,6 +31,74 @@
   --color-outro-text: #475569;
   --color-intro-bg: #F9FAFB;   
   --color-intro-text: #374151;
+
+  /* Semantic Surface Tokens
+     surface:       elevated surfaces (cards, modals, dropdowns, inputs)
+     on-inverse:    text sitting on fills that INVERT (bg-slate-900/800, brand fills)
+     reader-surface:the reader pane background */
+  --color-surface: #FFFFFF;
+  --color-on-inverse: #FFFFFF;
+  --color-reader-surface: #FAFAFA;
+}
+
+/* ═══════════════════════════════════════════════════
+   DARK THEME — Role-for-role lightness inversion
+   Light theme is pixel-identical (all overrides scoped
+   under body[data-theme="dark"]).
+   ═══════════════════════════════════════════════════ */
+
+body[data-theme="dark"] {
+  /* Slate mirror: invert lightness while preserving hue/saturation */
+  --color-slate-50: #020617;
+  --color-slate-100: #0F172A;
+  --color-slate-200: #1E293B;
+  --color-slate-300: #334155;
+  --color-slate-400: #475569;
+  --color-slate-500: #64748B;
+  --color-slate-600: #94A3B8;
+  --color-slate-700: #CBD5E1;
+  --color-slate-800: #E2E8F0;
+  --color-slate-900: #F1F5F9;
+  --color-slate-950: #F8FAFC;
+
+  /* Custom neutral tokens mirror their light-mode roles */
+  --color-text: #F1F5F9;
+  --color-text-muted: #94A3B8;
+  --color-chord: #94A3B8;
+  --color-brand: #F1F5F9;
+  --color-brand-soft: #0F172A;
+
+  /* Semantic surfaces invert */
+  --color-surface: #1E293B;
+  --color-on-inverse: #0F172A;
+  --color-reader-surface: #020617;
+
+  /* Hardcoded surfaces (all are the slate-50 page background role)
+     Strict slate-50 mirror => #020617 */
+  background-color: #020617;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(220, 100%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(200, 100%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(240, 100%, 7%, 1) 0, transparent 50%);
+}
+
+body[data-theme="dark"] .app-shell,
+body[data-theme="dark"] .sidebar-pane,
+body[data-theme="dark"] .reader-pane {
+  background-color: #020617;
+}
+
+body[data-theme="dark"] .sidebar-pane {
+  border-right-color: #1E293B;
+}
+
+body[data-theme="dark"] .sidebar-header {
+  background-color: rgba(2, 6, 23, 0.95);
+}
+
+body[data-theme="dark"] .mobile-bottom-nav {
+  background-color: rgba(2, 6, 23, 0.97);
+  border-top-color: rgba(2, 6, 23, 0.97);
 }
 
 /* ═══════════════════════════════════════════════════
@@ -103,7 +171,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid #E2E8F0;
   padding: 0.75rem 1rem;
   flex-shrink: 0;
   display: flex;
@@ -196,7 +263,7 @@ body {
   background-color: rgba(248, 250, 252, 0.97);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid #E2E8F0;
+  border-top: 1px solid rgba(248, 250, 252, 0.97);
   /* Safe area for home indicator on iPhone */
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
@@ -225,11 +292,11 @@ body {
 }
 
 .mobile-bottom-nav-btn--active {
-  color: #0F172A;
+  color: var(--color-text);
 }
 
 .mobile-bottom-nav-btn--active svg {
-  stroke: #0F172A;
+  stroke: var(--color-text);
 }
 
 /* On mobile, add bottom padding to sidebar-content equal to bottom-nav height */

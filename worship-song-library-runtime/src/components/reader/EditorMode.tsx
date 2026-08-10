@@ -100,13 +100,13 @@ function CustomKeyPicker({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-blue-500' : ''} ${buttonClassName}`}
+        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0 transition-colors hover:bg-[#F1F5F9] ${isOpen ? 'ring-2 ring-blue-500' : ''} ${buttonClassName}`}
       >
         {value}
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 top-[calc(100%+0.5rem)] z-30 min-w-[96px] max-h-[240px] overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-white p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="absolute left-0 top-[calc(100%+0.5rem)] z-30 min-w-[96px] max-h-[240px] overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             {label}
           </div>
@@ -396,9 +396,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
   console.log('🔍 EditorMode RENDERING');
 
   return (
-    <div className="w-full flex flex-col bg-white min-h-0">
+    <div className="w-full flex flex-col bg-[var(--color-surface)] min-h-0">
       <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
-        <div className="w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="w-full rounded-xl border border-slate-200 bg-[var(--color-surface)] p-4 shadow-sm">
           {/* ROW 1: Title & Key */}
           <div className="flex gap-3 h-12 mb-4">
             <input
@@ -407,7 +407,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 setTitle(e.target.value);
                 debouncedAutoSave({ title: e.target.value });
               }}
-              className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-white text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
+              className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
               placeholder="Song Title..."
             />
 
@@ -548,7 +548,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 <button
                   onClick={handleUndo}
                   disabled={historyIndex <= 0}
-                  className="px-2 py-1 text-[10px] font-semibold rounded border border-slate-300 bg-white text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="px-2 py-1 text-[10px] font-semibold rounded border border-slate-300 bg-[var(--color-surface)] text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                   title="Undo (Ctrl+Z)"
                 >
                   ↶ Undo
@@ -568,7 +568,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 }}
                 rows={25}
                 spellCheck={false}
-                className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-white font-mono text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+                className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] font-mono text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
                 placeholder="Paste lyrics and chords here..."
               />
             </div>

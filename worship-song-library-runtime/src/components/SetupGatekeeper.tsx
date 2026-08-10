@@ -53,7 +53,7 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
         </div>
 
         {/* Features */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 space-y-4">
+        <div className="bg-[var(--color-surface)] rounded-2xl shadow-lg p-6 space-y-4">
           <h2 className="font-semibold text-slate-900">What you'll get:</h2>
           <ul className="space-y-3">
             <li className="flex items-start gap-3">

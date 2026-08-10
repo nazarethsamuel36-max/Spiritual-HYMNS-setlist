@@ -25,10 +25,10 @@ function getSavedReaderMode(): Exclude<ReaderMode, 'edit'> {
 }
 
 function getSavedFontSize(): number {
-  if (typeof window === 'undefined') return 18;
+  if (typeof window === 'undefined') return 24;
   const saved = window.localStorage.getItem(FONT_SIZE_STORAGE_KEY);
-  const size = saved ? parseInt(saved, 10) : 18;
-  return (size >= 12 && size <= 24) ? size : 18;
+  const size = saved ? parseInt(saved, 10) : 24;
+  return (size >= 12 && size <= 24) ? size : 24;
 }
 
 interface WorkflowStore {
@@ -41,9 +41,14 @@ interface WorkflowStore {
   libraryLanguage: string;
   isAdminAuthenticated: boolean;
   fontSize: number;
+  librarySearchActive: boolean;
+  librarySearchQuery: string;
   setLibraryLanguage: (lang: string) => void;
   setAdminAuthenticated: (value: boolean) => void;
   setFontSize: (size: number) => void;
+  setLibrarySearchActive: (active: boolean) => void;
+  setLibrarySearchQuery: (query: string) => void;
+  closeLibrarySearch: () => void;
 
   openSong: (id: number, source: 'library' | 'setlist' | 'shared' | 'personal', transpose?: number, setlistId?: string, itemId?: string) => void;
   openMarker: (label: string, setlistId: string, itemId: string) => void;
@@ -52,6 +57,7 @@ interface WorkflowStore {
   openSetlist: (id: string) => void;
   closeSetlist: () => void;
   adjustTranspose: (delta: number) => void;
+  resetTranspose: () => void;
   setSidebarPanel: (panel: 'library' | 'setlist-list' | 'shared' | 'personal') => void;
   setReaderMode: (mode: ReaderMode) => void;
   setShowSettings: (show: boolean) => void;
@@ -69,6 +75,8 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   libraryLanguage: 'All',
   isAdminAuthenticated: false,
   fontSize: getSavedFontSize(),
+  librarySearchActive: false,
+  librarySearchQuery: '',
   setLibraryLanguage: (lang) => set({ libraryLanguage: lang }),
   setAdminAuthenticated: (value) => set({ isAdminAuthenticated: value }),
   setFontSize: (size) => {
@@ -76,14 +84,15 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
     window.localStorage.setItem(FONT_SIZE_STORAGE_KEY, clampedSize.toString());
     set({ fontSize: clampedSize });
   },
+  setLibrarySearchActive: (active) => set({ librarySearchActive: active }),
+  setLibrarySearchQuery: (query) => set({ librarySearchQuery: query }),
+  closeLibrarySearch: () => set({ librarySearchActive: false, librarySearchQuery: '' }),
 
   openSong: (id, source, transpose = 0, setlistId, itemId) => {
-    // Reset font size to default 18 every time a new song is checked
     set({
       reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
       readerMode: 'lyrics',
-      mobileActivePane: 'reader',
-      fontSize: 18
+      mobileActivePane: 'reader'
     });
   },
 
@@ -113,6 +122,11 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   adjustTranspose: (delta) => set((state) => {
     if (state.reader.type !== 'song') return state;
     return { reader: { ...state.reader, transpose: state.reader.transpose + delta } };
+  }),
+
+  resetTranspose: () => set((state) => {
+    if (state.reader.type !== 'song') return state;
+    return { reader: { ...state.reader, transpose: 0 } };
   }),
 
   setSidebarPanel: (panel) => set({
