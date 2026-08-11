@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
-import { getSongById } from '../services/DataService';
+import { getSongById, getSongs } from '../services/DataService';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
@@ -89,8 +89,9 @@ export function SongView() {
       );
     }
 
-    // Default: 'library' mode
-    const songs = await db.songIndex.toArray();
+    // Default: 'library' mode — same source as SongList so swipe works
+    // even before the library is downloaded (falls back to Supabase)
+    const songs = await getSongs();
     let filtered = songs;
     if (libraryLanguage !== 'All') {
        filtered = songs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());

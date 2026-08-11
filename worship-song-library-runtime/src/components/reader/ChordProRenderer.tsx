@@ -192,18 +192,27 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
               ...(line.isChorus && hideChords ? styles.chorusLine : {})
             }}
           >
-            {line.words?.map((wordUnit, wordIndex) => (
-              <div key={wordIndex} style={styles.chordWordGroup}>
-                {!hideChords && (
-                  <span style={styles.chordSlot}>
-                    {wordUnit.chord ? ChordTransposer.transposeChord(wordUnit.chord, transpose) : '\u00A0'}
+            {line.words?.map((wordUnit, wordIndex) => {
+              const nextWord = line.words?.[wordIndex + 1];
+              const isWordBoundary =
+                wordUnit.lyric.endsWith(' ') ||
+                (!!nextWord && !!nextWord.lyric && nextWord.lyric.startsWith(' '));
+              const groupStyle = isWordBoundary
+                ? styles.chordWordGroup
+                : { ...styles.chordWordGroup, marginRight: 0 };
+              return (
+                <div key={wordIndex} style={groupStyle}>
+                  {!hideChords && (
+                    <span style={styles.chordSlot}>
+                      {wordUnit.chord ? ChordTransposer.transposeChord(wordUnit.chord, transpose) : '\u00A0'}
+                    </span>
+                  )}
+                  <span style={styles.lyricSlot}>
+                    {wordUnit.lyric ? wordUnit.lyric : '\u00A0'}
                   </span>
-                )}
-                <span style={styles.lyricSlot}>
-                  {wordUnit.lyric ? wordUnit.lyric : '\u00A0'}
-                </span>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         );
       })}
@@ -213,7 +222,7 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
 
 const styles: Record<string, React.CSSProperties> = {
   songSheet: {
-    fontFamily: 'sans-serif',
+    fontFamily: "'Noto Serif', 'Noto Serif Devanagari', Georgia, serif",
     padding: '8px',
   },
   titleHeading: {
@@ -227,7 +236,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   chorusLine: {
     fontStyle: 'italic',
-    paddingLeft: '24px',
+    paddingLeft: '20px',
     color: 'var(--color-chord)',
   },
   chordWordGroup: {

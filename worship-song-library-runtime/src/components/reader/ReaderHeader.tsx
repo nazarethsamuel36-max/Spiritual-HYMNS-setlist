@@ -481,8 +481,8 @@ export function ReaderHeader({
       <div className="md:hidden max-w-4xl mx-auto w-full flex items-center justify-between gap-2 h-10">
         {/* Left: Song number + Title */}
         <div className="flex items-center space-x-2 min-w-0 flex-1">
-          <span className="text-slate-500 text-[28px] font-bold flex-shrink-0 leading-none">{song.songNumber}</span>
-          <h1 className="text-xl font-bold text-slate-900 tracking-tight leading-normal truncate min-w-0">
+          <span className="text-slate-500 text-[26px] font-normal flex-shrink-0 leading-none">{song.songNumber}</span>
+          <h1 className="text-[26px] font-normal text-slate-900 tracking-tight leading-normal truncate min-w-0">
             {formatSongTitle(song.title)}
           </h1>
         </div>
