@@ -1,0 +1,4984 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "phase": "2",
+    "description": "Vocabulary audit results",
+    "totalWords": 1241,
+    "auditedAt": "2026-07-16T12:25:53.968Z"
+  },
+  "results": {
+    "canonical": [
+      {
+        "word": "aadi",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "aakash",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "dhanyavad",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "hallelujah",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "jeevan",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "khrista",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "mahima",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "masih",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "pavitra",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "prabhu",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "stuti",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "swarg",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "vande",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "yahova",
+        "reason": "Known canonical worship word"
+      },
+      {
+        "word": "yeshu",
+        "reason": "Known canonical worship word"
+      }
+    ],
+    "grammatical": [
+      {
+        "word": "aa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aadhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aage",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aakar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aanandit",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aane",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aaradhana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aaradhna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aasha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aasmanon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aatma",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aayega",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "abide",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "about",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "above",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "adbhut",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "adore",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ae",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "agar",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "agree",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ahe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ai",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "akhri",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "alive",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "alleluia",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "alone",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "also",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "amhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ananda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "anande",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "andhiyari",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "anoint",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ant",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "apna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "apnaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "apne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "apni",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "are",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "arpilela",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "art",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ashishon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "asraya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "assondhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "assurance",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "at",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ati",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "aur",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "avade",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "awesome",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "baabat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "baat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bacha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bachaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bachon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "badhna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "badho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "badhte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "baha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bahake",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bahti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bahuta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "baitha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bajayenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "banane",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "banaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bandho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bane",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "barkat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "barsa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "basa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "basne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "be",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "because",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "before",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "believe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bete",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhaiyon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhalaai",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bharale",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bharosa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhende",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhet",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bhoomi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bina",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "binti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bol",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "bolo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bondage",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "boro",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "breathe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bride",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bright",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "brought",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "built",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bula",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "bulata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "care",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "cause",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "celebrate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chaandi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chadhaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chahiye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chahte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chale",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chalne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chalte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chalunga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chandrama",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "changai",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "change",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "charnon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "charwaha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chhodega",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chhote",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chote",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "christ",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chuki",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "chutkara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "circle",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "close",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "come",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "count",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "court",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "darakhton",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "daya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "de",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "declare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dekh",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "dekhenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dekho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dekhte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dene",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "denge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "description",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "deserve",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "desire",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "deta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "deva",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dhanya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dhanyavada",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dhara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dharti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dhava",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dhunyace",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "di",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dilaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dini",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "divine",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "divya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "diya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "do",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "donon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dont",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dost",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dove",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "duhai",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "duniya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "dwara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "east",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "enthrone",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "evermore",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "face",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "fairest",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "fire",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "first",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "forevermore",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "forgave",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "forget",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "foundation",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "fount",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "free",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gaana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gaate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gadariya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gaunga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gayi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "geet",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "geeton",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gelo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ghatayon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ghati",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ghost",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ghutnon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gift",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gira",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gita",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "give",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "go",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "got",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "grace",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "great",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "guide",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "gunahon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hai",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hain",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hamara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hamare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hamari",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hamesha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "har",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "harsa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "have",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "he",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "heart",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "here",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hide",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "himmat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hoga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hoila",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hokar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hoke",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hoon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hope",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hosanna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "house",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hove",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hovegi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hua",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hue",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hui",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "hume",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "humein",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "humko",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ichchha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "instrument",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "into",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "isnt",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "it",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ive",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ja",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaane",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaanta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaati",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jab",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "jabse",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jagat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaisa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jalta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jalte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jangli",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jayega",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jayegi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jayenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaykar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jaywant",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jeevit",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jhanda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jisne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jivanahuna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "just",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "jyoti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ka",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kaante",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kabhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kaha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kahani",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kahi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kahin",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "kaho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kahte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kaisa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kaise",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kaisi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kalisiya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karein",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "karne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karoon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karuna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karunga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "karuya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ke",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "keemti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kholie",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kholo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khoon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khrist",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khristace",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khuda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khudaki",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "khushi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ki",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kitabe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kiti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kitna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kitne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kiya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ko",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "koi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kokara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kona",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "koni",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "krpamaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "krpeci",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "krusasa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kruss",
+        "reason": "Grammatical form of \"krus\""
+      },
+      {
+        "word": "kuch",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "kudrat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kunda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "kya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "la",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "laga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lagao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "le",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lekar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lena",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lene",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "let",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "life",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lift",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "light",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "like",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "little",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "live",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "liya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "liye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "logo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "lost",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "love",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "maangta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "made",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "majha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "make",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mandarata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "manga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mange",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "manushya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "masiha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "masihi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "masihtu",
+        "reason": "Grammatical form of \"masih\""
+      },
+      {
+        "word": "me",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "meet",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mein",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mendhapala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mendhare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mera",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mere",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "meri",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "might",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mila",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mile",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "milkar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "miluni",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mine",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "miracle",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mitra",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "more",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "move",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mua",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mudkar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mudna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mujhe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mujhko",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "mukti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "munjee",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "na",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "naare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nahi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nama",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "name",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "narsinga",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nature",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "navate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "naya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "naye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nayi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nazron",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "neeche",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nest",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "night",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "nissi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "no",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "not",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "oft",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ojhe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "on",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "once",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "one",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ought",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "out",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "overtake",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "paani",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "paapi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "paapon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "paas",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "par",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "past",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "paya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "payi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "peace",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "peeche",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pehle",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "people",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "perfect",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "phailao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "phara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "phatako",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "phoonka",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pita",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "place",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "portion",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prabhuji",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "praise",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prakasita",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prarthna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prashansa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prati",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "premi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "presence",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "prithvi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "priya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "promise",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pukara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "puri",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "purpose",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pyara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pyare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pyari",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pyaro",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "pyasi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "raat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "raha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "raho",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahoge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rahte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "raja",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rajayon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rakh",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "rakte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rapture",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rasta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "re",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "redemption",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "refuge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rejoice",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "religion",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "report",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "reputation",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "right",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "roshni",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "roti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "rukna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "saare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "saari",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sab",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "sabke",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sabne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sabse",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sachcha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sachche",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sacrifice",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sada",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "safe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sahara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sakenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sakta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "samarthya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "same",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sampoorna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sanatana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sankara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sanna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sare",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sarva",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sarvanca",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "se",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "secret",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "senayon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "serve",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "set",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "seva",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sewa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shahon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sharon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shifa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shout",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shukriya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shunya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "shut",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "siyon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "so",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "some",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "somia",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "son",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "soorya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sorvespora",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sota",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "spirit",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "srestha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "srishti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "stava",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sthala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "stutistuti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "suhana",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sukhacya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sukhdayi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sun",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "sunane",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sunao",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sunata",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sunenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "suno",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sunset",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sunta",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "suveli",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "svargiya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "swargi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "swargiya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sweet",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "sweetest",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "taakat",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "taaki",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tab",
+        "reason": "Common grammatical word"
+      },
+      {
+        "word": "table",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "take",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tamanna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tangala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "taraka",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "taranara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "teje",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tera",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tere",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "teri",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "that",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "the",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "thee",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "there",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "therefore",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "these",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "thine",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "time",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "to",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "toda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "toote",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "true",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "trust",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujhansa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujhe",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujhko",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tujhse",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tuka",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tumhara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tumhi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tumsa",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tunci",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tune",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tyaci",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tyakade",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "tyala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "udhte",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ufano",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ugama",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uncha",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "unchi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "undela",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "union",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "unto",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "upakara",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "upar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "upon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "use",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uske",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uski",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "usne",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uthakar",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uthate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uthayenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uthenge",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "uthti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "utpatti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "utrega",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vahaya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vaibhavi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vanda",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vandna",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vaseele",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vatato",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vate",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vatsalya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "veli",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vishwasiyon",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "voi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "voice",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "vrsti",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "waada",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "wait",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "wala",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "wale",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "want",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "waqt",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "we",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "welcome",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "were",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "west",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "weve",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "what",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "where",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "while",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "white",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "wine",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "without",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "wo",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "ye",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yeshuci",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yeshucya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yeshuji",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yeshula",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yeshuvani",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "yogya",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "youre",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "zindagi",
+        "reason": "Contains grammatical suffix/pattern"
+      },
+      {
+        "word": "zion",
+        "reason": "Contains grammatical suffix/pattern"
+      }
+    ],
+    "english": [
+      {
+        "word": "air",
+        "reason": "Common English word"
+      },
+      {
+        "word": "all",
+        "reason": "Common English word"
+      },
+      {
+        "word": "and",
+        "reason": "Common English word"
+      },
+      {
+        "word": "as",
+        "reason": "Common English word"
+      },
+      {
+        "word": "big",
+        "reason": "Common English word"
+      },
+      {
+        "word": "by",
+        "reason": "Common English word"
+      },
+      {
+        "word": "can",
+        "reason": "Common English word"
+      },
+      {
+        "word": "cup",
+        "reason": "Common English word"
+      },
+      {
+        "word": "day",
+        "reason": "Common English word"
+      },
+      {
+        "word": "did",
+        "reason": "Common English word"
+      },
+      {
+        "word": "end",
+        "reason": "Common English word"
+      },
+      {
+        "word": "far",
+        "reason": "Common English word"
+      },
+      {
+        "word": "for",
+        "reason": "Common English word"
+      },
+      {
+        "word": "god",
+        "reason": "Common English word"
+      },
+      {
+        "word": "has",
+        "reason": "Common English word"
+      },
+      {
+        "word": "him",
+        "reason": "Common English word"
+      },
+      {
+        "word": "his",
+        "reason": "Common English word"
+      },
+      {
+        "word": "how",
+        "reason": "Common English word"
+      },
+      {
+        "word": "ill",
+        "reason": "Common English word"
+      },
+      {
+        "word": "in",
+        "reason": "Common English word"
+      },
+      {
+        "word": "is",
+        "reason": "Common English word"
+      },
+      {
+        "word": "its",
+        "reason": "Common English word"
+      },
+      {
+        "word": "joy",
+        "reason": "Common English word"
+      },
+      {
+        "word": "man",
+        "reason": "Common English word"
+      },
+      {
+        "word": "may",
+        "reason": "Common English word"
+      },
+      {
+        "word": "my",
+        "reason": "Common English word"
+      },
+      {
+        "word": "new",
+        "reason": "Common English word"
+      },
+      {
+        "word": "now",
+        "reason": "Common English word"
+      },
+      {
+        "word": "of",
+        "reason": "Common English word"
+      },
+      {
+        "word": "oil",
+        "reason": "Common English word"
+      },
+      {
+        "word": "old",
+        "reason": "Common English word"
+      },
+      {
+        "word": "our",
+        "reason": "Common English word"
+      },
+      {
+        "word": "own",
+        "reason": "Common English word"
+      },
+      {
+        "word": "say",
+        "reason": "Common English word"
+      },
+      {
+        "word": "up",
+        "reason": "Common English word"
+      },
+      {
+        "word": "van",
+        "reason": "Common English word"
+      },
+      {
+        "word": "was",
+        "reason": "Common English word"
+      },
+      {
+        "word": "way",
+        "reason": "Common English word"
+      },
+      {
+        "word": "yes",
+        "reason": "Common English word"
+      },
+      {
+        "word": "you",
+        "reason": "Common English word"
+      }
+    ],
+    "unknown": [
+      {
+        "word": "aadhaar",
+        "reason": ""
+      },
+      {
+        "word": "aag",
+        "reason": ""
+      },
+      {
+        "word": "aaj",
+        "reason": ""
+      },
+      {
+        "word": "aanand",
+        "reason": ""
+      },
+      {
+        "word": "aandhiyan",
+        "reason": ""
+      },
+      {
+        "word": "aankhein",
+        "reason": ""
+      },
+      {
+        "word": "aankhen",
+        "reason": ""
+      },
+      {
+        "word": "aap",
+        "reason": ""
+      },
+      {
+        "word": "aashish",
+        "reason": ""
+      },
+      {
+        "word": "aasman",
+        "reason": ""
+      },
+      {
+        "word": "aawaz",
+        "reason": ""
+      },
+      {
+        "word": "aayein",
+        "reason": ""
+      },
+      {
+        "word": "again",
+        "reason": ""
+      },
+      {
+        "word": "ages",
+        "reason": ""
+      },
+      {
+        "word": "ah",
+        "reason": ""
+      },
+      {
+        "word": "ajeeb",
+        "reason": ""
+      },
+      {
+        "word": "alas",
+        "reason": ""
+      },
+      {
+        "word": "allelujah",
+        "reason": ""
+      },
+      {
+        "word": "almighty",
+        "reason": ""
+      },
+      {
+        "word": "alom",
+        "reason": ""
+      },
+      {
+        "word": "altar",
+        "reason": ""
+      },
+      {
+        "word": "am",
+        "reason": ""
+      },
+      {
+        "word": "amazing",
+        "reason": ""
+      },
+      {
+        "word": "ambar",
+        "reason": ""
+      },
+      {
+        "word": "amim",
+        "reason": ""
+      },
+      {
+        "word": "an",
+        "reason": ""
+      },
+      {
+        "word": "angel",
+        "reason": ""
+      },
+      {
+        "word": "answer",
+        "reason": ""
+      },
+      {
+        "word": "anugrah",
+        "reason": ""
+      },
+      {
+        "word": "argam",
+        "reason": ""
+      },
+      {
+        "word": "arms",
+        "reason": ""
+      },
+      {
+        "word": "ashish",
+        "reason": ""
+      },
+      {
+        "word": "astray",
+        "reason": ""
+      },
+      {
+        "word": "away",
+        "reason": ""
+      },
+      {
+        "word": "baap",
+        "reason": ""
+      },
+      {
+        "word": "baarambar",
+        "reason": ""
+      },
+      {
+        "word": "badal",
+        "reason": ""
+      },
+      {
+        "word": "badh",
+        "reason": ""
+      },
+      {
+        "word": "bair",
+        "reason": ""
+      },
+      {
+        "word": "bal",
+        "reason": ""
+      },
+      {
+        "word": "ban",
+        "reason": ""
+      },
+      {
+        "word": "band",
+        "reason": ""
+      },
+      {
+        "word": "bandhan",
+        "reason": ""
+      },
+      {
+        "word": "banqueting",
+        "reason": ""
+      },
+      {
+        "word": "barish",
+        "reason": ""
+      },
+      {
+        "word": "bayen",
+        "reason": ""
+      },
+      {
+        "word": "beautiful",
+        "reason": ""
+      },
+      {
+        "word": "beauty",
+        "reason": ""
+      },
+      {
+        "word": "been",
+        "reason": ""
+      },
+      {
+        "word": "behtar",
+        "reason": ""
+      },
+      {
+        "word": "believed",
+        "reason": ""
+      },
+      {
+        "word": "belongs",
+        "reason": ""
+      },
+      {
+        "word": "beyond",
+        "reason": ""
+      },
+      {
+        "word": "bheekh",
+        "reason": ""
+      },
+      {
+        "word": "bin",
+        "reason": ""
+      },
+      {
+        "word": "bind",
+        "reason": ""
+      },
+      {
+        "word": "birds",
+        "reason": ""
+      },
+      {
+        "word": "bleed",
+        "reason": ""
+      },
+      {
+        "word": "bless",
+        "reason": ""
+      },
+      {
+        "word": "blessed",
+        "reason": ""
+      },
+      {
+        "word": "blessing",
+        "reason": ""
+      },
+      {
+        "word": "blessings",
+        "reason": ""
+      },
+      {
+        "word": "blood",
+        "reason": ""
+      },
+      {
+        "word": "bojh",
+        "reason": ""
+      },
+      {
+        "word": "bolavilem",
+        "reason": ""
+      },
+      {
+        "word": "book",
+        "reason": ""
+      },
+      {
+        "word": "born",
+        "reason": ""
+      },
+      {
+        "word": "bound",
+        "reason": ""
+      },
+      {
+        "word": "breaks",
+        "reason": ""
+      },
+      {
+        "word": "bring",
+        "reason": ""
+      },
+      {
+        "word": "bringing",
+        "reason": ""
+      },
+      {
+        "word": "building",
+        "reason": ""
+      },
+      {
+        "word": "burden",
+        "reason": ""
+      },
+      {
+        "word": "burdens",
+        "reason": ""
+      },
+      {
+        "word": "burn",
+        "reason": ""
+      },
+      {
+        "word": "called",
+        "reason": ""
+      },
+      {
+        "word": "calls",
+        "reason": ""
+      },
+      {
+        "word": "careth",
+        "reason": ""
+      },
+      {
+        "word": "chal",
+        "reason": ""
+      },
+      {
+        "word": "chalen",
+        "reason": ""
+      },
+      {
+        "word": "channel",
+        "reason": ""
+      },
+      {
+        "word": "chariots",
+        "reason": ""
+      },
+      {
+        "word": "chhod",
+        "reason": ""
+      },
+      {
+        "word": "christian",
+        "reason": ""
+      },
+      {
+        "word": "church",
+        "reason": ""
+      },
+      {
+        "word": "claim",
+        "reason": ""
+      },
+      {
+        "word": "clap",
+        "reason": ""
+      },
+      {
+        "word": "cleansing",
+        "reason": ""
+      },
+      {
+        "word": "closer",
+        "reason": ""
+      },
+      {
+        "word": "comes",
+        "reason": ""
+      },
+      {
+        "word": "coming",
+        "reason": ""
+      },
+      {
+        "word": "corn",
+        "reason": ""
+      },
+      {
+        "word": "cover",
+        "reason": ""
+      },
+      {
+        "word": "cross",
+        "reason": ""
+      },
+      {
+        "word": "crucified",
+        "reason": ""
+      },
+      {
+        "word": "cry",
+        "reason": ""
+      },
+      {
+        "word": "daal",
+        "reason": ""
+      },
+      {
+        "word": "daan",
+        "reason": ""
+      },
+      {
+        "word": "daiz",
+        "reason": ""
+      },
+      {
+        "word": "dakharas",
+        "reason": ""
+      },
+      {
+        "word": "daramiyan",
+        "reason": ""
+      },
+      {
+        "word": "dayalu",
+        "reason": ""
+      },
+      {
+        "word": "dayen",
+        "reason": ""
+      },
+      {
+        "word": "days",
+        "reason": ""
+      },
+      {
+        "word": "dear",
+        "reason": ""
+      },
+      {
+        "word": "decided",
+        "reason": ""
+      },
+      {
+        "word": "deep",
+        "reason": ""
+      },
+      {
+        "word": "deeper",
+        "reason": ""
+      },
+      {
+        "word": "deer",
+        "reason": ""
+      },
+      {
+        "word": "desh",
+        "reason": ""
+      },
+      {
+        "word": "dev",
+        "reason": ""
+      },
+      {
+        "word": "dew",
+        "reason": ""
+      },
+      {
+        "word": "dham",
+        "reason": ""
+      },
+      {
+        "word": "dhan",
+        "reason": ""
+      },
+      {
+        "word": "dhanyavaad",
+        "reason": ""
+      },
+      {
+        "word": "dhanyawaad",
+        "reason": ""
+      },
+      {
+        "word": "dhul",
+        "reason": ""
+      },
+      {
+        "word": "dil",
+        "reason": ""
+      },
+      {
+        "word": "din",
+        "reason": ""
+      },
+      {
+        "word": "door",
+        "reason": ""
+      },
+      {
+        "word": "down",
+        "reason": ""
+      },
+      {
+        "word": "dripping",
+        "reason": ""
+      },
+      {
+        "word": "dukh",
+        "reason": ""
+      },
+      {
+        "word": "dulhan",
+        "reason": ""
+      },
+      {
+        "word": "dur",
+        "reason": ""
+      },
+      {
+        "word": "earth",
+        "reason": ""
+      },
+      {
+        "word": "ek",
+        "reason": ""
+      },
+      {
+        "word": "el",
+        "reason": ""
+      },
+      {
+        "word": "elah",
+        "reason": ""
+      },
+      {
+        "word": "elijah",
+        "reason": ""
+      },
+      {
+        "word": "elohim",
+        "reason": ""
+      },
+      {
+        "word": "enfold",
+        "reason": ""
+      },
+      {
+        "word": "enough",
+        "reason": ""
+      },
+      {
+        "word": "enter",
+        "reason": ""
+      },
+      {
+        "word": "everlasting",
+        "reason": ""
+      },
+      {
+        "word": "every",
+        "reason": ""
+      },
+      {
+        "word": "everybody",
+        "reason": ""
+      },
+      {
+        "word": "everything",
+        "reason": ""
+      },
+      {
+        "word": "extol",
+        "reason": ""
+      },
+      {
+        "word": "eyes",
+        "reason": ""
+      },
+      {
+        "word": "fairer",
+        "reason": ""
+      },
+      {
+        "word": "faith",
+        "reason": ""
+      },
+      {
+        "word": "faithfulness",
+        "reason": ""
+      },
+      {
+        "word": "fall",
+        "reason": ""
+      },
+      {
+        "word": "father",
+        "reason": ""
+      },
+      {
+        "word": "faults",
+        "reason": ""
+      },
+      {
+        "word": "fear",
+        "reason": ""
+      },
+      {
+        "word": "feel",
+        "reason": ""
+      },
+      {
+        "word": "fellowship",
+        "reason": ""
+      },
+      {
+        "word": "fetter",
+        "reason": ""
+      },
+      {
+        "word": "fill",
+        "reason": ""
+      },
+      {
+        "word": "floating",
+        "reason": ""
+      },
+      {
+        "word": "flock",
+        "reason": ""
+      },
+      {
+        "word": "flood",
+        "reason": ""
+      },
+      {
+        "word": "flow",
+        "reason": ""
+      },
+      {
+        "word": "follow",
+        "reason": ""
+      },
+      {
+        "word": "following",
+        "reason": ""
+      },
+      {
+        "word": "forever",
+        "reason": ""
+      },
+      {
+        "word": "found",
+        "reason": ""
+      },
+      {
+        "word": "fountain",
+        "reason": ""
+      },
+      {
+        "word": "fresh",
+        "reason": ""
+      },
+      {
+        "word": "friend",
+        "reason": ""
+      },
+      {
+        "word": "from",
+        "reason": ""
+      },
+      {
+        "word": "fulness",
+        "reason": ""
+      },
+      {
+        "word": "gar",
+        "reason": ""
+      },
+      {
+        "word": "garden",
+        "reason": ""
+      },
+      {
+        "word": "gates",
+        "reason": ""
+      },
+      {
+        "word": "gather",
+        "reason": ""
+      },
+      {
+        "word": "gathering",
+        "reason": ""
+      },
+      {
+        "word": "gau",
+        "reason": ""
+      },
+      {
+        "word": "gaun",
+        "reason": ""
+      },
+      {
+        "word": "gayen",
+        "reason": ""
+      },
+      {
+        "word": "ghadu",
+        "reason": ""
+      },
+      {
+        "word": "ghamgeen",
+        "reason": ""
+      },
+      {
+        "word": "glad",
+        "reason": ""
+      },
+      {
+        "word": "glass",
+        "reason": ""
+      },
+      {
+        "word": "glorious",
+        "reason": ""
+      },
+      {
+        "word": "glory",
+        "reason": ""
+      },
+      {
+        "word": "godhead",
+        "reason": ""
+      },
+      {
+        "word": "gods",
+        "reason": ""
+      },
+      {
+        "word": "golden",
+        "reason": ""
+      },
+      {
+        "word": "good",
+        "reason": ""
+      },
+      {
+        "word": "goodness",
+        "reason": ""
+      },
+      {
+        "word": "ground",
+        "reason": ""
+      },
+      {
+        "word": "gulab",
+        "reason": ""
+      },
+      {
+        "word": "gunah",
+        "reason": ""
+      },
+      {
+        "word": "gunahgaar",
+        "reason": ""
+      },
+      {
+        "word": "hail",
+        "reason": ""
+      },
+      {
+        "word": "hallowed",
+        "reason": ""
+      },
+      {
+        "word": "hand",
+        "reason": ""
+      },
+      {
+        "word": "hands",
+        "reason": ""
+      },
+      {
+        "word": "happy",
+        "reason": ""
+      },
+      {
+        "word": "harp",
+        "reason": ""
+      },
+      {
+        "word": "haseen",
+        "reason": ""
+      },
+      {
+        "word": "hear",
+        "reason": ""
+      },
+      {
+        "word": "heard",
+        "reason": ""
+      },
+      {
+        "word": "heaven",
+        "reason": ""
+      },
+      {
+        "word": "heavenly",
+        "reason": ""
+      },
+      {
+        "word": "heavens",
+        "reason": ""
+      },
+      {
+        "word": "heavy",
+        "reason": ""
+      },
+      {
+        "word": "heed",
+        "reason": ""
+      },
+      {
+        "word": "held",
+        "reason": ""
+      },
+      {
+        "word": "hes",
+        "reason": ""
+      },
+      {
+        "word": "hiding",
+        "reason": ""
+      },
+      {
+        "word": "high",
+        "reason": ""
+      },
+      {
+        "word": "higher",
+        "reason": ""
+      },
+      {
+        "word": "hill",
+        "reason": ""
+      },
+      {
+        "word": "hisab",
+        "reason": ""
+      },
+      {
+        "word": "hold",
+        "reason": ""
+      },
+      {
+        "word": "holies",
+        "reason": ""
+      },
+      {
+        "word": "holiness",
+        "reason": ""
+      },
+      {
+        "word": "holy",
+        "reason": ""
+      },
+      {
+        "word": "honey",
+        "reason": ""
+      },
+      {
+        "word": "horses",
+        "reason": ""
+      },
+      {
+        "word": "hour",
+        "reason": ""
+      },
+      {
+        "word": "hriday",
+        "reason": ""
+      },
+      {
+        "word": "hum",
+        "reason": ""
+      },
+      {
+        "word": "huzoor",
+        "reason": ""
+      },
+      {
+        "word": "id",
+        "reason": ""
+      },
+      {
+        "word": "ik",
+        "reason": ""
+      },
+      {
+        "word": "im",
+        "reason": ""
+      },
+      {
+        "word": "immanuel",
+        "reason": ""
+      },
+      {
+        "word": "intzar",
+        "reason": ""
+      },
+      {
+        "word": "ishwar",
+        "reason": ""
+      },
+      {
+        "word": "jahan",
+        "reason": ""
+      },
+      {
+        "word": "janam",
+        "reason": ""
+      },
+      {
+        "word": "jawan",
+        "reason": ""
+      },
+      {
+        "word": "jay",
+        "reason": ""
+      },
+      {
+        "word": "jayam",
+        "reason": ""
+      },
+      {
+        "word": "jehovah",
+        "reason": ""
+      },
+      {
+        "word": "jesus",
+        "reason": ""
+      },
+      {
+        "word": "jezu",
+        "reason": ""
+      },
+      {
+        "word": "jireh",
+        "reason": ""
+      },
+      {
+        "word": "kahan",
+        "reason": ""
+      },
+      {
+        "word": "kal",
+        "reason": ""
+      },
+      {
+        "word": "kareeb",
+        "reason": ""
+      },
+      {
+        "word": "karu",
+        "reason": ""
+      },
+      {
+        "word": "kary",
+        "reason": ""
+      },
+      {
+        "word": "kaun",
+        "reason": ""
+      },
+      {
+        "word": "keep",
+        "reason": ""
+      },
+      {
+        "word": "keval",
+        "reason": ""
+      },
+      {
+        "word": "khamosh",
+        "reason": ""
+      },
+      {
+        "word": "khawand",
+        "reason": ""
+      },
+      {
+        "word": "khul",
+        "reason": ""
+      },
+      {
+        "word": "kindly",
+        "reason": ""
+      },
+      {
+        "word": "kindness",
+        "reason": ""
+      },
+      {
+        "word": "king",
+        "reason": ""
+      },
+      {
+        "word": "kingdom",
+        "reason": ""
+      },
+      {
+        "word": "knees",
+        "reason": ""
+      },
+      {
+        "word": "know",
+        "reason": ""
+      },
+      {
+        "word": "knows",
+        "reason": ""
+      },
+      {
+        "word": "krass",
+        "reason": ""
+      },
+      {
+        "word": "kurban",
+        "reason": ""
+      },
+      {
+        "word": "kus",
+        "reason": ""
+      },
+      {
+        "word": "lahu",
+        "reason": ""
+      },
+      {
+        "word": "laid",
+        "reason": ""
+      },
+      {
+        "word": "lamp",
+        "reason": ""
+      },
+      {
+        "word": "land",
+        "reason": ""
+      },
+      {
+        "word": "lead",
+        "reason": ""
+      },
+      {
+        "word": "leads",
+        "reason": ""
+      },
+      {
+        "word": "less",
+        "reason": ""
+      },
+      {
+        "word": "lets",
+        "reason": ""
+      },
+      {
+        "word": "lifted",
+        "reason": ""
+      },
+      {
+        "word": "lives",
+        "reason": ""
+      },
+      {
+        "word": "living",
+        "reason": ""
+      },
+      {
+        "word": "long",
+        "reason": ""
+      },
+      {
+        "word": "longer",
+        "reason": ""
+      },
+      {
+        "word": "look",
+        "reason": ""
+      },
+      {
+        "word": "looked",
+        "reason": ""
+      },
+      {
+        "word": "looking",
+        "reason": ""
+      },
+      {
+        "word": "looks",
+        "reason": ""
+      },
+      {
+        "word": "lord",
+        "reason": ""
+      },
+      {
+        "word": "lords",
+        "reason": ""
+      },
+      {
+        "word": "lovely",
+        "reason": ""
+      },
+      {
+        "word": "loves",
+        "reason": ""
+      },
+      {
+        "word": "loving",
+        "reason": ""
+      },
+      {
+        "word": "magnify",
+        "reason": ""
+      },
+      {
+        "word": "mahan",
+        "reason": ""
+      },
+      {
+        "word": "main",
+        "reason": ""
+      },
+      {
+        "word": "majesty",
+        "reason": ""
+      },
+      {
+        "word": "makaan",
+        "reason": ""
+      },
+      {
+        "word": "maker",
+        "reason": ""
+      },
+      {
+        "word": "making",
+        "reason": ""
+      },
+      {
+        "word": "maksad",
+        "reason": ""
+      },
+      {
+        "word": "malik",
+        "reason": ""
+      },
+      {
+        "word": "mandir",
+        "reason": ""
+      },
+      {
+        "word": "marching",
+        "reason": ""
+      },
+      {
+        "word": "marg",
+        "reason": ""
+      },
+      {
+        "word": "marvelous",
+        "reason": ""
+      },
+      {
+        "word": "master",
+        "reason": ""
+      },
+      {
+        "word": "melody",
+        "reason": ""
+      },
+      {
+        "word": "mercies",
+        "reason": ""
+      },
+      {
+        "word": "mercy",
+        "reason": ""
+      },
+      {
+        "word": "mighty",
+        "reason": ""
+      },
+      {
+        "word": "mil",
+        "reason": ""
+      },
+      {
+        "word": "milen",
+        "reason": ""
+      },
+      {
+        "word": "milk",
+        "reason": ""
+      },
+      {
+        "word": "mitr",
+        "reason": ""
+      },
+      {
+        "word": "mog",
+        "reason": ""
+      },
+      {
+        "word": "mojem",
+        "reason": ""
+      },
+      {
+        "word": "moments",
+        "reason": ""
+      },
+      {
+        "word": "morning",
+        "reason": ""
+      },
+      {
+        "word": "morrow",
+        "reason": ""
+      },
+      {
+        "word": "moses",
+        "reason": ""
+      },
+      {
+        "word": "naam",
+        "reason": ""
+      },
+      {
+        "word": "nagar",
+        "reason": ""
+      },
+      {
+        "word": "nahin",
+        "reason": ""
+      },
+      {
+        "word": "nam",
+        "reason": ""
+      },
+      {
+        "word": "names",
+        "reason": ""
+      },
+      {
+        "word": "nasheen",
+        "reason": ""
+      },
+      {
+        "word": "near",
+        "reason": ""
+      },
+      {
+        "word": "nearer",
+        "reason": ""
+      },
+      {
+        "word": "need",
+        "reason": ""
+      },
+      {
+        "word": "neelay",
+        "reason": ""
+      },
+      {
+        "word": "never",
+        "reason": ""
+      },
+      {
+        "word": "nishaan",
+        "reason": ""
+      },
+      {
+        "word": "noor",
+        "reason": ""
+      },
+      {
+        "word": "nothing",
+        "reason": ""
+      },
+      {
+        "word": "obey",
+        "reason": ""
+      },
+      {
+        "word": "oh",
+        "reason": ""
+      },
+      {
+        "word": "only",
+        "reason": ""
+      },
+      {
+        "word": "onward",
+        "reason": ""
+      },
+      {
+        "word": "open",
+        "reason": ""
+      },
+      {
+        "word": "original",
+        "reason": ""
+      },
+      {
+        "word": "other",
+        "reason": ""
+      },
+      {
+        "word": "outer",
+        "reason": ""
+      },
+      {
+        "word": "over",
+        "reason": ""
+      },
+      {
+        "word": "paap",
+        "reason": ""
+      },
+      {
+        "word": "paar",
+        "reason": ""
+      },
+      {
+        "word": "paigam",
+        "reason": ""
+      },
+      {
+        "word": "pak",
+        "reason": ""
+      },
+      {
+        "word": "panteth",
+        "reason": ""
+      },
+      {
+        "word": "param",
+        "reason": ""
+      },
+      {
+        "word": "parameshwar",
+        "reason": ""
+      },
+      {
+        "word": "pardesh",
+        "reason": ""
+      },
+      {
+        "word": "parivartan",
+        "reason": ""
+      },
+      {
+        "word": "pass",
+        "reason": ""
+      },
+      {
+        "word": "patthar",
+        "reason": ""
+      },
+      {
+        "word": "pavan",
+        "reason": ""
+      },
+      {
+        "word": "phir",
+        "reason": ""
+      },
+      {
+        "word": "physician",
+        "reason": ""
+      },
+      {
+        "word": "pilgrim",
+        "reason": ""
+      },
+      {
+        "word": "pillar",
+        "reason": ""
+      },
+      {
+        "word": "plead",
+        "reason": ""
+      },
+      {
+        "word": "poleunk",
+        "reason": ""
+      },
+      {
+        "word": "power",
+        "reason": ""
+      },
+      {
+        "word": "powers",
+        "reason": ""
+      },
+      {
+        "word": "praises",
+        "reason": ""
+      },
+      {
+        "word": "pravesh",
+        "reason": ""
+      },
+      {
+        "word": "pray",
+        "reason": ""
+      },
+      {
+        "word": "prayer",
+        "reason": ""
+      },
+      {
+        "word": "precious",
+        "reason": ""
+      },
+      {
+        "word": "prem",
+        "reason": ""
+      },
+      {
+        "word": "preserved",
+        "reason": ""
+      },
+      {
+        "word": "pressing",
+        "reason": ""
+      },
+      {
+        "word": "proclaim",
+        "reason": ""
+      },
+      {
+        "word": "promised",
+        "reason": ""
+      },
+      {
+        "word": "promises",
+        "reason": ""
+      },
+      {
+        "word": "psalm",
+        "reason": ""
+      },
+      {
+        "word": "pukaru",
+        "reason": ""
+      },
+      {
+        "word": "pull",
+        "reason": ""
+      },
+      {
+        "word": "purify",
+        "reason": ""
+      },
+      {
+        "word": "pyaar",
+        "reason": ""
+      },
+      {
+        "word": "pyar",
+        "reason": ""
+      },
+      {
+        "word": "rabb",
+        "reason": ""
+      },
+      {
+        "word": "raktam",
+        "reason": ""
+      },
+      {
+        "word": "rather",
+        "reason": ""
+      },
+      {
+        "word": "reached",
+        "reason": ""
+      },
+      {
+        "word": "redeemed",
+        "reason": ""
+      },
+      {
+        "word": "redeemer",
+        "reason": ""
+      },
+      {
+        "word": "reigns",
+        "reason": ""
+      },
+      {
+        "word": "rejoicing",
+        "reason": ""
+      },
+      {
+        "word": "render",
+        "reason": ""
+      },
+      {
+        "word": "rich",
+        "reason": ""
+      },
+      {
+        "word": "rising",
+        "reason": ""
+      },
+      {
+        "word": "river",
+        "reason": ""
+      },
+      {
+        "word": "rock",
+        "reason": ""
+      },
+      {
+        "word": "roll",
+        "reason": ""
+      },
+      {
+        "word": "ruler",
+        "reason": ""
+      },
+      {
+        "word": "saagar",
+        "reason": ""
+      },
+      {
+        "word": "saath",
+        "reason": ""
+      },
+      {
+        "word": "saaz",
+        "reason": ""
+      },
+      {
+        "word": "said",
+        "reason": ""
+      },
+      {
+        "word": "saleeb",
+        "reason": ""
+      },
+      {
+        "word": "sandesh",
+        "reason": ""
+      },
+      {
+        "word": "sands",
+        "reason": ""
+      },
+      {
+        "word": "sang",
+        "reason": ""
+      },
+      {
+        "word": "sanmukh",
+        "reason": ""
+      },
+      {
+        "word": "sarem",
+        "reason": ""
+      },
+      {
+        "word": "saving",
+        "reason": ""
+      },
+      {
+        "word": "savior",
+        "reason": ""
+      },
+      {
+        "word": "saviour",
+        "reason": ""
+      },
+      {
+        "word": "saw",
+        "reason": ""
+      },
+      {
+        "word": "sawar",
+        "reason": ""
+      },
+      {
+        "word": "search",
+        "reason": ""
+      },
+      {
+        "word": "seed",
+        "reason": ""
+      },
+      {
+        "word": "seek",
+        "reason": ""
+      },
+      {
+        "word": "seen",
+        "reason": ""
+      },
+      {
+        "word": "setting",
+        "reason": ""
+      },
+      {
+        "word": "shackled",
+        "reason": ""
+      },
+      {
+        "word": "shahanshah",
+        "reason": ""
+      },
+      {
+        "word": "shall",
+        "reason": ""
+      },
+      {
+        "word": "sharan",
+        "reason": ""
+      },
+      {
+        "word": "sharansthan",
+        "reason": ""
+      },
+      {
+        "word": "sheaves",
+        "reason": ""
+      },
+      {
+        "word": "sheep",
+        "reason": ""
+      },
+      {
+        "word": "sheesh",
+        "reason": ""
+      },
+      {
+        "word": "shepherd",
+        "reason": ""
+      },
+      {
+        "word": "shireen",
+        "reason": ""
+      },
+      {
+        "word": "should",
+        "reason": ""
+      },
+      {
+        "word": "showers",
+        "reason": ""
+      },
+      {
+        "word": "shuddh",
+        "reason": ""
+      },
+      {
+        "word": "sin",
+        "reason": ""
+      },
+      {
+        "word": "sing",
+        "reason": ""
+      },
+      {
+        "word": "singing",
+        "reason": ""
+      },
+      {
+        "word": "sings",
+        "reason": ""
+      },
+      {
+        "word": "sinking",
+        "reason": ""
+      },
+      {
+        "word": "slaves",
+        "reason": ""
+      },
+      {
+        "word": "snow",
+        "reason": ""
+      },
+      {
+        "word": "softly",
+        "reason": ""
+      },
+      {
+        "word": "sogllem",
+        "reason": ""
+      },
+      {
+        "word": "soldier",
+        "reason": ""
+      },
+      {
+        "word": "soldiers",
+        "reason": ""
+      },
+      {
+        "word": "sometimes",
+        "reason": ""
+      },
+      {
+        "word": "soul",
+        "reason": ""
+      },
+      {
+        "word": "spark",
+        "reason": ""
+      },
+      {
+        "word": "speak",
+        "reason": ""
+      },
+      {
+        "word": "spread",
+        "reason": ""
+      },
+      {
+        "word": "springs",
+        "reason": ""
+      },
+      {
+        "word": "stand",
+        "reason": ""
+      },
+      {
+        "word": "standing",
+        "reason": ""
+      },
+      {
+        "word": "sthan",
+        "reason": ""
+      },
+      {
+        "word": "still",
+        "reason": ""
+      },
+      {
+        "word": "stranger",
+        "reason": ""
+      },
+      {
+        "word": "strength",
+        "reason": ""
+      },
+      {
+        "word": "sundar",
+        "reason": ""
+      },
+      {
+        "word": "surrender",
+        "reason": ""
+      },
+      {
+        "word": "survey",
+        "reason": ""
+      },
+      {
+        "word": "sweep",
+        "reason": ""
+      },
+      {
+        "word": "taiyar",
+        "reason": ""
+      },
+      {
+        "word": "tak",
+        "reason": ""
+      },
+      {
+        "word": "taken",
+        "reason": ""
+      },
+      {
+        "word": "takes",
+        "reason": ""
+      },
+      {
+        "word": "tal",
+        "reason": ""
+      },
+      {
+        "word": "talk",
+        "reason": ""
+      },
+      {
+        "word": "tan",
+        "reason": ""
+      },
+      {
+        "word": "tarif",
+        "reason": ""
+      },
+      {
+        "word": "teach",
+        "reason": ""
+      },
+      {
+        "word": "tel",
+        "reason": ""
+      },
+      {
+        "word": "tempted",
+        "reason": ""
+      },
+      {
+        "word": "tenderly",
+        "reason": ""
+      },
+      {
+        "word": "than",
+        "reason": ""
+      },
+      {
+        "word": "thank",
+        "reason": ""
+      },
+      {
+        "word": "thanks",
+        "reason": ""
+      },
+      {
+        "word": "them",
+        "reason": ""
+      },
+      {
+        "word": "theres",
+        "reason": ""
+      },
+      {
+        "word": "they",
+        "reason": ""
+      },
+      {
+        "word": "thinking",
+        "reason": ""
+      },
+      {
+        "word": "thiren",
+        "reason": ""
+      },
+      {
+        "word": "this",
+        "reason": ""
+      },
+      {
+        "word": "thou",
+        "reason": ""
+      },
+      {
+        "word": "through",
+        "reason": ""
+      },
+      {
+        "word": "thy",
+        "reason": ""
+      },
+      {
+        "word": "times",
+        "reason": ""
+      },
+      {
+        "word": "today",
+        "reason": ""
+      },
+      {
+        "word": "together",
+        "reason": ""
+      },
+      {
+        "word": "tomorrow",
+        "reason": ""
+      },
+      {
+        "word": "toofan",
+        "reason": ""
+      },
+      {
+        "word": "took",
+        "reason": ""
+      },
+      {
+        "word": "touch",
+        "reason": ""
+      },
+      {
+        "word": "travelling",
+        "reason": ""
+      },
+      {
+        "word": "trials",
+        "reason": ""
+      },
+      {
+        "word": "tried",
+        "reason": ""
+      },
+      {
+        "word": "truly",
+        "reason": ""
+      },
+      {
+        "word": "tu",
+        "reason": ""
+      },
+      {
+        "word": "tujim",
+        "reason": ""
+      },
+      {
+        "word": "tum",
+        "reason": ""
+      },
+      {
+        "word": "turn",
+        "reason": ""
+      },
+      {
+        "word": "uddhar",
+        "reason": ""
+      },
+      {
+        "word": "unbroken",
+        "reason": ""
+      },
+      {
+        "word": "unchanging",
+        "reason": ""
+      },
+      {
+        "word": "upay",
+        "reason": ""
+      },
+      {
+        "word": "upward",
+        "reason": ""
+      },
+      {
+        "word": "us",
+        "reason": ""
+      },
+      {
+        "word": "utram",
+        "reason": ""
+      },
+      {
+        "word": "uttam",
+        "reason": ""
+      },
+      {
+        "word": "uttar",
+        "reason": ""
+      },
+      {
+        "word": "vachan",
+        "reason": ""
+      },
+      {
+        "word": "vicharun",
+        "reason": ""
+      },
+      {
+        "word": "victory",
+        "reason": ""
+      },
+      {
+        "word": "vishay",
+        "reason": ""
+      },
+      {
+        "word": "vishwas",
+        "reason": ""
+      },
+      {
+        "word": "waiting",
+        "reason": ""
+      },
+      {
+        "word": "walk",
+        "reason": ""
+      },
+      {
+        "word": "walking",
+        "reason": ""
+      },
+      {
+        "word": "wandered",
+        "reason": ""
+      },
+      {
+        "word": "wash",
+        "reason": ""
+      },
+      {
+        "word": "washed",
+        "reason": ""
+      },
+      {
+        "word": "water",
+        "reason": ""
+      },
+      {
+        "word": "waters",
+        "reason": ""
+      },
+      {
+        "word": "well",
+        "reason": ""
+      },
+      {
+        "word": "when",
+        "reason": ""
+      },
+      {
+        "word": "whom",
+        "reason": ""
+      },
+      {
+        "word": "why",
+        "reason": ""
+      },
+      {
+        "word": "will",
+        "reason": ""
+      },
+      {
+        "word": "windows",
+        "reason": ""
+      },
+      {
+        "word": "winds",
+        "reason": ""
+      },
+      {
+        "word": "wings",
+        "reason": ""
+      },
+      {
+        "word": "with",
+        "reason": ""
+      },
+      {
+        "word": "woh",
+        "reason": ""
+      },
+      {
+        "word": "wonder",
+        "reason": ""
+      },
+      {
+        "word": "wonderful",
+        "reason": ""
+      },
+      {
+        "word": "wondrous",
+        "reason": ""
+      },
+      {
+        "word": "word",
+        "reason": ""
+      },
+      {
+        "word": "words",
+        "reason": ""
+      },
+      {
+        "word": "working",
+        "reason": ""
+      },
+      {
+        "word": "world",
+        "reason": ""
+      },
+      {
+        "word": "worry",
+        "reason": ""
+      },
+      {
+        "word": "worship",
+        "reason": ""
+      },
+      {
+        "word": "worthy",
+        "reason": ""
+      },
+      {
+        "word": "yeh",
+        "reason": ""
+      },
+      {
+        "word": "yerushalem",
+        "reason": ""
+      },
+      {
+        "word": "yesterday",
+        "reason": ""
+      },
+      {
+        "word": "yonder",
+        "reason": ""
+      },
+      {
+        "word": "your",
+        "reason": ""
+      },
+      {
+        "word": "yug",
+        "reason": ""
+      },
+      {
+        "word": "yuganu",
+        "reason": ""
+      },
+      {
+        "word": "zameen",
+        "reason": ""
+      },
+      {
+        "word": "zannaim",
+        "reason": ""
+      },
+      {
+        "word": "zaroor",
+        "reason": ""
+      }
+    ],
+    "duplicates": []
+  }
+}

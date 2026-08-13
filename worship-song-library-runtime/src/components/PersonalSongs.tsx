@@ -62,6 +62,7 @@ export function PersonalSongs() {
     try {
       const newSong: SongDetail = {
         id: Date.now(), // Use timestamp as ID for personal songs
+        uid: crypto.randomUUID(),
         songNumber: 0, // Personal songs don't have song numbers
         title: newSongTitle,
         language: newSongLanguage.toLowerCase(),

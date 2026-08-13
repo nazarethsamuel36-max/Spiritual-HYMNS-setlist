@@ -1,6 +1,7 @@
 import { db } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { batchDownloadSongs, wakeUpSync } from '../services/DataService';
+import { UserDataPackageService } from '../services/UserDataPackage';
 import { useState, useEffect } from 'react';
 
 type ThemeMode = 'light' | 'dark';
@@ -27,6 +28,10 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   const [theme, setTheme] = useState<ThemeMode>(getStoredTheme);
   const [hasOfflineLibrary, setHasOfflineLibrary] = useState<boolean>(false);
   const [showOfflineRemovalNotice, setShowOfflineRemovalNotice] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
+  const [showDataBackup, setShowDataBackup] = useState(false);
+  const [isImporting, setIsImporting] = useState(false);
+  const [importReport, setImportReport] = useState<string | null>(null);
 
   useEffect(() => {
     const refreshOfflineState = async () => {
@@ -81,6 +86,53 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
       await wakeUpSync('manual');
     } finally {
       setIsSyncing(false);
+    }
+  };
+
+  const handleExportData = async () => {
+    setIsExporting(true);
+    try {
+      const pkg = await UserDataPackageService.build();
+      const json = JSON.stringify(pkg, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const date = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `worship-userdata-${date}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setStatusMsg('Export complete');
+    } catch (err) {
+      console.error('❌ Export failed:', err);
+      setStatusMsg('Export failed');
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
+  const handleImportFile = async (file: File) => {
+    setIsImporting(true);
+    setImportReport(null);
+    try {
+      const text = await file.text();
+      const pkg = JSON.parse(text);
+      const report = await UserDataPackageService.import(pkg);
+      const fmt = (r: { imported: number; skipped: number }) => `${r.imported} new / ${r.skipped} skipped`;
+      setImportReport(
+        `Imported from "${file.name}":\n` +
+        `· Personal songs: ${fmt(report.personalSongs)}\n` +
+        `· Shared songs: ${fmt(report.sharedSongs)}\n` +
+        `· Personal versions: ${fmt(report.personalVersions)}\n` +
+        `· Shared versions: ${fmt(report.sharedVersions)}\n` +
+        `· Setlists: ${fmt(report.personalSetlists)}\n` +
+        `· Shared setlists: ${fmt(report.sharedSetlists)}`
+      );
+    } catch (err) {
+      console.error('❌ Import failed:', err);
+      setImportReport(`Import failed: ${err instanceof Error ? err.message : 'invalid backup file'}`);
+    } finally {
+      setIsImporting(false);
     }
   };
 
@@ -195,6 +247,78 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                       Offline library removed. Songs are now being loaded directly from the server. Download the library anytime for offline access.
                     </div>
                   )}
+                </div>
+              )}
+            </div>
+
+            {/* Data Backup */}
+            <div className="bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setShowDataBackup((prev) => !prev)}
+                className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors"
+              >
+                <span className="text-sm font-bold text-slate-700">Data Backup</span>
+                <span className="text-slate-400">{showDataBackup ? '▾' : '▸'}</span>
+              </button>
+              {showDataBackup && (
+                <div className="border-t border-[#F1F5F9] px-4 py-3 space-y-2">
+                  <button
+                    type="button"
+                    onClick={handleExportData}
+                    disabled={isExporting}
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <div className="text-left">
+                      <div className="font-bold text-slate-700 group-hover:text-blue-600">
+                        {isExporting ? 'Exporting...' : 'Export My Data'}
+                      </div>
+                      <div className="text-xs text-slate-400">
+                        Download a backup of personal songs, versions, and setlists
+                      </div>
+                    </div>
+                    <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => document.getElementById('udp-import-input')?.click()}
+                    disabled={isImporting}
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <div className="text-left">
+                      <div className="font-bold text-slate-700 group-hover:text-emerald-600">
+                        {isImporting ? 'Importing...' : 'Import Backup'}
+                      </div>
+                      <div className="text-xs text-slate-400">
+                        Restore from a backup file (existing data is never overwritten)
+                      </div>
+                    </div>
+                    <svg className="w-5 h-5 text-slate-300 group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                  </button>
+                  <input
+                    id="udp-import-input"
+                    type="file"
+                    accept="application/json,.json"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) void handleImportFile(file);
+                      e.target.value = '';
+                    }}
+                  />
+                  {importReport && (
+                    <div className="rounded-xl border border-[#E2E8F0] bg-slate-50 px-4 py-3 text-xs text-slate-700 whitespace-pre-line font-medium">
+                      {importReport}
+                    </div>
+                  )}
+                  <p className="text-[11px] text-slate-400 leading-relaxed">
+                    The backup file can be imported on another device. Shared songs and setlists are included and
+                    remain shared.
+                  </p>
                 </div>
               )}
             </div>

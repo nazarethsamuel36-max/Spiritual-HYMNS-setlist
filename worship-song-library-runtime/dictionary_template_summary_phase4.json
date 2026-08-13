@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "phase": "4",
+    "description": "Dictionary template generation summary",
+    "generatedAt": "2026-07-16T12:26:31.146Z"
+  },
+  "summary": {
+    "totalCanonicalWords": 15,
+    "dictionaryEntries": 15,
+    "lettersUsed": 10,
+    "lettersEmpty": 16
+  },
+  "canonicalWordsByLetter": {
+    "A": [
+      "aadi",
+      "aakash"
+    ],
+    "D": [
+      "dhanyavad"
+    ],
+    "H": [
+      "hallelujah"
+    ],
+    "J": [
+      "jeevan"
+    ],
+    "K": [
+      "khrista"
+    ],
+    "M": [
+      "mahima",
+      "masih"
+    ],
+    "P": [
+      "pavitra",
+      "prabhu"
+    ],
+    "S": [
+      "stuti",
+      "swarg"
+    ],
+    "V": [
+      "vande"
+    ],
+    "Y": [
+      "yahova",
+      "yeshu"
+    ]
+  }
+}

@@ -8,6 +8,8 @@ import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
 import { supabase } from '../../lib/supabaseClient';
 import { VisibilitySwitch } from '../shared/VisibilitySwitch';
+import { createNewVersion } from '../../services/VersionWorkflow';
+import { VersionService } from '../../services/VersionService';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -32,6 +34,7 @@ export function ReaderHeader({
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
   const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
+  const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const fontSize = useWorkflowStore((s) => s.fontSize);
   const setFontSize = useWorkflowStore((s) => s.setFontSize);
@@ -47,9 +50,19 @@ export function ReaderHeader({
   const resetTranspose = useWorkflowStore((s) => s.resetTranspose);
 
   const setlists = useLiveQuery(() => db.setlists.toArray());
-  const arrangements = useLiveQuery(() =>
-    db.arrangements.where({ songId: song.id }).toArray()
+  const versions = useLiveQuery(() =>
+    db.versions.where('sourceSongId').equals(song.id).toArray()
   , [song.id]) || [];
+
+  const activeVersion = versions.find((v) => v.uid === activeArrangementId);
+  const handleMakeMyVersion = async () => {
+    if (!activeVersion) return;
+    const newUid = await VersionService.makeMyVersion(activeVersion.uid);
+    if (newUid) {
+      setActiveArrangementId(newUid);
+      alert('Saved as a personal version');
+    }
+  };
 
   const handlePublishToggle = async () => {
     console.log('\n═══════════════════════════════');
@@ -307,20 +320,44 @@ export function ReaderHeader({
                             >
                               Original Version
                             </button>
-                            {arrangements.map(arr => (
+                            {versions.map(arr => (
                               <button
-                                key={arr.id}
+                                key={arr.uid}
                                 onClick={() => {
-                                  setActiveArrangementId(arr.id);
+                                  setActiveArrangementId(arr.uid);
                                   setIsMoreOpen(false);
                                 }}
                                 className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                  activeArrangementId === arr.id ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                  activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
                                 }`}
                               >
-                                {arr.name}
+                              {arr.name}
+                            </button>
+                          ))}
+                            <button
+                              onClick={async () => {
+                                const uid = await createNewVersion(reader);
+                                if (uid) {
+                                  setActiveArrangementId(uid);
+                                  onModeChange('edit');
+                                  setIsMoreOpen(false);
+                                }
+                              }}
+                              className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-slate-500 hover:bg-slate-50 hover:text-slate-700 border-t border-slate-100 mt-1 ${activeArrangementId === null ? '' : ''}`}
+                            >
+                              + New Version
+                            </button>
+                            {activeVersion && activeVersion.owner === 'shared' && (
+                              <button
+                                onClick={async () => {
+                                  await handleMakeMyVersion();
+                                  setIsMoreOpen(false);
+                                }}
+                                className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-amber-700 hover:bg-amber-50"
+                              >
+                                Make My Version
                               </button>
-                            ))}
+                            )}
                           </div>
                         </div>
                       )}
@@ -630,7 +667,12 @@ export function ReaderHeader({
                     <button
                       key={list.id}
                       onClick={async () => {
-                        await SetlistService.addSongToSetlist(list.id, song.id);
+                        if (activeArrangementId) {
+                          const version = versions.find((v) => v.uid === activeArrangementId);
+                          if (version) await SetlistService.addVersionToSetlist(list.id, version);
+                        } else {
+                          await SetlistService.addSongToSetlist(list.id, song.id);
+                        }
                         setIsMobileMenuOpen(false);
                         setMobileTab('main');
                         alert(`Added "${song.title}" to setlist: "${list.title}"`);
@@ -669,21 +711,47 @@ export function ReaderHeader({
                 >
                   Original Version
                 </button>
-                {arrangements.map(arr => (
+                {versions.map(arr => (
                   <button
-                    key={arr.id}
+                    key={arr.uid}
                     onClick={() => {
-                      setActiveArrangementId(arr.id);
+                      setActiveArrangementId(arr.uid);
                       setIsMobileMenuOpen(false);
                       setMobileTab('main');
                     }}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                      activeArrangementId === arr.id ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                      activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
                     }`}
                   >
                     {arr.name}
                   </button>
                 ))}
+                <button
+                  onClick={async () => {
+                    const uid = await createNewVersion(reader);
+                    if (uid) {
+                      setActiveArrangementId(uid);
+                      onModeChange('edit');
+                      setIsMobileMenuOpen(false);
+                      setMobileTab('main');
+                    }
+                  }}
+                  className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-slate-500 hover:bg-slate-50 hover:text-slate-700 transition-colors border-t border-slate-100 mt-1"
+                >
+                  + New Version
+                </button>
+                {activeVersion && activeVersion.owner === 'shared' && (
+                  <button
+                    onClick={async () => {
+                      await handleMakeMyVersion();
+                      setIsMobileMenuOpen(false);
+                      setMobileTab('main');
+                    }}
+                    className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-amber-700 hover:bg-amber-50 transition-colors"
+                  >
+                    Make My Version
+                  </button>
+                )}
               </div>
             </div>
           )}

@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
-import { getSongById, getSongs } from '../services/DataService';
+import { getSongs } from '../services/DataService';
+import { SongResolver } from '../services/SongResolver';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
@@ -49,11 +50,14 @@ export function SongView() {
   const transpose = reader.type === 'song' ? reader.transpose : 0;
   const setlistId = reader.type === 'song' ? reader.setlistId : undefined;
   const currentItemId = reader.type === 'song' ? reader.itemId : undefined;
+  const activeArrangementId = reader.type === 'song' ? reader.activeArrangementId : null;
   const source = reader.type === 'song' ? reader.source : 'library';
+  const refKind = reader.type === 'song' ? reader.refKind : undefined;
   const isSetlistContext = reader.type === 'song' && reader.source === 'setlist' && !!setlistId;
 
   // 2. Core State
   const [song, setSong] = useState<any>(null);
+  const [activeVersion, setActiveVersion] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   
@@ -131,17 +135,17 @@ export function SongView() {
     setError(null);
 
     try {
-      let song;
+      const resolved = await SongResolver.resolve({
+        kind: source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : source === 'setlist' ? refKind : 'official',
+        songId,
+        versionUid: activeArrangementId ?? undefined,
+      });
 
-      if (source === 'personal') {
-        song = await db.personalSongs.get(songId);
-      } else {
-        song = await getSongById(songId);
-      }
-
-      if (!song) {
+      if (!resolved) {
         throw new Error('Song not found');
       }
+
+      const song = resolved.detail;
 
       const songDetail = {
         ...song,
@@ -151,12 +155,13 @@ export function SongView() {
       };
       console.log(`[SongView] Song #${songDetail.id} refreshed — chords.length=${songDetail.chords.length} lyrics.length=${songDetail.lyrics.length} sections=${songDetail.sections.length}`);
       setSong(songDetail);
+      setActiveVersion(resolved.version ?? null);
     } catch (err: any) {
       setError(err.message || 'Failed to load song');
     } finally {
       setLoading(false);
     }
-  }, [songId, source]);
+  }, [songId, source, activeArrangementId, refKind]);
 
   useEffect(() => {
     refreshSong();
@@ -169,7 +174,7 @@ export function SongView() {
     const targetIdx = direction === 'next' ? currentIdx + 1 : currentIdx - 1;
     if (targetIdx < 0 || targetIdx >= setlistItems.length) return;
     const target = setlistItems[targetIdx];
-    if (!target.type || target.type === 'song') openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id);
+    if (!target.type || target.type === 'song') openSong(target.songId!, 'setlist', target.transpose ?? 0, setlistId, target.id, target.versionId, target.refType);
     else if (target.type === 'marker') openMarker(target.label || 'Marker', setlistId, target.id);
     else if (target.type === 'note') openNote(target.label || 'Note', target.content || '', setlistId, target.id);
   }, [setlistItems, setlistId, currentItemId, songId, openSong, openMarker, openNote]);
@@ -357,7 +362,7 @@ export function SongView() {
             )}
 
             {isAdminAuthenticated ? (
-              <EditorMode song={{ ...song, sections: song.sections }} source={source} />
+              <EditorMode song={{ ...song, sections: song.sections }} source={source} versionId={activeArrangementId} version={activeVersion} />
             ) : hasContent ? (
               <ChordProRenderer
                 rawChordPro={rawContent}

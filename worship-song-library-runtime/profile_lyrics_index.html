@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Index Profiling</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #f5f5f5;
+    }
+    #log {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .success { color: #10b981; }
+    .warning { color: #f59e0b; }
+    .error { color: #ef4444; }
+    .info { color: #3b82f6; }
+  </style>
+</head>
+<body>
+  <h1>Lyrics Index Profiling</h1>
+  <button onclick="runProfiling()">Run Profiling</button>
+  <div id="log"></div>
+
+  <script type="module">
+    import MiniSearch from 'https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js';
+
+    // Simulate the LyricsDocumentBuilder logic
+    function buildLyricsDocument(song) {
+      if (!song.lyrics) return null;
+      
+      // Remove chord markers like [G], [Am], etc.
+      let lyrics = song.lyrics.replace(/\[[^\]]+\]/g, '');
+      
+      // Remove section markers like [Verse], [Chorus], etc.
+      lyrics = lyrics.replace(/\[Verse\]|\[Chorus\]|\[Bridge\]|\[Intro\]|\[Outro\]/gi, '');
+      
+      // Remove other formatting markers
+      lyrics = lyrics.replace(/\{[^}]+\}/g, ''); // Remove {brackets}
+      lyrics = lyrics.replace(/<[^>]+>/g, ''); // Remove <html>
+      
+      // Normalize whitespace
+      lyrics = lyrics.replace(/\s+/g, ' ').trim();
+      
+      // Lowercase for search
+      const lyricsSearch = lyrics.toLowerCase();
+      
+      if (!lyricsSearch || lyricsSearch.length < 10) return null;
+      
+      return {
+        id: song.id,
+        songNumber: song.songNumber,
+        title: song.title,
+        language: song.language,
+        lyricsSearch: lyricsSearch
+      };
+    }
+
+    function log(message, type = 'info') {
+      const logDiv = document.getElementById('log');
+      const span = document.createElement('span');
+      span.className = type;
+      span.textContent = message + '\n';
+      logDiv.appendChild(span);
+    }
+
+    async function runProfiling() {
+      document.getElementById('log').innerHTML = '';
+      log('=== LYRICS INDEX PROFILING START ===\n', 'info');
+      
+      try {
+        // Open IndexedDB
+        log('Step 1: Opening IndexedDB...', 'info');
+        const dbOpenStart = performance.now();
+        const dbRequest = indexedDB.open('WorshipDatabase', 7);
+        
+        await new Promise((resolve, reject) => {
+          dbRequest.onsuccess = () => resolve(dbRequest.result);
+          dbRequest.onerror = () => reject(dbRequest.error);
+        });
+        
+        const db = dbRequest.result;
+        const dbOpenEnd = performance.now();
+        log(`✓ IndexedDB opened in ${(dbOpenEnd - dbOpenStart).toFixed(2)}ms\n`, 'success');
+        
+        // Read all songs
+        log('Step 2: Reading songs from IndexedDB...', 'info');
+        const readStart = performance.now();
+        const transaction = db.transaction(['songs'], 'readonly');
+        const objectStore = transaction.objectStore('songs');
+        const request = objectStore.getAll();
+        
+        const songs = await new Promise((resolve, reject) => {
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error);
+        });
+        
+        const readEnd = performance.now();
+        log(`✓ Read ${songs.length} songs in ${(readEnd - readStart).toFixed(2)}ms\n`, 'success');
+        
+        // Generate lyrics documents
+        log('Step 3: Generating lyrics search documents...', 'info');
+        const docGenStart = performance.now();
+        const lyricsDocuments = songs
+          .map(buildLyricsDocument)
+          .filter(doc => doc !== null);
+        const docGenEnd = performance.now();
+        log(`✓ Generated ${lyricsDocuments.length} lyrics documents in ${(docGenEnd - docGenStart).toFixed(2)}ms`, 'success');
+        log(`  (Filtered out ${songs.length - lyricsDocuments.length} songs without sufficient lyrics)\n`, 'info');
+        
+        // Build MiniSearch index
+        log('Step 4: Building MiniSearch index...', 'info');
+        const indexBuildStart = performance.now();
+        const miniSearch = new MiniSearch({
+          fields: ['lyricsSearch', 'title'],
+          storeFields: ['id', 'songNumber', 'title', 'language'],
+          searchOptions: {
+            boost: { lyricsSearch: 1, title: 0.5 },
+            fuzzy: 0.2,
+            prefix: true
+          }
+        });
+        miniSearch.addAll(lyricsDocuments);
+        const indexBuildEnd = performance.now();
+        log(`✓ Built MiniSearch index in ${(indexBuildEnd - indexBuildStart).toFixed(2)}ms\n`, 'success');
+        
+        // Test search performance
+        log('Step 5: Testing search performance...', 'info');
+        const testQueries = [
+          'grace',
+          'how sweet',
+          'yeshu',
+          'praise',
+          'love'
+        ];
+        
+        const searchStart = performance.now();
+        for (const query of testQueries) {
+          const results = miniSearch.search(query);
+          log(`  Query "${query}": ${results.length} results`, 'info');
+        }
+        const searchEnd = performance.now();
+        log(`✓ Completed ${testQueries.length} test searches in ${(searchEnd - searchStart).toFixed(2)}ms\n`, 'success');
+        
+        // Calculate total
+        const totalStart = dbOpenStart;
+        const totalEnd = indexBuildEnd;
+        const totalTime = totalEnd - totalStart;
+        
+        log('=== PROFILING RESULTS ===', 'info');
+        log(`Total songs in database: ${songs.length}`, 'info');
+        log(`Songs with lyrics: ${lyricsDocuments.length}`, 'info');
+        log(`\nTime Breakdown:`, 'info');
+        log(`  - Open IndexedDB: ${(dbOpenEnd - dbOpenStart).toFixed(2)}ms`, 'info');
+        log(`  - Read songs: ${(readEnd - readStart).toFixed(2)}ms`, 'info');
+        log(`  - Generate lyrics documents: ${(docGenEnd - docGenStart).toFixed(2)}ms`, 'info');
+        log(`  - Build MiniSearch index: ${(indexBuildEnd - indexBuildStart).toFixed(2)}ms`, 'info');
+        log(`\nTotal initialization time: ${totalTime.toFixed(2)}ms (${(totalTime / 1000).toFixed(2)}s)`, 'info');
+        log('\n=== LYRICS INDEX PROFILING END ===', 'info');
+        
+        // Close database
+        db.close();
+        
+        // Recommendation
+        log('\n=== RECOMMENDATION ===', 'info');
+        if (totalTime < 2000) {
+          log('✓ Performance is EXCELLENT (< 2s). Proceed with IndexedDB-based approach.', 'success');
+        } else if (totalTime < 5000) {
+          log('⚠ Performance is ACCEPTABLE (< 5s). Proceed with IndexedDB-based approach.', 'warning');
+        } else {
+          log('✗ Performance is SLOW (> 5s). Consider pre-generated lyrics_search.json.', 'error');
+        }
+        
+      } catch (error) {
+        log(`Error during profiling: ${error.message}`, 'error');
+        console.error(error);
+      }
+    }
+
+    window.runProfiling = runProfiling;
+  </script>
+</body>
+</html>

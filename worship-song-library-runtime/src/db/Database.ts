@@ -16,6 +16,7 @@ export type SongIndex = {
 
 export type SongDetail = {
   id: number;
+  uid?: string; // Portable identity, stable across devices (crypto.randomUUID)
   songNumber: number;
   title: string;
   artist?: string;
@@ -51,6 +52,7 @@ export type Chord = {
 
 export type Setlist = {
   id: string;
+  uid: string; // Portable identity, stable across devices
   title: string;
   createdAt: number;
   updatedAt: number;
@@ -61,6 +63,8 @@ export type SetlistItem = {
   id: string; // Unique UUID for each item in the setlist
   type?: 'song' | 'marker' | 'note'; // defaults to 'song' if undefined
   songId?: number; // Only for 'song' type
+  refType?: 'official' | 'personal' | 'shared'; // ownership of referenced song (defaults to 'official')
+  versionId?: string; // Set when the item references a version (uid into db.versions)
   transpose?: number; // Only for 'song' type
   label?: string; // For 'marker' or 'note' title
   content?: string; // For 'note' text content
@@ -90,6 +94,25 @@ export type Arrangement = {
   updatedAt: number;
 }
 
+export type Version = {
+  uid: string; // Portable identity (primary key), stable across devices
+  sourceSongId: number; // Official library song this version derives from
+  name: string;
+  owner: 'personal' | 'shared';
+  lyrics?: string;
+  chords?: string;
+  sections?: Section[];
+  originalKey?: string;
+  capo?: number;
+  bpm?: number;
+  timeSignature?: string;
+  artist?: string;
+  composer?: string;
+  hashtags?: string[];
+  createdAt: number;
+  updatedAt: number;
+}
+
 export type CacheEntry = {
   id: string;
   data: unknown;
@@ -105,6 +128,7 @@ export class WorshipDatabase extends Dexie {
   syncMeta!: EntityTable<SyncMetadata, 'id'>;
   setlists!: EntityTable<Setlist, 'id'>;
   arrangements!: EntityTable<Arrangement, 'id'>;
+  versions!: EntityTable<Version, 'uid'>;
   cache!: EntityTable<CacheEntry, 'id'>;
   meta!: EntityTable<{ id: string; value: string | number }, 'id'>;
 
@@ -126,6 +150,64 @@ export class WorshipDatabase extends Dexie {
       sharedSongs: 'id, songNumber, title, language',
       sharedSetlists: 'id, title, updatedAt',
       personalSongs: 'id, title, language'
+    });
+
+    this.version(8).stores({
+      songs: 'id, songNumber, language, updated_at',
+      songIndex: 'id, songNumber, title, language, searchTokens',
+      syncMeta: 'id',
+      setlists: 'id, uid, title, updatedAt',
+      versions: 'uid, sourceSongId, owner, updatedAt',
+      arrangements: 'id, songId, type, updatedAt',
+      cache: 'id, timestamp',
+      meta: 'id',
+      sharedSongs: 'id, uid, songNumber, title, language',
+      sharedSetlists: 'id, uid, title, updatedAt',
+      personalSongs: 'id, uid, title, language'
+    }).upgrade(async (tx) => {
+      type MigratableRow = { id?: string | number; uid?: string };
+
+      const backfillUids = async (tableName: string, reuseId: boolean) => {
+        const rows = (await tx.table(tableName).toArray()) as MigratableRow[];
+        let changed = false;
+        for (const row of rows) {
+          if (!row.uid) {
+            row.uid = reuseId ? String(row.id) : crypto.randomUUID();
+            changed = true;
+          }
+        }
+        if (changed && rows.length) await tx.table(tableName).bulkPut(rows);
+      };
+
+      await backfillUids('personalSongs', false);
+      await backfillUids('sharedSongs', false);
+      await backfillUids('setlists', true);
+      await backfillUids('sharedSetlists', true);
+
+      const arrangements = (await tx.table('arrangements').toArray()) as Array<{
+        id?: string;
+        songId?: number;
+        name?: string;
+        type?: string;
+        overrides?: { capo?: number; sections?: Section[] };
+        createdAt?: number;
+        updatedAt?: number;
+      }>;
+      if (arrangements.length) {
+        await tx.table('versions').bulkPut(
+          arrangements.map((a) => ({
+            uid: a.id || crypto.randomUUID(),
+            sourceSongId: a.songId,
+            name: a.name || 'My Version',
+            owner: a.type === 'shared' ? 'shared' : 'personal',
+            capo: a.overrides?.capo,
+            sections: a.overrides?.sections,
+            createdAt: a.createdAt ?? Date.now(),
+            updatedAt: a.updatedAt ?? Date.now()
+          }))
+        );
+        await tx.table('arrangements').clear();
+      }
     });
   }
 
@@ -197,6 +279,10 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
     console.error('Failed to fetch song from Supabase:', e);
   }
   return null;
+}
+
+export function ensureUid(record: { uid?: string }): string {
+  return record.uid ?? (record.uid = crypto.randomUUID());
 }
 
 export function normalizeSongIndex(song: SongIndex): SongIndex {

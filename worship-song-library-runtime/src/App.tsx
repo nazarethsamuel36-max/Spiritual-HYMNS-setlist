@@ -7,6 +7,7 @@ import { SetlistManager } from './components/SetlistManager';
 import { SetlistView } from './components/SetlistView';
 import { SharedManager } from './components/SharedManager';
 import { PersonalSongs } from './components/PersonalSongs';
+import { MyVersions } from './components/MyVersions';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
 import { ContextRail } from './components/ContextRail';
@@ -15,7 +16,7 @@ import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
-import { db } from './db/Database';
+import { db, ensureUid } from './db/Database';
 
 function App() {
   // ==========================================
@@ -23,6 +24,7 @@ function App() {
   // ==========================================
   const isMobile = useIsMobile();
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
+  const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
   
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -102,7 +104,7 @@ function App() {
           const decoded = decodeURIComponent(escape(atob(importSongData)));
           const songObj = JSON.parse(decoded);
           const targetId = songObj.id || (Math.floor(Date.now() / 1000) + Math.floor(Math.random() * 100000));
-          await db.sharedSongs.put({ ...songObj, id: targetId });
+          await db.sharedSongs.put({ ...songObj, id: targetId, uid: ensureUid(songObj) });
           alert(`Imported shared song: "${songObj.title}"`);
           setSidebarPanel('shared');
           window.history.replaceState({}, '', window.location.pathname);
@@ -114,10 +116,13 @@ function App() {
           const decoded = decodeURIComponent(escape(atob(importSetlistData)));
           const setlistObj = JSON.parse(decoded);
           if (setlistObj.sharedSongsList && Array.isArray(setlistObj.sharedSongsList)) {
-            for (const s of setlistObj.sharedSongsList) await db.sharedSongs.put(s);
+            for (const s of setlistObj.sharedSongsList) {
+              if (s && typeof s === 'object' && 'id' in s) await db.sharedSongs.put({ ...s, uid: ensureUid(s) });
+              else await db.sharedSongs.put(s);
+            }
           }
           const targetSetlistId = setlistObj.id || crypto.randomUUID();
-          await db.sharedSetlists.put({ id: targetSetlistId, title: setlistObj.title, createdAt: setlistObj.createdAt || Date.now(), updatedAt: Date.now(), songs: setlistObj.songs || [] });
+          await db.sharedSetlists.put({ id: targetSetlistId, uid: ensureUid({ uid: setlistObj.uid }), title: setlistObj.title, createdAt: setlistObj.createdAt || Date.now(), updatedAt: Date.now(), songs: setlistObj.songs || [] });
           alert(`Imported shared setlist: "${setlistObj.title}"`);
           setSidebarPanel('shared');
           openSetlist(targetSetlistId);
@@ -336,7 +341,25 @@ function App() {
                 {(sidebar.panel === 'shared') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SharedManager /></div>}
                 {(sidebar.panel === 'setlist-list') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistManager /></div>}
                 {(sidebar.panel === 'setlist-detail') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistView setlistId={sidebar.setlistId} /></div>}
-                {(sidebar.panel === 'personal') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><PersonalSongs /></div>}
+                {(sidebar.panel === 'personal') && (
+                  <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3">
+                    <div className="flex items-center gap-1 p-1 mb-2 bg-slate-200/50 rounded-lg">
+                      <button
+                        onClick={() => setPersonalTab('songs')}
+                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'songs' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                      >
+                        My Songs
+                      </button>
+                      <button
+                        onClick={() => setPersonalTab('versions')}
+                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'versions' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                      >
+                        My Versions
+                      </button>
+                    </div>
+                    {personalTab === 'songs' ? <PersonalSongs /> : <MyVersions />}
+                  </div>
+                )}
               </div>
             </div>
           )}

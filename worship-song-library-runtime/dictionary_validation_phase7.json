@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "phase": "7",
+    "description": "Dictionary validation report",
+    "validatedAt": "2026-07-16T12:43:16.139Z",
+    "dictionaryFile": "./dictionary_phase6.json"
+  },
+  "summary": {
+    "totalCanonicalWords": 0,
+    "totalVariants": 0,
+    "errors": 0,
+    "warnings": 0,
+    "passed": true
+  },
+  "results": {
+    "errors": [],
+    "warnings": [],
+    "info": []
+  }
+}

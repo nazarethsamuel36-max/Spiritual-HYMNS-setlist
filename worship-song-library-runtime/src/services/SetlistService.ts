@@ -1,4 +1,4 @@
-import { db, type SetlistItem } from '../db/Database';
+import { db, type SetlistItem, type Version } from '../db/Database';
 
 export class SetlistService {
   private static normalizeItems(songs: SetlistItem[]): SetlistItem[] {
@@ -8,6 +8,7 @@ export class SetlistService {
         ...s,
         id,
         type: s.type || 'song',
+        refType: s.refType || (s.versionId ? undefined : 'official'),
         order: s.order !== undefined ? s.order : idx
       };
     });
@@ -32,6 +33,7 @@ export class SetlistService {
     const now = Date.now();
     await db.setlists.add({
       id,
+      uid: crypto.randomUUID(),
       title,
       createdAt: now,
       updatedAt: now,
@@ -54,7 +56,7 @@ export class SetlistService {
     });
   }
 
-  static async addSongToSetlist(setlistId: string, songId: number, transpose: number = 0): Promise<void> {
+  static async addSongToSetlist(setlistId: string, songId: number, transpose: number = 0, refType: 'official' | 'personal' | 'shared' = 'official'): Promise<void> {
     const { table, setlist } = await this.getTableAndSetlist(setlistId);
     if (!table || !setlist) return;
 
@@ -62,7 +64,32 @@ export class SetlistService {
     
     const newItems: SetlistItem[] = [
       ...setlist.songs,
-      { id: crypto.randomUUID(), type: 'song', songId, transpose, order: maxOrder + 1 }
+      { id: crypto.randomUUID(), type: 'song', songId, refType, transpose, order: maxOrder + 1 }
+    ];
+
+    await table.update(setlistId, {
+      songs: newItems,
+      updatedAt: Date.now()
+    });
+  }
+
+  static async addVersionToSetlist(setlistId: string, version: Version, transpose: number = 0): Promise<void> {
+    const { table, setlist } = await this.getTableAndSetlist(setlistId);
+    if (!table || !setlist) return;
+
+    const maxOrder = setlist.songs.reduce((max, s) => Math.max(max, s.order), -1);
+
+    const newItems: SetlistItem[] = [
+      ...setlist.songs,
+      {
+        id: crypto.randomUUID(),
+        type: 'song',
+        songId: version.sourceSongId,
+        refType: version.owner === 'shared' ? 'shared' : 'personal',
+        versionId: version.uid,
+        transpose,
+        order: maxOrder + 1
+      }
     ];
 
     await table.update(setlistId, {

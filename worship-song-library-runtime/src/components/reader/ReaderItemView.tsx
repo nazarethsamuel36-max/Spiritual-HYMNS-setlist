@@ -52,7 +52,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
 
     const target = setlistItems[targetIdx];
     if (!target.type || target.type === 'song') {
-      openSong(target.songId!, 'setlist', target.transpose ?? 0, item.setlistId, target.id);
+      openSong(target.songId!, 'setlist', target.transpose ?? 0, item.setlistId, target.id, target.versionId, target.refType);
     } else if (target.type === 'marker') {
       openMarker(target.label || 'Event Marker', item.setlistId, target.id);
     } else if (target.type === 'note') {

@@ -65,12 +65,15 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
       </div>
 
       <button
-        onClick={() => openSong(item.songId, 'setlist', item.transpose, setlistId, item.id)}
+        onClick={() => openSong(item.songId, 'setlist', item.transpose, setlistId, item.id, item.versionId, item.refType)}
         className="flex-1 text-left min-w-0 flex items-center justify-between outline-none focus:outline-none"
       >
         <div className="flex-1 min-w-0 pr-4">
           <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
-            {formatSongTitle(item.detail?.title || 'Unknown Song')}
+            {formatSongTitle(item.versionDetail?.name || item.detail?.title || 'Unknown Song')}
+            {item.versionDetail && (
+              <span className="ml-2 inline-block align-middle text-[9px] font-black px-1.5 py-0.5 bg-amber-100 text-amber-700 rounded-full">VERSION</span>
+            )}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
             <span className="text-xs font-medium text-slate-500">{item.detail?.language}</span>
@@ -257,8 +260,14 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
     const items = [];
     for (const item of setlist.songs) {
       if (!item.type || item.type === 'song') {
-        const detail = await getSongIndexById(item.songId!);
-        items.push({ ...item, detail });
+        if (item.versionId) {
+          const version = await db.versions.get(item.versionId);
+          const detail = await getSongIndexById(item.songId!);
+          items.push({ ...item, detail: detail ?? null, versionDetail: version ?? null });
+        } else {
+          const detail = await getSongIndexById(item.songId!);
+          items.push({ ...item, detail });
+        }
       } else {
         items.push({ ...item });
       }
@@ -385,7 +394,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               <button
                 key={song.id}
                 onClick={async () => {
-                  await SetlistService.addSongToSetlist(setlistId, song.id);
+                  await SetlistService.addSongToSetlist(setlistId, song.id, 0, song.isPersonal ? 'personal' : 'official');
                   setSearch('');
                 }}
                 className={`w-full flex items-center justify-between p-4 hover:bg-[var(--color-brand-soft)] transition-colors border-b border-slate-50 last:border-0 ${song.isPersonal ? 'border-l-4 border-l-[#3B2F2E]' : ''}`}

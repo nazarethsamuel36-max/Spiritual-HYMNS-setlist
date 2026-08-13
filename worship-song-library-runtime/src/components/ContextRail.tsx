@@ -1,6 +1,8 @@
 import { useWorkflowStore } from '../store/workflowStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
+import { createNewVersion } from '../services/VersionWorkflow';
+import { VersionService } from '../services/VersionService';
 
 export function ContextRail() {
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
@@ -10,8 +12,8 @@ export function ContextRail() {
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
   const setReaderMode = useWorkflowStore((s) => s.setReaderMode);
 
-  const arrangements = useLiveQuery(() => 
-    activeSongId ? db.arrangements.where({ songId: activeSongId }).toArray() : []
+  const versions = useLiveQuery(() =>
+    activeSongId ? db.versions.where('sourceSongId').equals(activeSongId).toArray() : []
   , [activeSongId]) || [];
 
   if (!activeSongId) return null;
@@ -41,25 +43,43 @@ export function ContextRail() {
             >
               Original Version
             </button>
-            {arrangements.map(arr => (
+            {versions.map(arr => (
               <button 
-                key={arr.id}
-                onClick={() => setActiveArrangementId(arr.id)}
-                className={`w-full text-left px-3 py-2 rounded-lg border text-sm font-semibold transition-colors flex justify-between items-center ${activeArrangementId === arr.id ? 'bg-amber-50 border-amber-200 shadow-sm text-amber-900' : 'bg-transparent border-transparent hover:bg-slate-200/50 text-slate-600'}`}
+                key={arr.uid}
+                onClick={() => setActiveArrangementId(arr.uid)}
+                className={`w-full text-left px-3 py-2 rounded-lg border text-sm font-semibold transition-colors flex justify-between items-center ${activeArrangementId === arr.uid ? 'bg-amber-50 border-amber-200 shadow-sm text-amber-900' : 'bg-transparent border-transparent hover:bg-slate-200/50 text-slate-600'}`}
               >
                 <span className="truncate">{arr.name}</span>
-                {activeArrangementId === arr.id && (
+                {activeArrangementId === arr.uid && (
                   <span className="text-[10px] uppercase font-black tracking-widest text-amber-600 bg-amber-100 px-1.5 py-0.5 rounded">Active</span>
                 )}
               </button>
             ))}
             <button 
-              onClick={() => setReaderMode('edit')}
+              onClick={async () => {
+                const uid = await createNewVersion(reader);
+                if (uid) {
+                  setActiveArrangementId(uid);
+                  setReaderMode('edit');
+                }
+              }}
               className="w-full text-left px-3 py-2 rounded-lg bg-transparent border border-transparent hover:bg-slate-200/50 text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors flex items-center space-x-2"
             >
               <span>+</span>
-              <span>New Personal Overlay</span>
+              <span>New Version</span>
             </button>
+            {versions.find((v) => v.uid === activeArrangementId)?.owner === 'shared' && (
+              <button
+                onClick={async () => {
+                  const sharedUid = activeArrangementId!;
+                  const newUid = await VersionService.makeMyVersion(sharedUid);
+                  if (newUid) setActiveArrangementId(newUid);
+                }}
+                className="w-full text-left px-3 py-2 rounded-lg bg-transparent border border-transparent hover:bg-amber-50 text-sm font-medium text-amber-700 hover:text-amber-900 transition-colors"
+              >
+                Make My Version
+              </button>
+            )}
           </div>
         </div>
 

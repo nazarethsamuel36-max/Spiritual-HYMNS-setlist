@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { SongDetail } from '../../db/Database';
+import type { SongDetail, Version } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
 import { db } from '../../db/Database';
 import { ChordPalette } from './ChordPalette';
+import { VersionService } from '../../services/VersionService';
 
 interface HistoryState {
   chords: string;
@@ -55,6 +56,8 @@ interface EditorModeProps {
   song: SongDetail;
   songKey?: string;
   source?: 'library' | 'setlist' | 'shared' | 'personal';
+  versionId?: string | null;
+  version?: Version | null;
 }
 
 interface PreviewChordLineProps {
@@ -186,7 +189,7 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   );
 }
 
-export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorModeProps) {
+export function EditorMode({ song, songKey = 'D', source = 'library', versionId = null, version = null }: EditorModeProps) {
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
@@ -305,7 +308,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
 
   useEffect(() => {
     console.log('📝 Loading new song into editor:', song.id);
-    setTitle(song.title || '');
+    setTitle(version?.name ?? song.title ?? '');
     setLanguage(song.language || 'English');
     setKeyValue(song.originalKey || songKey || 'C');
     setCurrentTextKey(song.originalKey || songKey || 'C');
@@ -317,7 +320,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
       clearTimeout(saveTimeoutRef.current);
       saveTimeoutRef.current = null;
     }
-  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey]);
+  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey, version?.name]);
 
   useEffect(() => {
     return () => {
@@ -342,7 +345,16 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
     try {
       console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
 
-      if (source === 'personal') {
+      if (versionId) {
+        const versionUpdates: Record<string, unknown> = {
+          updatedAt: Date.now(),
+        };
+        if (updates.title !== undefined) versionUpdates.name = updates.title;
+        if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
+        if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
+        await VersionService.updateVersion(versionId, versionUpdates as never);
+        console.log(`✅ Auto-save successful for version ${versionId}`);
+      } else if (source === 'personal') {
         // Save to IndexedDB for personal songs
         const existingSong = await db.personalSongs.get(currentSongId);
         if (existingSong) {
@@ -408,7 +420,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library' }: EditorMo
                 debouncedAutoSave({ title: e.target.value });
               }}
               className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
-              placeholder="Song Title..."
+              placeholder={versionId ? 'Version Name...' : 'Song Title...'}
             />
 
             <CustomKeyPicker

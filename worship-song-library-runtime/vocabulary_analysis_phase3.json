@@ -1,0 +1,9224 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "phase": "3",
+    "description": "Grammatical form flagging for human review",
+    "totalWords": 1245,
+    "wordsWithPossibleRoots": 520,
+    "analyzedAt": "2026-07-16T12:37:02.198Z",
+    "note": "No automatic rejection - all words preserved with suggested roots"
+  },
+  "analysis": [
+    {
+      "word": "a",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aa",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aadhaar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aadhi",
+      "possibleRoot": "aadh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "aadi",
+      "possibleRoot": "aad",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "aag",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aage",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aaj",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aakar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aakash",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aanand",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aanandit",
+      "possibleRoot": "aanandi",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "aandhiyan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aane",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aankhein",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aankhen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aao",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aap",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aaradhana",
+      "possibleRoot": "aaradha",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "aaradhna",
+      "possibleRoot": "aaradh",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "aasha",
+      "possibleRoot": "aash",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "aashish",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aasman",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aasmanon",
+      "possibleRoot": "aasman",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "aata",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aatma",
+      "possibleRoot": "aatm",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "aawaz",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aaya",
+      "possibleRoot": "aay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "aaye",
+      "possibleRoot": "aay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "aayega",
+      "possibleRoot": "aaye",
+      "note": "Possible will form"
+    },
+    {
+      "word": "aayein",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "abide",
+      "possibleRoot": "abid",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "about",
+      "possibleRoot": "abou",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "above",
+      "possibleRoot": "abov",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "adbhut",
+      "possibleRoot": "adbhu",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "adore",
+      "possibleRoot": "ador",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "ae",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "again",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "agar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ages",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "agree",
+      "possibleRoot": "agre",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "ah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ahe",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ai",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "air",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ajeeb",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "akhri",
+      "possibleRoot": "akhr",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "alas",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "alive",
+      "possibleRoot": "aliv",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "all",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "alleluia",
+      "possibleRoot": "allelui",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "allelujah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "almighty",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "alom",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "alone",
+      "possibleRoot": "alo",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "also",
+      "possibleRoot": "als",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "altar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "am",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "amazing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ambar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "amhi",
+      "possibleRoot": "amh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "amim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "an",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ananda",
+      "possibleRoot": "anand",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "anande",
+      "possibleRoot": "anand",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "and",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "andhiyari",
+      "possibleRoot": "andhiyar",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "angel",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "anoint",
+      "possibleRoot": "anoin",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "answer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ant",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "anugrah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "apna",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "apnaya",
+      "possibleRoot": "apnay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "apne",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "apni",
+      "possibleRoot": "apn",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "are",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "argam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "arms",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "arpilela",
+      "possibleRoot": "arpile",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "art",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "as",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ashish",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ashishon",
+      "possibleRoot": "ashis",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "asraya",
+      "possibleRoot": "asray",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "assondhi",
+      "possibleRoot": "assondh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "assurance",
+      "possibleRoot": "assuranc",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "astray",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "at",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ati",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "aur",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "avade",
+      "possibleRoot": "avad",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "away",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "awesome",
+      "possibleRoot": "awesom",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "baabat",
+      "possibleRoot": "baaba",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "baap",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "baarambar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "baat",
+      "possibleRoot": "baa",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "bacha",
+      "possibleRoot": "bach",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "bachaya",
+      "possibleRoot": "bachay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "bachon",
+      "possibleRoot": "bac",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "badal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "badh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "badhna",
+      "possibleRoot": "badh",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "badho",
+      "possibleRoot": "bad",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "badhte",
+      "possibleRoot": "badh",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "baha",
+      "possibleRoot": "bah",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "bahake",
+      "possibleRoot": "baha",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "bahti",
+      "possibleRoot": "bah",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "bahuta",
+      "possibleRoot": "bahu",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "bair",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "baitha",
+      "possibleRoot": "bai",
+      "note": "Possible was form"
+    },
+    {
+      "word": "bajayenge",
+      "possibleRoot": "bajayen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "bal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ban",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bana",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "banane",
+      "possibleRoot": "bana",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "banaya",
+      "possibleRoot": "banay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "band",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bandhan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bandho",
+      "possibleRoot": "band",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "bane",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "banqueting",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "barish",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "barkat",
+      "possibleRoot": "barka",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "barsa",
+      "possibleRoot": "bars",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "basa",
+      "possibleRoot": "bas",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "basne",
+      "possibleRoot": "bas",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "bayen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "be",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "beautiful",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "beauty",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "because",
+      "possibleRoot": "becau",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "been",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "before",
+      "possibleRoot": "befor",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "behtar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "believe",
+      "possibleRoot": "believ",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "believed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "belongs",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bete",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "beyond",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bhaiyon",
+      "possibleRoot": "bhaiy",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "bhala",
+      "possibleRoot": "bha",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "bhalaai",
+      "possibleRoot": "bhalaa",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "bhara",
+      "possibleRoot": "bhar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "bharale",
+      "possibleRoot": "bharal",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "bharosa",
+      "possibleRoot": "bharos",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "bheekh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bhende",
+      "possibleRoot": "bhend",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "bhet",
+      "possibleRoot": "bhe",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "bhi",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bhoomi",
+      "possibleRoot": "bhoom",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "big",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bin",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bina",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bind",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "binti",
+      "possibleRoot": "bin",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "birds",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bleed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bless",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "blessed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "blessing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "blessings",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "blood",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bojh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bol",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bolavilem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bolo",
+      "possibleRoot": "bol",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "bondage",
+      "possibleRoot": "bonda",
+      "note": "Possible will form"
+    },
+    {
+      "word": "book",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "born",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "boro",
+      "possibleRoot": "bor",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "bound",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "breaks",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "breathe",
+      "possibleRoot": "brea",
+      "note": "Possible were form"
+    },
+    {
+      "word": "bride",
+      "possibleRoot": "brid",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "bright",
+      "possibleRoot": "brigh",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "bring",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bringing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "brought",
+      "possibleRoot": "brough",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "building",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "built",
+      "possibleRoot": "buil",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "bula",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "bulata",
+      "possibleRoot": "bula",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "burden",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "burdens",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "burn",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "by",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "called",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "calls",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "can",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "care",
+      "possibleRoot": "car",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "careth",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "cause",
+      "possibleRoot": "cau",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "celebrate",
+      "possibleRoot": "celebra",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "chaandi",
+      "possibleRoot": "chaand",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "chadhaye",
+      "possibleRoot": "chadhay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "chahiye",
+      "possibleRoot": "chahiy",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "chahte",
+      "possibleRoot": "chah",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "chal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chale",
+      "possibleRoot": "chal",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "chalen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chalne",
+      "possibleRoot": "chal",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "chalte",
+      "possibleRoot": "chal",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "chalunga",
+      "possibleRoot": "chalun",
+      "note": "Possible will form"
+    },
+    {
+      "word": "chandrama",
+      "possibleRoot": "chandram",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "changai",
+      "possibleRoot": "changa",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "change",
+      "possibleRoot": "chan",
+      "note": "Possible will form"
+    },
+    {
+      "word": "channel",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chariots",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "charnon",
+      "possibleRoot": "charn",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "charwaha",
+      "possibleRoot": "charwah",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "chhod",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chhodega",
+      "possibleRoot": "chhode",
+      "note": "Possible will form"
+    },
+    {
+      "word": "chhote",
+      "possibleRoot": "chho",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "chote",
+      "possibleRoot": "cho",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "christ",
+      "possibleRoot": "chris",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "christian",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chuki",
+      "possibleRoot": "chu",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "church",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "chutkara",
+      "possibleRoot": "chutkar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "circle",
+      "possibleRoot": "circl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "claim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "clap",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "cleansing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "close",
+      "possibleRoot": "clo",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "closer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "come",
+      "possibleRoot": "com",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "comes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "coming",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "corn",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "count",
+      "possibleRoot": "coun",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "court",
+      "possibleRoot": "cour",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "cover",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "cross",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "crucified",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "cry",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "cup",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "daal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "daan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "daiz",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dakharas",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "darakhton",
+      "possibleRoot": "darakht",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "daramiyan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "day",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "daya",
+      "possibleRoot": "day",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dayalu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dayen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "days",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "de",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dear",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "decided",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "declare",
+      "possibleRoot": "declar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "deep",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "deeper",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "deer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dekh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dekhenge",
+      "possibleRoot": "dekhen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "dekho",
+      "possibleRoot": "dek",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "dekhte",
+      "possibleRoot": "dekh",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "dene",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "denge",
+      "possibleRoot": "den",
+      "note": "Possible will form"
+    },
+    {
+      "word": "description",
+      "possibleRoot": "descripti",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "deserve",
+      "possibleRoot": "deserv",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "desh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "desire",
+      "possibleRoot": "desir",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "deta",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dev",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "deva",
+      "possibleRoot": "dev",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dew",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dham",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhanya",
+      "possibleRoot": "dhany",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dhanyavaad",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhanyavad",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhanyavada",
+      "possibleRoot": "dhanyavad",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dhanyawaad",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhara",
+      "possibleRoot": "dhar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dharti",
+      "possibleRoot": "dhar",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "dhava",
+      "possibleRoot": "dhav",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dho",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhul",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dhunyace",
+      "possibleRoot": "dhunyac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "di",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "did",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dil",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dilaye",
+      "possibleRoot": "dilay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "din",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dini",
+      "possibleRoot": "din",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "divine",
+      "possibleRoot": "divi",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "divya",
+      "possibleRoot": "divy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "diya",
+      "possibleRoot": "diy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "do",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "donon",
+      "possibleRoot": "don",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "dont",
+      "possibleRoot": "don",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "door",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dost",
+      "possibleRoot": "dos",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "dove",
+      "possibleRoot": "dov",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "down",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dripping",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "duhai",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dukh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dulhan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "duniya",
+      "possibleRoot": "duniy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "dur",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "dwara",
+      "possibleRoot": "dwar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "earth",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "east",
+      "possibleRoot": "eas",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "ek",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "el",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "elah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "elijah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "elohim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "end",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "enfold",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "enough",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "enter",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "enthrone",
+      "possibleRoot": "enthro",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "everlasting",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "evermore",
+      "possibleRoot": "evermor",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "every",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "everybody",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "everything",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "extol",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "eyes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "face",
+      "possibleRoot": "fac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "fairer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fairest",
+      "possibleRoot": "faires",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "faith",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "faithfulness",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fall",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "far",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "father",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "faults",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fear",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "feel",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fellowship",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fetter",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fill",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fire",
+      "possibleRoot": "fir",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "first",
+      "possibleRoot": "firs",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "floating",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "flock",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "flood",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "flow",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "follow",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "following",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "for",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "forever",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "forevermore",
+      "possibleRoot": "forevermor",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "forgave",
+      "possibleRoot": "forgav",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "forget",
+      "possibleRoot": "forge",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "found",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "foundation",
+      "possibleRoot": "foundati",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "fount",
+      "possibleRoot": "foun",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "fountain",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "free",
+      "possibleRoot": "fre",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "fresh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "friend",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "from",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "fulness",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gaana",
+      "possibleRoot": "gaa",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "gaate",
+      "possibleRoot": "gaa",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "gadariya",
+      "possibleRoot": "gadariy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "gao",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "garden",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gata",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gate",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gates",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gather",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gathering",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gau",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gaun",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gaunga",
+      "possibleRoot": "gaun",
+      "note": "Possible will form"
+    },
+    {
+      "word": "gaya",
+      "possibleRoot": "gay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "gaye",
+      "possibleRoot": "gay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "gayen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gayi",
+      "possibleRoot": "gay",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "geet",
+      "possibleRoot": "gee",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "geeton",
+      "possibleRoot": "geet",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "gelo",
+      "possibleRoot": "gel",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "ghadu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ghamgeen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ghatayon",
+      "possibleRoot": "ghatay",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "ghati",
+      "possibleRoot": "gha",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "ghost",
+      "possibleRoot": "ghos",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "ghutnon",
+      "possibleRoot": "ghutn",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "gift",
+      "possibleRoot": "gif",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "gira",
+      "possibleRoot": "gir",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "gita",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "give",
+      "possibleRoot": "giv",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "glad",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "glass",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "glorious",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "glory",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "go",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "god",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "godhead",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gods",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "golden",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "good",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "goodness",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "got",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "grace",
+      "possibleRoot": "grac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "great",
+      "possibleRoot": "grea",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "ground",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "guide",
+      "possibleRoot": "guid",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "gulab",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gunah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gunahgaar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "gunahon",
+      "possibleRoot": "guna",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "ha",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hai",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hail",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hain",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hallelujah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hallowed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hamara",
+      "possibleRoot": "hamar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "hamare",
+      "possibleRoot": "hamar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "hamari",
+      "possibleRoot": "hamar",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "hamesha",
+      "possibleRoot": "hamesh",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "hand",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hands",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "happy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "har",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "harp",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "harsa",
+      "possibleRoot": "hars",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "has",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "haseen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "have",
+      "possibleRoot": "hav",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "he",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hear",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heard",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heart",
+      "possibleRoot": "hear",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "heaven",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heavenly",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heavens",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heavy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "heed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "held",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "here",
+      "possibleRoot": "her",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "hes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hi",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hide",
+      "possibleRoot": "hid",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "hiding",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "high",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "higher",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hill",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "him",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "himmat",
+      "possibleRoot": "himma",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "his",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hisab",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ho",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hoga",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hoila",
+      "possibleRoot": "hoi",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "hokar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hoke",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hold",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "holies",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "holiness",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "holy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hon",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "honey",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hoon",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hope",
+      "possibleRoot": "hop",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "horses",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hosanna",
+      "possibleRoot": "hosan",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "hour",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "house",
+      "possibleRoot": "hou",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "hove",
+      "possibleRoot": "hov",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "hovegi",
+      "possibleRoot": "hove",
+      "note": "Possible will form"
+    },
+    {
+      "word": "how",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hriday",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hua",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hue",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hui",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hum",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "hume",
+      "possibleRoot": "hum",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "humein",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "humko",
+      "possibleRoot": "hum",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "huzoor",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "i",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ichchha",
+      "possibleRoot": "ichchh",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "id",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ik",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ill",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "im",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "immanuel",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "in",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "instrument",
+      "possibleRoot": "instrumen",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "into",
+      "possibleRoot": "int",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "intzar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "is",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ishwar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "isnt",
+      "possibleRoot": "isn",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "it",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "its",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ive",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ja",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jaane",
+      "possibleRoot": "jaa",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jaanta",
+      "possibleRoot": "jaan",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "jaati",
+      "possibleRoot": "jaa",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "jaaye",
+      "possibleRoot": "jaay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "jab",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jabse",
+      "possibleRoot": "jab",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "jagat",
+      "possibleRoot": "jaga",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jahan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jaisa",
+      "possibleRoot": "jais",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "jala",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jalta",
+      "possibleRoot": "jal",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "jalte",
+      "possibleRoot": "jal",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "jana",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "janam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jangli",
+      "possibleRoot": "jangl",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "jao",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jata",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jawan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jay",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jayam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jaye",
+      "possibleRoot": "jay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "jayega",
+      "possibleRoot": "jaye",
+      "note": "Possible will form"
+    },
+    {
+      "word": "jayegi",
+      "possibleRoot": "jaye",
+      "note": "Possible will form"
+    },
+    {
+      "word": "jayenge",
+      "possibleRoot": "jayen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "jaykar",
+      "possibleRoot": "jay",
+      "note": "Possible doing form"
+    },
+    {
+      "word": "jaywant",
+      "possibleRoot": "jaywan",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jeevan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jeevit",
+      "possibleRoot": "jeevi",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jehovah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jesus",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jezu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jhanda",
+      "possibleRoot": "jhand",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "jireh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "jisne",
+      "possibleRoot": "jis",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jivanahuna",
+      "possibleRoot": "jivanahu",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "jo",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "joy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "just",
+      "possibleRoot": "jus",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "jyoti",
+      "possibleRoot": "jyo",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "ka",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kaante",
+      "possibleRoot": "kaan",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "kabhi",
+      "possibleRoot": "kabh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "kaha",
+      "possibleRoot": "kah",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kahan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kahani",
+      "possibleRoot": "kahan",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "kahi",
+      "possibleRoot": "kah",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "kahin",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kaho",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kahte",
+      "possibleRoot": "kah",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "kaisa",
+      "possibleRoot": "kais",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kaise",
+      "possibleRoot": "kai",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "kaisi",
+      "possibleRoot": "kais",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "kal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kalisiya",
+      "possibleRoot": "kalisiy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "karaya",
+      "possibleRoot": "karay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kare",
+      "possibleRoot": "kar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "kareeb",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "karein",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "karne",
+      "possibleRoot": "kar",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "karo",
+      "possibleRoot": "kar",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "karoon",
+      "possibleRoot": "karo",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "karta",
+      "possibleRoot": "kar",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "karte",
+      "possibleRoot": "kar",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "karti",
+      "possibleRoot": "kar",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "karu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "karuna",
+      "possibleRoot": "karu",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "karunga",
+      "possibleRoot": "karun",
+      "note": "Possible will form"
+    },
+    {
+      "word": "karuya",
+      "possibleRoot": "karuy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kary",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kaun",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ke",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "keemti",
+      "possibleRoot": "keem",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "keep",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "keval",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "khamosh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "khawand",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kholie",
+      "possibleRoot": "kholi",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "kholo",
+      "possibleRoot": "khol",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "khoon",
+      "possibleRoot": "kho",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "khrist",
+      "possibleRoot": "khris",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "khrista",
+      "possibleRoot": "khris",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "khristace",
+      "possibleRoot": "khristac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "khuda",
+      "possibleRoot": "khud",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "khudaki",
+      "possibleRoot": "khuda",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "khul",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "khushi",
+      "possibleRoot": "khush",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "ki",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kindly",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kindness",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "king",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kingdom",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kitabe",
+      "possibleRoot": "kitab",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "kiti",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kitna",
+      "possibleRoot": "kit",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "kitne",
+      "possibleRoot": "kit",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "kiya",
+      "possibleRoot": "kiy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "knees",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "know",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "knows",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ko",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "koi",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kokara",
+      "possibleRoot": "kokar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kona",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "koni",
+      "possibleRoot": "kon",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "krass",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "krpamaya",
+      "possibleRoot": "krpamay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "krpeci",
+      "possibleRoot": "krpec",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "krusasa",
+      "possibleRoot": "krusas",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kruss",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kuch",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kudrat",
+      "possibleRoot": "kudra",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "kunda",
+      "possibleRoot": "kund",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "kurban",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kus",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "kya",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "la",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "laga",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lagao",
+      "possibleRoot": "laga",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "lahu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "laid",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lamp",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "land",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "le",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lead",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "leads",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lekar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lena",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lene",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lenge",
+      "possibleRoot": "len",
+      "note": "Possible will form"
+    },
+    {
+      "word": "less",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "let",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lets",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "life",
+      "possibleRoot": "lif",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "lift",
+      "possibleRoot": "lif",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "lifted",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "light",
+      "possibleRoot": "ligh",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "like",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "little",
+      "possibleRoot": "littl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "live",
+      "possibleRoot": "liv",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "lives",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "living",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "liya",
+      "possibleRoot": "liy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "liye",
+      "possibleRoot": "liy",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "lo",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "logo",
+      "possibleRoot": "log",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "long",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "longer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "look",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "looked",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "looking",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "looks",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lord",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lords",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "lost",
+      "possibleRoot": "los",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "love",
+      "possibleRoot": "lov",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "lovely",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "loves",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "loving",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "maangta",
+      "possibleRoot": "maang",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "made",
+      "possibleRoot": "mad",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "magnify",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mahan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mahima",
+      "possibleRoot": "mahim",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "main",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "majesty",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "majha",
+      "possibleRoot": "majh",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "makaan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "make",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "maker",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "making",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "maksad",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mala",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "malik",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "man",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mandarata",
+      "possibleRoot": "mandara",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "mandir",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "manga",
+      "possibleRoot": "man",
+      "note": "Possible will form"
+    },
+    {
+      "word": "mange",
+      "possibleRoot": "man",
+      "note": "Possible will form"
+    },
+    {
+      "word": "manushya",
+      "possibleRoot": "manushy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "marching",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "marg",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "marvelous",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "masih",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "masiha",
+      "possibleRoot": "masih",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "masihi",
+      "possibleRoot": "masih",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "masihtu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "master",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "may",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "me",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "meet",
+      "possibleRoot": "mee",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "mein",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "melody",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mendhapala",
+      "possibleRoot": "mendhapa",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "mendhare",
+      "possibleRoot": "mendhar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "mera",
+      "possibleRoot": "mer",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "mercies",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mercy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mere",
+      "possibleRoot": "mer",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "meri",
+      "possibleRoot": "mer",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "might",
+      "possibleRoot": "migh",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "mighty",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mil",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mila",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mile",
+      "possibleRoot": "mil",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "milen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "milk",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "milkar",
+      "possibleRoot": "mil",
+      "note": "Possible doing form"
+    },
+    {
+      "word": "miluni",
+      "possibleRoot": "milun",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "mine",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "miracle",
+      "possibleRoot": "miracl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "mitr",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mitra",
+      "possibleRoot": "mitr",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "mog",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mojem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "moments",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "more",
+      "possibleRoot": "mor",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "morning",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "morrow",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "moses",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "move",
+      "possibleRoot": "mov",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "mua",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "mudkar",
+      "possibleRoot": "mud",
+      "note": "Possible doing form"
+    },
+    {
+      "word": "mudna",
+      "possibleRoot": "mud",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "mujhe",
+      "possibleRoot": "mujh",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "mujhko",
+      "possibleRoot": "mujh",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "mukti",
+      "possibleRoot": "muk",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "munjee",
+      "possibleRoot": "munje",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "my",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "na",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "naam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "naare",
+      "possibleRoot": "naar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "nagar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nahi",
+      "possibleRoot": "nah",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "nahin",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nama",
+      "possibleRoot": "nam",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "name",
+      "possibleRoot": "nam",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "names",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "narsinga",
+      "possibleRoot": "narsin",
+      "note": "Possible will form"
+    },
+    {
+      "word": "nasheen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nature",
+      "possibleRoot": "natur",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "navate",
+      "possibleRoot": "nava",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "naya",
+      "possibleRoot": "nay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "naye",
+      "possibleRoot": "nay",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "nayi",
+      "possibleRoot": "nay",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "nazron",
+      "possibleRoot": "nazr",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "ne",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "near",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nearer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "neeche",
+      "possibleRoot": "neech",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "need",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "neelay",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nest",
+      "possibleRoot": "nes",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "never",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "new",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "night",
+      "possibleRoot": "nigh",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "nishaan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nissi",
+      "possibleRoot": "niss",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "no",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "noor",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "not",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "nothing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "now",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "o",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "obey",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "of",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "oft",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "oh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "oil",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ojhe",
+      "possibleRoot": "ojh",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "old",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "on",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "once",
+      "possibleRoot": "onc",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "one",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "only",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "onward",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "open",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "original",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "other",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ought",
+      "possibleRoot": "ough",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "our",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "out",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "outer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "over",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "overtake",
+      "possibleRoot": "overta",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "own",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "paani",
+      "possibleRoot": "paan",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "paap",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "paapi",
+      "possibleRoot": "paap",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "paapon",
+      "possibleRoot": "paap",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "paar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "paas",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "paigam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pak",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "panteth",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "par",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "param",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "parameshwar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pardesh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "parivartan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pass",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "past",
+      "possibleRoot": "pas",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "patthar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pavan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pavitra",
+      "possibleRoot": "pavitr",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "paya",
+      "possibleRoot": "pay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "payi",
+      "possibleRoot": "pay",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "pe",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "peace",
+      "possibleRoot": "peac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "peeche",
+      "possibleRoot": "peech",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "pehle",
+      "possibleRoot": "pehl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "people",
+      "possibleRoot": "peopl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "perfect",
+      "possibleRoot": "perfec",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "phailao",
+      "possibleRoot": "phaila",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "phara",
+      "possibleRoot": "phar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "phatako",
+      "possibleRoot": "phata",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "phir",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "phoonka",
+      "possibleRoot": "phoon",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "physician",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pilgrim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pillar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pita",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "place",
+      "possibleRoot": "plac",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "plead",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "poleunk",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "portion",
+      "possibleRoot": "porti",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "power",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "powers",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prabhu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prabhuji",
+      "possibleRoot": "prabhu",
+      "note": "Possible honorific suffix"
+    },
+    {
+      "word": "praise",
+      "possibleRoot": "prai",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "praises",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prakasita",
+      "possibleRoot": "prakasi",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "prarthna",
+      "possibleRoot": "prarth",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "prashansa",
+      "possibleRoot": "prashans",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "prati",
+      "possibleRoot": "pra",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "pravesh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pray",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prayer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "precious",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "premi",
+      "possibleRoot": "prem",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "presence",
+      "possibleRoot": "presenc",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "preserved",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pressing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "prithvi",
+      "possibleRoot": "prithv",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "priya",
+      "possibleRoot": "priy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "proclaim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "promise",
+      "possibleRoot": "promi",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "promised",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "promises",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "psalm",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pukara",
+      "possibleRoot": "pukar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "pukaru",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pull",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "puri",
+      "possibleRoot": "pur",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "purify",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "purpose",
+      "possibleRoot": "purpo",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "pyaar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pyar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "pyara",
+      "possibleRoot": "pyar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "pyare",
+      "possibleRoot": "pyar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "pyari",
+      "possibleRoot": "pyar",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "pyaro",
+      "possibleRoot": "pyar",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "pyasi",
+      "possibleRoot": "pyas",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "raat",
+      "possibleRoot": "raa",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "rabb",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "raha",
+      "possibleRoot": "rah",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "rahe",
+      "possibleRoot": "rah",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "rahenge",
+      "possibleRoot": "rahen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "rahi",
+      "possibleRoot": "rah",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "raho",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rahoge",
+      "possibleRoot": "raho",
+      "note": "Possible will form"
+    },
+    {
+      "word": "rahon",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rahte",
+      "possibleRoot": "rah",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "raja",
+      "possibleRoot": "raj",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "rajayon",
+      "possibleRoot": "rajay",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "rakh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "raktam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rakte",
+      "possibleRoot": "rak",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "rapture",
+      "possibleRoot": "raptur",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "rasta",
+      "possibleRoot": "ras",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "rather",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "re",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "reached",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "redeemed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "redeemer",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "redemption",
+      "possibleRoot": "redempti",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "refuge",
+      "possibleRoot": "refu",
+      "note": "Possible will form"
+    },
+    {
+      "word": "reigns",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rejoice",
+      "possibleRoot": "rejoic",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "rejoicing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "religion",
+      "possibleRoot": "religi",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "render",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "report",
+      "possibleRoot": "repor",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "reputation",
+      "possibleRoot": "reputati",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "rich",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "right",
+      "possibleRoot": "righ",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "rising",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "river",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rock",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "roll",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "roshni",
+      "possibleRoot": "roshn",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "roti",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "rukna",
+      "possibleRoot": "ruk",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "ruler",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "s",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sa",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "saagar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "saare",
+      "possibleRoot": "saar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "saari",
+      "possibleRoot": "saar",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "saath",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "saaz",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sab",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sabke",
+      "possibleRoot": "sab",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "sabne",
+      "possibleRoot": "sab",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "sabse",
+      "possibleRoot": "sab",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "sachcha",
+      "possibleRoot": "sachch",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sachche",
+      "possibleRoot": "sachch",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sacrifice",
+      "possibleRoot": "sacrific",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sada",
+      "possibleRoot": "sad",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "safe",
+      "possibleRoot": "saf",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sahara",
+      "possibleRoot": "sahar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "said",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sakenge",
+      "possibleRoot": "saken",
+      "note": "Possible will form"
+    },
+    {
+      "word": "sakta",
+      "possibleRoot": "sak",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "saleeb",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "samarthya",
+      "possibleRoot": "samarthy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "same",
+      "possibleRoot": "sam",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sampoorna",
+      "possibleRoot": "sampoor",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "sanatana",
+      "possibleRoot": "sanata",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "sandesh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sands",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sang",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sankara",
+      "possibleRoot": "sankar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sanmukh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sanna",
+      "possibleRoot": "san",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "sare",
+      "possibleRoot": "sar",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sarem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sarva",
+      "possibleRoot": "sarv",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sarvanca",
+      "possibleRoot": "sarvanc",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "saving",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "savior",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "saviour",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "saw",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sawar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "say",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "se",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "search",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "secret",
+      "possibleRoot": "secre",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "seed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "seek",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "seen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "senayon",
+      "possibleRoot": "senay",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "serve",
+      "possibleRoot": "serv",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "set",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "setting",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "seva",
+      "possibleRoot": "sev",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sewa",
+      "possibleRoot": "sew",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "shackled",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shahanshah",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shahon",
+      "possibleRoot": "sha",
+      "note": "Possible to be form"
+    },
+    {
+      "word": "shall",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sharan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sharansthan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sharon",
+      "possibleRoot": "shar",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "sheaves",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sheep",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sheesh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shepherd",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shifa",
+      "possibleRoot": "shif",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "shireen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "should",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shout",
+      "possibleRoot": "shou",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "showers",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shuddh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "shukriya",
+      "possibleRoot": "shukriy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "shunya",
+      "possibleRoot": "shuny",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "shut",
+      "possibleRoot": "shu",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "sin",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "singing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sings",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sinking",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "siyon",
+      "possibleRoot": "siy",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "slaves",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "snow",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "so",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "softly",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sogllem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "soldier",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "soldiers",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "some",
+      "possibleRoot": "som",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "sometimes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "somia",
+      "possibleRoot": "somi",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "son",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "soorya",
+      "possibleRoot": "soory",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sorvespora",
+      "possibleRoot": "sorvespor",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sota",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "soul",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "spark",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "speak",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "spirit",
+      "possibleRoot": "spiri",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "spread",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "springs",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "srestha",
+      "possibleRoot": "sres",
+      "note": "Possible was form"
+    },
+    {
+      "word": "srishti",
+      "possibleRoot": "srish",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "stand",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "standing",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "stava",
+      "possibleRoot": "stav",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sthala",
+      "possibleRoot": "stha",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "sthan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "still",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "stranger",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "strength",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "stuti",
+      "possibleRoot": "stu",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "stutistuti",
+      "possibleRoot": "stutistu",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "suhana",
+      "possibleRoot": "suha",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "sukhacya",
+      "possibleRoot": "sukhacy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sukhdayi",
+      "possibleRoot": "sukhday",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "sun",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sunane",
+      "possibleRoot": "suna",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "sunao",
+      "possibleRoot": "suna",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "sunata",
+      "possibleRoot": "suna",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "sundar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sunenge",
+      "possibleRoot": "sunen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "suno",
+      "possibleRoot": "sun",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "sunset",
+      "possibleRoot": "sunse",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "sunta",
+      "possibleRoot": "sun",
+      "note": "Possible present participle"
+    },
+    {
+      "word": "surrender",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "survey",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "suveli",
+      "possibleRoot": "suvel",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "svargiya",
+      "possibleRoot": "svargiy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "swarg",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "swargi",
+      "possibleRoot": "swar",
+      "note": "Possible will form"
+    },
+    {
+      "word": "swargiya",
+      "possibleRoot": "swargiy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "sweep",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "sweet",
+      "possibleRoot": "swee",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "sweetest",
+      "possibleRoot": "sweetes",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "taakat",
+      "possibleRoot": "taaka",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "taaki",
+      "possibleRoot": "taa",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "tab",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "table",
+      "possibleRoot": "tabl",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "taiyar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tak",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "take",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "taken",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "takes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tal",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "talk",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tamanna",
+      "possibleRoot": "taman",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "tan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tangala",
+      "possibleRoot": "tanga",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "taraka",
+      "possibleRoot": "tara",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "taranara",
+      "possibleRoot": "taranar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tarif",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "teach",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "teje",
+      "possibleRoot": "tej",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "tel",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tempted",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tenderly",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tera",
+      "possibleRoot": "ter",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tere",
+      "possibleRoot": "ter",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "teri",
+      "possibleRoot": "ter",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "tha",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "than",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thank",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thanks",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "that",
+      "possibleRoot": "tha",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "the",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thee",
+      "possibleRoot": "the",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "them",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "there",
+      "possibleRoot": "ther",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "therefore",
+      "possibleRoot": "therefor",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "theres",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "these",
+      "possibleRoot": "the",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "they",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thine",
+      "possibleRoot": "thi",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "thinking",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thiren",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "this",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thou",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "through",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "thy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "time",
+      "possibleRoot": "tim",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "times",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "to",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "toda",
+      "possibleRoot": "tod",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "today",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "together",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tomorrow",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "toofan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "took",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "toote",
+      "possibleRoot": "too",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "touch",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "travelling",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "trials",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tried",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "true",
+      "possibleRoot": "tru",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "truly",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "trust",
+      "possibleRoot": "trus",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "tu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tujha",
+      "possibleRoot": "tujh",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tujhansa",
+      "possibleRoot": "tujhans",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tujhe",
+      "possibleRoot": "tujh",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "tujhi",
+      "possibleRoot": "tujh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "tujhko",
+      "possibleRoot": "tujh",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "tujhse",
+      "possibleRoot": "tujh",
+      "note": "Possible postposition"
+    },
+    {
+      "word": "tujim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tuka",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tum",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tumhara",
+      "possibleRoot": "tumhar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tumhi",
+      "possibleRoot": "tumh",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "tumsa",
+      "possibleRoot": "tums",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "tunci",
+      "possibleRoot": "tunc",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "tune",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "turn",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "tyaci",
+      "possibleRoot": "tyac",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "tyakade",
+      "possibleRoot": "tyakad",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "tyala",
+      "possibleRoot": "tya",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "uddhar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "udhte",
+      "possibleRoot": "udh",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "ufano",
+      "possibleRoot": "ufan",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "ugama",
+      "possibleRoot": "ugam",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "unbroken",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "uncha",
+      "possibleRoot": "unch",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "unchanging",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "unchi",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "undela",
+      "possibleRoot": "unde",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "union",
+      "possibleRoot": "uni",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "unto",
+      "possibleRoot": "unt",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "up",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "upakara",
+      "possibleRoot": "upakar",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "upar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "upay",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "upon",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "upward",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "us",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "use",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "uske",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "uski",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "usne",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "uthakar",
+      "possibleRoot": "utha",
+      "note": "Possible doing form"
+    },
+    {
+      "word": "uthate",
+      "possibleRoot": "utha",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "uthayenge",
+      "possibleRoot": "uthayen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "uthenge",
+      "possibleRoot": "uthen",
+      "note": "Possible will form"
+    },
+    {
+      "word": "uthti",
+      "possibleRoot": "uth",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "utpatti",
+      "possibleRoot": "utpat",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "utram",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "utrega",
+      "possibleRoot": "utre",
+      "note": "Possible will form"
+    },
+    {
+      "word": "uttam",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "uttar",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vachan",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vahaya",
+      "possibleRoot": "vahay",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "vaibhavi",
+      "possibleRoot": "vaibhav",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "van",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vanda",
+      "possibleRoot": "vand",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "vande",
+      "possibleRoot": "vand",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "vandna",
+      "possibleRoot": "vand",
+      "note": "Possible infinitive marker"
+    },
+    {
+      "word": "vaseele",
+      "possibleRoot": "vaseel",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "vatato",
+      "possibleRoot": "vatat",
+      "note": "Possible vocative ending"
+    },
+    {
+      "word": "vate",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vatsalya",
+      "possibleRoot": "vatsaly",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "veli",
+      "possibleRoot": "vel",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "vicharun",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "victory",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vishay",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vishwas",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "vishwasiyon",
+      "possibleRoot": "vishwasiy",
+      "note": "Possible plural oblique"
+    },
+    {
+      "word": "voi",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "voice",
+      "possibleRoot": "voic",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "vrsti",
+      "possibleRoot": "vrs",
+      "note": "Possible present participle (feminine)"
+    },
+    {
+      "word": "waada",
+      "possibleRoot": "waad",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "wait",
+      "possibleRoot": "wai",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "waiting",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wala",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wale",
+      "possibleRoot": "wal",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "walk",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "walking",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wandered",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "want",
+      "possibleRoot": "wan",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "waqt",
+      "possibleRoot": "waq",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "was",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wash",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "washed",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "water",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "waters",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "way",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "we",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "welcome",
+      "possibleRoot": "welcom",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "well",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "were",
+      "possibleRoot": "wer",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "west",
+      "possibleRoot": "wes",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "weve",
+      "possibleRoot": "wev",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "what",
+      "possibleRoot": "wha",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "when",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "where",
+      "possibleRoot": "wher",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "while",
+      "possibleRoot": "whil",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "white",
+      "possibleRoot": "whi",
+      "note": "Possible present participle (plural)"
+    },
+    {
+      "word": "whom",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "why",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "will",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "windows",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "winds",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wine",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wings",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "with",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "without",
+      "possibleRoot": "withou",
+      "note": "Possible past tense marker"
+    },
+    {
+      "word": "wo",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "woh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wonder",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wonderful",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "wondrous",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "word",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "words",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "working",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "world",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "worry",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "worship",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "worthy",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "ya",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yahova",
+      "possibleRoot": "yahov",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "ye",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yeh",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yerushalem",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yes",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yeshu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yeshuci",
+      "possibleRoot": "yeshuc",
+      "note": "Possible adjective ending (feminine)"
+    },
+    {
+      "word": "yeshucya",
+      "possibleRoot": "yeshucy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "yeshuji",
+      "possibleRoot": "yeshu",
+      "note": "Possible honorific suffix"
+    },
+    {
+      "word": "yeshula",
+      "possibleRoot": "yeshu",
+      "note": "Possible grammatical suffix"
+    },
+    {
+      "word": "yeshuvani",
+      "possibleRoot": "yeshu",
+      "note": "Possible compound word"
+    },
+    {
+      "word": "yesterday",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yogya",
+      "possibleRoot": "yogy",
+      "note": "Possible adjective ending"
+    },
+    {
+      "word": "yonder",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "you",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "your",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "youre",
+      "possibleRoot": "your",
+      "note": "Possible adjective ending (plural)"
+    },
+    {
+      "word": "yug",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "yuganu",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "zameen",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "zannaim",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "zaroor",
+      "possibleRoot": null,
+      "note": ""
+    },
+    {
+      "word": "zindagi",
+      "possibleRoot": "zinda",
+      "note": "Possible will form"
+    },
+    {
+      "word": "zion",
+      "possibleRoot": null,
+      "note": ""
+    }
+  ],
+  "rootGroups": {
+    "aadh": [
+      {
+        "word": "aadhi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "aad": [
+      {
+        "word": "aadi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "aanandi": [
+      {
+        "word": "aanandit",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "aaradha": [
+      {
+        "word": "aaradhana",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "aaradh": [
+      {
+        "word": "aaradhna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "aash": [
+      {
+        "word": "aasha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "aasman": [
+      {
+        "word": "aasmanon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "aatm": [
+      {
+        "word": "aatma",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "aay": [
+      {
+        "word": "aaya",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "aaye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "aaye": [
+      {
+        "word": "aayega",
+        "note": "Possible will form"
+      }
+    ],
+    "abid": [
+      {
+        "word": "abide",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "abou": [
+      {
+        "word": "about",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "abov": [
+      {
+        "word": "above",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "adbhu": [
+      {
+        "word": "adbhut",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "ador": [
+      {
+        "word": "adore",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "agre": [
+      {
+        "word": "agree",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "akhr": [
+      {
+        "word": "akhri",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "aliv": [
+      {
+        "word": "alive",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "allelui": [
+      {
+        "word": "alleluia",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "alo": [
+      {
+        "word": "alone",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "als": [
+      {
+        "word": "also",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "amh": [
+      {
+        "word": "amhi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "anand": [
+      {
+        "word": "ananda",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "anande",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "andhiyar": [
+      {
+        "word": "andhiyari",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "anoin": [
+      {
+        "word": "anoint",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "apnay": [
+      {
+        "word": "apnaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "apn": [
+      {
+        "word": "apni",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "arpile": [
+      {
+        "word": "arpilela",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "ashis": [
+      {
+        "word": "ashishon",
+        "note": "Possible to be form"
+      }
+    ],
+    "asray": [
+      {
+        "word": "asraya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "assondh": [
+      {
+        "word": "assondhi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "assuranc": [
+      {
+        "word": "assurance",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "avad": [
+      {
+        "word": "avade",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "awesom": [
+      {
+        "word": "awesome",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "baaba": [
+      {
+        "word": "baabat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "baa": [
+      {
+        "word": "baat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "bach": [
+      {
+        "word": "bacha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "bachay": [
+      {
+        "word": "bachaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "bac": [
+      {
+        "word": "bachon",
+        "note": "Possible to be form"
+      }
+    ],
+    "badh": [
+      {
+        "word": "badhna",
+        "note": "Possible infinitive marker"
+      },
+      {
+        "word": "badhte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "bad": [
+      {
+        "word": "badho",
+        "note": "Possible to be form"
+      }
+    ],
+    "bah": [
+      {
+        "word": "baha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "bahti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "baha": [
+      {
+        "word": "bahake",
+        "note": "Possible postposition"
+      }
+    ],
+    "bahu": [
+      {
+        "word": "bahuta",
+        "note": "Possible present participle"
+      }
+    ],
+    "bai": [
+      {
+        "word": "baitha",
+        "note": "Possible was form"
+      }
+    ],
+    "bajayen": [
+      {
+        "word": "bajayenge",
+        "note": "Possible will form"
+      }
+    ],
+    "bana": [
+      {
+        "word": "banane",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "banay": [
+      {
+        "word": "banaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "band": [
+      {
+        "word": "bandho",
+        "note": "Possible to be form"
+      }
+    ],
+    "barka": [
+      {
+        "word": "barkat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "bars": [
+      {
+        "word": "barsa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "bas": [
+      {
+        "word": "basa",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "basne",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "becau": [
+      {
+        "word": "because",
+        "note": "Possible postposition"
+      }
+    ],
+    "befor": [
+      {
+        "word": "before",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "believ": [
+      {
+        "word": "believe",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "bhaiy": [
+      {
+        "word": "bhaiyon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "bha": [
+      {
+        "word": "bhala",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "bhalaa": [
+      {
+        "word": "bhalaai",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "bhar": [
+      {
+        "word": "bhara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "bharal": [
+      {
+        "word": "bharale",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "bharos": [
+      {
+        "word": "bharosa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "bhend": [
+      {
+        "word": "bhende",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "bhe": [
+      {
+        "word": "bhet",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "bhoom": [
+      {
+        "word": "bhoomi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "bin": [
+      {
+        "word": "binti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "bol": [
+      {
+        "word": "bolo",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "bonda": [
+      {
+        "word": "bondage",
+        "note": "Possible will form"
+      }
+    ],
+    "bor": [
+      {
+        "word": "boro",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "brea": [
+      {
+        "word": "breathe",
+        "note": "Possible were form"
+      }
+    ],
+    "brid": [
+      {
+        "word": "bride",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "brigh": [
+      {
+        "word": "bright",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "brough": [
+      {
+        "word": "brought",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "buil": [
+      {
+        "word": "built",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "bula": [
+      {
+        "word": "bulata",
+        "note": "Possible present participle"
+      }
+    ],
+    "car": [
+      {
+        "word": "care",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "cau": [
+      {
+        "word": "cause",
+        "note": "Possible postposition"
+      }
+    ],
+    "celebra": [
+      {
+        "word": "celebrate",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "chaand": [
+      {
+        "word": "chaandi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "chadhay": [
+      {
+        "word": "chadhaye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "chahiy": [
+      {
+        "word": "chahiye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "chah": [
+      {
+        "word": "chahte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "chal": [
+      {
+        "word": "chale",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "chalne",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "chalte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "chalun": [
+      {
+        "word": "chalunga",
+        "note": "Possible will form"
+      }
+    ],
+    "chandram": [
+      {
+        "word": "chandrama",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "changa": [
+      {
+        "word": "changai",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "chan": [
+      {
+        "word": "change",
+        "note": "Possible will form"
+      }
+    ],
+    "charn": [
+      {
+        "word": "charnon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "charwah": [
+      {
+        "word": "charwaha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "chhode": [
+      {
+        "word": "chhodega",
+        "note": "Possible will form"
+      }
+    ],
+    "chho": [
+      {
+        "word": "chhote",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "cho": [
+      {
+        "word": "chote",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "chris": [
+      {
+        "word": "christ",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "chu": [
+      {
+        "word": "chuki",
+        "note": "Possible postposition"
+      }
+    ],
+    "chutkar": [
+      {
+        "word": "chutkara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "circl": [
+      {
+        "word": "circle",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "clo": [
+      {
+        "word": "close",
+        "note": "Possible postposition"
+      }
+    ],
+    "com": [
+      {
+        "word": "come",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "coun": [
+      {
+        "word": "count",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "cour": [
+      {
+        "word": "court",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "darakht": [
+      {
+        "word": "darakhton",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "day": [
+      {
+        "word": "daya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "declar": [
+      {
+        "word": "declare",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "dekhen": [
+      {
+        "word": "dekhenge",
+        "note": "Possible will form"
+      }
+    ],
+    "dek": [
+      {
+        "word": "dekho",
+        "note": "Possible to be form"
+      }
+    ],
+    "dekh": [
+      {
+        "word": "dekhte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "den": [
+      {
+        "word": "denge",
+        "note": "Possible will form"
+      }
+    ],
+    "descripti": [
+      {
+        "word": "description",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "deserv": [
+      {
+        "word": "deserve",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "desir": [
+      {
+        "word": "desire",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "dev": [
+      {
+        "word": "deva",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "dhany": [
+      {
+        "word": "dhanya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "dhanyavad": [
+      {
+        "word": "dhanyavada",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "dhar": [
+      {
+        "word": "dhara",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "dharti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "dhav": [
+      {
+        "word": "dhava",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "dhunyac": [
+      {
+        "word": "dhunyace",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "dilay": [
+      {
+        "word": "dilaye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "din": [
+      {
+        "word": "dini",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "divi": [
+      {
+        "word": "divine",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "divy": [
+      {
+        "word": "divya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "diy": [
+      {
+        "word": "diya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "don": [
+      {
+        "word": "donon",
+        "note": "Possible plural oblique"
+      },
+      {
+        "word": "dont",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "dos": [
+      {
+        "word": "dost",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "dov": [
+      {
+        "word": "dove",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "duniy": [
+      {
+        "word": "duniya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "dwar": [
+      {
+        "word": "dwara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "eas": [
+      {
+        "word": "east",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "enthro": [
+      {
+        "word": "enthrone",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "evermor": [
+      {
+        "word": "evermore",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "fac": [
+      {
+        "word": "face",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "faires": [
+      {
+        "word": "fairest",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "fir": [
+      {
+        "word": "fire",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "firs": [
+      {
+        "word": "first",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "forevermor": [
+      {
+        "word": "forevermore",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "forgav": [
+      {
+        "word": "forgave",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "forge": [
+      {
+        "word": "forget",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "foundati": [
+      {
+        "word": "foundation",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "foun": [
+      {
+        "word": "fount",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "fre": [
+      {
+        "word": "free",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "gaa": [
+      {
+        "word": "gaana",
+        "note": "Possible infinitive marker"
+      },
+      {
+        "word": "gaate",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "gadariy": [
+      {
+        "word": "gadariya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "gaun": [
+      {
+        "word": "gaunga",
+        "note": "Possible will form"
+      }
+    ],
+    "gay": [
+      {
+        "word": "gaya",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "gaye",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "gayi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "gee": [
+      {
+        "word": "geet",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "geet": [
+      {
+        "word": "geeton",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "gel": [
+      {
+        "word": "gelo",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "ghatay": [
+      {
+        "word": "ghatayon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "gha": [
+      {
+        "word": "ghati",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "ghos": [
+      {
+        "word": "ghost",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "ghutn": [
+      {
+        "word": "ghutnon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "gif": [
+      {
+        "word": "gift",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "gir": [
+      {
+        "word": "gira",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "giv": [
+      {
+        "word": "give",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "grac": [
+      {
+        "word": "grace",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "grea": [
+      {
+        "word": "great",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "guid": [
+      {
+        "word": "guide",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "guna": [
+      {
+        "word": "gunahon",
+        "note": "Possible to be form"
+      }
+    ],
+    "hamar": [
+      {
+        "word": "hamara",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "hamare",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "hamari",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "hamesh": [
+      {
+        "word": "hamesha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "hars": [
+      {
+        "word": "harsa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "hav": [
+      {
+        "word": "have",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "hear": [
+      {
+        "word": "heart",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "her": [
+      {
+        "word": "here",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "hid": [
+      {
+        "word": "hide",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "himma": [
+      {
+        "word": "himmat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "hoi": [
+      {
+        "word": "hoila",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "hop": [
+      {
+        "word": "hope",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "hosan": [
+      {
+        "word": "hosanna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "hou": [
+      {
+        "word": "house",
+        "note": "Possible postposition"
+      }
+    ],
+    "hov": [
+      {
+        "word": "hove",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "hove": [
+      {
+        "word": "hovegi",
+        "note": "Possible will form"
+      }
+    ],
+    "hum": [
+      {
+        "word": "hume",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "humko",
+        "note": "Possible postposition"
+      }
+    ],
+    "ichchh": [
+      {
+        "word": "ichchha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "instrumen": [
+      {
+        "word": "instrument",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "int": [
+      {
+        "word": "into",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "isn": [
+      {
+        "word": "isnt",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jaa": [
+      {
+        "word": "jaane",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "jaati",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "jaan": [
+      {
+        "word": "jaanta",
+        "note": "Possible present participle"
+      }
+    ],
+    "jaay": [
+      {
+        "word": "jaaye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "jab": [
+      {
+        "word": "jabse",
+        "note": "Possible postposition"
+      }
+    ],
+    "jaga": [
+      {
+        "word": "jagat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jais": [
+      {
+        "word": "jaisa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "jal": [
+      {
+        "word": "jalta",
+        "note": "Possible present participle"
+      },
+      {
+        "word": "jalte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "jangl": [
+      {
+        "word": "jangli",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "jay": [
+      {
+        "word": "jaye",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "jaykar",
+        "note": "Possible doing form"
+      }
+    ],
+    "jaye": [
+      {
+        "word": "jayega",
+        "note": "Possible will form"
+      },
+      {
+        "word": "jayegi",
+        "note": "Possible will form"
+      }
+    ],
+    "jayen": [
+      {
+        "word": "jayenge",
+        "note": "Possible will form"
+      }
+    ],
+    "jaywan": [
+      {
+        "word": "jaywant",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jeevi": [
+      {
+        "word": "jeevit",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jhand": [
+      {
+        "word": "jhanda",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "jis": [
+      {
+        "word": "jisne",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jivanahu": [
+      {
+        "word": "jivanahuna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "jus": [
+      {
+        "word": "just",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "jyo": [
+      {
+        "word": "jyoti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "kaan": [
+      {
+        "word": "kaante",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "kabh": [
+      {
+        "word": "kabhi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "kah": [
+      {
+        "word": "kaha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "kahi",
+        "note": "Possible adjective ending (feminine)"
+      },
+      {
+        "word": "kahte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "kahan": [
+      {
+        "word": "kahani",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "kais": [
+      {
+        "word": "kaisa",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "kaisi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "kai": [
+      {
+        "word": "kaise",
+        "note": "Possible postposition"
+      }
+    ],
+    "kalisiy": [
+      {
+        "word": "kalisiya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "karay": [
+      {
+        "word": "karaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "kar": [
+      {
+        "word": "kare",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "karne",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "karo",
+        "note": "Possible vocative ending"
+      },
+      {
+        "word": "karta",
+        "note": "Possible present participle"
+      },
+      {
+        "word": "karte",
+        "note": "Possible present participle (plural)"
+      },
+      {
+        "word": "karti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "karo": [
+      {
+        "word": "karoon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "karu": [
+      {
+        "word": "karuna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "karun": [
+      {
+        "word": "karunga",
+        "note": "Possible will form"
+      }
+    ],
+    "karuy": [
+      {
+        "word": "karuya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "keem": [
+      {
+        "word": "keemti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "kholi": [
+      {
+        "word": "kholie",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "khol": [
+      {
+        "word": "kholo",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "kho": [
+      {
+        "word": "khoon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "khris": [
+      {
+        "word": "khrist",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "khrista",
+        "note": "Possible present participle"
+      }
+    ],
+    "khristac": [
+      {
+        "word": "khristace",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "khud": [
+      {
+        "word": "khuda",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "khuda": [
+      {
+        "word": "khudaki",
+        "note": "Possible postposition"
+      }
+    ],
+    "khush": [
+      {
+        "word": "khushi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "kitab": [
+      {
+        "word": "kitabe",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "kit": [
+      {
+        "word": "kitna",
+        "note": "Possible infinitive marker"
+      },
+      {
+        "word": "kitne",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "kiy": [
+      {
+        "word": "kiya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "kokar": [
+      {
+        "word": "kokara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "kon": [
+      {
+        "word": "koni",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "krpamay": [
+      {
+        "word": "krpamaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "krpec": [
+      {
+        "word": "krpeci",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "krusas": [
+      {
+        "word": "krusasa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "kudra": [
+      {
+        "word": "kudrat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "kund": [
+      {
+        "word": "kunda",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "laga": [
+      {
+        "word": "lagao",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "len": [
+      {
+        "word": "lenge",
+        "note": "Possible will form"
+      }
+    ],
+    "lif": [
+      {
+        "word": "life",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "lift",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "ligh": [
+      {
+        "word": "light",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "littl": [
+      {
+        "word": "little",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "liv": [
+      {
+        "word": "live",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "liy": [
+      {
+        "word": "liya",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "liye",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "log": [
+      {
+        "word": "logo",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "los": [
+      {
+        "word": "lost",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "lov": [
+      {
+        "word": "love",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "maang": [
+      {
+        "word": "maangta",
+        "note": "Possible present participle"
+      }
+    ],
+    "mad": [
+      {
+        "word": "made",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "mahim": [
+      {
+        "word": "mahima",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "majh": [
+      {
+        "word": "majha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "mandara": [
+      {
+        "word": "mandarata",
+        "note": "Possible present participle"
+      }
+    ],
+    "man": [
+      {
+        "word": "manga",
+        "note": "Possible will form"
+      },
+      {
+        "word": "mange",
+        "note": "Possible will form"
+      }
+    ],
+    "manushy": [
+      {
+        "word": "manushya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "masih": [
+      {
+        "word": "masiha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "masihi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "mee": [
+      {
+        "word": "meet",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "mendhapa": [
+      {
+        "word": "mendhapala",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "mendhar": [
+      {
+        "word": "mendhare",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "mer": [
+      {
+        "word": "mera",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "mere",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "meri",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "migh": [
+      {
+        "word": "might",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "mil": [
+      {
+        "word": "mile",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "milkar",
+        "note": "Possible doing form"
+      }
+    ],
+    "milun": [
+      {
+        "word": "miluni",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "miracl": [
+      {
+        "word": "miracle",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "mitr": [
+      {
+        "word": "mitra",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "mor": [
+      {
+        "word": "more",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "mov": [
+      {
+        "word": "move",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "mud": [
+      {
+        "word": "mudkar",
+        "note": "Possible doing form"
+      },
+      {
+        "word": "mudna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "mujh": [
+      {
+        "word": "mujhe",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "mujhko",
+        "note": "Possible postposition"
+      }
+    ],
+    "muk": [
+      {
+        "word": "mukti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "munje": [
+      {
+        "word": "munjee",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "naar": [
+      {
+        "word": "naare",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "nah": [
+      {
+        "word": "nahi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "nam": [
+      {
+        "word": "nama",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "name",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "narsin": [
+      {
+        "word": "narsinga",
+        "note": "Possible will form"
+      }
+    ],
+    "natur": [
+      {
+        "word": "nature",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "nava": [
+      {
+        "word": "navate",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "nay": [
+      {
+        "word": "naya",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "naye",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "nayi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "nazr": [
+      {
+        "word": "nazron",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "neech": [
+      {
+        "word": "neeche",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "nes": [
+      {
+        "word": "nest",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "nigh": [
+      {
+        "word": "night",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "niss": [
+      {
+        "word": "nissi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "ojh": [
+      {
+        "word": "ojhe",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "onc": [
+      {
+        "word": "once",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "ough": [
+      {
+        "word": "ought",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "overta": [
+      {
+        "word": "overtake",
+        "note": "Possible postposition"
+      }
+    ],
+    "paan": [
+      {
+        "word": "paani",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "paap": [
+      {
+        "word": "paapi",
+        "note": "Possible adjective ending (feminine)"
+      },
+      {
+        "word": "paapon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "pas": [
+      {
+        "word": "past",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "pavitr": [
+      {
+        "word": "pavitra",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "pay": [
+      {
+        "word": "paya",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "payi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "peac": [
+      {
+        "word": "peace",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "peech": [
+      {
+        "word": "peeche",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "pehl": [
+      {
+        "word": "pehle",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "peopl": [
+      {
+        "word": "people",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "perfec": [
+      {
+        "word": "perfect",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "phaila": [
+      {
+        "word": "phailao",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "phar": [
+      {
+        "word": "phara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "phata": [
+      {
+        "word": "phatako",
+        "note": "Possible postposition"
+      }
+    ],
+    "phoon": [
+      {
+        "word": "phoonka",
+        "note": "Possible postposition"
+      }
+    ],
+    "plac": [
+      {
+        "word": "place",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "porti": [
+      {
+        "word": "portion",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "prabhu": [
+      {
+        "word": "prabhuji",
+        "note": "Possible honorific suffix"
+      }
+    ],
+    "prai": [
+      {
+        "word": "praise",
+        "note": "Possible postposition"
+      }
+    ],
+    "prakasi": [
+      {
+        "word": "prakasita",
+        "note": "Possible present participle"
+      }
+    ],
+    "prarth": [
+      {
+        "word": "prarthna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "prashans": [
+      {
+        "word": "prashansa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "pra": [
+      {
+        "word": "prati",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "prem": [
+      {
+        "word": "premi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "presenc": [
+      {
+        "word": "presence",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "prithv": [
+      {
+        "word": "prithvi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "priy": [
+      {
+        "word": "priya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "promi": [
+      {
+        "word": "promise",
+        "note": "Possible postposition"
+      }
+    ],
+    "pukar": [
+      {
+        "word": "pukara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "pur": [
+      {
+        "word": "puri",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "purpo": [
+      {
+        "word": "purpose",
+        "note": "Possible postposition"
+      }
+    ],
+    "pyar": [
+      {
+        "word": "pyara",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "pyare",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "pyari",
+        "note": "Possible adjective ending (feminine)"
+      },
+      {
+        "word": "pyaro",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "pyas": [
+      {
+        "word": "pyasi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "raa": [
+      {
+        "word": "raat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "rah": [
+      {
+        "word": "raha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "rahe",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "rahi",
+        "note": "Possible adjective ending (feminine)"
+      },
+      {
+        "word": "rahte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "rahen": [
+      {
+        "word": "rahenge",
+        "note": "Possible will form"
+      }
+    ],
+    "raho": [
+      {
+        "word": "rahoge",
+        "note": "Possible will form"
+      }
+    ],
+    "raj": [
+      {
+        "word": "raja",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "rajay": [
+      {
+        "word": "rajayon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "rak": [
+      {
+        "word": "rakte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "raptur": [
+      {
+        "word": "rapture",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "ras": [
+      {
+        "word": "rasta",
+        "note": "Possible present participle"
+      }
+    ],
+    "redempti": [
+      {
+        "word": "redemption",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "refu": [
+      {
+        "word": "refuge",
+        "note": "Possible will form"
+      }
+    ],
+    "rejoic": [
+      {
+        "word": "rejoice",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "religi": [
+      {
+        "word": "religion",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "repor": [
+      {
+        "word": "report",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "reputati": [
+      {
+        "word": "reputation",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "righ": [
+      {
+        "word": "right",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "roshn": [
+      {
+        "word": "roshni",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "ruk": [
+      {
+        "word": "rukna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "saar": [
+      {
+        "word": "saare",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "saari",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "sab": [
+      {
+        "word": "sabke",
+        "note": "Possible postposition"
+      },
+      {
+        "word": "sabne",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "sabse",
+        "note": "Possible postposition"
+      }
+    ],
+    "sachch": [
+      {
+        "word": "sachcha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "sachche",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sacrific": [
+      {
+        "word": "sacrifice",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sad": [
+      {
+        "word": "sada",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "saf": [
+      {
+        "word": "safe",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sahar": [
+      {
+        "word": "sahara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "saken": [
+      {
+        "word": "sakenge",
+        "note": "Possible will form"
+      }
+    ],
+    "sak": [
+      {
+        "word": "sakta",
+        "note": "Possible present participle"
+      }
+    ],
+    "samarthy": [
+      {
+        "word": "samarthya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sam": [
+      {
+        "word": "same",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sampoor": [
+      {
+        "word": "sampoorna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "sanata": [
+      {
+        "word": "sanatana",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "sankar": [
+      {
+        "word": "sankara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "san": [
+      {
+        "word": "sanna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "sar": [
+      {
+        "word": "sare",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sarv": [
+      {
+        "word": "sarva",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sarvanc": [
+      {
+        "word": "sarvanca",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "secre": [
+      {
+        "word": "secret",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "senay": [
+      {
+        "word": "senayon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "serv": [
+      {
+        "word": "serve",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "sev": [
+      {
+        "word": "seva",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sew": [
+      {
+        "word": "sewa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sha": [
+      {
+        "word": "shahon",
+        "note": "Possible to be form"
+      }
+    ],
+    "shar": [
+      {
+        "word": "sharon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "shif": [
+      {
+        "word": "shifa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "shou": [
+      {
+        "word": "shout",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "shukriy": [
+      {
+        "word": "shukriya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "shuny": [
+      {
+        "word": "shunya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "shu": [
+      {
+        "word": "shut",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "siy": [
+      {
+        "word": "siyon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "som": [
+      {
+        "word": "some",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "somi": [
+      {
+        "word": "somia",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "soory": [
+      {
+        "word": "soorya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sorvespor": [
+      {
+        "word": "sorvespora",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "spiri": [
+      {
+        "word": "spirit",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "sres": [
+      {
+        "word": "srestha",
+        "note": "Possible was form"
+      }
+    ],
+    "srish": [
+      {
+        "word": "srishti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "stav": [
+      {
+        "word": "stava",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "stha": [
+      {
+        "word": "sthala",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "stu": [
+      {
+        "word": "stuti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "stutistu": [
+      {
+        "word": "stutistuti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "suha": [
+      {
+        "word": "suhana",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "sukhacy": [
+      {
+        "word": "sukhacya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "sukhday": [
+      {
+        "word": "sukhdayi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "suna": [
+      {
+        "word": "sunane",
+        "note": "Possible past tense marker"
+      },
+      {
+        "word": "sunao",
+        "note": "Possible vocative ending"
+      },
+      {
+        "word": "sunata",
+        "note": "Possible present participle"
+      }
+    ],
+    "sunen": [
+      {
+        "word": "sunenge",
+        "note": "Possible will form"
+      }
+    ],
+    "sun": [
+      {
+        "word": "suno",
+        "note": "Possible vocative ending"
+      },
+      {
+        "word": "sunta",
+        "note": "Possible present participle"
+      }
+    ],
+    "sunse": [
+      {
+        "word": "sunset",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "suvel": [
+      {
+        "word": "suveli",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "svargiy": [
+      {
+        "word": "svargiya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "swar": [
+      {
+        "word": "swargi",
+        "note": "Possible will form"
+      }
+    ],
+    "swargiy": [
+      {
+        "word": "swargiya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "swee": [
+      {
+        "word": "sweet",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "sweetes": [
+      {
+        "word": "sweetest",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "taaka": [
+      {
+        "word": "taakat",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "taa": [
+      {
+        "word": "taaki",
+        "note": "Possible postposition"
+      }
+    ],
+    "tabl": [
+      {
+        "word": "table",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "taman": [
+      {
+        "word": "tamanna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "tanga": [
+      {
+        "word": "tangala",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "tara": [
+      {
+        "word": "taraka",
+        "note": "Possible postposition"
+      }
+    ],
+    "taranar": [
+      {
+        "word": "taranara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "tej": [
+      {
+        "word": "teje",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "ter": [
+      {
+        "word": "tera",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "tere",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "teri",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "tha": [
+      {
+        "word": "that",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "the": [
+      {
+        "word": "thee",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "these",
+        "note": "Possible postposition"
+      }
+    ],
+    "ther": [
+      {
+        "word": "there",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "therefor": [
+      {
+        "word": "therefore",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "thi": [
+      {
+        "word": "thine",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "tim": [
+      {
+        "word": "time",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "tod": [
+      {
+        "word": "toda",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "too": [
+      {
+        "word": "toote",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "tru": [
+      {
+        "word": "true",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "trus": [
+      {
+        "word": "trust",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "tujh": [
+      {
+        "word": "tujha",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "tujhe",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "tujhi",
+        "note": "Possible adjective ending (feminine)"
+      },
+      {
+        "word": "tujhko",
+        "note": "Possible postposition"
+      },
+      {
+        "word": "tujhse",
+        "note": "Possible postposition"
+      }
+    ],
+    "tujhans": [
+      {
+        "word": "tujhansa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "tumhar": [
+      {
+        "word": "tumhara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "tumh": [
+      {
+        "word": "tumhi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "tums": [
+      {
+        "word": "tumsa",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "tunc": [
+      {
+        "word": "tunci",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "tyac": [
+      {
+        "word": "tyaci",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "tyakad": [
+      {
+        "word": "tyakade",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "tya": [
+      {
+        "word": "tyala",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "udh": [
+      {
+        "word": "udhte",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "ufan": [
+      {
+        "word": "ufano",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "ugam": [
+      {
+        "word": "ugama",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "unch": [
+      {
+        "word": "uncha",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "unde": [
+      {
+        "word": "undela",
+        "note": "Possible grammatical suffix"
+      }
+    ],
+    "uni": [
+      {
+        "word": "union",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "unt": [
+      {
+        "word": "unto",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "upakar": [
+      {
+        "word": "upakara",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "utha": [
+      {
+        "word": "uthakar",
+        "note": "Possible doing form"
+      },
+      {
+        "word": "uthate",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "uthayen": [
+      {
+        "word": "uthayenge",
+        "note": "Possible will form"
+      }
+    ],
+    "uthen": [
+      {
+        "word": "uthenge",
+        "note": "Possible will form"
+      }
+    ],
+    "uth": [
+      {
+        "word": "uthti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "utpat": [
+      {
+        "word": "utpatti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "utre": [
+      {
+        "word": "utrega",
+        "note": "Possible will form"
+      }
+    ],
+    "vahay": [
+      {
+        "word": "vahaya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "vaibhav": [
+      {
+        "word": "vaibhavi",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "vand": [
+      {
+        "word": "vanda",
+        "note": "Possible adjective ending"
+      },
+      {
+        "word": "vande",
+        "note": "Possible adjective ending (plural)"
+      },
+      {
+        "word": "vandna",
+        "note": "Possible infinitive marker"
+      }
+    ],
+    "vaseel": [
+      {
+        "word": "vaseele",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "vatat": [
+      {
+        "word": "vatato",
+        "note": "Possible vocative ending"
+      }
+    ],
+    "vatsaly": [
+      {
+        "word": "vatsalya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "vel": [
+      {
+        "word": "veli",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "vishwasiy": [
+      {
+        "word": "vishwasiyon",
+        "note": "Possible plural oblique"
+      }
+    ],
+    "voic": [
+      {
+        "word": "voice",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "vrs": [
+      {
+        "word": "vrsti",
+        "note": "Possible present participle (feminine)"
+      }
+    ],
+    "waad": [
+      {
+        "word": "waada",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "wai": [
+      {
+        "word": "wait",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "wal": [
+      {
+        "word": "wale",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "wan": [
+      {
+        "word": "want",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "waq": [
+      {
+        "word": "waqt",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "welcom": [
+      {
+        "word": "welcome",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "wer": [
+      {
+        "word": "were",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "wes": [
+      {
+        "word": "west",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "wev": [
+      {
+        "word": "weve",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "wha": [
+      {
+        "word": "what",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "wher": [
+      {
+        "word": "where",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "whil": [
+      {
+        "word": "while",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "whi": [
+      {
+        "word": "white",
+        "note": "Possible present participle (plural)"
+      }
+    ],
+    "withou": [
+      {
+        "word": "without",
+        "note": "Possible past tense marker"
+      }
+    ],
+    "yahov": [
+      {
+        "word": "yahova",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "yeshuc": [
+      {
+        "word": "yeshuci",
+        "note": "Possible adjective ending (feminine)"
+      }
+    ],
+    "yeshucy": [
+      {
+        "word": "yeshucya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "yeshu": [
+      {
+        "word": "yeshuji",
+        "note": "Possible honorific suffix"
+      },
+      {
+        "word": "yeshula",
+        "note": "Possible grammatical suffix"
+      },
+      {
+        "word": "yeshuvani",
+        "note": "Possible compound word"
+      }
+    ],
+    "yogy": [
+      {
+        "word": "yogya",
+        "note": "Possible adjective ending"
+      }
+    ],
+    "your": [
+      {
+        "word": "youre",
+        "note": "Possible adjective ending (plural)"
+      }
+    ],
+    "zinda": [
+      {
+        "word": "zindagi",
+        "note": "Possible will form"
+      }
+    ]
+  }
+}

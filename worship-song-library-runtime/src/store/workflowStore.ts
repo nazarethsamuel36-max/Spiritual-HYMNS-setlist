@@ -7,9 +7,11 @@ export type SidebarView =
   | { panel: 'setlist-detail'; setlistId: string }
   | { panel: 'personal' };
 
+export type SongKind = 'official' | 'personal' | 'shared';
+
 export type ReaderView =
   | { type: 'empty' }
-  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist' | 'shared' | 'personal'; activeArrangementId: string | null; setlistId?: string; itemId?: string }
+  | { type: 'song'; songId: number; transpose: number; source: 'library' | 'setlist' | 'shared' | 'personal'; activeArrangementId: string | null; refKind?: SongKind; setlistId?: string; itemId?: string }
   | { type: 'marker'; label: string; setlistId: string; itemId: string }
   | { type: 'note'; label: string; content: string; setlistId: string; itemId: string };
 
@@ -50,7 +52,7 @@ interface WorkflowStore {
   setLibrarySearchQuery: (query: string) => void;
   closeLibrarySearch: () => void;
 
-  openSong: (id: number, source: 'library' | 'setlist' | 'shared' | 'personal', transpose?: number, setlistId?: string, itemId?: string) => void;
+  openSong: (id: number, source: 'library' | 'setlist' | 'shared' | 'personal', transpose?: number, setlistId?: string, itemId?: string, versionId?: string, refKind?: SongKind) => void;
   openMarker: (label: string, setlistId: string, itemId: string) => void;
   openNote: (label: string, content: string, setlistId: string, itemId: string) => void;
   closeReader: () => void;
@@ -88,9 +90,9 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   setLibrarySearchQuery: (query) => set({ librarySearchQuery: query }),
   closeLibrarySearch: () => set({ librarySearchActive: false, librarySearchQuery: '' }),
 
-  openSong: (id, source, transpose = 0, setlistId, itemId) => {
+  openSong: (id, source, transpose = 0, setlistId, itemId, versionId, refKind) => {
     set({
-      reader: { type: 'song', songId: id, transpose, source, activeArrangementId: null, setlistId, itemId },
+      reader: { type: 'song', songId: id, transpose, source, activeArrangementId: versionId ?? null, refKind, setlistId, itemId },
       readerMode: 'lyrics',
       mobileActivePane: 'reader'
     });

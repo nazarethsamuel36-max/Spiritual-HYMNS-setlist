@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "language": [
+      "Hindi",
+      "Marathi"
+    ],
+    "description": "Canonical worship search dictionary with reserved fields",
+    "totalEntries": 15,
+    "generatedAt": "2026-07-16T12:26:31.143Z",
+    "phase": "4"
+  },
+  "dictionary": {
+    "A": {
+      "aadi": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      },
+      "aakash": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "B": {},
+    "C": {},
+    "D": {
+      "dhanyavad": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "E": {},
+    "F": {},
+    "G": {},
+    "H": {
+      "hallelujah": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "I": {},
+    "J": {
+      "jeevan": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "K": {
+      "khrista": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "L": {},
+    "M": {
+      "mahima": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      },
+      "masih": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "N": {},
+    "O": {},
+    "P": {
+      "pavitra": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      },
+      "prabhu": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "Q": {},
+    "R": {},
+    "S": {
+      "stuti": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      },
+      "swarg": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "T": {},
+    "U": {},
+    "V": {
+      "vande": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "W": {},
+    "X": {},
+    "Y": {
+      "yahova": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      },
+      "yeshu": {
+        "variants": [],
+        "language": [],
+        "root": true,
+        "generated": false,
+        "notes": ""
+      }
+    },
+    "Z": {}
+  }
+}

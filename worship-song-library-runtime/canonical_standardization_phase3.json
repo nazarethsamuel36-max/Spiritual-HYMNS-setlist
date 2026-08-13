@@ -1,0 +1,1147 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "phase": "3",
+    "description": "Canonical standardization verification",
+    "totalCanonicalWords": 19,
+    "inconsistenciesFound": 14,
+    "potentialCanonicals": 59,
+    "generatedAt": "2026-07-16T12:26:13.845Z"
+  },
+  "canonicalInconsistencies": [
+    {
+      "canonical": "yeshu",
+      "variants": [
+        {
+          "word": "yeshula",
+          "occurrences": 2,
+          "sampleSongs": [
+            2,
+            16
+          ]
+        },
+        {
+          "word": "yeshuji",
+          "occurrences": 1,
+          "sampleSongs": [
+            151
+          ]
+        },
+        {
+          "word": "yeshucya",
+          "occurrences": 1,
+          "sampleSongs": [
+            19
+          ]
+        },
+        {
+          "word": "yeshuci",
+          "occurrences": 1,
+          "sampleSongs": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "prabhu",
+      "variants": [
+        {
+          "word": "prabhuji",
+          "occurrences": 3,
+          "sampleSongs": [
+            59,
+            119,
+            154
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "masih",
+      "variants": [
+        {
+          "word": "masiha",
+          "occurrences": 4,
+          "sampleSongs": [
+            2,
+            16,
+            61
+          ]
+        },
+        {
+          "word": "masihi",
+          "occurrences": 1,
+          "sampleSongs": [
+            55
+          ]
+        },
+        {
+          "word": "masihtu",
+          "occurrences": 1,
+          "sampleSongs": [
+            2014
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "khrista",
+      "variants": [
+        {
+          "word": "khrist",
+          "occurrences": 1,
+          "sampleSongs": [
+            126
+          ]
+        },
+        {
+          "word": "khristace",
+          "occurrences": 1,
+          "sampleSongs": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "krus",
+      "variants": [
+        {
+          "word": "kruss",
+          "occurrences": 3,
+          "sampleSongs": [
+            2,
+            199,
+            2016
+          ]
+        },
+        {
+          "word": "krusasa",
+          "occurrences": 1,
+          "sampleSongs": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "dhanyavad",
+      "variants": [
+        {
+          "word": "dhanya",
+          "occurrences": 8,
+          "sampleSongs": [
+            34,
+            34,
+            218
+          ]
+        },
+        {
+          "word": "dhan",
+          "occurrences": 1,
+          "sampleSongs": [
+            183
+          ]
+        },
+        {
+          "word": "dhanyavada",
+          "occurrences": 1,
+          "sampleSongs": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "jai",
+      "variants": [
+        {
+          "word": "ai",
+          "occurrences": 5,
+          "sampleSongs": [
+            62,
+            114,
+            124
+          ]
+        },
+        {
+          "word": "jaisa",
+          "occurrences": 2,
+          "sampleSongs": [
+            208,
+            2040
+          ]
+        },
+        {
+          "word": "ja",
+          "occurrences": 1,
+          "sampleSongs": [
+            107
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "aadi",
+      "variants": [
+        {
+          "word": "di",
+          "occurrences": 1,
+          "sampleSongs": [
+            2022
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "hallelujah",
+      "variants": [
+        {
+          "word": "allelujah",
+          "occurrences": 1,
+          "sampleSongs": [
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "stuti",
+      "variants": [
+        {
+          "word": "stutistuti",
+          "occurrences": 1,
+          "sampleSongs": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "aradhana",
+      "variants": [
+        {
+          "word": "aaradhana",
+          "occurrences": 2,
+          "sampleSongs": [
+            40,
+            45
+          ]
+        },
+        {
+          "word": "dhan",
+          "occurrences": 1,
+          "sampleSongs": [
+            183
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "mahima",
+      "variants": [
+        {
+          "word": "him",
+          "occurrences": 12,
+          "sampleSongs": [
+            33,
+            48,
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "atma",
+      "variants": [
+        {
+          "word": "aatma",
+          "occurrences": 9,
+          "sampleSongs": [
+            65,
+            65,
+            81
+          ]
+        },
+        {
+          "word": "at",
+          "occurrences": 3,
+          "sampleSongs": [
+            152,
+            153,
+            309
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "swarg",
+      "variants": [
+        {
+          "word": "swargi",
+          "occurrences": 1,
+          "sampleSongs": [
+            97
+          ]
+        },
+        {
+          "word": "swargiya",
+          "occurrences": 1,
+          "sampleSongs": [
+            2005
+          ]
+        }
+      ]
+    }
+  ],
+  "potentialCanonicalsWithVariants": [
+    {
+      "base": "nam",
+      "spellings": [
+        {
+          "word": "name",
+          "count": 20
+        },
+        {
+          "word": "nam",
+          "count": 1
+        },
+        {
+          "word": "nama",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "sun",
+      "spellings": [
+        {
+          "word": "sun",
+          "count": 4
+        },
+        {
+          "word": "suno",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "tak",
+      "spellings": [
+        {
+          "word": "take",
+          "count": 7
+        },
+        {
+          "word": "tak",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "base": "your",
+      "spellings": [
+        {
+          "word": "your",
+          "count": 18
+        },
+        {
+          "word": "youre",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "day",
+      "spellings": [
+        {
+          "word": "day",
+          "count": 12
+        },
+        {
+          "word": "daya",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "som",
+      "spellings": [
+        {
+          "word": "some",
+          "count": 4
+        },
+        {
+          "word": "somia",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "dev",
+      "spellings": [
+        {
+          "word": "deva",
+          "count": 1
+        },
+        {
+          "word": "dev",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "din",
+      "spellings": [
+        {
+          "word": "din",
+          "count": 3
+        },
+        {
+          "word": "dini",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "mer",
+      "spellings": [
+        {
+          "word": "mera",
+          "count": 21
+        },
+        {
+          "word": "mere",
+          "count": 18
+        },
+        {
+          "word": "meri",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "base": "masih",
+      "spellings": [
+        {
+          "word": "masih",
+          "count": 11
+        },
+        {
+          "word": "masiha",
+          "count": 4
+        },
+        {
+          "word": "masihi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "nay",
+      "spellings": [
+        {
+          "word": "naya",
+          "count": 4
+        },
+        {
+          "word": "nayi",
+          "count": 2
+        },
+        {
+          "word": "naye",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "mil",
+      "spellings": [
+        {
+          "word": "mil",
+          "count": 3
+        },
+        {
+          "word": "mile",
+          "count": 3
+        },
+        {
+          "word": "mila",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "gay",
+      "spellings": [
+        {
+          "word": "gaya",
+          "count": 6
+        },
+        {
+          "word": "gaye",
+          "count": 3
+        },
+        {
+          "word": "gayi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "kah",
+      "spellings": [
+        {
+          "word": "kaha",
+          "count": 1
+        },
+        {
+          "word": "kaho",
+          "count": 1
+        },
+        {
+          "word": "kahi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "vand",
+      "spellings": [
+        {
+          "word": "vande",
+          "count": 2
+        },
+        {
+          "word": "vanda",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "aay",
+      "spellings": [
+        {
+          "word": "aaye",
+          "count": 3
+        },
+        {
+          "word": "aaya",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "hum",
+      "spellings": [
+        {
+          "word": "hum",
+          "count": 24
+        },
+        {
+          "word": "hume",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "ter",
+      "spellings": [
+        {
+          "word": "tere",
+          "count": 22
+        },
+        {
+          "word": "teri",
+          "count": 17
+        },
+        {
+          "word": "tera",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "base": "hamar",
+      "spellings": [
+        {
+          "word": "hamara",
+          "count": 5
+        },
+        {
+          "word": "hamare",
+          "count": 3
+        },
+        {
+          "word": "hamari",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "jalt",
+      "spellings": [
+        {
+          "word": "jalte",
+          "count": 1
+        },
+        {
+          "word": "jalta",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "jay",
+      "spellings": [
+        {
+          "word": "jay",
+          "count": 14
+        },
+        {
+          "word": "jaye",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "wal",
+      "spellings": [
+        {
+          "word": "wale",
+          "count": 3
+        },
+        {
+          "word": "wala",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "kitn",
+      "spellings": [
+        {
+          "word": "kitna",
+          "count": 4
+        },
+        {
+          "word": "kitne",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "pyar",
+      "spellings": [
+        {
+          "word": "pyara",
+          "count": 3
+        },
+        {
+          "word": "pyare",
+          "count": 2
+        },
+        {
+          "word": "pyaro",
+          "count": 2
+        },
+        {
+          "word": "pyar",
+          "count": 1
+        },
+        {
+          "word": "pyari",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "kart",
+      "spellings": [
+        {
+          "word": "karte",
+          "count": 2
+        },
+        {
+          "word": "karta",
+          "count": 2
+        },
+        {
+          "word": "karti",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "swarg",
+      "spellings": [
+        {
+          "word": "swarg",
+          "count": 1
+        },
+        {
+          "word": "swargi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "kar",
+      "spellings": [
+        {
+          "word": "karo",
+          "count": 5
+        },
+        {
+          "word": "kare",
+          "count": 4
+        },
+        {
+          "word": "karu",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "sachch",
+      "spellings": [
+        {
+          "word": "sachcha",
+          "count": 1
+        },
+        {
+          "word": "sachche",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "usk",
+      "spellings": [
+        {
+          "word": "uske",
+          "count": 2
+        },
+        {
+          "word": "uski",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "jayeg",
+      "spellings": [
+        {
+          "word": "jayegi",
+          "count": 2
+        },
+        {
+          "word": "jayega",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "pay",
+      "spellings": [
+        {
+          "word": "paya",
+          "count": 1
+        },
+        {
+          "word": "payi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "paap",
+      "spellings": [
+        {
+          "word": "paap",
+          "count": 2
+        },
+        {
+          "word": "paapi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "liy",
+      "spellings": [
+        {
+          "word": "liye",
+          "count": 6
+        },
+        {
+          "word": "liya",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "dekh",
+      "spellings": [
+        {
+          "word": "dekho",
+          "count": 2
+        },
+        {
+          "word": "dekh",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "rah",
+      "spellings": [
+        {
+          "word": "raha",
+          "count": 3
+        },
+        {
+          "word": "raho",
+          "count": 2
+        },
+        {
+          "word": "rahe",
+          "count": 2
+        },
+        {
+          "word": "rahi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "bol",
+      "spellings": [
+        {
+          "word": "bolo",
+          "count": 2
+        },
+        {
+          "word": "bol",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "apn",
+      "spellings": [
+        {
+          "word": "apna",
+          "count": 4
+        },
+        {
+          "word": "apne",
+          "count": 1
+        },
+        {
+          "word": "apni",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "saar",
+      "spellings": [
+        {
+          "word": "saare",
+          "count": 3
+        },
+        {
+          "word": "saari",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "ban",
+      "spellings": [
+        {
+          "word": "bane",
+          "count": 2
+        },
+        {
+          "word": "ban",
+          "count": 1
+        },
+        {
+          "word": "bana",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "gat",
+      "spellings": [
+        {
+          "word": "gate",
+          "count": 1
+        },
+        {
+          "word": "gata",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "kahan",
+      "spellings": [
+        {
+          "word": "kahani",
+          "count": 1
+        },
+        {
+          "word": "kahan",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "unch",
+      "spellings": [
+        {
+          "word": "uncha",
+          "count": 1
+        },
+        {
+          "word": "unchi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "khol",
+      "spellings": [
+        {
+          "word": "kholo",
+          "count": 1
+        },
+        {
+          "word": "kholie",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "chal",
+      "spellings": [
+        {
+          "word": "chal",
+          "count": 3
+        },
+        {
+          "word": "chale",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "tujh",
+      "spellings": [
+        {
+          "word": "tujhe",
+          "count": 5
+        },
+        {
+          "word": "tujha",
+          "count": 1
+        },
+        {
+          "word": "tujhi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "pukar",
+      "spellings": [
+        {
+          "word": "pukaru",
+          "count": 1
+        },
+        {
+          "word": "pukara",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "mang",
+      "spellings": [
+        {
+          "word": "mange",
+          "count": 1
+        },
+        {
+          "word": "manga",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "len",
+      "spellings": [
+        {
+          "word": "lena",
+          "count": 1
+        },
+        {
+          "word": "lene",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "khrist",
+      "spellings": [
+        {
+          "word": "khrista",
+          "count": 3
+        },
+        {
+          "word": "khrist",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "aag",
+      "spellings": [
+        {
+          "word": "aage",
+          "count": 7
+        },
+        {
+          "word": "aag",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "base": "kais",
+      "spellings": [
+        {
+          "word": "kaisa",
+          "count": 2
+        },
+        {
+          "word": "kaisi",
+          "count": 1
+        },
+        {
+          "word": "kaise",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "prem",
+      "spellings": [
+        {
+          "word": "prem",
+          "count": 1
+        },
+        {
+          "word": "premi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "badh",
+      "spellings": [
+        {
+          "word": "badho",
+          "count": 1
+        },
+        {
+          "word": "badh",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "mitr",
+      "spellings": [
+        {
+          "word": "mitr",
+          "count": 1
+        },
+        {
+          "word": "mitra",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "bhal",
+      "spellings": [
+        {
+          "word": "bhala",
+          "count": 1
+        },
+        {
+          "word": "bhalaai",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "dhanyavad",
+      "spellings": [
+        {
+          "word": "dhanyavad",
+          "count": 2
+        },
+        {
+          "word": "dhanyavada",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "bin",
+      "spellings": [
+        {
+          "word": "bina",
+          "count": 2
+        },
+        {
+          "word": "bin",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "anand",
+      "spellings": [
+        {
+          "word": "ananda",
+          "count": 2
+        },
+        {
+          "word": "anande",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "base": "kon",
+      "spellings": [
+        {
+          "word": "kona",
+          "count": 1
+        },
+        {
+          "word": "koni",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
