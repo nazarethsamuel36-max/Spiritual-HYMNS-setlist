@@ -361,7 +361,7 @@ export function SongView() {
               </div>
             )}
 
-            {isAdminAuthenticated || activeArrangementId ? (
+            {isAdminAuthenticated || readerMode === 'edit' ? (
               <EditorMode song={{ ...song, sections: song.sections }} source={source} versionId={activeArrangementId} version={activeVersion} isAdmin={isAdminAuthenticated} />
             ) : hasContent ? (
               <ChordProRenderer

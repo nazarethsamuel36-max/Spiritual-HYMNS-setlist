@@ -34,6 +34,7 @@ export function ReaderHeader({
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
   const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
+  const lastReaderMode = useWorkflowStore((s) => s.lastReaderMode);
   const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const fontSize = useWorkflowStore((s) => s.fontSize);
@@ -311,31 +312,33 @@ export function ReaderHeader({
                             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Versions</span>
                           </div>
                            <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
-                             <button
-                               onClick={() => {
-                                 setActiveArrangementId(null);
-                                 setIsMoreOpen(false);
-                               }}
-                               className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                 !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                               }`}
-                             >
-                               Original Version
-                             </button>
-                             {versions.map(arr => (
-                               <button
-                                 key={arr.uid}
-                                 onClick={() => {
-                                   setActiveArrangementId(arr.uid);
-                                   setIsMoreOpen(false);
-                                 }}
-                                 className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                   activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                                 }`}
-                               >
-                               {arr.name}
-                             </button>
-                           ))}
+<button
+                                onClick={() => {
+                                  setActiveArrangementId(null);
+                                  onModeChange(lastReaderMode);
+                                  setIsMoreOpen(false);
+                                }}
+                                className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                                  !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                }`}
+                              >
+                                Original Version
+                              </button>
+                              {versions.map(arr => (
+                                <button
+                                  key={arr.uid}
+                                  onClick={() => {
+                                    setActiveArrangementId(arr.uid);
+                                    onModeChange(lastReaderMode);
+                                    setIsMoreOpen(false);
+                                  }}
+                                  className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                                    activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                  }`}
+                                >
+                                {arr.name}
+                              </button>
+                            ))}
                             <button
                               onClick={async () => {
                                 const uid = await createNewVersion(reader);
@@ -664,6 +667,7 @@ export function ReaderHeader({
                   <button
                     onClick={() => {
                       setActiveArrangementId(null);
+                      onModeChange(lastReaderMode);
                       setIsMobileMenuOpen(false);
                       setMobileTab('main');
                     }}
@@ -678,6 +682,7 @@ export function ReaderHeader({
                       key={arr.uid}
                       onClick={() => {
                         setActiveArrangementId(arr.uid);
+                        onModeChange(lastReaderMode);
                         setIsMobileMenuOpen(false);
                         setMobileTab('main');
                       }}

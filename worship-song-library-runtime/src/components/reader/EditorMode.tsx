@@ -204,6 +204,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const [isCorrectorExpanded, setIsCorrectorExpanded] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [showVersionDialog, setShowVersionDialog] = useState(false);
+  const [showSaveOptionDialog, setShowSaveOptionDialog] = useState(false);
   const [versionNameInput, setVersionNameInput] = useState('');
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success'>('idle');
 
@@ -434,13 +435,6 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   };
 
   const handleManualSave = async () => {
-    const updates = { 
-      title, 
-      language, 
-      original_key: keyValue, 
-      chords: chordsText 
-    };
-
     if (!versionId) {
       // Need to create a new version with name
       setShowVersionDialog(true);
@@ -448,8 +442,22 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       return;
     }
 
-    await saveVersion(versionId, updates);
+    // Editing an existing version — ask overwrite vs duplicate
+    setShowSaveOptionDialog(true);
    };
+
+  const handleOverwriteVersion = async () => {
+    setShowSaveOptionDialog(false);
+    const updates = { title, language, original_key: keyValue, chords: chordsText };
+    if (!versionId) return;
+    await saveVersion(versionId, updates);
+  };
+
+  const handleDuplicateVersion = () => {
+    setShowSaveOptionDialog(false);
+    setVersionNameInput(version?.name ? `${version.name} (copy)` : (song.title || ''));
+    setShowVersionDialog(true);
+  };
 
   const handleSaveWithName = async () => {
     if (!versionNameInput.trim()) {
@@ -792,6 +800,38 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
          visible={paletteVisible}
          songKey={keyValue}
        />
+
+      {/* Save Option Dialog */}
+      {showSaveOptionDialog && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 w-80 mx-4">
+            <h3 className="text-lg font-bold text-slate-800 mb-1">Save Version</h3>
+            <p className="text-sm text-slate-500 mb-4">
+              How would you like to save this version?
+            </p>
+            <div className="space-y-2">
+              <button
+                onClick={() => void handleOverwriteVersion()}
+                className="w-full px-4 py-2.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
+              >
+                Overwrite this version
+              </button>
+              <button
+                onClick={handleDuplicateVersion}
+                className="w-full px-4 py-2.5 text-sm font-semibold text-slate-700 border border-slate-300 hover:bg-slate-50 rounded-lg transition-colors"
+              >
+                Save as duplicate
+              </button>
+              <button
+                onClick={() => setShowSaveOptionDialog(false)}
+                className="w-full px-4 py-2.5 text-sm font-semibold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Version Naming Dialog */}
       {showVersionDialog && (

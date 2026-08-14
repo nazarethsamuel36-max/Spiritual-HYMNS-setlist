@@ -37,6 +37,7 @@ interface WorkflowStore {
   sidebar: SidebarView;
   reader: ReaderView;
   readerMode: ReaderMode;
+  lastReaderMode: Exclude<ReaderMode, 'edit'>;
   mobileActivePane: 'sidebar' | 'reader';
   showSettings: boolean;
   showContextRail: boolean;
@@ -71,6 +72,7 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   sidebar: { panel: 'library' },
   reader: { type: 'empty' },
   readerMode: getSavedReaderMode(),
+  lastReaderMode: 'lyrics',
   mobileActivePane: 'sidebar',
   showSettings: false,
   showContextRail: false,
@@ -138,8 +140,10 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   setReaderMode: (mode) => {
     if (mode === 'chords' || mode === 'lyrics') {
       window.localStorage.setItem(READER_MODE_STORAGE_KEY, mode);
+      set({ readerMode: mode, lastReaderMode: mode });
+    } else {
+      set({ readerMode: mode });
     }
-    set({ readerMode: mode });
   },
 
   setShowSettings: (show) => set({ showSettings: show }),
