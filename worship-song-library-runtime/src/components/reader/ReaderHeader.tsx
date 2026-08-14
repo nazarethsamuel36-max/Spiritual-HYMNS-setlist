@@ -364,49 +364,6 @@ export function ReaderHeader({
                         </div>
                       )}
 
-                      {/* DETAILS TAB */}
-                      {moreTab === 'details' && (
-                        <div className="text-xs text-slate-600 p-2 space-y-2">
-                          <div className="flex items-center space-x-1.5 mb-2 border-b border-slate-100 pb-1.5">
-                            <button onClick={() => setMoreTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
-                              <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                              </svg>
-                            </button>
-                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Details</span>
-                          </div>
-                          <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 font-medium">
-                            <div className="text-slate-400">Key:</div>
-                            <div className="font-bold text-slate-800">{song.originalKey || 'C'}</div>
-                            <div className="text-slate-400">BPM:</div>
-                            <div className="font-bold text-slate-800">{song.bpm || 'N/A'}</div>
-                            <div className="text-slate-400">Time:</div>
-                            <div className="font-bold text-slate-800">{song.timeSignature || '4/4'}</div>
-                            {song.composer && (
-                              <>
-                                <div className="text-slate-400">Composer:</div>
-                                <div className="font-bold text-slate-800 truncate">{song.composer}</div>
-                              </>
-                            )}
-                            {song.capo !== undefined && (
-                              <>
-                                <div className="text-slate-400">Capo:</div>
-                                <div className="font-bold text-slate-800">{song.capo}</div>
-                              </>
-                            )}
-                          </div>
-                          {song.hashtags && song.hashtags.length > 0 && (
-                            <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-1">
-                              {song.hashtags.map(t => (
-                                <span key={t} className="px-1.5 py-0.5 bg-slate-100 rounded text-[9px] font-semibold text-slate-500">
-                                  #{t}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      )}
-
                     </div>
                   </>
                 )}
@@ -756,51 +713,6 @@ export function ReaderHeader({
                   >
                     Make My Version
                   </button>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* DETAILS TAB */}
-          {mobileTab === 'details' && (
-            <div className="p-3 flex flex-col min-h-0">
-              <div className="flex items-center space-x-1.5 mb-2 px-1 border-b border-slate-100 pb-1.5">
-                <button onClick={() => setMobileTab('main')} className="p-1 hover:bg-slate-100 rounded-md">
-                  <svg className="w-4 h-4 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Details</span>
-              </div>
-              <div className="overflow-y-auto min-h-0 text-xs text-slate-600 space-y-2">
-                <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 font-medium">
-                  <div className="text-slate-400">Key:</div>
-                  <div className="font-bold text-slate-800">{song.originalKey || 'C'}</div>
-                  <div className="text-slate-400">BPM:</div>
-                  <div className="font-bold text-slate-800">{song.bpm || 'N/A'}</div>
-                  <div className="text-slate-400">Time:</div>
-                  <div className="font-bold text-slate-800">{song.timeSignature || '4/4'}</div>
-                  {song.composer && (
-                    <>
-                      <div className="text-slate-400">Composer:</div>
-                      <div className="font-bold text-slate-800 truncate">{song.composer}</div>
-                    </>
-                  )}
-                  {song.capo !== undefined && (
-                    <>
-                      <div className="text-slate-400">Capo:</div>
-                      <div className="font-bold text-slate-800">{song.capo}</div>
-                    </>
-                  )}
-                </div>
-                {song.hashtags && song.hashtags.length > 0 && (
-                  <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-1">
-                    {song.hashtags.map(t => (
-                      <span key={t} className="px-1.5 py-0.5 bg-slate-100 rounded text-[9px] font-semibold text-slate-500">
-                        #{t}
-                      </span>
-                    ))}
-                  </div>
                 )}
               </div>
             </div>
