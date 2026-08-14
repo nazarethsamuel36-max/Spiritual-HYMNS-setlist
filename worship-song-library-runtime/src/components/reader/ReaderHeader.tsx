@@ -42,11 +42,11 @@ export function ReaderHeader({
 
   // Dropdown states
   const [isMoreOpen, setIsMoreOpen] = useState(false);
-  const [moreTab, setMoreTab] = useState<'main' | 'setlist' | 'versions' | 'details'>('main');
+  const [moreTab, setMoreTab] = useState<'main' | 'setlist' | 'versions'>('main');
 
   // Mobile bottom-sheet states
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mobileTab, setMobileTab] = useState<'main' | 'setlist' | 'versions' | 'details'>('main');
+  const [mobileTab, setMobileTab] = useState<'main' | 'setlist' | 'versions'>('main');
   const resetTranspose = useWorkflowStore((s) => s.resetTranspose);
 
   const setlists = useLiveQuery(() => db.setlists.toArray());
@@ -226,22 +226,33 @@ export function ReaderHeader({
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
                           </button>
-                          <button
-                            onClick={handleShare}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                          >
-                            Share Song
-                          </button>
-                          <button
-                            onClick={() => setMoreTab('versions')}
-                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
-                          >
-                            <span>Versions</span>
-                            <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </button>
-                          {isAdminAuthenticated && (
+                           <button
+                             onClick={handleShare}
+                             className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                           >
+                             Share Song
+                           </button>
+                           {!isAdminAuthenticated && mode !== 'edit' && (
+                             <button
+                               onClick={() => {
+                                 onModeChange('edit');
+                                 setIsMoreOpen(false);
+                               }}
+                               className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-amber-600 transition-colors border-l-2 border-amber-600"
+                             >
+                               ✏️ Edit Song
+                             </button>
+                           )}
+                           <button
+                             onClick={() => setMoreTab('versions')}
+                             className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                           >
+                             <span>Versions</span>
+                             <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                             </svg>
+                           </button>
+                           {isAdminAuthenticated && (
                             <button
                               onClick={() => {
                                 onModeChange('edit');
@@ -300,58 +311,31 @@ export function ReaderHeader({
                             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Versions</span>
                           </div>
                            <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
-                             <div className="flex items-center justify-between">
+                             <button
+                               onClick={() => {
+                                 setActiveArrangementId(null);
+                                 setIsMoreOpen(false);
+                               }}
+                               className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                                 !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                               }`}
+                             >
+                               Original Version
+                             </button>
+                             {versions.map(arr => (
                                <button
+                                 key={arr.uid}
                                  onClick={() => {
-                                   setActiveArrangementId(null);
+                                   setActiveArrangementId(arr.uid);
                                    setIsMoreOpen(false);
                                  }}
-                                 className={`flex-1 text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                   !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                                 className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                                   activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
                                  }`}
                                >
-                                 Original Version
-                               </button>
-                               {!isAdminAuthenticated && mode !== 'edit' && (
-                                 <button
-                                   onClick={() => {
-                                     setActiveArrangementId(null);
-                                     onModeChange('edit');
-                                     setIsMoreOpen(false);
-                                   }}
-                                   className="px-2 py-1 text-xs font-semibold text-slate-500 hover:text-slate-700"
-                                 >
-                                   Edit
-                                 </button>
-                               )}
-                             </div>
-                             {versions.map(arr => (
-                               <div key={arr.uid} className="flex items-center justify-between">
-                                 <button
-                                   onClick={() => {
-                                     setActiveArrangementId(arr.uid);
-                                     setIsMoreOpen(false);
-                                   }}
-                                   className={`flex-1 text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                                     activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                                   }`}
-                                 >
-                                   {arr.name}
-                                 </button>
-                                 {!isAdminAuthenticated && mode !== 'edit' && (
-                                   <button
-                                     onClick={() => {
-                                       setActiveArrangementId(arr.uid);
-                                       onModeChange('edit');
-                                       setIsMoreOpen(false);
-                                     }}
-                                     className="px-2 py-1 text-xs font-semibold text-slate-500 hover:text-slate-700"
-                                   >
-                                     Edit
-                                   </button>
-                                 )}
-                               </div>
-                             ))}
+                               {arr.name}
+                             </button>
+                           ))}
                             <button
                               onClick={async () => {
                                 const uid = await createNewVersion(reader);
@@ -645,6 +629,18 @@ export function ReaderHeader({
               >
                 <span className="text-sm font-semibold text-slate-700">Share</span>
               </button>
+              {!isAdminAuthenticated && mode !== 'edit' && (
+                <button
+                  onClick={() => {
+                    onModeChange('edit');
+                    setIsMobileMenuOpen(false);
+                    setMobileTab('main');
+                  }}
+                  className="w-full text-left px-2 py-2.5 hover:bg-slate-50 rounded-lg transition-colors border-l-2 border-amber-600"
+                >
+                  <span className="text-sm font-semibold text-amber-600">✏️ Edit Song</span>
+                </button>
+              )}
               <button
                 onClick={() => setMobileTab('versions')}
                 className="w-full flex items-center justify-between px-2 py-2.5 hover:bg-slate-50 rounded-lg transition-colors"
@@ -707,63 +703,34 @@ export function ReaderHeader({
                 </button>
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Song Versions</span>
               </div>
-               <div className="overflow-y-auto min-h-0 space-y-0.5 hide-scrollbar">
-                 <div className="flex items-center justify-between">
-                   <button
-                     onClick={() => {
-                       setActiveArrangementId(null);
-                       setIsMobileMenuOpen(false);
-                       setMobileTab('main');
-                     }}
-                     className={`flex-1 text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                       !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                     }`}
-                   >
-                     Original Version
-                   </button>
-                   {!isAdminAuthenticated && mode !== 'edit' && (
-                     <button
-                       onClick={() => {
-                         setActiveArrangementId(null);
-                         onModeChange('edit');
-                         setIsMobileMenuOpen(false);
-                         setMobileTab('main');
-                       }}
-                       className="px-2 py-1 text-xs font-semibold text-slate-500 hover:text-slate-700"
-                     >
-                       Edit
-                     </button>
-                   )}
-                 </div>
-                 {versions.map(arr => (
-                   <div key={arr.uid} className="flex items-center justify-between">
-                     <button
-                       onClick={() => {
-                         setActiveArrangementId(arr.uid);
-                         setIsMobileMenuOpen(false);
-                         setMobileTab('main');
-                       }}
-                       className={`flex-1 text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
-                         activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
-                       }`}
-                     >
-                       {arr.name}
-                     </button>
-                     {!isAdminAuthenticated && mode !== 'edit' && (
-                       <button
-                         onClick={() => {
-                           setActiveArrangementId(arr.uid);
-                           onModeChange('edit');
-                           setIsMobileMenuOpen(false);
-                           setMobileTab('main');
-                         }}
-                         className="px-2 py-1 text-xs font-semibold text-slate-500 hover:text-slate-700"
-                       >
-                         Edit
-                       </button>
-                     )}
-                   </div>
-                 ))}
+                <div className="overflow-y-auto min-h-0 space-y-0.5 hide-scrollbar">
+                  <button
+                    onClick={() => {
+                      setActiveArrangementId(null);
+                      setIsMobileMenuOpen(false);
+                      setMobileTab('main');
+                    }}
+                    className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                      !activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                    }`}
+                  >
+                    Original Version
+                  </button>
+                  {versions.map(arr => (
+                    <button
+                      key={arr.uid}
+                      onClick={() => {
+                        setActiveArrangementId(arr.uid);
+                        setIsMobileMenuOpen(false);
+                        setMobileTab('main');
+                      }}
+                      className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                        activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'
+                      }`}
+                    >
+                      {arr.name}
+                    </button>
+                  ))}
                 <button
                   onClick={async () => {
                     const uid = await createNewVersion(reader);
