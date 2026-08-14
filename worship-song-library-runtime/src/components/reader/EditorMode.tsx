@@ -514,20 +514,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       console.error('Save failed:', err);
       alert('Failed to save version');
     }
-  };
+   };
 
-  useEffect(() => {
-    if (!isAdmin && hasUnsavedChanges) {
-      const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-        e.preventDefault();
-        e.returnValue = '';
-      };
-      window.addEventListener('beforeunload', handleBeforeUnload);
-      return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-    }
-  }, [hasUnsavedChanges, isAdmin]);
-
-  const previewLines = useMemo(() => chordsText.split('\n').filter((line) => line.length > 0), [chordsText]);
+   const previewLines = useMemo(() => chordsText.split('\n').filter((line) => line.length > 0), [chordsText]);
 
   // FEATURE 2: Calculate diffs for each line
   const previewLinesWithDiffs = useMemo(() => previewLines.map((line) => ({ line, changedSegments: undefined })), [previewLines]);
@@ -563,8 +552,59 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
-            />
-          </div>
+              />
+            </div>
+
+            {/* Save Button + Status for non-admin users */}
+            {!isAdmin && (
+              <>
+                {/* Mobile: inline save button below title */}
+                <div className="block md:hidden">
+                  {saveStatus === 'success' ? (
+                    <div className="flex items-center justify-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium mx-auto">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Song added
+                    </div>
+                  ) : (
+                    <button
+                      onClick={handleManualSave}
+                      disabled={!hasUnsavedChanges}
+                      className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
+                      </svg>
+                      Save Version
+                    </button>
+                  )}
+                </div>
+
+                {/* Desktop: fixed save button at bottom-right */}
+                <div className="hidden md:block">
+                  {saveStatus === 'success' ? (
+                    <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Song added
+                    </div>
+                  ) : (
+                    <button
+                      onClick={handleManualSave}
+                      disabled={!hasUnsavedChanges}
+                      className="fixed bottom-4 right-4 z-50 flex items-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
+                      </svg>
+                      Save Version
+                    </button>
+                  )}
+                </div>
+              </>
+            )}
 
           {/* ROW 2: Key Corrector - Desktop Inline Layout */}
           <div className="hidden md:flex items-center gap-3 mb-4 bg-slate-50 p-3 rounded-lg border border-slate-200">
@@ -741,42 +781,17 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
         </div>
       </div>
 
-      <ChordPalette
-        textareaRef={textareaRef}
-        value={chordsText}
-        onChange={(newVal) => {
-          setChordsText(newVal);
-          if (!isAdmin) setHasUnsavedChanges(true);
-          debouncedAutoSave({ chords: newVal });
-        }}
-        visible={paletteVisible}
-        songKey={keyValue}
-      />
-
-      {/* Save Button + Status for non-admin users */}
-      {!isAdmin && (
-        <div className="fixed bottom-4 right-4 z-50">
-          {saveStatus === 'success' ? (
-            <div className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              Song added
-            </div>
-          ) : (
-            <button
-              onClick={handleManualSave}
-              disabled={!hasUnsavedChanges}
-              className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
-              </svg>
-              Save Version
-            </button>
-          )}
-        </div>
-      )}
+       <ChordPalette
+         textareaRef={textareaRef}
+         value={chordsText}
+         onChange={(newVal) => {
+           setChordsText(newVal);
+           if (!isAdmin) setHasUnsavedChanges(true);
+           debouncedAutoSave({ chords: newVal });
+         }}
+         visible={paletteVisible}
+         songKey={keyValue}
+       />
 
       {/* Version Naming Dialog */}
       {showVersionDialog && (
