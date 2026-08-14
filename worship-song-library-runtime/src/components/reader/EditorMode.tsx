@@ -58,6 +58,7 @@ interface EditorModeProps {
   source?: 'library' | 'setlist' | 'shared' | 'personal';
   versionId?: string | null;
   version?: Version | null;
+  isAdmin?: boolean;
 }
 
 interface PreviewChordLineProps {
@@ -189,7 +190,7 @@ function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
   );
 }
 
-export function EditorMode({ song, songKey = 'D', source = 'library', versionId = null, version = null }: EditorModeProps) {
+export function EditorMode({ song, songKey = 'D', source = 'library', versionId = null, version = null, isAdmin = false }: EditorModeProps) {
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
@@ -201,6 +202,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [paletteVisible, setPaletteVisible] = useState(false);
   const [isCorrectorExpanded, setIsCorrectorExpanded] = useState(false);
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+  const [showVersionDialog, setShowVersionDialog] = useState(false);
+  const [versionNameInput, setVersionNameInput] = useState('');
+  const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success'>('idle');
 
   // Undo/Redo history
   const [history, setHistory] = useState<HistoryState[]>([]);
@@ -228,6 +233,11 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     setHistoryIndex(newHistory.length - 1);
   };
 
+  const handleCancelVersionDialog = () => {
+    setShowVersionDialog(false);
+    setVersionNameInput('');
+   };
+
   const handleUndo = () => {
     if (historyIndex > 0) {
       isUndoRef.current = true;
@@ -235,8 +245,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       setChordsText(prevState.chords);
       setHistoryIndex(historyIndex - 1);
       debouncedAutoSave({ chords: prevState.chords });
-
-      // Restore cursor position if available
+      if (!isAdmin) setHasUnsavedChanges(true);
       if (prevState.cursorPosition !== undefined && textareaRef.current) {
         setTimeout(() => {
           textareaRef.current?.setSelectionRange(prevState.cursorPosition ?? null, prevState.cursorPosition ?? null);
@@ -274,6 +283,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     const newText = before + markerToInsert + after;
     setChordsText(newText);
     addToHistory(newText);
+    if (!isAdmin) setHasUnsavedChanges(true);
     debouncedAutoSave({ chords: newText });
 
     setTimeout(() => {
@@ -295,9 +305,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       const start = match.index;
       const end = regex.lastIndex;
       if (pos >= start && pos <= end) {
-        let newText = text.substring(0, start) + text.substring(end);
+        const newText = text.substring(0, start) + text.substring(end);
         
         setChordsText(newText);
+        if (!isAdmin) setHasUnsavedChanges(true);
         debouncedAutoSave({ chords: newText });
         
         e.preventDefault();
@@ -341,47 +352,66 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     });
   }, [title, language, keyValue, songNumber, chordsText]);
 
+  // Navigation guard for unsaved changes
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (hasUnsavedChanges && !isAdmin) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [hasUnsavedChanges, isAdmin]);
+
   const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
     try {
-      console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
+      if (isAdmin) {
+        // Admin: auto-save to Supabase or personal/library as before
+        console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
 
-      if (versionId) {
-        const versionUpdates: Record<string, unknown> = {
-          updatedAt: Date.now(),
-        };
-        if (updates.title !== undefined) versionUpdates.name = updates.title;
-        if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
-        if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
-        await VersionService.updateVersion(versionId, versionUpdates as never);
-        console.log(`✅ Auto-save successful for version ${versionId}`);
-      } else if (source === 'personal') {
-        // Save to IndexedDB for personal songs
-        const existingSong = await db.personalSongs.get(currentSongId);
-        if (existingSong) {
-          await db.personalSongs.update(currentSongId, {
-            ...updates,
-            originalKey: updates.original_key,
-            updated_at: new Date().toISOString()
-          });
-          console.log(`✅ Auto-save successful for personal song ${currentSongId}`);
+        if (versionId) {
+          const versionUpdates: Record<string, unknown> = {
+            updatedAt: Date.now(),
+          };
+          if (updates.title !== undefined) versionUpdates.name = updates.title;
+          if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
+          if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
+          await VersionService.updateVersion(versionId, versionUpdates as never);
+          console.log(`✅ Auto-save successful for version ${versionId}`);
+        } else if (source === 'personal') {
+          // Save to IndexedDB for personal songs
+          const existingSong = await db.personalSongs.get(currentSongId);
+          if (existingSong) {
+            await db.personalSongs.update(currentSongId, {
+              ...updates,
+              originalKey: updates.original_key,
+              updated_at: new Date().toISOString()
+            });
+            console.log(`✅ Auto-save successful for personal song ${currentSongId}`);
+          }
+        } else {
+          // Save to Supabase for library songs
+          const { error } = await supabase
+            .from('songs')
+            .update({
+              ...updates,
+              updated_at: new Date().toISOString()
+            })
+            .eq('id', currentSongId);
+
+          if (error) {
+            console.error('❌ Auto-save failed:', error);
+            alert('Failed to save changes: ' + error.message);
+            return;
+          }
+
+          console.log(`✅ Auto-save successful for song ${currentSongId}`);
         }
       } else {
-        // Save to Supabase for library songs
-        const { error } = await supabase
-          .from('songs')
-          .update({
-            ...updates,
-            updated_at: new Date().toISOString()
-          })
-          .eq('id', currentSongId);
-
-        if (error) {
-          console.error('❌ Auto-save failed:', error);
-          alert('Failed to save changes: ' + error.message);
-          return;
-        }
-
-        console.log(`✅ Auto-save successful for song ${currentSongId}`);
+        // User: manual save only, no auto-save
+        console.log(`User manual save requested for song ${currentSongId}`);
       }
     } catch (err) {
       console.error('❌ Auto-save exception:', err);
@@ -390,6 +420,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   };
 
   const debouncedAutoSave = (updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+    // Only auto-save for admins
+    if (!isAdmin) return;
+    
     if (saveTimeoutRef.current) {
       clearTimeout(saveTimeoutRef.current);
     }
@@ -399,6 +432,100 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       saveTimeoutRef.current = null;
     }, 1500);
   };
+
+  const handleManualSave = async () => {
+    const updates = { 
+      title, 
+      language, 
+      original_key: keyValue, 
+      chords: chordsText 
+    };
+
+    if (!versionId) {
+      // Need to create a new version with name
+      setShowVersionDialog(true);
+      setVersionNameInput(version?.name || song.title || '');
+      return;
+    }
+
+    await saveVersion(versionId, updates);
+   };
+
+  const handleSaveWithName = async () => {
+    if (!versionNameInput.trim()) {
+      alert('Please enter a version name');
+      return;
+    }
+
+    setShowVersionDialog(false);
+    setSaveStatus('saving');
+
+    try {
+      await VersionService.createVersion({
+        sourceSongId: song.id,
+        name: versionNameInput,
+        owner: source === 'shared' ? 'shared' : 'personal',
+        snapshot: {
+          chords: chordsText,
+          lyrics: song.lyrics,
+          originalKey: keyValue,
+        },
+      });
+
+      setVersionNameInput('');
+      setHasUnsavedChanges(false);
+      setSaveStatus('success');
+
+      // Reset success message after 3 seconds
+      setTimeout(() => {
+        setSaveStatus('idle');
+      }, 3000);
+    } catch (error) {
+      console.error('Error saving version:', error);
+      alert('Failed to save version. Please try again.');
+      setSaveStatus('idle');
+    }
+   };
+
+  const saveVersion = async (uid: string, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+    setSaveStatus('saving');
+    try {
+      const versionUpdates: Record<string, unknown> = {
+        updatedAt: Date.now(),
+      };
+      if (updates.title !== undefined) versionUpdates.name = updates.title;
+      if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
+      if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
+      
+      await VersionService.updateVersion(uid, versionUpdates as never);
+      setSaveStatus('success');
+      setHasUnsavedChanges(false);
+      
+      // Show success message for admin
+      const event = new CustomEvent('show-toast', { 
+        detail: { message: 'Song added', type: 'success' } 
+      });
+      window.dispatchEvent(event);
+      
+      setTimeout(() => {
+        setSaveStatus('idle');
+      }, 2000);
+    } catch (err) {
+      console.error('Save failed:', err);
+      alert('Failed to save version');
+    }
+  };
+
+  useEffect(() => {
+    if (!isAdmin && hasUnsavedChanges) {
+      const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+        e.preventDefault();
+        e.returnValue = '';
+      };
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    }
+  }, [hasUnsavedChanges, isAdmin]);
 
   const previewLines = useMemo(() => chordsText.split('\n').filter((line) => line.length > 0), [chordsText]);
 
@@ -417,6 +544,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               value={title}
               onChange={(e) => {
                 setTitle(e.target.value);
+                if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ title: e.target.value });
               }}
               className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
@@ -432,6 +560,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 setKeyValue(newKey);
                 setChordsText(corrected);
                 setCurrentTextKey(newKey);
+                if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
             />
@@ -463,6 +592,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                   setCorrectorTargetKey(newTarget);
                   setChordsText(corrected);
                   setCurrentTextKey(newTarget);
+                  if (!isAdmin) setHasUnsavedChanges(true);
                   debouncedAutoSave({ chords: corrected });
                 }}
               />
@@ -526,6 +656,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                       setCorrectorTargetKey(newTarget);
                       setChordsText(corrected);
                       setCurrentTextKey(newTarget);
+                      if (!isAdmin) setHasUnsavedChanges(true);
                       debouncedAutoSave({ chords: corrected });
                     }}
                   />
@@ -576,6 +707,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 onChange={(e) => {
                   setChordsText(e.target.value);
                   addToHistory(e.target.value);
+                  if (!isAdmin) setHasUnsavedChanges(true);
                   debouncedAutoSave({ chords: e.target.value });
                 }}
                 rows={25}
@@ -614,11 +746,78 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
         value={chordsText}
         onChange={(newVal) => {
           setChordsText(newVal);
+          if (!isAdmin) setHasUnsavedChanges(true);
           debouncedAutoSave({ chords: newVal });
         }}
         visible={paletteVisible}
         songKey={keyValue}
       />
+
+      {/* Save Button + Status for non-admin users */}
+      {!isAdmin && (
+        <div className="fixed bottom-4 right-4 z-50">
+          {saveStatus === 'success' ? (
+            <div className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              Song added
+            </div>
+          ) : (
+            <button
+              onClick={handleManualSave}
+              disabled={!hasUnsavedChanges}
+              className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
+              </svg>
+              Save Version
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Version Naming Dialog */}
+      {showVersionDialog && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 w-80 mx-4">
+            <h3 className="text-lg font-bold text-slate-800 mb-4">Name Your Version</h3>
+            <input
+              type="text"
+              value={versionNameInput}
+              onChange={(e) => setVersionNameInput(e.target.value)}
+              placeholder="Enter version name..."
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+              autoFocus
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  void handleSaveWithName();
+                }
+                if (e.key === 'Escape') {
+                  e.preventDefault();
+                  handleCancelVersionDialog();
+                }
+              }}
+            />
+            <div className="flex gap-2 justify-end">
+              <button
+                onClick={handleCancelVersionDialog}
+                className="px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSaveWithName}
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

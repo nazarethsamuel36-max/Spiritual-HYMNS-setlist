@@ -361,8 +361,8 @@ export function SongView() {
               </div>
             )}
 
-            {isAdminAuthenticated ? (
-              <EditorMode song={{ ...song, sections: song.sections }} source={source} versionId={activeArrangementId} version={activeVersion} />
+            {isAdminAuthenticated || activeArrangementId ? (
+              <EditorMode song={{ ...song, sections: song.sections }} source={source} versionId={activeArrangementId} version={activeVersion} isAdmin={isAdminAuthenticated} />
             ) : hasContent ? (
               <ChordProRenderer
                 rawChordPro={rawContent}
