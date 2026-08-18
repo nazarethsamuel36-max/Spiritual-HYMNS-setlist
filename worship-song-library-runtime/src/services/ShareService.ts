@@ -1,4 +1,4 @@
-import { db, type SongDetail, type Version, type Setlist } from '../db/Database';
+import { db, getSongById, type SongDetail, type Version, type Setlist } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
 import { generateUUID } from '../utils/uuid';
 import { UserDataPackageService, type PortableSong, type PortableVersion, type UserDataPackage } from './UserDataPackage';
@@ -262,7 +262,10 @@ export class ShareService {
       for (const item of setlist.items) {
         if (item.type === 'song' && item.songId !== undefined) {
           if (item.refType === 'official') {
-            const exists = await db.songs.get(item.songId);
+            // Resolve official songs via getSongById so they can be fetched
+            // from Supabase (and cached) instead of requiring them to already
+            // exist in the recipient's local offline library.
+            const exists = await getSongById(item.songId);
             if (!exists) {
               throw new ShareError(
                 'Couldn\'t import setlist',
