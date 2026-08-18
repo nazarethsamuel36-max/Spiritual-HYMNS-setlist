@@ -1,4 +1,5 @@
 import { db, type SongDetail, type Version } from '../db/Database';
+import { generateUUID } from '../utils/uuid';
 
 export type VersionSnapshot = Partial<
   Pick<Version, 'lyrics' | 'chords' | 'sections' | 'originalKey' | 'capo' | 'bpm' | 'timeSignature' | 'artist' | 'composer' | 'hashtags'>
@@ -17,7 +18,7 @@ export class VersionService {
     owner: 'personal' | 'shared';
     snapshot?: VersionSnapshot;
   }): Promise<string> {
-    const uid = crypto.randomUUID();
+    const uid = generateUUID();
     const now = Date.now();
     const version: Version = {
       uid,
@@ -104,7 +105,7 @@ export class VersionService {
     if (!shared || shared.owner !== 'shared') return null;
     const clone: Version = {
       ...shared,
-      uid: crypto.randomUUID(),
+      uid: generateUUID(),
       owner: 'personal',
       updatedAt: Date.now(),
     };

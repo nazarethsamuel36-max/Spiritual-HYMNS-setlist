@@ -2,13 +2,13 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../db/Database';
 import { getSongs } from '../services/DataService';
+import { getLanguagePriority, songMatchesLanguageFilter, formatKey } from '../utils/SongFormatter';
 import { SongResolver } from '../services/SongResolver';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
 import { ChordTransposer } from '../utils/ChordTransposer';
-import { formatKey } from '../utils/SongFormatter';
 
 // Parse lyrics helper
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -45,6 +45,7 @@ export function SongView() {
   const openNote = useWorkflowStore((s) => s.openNote);
   const libraryLanguage = useWorkflowStore((s) => s.libraryLanguage);
   const fontSize = useWorkflowStore((s) => s.fontSize);
+  const lastReaderMode = useWorkflowStore((s) => s.lastReaderMode);
 
   const songId = reader.type === 'song' ? reader.songId : null;
   const transpose = reader.type === 'song' ? reader.transpose : 0;
@@ -98,9 +99,14 @@ export function SongView() {
     const songs = await getSongs();
     let filtered = songs;
     if (libraryLanguage !== 'All') {
-       filtered = songs.filter(s => s.language?.toLowerCase() === libraryLanguage.toLowerCase());
+       filtered = songs.filter(s => songMatchesLanguageFilter(s.language, libraryLanguage));
     }
-    return filtered.sort((a, b) => a.songNumber - b.songNumber);
+    return filtered.sort((a, b) => {
+      if (a.songNumber !== b.songNumber) {
+        return a.songNumber - b.songNumber;
+      }
+      return getLanguagePriority(a.language) - getLanguagePriority(b.language);
+    });
   }, [isSetlistContext, libraryLanguage, source]);
 
   const setlistItems = useLiveQuery(async () => {
@@ -195,9 +201,12 @@ export function SongView() {
   const navigateSetlistRef = useRef(navigateSetlist);
   const navigateLibraryRef = useRef(navigateLibrary);
   const isSetlistContextRef = useRef(isSetlistContext);
+  const isEditModeRef = useRef(false);
   useEffect(() => { navigateSetlistRef.current = navigateSetlist; }, [navigateSetlist]);
   useEffect(() => { navigateLibraryRef.current = navigateLibrary; }, [navigateLibrary]);
   useEffect(() => { isSetlistContextRef.current = isSetlistContext; }, [isSetlistContext]);
+  // Keep edit-mode guard ref current so swipe handler (registered once) always sees latest value
+  useEffect(() => { isEditModeRef.current = isAdminAuthenticated || readerMode === 'edit'; }, [isAdminAuthenticated, readerMode]);
 
   useEffect(() => {
     let startX = 0;
@@ -211,6 +220,9 @@ export function SongView() {
     };
 
     const onTouchEnd = (e: TouchEvent) => {
+      // Block swipe navigation while editing
+      if (isEditModeRef.current) return;
+
       const dx = e.changedTouches[0].clientX - startX;
       const dy = e.changedTouches[0].clientY - startY;
       const dt = Date.now() - startTime;
@@ -301,8 +313,8 @@ export function SongView() {
   );
 
   const displayTranspose = transpose + (song.capo || 0);
-  const currentKey = ChordTransposer.transposeChord(formatKey(song.originalKey), displayTranspose);
   const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';
+  const currentKey = ChordTransposer.transposeChord(formatKey(song.originalKey), displayTranspose);
 
   // --- Content resolution: chords → lyrics → sections reconstruction ---
   // On laptops without a local cache, Supabase may return chords/lyrics as null.
@@ -334,80 +346,92 @@ export function SongView() {
 
   return (
     <div className={`relative flex h-full w-full flex-col bg-[var(--color-reader-surface)] ${langClass}`}>
-      <ReaderHeader
-        song={song} transpose={displayTranspose} mode={readerMode}
-        onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
-        onRefreshSong={refreshSong}
-      />
+      {!(isAdminAuthenticated || readerMode === 'edit') && (
+        <ReaderHeader
+          song={song} transpose={displayTranspose} mode={readerMode}
+          onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
+          onRefreshSong={refreshSong}
+          isPersonal={source === 'personal'}
+        />
+      )}
 
-      <div
-        ref={scrollContainerRef}
-        className="flex-1 overflow-y-auto overscroll-contain"
-        style={{ touchAction: 'pan-y' }}
-      >
-        <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-x-hidden">
-          <div 
-            key={songId || currentItemId || 'empty'}
-            className={`max-w-4xl mx-auto w-full reader-anim-container ${
-              slideDir === 'next' ? 'animate-slide-next' : slideDir === 'prev' ? 'animate-slide-prev' : ''
-            }`}
-          >
-            {/* Mobile-only Key metadata — part of the song's opening, not a UI control */}
-            {!isAdminAuthenticated && (
-              <div className="md:hidden mb-5 pl-2">
-                <span className="text-sm font-semibold tracking-wide text-slate-500">
-                  Key: <span className="font-bold text-slate-700">{currentKey}</span>
-                </span>
-              </div>
-            )}
+      {isAdminAuthenticated || readerMode === 'edit' ? (
+        <EditorMode
+          song={{ ...song, sections: song.sections }}
+          source={source}
+          versionId={activeArrangementId}
+          version={activeVersion}
+          isAdmin={isAdminAuthenticated}
+          onExit={() => setReaderMode(lastReaderMode)}
+        />
+      ) : (
+        <div
+          ref={scrollContainerRef}
+          className="flex-1 overflow-y-auto overscroll-contain"
+          style={{ touchAction: 'pan-y' }}
+        >
+          <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-x-hidden">
+            <div 
+              key={songId || currentItemId || 'empty'}
+              className={`max-w-4xl mx-auto w-full reader-anim-container ${
+                slideDir === 'next' ? 'animate-slide-next' : slideDir === 'prev' ? 'animate-slide-prev' : ''
+              }`}
+            >
+              {/* Key metadata — part of the song's opening, not a UI control */}
+              {!isAdminAuthenticated && (
+                <div className="mb-5 pl-2">
+                  <span className="text-sm font-semibold tracking-wide text-slate-500">
+                    Key: <span className="font-bold text-slate-700">{currentKey}</span>
+                  </span>
+                </div>
+              )}
 
-            {isAdminAuthenticated || readerMode === 'edit' ? (
-              <EditorMode song={{ ...song, sections: song.sections }} source={source} versionId={activeArrangementId} version={activeVersion} isAdmin={isAdminAuthenticated} />
-            ) : hasContent ? (
-              <ChordProRenderer
-                rawChordPro={rawContent}
-                hideChords={readerMode === 'lyrics'}
-                fontSize={fontSize}
-                transpose={displayTranspose}
-              />
-            ) : (
-              /* No content available fallback */
-              <div className="flex flex-col items-center justify-center text-center py-16 px-4 space-y-4">
-                <div className="text-4xl">📄</div>
-                {navigator.onLine ? (
-                  <>
-                    <p className="text-slate-500 text-sm font-medium max-w-xs leading-relaxed">
-                      Song content is blank in the database.
-                    </p>
-                    <p className="text-slate-400 text-xs max-w-xs leading-relaxed">
-                      This song does not have any chords or lyrics set on the server yet.
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <p className="text-slate-500 text-sm font-medium max-w-xs leading-relaxed">
-                      Song content not available offline.
-                    </p>
-                    <p className="text-slate-400 text-xs max-w-xs leading-relaxed">
-                      Connect to the internet and download the library to access all songs offline.
-                    </p>
-                    <button
-                      onClick={() => window.dispatchEvent(new CustomEvent('open-download-library'))}
-                      className="mt-2 px-4 py-2 bg-slate-900 text-[var(--color-on-inverse)] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-700 transition-colors"
-                    >
-                      Download Library
-                    </button>
-                  </>
-                )}
-              </div>
-            )}
+              {hasContent ? (
+                <ChordProRenderer
+                  rawChordPro={rawContent}
+                  hideChords={readerMode === 'lyrics'}
+                  fontSize={fontSize}
+                  transpose={displayTranspose}
+                />
+              ) : (
+                /* No content available fallback */
+                <div className="flex flex-col items-center justify-center text-center py-16 px-4 space-y-4">
+                  <div className="text-4xl">📄</div>
+                  {navigator.onLine ? (
+                    <>
+                      <p className="text-slate-500 text-sm font-medium max-w-xs leading-relaxed">
+                        Song content is blank in the database.
+                      </p>
+                      <p className="text-slate-400 text-xs max-w-xs leading-relaxed">
+                        This song does not have any chords or lyrics set on the server yet.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-slate-500 text-sm font-medium max-w-xs leading-relaxed">
+                        Song content not available offline.
+                      </p>
+                      <p className="text-slate-400 text-xs max-w-xs leading-relaxed">
+                        Connect to the internet and download the library to access all songs offline.
+                      </p>
+                      <button
+                        onClick={() => window.dispatchEvent(new CustomEvent('open-download-library'))}
+                        className="mt-2 px-4 py-2 bg-slate-900 text-[var(--color-on-inverse)] text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-700 transition-colors"
+                      >
+                        Download Library
+                      </button>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll */}
-      {!isAdminAuthenticated && (
-        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-[#E2E8F0]/60 z-40 px-4 pt-1 pb-2 shadow-sm">
+      {!isAdminAuthenticated && readerMode !== 'edit' && (
+        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-[#E2E8F0] z-50 px-4 pt-1 pb-2">
           {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
             <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1.5 select-none">
               {visibleDots.map((idx) => (
@@ -416,53 +440,58 @@ export function SongView() {
             </div>
           )}
           <div className="max-w-4xl mx-auto w-full flex items-center justify-between gap-3">
-            {/* Mode Selector */}
-            <div className="flex items-center p-0.5 bg-slate-200/50 rounded-lg h-8">
+            {/* Mode Selector — two pills */}
+            <div className="flex items-center gap-1.5">
               <button
                 onClick={() => setReaderMode('lyrics')}
-                className={`px-3 py-0.5 h-full text-xs font-bold rounded-md transition-all ${
-                  readerMode === 'lyrics' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                  readerMode === 'lyrics'
+                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
+                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
                 }`}
               >
                 Lyrics
               </button>
               <button
                 onClick={() => setReaderMode('chords')}
-                className={`px-3 py-0.5 h-full text-xs font-bold rounded-md transition-all ${
-                  readerMode === 'chords' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'
+                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                  readerMode === 'chords'
+                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
+                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
                 }`}
               >
                 Chords
               </button>
             </div>
 
-            {/* Auto Scroll — single pill with inline speed control */}
-            <div className={`flex items-center h-8 rounded-full overflow-hidden border flex-shrink-0 transition-all ${
+            {/* Auto Scroll — rectangle with rounded corners, three zones separated by dividers */}
+            <div className={`flex items-center h-8 rounded-lg overflow-hidden border flex-shrink-0 ${
               autoScrollEnabled
-                ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-sm'
+                ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
                 : 'bg-[var(--color-surface)] border-slate-200 text-slate-600'
             }`}>
               <button
                 onClick={() => setAutoScrollSpeed((s) => Math.max(0.5, +(s - 0.5).toFixed(1)))}
                 className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
-                aria-label="Decrease auto scroll speed"
+                aria-label="Slow down auto scroll"
+                title="Slow"
               >
                 −
               </button>
+              <div className={`w-px h-4 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
               <button
                 onClick={() => setAutoScrollEnabled(!autoScrollEnabled)}
-                className="flex items-center gap-1.5 px-2 h-full text-xs font-bold transition-colors active:opacity-70"
+                className="flex items-center justify-center w-8 h-full text-[11px] font-black transition-colors active:opacity-70"
                 title="Toggle auto scroll"
               >
-                <span className={autoScrollEnabled ? 'opacity-90' : ''}>Scroll</span>
-                <span className="w-7 text-center text-[10px] font-black rounded-full bg-black/10 px-1 py-0.5">
-                  {autoScrollSpeed}x
-                </span>
+                {autoScrollSpeed}x
               </button>
+              <div className={`w-px h-4 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
               <button
                 onClick={() => setAutoScrollSpeed((s) => Math.min(3, +(s + 0.5).toFixed(1)))}
                 className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
-                aria-label="Increase auto scroll speed"
+                aria-label="Speed up auto scroll"
+                title="Fast"
               >
                 +
               </button>

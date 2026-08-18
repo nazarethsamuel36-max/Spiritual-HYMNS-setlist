@@ -7,7 +7,7 @@ interface SortSelectorProps {
 
 export function SortSelector({ value, onChange }: SortSelectorProps) {
   const [open, setOpen] = useState(false);
-  const label = value === 'number' ? 'Number' : 'Title';
+  const label = value === 'number' ? 'Number' : 'Title (A-Z)';
 
   return (
     <div className="relative flex items-center">
@@ -19,7 +19,7 @@ export function SortSelector({ value, onChange }: SortSelectorProps) {
         <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 7h18M6 12h12M10 17h4" />
         </svg>
-        <span>Sort: <span className="text-slate-700 font-bold">{label}</span></span>
+        <span>Sort <span className="text-slate-700 font-bold">{label}</span></span>
         <svg className={`w-3 h-3 flex-shrink-0 transition-transform duration-150 ${open ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
@@ -43,7 +43,7 @@ export function SortSelector({ value, onChange }: SortSelectorProps) {
                     : 'text-slate-500 hover:bg-slate-50 hover:text-slate-800'
                 }`}
               >
-                <span>{opt === 'number' ? 'Number' : 'Title'}</span>
+                <span>{opt === 'number' ? 'Number' : 'Title (A-Z)'}</span>
                 {value === opt && (
                   <svg className="w-4 h-4 text-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />

@@ -10,6 +10,8 @@ interface SongRowProps {
   onSelect: (id: number) => void;
   isActive?: boolean;
   onDelete?: () => void;
+  hideNumber?: boolean;
+  titleOnly?: boolean;
 }
 
 interface PopoverPos {
@@ -35,15 +37,30 @@ function SetlistPopover({
   useEffect(() => {
     if (!anchorRef.current) return;
     const rect = anchorRef.current.getBoundingClientRect();
-    const popoverHeight = 220; // estimated max height
     const popoverWidth = 192;
     const viewportHeight = window.innerHeight;
     const spaceBelow = viewportHeight - rect.bottom;
-    const openUpward = spaceBelow < popoverHeight + 8;
-    const top = openUpward ? rect.top - popoverHeight - 8 : rect.bottom + 8;
+    // Tentative: open upward if there isn't room below (use a small estimate first)
+    const openUpward = spaceBelow < 120;
+    const top = openUpward ? rect.top - 40 : rect.bottom + 8;
     const left = Math.min(rect.right - popoverWidth, window.innerWidth - popoverWidth - 8);
     setPos({ top, left: Math.max(8, left), openUpward });
   }, [anchorRef]);
+
+  // Reposition after mount once the real popover size is known
+  useEffect(() => {
+    if (!pos || !anchorRef.current || !popoverRef.current) return;
+    const rect = anchorRef.current.getBoundingClientRect();
+    const popHeight = popoverRef.current.offsetHeight;
+    const popWidth = popoverRef.current.offsetWidth;
+    const viewportHeight = window.innerHeight;
+    const spaceBelow = viewportHeight - rect.bottom;
+    const spaceAbove = rect.top;
+    const openUpward = spaceBelow < popHeight + 8 && spaceAbove >= popHeight + 8;
+    const top = openUpward ? rect.top - popHeight - 8 : rect.bottom + 8;
+    const left = Math.min(rect.right - popWidth, window.innerWidth - popWidth - 8);
+    setPos({ top: Math.max(8, top), left: Math.max(8, left), openUpward });
+  }, [pos, anchorRef, setlists]);
 
   // Close on outside click
   useEffect(() => {
@@ -67,9 +84,9 @@ function SetlistPopover({
     <div
       ref={popoverRef}
       style={{ top: pos.top, left: pos.left, position: 'fixed', width: 192, zIndex: 9999 }}
-      className="bg-[var(--color-surface)] border border-slate-200 rounded-xl shadow-2xl p-2 overflow-hidden"
+      className="bg-[var(--color-surface)] border border-slate-200 rounded-xl p-2 overflow-hidden"
     >
-      <div className="text-[10px] font-bold text-slate-400 uppercase mb-2 px-2 tracking-wider">Add to Setlist</div>
+      <div className="text-[10px] font-bold text-slate-400 uppercase mb-2 px-2 tracking-wider border-b border-slate-100 pb-2">Add to Setlist</div>
       <div className="max-h-40 overflow-y-auto space-y-0.5">
         {!setlists ? (
           <div className="text-xs text-center py-3 text-slate-400">Loading...</div>
@@ -96,7 +113,7 @@ function SetlistPopover({
   );
 }
 
-export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelete }: SongRowProps) {
+export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelete, hideNumber }: SongRowProps) {
   const [showAddMenu, setShowAddMenu] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -106,13 +123,19 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
         onClick={() => onSelect(song.id)}
         className="flex items-center text-left py-3 px-2 hover:bg-slate-100 transition-none w-full group"
       >
-        {/* Avatar */}
-        <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-slate-200 rounded-full text-xs font-bold text-slate-600 mr-3">
-          {song.songNumber}
+        {/* Number without circle */}
+        <div className="w-8 flex-shrink-0 flex items-center justify-center text-sm font-semibold mr-3 text-slate-500">
+          {hideNumber ? (
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          ) : (
+            song.songNumber
+          )}
         </div>
 
-        <div className="flex-1 min-w-0 pr-10">
-          <h3 className="font-semibold text-slate-800 text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
+        <div className="flex-1 min-w-0">
+          <h3 className="font-semibold text-slate-800 text-base leading-normal truncate group-hover:text-slate-900 transition-colors">
             {formatSongTitle(song.title)}
           </h3>
           <div className="flex items-center space-x-1.5 mt-0.5 min-h-5">
@@ -123,14 +146,6 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
             <span className="text-xs font-medium text-slate-500">
               {song.language}
             </span>
-            {song.matchType === 'lyrics' && (
-              <>
-                <span className="text-slate-300 text-[10px]">•</span>
-                <span className="text-xs font-bold px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full">
-                  Lyrics Match
-                </span>
-              </>
-            )}
             {song.is_active === false && (
               <>
                 <span className="text-slate-300 text-[10px]">•</span>
@@ -156,7 +171,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               e.stopPropagation();
               onDelete();
             }}
-            className="w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 bg-red-100 text-red-600 hover:bg-red-200"
+            className="w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 bg-slate-100 text-slate-500 hover:bg-slate-200 hover:text-slate-700"
             title="Delete"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -1,5 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie';
 import { normalizeImportedText } from '../utils/SongFormatter';
+import { generateUUID } from '../utils/uuid';
 
 export type SongIndex = {
   id: number;
@@ -172,7 +173,7 @@ export class WorshipDatabase extends Dexie {
         let changed = false;
         for (const row of rows) {
           if (!row.uid) {
-            row.uid = reuseId ? String(row.id) : crypto.randomUUID();
+            row.uid = reuseId ? String(row.id) : generateUUID();
             changed = true;
           }
         }
@@ -196,7 +197,7 @@ export class WorshipDatabase extends Dexie {
       if (arrangements.length) {
         await tx.table('versions').bulkPut(
           arrangements.map((a) => ({
-            uid: a.id || crypto.randomUUID(),
+            uid: a.id || generateUUID(),
             sourceSongId: a.songId,
             name: a.name || 'My Version',
             owner: a.type === 'shared' ? 'shared' : 'personal',
@@ -282,7 +283,7 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
 }
 
 export function ensureUid(record: { uid?: string }): string {
-  return record.uid ?? (record.uid = crypto.randomUUID());
+  return record.uid ?? (record.uid = generateUUID());
 }
 
 export function normalizeSongIndex(song: SongIndex): SongIndex {

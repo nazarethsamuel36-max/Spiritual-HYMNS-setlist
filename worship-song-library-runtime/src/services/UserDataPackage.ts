@@ -1,4 +1,5 @@
 import { db, type Section } from '../db/Database';
+import { generateUUID } from '../utils/uuid';
 
 /**
  * v1 portable package shapes. `localId` preserves the source app's numeric
@@ -377,7 +378,7 @@ export class UserDataPackageService {
         continue;
       }
       await db.setlists.put({
-        id: crypto.randomUUID(),
+        id: generateUUID(),
         uid: setlist.uid,
         title: setlist.title,
         createdAt: setlist.createdAt ?? Date.now(),
@@ -397,7 +398,7 @@ export class UserDataPackageService {
         continue;
       }
       await db.sharedSetlists.put({
-        id: crypto.randomUUID(),
+        id: generateUUID(),
         uid: setlist.uid,
         title: setlist.title,
         createdAt: setlist.createdAt ?? Date.now(),

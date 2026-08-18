@@ -23,5 +23,12 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(s/.*|song/.*|setlist/.*)",
+      "destination": "/index.html"
+    }
   ]
 }
+

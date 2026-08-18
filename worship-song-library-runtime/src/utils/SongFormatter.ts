@@ -78,3 +78,42 @@ export function formatKey(key: string | undefined): string {
   if (!key) return 'C';
   return normalizeImportedText(key).replace(/[\s\*\-\_]+/g, '').trim();
 }
+
+const LANGUAGE_ALIASES: Record<string, string[]> = {
+  english: ['english', 'eng', 'en'],
+  hindi: ['hindi', 'hin', 'hi'],
+  marathi: ['marathi', 'mar', 'mr'],
+  konkani: ['konkani', 'kok', 'kn'],
+};
+
+export function toCanonicalLanguage(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  const normalized = normalizeImportedText(value).toLowerCase();
+  if (!normalized) return undefined;
+
+  for (const [canonical, aliases] of Object.entries(LANGUAGE_ALIASES)) {
+    if (aliases.includes(normalized)) {
+      return canonical;
+    }
+  }
+
+  return normalized;
+}
+
+export function songMatchesLanguageFilter(songLanguage: string | undefined, selectedLanguage: string): boolean {
+  const filter = toCanonicalLanguage(selectedLanguage);
+  if (!filter || filter === 'all') return true;
+
+  const songLang = toCanonicalLanguage(songLanguage);
+  return songLang === filter;
+}
+
+const LANGUAGE_ORDER = ['english', 'hindi', 'marathi', 'konkani'];
+
+export function getLanguagePriority(lang: string | undefined): number {
+  const canonical = toCanonicalLanguage(lang);
+  if (!canonical) return 999;
+  const idx = LANGUAGE_ORDER.indexOf(canonical);
+  return idx === -1 ? 999 : idx;
+}
+

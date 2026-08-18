@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 /* Remove 300ms tap delay on mobile devices for native-feeling clicks */
-* {
-  touch-action: manipulation;
+@layer base {
+  * {
+    touch-action: manipulation;
+  }
 }
 
 @theme {
@@ -148,6 +150,7 @@ body {
   background-color: #F8FAFC;
   flex-shrink: 0;
   overflow: hidden;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -258,8 +261,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  /* Temporarily reduced z-index to test mobile cold-start click issue */
-  z-index: 10;
+  /* Footer must be above reader headers (z-40) and reader footer (z-50) */
+  z-index: 60;
   background-color: rgba(248, 250, 252, 0.97);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);

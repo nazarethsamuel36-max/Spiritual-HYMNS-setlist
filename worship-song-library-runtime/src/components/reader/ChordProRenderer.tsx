@@ -48,22 +48,20 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
 
       let isChorus = false;
       let processLine = line;
-      let isSectionMarker = false;
       
-      // Detect chorus section markers
-      if (trimmed.toLowerCase() === '[chorus]') {
-        inChorusSection = true;
-        return { isDirective: false, words: [], isChorus: false, isSectionMarker: true }; // Skip the [Chorus] line itself
-      }
-      
-      // Detect other section markers to exit chorus
-      if (trimmed.startsWith('[') && trimmed.endsWith(']') && !trimmed.toLowerCase().includes('chorus')) {
-        inChorusSection = false;
+      // ── Section marker detection ─────────────────────────────────────────────
+      // A section marker is a line whose ENTIRE content is [SomeName].
+      // We must return early so the bracket content is NEVER fed into the chord parser.
+      if (trimmed.startsWith('[') && trimmed.endsWith(']') && !trimmed.slice(1, -1).includes('[')) {
         const sectionName = trimmed.slice(1, -1).trim();
-        const isSection = /^(verse|chorus|bridge|intro|outro|pre-chorus|refrain|ending|interlude|coda|solo|strophe|chor|cho|chour)/i.test(sectionName);
-        if (isSection) {
-          isSectionMarker = true;
+        const isChorusSection = /^chorus/i.test(sectionName);
+        if (isChorusSection) {
+          inChorusSection = true;
+        } else {
+          inChorusSection = false;
         }
+        // Return as a pure section marker — do NOT parse any chords from this line
+        return { isDirective: false, words: [], isChorus: false, isSectionMarker: true };
       }
       
       // Apply chorus styling if we're in chorus section or line starts with *
@@ -103,11 +101,35 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro,
         }
       }
 
-      if (wordsArray.length === 0) {
-        wordsArray.push({ chord: '', lyric: ' ' });
+      // ── Expand multi-word lyric chunks into per-word units ────────────────────
+      // Each ChordWordUnit from the parser may hold a multi-word string like
+      // "forever on that". Split those into individual word units so each word
+      // becomes an independent inline-flex block. The chord stays on the first
+      // word; subsequent words in the same chunk get an empty chord.
+      const expandedWords: ChordWordUnit[] = [];
+      for (const unit of wordsArray) {
+        // Split on spaces but keep trailing/leading spaces attached to the token
+        // so visual spacing is preserved between units.
+        const tokens = unit.lyric.split(/(\s+)/);
+        let isFirst = true;
+        for (const token of tokens) {
+          if (token === '') continue;
+          if (isFirst) {
+            expandedWords.push({ chord: unit.chord, lyric: token });
+            isFirst = false;
+          } else {
+            expandedWords.push({ chord: '', lyric: token });
+          }
+        }
+        // If the lyric was empty but there was a chord, preserve the chord unit
+        if (isFirst && unit.chord) {
+          expandedWords.push({ chord: unit.chord, lyric: '' });
+        }
       }
 
-      return { isDirective: false, words: wordsArray, isChorus, isSectionMarker };
+      const finalWords = expandedWords.length > 0 ? expandedWords : [{ chord: '', lyric: ' ' }];
+
+      return { isDirective: false, words: finalWords, isChorus, isSectionMarker: false };
     });
   }, [rawChordPro]);
 
@@ -235,15 +257,15 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: '4px',
   },
   chorusLine: {
-    fontStyle: 'italic',
-    paddingLeft: '20px',
-    color: 'var(--color-chord)',
+    fontWeight: 'bold',
   },
   chordWordGroup: {
     display: 'inline-flex',
     flexDirection: 'column',
     verticalAlign: 'bottom',
-    whiteSpace: 'pre-wrap',
+    // 'pre' prevents the browser from wrapping INSIDE this unit.
+    // The browser can only wrap BETWEEN independent word units.
+    whiteSpace: 'pre',
     marginRight: '2px',
   },
   chordSlot: {

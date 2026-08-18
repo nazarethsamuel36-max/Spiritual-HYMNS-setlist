@@ -1,4 +1,5 @@
 import { db, type SetlistItem, type Version } from '../db/Database';
+import { generateUUID } from '../utils/uuid';
 
 export class SetlistService {
   private static normalizeItems(songs: SetlistItem[]): SetlistItem[] {
@@ -29,11 +30,11 @@ export class SetlistService {
   }
 
   static async createSetlist(title: string): Promise<string> {
-    const id = crypto.randomUUID();
+    const id = generateUUID();
     const now = Date.now();
     await db.setlists.add({
       id,
-      uid: crypto.randomUUID(),
+      uid: generateUUID(),
       title,
       createdAt: now,
       updatedAt: now,
@@ -64,7 +65,7 @@ export class SetlistService {
     
     const newItems: SetlistItem[] = [
       ...setlist.songs,
-      { id: crypto.randomUUID(), type: 'song', songId, refType, transpose, order: maxOrder + 1 }
+      { id: generateUUID(), type: 'song', songId, refType, transpose, order: maxOrder + 1 }
     ];
 
     await table.update(setlistId, {
@@ -82,7 +83,7 @@ export class SetlistService {
     const newItems: SetlistItem[] = [
       ...setlist.songs,
       {
-        id: crypto.randomUUID(),
+        id: generateUUID(),
         type: 'song',
         songId: version.sourceSongId,
         refType: version.owner === 'shared' ? 'shared' : 'personal',
@@ -106,7 +107,7 @@ export class SetlistService {
 
     const newItems: SetlistItem[] = [
       ...setlist.songs,
-      { id: crypto.randomUUID(), type: 'marker', label, order: maxOrder + 1 }
+      { id: generateUUID(), type: 'marker', label, order: maxOrder + 1 }
     ];
 
     await table.update(setlistId, {
@@ -123,7 +124,7 @@ export class SetlistService {
 
     const newItems: SetlistItem[] = [
       ...setlist.songs,
-      { id: crypto.randomUUID(), type: 'note', label, content, order: maxOrder + 1 }
+      { id: generateUUID(), type: 'note', label, content, order: maxOrder + 1 }
     ];
 
     await table.update(setlistId, {

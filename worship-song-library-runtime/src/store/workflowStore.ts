@@ -76,7 +76,7 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   mobileActivePane: 'sidebar',
   showSettings: false,
   showContextRail: false,
-  libraryLanguage: 'All',
+  libraryLanguage: 'English',
   isAdminAuthenticated: false,
   fontSize: getSavedFontSize(),
   librarySearchActive: false,
@@ -110,9 +110,15 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
     mobileActivePane: 'reader',
   }),
 
-  closeReader: () => set({
-    reader: { type: 'empty' },
-    mobileActivePane: 'sidebar',
+  closeReader: () => set((state) => {
+    // If the reader was opened from a setlist, return to that setlist detail view
+    const r = state.reader;
+    const setlistId = r.type !== 'empty' ? r.setlistId : undefined;
+    return {
+      reader: { type: 'empty' },
+      mobileActivePane: 'sidebar',
+      sidebar: setlistId ? { panel: 'setlist-detail', setlistId } : state.sidebar,
+    };
   }),
 
   openSetlist: (id) => set({

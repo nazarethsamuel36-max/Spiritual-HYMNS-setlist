@@ -17,6 +17,10 @@ import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db, ensureUid } from './db/Database';
+import { generateUUID } from './utils/uuid';
+import { batchDownloadSongs, wakeUpSync } from './services/DataService';
+import { ShareService } from './services/ShareService';
+
 
 function App() {
   // ==========================================
@@ -25,9 +29,13 @@ function App() {
   const isMobile = useIsMobile();
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
   const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
+  const [syncToast, setSyncToast] = useState<'idle' | 'syncing' | 'done'>('idle');
+  const [isSyncingHeader, setIsSyncingHeader] = useState(false);
+  const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
+  const readerMode = useWorkflowStore((s) => s.readerMode);
   const mobileActivePane = useWorkflowStore((s) => s.mobileActivePane);
   const showSettings = useWorkflowStore((s) => s.showSettings);
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
@@ -52,15 +60,6 @@ function App() {
   // 2. ALL USE_EFFECTS MUST BE HERE
   // ==========================================
   
-
-  useEffect(() => {
-    const savedTheme = window.localStorage.getItem('app-theme-mode');
-    if (savedTheme === 'dark') {
-      document.body.dataset.theme = 'dark';
-    } else {
-      document.body.dataset.theme = 'light';
-    }
-  }, []);
 
   useEffect(() => {
     const initializeApp = async () => {
@@ -121,7 +120,7 @@ function App() {
               else await db.sharedSongs.put(s);
             }
           }
-          const targetSetlistId = setlistObj.id || crypto.randomUUID();
+          const targetSetlistId = setlistObj.id || generateUUID();
           await db.sharedSetlists.put({ id: targetSetlistId, uid: ensureUid({ uid: setlistObj.uid }), title: setlistObj.title, createdAt: setlistObj.createdAt || Date.now(), updatedAt: Date.now(), songs: setlistObj.songs || [] });
           alert(`Imported shared setlist: "${setlistObj.title}"`);
           setSidebarPanel('shared');
@@ -139,9 +138,50 @@ function App() {
           window.history.replaceState({}, '', window.location.pathname);
         }
       }
+
+      // ── Remote Short Link Share Import ──
       const path = window.location.pathname;
-      const songMatch = path.match(/^\/song\/(\d+)$/);
-      if (songMatch) openSong(parseInt(songMatch[1], 10), 'library');
+      const shareMatch = path.match(/^\/s\/([a-zA-Z0-9\-_]{12})$/);
+      if (shareMatch) {
+        const shareId = shareMatch[1];
+        setShareImportLoading('Retrieving shared content...');
+        try {
+          const shareData = await ShareService.fetchShare(shareId);
+          if (!shareData) {
+            throw new Error('This share link does not exist or has expired.');
+          }
+          const { remappedId } = await ShareService.importShare(shareData.type, shareData.payload);
+          
+          if (shareData.type === 'song') {
+            alert('Successfully imported shared song!');
+            setSidebarPanel('shared');
+            openSong(remappedId as number, 'shared');
+          } else if (shareData.type === 'version') {
+            alert('Successfully imported version!');
+            const version = await db.versions.get(remappedId as string);
+            if (version) {
+              setSidebarPanel('library');
+              openSong(version.sourceSongId, 'library', 0, undefined, undefined, version.uid);
+            }
+          } else if (shareData.type === 'setlist') {
+            alert('Successfully imported shared setlist!');
+            setSidebarPanel('shared');
+            openSetlist(remappedId as string);
+          }
+        } catch (e: any) {
+          if (e.name === 'ShareError') {
+            alert(`${e.title}\n\n${e.message}`);
+          } else {
+            alert(`Couldn't import shared content\n\n${e.message || 'An unexpected error occurred.'}`);
+          }
+        } finally {
+          setShareImportLoading(null);
+          window.history.replaceState({}, '', '/');
+        }
+      } else {
+        const songMatch = path.match(/^\/song\/(\d+)$/);
+        if (songMatch) openSong(parseInt(songMatch[1], 10), 'library');
+      }
     };
     init();
   }, []);
@@ -158,16 +198,50 @@ function App() {
     }
   }, [reader, sidebar]);
 
+  const readerPushedRef = useRef(false);
+  const editPushedRef = useRef(false);
+  const setlistDetailPushedRef = useRef(false);
+
   useEffect(() => {
     if (!isMobile) return;
-    if (mobileActivePane === 'reader') history.pushState({ pane: 'reader' }, '');
+    const inSetlistDetail = sidebar.panel === 'setlist-detail';
+    if (inSetlistDetail && !setlistDetailPushedRef.current) {
+      setlistDetailPushedRef.current = true;
+      history.pushState({ setlistDetail: true }, '');
+    }
+    if (!inSetlistDetail) setlistDetailPushedRef.current = false;
+    const enteringReader = mobileActivePane === 'reader';
+    if (enteringReader && !readerPushedRef.current) {
+      readerPushedRef.current = true;
+      history.pushState({ pane: 'reader' }, '');
+    }
+    if (readerMode === 'edit' && !editPushedRef.current) {
+      editPushedRef.current = true;
+      history.pushState({ edit: true }, '');
+    }
+    if (mobileActivePane !== 'reader') readerPushedRef.current = false;
+    if (readerMode !== 'edit') editPushedRef.current = false;
     const handlePopState = () => {
       const store = useWorkflowStore.getState();
-      if (store.mobileActivePane === 'reader') closeReader();
+      if (store.librarySearchActive) {
+        closeLibrarySearch();
+        return;
+      }
+      if (store.readerMode === 'edit') {
+        store.setReaderMode(store.lastReaderMode);
+        return;
+      }
+      if (store.mobileActivePane === 'reader') {
+        closeReader();
+        return;
+      }
+      if (store.sidebar.panel === 'setlist-detail') {
+        store.closeSetlist();
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [isMobile, mobileActivePane]);
+  }, [isMobile, mobileActivePane, readerMode, sidebar.panel, closeReader, closeLibrarySearch]);
 
   // Focus the search input as soon as the search header state opens
   useEffect(() => {
@@ -175,6 +249,18 @@ function App() {
       requestAnimationFrame(() => searchInputRef.current?.focus());
     }
   }, [librarySearchActive]);
+
+  // Mobile: opening search pushes a history entry so device back exits search
+  useEffect(() => {
+    if (!isMobile) return;
+    if (librarySearchActive) history.pushState({ search: true }, '');
+    const handlePopState = () => {
+      const store = useWorkflowStore.getState();
+      if (store.librarySearchActive) closeLibrarySearch();
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [isMobile, librarySearchActive, closeLibrarySearch]);
 
   // Close the search header with the Escape key (desktop)
   useEffect(() => {
@@ -248,9 +334,38 @@ function App() {
     window.history.replaceState({ adminMode: false }, '', '/');
   };
 
+  const handleHeaderSync = async () => {
+    if (isSyncingHeader) return;
+    setIsSyncingHeader(true);
+    setSyncToast('syncing');
+    try {
+      // Run sync (patches changed songs) + download (pulls new songs)
+      await wakeUpSync('manual');
+      await batchDownloadSongs(() => {});
+    } catch (e) {
+      console.error('Header sync failed:', e);
+    } finally {
+      setIsSyncingHeader(false);
+      setSyncToast('done');
+      setTimeout(() => setSyncToast('idle'), 2000);
+    }
+  };
+
   // ==========================================
   // 4. EARLY RETURN (MUST BE AT THE VERY BOTTOM)
   // ==========================================
+  if (shareImportLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
+        <div className="text-center">
+          <div className="w-12 h-12 border-4 border-[var(--color-brand)] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <h1 className="text-xl font-black text-slate-800">BBF Song book</h1>
+          <p className="text-slate-400 mt-2">{shareImportLoading}</p>
+        </div>
+      </div>
+    );
+  }
+
   if (showGatekeeper === null) {
     return (
       <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
@@ -272,7 +387,30 @@ function App() {
       ) : (
         <div className="app-shell">
           {showSidebar && (
-            <div className="sidebar-pane">
+          <div className="sidebar-pane">
+              {/* Sync toast — fixed so it floats above header */}
+              {syncToast !== 'idle' && (
+                <div
+                  className="fixed top-4 left-1/2 -translate-x-1/2 z-[500] flex items-center gap-2 px-4 py-2 rounded-full shadow-xl text-sm font-semibold text-white pointer-events-none animate-in fade-in slide-in-from-top-2 duration-200"
+                  style={{ background: syncToast === 'done' ? '#10b981' : '#1e293b' }}
+                >
+                  {syncToast === 'syncing' ? (
+                    <>
+                      <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                      Refreshing...
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Up to date
+                    </>
+                  )}
+                </div>
+              )}
               <header className="sidebar-header">
                 {librarySearchActive && isSongsTab ? (
                   /* Search header state — occupies the entire header */
@@ -313,12 +451,27 @@ function App() {
                   )}
                   <div className="flex items-center gap-1">
                     {isSongsTab && (
-                      <button onClick={() => setLibrarySearchActive(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Search songs" title="Search songs">
+                      <button onClick={() => setLibrarySearchActive(true)} className="p-2 text-blue-600 hover:text-blue-700 rounded-full transition-all" aria-label="Search songs" title="Search songs">
                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                       </button>
                     )}
+                    {/* Sync/Refresh button */}
+                    <button
+                      onClick={handleHeaderSync}
+                      disabled={isSyncingHeader}
+                      className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all disabled:opacity-50"
+                      aria-label="Sync library"
+                      title="Sync library"
+                    >
+                      <svg
+                        className={`w-5 h-5 ${isSyncingHeader ? 'animate-spin' : ''}`}
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                    </button>
                     <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings" title="Settings">
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
@@ -417,7 +570,7 @@ function App() {
 
           {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
           <InstallPrompt />
-          {!(isMobile && reader.type === 'song') && <ConnectionStatus />}
+          {reader.type !== 'song' && <ConnectionStatus />}
         </div>
       )}
     </>

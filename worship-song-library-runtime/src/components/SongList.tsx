@@ -9,37 +9,9 @@ import { LanguageTabs } from './shared/LanguageTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { VisibilitySwitch } from './shared/VisibilitySwitch';
-import { formatSongTitle, normalizeImportedText } from '../utils/SongFormatter';
+import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
 
 const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
-
-const LANGUAGE_ALIASES: Record<string, string[]> = {
-  english: ['english', 'eng', 'en'],
-  hindi: ['hindi', 'hin', 'hi'],
-  marathi: ['marathi', 'mar', 'mr'],
-  konkani: ['konkani', 'kok', 'kn'],
-};
-
-function toCanonicalLanguage(value: string | undefined): string | undefined {
-  const normalized = normalizeImportedText(value).toLowerCase();
-  if (!normalized) return undefined;
-
-  for (const [canonical, aliases] of Object.entries(LANGUAGE_ALIASES)) {
-    if (aliases.includes(normalized)) {
-      return canonical;
-    }
-  }
-
-  return normalized;
-}
-
-function songMatchesLanguageFilter(songLanguage: string | undefined, selectedLanguage: string): boolean {
-  const filter = toCanonicalLanguage(selectedLanguage);
-  if (!filter || filter === 'all') return true;
-
-  const songLang = toCanonicalLanguage(songLanguage);
-  return songLang === filter;
-}
 
 export function SongList() {
   const renderCount = useRef(0);
@@ -356,7 +328,7 @@ export function SongList() {
                 onChange={setSortBy}
               />
             </div>
-            <div className="pt-3 pb-2 px-2 text-xs text-slate-400">Showing {songs.length} songs</div>
+
             {songs.map((song: SongIndex) => (
               <SongRow
                 key={song.id}
@@ -393,7 +365,12 @@ function getVisibleSongs(
   if (sortBy === 'title') {
     visibleSongs.sort(compareSongsByTitle);
   } else {
-    visibleSongs.sort((a, b) => a.songNumber - b.songNumber);
+    visibleSongs.sort((a, b) => {
+      if (a.songNumber !== b.songNumber) {
+        return a.songNumber - b.songNumber;
+      }
+      return getLanguagePriority(a.language) - getLanguagePriority(b.language);
+    });
   }
 
   return visibleSongs;

@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { SongDetail, Version } from '../../db/Database';
 import { supabase } from '../../lib/supabaseClient';
 import { db } from '../../db/Database';
@@ -41,12 +42,10 @@ function calculateSemitoneShift(source: string, target: string): number {
 // Shift chords in text by semitones (ONLY affects chords, NOT metadata)
 function shiftChordsInText(text: string, shift: number): string {
   if (shift === 0) return text;
-  // Regex to find chords in brackets like [Cmaj7] or [F#m]
   return text.replace(/\[([A-G][b#]?)([^\]]*)\]/g, (match, root, suffix) => {
     const normalizedRoot = flatToSharp[root] || root;
     const currentIndex = NOTES.indexOf(normalizedRoot);
     if (currentIndex === -1) return match;
-
     const newIndex = (currentIndex + shift) % 12;
     return `[${NOTES[newIndex]}${suffix}]`;
   });
@@ -59,11 +58,7 @@ interface EditorModeProps {
   versionId?: string | null;
   version?: Version | null;
   isAdmin?: boolean;
-}
-
-interface PreviewChordLineProps {
-  line: string;
-  changedSegments?: Array<{ text: string; isChanged: boolean }>;
+  onExit?: () => void;
 }
 
 const KEY_OPTIONS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
@@ -86,13 +81,11 @@ function CustomKeyPicker({
 
   useEffect(() => {
     if (!isOpen) return;
-
     const handlePointerDown = (event: MouseEvent) => {
       if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
-
     document.addEventListener('mousedown', handlePointerDown);
     return () => document.removeEventListener('mousedown', handlePointerDown);
   }, [isOpen]);
@@ -104,7 +97,7 @@ function CustomKeyPicker({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer flex-shrink-0 transition-colors hover:bg-[#F1F5F9] ${isOpen ? 'ring-2 ring-blue-500' : ''} ${buttonClassName}`}
+        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-[#0F172A] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-[#F1F5F9] ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
       >
         {value}
       </button>
@@ -139,57 +132,6 @@ function CustomKeyPicker({
   );
 }
 
-function PreviewChordLine({ line, changedSegments }: PreviewChordLineProps) {
-  const parts = line.split(/(\[[^\]]+\])/);
-  const segments: Array<{ chord: string | null; text: string }> = [];
-  let currentChord: string | null = null;
-
-  for (const part of parts) {
-    if (!part) continue;
-    if (part.startsWith('[') && part.endsWith(']')) {
-      currentChord = part.slice(1, -1);
-      continue;
-    }
-
-    if (part.trim()) {
-      segments.push({ chord: currentChord, text: part });
-      currentChord = null;
-    }
-  }
-
-  // If we have changed segments, use those for highlighting; otherwise use regular segments
-  if (changedSegments && changedSegments.length > 0) {
-    return (
-      <div className="whitespace-pre-wrap text-sm leading-6 text-slate-700">
-        {changedSegments.map((segment, index) => (
-          <span
-            key={`${segment.text}-${index}`}
-            className={segment.isChanged ? 'bg-yellow-200 text-black rounded px-0.5' : ''}
-          >
-            {segment.text}
-          </span>
-        ))}
-      </div>
-    );
-  }
-
-  // Original rendering (no highlighting)
-  return (
-    <div className="whitespace-pre-wrap text-sm leading-6 text-slate-700">
-      {segments.map((segment, index) => (
-        <span key={`${segment.text}-${index}`} className="inline-block mr-1 align-top">
-          {segment.chord && (
-            <span className="block text-[10px] font-bold uppercase tracking-wide text-blue-600">
-              {segment.chord}
-            </span>
-          )}
-          <span>{segment.text}</span>
-        </span>
-      ))}
-    </div>
-  );
-}
-
 export function EditorMode({ song, songKey = 'D', source = 'library', versionId = null, version = null, isAdmin = false }: EditorModeProps) {
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
@@ -197,16 +139,35 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const [songNumber, setSongNumber] = useState(song.songNumber || 0);
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
-  const [correctorTargetKey, setCorrectorTargetKey] = useState<string>('C');
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-  const [paletteVisible, setPaletteVisible] = useState(false);
-  const [isCorrectorExpanded, setIsCorrectorExpanded] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [showVersionDialog, setShowVersionDialog] = useState(false);
   const [showSaveOptionDialog, setShowSaveOptionDialog] = useState(false);
   const [versionNameInput, setVersionNameInput] = useState('');
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success'>('idle');
+  const [containerStyle, setContainerStyle] = useState<React.CSSProperties>({
+    height: '100%',
+  });
+
+  // Track visual viewport dimensions to keep the editor viewport flush with the virtual keyboard
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const handler = () => {
+      setContainerStyle({
+        height: `${vv.height}px`,
+        transform: `translateY(${vv.offsetTop}px)`,
+      });
+    };
+    vv.addEventListener('resize', handler);
+    vv.addEventListener('scroll', handler);
+    handler();
+    return () => {
+      vv.removeEventListener('resize', handler);
+      vv.removeEventListener('scroll', handler);
+    };
+  }, []);
 
   // Undo/Redo history
   const [history, setHistory] = useState<HistoryState[]>([]);
@@ -225,8 +186,8 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     const newHistory = history.slice(0, historyIndex + 1);
     newHistory.push({ chords: newChords, cursorPosition });
 
-    // Limit history to 50 states
-    if (newHistory.length > 50) {
+    // Allow practically unlimited history (up to 1000 states) during the edit session
+    if (newHistory.length > 1000) {
       newHistory.shift();
     }
 
@@ -237,7 +198,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const handleCancelVersionDialog = () => {
     setShowVersionDialog(false);
     setVersionNameInput('');
-   };
+  };
 
   const handleUndo = () => {
     if (historyIndex > 0) {
@@ -255,77 +216,68 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'z') {
-      e.preventDefault();
-      handleUndo();
-    }
-  };
-
-  const insertMarker = (marker: string) => {
-    const textarea = textareaRef.current;
-    if (!textarea) return;
-
-    const start = textarea.selectionStart;
-    const end = textarea.selectionEnd;
-    const text = chordsText;
-
-    const before = text.substring(0, start);
-    const after = text.substring(end);
-
-    let markerToInsert = marker;
-    if (start > 0 && !before.endsWith('\n')) {
-      markerToInsert = '\n' + markerToInsert;
-    }
-    if (!after.startsWith('\n')) {
-      markerToInsert = markerToInsert + '\n';
-    }
-
-    const newText = before + markerToInsert + after;
-    setChordsText(newText);
-    addToHistory(newText);
-    if (!isAdmin) setHasUnsavedChanges(true);
-    debouncedAutoSave({ chords: newText });
-
-    setTimeout(() => {
-      textarea.focus();
-      const newCursorPos = start + markerToInsert.length;
-      textarea.setSelectionRange(newCursorPos, newCursorPos);
-    }, 50);
-  };
-
-  const handleTextareaDoubleClick = (e: React.MouseEvent<HTMLTextAreaElement>) => {
-    const textarea = e.currentTarget;
-    const pos = textarea.selectionStart;
-    const text = textarea.value;
-    
-    // Matches any bracketed ChordPro tag, e.g. [G], [Am7/E], [Verse], [Chorus]
-    const regex = /\[([^\]]+)\]/g;
-    let match;
-    while ((match = regex.exec(text)) !== null) {
-      const start = match.index;
-      const end = regex.lastIndex;
-      if (pos >= start && pos <= end) {
-        const newText = text.substring(0, start) + text.substring(end);
-        
-        setChordsText(newText);
-        if (!isAdmin) setHasUnsavedChanges(true);
-        debouncedAutoSave({ chords: newText });
-        
-        e.preventDefault();
-        break;
+  const handleRedo = () => {
+    if (historyIndex < history.length - 1) {
+      isUndoRef.current = true;
+      const nextState = history[historyIndex + 1];
+      setChordsText(nextState.chords);
+      setHistoryIndex(historyIndex + 1);
+      debouncedAutoSave({ chords: nextState.chords });
+      if (!isAdmin) setHasUnsavedChanges(true);
+      if (nextState.cursorPosition !== undefined && textareaRef.current) {
+        setTimeout(() => {
+          textareaRef.current?.setSelectionRange(nextState.cursorPosition ?? null, nextState.cursorPosition ?? null);
+        }, 0);
       }
     }
   };
 
+  const insertMarker = (marker: string) => {
+    const ta = textareaRef.current;
+    if (!ta) return;
+    const start = ta.selectionStart;
+    const end = ta.selectionEnd;
+    const before = chordsText.slice(0, start);
+    const after = chordsText.slice(end);
+    const newLine = before.endsWith('\n') || before === '' ? '' : '\n';
+    const newText = `${before}${newLine}${marker}\n${after}`;
+    setChordsText(newText);
+    addToHistory(newText);
+    if (!isAdmin) setHasUnsavedChanges(true);
+    debouncedAutoSave({ chords: newText });
+    setTimeout(() => {
+      const pos = start + newLine.length + marker.length + 1;
+      ta.setSelectionRange(pos, pos);
+      ta.focus();
+    }, 0);
+  };
+
+  const handleTextareaDoubleClick = () => {
+    // no-op for now
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.ctrlKey && e.key === 'z') {
+      e.preventDefault();
+      handleUndo();
+    } else if ((e.ctrlKey && e.key === 'y') || (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'z')) {
+      e.preventDefault();
+      handleRedo();
+    }
+  };
+
+  // Sync form when song changes
   useEffect(() => {
-    console.log('📝 Loading new song into editor:', song.id);
     setTitle(version?.name ?? song.title ?? '');
     setLanguage(song.language || 'English');
     setKeyValue(song.originalKey || songKey || 'C');
     setCurrentTextKey(song.originalKey || songKey || 'C');
     setSongNumber(song.songNumber || 0);
     setChordsText(song.chords || '');
+    
+    // Initialize undo history with the original chords
+    setHistory([{ chords: song.chords || '' }]);
+    setHistoryIndex(0);
 
     if (saveTimeoutRef.current) {
       console.log('🛑 Cancelling pending auto-save for song:', song.id);
@@ -333,6 +285,14 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       saveTimeoutRef.current = null;
     }
   }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey, version?.name]);
+
+  // Auto-grow textarea to fit content
+  useEffect(() => {
+    const ta = textareaRef.current;
+    if (!ta) return;
+    ta.style.height = 'auto';
+    ta.style.height = `${ta.scrollHeight}px`;
+  }, [chordsText]);
 
   useEffect(() => {
     return () => {
@@ -361,7 +321,6 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
         e.returnValue = '';
       }
     };
-
     window.addEventListener('beforeunload', handleBeforeUnload);
     return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, [hasUnsavedChanges, isAdmin]);
@@ -369,20 +328,16 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
     try {
       if (isAdmin) {
-        // Admin: auto-save to Supabase or personal/library as before
         console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
 
         if (versionId) {
-          const versionUpdates: Record<string, unknown> = {
-            updatedAt: Date.now(),
-          };
+          const versionUpdates: Record<string, unknown> = { updatedAt: Date.now() };
           if (updates.title !== undefined) versionUpdates.name = updates.title;
           if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
           if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
           await VersionService.updateVersion(versionId, versionUpdates as never);
           console.log(`✅ Auto-save successful for version ${versionId}`);
         } else if (source === 'personal') {
-          // Save to IndexedDB for personal songs
           const existingSong = await db.personalSongs.get(currentSongId);
           if (existingSong) {
             await db.personalSongs.update(currentSongId, {
@@ -393,13 +348,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             console.log(`✅ Auto-save successful for personal song ${currentSongId}`);
           }
         } else {
-          // Save to Supabase for library songs
           const { error } = await supabase
             .from('songs')
-            .update({
-              ...updates,
-              updated_at: new Date().toISOString()
-            })
+            .update({ ...updates, updated_at: new Date().toISOString() })
             .eq('id', currentSongId);
 
           if (error) {
@@ -407,11 +358,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             alert('Failed to save changes: ' + error.message);
             return;
           }
-
           console.log(`✅ Auto-save successful for song ${currentSongId}`);
         }
       } else {
-        // User: manual save only, no auto-save
         console.log(`User manual save requested for song ${currentSongId}`);
       }
     } catch (err) {
@@ -421,13 +370,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   };
 
   const debouncedAutoSave = (updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
-    // Only auto-save for admins
     if (!isAdmin) return;
-    
     if (saveTimeoutRef.current) {
       clearTimeout(saveTimeoutRef.current);
     }
-
     saveTimeoutRef.current = setTimeout(() => {
       void performSave(song.id, updates);
       saveTimeoutRef.current = null;
@@ -436,15 +382,12 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
 
   const handleManualSave = async () => {
     if (!versionId) {
-      // Need to create a new version with name
       setShowVersionDialog(true);
       setVersionNameInput(version?.name || song.title || '');
       return;
     }
-
-    // Editing an existing version — ask overwrite vs duplicate
     setShowSaveOptionDialog(true);
-   };
+  };
 
   const handleOverwriteVersion = async () => {
     setShowSaveOptionDialog(false);
@@ -464,10 +407,8 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       alert('Please enter a version name');
       return;
     }
-
     setShowVersionDialog(false);
     setSaveStatus('saving');
-
     try {
       await VersionService.createVersion({
         sourceSongId: song.id,
@@ -479,64 +420,54 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           originalKey: keyValue,
         },
       });
-
       setVersionNameInput('');
       setHasUnsavedChanges(false);
       setSaveStatus('success');
-
-      // Reset success message after 3 seconds
-      setTimeout(() => {
-        setSaveStatus('idle');
-      }, 3000);
+      setTimeout(() => { setSaveStatus('idle'); }, 3000);
     } catch (error) {
       console.error('Error saving version:', error);
       alert('Failed to save version. Please try again.');
       setSaveStatus('idle');
     }
-   };
+  };
 
   const saveVersion = async (uid: string, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
     setSaveStatus('saving');
     try {
-      const versionUpdates: Record<string, unknown> = {
-        updatedAt: Date.now(),
-      };
+      const versionUpdates: Record<string, unknown> = { updatedAt: Date.now() };
       if (updates.title !== undefined) versionUpdates.name = updates.title;
       if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
       if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
-      
+
       await VersionService.updateVersion(uid, versionUpdates as never);
       setSaveStatus('success');
       setHasUnsavedChanges(false);
-      
-      // Show success message for admin
-      const event = new CustomEvent('show-toast', { 
-        detail: { message: 'Song added', type: 'success' } 
+
+      const event = new CustomEvent('show-toast', {
+        detail: { message: 'Song saved', type: 'success' }
       });
       window.dispatchEvent(event);
-      
-      setTimeout(() => {
-        setSaveStatus('idle');
-      }, 2000);
+
+      setTimeout(() => { setSaveStatus('idle'); }, 2000);
     } catch (err) {
       console.error('Save failed:', err);
       alert('Failed to save version');
     }
-   };
-
-   const previewLines = useMemo(() => chordsText.split('\n').filter((line) => line.length > 0), [chordsText]);
-
-  // FEATURE 2: Calculate diffs for each line
-  const previewLinesWithDiffs = useMemo(() => previewLines.map((line) => ({ line, changedSegments: undefined })), [previewLines]);
+  };
 
   console.log('🔍 EditorMode RENDERING');
 
   return (
-    <div className="w-full flex flex-col bg-[var(--color-surface)] min-h-0">
-      <div className="w-full px-4 md:px-6 py-4 space-y-4 bg-slate-50">
-        <div className="w-full rounded-xl border border-slate-200 bg-[var(--color-surface)] p-4 shadow-sm">
-          {/* ROW 1: Title & Key */}
-          <div className="flex gap-3 h-12 mb-4">
+    <div
+      style={containerStyle}
+      className="flex-1 flex flex-col min-h-0 bg-[var(--color-reader-surface)]"
+    >
+      {/* ── EDITOR HEADER: locked at top ── */}
+      <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-[#E2E8F0] px-4 md:px-8 py-2 w-full">
+        <div className="max-w-4xl mx-auto w-full flex flex-col gap-2">
+
+          {/* Row 1: Title + Key + Save */}
+          <div className="flex items-center gap-2">
             <input
               value={title}
               onChange={(e) => {
@@ -544,271 +475,169 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ title: e.target.value });
               }}
-              className="flex-1 h-full px-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] text-base font-medium text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 overflow-hidden text-ellipsis whitespace-nowrap"
+              className="flex-1 h-9 min-w-0 px-0 bg-transparent text-lg font-bold text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:outline-none border-b border-transparent focus:border-slate-300 overflow-hidden text-ellipsis whitespace-nowrap transition-colors"
               placeholder={versionId ? 'Version Name...' : 'Song Title...'}
             />
 
             <CustomKeyPicker
               value={keyValue}
               label="Set Root Key"
+              buttonClassName="h-9 w-10"
               onChange={(newKey) => {
                 const shift = calculateSemitoneShift(currentTextKey, newKey);
                 const corrected = shiftChordsInText(chordsText, shift);
                 setKeyValue(newKey);
                 setChordsText(corrected);
+                addToHistory(corrected);
                 setCurrentTextKey(newKey);
                 if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
-              />
-            </div>
+            />
 
-            {/* Save Button + Status for non-admin users */}
             {!isAdmin && (
-              <>
-                {/* Mobile: inline save button below title */}
-                <div className="block md:hidden">
-                  {saveStatus === 'success' ? (
-                    <div className="flex items-center justify-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium mx-auto">
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Song added
-                    </div>
-                  ) : (
-                    <button
-                      onClick={handleManualSave}
-                      disabled={!hasUnsavedChanges}
-                      className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
-                    >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
-                      </svg>
-                      Save Version
-                    </button>
-                  )}
+              saveStatus === 'success' ? (
+                <div className="flex-shrink-0 flex items-center gap-1 bg-green-500 text-white px-3 py-1.5 rounded-full text-xs font-bold">
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Saved
                 </div>
-
-                {/* Desktop: fixed save button at bottom-right */}
-                <div className="hidden md:block">
-                  {saveStatus === 'success' ? (
-                    <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Song added
-                    </div>
-                  ) : (
-                    <button
-                      onClick={handleManualSave}
-                      disabled={!hasUnsavedChanges}
-                      className="fixed bottom-4 right-4 z-50 flex items-center gap-2 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium transition-colors"
-                    >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-5 0V5a2 2 0 114 0v2m-4 0h4" />
-                      </svg>
-                      Save Version
-                    </button>
-                  )}
-                </div>
-              </>
+              ) : (
+                <button
+                  onClick={handleManualSave}
+                  disabled={!hasUnsavedChanges}
+                  className="flex-shrink-0 flex items-center gap-1 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-3 py-1.5 rounded-full text-xs font-bold transition-colors"
+                >
+                  Save
+                </button>
+              )
             )}
-
-          {/* ROW 2: Key Corrector - Desktop Inline Layout */}
-          <div className="hidden md:flex items-center gap-3 mb-4 bg-slate-50 p-3 rounded-lg border border-slate-200">
-            <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">Key Corrector:</span>
-
-            <div className="flex items-center gap-2">
-              <label className="text-[10px] font-bold text-slate-400 uppercase">Current</label>
-              <CustomKeyPicker
-                value={currentTextKey}
-                label="Current Key"
-                onChange={(newKey) => setCurrentTextKey(newKey)}
-              />
-            </div>
-
-            <span className="text-slate-400 font-bold">→</span>
-
-            <div className="flex items-center gap-2">
-              <label className="text-[10px] font-bold text-slate-400 uppercase">Shift To</label>
-              <CustomKeyPicker
-                value={correctorTargetKey}
-                label="Transpose To"
-                onChange={(newTarget) => {
-                  const shift = calculateSemitoneShift(currentTextKey, newTarget);
-                  const corrected = shiftChordsInText(chordsText, shift);
-                  setCorrectorTargetKey(newTarget);
-                  setChordsText(corrected);
-                  setCurrentTextKey(newTarget);
-                  if (!isAdmin) setHasUnsavedChanges(true);
-                  debouncedAutoSave({ chords: corrected });
-                }}
-              />
-            </div>
-
-            <div className="ml-auto flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => insertMarker('[Verse]')}
-                className="h-12 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors flex-shrink-0"
-              >
-                + [Verse]
-              </button>
-              <button
-                type="button"
-                onClick={() => insertMarker('[Chorus]')}
-                className="h-12 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors flex-shrink-0"
-              >
-                + [Chorus]
-              </button>
-            </div>
           </div>
 
-          {/* ROW 2: Key Corrector - Mobile Collapsed Layout */}
-          <div className="md:hidden mb-4">
+          {/* Row 2: Markers + divider + Undo/Redo — permanent, always visible */}
+          <div className="flex items-center gap-2">
+            {/* Verse / Chorus markers */}
             <button
-              onClick={() => setIsCorrectorExpanded(!isCorrectorExpanded)}
-              className="w-full flex items-center justify-between px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-xs font-bold text-slate-600 uppercase tracking-wide hover:bg-slate-100 transition-colors"
+              type="button"
+              onClick={() => { insertMarker('[Verse]'); }}
+              className="h-9 px-3 rounded-lg border border-slate-300 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
             >
-              <span>Correcting Tools</span>
-              <svg
-                className={`w-4 h-4 text-slate-400 transition-transform ${isCorrectorExpanded ? 'rotate-180' : ''}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
+              + Verse
+            </button>
+            <button
+              type="button"
+              onClick={() => { insertMarker('[Chorus]'); }}
+              className="h-9 px-3 rounded-lg border border-slate-300 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
+            >
+              + Chorus
             </button>
 
-            {isCorrectorExpanded && (
-              <div className="mt-2 bg-slate-50 border border-slate-200 rounded-lg p-3 space-y-3">
-                {/* Row 1: Key Corrector */}
-                <div className="flex items-center gap-2">
-                  <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Current</label>
+            {/* Divider */}
+            <div className="w-px h-6 bg-slate-200 self-center flex-shrink-0" />
+
+            {/* Undo */}
+            <button
+              onClick={handleUndo}
+              disabled={historyIndex <= 0}
+              className="h-9 px-3 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center justify-center flex-shrink-0"
+              title="Undo (Ctrl+Z)"
+            >
+              ↶ Undo
+            </button>
+
+            {/* Redo */}
+            <button
+              onClick={handleRedo}
+              disabled={historyIndex >= history.length - 1}
+              className="h-9 px-3 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center justify-center flex-shrink-0"
+              title="Redo (Ctrl+Y)"
+            >
+              ↷ Redo
+            </button>
+          </div>
+
+          {/* Key Changer toolbox — commented out, not needed
+          {toolboxOpen && (
+            <div className="flex flex-col gap-4 pt-3 pb-2 border-t border-slate-100">
+              <div className="flex flex-col w-full">
+                <span className="text-[12px] font-semibold uppercase tracking-[0.03em] text-slate-400 mb-2">Key Changer</span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-sm font-semibold text-slate-600">Current key set to</span>
                   <CustomKeyPicker
                     value={currentTextKey}
                     label="Current Key"
-                    buttonClassName="h-10 w-full min-w-[60px]"
+                    buttonClassName="h-9 w-10 text-sm font-bold rounded-lg"
                     onChange={(newKey) => setCurrentTextKey(newKey)}
                   />
-                  <span className="text-slate-400 font-bold">→</span>
-                  <label className="text-[10px] font-bold text-slate-400 uppercase whitespace-nowrap">Shift To</label>
+                  <span className="text-sm font-semibold text-slate-600">shift to</span>
                   <CustomKeyPicker
                     value={correctorTargetKey}
                     label="Transpose To"
-                    buttonClassName="h-10 w-full min-w-[60px]"
+                    buttonClassName="h-9 w-10 text-sm font-bold rounded-lg"
                     onChange={(newTarget) => {
                       const shift = calculateSemitoneShift(currentTextKey, newTarget);
                       const corrected = shiftChordsInText(chordsText, shift);
                       setCorrectorTargetKey(newTarget);
                       setChordsText(corrected);
+                      addToHistory(corrected);
                       setCurrentTextKey(newTarget);
                       if (!isAdmin) setHasUnsavedChanges(true);
                       debouncedAutoSave({ chords: corrected });
                     }}
                   />
                 </div>
-
-                {/* Row 2: Verse/Chorus Buttons */}
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => insertMarker('[Verse]')}
-                    className="flex-1 h-10 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors"
-                  >
-                    + [Verse]
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => insertMarker('[Chorus]')}
-                    className="flex-1 h-10 px-3 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-300 transition-colors"
-                  >
-                    + [Chorus]
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* ROW 3: Big Editor Boxes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="flex flex-col relative">
-              <div className="flex items-center justify-between mb-2">
-                <label className="text-xs font-bold text-slate-500 uppercase tracking-wide">Raw Database Chords</label>
-                <button
-                  onClick={handleUndo}
-                  disabled={historyIndex <= 0}
-                  className="px-2 py-1 text-[10px] font-semibold rounded border border-slate-300 bg-[var(--color-surface)] text-slate-600 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                  title="Undo (Ctrl+Z)"
-                >
-                  ↶ Undo
-                </button>
-              </div>
-              <textarea
-                ref={textareaRef}
-                value={chordsText}
-                onFocus={() => setPaletteVisible(true)}
-                onBlur={() => setTimeout(() => setPaletteVisible(false), 150)}
-                onDoubleClick={handleTextareaDoubleClick}
-                onKeyDown={handleKeyDown}
-                onChange={(e) => {
-                  setChordsText(e.target.value);
-                  addToHistory(e.target.value);
-                  if (!isAdmin) setHasUnsavedChanges(true);
-                  debouncedAutoSave({ chords: e.target.value });
-                }}
-                rows={25}
-                spellCheck={false}
-                className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-[var(--color-surface)] font-mono text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
-                placeholder="Paste lyrics and chords here..."
-              />
-            </div>
-
-            <div className="flex flex-col">
-              <label className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">Live User Preview</label>
-              <div className="w-full flex-1 min-h-[500px] p-4 rounded-lg border border-slate-300 bg-slate-50 overflow-y-auto">
-                {previewLines.length === 0 ? (
-                  <div className="text-center text-sm text-slate-400 py-10">
-                    Preview will appear here as you type.
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    {previewLinesWithDiffs.map((item, index) => (
-                      <PreviewChordLine
-                        key={`${item.line}-${index}`}
-                        line={item.line}
-                        changedSegments={item.changedSegments}
-                      />
-                    ))}
-                  </div>
-                )}
               </div>
             </div>
+          )}
+          */}
+
+        </div>
+      </div>
+
+      {/* ── BODY: independently scrollable textarea ── */}
+      <div className="flex-1 overflow-y-auto overscroll-contain">
+        <div className="w-full px-4 md:px-8 pt-5 pb-40">
+          <div className="max-w-4xl mx-auto w-full">
+            <textarea
+              ref={textareaRef}
+              value={chordsText}
+              onDoubleClick={handleTextareaDoubleClick}
+              onKeyDown={handleKeyDown}
+              onChange={(e) => {
+                setChordsText(e.target.value);
+                addToHistory(e.target.value);
+                if (!isAdmin) setHasUnsavedChanges(true);
+                debouncedAutoSave({ chords: e.target.value });
+              }}
+              rows={1}
+              spellCheck={false}
+              className="w-full resize-none overflow-hidden bg-transparent text-[20px] leading-8 text-slate-800 focus:outline-none"
+              placeholder="Paste lyrics and chords here..."
+            />
           </div>
         </div>
       </div>
 
-       <ChordPalette
-         textareaRef={textareaRef}
-         value={chordsText}
-         onChange={(newVal) => {
-           setChordsText(newVal);
-           if (!isAdmin) setHasUnsavedChanges(true);
-           debouncedAutoSave({ chords: newVal });
-         }}
-         visible={paletteVisible}
-         songKey={keyValue}
-       />
+      {/* ── FOOTER: ChordPalette fixed at viewport bottom ── */}
+      <ChordPalette
+        textareaRef={textareaRef}
+        value={chordsText}
+        onChange={(newVal) => {
+          setChordsText(newVal);
+          if (!isAdmin) setHasUnsavedChanges(true);
+          debouncedAutoSave({ chords: newVal });
+        }}
+        visible={true}
+        songKey={keyValue}
+      />
 
       {/* Save Option Dialog */}
-      {showSaveOptionDialog && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-xl p-6 w-80 mx-4">
+      {showSaveOptionDialog && createPortal(
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
+          <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
             <h3 className="text-lg font-bold text-slate-800 mb-1">Save Version</h3>
-            <p className="text-sm text-slate-500 mb-4">
-              How would you like to save this version?
-            </p>
+            <p className="text-sm text-slate-500 mb-4">How would you like to save this version?</p>
             <div className="space-y-2">
               <button
                 onClick={() => void handleOverwriteVersion()}
@@ -830,30 +659,25 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Version Naming Dialog */}
-      {showVersionDialog && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-xl p-6 w-80 mx-4">
+      {showVersionDialog && createPortal(
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
+          <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
             <h3 className="text-lg font-bold text-slate-800 mb-4">Name Your Version</h3>
             <input
               type="text"
               value={versionNameInput}
               onChange={(e) => setVersionNameInput(e.target.value)}
               placeholder="Enter version name..."
-              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 mb-4"
               autoFocus
               onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  e.preventDefault();
-                  void handleSaveWithName();
-                }
-                if (e.key === 'Escape') {
-                  e.preventDefault();
-                  handleCancelVersionDialog();
-                }
+                if (e.key === 'Enter') { e.preventDefault(); void handleSaveWithName(); }
+                if (e.key === 'Escape') { e.preventDefault(); handleCancelVersionDialog(); }
               }}
             />
             <div className="flex gap-2 justify-end">
@@ -865,13 +689,14 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               </button>
               <button
                 onClick={handleSaveWithName}
-                className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                className="px-4 py-2 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
               >
                 Save
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

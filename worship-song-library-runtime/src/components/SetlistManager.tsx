@@ -7,6 +7,7 @@ import { useWorkflowStore } from '../store/workflowStore';
 export function SetlistManager() {
   const [newTitle, setNewTitle] = useState('');
   const [isCreating, setIsCreating] = useState(false);
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const openSetlist = useWorkflowStore((s) => s.openSetlist);
 
   const setlists = useLiveQuery(() =>
@@ -20,6 +21,11 @@ export function SetlistManager() {
     setNewTitle('');
     setIsCreating(false);
     openSetlist(id);
+  };
+
+  const handleDelete = async (id: string) => {
+    await SetlistService.deleteSetlist(id);
+    setConfirmDeleteId(null);
   };
 
   return (
@@ -74,25 +80,66 @@ export function SetlistManager() {
           </div>
         ) : (
           setlists.map(list => (
-            <button
+            <div
               key={list.id}
               onClick={() => openSetlist(list.id)}
-              className="group flex flex-col py-3.5 px-3 hover:bg-slate-100 transition-none text-left border-b border-slate-100 w-full last:border-b-0"
+              className="relative group flex flex-col py-3.5 px-3 hover:bg-slate-100 transition-none text-left border-b border-slate-100 w-full last:border-b-0 cursor-pointer"
             >
               <div className="flex justify-between items-center w-full mb-1">
                 <span className="font-semibold text-base text-slate-800 group-hover:text-slate-900 transition-colors leading-tight truncate pr-4">
                   {list.title}
                 </span>
-                <span className="text-xs font-bold text-slate-500 bg-slate-200/50 px-2 py-0.5 rounded-full flex-shrink-0">
-                  {list.songs.length}
-                </span>
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <span className="text-xs font-bold text-slate-500 bg-slate-200/50 px-2 py-0.5 rounded-full">
+                    {list.songs.length}
+                  </span>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setConfirmDeleteId(confirmDeleteId === list.id ? null : list.id);
+                    }}
+                    className="w-7 h-7 flex items-center justify-center rounded-full text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all"
+                    title="Delete Setlist"
+                    aria-label="Delete Setlist"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div className="flex items-center justify-between">
                 <div className="text-[11px] text-slate-400 font-medium">
                   Updated {new Date(list.updatedAt).toLocaleDateString()}
                 </div>
               </div>
-            </button>
+
+              {confirmDeleteId === list.id && (
+                <div
+                  onClick={(e) => e.stopPropagation()}
+                  className="absolute right-2 top-2 z-30 w-60 bg-[var(--color-surface)] border border-red-100 rounded-xl shadow-xl p-3 animate-in fade-in zoom-in-95 duration-150"
+                >
+                  <div className="text-sm font-bold text-slate-800 mb-1">Delete setlist?</div>
+                  <div className="text-xs text-slate-500 mb-3 leading-relaxed">
+                    "{list.title}" and all {list.songs.length} song{list.songs.length === 1 ? '' : 's'} in it will be permanently removed. This cannot be undone.
+                  </div>
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => setConfirmDeleteId(null)}
+                      className="flex-1 px-3 py-1.5 rounded-lg border border-slate-200 text-slate-600 text-xs font-bold hover:bg-slate-50 transition-colors"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      onClick={() => handleDelete(list.id)}
+                      className="flex-1 px-3 py-1.5 rounded-lg bg-red-500 text-white text-xs font-bold hover:bg-red-600 transition-colors"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           ))
         )}
       </div>

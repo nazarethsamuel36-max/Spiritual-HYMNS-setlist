@@ -218,12 +218,13 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#E2E8F0]/60 bg-[var(--color-surface)] sticky top-0 z-30">
         <button
           onClick={onClose}
-          className="flex items-center space-x-1 text-slate-500 hover:text-slate-800 font-bold uppercase text-[10px] tracking-widest transition-all active:scale-95"
+          className="flex items-center justify-center w-9 h-9 shrink-0 rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all active:scale-95"
+          aria-label="Back"
+          title="Back"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-          <span>Back</span>
         </button>
 
         <div className="flex space-x-2">
@@ -249,7 +250,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
           ) : (
             <button
               onClick={() => setIsEditing(true)}
-              className="bg-slate-100 text-slate-700 hover:bg-slate-200 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider transition-all"
+              className="bg-slate-900 text-white hover:bg-slate-800 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider transition-all shadow-sm"
             >
               Edit
             </button>
@@ -316,10 +317,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
               </div>
             )}
 
-            <div className="text-slate-400 text-xs font-medium italic mt-8 select-none">
-              ← Swipe screen to navigate setlist →
             </div>
-          </div>
         ) : (
           /* Note View */
           <div className="w-full bg-[var(--color-surface)] border border-slate-200/80 rounded-2xl shadow-xl p-8 space-y-6">
@@ -348,23 +346,19 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
             ) : (
               <>
                 <div className="flex items-center space-x-3 border-b border-slate-100 pb-4">
-                  <div className="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center">
+                  <div className="w-10 h-10 bg-slate-200 text-slate-600 rounded-xl flex items-center justify-center">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[10px] font-black text-amber-600 uppercase tracking-widest">Service Note</div>
+                    <div className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Service Note</div>
                     <h1 className="text-xl font-bold text-slate-800">{item.label}</h1>
                   </div>
                 </div>
 
                 <div className="text-slate-600 text-lg leading-relaxed whitespace-pre-wrap min-h-24">
                   {item.content || <span className="italic text-slate-400 text-sm">No instructions entered. Click Edit to write.</span>}
-                </div>
-
-                <div className="text-slate-400 text-[10px] text-center font-bold tracking-widest pt-4 border-t border-slate-100 uppercase select-none">
-                  ← Swipe screen to navigate setlist →
                 </div>
               </>
             )}

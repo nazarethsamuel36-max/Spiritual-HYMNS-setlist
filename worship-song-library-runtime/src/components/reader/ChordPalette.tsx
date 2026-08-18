@@ -57,35 +57,19 @@ export interface ChordPaletteProps {
   onChange: (newValue: string) => void;
   visible: boolean;
   songKey?: string; // Passed from parent to compute Key category chords
+  hasTopBorder?: boolean;
 }
 
-export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 'C' }: ChordPaletteProps) {
+export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 'C', hasTopBorder = true }: ChordPaletteProps) {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [detectedRange, setDetectedRange] = useState<{ start: number; end: number } | null>(null);
-  const [bottomOffset, setBottomOffset] = useState(0);
   const savedPos = useRef<number>(0);
+  const focusedRef = useRef(false);
 
   // Slash chord builder local state
   const [slashRoot, setSlashRoot] = useState('G');
   const [slashQuality, setSlashQuality] = useState('');
   const [slashBass, setSlashBass] = useState('B');
-
-  // ── Keyboard height calculation ────────────────────────────────────────────
-  useEffect(() => {
-    const vv = window.visualViewport;
-    if (!vv) return;
-    const handler = () => {
-      const keyboardHeight = window.innerHeight - vv.height - vv.offsetTop;
-      setBottomOffset(Math.max(0, keyboardHeight));
-    };
-    vv.addEventListener('resize', handler);
-    vv.addEventListener('scroll', handler);
-    handler();
-    return () => {
-      vv.removeEventListener('resize', handler);
-      vv.removeEventListener('scroll', handler);
-    };
-  }, []);
 
   // ── Selection/cursor monitoring ────────────────────────────────────────────
   const handleCursorMove = useCallback(() => {
@@ -102,22 +86,42 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
     }
   }, [value, textareaRef]);
 
+  // Guard: only insert chords if the textarea is actually focused.
+  // Without this, tapping a palette button inserts at position 0 and
+  // auto-saves garbage to the database.
+  const handleFocusIn = useCallback(() => { focusedRef.current = true; }, []);
+  const handleFocusOut = useCallback(() => {
+    focusedRef.current = false;
+    setDetectedRange(null);
+  }, []);
+
   useEffect(() => {
     const ta = textareaRef.current;
     if (!ta) return;
+    ta.addEventListener('focus', handleFocusIn);
+    ta.addEventListener('blur', handleFocusOut);
     ta.addEventListener('click', handleCursorMove);
     ta.addEventListener('keyup', handleCursorMove);
     ta.addEventListener('selectionchange', handleCursorMove);
     return () => {
+      ta.removeEventListener('focus', handleFocusIn);
+      ta.removeEventListener('blur', handleFocusOut);
       ta.removeEventListener('click', handleCursorMove);
       ta.removeEventListener('keyup', handleCursorMove);
       ta.removeEventListener('selectionchange', handleCursorMove);
     };
-  }, [handleCursorMove, textareaRef]);
+  }, [handleFocusIn, handleFocusOut, handleCursorMove, textareaRef]);
 
   // ── Core Insertion Logic ────────────────────────────────────────────────────
   const handleInsert = (chord: string) => {
     const ta = textareaRef.current;
+    if (!ta) return;
+    // Never insert when the textarea isn't focused — otherwise we corrupt the
+    // song by writing at position 0.
+    if (!focusedRef.current) {
+      ta.focus();
+      return;
+    }
     const pos = savedPos.current;
 
     let newText: string;
@@ -183,48 +187,61 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
   return (
     <div
       style={{
-        position: 'fixed',
-        left: 0,
-        right: 0,
-        bottom: bottomOffset,
+        flexShrink: 0,
+        background: 'var(--color-reader-surface, #fff)',
+        borderTop: hasTopBorder ? '1px solid #E2E8F0' : 'none',
         zIndex: 200,
+        width: '100%',
+        maxWidth: '100%',
+        overflow: 'hidden',
       }}
     >
       <div style={{
-        background: '#0f172a',
-        boxShadow: '0 -8px 30px rgba(0,0,0,0.5)',
         display: 'flex',
         flexDirection: 'column',
         userSelect: 'none',
+        width: '100%',
+        maxWidth: '100%',
       }}>
+        {/* Chords Group Label */}
+        <div style={{
+          padding: '8px 12px 0 12px',
+        }}>
+          <span className="text-[12px] font-semibold uppercase tracking-[0.03em] text-slate-400">Chords</span>
+        </div>
 
         {/* ── Layer 2: Secondary Toolbar (Chords List or Slash Builder) ──────── */}
         {activeCategory && (
           <div style={{
-            background: '#1e293b',
-            borderBottom: '1px solid #334155',
+            background: 'var(--color-reader-surface, #fff)',
+            borderBottom: '1px solid #E2E8F0',
             padding: '8px 12px',
             display: 'flex',
-            gap: '8px',
             overflowX: 'auto',
+            flexWrap: 'nowrap',
+            gap: '8px',
             alignItems: 'center',
             minHeight: '48px',
-          }}>
+            scrollbarWidth: 'none',
+          }}
+          className="hide-scrollbar"
+          >
             {activeCategory === 'Slash' ? (
               // Dedicated Slash Chord Builder
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', width: '100%' }}>
+              <div style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'center', gap: '8px', width: 'auto' }}>
                 {/* Base Note */}
                 <select
                   value={slashRoot}
                   onChange={(e) => setSlashRoot(e.target.value)}
                   style={{
-                    background: '#0f172a',
-                    color: '#fff',
-                    border: '1px solid #475569',
-                    borderRadius: '6px',
+                    background: 'var(--color-surface, #fff)',
+                    color: 'var(--color-text, #0f172a)',
+                    border: '1px solid #cbd5e1',
+                    borderRadius: '8px',
                     padding: '4px 8px',
                     fontSize: '13px',
                     fontWeight: 700,
+                    height: '36px',
                   }}
                 >
                   {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
@@ -235,12 +252,13 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                   value={slashQuality}
                   onChange={(e) => setSlashQuality(e.target.value)}
                   style={{
-                    background: '#0f172a',
-                    color: '#fff',
-                    border: '1px solid #475569',
-                    borderRadius: '6px',
+                    background: 'var(--color-surface, #fff)',
+                    color: 'var(--color-text, #0f172a)',
+                    border: '1px solid #cbd5e1',
+                    borderRadius: '8px',
                     padding: '4px 8px',
                     fontSize: '13px',
+                    height: '36px',
                   }}
                 >
                   <option value="">Major</option>
@@ -251,20 +269,21 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                   <option value="sus4">sus4</option>
                 </select>
 
-                <span style={{ color: '#94a3b8', fontWeight: 800 }}>/</span>
+                <span style={{ color: '#64748b', fontWeight: 800 }}>/</span>
 
                 {/* Bass Note */}
                 <select
                   value={slashBass}
                   onChange={(e) => setSlashBass(e.target.value)}
                   style={{
-                    background: '#0f172a',
-                    color: '#fff',
-                    border: '1px solid #475569',
-                    borderRadius: '6px',
+                    background: 'var(--color-surface, #fff)',
+                    color: 'var(--color-text, #0f172a)',
+                    border: '1px solid #cbd5e1',
+                    borderRadius: '8px',
                     padding: '4px 8px',
                     fontSize: '13px',
                     fontWeight: 700,
+                    height: '36px',
                   }}
                 >
                   {ROOTS.map(r => <option key={r} value={r}>{r}</option>)}
@@ -277,14 +296,19 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                   }}
                   style={{
                     marginLeft: 'auto',
-                    background: '#3b82f6',
+                    background: '#0f172a',
                     color: '#fff',
                     border: 'none',
-                    borderRadius: '6px',
+                    borderRadius: '8px',
                     padding: '6px 14px',
                     fontWeight: 700,
                     fontSize: '13px',
                     cursor: 'pointer',
+                    height: '36px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   Insert {slashRoot}{slashQuality}/{slashBass}
@@ -300,16 +324,20 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                     handleInsert(chord);
                   }}
                   style={{
-                    flex: '0 0 auto',
                     background: '#0f172a',
-                    color: '#60a5fa',
-                    border: '1px solid #3b82f6',
-                    borderRadius: '6px',
+                    color: '#fff',
+                    border: '1px solid #0f172a',
+                    borderRadius: '8px',
                     padding: '6px 14px',
                     fontWeight: 800,
                     fontSize: '14px',
                     fontFamily: 'monospace',
                     cursor: 'pointer',
+                    height: '36px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   {chord}
@@ -321,14 +349,17 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
 
         {/* ── Layer 1: Primary Toolbar (Categories) ─────────────────────────── */}
         <div style={{
-          background: '#0f172a',
-          borderTop: '1px solid #334155',
+          background: 'var(--color-reader-surface, #fff)',
           padding: '8px 12px',
           display: 'flex',
-          gap: '8px',
           overflowX: 'auto',
+          flexWrap: 'nowrap',
+          gap: '8px',
           minHeight: '44px',
-        }}>
+          scrollbarWidth: 'none',
+        }}
+        className="hide-scrollbar"
+        >
           {CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -338,14 +369,19 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
               }}
               style={{
                 flex: '0 0 auto',
-                background: activeCategory === cat ? '#3b82f6' : '#1e293b',
-                color: activeCategory === cat ? '#fff' : '#94a3b8',
+                background: activeCategory === cat ? '#0f172a' : '#f1f5f9',
+                color: activeCategory === cat ? '#fff' : '#475569',
                 border: 'none',
-                borderRadius: '6px',
+                borderRadius: '8px',
                 padding: '6px 14px',
                 fontWeight: 700,
                 fontSize: '13px',
                 cursor: 'pointer',
+                height: '36px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                whiteSpace: 'nowrap',
               }}
             >
               {cat}

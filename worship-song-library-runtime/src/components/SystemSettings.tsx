@@ -32,6 +32,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   const [showDataBackup, setShowDataBackup] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
   const [importReport, setImportReport] = useState<string | null>(null);
+  const [showImportSuccess, setShowImportSuccess] = useState(false);
 
   useEffect(() => {
     const refreshOfflineState = async () => {
@@ -41,6 +42,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     void refreshOfflineState();
   }, [stats?.songCount]);
 
+  // Light/dark mode
   useEffect(() => {
     document.body.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
@@ -128,6 +130,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
         `· Setlists: ${fmt(report.personalSetlists)}\n` +
         `· Shared setlists: ${fmt(report.sharedSetlists)}`
       );
+      setShowImportSuccess(true);
     } catch (err) {
       console.error('❌ Import failed:', err);
       setImportReport(`Import failed: ${err instanceof Error ? err.message : 'invalid backup file'}`);
@@ -323,21 +326,21 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
               )}
             </div>
 
-            {/* Appearance */}
+            {/* Appearance — Light / Dark */}
             <div className="bg-[var(--color-surface)] p-4 rounded-2xl border border-[#E2E8F0]">
-              <div className="mb-2 text-sm font-bold text-slate-700">Appearance</div>
+              <div className="mb-1 text-sm font-bold text-slate-700">Appearance</div>
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setTheme('light')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1] hover:bg-slate-50'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1]'}`}
                 >
                   Light
                 </button>
                 <button
                   type="button"
                   onClick={() => setTheme('dark')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1] hover:bg-slate-50'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1]'}`}
                 >
                   Dark
                 </button>
@@ -350,6 +353,33 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
           <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Runtime Version 1.2.0 • Build Stable</p>
         </div>
       </div>
+
+      {/* Success Modal Popup for Data Import */}
+      {showImportSuccess && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[250] flex items-center justify-center p-4 pointer-events-auto">
+          <div className="bg-[var(--color-surface)] rounded-3xl p-6 max-w-sm w-full shadow-2xl text-center animate-in fade-in zoom-in-95 duration-200 flex flex-col items-center">
+            <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4 flex-shrink-0">
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-bold text-slate-800 mb-2">Imported Successfully!</h3>
+            <div className="text-xs text-slate-600 text-left bg-slate-50 rounded-xl p-4 border border-slate-100 font-medium whitespace-pre-line leading-relaxed mb-5 w-full">
+              {importReport}
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                setShowImportSuccess(false);
+                setImportReport(null);
+              }}
+              className="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all"
+            >
+              Done
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

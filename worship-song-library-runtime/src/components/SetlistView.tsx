@@ -5,6 +5,8 @@ import { SetlistService } from '../services/SetlistService';
 import { SearchEngine } from '../utils/SearchEngine';
 import { formatSongTitle } from '../utils/SongFormatter';
 import { useWorkflowStore } from '../store/workflowStore';
+import { ShareService } from '../services/ShareService';
+
 import {
   DndContext,
   closestCenter,
@@ -24,6 +26,26 @@ import { CSS } from '@dnd-kit/utilities';
 
 interface SetlistViewProps {
   setlistId: string;
+}
+
+// Clipboard API is only available on HTTPS; fall back to a hidden textarea + execCommand for plain HTTP.
+async function copyTextToClipboard(text: string): Promise<void> {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
+  try {
+    document.execCommand('copy');
+  } finally {
+    document.body.removeChild(textarea);
+  }
 }
 
 // ─── Song Row ────────────────────────────────────────────────────────────────
@@ -50,19 +72,18 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center py-3 px-2 border-b border-slate-100 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0"
+      {...attributes}
+      {...listeners}
+      className="group flex items-center py-3 px-2 border-b border-slate-100 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
     >
-      {/* Drag Handle */}
-      <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-slate-200 text-slate-600 rounded-lg text-sm font-bold mr-2">
-          {item.order + 1}
-        </div>
-        <div className="text-slate-300 group-hover:text-slate-500 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
-          </svg>
-        </div>
+      {/* Grip */}
+      <div className="text-slate-400 group-hover:text-slate-600 transition-colors mr-3 shrink-0">
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
+        </svg>
       </div>
+      {/* Song Number */}
+      <span className="w-6 shrink-0 text-sm font-bold text-slate-600 mr-3 text-center">{item.detail?.songNumber ?? ''}</span>
 
       <button
         onClick={() => openSong(item.songId, 'setlist', item.transpose, setlistId, item.id, item.versionId, item.refType)}
@@ -72,13 +93,11 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
           <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
             {formatSongTitle(item.versionDetail?.name || item.detail?.title || 'Unknown Song')}
             {item.versionDetail && (
-              <span className="ml-2 inline-block align-middle text-[9px] font-black px-1.5 py-0.5 bg-amber-100 text-amber-700 rounded-full">VERSION</span>
+              <span className="ml-2 inline-block align-middle text-[9px] font-black px-1.5 py-0.5 bg-slate-200 text-slate-600 rounded-full">VERSION</span>
             )}
           </div>
           <div className="flex items-center space-x-1.5 mt-0.5">
             <span className="text-xs font-medium text-slate-500">{item.detail?.language}</span>
-            <span className="text-slate-300 text-[10px]">•</span>
-            <span className="text-xs font-medium text-slate-500">{item.detail?.songNumber}</span>
           </div>
         </div>
 
@@ -126,18 +145,15 @@ function SortableMarkerItem({ item, setlistId }: { item: any, setlistId: string 
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center py-2.5 px-2 border-b border-[var(--color-brand-soft)] bg-[var(--color-brand-soft)]/60 hover:bg-[var(--color-brand-soft)] transition-none last:border-b-0"
+      {...attributes}
+      {...listeners}
+      className="group flex items-center py-2.5 px-2 border-b border-[var(--color-brand-soft)] bg-[var(--color-brand-soft)]/60 hover:bg-[var(--color-brand-soft)] transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
     >
-      {/* Drag Handle */}
-      <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-[var(--color-brand)]/30 text-[var(--color-brand)] rounded-lg text-sm font-bold mr-2">
-          {item.order + 1}
-        </div>
-        <div className="text-[var(--color-brand)]/40 group-hover:text-[var(--color-brand)]/70 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
-          </svg>
-        </div>
+      {/* Grip */}
+      <div className="text-[var(--color-brand)]/40 group-hover:text-[var(--color-brand)]/70 transition-colors mr-3 shrink-0">
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
+        </svg>
       </div>
 
       <button
@@ -192,31 +208,28 @@ function SortableNoteItem({ item, setlistId }: { item: any, setlistId: string })
     <div
       ref={setNodeRef}
       style={style}
-      className="group flex items-center py-2.5 px-2 border-b border-amber-100 bg-amber-50/60 hover:bg-amber-50 transition-none last:border-b-0"
+      {...attributes}
+      {...listeners}
+      className="group flex items-center py-2.5 px-2 border-b border-slate-200 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
     >
-      {/* Drag Handle */}
-      <div {...attributes} {...listeners} className="mr-3 flex items-center cursor-grab active:cursor-grabbing touch-none">
-        <div className="w-8 h-8 flex items-center justify-center bg-[var(--color-surface)] border border-amber-200 text-amber-600 rounded-lg text-sm font-bold mr-2">
-          {item.order + 1}
-        </div>
-        <div className="text-amber-300 group-hover:text-amber-500 transition-colors md:opacity-0 group-hover:opacity-100 px-1">
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
-          </svg>
-        </div>
+      {/* Grip */}
+      <div className="text-slate-300 group-hover:text-slate-500 transition-colors mr-3 shrink-0">
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
+        </svg>
       </div>
 
       <button
         onClick={() => openNote(item.label || 'Note', item.content || '', setlistId, item.id)}
         className="flex-1 text-left min-w-0 flex items-center space-x-3"
       >
-        <div className="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center shrink-0">
-          <svg className="w-3.5 h-3.5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="w-6 h-6 rounded-full bg-slate-200 flex items-center justify-center shrink-0">
+          <svg className="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
         </div>
         <div className="min-w-0">
-          <div className="text-[9px] font-black text-amber-600 uppercase tracking-[0.15em]">Note</div>
+          <div className="text-[9px] font-black text-slate-500 uppercase tracking-[0.15em]">Note</div>
           <div className="font-bold text-slate-700 text-sm truncate">{item.label || 'Untitled Note'}</div>
         </div>
       </button>
@@ -250,7 +263,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
   }, [setlistId]);
 
   const sensors = useSensors(
-    useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   );
 
@@ -325,55 +338,43 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
   if (!setlist) return null;
 
   const itemCount = enrichedItems?.length ?? 0;
-  const songCount = enrichedItems?.filter(i => !i.type || i.type === 'song').length ?? 0;
 
   return (
     <div className="w-full animate-in fade-in slide-in-from-right-4 duration-300">
 
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-        <div>
-           <button
-              onClick={closeSetlist}
-              className="flex items-center space-x-2 text-[var(--color-text-muted)] hover:text-[var(--color-brand)] font-black uppercase text-[9px] tracking-widest mb-3 transition-all"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-              <span>Setlists</span>
-            </button>
-            <h2 className="text-2xl md:text-4xl font-black text-slate-900 tracking-tighter uppercase italic">{setlist.title}</h2>
+      <div className="flex items-center justify-between gap-3 mb-6">
+        <div className="flex items-center gap-3 min-w-0">
+          <button
+            onClick={closeSetlist}
+            className="flex items-center justify-center w-9 h-9 shrink-0 rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all active:scale-95"
+            aria-label="Back to Setlists"
+            title="Back to Setlists"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tighter uppercase truncate">{setlist.title}</h2>
         </div>
 
         <button
           onClick={async () => {
             try {
-              const sharedSongsList = [];
-              for (const s of setlist.songs) {
-                if (s.songId) {
-                  const sharedSong = await db.sharedSongs.get(s.songId);
-                  if (sharedSong) sharedSongsList.push(sharedSong);
-                }
-              }
-              const payload = {
-                id: setlist.id,
-                title: setlist.title,
-                createdAt: setlist.createdAt,
-                songs: setlist.songs,
-                sharedSongsList
-              };
-              const json = JSON.stringify(payload);
-              const b64 = btoa(unescape(encodeURIComponent(json)));
-              const url = `${window.location.origin}${window.location.pathname}?import_setlist=${b64}`;
-              navigator.clipboard.writeText(url);
+              const shareId = await ShareService.shareSetlist(setlist);
+              const url = `${window.location.origin}/s/${shareId}`;
+              await copyTextToClipboard(url);
               alert('Shareable setlist link copied to clipboard!');
-            } catch (e) {
+            } catch (e: any) {
               console.error(e);
-              alert('Failed to share setlist.');
+              alert('Failed to share setlist: ' + (e.message || e));
             }
           }}
-          className="flex items-center space-x-2 bg-slate-900 text-[var(--color-on-inverse)] px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 transition-all shadow-md active:scale-95"
+          className="flex items-center justify-center w-9 h-9 shrink-0 rounded-xl bg-slate-900 text-[var(--color-on-inverse)] hover:bg-slate-800 transition-all shadow-md active:scale-95"
+          title="Share Setlist"
+          aria-label="Share Setlist"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
-          <span>Share Setlist</span>
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
         </button>
       </div>
 
@@ -437,14 +438,16 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               onKeyDown={(e) => { if (e.key === 'Enter') handleAddMarker(); if (e.key === 'Escape') setAddingMarker(false); }}
             />
             <button onClick={handleAddMarker} className="bg-[var(--color-brand)] text-[var(--color-on-inverse)] px-3 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider">Add</button>
-            <button onClick={() => setAddingMarker(false)} className="px-3 py-2 rounded-lg border border-slate-200 text-[10px] font-black uppercase tracking-wider text-slate-500">Cancel</button>
+            <button onClick={() => setAddingMarker(false)} className="w-9 h-9 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Cancel" title="Cancel">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
           </div>
         )}
 
         {!addingNote && !addingMarker && (
           <button
             onClick={() => { setAddingNote(true); setAddingMarker(false); }}
-            className="flex items-center space-x-1.5 px-3 py-2 rounded-lg border border-amber-200 bg-amber-50 hover:bg-amber-100 text-amber-700 text-[10px] font-black uppercase tracking-widest transition-all"
+            className="flex items-center space-x-1.5 px-3 py-2 rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-[10px] font-black uppercase tracking-widest transition-all"
           >
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
@@ -459,23 +462,21 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
               autoFocus
               type="text"
               placeholder="Note title (e.g. Announcements)..."
-              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-amber-300 bg-[var(--color-surface)] focus:outline-none focus:border-amber-500 text-sm font-medium"
+              className="flex-1 pl-3 pr-2 py-2 rounded-lg border-2 border-slate-200 bg-[var(--color-surface)] focus:outline-none focus:border-slate-400 text-sm font-medium"
               value={noteLabel}
               onChange={(e) => setNoteLabel(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter') handleAddNote(); if (e.key === 'Escape') setAddingNote(false); }}
             />
-            <button onClick={handleAddNote} className="bg-amber-600 text-white px-3 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider">Add</button>
-            <button onClick={() => setAddingNote(false)} className="px-3 py-2 rounded-lg border border-slate-200 text-[10px] font-black uppercase tracking-wider text-slate-500">Cancel</button>
+            <button onClick={handleAddNote} className="bg-slate-800 text-white px-3 py-2 rounded-lg text-[10px] font-black uppercase tracking-wider">Add</button>
+            <button onClick={() => setAddingNote(false)} className="w-9 h-9 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Cancel" title="Cancel">
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
           </div>
         )}
       </div>
 
       {/* Sortable Sequence */}
       <div className="space-y-1">
-        <div className="text-[10px] font-black text-slate-300 uppercase tracking-[0.2em] mb-4 px-1 flex justify-between">
-          <span>Setlist Sequence</span>
-          <span>{songCount} Song{songCount !== 1 ? 's' : ''} · {itemCount} Item{itemCount !== 1 ? 's' : ''}</span>
-        </div>
 
         {itemCount === 0 ? (
           <div className="p-16 text-center text-slate-300 bg-slate-50 rounded-2xl border border-slate-100 italic text-sm">
