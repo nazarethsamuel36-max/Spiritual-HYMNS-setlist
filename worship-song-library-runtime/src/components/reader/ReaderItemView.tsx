@@ -215,7 +215,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
   return (
     <div className="flex flex-col h-full bg-[var(--color-reader-surface)] text-slate-800">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#E2E8F0]/60 bg-[var(--color-surface)] sticky top-0 z-30">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200/60 bg-[var(--color-surface)] sticky top-0 z-30">
         <button
           onClick={onClose}
           className="flex items-center justify-center w-9 h-9 shrink-0 rounded-full text-slate-500 hover:text-slate-900 hover:bg-slate-200 transition-all active:scale-95"

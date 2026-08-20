@@ -21,7 +21,7 @@ interface ReaderHeaderProps {
   onTransposeDown: () => void;
   onModeChange: (mode: ReaderMode) => void;
   onRefreshSong?: () => void;
-  isPersonal?: boolean;
+  source: 'library' | 'setlist' | 'shared' | 'personal';
 }
 
 export function ReaderHeader({
@@ -32,7 +32,7 @@ export function ReaderHeader({
   onTransposeDown,
   onModeChange,
   onRefreshSong,
-  isPersonal,
+  source,
 }: ReaderHeaderProps) {
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
@@ -96,11 +96,16 @@ export function ReaderHeader({
         shareId = await ShareService.shareVersion(activeVersion);
         url = `${window.location.origin}/s/${shareId}`;
         alert(`Sharing custom version: "${activeVersion.name}"`);
-      } else if (isPersonal) {
+      } else if (source === 'personal') {
         // Sharing a personal song
         shareId = await ShareService.sharePersonalSong(song);
         url = `${window.location.origin}/s/${shareId}`;
         alert(`Sharing personal song: "${song.title}"`);
+      } else if (source === 'shared') {
+        // Sharing a shared song (re-share)
+        shareId = await ShareService.sharePersonalSong(song);
+        url = `${window.location.origin}/s/${shareId}`;
+        alert(`Sharing shared song: "${song.title}"`);
       } else {
         // Sharing standard official library song (can be resolved directly via path)
         url = `${window.location.origin}/song/${song.id}`;
@@ -118,7 +123,7 @@ export function ReaderHeader({
 
   return (
     <>
-    <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-[#E2E8F0] z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
+    <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-slate-200 z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
       {/* ── DESKTOP HEADER (hidden on mobile unless admin) ── */}
       <div className={`max-w-4xl mx-auto w-full flex-col gap-1.5 ${isAdminAuthenticated ? 'flex' : 'hidden md:flex'}`}>
 
@@ -133,7 +138,7 @@ export function ReaderHeader({
                 <span className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider truncate">
                   {song.artist || 'Unknown Artist'}
                 </span>
-                {!isPersonal && (
+                {source !== 'personal' && source !== 'shared' && (
                   <>
                     <span className="text-slate-300 text-[9px]">•</span>
                     <span className="text-slate-500 text-[10px] font-medium">{song.songNumber}</span>
@@ -398,7 +403,7 @@ export function ReaderHeader({
       {!isAdminAuthenticated && (
         <div className="md:hidden max-w-4xl mx-auto w-full flex items-center justify-between gap-2 h-10">
           <div className="flex items-center space-x-2 min-w-0 flex-1">
-            {!isPersonal && (
+            {source !== 'personal' && source !== 'shared' && (
               <span className="text-slate-500 text-[30px] font-semibold flex-shrink-0 leading-none">{song.songNumber}</span>
             )}
             <h1 className="text-[26px] font-normal text-slate-900 tracking-tight leading-normal truncate min-w-0">

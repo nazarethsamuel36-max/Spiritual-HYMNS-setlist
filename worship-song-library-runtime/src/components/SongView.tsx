@@ -351,7 +351,7 @@ export function SongView() {
           song={song} transpose={displayTranspose} mode={readerMode}
           onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
           onRefreshSong={refreshSong}
-          isPersonal={source === 'personal'}
+          source={source}
         />
       )}
 
@@ -431,7 +431,7 @@ export function SongView() {
 
       {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll */}
       {!isAdminAuthenticated && readerMode !== 'edit' && (
-        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-[#E2E8F0] z-50 px-4 pt-1 pb-2">
+        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-slate-200 z-50 px-4 pt-1 pb-2">
           {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
             <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1.5 select-none">
               {visibleDots.map((idx) => (

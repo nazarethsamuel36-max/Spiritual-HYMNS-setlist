@@ -73,11 +73,10 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
       ref={setNodeRef}
       style={style}
       {...attributes}
-      {...listeners}
-      className="group flex items-center py-3 px-2 border-b border-slate-100 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
+      className="group flex items-center py-3 px-2 border-b border-slate-100 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0"
     >
       {/* Grip */}
-      <div className="text-slate-400 group-hover:text-slate-600 transition-colors mr-3 shrink-0">
+      <div {...listeners} className="text-slate-400 group-hover:text-slate-600 transition-colors mr-3 shrink-0 cursor-grab active:cursor-grabbing touch-none">
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
         </svg>
@@ -146,11 +145,10 @@ function SortableMarkerItem({ item, setlistId }: { item: any, setlistId: string 
       ref={setNodeRef}
       style={style}
       {...attributes}
-      {...listeners}
-      className="group flex items-center py-2.5 px-2 border-b border-[var(--color-brand-soft)] bg-[var(--color-brand-soft)]/60 hover:bg-[var(--color-brand-soft)] transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
+      className="group flex items-center py-2.5 px-2 border-b border-[var(--color-brand-soft)] bg-[var(--color-brand-soft)]/60 hover:bg-[var(--color-brand-soft)] transition-none last:border-b-0"
     >
       {/* Grip */}
-      <div className="text-[var(--color-brand)]/40 group-hover:text-[var(--color-brand)]/70 transition-colors mr-3 shrink-0">
+      <div {...listeners} className="text-[var(--color-brand)]/40 group-hover:text-[var(--color-brand)]/70 transition-colors mr-3 shrink-0 cursor-grab active:cursor-grabbing touch-none">
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
         </svg>
@@ -209,11 +207,10 @@ function SortableNoteItem({ item, setlistId }: { item: any, setlistId: string })
       ref={setNodeRef}
       style={style}
       {...attributes}
-      {...listeners}
-      className="group flex items-center py-2.5 px-2 border-b border-slate-200 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0 cursor-grab active:cursor-grabbing touch-none"
+      className="group flex items-center py-2.5 px-2 border-b border-slate-200 bg-slate-50 hover:bg-slate-100 transition-none last:border-b-0"
     >
       {/* Grip */}
-      <div className="text-slate-300 group-hover:text-slate-500 transition-colors mr-3 shrink-0">
+      <div {...listeners} className="text-slate-300 group-hover:text-slate-500 transition-colors mr-3 shrink-0 cursor-grab active:cursor-grabbing touch-none">
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 8h16M4 16h16" />
         </svg>

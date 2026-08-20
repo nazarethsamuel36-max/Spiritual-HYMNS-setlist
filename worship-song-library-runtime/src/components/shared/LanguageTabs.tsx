@@ -13,7 +13,7 @@ export function LanguageTabs({ languages, selected, onSelect }: LanguageTabsProp
           onClick={() => onSelect(lang)}
           className={`px-4 py-1.5 rounded-full text-[12px] font-bold tracking-tight transition-all duration-150 flex-shrink-0 ${
             selected === lang
-              ? 'bg-slate-900 text-white shadow-sm'
+              ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
               : 'bg-slate-500/15 text-slate-500 hover:bg-slate-500/25'
           }`}
         >

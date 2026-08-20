@@ -134,7 +134,7 @@ export function PersonalSongs() {
             {/* Desktop: Full-width button */}
             <button
               onClick={() => setShowAddForm(true)}
-              className="hidden md:block w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center space-x-2"
+              className="hidden md:block w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-700 text-[var(--color-on-inverse)] font-semibold rounded-lg transition-colors flex items-center justify-center space-x-2"
             >
               <span>✚</span>
               <span>Add Personal Song</span>
@@ -142,7 +142,7 @@ export function PersonalSongs() {
             {/* Mobile: FAB button */}
             <button
               onClick={() => setShowAddForm(true)}
-              className="md:hidden fixed bottom-20 right-4 w-14 h-14 rounded-full bg-slate-900 hover:bg-slate-700 text-white shadow-lg flex items-center justify-center transition-all active:scale-95 z-50"
+              className="md:hidden fixed bottom-20 right-4 w-14 h-14 rounded-full bg-slate-900 hover:bg-slate-700 text-[var(--color-on-inverse)] shadow-lg flex items-center justify-center transition-all active:scale-95 z-50"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v12M6 12h12" />
@@ -150,14 +150,14 @@ export function PersonalSongs() {
             </button>
           </>
         ) : (
-          <div className="w-full max-w-full overflow-hidden rounded-xl border border-slate-200 bg-white p-3 sm:p-4">
+          <div className="w-full max-w-full overflow-hidden rounded-xl border border-slate-200 bg-[var(--color-surface)] p-3 sm:p-4">
             <div className="grid gap-3">
               <label className="text-sm font-medium text-slate-700">
                 <div className="mb-1">Title</div>
                 <input
                   value={newSongTitle}
                   onChange={(e) => setNewSongTitle(e.target.value)}
-                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-300 transition-colors placeholder:text-slate-400"
+                  className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-300 transition-colors placeholder:text-slate-400 bg-[var(--color-surface)] text-[var(--color-text)]"
                   placeholder="Untitled Song..."
                 />
               </label>
@@ -168,7 +168,7 @@ export function PersonalSongs() {
                   <select
                     value={newSongLanguage}
                     onChange={(e) => setNewSongLanguage(e.target.value)}
-                    className="w-full h-9 rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-sm text-slate-800 outline-none focus:border-slate-300 cursor-pointer transition-colors appearance-none"
+                    className="w-full h-9 rounded-lg border border-slate-200 bg-[var(--color-surface)] text-[var(--color-text)] outline-none focus:border-slate-300 cursor-pointer transition-colors appearance-none pl-3 pr-8"
                   >
                     {LANGUAGES.filter((l) => l !== 'All').map((lang) => (
                       <option key={lang} value={lang}>
@@ -183,7 +183,7 @@ export function PersonalSongs() {
                   <select
                     value={newSongKey}
                     onChange={(e) => setNewSongKey(e.target.value)}
-                    className="w-full h-9 rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-sm text-slate-800 outline-none focus:border-slate-300 cursor-pointer transition-colors appearance-none"
+                    className="w-full h-9 rounded-lg border border-slate-200 bg-[var(--color-surface)] text-[var(--color-text)] outline-none focus:border-slate-300 cursor-pointer transition-colors appearance-none pl-3 pr-8"
                   >
                     <option value="C">C</option>
                     <option value="D">D</option>
@@ -227,7 +227,7 @@ export function PersonalSongs() {
                   value={newSongChords}
                   onChange={(e) => setNewSongChords(e.target.value)}
                   rows={12}
-                  className="w-full max-w-full rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none focus:border-slate-300 box-border"
+                  className="w-full max-w-full rounded-lg border border-slate-200 px-3 py-2 font-mono text-sm outline-none focus:border-slate-300 box-border bg-[var(--color-surface)] text-[var(--color-text)] placeholder:text-slate-400"
                   placeholder="[C]Verse 1\n[G]Jesus is my friend\n[Am]His love will never end\n[F]He saves my soul"
                 />
               </label>
@@ -247,13 +247,13 @@ export function PersonalSongs() {
                 <button
                   onClick={handleAddPersonalSong}
                   disabled={isAdding}
-                  className="px-4 py-2 bg-slate-900 hover:bg-slate-700 text-white rounded-md disabled:opacity-50 font-semibold transition-colors"
+                  className="px-4 py-2 bg-slate-900 hover:bg-slate-700 text-[var(--color-on-inverse)] rounded-md disabled:opacity-50 font-semibold transition-colors"
                 >
                   {isAdding ? 'Creating...' : 'Create'}
                 </button>
                 <button
                   onClick={() => setShowAddForm(false)}
-                  className="px-4 py-2 border rounded-md"
+                  className="px-4 py-2 border border-slate-300 rounded-md"
                 >
                   Cancel
                 </button>

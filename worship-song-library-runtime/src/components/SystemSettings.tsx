@@ -13,6 +13,49 @@ function getStoredTheme(): ThemeMode {
   return saved === 'dark' ? 'dark' : 'light';
 }
 
+const FAQS: { q: string; a: string }[] = [
+  {
+    q: 'How do I install the app?',
+    a: 'Open the browser menu (⋮) and tap \'Add to Home Screen\' or \'Install\' / \'Download\'. After installing, open the app shortcut from your home screen to use it like a normal app.',
+  },
+  {
+    q: 'How do I download songs for offline use?',
+    a: 'Tap \'Refresh\' while you are online. This updates the song library on your device so the downloaded songs are available when you are offline.',
+  },
+  {
+    q: 'Can I use the app offline?',
+    a: 'Yes. Songs downloaded to your device, along with your locally stored personal songs and setlists, can be used offline.',
+  },
+  {
+    q: 'I can\'t see the latest songs. What should I do?',
+    a: 'Make sure you are online and tap \'Refresh\' to update the song library.',
+  },
+  {
+    q: 'I can\'t see any songs / the song list is empty. What should I do?',
+    a: 'Make sure you are online and tap \'Refresh\'. If this is the first download, the app needs an internet connection to get the song library.',
+  },
+  {
+    q: 'I can see a song number, but the title/song isn\'t showing correctly. What should I do?',
+    a: 'Tap \'Refresh\' to update the local song data and try again.',
+  },
+  {
+    q: 'How do I create a Personal Song?',
+    a: 'Go to Personal → +, enter the song information and content, then save it.',
+  },
+  {
+    q: 'What is the difference between a Personal Song and a Version?',
+    a: 'A Personal Song is a song you create yourself. A Version is your customized version of an existing song from the main library.',
+  },
+  {
+    q: 'How do I create and use a Setlist?',
+    a: 'Open Setlists, create a setlist, and add the songs you want. You can then open the setlist to navigate through its songs.',
+  },
+  {
+    q: 'How do I back up or transfer my songs and setlists?',
+    a: 'Go to Settings → Data Backup → Export My Data. This downloads a JSON file named \'worship-userdata-YYYY-MM-DD.json\' (e.g. \'worship-userdata-2026-08-18.json\'). On another device, go to Settings → Data Backup → Import Backup and select that same file to restore your data.',
+  },
+];
+
 export function SystemSettings({ onClose }: { onClose: () => void }) {
   const stats = useLiveQuery(async () => {
     const songCount = await db.songs.count();
@@ -30,6 +73,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   const [showOfflineRemovalNotice, setShowOfflineRemovalNotice] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [showDataBackup, setShowDataBackup] = useState(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isImporting, setIsImporting] = useState(false);
   const [importReport, setImportReport] = useState<string | null>(null);
   const [showImportSuccess, setShowImportSuccess] = useState(false);
@@ -142,7 +186,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 bg-[rgba(15,23,42,0.6)] backdrop-blur-sm z-[200] flex items-center justify-center p-4 pointer-events-none">
       <div className="bg-[var(--color-surface)] rounded-3xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-hidden animate-in fade-in zoom-in duration-200 pointer-events-auto flex flex-col">
-        <div className="p-6 border-b border-[#F1F5F9] flex justify-between items-center bg-slate-50 flex-shrink-0">
+        <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50 flex-shrink-0">
           <h2 className="text-xl font-bold text-slate-800">System Status</h2>
           <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-colors">
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -153,11 +197,11 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
         <div className="p-6 space-y-6 overflow-y-auto flex-1">
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-[#F1F5F9]">
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
               <span className="text-lg font-bold text-slate-700">{stats?.songCount ?? 0} Songs</span>
             </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-[#F1F5F9]">
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
               <span className="text-xs font-bold text-slate-700">
                 {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
@@ -167,7 +211,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
           <div className="space-y-3">
             {/* Song Management */}
-            <div className="bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl overflow-hidden">
+            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
               <button
                 type="button"
                 onClick={() => setShowSongManagement((prev) => !prev)}
@@ -177,12 +221,12 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 <span className="text-slate-400">{showSongManagement ? '▾' : '▸'}</span>
               </button>
               {showSongManagement && (
-                <div className="border-t border-[#F1F5F9] px-4 py-3 space-y-2">
+                <div className="border-t border-slate-100 px-4 py-3 space-y-2">
                   {hasOfflineLibrary ? (
                     <button
                       type="button"
                       onClick={handleDeleteOfflineLibrary}
-                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-red-400 hover:bg-red-50 transition-all group"
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-red-400 hover:bg-red-50 transition-all group"
                     >
                       <div className="text-left">
                         <div className="font-bold text-slate-700 group-hover:text-red-600">Delete Offline Library</div>
@@ -197,7 +241,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                       type="button"
                       onClick={handleDownloadSongs}
                       disabled={isDownloading}
-                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       <div className="text-left">
                         <div className="font-bold text-slate-700 group-hover:text-emerald-600">
@@ -217,7 +261,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                     type="button"
                     onClick={handleSyncNow}
                     disabled={isSyncing}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="text-left">
                       <div className="font-bold text-slate-700 group-hover:text-blue-600">
@@ -231,7 +275,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                   </button>
 
                   {isDownloading && downloadProgress > 0 && (
-                    <div className="rounded-2xl border border-[#E2E8F0] bg-slate-50 p-4">
+                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
                       <div className="mb-2 flex items-center justify-between text-xs font-bold text-slate-600">
                         <span>{statusMsg}</span>
                         <span>{downloadProgress}%</span>
@@ -255,7 +299,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             </div>
 
             {/* Data Backup */}
-            <div className="bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl overflow-hidden">
+            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
               <button
                 type="button"
                 onClick={() => setShowDataBackup((prev) => !prev)}
@@ -265,12 +309,12 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 <span className="text-slate-400">{showDataBackup ? '▾' : '▸'}</span>
               </button>
               {showDataBackup && (
-                <div className="border-t border-[#F1F5F9] px-4 py-3 space-y-2">
+                <div className="border-t border-slate-100 px-4 py-3 space-y-2">
                   <button
                     type="button"
                     onClick={handleExportData}
                     disabled={isExporting}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="text-left">
                       <div className="font-bold text-slate-700 group-hover:text-blue-600">
@@ -288,7 +332,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                     type="button"
                     onClick={() => document.getElementById('udp-import-input')?.click()}
                     disabled={isImporting}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-[#E2E8F0] rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="text-left">
                       <div className="font-bold text-slate-700 group-hover:text-emerald-600">
@@ -314,7 +358,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                     }}
                   />
                   {importReport && (
-                    <div className="rounded-xl border border-[#E2E8F0] bg-slate-50 px-4 py-3 text-xs text-slate-700 whitespace-pre-line font-medium">
+                    <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-700 whitespace-pre-line font-medium">
                       {importReport}
                     </div>
                   )}
@@ -327,23 +371,53 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
             </div>
 
             {/* Appearance — Light / Dark */}
-            <div className="bg-[var(--color-surface)] p-4 rounded-2xl border border-[#E2E8F0]">
+            <div className="bg-[var(--color-surface)] p-4 rounded-2xl border border-slate-200">
               <div className="mb-1 text-sm font-bold text-slate-700">Appearance</div>
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setTheme('light')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1]'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'light' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-slate-300'}`}
                 >
                   Light
                 </button>
                 <button
                   type="button"
                   onClick={() => setTheme('dark')}
-                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-[#CBD5E1]'}`}
+                  className={`px-4 py-1.5 rounded-full border text-xs font-bold transition-all ${theme === 'dark' ? 'bg-slate-900 text-[var(--color-on-inverse)] border-slate-900 shadow-sm' : 'bg-[var(--color-surface)] text-slate-600 border-slate-300'}`}
                 >
                   Dark
                 </button>
+              </div>
+            </div>
+
+            {/* FAQs */}
+            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
+              <div className="px-4 py-3 border-b border-slate-100 flex-shrink-0">
+                <span className="text-sm font-bold text-slate-700">FAQs</span>
+              </div>
+              <div className="divide-y divide-slate-200 max-h-64 overflow-y-auto">
+                {FAQS.map((faq, i) => (
+                  <div key={i}>
+                    <button
+                      type="button"
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left hover:bg-slate-50 transition-colors"
+                    >
+                      <span className="text-sm font-semibold text-slate-700">{faq.q}</span>
+                      <span className={`text-slate-400 flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`}>
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    {openFaq === i && (
+                      <div className="px-4 pb-4 -mt-1">
+                        <p className="text-xs text-slate-500 leading-relaxed whitespace-pre-line">{faq.a}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

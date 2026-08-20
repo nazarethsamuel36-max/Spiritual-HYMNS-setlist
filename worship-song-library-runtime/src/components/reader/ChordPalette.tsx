@@ -189,7 +189,7 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
       style={{
         flexShrink: 0,
         background: 'var(--color-reader-surface, #fff)',
-        borderTop: hasTopBorder ? '1px solid #E2E8F0' : 'none',
+        borderTop: hasTopBorder ? '1px solid var(--color-slate-200, #E2E8F0)' : 'none',
         zIndex: 200,
         width: '100%',
         maxWidth: '100%',
@@ -214,7 +214,7 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
         {activeCategory && (
           <div style={{
             background: 'var(--color-reader-surface, #fff)',
-            borderBottom: '1px solid #E2E8F0',
+            borderBottom: '1px solid var(--color-slate-200, #E2E8F0)',
             padding: '8px 12px',
             display: 'flex',
             overflowX: 'auto',
@@ -296,8 +296,8 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                   }}
                   style={{
                     marginLeft: 'auto',
-                    background: '#0f172a',
-                    color: '#fff',
+                    background: 'var(--color-brand)',
+                    color: 'var(--color-on-inverse)',
                     border: 'none',
                     borderRadius: '8px',
                     padding: '6px 14px',
@@ -324,9 +324,9 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
                     handleInsert(chord);
                   }}
                   style={{
-                    background: '#0f172a',
-                    color: '#fff',
-                    border: '1px solid #0f172a',
+                    background: 'var(--color-brand)',
+                    color: 'var(--color-on-inverse)',
+                    border: '1px solid var(--color-brand)',
                     borderRadius: '8px',
                     padding: '6px 14px',
                     fontWeight: 800,
@@ -369,8 +369,8 @@ export function ChordPalette({ textareaRef, value, onChange, visible, songKey = 
               }}
               style={{
                 flex: '0 0 auto',
-                background: activeCategory === cat ? '#0f172a' : '#f1f5f9',
-                color: activeCategory === cat ? '#fff' : '#475569',
+                background: activeCategory === cat ? 'var(--color-brand)' : 'var(--color-brand-soft)',
+                color: activeCategory === cat ? 'var(--color-on-inverse)' : 'var(--color-text-muted)',
                 border: 'none',
                 borderRadius: '8px',
                 padding: '6px 14px',

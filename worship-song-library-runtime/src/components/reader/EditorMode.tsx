@@ -11,8 +11,6 @@ interface HistoryState {
   cursorPosition?: number;
 }
 
-console.log('📍 EDITORMODE FILE LOADED');
-
 // ============================================
 // KEY CORRECTOR: Admin tool to fix mismatched metadata keys
 // ============================================
@@ -97,7 +95,7 @@ function CustomKeyPicker({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`flex h-12 w-12 items-center justify-center rounded-lg border border-slate-300 bg-white text-base font-bold text-[#0F172A] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-[#F1F5F9] ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
+        className={`flex h-9 w-10 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
       >
         {value}
       </button>
@@ -136,7 +134,6 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const [title, setTitle] = useState(song.title || '');
   const [language, setLanguage] = useState(song.language || 'English');
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
-  const [songNumber, setSongNumber] = useState(song.songNumber || 0);
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -266,13 +263,12 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     }
   };
 
-  // Sync form when song changes
+// Sync form when song changes
   useEffect(() => {
     setTitle(version?.name ?? song.title ?? '');
     setLanguage(song.language || 'English');
     setKeyValue(song.originalKey || songKey || 'C');
     setCurrentTextKey(song.originalKey || songKey || 'C');
-    setSongNumber(song.songNumber || 0);
     setChordsText(song.chords || '');
     
     // Initialize undo history with the original chords
@@ -280,11 +276,10 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     setHistoryIndex(0);
 
     if (saveTimeoutRef.current) {
-      console.log('🛑 Cancelling pending auto-save for song:', song.id);
       clearTimeout(saveTimeoutRef.current);
       saveTimeoutRef.current = null;
     }
-  }, [song.id, song.title, song.language, song.originalKey, song.songNumber, song.chords, songKey, version?.name]);
+  }, [song.id, song.title, song.language, song.originalKey, song.chords, songKey, version?.name]);
 
   // Auto-grow textarea to fit content
   useEffect(() => {
@@ -303,15 +298,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     };
   }, []);
 
-  useEffect(() => {
-    console.log('📝 Editor form changed:', {
-      title,
-      language,
-      keyValue,
-      songNumber,
-      chordsLength: chordsText.length,
-    });
-  }, [title, language, keyValue, songNumber, chordsText]);
+  
 
   // Navigation guard for unsaved changes
   useEffect(() => {
@@ -328,15 +315,12 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
     try {
       if (isAdmin) {
-        console.log(`💾 Auto-saving song ${currentSongId}:`, updates);
-
         if (versionId) {
           const versionUpdates: Record<string, unknown> = { updatedAt: Date.now() };
           if (updates.title !== undefined) versionUpdates.name = updates.title;
           if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
           if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
           await VersionService.updateVersion(versionId, versionUpdates as never);
-          console.log(`✅ Auto-save successful for version ${versionId}`);
         } else if (source === 'personal') {
           const existingSong = await db.personalSongs.get(currentSongId);
           if (existingSong) {
@@ -345,7 +329,6 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               originalKey: updates.original_key,
               updated_at: new Date().toISOString()
             });
-            console.log(`✅ Auto-save successful for personal song ${currentSongId}`);
           }
         } else {
           const { error } = await supabase
@@ -358,10 +341,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             alert('Failed to save changes: ' + error.message);
             return;
           }
-          console.log(`✅ Auto-save successful for song ${currentSongId}`);
         }
-      } else {
-        console.log(`User manual save requested for song ${currentSongId}`);
       }
     } catch (err) {
       console.error('❌ Auto-save exception:', err);
@@ -455,15 +435,13 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     }
   };
 
-  console.log('🔍 EditorMode RENDERING');
-
   return (
     <div
       style={containerStyle}
       className="flex-1 flex flex-col min-h-0 bg-[var(--color-reader-surface)]"
     >
       {/* ── EDITOR HEADER: locked at top ── */}
-      <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-[#E2E8F0] px-4 md:px-8 py-2 w-full">
+      <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-slate-200 px-4 md:px-8 py-2 w-full">
         <div className="max-w-4xl mx-auto w-full flex flex-col gap-2">
 
           {/* Row 1: Title + Key + Save */}
@@ -507,9 +485,16 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 <button
                   onClick={handleManualSave}
                   disabled={!hasUnsavedChanges}
-                  className="flex-shrink-0 flex items-center gap-1 bg-slate-900 hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed text-white px-3 py-1.5 rounded-full text-xs font-bold transition-colors"
+                  className="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-lg transition-colors ${
+                    hasUnsavedChanges
+                      ? 'text-blue-600 hover:bg-blue-50'
+                      : 'text-slate-400 hover:text-slate-500'
+                  } disabled:opacity-50 disabled:cursor-not-allowed"
+                  aria-label={hasUnsavedChanges ? 'Save changes' : 'No changes to save'}
                 >
-                  Save
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
                 </button>
               )
             )}
@@ -521,14 +506,14 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             <button
               type="button"
               onClick={() => { insertMarker('[Verse]'); }}
-              className="h-9 px-3 rounded-lg border border-slate-300 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
+              className="h-9 px-3 rounded-lg border border-slate-300 bg-[var(--color-brand-soft)] text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
             >
               + Verse
             </button>
             <button
               type="button"
               onClick={() => { insertMarker('[Chorus]'); }}
-              className="h-9 px-3 rounded-lg border border-slate-300 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
+              className="h-9 px-3 rounded-lg border border-slate-300 bg-[var(--color-brand-soft)] text-xs font-bold text-slate-700 hover:bg-slate-50 transition-colors flex items-center justify-center flex-shrink-0"
             >
               + Chorus
             </button>
@@ -635,25 +620,25 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       {/* Save Option Dialog */}
       {showSaveOptionDialog && createPortal(
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
-          <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
-            <h3 className="text-lg font-bold text-slate-800 mb-1">Save Version</h3>
-            <p className="text-sm text-slate-500 mb-4">How would you like to save this version?</p>
+          <div className="bg-[var(--color-surface)] rounded-2xl p-6 w-full max-w-sm shadow-2xl">
+            <h3 className="text-lg font-bold text-[var(--color-text)] mb-1">Save Version</h3>
+            <p className="text-sm text-[var(--color-text-muted)] mb-4">How would you like to save this version?</p>
             <div className="space-y-2">
               <button
                 onClick={() => void handleOverwriteVersion()}
-                className="w-full px-4 py-2.5 text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
+                className="w-full px-4 py-2.5 text-sm font-semibold text-[var(--color-on-inverse)] bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
               >
                 Overwrite this version
               </button>
               <button
                 onClick={handleDuplicateVersion}
-                className="w-full px-4 py-2.5 text-sm font-semibold text-slate-700 border border-slate-300 hover:bg-slate-50 rounded-lg transition-colors"
+                className="w-full px-4 py-2.5 text-sm font-semibold text-[var(--color-text)] border border-slate-300 hover:bg-slate-50 rounded-lg transition-colors"
               >
                 Save as duplicate
               </button>
               <button
                 onClick={() => setShowSaveOptionDialog(false)}
-                className="w-full px-4 py-2.5 text-sm font-semibold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors"
+                className="w-full px-4 py-2.5 text-sm font-semibold text-[var(--color-text-muted)] hover:bg-slate-100 rounded-lg transition-colors"
               >
                 Cancel
               </button>
@@ -666,14 +651,14 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       {/* Version Naming Dialog */}
       {showVersionDialog && createPortal(
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
-          <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-2xl">
-            <h3 className="text-lg font-bold text-slate-800 mb-4">Name Your Version</h3>
+          <div className="bg-[var(--color-surface)] rounded-2xl p-6 w-full max-w-sm shadow-2xl">
+            <h3 className="text-lg font-bold text-[var(--color-text)] mb-4">Name Your Version</h3>
             <input
               type="text"
               value={versionNameInput}
               onChange={(e) => setVersionNameInput(e.target.value)}
               placeholder="Enter version name..."
-              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 mb-4"
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 mb-4 bg-[var(--color-surface)] text-[var(--color-text)] placeholder-[var(--color-text-muted)]"
               autoFocus
               onKeyDown={(e) => {
                 if (e.key === 'Enter') { e.preventDefault(); void handleSaveWithName(); }
@@ -683,13 +668,13 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             <div className="flex gap-2 justify-end">
               <button
                 onClick={handleCancelVersionDialog}
-                className="px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
+                className="px-4 py-2 text-sm font-medium text-[var(--color-text)] hover:bg-slate-100 rounded-lg transition-colors"
               >
                 Cancel
               </button>
               <button
                 onClick={handleSaveWithName}
-                className="px-4 py-2 text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
+                className="px-4 py-2 text-sm font-medium text-[var(--color-on-inverse)] bg-slate-900 hover:bg-slate-800 rounded-lg transition-colors"
               >
                 Save
               </button>

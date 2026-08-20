@@ -52,12 +52,12 @@
 body[data-theme="dark"] {
   /* Slate mirror: invert lightness while preserving hue/saturation */
   --color-slate-50: #020617;
-  --color-slate-100: #0F172A;
-  --color-slate-200: #1E293B;
+  --color-slate-100: #334155;
+  --color-slate-200: #334155;
   --color-slate-300: #334155;
-  --color-slate-400: #475569;
-  --color-slate-500: #64748B;
-  --color-slate-600: #94A3B8;
+  --color-slate-400: #CBD5E1;
+  --color-slate-500: #CBD5E1;
+  --color-slate-600: #CBD5E1;
   --color-slate-700: #CBD5E1;
   --color-slate-800: #E2E8F0;
   --color-slate-900: #F1F5F9;
@@ -65,7 +65,7 @@ body[data-theme="dark"] {
 
   /* Custom neutral tokens mirror their light-mode roles */
   --color-text: #F1F5F9;
-  --color-text-muted: #94A3B8;
+  --color-text-muted: #CBD5E1;
   --color-chord: #94A3B8;
   --color-brand: #F1F5F9;
   --color-brand-soft: #0F172A;
