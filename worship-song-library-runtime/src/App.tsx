@@ -11,7 +11,6 @@ import { MyVersions } from './components/MyVersions';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
 import { ContextRail } from './components/ContextRail';
-import { ConnectionStatus } from './components/ConnectionStatus';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
@@ -392,7 +391,7 @@ function App() {
               {syncToast !== 'idle' && (
                 <div
                   className="fixed top-4 left-1/2 -translate-x-1/2 z-[500] flex items-center gap-2 px-4 py-2 rounded-full shadow-xl text-sm font-semibold text-white pointer-events-none animate-in fade-in slide-in-from-top-2 duration-200"
-                  style={{ background: syncToast === 'done' ? '#10b981' : '#1e293b' }}
+                  style={{ background: syncToast === 'done' ? '#0F172A' : '#1E293B' }}
                 >
                   {syncToast === 'syncing' ? (
                     <>
@@ -570,7 +569,6 @@ function App() {
 
           {showSettings && <SystemSettings onClose={() => setShowSettings(false)} />}
           <InstallPrompt />
-          {reader.type !== 'song' && <ConnectionStatus />}
         </div>
       )}
     </>

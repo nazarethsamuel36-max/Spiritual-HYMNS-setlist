@@ -99,8 +99,8 @@ body[data-theme="dark"] .sidebar-header {
 }
 
 body[data-theme="dark"] .mobile-bottom-nav {
-  background-color: rgba(2, 6, 23, 0.97);
-  border-top-color: rgba(2, 6, 23, 0.97);
+  background-color: #020617;
+  border-top-color: #1E293B;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -263,10 +263,8 @@ body {
   right: 0;
   /* Footer must be above reader headers (z-40) and reader footer (z-50) */
   z-index: 60;
-  background-color: rgba(248, 250, 252, 0.97);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(248, 250, 252, 0.97);
+  background-color: #F8FAFC;
+  border-top: 1px solid #E2E8F0;
   /* Safe area for home indicator on iPhone */
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
