@@ -2,6 +2,14 @@ import type { SongIndex } from '../db/Database';
 import { db } from '../db/Database';
 import searchDocuments from '../Search_1.0.json';
 
+type SearchDocumentSource = {
+  songNumber: number;
+  title: string;
+  language: string;
+  transliteratedTitle: string;
+  occasions?: string[];
+};
+
 // Helper to canonicalize language name for matching keys
 function getLanguageKey(language: string | undefined): string {
   if (!language) return 'unknown';
@@ -17,7 +25,7 @@ function getLanguageKey(language: string | undefined): string {
 const searchDocumentsMap = new Map<string, { title: string; language: string; transliteratedTitle: string; genres?: string[] }>();
 
 // Initialize the map from the imported JSON using a composite key
-for (const doc of searchDocuments) {
+for (const doc of searchDocuments as SearchDocumentSource[]) {
   if (doc.transliteratedTitle) {
     const key = `${getLanguageKey(doc.language)}_${doc.songNumber}`;
     searchDocumentsMap.set(key, {

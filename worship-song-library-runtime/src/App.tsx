@@ -331,6 +331,7 @@ function App() {
     }
     titleTapTimerRef.current = window.setTimeout(() => { titleTapCountRef.current = 0; }, 1500);
   };
+  void handleTitleTap;
 
   const handleExitAdminMode = () => {
     clearAdminSession();
@@ -468,8 +469,8 @@ function App() {
                 ) : (
                   <>
                 <div className="flex justify-between items-center w-full">
-                  <button type="button" onClick={handleTitleTap} className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
-                  <button type="button" onClick={handleTitleTap} className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none" title="Tap 5 times to unlock admin mode">BBF Song book</button>
+                  <button type="button" className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
+                  <button type="button" className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song book</button>
                   {(isAdminAuthenticated || showAdminButton) && (
                     <button type="button" onClick={() => setShowAdminScreen(true)} className="mr-2 rounded-md border border-cyan-200 bg-cyan-50 px-2 py-1 text-xs font-bold text-cyan-800" title="Open admin screen">Admin</button>
                   )}
