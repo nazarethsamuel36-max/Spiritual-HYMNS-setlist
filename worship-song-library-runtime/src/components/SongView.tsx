@@ -383,6 +383,20 @@ export function SongView() {
                   <span className="text-sm font-semibold tracking-wide text-slate-500">
                     Key: <span className="font-bold text-slate-700">{currentKey}</span>
                   </span>
+                  {song.genres && song.genres.length > 0 && (
+                    <div className="flex flex-wrap gap-1 mt-2">
+                      {song.genres.slice(0, 4).map((genre: string) => (
+                        <span key={genre} className="px-2 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 rounded">
+                          {genre}
+                        </span>
+                      ))}
+                      {song.genres.length > 4 && (
+                        <span className="px-2 py-0.5 text-xs text-slate-500">
+                          +{song.genres.length - 4}
+                        </span>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
 

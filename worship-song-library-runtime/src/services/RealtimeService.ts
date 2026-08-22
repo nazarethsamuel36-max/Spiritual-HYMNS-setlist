@@ -158,6 +158,7 @@ export class RealtimeService {
       sections: [],
       chords: record.chords || '',
       lyrics: record.lyrics || '',
+      genres: record.genre || [],
       is_active: record.is_active !== false,
       updated_at: record.updated_at,
     };
@@ -173,10 +174,11 @@ export class RealtimeService {
       title: record.title,
       artist: record.artist || '',
       language: record.language || 'English',
-      key: record.original_key || 'C',
+      originalKey: record.original_key || 'C',
       chords: record.chords || '',
       lyrics: record.lyrics || '',
       is_active: record.is_active !== false,
+      genres: record.genre || [],
     };
   }
 

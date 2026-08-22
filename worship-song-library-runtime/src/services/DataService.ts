@@ -106,7 +106,8 @@ export async function batchDownloadSongs(
         chords: song.chords,
         lyrics: song.lyrics,
         is_active: song.is_active !== false,
-        updated_at: song.updated_at
+        updated_at: song.updated_at,
+        genres: song.genre || [],
       }));
 
       const batchIndices: SongIndex[] = data.map((song: any) => ({
@@ -118,6 +119,7 @@ export async function batchDownloadSongs(
         originalKey: song.original_key,
         hashtags: [],
         searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+        genres: song.genre || [],
       }));
 
       allSongDetails.push(...batchDetails);
@@ -266,7 +268,8 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       chords: song.chords,
       lyrics: song.lyrics,
       is_active: song.is_active !== false,
-      updated_at: song.updated_at
+      updated_at: song.updated_at,
+      genres: song.genre || [],
     }));
 
     const songIndices: SongIndex[] = changedSongs.map((song: any) => ({
@@ -278,6 +281,7 @@ export async function wakeUpSync(_trigger: SyncTrigger = 'app-start'): Promise<S
       originalKey: song.original_key,
       hashtags: [],
       searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+      genres: song.genre || [],
     }));
 
     // 6. Write to IndexedDB (atomic transaction)
@@ -401,6 +405,7 @@ export async function getSongs(): Promise<SongIndex[]> {
     originalKey: song.original_key,
     hashtags: [],
     searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+    genres: song.genre || [],
   }));
 }
 
@@ -464,7 +469,8 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
     chords: data.chords,
     lyrics: data.lyrics,
     is_active: data.is_active !== false,
-    updated_at: data.updated_at
+    updated_at: data.updated_at,
+    genres: data.genre || [],
   };
 
   // If Supabase now has content, update IndexedDB so next time is instant

@@ -2,7 +2,7 @@ import { db, type SongDetail, type Version } from '../db/Database';
 import { generateUUID } from '../utils/uuid';
 
 export type VersionSnapshot = Partial<
-  Pick<Version, 'lyrics' | 'chords' | 'sections' | 'originalKey' | 'capo' | 'bpm' | 'timeSignature' | 'artist' | 'composer' | 'hashtags'>
+  Pick<Version, 'lyrics' | 'chords' | 'sections' | 'originalKey' | 'capo' | 'bpm' | 'timeSignature' | 'artist' | 'composer' | 'hashtags' | 'genres'>
 >;
 
 export type VersionUpdate = Partial<Omit<Version, 'uid'>>;
@@ -55,6 +55,7 @@ export class VersionService {
         artist: input.song.artist,
         composer: input.song.composer,
         hashtags: input.song.hashtags,
+        genres: input.song.genres || [],
       },
     });
   }

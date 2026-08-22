@@ -10,19 +10,32 @@ import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
 import { generateUUID } from '../utils/uuid';
-
-const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
+import { LANGUAGES, GENRES } from '../utils/Genres';
 
 export function PersonalSongs() {
   const [search, setSearch] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
+  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [isGenreOpen, setIsGenreOpen] = useState(false);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('title');
   const [showAddForm, setShowAddForm] = useState(false);
   const [newSongTitle, setNewSongTitle] = useState('Untitled Personal Song');
   const [newSongKey, setNewSongKey] = useState('C');
   const [newSongChords, setNewSongChords] = useState('');
   const [newSongLanguage, setNewSongLanguage] = useState('English');
+  const [newSongGenres, setNewSongGenres] = useState<string[]>([]);
   const [isAdding, setIsAdding] = useState(false);
+
+  const toggleGenre = (genre: string) => {
+    setSelectedGenres(prev => prev.includes(genre)
+      ? prev.filter(g => g !== genre)
+      : [...prev, genre]
+    );
+  };
+
+  const clearGenres = () => {
+    setSelectedGenres([]);
+  };
 
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
@@ -64,12 +77,14 @@ export function PersonalSongs() {
         sections: [],
         is_active: true,
         updated_at: new Date().toISOString(),
+        genres: newSongGenres,
       };
 
       await db.personalSongs.add(newSong);
       setShowAddForm(false);
       setNewSongTitle('Untitled Personal Song');
       setNewSongChords('');
+      setNewSongGenres([]);
       
       // Open the newly created song
       openSong(newSong.id, 'personal');
@@ -91,6 +106,8 @@ export function PersonalSongs() {
     }
   };
 
+  const [isNewGenreOpen, setIsNewGenreOpen] = useState(false);
+
   // Filter and sort songs
   let visibleSongs = [...personalSongs];
   
@@ -98,6 +115,13 @@ export function PersonalSongs() {
     visibleSongs = visibleSongs.filter(song =>
       songMatchesLanguageFilter(song.language, selectedLanguage)
     );
+  }
+
+  if (selectedGenres.length > 0) {
+    visibleSongs = visibleSongs.filter(song => {
+      const genres = song.genres || [];
+      return genres.some(g => selectedGenres.includes(g));
+    });
   }
 
   if (search.trim()) {
@@ -162,7 +186,7 @@ export function PersonalSongs() {
                 />
               </label>
 
-              <div className="grid gap-3 grid-cols-2">
+              <div className="grid gap-2 grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
                 <label className="text-sm font-medium text-slate-700">
                   <div className="mb-1">Language</div>
                   <select
@@ -194,6 +218,34 @@ export function PersonalSongs() {
                     <option value="B">B</option>
                   </select>
                 </label>
+              </div>
+
+              <div className="relative text-sm font-medium text-slate-700">
+                <div className="mb-1">Genre</div>
+                <button type="button" onClick={() => setIsNewGenreOpen((open) => !open)} className="flex h-9 w-full items-center justify-between rounded-lg border border-slate-200 bg-[var(--color-surface)] px-3 text-left text-sm text-[var(--color-text)]">
+                  <span className="truncate">{newSongGenres.length ? newSongGenres.join(', ') : 'Select genres'}</span>
+                  <span className="text-slate-400">⌄</span>
+                </button>
+                {isNewGenreOpen && <div className="absolute left-0 right-0 top-[calc(100%+0.25rem)] z-20 max-h-48 overflow-y-auto rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  {GENRES.map((genre) => (
+                    <button
+                      key={genre}
+                      type="button"
+                      onClick={() => setNewSongGenres(prev => prev.includes(genre)
+                        ? prev.filter(g => g !== genre)
+                        : [...prev, genre]
+                      )}
+                      className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-semibold transition-all ${
+                        newSongGenres.includes(genre)
+                          ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      }`}
+                    >
+                      {genre}
+                      {newSongGenres.includes(genre) && <span>✓</span>}
+                    </button>
+                  ))}
+                </div>}
               </div>
 
               <label className="text-sm font-medium text-slate-700 block w-full max-w-full">
@@ -265,13 +317,63 @@ export function PersonalSongs() {
 
       {/* Search + Filters */}
       <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
-        {/* Language pills */}
-        <div className="px-3">
-          <LanguageTabs
-            languages={LANGUAGES}
-            selected={selectedLanguage}
-            onSelect={setSelectedLanguage}
-          />
+        {/* Language pills & Genre toggle */}
+        <div className="px-3 flex items-center justify-between gap-2 overflow-x-auto hide-scrollbar">
+          <div className="flex items-center gap-2 flex-grow">
+            <div className="relative min-w-0 flex-grow">
+              <LanguageTabs
+                languages={LANGUAGES}
+                selected={selectedLanguage}
+                onSelect={setSelectedLanguage}
+              />
+              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 z-10 h-8 w-8 bg-gradient-to-r from-transparent to-slate-50" />
+            </div>
+            {/* Genre Toggle */}
+            <button
+              onClick={() => setIsGenreOpen(!isGenreOpen)}
+              className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex-shrink-0 ${
+                isGenreOpen
+                  ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              <span className="flex items-center gap-1">
+                Genres
+                <svg className={`w-4 h-4 transition-transform duration-200 ${isGenreOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Expandable genre selection pills */}
+        <div className={`max-h-48 overflow-y-auto transition-all duration-200 ease-in-out px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${isGenreOpen ? 'opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
+          <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+            <button
+              onClick={clearGenres}
+              className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex-shrink-0 ${
+                !selectedGenres.length
+                  ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              All
+            </button>
+            {GENRES.map((genre) => (
+              <button
+                key={genre}
+                onClick={() => toggleGenre(genre)}
+                className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
+                  selectedGenres.includes(genre)
+                    ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                {genre}
+              </button>
+            ))}
+          </div>
         </div>
         {/* Search bar */}
         <div className="px-3 mt-2.5">

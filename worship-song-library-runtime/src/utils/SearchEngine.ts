@@ -22,7 +22,7 @@ export class SearchEngine {
   // Title Search Index (existing)
   private static titleMiniSearch = new MiniSearch<SearchDocument>({
     fields: ['transliteratedTitle', 'artistSearch', 'songNumber'],
-    storeFields: ['id', 'title', 'artist', 'songNumber', 'language', 'transliteratedTitle'],
+    storeFields: ['id', 'title', 'artist', 'songNumber', 'language', 'transliteratedTitle', 'genres'],
     searchOptions: {
       boost: { transliteratedTitle: 3, songNumber: 5, artistSearch: 1.2 },
       fuzzy: 0.2,
@@ -54,7 +54,7 @@ export class SearchEngine {
     this.titleMiniSearch.removeAll();
     
     // Build SearchDocuments using SearchDocumentBuilder
-    const searchDocuments = buildSearchDocuments(songs);
+    const searchDocuments = await buildSearchDocuments(songs);
     
     // Deduplicate by ID to prevent MiniSearch duplicate key errors (handle string/number mismatches)
     const seen = new Set<string>();
@@ -209,6 +209,25 @@ export class SearchEngine {
     console.log(`[SearchEngine] query "${query}" took ${(endTime - startTime).toFixed(1)}ms (${finalResults.length} results)`);
     
     return finalResults;
+  }
+
+  /**
+   * Filter search documents by genre
+   * Returns documents matching ANY of the selected genres (OR logic)
+   * If genres array is empty, returns all documents
+   */
+  static filterByGenres(genres: string[]): SearchDocument[] {
+    if (!genres.length) return Array.from(this.searchDocCache.values());
+    return Array.from(this.searchDocCache.values()).filter(doc => 
+      doc.genres?.some(g => genres.includes(g))
+    );
+  }
+
+  /**
+   * Get all search documents from the cache
+   */
+  static getSearchDocuments(): SearchDocument[] {
+    return Array.from(this.searchDocCache.values());
   }
 }
 

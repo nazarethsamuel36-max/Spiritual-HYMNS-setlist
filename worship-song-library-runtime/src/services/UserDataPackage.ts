@@ -21,6 +21,7 @@ export interface PortableSong {
   lyrics?: string;
   chords?: string;
   is_active?: boolean;
+  genres?: string[];
 }
 
 export interface PortableVersion {
@@ -40,6 +41,7 @@ export interface PortableVersion {
   hashtags?: string[];
   createdAt: number;
   updatedAt: number;
+  genres?: string[];
 }
 
 export type PortableSetlistItemType = 'song' | 'marker' | 'note';
@@ -92,6 +94,7 @@ function toPortableSong(song: {
   lyrics?: string;
   chords?: string;
   is_active?: boolean;
+  genres?: string[];
 }): PortableSong {
   return {
     uid: song.uid ?? String(song.id),
@@ -108,6 +111,7 @@ function toPortableSong(song: {
     lyrics: song.lyrics,
     chords: song.chords,
     is_active: song.is_active,
+    genres: song.genres || [],
   };
 }
 
@@ -126,6 +130,7 @@ function toPortableVersion(version: {
   artist?: string;
   composer?: string;
   hashtags?: string[];
+  genres?: string[];
   createdAt: number;
   updatedAt: number;
 }): PortableVersion {
@@ -144,6 +149,7 @@ function toPortableVersion(version: {
     artist: version.artist,
     composer: version.composer,
     hashtags: version.hashtags,
+    genres: version.genres || [],
     createdAt: version.createdAt,
     updatedAt: version.updatedAt,
   };
@@ -437,6 +443,7 @@ function toSongDetailFromPortable(song: PortableSong, id: number): import('../db
     chords: song.chords,
     sections: [],
     is_active: song.is_active ?? true,
+    genres: song.genres || [],
   };
 }
 

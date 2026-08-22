@@ -46,12 +46,19 @@ interface WorkflowStore {
   fontSize: number;
   librarySearchActive: boolean;
   librarySearchQuery: string;
+  selectedGenres: string[];
+  isGenreBarOpen: boolean;
   setLibraryLanguage: (lang: string) => void;
   setAdminAuthenticated: (value: boolean) => void;
   setFontSize: (size: number) => void;
   setLibrarySearchActive: (active: boolean) => void;
   setLibrarySearchQuery: (query: string) => void;
   closeLibrarySearch: () => void;
+  setSelectedGenres: (genres: string[]) => void;
+  toggleGenre: (genre: string) => void;
+  clearGenres: () => void;
+  setGenreBarOpen: (open: boolean) => void;
+  toggleGenreBar: () => void;
 
   openSong: (id: number, source: 'library' | 'setlist' | 'shared' | 'personal', transpose?: number, setlistId?: string, itemId?: string, versionId?: string, refKind?: SongKind) => void;
   openMarker: (label: string, setlistId: string, itemId: string) => void;
@@ -81,6 +88,8 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   fontSize: getSavedFontSize(),
   librarySearchActive: false,
   librarySearchQuery: '',
+  selectedGenres: [],
+  isGenreBarOpen: false,
   setLibraryLanguage: (lang) => set({ libraryLanguage: lang }),
   setAdminAuthenticated: (value) => set({ isAdminAuthenticated: value }),
   setFontSize: (size) => {
@@ -91,6 +100,15 @@ export const useWorkflowStore = create<WorkflowStore>((set) => ({
   setLibrarySearchActive: (active) => set({ librarySearchActive: active }),
   setLibrarySearchQuery: (query) => set({ librarySearchQuery: query }),
   closeLibrarySearch: () => set({ librarySearchActive: false, librarySearchQuery: '' }),
+  setSelectedGenres: (genres) => set({ selectedGenres: genres }),
+  toggleGenre: (genre) => set((state) => ({
+    selectedGenres: state.selectedGenres.includes(genre)
+      ? state.selectedGenres.filter(g => g !== genre)
+      : [...state.selectedGenres, genre]
+  })),
+  clearGenres: () => set({ selectedGenres: [] }),
+  setGenreBarOpen: (open) => set({ isGenreBarOpen: open }),
+  toggleGenreBar: () => set((state) => ({ isGenreBarOpen: !state.isGenreBarOpen })),
 
   openSong: (id, source, transpose = 0, setlistId, itemId, versionId, refKind) => {
     set({

@@ -1,4 +1,5 @@
 import type { SongIndex } from '../db/Database';
+import { db } from '../db/Database';
 import searchDocuments from '../Search_1.0.json';
 
 // Helper to canonicalize language name for matching keys
@@ -13,7 +14,7 @@ function getLanguageKey(language: string | undefined): string {
 }
 
 // Cache for all search documents to avoid repeated lookups, keyed by "language_songNumber"
-const searchDocumentsMap = new Map<string, { title: string; language: string; transliteratedTitle: string }>();
+const searchDocumentsMap = new Map<string, { title: string; language: string; transliteratedTitle: string; genres?: string[] }>();
 
 // Initialize the map from the imported JSON using a composite key
 for (const doc of searchDocuments) {
@@ -22,7 +23,8 @@ for (const doc of searchDocuments) {
     searchDocumentsMap.set(key, {
       title: doc.title,
       language: doc.language,
-      transliteratedTitle: doc.transliteratedTitle
+      transliteratedTitle: doc.transliteratedTitle,
+      genres: doc.occasions  // Map old 'occasions' field to 'genres'
     });
   }
 }
@@ -40,6 +42,7 @@ export interface SearchDocument {
   songNumber: number;
   language?: string;
   transliteratedTitle?: string;
+  genres?: string[];
   artistSearch: string;
 }
 
@@ -186,16 +189,59 @@ import { canonicalizeForIndex } from '../search/HindiMarathiDictionary';
  * Build a SearchDocument from a SongIndex
  * This is the only module that should generate search fields
  */
-export function buildSearchDocument(song: SongIndex): SearchDocument {
+// Cache for genre lookups to avoid repeated DB queries
+const genreCache = new Map<number, string[]>();
+
+async function fetchGenresFromDB(songId: number, source: string): Promise<string[]> {
+  const cacheKey = songId;
+  if (genreCache.has(cacheKey)) {
+    return genreCache.get(cacheKey) || [];
+  }
+  
+  let genres: string[] = [];
+  
+  try {
+    if (source === 'personal') {
+      const song = await db.personalSongs.get(songId);
+      genres = song?.genres || [];
+    } else if (source === 'shared') {
+      const song = await db.sharedSongs.get(songId);
+      genres = song?.genres || [];
+    } else {
+      // For official songs, check the database too (in case not in JSON)
+      const song = await db.songs.get(songId);
+      genres = song?.genres || [];
+    }
+  } catch (e) {
+    console.warn('Failed to fetch genres from DB:', e);
+  }
+  
+  genreCache.set(cacheKey, genres);
+  return genres;
+}
+
+export async function buildSearchDocument(song: SongIndex): Promise<SearchDocument> {
   // Get normalized title and transliteratedTitle from Search_1.0.json for all languages
   let normalizedTitle: string | undefined;
   let transliteratedTitle: string | undefined;
+  let genres: string[] = [];
   
   const key = `${getLanguageKey(song.language)}_${song.songNumber}`;
   const searchDoc = searchDocumentsMap.get(key);
   if (searchDoc) {
     normalizedTitle = searchDoc.title; // Use normalized title from Search_1.0.json
     transliteratedTitle = searchDoc.transliteratedTitle;
+    genres = searchDoc.genres || [];
+  }
+  
+  // For personal/shared songs, also fetch genres from database
+  // Official songs get genres from IndexedDB via the genreMap in SongList (built from SongIndex.genres)
+  if (genres.length === 0) {
+    const source = song.isPersonal ? 'personal' : (song.artist === 'Shared' ? 'shared' : 'official');
+    if (source !== 'official') {
+      const dbGenres = await fetchGenresFromDB(song.id, source);
+      genres = dbGenres;
+    }
   }
   
   // Canonicalize the transliterated title so spelling variants in indices match query variants
@@ -210,6 +256,7 @@ export function buildSearchDocument(song: SongIndex): SearchDocument {
     songNumber: song.songNumber,
     language: song.language,
     transliteratedTitle: canonicalTransliteratedTitle,
+    genres,
     artistSearch: buildArtistSearch(song.artist, song.language),
   };
 }
@@ -218,6 +265,8 @@ export function buildSearchDocument(song: SongIndex): SearchDocument {
 /**
  * Build SearchDocuments from an array of SongIndex
  */
-export function buildSearchDocuments(songs: SongIndex[]): SearchDocument[] {
-  return songs.map(buildSearchDocument);
+export async function buildSearchDocuments(songs: SongIndex[]): Promise<SearchDocument[]> {
+  // Clear genre cache on each full rebuild so we always read fresh data from IndexedDB
+  genreCache.clear();
+  return Promise.all(songs.map(buildSearchDocument));
 }

@@ -37,6 +37,7 @@ export class SongResolver {
       lyrics: version.lyrics ?? '',
       is_active: true,
       updated_at: new Date(version.updatedAt).toISOString(),
+      genres: version.genres || [],
     };
   }
 
@@ -86,6 +87,7 @@ export class SongResolver {
               artist: version.artist ?? main.detail.artist,
               composer: version.composer ?? main.detail.composer,
               hashtags: version.hashtags ?? main.detail.hashtags,
+              genres: version.genres ?? main.detail.genres,
             }
           : this.versionToDetail(version);
         return {

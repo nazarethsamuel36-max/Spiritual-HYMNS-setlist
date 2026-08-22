@@ -155,6 +155,20 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               </>
             )}
           </div>
+          {song.genres && song.genres.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-1">
+              {song.genres.slice(0, 3).map((genre) => (
+                <span key={genre} className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-700 rounded">
+                  {genre}
+                </span>
+              ))}
+              {song.genres.length > 3 && (
+                <span className="px-1.5 py-0.5 text-[10px] text-slate-500">
+                  +{song.genres.length - 3}
+                </span>
+              )}
+            </div>
+          )}
           {song.matchType === 'lyrics' && song.lyricsSnippet && (
             <div className="mt-1 text-xs text-slate-500 italic truncate">
               "{song.lyricsSnippet}"
@@ -171,10 +185,10 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               e.stopPropagation();
               onDelete();
             }}
-            className="p-2 text-slate-500 hover:text-slate-700 transition-colors"
+            className="w-7 h-7 flex items-center justify-center rounded-full text-slate-400 hover:bg-slate-200 hover:text-slate-600 transition-all"
             title="Delete"
           >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
             </svg>
           </button>

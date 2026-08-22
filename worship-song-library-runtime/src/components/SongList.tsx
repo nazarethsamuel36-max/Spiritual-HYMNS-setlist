@@ -5,13 +5,12 @@ import { SearchEngine } from '../utils/SearchEngine';
 import { useWorkflowStore } from '../store/workflowStore';
 import { supabase } from '../lib/supabaseClient';
 import { getSongs } from '../services/DataService';
-import { LanguageTabs } from './shared/LanguageTabs';
+import { FilterTabs } from './shared/FilterTabs';
+import { LANGUAGES } from '../utils/Genres';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { VisibilitySwitch } from './shared/VisibilitySwitch';
 import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
-
-const LANGUAGES = ['All', 'English', 'Hindi', 'Marathi', 'Konkani'];
 
 export function SongList() {
   const renderCount = useRef(0);
@@ -19,7 +18,7 @@ export function SongList() {
   console.log(`[PERF] SongList render #${renderCount.current}`);
 
   const selectedLanguage = useWorkflowStore((s) => s.libraryLanguage);
-  const setSelectedLanguage = useWorkflowStore((s) => s.setLibraryLanguage);
+  const selectedGenres = useWorkflowStore((s) => s.selectedGenres);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('number');
   const [allSongs, setAllSongs] = useState<SongIndex[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +32,7 @@ export function SongList() {
   const [newSongKey, setNewSongKey] = useState('C');
   const [newSongChords, setNewSongChords] = useState('');
   const [newSongIsActive, setNewSongIsActive] = useState(false);
+  const [genreMap, setGenreMap] = useState<Map<number, string[]>>(new Map());
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
@@ -59,13 +59,19 @@ export function SongList() {
         // 1. Render the UI immediately!
         setAllSongs(filteredSongs);
 
-        // 2. Temporarily removed deferred search indexing to test mobile cold-start click issue
-        // setTimeout(() => {
-        //   SearchEngine.indexSongs(filteredSongs);
-        // }, 500);
-        SearchEngine.indexSongs(filteredSongs);
+        // 2. Index songs for search (await to ensure index is built before building genre map)
+        await SearchEngine.indexSongs(filteredSongs);
         
-        // 3. Build lyrics index from full song details
+        // 3. Build genre map directly from SongIndex.genres (already synced from Supabase)
+        const newGenreMap = new Map<number, string[]>();
+        filteredSongs.forEach(song => {
+          if (song.genres && song.genres.length > 0) {
+            newGenreMap.set(song.id, song.genres);
+          }
+        });
+        setGenreMap(newGenreMap);
+        
+        // 4. Build lyrics index from full song details
         const songDetails = await db.songs.toArray();
         await SearchEngine.indexLyrics(songDetails);
         console.log('[SongList] SearchEngine indexed lyrics for', songDetails.length, 'songs');
@@ -157,14 +163,10 @@ export function SongList() {
     }
   };
 
-  const songs = getVisibleSongs(allSongs, selectedLanguage, sortBy);
-
-  useEffect(() => {
-    if (isLoading) return;
-    console.log('Songs from Supabase:', allSongs);
-    console.log('Filtered songs:', songs);
-    console.log('Active language filter:', selectedLanguage);
-  }, [allSongs, songs, selectedLanguage, isLoading]);
+  const songs = useMemo(
+    () => getVisibleSongs(allSongs, selectedLanguage, selectedGenres, genreMap, sortBy),
+    [allSongs, selectedLanguage, selectedGenres, genreMap, sortBy]
+  );
 
   // keep the new-song language selector in sync with the overall filter
   useEffect(() => {
@@ -293,7 +295,7 @@ export function SongList() {
       {librarySearchActive && librarySearchQuery.trim().length > 0 ? (
         <SearchResults
           query={librarySearchQuery}
-          songs={allSongs}
+          songs={songs}
           selectedLanguage={selectedLanguage}
           activeSongId={activeSongId}
           onSelectSong={(id) => {
@@ -302,43 +304,44 @@ export function SongList() {
           }}
         />
       ) : (
-        <div className="flex flex-col pb-32" style={{ minHeight: '500px' }}>
-          {isLoading ? (
-          <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
-        ) : loadError ? (
-          <div className="p-10 text-center text-red-500 font-medium text-sm">{loadError}</div>
-        ) : songs.length === 0 ? (
-          <div className="p-10 text-center text-slate-500 font-medium text-sm">
-            No songs found.
-          </div>
-        ) : (
-          <>
-            {/* Language pills — scrolls with the list */}
+        <div className="flex flex-col" style={{ minHeight: '500px' }}>
+          {/* Filter bar — scrolls with the list */}
+          <div className="relative z-20 bg-slate-50/98 backdrop-blur-sm border-b border-slate-100 flex-shrink-0">
             <div className="px-3 pt-3">
-              <LanguageTabs
-                languages={LANGUAGES}
-                selected={selectedLanguage}
-                onSelect={setSelectedLanguage}
-              />
+              <FilterTabs />
             </div>
-            {/* Sort control — scrolls with the list */}
-            <div className="px-4 pt-2.5">
+            {/* Sort control */}
+            <div className="px-4 pt-2.5 pb-2">
               <SortSelector
                 value={sortBy}
                 onChange={setSortBy}
               />
             </div>
+          </div>
 
-            {songs.map((song: SongIndex) => (
-              <SongRow
-                key={song.id}
-                song={song}
-                onSelect={(id) => openSong(id, 'library')}
-                isActive={song.id === activeSongId}
-              />
-            ))}
-          </>
-          )}
+          {/* Content area */}
+          <div className="relative z-0 flex-1 overflow-y-auto">
+            {isLoading ? (
+              <div className="p-10 text-center text-slate-400 font-bold text-xs tracking-wide">Loading...</div>
+            ) : loadError ? (
+              <div className="p-10 text-center text-red-500 font-medium text-sm">{loadError}</div>
+            ) : songs.length === 0 ? (
+              <div className="p-10 text-center text-slate-500 font-medium text-sm">
+                No songs found.
+              </div>
+            ) : (
+              <>
+                {songs.map((song: SongIndex) => (
+                  <SongRow
+                    key={song.id}
+                    song={song}
+                    onSelect={(id) => openSong(id, 'library')}
+                    isActive={song.id === activeSongId}
+                  />
+                ))}
+              </>
+            )}
+          </div>
         </div>
       )}
     </div>
@@ -348,18 +351,29 @@ export function SongList() {
 function getVisibleSongs(
   allSongs: SongIndex[] | null,
   selectedLanguage: string,
+  selectedGenres: string[],
+  genreMap: Map<number, string[]>,
   sortBy: 'number' | 'title'
 ) {
   if (!allSongs) return [];
 
   const normalizedLanguage = selectedLanguage?.trim().toLowerCase();
   const shouldFilterByLanguage = normalizedLanguage && normalizedLanguage !== 'all';
+  const shouldFilterByGenres = selectedGenres && selectedGenres.length > 0;
 
   let visibleSongs = [...allSongs];
+  
   if (shouldFilterByLanguage) {
     visibleSongs = visibleSongs.filter((song) =>
       songMatchesLanguageFilter(song.language, selectedLanguage)
     );
+  }
+
+  if (shouldFilterByGenres) {
+    visibleSongs = visibleSongs.filter((song) => {
+      const genres = genreMap.get(song.id) || [];
+      return genres.some((genre) => selectedGenres.includes(genre));
+    });
   }
 
   if (sortBy === 'title') {
@@ -395,9 +409,9 @@ interface SearchResultsProps {
 
 function SearchResults({ query, songs, selectedLanguage, activeSongId, onSelectSong }: SearchResultsProps) {
   const results = useMemo(() => {
-    const filtered = songs.filter(song => songMatchesLanguageFilter(song.language, selectedLanguage));
+    // songs is already filtered by language AND genre via getVisibleSongs
     try {
-      return SearchEngine.searchWithLimit(filtered, query, 100);
+      return SearchEngine.searchWithLimit(songs, query, 100);
     } catch (err) {
       console.warn('[Search] Search error suppressed:', err);
       return [];

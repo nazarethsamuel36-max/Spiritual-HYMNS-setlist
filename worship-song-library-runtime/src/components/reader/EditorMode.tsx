@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import type { SongDetail, Version } from '../../db/Database';
-import { supabase } from '../../lib/supabaseClient';
+import { updateAdminSong } from '../../services/DeviceAuthService';
 import { db } from '../../db/Database';
 import { ChordPalette } from './ChordPalette';
 import { VersionService } from '../../services/VersionService';
+import { GENRES } from '../../utils/Genres';
 
 interface HistoryState {
   chords: string;
@@ -95,7 +96,7 @@ function CustomKeyPicker({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`flex h-9 w-10 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
+          className={`flex h-9 w-10 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
       >
         {value}
       </button>
@@ -127,6 +128,99 @@ function CustomKeyPicker({
         </div>
       )}
     </div>
+);
+}
+function GenrePicker({
+  value,
+  onChange,
+  label = 'Genres',
+  buttonClassName = '',
+  className = '',
+  disabled = false,
+}: {
+  value: string[];
+  onChange: (genre: string) => void;
+  label?: string;
+  buttonClassName?: string;
+  className?: string;
+  disabled?: boolean;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const pickerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 });
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const updateMenuPosition = () => {
+      const rect = buttonRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const menuWidth = Math.min(180, window.innerWidth - 32);
+      setMenuPosition({
+        top: Math.min(rect.bottom + 8, window.innerHeight - 248),
+        left: Math.max(16, Math.min(rect.right - menuWidth, window.innerWidth - menuWidth - 16)),
+      });
+    };
+    updateMenuPosition();
+    window.addEventListener('resize', updateMenuPosition);
+    window.addEventListener('scroll', updateMenuPosition, true);
+    const handlePointerDown = (event: MouseEvent) => {
+      if (pickerRef.current && !pickerRef.current.contains(event.target as Node) && !(event.target as Element).closest('[data-editor-genre-menu]')) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handlePointerDown);
+    return () => {
+      window.removeEventListener('resize', updateMenuPosition);
+      window.removeEventListener('scroll', updateMenuPosition, true);
+      document.removeEventListener('mousedown', handlePointerDown);
+    };
+  }, [isOpen]);
+
+  return (
+    <div ref={pickerRef} className={`relative ${className}`}>
+      <button
+        ref={buttonRef}
+        type="button"
+        onClick={() => setIsOpen((prev) => !prev)}
+        disabled={disabled}
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        className={`flex h-9 px-3 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
+      >
+        <span className="text-xs font-bold">Genres</span>
+        <svg className={`w-4 h-4 ml-1 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {isOpen && createPortal(
+        <div data-editor-genre-menu="true" className="fixed z-[100] w-[min(180px,calc(100vw-2rem))] max-h-[min(240px,calc(100dvh-5rem))] overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-2xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" style={menuPosition}>
+          <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            {label}
+          </div>
+          {GENRES.map((option) => {
+            const isSelected = value.includes(option);
+            return (
+              <button
+                key={option}
+                type="button"
+                role="option"
+                aria-selected={isSelected}
+                className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isSelected ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
+                onClick={() => {
+                  onChange(option);
+                }}
+              >
+                <span>{option}</span>
+                {isSelected ? <span className="text-base">✓</span> : null}
+              </button>
+            );
+          })}
+        </div>,
+        document.body
+      )}
+    </div>
   );
 }
 
@@ -136,6 +230,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const [keyValue, setKeyValue] = useState(song.originalKey || songKey || 'C');
   const [chordsText, setChordsText] = useState(song.chords || '');
   const [currentTextKey, setCurrentTextKey] = useState<string>(song.originalKey || songKey || 'C');
+  const [genres, setGenres] = useState<string[]>(song.genres || []);
   const saveTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
@@ -312,7 +407,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, [hasUnsavedChanges, isAdmin]);
 
-  const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+  const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string; genres?: string[] }) => {
     try {
       if (isAdmin) {
         if (versionId) {
@@ -320,6 +415,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           if (updates.title !== undefined) versionUpdates.name = updates.title;
           if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
           if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
+          if (updates.genres !== undefined) versionUpdates.genres = updates.genres;
           await VersionService.updateVersion(versionId, versionUpdates as never);
         } else if (source === 'personal') {
           const existingSong = await db.personalSongs.get(currentSongId);
@@ -331,16 +427,14 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             });
           }
         } else {
-          const { error } = await supabase
-            .from('songs')
-            .update({ ...updates, updated_at: new Date().toISOString() })
-            .eq('id', currentSongId);
-
-          if (error) {
-            console.error('❌ Auto-save failed:', error);
-            alert('Failed to save changes: ' + error.message);
-            return;
+          // Supabase expects 'genre', not 'genres'
+          const supabaseUpdates: any = { ...updates, updated_at: new Date().toISOString() };
+          if (supabaseUpdates.genres !== undefined) {
+            supabaseUpdates.genre = supabaseUpdates.genres;
+            delete supabaseUpdates.genres;
           }
+
+          await updateAdminSong(currentSongId, supabaseUpdates);
         }
       }
     } catch (err) {
@@ -349,7 +443,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     }
   };
 
-  const debouncedAutoSave = (updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+  const debouncedAutoSave = (updates: { title?: string; language?: string; original_key?: string; chords?: string; genres?: string[] }) => {
     if (!isAdmin) return;
     if (saveTimeoutRef.current) {
       clearTimeout(saveTimeoutRef.current);
@@ -371,7 +465,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
 
   const handleOverwriteVersion = async () => {
     setShowSaveOptionDialog(false);
-    const updates = { title, language, original_key: keyValue, chords: chordsText };
+    const updates = { title, language, original_key: keyValue, chords: chordsText, genres };
     if (!versionId) return;
     await saveVersion(versionId, updates);
   };
@@ -398,6 +492,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           chords: chordsText,
           lyrics: song.lyrics,
           originalKey: keyValue,
+          genres: genres,
         },
       });
       setVersionNameInput('');
@@ -411,13 +506,24 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     }
   };
 
-  const saveVersion = async (uid: string, updates: { title?: string; language?: string; original_key?: string; chords?: string }) => {
+  const handleGenreChange = (genre: string) => {
+    const newGenres = genres.includes(genre)
+      ? genres.filter(g => g !== genre)
+      : [...genres, genre];
+      
+    setGenres(newGenres);
+    if (!isAdmin) setHasUnsavedChanges(true);
+    debouncedAutoSave({ genres: newGenres });
+  };
+
+  const saveVersion = async (uid: string, updates: { title?: string; language?: string; original_key?: string; chords?: string; genres?: string[] }) => {
     setSaveStatus('saving');
     try {
       const versionUpdates: Record<string, unknown> = { updatedAt: Date.now() };
       if (updates.title !== undefined) versionUpdates.name = updates.title;
       if (updates.original_key !== undefined) versionUpdates.originalKey = updates.original_key;
       if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
+      if (updates.genres !== undefined) versionUpdates.genres = updates.genres;
 
       await VersionService.updateVersion(uid, versionUpdates as never);
       setSaveStatus('success');
@@ -453,7 +559,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ title: e.target.value });
               }}
-              className="flex-1 h-9 min-w-0 px-0 bg-transparent text-lg font-bold text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:outline-none border-b border-transparent focus:border-slate-300 overflow-hidden text-ellipsis whitespace-nowrap transition-colors"
+              className="flex-1 h-9 min-w-0 px-0 bg-transparent text-[28px] leading-none font-bold text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:outline-none border-b border-transparent focus:border-slate-300 overflow-hidden text-ellipsis whitespace-nowrap transition-colors"
               placeholder={versionId ? 'Version Name...' : 'Song Title...'}
             />
 
@@ -472,6 +578,13 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 debouncedAutoSave({ original_key: newKey, chords: corrected });
               }}
             />
+
+            {source === 'personal' && (
+              <GenrePicker
+                value={genres}
+                onChange={handleGenreChange}
+              />
+            )}
 
             {!isAdmin && (
               saveStatus === 'success' ? (

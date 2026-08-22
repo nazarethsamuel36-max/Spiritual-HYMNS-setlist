@@ -48,6 +48,7 @@ export class ShareService {
           lyrics: song.lyrics,
           chords: song.chords,
           is_active: song.is_active,
+          genres: song.genres || [],
         },
       ],
       personalVersions: [],
