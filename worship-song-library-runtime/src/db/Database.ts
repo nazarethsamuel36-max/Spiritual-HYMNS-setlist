@@ -13,6 +13,7 @@ export type SongIndex = {
   searchTokens: string;
   isPersonal?: boolean;
   is_active?: boolean;
+  genres?: string[];
 }
 
 export type SongDetail = {
@@ -33,6 +34,7 @@ export type SongDetail = {
   lyrics?: string; // Plain lyrics text without chords
   is_active?: boolean; // Whether the song is active and visible in the app
   updated_at?: string; // Timestamp for delta sync
+  genres?: string[];
 }
 
 export type Section = {
@@ -112,6 +114,7 @@ export type Version = {
   hashtags?: string[];
   createdAt: number;
   updatedAt: number;
+  genres?: string[];
 }
 
 export type CacheEntry = {
@@ -120,6 +123,14 @@ export type CacheEntry = {
   timestamp: number;
   size: number;
   cachedAt?: string;
+}
+
+export type DeviceIdentityRecord = {
+  id: 'current';
+  deviceId: string;
+  publicKey: CryptoKey;
+  privateKey: CryptoKey;
+  createdAt: number;
 }
 
 
@@ -132,6 +143,7 @@ export class WorshipDatabase extends Dexie {
   versions!: EntityTable<Version, 'uid'>;
   cache!: EntityTable<CacheEntry, 'id'>;
   meta!: EntityTable<{ id: string; value: string | number }, 'id'>;
+  deviceIdentity!: EntityTable<DeviceIdentityRecord, 'id'>;
 
   sharedSongs!: EntityTable<SongDetail, 'id'>;
   sharedSetlists!: EntityTable<Setlist, 'id'>;
@@ -210,6 +222,47 @@ export class WorshipDatabase extends Dexie {
         await tx.table('arrangements').clear();
       }
     });
+
+    this.version(9).stores({
+      songs: 'id, songNumber, language, updated_at, genres',
+      songIndex: 'id, songNumber, title, language, searchTokens, genres',
+      syncMeta: 'id',
+      setlists: 'id, uid, title, updatedAt',
+      versions: 'uid, sourceSongId, owner, updatedAt, genres',
+      arrangements: 'id, songId, type, updatedAt',
+      cache: 'id, timestamp',
+      meta: 'id',
+      sharedSongs: 'id, uid, songNumber, title, language, genres',
+      sharedSetlists: 'id, uid, title, updatedAt',
+      personalSongs: 'id, uid, title, language, genres'
+    }).upgrade(async (tx) => {
+      // Add genre column to existing tables - backfill empty arrays
+      const tablesToUpdate = ['songs', 'versions', 'personalSongs', 'sharedSongs'];
+      for (const tableName of tablesToUpdate) {
+        const rows = await tx.table(tableName).toArray();
+        for (const row of rows) {
+          if (!row.genres) {
+            row.genres = [];
+            await tx.table(tableName).put(row);
+          }
+        }
+      }
+    });
+
+    this.version(10).stores({
+      songs: 'id, songNumber, language, updated_at, genres',
+      songIndex: 'id, songNumber, title, language, searchTokens, genres',
+      syncMeta: 'id',
+      setlists: 'id, uid, title, updatedAt',
+      versions: 'uid, sourceSongId, owner, updatedAt, genres',
+      arrangements: 'id, songId, type, updatedAt',
+      cache: 'id, timestamp',
+      meta: 'id',
+      deviceIdentity: 'id',
+      sharedSongs: 'id, uid, songNumber, title, language, genres',
+      sharedSetlists: 'id, uid, title, updatedAt',
+      personalSongs: 'id, uid, title, language, genres'
+    });
   }
 
   async resetCache() {
@@ -234,6 +287,9 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
       song.title = indexEntry.title;
       if (!song.originalKey && indexEntry.originalKey) {
         song.originalKey = indexEntry.originalKey;
+      }
+      if (!song.genres && indexEntry.genres) {
+        song.genres = indexEntry.genres;
       }
     }
     return normalizeSongDetail(song);
@@ -314,7 +370,8 @@ export function normalizeSongDetail(song: SongDetail): SongDetail {
           chord: normalizeImportedText(chord.chord)
         }))
       })) || []
-    })) || []
+    })) || [],
+    genres: song.genres || [],
   };
 }
 
@@ -332,7 +389,8 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
       language: shared.language,
       originalKey: normalizeImportedText(shared.originalKey),
       hashtags: shared.hashtags,
-      searchTokens: ''
+      searchTokens: '',
+      genres: shared.genres || [],
     };
   }
 
@@ -347,7 +405,8 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
       originalKey: normalizeImportedText(personal.originalKey),
       hashtags: personal.hashtags,
       searchTokens: '',
-      isPersonal: true
+      isPersonal: true,
+      genres: personal.genres || [],
     };
   }
 
