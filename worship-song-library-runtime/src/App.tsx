@@ -79,6 +79,7 @@ function App() {
       console.log(result.needsInitialDownload ? 'true' : 'false');
       // Always disable gatekeeper - show download button in SongList header instead
       setShowGatekeeper(false);
+      if (new URLSearchParams(window.location.search).has('admin_enroll')) setShowAdminScreen(true);
       console.log('showGatekeeper updated');
     };
 
