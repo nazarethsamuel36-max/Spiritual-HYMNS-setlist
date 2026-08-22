@@ -68,6 +68,19 @@ Deno.serve(async (request) => {
       return json({ enrollment_token: rawToken, request_id: data.id, expires_at: data.expires_at });
     }
 
+    if (action === 'pending') {
+      const { data, error } = await admin
+        .from('admin_enrollment_requests')
+        .select('id, device_name, expires_at, accepted_at')
+        .eq('created_by_device_id', session.device_id)
+        .is('approved_at', null)
+        .is('rejected_at', null)
+        .gt('expires_at', new Date().toISOString())
+        .order('created_at', { ascending: false });
+      if (error) return json({ error: 'Unable to list enrollment requests' }, 500);
+      return json({ requests: data ?? [] });
+    }
+
     if (action === 'accept') {
       if (typeof token !== 'string' || typeof deviceId !== 'string' || typeof deviceName !== 'string' || !publicKey) {
         return json({ error: 'Invalid request' }, 400);

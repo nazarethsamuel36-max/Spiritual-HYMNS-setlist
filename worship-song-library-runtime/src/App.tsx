@@ -19,6 +19,8 @@ import { db, ensureUid } from './db/Database';
 import { generateUUID } from './utils/uuid';
 import { batchDownloadSongs, wakeUpSync } from './services/DataService';
 import { ShareService } from './services/ShareService';
+import { authenticateDevice, clearAdminSession } from './services/DeviceAuthService';
+import { AdminScreen } from './components/AdminScreen';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
   const [syncToast, setSyncToast] = useState<'idle' | 'syncing' | 'done'>('idle');
   const [isSyncingHeader, setIsSyncingHeader] = useState(false);
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
+  const [showAdminScreen, setShowAdminScreen] = useState(false);
+  const [showAdminButton, setShowAdminButton] = useState(false);
   
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -307,30 +311,46 @@ function App() {
 
   console.log('Layout debug:', { isMobile, showSidebar, showReader, sidebarPanel: sidebar.panel });
 
-  const handleTitleTap = () => {
+  const handleTitleTap = async () => {
     titleTapCountRef.current += 1;
     if (titleTapTimerRef.current) window.clearTimeout(titleTapTimerRef.current);
     if (titleTapCountRef.current >= 5) {
-      const username = window.prompt('Admin username')?.trim();
-      const password = window.prompt('Admin password')?.trim();
-      if (username === 'church' && password === 'shalom') {
-        setAdminAuthenticated(true);
-        alert('Admin unlocked');
-      } else {
-        alert('Invalid admin credentials');
-      }
       titleTapCountRef.current = 0;
       if (titleTapTimerRef.current) window.clearTimeout(titleTapTimerRef.current);
+
+      const session = await authenticateDevice();
+      if (session) {
+        setAdminAuthenticated(true);
+        setShowAdminButton(true);
+        setShowAdminScreen(true);
+        return;
+      }
+      setShowAdminScreen(true);
       return;
     }
     titleTapTimerRef.current = window.setTimeout(() => { titleTapCountRef.current = 0; }, 1500);
   };
 
   const handleExitAdminMode = () => {
+    clearAdminSession();
     setAdminAuthenticated(false);
+    setShowAdminScreen(false);
+    setShowAdminButton(false);
     closeReader();
     setSidebarPanel('library');
     window.history.replaceState({ adminMode: false }, '', '/');
+  };
+
+  const handleAdminClose = () => {
+    setShowAdminScreen(false);
+    if (isAdminAuthenticated) window.history.replaceState({ adminMode: false }, '', '/');
+  };
+
+  const handleBootstrapped = async () => {
+    const session = await authenticateDevice();
+    if (!session) throw new Error('Device created, but admin sign-in could not be completed. Tap the title five times again.');
+    setAdminAuthenticated(true);
+    setShowAdminButton(true);
   };
 
   const handleHeaderSync = async () => {
@@ -374,6 +394,10 @@ function App() {
         </div>
       </div>
     );
+  }
+
+  if (showAdminScreen) {
+    return <AdminScreen authenticated={isAdminAuthenticated} onClose={handleAdminClose} onExit={handleExitAdminMode} onBootstrapped={handleBootstrapped} />;
   }
 
   // ==========================================
@@ -445,8 +469,8 @@ function App() {
                 <div className="flex justify-between items-center w-full">
                   <button type="button" onClick={handleTitleTap} className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
                   <button type="button" onClick={handleTitleTap} className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none" title="Tap 5 times to unlock admin mode">BBF Song book</button>
-                  {isAdminAuthenticated && (
-                    <button type="button" onClick={handleExitAdminMode} className="mr-2 text-base transition-transform hover:scale-110" title="Exit admin" aria-label="Exit admin">🔑</button>
+                  {(isAdminAuthenticated || showAdminButton) && (
+                    <button type="button" onClick={() => setShowAdminScreen(true)} className="mr-2 rounded-md border border-cyan-200 bg-cyan-50 px-2 py-1 text-xs font-bold text-cyan-800" title="Open admin screen">Admin</button>
                   )}
                   <div className="flex items-center gap-1">
                     {isSongsTab && (
