@@ -311,7 +311,7 @@ export function ReaderItemView({ item, onClose }: ReaderItemViewProps) {
             ) : (
               <div className="space-y-2">
                 <div className="text-[10px] font-black text-[var(--color-brand)] uppercase tracking-[0.2em]">Service Event</div>
-                <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-normal">
+                <h1 className="text-[28px] leading-none font-extrabold text-slate-900">
                   {item.label}
                 </h1>
               </div>

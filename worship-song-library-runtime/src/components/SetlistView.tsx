@@ -110,7 +110,7 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
       {/* Delete */}
       <button
         onClick={() => SetlistService.removeItemFromSetlist(setlistId, item.id)}
-        className="p-2 text-slate-300 hover:bg-slate-200 hover:text-red-500 rounded-full transition-colors md:opacity-0 group-hover:opacity-100"
+        className="p-2 text-slate-400 hover:bg-slate-200 hover:text-slate-600 rounded-full transition-colors md:opacity-0 group-hover:opacity-100"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
@@ -172,7 +172,7 @@ function SortableMarkerItem({ item, setlistId }: { item: any, setlistId: string 
       {/* Delete */}
       <button
         onClick={() => SetlistService.removeItemFromSetlist(setlistId, item.id)}
-        className="p-2 text-slate-300 hover:bg-white/60 hover:text-red-500 rounded-full transition-colors md:opacity-0 group-hover:opacity-100"
+        className="p-2 text-slate-400 hover:bg-slate-200 hover:text-slate-600 rounded-full transition-colors md:opacity-0 group-hover:opacity-100"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
