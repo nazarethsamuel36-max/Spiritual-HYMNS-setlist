@@ -113,6 +113,7 @@ function App() {
           window.history.replaceState({}, '', window.location.pathname);
         } catch (e) { alert('Failed to import song.'); }
       }
+      void handleTitleTap;
       const importSetlistData = params.get('import_setlist');
       if (importSetlistData) {
         try {
@@ -331,8 +332,6 @@ function App() {
     }
     titleTapTimerRef.current = window.setTimeout(() => { titleTapCountRef.current = 0; }, 1500);
   };
-  void handleTitleTap;
-
   const handleExitAdminMode = () => {
     clearAdminSession();
     setAdminAuthenticated(false);
@@ -469,8 +468,8 @@ function App() {
                 ) : (
                   <>
                 <div className="flex justify-between items-center w-full">
-                  <button type="button" className="hidden md:block text-lg font-black text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
-                  <button type="button" className="md:hidden text-[19px] font-black text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song book</button>
+                  <button type="button" className="hidden md:block text-lg font-bold font-sans text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
+                  <button type="button" className="md:hidden text-[19px] font-bold font-sans text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song book</button>
                   {(isAdminAuthenticated || showAdminButton) && (
                     <button type="button" onClick={() => setShowAdminScreen(true)} className="mr-2 rounded-md border border-cyan-200 bg-cyan-50 px-2 py-1 text-xs font-bold text-cyan-800" title="Open admin screen">Admin</button>
                   )}

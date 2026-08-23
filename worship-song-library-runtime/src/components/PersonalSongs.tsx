@@ -5,7 +5,7 @@ import type { SongDetail } from '../db/Database';
 import { db } from '../db/Database';
 import { useWorkflowStore } from '../store/workflowStore';
 import { SearchBar } from './shared/SearchBar';
-import { LanguageTabs } from './shared/LanguageTabs';
+import { FilterTabs } from './shared/FilterTabs';
 import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
@@ -16,7 +16,6 @@ export function PersonalSongs() {
   const [search, setSearch] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('All');
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
-  const [isGenreOpen, setIsGenreOpen] = useState(false);
   const [sortBy, setSortBy] = useState<'number' | 'title'>('title');
   const [showAddForm, setShowAddForm] = useState(false);
   const [newSongTitle, setNewSongTitle] = useState('Untitled Personal Song');
@@ -317,63 +316,14 @@ export function PersonalSongs() {
 
       {/* Search + Filters */}
       <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
-        {/* Language pills & Genre toggle */}
-        <div className="px-3 flex items-center justify-between gap-2 overflow-x-auto hide-scrollbar">
-          <div className="flex items-center gap-2 flex-grow">
-            <div className="relative min-w-0 flex-grow">
-              <LanguageTabs
-                languages={LANGUAGES}
-                selected={selectedLanguage}
-                onSelect={setSelectedLanguage}
-              />
-              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 z-10 h-8 w-8 bg-gradient-to-r from-transparent to-slate-50" />
-            </div>
-            {/* Genre Toggle */}
-            <button
-              onClick={() => setIsGenreOpen(!isGenreOpen)}
-              className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex-shrink-0 ${
-                isGenreOpen
-                  ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              <span className="flex items-center gap-1">
-                Genres
-                <svg className={`w-4 h-4 transition-transform duration-200 ${isGenreOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-
-        {/* Expandable genre selection pills */}
-        <div className={`max-h-48 overflow-y-auto transition-all duration-200 ease-in-out px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${isGenreOpen ? 'opacity-100 mt-2' : 'max-h-0 opacity-0'}`}>
-          <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
-            <button
-              onClick={clearGenres}
-              className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex-shrink-0 ${
-                !selectedGenres.length
-                  ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              All
-            </button>
-            {GENRES.map((genre) => (
-              <button
-                key={genre}
-                onClick={() => toggleGenre(genre)}
-                className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
-                  selectedGenres.includes(genre)
-                    ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                {genre}
-              </button>
-            ))}
-          </div>
+        <div className="px-3">
+          <FilterTabs
+            selectedLanguage={selectedLanguage}
+            onLanguageChange={setSelectedLanguage}
+            selectedGenres={selectedGenres}
+            onToggleGenre={toggleGenre}
+            onClearGenres={clearGenres}
+          />
         </div>
         {/* Search bar */}
         <div className="px-3 mt-2.5">

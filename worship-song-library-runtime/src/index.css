@@ -41,6 +41,8 @@
   --color-surface: #FFFFFF;
   --color-on-inverse: #FFFFFF;
   --color-reader-surface: #FAFAFA;
+  --color-genre-badge-bg: #E2E8F0;
+  --color-genre-badge-text: #334155;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -74,6 +76,8 @@ body[data-theme="dark"] {
   --color-surface: #1E293B;
   --color-on-inverse: #0F172A;
   --color-reader-surface: #020617;
+  --color-genre-badge-bg: #334155;
+  --color-genre-badge-text: #CBD5E1;
 
   /* Hardcoded surfaces (all are the slate-50 page background role)
      Strict slate-50 mirror => #020617 */

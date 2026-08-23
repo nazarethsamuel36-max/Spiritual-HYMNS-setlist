@@ -67,13 +67,14 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [statusMsg, setStatusMsg] = useState('');
   const [isSyncing, setIsSyncing] = useState(false);
-  const [showSongManagement, setShowSongManagement] = useState(false);
+  const [showSongManagement, setShowSongManagement] = useState(true);
   const [theme, setTheme] = useState<ThemeMode>(getStoredTheme);
   const [hasOfflineLibrary, setHasOfflineLibrary] = useState<boolean>(false);
   const [showOfflineRemovalNotice, setShowOfflineRemovalNotice] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [showDataBackup, setShowDataBackup] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [showAbout, setShowAbout] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
   const [importReport, setImportReport] = useState<string | null>(null);
   const [showImportSuccess, setShowImportSuccess] = useState(false);
@@ -196,19 +197,6 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
         </div>
 
         <div className="p-6 space-y-6 overflow-y-auto flex-1">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
-              <span className="text-lg font-bold text-slate-700">{stats?.songCount ?? 0} Songs</span>
-            </div>
-            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
-              <span className="text-xs font-bold text-slate-700">
-                {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
-              </span>
-            </div>
-          </div>
-
           <div className="space-y-3">
             {/* Song Management */}
             <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
@@ -273,6 +261,19 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                   </button>
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
+                      <span className="text-sm font-bold text-slate-700">{stats?.songCount ?? 0} Songs</span>
+                    </div>
+                    <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
+                      <span className="text-xs font-bold text-slate-700">
+                        {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
+                      </span>
+                    </div>
+                  </div>
 
                   {isDownloading && downloadProgress > 0 && (
                     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
@@ -420,12 +421,43 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 ))}
               </div>
             </div>
+
+            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
+              <button
+                type="button"
+                onClick={() => setShowAbout((prev) => !prev)}
+                className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors"
+                aria-expanded={showAbout}
+              >
+                <span className="text-sm font-bold text-slate-700">About</span>
+                <span className={`text-slate-400 flex-shrink-0 transition-transform duration-200 ${showAbout ? 'rotate-180' : ''}`}>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </button>
+              {showAbout && (
+                <div className="border-t border-slate-100 px-4 py-4 text-xs leading-relaxed text-slate-500">
+                  <h3 className="text-sm font-bold text-slate-800">BBF Song Book</h3>
+                  <p className="mt-1">
+                    A digital version of <span className="font-semibold text-slate-700">Hymns and Spiritual Songs</span>, created for our church community to make it easier to find, read, organize, and use the songs.
+                  </p>
+                  <p className="mt-3 font-semibold text-slate-700">To God be the glory.</p>
+                  <p className="mt-3">
+                    I thank God for giving me the wisdom, strength, and opportunity to digitalize this songbook and make it available for the service of our church.
+                  </p>
+                  <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Created by</h4>
+                  <p className="mt-1 font-semibold text-slate-700">Samuel Nazareth</p>
+                  <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Feedback?</h4>
+                  <p className="mt-1">Have a suggestion, found an issue, or have feedback? I&apos;d love to hear from you.</p>
+                  <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Note</h4>
+                  <p className="mt-1">Chords are being added gradually, so some songs may not have chord information available yet.</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
-        <div className="p-4 bg-slate-50 text-center flex-shrink-0">
-          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Runtime Version 1.2.0 • Build Stable</p>
-        </div>
       </div>
 
       {/* Success Modal Popup for Data Import */}

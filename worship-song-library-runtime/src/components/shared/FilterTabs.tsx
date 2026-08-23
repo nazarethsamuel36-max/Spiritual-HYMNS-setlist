@@ -4,8 +4,21 @@ import { useWorkflowStore } from '../../store/workflowStore';
 import { useShallow } from 'zustand/react/shallow';
 import { GENRES, LANGUAGES } from '../../utils/Genres';
 
+type FilterTabsProps = {
+  selectedLanguage?: string;
+  onLanguageChange?: (language: string) => void;
+  selectedGenres?: string[];
+  onToggleGenre?: (genre: string) => void;
+  onClearGenres?: () => void;
+};
 
-export function FilterTabs() {
+export function FilterTabs({
+  selectedLanguage: controlledLanguage,
+  onLanguageChange,
+  selectedGenres: controlledGenres,
+  onToggleGenre,
+  onClearGenres,
+}: FilterTabsProps = {}) {
   const { 
     libraryLanguage, 
     setLibraryLanguage,
@@ -21,6 +34,11 @@ export function FilterTabs() {
       clearGenres: s.clearGenres
     }))
   );
+  const selectedLanguage = controlledLanguage ?? libraryLanguage;
+  const setLanguage = onLanguageChange ?? setLibraryLanguage;
+  const genres = controlledGenres ?? selectedGenres;
+  const toggleSelectedGenre = onToggleGenre ?? toggleGenre;
+  const clearSelectedGenres = onClearGenres ?? clearGenres;
 
   const [isGenreOpen, setIsGenreOpen] = useState(false);
   const genreButtonRef = useRef<HTMLButtonElement>(null);
@@ -66,9 +84,9 @@ export function FilterTabs() {
         {LANGUAGES.map(lang => (
           <button
             key={`lang-${lang}`}
-            onClick={() => setLibraryLanguage(lang)}
+            onClick={() => setLanguage(lang)}
             className={`px-4 py-1.5 rounded-full text-[12px] font-bold tracking-tight transition-all duration-150 flex-shrink-0 ${
-              libraryLanguage === lang
+              selectedLanguage === lang
                 ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
                 : 'bg-slate-500/15 text-slate-500 hover:bg-slate-500/25'
             }`}
@@ -98,19 +116,19 @@ export function FilterTabs() {
           <div className="fixed inset-0 z-[90]" onClick={() => setIsGenreOpen(false)} />
           <div className="fixed z-[100] max-h-[min(240px,calc(100dvh-5rem))] w-44 overflow-y-auto rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-2xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" style={genreMenuPosition}>
           <button
-            onClick={() => { clearGenres(); setIsGenreOpen(false); }}
-            className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-semibold ${!selectedGenres.length ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
+            onClick={() => { clearSelectedGenres(); setIsGenreOpen(false); }}
+            className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-semibold ${!genres.length ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
           >
             All
           </button>
           {GENRES.map((genre) => (
             <button
               key={genre}
-              onClick={() => toggleGenre(genre)}
-              className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-semibold ${selectedGenres.includes(genre) ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
+              onClick={() => toggleSelectedGenre(genre)}
+              className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-semibold ${genres.includes(genre) ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
             >
               {genre}
-              {selectedGenres.includes(genre) && <span>✓</span>}
+              {genres.includes(genre) && <span>✓</span>}
             </button>
           ))}
           </div>

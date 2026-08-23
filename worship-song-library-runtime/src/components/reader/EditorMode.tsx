@@ -559,7 +559,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
                 if (!isAdmin) setHasUnsavedChanges(true);
                 debouncedAutoSave({ title: e.target.value });
               }}
-              className="flex-1 h-9 min-w-0 px-0 bg-transparent text-[28px] leading-none font-bold text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:outline-none border-b border-transparent focus:border-slate-300 overflow-hidden text-ellipsis whitespace-nowrap transition-colors"
+              className="flex-1 h-9 min-w-0 px-0 bg-transparent text-[28px] leading-none font-normal font-sans text-slate-900 placeholder:text-slate-400 placeholder:font-normal focus:outline-none border-b border-transparent focus:border-slate-300 overflow-hidden text-ellipsis whitespace-nowrap transition-colors"
               placeholder={versionId ? 'Version Name...' : 'Song Title...'}
             />
 

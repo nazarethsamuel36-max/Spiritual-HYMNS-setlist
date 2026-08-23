@@ -158,7 +158,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
           {song.genres && song.genres.length > 0 && (
             <div className="flex flex-wrap gap-1 mt-1">
               {song.genres.slice(0, 3).map((genre) => (
-                <span key={genre} className="px-1.5 py-0.5 text-[10px] font-medium bg-slate-100 text-slate-700 rounded">
+                <span key={genre} className="px-1.5 py-0.5 text-[10px] font-medium bg-[var(--color-genre-badge-bg)] text-[var(--color-genre-badge-text)] rounded">
                   {genre}
                 </span>
               ))}

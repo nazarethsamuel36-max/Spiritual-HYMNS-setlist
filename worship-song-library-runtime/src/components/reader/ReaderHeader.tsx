@@ -6,7 +6,7 @@ import { ChordTransposer } from '../../utils/ChordTransposer';
 import { formatSongTitle, formatKey } from '../../utils/SongFormatter';
 import type { ReaderMode } from '../../store/workflowStore';
 import { useWorkflowStore } from '../../store/workflowStore';
-import { supabase } from '../../lib/supabaseClient';
+import { updateAdminSong } from '../../services/DeviceAuthService';
 import { VisibilitySwitch } from '../shared/VisibilitySwitch';
 import { createNewVersion } from '../../services/VersionWorkflow';
 import { VersionService } from '../../services/VersionService';
@@ -51,6 +51,8 @@ export function ReaderHeader({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileTab, setMobileTab] = useState<'main' | 'setlist' | 'versions'>('main');
 
+  const isPersonal = source === 'personal';
+
   const setlists = useLiveQuery(() => db.setlists.toArray());
   const versions = useLiveQuery(() =>
     db.versions.where('sourceSongId').equals(song.id).toArray()
@@ -71,12 +73,7 @@ export function ReaderHeader({
     const newIsActive = !song.is_active;
     setIsPublishLoading(true);
     try {
-      const { error } = await supabase
-        .from('songs')
-        .update({ is_active: newIsActive })
-        .eq('id', song.id)
-        .select();
-      if (error) throw error;
+      await updateAdminSong(song.id, { is_active: newIsActive });
       if (onRefreshSong) onRefreshSong();
     } catch (err) {
       console.error('Failed to update:', err);
@@ -131,10 +128,10 @@ export function ReaderHeader({
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center space-x-2 min-w-0 flex-1">
             <div className="min-w-0">
-              <h1 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight leading-tight truncate">
+              <h1 className="text-[28px] leading-tight font-normal font-sans text-slate-900 tracking-tight break-words">
                 {formatSongTitle(song.title)}
               </h1>
-              <div className="flex items-center space-x-1.5">
+<div className="flex items-center space-x-1.5">
                 <span className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider truncate">
                   {song.artist || 'Unknown Artist'}
                 </span>
@@ -400,13 +397,13 @@ export function ReaderHeader({
       </div>
 
       {/* ── MOBILE HEADER: single clean line (hidden in admin mode) ── */}
-      {!isAdminAuthenticated && (
-        <div className="md:hidden max-w-4xl mx-auto w-full flex items-center justify-between gap-2 h-10">
+{!isAdminAuthenticated && (
+        <div className="md:hidden max-w-4xl mx-auto w-full flex items-center justify-between gap-2 min-h-12 py-1">
           <div className="flex items-center space-x-2 min-w-0 flex-1">
-            {source !== 'personal' && source !== 'shared' && (
-              <span className="text-slate-500 text-[30px] font-semibold flex-shrink-0 leading-none">{song.songNumber}</span>
+            {!isPersonal && (
+              <span className="text-slate-500 text-[26px] font-semibold flex-shrink-0 leading-[1.1]">{song.songNumber}</span>
             )}
-            <h1 className="text-[26px] font-normal text-slate-900 tracking-tight leading-normal truncate min-w-0">
+              <h1 className="text-[28px] font-normal font-sans text-slate-900 min-w-0 leading-tight break-words">
               {formatSongTitle(song.title)}
             </h1>
           </div>
