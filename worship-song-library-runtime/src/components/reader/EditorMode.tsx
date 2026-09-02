@@ -6,6 +6,7 @@ import { db } from '../../db/Database';
 import { ChordPalette } from './ChordPalette';
 import { VersionService } from '../../services/VersionService';
 import { GENRES } from '../../utils/Genres';
+import { KEY_ROOT_OPTIONS, formatKeyDisplay, parseKeyDisplay, type KeyQuality } from '../../utils/KeyUtils';
 
 interface HistoryState {
   chords: string;
@@ -60,8 +61,6 @@ interface EditorModeProps {
   onExit?: () => void;
 }
 
-const KEY_OPTIONS = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-
 function CustomKeyPicker({
   value,
   onChange,
@@ -77,58 +76,122 @@ function CustomKeyPicker({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const pickerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0, width: 160, maxHeight: 280 });
+  const parsed = parseKeyDisplay(value);
 
   useEffect(() => {
     if (!isOpen) return;
+
+    const updateMenuPosition = () => {
+      const rect = buttonRef.current?.getBoundingClientRect();
+      if (!rect) return;
+
+      const width = Math.min(160, window.innerWidth - 24);
+      const maxHeight = Math.min(280, window.innerHeight - 48);
+      const verticalSpaceBelow = window.innerHeight - rect.bottom - 16;
+      const top = verticalSpaceBelow >= maxHeight ? rect.bottom + 8 : Math.max(12, rect.top - maxHeight - 8);
+      const left = Math.max(12, Math.min(rect.left, window.innerWidth - width - 12));
+
+      setMenuPosition({ top, left, width, maxHeight });
+    };
+
+    updateMenuPosition();
+    window.addEventListener('resize', updateMenuPosition);
+    window.addEventListener('scroll', updateMenuPosition, true);
+
     const handlePointerDown = (event: MouseEvent) => {
       if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
     document.addEventListener('mousedown', handlePointerDown);
-    return () => document.removeEventListener('mousedown', handlePointerDown);
+    return () => {
+      window.removeEventListener('resize', updateMenuPosition);
+      window.removeEventListener('scroll', updateMenuPosition, true);
+      document.removeEventListener('mousedown', handlePointerDown);
+    };
   }, [isOpen]);
 
   return (
     <div ref={pickerRef} className={`relative ${className}`}>
       <button
+        ref={buttonRef}
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-          className={`flex h-9 w-10 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
+        className={`flex h-9 w-10 items-center justify-center rounded-lg border border-slate-300 bg-[var(--color-surface)] text-[var(--color-text)] focus:outline-none cursor-pointer flex-shrink-0 transition-colors hover:bg-slate-50 ${isOpen ? 'ring-2 ring-slate-400' : ''} ${buttonClassName}`}
       >
         {value}
       </button>
 
-      {isOpen && (
-        <div className="absolute left-0 top-[calc(100%+0.5rem)] z-30 min-w-[96px] max-h-[240px] overflow-y-auto overflow-x-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      {isOpen && createPortal(
+        <div
+          className="fixed z-[100] overflow-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] shadow-xl"
+          style={{
+            top: menuPosition.top,
+            left: menuPosition.left,
+            width: menuPosition.width,
+            maxHeight: menuPosition.maxHeight,
+          }}
+        >
           <div className="px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             {label}
           </div>
-          {KEY_OPTIONS.map((option) => {
-            const isSelected = value === option;
-            return (
-              <button
-                key={option}
-                type="button"
-                role="option"
-                aria-selected={isSelected}
-                className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isSelected ? 'bg-slate-100 text-slate-900' : 'text-slate-600 hover:bg-slate-50'}`}
-                onClick={() => {
-                  onChange(option);
-                  setIsOpen(false);
-                }}
-              >
-                <span>{option}</span>
-                {isSelected ? <span className="text-base">✓</span> : null}
-              </button>
-            );
-          })}
-        </div>
+
+          <div className="border-t border-slate-200 px-1 py-2">
+            <div className="px-2 pb-1 text-[9px] font-bold uppercase tracking-[0.18em] text-slate-400">Quality</div>
+            {(['major', 'minor'] as KeyQuality[]).map((quality) => {
+              const isSelected = parsed.quality === quality;
+              return (
+                <button
+                  key={quality}
+                  type="button"
+                  role="option"
+                  aria-selected={isSelected}
+                  className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isSelected ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
+                  onClick={() => {
+                    onChange(formatKeyDisplay(parsed.root, quality));
+                    setIsOpen(false);
+                  }}
+                >
+                  <span>{quality === 'major' ? 'Major' : 'Minor'}</span>
+                  {isSelected ? <span className="text-base">✓</span> : null}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="border-t border-slate-200 px-1 py-2">
+            <div className="px-2 pb-1 text-[9px] font-bold uppercase tracking-[0.18em] text-slate-400">Key</div>
+            <div className="max-h-[180px] overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {KEY_ROOT_OPTIONS.map((option) => {
+                const isSelected = parsed.root === option;
+                return (
+                  <button
+                    key={option}
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${isSelected ? 'bg-slate-900 text-[var(--color-on-inverse)]' : 'text-slate-600 hover:bg-slate-50'}`}
+                    onClick={() => {
+                      onChange(formatKeyDisplay(option, parsed.quality));
+                      setIsOpen(false);
+                    }}
+                  >
+                    <span>{option}</span>
+                    {isSelected ? <span className="text-base">✓</span> : null}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>,
+        document.body
       )}
     </div>
-);
+  );
 }
 function GenrePicker({
   value,
@@ -237,6 +300,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   const [showVersionDialog, setShowVersionDialog] = useState(false);
   const [showSaveOptionDialog, setShowSaveOptionDialog] = useState(false);
   const [versionNameInput, setVersionNameInput] = useState('');
+  const [pendingVersionUid, setPendingVersionUid] = useState<string | null>(null);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'success'>('idle');
   const [containerStyle, setContainerStyle] = useState<React.CSSProperties>({
     height: '100%',
@@ -407,6 +471,35 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, [hasUnsavedChanges, isAdmin]);
 
+  const emitToast = (message: string, type: 'success' | 'error' = 'success') => {
+    window.dispatchEvent(new CustomEvent('show-toast', { detail: { message, type } }));
+  };
+
+  const ensurePersonalVersion = async (nameOverride?: string): Promise<string> => {
+    const latest = await db.versions
+      .where('sourceSongId')
+      .equals(song.id)
+      .filter((item) => item.owner === 'personal')
+      .sortBy('updatedAt');
+
+    const existingUid = latest.at(-1)?.uid;
+    if (existingUid) return existingUid;
+
+    const createdUid = await VersionService.createVersion({
+      sourceSongId: song.id,
+      name: nameOverride?.trim() || title || song.title || 'My Version',
+      owner: 'personal',
+      snapshot: {
+        chords: chordsText,
+        lyrics: song.lyrics,
+        originalKey: keyValue,
+        genres: genres,
+      },
+    });
+
+    return createdUid;
+  };
+
   const performSave = async (currentSongId: number, updates: { title?: string; language?: string; original_key?: string; chords?: string; genres?: string[] }) => {
     try {
       if (isAdmin) {
@@ -417,6 +510,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           if (updates.chords !== undefined) versionUpdates.chords = updates.chords;
           if (updates.genres !== undefined) versionUpdates.genres = updates.genres;
           await VersionService.updateVersion(versionId, versionUpdates as never);
+          emitToast('Song saved');
         } else if (source === 'personal') {
           const existingSong = await db.personalSongs.get(currentSongId);
           if (existingSong) {
@@ -426,6 +520,16 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               updated_at: new Date().toISOString()
             });
           }
+
+          const personalVersionUid = await ensurePersonalVersion(title || song.title || 'My Version');
+          await VersionService.updateVersion(personalVersionUid, {
+            name: title || song.title || 'My Version',
+            originalKey: keyValue,
+            chords: chordsText,
+            genres,
+            updatedAt: Date.now(),
+          } as never);
+          emitToast('Saved to my versions');
         } else {
           // Supabase expects 'genre', not 'genres'
           const supabaseUpdates: any = { ...updates, updated_at: new Date().toISOString() };
@@ -435,6 +539,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           }
 
           await updateAdminSong(currentSongId, supabaseUpdates);
+          emitToast('Song saved');
         }
       }
     } catch (err) {
@@ -455,9 +560,23 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
   };
 
   const handleManualSave = async () => {
+    const defaultName = version?.name || title || song.title || 'My Version';
+    setVersionNameInput(defaultName);
+
+    if (source === 'personal') {
+      const personalVersion = await db.versions
+        .where('sourceSongId')
+        .equals(song.id)
+        .filter((item) => item.owner === 'personal')
+        .sortBy('updatedAt');
+
+      setPendingVersionUid(personalVersion.at(-1)?.uid ?? null);
+      setShowSaveOptionDialog(true);
+      return;
+    }
+
     if (!versionId) {
       setShowVersionDialog(true);
-      setVersionNameInput(version?.name || song.title || '');
       return;
     }
     setShowSaveOptionDialog(true);
@@ -465,14 +584,70 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
 
   const handleOverwriteVersion = async () => {
     setShowSaveOptionDialog(false);
-    const updates = { title, language, original_key: keyValue, chords: chordsText, genres };
-    if (!versionId) return;
-    await saveVersion(versionId, updates);
+    const resolvedName = (versionNameInput || title || version?.name || song.title || 'My Version').trim() || 'My Version';
+    const updates = { title: resolvedName, language, original_key: keyValue, chords: chordsText, genres };
+
+    if (source === 'personal') {
+      await db.personalSongs.update(song.id, {
+        title: resolvedName,
+        language,
+        originalKey: keyValue,
+        chords: chordsText,
+        genres,
+        updated_at: new Date().toISOString(),
+      });
+
+      const existingPersonalVersion = (await db.versions
+        .where('sourceSongId')
+        .equals(song.id)
+        .filter((item) => item.owner === 'personal')
+        .sortBy('updatedAt'))
+        .at(-1);
+
+      if (existingPersonalVersion) {
+        await saveVersion(existingPersonalVersion.uid, updates);
+      } else {
+        setHasUnsavedChanges(false);
+        setSaveStatus('success');
+        emitToast('Saved to My Songs');
+        setTimeout(() => { setSaveStatus('idle'); }, 2000);
+      }
+
+      setVersionNameInput(resolvedName);
+      return;
+    }
+
+    const targetVersionId = versionId ?? pendingVersionUid ?? await ensurePersonalVersion(resolvedName);
+    setPendingVersionUid(targetVersionId);
+    setVersionNameInput(resolvedName);
+    await saveVersion(targetVersionId, updates);
   };
 
-  const handleDuplicateVersion = () => {
+  const handleDuplicateVersion = async () => {
     setShowSaveOptionDialog(false);
-    setVersionNameInput(version?.name ? `${version.name} (copy)` : (song.title || ''));
+    const duplicateName = (versionNameInput || version?.name || title || song.title || 'My Version').trim() || 'My Version';
+    const finalDuplicateName = duplicateName.endsWith(' (copy)') ? duplicateName : `${duplicateName} (copy)`;
+    setVersionNameInput(finalDuplicateName);
+    if (source === 'personal') {
+      const createdUid = await VersionService.createVersion({
+        sourceSongId: song.id,
+        name: finalDuplicateName,
+        owner: 'personal',
+        snapshot: {
+          chords: chordsText,
+          lyrics: song.lyrics,
+          originalKey: keyValue,
+          genres: genres,
+        },
+      });
+      setPendingVersionUid(createdUid);
+      setShowVersionDialog(false);
+      setHasUnsavedChanges(false);
+      setSaveStatus('success');
+      emitToast('Saved as a new version');
+      setTimeout(() => { setSaveStatus('idle'); }, 3000);
+      return;
+    }
     setShowVersionDialog(true);
   };
 
@@ -484,7 +659,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
     setShowVersionDialog(false);
     setSaveStatus('saving');
     try {
-      await VersionService.createVersion({
+      const createdUid = await VersionService.createVersion({
         sourceSongId: song.id,
         name: versionNameInput,
         owner: source === 'shared' ? 'shared' : 'personal',
@@ -495,9 +670,11 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
           genres: genres,
         },
       });
+      setPendingVersionUid(createdUid);
       setVersionNameInput('');
       setHasUnsavedChanges(false);
       setSaveStatus('success');
+      emitToast('Saved as a new version');
       setTimeout(() => { setSaveStatus('idle'); }, 3000);
     } catch (error) {
       console.error('Error saving version:', error);
@@ -528,11 +705,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       await VersionService.updateVersion(uid, versionUpdates as never);
       setSaveStatus('success');
       setHasUnsavedChanges(false);
-
-      const event = new CustomEvent('show-toast', {
-        detail: { message: 'Song saved', type: 'success' }
-      });
-      window.dispatchEvent(event);
+      emitToast('Song saved');
 
       setTimeout(() => { setSaveStatus('idle'); }, 2000);
     } catch (err) {
@@ -568,7 +741,9 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
               label="Set Root Key"
               buttonClassName="h-9 w-10"
               onChange={(newKey) => {
-                const shift = calculateSemitoneShift(currentTextKey, newKey);
+                const currentRoot = parseKeyDisplay(currentTextKey).root;
+                const nextRoot = parseKeyDisplay(newKey).root;
+                const shift = calculateSemitoneShift(currentRoot, nextRoot);
                 const corrected = shiftChordsInText(chordsText, shift);
                 setKeyValue(newKey);
                 setChordsText(corrected);
@@ -735,7 +910,25 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4">
           <div className="bg-[var(--color-surface)] rounded-2xl p-6 w-full max-w-sm shadow-2xl">
             <h3 className="text-lg font-bold text-[var(--color-text)] mb-1">Save Version</h3>
-            <p className="text-sm text-[var(--color-text-muted)] mb-4">How would you like to save this version?</p>
+            <p className="text-sm text-[var(--color-text-muted)] mb-4">Choose how to save this song.</p>
+
+            <label className="block text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+              Version title
+            </label>
+            <input
+              type="text"
+              value={versionNameInput}
+              onChange={(e) => setVersionNameInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  void handleOverwriteVersion();
+                }
+              }}
+              className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-400 mb-4"
+              placeholder="My Version"
+            />
+
             <div className="space-y-2">
               <button
                 onClick={() => void handleOverwriteVersion()}

@@ -11,6 +11,7 @@ import { SortSelector } from './shared/SortSelector';
 import { SongRow } from './shared/SongRow';
 import { VisibilitySwitch } from './shared/VisibilitySwitch';
 import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
+import { formatKeyDisplay, KEY_ROOT_OPTIONS, type KeyQuality } from '../utils/KeyUtils';
 
 export function SongList() {
   const renderCount = useRef(0);
@@ -29,9 +30,12 @@ export function SongList() {
   );
   const [showAddForm, setShowAddForm] = useState(false);
   const [newSongTitle, setNewSongTitle] = useState('Untitled Draft');
-  const [newSongKey, setNewSongKey] = useState('C');
+  const [newSongKeyRoot, setNewSongKeyRoot] = useState('C');
+  const [newSongKeyQuality, setNewSongKeyQuality] = useState<KeyQuality>('major');
   const [newSongChords, setNewSongChords] = useState('');
   const [newSongIsActive, setNewSongIsActive] = useState(false);
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [isKeyOpen, setIsKeyOpen] = useState(false);
   const [genreMap, setGenreMap] = useState<Map<number, string[]>>(new Map());
   const openSong = useWorkflowStore((s) => s.openSong);
   const reader = useWorkflowStore((s) => s.reader);
@@ -114,7 +118,7 @@ export function SongList() {
 
       // Create a new draft song in Supabase (use provided form values if present)
       const titleToUse = opts?.title ?? 'Untitled Draft';
-      const keyToUse = opts?.key ?? 'C';
+      const keyToUse = opts?.key ?? formatKeyDisplay(newSongKeyRoot, newSongKeyQuality);
       const chordsToUse = opts?.chords ?? '';
       const isActiveToUse = opts?.is_active !== false;
 
@@ -195,17 +199,41 @@ export function SongList() {
               <div className="grid gap-3 md:grid-cols-2">
                 <label className="text-sm font-medium text-slate-700">
                   <div className="mb-1">Language</div>
-                  <select
-                    value={newSongLanguage}
-                    onChange={(e) => setNewSongLanguage(e.target.value)}
-                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
-                  >
-                    {LANGUAGES.filter((l) => l !== 'All').map((lang) => (
-                      <option key={lang} value={lang}>
-                        {lang}
-                      </option>
-                    ))}
-                  </select>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsLanguageOpen((open) => !open);
+                        setIsKeyOpen(false);
+                      }}
+                      className="flex h-10 w-full items-center justify-between rounded-xl border border-slate-200 bg-[var(--color-surface)] px-3 text-left text-sm text-[var(--color-text)] shadow-sm transition-colors focus:border-slate-300"
+                    >
+                      <span>{newSongLanguage}</span>
+                      <span className="text-slate-400">⌄</span>
+                    </button>
+                    {isLanguageOpen && (
+                      <div className="absolute left-0 right-0 top-[calc(100%+0.25rem)] z-20 max-h-48 overflow-y-auto rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        {LANGUAGES.filter((l) => l !== 'All').map((lang) => (
+                          <button
+                            key={lang}
+                            type="button"
+                            onClick={() => {
+                              setNewSongLanguage(lang);
+                              setIsLanguageOpen(false);
+                            }}
+                            className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-semibold transition-all ${
+                              newSongLanguage === lang
+                                ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                                : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                            }`}
+                          >
+                            {lang}
+                            {newSongLanguage === lang && <span>✓</span>}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </label>
 
                 <label className="text-sm font-medium text-slate-700">
@@ -213,7 +241,7 @@ export function SongList() {
                   <input
                     value={newSongTitle}
                     onChange={(e) => setNewSongTitle(e.target.value)}
-                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
+                    className="w-full rounded-xl border border-slate-200 bg-[var(--color-surface)] px-3 py-2 text-sm text-[var(--color-text)] outline-none shadow-sm transition-colors focus:border-slate-300"
                   />
                 </label>
               </div>
@@ -221,19 +249,62 @@ export function SongList() {
               <div className="mt-3 grid gap-3 md:grid-cols-2">
                 <label className="text-sm font-medium text-slate-700">
                   <div className="mb-1">Key</div>
-                  <select
-                    value={newSongKey}
-                    onChange={(e) => setNewSongKey(e.target.value)}
-                    className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none"
-                  >
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="G">G</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                  </select>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsKeyOpen((open) => !open);
+                        setIsLanguageOpen(false);
+                      }}
+                      className="flex h-10 w-full items-center justify-between rounded-xl border border-slate-200 bg-[var(--color-surface)] px-3 text-left text-sm text-[var(--color-text)] shadow-sm transition-colors focus:border-slate-300"
+                    >
+                      <span>{formatKeyDisplay(newSongKeyRoot, newSongKeyQuality)}</span>
+                      <span className="text-slate-400">⌄</span>
+                    </button>
+                    {isKeyOpen && (
+                      <div className="absolute left-0 right-0 top-[calc(100%+0.25rem)] z-20 overflow-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] shadow-xl">
+                        <div className="border-b border-slate-200 bg-slate-50 px-3 py-2">
+                          <div className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">Quality</div>
+                          <div className="flex gap-2">
+                            {(['major', 'minor'] as KeyQuality[]).map((quality) => (
+                              <button
+                                key={quality}
+                                type="button"
+                                onClick={() => setNewSongKeyQuality(quality)}
+                                className={`flex-1 rounded-md px-2 py-2 text-center text-xs font-bold uppercase tracking-wide transition-all ${
+                                  newSongKeyQuality === quality
+                                    ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                                }`}
+                              >
+                                {quality === 'major' ? 'Major' : 'Minor'}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="max-h-44 overflow-y-auto p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                          {KEY_ROOT_OPTIONS.map((keyOption) => (
+                            <button
+                              key={keyOption}
+                              type="button"
+                              onClick={() => {
+                                setNewSongKeyRoot(keyOption);
+                                setIsKeyOpen(false);
+                              }}
+                              className={`flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-sm font-semibold transition-all ${
+                                newSongKeyRoot === keyOption
+                                  ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                              }`}
+                            >
+                              {keyOption}
+                              {newSongKeyRoot === keyOption && <span>✓</span>}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </label>
 
                 <label className="text-sm font-medium text-slate-700">
@@ -269,7 +340,7 @@ export function SongList() {
                       // submit form
                       await handleAddNewSong(newSongLanguage, {
                         title: newSongTitle,
-                        key: newSongKey,
+                        key: formatKeyDisplay(newSongKeyRoot, newSongKeyQuality),
                         chords: newSongChords,
                         is_active: newSongIsActive,
                       });
