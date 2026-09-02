@@ -101,7 +101,8 @@ function CustomKeyPicker({
     window.addEventListener('scroll', updateMenuPosition, true);
 
     const handlePointerDown = (event: MouseEvent) => {
-      if (pickerRef.current && !pickerRef.current.contains(event.target as Node)) {
+      const target = event.target as Node | null;
+      if (pickerRef.current && !pickerRef.current.contains(target as Node) && !(target as Element | null)?.closest('[data-editor-key-menu]')) {
         setIsOpen(false);
       }
     };
@@ -128,6 +129,7 @@ function CustomKeyPicker({
 
       {isOpen && createPortal(
         <div
+          data-editor-key-menu="true"
           className="fixed z-[100] overflow-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] shadow-xl"
           style={{
             top: menuPosition.top,
@@ -529,7 +531,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
             genres,
             updatedAt: Date.now(),
           } as never);
-          emitToast('Saved to my versions');
+          emitToast('Saved in My Version');
         } else {
           // Supabase expects 'genre', not 'genres'
           const supabaseUpdates: any = { ...updates, updated_at: new Date().toISOString() };
@@ -609,7 +611,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       } else {
         setHasUnsavedChanges(false);
         setSaveStatus('success');
-        emitToast('Saved to My Songs');
+        emitToast('Saved in My Version');
         setTimeout(() => { setSaveStatus('idle'); }, 2000);
       }
 

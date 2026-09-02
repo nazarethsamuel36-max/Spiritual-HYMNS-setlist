@@ -31,6 +31,7 @@ function App() {
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
   const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
   const [syncToast, setSyncToast] = useState<'idle' | 'syncing' | 'done'>('idle');
+  const [appToast, setAppToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
   const [isSyncingHeader, setIsSyncingHeader] = useState(false);
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   const [showAdminScreen, setShowAdminScreen] = useState(false);
@@ -63,6 +64,25 @@ function App() {
   // 2. ALL USE_EFFECTS MUST BE HERE
   // ==========================================
   
+
+  useEffect(() => {
+    const handleShowToast = (event: Event) => {
+      const customEvent = event as CustomEvent<{ message?: string; type?: 'success' | 'error' }>;
+      const message = customEvent.detail?.message;
+      const type = customEvent.detail?.type ?? 'success';
+      if (!message) return;
+
+      setAppToast({ message, type });
+      window.clearTimeout((handleShowToast as any)._timer);
+      (handleShowToast as any)._timer = window.setTimeout(() => setAppToast(null), 2600);
+    };
+
+    window.addEventListener('show-toast', handleShowToast);
+    return () => {
+      window.removeEventListener('show-toast', handleShowToast);
+      if ((handleShowToast as any)._timer) window.clearTimeout((handleShowToast as any)._timer);
+    };
+  }, []);
 
   useEffect(() => {
     const initializeApp = async () => {
@@ -412,6 +432,18 @@ function App() {
         <div className="app-shell">
           {showSidebar && (
           <div className="sidebar-pane">
+              {appToast && (
+                <div
+                  className="fixed top-4 left-1/2 -translate-x-1/2 z-[600] flex items-center gap-2 px-4 py-2 rounded-full shadow-xl text-sm font-semibold text-white pointer-events-none animate-in fade-in slide-in-from-top-2 duration-200"
+                  style={{ background: appToast.type === 'error' ? '#B91C1C' : '#0F172A' }}
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {appToast.message}
+                </div>
+              )}
+
               {/* Sync toast — fixed so it floats above header */}
               {syncToast !== 'idle' && (
                 <div
