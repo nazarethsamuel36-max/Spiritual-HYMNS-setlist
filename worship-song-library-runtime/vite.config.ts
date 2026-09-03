@@ -4,7 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  esbuild: {
+    drop: mode === 'production' ? ['console', 'debugger'] : [],
+  },
   plugins: [
     react(),
     tailwindcss(),
@@ -55,4 +58,4 @@ export default defineConfig({
     // Force use of legacy Rollup instead of Rolldown
     rollupOptions: {}
   }
-})
+}))

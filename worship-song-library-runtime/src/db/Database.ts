@@ -298,42 +298,12 @@ export async function getSongById(id: number): Promise<SongDetail | null> {
   song = await db.sharedSongs.get(id);
   if (song) return normalizeSongDetail(song);
 
-  // Fallback to Supabase if online (no JSON file reading)
-  if (!navigator.onLine) {
-    console.warn('⚠️ Offline: song not in IndexedDB and cannot reach Supabase.');
-    return null;
-  }
-
+  // Delegate fallback to DataService (checks Supabase using shared client, then static JSON fallback)
   try {
-    const { createClient } = await import('@supabase/supabase-js');
-    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-    const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-    const client = createClient(supabaseUrl, supabaseKey);
-    const { data, error } = await client.from('songs').select('*').eq('id', id).single();
-    if (error || !data) return null;
-    const normalized = normalizeSongDetail({
-      id: data.id,
-      songNumber: data.song_number,
-      title: data.title,
-      artist: data.artist,
-      composer: data.composer,
-      language: data.language,
-      originalKey: data.original_key,
-      capo: data.capo,
-      bpm: data.bpm,
-      timeSignature: data.time_signature,
-      hashtags: [],
-      sections: [],
-      chords: data.chords,
-      lyrics: data.lyrics,
-      is_active: data.is_active !== false,
-      updated_at: data.updated_at
-    });
-    // Cache in IndexedDB for next time
-    await db.songs.put(normalized);
-    return normalized;
+    const { getSongById: getSongFromDataService } = await import('../services/DataService');
+    return await getSongFromDataService(id);
   } catch (e) {
-    console.error('Failed to fetch song from Supabase:', e);
+    console.error('Failed to fetch song via DataService:', e);
   }
   return null;
 }

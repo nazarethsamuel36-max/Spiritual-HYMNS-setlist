@@ -155,7 +155,7 @@ export function SongView() {
 
       const songDetail = {
         ...song,
-        sections: parseLyricsToSections(song.lyrics || ''),
+        sections: (song.sections && song.sections.length > 0) ? song.sections : parseLyricsToSections(song.lyrics || ''),
         chords: song.chords || '',
         lyrics: song.lyrics || ''
       };
