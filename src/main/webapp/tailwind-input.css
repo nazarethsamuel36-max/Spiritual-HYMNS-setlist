@@ -1,7 +1,0 @@
-/* tailwind-input.css
- * Tailwind base + components + utilities
- * This file is compiled by `npx tailwindcss` into css/tailwind-output.css
- */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
