@@ -166,12 +166,12 @@ function App() {
 
       // ── Remote Short Link Share Import ──
       const path = window.location.pathname;
-      const shareMatch = path.match(/^\/s\/([a-zA-Z0-9\-_]{12})$/);
+      const shareMatch = path.match(/^\/s\/([^/]+)$/);
       if (shareMatch) {
-        const shareId = shareMatch[1];
+        const shareIdentifier = decodeURIComponent(shareMatch[1]);
         setShareImportLoading('Retrieving shared content...');
         try {
-          const shareData = await ShareService.fetchShare(shareId);
+          const shareData = await ShareService.fetchShare(shareIdentifier);
           if (!shareData) {
             throw new Error('This share link does not exist or has expired.');
           }
@@ -186,7 +186,7 @@ function App() {
             const version = await db.versions.get(remappedId as string);
             if (version) {
               setSidebarPanel('library');
-              openSong(version.sourceSongId, 'library', 0, undefined, undefined, version.uid);
+              openSong(version.sourceSongId, 'library', 0, undefined, undefined, version.uid, 'shared');
             }
           } else if (shareData.type === 'setlist') {
             alert('Successfully imported shared setlist!');

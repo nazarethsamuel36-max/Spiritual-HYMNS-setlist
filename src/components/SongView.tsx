@@ -142,7 +142,7 @@ export function SongView() {
 
     try {
       const resolved = await SongResolver.resolve({
-        kind: source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : source === 'setlist' ? refKind : 'official',
+        kind: source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : source === 'setlist' ? refKind : refKind ?? 'official',
         songId,
         versionUid: activeArrangementId ?? undefined,
       });

@@ -358,8 +358,8 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
         <button
           onClick={async () => {
             try {
-              const shareId = await ShareService.shareSetlist(setlist);
-              const url = `${window.location.origin}/s/${shareId}`;
+              const link = await ShareService.shareSetlist(setlist);
+              const url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
               await copyTextToClipboard(url);
               alert('Shareable setlist link copied to clipboard!');
             } catch (e: any) {

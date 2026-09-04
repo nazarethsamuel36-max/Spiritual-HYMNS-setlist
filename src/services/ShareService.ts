@@ -12,6 +12,11 @@ export class ShareError extends Error {
   }
 }
 
+export type ShareLink = {
+  shareId: string;
+  slug: string;
+};
+
 export class ShareService {
   /**
    * Generates a cryptographically random, URL-safe share ID.
@@ -23,10 +28,55 @@ export class ShareService {
     return Array.from(array, (num) => chars[num % chars.length]).join('');
   }
 
+  static createSlug(title: string): string {
+    const slug = title
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLocaleLowerCase()
+      .replace(/[^\p{L}\p{N}]+/gu, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 72);
+    return slug || 'shared-song';
+  }
+
+  private static async reserveSlug(title: string): Promise<string> {
+    const base = this.createSlug(title);
+    const { data, error } = await supabase
+      .from('shared_payloads')
+      .select('slug')
+      .like('slug', `${base}%`);
+
+    if (error) throw new Error(error.message);
+    const used = new Set((data ?? []).map((row) => row.slug));
+    if (!used.has(base)) return base;
+
+    let suffix = 2;
+    while (used.has(`${base}-${suffix}`)) suffix += 1;
+    return `${base}-${suffix}`;
+  }
+
+  private static async createShare(
+    type: 'song' | 'version' | 'setlist',
+    title: string,
+    payload: UserDataPackage,
+  ): Promise<ShareLink> {
+    const shareId = this.generateShareId();
+    const slug = await this.reserveSlug(title);
+    const { error } = await supabase.from('shared_payloads').insert({
+      share_id: shareId,
+      slug,
+      type,
+      payload,
+    });
+
+    if (error) throw new Error(error.message);
+    return { shareId, slug };
+  }
+
   /**
    * Shares a personal song.
    */
-  static async sharePersonalSong(song: SongDetail): Promise<string> {
+  static async sharePersonalSong(song: SongDetail): Promise<ShareLink> {
     const pkg: UserDataPackage = {
       format: 'worship-user-data',
       version: 1,
@@ -58,21 +108,13 @@ export class ShareService {
       sharedSetlists: [],
     };
 
-    const shareId = this.generateShareId();
-    const { error } = await supabase.from('shared_payloads').insert({
-      share_id: shareId,
-      type: 'song',
-      payload: pkg,
-    });
-
-    if (error) throw new Error(error.message);
-    return shareId;
+    return this.createShare('song', song.title, pkg);
   }
 
   /**
    * Shares a custom version of an official song.
    */
-  static async shareVersion(version: Version): Promise<string> {
+  static async shareVersion(version: Version): Promise<ShareLink> {
     const pkg: UserDataPackage = {
       format: 'worship-user-data',
       version: 1,
@@ -105,15 +147,7 @@ export class ShareService {
       sharedSetlists: [],
     };
 
-    const shareId = this.generateShareId();
-    const { error } = await supabase.from('shared_payloads').insert({
-      share_id: shareId,
-      type: 'version',
-      payload: pkg,
-    });
-
-    if (error) throw new Error(error.message);
-    return shareId;
+    return this.createShare('version', version.name, pkg);
   }
 
   /**
@@ -121,7 +155,7 @@ export class ShareService {
    * Gathers all referenced custom personal songs and custom versions from the database
    * to pack them into a self-contained package.
    */
-  static async shareSetlist(setlist: Setlist): Promise<string> {
+  static async shareSetlist(setlist: Setlist): Promise<ShareLink> {
     const personalSongs: PortableSong[] = [];
     const personalVersions: PortableVersion[] = [];
 
@@ -205,25 +239,18 @@ export class ShareService {
       sharedSetlists: [],
     };
 
-    const shareId = this.generateShareId();
-    const { error } = await supabase.from('shared_payloads').insert({
-      share_id: shareId,
-      type: 'setlist',
-      payload: pkg,
-    });
-
-    if (error) throw new Error(error.message);
-    return shareId;
+    return this.createShare('setlist', setlist.title, pkg);
   }
 
   /**
    * Fetches a shared snapshot from Supabase by exact ID.
    */
-  static async fetchShare(shareId: string): Promise<{ type: 'song' | 'version' | 'setlist'; payload: UserDataPackage } | null> {
+  static async fetchShare(identifier: string): Promise<{ type: 'song' | 'version' | 'setlist'; payload: UserDataPackage } | null> {
+    const field = /^[a-zA-Z0-9_-]{12}$/.test(identifier) ? 'share_id' : 'slug';
     const { data, error } = await supabase
       .from('shared_payloads')
       .select('type, payload')
-      .eq('share_id', shareId)
+      .eq(field, identifier)
       .maybeSingle();
 
     if (error) {

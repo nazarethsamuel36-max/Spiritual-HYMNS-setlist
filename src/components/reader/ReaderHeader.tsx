@@ -51,7 +51,9 @@ export function ReaderHeader({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileTab, setMobileTab] = useState<'main' | 'setlist' | 'versions'>('main');
 
-  const isPersonal = source === 'personal';
+  const isNonOfficial = source === 'personal' || source === 'shared'
+    || (source === 'setlist' && (reader.type === 'song' && reader.refKind !== 'official'))
+    || (source === 'library' && !!activeArrangementId);
 
   const setlists = useLiveQuery(() => db.setlists.toArray());
   const versions = useLiveQuery(() =>
@@ -85,23 +87,22 @@ export function ReaderHeader({
 
   const handleShare = async () => {
     try {
-      let shareId = '';
       let url = '';
 
       if (activeVersion) {
         // Sharing a custom arrangement/version
-        shareId = await ShareService.shareVersion(activeVersion);
-        url = `${window.location.origin}/s/${shareId}`;
+        const link = await ShareService.shareVersion(activeVersion);
+        url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
         alert(`Sharing custom version: "${activeVersion.name}"`);
       } else if (source === 'personal') {
         // Sharing a personal song
-        shareId = await ShareService.sharePersonalSong(song);
-        url = `${window.location.origin}/s/${shareId}`;
+        const link = await ShareService.sharePersonalSong(song);
+        url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
         alert(`Sharing personal song: "${song.title}"`);
       } else if (source === 'shared') {
         // Sharing a shared song (re-share)
-        shareId = await ShareService.sharePersonalSong(song);
-        url = `${window.location.origin}/s/${shareId}`;
+        const link = await ShareService.sharePersonalSong(song);
+        url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
         alert(`Sharing shared song: "${song.title}"`);
       } else {
         // Sharing standard official library song (can be resolved directly via path)
@@ -112,9 +113,9 @@ export function ReaderHeader({
       alert('Shareable link copied to clipboard!');
       setIsMoreOpen(false);
       setIsMobileMenuOpen(false);
-    } catch (e: any) {
+    } catch (e: unknown) {
       console.error(e);
-      alert('Failed to generate share link: ' + (e.message || e));
+      alert('Failed to generate share link: ' + (e instanceof Error ? e.message : String(e)));
     }
   };
 
@@ -135,7 +136,7 @@ export function ReaderHeader({
                 <span className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider truncate">
                   {song.artist || 'Unknown Artist'}
                 </span>
-                {source !== 'personal' && source !== 'shared' && (
+                {!isNonOfficial && (
                   <>
                     <span className="text-slate-300 text-[9px]">•</span>
                     <span className="text-slate-500 text-[10px] font-medium">{song.songNumber}</span>
@@ -400,7 +401,7 @@ export function ReaderHeader({
 {!isAdminAuthenticated && (
         <div className="md:hidden max-w-4xl mx-auto w-full flex items-center justify-between gap-2 min-h-12 py-1">
           <div className="flex items-center space-x-2 min-w-0 flex-1">
-            {!isPersonal && (
+            {!isNonOfficial && (
               <span className="text-slate-500 text-[26px] font-semibold flex-shrink-0 leading-[1.1]">{song.songNumber}</span>
             )}
               <h1 className="text-[28px] font-normal font-sans text-slate-900 min-w-0 leading-tight break-words">
