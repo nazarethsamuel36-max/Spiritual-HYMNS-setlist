@@ -442,14 +442,13 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                   <p className="mt-1">
                     A digital version of <span className="font-semibold text-slate-700">Hymns and Spiritual Songs</span>, created for our church community to make it easier to find, read, organize, and use the songs.
                   </p>
-                  <p className="mt-3 font-semibold text-slate-700">To God be the glory.</p>
-                  <p className="mt-3">
-                    I thank God for giving me the wisdom, strength, and opportunity to digitalize this songbook and make it available for the service of our church.
-                  </p>
-                  <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Created by</h4>
-                  <p className="mt-1 font-semibold text-slate-700">Samuel Nazareth</p>
                   <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Feedback?</h4>
-                  <p className="mt-1">Have a suggestion, found an issue, or have feedback? I&apos;d love to hear from you.</p>
+                  <p className="mt-1">
+                    Have a suggestion, found an issue, or have feedback? Email us at{' '}
+                    <a href="mailto:samyiis919gmail.com" className="font-semibold text-slate-700 underline underline-offset-2">
+                      samyiis919gmail.com
+                    </a>
+                  </p>
                   <h4 className="mt-4 text-[10px] font-bold uppercase tracking-wider text-slate-400">Note</h4>
                   <p className="mt-1">Chords are being added gradually, so some songs may not have chord information available yet.</p>
                 </div>
