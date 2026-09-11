@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
 export type SyncStatus = 'idle' | 'calculating' | 'downloading' | 'saving' | 'complete' | 'error';
+export type SyncErrorType = 'network' | 'quota' | 'unknown';
 
 interface SyncProgressProps {
   currentMB: number;
@@ -8,10 +9,11 @@ interface SyncProgressProps {
   percentage: number;
   status: SyncStatus;
   message: string;
+  errorType?: SyncErrorType;
   onRetry?: () => void;
 }
 
-export function SyncProgress({ currentMB, totalMB, percentage, status, message, onRetry }: SyncProgressProps) {
+export function SyncProgress({ currentMB, totalMB, percentage, status, message, errorType = 'unknown', onRetry }: SyncProgressProps) {
   const isVisible = status !== 'idle' && status !== 'complete';
 
   if (!isVisible) {
@@ -24,6 +26,12 @@ export function SyncProgress({ currentMB, totalMB, percentage, status, message, 
     if (bytes <= 0) return '0.0 MB';
     return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
   };
+
+  const errorSubtitle = errorType === 'quota'
+    ? 'Your device storage is full. Delete some files and try again.'
+    : errorType === 'network'
+    ? 'Please check your internet connection and try again.'
+    : 'Something went wrong. Please try again.';
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 px-6 py-8 backdrop-blur-sm">
@@ -45,7 +53,7 @@ export function SyncProgress({ currentMB, totalMB, percentage, status, message, 
             {status === 'calculating' && 'Checking available songs...'}
             {status === 'downloading' && 'This will only happen once. Songs will work offline!'}
             {status === 'saving' && 'Saving to your device...'}
-            {status === 'error' && 'Please check your internet connection and try again.'}
+            {status === 'error' && errorSubtitle}
           </p>
         </div>
 

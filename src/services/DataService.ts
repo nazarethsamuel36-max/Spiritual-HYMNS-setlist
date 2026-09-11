@@ -138,20 +138,31 @@ export async function batchDownloadSongs(
     console.log(`💾 Batch Download: Saving ${allSongDetails.length} songs to IndexedDB...`);
 
     // Bulk save to IndexedDB
-    await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
-      await db.songs.bulkPut(allSongDetails);
-      await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
-      
-      // Save sync timestamp
-      await db.meta.put({
-        id: LAST_SYNC_TIME_KEY,
-        value: Date.now()
+    try {
+      await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
+        await db.songs.bulkPut(allSongDetails);
+        await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
+
+        // Save sync timestamp
+        await db.meta.put({
+          id: LAST_SYNC_TIME_KEY,
+          value: Date.now()
+        });
       });
-    });
+    } catch (writeError) {
+      const isQuota = writeError instanceof Error &&
+        (writeError.name === 'QuotaExceededError' || writeError.message.toLowerCase().includes('quota'));
+      if (isQuota) {
+        console.error('💾 Batch Download: Device storage full — cannot save songs.', writeError);
+        onProgress?.(0, '⚠️ Your device storage is full. Free up space and try again.');
+        return 'error';
+      }
+      throw writeError; // re-throw non-quota errors to be caught by outer try/catch
+    }
 
     // Update search engine (title index)
     await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
-    
+
     // Update lyrics search index
     await SearchEngine.indexLyrics(allSongDetails);
 
@@ -236,7 +247,10 @@ async function batchDownloadFromJson(
         batchSlice.map(async (indexSong: any) => {
           try {
             const res = await fetch(`/exports/songs/${indexSong.id}.json`);
-            if (!res.ok) return null;
+            if (!res.ok) {
+              console.warn(`⚠️ Song JSON missing: /exports/songs/${indexSong.id}.json (HTTP ${res.status})`);
+              return null;
+            }
             const songData = await res.json();
             
             const extracted = extractLyricsAndChordsFromSections(songData.sections);
@@ -295,14 +309,25 @@ async function batchDownloadFromJson(
     }
 
     console.log(`💾 Saving ${allSongDetails.length} songs from JSON to IndexedDB...`);
-    await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
-      await db.songs.bulkPut(allSongDetails);
-      await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
-      await db.meta.put({
-        id: LAST_SYNC_TIME_KEY,
-        value: Date.now()
+    try {
+      await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
+        await db.songs.bulkPut(allSongDetails);
+        await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
+        await db.meta.put({
+          id: LAST_SYNC_TIME_KEY,
+          value: Date.now()
+        });
       });
-    });
+    } catch (writeError) {
+      const isQuota = writeError instanceof Error &&
+        (writeError.name === 'QuotaExceededError' || writeError.message.toLowerCase().includes('quota'));
+      if (isQuota) {
+        console.error('💾 JSON Fallback: Device storage full — cannot save songs.', writeError);
+        onProgress?.(0, '⚠️ Your device storage is full. Free up space and try again.');
+        return 'error';
+      }
+      throw writeError; // re-throw so outer catch handles it
+    }
 
     await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
     await SearchEngine.indexLyrics(allSongDetails);
@@ -311,8 +336,13 @@ async function batchDownloadFromJson(
     onProgress?.(100, 'Successfully downloaded all songs from backup!');
     return 'completed';
   } catch (err) {
+    const isQuota = err instanceof Error &&
+      (err.name === 'QuotaExceededError' || err.message.toLowerCase().includes('quota'));
     console.error('❌ Batch Download from JSON failed:', err);
-    onProgress?.(0, 'Download from backup failed.');
+    onProgress?.(0, isQuota
+      ? '⚠️ Your device storage is full. Free up space and try again.'
+      : 'Download failed. Please check your internet connection and try again.'
+    );
     return 'error';
   }
 }
@@ -382,7 +412,13 @@ async function getSongByIdFromJsonFallback(id: number): Promise<SongDetail | nul
       await db.songs.put(detail);
       console.log(`✅ Saved song #${id} from JSON fallback into IndexedDB cache.`);
     } catch (e) {
-      console.warn(`Failed to seed song #${id} to IndexedDB:`, e);
+      const isQuota = e instanceof Error &&
+        (e.name === 'QuotaExceededError' || e.message.toLowerCase().includes('quota'));
+      if (isQuota) {
+        console.warn(`⚠️ Device storage full — could not cache song #${id} to IndexedDB. Song will still display from memory.`);
+      } else {
+        console.warn(`Failed to seed song #${id} to IndexedDB:`, e);
+      }
     }
 
     return detail;

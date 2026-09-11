@@ -308,9 +308,33 @@ export function SongView() {
     </div>
   );
 
-  if (error || !song) return (
-    <div className="p-12 text-center text-red-500 font-bold text-sm">{error || 'Song not found'}</div>
-  );
+  if (error || !song) {
+    const isOffline = !navigator.onLine;
+    const subtitle = isOffline
+      ? "You're offline and this song isn't downloaded yet. Connect to the internet and try again."
+      : error === 'Song not found'
+      ? 'This song may have been removed or the link is broken.'
+      : error || 'Unable to load this song. Please try again.';
+
+    return (
+      <div className="flex flex-col items-center justify-center p-12 text-center">
+        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-100">
+          <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+          </svg>
+        </div>
+        <h2 className="mb-1 text-base font-bold text-slate-700">Song Not Found</h2>
+        <p className="mb-6 max-w-xs text-sm text-slate-500">{subtitle}</p>
+        <button
+          onClick={() => window.history.back()}
+          className="rounded-lg bg-slate-800 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-700"
+        >
+          ← Go Back
+        </button>
+      </div>
+    );
+  }
 
   const displayTranspose = transpose + (song.capo || 0);
   const langClass = song.language ? `lang-${song.language.toLowerCase()}` : '';

@@ -16,6 +16,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   const [showIOSInstructions, setShowIOSInstructions] = useState(false);
   const [isInstalled, setIsInstalled] = useState(false);
   const [hasSongs, setHasSongs] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
     // Detect iOS
@@ -61,13 +62,21 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
     setIsDownloading(true);
     setDownloadProgress(0);
     setDownloadMessage('Preparing download...');
+    setErrorMessage(null);
 
     try {
       // Step 1: Download songs
-      await batchDownloadSongs((percent, message) => {
+      const result = await batchDownloadSongs((percent, message) => {
         setDownloadProgress(percent);
         setDownloadMessage(message || 'Downloading songs...');
       });
+
+      // If batchDownloadSongs returned 'error', check last message for quota hint
+      if (result === 'error') {
+        // errorMessage was already set via onProgress callback — surface it
+        setIsDownloading(false);
+        return;
+      }
 
       // Update hasSongs after download
       const count = await db.songs.count();
@@ -95,8 +104,13 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
         onComplete();
       }
     } catch (error) {
+      const isQuota = error instanceof Error &&
+        (error.name === 'QuotaExceededError' || error.message.toLowerCase().includes('quota'));
       console.error('Download failed:', error);
-      alert('Download failed. Please check your internet connection and try again.');
+      setErrorMessage(isQuota
+        ? '⚠️ Your device storage is full. Please free up space and try again.'
+        : '❌ Download failed. Please check your internet connection and try again.'
+      );
     } finally {
       setIsDownloading(false);
     }
@@ -132,11 +146,25 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
     </div>
   ) : null;
 
+  // Inline error card — shown instead of alert()
+  const errorCard = errorMessage ? (
+    <div className="w-full max-w-md rounded-2xl border border-red-200 bg-red-50 px-4 py-4 shadow-md">
+      <p className="text-sm font-semibold text-red-700">{errorMessage}</p>
+      <button
+        onClick={handleDownloadAndInstall}
+        className="mt-3 w-full rounded-lg bg-red-600 px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-red-700"
+      >
+        Try Again
+      </button>
+    </div>
+  ) : null;
+
   // Compact mode for header - bright green button with text
   if (compact) {
     return (
       <>
         {overlay}
+        {errorCard}
         <button
           onClick={handleDownloadAndInstall}
           disabled={isDownloading}
@@ -213,6 +241,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   return (
     <div className="flex flex-col items-center space-y-4">
       {overlay}
+      {errorCard}
       <button
         onClick={handleDownloadAndInstall}
         disabled={isDownloading}

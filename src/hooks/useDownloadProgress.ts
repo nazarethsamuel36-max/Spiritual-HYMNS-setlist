@@ -164,7 +164,15 @@ export function useDownloadProgress() {
       return true;
     } catch (err) {
       console.error('Save error:', err);
-      setStats(prev => ({ ...prev, status: 'error', message: 'Failed to save data.' }));
+      const isQuota = err instanceof Error &&
+        (err.name === 'QuotaExceededError' || err.message.toLowerCase().includes('quota'));
+      setStats(prev => ({
+        ...prev,
+        status: 'error',
+        message: isQuota
+          ? '⚠️ Device storage is full. Free up space and try again.'
+          : 'Failed to save data. Please try again.',
+      }));
       return false;
     }
   };
