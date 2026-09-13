@@ -47,34 +47,26 @@ export function InstallPrompt() {
     dismissInstallPrompt();
   };
 
-  const handleDownloadAndInstall = async () => {
+  const handleDownloadAndInstall = () => {
+    // Start download in background (non-blocking)
     setIsDownloading(true);
     setDownloadProgress(0);
-    setDownloadMessage('Preparing download...');
+    setDownloadMessage('Downloading songs in background...');
 
-    try {
-      // Step 1: Download all songs into IndexedDB
-      const result = await batchDownloadSongs((percent, message) => {
-        setDownloadProgress(percent);
-        setDownloadMessage(message || 'Downloading songs...');
-      });
-
-      if (result === 'error') {
-        setIsDownloading(false);
-        return;
-      }
-
-      // Step 2: Install PWA (creates home screen shortcut)
-      if (isIOS) {
-        setIsDownloading(false);
-        setShowIOSInstructions(true);
-      } else {
-        setIsDownloading(false);
-        await installApp();
-      }
-    } catch (err) {
-      console.error('Download + install failed:', err);
+    void batchDownloadSongs((percent, message) => {
+      setDownloadProgress(percent);
+      setDownloadMessage(message || 'Downloading songs...');
+      if (percent >= 100) setIsDownloading(false);
+    }).catch((err) => {
+      console.error('Background download failed:', err);
       setIsDownloading(false);
+    });
+
+    // Fire install / iOS instructions IMMEDIATELY (no waiting)
+    if (isIOS) {
+      setShowIOSInstructions(true);
+    } else {
+      void installApp();
     }
   };
 
@@ -84,12 +76,10 @@ export function InstallPrompt() {
       <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[80] p-4">
         <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4">
           <div className="text-center space-y-2">
-            <div className="w-16 h-16 rounded-2xl bg-white shadow-md p-1.5 mx-auto flex items-center justify-center border border-slate-100">
-              <img
-                src="/bbf-logo-transparent.png"
-                alt="BBF Song Book."
-                className="w-full h-full object-contain"
-              />
+            <div className="w-16 h-16 rounded-2xl bg-blue-600 shadow-md mx-auto flex items-center justify-center">
+              <svg viewBox="0 0 24 24" className="w-9 h-9 text-white" fill="currentColor">
+                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
+              </svg>
             </div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book.</h2>
             <p className="text-sm text-slate-600">
@@ -194,12 +184,10 @@ export function InstallPrompt() {
 
         <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
           <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-white p-0.5 shadow-sm flex items-center justify-center flex-shrink-0">
-              <img
-                src="/bbf-logo-transparent.png"
-                alt="BBF Song Book."
-                className="w-full h-full object-contain"
-              />
+            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
+                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
+              </svg>
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song Book.</h3>
@@ -277,12 +265,10 @@ export function InstallPrompt() {
 
         <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
           <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-white p-0.5 shadow-sm flex items-center justify-center flex-shrink-0">
-              <img
-                src="/bbf-logo-transparent.png"
-                alt="BBF Song Book."
-                className="w-full h-full object-contain"
-              />
+            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
+              <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
+                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
+              </svg>
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song Book.</h3>
