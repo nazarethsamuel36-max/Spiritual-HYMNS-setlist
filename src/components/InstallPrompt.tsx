@@ -1,31 +1,66 @@
 import { useState } from 'react';
 import { usePWA } from '../hooks/usePWA';
 import { useIsMobile } from '../hooks/useMediaQuery';
+import { useWorkflowStore } from '../store/workflowStore';
+
+const NEVER_SHOW_KEY = 'pwa_prompt_never_show';
 
 export function InstallPrompt() {
   const { showInstallPrompt, isInstalled, isIOS, installApp, dismissInstallPrompt } = usePWA();
   const isMobile = useIsMobile();
+  const mobileActivePane = useWorkflowStore(s => s.mobileActivePane);
   const [showIOSInstructions, setShowIOSInstructions] = useState(false);
+  const [dismissed, setDismissed] = useState(() => {
+    try {
+      return localStorage.getItem(NEVER_SHOW_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  });
 
-  // Only show on mobile devices
-  if (!isMobile || isInstalled) {
+  // Only show on mobile devices when app is not installed and not dismissed
+  if (dismissed || isInstalled || !isMobile) {
     return null;
   }
 
-  // Show iOS instructions
+  // On mobile, only show when viewing the sidebar / songlist pane
+  if (mobileActivePane === 'reader') {
+    return null;
+  }
+
+  const handleNeverShow = () => {
+    try {
+      localStorage.setItem(NEVER_SHOW_KEY, 'true');
+    } catch (e) {
+      console.error('Failed to save dismissal preference:', e);
+    }
+    setDismissed(true);
+    dismissInstallPrompt();
+  };
+
+  const handleDismiss = () => {
+    setDismissed(true);
+    dismissInstallPrompt();
+  };
+
+  // Show iOS instructions modal
   if (isIOS && showIOSInstructions) {
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 pointer-events-none">
-        <div className="bg-[var(--color-surface)] rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4 pointer-events-auto">
+      <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[80] p-4">
+        <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4">
           <div className="text-center space-y-2">
-            <div className="text-3xl">📱</div>
+            <img
+              src="/pwa-192x192.png"
+              alt="BBF Song book"
+              className="w-14 h-14 rounded-2xl mx-auto shadow-md object-cover border border-slate-200"
+            />
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>
             <p className="text-sm text-slate-600">
               Follow these steps to add BBF Song book to your home screen
             </p>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-4 space-y-3">
+          <div className="bg-blue-50 rounded-xl p-4 space-y-3">
             <div className="flex gap-3">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">
@@ -75,46 +110,61 @@ export function InstallPrompt() {
             </div>
           </div>
 
-          <button
-            onClick={() => setShowIOSInstructions(false)}
-            className="w-full px-4 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
-          >
-            Got it
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={handleNeverShow}
+              className="flex-1 px-3 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-medium text-xs transition-colors"
+            >
+              Don't show again
+            </button>
+            <button
+              onClick={() => setShowIOSInstructions(false)}
+              className="flex-1 px-3 py-2.5 bg-blue-600 text-white rounded-xl font-medium text-xs hover:bg-blue-700 transition-colors"
+            >
+              Got it
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
-  // Show iOS prompt
+  // Show iOS prompt bar
   if (isIOS && !showIOSInstructions) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-[#0F172A] to-[#1E293B] text-white p-4 space-y-3 shadow-lg border-t border-[#334155] max-w-md mx-auto md:max-w-none md:bottom-4 md:right-4 md:left-auto md:rounded-lg md:shadow-xl">
+      <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
         <div className="flex items-start gap-3">
-          <div className="text-2xl flex-shrink-0">📱</div>
-          <div className="flex-1">
-            <h3 className="font-semibold text-sm md:text-base">Install BBF Song book</h3>
-            <p className="text-xs md:text-sm text-[#CBD5E1] mt-1">
+          <img
+            src="/pwa-192x192.png"
+            alt="BBF Song book"
+            className="w-10 h-10 rounded-lg shadow-sm flex-shrink-0 object-cover border border-white/10"
+          />
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song book</h3>
+            <p className="text-xs text-slate-400 mt-0.5 truncate">
               Access your songbook anytime, even offline
             </p>
           </div>
           <button
-            onClick={() => setShowIOSInstructions(false)}
-            className="text-[#94A3B8] hover:text-white flex-shrink-0"
+            onClick={handleDismiss}
+            className="text-slate-400 hover:text-white flex-shrink-0 p-1 transition-colors"
+            aria-label="Close"
           >
             ✕
           </button>
         </div>
-        <div className="flex gap-2">
+        <div className="flex items-center justify-between gap-2 pt-0.5">
           <button
-            onClick={() => setShowIOSInstructions(false)}
-            className="flex-1 px-3 py-2 bg-[#334155] hover:bg-[#475569] rounded-lg font-medium text-sm transition-colors"
+            type="button"
+            onClick={handleNeverShow}
+            className="text-[11px] md:text-xs text-slate-400 hover:text-rose-300 underline decoration-slate-600 underline-offset-2 transition-colors"
           >
-            Dismiss
+            Don't show again
           </button>
           <button
+            type="button"
             onClick={() => setShowIOSInstructions(true)}
-            className="flex-1 px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium text-sm transition-colors"
+            className="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-semibold rounded-lg text-xs transition-colors shadow-sm"
           >
             How to Install
           </button>
@@ -123,37 +173,44 @@ export function InstallPrompt() {
     );
   }
 
-  // Show Android/Chrome prompt
+  // Show Android/Chrome prompt bar (only when beforeinstallprompt event is available)
   if (showInstallPrompt && !isIOS) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-900 to-emerald-800 text-white p-4 space-y-3 shadow-lg border-t border-emerald-700 max-w-md mx-auto md:max-w-none md:bottom-4 md:right-4 md:left-auto md:rounded-lg md:shadow-xl">
+      <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
         <div className="flex items-start gap-3">
-          <div className="text-2xl flex-shrink-0">⬇️</div>
-          <div className="flex-1">
-            <h3 className="font-semibold text-sm md:text-base">Install BBF Song book</h3>
-            <p className="text-xs md:text-sm text-emerald-100 mt-1">
+          <img
+            src="/pwa-192x192.png"
+            alt="BBF Song book"
+            className="w-10 h-10 rounded-lg shadow-sm flex-shrink-0 object-cover border border-white/10"
+          />
+          <div className="flex-1 min-w-0">
+            <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song book</h3>
+            <p className="text-xs text-slate-400 mt-0.5 truncate">
               Add to your home screen for quick access
             </p>
           </div>
           <button
-            onClick={dismissInstallPrompt}
-            className="text-emerald-200 hover:text-white flex-shrink-0"
+            onClick={handleDismiss}
+            className="text-slate-400 hover:text-white flex-shrink-0 p-1 transition-colors"
+            aria-label="Close"
           >
             ✕
           </button>
         </div>
-        <div className="flex gap-2">
+        <div className="flex items-center justify-between gap-2 pt-0.5">
           <button
-            onClick={dismissInstallPrompt}
-            className="flex-1 px-3 py-2 bg-emerald-700 hover:bg-emerald-600 rounded-lg font-medium text-sm transition-colors"
+            type="button"
+            onClick={handleNeverShow}
+            className="text-[11px] md:text-xs text-slate-400 hover:text-rose-300 underline decoration-slate-600 underline-offset-2 transition-colors"
           >
-            Not Now
+            Don't show again
           </button>
           <button
+            type="button"
             onClick={installApp}
-            className="flex-1 px-3 py-2 bg-white hover:bg-[#F1F5F9] text-emerald-900 font-bold rounded-lg text-sm transition-colors"
+            className="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-semibold rounded-lg text-xs transition-colors shadow-sm"
           >
-            Install App
+            Install
           </button>
         </div>
       </div>

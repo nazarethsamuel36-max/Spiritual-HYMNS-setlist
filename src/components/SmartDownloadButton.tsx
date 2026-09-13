@@ -126,7 +126,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
   }
 
   const overlay = isDownloading ? (
-    <div className="fixed inset-x-0 top-4 z-[60] flex justify-center px-3 pointer-events-none">
+    <div className="fixed inset-x-0 top-4 z-[120] flex justify-center px-3 pointer-events-none">
       <div className="w-full max-w-md rounded-2xl border border-emerald-200 bg-[var(--color-surface)]/95 shadow-xl backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
@@ -245,7 +245,7 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
       <button
         onClick={handleDownloadAndInstall}
         disabled={isDownloading}
-        className="w-full max-w-md px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+        className="relative z-[110] w-full max-w-md px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isDownloading ? (
           <span className="flex items-center justify-center gap-2">
