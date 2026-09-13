@@ -76,10 +76,8 @@ export function InstallPrompt() {
       <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[80] p-4">
         <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4">
           <div className="text-center space-y-2">
-            <div className="w-16 h-16 rounded-2xl bg-blue-600 shadow-md mx-auto flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-9 h-9 text-white" fill="currentColor">
-                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md mx-auto">
+              <img src="/pwa-192x192.png" alt="BBF Song Book." className="w-full h-full object-cover" />
             </div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book.</h2>
             <p className="text-sm text-slate-600">
@@ -183,17 +181,12 @@ export function InstallPrompt() {
         )}
 
         <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
-                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
-              </svg>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0">
+              <img src="/pwa-192x192.png" alt="BBF Song Book." className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song Book.</h3>
-              <p className="text-xs text-slate-400 mt-0.5 truncate">
-                {isDownloading ? downloadMessage : 'Downloads songs + add to home screen'}
-              </p>
             </div>
             <button
               onClick={handleDismiss}
@@ -264,17 +257,12 @@ export function InstallPrompt() {
         )}
 
         <div className="fixed z-[70] bottom-[calc(3.75rem+env(safe-area-inset-bottom,0px))] md:bottom-0 left-0 right-0 md:right-auto md:w-[400px] bg-[#0F172A] text-white p-3.5 space-y-2.5 shadow-2xl border-t border-slate-700/80 md:border-r rounded-none">
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
-                <path d="M11 2h2v7h7v2h-7v11h-2V11H4V9h7V2z"/>
-              </svg>
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0">
+              <img src="/pwa-192x192.png" alt="BBF Song Book." className="w-full h-full object-cover" />
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song Book.</h3>
-              <p className="text-xs text-slate-400 mt-0.5 truncate">
-                {isDownloading ? downloadMessage : 'Downloads songs + adds to home screen'}
-              </p>
             </div>
             <button
               onClick={handleDismiss}
