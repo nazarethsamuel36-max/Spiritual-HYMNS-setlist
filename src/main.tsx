@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Analytics } from '@vercel/analytics/react'
 import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
@@ -75,5 +76,6 @@ console.log('Is key present?', !!import.meta.env.VITE_SUPABASE_ANON_KEY);
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
+    <Analytics />
   </StrictMode>,
 )
