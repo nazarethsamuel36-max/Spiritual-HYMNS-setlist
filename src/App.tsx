@@ -21,6 +21,7 @@ import { batchDownloadSongs, wakeUpSync } from './services/DataService';
 import { ShareService } from './services/ShareService';
 import { authenticateDevice, clearAdminSession } from './services/DeviceAuthService';
 import { AdminScreen } from './components/AdminScreen';
+import { UserDataPackageService } from './services/UserDataPackage';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   const [showAdminScreen, setShowAdminScreen] = useState(false);
   const [showAdminButton, setShowAdminButton] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [isExporting, setIsExporting] = useState(false);
+  const [isImporting, setIsImporting] = useState(false);
   
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
@@ -391,6 +395,48 @@ function App() {
     }
   };
 
+  const handleExportData = async () => {
+    if (isExporting) return;
+    setIsExporting(true);
+    try {
+      const pkg = await UserDataPackageService.build();
+      const json = JSON.stringify(pkg, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const date = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `worship-userdata-${date}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      alert('Data exported successfully!');
+    } catch (err) {
+      console.error('Export failed:', err);
+      alert('Export failed');
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
+  const handleImportFileSelected = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setIsImporting(true);
+    try {
+      const text = await file.text();
+      const pkg = JSON.parse(text);
+      const report = await UserDataPackageService.import(pkg);
+      const count = report.personalSongs.imported + report.sharedSongs.imported + report.personalVersions.imported + report.sharedVersions.imported + report.personalSetlists.imported + report.sharedSetlists.imported;
+      alert(`Import completed: ${count} new item(s) imported!`);
+    } catch (err) {
+      console.error('Import failed:', err);
+      alert(`Import failed: ${err instanceof Error ? err.message : 'invalid backup file'}`);
+    } finally {
+      setIsImporting(false);
+      if (e.target) e.target.value = '';
+    }
+  };
+
   // ==========================================
   // 4. EARLY RETURN (MUST BE AT THE VERY BOTTOM)
   // ==========================================
@@ -399,7 +445,7 @@ function App() {
       <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-[var(--color-brand)] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-          <h1 className="text-xl font-black text-slate-800">BBF Song book</h1>
+          <h1 className="text-xl font-black text-slate-800">BBF Song Book</h1>
           <p className="text-slate-400 mt-2">{shareImportLoading}</p>
         </div>
       </div>
@@ -410,7 +456,7 @@ function App() {
     return (
       <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
         <div className="text-center">
-          <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song book</h1>
+          <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song Book</h1>
           <p className="text-slate-400 mt-2">Loading library...</p>
         </div>
       </div>
@@ -500,8 +546,8 @@ function App() {
                 ) : (
                   <>
                 <div className="flex justify-between items-center w-full">
-                  <button type="button" className="hidden md:block text-lg font-bold font-sans text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song book</button>
-                  <button type="button" className="md:hidden text-[19px] font-bold font-sans text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song book</button>
+                  <button type="button" className="hidden md:block text-lg font-bold font-sans text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song Book</button>
+                  <button type="button" className="md:hidden text-[19px] font-bold font-sans text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song Book</button>
                   {(isAdminAuthenticated || showAdminButton) && (
                     <button type="button" onClick={() => setShowAdminScreen(true)} className="mr-2 rounded-md border border-cyan-200 bg-cyan-50 px-2 py-1 text-xs font-bold text-cyan-800" title="Open admin screen">Admin</button>
                   )}
@@ -528,6 +574,35 @@ function App() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                       </svg>
                     </button>
+                    {isPersonalTab && (
+                      <>
+                        <input
+                          ref={fileInputRef}
+                          type="file"
+                          accept=".json"
+                          className="hidden"
+                          onChange={handleImportFileSelected}
+                        />
+                        <button
+                          type="button"
+                          onClick={() => fileInputRef.current?.click()}
+                          disabled={isImporting}
+                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-[var(--color-brand)] transition-all disabled:opacity-50"
+                          title="Import backup data"
+                        >
+                          Import
+                        </button>
+                        <button
+                          type="button"
+                          onClick={handleExportData}
+                          disabled={isExporting}
+                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-[var(--color-brand)] transition-all disabled:opacity-50"
+                          title="Export backup data"
+                        >
+                          Export
+                        </button>
+                      </>
+                    )}
                     <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings" title="Settings">
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
@@ -585,7 +660,7 @@ function App() {
               ) : (
                 <div className="flex-1 flex flex-col items-center justify-center bg-[var(--color-reader-surface)] h-full">
                   <div className="max-w-md text-center px-6">
-                    <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">BBF Song book</h2>
+                    <h2 className="text-2xl font-bold text-slate-800 tracking-tight mb-3">BBF Song Book</h2>
                     <p className="text-sm text-slate-500 mb-10 leading-relaxed">Select a song from the library or choose a setlist sequence to begin reading.</p>
                   </div>
                 </div>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBF Song Book — App Icon Real-World Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen font-sans antialiased p-4 md:p-8">
+
+  <!-- Header -->
+  <div class="max-w-6xl mx-auto mb-8 border-b border-slate-800 pb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div>
+      <div class="flex items-center gap-2">
+        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-600 text-white uppercase tracking-wider">Live Preview</span>
+        <h1 class="text-2xl md:text-3xl font-black tracking-tight text-white">BBF Song Book Icon Sizes</h1>
+      </div>
+      <p class="text-slate-400 text-sm mt-1">Real-world simulation: Big, Normal, and Actual Small mobile app icons in Circle, Squircle, and Square on dark backgrounds.</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg transition-colors flex items-center gap-2">
+        <span>← Back to Song Book</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto space-y-12">
+
+    <!-- Section 1: Simulated Phone Home Screen (Actual Small Size) -->
+    <section class="bg-[#0B0F19] border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+      <div class="mb-6">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>📱</span> 1. Simulated Mobile Home Screen (Actual App Icon Size 60px)
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">This is how your icon appears next to other apps on Android (Circle) and iOS (Squircle) at actual 60px size.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Android Phone Mockup (Circle Icons) -->
+        <div class="bg-gradient-to-b from-[#111827] to-[#030712] p-6 rounded-3xl border border-slate-800 shadow-xl max-w-sm mx-auto w-full">
+          <div class="flex justify-between items-center text-xs text-slate-400 mb-6 px-1">
+            <span>9:41</span>
+            <span class="text-emerald-400">● 5G 100%</span>
+          </div>
+
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4 text-center">Android Launcher (Circle Mask)</p>
+
+          <div class="grid grid-cols-4 gap-4 text-center">
+            <!-- App 1: BBF Song Book -->
+            <div class="flex flex-col items-center">
+              <div class="w-[60px] h-[60px] rounded-full shadow-lg shadow-black/60 overflow-hidden transition-transform hover:scale-110">
+                <img src="/pwa-512x512.png" alt="BBF" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] font-medium text-white mt-1.5 truncate max-w-[68px]">BBF Song...</span>
+            </div>
+
+            <!-- Fake App 2: Bible -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-full bg-slate-800 flex items-center justify-center text-2xl shadow-md">
+                📖
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Bible</span>
+            </div>
+
+            <!-- Fake App 3: Music -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-full bg-rose-600 flex items-center justify-center text-2xl shadow-md">
+                🎵
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Music</span>
+            </div>
+
+            <!-- Fake App 4: Notes -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-full bg-amber-500 flex items-center justify-center text-2xl shadow-md">
+                📝
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Notes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- iOS Phone Mockup (Squircle Icons) -->
+        <div class="bg-gradient-to-b from-[#1E1B4B]/40 to-[#0F172A] p-6 rounded-3xl border border-slate-800 shadow-xl max-w-sm mx-auto w-full">
+          <div class="flex justify-between items-center text-xs text-slate-400 mb-6 px-1">
+            <span>9:41</span>
+            <span class="text-blue-400">iPhone 5G 100%</span>
+          </div>
+
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4 text-center">iOS Home Screen (Squircle Mask)</p>
+
+          <div class="grid grid-cols-4 gap-4 text-center">
+            <!-- App 1: BBF Song Book -->
+            <div class="flex flex-col items-center">
+              <div class="w-[60px] h-[60px] rounded-[14px] shadow-lg shadow-black/60 overflow-hidden transition-transform hover:scale-110">
+                <img src="/pwa-512x512.png" alt="BBF" class="w-full h-full object-cover">
+              </div>
+              <span class="text-[11px] font-medium text-white mt-1.5 truncate max-w-[68px]">BBF Song...</span>
+            </div>
+
+            <!-- Fake App 2: Settings -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-[14px] bg-slate-700 flex items-center justify-center text-2xl shadow-md">
+                ⚙️
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Settings</span>
+            </div>
+
+            <!-- Fake App 3: Calendar -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-[14px] bg-red-600 flex items-center justify-center text-2xl shadow-md">
+                📅
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Calendar</span>
+            </div>
+
+            <!-- Fake App 4: Files -->
+            <div class="flex flex-col items-center opacity-60">
+              <div class="w-[60px] h-[60px] rounded-[14px] bg-blue-500 flex items-center justify-center text-2xl shadow-md">
+                📁
+              </div>
+              <span class="text-[11px] text-slate-400 mt-1.5">Files</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Shapes Comparison (Circle vs Squircle vs Square) -->
+    <section class="bg-[#0B0F19] border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+      <div class="mb-6">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>📐</span> 2. Shapes Comparison (Medium Size 96px)
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">Notice how the eagle, globe, and text remain centered with comfortable margins in all formats.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Circle -->
+        <div class="bg-black/60 border border-slate-800/80 rounded-2xl p-6 flex flex-col items-center text-center">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Circle (Android Pixel)</span>
+          <div class="w-24 h-24 rounded-full shadow-2xl overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo Circle" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs text-emerald-400 mt-4 font-semibold">✓ Zero Clipping</span>
+          <span class="text-[11px] text-slate-500 mt-0.5">Eagle wings & text fully inside</span>
+        </div>
+
+        <!-- Squircle -->
+        <div class="bg-black/60 border border-slate-800/80 rounded-2xl p-6 flex flex-col items-center text-center">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Squircle (iOS & Samsung)</span>
+          <div class="w-24 h-24 rounded-[22px] shadow-2xl overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo Squircle" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs text-emerald-400 mt-4 font-semibold">✓ Zero Clipping</span>
+          <span class="text-[11px] text-slate-500 mt-0.5">Smooth 22% rounded corners</span>
+        </div>
+
+        <!-- Square -->
+        <div class="bg-black/60 border border-slate-800/80 rounded-2xl p-6 flex flex-col items-center text-center">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Sharp Square (Desktop & Web)</span>
+          <div class="w-24 h-24 rounded-none shadow-2xl overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo Square" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs text-emerald-400 mt-4 font-semibold">✓ Full Bleed White</span>
+          <span class="text-[11px] text-slate-500 mt-0.5">Edge-to-edge square canvas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: All Standard Resolution Scales -->
+    <section class="bg-[#0B0F19] border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+      <div class="mb-6">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>🔍</span> 3. Size Matrix (From Giant 256px to Tiny 16px Favicon)
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">Inspect clarity and proportions across high-res store graphics down to browser tab icons.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center items-end">
+        <!-- 256px (Big) -->
+        <div class="col-span-2 flex flex-col items-center bg-black/40 p-4 rounded-2xl border border-slate-800/60">
+          <div class="w-48 h-48 rounded-2xl shadow-2xl overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo 256" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs font-bold text-white mt-3">Big (192px–256px)</span>
+          <span class="text-[10px] text-slate-400">Play Store & App Store detail</span>
+        </div>
+
+        <!-- 96px (Medium) -->
+        <div class="flex flex-col items-center bg-black/40 p-4 rounded-2xl border border-slate-800/60">
+          <div class="w-24 h-24 rounded-xl shadow-lg overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo 96" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs font-bold text-white mt-3">96px</span>
+          <span class="text-[10px] text-slate-400">Quick Settings</span>
+        </div>
+
+        <!-- 60px (Actual Phone App Icon) -->
+        <div class="flex flex-col items-center bg-black/40 p-4 rounded-2xl border border-slate-800/60">
+          <div class="w-[60px] h-[60px] rounded-xl shadow-md overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo 60" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs font-bold text-emerald-400 mt-3">60px (Actual)</span>
+          <span class="text-[10px] text-slate-400">Phone Home Screen</span>
+        </div>
+
+        <!-- 48px (Legacy Small) -->
+        <div class="flex flex-col items-center bg-black/40 p-4 rounded-2xl border border-slate-800/60">
+          <div class="w-12 h-12 rounded-lg shadow-md overflow-hidden border border-slate-700/50">
+            <img src="/pwa-512x512.png" alt="BBF Logo 48" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs font-bold text-white mt-3">48px</span>
+          <span class="text-[10px] text-slate-400">Notifications</span>
+        </div>
+
+        <!-- 32px & 16px (Favicons) -->
+        <div class="flex flex-col items-center bg-black/40 p-4 rounded-2xl border border-slate-800/60">
+          <div class="flex items-center gap-3 h-12">
+            <div class="w-8 h-8 rounded shadow overflow-hidden border border-slate-700/50">
+              <img src="/pwa-512x512.png" alt="BBF Logo 32" class="w-full h-full object-cover">
+            </div>
+            <div class="w-4 h-4 rounded-sm shadow overflow-hidden border border-slate-700/50">
+              <img src="/pwa-512x512.png" alt="BBF Logo 16" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <span class="text-xs font-bold text-white mt-3">32px & 16px</span>
+          <span class="text-[10px] text-slate-400">Browser Favicon</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: In-App UI Live Component Previews -->
+    <section class="bg-[#0B0F19] border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+      <div class="mb-6">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <span>🎨</span> 4. Actual In-App Component Previews
+        </h2>
+        <p class="text-sm text-slate-400 mt-1">Check how your logo appears inside the Setup Gatekeeper and the Install Prompt.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Install Banner Mockup -->
+        <div class="space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Install Prompt Banner (Dark Slate #0F172A)</span>
+          <div class="bg-[#0F172A] border border-slate-700/80 p-4 text-white shadow-2xl">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-lg bg-white p-0.5 shadow-sm flex items-center justify-center flex-shrink-0">
+                <img src="/bbf-logo-transparent.png" alt="BBF Logo" class="w-full h-full object-contain">
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 className="font-semibold text-sm text-slate-100 truncate">Install BBF Song Book</h3>
+                <p className="text-xs text-slate-400 mt-0.5 truncate">Add to your home screen for quick access</p>
+              </div>
+              <button class="text-slate-400 hover:text-white p-1">✕</button>
+            </div>
+            <div class="flex items-center justify-between gap-2 pt-2">
+              <button class="text-[11px] text-slate-400 underline">Don't show again</button>
+              <button class="px-3.5 py-1.5 bg-blue-600 text-white font-semibold rounded-lg text-xs">Install</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Setup Screen Mockup -->
+        <div class="space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Setup Screen (When songs not downloaded)</span>
+          <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl text-center space-y-3">
+            <div class="w-20 h-20 rounded-2xl bg-white shadow-lg p-2 mx-auto flex items-center justify-center border border-slate-100">
+              <img src="/bbf-logo-transparent.png" alt="BBF Logo" class="w-full h-full object-contain">
+            </div>
+            <h1 class="text-xl font-bold text-white">BBF Song Book</h1>
+            <p class="text-xs text-slate-400 max-w-xs mx-auto">Download the library for instant offline access to 728+ songs</p>
+            <button class="px-6 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold text-xs rounded-xl shadow-md">
+              Download Complete Songs
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="max-w-6xl mx-auto mt-12 pt-6 border-t border-slate-900 text-center text-xs text-slate-500">
+    BBF Song Book • Icon Preview Environment • Served directly from your local dev server
+  </footer>
+
+</body>
+</html>

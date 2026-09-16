@@ -42,9 +42,11 @@ export function SetupGatekeeper({ onComplete }: { onComplete: () => void }) {
         {/* Header */}
         <div className="text-center space-y-4">
           <div className="flex justify-center">
-            <img src="/pwa-192x192.png" alt="BBF Song book" className="w-24 h-24" />
+            <div className="w-24 h-24 rounded-2xl bg-white shadow-md p-2 flex items-center justify-center border border-slate-100">
+              <img src="/bbf-logo-transparent.png" alt="BBF Song Book" className="w-full h-full object-contain" />
+            </div>
           </div>
-          <h1 className="text-3xl font-bold text-slate-900">BBF Song book</h1>
+          <h1 className="text-3xl font-bold text-slate-900">BBF Song Book</h1>
           <p className="text-slate-600">
             {songCount > 0 
               ? `Download complete songs (${songCount}/728) for full offline access`

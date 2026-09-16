@@ -182,8 +182,14 @@ export function SmartDownloadButton({ onComplete, forceShow = false, compact = f
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
         <div className="bg-[var(--color-surface)] rounded-xl shadow-lg max-w-sm w-full p-6 space-y-4">
           <div className="text-center space-y-2">
-            <div className="text-3xl">📱</div>
-            <h2 className="text-lg font-semibold text-slate-900">Install BBF Song book</h2>
+            <div className="w-16 h-16 rounded-2xl bg-white shadow-md p-1.5 mx-auto flex items-center justify-center border border-slate-100">
+              <img
+                src="/bbf-logo-transparent.png"
+                alt="BBF Song Book"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book</h2>
             <p className="text-sm text-slate-600">
               Songs downloaded! Now add to home screen:
             </p>

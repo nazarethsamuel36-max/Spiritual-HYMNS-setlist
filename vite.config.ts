@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => ({
       includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png', 'maskable-icon.png'],
       manifest: false,
       workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         navigateFallback: 'index.html',
         // 🛑 Tell Workbox to completely ignore Supabase API calls
