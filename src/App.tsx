@@ -455,7 +455,8 @@ function App() {
   if (showGatekeeper === null) {
     return (
       <div className="flex items-center justify-center h-screen bg-[var(--color-surface)]">
-        <div className="text-center">
+        <div className="text-center flex flex-col items-center">
+          <img src="/bbf-logo-transparent.png" alt="BBF Song Book" className="w-20 h-20 mb-3 object-contain animate-pulse" />
           <h1 className="text-2xl font-black text-[var(--color-brand)]">BBF Song Book</h1>
           <p className="text-slate-400 mt-2">Loading library...</p>
         </div>
