@@ -477,43 +477,52 @@ function App() {
         <SetupGatekeeper onComplete={() => setShowGatekeeper(false)} />
       ) : (
         <div className="app-shell">
-          {showSidebar && (
-          <div className="sidebar-pane">
-              {appToast && (
-                <div
-                  className="fixed top-4 left-1/2 -translate-x-1/2 z-[600] flex items-center gap-2 px-4 py-2 rounded-full shadow-xl text-sm font-semibold text-white pointer-events-none animate-in fade-in slide-in-from-top-2 duration-200"
-                  style={{ background: appToast.type === 'error' ? '#B91C1C' : '#0F172A' }}
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  {appToast.message}
-                </div>
-              )}
+          {appToast && (
+            <div
+              className="fixed bottom-20 md:bottom-6 left-1/2 -translate-x-1/2 z-[600] flex items-center gap-2 px-4 py-2.5 rounded-full shadow-2xl text-sm font-semibold pointer-events-none animate-in fade-in slide-in-from-bottom-2 duration-200"
+              style={{
+                background: appToast.type === 'error' ? '#B91C1C' : 'var(--color-brand)',
+                color: appToast.type === 'error' ? '#FFFFFF' : 'var(--color-on-inverse)',
+              }}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+                style={{ color: appToast.type === 'error' ? '#FCA5A5' : 'var(--color-on-inverse)' }}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              {appToast.message}
+            </div>
+          )}
 
-              {/* Sync toast — fixed so it floats above header */}
-              {syncToast !== 'idle' && (
-                <div
-                  className="fixed top-4 left-1/2 -translate-x-1/2 z-[500] flex items-center gap-2 px-4 py-2 rounded-full shadow-xl text-sm font-semibold text-white pointer-events-none animate-in fade-in slide-in-from-top-2 duration-200"
-                  style={{ background: syncToast === 'done' ? '#0F172A' : '#1E293B' }}
-                >
-                  {syncToast === 'syncing' ? (
-                    <>
-                      <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                      </svg>
-                      Refreshing...
-                    </>
-                  ) : (
-                    <>
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Up to date
-                    </>
-                  )}
-                </div>
+          {/* Sync toast — fixed so it floats at bottom above footer bar */}
+          {syncToast !== 'idle' && (
+            <div
+              className="fixed bottom-20 md:bottom-6 left-1/2 -translate-x-1/2 z-[500] flex items-center gap-2 px-4 py-2.5 rounded-full shadow-2xl text-sm font-semibold pointer-events-none animate-in fade-in slide-in-from-bottom-2 duration-200"
+              style={{
+                background: 'var(--color-brand)',
+                color: 'var(--color-on-inverse)',
+              }}
+            >
+              {syncToast === 'syncing' ? (
+                <>
+                  <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    style={{ color: 'var(--color-on-inverse)' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  Refreshing...
+                </>
+              ) : (
+                <>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    style={{ color: 'var(--color-on-inverse)' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Up to date
+                </>
               )}
+            </div>
+          )}
+          {showSidebar && (
+            <div className="sidebar-pane">
               <header className="sidebar-header">
                 {librarySearchActive && isSongsTab ? (
                   /* Search header state — occupies the entire header */

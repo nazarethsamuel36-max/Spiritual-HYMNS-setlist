@@ -239,7 +239,11 @@ export function ReaderHeader({
                                   onClick={async () => {
                                     await SetlistService.addSongToSetlist(list.id, song.id);
                                     setIsMoreOpen(false);
-                                    alert(`Added "${song.title}" to setlist: "${list.title}"`);
+                                    window.dispatchEvent(
+                                      new CustomEvent('show-toast', {
+                                        detail: { message: `Added to setlist: "${list.title}"` },
+                                      })
+                                    );
                                   }}
                                   className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
                                 >
@@ -504,7 +508,11 @@ export function ReaderHeader({
                         }
                         setIsMobileMenuOpen(false);
                         setMobileTab('main');
-                        alert(`Added "${song.title}" to setlist: "${list.title}"`);
+                        window.dispatchEvent(
+                          new CustomEvent('show-toast', {
+                            detail: { message: `Added to setlist: "${list.title}"` },
+                          })
+                        );
                       }}
                       className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
                     >

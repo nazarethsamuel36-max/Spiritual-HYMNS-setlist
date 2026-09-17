@@ -80,7 +80,14 @@ export function FilterTabs({
   return (
     <div ref={filterRowRef} className="relative flex items-center gap-2 min-w-0">
       {/* Language pills — single select */}
-      <div ref={languageScrollerRef} className="relative flex-1 flex space-x-2 overflow-x-auto hide-scrollbar pb-0.5 min-w-0">
+      <div
+        ref={languageScrollerRef}
+        className="relative flex-1 flex space-x-2 overflow-x-auto hide-scrollbar pb-0.5 min-w-0"
+        style={hasMoreLanguages ? {
+          maskImage: 'linear-gradient(to right, black 90%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to right, black 90%, transparent 100%)',
+        } : undefined}
+      >
         {LANGUAGES.map(lang => (
           <button
             key={`lang-${lang}`}
@@ -98,9 +105,7 @@ export function FilterTabs({
       </div>
 
       <div className="relative z-20 flex-shrink-0">
-        {hasMoreLanguages && (
-          <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-full z-10 h-8 w-8 bg-gradient-to-r from-transparent to-slate-50" />
-        )}
+        {/* fade overlay removed — mask-image on scroller handles the fade cleanly */}
         <button
           ref={genreButtonRef}
           onClick={toggleGenreMenu}

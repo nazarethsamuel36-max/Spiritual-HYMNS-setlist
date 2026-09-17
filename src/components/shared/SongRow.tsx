@@ -99,6 +99,11 @@ function SetlistPopover({
               onClick={async (e) => {
                 e.stopPropagation();
                 await SetlistService.addSongToSetlist(list.id, song.id);
+                window.dispatchEvent(
+                  new CustomEvent('show-toast', {
+                    detail: { message: `Added to setlist: "${list.title}"` },
+                  })
+                );
                 onClose();
               }}
               className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 text-sm font-medium text-slate-700 transition-colors"

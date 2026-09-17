@@ -37,6 +37,11 @@ export function SetlistAddDropdown({ songId }: SetlistAddDropdownProps) {
                     key={list.id}
                     onClick={async () => {
                       await SetlistService.addSongToSetlist(list.id, songId);
+                      window.dispatchEvent(
+                        new CustomEvent('show-toast', {
+                          detail: { message: `Added to setlist: "${list.title}"` },
+                        })
+                      );
                       setIsOpen(false);
                     }}
                     className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 text-sm font-medium text-slate-700 transition-colors"
