@@ -28,31 +28,14 @@ export class ShareService {
     return Array.from(array, (num) => chars[num % chars.length]).join('');
   }
 
-  static createSlug(title: string): string {
-    const slug = title
-      .normalize('NFKD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLocaleLowerCase()
-      .replace(/[^\p{L}\p{N}]+/gu, '-')
-      .replace(/^-+|-+$/g, '')
-      .slice(0, 72);
-    return slug || 'shared-song';
-  }
-
-  private static async reserveSlug(title: string): Promise<string> {
-    const base = this.createSlug(title);
-    const { data, error } = await supabase
-      .from('shared_payloads')
-      .select('slug')
-      .like('slug', `${base}%`);
-
-    if (error) throw new Error(error.message);
-    const used = new Set((data ?? []).map((row) => row.slug));
-    if (!used.has(base)) return base;
-
-    let suffix = 2;
-    while (used.has(`${base}-${suffix}`)) suffix += 1;
-    return `${base}-${suffix}`;
+  /**
+   * Generates a random, unguessable share slug so the app never needs to list table rows.
+   */
+  static generateSlug(length = 16): string {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const array = new Uint8Array(length);
+    crypto.getRandomValues(array);
+    return Array.from(array, (num) => chars[num % chars.length]).join('');
   }
 
   private static async createShare(
@@ -61,16 +44,21 @@ export class ShareService {
     payload: UserDataPackage,
   ): Promise<ShareLink> {
     const shareId = this.generateShareId();
-    const slug = await this.reserveSlug(title);
-    const { error } = await supabase.from('shared_payloads').insert({
-      share_id: shareId,
-      slug,
-      type,
-      payload,
-    });
+    const slug = this.generateSlug();
+    const { data, error } = await supabase
+      .rpc('create_shared_payload', {
+        p_type: type,
+        p_slug: slug,
+        p_payload: payload,
+      })
+      .single();
 
     if (error) throw new Error(error.message);
-    return { shareId, slug };
+
+    return {
+      shareId: data?.share_id ?? shareId,
+      slug: data?.slug ?? slug,
+    };
   }
 
   /**
@@ -246,18 +234,15 @@ export class ShareService {
    * Fetches a shared snapshot from Supabase by exact ID.
    */
   static async fetchShare(identifier: string): Promise<{ type: 'song' | 'version' | 'setlist'; payload: UserDataPackage } | null> {
-    const field = /^[a-zA-Z0-9_-]{12}$/.test(identifier) ? 'share_id' : 'slug';
     const { data, error } = await supabase
-      .from('shared_payloads')
-      .select('type, payload')
-      .eq(field, identifier)
+      .rpc('get_shared_payload', { lookup_slug: identifier })
       .maybeSingle();
 
     if (error) {
       console.error('Error fetching share link:', error);
       throw new Error('Connection failed. Please check your internet connection.');
     }
-    return data;
+    return data ?? null;
   }
 
   /**
