@@ -40,7 +40,7 @@ export class ShareService {
 
   private static async createShare(
     type: 'song' | 'version' | 'setlist',
-    title: string,
+    _title: string,
     payload: UserDataPackage,
   ): Promise<ShareLink> {
     const shareId = this.generateShareId();
@@ -51,7 +51,10 @@ export class ShareService {
         p_slug: slug,
         p_payload: payload,
       })
-      .single();
+      .single() as {
+        data: { share_id: string; slug: string } | null;
+        error: { message: string } | null;
+      };
 
     if (error) throw new Error(error.message);
 
@@ -236,12 +239,16 @@ export class ShareService {
   static async fetchShare(identifier: string): Promise<{ type: 'song' | 'version' | 'setlist'; payload: UserDataPackage } | null> {
     const { data, error } = await supabase
       .rpc('get_shared_payload', { lookup_slug: identifier })
-      .maybeSingle();
+      .maybeSingle() as {
+        data: { type: 'song' | 'version' | 'setlist'; payload: UserDataPackage } | null;
+        error: { message: string } | null;
+      };
 
     if (error) {
       console.error('Error fetching share link:', error);
       throw new Error('Connection failed. Please check your internet connection.');
     }
+
     return data ?? null;
   }
 
