@@ -1,30 +1,28 @@
-create extension if not exists pgcrypto;
+-- Ensure pgcrypto is available (needed for gen_random_bytes used in create_shared_payload)
+create extension if not exists pgcrypto with schema extensions;
 
+-- Recreate the table if it doesn't exist yet (idempotent)
 create table if not exists public.shared_payloads (
   share_id text primary key,
-  slug text not null unique,
-  type text not null check (type in ('song', 'version', 'setlist')),
-  payload jsonb not null,
+  slug     text not null unique,
+  type     text not null check (type in ('song', 'version', 'setlist')),
+  payload  jsonb not null,
   created_at timestamptz not null default timezone('utc'::text, now()),
   expires_at timestamptz not null default (timezone('utc'::text, now()) + interval '180 days')
 );
 
-create index if not exists idx_shared_payloads_created_at
-  on public.shared_payloads(created_at);
-
-create index if not exists idx_shared_payloads_expires_at
-  on public.shared_payloads(expires_at);
-
-create index if not exists idx_shared_payloads_slug
-  on public.shared_payloads(slug);
+create index if not exists idx_shared_payloads_created_at on public.shared_payloads(created_at);
+create index if not exists idx_shared_payloads_expires_at on public.shared_payloads(expires_at);
+create index if not exists idx_shared_payloads_slug       on public.shared_payloads(slug);
 
 alter table public.shared_payloads enable row level security;
 
 drop policy if exists "Allow public inserts" on public.shared_payloads;
-drop policy if exists "Allow public reads" on public.shared_payloads;
+drop policy if exists "Allow public reads"   on public.shared_payloads;
 revoke all on public.shared_payloads from anon;
 revoke all on public.shared_payloads from authenticated;
 
+-- get_shared_payload: unchanged
 create or replace function public.get_shared_payload(lookup_slug text)
 returns table (type text, payload jsonb)
 language sql
@@ -41,15 +39,17 @@ $$;
 grant execute on function public.get_shared_payload(text) to anon;
 grant execute on function public.get_shared_payload(text) to authenticated;
 
+-- create_shared_payload: use extensions.gen_random_bytes so the search_path
+-- finds pgcrypto even when the function's search_path is locked to 'public'.
 create or replace function public.create_shared_payload(
-  p_type text,
-  p_slug text,
+  p_type    text,
+  p_slug    text,
   p_payload jsonb
 )
 returns table (share_id text, slug text)
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   v_share_id text;
@@ -62,8 +62,9 @@ begin
     raise exception 'payload too large';
   end if;
 
+  -- gen_random_bytes is provided by pgcrypto (schema: extensions)
   v_share_id := replace(replace(replace(
-    encode(gen_random_bytes(9), 'base64'), '/', '_'), '+', '-'), '=', '');
+    encode(extensions.gen_random_bytes(9), 'base64'), '/', '_'), '+', '-'), '=', '');
 
   insert into public.shared_payloads (share_id, slug, type, payload, created_at, expires_at)
   values (v_share_id, p_slug, p_type, p_payload, now(), now() + interval '180 days');

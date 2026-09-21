@@ -6,6 +6,7 @@ import { SearchEngine } from '../utils/SearchEngine';
 import { formatSongTitle } from '../utils/SongFormatter';
 import { useWorkflowStore } from '../store/workflowStore';
 import { ShareService } from '../services/ShareService';
+import { shareContent } from '../utils/shareUtils';
 
 import {
   DndContext,
@@ -28,25 +29,7 @@ interface SetlistViewProps {
   setlistId: string;
 }
 
-// Clipboard API is only available on HTTPS; fall back to a hidden textarea + execCommand for plain HTTP.
-async function copyTextToClipboard(text: string): Promise<void> {
-  if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return;
-  }
-  const textarea = document.createElement('textarea');
-  textarea.value = text;
-  textarea.style.position = 'fixed';
-  textarea.style.opacity = '0';
-  document.body.appendChild(textarea);
-  textarea.focus();
-  textarea.select();
-  try {
-    document.execCommand('copy');
-  } finally {
-    document.body.removeChild(textarea);
-  }
-}
+
 
 // ─── Song Row ────────────────────────────────────────────────────────────────
 function SortableSongItem({ item, setlistId }: { item: any, setlistId: string }) {
@@ -360,8 +343,14 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
             try {
               const link = await ShareService.shareSetlist(setlist);
               const url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
-              await copyTextToClipboard(url);
-              alert('Shareable setlist link copied to clipboard!');
+              const result = await shareContent({
+                title: setlist.title,
+                text: `Worship Setlist: ${setlist.title}`,
+                url,
+              });
+              if (result === 'copied') {
+                alert('Shareable setlist link copied to clipboard!');
+              }
             } catch (e: any) {
               console.error(e);
               alert('Failed to share setlist: ' + (e.message || e));

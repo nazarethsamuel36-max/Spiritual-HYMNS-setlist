@@ -11,7 +11,7 @@ import { VisibilitySwitch } from '../shared/VisibilitySwitch';
 import { createNewVersion } from '../../services/VersionWorkflow';
 import { VersionService } from '../../services/VersionService';
 import { ShareService } from '../../services/ShareService';
-
+import { shareContent } from '../../utils/shareUtils';
 
 interface ReaderHeaderProps {
   song: SongDetail;
@@ -88,29 +88,36 @@ export function ReaderHeader({
   const handleShare = async () => {
     try {
       let url = '';
+      let title = song.title;
 
       if (activeVersion) {
         // Sharing a custom arrangement/version
         const link = await ShareService.shareVersion(activeVersion);
         url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
-        alert(`Sharing custom version: "${activeVersion.name}"`);
+        title = activeVersion.name;
       } else if (source === 'personal') {
         // Sharing a personal song
         const link = await ShareService.sharePersonalSong(song);
         url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
-        alert(`Sharing personal song: "${song.title}"`);
       } else if (source === 'shared') {
         // Sharing a shared song (re-share)
         const link = await ShareService.sharePersonalSong(song);
         url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
-        alert(`Sharing shared song: "${song.title}"`);
       } else {
         // Sharing standard official library song (can be resolved directly via path)
         url = `${window.location.origin}/song/${song.id}`;
       }
 
-      await navigator.clipboard.writeText(url);
-      alert('Shareable link copied to clipboard!');
+      const shareResult = await shareContent({
+        title,
+        text: `Check out "${title}" on Spiritual Hymns`,
+        url,
+      });
+
+      if (shareResult === 'copied') {
+        alert('Shareable link copied to clipboard!');
+      }
+
       setIsMoreOpen(false);
       setIsMobileMenuOpen(false);
     } catch (e: unknown) {

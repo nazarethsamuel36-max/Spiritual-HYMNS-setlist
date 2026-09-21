@@ -45,22 +45,37 @@ export class ShareService {
   ): Promise<ShareLink> {
     const shareId = this.generateShareId();
     const slug = this.generateSlug();
-    const { data, error } = await supabase
-      .rpc('create_shared_payload', {
-        p_type: type,
-        p_slug: slug,
-        p_payload: payload,
-      })
-      .single() as {
-        data: { share_id: string; slug: string } | null;
-        error: { message: string } | null;
-      };
 
-    if (error) throw new Error(error.message);
+    console.log('[ShareService] createShare start', {
+      type,
+      slug,
+      payloadSize: JSON.stringify(payload).length,
+    });
+
+    const result = await supabase.rpc('create_shared_payload', {
+      p_type: type,
+      p_slug: slug,
+      p_payload: payload,
+    });
+
+    console.log('[ShareService] createShare rpc result', result);
+
+    const { data, error } = result as {
+      data: { share_id: string; slug: string }[] | { share_id: string; slug: string } | null;
+      error: { message: string } | null;
+    };
+
+    if (error) {
+      console.error('[ShareService] createShare error', error);
+      throw new Error(error.message);
+    }
+
+    const row = Array.isArray(data) ? data[0] : data;
+    console.log('[ShareService] createShare row', row);
 
     return {
-      shareId: data?.share_id ?? shareId,
-      slug: data?.slug ?? slug,
+      shareId: row?.share_id ?? shareId,
+      slug: row?.slug ?? slug,
     };
   }
 
