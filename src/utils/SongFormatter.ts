@@ -193,3 +193,21 @@ export function getLanguagePriority(lang: string | undefined): number {
   return idx === -1 ? 999 : idx;
 }
 
+export function formatSongNumber(language?: string, songNumber?: number): string {
+  if (songNumber === undefined || songNumber === null) return '';
+  if (!language) return `${songNumber}`;
+  
+  const langLower = language.toLowerCase().trim();
+  let prefix = 'Eng';
+  
+  if (langLower.startsWith('eng')) prefix = 'Eng';
+  else if (langLower.startsWith('hin')) prefix = 'Hin';
+  else if (langLower.startsWith('mar')) prefix = 'Mar';
+  else if (langLower.startsWith('ben')) prefix = 'Ben';
+  else if (langLower.startsWith('kon')) prefix = 'Kon';
+  else prefix = language.slice(0, 3).charAt(0).toUpperCase() + language.slice(1, 3).toLowerCase();
+
+  return `${prefix} ${songNumber}`;
+}
+
+
