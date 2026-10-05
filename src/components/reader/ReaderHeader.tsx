@@ -361,12 +361,21 @@ export function ReaderHeader({
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
                   </svg>
                 </button>
-                <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
+                <button
+                  onClick={resetTranspose}
+                  className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full hover:bg-slate-100 transition-colors"
+                  title={transpose !== 0 ? "Click to reset key" : "Key"}
+                >
                   <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
-                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
+                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5 flex items-center gap-0.5">
                     {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
+                    {transpose !== 0 && (
+                      <svg className="w-2.5 h-2.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M19.5 12a7.5 7.5 0 1 1-2.69-5.74M19.5 5v4.5h-4.5" />
+                      </svg>
+                    )}
                   </span>
-                </div>
+                </button>
                 <button onClick={onTransposeUp} className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100" aria-label="Transpose up">
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
@@ -450,7 +459,7 @@ export function ReaderHeader({
                 <span className="text-sm font-semibold text-slate-700">Transpose</span>
                 <div className="flex items-center gap-1">
                   <button onClick={onTransposeDown} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 text-slate-700 text-base font-black transition-colors active:scale-95" aria-label="Transpose down">−</button>
-                  <button onClick={resetTranspose} className="w-7 h-7 flex items-center justify-center rounded-md text-slate-500 text-xs font-bold hover:bg-slate-50 transition-colors active:scale-95" title="Reset to original key" aria-label="Reset transpose">0</button>
+                  <button onClick={resetTranspose} className="px-2 h-7 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 text-slate-600 text-[11px] font-bold tracking-tight transition-colors active:scale-95" title="Reset to original key" aria-label="Reset transpose">Reset</button>
                   <button onClick={onTransposeUp} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 text-slate-700 text-base font-black transition-colors active:scale-95" aria-label="Transpose up">+</button>
                 </div>
               </div>

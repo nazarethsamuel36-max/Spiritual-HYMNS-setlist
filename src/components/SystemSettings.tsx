@@ -2,6 +2,7 @@ import { db } from '../db/Database';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { batchDownloadSongs, wakeUpSync } from '../services/DataService';
 import { UserDataPackageService } from '../services/UserDataPackage';
+import { usePWA } from '../hooks/usePWA';
 import { useState, useEffect } from 'react';
 
 type ThemeMode = 'light' | 'dark';
@@ -93,27 +94,41 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
 
+  const { isIOS, installApp } = usePWA();
+  const [showIOSInstructions, setShowIOSInstructions] = useState(false);
+
   const handleDownloadSongs = async () => {
     setIsDownloading(true);
     setStatusMsg('Checking...');
     setDownloadProgress(0);
     setShowOfflineRemovalNotice(false);
 
-    const result = await batchDownloadSongs((percent, message) => {
+    // 1. Download offline library
+    void batchDownloadSongs((percent, message) => {
       setDownloadProgress(percent);
-      setStatusMsg(message);
+      setStatusMsg(message || 'Downloading songs...');
+    }).then((result) => {
+      if (result === 'skipped') {
+        setStatusMsg('Library already available offline');
+      } else if (result === 'completed') {
+        setStatusMsg('Download complete');
+        setHasOfflineLibrary(true);
+      } else if (result === 'error') {
+        setStatusMsg('Download failed');
+      }
+      setIsDownloading(false);
+    }).catch((err) => {
+      console.error('Download error:', err);
+      setStatusMsg('Download failed');
+      setIsDownloading(false);
     });
 
-    if (result === 'skipped') {
-      setStatusMsg('Library already available offline');
-    } else if (result === 'completed') {
-      setStatusMsg('Download complete');
-      setHasOfflineLibrary(true);
-    } else if (result === 'error') {
-      setStatusMsg('Download failed');
+    // 2. Trigger app install / iOS instructions modal
+    if (isIOS) {
+      setShowIOSInstructions(true);
+    } else {
+      void installApp();
     }
-
-    setIsDownloading(false);
   };
 
   const handleDeleteOfflineLibrary = async () => {
@@ -210,37 +225,37 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
               </button>
               {showSongManagement && (
                 <div className="border-t border-slate-100 px-4 py-3 space-y-2">
-                  {hasOfflineLibrary ? (
+                  <button
+                    type="button"
+                    onClick={handleDownloadSongs}
+                    disabled={isDownloading}
+                    className="w-full flex items-center justify-between p-4 bg-[var(--color-brand)] text-[var(--color-on-inverse)] rounded-2xl hover:opacity-90 transition-all group disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
+                  >
+                    <div className="text-left">
+                      <div className="font-bold text-sm">
+                        {isDownloading ? statusMsg : 'Download Songs & Install App'}
+                      </div>
+                      <div className="text-xs opacity-80 mt-0.5">
+                        {isDownloading ? `${downloadProgress}%` : 'Download ~728 songs (5MB) & add app to home screen'}
+                      </div>
+                    </div>
+                    <svg className="w-5 h-5 flex-shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                  </button>
+
+                  {hasOfflineLibrary && (
                     <button
                       type="button"
                       onClick={handleDeleteOfflineLibrary}
-                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-red-400 hover:bg-red-50 transition-all group"
+                      className="w-full flex items-center justify-between p-3 bg-red-50 border border-red-200 rounded-xl hover:bg-red-100 transition-all group"
                     >
                       <div className="text-left">
-                        <div className="font-bold text-slate-700 group-hover:text-red-600">Delete Offline Library</div>
-                        <div className="text-xs text-slate-400">Remove downloaded songs from this device</div>
+                        <div className="font-bold text-red-700 text-xs">Delete Offline Library</div>
+                        <div className="text-[11px] text-red-500">Remove downloaded songs from this device</div>
                       </div>
-                      <svg className="w-5 h-5 text-slate-300 group-hover:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                      </svg>
-                    </button>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={handleDownloadSongs}
-                      disabled={isDownloading}
-                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      <div className="text-left">
-                        <div className="font-bold text-slate-700 group-hover:text-emerald-600">
-                          {isDownloading ? statusMsg : 'Download Songs Offline'}
-                        </div>
-                        <div className="text-xs text-slate-400">
-                          {isDownloading ? `${downloadProgress}%` : 'Download ~728 songs (5MB) for offline use'}
-                        </div>
-                      </div>
-                      <svg className="w-5 h-5 text-slate-300 group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      <svg className="w-4 h-4 text-red-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-4v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                       </svg>
                     </button>
                   )}
@@ -481,6 +496,63 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
               className="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all"
             >
               Done
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* iOS Instructions Modal */}
+      {showIOSInstructions && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[300] flex items-center justify-center p-4 pointer-events-auto">
+          <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4 animate-in fade-in zoom-in-95 duration-200">
+            <div className="text-center space-y-2">
+              <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md mx-auto">
+                <img src="/pwa-192x192.png" alt="BBF Song Book" className="w-full h-full object-cover" />
+              </div>
+              <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book</h2>
+              <p className="text-sm text-slate-600">
+                Follow these steps to add BBF Song Book to your home screen
+              </p>
+            </div>
+
+            <div className="bg-blue-50 rounded-xl p-4 space-y-3">
+              <div className="flex gap-3">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-slate-900">Tap the Share button</p>
+                  <p className="text-xs text-slate-600">Look for the square icon with an arrow pointing up</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-slate-900">Scroll down and tap</p>
+                  <p className="text-xs text-slate-600">"Add to Home Screen"</p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-slate-900">Tap "Add"</p>
+                  <p className="text-xs text-slate-600">App will appear on your home screen</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setShowIOSInstructions(false)}
+              className="w-full py-2.5 bg-blue-600 text-white rounded-xl font-medium text-xs hover:bg-blue-700 transition-colors"
+            >
+              Got it
             </button>
           </div>
         </div>
