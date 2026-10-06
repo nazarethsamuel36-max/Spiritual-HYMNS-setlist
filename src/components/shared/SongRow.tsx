@@ -123,13 +123,13 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <div className={`relative group lang-${song.language?.toLowerCase()} ${isActive ? 'bg-slate-100' : ''}`}>
+    <div className={`relative group lang-${song.language?.toLowerCase()} ${isActive ? 'bg-blue-50/80' : ''}`}>
       <button
         onClick={() => onSelect(song.id)}
-        className="flex items-center text-left py-3 px-2 hover:bg-slate-100 transition-none w-full group"
+        className="flex items-center text-left py-3.5 px-3 hover:bg-[#e4f1f9]/50 transition-none w-full group border-b border-[#e2eaf4]/60"
       >
         {/* Number without circle */}
-        <div className="w-8 flex-shrink-0 flex items-center justify-center text-sm font-semibold mr-3 text-slate-500">
+        <div className="w-8 flex-shrink-0 flex items-center justify-start text-base font-bold mr-2 text-[#0284c7]">
           {hideNumber ? (
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
@@ -140,15 +140,15 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
         </div>
 
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-slate-800 text-base leading-normal truncate group-hover:text-slate-900 transition-colors">
+          <h3 className="font-bold text-[#0f172a] text-[16px] leading-snug truncate group-hover:text-slate-900 transition-colors">
             {formatSongTitle(song.title)}
           </h3>
           <div className="flex items-center space-x-1.5 mt-0.5 min-h-5">
-            <span className="text-xs font-medium text-slate-500 truncate">
+            <span className="text-xs font-medium text-[#78716c] truncate">
               Key {formatKey(song.originalKey)}
             </span>
-            <span className="text-slate-300 text-[10px]">•</span>
-            <span className="text-xs font-medium text-slate-500">
+            <span className="text-[#a8a29e] text-[10px]">•</span>
+            <span className="text-xs font-medium text-[#78716c]">
               {song.language}
             </span>
             {song.is_active === false && (
@@ -161,14 +161,14 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
             )}
           </div>
           {song.genres && song.genres.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-1">
+            <div className="flex flex-wrap gap-1.5 mt-1.5">
               {song.genres.slice(0, 3).map((genre) => (
-                <span key={genre} className="px-1.5 py-0.5 text-[10px] font-medium bg-[var(--color-genre-badge-bg)] text-[var(--color-genre-badge-text)] rounded">
+                <span key={genre} className="px-2 py-0.5 text-[11px] font-medium bg-[#ffedd5] text-[#78350f] rounded border border-[#fed7aa]/60">
                   {genre}
                 </span>
               ))}
               {song.genres.length > 3 && (
-                <span className="px-1.5 py-0.5 text-[10px] text-slate-500">
+                <span className="px-1.5 py-0.5 text-[10px] text-[#78716c]">
                   +{song.genres.length - 3}
                 </span>
               )}
@@ -183,7 +183,7 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
       </button>
 
       {/* Quick-Add Trigger or Delete Button */}
-      <div className="absolute right-2 top-1/2 -translate-y-1/2 z-10 md:opacity-0 group-hover:opacity-100 transition-opacity flex gap-1">
+      <div className="absolute right-3 top-1/2 -translate-y-1/2 z-10 md:opacity-0 group-hover:opacity-100 transition-opacity flex gap-1">
         {onDelete ? (
           <button
             onClick={(e) => {
@@ -205,10 +205,10 @@ export const SongRow = memo(function SongRow({ song, onSelect, isActive, onDelet
               setShowAddMenu(prev => !prev);
             }}
             className={`w-8 h-8 flex items-center justify-center rounded-full transition-all active:scale-90 ${
-              showAddMenu ? 'bg-slate-800 text-[var(--color-on-inverse)] shadow-md' : 'bg-transparent text-slate-400 hover:bg-slate-200 hover:text-slate-700'
+              showAddMenu ? 'bg-[#0284c7] text-white shadow-md' : 'bg-transparent text-[#0284c7] hover:bg-blue-100/60'
             }`}
           >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v12M6 12h12" />
             </svg>
           </button>
