@@ -522,8 +522,8 @@ function App() {
             </div>
           )}
           {showSidebar && (
-            <div className="sidebar-pane !bg-[#f0f6fa]">
-              <header className="sidebar-header !bg-[#f0f6fa]/98">
+            <div className="sidebar-pane">
+              <header className="sidebar-header">
                 {librarySearchActive && isSongsTab ? (
                   /* Search header state — occupies the entire header */
                   <div className="flex items-center w-full gap-2">
@@ -556,14 +556,14 @@ function App() {
                 ) : (
                   <>
                 <div className="flex justify-between items-center w-full">
-                  <button type="button" className="hidden md:block text-lg font-bold font-sans text-slate-900 tracking-tighter uppercase italic select-none">BBF Song Book</button>
+                  <button type="button" className="hidden md:block text-lg font-bold font-sans text-[var(--color-brand)] tracking-tighter uppercase italic select-none">BBF Song Book</button>
                   <button type="button" className="md:hidden text-[19px] font-bold font-sans text-slate-900 tracking-tight leading-none hover:opacity-70 transition-opacity active:scale-95 select-none">BBF Song Book</button>
                   {(isAdminAuthenticated || showAdminButton) && (
                     <button type="button" onClick={() => setShowAdminScreen(true)} className="mr-2 rounded-md border border-cyan-200 bg-cyan-50 px-2 py-1 text-xs font-bold text-cyan-800" title="Open admin screen">Admin</button>
                   )}
                   <div className="flex items-center gap-1">
                     {isSongsTab && (
-                      <button onClick={() => setLibrarySearchActive(true)} className="p-2 text-[#0284c7] hover:text-blue-700 rounded-full transition-all" aria-label="Search songs" title="Search songs">
+                      <button onClick={() => setLibrarySearchActive(true)} className="p-2 text-blue-600 hover:text-blue-700 rounded-full transition-all" aria-label="Search songs" title="Search songs">
                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
@@ -573,7 +573,7 @@ function App() {
                     <button
                       onClick={handleHeaderSync}
                       disabled={isSyncingHeader}
-                      className="p-2 text-slate-400 hover:text-slate-800 rounded-full transition-all disabled:opacity-50"
+                      className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all disabled:opacity-50"
                       aria-label="Sync library"
                       title="Sync library"
                     >
@@ -597,7 +597,7 @@ function App() {
                           type="button"
                           onClick={() => fileInputRef.current?.click()}
                           disabled={isImporting}
-                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-slate-800 transition-all disabled:opacity-50"
+                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-[var(--color-brand)] transition-all disabled:opacity-50"
                           title="Import backup data"
                         >
                           Import
@@ -606,14 +606,14 @@ function App() {
                           type="button"
                           onClick={handleExportData}
                           disabled={isExporting}
-                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-slate-800 transition-all disabled:opacity-50"
+                          className="px-1.5 py-1 text-xs font-semibold text-slate-400 hover:text-[var(--color-brand)] transition-all disabled:opacity-50"
                           title="Export backup data"
                         >
                           Export
                         </button>
                       </>
                     )}
-                    <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-slate-800 rounded-full transition-all" aria-label="Settings" title="Settings">
+                    <button onClick={() => setShowSettings(true)} className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all" aria-label="Settings" title="Settings">
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -621,11 +621,11 @@ function App() {
                     </button>
                   </div>
                 </div>
-                <nav className="hidden md:flex items-center space-x-1 mt-2 bg-[#dcf0fa]/70 p-1 rounded-lg">
-                  <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-bold tracking-widest transition-all ${isSongsTab ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}>Songs</button>
-                  <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-bold tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}>Shared</button>
-                  <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-bold tracking-widest transition-all ${isSetlistTab ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}>Setlists</button>
-                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-bold tracking-widest transition-all ${isPersonalTab ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}>Personal</button>
+                <nav className="hidden md:flex items-center space-x-1 mt-2 bg-slate-200/50 p-1 rounded-lg">
+                  <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isSongsTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Songs</button>
+                  <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Shared</button>
+                  <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isSetlistTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Setlists</button>
+                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isPersonalTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
                 </nav>
                   </>
                 )}
@@ -637,16 +637,16 @@ function App() {
                 {(sidebar.panel === 'setlist-detail') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistView setlistId={sidebar.setlistId} /></div>}
                 {(sidebar.panel === 'personal') && (
                   <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3">
-                    <div className="flex items-center gap-1 p-1 mb-2 bg-[#dcf0fa]/70 rounded-lg">
+                    <div className="flex items-center gap-1 p-1 mb-2 bg-slate-200/50 rounded-lg">
                       <button
                         onClick={() => setPersonalTab('songs')}
-                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'songs' ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}
+                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'songs' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                       >
                         My Songs
                       </button>
                       <button
                         onClick={() => setPersonalTab('versions')}
-                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'versions' ? 'bg-[#0d1527] text-white shadow-sm' : 'text-[#0c2a4a] hover:text-slate-900'}`}
+                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'versions' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
                       >
                         My Versions
                       </button>
@@ -681,31 +681,27 @@ function App() {
           {!isMobile && showContextRail && hasActiveSong && <ContextRail />}
 
           {isMobile && mobileActivePane === 'sidebar' && (
-            <nav className="mobile-bottom-nav bg-white border-t border-[#e2eaf4]">
-              <button id="mobile-nav-songs" onClick={() => setSidebarPanel('library')} className={`mobile-bottom-nav-btn relative ${isSongsTab ? '!text-[#0284c7] font-bold' : '!text-[#78716c]'}`}>
-                {isSongsTab && <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#0284c7]" />}
-                <svg className={`w-5 h-5 mb-1 ${isSongsTab ? 'stroke-[#0284c7]' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <nav className="mobile-bottom-nav">
+              <button id="mobile-nav-songs" onClick={() => setSidebarPanel('library')} className={`mobile-bottom-nav-btn ${isSongsTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                 </svg>
                 <span>Songs</span>
               </button>
-              <button id="mobile-nav-shared" onClick={() => setSidebarPanel('shared')} className={`mobile-bottom-nav-btn relative ${sidebar.panel === 'shared' ? '!text-[#0284c7] font-bold' : '!text-[#78716c]'}`}>
-                {sidebar.panel === 'shared' && <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#0284c7]" />}
-                <svg className={`w-5 h-5 mb-1 ${sidebar.panel === 'shared' ? 'stroke-[#0284c7]' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <button id="mobile-nav-shared" onClick={() => setSidebarPanel('shared')} className={`mobile-bottom-nav-btn ${sidebar.panel === 'shared' ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
                 </svg>
                 <span>Shared</span>
               </button>
-              <button id="mobile-nav-setlists" onClick={() => setSidebarPanel('setlist-list')} className={`mobile-bottom-nav-btn relative ${isSetlistTab ? '!text-[#0284c7] font-bold' : '!text-[#78716c]'}`}>
-                {isSetlistTab && <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#0284c7]" />}
-                <svg className={`w-5 h-5 mb-1 ${isSetlistTab ? 'stroke-[#0284c7]' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <button id="mobile-nav-setlists" onClick={() => setSidebarPanel('setlist-list')} className={`mobile-bottom-nav-btn ${isSetlistTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                 </svg>
                 <span>Setlists</span>
               </button>
-              <button id="mobile-nav-personal" onClick={() => setSidebarPanel('personal')} className={`mobile-bottom-nav-btn relative ${isPersonalTab ? '!text-[#0284c7] font-bold' : '!text-[#78716c]'}`}>
-                {isPersonalTab && <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#0284c7]" />}
-                <svg className={`w-5 h-5 mb-1 ${isPersonalTab ? 'stroke-[#0284c7]' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <button id="mobile-nav-personal" onClick={() => setSidebarPanel('personal')} className={`mobile-bottom-nav-btn ${isPersonalTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
+                <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span>Personal</span>

@@ -161,7 +161,7 @@ export function PersonalSongs() {
             {/* Desktop: Full-width button */}
             <button
               onClick={() => setShowAddForm(true)}
-              className="hidden md:flex w-full py-2.5 px-4 bg-[#0d1527] hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors items-center justify-center space-x-2 shadow-sm"
+              className="hidden md:block w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-700 text-[var(--color-on-inverse)] font-semibold rounded-lg transition-colors flex items-center justify-center space-x-2"
             >
               <span>✚</span>
               <span>Add Personal Song</span>
@@ -169,7 +169,7 @@ export function PersonalSongs() {
             {/* Mobile: FAB button */}
             <button
               onClick={() => setShowAddForm(true)}
-              className="md:hidden fixed bottom-20 right-4 w-14 h-14 rounded-full bg-[#0d1527] hover:bg-slate-800 text-white shadow-lg flex items-center justify-center transition-all active:scale-95 z-50"
+              className="md:hidden fixed bottom-20 right-4 w-14 h-14 rounded-full bg-slate-900 hover:bg-slate-700 text-[var(--color-on-inverse)] shadow-lg flex items-center justify-center transition-all active:scale-95 z-50"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6v12M6 12h12" />
@@ -386,7 +386,7 @@ export function PersonalSongs() {
       </div>
 
       {/* Search + Filters */}
-      <div className="bg-[#f0f6fa] pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-[#e2eaf4]">
+      <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
         <div className="px-3">
           <FilterTabs
             selectedLanguage={selectedLanguage}

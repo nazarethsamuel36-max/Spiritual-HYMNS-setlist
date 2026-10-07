@@ -180,7 +180,7 @@ export function SongList() {
   }, [selectedLanguage]);
 
   return (
-    <div className="w-full songlist-theme-container">
+    <div className="w-full">
       {/* Admin Add New Song Button */}
       {isAdminAuthenticated && (
         <div className="px-3 pt-3">
@@ -377,7 +377,7 @@ export function SongList() {
       ) : (
         <div className="flex flex-col" style={{ minHeight: '500px' }}>
           {/* Filter bar — scrolls with the list */}
-          <div className="relative z-20 bg-[#f0f6fa] border-b border-[#e2eaf4] flex-shrink-0">
+          <div className="relative z-20 bg-slate-50/98 backdrop-blur-sm border-b border-slate-100 flex-shrink-0">
             <div className="px-3 pt-3">
               <FilterTabs />
             </div>

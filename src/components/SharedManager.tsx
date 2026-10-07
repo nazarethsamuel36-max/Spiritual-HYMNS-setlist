@@ -28,8 +28,8 @@ export function SharedManager() {
     <div className="w-full px-2">
       {/* Shared Songs Section */}
       <div className="mb-8">
-        <h2 className="text-xs font-bold text-[#78716c] uppercase tracking-wider mb-3 px-1">Shared Songs</h2>
-        <div className="flex flex-col bg-white border border-[#e2eaf4] rounded-xl overflow-hidden shadow-sm">
+        <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 px-1">Shared Songs</h2>
+        <div className="flex flex-col bg-[var(--color-surface)] border border-slate-100 rounded-xl overflow-hidden shadow-sm">
           {!sharedSongs ? (
             <div className="p-6 text-center text-slate-400 text-xs">Loading...</div>
           ) : sharedSongs.length === 0 ? (
@@ -39,11 +39,11 @@ export function SharedManager() {
               <div
                 key={song.id}
                 onClick={() => openSong(song.id, 'shared')}
-                className="group flex items-center justify-between p-3.5 hover:bg-[#e4f1f9]/50 border-b border-[#e2eaf4]/60 last:border-b-0 cursor-pointer transition-colors"
+                className="group flex items-center justify-between p-3.5 hover:bg-slate-50 border-b border-slate-100 last:border-b-0 cursor-pointer transition-colors"
               >
                 <div className="min-w-0 pr-4">
-                  <div className="font-bold text-[#0f172a] text-sm truncate">{formatSongTitle(song.title)}</div>
-                  <div className="flex items-center space-x-1.5 mt-0.5 text-xs text-[#78716c] font-medium">
+                  <div className="font-semibold text-slate-800 text-sm truncate">{formatSongTitle(song.title)}</div>
+                  <div className="flex items-center space-x-1.5 mt-0.5 text-xs text-slate-500 font-medium">
                     <span>{song.artist || 'Unknown Artist'}</span>
                     <span>•</span>
                     <span>{song.language}</span>
@@ -66,8 +66,8 @@ export function SharedManager() {
 
       {/* Shared Setlists Section */}
       <div>
-        <h2 className="text-xs font-bold text-[#78716c] uppercase tracking-wider mb-3 px-1">Shared Setlists</h2>
-        <div className="flex flex-col bg-white border border-[#e2eaf4] rounded-xl overflow-hidden shadow-sm">
+        <h2 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-3 px-1">Shared Setlists</h2>
+        <div className="flex flex-col bg-[var(--color-surface)] border border-slate-100 rounded-xl overflow-hidden shadow-sm">
           {!sharedSetlists ? (
             <div className="p-6 text-center text-slate-400 text-xs">Loading...</div>
           ) : sharedSetlists.length === 0 ? (
@@ -77,11 +77,11 @@ export function SharedManager() {
               <div
                 key={list.id}
                 onClick={() => openSetlist(list.id)}
-                className="group flex items-center justify-between p-3.5 hover:bg-[#e4f1f9]/50 border-b border-[#e2eaf4]/60 last:border-b-0 cursor-pointer transition-colors"
+                className="group flex items-center justify-between p-3.5 hover:bg-slate-50 border-b border-slate-100 last:border-b-0 cursor-pointer transition-colors"
               >
                 <div className="min-w-0 pr-4">
-                  <div className="font-bold text-[#0f172a] text-sm truncate">{list.title}</div>
-                  <div className="text-[11px] text-[#78716c] font-medium mt-0.5">
+                  <div className="font-semibold text-slate-800 text-sm truncate">{list.title}</div>
+                  <div className="text-[11px] text-slate-400 font-medium mt-0.5">
                     {list.songs.length} songs • Updated {new Date(list.updatedAt).toLocaleDateString()}
                   </div>
                 </div>

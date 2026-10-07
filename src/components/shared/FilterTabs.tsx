@@ -94,8 +94,8 @@ export function FilterTabs({
             onClick={() => setLanguage(lang)}
             className={`px-4 py-1.5 rounded-full text-[12px] font-bold tracking-tight transition-all duration-150 flex-shrink-0 ${
               selectedLanguage === lang
-                ? 'bg-[#0d1527] text-white shadow-sm'
-                : 'bg-[#dcf0fa] text-[#0c2a4a] hover:bg-[#cbe7f7]'
+                ? 'bg-slate-900 text-[var(--color-on-inverse)] shadow-sm'
+                : 'bg-slate-500/15 text-slate-500 hover:bg-slate-500/25'
             }`}
           >
             {lang}
@@ -109,15 +109,15 @@ export function FilterTabs({
         <button
           ref={genreButtonRef}
           onClick={toggleGenreMenu}
-          className={`flex h-8 max-w-[140px] items-center gap-1.5 rounded-[12px] border px-2.5 text-[11px] font-bold transition-colors ${
+          className={`flex h-8 max-w-[140px] items-center gap-1.5 rounded-lg border px-2.5 text-[11px] font-bold transition-colors ${
             genres.length > 0
-              ? 'border-[#0d1527] bg-[#0d1527] text-white'
-              : 'border-[#0284c7] bg-white text-[#0284c7] hover:bg-blue-50'
+              ? 'border-slate-900 bg-slate-900 text-white'
+              : 'border-slate-200 bg-[var(--color-surface)] text-slate-700 hover:bg-slate-50'
           }`}
         >
           <span>Genre</span>
           {genres.length > 0 && (
-            <span className="flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-[#0284c7] text-[9px] font-extrabold text-white">
+            <span className="flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-white text-[9px] font-extrabold text-slate-900">
               {genres.length}
             </span>
           )}

@@ -30,12 +30,12 @@ export function SetlistManager() {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col mb-4 bg-[#f0f6fa] border-b border-[#e2eaf4] pb-3 pt-1 sticky top-0 z-40">
+      <div className="flex flex-col mb-4 bg-slate-50 border-b border-slate-200/60 pb-3 pt-1 sticky top-0 z-40">
         <div className="flex justify-between items-center px-2">
-          <h2 className="text-lg font-bold text-[#0f172a] tracking-tight">Setlists</h2>
+          <h2 className="text-lg font-bold text-slate-800 tracking-tight">Setlists</h2>
           <button
             onClick={() => setIsCreating(true)}
-            className="bg-[#0d1527] text-white hover:bg-slate-800 px-3.5 py-1.5 rounded-full font-bold text-[11px] transition-all shadow-sm"
+            className="text-[var(--color-brand)] bg-[var(--color-brand-soft)] hover:bg-slate-200 px-3 py-1.5 rounded-full font-bold text-[11px] transition-all"
           >
             + New Setlist
           </button>
@@ -43,7 +43,7 @@ export function SetlistManager() {
       </div>
 
       {isCreating && (
-        <form onSubmit={handleCreate} className="mb-4 bg-white border border-[#e2eaf4] p-4 rounded-xl shadow-sm animate-in zoom-in-95 duration-200 mx-2">
+        <form onSubmit={handleCreate} className="mb-4 bg-[var(--color-surface)] border border-slate-200 p-4 rounded-xl shadow-sm animate-in zoom-in-95 duration-200 mx-2">
           <label className="block text-xs font-bold text-slate-500 mb-2">Setlist Name</label>
           <div className="flex flex-col sm:flex-row gap-2">
             <input
@@ -63,7 +63,7 @@ export function SetlistManager() {
             </button>
             <button
               type="submit"
-              className="bg-[#0d1527] text-white px-4 py-2 rounded-lg font-bold text-xs shadow-sm"
+              className="bg-slate-800 text-[var(--color-on-inverse)] px-4 py-2 rounded-lg font-bold text-xs shadow-sm"
             >
               Create
             </button>
@@ -83,14 +83,14 @@ export function SetlistManager() {
             <div
               key={list.id}
               onClick={() => openSetlist(list.id)}
-              className="relative group flex flex-col py-3.5 px-3 hover:bg-[#e4f1f9]/50 transition-none text-left border-b border-[#e2eaf4]/60 w-full last:border-b-0 cursor-pointer"
+              className="relative group flex flex-col py-3.5 px-3 hover:bg-slate-100 transition-none text-left border-b border-slate-100 w-full last:border-b-0 cursor-pointer"
             >
               <div className="flex justify-between items-center w-full mb-1">
-                <span className="font-bold text-base text-[#0f172a] group-hover:text-slate-900 transition-colors leading-tight truncate pr-4">
+                <span className="font-semibold text-base text-slate-800 group-hover:text-slate-900 transition-colors leading-tight truncate pr-4">
                   {list.title}
                 </span>
                 <div className="flex items-center gap-2 flex-shrink-0">
-                  <span className="text-xs font-bold text-[#0c2a4a] bg-[#dcf0fa] px-2.5 py-0.5 rounded-full">
+                  <span className="text-xs font-bold text-slate-500 bg-slate-200/50 px-2 py-0.5 rounded-full">
                     {list.songs.length}
                   </span>
                   <button
@@ -109,7 +109,7 @@ export function SetlistManager() {
                 </div>
               </div>
               <div className="flex items-center justify-between">
-                <div className="text-[11px] text-[#78716c] font-medium">
+                <div className="text-[11px] text-slate-400 font-medium">
                   Updated {new Date(list.updatedAt).toLocaleDateString()}
                 </div>
               </div>
