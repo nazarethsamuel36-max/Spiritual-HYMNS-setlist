@@ -7,10 +7,9 @@ import { batchDownloadSongs } from '../services/DataService';
 const NEVER_SHOW_KEY = 'pwa_prompt_never_show';
 
 export function InstallPrompt() {
-  const { showInstallPrompt, isInstalled, isIOS, installApp, dismissInstallPrompt } = usePWA();
+  const { showInstallPrompt, isInstalled, isIOS, installApp, dismissInstallPrompt, showInstallInstructions, setShowInstallInstructions } = usePWA();
   const isMobile = useIsMobile();
   const mobileActivePane = useWorkflowStore(s => s.mobileActivePane);
-  const [showIOSInstructions, setShowIOSInstructions] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [downloadMessage, setDownloadMessage] = useState('');
@@ -62,16 +61,12 @@ export function InstallPrompt() {
       setIsDownloading(false);
     });
 
-    // Fire install / iOS instructions IMMEDIATELY (no waiting)
-    if (isIOS) {
-      setShowIOSInstructions(true);
-    } else {
-      void installApp();
-    }
+    // Fire install / instructions modal IMMEDIATELY
+    void installApp();
   };
 
-  // Show iOS instructions modal
-  if (isIOS && showIOSInstructions) {
+  // Show instructions modal if native prompt is unavailable or on iOS/Samsung Browser
+  if (showInstallInstructions) {
     return (
       <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[80] p-4">
         <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4">
@@ -81,58 +76,74 @@ export function InstallPrompt() {
             </div>
             <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book</h2>
             <p className="text-sm text-slate-600">
-              Follow these steps to add BBF Song Book to your home screen
+              {isIOS
+                ? 'Follow these steps to add BBF Song Book to your home screen'
+                : 'Follow these steps in your browser to install'}
             </p>
           </div>
 
           <div className="bg-blue-50 rounded-xl p-4 space-y-3">
-            <div className="flex gap-3">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">
-                  1
+            {isIOS ? (
+              <>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Tap the Share button</p>
+                    <p className="text-xs text-slate-600">Look for the square icon with an arrow pointing up</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-slate-900">
-                  Tap the Share button
-                </p>
-                <p className="text-xs text-slate-600">
-                  Look for the square icon with an arrow pointing up
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">
-                  2
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Scroll down and tap</p>
+                    <p className="text-xs text-slate-600">"Add to Home Screen"</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-slate-900">
-                  Scroll down and tap
-                </p>
-                <p className="text-xs text-slate-600">
-                  "Add to Home Screen"
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-3">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">
-                  3
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Tap "Add"</p>
+                    <p className="text-xs text-slate-600">App will appear on your home screen</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-slate-900">
-                  Tap "Add"
-                </p>
-                <p className="text-xs text-slate-600">
-                  App will appear on your home screen
-                </p>
-              </div>
-            </div>
+              </>
+            ) : (
+              <>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Open Browser Menu</p>
+                    <p className="text-xs text-slate-600">Tap the three dots (⋮) or menu icon in your browser</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Select "Add to Home Screen"</p>
+                    <p className="text-xs text-slate-600">Or look for "Install app" / "Download app"</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-slate-900">Confirm Installation</p>
+                    <p className="text-xs text-slate-600">App icon will be added to your home screen</p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
           <div className="flex gap-2">
@@ -143,7 +154,7 @@ export function InstallPrompt() {
               Don't show again
             </button>
             <button
-              onClick={() => setShowIOSInstructions(false)}
+              onClick={() => setShowInstallInstructions(false)}
               className="flex-1 px-3 py-2.5 bg-blue-600 text-white rounded-xl font-medium text-xs hover:bg-blue-700 transition-colors"
             >
               Got it
@@ -155,7 +166,7 @@ export function InstallPrompt() {
   }
 
   // Show iOS prompt bar
-  if (isIOS && !showIOSInstructions) {
+  if (isIOS && !showInstallInstructions) {
     return (
       <>
         {/* Download progress overlay for iOS */}

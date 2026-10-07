@@ -5,98 +5,111 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-export function usePWA() {
-  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
-  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
-  const [isInstalled, setIsInstalled] = useState(false);
-  const [isIOS, setIsIOS] = useState(false);
+let globalDeferredPrompt: BeforeInstallPromptEvent | null = null;
+let globalIsInstalled = false;
+const listeners = new Set<() => void>();
 
-  const getInstallState = () => {
-    const standalone = (window.navigator as any).standalone === true;
-    const displayModeStandalone = window.matchMedia('(display-mode: standalone)').matches;
-    return standalone || displayModeStandalone;
+function notifyListeners() {
+  listeners.forEach((l) => l());
+}
+
+const checkIsInstalled = () => {
+  if (typeof window === 'undefined') return false;
+  const standalone = (window.navigator as any).standalone === true;
+  const displayModeStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  return standalone || displayModeStandalone;
+};
+
+if (typeof window !== 'undefined') {
+  globalIsInstalled = checkIsInstalled();
+
+  window.addEventListener('beforeinstallprompt', (e: any) => {
+    console.log('📱 global beforeinstallprompt event captured');
+    e.preventDefault();
+    globalDeferredPrompt = e;
+    notifyListeners();
+  });
+
+  window.addEventListener('appinstalled', () => {
+    console.log('✅ App installed globally');
+    globalIsInstalled = true;
+    globalDeferredPrompt = null;
+    notifyListeners();
+  });
+
+  const updateState = () => {
+    const installed = checkIsInstalled();
+    if (installed !== globalIsInstalled) {
+      globalIsInstalled = installed;
+      notifyListeners();
+    }
   };
+
+  window.addEventListener('focus', updateState);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') updateState();
+  });
+}
+
+export function usePWA() {
+  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(globalDeferredPrompt);
+  const [isInstalled, setIsInstalled] = useState<boolean>(globalIsInstalled);
+  const [isIOS, setIsIOS] = useState(false);
+  const [showInstallPrompt, setShowInstallPrompt] = useState(true);
+  const [showInstallInstructions, setShowInstallInstructions] = useState(false);
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
     const isIOSDevice = /iphone|ipad|ipod/.test(userAgent);
     setIsIOS(isIOSDevice);
 
-    const updateInstallState = () => {
-      setIsInstalled(getInstallState());
+    const handleChange = () => {
+      setDeferredPrompt(globalDeferredPrompt);
+      setIsInstalled(globalIsInstalled);
     };
 
-    updateInstallState();
-
-    const handleBeforeInstallPrompt = (e: any) => {
-      console.log('📱 beforeinstallprompt event triggered');
-      e.preventDefault();
-      setDeferredPrompt(e);
-      setShowInstallPrompt(true);
-    };
-
-    const handleAppInstalled = () => {
-      console.log('✅ App installed successfully');
-      setIsInstalled(true);
-      setShowInstallPrompt(false);
-      setDeferredPrompt(null);
-    };
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        updateInstallState();
-      }
-    };
-
-    const handleWindowFocus = () => {
-      updateInstallState();
-    };
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    window.addEventListener('appinstalled', handleAppInstalled);
-    window.addEventListener('focus', handleWindowFocus);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    listeners.add(handleChange);
+    handleChange();
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-      window.removeEventListener('appinstalled', handleAppInstalled);
-      window.removeEventListener('focus', handleWindowFocus);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      listeners.delete(handleChange);
     };
   }, []);
 
   const installApp = async () => {
-    if (!deferredPrompt) {
-      console.warn('Install prompt not available. Use the browser menu to add to Home Screen.');
-      alert('Install not available. Use your browser menu and choose "Add to Home Screen".');
-      return;
-    }
+    if (globalDeferredPrompt) {
+      try {
+        await globalDeferredPrompt.prompt();
+        const { outcome } = await globalDeferredPrompt.userChoice;
+        console.log(`User response to install prompt: ${outcome}`);
 
-    try {
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log(`User response to install prompt: ${outcome}`);
-
-      setDeferredPrompt(null);
-      setShowInstallPrompt(false);
-
-      if (outcome === 'accepted') {
-        setIsInstalled(true);
+        if (outcome === 'accepted') {
+          globalIsInstalled = true;
+          globalDeferredPrompt = null;
+          notifyListeners();
+        }
+        return true;
+      } catch (error) {
+        console.error('Error during app installation:', error);
       }
-    } catch (error) {
-      console.error('Error during app installation:', error);
     }
+
+    // If no native prompt available (iOS / browser without prompt / event already used), show instructions modal
+    setShowInstallInstructions(true);
+    return false;
   };
 
   const dismissInstallPrompt = () => {
     setShowInstallPrompt(false);
-    setDeferredPrompt(null);
   };
 
   return {
-    showInstallPrompt: showInstallPrompt && !isInstalled && !isIOS,
+    canInstall: !!deferredPrompt,
+    showInstallPrompt: showInstallPrompt && !isInstalled && !isIOS && !!deferredPrompt,
     isInstalled,
     isIOS,
+    showInstallInstructions,
+    setShowInstallInstructions,
     installApp,
     dismissInstallPrompt,
   };

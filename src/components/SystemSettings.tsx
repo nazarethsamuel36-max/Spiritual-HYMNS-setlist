@@ -94,8 +94,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
 
-  const { isIOS, installApp } = usePWA();
-  const [showIOSInstructions, setShowIOSInstructions] = useState(false);
+  const { isIOS, installApp, showInstallInstructions, setShowInstallInstructions } = usePWA();
 
   const handleDownloadSongs = async () => {
     setIsDownloading(true);
@@ -123,12 +122,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
       setIsDownloading(false);
     });
 
-    // 2. Trigger app install / iOS instructions modal
-    if (isIOS) {
-      setShowIOSInstructions(true);
-    } else {
-      void installApp();
-    }
+    // 2. Trigger app install (native prompt if available, instructions modal if not)
+    void installApp();
   };
 
   const handleDeleteOfflineLibrary = async () => {
@@ -502,7 +497,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
       )}
 
       {/* iOS Instructions Modal */}
-      {showIOSInstructions && (
+      {/* Install Instructions Modal (for iOS or browsers without native auto-prompt) */}
+      {showInstallInstructions && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[300] flex items-center justify-center p-4 pointer-events-auto">
           <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4 animate-in fade-in zoom-in-95 duration-200">
             <div className="text-center space-y-2">
@@ -511,45 +507,79 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
               </div>
               <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book</h2>
               <p className="text-sm text-slate-600">
-                Follow these steps to add BBF Song Book to your home screen
+                {isIOS
+                  ? 'Follow these steps to add BBF Song Book to your home screen'
+                  : 'Follow these steps in your browser to install the app'}
               </p>
             </div>
 
             <div className="bg-blue-50 rounded-xl p-4 space-y-3">
-              <div className="flex gap-3">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-slate-900">Tap the Share button</p>
-                  <p className="text-xs text-slate-600">Look for the square icon with an arrow pointing up</p>
-                </div>
-              </div>
-
-              <div className="flex gap-3">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-slate-900">Scroll down and tap</p>
-                  <p className="text-xs text-slate-600">"Add to Home Screen"</p>
-                </div>
-              </div>
-
-              <div className="flex gap-3">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-medium text-slate-900">Tap "Add"</p>
-                  <p className="text-xs text-slate-600">App will appear on your home screen</p>
-                </div>
-              </div>
+              {isIOS ? (
+                <>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Tap the Share button</p>
+                      <p className="text-xs text-slate-600">Look for the square icon with an arrow pointing up</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Scroll down and tap</p>
+                      <p className="text-xs text-slate-600">"Add to Home Screen"</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Tap "Add"</p>
+                      <p className="text-xs text-slate-600">App will appear on your home screen</p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Open Browser Menu</p>
+                      <p className="text-xs text-slate-600">Tap the three dots (⋮) or menu icon in your browser</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Select "Add to Home Screen"</p>
+                      <p className="text-xs text-slate-600">Or look for "Install app" / "Download app"</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-900">Confirm Installation</p>
+                      <p className="text-xs text-slate-600">App icon will be added to your home screen</p>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
             <button
               type="button"
-              onClick={() => setShowIOSInstructions(false)}
+              onClick={() => setShowInstallInstructions(false)}
               className="w-full py-2.5 bg-blue-600 text-white rounded-xl font-medium text-xs hover:bg-blue-700 transition-colors"
             >
               Got it
