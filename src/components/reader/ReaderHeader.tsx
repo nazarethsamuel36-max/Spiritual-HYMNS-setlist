@@ -244,7 +244,8 @@ export function ReaderHeader({
                                 <button
                                   key={list.id}
                                   onClick={async () => {
-                                    await SetlistService.addSongToSetlist(list.id, song.id);
+                                    const refType = source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : 'official';
+                                    await SetlistService.addSongToSetlist(list.id, song.id, 0, refType);
                                     setIsMoreOpen(false);
                                     window.dispatchEvent(
                                       new CustomEvent('show-toast', {
@@ -520,7 +521,8 @@ export function ReaderHeader({
                           const version = versions.find((v) => v.uid === activeArrangementId);
                           if (version) await SetlistService.addVersionToSetlist(list.id, version);
                         } else {
-                          await SetlistService.addSongToSetlist(list.id, song.id);
+                          const refType = source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : 'official';
+                          await SetlistService.addSongToSetlist(list.id, song.id, 0, refType);
                         }
                         setIsMobileMenuOpen(false);
                         setMobileTab('main');

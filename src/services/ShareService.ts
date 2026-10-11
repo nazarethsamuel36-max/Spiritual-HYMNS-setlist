@@ -167,8 +167,12 @@ export class ShareService {
 
     // Collect dependencies referenced in setlist items
     for (const item of setlist.songs) {
-      if (item.refType === 'personal' && item.songId !== undefined) {
-        const song = await db.personalSongs.get(item.songId);
+      if (item.songId !== undefined && (!item.type || item.type === 'song')) {
+        // If explicitly personal or if found in personalSongs
+        let song = item.refType === 'personal' ? await db.personalSongs.get(item.songId) : null;
+        if (!song && item.refType !== 'official') {
+          song = await db.personalSongs.get(item.songId);
+        }
         if (song && !personalSongs.some((s) => s.uid === song.uid)) {
           personalSongs.push({
             uid: song.uid ?? generateUUID(),

@@ -55,7 +55,14 @@ export class SongResolver {
     }
     if (kind === 'official') {
       const detail = await getSongById(songId);
-      return detail ? { detail, kind: 'official' } : null;
+      if (detail) return { detail, kind: 'official' };
+      // Fallback: If an item was mistakenly tagged as 'official' or missing refType,
+      // probe personal and shared songs so the user never sees a broken link
+      const personal = await db.personalSongs.get(songId);
+      if (personal) return { detail: personal, kind: 'personal' };
+      const shared = await db.sharedSongs.get(songId);
+      if (shared) return { detail: shared, kind: 'shared' };
+      return null;
     }
 
     // Probe fallback (official → shared → personal) so setlist references

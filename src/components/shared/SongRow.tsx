@@ -98,7 +98,8 @@ function SetlistPopover({
               key={list.id}
               onClick={async (e) => {
                 e.stopPropagation();
-                await SetlistService.addSongToSetlist(list.id, song.id);
+                const refType = song.isPersonal ? 'personal' : 'official';
+                await SetlistService.addSongToSetlist(list.id, song.id, 0, refType);
                 window.dispatchEvent(
                   new CustomEvent('show-toast', {
                     detail: { message: `Added to setlist: "${list.title}"` },
