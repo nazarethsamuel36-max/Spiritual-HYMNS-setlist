@@ -168,10 +168,10 @@ export class ShareService {
     // Collect dependencies referenced in setlist items
     for (const item of setlist.songs) {
       if (item.songId !== undefined && (!item.type || item.type === 'song')) {
-        // If explicitly personal or if found in personalSongs
-        let song = item.refType === 'personal' ? await db.personalSongs.get(item.songId) : null;
-        if (!song && item.refType !== 'official') {
-          song = await db.personalSongs.get(item.songId);
+        // Robust lookup: check personalSongs first, then sharedSongs, regardless of whether refType was mistakenly tagged
+        let song = await db.personalSongs.get(item.songId);
+        if (!song) {
+          song = await db.sharedSongs.get(item.songId);
         }
         if (song && !personalSongs.some((s) => s.uid === song.uid)) {
           personalSongs.push({
@@ -233,17 +233,20 @@ export class ShareService {
           title: setlist.title,
           createdAt: setlist.createdAt,
           updatedAt: setlist.updatedAt,
-          items: setlist.songs.map((item) => ({
-            id: item.id,
-            type: item.type ?? 'song',
-            songId: item.songId,
-            refType: item.refType,
-            versionUid: item.versionId,
-            transpose: item.transpose,
-            label: item.label,
-            content: item.content,
-            order: item.order,
-          })),
+          items: setlist.songs.map((item) => {
+            const isCustomSong = personalSongs.some((s) => s.localId === item.songId);
+            return {
+              id: item.id,
+              type: item.type ?? 'song',
+              songId: item.songId,
+              refType: isCustomSong ? 'personal' : (item.refType ?? 'official'),
+              versionUid: item.versionId,
+              transpose: item.transpose,
+              label: item.label,
+              content: item.content,
+              order: item.order,
+            };
+          }),
         },
       ],
       sharedSetlists: [],
