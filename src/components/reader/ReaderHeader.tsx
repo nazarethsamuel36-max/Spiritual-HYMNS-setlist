@@ -53,7 +53,10 @@ export function ReaderHeader({
 
   const isNonOfficial = source === 'personal' || source === 'shared'
     || (source === 'setlist' && (reader.type === 'song' && reader.refKind !== 'official'))
-    || (source === 'library' && !!activeArrangementId);
+    || (source === 'library' && !!activeArrangementId)
+    || !song.songNumber
+    || song.songNumber <= 0
+    || song.songNumber > 100000;
 
   const setlists = useLiveQuery(() => db.setlists.toArray());
   const versions = useLiveQuery(() =>

@@ -429,7 +429,7 @@ function toSongDetailFromPortable(song: PortableSong, id: number): import('../db
   return {
     id,
     uid: song.uid,
-    songNumber: song.localId,
+    songNumber: 0,
     title: song.title,
     artist: song.artist,
     composer: song.composer,

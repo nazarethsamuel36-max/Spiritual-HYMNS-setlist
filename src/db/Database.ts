@@ -353,7 +353,7 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
   if (shared) {
     return {
       id: shared.id,
-      songNumber: shared.songNumber,
+      songNumber: (shared.songNumber && shared.songNumber <= 100000) ? shared.songNumber : 0,
       title: normalizeImportedText(shared.title),
       artist: normalizeImportedText(shared.artist),
       language: shared.language,
@@ -368,7 +368,7 @@ export async function getSongIndexById(id: number): Promise<SongIndex | null> {
   if (personal) {
     return {
       id: personal.id,
-      songNumber: personal.songNumber,
+      songNumber: 0,
       title: normalizeImportedText(personal.title),
       artist: normalizeImportedText(personal.artist),
       language: personal.language,

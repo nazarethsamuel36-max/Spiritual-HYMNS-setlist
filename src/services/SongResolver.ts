@@ -47,11 +47,15 @@ export class SongResolver {
 
     if (kind === 'personal') {
       const detail = await db.personalSongs.get(songId);
-      return detail ? { detail, kind: 'personal' } : null;
+      return detail ? { detail: { ...detail, songNumber: 0 }, kind: 'personal' } : null;
     }
     if (kind === 'shared') {
       const detail = await db.sharedSongs.get(songId);
-      return detail ? { detail, kind: 'shared' } : null;
+      if (detail) {
+        const cleanSongNumber = (detail.songNumber && detail.songNumber <= 100000) ? detail.songNumber : 0;
+        return { detail: { ...detail, songNumber: cleanSongNumber }, kind: 'shared' };
+      }
+      return null;
     }
     if (kind === 'official') {
       const detail = await getSongById(songId);
@@ -59,9 +63,12 @@ export class SongResolver {
       // Fallback: If an item was mistakenly tagged as 'official' or missing refType,
       // probe personal and shared songs so the user never sees a broken link
       const personal = await db.personalSongs.get(songId);
-      if (personal) return { detail: personal, kind: 'personal' };
+      if (personal) return { detail: { ...personal, songNumber: 0 }, kind: 'personal' };
       const shared = await db.sharedSongs.get(songId);
-      if (shared) return { detail: shared, kind: 'shared' };
+      if (shared) {
+        const cleanSongNumber = (shared.songNumber && shared.songNumber <= 100000) ? shared.songNumber : 0;
+        return { detail: { ...shared, songNumber: cleanSongNumber }, kind: 'shared' };
+      }
       return null;
     }
 
@@ -70,9 +77,12 @@ export class SongResolver {
     const official = await getSongById(songId);
     if (official) return { detail: official, kind: 'official' };
     const shared = await db.sharedSongs.get(songId);
-    if (shared) return { detail: shared, kind: 'shared' };
+    if (shared) {
+      const cleanSongNumber = (shared.songNumber && shared.songNumber <= 100000) ? shared.songNumber : 0;
+      return { detail: { ...shared, songNumber: cleanSongNumber }, kind: 'shared' };
+    }
     const personal = await db.personalSongs.get(songId);
-    if (personal) return { detail: personal, kind: 'personal' };
+    if (personal) return { detail: { ...personal, songNumber: 0 }, kind: 'personal' };
     return null;
   }
 

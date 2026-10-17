@@ -65,7 +65,11 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         </svg>
       </div>
       {/* Song Number */}
-      <span className="w-6 shrink-0 text-sm font-bold text-slate-600 mr-3 text-center">{item.detail?.songNumber ?? ''}</span>
+      <span className="w-6 shrink-0 text-sm font-bold text-slate-600 mr-3 text-center">
+        {item.refType === 'personal' || item.refType === 'shared' || !item.detail?.songNumber || item.detail.songNumber <= 0 || item.detail.songNumber > 100000
+          ? ''
+          : item.detail.songNumber}
+      </span>
 
       <button
         onClick={() => openSong(item.songId, 'setlist', item.transpose, setlistId, item.id, item.versionId, item.refType)}
@@ -387,7 +391,9 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
                 className={`w-full flex items-center justify-between p-4 hover:bg-[var(--color-brand-soft)] transition-colors border-b border-slate-50 last:border-0 ${song.isPersonal ? 'border-l-4 border-l-[#3B2F2E]' : ''}`}
               >
                 <div className="flex items-center space-x-3 text-left">
-                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">{song.songNumber || '—'}</span>
+                  <span className="text-[10px] font-black text-slate-400 bg-slate-50 px-2 py-1 rounded">
+                    {song.isPersonal || !song.songNumber || song.songNumber <= 0 || song.songNumber > 100000 ? '—' : song.songNumber}
+                  </span>
                   <div className="font-bold text-slate-800 text-sm">{song.title}</div>
                   {song.isPersonal && (
                     <span className="text-[9px] font-bold px-2 py-0.5 bg-amber-100 text-amber-700 rounded-full">PERSONAL</span>

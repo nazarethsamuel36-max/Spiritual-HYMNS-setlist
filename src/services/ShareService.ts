@@ -396,7 +396,7 @@ export class ShareService {
         await db.sharedSongs.put({
           id: newId,
           uid: song.uid,
-          songNumber: song.localId,
+          songNumber: 0,
           title: song.title,
           artist: song.artist,
           composer: song.composer,
