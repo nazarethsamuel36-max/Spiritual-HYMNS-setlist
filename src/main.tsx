@@ -60,7 +60,11 @@ if (import.meta.env.DEV && 'serviceWorker' in navigator) {
 if (import.meta.env.PROD) {
   registerSW({
     onNeedRefresh() {
-      console.log('🔄 New app update available. Refresh recommended.');
+      // A new service worker has taken over. Reload the page so users get
+      // the updated app immediately. Without this, the page can appear blank
+      // or unresponsive (~5% of cases) when a deploy happens mid-session.
+      console.log('🔄 New SW activated — reloading for fresh state.');
+      window.location.reload();
     },
     onOfflineReady() {
       console.log('⭐ App is ready to work offline.');

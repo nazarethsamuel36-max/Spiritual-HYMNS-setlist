@@ -34,6 +34,7 @@ export class AppInitializer {
     const startTime = Date.now();
     const errors: string[] = [];
     let needsDownload = false;
+    try {
 
     // Stage 1: Check IndexedDB state
     console.log('Stage 1');
@@ -115,7 +116,6 @@ export class AppInitializer {
     }
 
     const duration = Date.now() - startTime;
-    AppInitializer.isRunning = false;
 
     // Determine status
     let status: StartupStatus;
@@ -146,6 +146,11 @@ export class AppInitializer {
       errors,
       duration
     };
+    } finally {
+      // Always release the lock so a future mount (e.g. React StrictMode double-invoke
+      // or post-SW-update retry) can run initialization again without getting stuck.
+      AppInitializer.isRunning = false;
+    }
   }
 
   static destroy(): void {

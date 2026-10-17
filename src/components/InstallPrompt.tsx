@@ -82,6 +82,34 @@ export function InstallPrompt() {
             </p>
           </div>
 
+          {/* Download progress status inside modal */}
+          {(isDownloading || downloadProgress > 0) && (
+            <div className="rounded-xl border border-blue-200 bg-blue-50/80 p-3 space-y-2">
+              <div className="flex items-center justify-between text-xs">
+                <div className="flex items-center gap-1.5 font-semibold text-blue-900">
+                  {downloadProgress >= 100 ? (
+                    <span className="text-emerald-700 font-bold">✅ Offline library downloaded</span>
+                  ) : (
+                    <>
+                      <div className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+                      <span>Downloading library in background...</span>
+                    </>
+                  )}
+                </div>
+                <span className="font-bold text-blue-700">{downloadProgress}%</span>
+              </div>
+              <div className="h-2 w-full overflow-hidden rounded-full bg-blue-200/60">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300"
+                  style={{ width: `${downloadProgress}%` }}
+                />
+              </div>
+              {downloadMessage && (
+                <p className="text-[11px] text-slate-500 truncate">{downloadMessage}</p>
+              )}
+            </div>
+          )}
+
           <div className="bg-blue-50 rounded-xl p-4 space-y-3">
             {isIOS ? (
               <>
