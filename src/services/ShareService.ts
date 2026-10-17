@@ -309,16 +309,24 @@ export class ShareService {
             // exist in the recipient's local offline library.
             const exists = await getSongById(item.songId);
             if (!exists) {
-              throw new ShareError(
-                'Couldn\'t import setlist',
-                `The official library song (ID: ${item.songId}) referenced in the setlist could not be resolved locally. Nothing was imported.`
-              );
+              // If not found in official library, check if it was included in the package as a custom song
+              const inPackage = incomingSongs.some((s) => s.localId === item.songId);
+              if (inPackage) {
+                item.refType = 'personal';
+              } else {
+                throw new ShareError(
+                  'Couldn\'t import setlist',
+                  `The official library song (ID: ${item.songId}) referenced in the setlist could not be resolved locally. Nothing was imported.`
+                );
+              }
             }
-          } else if (item.refType === 'personal' || item.refType === 'shared') {
-            // Check if the referenced song exists in IndexedDB or is included in the package
-            const inLocalShared = await db.sharedSongs.where('songNumber').equals(item.songId).first();
-            const inLocalPersonal = await db.personalSongs.where('songNumber').equals(item.songId).first();
+          }
+          if (item.refType === 'personal' || item.refType === 'shared') {
+            // Check if the referenced song exists in IndexedDB or is included in the package.
+            // Use primary key .get() — personalSongs is indexed on 'id', not 'songNumber'.
             const inPackage = incomingSongs.some((s) => s.localId === item.songId);
+            const inLocalShared = await db.sharedSongs.get(item.songId);
+            const inLocalPersonal = await db.personalSongs.get(item.songId);
 
             if (!inLocalShared && !inLocalPersonal && !inPackage) {
               const matchedSong = incomingSongs.find((s) => s.localId === item.songId);
