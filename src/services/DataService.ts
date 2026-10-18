@@ -68,70 +68,150 @@ export async function batchDownloadSongs(
 
     console.log(`📊 Batch Download: Server has ${count} songs. Local has ${localCount}. Starting download...`);
 
-    const BATCH_SIZE = 50;
+    const BATCH_SIZE = 100;
     let downloadedCount = 0;
     const allSongDetails: SongDetail[] = [];
     const allSongIndices: SongIndex[] = [];
 
-    // Download in batches
-    while (downloadedCount < count) {
-      const { data, error } = await supabase
-        .from('songs')
-        .select('*')
-        .eq('is_active', true)
-        .range(downloadedCount, downloadedCount + BATCH_SIZE - 1)
-        .order('id', { ascending: true });
+    // Attempt Turnstile-protected Edge Function batch download first
+    let usedTurnstileEdge = false;
+    try {
+      const { getTurnstileToken } = await import('../utils/turnstile');
+      const token = await getTurnstileToken('download');
 
-      if (error) {
-        throw new Error(`Supabase fetch error: ${error.message}`);
+      if (token) {
+        onProgress?.(5, 'Authenticating download session...');
+        while (downloadedCount < count) {
+          const { data: edgeData, error: edgeError } = await supabase.functions.invoke('download-songs', {
+            body: {
+              turnstile_token: token,
+              range_start: downloadedCount,
+              batch_size: BATCH_SIZE,
+            },
+          });
+
+          if (edgeError || !edgeData?.songs) {
+            console.warn('[BatchDownload] Edge Function batch failed, falling back:', edgeError);
+            break;
+          }
+
+          const songs = edgeData.songs;
+          if (songs.length === 0) break;
+
+          songs.forEach((song: any) => {
+            allSongDetails.push({
+              id: song.id,
+              songNumber: song.song_number,
+              title: song.title,
+              artist: song.artist,
+              composer: song.composer,
+              language: song.language,
+              originalKey: song.original_key,
+              capo: song.capo,
+              bpm: song.bpm,
+              timeSignature: song.time_signature,
+              hashtags: [],
+              sections: parseLyricsToSections(song.lyrics || ''),
+              chords: song.chords,
+              lyrics: song.lyrics,
+              is_active: song.is_active !== false,
+              updated_at: song.updated_at,
+              genres: song.genre || [],
+            });
+
+            allSongIndices.push({
+              id: song.id,
+              songNumber: song.song_number,
+              title: song.title,
+              artist: song.artist,
+              language: song.language,
+              originalKey: song.original_key,
+              hashtags: [],
+              searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+              genres: song.genre || [],
+            });
+          });
+
+          downloadedCount += songs.length;
+          const percent = Math.round((downloadedCount / count) * 100);
+          onProgress?.(percent, `Downloading ${downloadedCount}/${count} songs...`);
+
+          if (!edgeData.hasMore) break;
+        }
+
+        if (downloadedCount >= count || allSongDetails.length > 0) {
+          usedTurnstileEdge = true;
+        }
       }
+    } catch (turnstileErr) {
+      console.warn('[BatchDownload] Turnstile Edge invoke skipped or failed:', turnstileErr);
+    }
 
-      if (!data || data.length === 0) {
-        break;
-      }
+    // Direct Supabase query fallback if Edge Function is not yet deployed or failed
+    if (!usedTurnstileEdge && downloadedCount < count) {
+      downloadedCount = 0;
+      allSongDetails.length = 0;
+      allSongIndices.length = 0;
 
-      // Transform batch
-      const batchDetails: SongDetail[] = data.map((song: any) => ({
-        id: song.id,
-        songNumber: song.song_number,
-        title: song.title,
-        artist: song.artist,
-        composer: song.composer,
-        language: song.language,
-        originalKey: song.original_key,
-        capo: song.capo,
-        bpm: song.bpm,
-        timeSignature: song.time_signature,
-        hashtags: [],
-        sections: parseLyricsToSections(song.lyrics || ''),
-        chords: song.chords,
-        lyrics: song.lyrics,
-        is_active: song.is_active !== false,
-        updated_at: song.updated_at,
-        genres: song.genre || [],
-      }));
+      while (downloadedCount < count) {
+        const { data, error } = await supabase
+          .from('songs')
+          .select('*')
+          .eq('is_active', true)
+          .range(downloadedCount, downloadedCount + BATCH_SIZE - 1)
+          .order('id', { ascending: true });
 
-      const batchIndices: SongIndex[] = data.map((song: any) => ({
-        id: song.id,
-        songNumber: song.song_number,
-        title: song.title,
-        artist: song.artist,
-        language: song.language,
-        originalKey: song.original_key,
-        hashtags: [],
-        searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
-        genres: song.genre || [],
-      }));
+        if (error) {
+          throw new Error(`Supabase fetch error: ${error.message}`);
+        }
 
-      allSongDetails.push(...batchDetails);
-      allSongIndices.push(...batchIndices);
-      downloadedCount += data.length;
+        if (!data || data.length === 0) {
+          break;
+        }
 
-      // Update progress
-      const percent = Math.round((downloadedCount / count) * 100);
-      console.log(`📥 Batch Download: Progress ${percent}% (${downloadedCount}/${count})`);
-      if (onProgress) {
-        onProgress(percent, `Downloading ${downloadedCount}/${count} songs...`);
+        // Transform batch
+        const batchDetails: SongDetail[] = data.map((song: any) => ({
+          id: song.id,
+          songNumber: song.song_number,
+          title: song.title,
+          artist: song.artist,
+          composer: song.composer,
+          language: song.language,
+          originalKey: song.original_key,
+          capo: song.capo,
+          bpm: song.bpm,
+          timeSignature: song.time_signature,
+          hashtags: [],
+          sections: parseLyricsToSections(song.lyrics || ''),
+          chords: song.chords,
+          lyrics: song.lyrics,
+          is_active: song.is_active !== false,
+          updated_at: song.updated_at,
+          genres: song.genre || [],
+        }));
+
+        const batchIndices: SongIndex[] = data.map((song: any) => ({
+          id: song.id,
+          songNumber: song.song_number,
+          title: song.title,
+          artist: song.artist,
+          language: song.language,
+          originalKey: song.original_key,
+          hashtags: [],
+          searchTokens: `${song.title} ${song.artist || ''} ${song.language || ''}`.toLowerCase(),
+          genres: song.genre || [],
+        }));
+
+        allSongDetails.push(...batchDetails);
+        allSongIndices.push(...batchIndices);
+        downloadedCount += data.length;
+
+        // Update progress
+        const percent = Math.round((downloadedCount / count) * 100);
+        console.log(`📥 Batch Download: Progress ${percent}% (${downloadedCount}/${count})`);
+        if (onProgress) {
+          onProgress(percent, `Downloading ${downloadedCount}/${count} songs...`);
+        }
       }
     }
 

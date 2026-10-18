@@ -52,6 +52,42 @@ export class ShareService {
       payloadSize: JSON.stringify(payload).length,
     });
 
+    // Obtain Turnstile verification token invisibly
+    let turnstileToken = '';
+    try {
+      const { getTurnstileToken } = await import('../utils/turnstile');
+      turnstileToken = await getTurnstileToken('share');
+    } catch (e) {
+      console.warn('[ShareService] Turnstile token acquisition warning:', e);
+    }
+
+    // Attempt to invoke the protected share-payload Edge Function first
+    if (turnstileToken) {
+      try {
+        const { data: edgeData, error: edgeError } = await supabase.functions.invoke('share-payload', {
+          body: {
+            turnstile_token: turnstileToken,
+            type,
+            slug,
+            payload,
+          },
+        });
+
+        if (!edgeError && edgeData?.slug) {
+          return {
+            shareId: edgeData.share_id ?? shareId,
+            slug: edgeData.slug,
+          };
+        }
+        if (edgeError) {
+          console.warn('[ShareService] Edge function warning, trying direct RPC fallback:', edgeError);
+        }
+      } catch (err) {
+        console.warn('[ShareService] Edge function invoke error, falling back:', err);
+      }
+    }
+
+    // Direct RPC fallback
     const result = await supabase.rpc('create_shared_payload', {
       p_type: type,
       p_slug: slug,
