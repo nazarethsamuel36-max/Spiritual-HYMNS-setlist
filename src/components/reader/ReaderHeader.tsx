@@ -43,6 +43,8 @@ export function ReaderHeader({
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const fontSize = useWorkflowStore((s) => s.fontSize);
   const setFontSize = useWorkflowStore((s) => s.setFontSize);
+  const closeReader = useWorkflowStore((s) => s.closeReader);
+  const setSidebarPanel = useWorkflowStore((s) => s.setSidebarPanel);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
   const resetTranspose = useWorkflowStore((s) => s.resetTranspose);
 
@@ -126,6 +128,20 @@ export function ReaderHeader({
     } catch (e: unknown) {
       console.error(e);
       alert('Failed to generate share link: ' + (e instanceof Error ? e.message : String(e)));
+    }
+  };
+
+  const handleDeletePersonalSong = async () => {
+    if (!confirm(`Delete "${song.title}"? This cannot be undone.`)) return;
+    try {
+      await db.personalSongs.delete(song.id);
+      setIsMoreOpen(false);
+      setIsMobileMenuOpen(false);
+      closeReader();
+      setSidebarPanel('personal');
+    } catch (err) {
+      console.error('Failed to delete personal song:', err);
+      alert('Failed to delete personal song');
     }
   };
 
@@ -226,6 +242,14 @@ export function ReaderHeader({
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
                           </button>
+                          {source === 'personal' && (
+                            <button
+                              onClick={handleDeletePersonalSong}
+                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-red-50 text-sm font-semibold text-red-700 transition-colors border-t border-slate-100 mt-1"
+                            >
+                              Delete Song
+                            </button>
+                          )}
                         </div>
                       )}
 
@@ -499,6 +523,14 @@ export function ReaderHeader({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+              {source === 'personal' && (
+                <button
+                  onClick={handleDeletePersonalSong}
+                  className="w-full text-left px-2 py-2.5 hover:bg-red-50 rounded-lg text-sm font-semibold text-red-700 transition-colors border-t border-slate-100 mt-1"
+                >
+                  Delete Song
+                </button>
+              )}
             </div>
           )}
 

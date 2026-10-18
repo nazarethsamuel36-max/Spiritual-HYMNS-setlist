@@ -99,16 +99,6 @@ export function PersonalSongs() {
     }
   };
 
-  const handleDeleteSong = async (id: number) => {
-    if (!confirm('Delete this personal song?')) return;
-    try {
-      await db.personalSongs.delete(id);
-    } catch (err) {
-      console.error('Failed to delete personal song:', err);
-      alert('Failed to delete personal song');
-    }
-  };
-
   const [isNewGenreOpen, setIsNewGenreOpen] = useState(false);
 
   // Filter and sort songs
@@ -365,7 +355,19 @@ export function PersonalSongs() {
                 />
               </div>
 
-              <div className="mt-4 flex gap-2">
+              {/* Browser storage warning */}
+              <div className="mt-3 flex items-start gap-2 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-xs text-slate-700">
+                <span className="mt-0.5 shrink-0 text-slate-500">⚠️</span>
+                <span>
+                  Your song book is stored in this browser.{' '}
+                  <strong>Clearing browser data will permanently erase{' '}
+                    <span className="text-red-600 font-bold">personal songs</span>
+                  </strong>{' '}
+                  and your song book. The main song library can be downloaded again, but personal songs cannot be recovered.
+                </span>
+              </div>
+
+              <div className="mt-3 flex gap-2">
                 <button
                   onClick={handleAddPersonalSong}
                   disabled={isAdding}
@@ -440,7 +442,6 @@ export function PersonalSongs() {
                 }}
                 onSelect={(id) => openSong(id, 'personal')}
                 isActive={song.id === activeSongId}
-                onDelete={() => handleDeleteSong(song.id)}
                 hideNumber
                 titleOnly
               />
