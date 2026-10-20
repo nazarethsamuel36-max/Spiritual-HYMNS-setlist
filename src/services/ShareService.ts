@@ -387,6 +387,21 @@ export class ShareService {
       for (const song of incomingSongs) {
         const existing = await db.sharedSongs.where('uid').equals(song.uid).first();
         if (existing) {
+          await db.sharedSongs.update(existing.id, {
+            title: song.title,
+            artist: song.artist,
+            composer: song.composer,
+            language: song.language,
+            originalKey: song.originalKey,
+            capo: song.capo,
+            bpm: song.bpm,
+            timeSignature: song.timeSignature,
+            hashtags: song.hashtags,
+            lyrics: song.lyrics,
+            chords: song.chords,
+            sections: [],
+            is_active: song.is_active ?? true,
+          });
           sharedLocalMap.set(song.localId, existing.id);
           if (type === 'song' && song.uid === incomingSongs[0]?.uid) {
             finalRemappedId = existing.id;
@@ -424,6 +439,20 @@ export class ShareService {
       for (const version of incomingVersions) {
         const existing = await db.versions.get(version.uid);
         if (existing) {
+          await db.versions.update(version.uid, {
+            name: version.name,
+            lyrics: version.lyrics,
+            chords: version.chords,
+            sections: version.sections,
+            originalKey: version.originalKey,
+            capo: version.capo,
+            bpm: version.bpm,
+            timeSignature: version.timeSignature,
+            artist: version.artist,
+            composer: version.composer,
+            hashtags: version.hashtags,
+            updatedAt: version.updatedAt ?? Date.now(),
+          });
           if (type === 'version' && version.uid === incomingVersions[0]?.uid) {
             finalRemappedId = version.uid;
           }
@@ -459,12 +488,6 @@ export class ShareService {
       if (type === 'setlist') {
         const setlist = pkg.personalSetlists?.[0] || pkg.sharedSetlists?.[0];
         if (setlist) {
-          const existing = await db.sharedSetlists.where('uid').equals(setlist.uid).first();
-          if (existing) {
-            finalRemappedId = existing.id;
-            return;
-          }
-
           // Filter out any songs/versions that cannot be resolved in package or locally,
           // so only valid items with metadata and lyrics are imported into the setlist.
           const validItems = setlist.items.filter((item: any) => {
@@ -512,6 +535,17 @@ export class ShareService {
               order: idx,
             };
           };
+
+          const existing = await db.sharedSetlists.where('uid').equals(setlist.uid).first();
+          if (existing) {
+            await db.sharedSetlists.update(existing.id, {
+              title: setlist.title,
+              updatedAt: setlist.updatedAt ?? Date.now(),
+              songs: validItems.map(remapItem),
+            });
+            finalRemappedId = existing.id;
+            return;
+          }
 
           const targetSetlistId = generateUUID();
           await db.sharedSetlists.put({
