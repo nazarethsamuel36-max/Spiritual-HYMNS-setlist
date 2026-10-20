@@ -251,7 +251,7 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   );
 
-  // Enrich all items with song details where applicable
+  // Enrich all items with song details where applicable, omitting any deleted/unresolvable songs
   const enrichedItems = useLiveQuery(async () => {
     if (!setlist) return [];
     const items = [];
@@ -260,10 +260,16 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
         if (item.versionId) {
           const version = await db.versions.get(item.versionId);
           const detail = await getSongIndexById(item.songId!);
-          items.push({ ...item, detail: detail ?? null, versionDetail: version ?? null });
+          // Only show if the song actually exists
+          if (detail || version) {
+            items.push({ ...item, detail: detail ?? null, versionDetail: version ?? null });
+          }
         } else {
           const detail = await getSongIndexById(item.songId!);
-          items.push({ ...item, detail });
+          // Only show if the song actually exists
+          if (detail) {
+            items.push({ ...item, detail });
+          }
         }
       } else {
         items.push({ ...item });

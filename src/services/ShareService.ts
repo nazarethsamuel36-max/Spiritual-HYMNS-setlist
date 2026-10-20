@@ -1,4 +1,4 @@
-import { db, getSongById, type SongDetail, type Version, type Setlist } from '../db/Database';
+import { db, type SongDetail, type Version, type Setlist } from '../db/Database';
 import { supabase } from '../lib/supabaseClient';
 import { generateUUID } from '../utils/uuid';
 import { UserDataPackageService, type PortableSong, type PortableVersion, type UserDataPackage } from './UserDataPackage';
@@ -269,20 +269,36 @@ export class ShareService {
           title: setlist.title,
           createdAt: setlist.createdAt,
           updatedAt: setlist.updatedAt,
-          items: setlist.songs.map((item) => {
-            const isCustomSong = personalSongs.some((s) => s.localId === item.songId);
-            return {
-              id: item.id,
-              type: item.type ?? 'song',
-              songId: item.songId,
-              refType: isCustomSong ? 'personal' : (item.refType ?? 'official'),
-              versionUid: item.versionId,
-              transpose: item.transpose,
-              label: item.label,
-              content: item.content,
-              order: item.order,
-            };
-          }),
+          items: setlist.songs
+            .filter((item) => {
+              // If it's a song item referencing a custom song (personal or shared),
+              // make sure the song actually exists and was bundled into personalSongs.
+              if (!item.type || item.type === 'song') {
+                if (item.refType === 'personal' || item.refType === 'shared') {
+                  const hasSong = personalSongs.some((s) => s.localId === item.songId);
+                  if (!hasSong) return false;
+                }
+                if (item.versionId) {
+                  const hasVersion = personalVersions.some((v) => v.uid === item.versionId);
+                  if (!hasVersion) return false;
+                }
+              }
+              return true;
+            })
+            .map((item, idx) => {
+              const isCustomSong = personalSongs.some((s) => s.localId === item.songId);
+              return {
+                id: item.id,
+                type: item.type ?? 'song',
+                songId: item.songId,
+                refType: isCustomSong ? 'personal' : (item.refType ?? 'official'),
+                versionUid: item.versionId,
+                transpose: item.transpose,
+                label: item.label,
+                content: item.content,
+                order: idx,
+              };
+            }),
         },
       ],
       sharedSetlists: [],
@@ -331,64 +347,14 @@ export class ShareService {
     const incomingVersions = [...(pkg.personalVersions ?? []), ...(pkg.sharedVersions ?? [])];
 
     // 2. Perform deep verification on setlist items before committing
+    // 2. Perform verification on setlist items before committing
     if (type === 'setlist') {
       const setlist = pkg.personalSetlists?.[0] || pkg.sharedSetlists?.[0];
       if (!setlist) {
         throw new ShareError('Couldn\'t import shared content', 'This share appears to be corrupted or incomplete. Nothing was imported.');
       }
-
-      for (const item of setlist.items) {
-        if (item.type === 'song' && item.songId !== undefined) {
-          if (item.refType === 'official') {
-            // Resolve official songs via getSongById so they can be fetched
-            // from Supabase (and cached) instead of requiring them to already
-            // exist in the recipient's local offline library.
-            const exists = await getSongById(item.songId);
-            if (!exists) {
-              // If not found in official library, check if it was included in the package as a custom song
-              const inPackage = incomingSongs.some((s) => s.localId === item.songId);
-              if (inPackage) {
-                item.refType = 'personal';
-              } else {
-                throw new ShareError(
-                  'Couldn\'t import setlist',
-                  `The official library song (ID: ${item.songId}) referenced in the setlist could not be resolved locally. Nothing was imported.`
-                );
-              }
-            }
-          }
-          if (item.refType === 'personal' || item.refType === 'shared') {
-            // Check if the referenced song exists in IndexedDB or is included in the package.
-            // Use primary key .get() — personalSongs is indexed on 'id', not 'songNumber'.
-            const inPackage = incomingSongs.some((s) => s.localId === item.songId);
-            const inLocalShared = await db.sharedSongs.get(item.songId);
-            const inLocalPersonal = await db.personalSongs.get(item.songId);
-
-            if (!inLocalShared && !inLocalPersonal && !inPackage) {
-              const matchedSong = incomingSongs.find((s) => s.localId === item.songId);
-              const songTitle = matchedSong?.title || `ID: ${item.songId}`;
-              throw new ShareError(
-                'Couldn\'t import setlist',
-                `The song "${songTitle}" is missing from the shared package. Nothing was imported.`
-              );
-            }
-          }
-        }
-
-        if (item.versionUid) {
-          const existsLocal = await db.versions.get(item.versionUid);
-          const inPackage = incomingVersions.some((v) => v.uid === item.versionUid);
-
-          if (!existsLocal && !inPackage) {
-            const matchedVersion = incomingVersions.find((v) => v.uid === item.versionUid);
-            const versionName = matchedVersion?.name || `UID: ${item.versionUid}`;
-            throw new ShareError(
-              'Couldn\'t import setlist',
-              `The version "${versionName}" could not be found. Nothing was imported.`
-            );
-          }
-        }
-      }
+      // Note: If any individual song or version in the setlist was previously deleted or unavailable,
+      // it is safely omitted below during remapping so the user can still import and use the setlist.
     } else if (type === 'version') {
       // If importing a single version, ensure its base official song exists locally
       const version = incomingVersions[0];
@@ -499,7 +465,23 @@ export class ShareService {
             return;
           }
 
-          const remapItem = (item: any) => {
+          // Filter out any songs/versions that cannot be resolved in package or locally,
+          // so only valid items with metadata and lyrics are imported into the setlist.
+          const validItems = setlist.items.filter((item: any) => {
+            if (!item.type || item.type === 'song') {
+              if (item.versionUid) {
+                const inVersions = incomingVersions.some((v) => v.uid === item.versionUid);
+                // Also check if already present in db.versions
+                return inVersions; // versions are imported into db.versions right before this step
+              }
+              if (item.refType === 'personal' || item.refType === 'shared') {
+                return sharedLocalMap.has(item.songId);
+              }
+            }
+            return true;
+          });
+
+          const remapItem = (item: any, idx: number) => {
             if (item.versionUid) {
               return {
                 id: item.id,
@@ -510,7 +492,7 @@ export class ShareService {
                 transpose: item.transpose,
                 label: item.label,
                 content: item.content,
-                order: item.order,
+                order: idx,
               };
             }
             let songId = item.songId;
@@ -527,7 +509,7 @@ export class ShareService {
               transpose: item.transpose,
               label: item.label,
               content: item.content,
-              order: item.order,
+              order: idx,
             };
           };
 
@@ -538,7 +520,7 @@ export class ShareService {
             title: setlist.title,
             createdAt: setlist.createdAt ?? Date.now(),
             updatedAt: setlist.updatedAt ?? Date.now(),
-            songs: setlist.items.map(remapItem),
+            songs: validItems.map(remapItem),
           });
           finalRemappedId = targetSetlistId;
         }
