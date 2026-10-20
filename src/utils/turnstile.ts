@@ -25,7 +25,10 @@ declare global {
 
 const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY || '0x4AAAAAAFaUaF0aE8YqHJa7';
 
-export async function getTurnstileToken(action: 'share' | 'download' = 'download'): Promise<string> {
+let prewarmedShareToken: { token: string; timestamp: number } | null = null;
+let isPrewarming = false;
+
+async function requestTurnstileToken(action: 'share' | 'download'): Promise<string> {
   // If no turnstile loaded or site key missing, proceed gracefully in development
   if (typeof window === 'undefined') {
     throw new Error('Turnstile can only run in a browser environment');
@@ -105,4 +108,42 @@ export async function getTurnstileToken(action: 'share' | 'download' = 'download
       reject(e);
     }
   });
+}
+
+/**
+ * Pre-warms a Turnstile token in advance so subsequent share actions
+ * execute in milliseconds and preserve browser user gesture for native sharing.
+ */
+export async function prewarmTurnstileToken(action: 'share' | 'download' = 'share'): Promise<void> {
+  if (typeof window === 'undefined' || isPrewarming) return;
+  // If we have a cached token younger than 4 minutes (Cloudflare tokens last 5 mins), reuse it
+  if (prewarmedShareToken && Date.now() - prewarmedShareToken.timestamp < 240000) {
+    return;
+  }
+
+  isPrewarming = true;
+  try {
+    const token = await requestTurnstileToken(action);
+    if (token) {
+      prewarmedShareToken = { token, timestamp: Date.now() };
+    }
+  } catch (e) {
+    console.warn('[Turnstile] Prewarm warning:', e);
+  } finally {
+    isPrewarming = false;
+  }
+}
+
+export async function getTurnstileToken(action: 'share' | 'download' = 'download'): Promise<string> {
+  if (action === 'share' && prewarmedShareToken && Date.now() - prewarmedShareToken.timestamp < 240000) {
+    const token = prewarmedShareToken.token;
+    prewarmedShareToken = null;
+    // Re-warm next token in background after a brief delay
+    setTimeout(() => {
+      void prewarmTurnstileToken('share');
+    }, 1500);
+    return token;
+  }
+
+  return requestTurnstileToken(action);
 }

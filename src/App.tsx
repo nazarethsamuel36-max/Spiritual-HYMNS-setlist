@@ -108,6 +108,9 @@ function App() {
     };
 
     void initializeApp();
+    import('./utils/turnstile').then(({ prewarmTurnstileToken }) => {
+      void prewarmTurnstileToken('share');
+    }).catch(() => {});
 
     // Keep existing event forwarding unchanged
     const handleSongUpdate = (event: Event) => {

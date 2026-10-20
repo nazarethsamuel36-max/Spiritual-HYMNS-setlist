@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, type SongDetail } from '../../db/Database';
 import { SetlistService } from '../../services/SetlistService';
@@ -46,7 +46,14 @@ export function ReaderHeader({
   const closeReader = useWorkflowStore((s) => s.closeReader);
   const setSidebarPanel = useWorkflowStore((s) => s.setSidebarPanel);
   const [isPublishLoading, setIsPublishLoading] = useState(false);
+  const [isShareLoading, setIsShareLoading] = useState(false);
   const resetTranspose = useWorkflowStore((s) => s.resetTranspose);
+
+  useEffect(() => {
+    import('../../utils/turnstile').then(({ prewarmTurnstileToken }) => {
+      void prewarmTurnstileToken('share');
+    }).catch(() => {});
+  }, []);
 
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const [moreTab, setMoreTab] = useState<'main' | 'setlist' | 'versions'>('main');
@@ -91,6 +98,8 @@ export function ReaderHeader({
   };
 
   const handleShare = async () => {
+    if (isShareLoading) return;
+    setIsShareLoading(true);
     try {
       let url = '';
       let title = song.title;
@@ -119,7 +128,7 @@ export function ReaderHeader({
         url,
       });
 
-      if (shareResult === 'copied') {
+      if (shareResult === 'copied' || shareResult === 'need-user-gesture') {
         alert('Shareable link copied to clipboard!');
       }
 
@@ -128,6 +137,8 @@ export function ReaderHeader({
     } catch (e: unknown) {
       console.error(e);
       alert('Failed to generate share link: ' + (e instanceof Error ? e.message : String(e)));
+    } finally {
+      setIsShareLoading(false);
     }
   };
 
@@ -221,9 +232,16 @@ export function ReaderHeader({
                           </button>
                           <button
                             onClick={handleShare}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                            disabled={isShareLoading}
+                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors flex items-center justify-between disabled:opacity-60"
                           >
-                            Share Song
+                            <span>{isShareLoading ? 'Generating link...' : 'Share Song'}</span>
+                            {isShareLoading && (
+                              <svg className="w-3.5 h-3.5 animate-spin text-slate-500" viewBox="0 0 24 24" fill="none">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                              </svg>
+                            )}
                           </button>
                           {mode !== 'edit' && (
                             <button
@@ -509,8 +527,18 @@ export function ReaderHeader({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
-              <button onClick={handleShare} className="w-full text-left px-2 py-2.5 hover:bg-slate-50 rounded-lg transition-colors">
-                <span className="text-sm font-semibold text-slate-700">Share</span>
+              <button
+                onClick={handleShare}
+                disabled={isShareLoading}
+                className="w-full flex items-center justify-between px-2 py-2.5 hover:bg-slate-50 rounded-lg transition-colors disabled:opacity-60"
+              >
+                <span className="text-sm font-semibold text-slate-700">{isShareLoading ? 'Generating link...' : 'Share'}</span>
+                {isShareLoading && (
+                  <svg className="w-3.5 h-3.5 animate-spin text-slate-500" viewBox="0 0 24 24" fill="none">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                  </svg>
+                )}
               </button>
               {mode !== 'edit' && (
                 <button onClick={() => { onModeChange('edit'); setIsMobileMenuOpen(false); setMobileTab('main'); }} className="w-full text-left px-2 py-2.5 hover:bg-slate-50 rounded-lg transition-colors">

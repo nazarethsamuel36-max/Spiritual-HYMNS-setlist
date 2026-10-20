@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, getSongIndexById } from '../db/Database';
 import { SetlistService } from '../services/SetlistService';
@@ -238,7 +238,16 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
   const [markerLabel, setMarkerLabel] = useState('');
   const [addingNote, setAddingNote] = useState(false);
   const [noteLabel, setNoteLabel] = useState('');
+  const [isSharing, setIsSharing] = useState(false);
+  const [shareModalUrl, setShareModalUrl] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
   const closeSetlist = useWorkflowStore((s) => s.closeSetlist);
+
+  useEffect(() => {
+    import('../utils/turnstile').then(({ prewarmTurnstileToken }) => {
+      void prewarmTurnstileToken('share');
+    }).catch(() => {});
+  }, []);
 
   const setlist = useLiveQuery(async () => {
     const local = await db.setlists.get(setlistId);
@@ -350,6 +359,8 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
 
         <button
           onClick={async () => {
+            if (isSharing) return;
+            setIsSharing(true);
             try {
               const link = await ShareService.shareSetlist(setlist);
               const url = `${window.location.origin}/s/${encodeURIComponent(link.slug)}`;
@@ -358,19 +369,32 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
                 text: `Worship Setlist: ${setlist.title}`,
                 url,
               });
-              if (result === 'copied') {
-                alert('Shareable setlist link copied to clipboard!');
+              if (result === 'need-user-gesture' || result === 'copied') {
+                setShareModalUrl(url);
+                setCopied(result === 'copied');
               }
             } catch (e: any) {
               console.error(e);
               alert('Failed to share setlist: ' + (e.message || e));
+            } finally {
+              setIsSharing(false);
             }
           }}
-          className="flex items-center justify-center w-9 h-9 shrink-0 rounded-xl bg-slate-900 text-[var(--color-on-inverse)] hover:bg-slate-800 transition-all shadow-md active:scale-95"
+          disabled={isSharing}
+          className="flex items-center justify-center w-9 h-9 shrink-0 rounded-xl bg-slate-900 text-white hover:bg-slate-800 disabled:opacity-75 transition-all shadow-md active:scale-95"
           title="Share Setlist"
           aria-label="Share Setlist"
         >
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
+          {isSharing ? (
+            <svg className="w-4 h-4 animate-spin text-white" viewBox="0 0 24 24" fill="none">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+          )}
         </button>
       </div>
 
@@ -500,6 +524,87 @@ export function SetlistView({ setlistId }: SetlistViewProps) {
         )}
       </div>
       <div className="h-20"></div>
+
+      {/* Share Popup Modal */}
+      {shareModalUrl && (
+        <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200">
+          <div className="bg-white rounded-2xl p-5 max-w-sm w-full shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-200">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <h3 className="font-bold text-slate-900 text-base">Share Setlist</h3>
+              <button
+                onClick={() => setShareModalUrl(null)}
+                className="text-slate-400 hover:text-slate-600 p-1 rounded-lg"
+                aria-label="Close"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <p className="text-xs text-slate-500 mt-3">
+              Anyone with this link can view and import this setlist:
+            </p>
+
+            <div className="flex items-center gap-2 p-2 bg-slate-50 border border-slate-200 rounded-xl my-3">
+              <input
+                type="text"
+                readOnly
+                value={shareModalUrl}
+                className="bg-transparent text-xs text-slate-700 flex-1 outline-none font-mono truncate"
+              />
+              <button
+                onClick={async () => {
+                  try {
+                    await navigator.clipboard.writeText(shareModalUrl);
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000);
+                  } catch (e) {
+                    console.error(e);
+                  }
+                }}
+                className="text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-800 transition-colors shrink-0"
+              >
+                {copied ? 'Copied!' : 'Copy'}
+              </button>
+            </div>
+
+            <div className="flex gap-2">
+              {typeof navigator !== 'undefined' && !!navigator.share && (
+                <button
+                  onClick={async () => {
+                    try {
+                      await navigator.share({
+                        title: setlist.title,
+                        text: `Worship Setlist: ${setlist.title}`,
+                        url: shareModalUrl,
+                      });
+                      setShareModalUrl(null);
+                    } catch (e: any) {
+                      if (e.name !== 'AbortError') {
+                        await navigator.clipboard.writeText(shareModalUrl);
+                        setCopied(true);
+                      }
+                    }
+                  }}
+                  className="flex-1 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-sm transition-all active:scale-95"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                  </svg>
+                  Share to Apps
+                </button>
+              )}
+              <button
+                onClick={() => setShareModalUrl(null)}
+                className="flex-1 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-sm font-semibold transition-all active:scale-95"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
