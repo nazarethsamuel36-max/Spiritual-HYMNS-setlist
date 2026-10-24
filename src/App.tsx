@@ -31,6 +31,7 @@ function App() {
   const isMobile = useIsMobile();
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
   const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
+  const [isAddingPersonalSong, setIsAddingPersonalSong] = useState(false);
   const [syncToast, setSyncToast] = useState<'idle' | 'syncing' | 'done'>('idle');
   const [appToast, setAppToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
   const [isSyncingHeader, setIsSyncingHeader] = useState(false);
@@ -640,21 +641,30 @@ function App() {
                 {(sidebar.panel === 'setlist-detail') && <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3"><SetlistView setlistId={sidebar.setlistId} /></div>}
                 {(sidebar.panel === 'personal') && (
                   <div className="animate-in fade-in slide-in-from-right-4 duration-300 px-1 pt-3">
-                    <div className="flex items-center gap-1 p-1 mb-2 bg-slate-200/50 rounded-lg">
-                      <button
-                        onClick={() => setPersonalTab('songs')}
-                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'songs' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
-                      >
-                        My Songs
-                      </button>
-                      <button
-                        onClick={() => setPersonalTab('versions')}
-                        className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'versions' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
-                      >
-                        My Versions
-                      </button>
-                    </div>
-                    {personalTab === 'songs' ? <PersonalSongs /> : <MyVersions />}
+                    {!isAddingPersonalSong && (
+                      <div className="flex items-center gap-1 p-1 mb-2 bg-slate-200/50 rounded-lg">
+                        <button
+                          onClick={() => setPersonalTab('songs')}
+                          className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'songs' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                        >
+                          My Songs
+                        </button>
+                        <button
+                          onClick={() => setPersonalTab('versions')}
+                          className={`flex-1 py-1 text-xs font-bold rounded-md transition-all ${personalTab === 'versions' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+                        >
+                          My Versions
+                        </button>
+                      </div>
+                    )}
+                    {personalTab === 'songs' ? (
+                      <PersonalSongs
+                        isAddingSong={isAddingPersonalSong}
+                        onAddingSongChange={setIsAddingPersonalSong}
+                      />
+                    ) : (
+                      <MyVersions />
+                    )}
                   </div>
                 )}
               </div>

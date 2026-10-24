@@ -111,13 +111,13 @@ export function FilterTabs({
           onClick={toggleGenreMenu}
           className={`flex h-8 max-w-[140px] items-center gap-1.5 rounded-lg border px-2.5 text-[11px] font-bold transition-colors ${
             genres.length > 0
-              ? 'border-slate-900 bg-slate-900 text-white'
+              ? 'border-slate-900 bg-slate-900 text-[var(--color-on-inverse)]'
               : 'border-slate-200 bg-[var(--color-surface)] text-slate-700 hover:bg-slate-50'
           }`}
         >
           <span>Genre</span>
           {genres.length > 0 && (
-            <span className="flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-white text-[9px] font-extrabold text-slate-900">
+            <span className="flex h-4 min-w-4 px-1 items-center justify-center rounded-full bg-[var(--color-surface)] text-[9px] font-extrabold text-[var(--color-text)]">
               {genres.length}
             </span>
           )}
@@ -140,7 +140,7 @@ export function FilterTabs({
             >
               <div className={`flex h-4 w-4 flex-shrink-0 items-center justify-center rounded border transition-colors ${
                 genres.length === 0
-                  ? 'border-slate-900 bg-slate-900 text-white'
+                  ? 'border-slate-900 bg-slate-900 text-[var(--color-on-inverse)]'
                   : 'border-slate-300 bg-white'
               }`}>
                 {genres.length === 0 && (
@@ -169,7 +169,7 @@ export function FilterTabs({
                 >
                   <div className={`flex h-4 w-4 flex-shrink-0 items-center justify-center rounded border transition-colors ${
                     isTicked
-                      ? 'border-slate-900 bg-slate-900 text-white'
+                      ? 'border-slate-900 bg-slate-900 text-[var(--color-on-inverse)]'
                       : 'border-slate-300 bg-white'
                   }`}>
                     {isTicked && (

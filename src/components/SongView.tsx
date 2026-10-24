@@ -9,6 +9,7 @@ import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
 import { ChordTransposer } from '../utils/ChordTransposer';
+import { ReaderPageFlip } from './reader/ReaderPageFlip';
 
 // Parse lyrics helper
 function parseLyricsToSections(lyrics: string): Array<{ type: string; label: string; lines: Array<{ text: string }> }> {
@@ -61,6 +62,22 @@ export function SongView() {
   const [activeVersion, setActiveVersion] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Reader view mode: 'scroll' (continuous) or 'pages' (hymnbook page-flip)
+  const [readerView, setReaderView] = useState<'scroll' | 'pages'>(() => {
+    try {
+      return (localStorage.getItem('worship_reader_view') as 'scroll' | 'pages') || 'scroll';
+    } catch {
+      return 'scroll';
+    }
+  });
+
+  const handleReaderViewChange = (newView: 'scroll' | 'pages') => {
+    setReaderView(newView);
+    try {
+      localStorage.setItem('worship_reader_view', newView);
+    } catch {}
+  };
   
   // 3. Auto-scroll & Swipe State
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -220,8 +237,10 @@ export function SongView() {
     };
 
     const onTouchEnd = (e: TouchEvent) => {
-      // Block swipe navigation while editing
+      // Block swipe navigation while editing or inside page-flip reader
       if (isEditModeRef.current) return;
+      const target = e.target as HTMLElement | null;
+      if (target?.closest?.('.page-flip-container')) return;
 
       const dx = e.changedTouches[0].clientX - startX;
       const dy = e.changedTouches[0].clientY - startY;
@@ -376,6 +395,8 @@ export function SongView() {
           onTransposeUp={() => adjustTranspose(1)} onTransposeDown={() => adjustTranspose(-1)} onModeChange={setReaderMode}
           onRefreshSong={refreshSong}
           source={source}
+          readerView={readerView}
+          onReaderViewChange={handleReaderViewChange}
         />
       )}
 
@@ -388,6 +409,18 @@ export function SongView() {
           isAdmin={isAdminAuthenticated}
           onExit={() => setReaderMode(lastReaderMode)}
         />
+      ) : readerView === 'pages' && hasContent ? (
+        <div className="flex-1 min-h-0 relative w-full overflow-hidden">
+          <ReaderPageFlip
+            rawChordPro={rawContent}
+            fontSize={fontSize}
+            transpose={displayTranspose}
+            hideChords={readerMode === 'lyrics'}
+            songTitle={song.title}
+            songNumber={song.songNumber}
+            onExitPageMode={() => handleReaderViewChange('scroll')}
+          />
+        </div>
       ) : (
         <div
           ref={scrollContainerRef}
@@ -467,9 +500,9 @@ export function SongView() {
         </div>
       )}
 
-      {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll */}
-      {!isAdminAuthenticated && readerMode !== 'edit' && (
-        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-slate-200 z-50 px-4 pt-1 pb-2">
+      {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll (when in scroll mode) */}
+      {!isAdminAuthenticated && readerMode !== 'edit' && readerView !== 'pages' && (
+        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-transparent z-50 px-4 pt-1 pb-2">
           {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
             <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1.5 select-none">
               {visibleDots.map((idx) => (
@@ -478,11 +511,11 @@ export function SongView() {
             </div>
           )}
           <div className="max-w-4xl mx-auto w-full flex items-center justify-between gap-3">
-            {/* Mode Selector — two pills */}
+            {/* Mode Selector — Lyrics / Chords / Book pills */}
             <div className="flex items-center gap-1.5">
               <button
                 onClick={() => setReaderMode('lyrics')}
-                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                className={`px-2.5 h-7 text-xs font-bold rounded-full border transition-all ${
                   readerMode === 'lyrics'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
                     : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
@@ -492,13 +525,20 @@ export function SongView() {
               </button>
               <button
                 onClick={() => setReaderMode('chords')}
-                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                className={`px-2.5 h-7 text-xs font-bold rounded-full border transition-all ${
                   readerMode === 'chords'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
                     : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
                 }`}
               >
                 Chords
+              </button>
+              <button
+                onClick={() => handleReaderViewChange('pages')}
+                className="px-2.5 h-7 text-xs font-bold rounded-full border border-slate-200 bg-[var(--color-surface)] text-slate-700 hover:bg-slate-50 flex items-center gap-1 active:scale-95 shadow-xs"
+                title="Switch to Page-Flip Book Mode"
+              >
+                <span>📖 Book</span>
               </button>
             </div>
 

@@ -41,7 +41,7 @@ export function MyVersions() {
 
   return (
     <div className="w-full">
-      <div className="bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 sticky top-0 z-40 border-b border-slate-100 shadow-[0_1px_6px_rgba(0,0,0,0.05)]">
+      <div className="relative z-20 bg-slate-50/98 backdrop-blur-sm pt-2.5 pb-2.5 border-b border-transparent">
         <div className="px-3">
           <SearchBar value={search} onChange={setSearch} placeholder="Search my versions..." />
         </div>

@@ -209,7 +209,9 @@ export function SongList() {
                       className="flex h-10 w-full items-center justify-between rounded-xl border border-slate-200 bg-[var(--color-surface)] px-3 text-left text-sm text-[var(--color-text)] shadow-sm transition-colors focus:border-slate-300"
                     >
                       <span>{newSongLanguage}</span>
-                      <span className="text-slate-400">⌄</span>
+                      <svg className={`h-3 w-3 flex-shrink-0 text-slate-400 transition-transform ${isLanguageOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
                     </button>
                     {isLanguageOpen && (
                       <div className="absolute left-0 right-0 top-[calc(100%+0.25rem)] z-20 max-h-48 overflow-y-auto rounded-lg border border-slate-200 bg-[var(--color-surface)] p-1 shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -259,7 +261,9 @@ export function SongList() {
                       className="flex h-10 w-full items-center justify-between rounded-xl border border-slate-200 bg-[var(--color-surface)] px-3 text-left text-sm text-[var(--color-text)] shadow-sm transition-colors focus:border-slate-300"
                     >
                       <span>{formatKeyDisplay(newSongKeyRoot, newSongKeyQuality)}</span>
-                      <span className="text-slate-400">⌄</span>
+                      <svg className={`h-3 w-3 flex-shrink-0 text-slate-400 transition-transform ${isKeyOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
                     </button>
                     {isKeyOpen && (
                       <div className="absolute left-0 right-0 top-[calc(100%+0.25rem)] z-20 overflow-hidden rounded-lg border border-slate-200 bg-[var(--color-surface)] shadow-xl">
@@ -377,7 +381,7 @@ export function SongList() {
       ) : (
         <div className="flex flex-col" style={{ minHeight: '500px' }}>
           {/* Filter bar — scrolls with the list */}
-          <div className="relative z-20 bg-slate-50/98 backdrop-blur-sm border-b border-slate-100 flex-shrink-0">
+          <div className="relative z-20 bg-slate-50/98 backdrop-blur-sm border-b border-transparent flex-shrink-0">
             <div className="px-3 pt-3">
               <FilterTabs />
             </div>

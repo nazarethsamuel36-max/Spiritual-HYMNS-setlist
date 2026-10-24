@@ -22,6 +22,8 @@ interface ReaderHeaderProps {
   onModeChange: (mode: ReaderMode) => void;
   onRefreshSong?: () => void;
   source: 'library' | 'setlist' | 'shared' | 'personal';
+  readerView?: 'scroll' | 'pages';
+  onReaderViewChange?: (view: 'scroll' | 'pages') => void;
 }
 
 export function ReaderHeader({
@@ -33,6 +35,8 @@ export function ReaderHeader({
   onModeChange,
   onRefreshSong,
   source,
+  readerView = 'scroll',
+  onReaderViewChange,
 }: ReaderHeaderProps) {
   const showContextRail = useWorkflowStore((s) => s.showContextRail);
   const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
@@ -158,7 +162,7 @@ export function ReaderHeader({
 
   return (
     <>
-    <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-slate-200 z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
+    <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-transparent z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
       {/* ── DESKTOP HEADER (hidden on mobile unless admin) ── */}
       <div className={`max-w-4xl mx-auto w-full flex-col gap-1.5 ${isAdminAuthenticated ? 'flex' : 'hidden md:flex'}`}>
 
@@ -387,6 +391,33 @@ export function ReaderHeader({
               >
                 Chords
               </button>
+
+              {onReaderViewChange && (
+                <div className="flex items-center ml-2 border border-slate-200 rounded-full p-0.5 bg-slate-50">
+                  <button
+                    onClick={() => onReaderViewChange('scroll')}
+                    className={`px-2.5 h-6 text-[10px] font-bold rounded-full transition-all ${
+                      readerView === 'scroll'
+                        ? 'bg-slate-900 text-white shadow-xs'
+                        : 'text-slate-500 hover:text-slate-800'
+                    }`}
+                    title="Continuous vertical scroll reader"
+                  >
+                    Scroll
+                  </button>
+                  <button
+                    onClick={() => onReaderViewChange('pages')}
+                    className={`px-2.5 h-6 text-[10px] font-bold rounded-full transition-all ${
+                      readerView === 'pages'
+                        ? 'bg-slate-900 text-white shadow-xs'
+                        : 'text-slate-500 hover:text-slate-800'
+                    }`}
+                    title="Hymnbook page-flip reader"
+                  >
+                    Book
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
@@ -518,6 +549,42 @@ export function ReaderHeader({
                   <button onClick={() => setFontSize(fontSize + 1)} disabled={fontSize >= 24} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-100 hover:bg-slate-200 text-slate-700 text-base font-black transition-colors active:scale-95 disabled:opacity-30" aria-label="Increase font size">+</button>
                 </div>
               </div>
+
+              <div className="border-t border-slate-100" />
+
+              {onReaderViewChange && (
+                <div className="flex items-center justify-between px-2 py-1.5">
+                  <span className="text-sm font-semibold text-slate-700">Reader Style</span>
+                  <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg">
+                    <button
+                      onClick={() => {
+                        onReaderViewChange('scroll');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all ${
+                        readerView === 'scroll'
+                          ? 'bg-white text-slate-900 shadow-xs'
+                          : 'text-slate-500 hover:text-slate-800'
+                      }`}
+                    >
+                      Scroll
+                    </button>
+                    <button
+                      onClick={() => {
+                        onReaderViewChange('pages');
+                        setIsMobileMenuOpen(false);
+                      }}
+                      className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all ${
+                        readerView === 'pages'
+                          ? 'bg-white text-slate-900 shadow-xs'
+                          : 'text-slate-500 hover:text-slate-800'
+                      }`}
+                    >
+                      Book Flip
+                    </button>
+                  </div>
+                </div>
+              )}
 
               <div className="border-t border-slate-100" />
 

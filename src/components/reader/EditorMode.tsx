@@ -722,7 +722,7 @@ export function EditorMode({ song, songKey = 'D', source = 'library', versionId 
       className="flex-1 flex flex-col min-h-0 bg-[var(--color-reader-surface)]"
     >
       {/* ── EDITOR HEADER: locked at top ── */}
-      <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-slate-200 px-4 md:px-8 py-2 w-full">
+      <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-transparent px-4 md:px-8 py-2 w-full">
         <div className="max-w-4xl mx-auto w-full flex flex-col gap-2">
 
           {/* Row 1: Title + Key + Save */}
