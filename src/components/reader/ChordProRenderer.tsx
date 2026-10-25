@@ -1,37 +1,178 @@
 import React, { useMemo } from 'react';
 import { ChordTransposer } from '../../utils/ChordTransposer';
-import type { ParsedSongLine } from './paginationTypes';
-import { parseChordPro, preprocessRenderedLines } from './chordProParser';
 
-export type { ParsedSongLine } from './paginationTypes';
+interface ChordWordUnit {
+  chord: string;
+  lyric: string;
+}
+
+interface SongLine {
+  isDirective: boolean;
+  directiveType?: string;
+  directiveValue?: string;
+  words?: ChordWordUnit[];
+  isChorus?: boolean;
+  isSectionMarker?: boolean;
+  renderType?: 'directive' | 'text' | 'spacer' | 'skip';
+}
 
 interface ChordProRendererProps {
-  rawChordPro?: string;
-  parsedLines?: ParsedSongLine[];
+  rawChordPro: string;
   hideChords?: boolean;
   fontSize?: number;
   transpose?: number;
-  className?: string;
-  style?: React.CSSProperties;
 }
 
-export const ChordProRenderer: React.FC<ChordProRendererProps> = ({
-  rawChordPro = '',
-  parsedLines,
-  hideChords = false,
-  fontSize = 18,
-  transpose = 0,
-  className,
-  style,
-}) => {
-  const parsedSongLines = useMemo<ParsedSongLine[]>(() => {
-    if (parsedLines) return parsedLines;
+export const ChordProRenderer: React.FC<ChordProRendererProps> = ({ rawChordPro, hideChords = false, fontSize = 18, transpose = 0 }) => {
+  const parsedSongLines = useMemo<SongLine[]>(() => {
     if (!rawChordPro) return [];
-    return parseChordPro(rawChordPro);
-  }, [rawChordPro, parsedLines]);
+    
+    const lines = rawChordPro.split(/\r?\n/);
+    let inChorusSection = false;
+
+    return lines.map((line): SongLine => {
+      const trimmed = line.trim();
+
+      if (trimmed.startsWith('{') && trimmed.endsWith('}')) {
+        const content = trimmed.slice(1, -1);
+        const colonIndex = content.indexOf(':');
+        if (colonIndex !== -1) {
+          return {
+            isDirective: true,
+            directiveType: content.slice(0, colonIndex).trim().toLowerCase(),
+            directiveValue: content.slice(colonIndex + 1).trim(),
+          };
+        }
+        return { isDirective: true, directiveType: content.toLowerCase(), directiveValue: '' };
+      }
+
+      let isChorus = false;
+      let processLine = line;
+      
+      // ── Section marker detection ─────────────────────────────────────────────
+      // A section marker is a line whose ENTIRE content is [SomeName].
+      // We must return early so the bracket content is NEVER fed into the chord parser.
+      if (trimmed.startsWith('[') && trimmed.endsWith(']') && !trimmed.slice(1, -1).includes('[')) {
+        const sectionName = trimmed.slice(1, -1).trim();
+        const isChorusSection = /^chorus/i.test(sectionName);
+        if (isChorusSection) {
+          inChorusSection = true;
+        } else {
+          inChorusSection = false;
+        }
+        // Return as a pure section marker — do NOT parse any chords from this line
+        return { isDirective: false, words: [], isChorus: false, isSectionMarker: true };
+      }
+      
+      // Apply chorus styling if we're in chorus section or line starts with *
+      if (inChorusSection || processLine.startsWith('* ')) {
+        isChorus = true;
+        if (processLine.startsWith('* ')) {
+          processLine = processLine.substring(2);
+        }
+      }
+
+      const wordsArray: ChordWordUnit[] = [];
+      let i = 0;
+      
+      while (i < processLine.length) {
+        let currentChord = '';
+        let currentLyric = '';
+        
+        while (i < processLine.length && processLine[i] === '[') {
+          const endBracket = processLine.indexOf(']', i);
+          if (endBracket !== -1) {
+            currentChord += (currentChord ? ' ' : '') + processLine.substring(i + 1, endBracket);
+            i = endBracket + 1;
+          } else {
+            currentLyric += processLine[i];
+            i++;
+            break;
+          }
+        }
+        
+        while (i < processLine.length && processLine[i] !== '[') {
+          currentLyric += processLine[i];
+          i++;
+        }
+        
+        if (currentChord || currentLyric) {
+          wordsArray.push({ chord: currentChord, lyric: currentLyric });
+        }
+      }
+
+      // ── Expand multi-word lyric chunks into per-word units ────────────────────
+      // Each ChordWordUnit from the parser may hold a multi-word string like
+      // "forever on that". Split those into individual word units so each word
+      // becomes an independent inline-flex block. The chord stays on the first
+      // word; subsequent words in the same chunk get an empty chord.
+      const expandedWords: ChordWordUnit[] = [];
+      for (const unit of wordsArray) {
+        // Split on spaces but keep trailing/leading spaces attached to the token
+        // so visual spacing is preserved between units.
+        const tokens = unit.lyric.split(/(\s+)/);
+        let isFirst = true;
+        for (const token of tokens) {
+          if (token === '') continue;
+          if (isFirst) {
+            expandedWords.push({ chord: unit.chord, lyric: token });
+            isFirst = false;
+          } else {
+            expandedWords.push({ chord: '', lyric: token });
+          }
+        }
+        // If the lyric was empty but there was a chord, preserve the chord unit
+        if (isFirst && unit.chord) {
+          expandedWords.push({ chord: unit.chord, lyric: '' });
+        }
+      }
+
+      const finalWords = expandedWords.length > 0 ? expandedWords : [{ chord: '', lyric: ' ' }];
+
+      return { isDirective: false, words: finalWords, isChorus, isSectionMarker: false };
+    });
+  }, [rawChordPro]);
 
   const renderedLines = useMemo(() => {
-    return preprocessRenderedLines(parsedSongLines, hideChords);
+    const processedLines: SongLine[] = [];
+    let lastWasSpacer = true; // treat start of song as spacer to avoid leading space
+    
+    for (let idx = 0; idx < parsedSongLines.length; idx++) {
+      const line = parsedSongLines[idx];
+      
+      if (line.isDirective) {
+        processedLines.push({ ...line, renderType: 'directive' });
+        continue;
+      }
+      
+      const isEmptyLine = line.words?.length === 1 && !line.words[0].chord && line.words[0].lyric === ' ';
+      
+      if (isEmptyLine) {
+        if (lastWasSpacer) {
+          processedLines.push({ ...line, renderType: 'skip' });
+        } else {
+          processedLines.push({ ...line, renderType: 'spacer' });
+          lastWasSpacer = true;
+        }
+      } else if (line.isSectionMarker) {
+        if (lastWasSpacer) {
+          processedLines.push({ ...line, renderType: 'skip' });
+        } else {
+          processedLines.push({ ...line, renderType: 'spacer' });
+          lastWasSpacer = true;
+        }
+      } else {
+        const hasAnyLyric = line.words?.some(w => w.lyric && w.lyric.trim() !== '');
+        const hasAnyChord = line.words?.some(w => w.chord && w.chord.trim() !== '');
+        if (hideChords && !hasAnyLyric && hasAnyChord) {
+          processedLines.push({ ...line, renderType: 'skip' });
+        } else {
+          processedLines.push({ ...line, renderType: 'text' });
+          lastWasSpacer = false;
+        }
+      }
+    }
+    return processedLines;
   }, [parsedSongLines, hideChords]);
 
   // Safety net: if no lines were produced, show a diagnostic instead of blank
@@ -44,8 +185,9 @@ export const ChordProRenderer: React.FC<ChordProRendererProps> = ({
       </div>
     );
   }
+
   return (
-    <div className={className} style={{ ...styles.songSheet, fontSize: `${fontSize}px`, ...style }}>
+    <div style={{ ...styles.songSheet, fontSize: `${fontSize}px` }}>
       {renderedLines.map((line, lineIndex) => {
         if (line.renderType === 'skip') {
           return null;
