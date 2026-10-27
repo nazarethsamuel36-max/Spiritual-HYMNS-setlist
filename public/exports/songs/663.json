@@ -1,210 +1,110 @@
 {
-  "id" : 663,
-  "songNumber" : 356,
-  "title" : "YOU ARE MY REFUGE",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You are my refuge,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my fortress,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my strength in need,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "You are my God.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I will worship you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "With all of my heart.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I will seek your face,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "All through my life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I will serve you Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "With all that I have,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Here I am.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Here I am O Lord (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Here I am."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "You are my Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my healer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my strength in need,"
-    }, {
-      "text" : "You are my God."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "You are my shepherd,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my comfort.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my hiding place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "You are my God."
-    } ]
-  } ]
+  "id": 663,
+  "songNumber": 356,
+  "title": "YOU ARE MY REFUGE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Em",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are my refuge,"
+        },
+        {
+          "text": "You are my fortress,"
+        },
+        {
+          "text": "You are my strength in need,"
+        },
+        {
+          "text": "You are my God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will worship you,"
+        },
+        {
+          "text": "With all of my heart."
+        },
+        {
+          "text": "I will seek your face,"
+        },
+        {
+          "text": "All through my life."
+        },
+        {
+          "text": "I will serve you Lord,"
+        },
+        {
+          "text": "With all that I have,"
+        },
+        {
+          "text": "Here I am."
+        },
+        {
+          "text": "Here I am O Lord (3)"
+        },
+        {
+          "text": "Here I am."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are my Saviour,"
+        },
+        {
+          "text": "You are my healer."
+        },
+        {
+          "text": "You are my strength in need,"
+        },
+        {
+          "text": "You are my God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are my shepherd,"
+        },
+        {
+          "text": "You are my comfort."
+        },
+        {
+          "text": "You are my hiding place,"
+        },
+        {
+          "text": "You are my God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[E]You are my [A]refuge,\r\n[E]You are my [B]fortress,\r\n[E]You are my [A]strength in [E]need,\r\n[B]You are my [E]God.\r\n\r\n[Verse]\r\nI will [A]worship [B]you,\r\nWith [E]all [B]of my [E]heart.\r\nI will [A]seek your [B]face,\r\n[E]All [B]through my [E]life.\r\nI will [A]serve you [B]Lord,\r\nWith [E]all [B]that I [E]have,\r\n[A][B]Here I [B][E]am.\r\nHere I [E]am O [A]Lord (3)\r\nHere I am.\r\n\r\n[Verse]\r\n[E]You are my [A]Saviour,\r\n[E]You are my [B]healer.\r\nYou are my strength in need,\r\nYou are my God.\r\n\r\n[Verse]\r\n[E]You are my [A]shepherd,\r\n[E]You are my [B]comfort.\r\n[E]You are my [A]hiding [E]place,\r\nYou are my God.",
+  "lyrics": "[Verse]\r\nYou are my refuge,\r\nYou are my fortress,\r\nYou are my strength in need,\r\nYou are my God.\r\n\r\n[Verse]\r\nI will worship you,\r\nWith all of my heart.\r\nI will seek your face,\r\nAll through my life.\r\nI will serve you Lord,\r\nWith all that I have,\r\nHere I am.\r\nHere I am O Lord (3)\r\nHere I am.\r\n\r\n[Verse]\r\nYou are my Saviour,\r\nYou are my healer.\r\nYou are my strength in need,\r\nYou are my God.\r\n\r\n[Verse]\r\nYou are my shepherd,\r\nYou are my comfort.\r\nYou are my hiding place,\r\nYou are my God.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

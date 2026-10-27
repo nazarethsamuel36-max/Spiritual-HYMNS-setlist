@@ -1,247 +1,104 @@
 {
-  "id" : 1040,
-  "songNumber" : 62,
-  "title" : "ऐ हमारे बाप तू जो आसमान में है",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "ऐ हमारे बाप तू जो आसमान में है,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "तेरा नाम पाक माना जाए, तेरी बादशाहत आए।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "E",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जैसे तेरी मर्जी आसमान में पूरी होती,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "E",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "वैसे ही तेरी मर्जी जगत में पूरी हो जाए ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "रोज की रोटी हमारी आज हमको दे दे,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "E",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "जीवन की रोटी तू है तू ही हमारा बल है ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "E",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "जिस तरह हम अपने अपराधी को माफ़ करते,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "E",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "उसी तरह हमारे अपराधों को माफ़ कर दे ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "E",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "हम को आजमाइशों में जाने तू न दे,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "बल्कि बुराई से बचा अपनी राह पर चला ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "E",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "क्योंकि आसमानी बादशाहत और कूवत और कुदरत,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "E",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "सारी जमीं का जलाल, है हमेशा तेरा,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "E",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 7",
-    "lines" : [ {
-      "text" : "आमीन, आमीन, आमीन (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "E",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1040,
+  "songNumber": 62,
+  "title": "ऐ हमारे बाप तू जो आसमान में है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ऐ हमारे बाप तू जो आसमान में है,"
+        },
+        {
+          "text": "तेरा नाम पाक माना जाए, तेरी बादशाहत आए।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जैसे तेरी मर्जी आसमान में पूरी होती,"
+        },
+        {
+          "text": "वैसे ही तेरी मर्जी जगत में पूरी हो जाए ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रोज की रोटी हमारी आज हमको दे दे,"
+        },
+        {
+          "text": "जीवन की रोटी तू है तू ही हमारा बल है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिस तरह हम अपने अपराधी को माफ़ करते,"
+        },
+        {
+          "text": "उसी तरह हमारे अपराधों को माफ़ कर दे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हम को आजमाइशों में जाने तू न दे,"
+        },
+        {
+          "text": "बल्कि बुराई से बचा अपनी राह पर चला ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्योंकि आसमानी बादशाहत और कूवत और कुदरत,"
+        },
+        {
+          "text": "सारी जमीं का जलाल, है हमेशा तेरा,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आमीन, आमीन, आमीन (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[A]ऐ हमारे बाप [D]तू जो आसमान में [A]है,\n[E]तेरा नाम [D]पाक माना [E]जाए, तेरी [D]बादशाहत [A]आए।\n\n[Verse]\n[A]जैसे तेरी मर्जी [D]आसमान में [E]पूरी हो[A]ती,\n[A]वैसे ही तेरी मर्जी [D]जगत में [E]पूरी [D]हो जा[A]ए ।\n\n[Verse]\n[A]रोज की रोटी [D]हमारी आज [E]हमको दे [A]दे,\n[A]जीवन की रोटी [D]तू है तू [E]ही ह[D]मारा बल [A]है ।\n\n[Verse]\n[A]जिस तरह हम अपने अ[D]पराधी को माफ़ [E]कर[A]ते,\n[A]उसी तरह हमारे अप[D]राधों को [E]माफ़ [D]कर [A]दे ।\n\n[Verse]\n[A]हम को आजमा[D]इशों में जाने तू न [A]दे,\n[A]बल्कि बुराई से [D]बचा अपनी [E]राह [D]पर च[A]ला ।\n\n[Verse]\n[A]क्योंकि आसमानी [D]बादशाहत और कूवत [E]और कुद[A]रत,\n[A]सारी जमीं का ज[D]लाल, है ह[E]मेशा ते[A]रा,\n\n[Verse]\n[A]आमीन, [D]आमीन, [E]आ[D]मीन [A](2)",
+  "lyrics": "[Verse]\nऐ हमारे बाप तू जो आसमान में है,\nतेरा नाम पाक माना जाए, तेरी बादशाहत आए।\n\n[Verse]\nजैसे तेरी मर्जी आसमान में पूरी होती,\nवैसे ही तेरी मर्जी जगत में पूरी हो जाए ।\n\n[Verse]\nरोज की रोटी हमारी आज हमको दे दे,\nजीवन की रोटी तू है तू ही हमारा बल है ।\n\n[Verse]\nजिस तरह हम अपने अपराधी को माफ़ करते,\nउसी तरह हमारे अपराधों को माफ़ कर दे ।\n\n[Verse]\nहम को आजमाइशों में जाने तू न दे,\nबल्कि बुराई से बचा अपनी राह पर चला ।\n\n[Verse]\nक्योंकि आसमानी बादशाहत और कूवत और कुदरत,\nसारी जमीं का जलाल, है हमेशा तेरा,\n\n[Verse]\nआमीन, आमीन, आमीन (2)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

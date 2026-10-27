@@ -1,170 +1,110 @@
 {
-  "id" : 679,
-  "songNumber" : 372,
-  "title" : "JUST A CLOSER WALK",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Just a closer walk with Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Grant it Jesus, hear my plea,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Daily walking close to Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Let it be, dear Lord, let it be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I am weak, but Thou art strong,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Jesus, keep me from all wrong.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Iâ€™ll be satisfied as long,"
-    }, {
-      "text" : "As I walk, let me walk close to Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Through this world of toils and snares,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "If I falter, Lord, who cares ?",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Who with me my burden share ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "None but Thee, dear Lord, none but Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When my feeble life is oâ€™er,"
-    }, {
-      "text" : "Time for me will be no more.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "On that bright eternal shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I will walk, dear Lord, close to Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 679,
+  "songNumber": 372,
+  "title": "JUST A CLOSER WALK",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Just a closer walk with Thee,"
+        },
+        {
+          "text": "Grant it Jesus, hear my plea,"
+        },
+        {
+          "text": "Daily walking close to Thee,"
+        },
+        {
+          "text": "Let it be, dear Lord, let it be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I am weak, but Thou art strong,"
+        },
+        {
+          "text": "Jesus, keep me from all wrong."
+        },
+        {
+          "text": "I'll be satisfied as long,"
+        },
+        {
+          "text": "As I walk, let me walk close to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Through this world of toils and snares,"
+        },
+        {
+          "text": "If I falter, Lord, who cares ?"
+        },
+        {
+          "text": "Who with me my burden share ?"
+        },
+        {
+          "text": "None but Thee, dear Lord, none but Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When my feeble life is o'er,"
+        },
+        {
+          "text": "Time for me will be no more."
+        },
+        {
+          "text": "On that bright eternal shore,"
+        },
+        {
+          "text": "I will walk, dear Lord, close to Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]Just a closer [A]walk with Thee,\n[A]Grant it Jesus, hear my [D]plea,\n[D]Daily walking [G]close to Thee,\nLet it [D]be, dear [A]Lord, let it [D]be.\n[Verse]\n[Verse]\n[D]I am weak, but [A]Thou art strong,\n[A]Jesus, keep me from all [D]wrong.\nI'll be satisfied as long,\nAs I [D]walk, let me [A]walk close to [D]Thee.\n[Verse]\n[Verse]\n[D]Through this world of [A]toils and snares,\n[A]If I falter, Lord, who [D]cares ?\n[D]Who with me my [G]burden share ?\n[D]None but Thee, dear [A]Lord, none but [D]Thee.\n[Verse]\n[Verse]\nWhen my feeble life is o'er,\n[A]Time for me will be no [D]more.\n[D]On that bright e[G]ternal shore,\nI will [D]walk, dear [A]Lord, close to [D]Thee.",
+  "lyrics": "[Chorus]\n Just a closer walk with Thee,\nGrant it Jesus, hear my plea,\nDaily walking close to Thee,\nLet it be, dear Lord, let it be.\n[Verse]\n[Verse]\nI am weak, but Thou art strong,\nJesus, keep me from all wrong.\nI'll be satisfied as long,\nAs I walk, let me walk close to Thee.\n[Verse]\n[Verse]\nThrough this world of toils and snares,\nIf I falter, Lord, who cares ?\nWho with me my burden share ?\nNone but Thee, dear Lord, none but Thee.\n[Verse]\n[Verse]\nWhen my feeble life is o'er,\nTime for me will be no more.\nOn that bright eternal shore,\nI will walk, dear Lord, close to Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

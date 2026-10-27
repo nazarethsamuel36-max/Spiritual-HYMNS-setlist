@@ -1,75 +1,71 @@
 {
-  "id" : 924,
-  "songNumber" : 45,
-  "title" : "THIS IS THE DAY",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "This is the day (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "That the Lord has made (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "We will rejoice (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And be glad in it. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "This is the day",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "That the Lord has made,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "We will rejoice",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And be glad in it.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "This is the day (2)"
-    }, {
-      "text" : "That the Lord has made.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 924,
+  "songNumber": 45,
+  "title": "THIS IS THE DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "This is the day (2)"
+        },
+        {
+          "text": "That the Lord has made (2)"
+        },
+        {
+          "text": "We will rejoice (2)"
+        },
+        {
+          "text": "And be glad in it. (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "This is the day"
+        },
+        {
+          "text": "That the Lord has made,"
+        },
+        {
+          "text": "We will rejoice"
+        },
+        {
+          "text": "And be glad in it."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "This is the day (2)"
+        },
+        {
+          "text": "That the Lord has made."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]This is the day (2)\nThat the [A]Lord has made (2)\n[A]We will rejoice (2)\nAnd be [D]glad in it. (2)\n\n[Verse 2]\n[G]This is the day\nThat the [D]Lord has made,\n[G]We will rejoice\nAnd be [D]glad in it.\n\n[Verse 3]\nThis is the day (2)\nThat the [A]Lord has [D]made.",
+  "lyrics": "[Verse 1]\nThis is the day (2)\nThat the Lord has made (2)\nWe will rejoice (2)\nAnd be glad in it. (2)\n\n[Verse 2]\nThis is the day\nThat the Lord has made,\nWe will rejoice\nAnd be glad in it.\n\n[Verse 3]\nThis is the day (2)\nThat the Lord has made.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

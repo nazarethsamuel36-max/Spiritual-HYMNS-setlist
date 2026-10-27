@@ -1,40 +1,59 @@
 {
-  "id" : 3155,
-  "songNumber" : 1013,
-  "title" : "** I'll Sing Praises To You Name",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I sing praises to your name, oh lord"
-    }, {
-      "text" : "Praises to your name, oh lord"
-    }, {
-      "text" : "For your name is great"
-    }, {
-      "text" : "And worthy to be praised"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I give glory to your name, oh lord"
-    }, {
-      "text" : "Glory to your name, oh lord"
-    }, {
-      "text" : "For your name is great"
-    }, {
-      "text" : "And worthy to be praised"
-    } ]
-  } ]
+  "id": 3155,
+  "songNumber": 1013,
+  "title": "I'll Sing Praises To You Name",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I sing praises to your name, oh lord"
+        },
+        {
+          "text": "Praises to your name, oh lord"
+        },
+        {
+          "text": "For your name is great"
+        },
+        {
+          "text": "And worthy to be praised"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I give glory to your name, oh lord"
+        },
+        {
+          "text": "Glory to your name, oh lord"
+        },
+        {
+          "text": "For your name is great"
+        },
+        {
+          "text": "And worthy to be praised"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nI sing praises to your name, oh lord\nPraises to your name, oh lord\nFor your name is great\nAnd worthy to be praised\n\n[Verse 2]\nI give glory to your name, oh lord\nGlory to your name, oh lord\nFor your name is great\nAnd worthy to be praised",
+  "lyrics": "\n[Verse 1]\nI sing praises to your name, oh lord\nPraises to your name, oh lord\nFor your name is great\nAnd worthy to be praised\n\n[Verse 2]\nI give glory to your name, oh lord\nGlory to your name, oh lord\nFor your name is great\nAnd worthy to be praised",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

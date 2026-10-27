@@ -1,220 +1,95 @@
 {
-  "id" : 780,
-  "songNumber" : 168,
-  "title" : "WHEN I SURVEY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "When I survey the wondrous cross",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "On which the Prince of glory died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "My richest gain I count but loss,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And pour contempt on all my pride.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Forbid it, Lord, that I should boast,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Save in the death of Christ, my God;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "All the vain things that charm me most,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "I sacrifice them to His blood.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "See, from his head, his hands, his feet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Sorrow and love flow mingled down;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Did e'er such love and sorrow meet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Or thorns compose so rich a crown?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Were the whole realm of nature mine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "That were a offering far too small;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Love so amazing, so divine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Demands my soul, my life, my all !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 780,
+  "songNumber": 168,
+  "title": "WHEN I SURVEY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When I survey the wondrous cross"
+        },
+        {
+          "text": "On which the Prince of glory died,"
+        },
+        {
+          "text": "My richest gain I count but loss,"
+        },
+        {
+          "text": "And pour contempt on all my pride."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Forbid it, Lord, that I should boast,"
+        },
+        {
+          "text": "Save in the death of Christ, my God;"
+        },
+        {
+          "text": "All the vain things that charm me most,"
+        },
+        {
+          "text": "I sacrifice them to His blood."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "See, from his head, his hands, his feet,"
+        },
+        {
+          "text": "Sorrow and love flow mingled down;"
+        },
+        {
+          "text": "Did e'er such love and sorrow meet,"
+        },
+        {
+          "text": "Or thorns compose so rich a crown?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Were the whole realm of nature mine,"
+        },
+        {
+          "text": "That were a offering far too small;"
+        },
+        {
+          "text": "Love so amazing, so divine,"
+        },
+        {
+          "text": "Demands my soul, my life, my all !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nWhen [D]I survey the [G]wondrous [D]cross\nOn [D]which the Prince of [A]glory [D]died,\nMy [D]richest gain I [G]count but [D]loss,\nAnd [D]pour con[A]tempt on all my [D]pride.\n\n[Verse]\nFor[D]bid it, Lord, that [G]I should [D]boast,\nSave [D]in the death of [A]Christ, my [D]God;\nAll [D]the vain things that [G]charm me [D]most,\nI [D]sacrifice them [A]to His [D]blood.\n\n[Verse]\n[D]See, from his head, his [G]hands, his [D]feet,\n[D]Sorrow and love flow [A]mingled [D]down;\nDid [D]e'er such love and [G]sorrow [D]meet,\nOr [D]thorns com[A]pose so rich a [D]crown?\n\n[Verse]\nWere [D]the whole realm of [G]nature [D]mine,\nThat [D]were a offering [A]far too [D]small;\nLove [D]so amazing, [G]so di[D]vine,\nDe[D]mands my [A]soul, my life, my [D]all !",
+  "lyrics": "[Verse]\nWhen I survey the wondrous cross\nOn which the Prince of glory died,\nMy richest gain I count but loss,\nAnd pour contempt on all my pride.\n\n[Verse]\nForbid it, Lord, that I should boast,\nSave in the death of Christ, my God;\nAll the vain things that charm me most,\nI sacrifice them to His blood.\n\n[Verse]\nSee, from his head, his hands, his feet,\nSorrow and love flow mingled down;\nDid e'er such love and sorrow meet,\nOr thorns compose so rich a crown?\n\n[Verse]\nWere the whole realm of nature mine,\nThat were a offering far too small;\nLove so amazing, so divine,\nDemands my soul, my life, my all !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

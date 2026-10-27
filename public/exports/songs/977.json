@@ -1,116 +1,74 @@
 {
-  "id" : 977,
-  "songNumber" : 99,
-  "title" : "AH LORD GOD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Ah Lord God thou has made the heavens,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "and the earth by Thy great power,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Ah Lord God thou has made the heavens,"
-    }, {
-      "text" : "and the earth by Thy outstretched arm.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Nothing is too difficult for thee. (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Great and Mighty God,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Great in counsel and mighty indeed,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Nothing, nothing, absolutely nothing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Nothing is too difficult for Thee !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let God arise and His enemies be scattered, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Let God, let God arise.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 977,
+  "songNumber": 99,
+  "title": "AH LORD GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Ah Lord God thou has made the heavens,"
+        },
+        {
+          "text": "and the earth by Thy great power,"
+        },
+        {
+          "text": "Ah Lord God thou has made the heavens,"
+        },
+        {
+          "text": "and the earth by Thy outstretched arm."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Nothing is too difficult for thee. (2)"
+        },
+        {
+          "text": "Great and Mighty God,"
+        },
+        {
+          "text": "Great in counsel and mighty indeed,"
+        },
+        {
+          "text": "Nothing, nothing, absolutely nothing,"
+        },
+        {
+          "text": "Nothing is too difficult for Thee !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let God arise and His enemies be scattered, (3)"
+        },
+        {
+          "text": "Let God, let God arise."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Ah Lord God thou has made the heavens,\nand the [G]earth by Thy [A]great [D]power,\nAh Lord God thou has made the heavens,\nand the [G]earth by Thy [A]outstretched [D]arm.\n\n[Chorus]\n[G]Nothing is too [A]difficult for [D]thee. (2)\n[G]Great and [A]Mighty [D]God,\n[G]Great in [A]counsel and [D]mighty indeed,\n[G]Nothing, nothing, absolutely nothing,\n[A]Nothing is too difficult for [D]Thee !\n\n[Verse 2]\nLet [D]God arise and His enemies be scattered, (3)\nLet [A]God, let God a[D]rise.",
+  "lyrics": "[Verse 1]\nAh Lord God thou has made the heavens,\nand the earth by Thy great power,\nAh Lord God thou has made the heavens,\nand the earth by Thy outstretched arm.\n\n[Chorus]\nNothing is too difficult for thee. (2)\nGreat and Mighty God,\nGreat in counsel and mighty indeed,\nNothing, nothing, absolutely nothing,\nNothing is too difficult for Thee !\n\n[Verse 2]\nLet God arise and His enemies be scattered, (3)\nLet God, let God arise.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

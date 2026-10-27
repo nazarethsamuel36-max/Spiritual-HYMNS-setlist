@@ -1,151 +1,89 @@
 {
-  "id" : 1115,
-  "songNumber" : 137,
-  "title" : "कुछ मिले या ना मिले, प्रभु की स्तुति हो",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "कुछ मिले या ना मिले, प्रभु की स्तुति हो",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "वो बढें और मैं घटूं, प्रभु की स्तुति हो ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जीवन की राहों में, चलता रहूंगा मैं,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "प्रभु की स्तुति करते हुए",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "दुख में रहू या सुख में रहूं,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "प्रभु की स्तुति करूँ ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "देने के द्वारा प्रभु की स्तुति,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "करता रहूँगा सदा",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "प्रभु के भंडार में",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "अपना दशमांश लेके आओ सदा ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "आनेवाला है, यीशु मसिहा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "बादलों पर होके सवार",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "ले जायेगा अपने साथ मुझे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "और बढेगा प्यार।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 1115,
+  "songNumber": 137,
+  "title": "कुछ मिले या ना मिले, प्रभु की स्तुति हो",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कुछ मिले या ना मिले, प्रभु की स्तुति हो"
+        },
+        {
+          "text": "वो बढें और मैं घटूं, प्रभु की स्तुति हो ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन की राहों में, चलता रहूंगा मैं,"
+        },
+        {
+          "text": "प्रभु की स्तुति करते हुए"
+        },
+        {
+          "text": "दुख में रहू या सुख में रहूं,"
+        },
+        {
+          "text": "प्रभु की स्तुति करूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "देने के द्वारा प्रभु की स्तुति,"
+        },
+        {
+          "text": "करता रहूँगा सदा"
+        },
+        {
+          "text": "प्रभु के भंडार में"
+        },
+        {
+          "text": "अपना दशमांश लेके आओ सदा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आनेवाला है, यीशु मसिहा,"
+        },
+        {
+          "text": "बादलों पर होके सवार"
+        },
+        {
+          "text": "ले जायेगा अपने साथ मुझे"
+        },
+        {
+          "text": "और बढेगा प्यार।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]कुछ मिले या ना मिले, प्रभु की स्तुति [G]हो\r\n[A]वो बढें और मैं घटूं, प्रभु की स्तुति [D]हो ।\r\n\r\n[Verse]\r\n[D]जीवन की राहों में, [G]चलता रहूंगा मैं,\r\n[A]प्रभु की स्तुति करते हुए\r\n[D]दुख में रहू या सुख में [G]रहूं,\r\n[A]प्रभु की स्तुति करूँ [D]।\r\n\r\n[Verse]\r\n[D]देने के द्वारा प्रभु की स्तु[G]ति,\r\n[A]करता रहूँगा स[D]दा\r\n[D]प्रभु के भंडार [G]में\r\n[A]अपना दशमांश लेके आओ [D]सदा ।\r\n\r\n[Verse]\r\n[D]आनेवाला है, यीशु मसि[G]हा,\r\n[A]बादलों पर होके सवा[D]र\r\n[D]ले जायेगा अपने साथ मु[G]झे\r\n[A]और बढेगा प्या[D]र।",
+  "lyrics": "[Verse]\r\nकुछ मिले या ना मिले, प्रभु की स्तुति हो\r\nवो बढें और मैं घटूं, प्रभु की स्तुति हो ।\r\n\r\n[Verse]\r\nजीवन की राहों में, चलता रहूंगा मैं,\r\nप्रभु की स्तुति करते हुए\r\nदुख में रहू या सुख में रहूं,\r\nप्रभु की स्तुति करूँ ।\r\n\r\n[Verse]\r\nदेने के द्वारा प्रभु की स्तुति,\r\nकरता रहूँगा सदा\r\nप्रभु के भंडार में\r\nअपना दशमांश लेके आओ सदा ।\r\n\r\n[Verse]\r\nआनेवाला है, यीशु मसिहा,\r\nबादलों पर होके सवार\r\nले जायेगा अपने साथ मुझे\r\nऔर बढेगा प्यार।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,130 +1,73 @@
 {
-  "id" : 1202,
-  "songNumber" : 224,
-  "title" : "वन्दना करते हैं हम",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "वन्दना करते हैं हम (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "हृदय को तेरे सामने लाकर रखते हैं हम",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "वन्दना करते हैं हम । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "हृदय में मेरे मसीहा जीवन दीप जलाओ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "हृदय के पापों को धोकर प्रेम की राह दिखाओ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "मैं हूँ निर्बल मानव, पापों के सागर में खोया,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "अब तुम संभालो यीशु जी भवसागर में हूँ खोया।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "शक्ति दे दो मुझको, मेरा नहीं कोई मीत,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "जीवन को मेरे ले ले, गाऊँ तेरे गीत।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 1202,
+  "songNumber": 224,
+  "title": "वन्दना करते हैं हम",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वन्दना करते हैं हम (2)"
+        },
+        {
+          "text": "हृदय को तेरे सामने लाकर रखते हैं हम"
+        },
+        {
+          "text": "वन्दना करते हैं हम । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हृदय में मेरे मसीहा जीवन दीप जलाओ,"
+        },
+        {
+          "text": "हृदय के पापों को धोकर प्रेम की राह दिखाओ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मैं हूँ निर्बल मानव, पापों के सागर में खोया,"
+        },
+        {
+          "text": "अब तुम संभालो यीशु जी भवसागर में हूँ खोया।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "शक्ति दे दो मुझको, मेरा नहीं कोई मीत,"
+        },
+        {
+          "text": "जीवन को मेरे ले ले, गाऊँ तेरे गीत।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]वन्दना करते हैं [G]हम (2)\n[D]हृदय को तेरे सामने [A]लाकर रखते हैं [D]हम\n[D]वन्दना करते हैं [G]हम । (2)\n\n[Verse]\n[D]हृदय में मेरे मसीहा [G]जीवन दीप जला[D]ओ,\n[D]हृदय के पापों को धोकर [A]प्रेम की राह दिखा[D]ओ।\n\n[Verse]\n[D]मैं हूँ निर्बल मानव, [G]पापों के सागर में खो[D]या,\n[D]अब तुम संभालो यीशु जी [A]भवसागर में हूँ खो[D]या।\n\n[Verse]\n[D]शक्ति दे दो मुझको, [G]मेरा नहीं कोई [D]मीत,\n[D]जीवन को मेरे ले ले, [A]गाऊँ तेरे [D]गीत।",
+  "lyrics": "[Verse]\nवन्दना करते हैं हम (2)\nहृदय को तेरे सामने लाकर रखते हैं हम\nवन्दना करते हैं हम । (2)\n\n[Verse]\nहृदय में मेरे मसीहा जीवन दीप जलाओ,\nहृदय के पापों को धोकर प्रेम की राह दिखाओ।\n\n[Verse]\nमैं हूँ निर्बल मानव, पापों के सागर में खोया,\nअब तुम संभालो यीशु जी भवसागर में हूँ खोया।\n\n[Verse]\nशक्ति दे दो मुझको, मेरा नहीं कोई मीत,\nजीवन को मेरे ले ले, गाऊँ तेरे गीत।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

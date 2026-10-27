@@ -1,190 +1,110 @@
 {
-  "id" : 1017,
-  "songNumber" : 39,
-  "title" : "प्रभु तेरे नाम के लिये",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "प्रभु तेरे नाम के लिये,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "E",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "तन मन मेरा होगा बलिदान,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "और तेरी महिमा के लिये,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "E",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "जीवन के हर चुने हुए दान ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "मेरे जीवन पर तेरा बड़ा है उपकार,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "E",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "पापों से जो मुझे मिला है उद्धार,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "मेरा हृदय तेरे गीत गाता है,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तूने ही जो मेरा बदला है विधान ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मेरी तेरे क्रूस पर दृष्टी जाती है,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "वही हर दुखों में जी बहलाती है,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "क्रूस की महिमा मेरे जीवन का उद्देश्य,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "E",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "वहीं मेरे लिये जीवन का निदान ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तूही मेरे लिये जीवन रोटी है,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "E",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "तेरे ही वचन मेरे लिये मोती है,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "तेरे जीवन जल से हुआ मैं भरपूर,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "E",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "तूने जो बहाया क्रूस पर देकर प्राण ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 1017,
+  "songNumber": 39,
+  "title": "प्रभु तेरे नाम के लिये",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "प्रभु तेरे नाम के लिये,"
+        },
+        {
+          "text": "तन मन मेरा होगा बलिदान,"
+        },
+        {
+          "text": "और तेरी महिमा के लिये,"
+        },
+        {
+          "text": "जीवन के हर चुने हुए दान ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मेरे जीवन पर तेरा बड़ा है उपकार,"
+        },
+        {
+          "text": "पापों से जो मुझे मिला है उद्धार,"
+        },
+        {
+          "text": "मेरा हृदय तेरे गीत गाता है,"
+        },
+        {
+          "text": "तूने ही जो मेरा बदला है विधान ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मेरी तेरे क्रूस पर दृष्टी जाती है,"
+        },
+        {
+          "text": "वही हर दुखों में जी बहलाती है,"
+        },
+        {
+          "text": "क्रूस की महिमा मेरे जीवन का उद्देश्य,"
+        },
+        {
+          "text": "वहीं मेरे लिये जीवन का निदान ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तूही मेरे लिये जीवन रोटी है,"
+        },
+        {
+          "text": "तेरे ही वचन मेरे लिये मोती है,"
+        },
+        {
+          "text": "तेरे जीवन जल से हुआ मैं भरपूर,"
+        },
+        {
+          "text": "तूने जो बहाया क्रूस पर देकर प्राण ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [E]प्रभु तेरे [A]नाम के लि[E]ये,\n[E]तन मन मेरा होगा ब[B]लिदान,\n[E]और तेरी [A]महिमा के लि[E]ये,\n[E]जीवन के हर चुने हुए [B]दान ।\n[Verse]\n[Verse]\n[E]मेरे जीवन पर तेरा [A]बड़ा है उप[E]कार,\n[E]पापों से जो मुझे मिला है उद्धार,\n[E]मेरा हृदय तेरे [A]गीत गाता है,\n[E]तूने ही जो मेरा बदला है वि[B]धान ।\n[Verse]\n[Verse]\n[E]मेरी तेरे [A]क्रूस पर दृष्टी जाती [E]है,\n[E]वही हर दुखों में जी बह[B]लाती है,\n[E]क्रूस की महिमा मेरे [A]जीवन का उद्दे[E]श्य,\n[E]वहीं मेरे लिये जीवन का नि[B]दान ।\n[Verse]\n[Verse]\n[E]तूही मेरे लिये जीवन [A]रोटी [E]है,\n[E]तेरे ही वचन मेरे लिये मो[B]ती है,\n[E]तेरे जीवन जल से [A]हुआ मैं भर[E]पूर,\n[E]तूने जो बहाया क्रूस पर देकर [B]प्राण ।",
+  "lyrics": "[Chorus]\n प्रभु तेरे नाम के लिये,\nतन मन मेरा होगा बलिदान,\nऔर तेरी महिमा के लिये,\nजीवन के हर चुने हुए दान ।\n[Verse]\n[Verse]\nमेरे जीवन पर तेरा बड़ा है उपकार,\nपापों से जो मुझे मिला है उद्धार,\nमेरा हृदय तेरे गीत गाता है,\nतूने ही जो मेरा बदला है विधान ।\n[Verse]\n[Verse]\nमेरी तेरे क्रूस पर दृष्टी जाती है,\nवही हर दुखों में जी बहलाती है,\nक्रूस की महिमा मेरे जीवन का उद्देश्य,\nवहीं मेरे लिये जीवन का निदान ।\n[Verse]\n[Verse]\nतूही मेरे लिये जीवन रोटी है,\nतेरे ही वचन मेरे लिये मोती है,\nतेरे जीवन जल से हुआ मैं भरपूर,\nतूने जो बहाया क्रूस पर देकर प्राण ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

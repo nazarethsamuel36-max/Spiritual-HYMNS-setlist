@@ -1,244 +1,115 @@
 {
-  "id" : 811,
-  "songNumber" : 199,
-  "title" : "DOWN FROM HIS GLORY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Down from His glory, ever living story,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "My God and Saviour came, and Jesus was His Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Born in a manger, to His own a stranger,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "A Man of sorrow, tears and agony.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O how I love Him! How I adore Him!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "My breath, my sunshine, my all in all!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "The great Creator became my Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And all God's fullness dwelleth in Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "What condescension, bringing us redemption;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "That in the dead of night, not one faint hope in sight;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 41
-      }, {
-        "chord" : "D",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "God, gracious, tender, laid aside His splendour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Stooping to woo, to win, to save my soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Without reluctance, flesh and blood His substance,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "He took the form of man, revealed the hidden plan.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "O glorious mystery, Sacrifice of Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "And now I know Thou wert the great \"I AM.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 811,
+  "songNumber": 199,
+  "title": "DOWN FROM HIS GLORY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Down from His glory, ever living story,"
+        },
+        {
+          "text": "My God and Saviour came, and Jesus was His Name."
+        },
+        {
+          "text": "Born in a manger, to His own a stranger,"
+        },
+        {
+          "text": "A Man of sorrow, tears and agony."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O how I love Him! How I adore Him!"
+        },
+        {
+          "text": "My breath, my sunshine, my all in all!"
+        },
+        {
+          "text": "The great Creator became my Saviour,"
+        },
+        {
+          "text": "And all Gods fullness dwelleth in Him,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "What condescension, bringing us redemption;"
+        },
+        {
+          "text": "That in the dead of night, not one faint hope in sight;"
+        },
+        {
+          "text": "God, gracious, tender, laid aside His splendour,"
+        },
+        {
+          "text": "Stooping to woo, to win, to save my soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Without reluctance, flesh and blood His substance,"
+        },
+        {
+          "text": "He took the form of man, revealed the hidden plan."
+        },
+        {
+          "text": "O glorious mystery, Sacrifice of Calvary,"
+        },
+        {
+          "text": "And now I know Thou wert the great \"I AM.\""
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Down from His glory, [G]ever living [D]story,\nMy [D]God and Saviour came, and [G]Jesus [A]was His [D]Name.\n[D]Born in a manger, [G]to His own a [D]stranger,\nA [D]Man of sorrow, [G]tears and [A]ago[D]ny.\n[Verse]\n[Verse]\n[Chorus]\nO [D]how I love Him! [G]How I adore [D]Him!\nMy [D]breath, my sunshine, [G]my [A]all in [D]all!\nThe [D]great Creator be[G]came my [D]Saviour,\nAnd [D]all Gods fullness [G]dwell[A]eth in [D]Him,\n[Verse]\n[Verse]\nWhat [D]condescension, [G]bringing us re[D]demption;\nThat [D]in the dead of night, not [G]one faint [A]hope in [D]sight;\n[D]God, gracious, tender, [G]laid aside His [D]splendour,\n[D]Stooping to woo, to [G]win, to [A]save my [D]soul.\n[Verse]\n[Verse]\nWith[D]out reluctance, [G]flesh and blood His [D]substance,\nHe [D]took the form of man, re[G]vealed the [A]hidden [D]plan.\nO [D]glorious mystery, [G]Sacrifice of [D]Calvary,\nAnd [D]now I know Thou [G]wert the [A]great \"I [D]AM.\"",
+  "lyrics": "[Verse]\n Down from His glory, ever living story,\nMy God and Saviour came, and Jesus was His Name.\nBorn in a manger, to His own a stranger,\nA Man of sorrow, tears and agony.\n[Verse]\n[Verse]\n[Chorus]\nO how I love Him! How I adore Him!\nMy breath, my sunshine, my all in all!\nThe great Creator became my Saviour,\nAnd all Gods fullness dwelleth in Him,\n[Verse]\n[Verse]\nWhat condescension, bringing us redemption;\nThat in the dead of night, not one faint hope in sight;\nGod, gracious, tender, laid aside His splendour,\nStooping to woo, to win, to save my soul.\n[Verse]\n[Verse]\nWithout reluctance, flesh and blood His substance,\nHe took the form of man, revealed the hidden plan.\nO glorious mystery, Sacrifice of Calvary,\nAnd now I know Thou wert the great \"I AM.\"",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

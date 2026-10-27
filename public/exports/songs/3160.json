@@ -1,48 +1,101 @@
 {
-  "id" : 3160,
-  "songNumber" : 1019,
-  "title" : "** Take Me Past The Outer Court",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Take me past the outer courts,"
-    }, {
-      "text" : "Into the holy place,"
-    }, {
-      "text" : "Past the brazen altar."
-    }, {
-      "text" : "Lord I want to see Your face."
-    }, {
-      "text" : "Pass me by the crowds of people"
-    }, {
-      "text" : "And the priests who sing Your praise."
-    }, {
-      "text" : "I hunger and thirst for Your righteousness,"
-    }, {
-      "text" : "But it's only found in one place."
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Take me in to the holy of holies."
-    }, {
-      "text" : "Take me in by the blood of the lamb."
-    }, {
-      "text" : "Take me in to the holy of holies."
-    }, {
-      "text" : "Take the coal, touch my lips, here I am."
-    } ]
-  } ]
+  "id": 3160,
+  "songNumber": 1019,
+  "title": "Take Me Past The Outer Court",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Take me past the outer courts,"
+        },
+        {
+          "text": "Into the holy place,"
+        },
+        {
+          "text": "Past the brazen altar."
+        },
+        {
+          "text": "Lord I want to see Your face."
+        },
+        {
+          "text": "Pass me by the crowds of people"
+        },
+        {
+          "text": "And the priests who sing Your praise."
+        },
+        {
+          "text": "I hunger and thirst for Your righteousness,"
+        },
+        {
+          "text": "But it's only found in one place"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Take me into the Holy of Holies"
+        },
+        {
+          "text": "Take me in by the blood of the Lamb"
+        },
+        {
+          "text": "Take me into the Holy of Holies"
+        },
+        {
+          "text": "Take the coal, touch my lips, here I am"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Take me past the outer courts"
+        },
+        {
+          "text": "Into the Holy Place"
+        },
+        {
+          "text": "Past the brazen Altar"
+        },
+        {
+          "text": "Lord, I want to see Your face"
+        },
+        {
+          "text": "Pass me by the crowds of people"
+        },
+        {
+          "text": "The priests who sing Your praise"
+        },
+        {
+          "text": "I hunger and thirst for Your righteousness"
+        },
+        {
+          "text": "And it's only found in one place"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nTake me past the outer courts,\nInto the holy place,\nPast the brazen altar.\nLord I want to see Your face.\nPass me by the crowds of people\nAnd the priests who sing Your praise.\nI hunger and thirst for Your righteousness,\nBut it's only found in one place\n\n[Chorus]\nTake me into the Holy of Holies\nTake me in by the blood of the Lamb\nTake me into the Holy of Holies\nTake the coal, touch my lips, here I am\n\n[Verse 2]\nTake me past the outer courts\nInto the Holy Place\nPast the brazen Altar\nLord, I want to see Your face\nPass me by the crowds of people\nThe priests who sing Your praise\nI hunger and thirst for Your righteousness\nAnd it's only found in one place",
+  "lyrics": "[Verse 1]\nTake me past the outer courts,\nInto the holy place,\nPast the brazen altar.\nLord I want to see Your face.\nPass me by the crowds of people\nAnd the priests who sing Your praise.\nI hunger and thirst for Your righteousness,\nBut it's only found in one place\n\n[Chorus]\nTake me into the Holy of Holies\nTake me in by the blood of the Lamb\nTake me into the Holy of Holies\nTake the coal, touch my lips, here I am\n\n[Verse 2]\nTake me past the outer courts\nInto the Holy Place\nPast the brazen Altar\nLord, I want to see Your face\nPass me by the crowds of people\nThe priests who sing Your praise\nI hunger and thirst for Your righteousness\nAnd it's only found in one place",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

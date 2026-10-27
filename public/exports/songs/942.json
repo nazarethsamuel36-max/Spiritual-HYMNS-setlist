@@ -1,88 +1,50 @@
 {
-  "id" : 942,
-  "songNumber" : 63,
-  "title" : "GOD RICH IN MERCY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God rich in mercy, God rich in mercy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Sending His Son, we were undone,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "God rich in mercy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "God rich in grace, God rich in love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D7",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Sent us His help from Heaven above,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Sending to all help today,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D7",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "God rich in mercy, God rich in mercy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 942,
+  "songNumber": 63,
+  "title": "GOD RICH IN MERCY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "God rich in mercy, God rich in mercy,"
+        },
+        {
+          "text": "Sending His Son, we were undone,"
+        },
+        {
+          "text": "God rich in mercy."
+        },
+        {
+          "text": "God rich in grace, God rich in love,"
+        },
+        {
+          "text": "Sent us His help from Heaven above,"
+        },
+        {
+          "text": "Sending to all help today,"
+        },
+        {
+          "text": "God rich in mercy, God rich in mercy."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]God rich in mercy, [A]God rich in mercy,\n[A]Sending His Son, we [D]were undone,\n[D]God rich in [A]mercy.\n[D]God rich in [D7]grace, God [G]rich in love,\n[A]Sent us His help from [D]Heaven above,\n[D]Sending to [D7]all [G]help today,\n[D]God rich in [A]mercy, God rich in [D]mercy.",
+  "lyrics": "[Verse 1]\nGod rich in mercy, God rich in mercy,\nSending His Son, we were undone,\nGod rich in mercy.\nGod rich in grace, God rich in love,\nSent us His help from Heaven above,\nSending to all help today,\nGod rich in mercy, God rich in mercy.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

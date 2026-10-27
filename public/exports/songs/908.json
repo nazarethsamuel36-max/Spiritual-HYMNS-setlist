@@ -1,267 +1,95 @@
 {
-  "id" : 908,
-  "songNumber" : 296,
-  "title" : "GUIDE ME O THOU GREAT JEHOVAH",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Guide me O Thou great Jehovah",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Pilgrim through this barren land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I am weak, but Thou art mighty;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Hold me with Thy powerful hand;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Bread of heaven, Bread of heaven,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Feed me till I want no more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Open now the crystal fountain",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Whence the healing waters flow;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Let the fiery, cloudy pillar,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Lead me all my journey through",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Strong Deliverer, Strong Deliverer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Be Thou still my strength and shield.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When I tread the verge of Jordan,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Bid my anxious fears subside;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Bear me through the swelling current,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Land me safe on Cannan's side:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Songs of praises, Songs of praises,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I will ever give to Thee!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 908,
+  "songNumber": 296,
+  "title": "GUIDE ME O THOU GREAT JEHOVAH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Guide me O Thou great Jehovah"
+        },
+        {
+          "text": "Pilgrim through this barren land,"
+        },
+        {
+          "text": "I am weak, but Thou art mighty;"
+        },
+        {
+          "text": "Hold me with Thy powerful hand;"
+        },
+        {
+          "text": "Bread of heaven, Bread of heaven,"
+        },
+        {
+          "text": "Feed me till I want no more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Open now the crystal fountain"
+        },
+        {
+          "text": "Whence the healing waters flow;"
+        },
+        {
+          "text": "Let the fiery, cloudy pillar,"
+        },
+        {
+          "text": "Lead me all my journey through"
+        },
+        {
+          "text": "Strong Deliverer, Strong Deliverer,"
+        },
+        {
+          "text": "Be Thou still my strength and shield."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When I tread the verge of Jordan,"
+        },
+        {
+          "text": "Bid my anxious fears subside;"
+        },
+        {
+          "text": "Bear me through the swelling current,"
+        },
+        {
+          "text": "Land me safe on Cannan's side:"
+        },
+        {
+          "text": "Songs of praises, Songs of praises,"
+        },
+        {
+          "text": "I will ever give to Thee!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Guide me O Thou [G]great Je[D]hovah\n[D]Pilgrim through this [A]barren [D]land,\n[D]I am weak, but [G]Thou art [D]mighty;\n[D]Hold me [G]with Thy [D]powerful [A]hand;\n[D]Bread of [A]heaven, [D]Bread of [G]heaven,\n[D]Feed me [A]till I [G]want no [D]more.\n\n[Verse]\n[D]Open now the [G]crystal [D]fountain\n[D]Whence the healing [A]waters [D]flow;\n[D]Let the fiery, [G]cloudy [D]pillar,\n[D]Lead me [G]all my [D]journey [A]through\n[D]Strong De[A]liverer, [D]Strong De[G]liverer,\n[D]Be Thou [A]still my [G]strength and [D]shield.\n\n[Verse]\n[D]When I tread the [G]verge of [D]Jordan,\n[D]Bid my anxious [A]fears sub[D]side;\n[D]Bear me through the [G]swelling [D]current,\n[D]Land me [G]safe on [D]Cannan's [A]side:\n[D]Songs of [A]praises, [D]Songs of [G]praises,\n[D]I will [A]ever [G]give to [D]Thee!",
+  "lyrics": "[Verse]\nGuide me O Thou great Jehovah\nPilgrim through this barren land,\nI am weak, but Thou art mighty;\nHold me with Thy powerful hand;\nBread of heaven, Bread of heaven,\nFeed me till I want no more.\n\n[Verse]\nOpen now the crystal fountain\nWhence the healing waters flow;\nLet the fiery, cloudy pillar,\nLead me all my journey through\nStrong Deliverer, Strong Deliverer,\nBe Thou still my strength and shield.\n\n[Verse]\nWhen I tread the verge of Jordan,\nBid my anxious fears subside;\nBear me through the swelling current,\nLand me safe on Cannan's side:\nSongs of praises, Songs of praises,\nI will ever give to Thee!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

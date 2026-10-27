@@ -1,52 +1,41 @@
 {
-  "id" : 957,
-  "songNumber" : 79,
-  "title" : "STAND BY ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Stand by me, stand by me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Loving Saviour stand by me,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "I have no strength and power of my own,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Loving Saviour stand by me.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 957,
+  "songNumber": 79,
+  "title": "STAND BY ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Stand by me, stand by me,"
+        },
+        {
+          "text": "Loving Saviour stand by me,"
+        },
+        {
+          "text": "I have no strength and power of my own,"
+        },
+        {
+          "text": "Loving Saviour stand by me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n\r\n[A]Stand by me, stand by me,\r\n\r\nLoving Saviour [E]stand by [A]me,\r\n\r\n[A]I have no strength and [D]power of my [A]own,\r\n\r\nLoving [E]Saviour stand by [A]me.",
+  "lyrics": "[Verse]\r\n\r\nStand by me, stand by me,\r\n\r\nLoving Saviour stand by me,\r\n\r\nI have no strength and power of my own,\r\n\r\nLoving Saviour stand by me.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

@@ -1,50 +1,74 @@
 {
-  "id" : 3130,
-  "songNumber" : 2031,
-  "title" : "** कुछ् नहि, कुछ् नहि छहियॆ यॆशु",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Kuch nahin kuch nahin chahiye Yeshu,"
-    }, {
-      "text" : "Bas tu hi tu chahiye"
-    }, {
-      "text" : "...repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Tu mera pita , main tera beta,"
-    }, {
-      "text" : "Ye rishta kaafi hai mujhe"
-    }, {
-      "text" : "...repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Tu chale to phir main chaalu"
-    }, {
-      "text" : "Tu ruke to main bhi rukoo,"
-    }, {
-      "text" : "Tu kahe vo hi main sunoo"
-    }, {
-      "text" : "Dikhae jo mujhe dekhoo"
-    }, {
-      "text" : "...repeat"
-    } ]
-  } ]
+  "id": 3130,
+  "songNumber": 2031,
+  "title": "Kuch nahin kuch nahin chahiye Yeshu",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Kuch nahin kuch nahin chahiye Yeshu,"
+        },
+        {
+          "text": "Bas tu hi tu chahiye"
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Tu mera pita , main tera beta,"
+        },
+        {
+          "text": "Ye rishta kaafi hai mujhe"
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Tu chale to phir main chaalu"
+        },
+        {
+          "text": "Tu ruke to main bhi rukoo,"
+        },
+        {
+          "text": "Tu kahe vo hi main sunoo"
+        },
+        {
+          "text": "Dikhae jo mujhe dekhoo"
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\nKuch nahin kuch nahin chahiye Yeshu,\nBas tu hi tu chahiye\n...repeat\n\n[Verse 2]\nTu mera pita , main tera beta,\nYe rishta kaafi hai mujhe\n...repeat\n\n[Verse 3]\nTu chale to phir main chaalu\nTu ruke to main bhi rukoo,\nTu kahe vo hi main sunoo\nDikhae jo mujhe dekhoo\n...repeat",
+  "lyrics": "[Verse 1]\nKuch nahin kuch nahin chahiye Yeshu,\nBas tu hi tu chahiye\n...repeat\n\n[Verse 2]\nTu mera pita , main tera beta,\nYe rishta kaafi hai mujhe\n...repeat\n\n[Verse 3]\nTu chale to phir main chaalu\nTu ruke to main bhi rukoo,\nTu kahe vo hi main sunoo\nDikhae jo mujhe dekhoo\n...repeat",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,262 +1,138 @@
 {
-  "id" : 778,
-  "songNumber" : 166,
-  "title" : "SPEAK MY LORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Hear the Lord of harvest sweetly calling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "\"Who will go and work for me today?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Who will bring to Me the lost and dying?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Who will point them to the narrow way?\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Speak, my Lord, speak, my Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Speak, and I'll be quick to answer Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Speak, my Lord, speak, my Lord,"
-    }, {
-      "text" : "Speak, and I will answer, \"Lord, send me.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "When the coal of fire touched the prophet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Making him as pure as pure can be,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "When the voice of God, said \"Who'll go for us?\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Then he answered, \"Here I am Lord send me.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Millions now in sin and shame are dying;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Listen to their sad and bitter cry;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Hasten, brother hasten to the rescue;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Quickly answer, \"Master, here am I.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Soon the time for reaping will be over;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Soon we'll gather for the harvest home;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "May the Lord of harvest smile upon us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "May we hear His blessed, \"Child, well done.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 778,
+  "songNumber": 166,
+  "title": "SPEAK MY LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hear the Lord of harvest sweetly calling,"
+        },
+        {
+          "text": "\"Who will go and work for me today?"
+        },
+        {
+          "text": "Who will bring to Me the lost and dying?"
+        },
+        {
+          "text": "Who will point them to the narrow way?\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Speak, my Lord, speak, my Lord,"
+        },
+        {
+          "text": "Speak, and Ill be quick to answer Thee;"
+        },
+        {
+          "text": "Speak, my Lord, speak, my Lord,"
+        },
+        {
+          "text": "Speak, and I will answer, \"Lord, send me.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the coal of fire touched the prophet,"
+        },
+        {
+          "text": "Making him as pure as pure can be,"
+        },
+        {
+          "text": "When the voice of God, said \"Wholl go for us?\""
+        },
+        {
+          "text": "Then he answered, \"Here I am Lord send me.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Millions now in sin and shame are dying;"
+        },
+        {
+          "text": "Listen to their sad and bitter cry;"
+        },
+        {
+          "text": "Hasten, brother hasten to the rescue;"
+        },
+        {
+          "text": "Quickly answer, \"Master, here am I.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Soon the time for reaping will be over;"
+        },
+        {
+          "text": "Soon well gather for the harvest home;"
+        },
+        {
+          "text": "May the Lord of harvest smile upon us,"
+        },
+        {
+          "text": "May we hear His blessed, \"Child, well done.\""
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Hear the Lord of [G]harvest sweetly [D]calling,\n[D]\"Who will go and [A]work for me to[D]day?\n[D]Who will bring to [G]Me the lost and [D]dying?\n[D]Who will point them [A]to the narrow [D]way?\"\n[Verse]\n[Verse]\n[Chorus]\n[D]Speak, my Lord, [G]speak, my [D]Lord,\n[D]Speak, and Ill be [A]quick to answer [D]Thee;\nSpeak, my Lord, speak, my Lord,\n[D]Speak, and I will [A]answer, \"Lord, send [D]me.\"\n[Verse]\n[Verse]\n[D]When the coal of [G]fire touched the [D]prophet,\n[D]Making him as [A]pure as pure can [D]be,\n[D]When the voice of [G]God, said \"Wholl go for [D]us?\"\n[D]Then he answered, [A]\"Here I am Lord send [D]me.\"\n[Verse]\n[Verse]\n[D]Millions now in [G]sin and shame are [D]dying;\n[D]Listen to their [A]sad and bitter [D]cry;\n[D]Hasten, brother [G]hasten to the [D]rescue;\n[D]Quickly answer, [A]\"Master, here am [D]I.\"\n[Verse]\n[Verse]\n[D]Soon the time for [G]reaping will be [D]over;\n[D]Soon well gather [A]for the harvest [D]home;\n[D]May the Lord of [G]harvest smile u[D]pon us,\n[D]May we hear His [A]blessed, \"Child, well [D]done.\"",
+  "lyrics": "[Verse]\n Hear the Lord of harvest sweetly calling,\n\"Who will go and work for me today?\nWho will bring to Me the lost and dying?\nWho will point them to the narrow way?\"\n[Verse]\n[Verse]\n[Chorus]\nSpeak, my Lord, speak, my Lord,\nSpeak, and Ill be quick to answer Thee;\nSpeak, my Lord, speak, my Lord,\nSpeak, and I will answer, \"Lord, send me.\"\n[Verse]\n[Verse]\nWhen the coal of fire touched the prophet,\nMaking him as pure as pure can be,\nWhen the voice of God, said \"Wholl go for us?\"\nThen he answered, \"Here I am Lord send me.\"\n[Verse]\n[Verse]\nMillions now in sin and shame are dying;\nListen to their sad and bitter cry;\nHasten, brother hasten to the rescue;\nQuickly answer, \"Master, here am I.\"\n[Verse]\n[Verse]\nSoon the time for reaping will be over;\nSoon well gather for the harvest home;\nMay the Lord of harvest smile upon us,\nMay we hear His blessed, \"Child, well done.\"",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

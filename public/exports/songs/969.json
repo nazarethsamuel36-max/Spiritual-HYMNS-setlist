@@ -1,40 +1,38 @@
 {
-  "id" : 969,
-  "songNumber" : 91,
-  "title" : "LET THE REDEEMED",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Let the redeemed of the Lord say so (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I'm redeemed, I'm redeemed",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Praise the Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 969,
+  "songNumber": 91,
+  "title": "LET THE REDEEMED",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let the redeemed of the Lord say so (3)"
+        },
+        {
+          "text": "I'm redeemed, I'm redeemed"
+        },
+        {
+          "text": "Praise the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Let the redeemed of the Lord say so (3)\n[G]I'm redeemed, I'm re[D]deemed\n[A]Praise the [D]Lord.",
+  "lyrics": "[Verse]\nLet the redeemed of the Lord say so (3)\nI'm redeemed, I'm redeemed\nPraise the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

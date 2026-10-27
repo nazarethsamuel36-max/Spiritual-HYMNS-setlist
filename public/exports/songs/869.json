@@ -1,143 +1,74 @@
 {
-  "id" : 869,
-  "songNumber" : 257,
-  "title" : "LET THE LORD HAVE HIS WAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Let the Lord have His way",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "In your life every day;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "There's no peace, there's no rest",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Till the Lord has His way;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Put your life in His hands,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Rest secure in His plans,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Let the Lord, let the Lord have His way",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "It shall flow like a river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "It shall fall like the rain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "It shall come as the dawning of the day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "For the knowledge of the Lord;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Shall fill all the earth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And the Spirit of the Lord shall fall.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 869,
+  "songNumber": 257,
+  "title": "LET THE LORD HAVE HIS WAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let the Lord have His way"
+        },
+        {
+          "text": "In your life every day;"
+        },
+        {
+          "text": "There's no peace, there's no rest"
+        },
+        {
+          "text": "Till the Lord has His way;"
+        },
+        {
+          "text": "Put your life in His hands,"
+        },
+        {
+          "text": "Rest secure in His plans,"
+        },
+        {
+          "text": "Let the Lord, let the Lord have His way"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "It shall flow like a river,"
+        },
+        {
+          "text": "It shall fall like the rain,"
+        },
+        {
+          "text": "It shall come as the dawning of the day,"
+        },
+        {
+          "text": "For the knowledge of the Lord;"
+        },
+        {
+          "text": "Shall fill all the earth,"
+        },
+        {
+          "text": "And the Spirit of the Lord shall fall."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Let the Lord have His way\nIn your [G]life every [D]day;\nThere's no [G]peace, there's no [D]rest\nTill the [D]Lord has His [A]way;\nPut your [D]life in His hands,\nRest se[G]cure in His [D]plans,\nLet the [D]Lord, let the [A]Lord have His [D]way\n\n[Verse]\nIt shall [D]flow like a [G]river,\nIt shall [D]fall like the [A]rain,\nIt shall [D]come as the [G]dawning of the [A]day,\nFor the [D]knowledge of the [G]Lord;\nShall [D]fill [G]all the [D]earth,\nAnd the [D]Spirit of the [A]Lord shall [D]fall.",
+  "lyrics": "[Verse]\nLet the Lord have His way\nIn your life every day;\nThere's no peace, there's no rest\nTill the Lord has His way;\nPut your life in His hands,\nRest secure in His plans,\nLet the Lord, let the Lord have His way\n\n[Verse]\nIt shall flow like a river,\nIt shall fall like the rain,\nIt shall come as the dawning of the day,\nFor the knowledge of the Lord;\nShall fill all the earth,\nAnd the Spirit of the Lord shall fall.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

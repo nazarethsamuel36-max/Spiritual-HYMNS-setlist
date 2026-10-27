@@ -1,182 +1,113 @@
 {
-  "id" : 742,
-  "songNumber" : 130,
-  "title" : "WE'RE MARCHING TO ZION",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Come, we that love the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And let our joys be known,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Join in a song with sweet accord, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And thus surround the throne. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "We're marching to Zion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Beautiful, beautiful Zion,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "We're marching upward to Zion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "The beautiful city of God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let those refuse to sing",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Who never knew our God;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "But children of the heavenly King, (2)"
-    }, {
-      "text" : "May speak their joys abroad. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "The hill of Zion yields",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "A thousand sacred sweets",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Before we reach the heavenly fields, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Or walk the golden streets. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Then let our songs abound,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "And every tear be dry;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "We're marching thru Immanuel's ground, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "To fairer worlds on high. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 742,
+  "songNumber": 130,
+  "title": "WE'RE MARCHING TO ZION",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Come, we that love the Lord,"
+        },
+        {
+          "text": "And let our joys be known,"
+        },
+        {
+          "text": "Join in a song with sweet accord, (2)"
+        },
+        {
+          "text": "And thus surround the throne. (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "We're marching to Zion,"
+        },
+        {
+          "text": "Beautiful, beautiful Zion,"
+        },
+        {
+          "text": "We're marching upward to Zion,"
+        },
+        {
+          "text": "The beautiful city of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let those refuse to sing"
+        },
+        {
+          "text": "Who never knew our God;"
+        },
+        {
+          "text": "But children of the heavenly King, (2)"
+        },
+        {
+          "text": "May speak their joys abroad. (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "The hill of Zion yields"
+        },
+        {
+          "text": "A thousand sacred sweets"
+        },
+        {
+          "text": "Before we reach the heavenly fields, (2)"
+        },
+        {
+          "text": "Or walk the golden streets. (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Then let our songs abound,"
+        },
+        {
+          "text": "And every tear be dry;"
+        },
+        {
+          "text": "We're marching thru Immanuel's ground, (2)"
+        },
+        {
+          "text": "To fairer worlds on high. (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Come, we that love the Lord,\nAnd let our [G]joys be [D]known,\nJoin in a [D]song with sweet ac[A]cord, (2)\nAnd thus sur[D]round the [A]throne. (2)\n\n[Chorus]\nWe're [D]marching to Zion,\nBeautiful, [G]beautiful [D]Zion,\nWe're [D]marching upward to [A]Zion,\nThe [D]beautiful city of [G]God.\n\n[Verse 2]\nLet [D]those refuse to sing\nWho never [G]knew our [D]God;\nBut children of the heavenly King, (2)\nMay speak their [D]joys a[G]broad. (2)\n\n[Verse 3]\nThe [D]hill of Zion yields\nA thousand [G]sacred [D]sweets\nBefore we [D]reach the heavenly [A]fields, (2)\nOr walk the [D]golden [G]streets. (2)\n\n[Verse 4]\nThen let our [D]songs abound,\nAnd every [G]tear be [D]dry;\nWe're [D]marching thru Imman[A]uel's ground, (2)\nTo fairer [D]worlds on [G]high. (2)",
+  "lyrics": "[Verse 1]\nCome, we that love the Lord,\nAnd let our joys be known,\nJoin in a song with sweet accord, (2)\nAnd thus surround the throne. (2)\n\n[Chorus]\nWe're marching to Zion,\nBeautiful, beautiful Zion,\nWe're marching upward to Zion,\nThe beautiful city of God.\n\n[Verse 2]\nLet those refuse to sing\nWho never knew our God;\nBut children of the heavenly King, (2)\nMay speak their joys abroad. (2)\n\n[Verse 3]\nThe hill of Zion yields\nA thousand sacred sweets\nBefore we reach the heavenly fields, (2)\nOr walk the golden streets. (2)\n\n[Verse 4]\nThen let our songs abound,\nAnd every tear be dry;\nWe're marching thru Immanuel's ground, (2)\nTo fairer worlds on high. (2)",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship",
+    "Funeral"
+  ]
 }

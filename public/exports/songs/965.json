@@ -1,121 +1,83 @@
 {
-  "id" : 965,
-  "songNumber" : 87,
-  "title" : "I'M FOLLOWING JESUS",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I'm following Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "One step at a time;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "I live for the moment,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "In His love divine,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Why think of tomorrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Just live for today,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "I'm following Jesus,"
-    }, {
-      "text" : "Each step of the way.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "The pathway is narrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "But He leads me on;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I walk in His shadow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "My fears are all gone,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "My spirit grows stronger,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "Each moment, each day,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "For Jesus is leading",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Each step of the way."
-    } ]
-  } ]
+  "id": 965,
+  "songNumber": 87,
+  "title": "I'M FOLLOWING JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I'm following Jesus,"
+        },
+        {
+          "text": "One step at a time;"
+        },
+        {
+          "text": "I live for the moment,"
+        },
+        {
+          "text": "In His love divine,"
+        },
+        {
+          "text": "Why think of tomorrow,"
+        },
+        {
+          "text": "Just live for today,"
+        },
+        {
+          "text": "I'm following Jesus,"
+        },
+        {
+          "text": "Each step of the way."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "The pathway is narrow,"
+        },
+        {
+          "text": "But He leads me on;"
+        },
+        {
+          "text": "I walk in His shadow,"
+        },
+        {
+          "text": "My fears are all gone,"
+        },
+        {
+          "text": "My spirit grows stronger,"
+        },
+        {
+          "text": "Each moment, each day,"
+        },
+        {
+          "text": "For Jesus is leading"
+        },
+        {
+          "text": "Each step of the way."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]I'm following Jesus,\n[A]One step at a [D]time;\n[D]I live for the moment,\n[E]In His love di[A]vine,\nWhy [D]think of tomorrow,\nJust [G]live for today,\nI'm following Jesus,\n[A]Each step of the [D]way.\n\n[Verse 2]\nThe [D]pathway is narrow,\nBut [A]He leads me [D]on;\n[D]I walk in His shadow,\n[E]My fears are all [A]gone,\nMy [D]spirit grows stronger,\nEach [G]moment, each day,\nFor [D]Jesus is leading\nEach step of the way.",
+  "lyrics": "[Verse 1]\nI'm following Jesus,\nOne step at a time;\nI live for the moment,\nIn His love divine,\nWhy think of tomorrow,\nJust live for today,\nI'm following Jesus,\nEach step of the way.\n\n[Verse 2]\nThe pathway is narrow,\nBut He leads me on;\nI walk in His shadow,\nMy fears are all gone,\nMy spirit grows stronger,\nEach moment, each day,\nFor Jesus is leading\nEach step of the way.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

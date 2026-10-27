@@ -1,89 +1,59 @@
 {
-  "id" : 915,
-  "songNumber" : 12,
-  "title" : "ITâ€™S A LOVELY LOVELY NAME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Itâ€™s a lovely, lovely, Name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "The Name of Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Itâ€™s a lovely, lovely, Name"
-    }, {
-      "text" : "From heaven above.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Dispelling the clouds of doubt and fear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Filling the saddened heart with cheer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Itâ€™s a lovely, lovely, Name"
-    }, {
-      "text" : "The Name I love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 915,
+  "songNumber": 12,
+  "title": "IT'S A LOVELY LOVELY NAME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "It's a lovely, lovely, Name,"
+        },
+        {
+          "text": "The Name of Jesus."
+        },
+        {
+          "text": "It's a lovely, lovely, Name"
+        },
+        {
+          "text": "From heaven above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Dispelling the clouds of doubt and fear,"
+        },
+        {
+          "text": "Filling the saddened heart with cheer,"
+        },
+        {
+          "text": "It's a lovely, lovely, Name"
+        },
+        {
+          "text": "The Name I love."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G]It's a lovely[C], lovely[G], Name,\n[G]The Name of [D]Jesus.\nIt's a lovely, lovely, Name\n[G]From [D]heaven a[G]bove.\n\n[Verse 2]\n[G]Dispelling the [C]clouds of [G]doubt and fear,\n[G]Filling the [C]saddened [G]heart with cheer,\nIt's a lovely, lovely, Name\n[G]The [D]Name I [G]love.",
+  "lyrics": "[Verse 1]\nIt's a lovely, lovely, Name,\nThe Name of Jesus.\nIt's a lovely, lovely, Name\nFrom heaven above.\n\n[Verse 2]\nDispelling the clouds of doubt and fear,\nFilling the saddened heart with cheer,\nIt's a lovely, lovely, Name\nThe Name I love.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

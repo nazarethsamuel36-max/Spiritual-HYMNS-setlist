@@ -1,209 +1,113 @@
 {
-  "id" : 800,
-  "songNumber" : 188,
-  "title" : "HOLD TO GOD'S UNCHANGING HAND",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Time is filled with swift transition,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Naught of earth unmoved can stand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Build your hopes on things eternal,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Hold to God's unchanging hand!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Hold to God's unchanging hand !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Hold to God's unchanging hand !"
-    }, {
-      "text" : "Build your hopes on things eternal,"
-    }, {
-      "text" : "Hold to God's unchanging hand !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Trust in Him who will not leave you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Whatsoever years may bring,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "If by earthly friends forsaken,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Still more closely to Him cling!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Covet not this world's vain riches,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "That so rapidly decay,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Seek to gain the heavenly treasures,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "They will never pass away !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "When your journey is completed",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "If to God you have been true,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Fair and bright the home in glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Your enraptured soul will view !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 800,
+  "songNumber": 188,
+  "title": "HOLD TO GOD'S UNCHANGING HAND",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Time is filled with swift transition,"
+        },
+        {
+          "text": "Naught of earth unmoved can stand,"
+        },
+        {
+          "text": "Build your hopes on things eternal,"
+        },
+        {
+          "text": "Hold to Gods unchanging hand!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Hold to Gods unchanging hand !"
+        },
+        {
+          "text": "Hold to Gods unchanging hand !"
+        },
+        {
+          "text": "Build your hopes on things eternal,"
+        },
+        {
+          "text": "Hold to Gods unchanging hand !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Trust in Him who will not leave you,"
+        },
+        {
+          "text": "Whatsoever years may bring,"
+        },
+        {
+          "text": "If by earthly friends forsaken,"
+        },
+        {
+          "text": "Still more closely to Him cling!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Covet not this worlds vain riches,"
+        },
+        {
+          "text": "That so rapidly decay,"
+        },
+        {
+          "text": "Seek to gain the heavenly treasures,"
+        },
+        {
+          "text": "They will never pass away !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "When your journey is completed"
+        },
+        {
+          "text": "If to God you have been true,"
+        },
+        {
+          "text": "Fair and bright the home in glory,"
+        },
+        {
+          "text": "Your enraptured soul will view !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Time is filled with swift tran[G]sition,\n[D]Naught of earth unmoved can [A]stand,\n[D]Build your hopes on things e[G]ternal,\n[D]Hold to Gods un[A]changing [D]hand!\n\n[Chorus]\n[D]Hold to Gods un[G][A]changing [D]hand !\nHold to Gods unchanging hand !\nBuild your hopes on things eternal,\nHold to Gods unchanging hand !\n\n[Verse 2]\n[D]Trust in Him who will not [G]leave you,\n[D]Whatsoever years may [A]bring,\n[D]If by earthly friends for[G]saken,\n[D]Still more closely [A]to Him [D]cling!\n\n[Verse 3]\n[D]Covet not this worlds vain [G]riches,\n[D]That so rapidly de[A]cay,\n[D]Seek to gain the heavenly [G]treasures,\n[D]They will never [A]pass a[D]way !\n\n[Verse 4]\n[D]When your journey is com[G]pleted\n[D]If to God you have been [A]true,\n[D]Fair and bright the home in [G]glory,\n[D]Your enraptured [A]soul will [D]view !",
+  "lyrics": "[Verse 1]\nTime is filled with swift transition,\nNaught of earth unmoved can stand,\nBuild your hopes on things eternal,\nHold to Gods unchanging hand!\n\n[Chorus]\nHold to Gods unchanging hand !\nHold to Gods unchanging hand !\nBuild your hopes on things eternal,\nHold to Gods unchanging hand !\n\n[Verse 2]\nTrust in Him who will not leave you,\nWhatsoever years may bring,\nIf by earthly friends forsaken,\nStill more closely to Him cling!\n\n[Verse 3]\nCovet not this worlds vain riches,\nThat so rapidly decay,\nSeek to gain the heavenly treasures,\nThey will never pass away !\n\n[Verse 4]\nWhen your journey is completed\nIf to God you have been true,\nFair and bright the home in glory,\nYour enraptured soul will view !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

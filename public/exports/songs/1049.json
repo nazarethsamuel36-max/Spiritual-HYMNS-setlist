@@ -1,172 +1,95 @@
 {
-  "id" : 1049,
-  "songNumber" : 71,
-  "title" : "होके कुर्बान हर गुनाह से",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "होके कुर्बान हर गुनाह से,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "तूने मुझको है बचाया,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हर खुशी मिली तुझ में मसीह,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "जब से दिल में तू है आया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "इस जहाँ की कोई दौलत",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "लगती नहीं प्यारी मुझे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "जब से प्यारा-प्यारा तेरा नाम,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "मेरे होंठों पर है आया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "क्या कोई रोक सकेगा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मुझको आने से तेरे करीब (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "जब भी चलती आंधी कोई,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "साथ अपने तुझे पाया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "जिन्दगी मेरी, मेरे खुदा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तेरे आने की राह ताके (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "जल्दी आना संग मैं चलूँ,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "तूने जो घर है बनाया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1049,
+  "songNumber": 71,
+  "title": "होके कुर्बान हर गुनाह से",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "होके कुर्बान हर गुनाह से,"
+        },
+        {
+          "text": "तूने मुझको है बचाया,"
+        },
+        {
+          "text": "हर खुशी मिली तुझ में मसीह,"
+        },
+        {
+          "text": "जब से दिल में तू है आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस जहाँ की कोई दौलत"
+        },
+        {
+          "text": "लगती नहीं प्यारी मुझे (2)"
+        },
+        {
+          "text": "जब से प्यारा-प्यारा तेरा नाम,"
+        },
+        {
+          "text": "मेरे होंठों पर है आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्या कोई रोक सकेगा,"
+        },
+        {
+          "text": "मुझको आने से तेरे करीब (2)"
+        },
+        {
+          "text": "जब भी चलती आंधी कोई,"
+        },
+        {
+          "text": "साथ अपने तुझे पाया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिन्दगी मेरी, मेरे खुदा"
+        },
+        {
+          "text": "तेरे आने की राह ताके (2)"
+        },
+        {
+          "text": "जल्दी आना संग मैं चलूँ,"
+        },
+        {
+          "text": "तूने जो घर है बनाया ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]                          [G]होके कुर्बान हर गु[C]नाह से,\n[D]तूने मुझको है ब[G]चाया,\n[C]हर खुशी मिली तुझ में म[G]सीह,\n[D]जब से दिल में तू है आ[G]या ।\n\n[Verse]\n[G]इस जहाँ की [C]कोई दौलत\n[D]लगती नहीं प्यारी मु[G]झे (2)\n[C]जब से प्यारा-प्यारा तेरा [G]नाम,\n[D]मेरे होंठों पर है आ[G]या ।\n\n[Verse]\n[G]क्या कोई रोक स[C]केगा,\n[D]मुझको आने से तेरे क[G]रीब (2)\n[C]जब भी चलती आंधी को[G]ई,\n[D]साथ अपने तुझे पा[G]या ।\n\n[Verse]\n[G]जिन्दगी मेरी, [C]मेरे खुदा\n[D]तेरे आने की राह ता[G]के (2)\n[C]जल्दी आना संग मैं च[G]लूँ,\n[D]तूने जो घर है बना[G]या ।",
+  "lyrics": "होके कुर्बान हर गुनाह से,\nतूने मुझको है बचाया,\nहर खुशी मिली तुझ में मसीह,\nजब से दिल में तू है आया ।\n\n[Verse]\nइस जहाँ की कोई दौलत\nलगती नहीं प्यारी मुझे (2)\nजब से प्यारा-प्यारा तेरा नाम,\nमेरे होंठों पर है आया ।\n\n[Verse]\nक्या कोई रोक सकेगा,\nमुझको आने से तेरे करीब (2)\nजब भी चलती आंधी कोई,\nसाथ अपने तुझे पाया ।\n\n[Verse]\nजिन्दगी मेरी, मेरे खुदा\nतेरे आने की राह ताके (2)\nजल्दी आना संग मैं चलूँ,\nतूने जो घर है बनाया ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T10:59:58.467057+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

@@ -1,98 +1,80 @@
 {
-  "id" : 1045,
-  "songNumber" : 67,
-  "title" : "यहोवा निस्सी",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यहोवा निस्सी (6)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धन्य तेरा नाम, धन्य धन्य धन्य तेरा नाम ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 15
-      }, {
-        "chord" : "E",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "शत्रुओकी सेना को हराता तू,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जय का झण्डा है हमारा तू,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धन्य धन्य धन्य तेरा नाम ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "शैतान के सीर को कुचल के तू,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "मृत्यु पे जयवंत हुआ है तू",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धन्य धन्य धन्य तेरा नाम ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "जय के उत्सव में लिए चलाता तू,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "सुगंध वचन हमसे है फैलाता तू,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धन्य धन्य धन्य तेरा नाम ।"
-    } ]
-  } ]
+  "id": 1045,
+  "songNumber": 67,
+  "title": "यहोवा निस्सी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यहोवा निस्सी (6)"
+        },
+        {
+          "text": "धन्य तेरा नाम, धन्य धन्य धन्य तेरा नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "शत्रुओकी सेना को हराता तू,"
+        },
+        {
+          "text": "जय का झण्डा है हमारा तू,"
+        },
+        {
+          "text": "धन्य धन्य धन्य तेरा नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "शैतान के सीर को कुचल के तू,"
+        },
+        {
+          "text": "मृत्यु पे जयवंत हुआ है तू"
+        },
+        {
+          "text": "धन्य धन्य धन्य तेरा नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जय के उत्सव में लिए चलाता तू,"
+        },
+        {
+          "text": "सुगंध वचन हमसे है फैलाता तू,"
+        },
+        {
+          "text": "धन्य धन्य धन्य तेरा नाम ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[E]यहोवा निस्सी (6)\r\n[A]धन्य तेरा नाम, [B]धन्य धन्य धन्य तेरा [E]नाम ।\r\n\r\n[Verse]\r\n[E]शत्रुओकी सेना को हराता तू,\r\n[E]जय का झण्डा है हमारा तू,\r\n[A]धन्य धन्य [B]धन्य तेरा [E]नाम ।\r\n\r\n[Verse]\r\n[E]शैतान के सीर को कुचल के तू,\r\n[E]मृत्यु पे जयवंत हुआ है तू\r\nधन्य धन्य धन्य तेरा नाम ।\r\n\r\n[Verse]\r\n[E]जय के उत्सव में लिए चलाता तू,\r\n[E]सुगंध वचन हमसे है फैलाता तू,\r\nधन्य धन्य धन्य तेरा नाम ।",
+  "lyrics": "[Verse]\r\nयहोवा निस्सी (6)\r\nधन्य तेरा नाम, धन्य धन्य धन्य तेरा नाम ।\r\n\r\n[Verse]\r\nशत्रुओकी सेना को हराता तू,\r\nजय का झण्डा है हमारा तू,\r\nधन्य धन्य धन्य तेरा नाम ।\r\n\r\n[Verse]\r\nशैतान के सीर को कुचल के तू,\r\nमृत्यु पे जयवंत हुआ है तू\r\nधन्य धन्य धन्य तेरा नाम ।\r\n\r\n[Verse]\r\nजय के उत्सव में लिए चलाता तू,\r\nसुगंध वचन हमसे है फैलाता तू,\r\nधन्य धन्य धन्य तेरा नाम ।",
+  "is_active": true,
+  "updated_at": "2026-09-09T14:22:11.248714+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

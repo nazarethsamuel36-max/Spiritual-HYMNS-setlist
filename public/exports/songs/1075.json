@@ -1,176 +1,102 @@
 {
-  "id" : 1075,
-  "songNumber" : 97,
-  "title" : "स्वर्गीय आशीष दे",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "स्वर्गीय आशीष दे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "स्वर्ग को तू खोल,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "हाथ अपना बढा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "स्वर्गीय आशीष दे ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आत्मा की चंगाई दे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "आत्मा पवित्र शुद्ध कर चरित्र ,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "आत्मा की चंगाई दे ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "यीशु मेरे दिल में आ (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "खोलता हूँ द्वार करता इकरार,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "यीशु मेरे दिल में आ ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "पवित्र आत्मा तू दे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "भर दे मुझे सामर्थ से,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "पवित्र आत्मा तू दे ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "हमको ग्रहण कर प्रभु (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "जैसे भी है हम है तेरे,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हमको ग्रहण कर प्रभु ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1075,
+  "songNumber": 97,
+  "title": "स्वर्गीय आशीष दे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "स्वर्गीय आशीष दे (2)"
+        },
+        {
+          "text": "स्वर्ग को तू खोल,"
+        },
+        {
+          "text": "हाथ अपना बढा,"
+        },
+        {
+          "text": "स्वर्गीय आशीष दे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आत्मा की चंगाई दे (2)"
+        },
+        {
+          "text": "आत्मा पवित्र शुद्ध कर चरित्र ,"
+        },
+        {
+          "text": "आत्मा की चंगाई दे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु मेरे दिल में आ (2)"
+        },
+        {
+          "text": "खोलता हूँ द्वार करता इकरार,"
+        },
+        {
+          "text": "यीशु मेरे दिल में आ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र आत्मा तू दे (2)"
+        },
+        {
+          "text": "भर दे मुझे सामर्थ से,"
+        },
+        {
+          "text": "पवित्र आत्मा तू दे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हमको ग्रहण कर प्रभु (2)"
+        },
+        {
+          "text": "जैसे भी है हम है तेरे,"
+        },
+        {
+          "text": "हमको ग्रहण कर प्रभु ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]स्वर्गीय आ[F#m]शीष दे (2)\r\n[Bm]स्वर्ग को तू [G]खोल,\r\nहाथ अपना ब[D]ढा,\r\n[A]स्वर्गीय आ[G]शीष [D]दे ।\r\n\r\n[Verse]\r\n[D]आत्मा की चंगा[F#m]ई दे (2)\r\n[Bm]आत्मा पवित्र [G]शुद्ध कर चरित्र ,\r\n[A]आत्मा की चंगा[D]ई दे ।\r\n\r\n[Verse]\r\n[D]यीशु मेरे दिल में [F#m]आ (2)\r\n[Bm]खोलता हूँ [G]द्वार करता इकरार,\r\n[A]यीशु मेरे दिल में [D]आ ।\r\n\r\n[Verse]\r\n[D]पवित्र आत्मा तू [F#m]दे (2)\r\n[Bm]भर दे मुझे [G]सामर्थ से,\r\n[A]पवित्र आत्मा तू [D]दे ।\r\n\r\n[Verse]\r\n[D]हमको ग्रहण कर प्र[F#m]भु (2)\r\n[Bm]जैसे भी है हम [G]है तेरे,\r\n[A]हमको ग्रहण कर प्र[D]भु ।",
+  "lyrics": "[Verse]\r\nस्वर्गीय आशीष दे (2)\r\nस्वर्ग को तू खोल,\r\nहाथ अपना बढा,\r\nस्वर्गीय आशीष दे ।\r\n\r\n[Verse]\r\nआत्मा की चंगाई दे (2)\r\nआत्मा पवित्र शुद्ध कर चरित्र ,\r\nआत्मा की चंगाई दे ।\r\n\r\n[Verse]\r\nयीशु मेरे दिल में आ (2)\r\nखोलता हूँ द्वार करता इकरार,\r\nयीशु मेरे दिल में आ ।\r\n\r\n[Verse]\r\nपवित्र आत्मा तू दे (2)\r\nभर दे मुझे सामर्थ से,\r\nपवित्र आत्मा तू दे ।\r\n\r\n[Verse]\r\nहमको ग्रहण कर प्रभु (2)\r\nजैसे भी है हम है तेरे,\r\nहमको ग्रहण कर प्रभु ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Blessing",
+    "Worship",
+    "Prayer"
+  ]
 }

@@ -1,104 +1,56 @@
 {
-  "id" : 940,
-  "songNumber" : 61,
-  "title" : "CHANGE MY HEART O LORD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Change my heart, O Lord,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "Dm",
-        "position" : 19
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "Am",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Make it ever new,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "Am",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Change my heart, O Lord,"
-    }, {
-      "text" : "May I be like You.",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "You are the potter, I am the clay,",
-      "chords" : [ {
-        "chord" : "E7",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 12
-      }, {
-        "chord" : "Dm",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Mould me and make me,",
-      "chords" : [ {
-        "chord" : "E7",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "This is what I pray.",
-      "chords" : [ {
-        "chord" : "D7",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "G7",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 940,
+  "songNumber": 61,
+  "title": "CHANGE MY HEART O LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Change my heart, O Lord,"
+        },
+        {
+          "text": "Make it ever new,"
+        },
+        {
+          "text": "Change my heart, O Lord,"
+        },
+        {
+          "text": "May I be like You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "You are the potter, I am the clay,"
+        },
+        {
+          "text": "Mould me and make me,"
+        },
+        {
+          "text": "This is what I pray."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D][Em]Change my [F#m][A]heart, O [Em][D]Lord,[A][Bm]\r\nMake it ever [D]new,[Bm]\r\nChange my heart, O Lord,\r\nMay [Em]I be [A]like [D]You.\r\n\r\n[Verse 1]\r\n[F#7]You are the [Bm]potter, [Em]I am the [A]clay,\r\n[F#7]Mould me and [Bm]make me,\r\n[E7]This is what I [A]pray.[A7]",
+  "lyrics": "[Chorus]\r\nChange my heart, O Lord,\r\nMake it ever new,\r\nChange my heart, O Lord,\r\nMay I be like You.\r\n\r\n[Verse 1]\r\nYou are the potter, I am the clay,\r\nMould me and make me,\r\nThis is what I pray.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

@@ -1,282 +1,140 @@
 {
-  "id" : 793,
-  "songNumber" : 181,
-  "title" : "I'M REJOICING NIGHT AND DAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I'm rejoicing night and day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "As I walk the pilgrim way",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For the hand of God in all my life I see",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "And the reason of my bliss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Yes, the secret all is this",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "That the Comforter abides with me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "He abides ... He abides ...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Hallelujah, He abides with me !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'm rejoicing night and day"
-    }, {
-      "text" : "As I walk the narrow way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "For the Comforter abides with me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Once my heart was full of sin",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Once I had no peace within,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Till I heard how Jesus died upon the tree.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Then I fell down at His feet",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "And there came a peace so sweet,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Now the Comforter abides with me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "He is with me everywhere,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And He knows my every care,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "I'm as happy as a bird and just as free :",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "For the Spirit has control,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Jesus satisfies my soul,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Since the Comforter abides with me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "There's no thirsting for the things",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Of the world they've taken wings,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Long ago I gave them up, and instantly",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "All my night was turned to day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "All my burdens rolled away,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Now the Comforter abides with me."
-    } ]
-  } ]
+  "id": 793,
+  "songNumber": 181,
+  "title": "I'M REJOICING NIGHT AND DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Im rejoicing night and day"
+        },
+        {
+          "text": "As I walk the pilgrim way"
+        },
+        {
+          "text": "For the hand of God in all my life I see"
+        },
+        {
+          "text": "And the reason of my bliss"
+        },
+        {
+          "text": "Yes, the secret all is this"
+        },
+        {
+          "text": "That the Comforter abides with me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "He abides ... He abides ..."
+        },
+        {
+          "text": "Hallelujah, He abides with me !"
+        },
+        {
+          "text": "Im rejoicing night and day"
+        },
+        {
+          "text": "As I walk the narrow way,"
+        },
+        {
+          "text": "For the Comforter abides with me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Once my heart was full of sin"
+        },
+        {
+          "text": "Once I had no peace within,"
+        },
+        {
+          "text": "Till I heard how Jesus died upon the tree."
+        },
+        {
+          "text": "Then I fell down at His feet"
+        },
+        {
+          "text": "And there came a peace so sweet,"
+        },
+        {
+          "text": "Now the Comforter abides with me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "He is with me everywhere,"
+        },
+        {
+          "text": "And He knows my every care,"
+        },
+        {
+          "text": "Im as happy as a bird and just as free :"
+        },
+        {
+          "text": "For the Spirit has control,"
+        },
+        {
+          "text": "Jesus satisfies my soul,"
+        },
+        {
+          "text": "Since the Comforter abides with me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Theres no thirsting for the things"
+        },
+        {
+          "text": "Of the world theyve taken wings,"
+        },
+        {
+          "text": "Long ago I gave them up, and instantly"
+        },
+        {
+          "text": "All my night was turned to day,"
+        },
+        {
+          "text": "All my burdens rolled away,"
+        },
+        {
+          "text": "Now the Comforter abides with me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]Im re[F]joicing night and day\r\nAs I walk the [Bb]pilgrim [F]way\r\nFor the [F]hand of God in all my [C]life I [F]see\r\nAnd the [F]reason of my bliss\r\nYes, the [Bb]secret all is [F]this\r\nThat the [F]Comforter a[C]bides with [F]me.\r\n\r\n[Chorus]\r\nHe a[F]bides ... He a[Bb]bides ...\r\nHalle[F]lujah, He abides with [C]me !\r\nIm rejoicing night and day\r\nAs I [Bb]walk the narrow [F]way,\r\nFor the [F]Comforter a[C]bides with [F]me.\r\n\r\n[Verse 2]\r\n[F]Once my heart was full of sin\r\nOnce I [Bb]had no peace with[F]in,\r\nTill I [F]heard how Jesus [C]died upon the [F]tree.\r\nThen I [F]fell down at His feet\r\nAnd there [Bb]came a peace so [F]sweet,\r\nNow the [F]Comforter a[C]bides with [F]me.\r\n\r\n[Verse 3]\r\n[F]He is with me everywhere,\r\nAnd He [Bb]knows my every [F]care,\r\nIm as [F]happy as a [C]bird and just as [F]free :\r\nFor the [F]Spirit has control,\r\n[Bb]Jesus satisfies my [F]soul,\r\nSince the [F]Comforter a[C]bides with [F]me.\r\n\r\n[Verse 4]\r\nTheres no [F]thirsting for the things\r\nOf the [Bb]world theyve taken [F]wings,\r\nLong a[F]go I gave them [C]up, and instant[F]ly\r\nAll my [F]night was turned to day,\r\nAll my [Bb]burdens rolled a[F]way,\r\nNow the Comforter abides with me.",
+  "lyrics": "[Verse 1]\r\nIm rejoicing night and day\r\nAs I walk the pilgrim way\r\nFor the hand of God in all my life I see\r\nAnd the reason of my bliss\r\nYes, the secret all is this\r\nThat the Comforter abides with me.\r\n\r\n[Chorus]\r\nHe abides ... He abides ...\r\nHallelujah, He abides with me !\r\nIm rejoicing night and day\r\nAs I walk the narrow way,\r\nFor the Comforter abides with me.\r\n\r\n[Verse 2]\r\nOnce my heart was full of sin\r\nOnce I had no peace within,\r\nTill I heard how Jesus died upon the tree.\r\nThen I fell down at His feet\r\nAnd there came a peace so sweet,\r\nNow the Comforter abides with me.\r\n\r\n[Verse 3]\r\nHe is with me everywhere,\r\nAnd He knows my every care,\r\nIm as happy as a bird and just as free :\r\nFor the Spirit has control,\r\nJesus satisfies my soul,\r\nSince the Comforter abides with me.\r\n\r\n[Verse 4]\r\nTheres no thirsting for the things\r\nOf the world theyve taken wings,\r\nLong ago I gave them up, and instantly\r\nAll my night was turned to day,\r\nAll my burdens rolled away,\r\nNow the Comforter abides with me.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

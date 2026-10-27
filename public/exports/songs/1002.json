@@ -1,138 +1,59 @@
 {
-  "id" : 1002,
-  "songNumber" : 24,
-  "title" : "खुल जायेगी किताबे, जब भी हिसाब होगा ।",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "खुल जायेगी किताबे, जब भी हिसाब होगा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "इन्साफ का तराज़ू यीशु के हाथ होगा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "जो भी तू कर रहा है, यीशु वह देखता है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "हरपल का तुझको इन्सा, देना हिसाब होगा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "आजा अभी भी मुड़कर, यीशु बुला रहा है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "वरना ये याद करले, तेरा ही नाश होगा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "मिट जायेगी ये दुनियाँ, जिसमें तू जी रहा हैं ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "साँसो के टुटते ही, तेरे हाथ कुछ न होगा ।"
-    } ]
-  } ]
+  "id": 1002,
+  "songNumber": 24,
+  "title": "खुल जायेगी किताबे, जब भी हिसाब होगा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "खुल जायेगी किताबे, जब भी हिसाब होगा ।"
+        },
+        {
+          "text": "इन्साफ का तराज़ू यीशु के हाथ होगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जो भी तू कर रहा है, यीशु वह देखता है ।"
+        },
+        {
+          "text": "हरपल का तुझको इन्सा, देना हिसाब होगा"
+        },
+        {
+          "text": "आजा अभी भी मुड़कर, यीशु बुला रहा है ।"
+        },
+        {
+          "text": "वरना ये याद करले, तेरा ही नाश होगा ।"
+        },
+        {
+          "text": "मिट जायेगी ये दुनियाँ, जिसमें तू जी रहा हैं ।"
+        },
+        {
+          "text": "साँसो के टुटते ही, तेरे हाथ कुछ न होगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [D]खुल जायेगी कि[A]ताबे, जब भी हि[D]साब होगा ।\r\n[D]इन्साफ का त[A]राज़ू [G]यीशु के [A]हाथ हो[D]गा ।\r\n[Verse]\r\n[D]जो भी तू कर [A]रहा है, [G]यीशु वह [A]देखता [D]है ।\r\n[D]हरपल का तुझको [A]इन्सा, [G]देना हि[A]साब हो[D]गा\r\n\r\n[D]आजा अभी भी [A]मुड़कर, [G]यीशु बु[A]ला रहा [D]है ।\r\n[D]वरना ये याद [A]करले, [G]तेरा ही [A]नाश हो[D]गा ।\r\n\r\n[D]मिट जायेगी ये [A]दुनियाँ, [G]जिसमें तू [A]जी रहा [D]हैं ।\r\nसाँसो के टुटते ही, तेरे हाथ कुछ न होगा ।",
+  "lyrics": "[Chorus]\r\n खुल जायेगी किताबे, जब भी हिसाब होगा ।\r\nइन्साफ का तराज़ू यीशु के हाथ होगा ।\r\n[Verse]\r\nजो भी तू कर रहा है, यीशु वह देखता है ।\r\nहरपल का तुझको इन्सा, देना हिसाब होगा\r\n\r\nआजा अभी भी मुड़कर, यीशु बुला रहा है ।\r\nवरना ये याद करले, तेरा ही नाश होगा ।\r\n\r\nमिट जायेगी ये दुनियाँ, जिसमें तू जी रहा हैं ।\r\nसाँसो के टुटते ही, तेरे हाथ कुछ न होगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

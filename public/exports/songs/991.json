@@ -1,110 +1,64 @@
 {
-  "id" : 991,
-  "songNumber" : 13,
-  "title" : "जय देने वाले प्रभु यीशु को",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "जय देने वाले प्रभु यीशु को,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "कोटी कोटी धन्यवाद।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "जीवन देने वाले प्रभु यीशु को,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जीवन भर धन्यवाद।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "हाल्लेलुयाह, हाल्लेलुयाह, गायेंगे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "आत्मासे भरकर गायेंगे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "यीशु जिंदा है, वह आनेवाला है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "सामर्थ देनेवाले ... आत्मा देनेवाले ...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 991,
+  "songNumber": 13,
+  "title": "जय देने वाले प्रभु यीशु को",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "जय देने वाले प्रभु यीशु को,"
+        },
+        {
+          "text": "कोटी कोटी धन्यवाद।"
+        },
+        {
+          "text": "जीवन देने वाले प्रभु यीशु को,"
+        },
+        {
+          "text": "जीवन भर धन्यवाद।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हाल्लेलुयाह, हाल्लेलुयाह, गायेंगे"
+        },
+        {
+          "text": "आत्मासे भरकर गायेंगे ,"
+        },
+        {
+          "text": "यीशु जिंदा है, वह आनेवाला है ।"
+        },
+        {
+          "text": "सामर्थ देनेवाले ... आत्मा देनेवाले ..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [D]जय देने वाले प्रभु यीशु को,\r\n[G]कोटी कोटी ध[A]न्यवा[D]द।\r\n[D]जीवन देने वाले प्रभु यीशु को,\r\n[G]जीवन भर ध[A]न्यवा[D]द।\r\n[Verse]\r\n[Verse]\r\n[D]हाल्लेलुयाह, हाल्लेलु[G]याह, गा[D]येंगे\r\n[G]आत्मासे भरकर [A]गायेंगे [D],\r\n[D]यीशु जिंदा है, [G]वह आने[A]वाला [D]है ।\r\n[D]सामर्थ देनेवा[G]ले ... [A]आत्मा देनेवा[D]ले ...",
+  "lyrics": "[Chorus]\r\n जय देने वाले प्रभु यीशु को,\r\nकोटी कोटी धन्यवाद।\r\nजीवन देने वाले प्रभु यीशु को,\r\nजीवन भर धन्यवाद।\r\n[Verse]\r\n[Verse]\r\nहाल्लेलुयाह, हाल्लेलुयाह, गायेंगे\r\nआत्मासे भरकर गायेंगे ,\r\nयीशु जिंदा है, वह आनेवाला है ।\r\nसामर्थ देनेवाले ... आत्मा देनेवाले ...",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

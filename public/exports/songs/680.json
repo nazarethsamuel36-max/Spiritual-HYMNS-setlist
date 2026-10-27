@@ -1,258 +1,119 @@
 {
-  "id" : 680,
-  "songNumber" : 373,
-  "title" : "THERE IS A LAND OF MILK AND HONEY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "There is a land of milk and honey.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "There is a land",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Where we wonâ€™t need money,"
-    }, {
-      "text" : "There is a land"
-    }, {
-      "text" : "Shining with Jasper,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "There we shall see our blessed Saviour.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And thatâ€™s the reason"
-    }, {
-      "text" : "We shout â€œhallelujahâ€"
-    }, {
-      "text" : "Praising the King across the river.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "That shining river",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Where the saints will gather",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "There we shall see our blessed Messiah.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Elijah has come, he has done his work already.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "As John has said,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "The Bride has made ready,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And now we are waiting",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "For the coming of Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "For that blessed day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "When the Lamb shall take us.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Our hopes are bright, our lamps are burning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "And day by day our hearts are yearning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "This is the evening,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "He will come in the morning.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Then we shall wait until the morning.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 680,
+  "songNumber": 373,
+  "title": "THERE IS A LAND OF MILK AND HONEY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There is a land of milk and honey."
+        },
+        {
+          "text": "There is a land"
+        },
+        {
+          "text": "Where we won't need money,"
+        },
+        {
+          "text": "There is a land"
+        },
+        {
+          "text": "Shining with Jasper,"
+        },
+        {
+          "text": "There we shall see our blessed Saviour."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And that's the reason"
+        },
+        {
+          "text": "We shout \"hallelujah\""
+        },
+        {
+          "text": "Praising the King across the river."
+        },
+        {
+          "text": "That shining river"
+        },
+        {
+          "text": "Where the saints will gather"
+        },
+        {
+          "text": "There we shall see our blessed Messiah."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Elijah has come, he has done his work already."
+        },
+        {
+          "text": "As John has said,"
+        },
+        {
+          "text": "The Bride has made ready,"
+        },
+        {
+          "text": "And now we are waiting"
+        },
+        {
+          "text": "For the coming of Jesus,"
+        },
+        {
+          "text": "For that blessed day"
+        },
+        {
+          "text": "When the Lamb shall take us."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Our hopes are bright, our lamps are burning,"
+        },
+        {
+          "text": "And day by day our hearts are yearning,"
+        },
+        {
+          "text": "This is the evening,"
+        },
+        {
+          "text": "He will come in the morning."
+        },
+        {
+          "text": "Then we shall wait until the morning."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nThere is a [D]land of [G]milk and [D]honey.\nThere is a [G][D]land\nWhere we won't need money,\nThere is a land\n[G]Shining with [D]Jasper,\n[D]There we shall [G]see our [A]blessed [D]Saviour.\n\n[Chorus]\nAnd that's the reason\nWe shout \"hallelujah\"\n[D]Praising the [G]King a[D]cross the [A]river.\nThat [D]shining [G]river\nWhere the [D]saints will [G]gather\n[D]There we shall [G]see our [A]blessed Mes[D]siah.\n\n[Verse 2]\nE[D]lijah has [G]come, he has [D]done his work al[A]ready.\nAs [D]John has [G]said,\nThe [D]Bride has made [A]ready,\nAnd [D]now we are [G]waiting\nFor the [D]coming of [G]Jesus,\nFor [D]that blessed [G]day\nWhen the [A]Lamb shall [D]take us.\n\n[Verse 3]\nOur [D]hopes are [G]bright, our [D]lamps are [A]burning,\nAnd [D]day by [G]day our [D]hearts are [A]yearning,\nThis is the [D]evening,\nHe will [G]come in the [A]morning.\nThen [D]we shall [G]wait un[A]til the [D]morning.",
+  "lyrics": "[Verse 1]\nThere is a land of milk and honey.\nThere is a land\nWhere we won't need money,\nThere is a land\nShining with Jasper,\nThere we shall see our blessed Saviour.\n\n[Chorus]\nAnd that's the reason\nWe shout \"hallelujah\"\nPraising the King across the river.\nThat shining river\nWhere the saints will gather\nThere we shall see our blessed Messiah.\n\n[Verse 2]\nElijah has come, he has done his work already.\nAs John has said,\nThe Bride has made ready,\nAnd now we are waiting\nFor the coming of Jesus,\nFor that blessed day\nWhen the Lamb shall take us.\n\n[Verse 3]\nOur hopes are bright, our lamps are burning,\nAnd day by day our hearts are yearning,\nThis is the evening,\nHe will come in the morning.\nThen we shall wait until the morning.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

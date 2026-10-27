@@ -1,123 +1,71 @@
 {
-  "id" : 1079,
-  "songNumber" : 101,
-  "title" : "हे यहोवा बल मेरे, सदा है सच्चे मार्ग तेरे",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "हे यहोवा बल मेरे, सदा है सच्चे मार्ग तेरे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "करता है सिद्ध सब मार्ग मेरे - हे यहोवा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "दयावन्तों पर दयालू बनता,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "ढेढों पर तू तिरछा बनता,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "घमण्डियों को नीचा करता,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "तू सर्वज्ञान और सामर्थ्य रखता ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तू ही मेरा दिपक जलाता,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "अंधियारे को दूर हटाता,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "अपनी शक्ति का हाथ बढाता,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "अपनी सामर्थ से मुझको उठाता ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 1079,
+  "songNumber": 101,
+  "title": "हे यहोवा बल मेरे, सदा है सच्चे मार्ग तेरे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "हे यहोवा बल मेरे, सदा है सच्चे मार्ग तेरे,"
+        },
+        {
+          "text": "करता है सिद्ध सब मार्ग मेरे - हे यहोवा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दयावन्तों पर दयालू बनता,"
+        },
+        {
+          "text": "ढेढों पर तू तिरछा बनता,"
+        },
+        {
+          "text": "घमण्डियों को नीचा करता,"
+        },
+        {
+          "text": "तू सर्वज्ञान और सामर्थ्य रखता ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तू ही मेरा दिपक जलाता,"
+        },
+        {
+          "text": "अंधियारे को दूर हटाता,"
+        },
+        {
+          "text": "अपनी शक्ति का हाथ बढाता,"
+        },
+        {
+          "text": "अपनी सामर्थ से मुझको उठाता ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]हे यहोवा [C]बल मेरे, [G]सदा है सच्चे [D]मार्ग तेरे,\n[C]करता है सिद्ध सब [D]मार्ग मेरे - हे य[G]होवा ।\n\n[Verse]\n[G]दयावन्तों पर दयालू [C]बनता,\n[D]ढेढों पर तू तिरछा [G]बनता,\n[G]घमण्डियों को नीचा [C]करता,\n[D]तू सर्वज्ञान और सामर्थ्य [G]रखता ।\n\n[Verse]\n[G]तू ही मेरा दिपक ज[C]लाता,\n[D]अंधियारे को दूर ह[G]टाता,\n[G]अपनी शक्ति का हाथ ब[C]ढाता,\n[D]अपनी सामर्थ से मुझको उ[G]ठाता ।",
+  "lyrics": "हे यहोवा बल मेरे, सदा है सच्चे मार्ग तेरे,\nकरता है सिद्ध सब मार्ग मेरे - हे यहोवा ।\n\n[Verse]\nदयावन्तों पर दयालू बनता,\nढेढों पर तू तिरछा बनता,\nघमण्डियों को नीचा करता,\nतू सर्वज्ञान और सामर्थ्य रखता ।\n\n[Verse]\nतू ही मेरा दिपक जलाता,\nअंधियारे को दूर हटाता,\nअपनी शक्ति का हाथ बढाता,\nअपनी सामर्थ से मुझको उठाता ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

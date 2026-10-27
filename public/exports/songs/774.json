@@ -1,197 +1,116 @@
 {
-  "id" : 774,
-  "songNumber" : 162,
-  "title" : "MINE EYES HAVE SEEN THE GLORY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Mine eyes have seen the glory of the coming of the Lord;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "He is trampling out the vintage where the grapes of wrath are stored;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 62
-      } ]
-    }, {
-      "text" : "He hath loosed the fateful lightning of His terrible swift sword;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 44
-      }, {
-        "chord" : "D",
-        "position" : 59
-      } ]
-    }, {
-      "text" : "His truth is marching on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Glory ! glory, hallelujah !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Glory ! glory, hallelujah !"
-    }, {
-      "text" : "Glory ! glory, hallelujah !"
-    }, {
-      "text" : "His Truth is marching on."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I have seen Him in the watchfires of a hundred circling camps;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "They have builded Him an altar in the evening dews and damps;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 55
-      } ]
-    }, {
-      "text" : "I can read His righteous sentence by the dim and flaring lamps;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 41
-      }, {
-        "chord" : "D",
-        "position" : 57
-      } ]
-    }, {
-      "text" : "His day is marching on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "He has sounded forth the trumpet that shall never sound retreat;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "He is sifting out the hearts of men before His judgment seat;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 56
-      } ]
-    }, {
-      "text" : "O be swift, my soul, to answer Him !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "be jubilant, my feet !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Our God is marching on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "In the beauty of the lilies Christ was born across the sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "With a glory in His bosom that transfigures you and me;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "As He died to make men holy, let us die to make men free;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "While God is marching on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 774,
+  "songNumber": 162,
+  "title": "MINE EYES HAVE SEEN THE GLORY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Mine eyes have seen the glory of the coming of the Lord;"
+        },
+        {
+          "text": "He is trampling out the vintage where the grapes of wrath are stored;"
+        },
+        {
+          "text": "He hath loosed the fateful lightning of His terrible swift sword;"
+        },
+        {
+          "text": "His truth is marching on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Glory ! glory, hallelujah !"
+        },
+        {
+          "text": "Glory ! glory, hallelujah !"
+        },
+        {
+          "text": "Glory ! glory, hallelujah !"
+        },
+        {
+          "text": "His Truth is marching on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I have seen Him in the watchfires of a hundred circling camps;"
+        },
+        {
+          "text": "They have builded Him an altar in the evening dews and damps;"
+        },
+        {
+          "text": "I can read His righteous sentence by the dim and flaring lamps;"
+        },
+        {
+          "text": "His day is marching on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "He has sounded forth the trumpet that shall never sound retreat;"
+        },
+        {
+          "text": "He is sifting out the hearts of men before His judgment seat;"
+        },
+        {
+          "text": "O be swift, my soul, to answer Him !"
+        },
+        {
+          "text": "be jubilant, my feet !"
+        },
+        {
+          "text": "Our God is marching on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "In the beauty of the lilies Christ was born across the sea,"
+        },
+        {
+          "text": "With a glory in His bosom that transfigures you and me;"
+        },
+        {
+          "text": "As He died to make men holy, let us die to make men free;"
+        },
+        {
+          "text": "While God is marching on."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nMine [D]eyes have seen the glory of the coming of the Lord;\nHe is [G]trampling out the vintage where the grapes of wrath are [D]stored;\nHe hath [D]loosed the fateful lightning of His [A]terrible swift [D]sword;\nHis [A]truth is marching [D]on.\n\n[Chorus]\n[D][G]Glory ! glory, hallel[D]ujah !\nGlory ! glory, hallelujah !\nGlory ! glory, hallelujah !\nHis Truth is marching on.\n\n[Verse 2]\nI have [D]seen Him in the watchfires of a hundred circling camps;\nThey have [G]builded Him an altar in the evening dews and [D]damps;\nI can [D]read His righteous sentence by the [A]dim and flaring [D]lamps;\nHis [A]day is marching [D]on.\n\n[Verse 3]\nHe has [D]sounded forth the trumpet that shall never sound retreat;\nHe is [G]sifting out the hearts of men before His judgment [D]seat;\nO be [D]swift, my soul, to answer Him !\nbe [G]jubilant, my [D]feet !\nOur [A]God is marching [D]on.\n\n[Verse 4]\nIn the [D]beauty of the lilies Christ was born across the sea,\nWith a [G]glory in His bosom that transfigures you and [D]me;\nAs He [D]died to make men holy, let us [A]die to make men [D]free;\nWhile [A]God is marching [D]on.",
+  "lyrics": "[Verse 1]\nMine eyes have seen the glory of the coming of the Lord;\nHe is trampling out the vintage where the grapes of wrath are stored;\nHe hath loosed the fateful lightning of His terrible swift sword;\nHis truth is marching on.\n\n[Chorus]\nGlory ! glory, hallelujah !\nGlory ! glory, hallelujah !\nGlory ! glory, hallelujah !\nHis Truth is marching on.\n\n[Verse 2]\nI have seen Him in the watchfires of a hundred circling camps;\nThey have builded Him an altar in the evening dews and damps;\nI can read His righteous sentence by the dim and flaring lamps;\nHis day is marching on.\n\n[Verse 3]\nHe has sounded forth the trumpet that shall never sound retreat;\nHe is sifting out the hearts of men before His judgment seat;\nO be swift, my soul, to answer Him !\nbe jubilant, my feet !\nOur God is marching on.\n\n[Verse 4]\nIn the beauty of the lilies Christ was born across the sea,\nWith a glory in His bosom that transfigures you and me;\nAs He died to make men holy, let us die to make men free;\nWhile God is marching on.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

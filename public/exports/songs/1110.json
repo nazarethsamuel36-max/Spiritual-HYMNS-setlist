@@ -1,154 +1,104 @@
 {
-  "id" : 1110,
-  "songNumber" : 132,
-  "title" : "यीशु का लहू सारे पापों से शुद्ध करता हमें",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "यीशु का लहू सारे पापों से शुद्ध करता हमें",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "उद्धार देता, शांती देता, अनंत जीवन भी देता ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "पवित्र स्थान में जायेंगे हम,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "उसके लहू के ही द्वारा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "द्वार हमारा यीशु है प्यारा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "वही है भोर का तारा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "ना हम खुदके, ना दुनिया के,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "हम तो है यीशु मसिह के",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "हम विश्वासी इस जहा में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "गवाह है उसके लहू से ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "ऐसा कभी ना सोचो मन में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "बेकार का है ये जीवन,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "खरीदा है हमे उसने अपने",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "लहू का मोल देकर।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 1110,
+  "songNumber": 132,
+  "title": "यीशु का लहू सारे पापों से शुद्ध करता हमें",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "यीशु का लहू सारे पापों से शुद्ध करता हमें"
+        },
+        {
+          "text": "उद्धार देता, शांती देता, अनंत जीवन भी देता ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र स्थान में जायेंगे हम,"
+        },
+        {
+          "text": "उसके लहू के ही द्वारा"
+        },
+        {
+          "text": "द्वार हमारा यीशु है प्यारा,"
+        },
+        {
+          "text": "वही है भोर का तारा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ना हम खुदके, ना दुनिया के,"
+        },
+        {
+          "text": "हम तो है यीशु मसिह के"
+        },
+        {
+          "text": "हम विश्वासी इस जहा में,"
+        },
+        {
+          "text": "गवाह है उसके लहू से ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ऐसा कभी ना सोचो मन में,"
+        },
+        {
+          "text": "बेकार का है ये जीवन,"
+        },
+        {
+          "text": "खरीदा है हमे उसने अपने"
+        },
+        {
+          "text": "लहू का मोल देकर।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [G]यीशु का लहू सारे पापों से [C]शुद्ध करता हमें\r\n[D]उद्धार देता, शांती देता, अनंत जीवन भी दे[G]ता ।\r\n[Verse]\r\n[Verse]\r\n[G]पवित्र स्थान में जायेंगे [C]हम,\r\n[D]उसके लहू के ही द्वा[G]रा\r\n[G]द्वार हमारा यीशु है [C]प्यारा,\r\n[D]वही है भोर का ता[G]रा ।\r\n[Verse]\r\n[Verse]\r\n[G]ना हम खुदके, ना दुनिया [C]के,\r\n[D]हम तो है यीशु मसिह [G]के\r\n[G]हम विश्वासी इस जहा [C]में,\r\n[D]गवाह है उसके लहू [G]से ।\r\n[Verse]\r\n[Verse]\r\n[G]ऐसा कभी ना सोचो मन [C]में,\r\n[D]बेकार का है ये जीव[G]न,\r\n[G]खरीदा है हमे उसने अप[C]ने\r\n[D]लहू का मोल दे[G]कर।",
+  "lyrics": "[Chorus]\r\n यीशु का लहू सारे पापों से शुद्ध करता हमें\r\nउद्धार देता, शांती देता, अनंत जीवन भी देता ।\r\n[Verse]\r\n[Verse]\r\nपवित्र स्थान में जायेंगे हम,\r\nउसके लहू के ही द्वारा\r\nद्वार हमारा यीशु है प्यारा,\r\nवही है भोर का तारा ।\r\n[Verse]\r\n[Verse]\r\nना हम खुदके, ना दुनिया के,\r\nहम तो है यीशु मसिह के\r\nहम विश्वासी इस जहा में,\r\nगवाह है उसके लहू से ।\r\n[Verse]\r\n[Verse]\r\nऐसा कभी ना सोचो मन में,\r\nबेकार का है ये जीवन,\r\nखरीदा है हमे उसने अपने\r\nलहू का मोल देकर।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

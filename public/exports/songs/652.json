@@ -1,127 +1,62 @@
 {
-  "id" : 652,
-  "songNumber" : 345,
-  "title" : "I LIFT MY HANDS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I lift my hands to the coming king,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "To the great I AM, to you I sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "For you're the One",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Who reigns within my heart.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And I will serve no foreign god",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Nor any other treasure,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "You are my heart's desire",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Spirit without measure,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Unto your name, I will bring my sacrifice.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 652,
+  "songNumber": 345,
+  "title": "I LIFT MY HANDS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I lift my hands to the coming king,"
+        },
+        {
+          "text": "To the great I AM, to you I sing,"
+        },
+        {
+          "text": "For you're the One"
+        },
+        {
+          "text": "Who reigns within my heart."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "And I will serve no foreign god"
+        },
+        {
+          "text": "Nor any other treasure,"
+        },
+        {
+          "text": "You are my heart's desire"
+        },
+        {
+          "text": "Spirit without measure,"
+        },
+        {
+          "text": "Unto your name, I will bring my sacrifice."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nI [G]lift my [C]hands to the [G]coming [D]king,\r\nTo the [G]great I [C]AM, to [G]you I [D]sing,\r\nFor [C]you're the [G]One\r\nWho [C]reigns with[D]in my [G]heart.\r\n\r\n[Verse 2]\r\nAnd [C]I will serve [D]no foreign [G]god\r\nNor [C]any [D]other [G]treasure,\r\n[C]You are my [G]heart's de[D]sire\r\n[C]Spirit [D]without [G]measure,\r\nUnto your [C]name, I will [D]bring my sacri[G]fice.",
+  "lyrics": "[Verse 1]\r\nI lift my hands to the coming king,\r\nTo the great I AM, to you I sing,\r\nFor you're the One\r\nWho reigns within my heart.\r\n\r\n[Verse 2]\r\nAnd I will serve no foreign god\r\nNor any other treasure,\r\nYou are my heart's desire\r\nSpirit without measure,\r\nUnto your name, I will bring my sacrifice.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

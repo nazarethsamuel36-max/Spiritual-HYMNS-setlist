@@ -1,205 +1,158 @@
 {
-  "id" : 974,
-  "songNumber" : 96,
-  "title" : "LET'S TALK ABOUT JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Let's talk about Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The King of kings is He",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The Lord of lords supreme"
-    }, {
-      "text" : "Throughout eternity.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "The Great I AM, the Way,"
-    }, {
-      "text" : "The Truth, the Life, the Door,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Let's talk about Jesus more and more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let's talk about Jesus,"
-    }, {
-      "text" : "Let all the world proclaim",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The pow'r and majesty"
-    }, {
-      "text" : "Of such a wondrous Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "The Babe of Bethlehem,"
-    }, {
-      "text" : "The Bright and Morning Star,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Let's sing His praises near and far.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let's talk about Jesus,"
-    }, {
-      "text" : "The Bread of Life is He,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The Saviour of the world,"
-    }, {
-      "text" : "That Man of Galilee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "The Prophet, Priest and King,"
-    }, {
-      "text" : "The mighty God is He,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "The well of Living Water free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let's talk about Jesus,"
-    }, {
-      "text" : "The Prince of Peace is He,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "The Great Physician too,"
-    }, {
-      "text" : "Down through all history,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "The Lily pure and white,"
-    }, {
-      "text" : "The Rose of Sharon fair,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "The Shepherd of such tender care.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let's talk about Jesus,"
-    }, {
-      "text" : "The Rock of Ages He,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "The Lamb for sinners slain,"
-    }, {
-      "text" : "That Man of Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "The Great Emmanuel,"
-    }, {
-      "text" : "The Word of God sublime,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He is our Bridegroom so Divine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 974,
+  "songNumber": 96,
+  "title": "LET'S TALK ABOUT JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Let's talk about Jesus,"
+        },
+        {
+          "text": "The King of kings is He"
+        },
+        {
+          "text": "The Lord of lords supreme"
+        },
+        {
+          "text": "Throughout eternity."
+        },
+        {
+          "text": "The Great I AM, the Way,"
+        },
+        {
+          "text": "The Truth, the Life, the Door,"
+        },
+        {
+          "text": "Let's talk about Jesus more and more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let's talk about Jesus,"
+        },
+        {
+          "text": "Let all the world proclaim"
+        },
+        {
+          "text": "The pow'r and majesty"
+        },
+        {
+          "text": "Of such a wondrous Name."
+        },
+        {
+          "text": "The Babe of Bethlehem,"
+        },
+        {
+          "text": "The Bright and Morning Star,"
+        },
+        {
+          "text": "Let's sing His praises near and far."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Let's talk about Jesus,"
+        },
+        {
+          "text": "The Bread of Life is He,"
+        },
+        {
+          "text": "The Saviour of the world,"
+        },
+        {
+          "text": "That Man of Galilee,"
+        },
+        {
+          "text": "The Prophet, Priest and King,"
+        },
+        {
+          "text": "The mighty God is He,"
+        },
+        {
+          "text": "The well of Living Water free."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Let's talk about Jesus,"
+        },
+        {
+          "text": "The Prince of Peace is He,"
+        },
+        {
+          "text": "The Great Physician too,"
+        },
+        {
+          "text": "Down through all history,"
+        },
+        {
+          "text": "The Lily pure and white,"
+        },
+        {
+          "text": "The Rose of Sharon fair,"
+        },
+        {
+          "text": "The Shepherd of such tender care."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Let's talk about Jesus,"
+        },
+        {
+          "text": "The Rock of Ages He,"
+        },
+        {
+          "text": "The Lamb for sinners slain,"
+        },
+        {
+          "text": "That Man of Calvary,"
+        },
+        {
+          "text": "The Great Emmanuel,"
+        },
+        {
+          "text": "The Word of God sublime,"
+        },
+        {
+          "text": "He is our Bridegroom so Divine."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Let's talk about Jesus,\r\nThe King of kings is [D]He\r\nThe Lord of lords supreme\r\nThroughout e[G]ternity.\r\nThe Great I AM, the Way,\r\nThe Truth, the Life, the [C]Door,\r\nLet's talk about [G]Jesus [D]more and [G]more.\r\n\r\n[Verse 2]\r\nLet's talk about Jesus,\r\nLet all the world pro[D]claim\r\nThe pow'r and majesty\r\nOf such a wondrous [G]Name.\r\nThe Babe of Bethlehem,\r\nThe Bright and Morning [C]Star,\r\nLet's sing His [G]praises [D]near and [G]far.\r\n\r\n[Verse 3]\r\nLet's talk about Jesus,\r\nThe Bread of Life is [D]He,\r\nThe Saviour of the world,\r\nThat Man of Gali[G]lee,\r\nThe Prophet, Priest and King,\r\nThe mighty God is [C]He,\r\nThe well of Living [G]Water [D]free.\r\n\r\n[Verse 4]\r\nLet's talk about Jesus,\r\nThe Prince of Peace is [D]He,\r\nThe Great Physician too,\r\nDown through all histo[G]ry,\r\nThe Lily pure and white,\r\nThe Rose of Sharon [C]fair,\r\nThe Shepherd of [G]such [D]tender [G]care.\r\n\r\n[Verse 5]\r\nLet's talk about Jesus,\r\nThe Rock of Ages [D]He,\r\nThe Lamb for sinners slain,\r\nThat Man of Calva[G]ry,\r\nThe Great Emmanuel,\r\nThe Word of God sub[C]lime,\r\nHe is our [G]Bridegroom [D]so Di[G]vine.",
+  "lyrics": "[Verse 1]\r\nLet's talk about Jesus,\r\nThe King of kings is He\r\nThe Lord of lords supreme\r\nThroughout eternity.\r\nThe Great I AM, the Way,\r\nThe Truth, the Life, the Door,\r\nLet's talk about Jesus more and more.\r\n\r\n[Verse 2]\r\nLet's talk about Jesus,\r\nLet all the world proclaim\r\nThe pow'r and majesty\r\nOf such a wondrous Name.\r\nThe Babe of Bethlehem,\r\nThe Bright and Morning Star,\r\nLet's sing His praises near and far.\r\n\r\n[Verse 3]\r\nLet's talk about Jesus,\r\nThe Bread of Life is He,\r\nThe Saviour of the world,\r\nThat Man of Galilee,\r\nThe Prophet, Priest and King,\r\nThe mighty God is He,\r\nThe well of Living Water free.\r\n\r\n[Verse 4]\r\nLet's talk about Jesus,\r\nThe Prince of Peace is He,\r\nThe Great Physician too,\r\nDown through all history,\r\nThe Lily pure and white,\r\nThe Rose of Sharon fair,\r\nThe Shepherd of such tender care.\r\n\r\n[Verse 5]\r\nLet's talk about Jesus,\r\nThe Rock of Ages He,\r\nThe Lamb for sinners slain,\r\nThat Man of Calvary,\r\nThe Great Emmanuel,\r\nThe Word of God sublime,\r\nHe is our Bridegroom so Divine.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,293 +1,175 @@
 {
-  "id" : 1039,
-  "songNumber" : 61,
-  "title" : "सुन लो मेरे भाईयों मसीहा मेरा",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "सुन लो मेरे भाईयों मसीहा मेरा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दुनिया में आया मुक्ति को लाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "लोगों को आज बचाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "बचाने यीशु, दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अंधो को आंखे गूंगों को बोली,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "बहिरों को शब्द सुनाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "सुनाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "कोढ़ी अपाहिज चंगे किये हैं,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "मुर्दों को जिन्दा जिलाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "जिलाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "हम जब गुनाह में पड़े हुए थे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "अद्भुत प्रेम दिखाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "दिखाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "दुनिया की खातिर क्रूस पर चढ़कर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "अपना ही रक्त बहाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "बहाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "जो कोई उस पर विश्वास लाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "उसको मसीह ने बचाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "बचाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 7",
-    "lines" : [ {
-      "text" : "धन्य धन्य यीशु स्वामी हमारे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "हमको पिता से मिलाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "मिलाने यीशु दुनिया में आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 1039,
+  "songNumber": 61,
+  "title": "सुन लो मेरे भाईयों मसीहा मेरा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "सुन लो मेरे भाईयों मसीहा मेरा,"
+        },
+        {
+          "text": "दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया में आया मुक्ति को लाया,"
+        },
+        {
+          "text": "लोगों को आज बचाया,"
+        },
+        {
+          "text": "बचाने यीशु, दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अंधो को आंखे गूंगों को बोली,"
+        },
+        {
+          "text": "बहिरों को शब्द सुनाया,"
+        },
+        {
+          "text": "सुनाने यीशु दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कोढ़ी अपाहिज चंगे किये हैं,"
+        },
+        {
+          "text": "मुर्दों को जिन्दा जिलाया,"
+        },
+        {
+          "text": "जिलाने यीशु दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हम जब गुनाह में पड़े हुए थे,"
+        },
+        {
+          "text": "अद्भुत प्रेम दिखाया,"
+        },
+        {
+          "text": "दिखाने यीशु दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया की खातिर क्रूस पर चढ़कर,"
+        },
+        {
+          "text": "अपना ही रक्त बहाया,"
+        },
+        {
+          "text": "बहाने यीशु दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जो कोई उस पर विश्वास लाया,"
+        },
+        {
+          "text": "उसको मसीह ने बचाया,"
+        },
+        {
+          "text": "बचाने यीशु दुनिया में आया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "धन्य धन्य यीशु स्वामी हमारे,"
+        },
+        {
+          "text": "हमको पिता से मिलाया,"
+        },
+        {
+          "text": "मिलाने यीशु दुनिया में आया ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [G]सुन लो मेरे [Em]भाईयों मसीहा [D]मेरा,\r\nदुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]दुनिया में [D]आया [C]मुक्ति को [G]लाया,\r\n[G]लोगों को [Em]आज ब[D]चाया,\r\nबचाने यीशु, दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]अंधो को [D]आंखे [C]गूंगों को [G]बोली,\r\n[G]बहिरों को [Em]शब्द सु[D]नाया,\r\nसुनाने यीशु दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]कोढ़ी अपा[D]हिज [C]चंगे किये [G]हैं,\r\n[G]मुर्दों को [Em]जिन्दा जि[D]लाया,\r\nजिलाने यीशु दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]हम जब गु[D]नाह में [C]पड़े हुए [G]थे,\r\n[G]अद्भुत [Em]प्रेम दि[D]खाया,\r\nदिखाने यीशु दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]दुनिया की [D]खातिर [C]क्रूस पर च[G]ढ़कर,\r\n[G]अपना ही [Em]रक्त ब[D]हाया,\r\nबहाने यीशु दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]जो कोई [D]उस पर [C]विश्वास [G]लाया,\r\n[G]उसको म[Em]सीह ने ब[D]चाया,\r\nबचाने यीशु दुनिया में [G]आया ।\r\n[Verse]\r\n[Verse]\r\n[G]धन्य धन्य [D]यीशु [C]स्वामी ह[G]मारे,\r\n[G]हमको पि[Em]ता से मि[D]लाया,\r\nमिलाने यीशु दुनिया में [G]आया ।",
+  "lyrics": "[Chorus]\r\n सुन लो मेरे भाईयों मसीहा मेरा,\r\nदुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nदुनिया में आया मुक्ति को लाया,\r\nलोगों को आज बचाया,\r\nबचाने यीशु, दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nअंधो को आंखे गूंगों को बोली,\r\nबहिरों को शब्द सुनाया,\r\nसुनाने यीशु दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nकोढ़ी अपाहिज चंगे किये हैं,\r\nमुर्दों को जिन्दा जिलाया,\r\nजिलाने यीशु दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nहम जब गुनाह में पड़े हुए थे,\r\nअद्भुत प्रेम दिखाया,\r\nदिखाने यीशु दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nदुनिया की खातिर क्रूस पर चढ़कर,\r\nअपना ही रक्त बहाया,\r\nबहाने यीशु दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nजो कोई उस पर विश्वास लाया,\r\nउसको मसीह ने बचाया,\r\nबचाने यीशु दुनिया में आया ।\r\n[Verse]\r\n[Verse]\r\nधन्य धन्य यीशु स्वामी हमारे,\r\nहमको पिता से मिलाया,\r\nमिलाने यीशु दुनिया में आया ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

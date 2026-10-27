@@ -1,153 +1,71 @@
 {
-  "id" : 1174,
-  "songNumber" : 196,
-  "title" : "अपनी दुल्हन को लेने यीशु राजा आयेगा",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "अपनी दुल्हन को लेने यीशु राजा आयेगा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "जिनकी जाने लहू में धुली हैं संग ले जाएगा।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "द्वार दयाका खुला है, तुम भी हृदय को खोलो",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "बहती क्रूस धारा अपने मन को धोलो",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "यीशु है बुलाता जल्दी दाखिल हो",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "बंद होगा दरवाजा फिर पछतायेगा।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "कुँवते आसमान की हिलायी जायेगी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "यीशु के आने पर कबरे खुल जायेगी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "धरती और समुंदर मुर्दे दे देंगे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "यीशु में जो सोये वो उठ जायेंगे।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 1174,
+  "songNumber": 196,
+  "title": "अपनी दुल्हन को लेने यीशु राजा आयेगा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपनी दुल्हन को लेने यीशु राजा आयेगा"
+        },
+        {
+          "text": "जिनकी जाने लहू में धुली हैं संग ले जाएगा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "द्वार दयाका खुला है, तुम भी हृदय को खोलो"
+        },
+        {
+          "text": "बहती क्रूस धारा अपने मन को धोलो"
+        },
+        {
+          "text": "यीशु है बुलाता जल्दी दाखिल हो"
+        },
+        {
+          "text": "बंद होगा दरवाजा फिर पछतायेगा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कुँवते आसमान की हिलायी जायेगी"
+        },
+        {
+          "text": "यीशु के आने पर कबरे खुल जायेगी"
+        },
+        {
+          "text": "धरती और समुंदर मुर्दे दे देंगे"
+        },
+        {
+          "text": "यीशु में जो सोये वो उठ जायेंगे।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]अपनी दुल्हन को लेने [G]यीशु राजा आ[D]येगा\n[D]जिनकी जाने लहू में [G]धुली हैं संग ले [A]जाए[D]गा।\n\n[Verse]\n[D]द्वार दयाका [G]खुला है, तुम भी [A]हृदय को खो[D]लो\n[D]बहती क्रूस धा[G]रा अपने मन को [A]धोलो\n[D]यीशु है बुलाता [G]जल्दी दाखिल [A]हो\n[D]बंद होगा दरवाजा [A]फिर पछताये[D]गा।\n\n[Verse]\n[D]कुँवते आस[G]मान की हिलायी [A]जाये[D]गी\n[D]यीशु के आने [G]पर कबरे खुल जा[A]येगी\n[D]धरती और समुं[G]दर मुर्दे दे दें[A]गे\n[D]यीशु में जो सो[A]ये वो उठ जा[D]येंगे।",
+  "lyrics": "[Verse]\nअपनी दुल्हन को लेने यीशु राजा आयेगा\nजिनकी जाने लहू में धुली हैं संग ले जाएगा।\n\n[Verse]\nद्वार दयाका खुला है, तुम भी हृदय को खोलो\nबहती क्रूस धारा अपने मन को धोलो\nयीशु है बुलाता जल्दी दाखिल हो\nबंद होगा दरवाजा फिर पछतायेगा।\n\n[Verse]\nकुँवते आसमान की हिलायी जायेगी\nयीशु के आने पर कबरे खुल जायेगी\nधरती और समुंदर मुर्दे दे देंगे\nयीशु में जो सोये वो उठ जायेंगे।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

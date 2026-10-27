@@ -1,261 +1,116 @@
 {
-  "id" : 832,
-  "songNumber" : 220,
-  "title" : "BLESS THE LORD O MY SOUL",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Bless the Lord, O my soul",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "F",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "O my soul,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Worship His holy name,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Sing like never before",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "F",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "O my soul,"
-    }, {
-      "text" : "I'll worship your holy name.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The sun comes up, it's a new day dawning",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "It's time to sing Your song again,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Whatever may pass, and whatever lies before me",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 39
-      }, {
-        "chord" : "C",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Let me be singing when the evening comes.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "You're rich in love, and You're slow to anger",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 7
-      }, {
-        "chord" : "C",
-        "position" : 32
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Your name is great, and Your heart is kind,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "C",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "For all Your goodness I will keep on singing",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Ten thousand reasons for my heart to find.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "And on that day when my strength is failing",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "The end draws near and my time has come,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Still my soul will sing Your praise unending,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "C",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Ten thousand years and then for evermore.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "C",
-        "position" : 36
-      } ]
-    } ]
-  } ]
+  "id": 832,
+  "songNumber": 220,
+  "title": "BLESS THE LORD O MY SOUL (Song 220)",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Bless the Lord, O my soul"
+        },
+        {
+          "text": "O my soul,"
+        },
+        {
+          "text": "Worship His holy name,"
+        },
+        {
+          "text": "Sing like never before"
+        },
+        {
+          "text": "O my soul,"
+        },
+        {
+          "text": "Ill worship your holy name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The sun comes up, its a new day dawning"
+        },
+        {
+          "text": "Its time to sing Your song again,"
+        },
+        {
+          "text": "Whatever may pass, and whatever lies before me"
+        },
+        {
+          "text": "Let me be singing when the evening comes."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Youre rich in love, and Youre slow to anger"
+        },
+        {
+          "text": "Your name is great, and Your heart is kind,"
+        },
+        {
+          "text": "For all Your goodness I will keep on singing"
+        },
+        {
+          "text": "Ten thousand reasons for my heart to find."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And on that day when my strength is failing"
+        },
+        {
+          "text": "The end draws near and my time has come,"
+        },
+        {
+          "text": "Still my soul will sing Your praise unending,"
+        },
+        {
+          "text": "Ten thousand years and then for evermore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n Bless the [D]Lord, O my [G]soul\n[D]O my [A][G]soul,\n[G]Worship His [D]holy [A]name,\nSing [G]like [D]never be[G]fore[A]\nO my soul,\nIll [D]worship your [A]holy [D]name.\n[Verse]\n[Verse]\nThe [G]sun comes up, its a [D]new day [A]dawning\n[G]Its time to [D]sing Your [A]song a[D]gain,\nWhat[G]ever may pass, and what[D]ever lies be[A]fore [D]me\nLet [G]me be [D]singing when the [A]evening [D]comes.\n[Verse]\n[Verse]\nYoure [G]rich in love, and Youre [D]slow to [A]anger\nYour [G]name is [D]great, and Your [A]heart is [D]kind,\nFor [G]all Your [D]goodness I will [A]keep on [D]singing\nTen [G]thousand [D]reasons for my [A]heart to [D]find.\n[Verse]\n[Verse]\nAnd [G]on that day when my [D]strength is [A]failing\nThe [G]end draws [D]near and my [A]time has [D]come,\n[G]Still my [D]soul will sing Your [A]praise un[D]ending,\nTen [G]thousand [D]years and then for [A]ever[D]more.",
+  "lyrics": "[Chorus]\n Bless the Lord, O my soul\nO my soul,\nWorship His holy name,\nSing like never before\nO my soul,\nIll worship your holy name.\n[Verse]\n[Verse]\nThe sun comes up, its a new day dawning\nIts time to sing Your song again,\nWhatever may pass, and whatever lies before me\nLet me be singing when the evening comes.\n[Verse]\n[Verse]\nYoure rich in love, and Youre slow to anger\nYour name is great, and Your heart is kind,\nFor all Your goodness I will keep on singing\nTen thousand reasons for my heart to find.\n[Verse]\n[Verse]\nAnd on that day when my strength is failing\nThe end draws near and my time has come,\nStill my soul will sing Your praise unending,\nTen thousand years and then for evermore.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

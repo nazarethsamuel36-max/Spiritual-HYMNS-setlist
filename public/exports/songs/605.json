@@ -1,182 +1,83 @@
 {
-  "id" : 605,
-  "songNumber" : 19,
-  "title" : "येशूच्या रक्ते भरले, धुण्याचे कुंड जाण (There Is A Fountain)",
-  "language" : "marathi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "येशूच्या रक्ते भरले, धुण्याचे कुंड जाण",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "जे पापी त्यात घातले, ते होती शुद्ध प्राण",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "तो खांभी मरणारा चोर त्यामुळे हर्षला",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "तेणेचि माझा दोष घोर, पुसेल सगळा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "हे प्रभु तुझे रक्तमोल, कधि न संपणार",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "देवाचे सर्व प्रिय कूळ, तू तेणे खंडणार",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "हा रक्तओघ वाहता, मी भावे पाहिला",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "तेथूनि स्तुस्ती करिता, उद्धार गाईला",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "मी ह्या जगात राहता, करीन स्तवने",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "व प्राण अंती सोडीता, अनंत गायने.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 605,
+  "songNumber": 19,
+  "title": "येशूच्या रक्ते भरले, धुण्याचे कुंड जाण (There Is A Fountain)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "येशूच्या रक्ते भरले, धुण्याचे कुंड जाण"
+        },
+        {
+          "text": "जे पापी त्यात घातले, ते होती शुद्ध प्राण"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तो खांभी मरणारा चोर त्यामुळे हर्षला"
+        },
+        {
+          "text": "तेणेचि माझा दोष घोर, पुसेल सगळा"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हे प्रभु तुझे रक्तमोल, कधि न संपणार"
+        },
+        {
+          "text": "देवाचे सर्व प्रिय कूळ, तू तेणे खंडणार"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हा रक्तओघ वाहता, मी भावे पाहिला"
+        },
+        {
+          "text": "तेथूनि स्तुस्ती करिता, उद्धार गाईला"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मी ह्या जगात राहता, करीन स्तवने"
+        },
+        {
+          "text": "व प्राण अंती सोडीता, अनंत गायने."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[C]येशूच्या रक्ते [F]भरले, [G]धुण्याचे कुंड [C]जाण\n[C]जे पापी त्यात [F]घातले, [G]ते होती शुद्ध [C]प्राण\n\n[Verse]\n[C]तो खांभी मर[F]णारा चोर [G]त्यामुळे हर्ष[C]ला\n[C]तेणेचि माझा [F]दोष घोर, [G]पुसेल सग[C]ळा\n\n[Verse]\n[C]हे प्रभु तुझे [F]रक्तमोल, [G]कधि न संप[C]णार\n[C]देवाचे सर्व [F]प्रिय कूळ, [G]तू तेणे खंड[C]णार\n\n[Verse]\n[C]हा रक्तओघ [F]वाहता, [G]मी भावे पा[C]हिला\n[C]तेथूनि स्तुस्ती [F]करिता, [G]उद्धार गाई[C]ला\n\n[Verse]\n[C]मी ह्या जगात [F]राहता, [G]करीन स्तव[C]ने\n[C]व प्राण अंती [F]सोडीता, [G]अनंत गाय[C]ने.",
+  "lyrics": "[Verse]\nयेशूच्या रक्ते भरले, धुण्याचे कुंड जाण\nजे पापी त्यात घातले, ते होती शुद्ध प्राण\n\n[Verse]\nतो खांभी मरणारा चोर त्यामुळे हर्षला\nतेणेचि माझा दोष घोर, पुसेल सगळा\n\n[Verse]\nहे प्रभु तुझे रक्तमोल, कधि न संपणार\nदेवाचे सर्व प्रिय कूळ, तू तेणे खंडणार\n\n[Verse]\nहा रक्तओघ वाहता, मी भावे पाहिला\nतेथूनि स्तुस्ती करिता, उद्धार गाईला\n\n[Verse]\nमी ह्या जगात राहता, करीन स्तवने\nव प्राण अंती सोडीता, अनंत गायने.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

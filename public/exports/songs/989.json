@@ -1,150 +1,87 @@
 {
-  "id" : 989,
-  "songNumber" : 11,
-  "title" : "हम आये है तेरे शरणमें",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "हम आये है तेरे शरणमें",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "प्रभु यीशु तेरे चरणों में आज",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "तेरी भक्ति के हम गीत गाये हरदम",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 17
-      }, {
-        "chord" : "Dm",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "तेरी राहोंपे निकले कदम !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "होठो पे रहे तेरा नाम",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 8
-      }, {
-        "chord" : "Dm",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "प्रार्थना हम करे सुबह शाम",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "कोई भी काम अगर हम करे",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 11
-      }, {
-        "chord" : "Dm",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "तुझे ऊँचा उठाते रहे !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "तेरे जैसा है राजा कहाँ",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 13
-      }, {
-        "chord" : "Dm",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "जो प्रजा के लिये मर मीटा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "पापों को लिये क्रुसपर",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 9
-      }, {
-        "chord" : "Dm",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "नया जीवन हमें अब मिला !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 989,
+  "songNumber": 11,
+  "title": "हम आये है तेरे शरणमें",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "हम आये है तेरे शरणमें"
+        },
+        {
+          "text": "प्रभु यीशु तेरे चरणों में आज"
+        },
+        {
+          "text": "तेरी भक्ति के हम गीत गाये हरदम"
+        },
+        {
+          "text": "तेरी राहोंपे निकले कदम !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "होठो पे रहे तेरा नाम"
+        },
+        {
+          "text": "प्रार्थना हम करे सुबह शाम"
+        },
+        {
+          "text": "कोई भी काम अगर हम करे"
+        },
+        {
+          "text": "तुझे ऊँचा उठाते रहे !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरे जैसा है राजा कहाँ"
+        },
+        {
+          "text": "जो प्रजा के लिये मर मीटा"
+        },
+        {
+          "text": "पापों को लिये क्रुसपर"
+        },
+        {
+          "text": "नया जीवन हमें अब मिला !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [F]हम आये है तेरे [Am]शरणमें\n[Dm]प्रभु यीशु तेरे [C]चरणों में [F]आज\n[F]तेरी भक्ति के हम [Am]गीत गाये [Dm]हरदम\n[C]तेरी राहोंपे निकले [F]कदम !\n[Verse]\n[Verse]\n[F]होठो पे [Am]रहे तेरा [Dm]नाम\n[C]प्रार्थना हम करे सुबह [F]शाम\n[F]कोई भी काम [Am]अगर हम [Dm]करे\n[C]तुझे ऊँचा उठाते [F]रहे !\n[Verse]\n[Verse]\n[F]तेरे जैसा है [Am]राजा क[Dm]हाँ\n[C]जो प्रजा के लिये मर [F]मीटा\n[F]पापों को [Am]लिये क्रुस[Dm]पर\n[C]नया जीवन हमें अब मि[F]ला !",
+  "lyrics": "[Chorus]\n हम आये है तेरे शरणमें\nप्रभु यीशु तेरे चरणों में आज\nतेरी भक्ति के हम गीत गाये हरदम\nतेरी राहोंपे निकले कदम !\n[Verse]\n[Verse]\nहोठो पे रहे तेरा नाम\nप्रार्थना हम करे सुबह शाम\nकोई भी काम अगर हम करे\nतुझे ऊँचा उठाते रहे !\n[Verse]\n[Verse]\nतेरे जैसा है राजा कहाँ\nजो प्रजा के लिये मर मीटा\nपापों को लिये क्रुसपर\nनया जीवन हमें अब मिला !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

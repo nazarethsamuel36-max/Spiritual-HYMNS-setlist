@@ -1,151 +1,80 @@
 {
-  "id" : 1169,
-  "songNumber" : 191,
-  "title" : "बढते जायेंगे आगे आगे पीछे ना मुड़कर देखेंगे",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "बढते जायेंगे आगे आगे पीछे ना मुड़कर देखेंगे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "यीशु रहेगा साथ, हम ना किसीसे डरेंगे।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "चाहे हो अंधेरा चाहे हो तूफान,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हिम्मत से आगे हम बढेंगे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "लेंगे सहारा यीशु का मंजील पर पहुँचेंगे।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "कांटो के पथपर हम चलेंगे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "कोई भी बर्दी ना होगी हमको (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "पास रखे वो हमको ऐसा जतन करेंगे।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "गाते बजाते उठते बैठते केवल प्रभुजी की",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "महिमा करेंगे (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जीवित वचन को तेरे हरदम प्रचारेंगे।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 1169,
+  "songNumber": 191,
+  "title": "बढते जायेंगे आगे आगे पीछे ना मुड़कर देखेंगे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "बढते जायेंगे आगे आगे पीछे ना मुड़कर देखेंगे"
+        },
+        {
+          "text": "यीशु रहेगा साथ, हम ना किसीसे डरेंगे।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चाहे हो अंधेरा चाहे हो तूफान,"
+        },
+        {
+          "text": "हिम्मत से आगे हम बढेंगे (2)"
+        },
+        {
+          "text": "लेंगे सहारा यीशु का मंजील पर पहुँचेंगे।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कांटो के पथपर हम चलेंगे"
+        },
+        {
+          "text": "कोई भी बर्दी ना होगी हमको (2)"
+        },
+        {
+          "text": "पास रखे वो हमको ऐसा जतन करेंगे।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "गाते बजाते उठते बैठते केवल प्रभुजी की"
+        },
+        {
+          "text": "महिमा करेंगे (2)"
+        },
+        {
+          "text": "जीवित वचन को तेरे हरदम प्रचारेंगे।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]बढते जायेंगे आगे [C]आगे पीछे ना मुड़कर [G]देखेंगे\n[G]यीशु रहेगा साथ, [D]हम ना किसीसे डरेंगे[G]।\n\n[Verse]\n[G]चाहे हो अंधेरा [C]चाहे हो तूफान,\n[D]हिम्मत से आगे हम ब[G]ढेंगे (2)\n[G]लेंगे सहारा [C]यीशु का [D]मंजील पर पहुँचें[G]गे।\n\n[Verse]\n[G]कांटो के पथपर हम च[C]लेंगे\n[D]कोई भी बर्दी ना होगी हम[G]को (2)\n[G]पास रखे वो [C]हमको ऐसा [D]जतन करें[G]गे।\n\n[Verse]\n[G]गाते बजाते [C]उठते बैठते केवल [D]प्रभुजी की\n[G]महिमा करेंगे (2)\n[G]जीवित वचन को [C]तेरे [D]हरदम प्रचारें[G]गे।",
+  "lyrics": "[Verse]\nबढते जायेंगे आगे आगे पीछे ना मुड़कर देखेंगे\nयीशु रहेगा साथ, हम ना किसीसे डरेंगे।\n\n[Verse]\nचाहे हो अंधेरा चाहे हो तूफान,\nहिम्मत से आगे हम बढेंगे (2)\nलेंगे सहारा यीशु का मंजील पर पहुँचेंगे।\n\n[Verse]\nकांटो के पथपर हम चलेंगे\nकोई भी बर्दी ना होगी हमको (2)\nपास रखे वो हमको ऐसा जतन करेंगे।\n\n[Verse]\nगाते बजाते उठते बैठते केवल प्रभुजी की\nमहिमा करेंगे (2)\nजीवित वचन को तेरे हरदम प्रचारेंगे।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

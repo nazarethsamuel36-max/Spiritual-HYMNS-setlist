@@ -1,161 +1,93 @@
 {
-  "id" : 995,
-  "songNumber" : 17,
-  "title" : "नीले आसमान के पार जायेंगे",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "नीले आसमान के पार जायेंगे,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मेरा यीशु रहता वहाँ",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हम मिलेंगे बादलो पर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "देखेंगा सारा जहाँ ।",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "उसका कोई भी वादा न होगा अधूरा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "हर एक वादा उसका होगा पूरा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "उसका कोई भी वादा...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "उसके आने का वादा भी होगा पूरा",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "देखेगा सारा जहाँ...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "ये विश्वास है मेरा जो होगा पूरा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "सपना ये मेरा ना रहेगा अधूरा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "ये विश्वास है मेरा...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तेरे संग हम रहेंगे अपने यीशु के",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "देखेंगा सारा जहाँ..."
-    } ]
-  } ]
+  "id": 995,
+  "songNumber": 17,
+  "title": "नीले आसमान के पार जायेंगे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "नीले आसमान के पार जायेंगे,"
+        },
+        {
+          "text": "मेरा यीशु रहता वहाँ"
+        },
+        {
+          "text": "हम मिलेंगे बादलो पर,"
+        },
+        {
+          "text": "देखेंगा सारा जहाँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "उसका कोई भी वादा न होगा अधूरा"
+        },
+        {
+          "text": "हर एक वादा उसका होगा पूरा,"
+        },
+        {
+          "text": "उसका कोई भी वादा..."
+        },
+        {
+          "text": "उसके आने का वादा भी होगा पूरा"
+        },
+        {
+          "text": "देखेगा सारा जहाँ..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये विश्वास है मेरा जो होगा पूरा"
+        },
+        {
+          "text": "सपना ये मेरा ना रहेगा अधूरा"
+        },
+        {
+          "text": "ये विश्वास है मेरा..."
+        },
+        {
+          "text": "तेरे संग हम रहेंगे अपने यीशु के"
+        },
+        {
+          "text": "देखेंगा सारा जहाँ..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]नीले आसमान के [G]पार जायेंगे,\n[A]मेरा यीशु रहता [D]वहाँ\n[G]हम मिलेंगे बाद[D]लो पर,\n[Em]देखेंगा [A]सारा ज[D]हाँ ।\n[Verse]\n[Verse]\n[D]उसका कोई भी [G]वादा न होगा अ[A]धूरा\n[D]हर एक वादा [G]उसका होगा पू[A]रा,\n[D]उसका कोई भी [G]वादा...\n[A]उसके आने का वादा भी होगा पू[D]रा\n[G]देखेगा सारा ज[D]हाँ[D]...\n[Verse]\n[Verse]\n[D]ये विश्वास है [G]मेरा जो होगा पू[A]रा\n[D]सपना ये मेरा [G]ना रहेगा अ[A]धूरा\n[D]ये विश्वास है [G]मेरा...\n[A]तेरे संग हम रहेंगे अपने यीशु [D]के\nदेखेंगा सारा जहाँ...",
+  "lyrics": "[Chorus]\n नीले आसमान के पार जायेंगे,\nमेरा यीशु रहता वहाँ\nहम मिलेंगे बादलो पर,\nदेखेंगा सारा जहाँ ।\n[Verse]\n[Verse]\nउसका कोई भी वादा न होगा अधूरा\nहर एक वादा उसका होगा पूरा,\nउसका कोई भी वादा...\nउसके आने का वादा भी होगा पूरा\nदेखेगा सारा जहाँ...\n[Verse]\n[Verse]\nये विश्वास है मेरा जो होगा पूरा\nसपना ये मेरा ना रहेगा अधूरा\nये विश्वास है मेरा...\nतेरे संग हम रहेंगे अपने यीशु के\nदेखेंगा सारा जहाँ...",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

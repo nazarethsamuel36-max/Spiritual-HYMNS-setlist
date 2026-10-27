@@ -1,69 +1,59 @@
 {
-  "id" : 1108,
-  "songNumber" : 130,
-  "title" : "योग्य केवल तू, योग्य केवल तू",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "योग्य केवल तू, योग्य केवल तू",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "योग्य केवल तू ही प्रभु, मेरे प्रभु यीशु ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आदर और महिमा हो तेरी (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "आदर और महिमा हो तेरी प्रभु, मेरे प्रभु यीशु ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "पवित्र केवल तू, पवित्र केवल तू",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "पवित्र केवल तू ही प्रभु मेरे प्रभु यीशु ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 1108,
+  "songNumber": 130,
+  "title": "योग्य केवल तू, योग्य केवल तू",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "योग्य केवल तू, योग्य केवल तू"
+        },
+        {
+          "text": "योग्य केवल तू ही प्रभु, मेरे प्रभु यीशु ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आदर और महिमा हो तेरी (2)"
+        },
+        {
+          "text": "आदर और महिमा हो तेरी प्रभु, मेरे प्रभु यीशु ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र केवल तू, पवित्र केवल तू"
+        },
+        {
+          "text": "पवित्र केवल तू ही प्रभु मेरे प्रभु यीशु ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]योग्य केवल तू, योग्य केवल तू\r\n[G]योग्य केवल तू ही प्रभु, मेरे प्रभु यी[D]शु ।\r\n\r\n[Verse]\r\n[D]आदर और महिमा हो तेरी (2)\r\n[G]आदर और महिमा हो तेरी प्रभु, मेरे प्रभु यी[D]शु ।\r\n\r\n[Verse]\r\n[D]पवित्र केवल तू, पवित्र केवल तू\r\n[G]पवित्र केवल तू ही प्रभु मेरे प्रभु यी[D]शु ।",
+  "lyrics": "[Verse]\r\nयोग्य केवल तू, योग्य केवल तू\r\nयोग्य केवल तू ही प्रभु, मेरे प्रभु यीशु ।\r\n\r\n[Verse]\r\nआदर और महिमा हो तेरी (2)\r\nआदर और महिमा हो तेरी प्रभु, मेरे प्रभु यीशु ।\r\n\r\n[Verse]\r\nपवित्र केवल तू, पवित्र केवल तू\r\nपवित्र केवल तू ही प्रभु मेरे प्रभु यीशु ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

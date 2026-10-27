@@ -1,73 +1,41 @@
 {
-  "id" : 919,
-  "songNumber" : 37,
-  "title" : "WHEN I FEEL THE TOUCH",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "When I feel the touch of Your hand upon my life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "It causes me to sing a song that I love you Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 35
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "So from deep within, my spirit singeth unto Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "You are my King, You are my God, And I love you Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 39
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    } ]
-  } ]
+  "id": 919,
+  "songNumber": 37,
+  "title": "WHEN I FEEL THE TOUCH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When I feel the touch of Your hand upon my life,"
+        },
+        {
+          "text": "It causes me to sing a song that I love you Lord,"
+        },
+        {
+          "text": "So from deep within, my spirit singeth unto Thee,"
+        },
+        {
+          "text": "You are my King, You are my God, And I love you Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]When I feel the touch of Your [C]hand upon my [G]life,\n[G]It causes me to sing a [C]song that I [G]love you [D]Lord,\n[G]So from deep within, my [C]spirit singeth unto [G]Thee,\n[G]You are my King, You [C]are my [G]God, And I [D]love you [G]Lord.",
+  "lyrics": "[Verse]\nWhen I feel the touch of Your hand upon my life,\nIt causes me to sing a song that I love you Lord,\nSo from deep within, my spirit singeth unto Thee,\nYou are my King, You are my God, And I love you Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

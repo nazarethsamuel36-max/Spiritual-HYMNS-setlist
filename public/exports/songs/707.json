@@ -1,106 +1,47 @@
 {
-  "id" : 707,
-  "songNumber" : 31,
-  "title" : "I WILL SING UNTO THE LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will sing unto the Lord as long as I live,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "I will sing praise to my God while I have my being,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 37
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "My meditation of Him shall be sweet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I will be glad, I will be glad in the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Bless thou the Lord, O my soul } 4",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Praise ye the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 707,
+  "songNumber": 31,
+  "title": "I WILL SING UNTO THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will sing unto the Lord as long as I live,"
+        },
+        {
+          "text": "I will sing praise to my God while I have my being,"
+        },
+        {
+          "text": "My meditation of Him shall be sweet,"
+        },
+        {
+          "text": "I will be glad, I will be glad in the Lord,"
+        },
+        {
+          "text": "Bless thou the Lord, O my soul } 4"
+        },
+        {
+          "text": "Praise ye the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]I will sing unto the [C]Lord as [G]long as I [D]live,\n[G]I will sing praise to my [C]God while I [G]have my [D]being,\n[G]My meditation of [C]Him [G]shall be [D]sweet,\n[G]I will be [C]glad, I [G]will be [D]glad in the [G]Lord,\n[G]Bless thou the [C]Lord, [G]O my [D]soul } 4\n[G]Praise [D]ye the [G]Lord.",
+  "lyrics": "[Verse]\nI will sing unto the Lord as long as I live,\nI will sing praise to my God while I have my being,\nMy meditation of Him shall be sweet,\nI will be glad, I will be glad in the Lord,\nBless thou the Lord, O my soul } 4\nPraise ye the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

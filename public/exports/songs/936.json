@@ -1,64 +1,47 @@
 {
-  "id" : 936,
-  "songNumber" : 57,
-  "title" : "IT IS NO SECRET",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "It is no secret what God can do,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "What He's done for others,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He'll do for you",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "With arms wide open,",
-      "chords" : [ {
-        "chord" : "C7",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "He'll pardon you,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "It is no secret what God can do.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 936,
+  "songNumber": 57,
+  "title": "IT IS NO SECRET",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "It is no secret what God can do,"
+        },
+        {
+          "text": "What He's done for others,"
+        },
+        {
+          "text": "He'll do for you"
+        },
+        {
+          "text": "With arms wide open,"
+        },
+        {
+          "text": "He'll pardon you,"
+        },
+        {
+          "text": "It is no secret what God can do."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nIt is no [C]secret what God can [G]do,\nWhat He's done for [F]others,\n[G]He'll do for [C]you\nWith arms wide [C7]open,\nHe'll pardon [F]you,\nIt is no [C]secret what [G]God can [C]do.",
+  "lyrics": "[Verse]\nIt is no secret what God can do,\nWhat He's done for others,\nHe'll do for you\nWith arms wide open,\nHe'll pardon you,\nIt is no secret what God can do.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

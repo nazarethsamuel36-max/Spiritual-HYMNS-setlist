@@ -1,88 +1,131 @@
 {
-  "id" : 3127,
-  "songNumber" : 2028,
-  "title" : "** तॆरॆ बिन मै कुछ् भि नहि हु",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Tere bina main"
-    }, {
-      "text" : "Kuch bhi nahin hoon"
-    }, {
-      "text" : "Tere bina main adhoora hoon"
-    }, {
-      "text" : "Teri aatma se mujhko bhar de prabhu X 4"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Duniya ke bheed mein"
-    }, {
-      "text" : "Khoya hua tha"
-    }, {
-      "text" : "Tune mujhe dund liya"
-    }, {
-      "text" : "Teri raho par mujhko chalaya Yeshu X 4"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Main kya hoon prabhu"
-    }, {
-      "text" : "Jo tune mujhe"
-    }, {
-      "text" : "Tere pyar se apna liya"
-    }, {
-      "text" : "Tera beta banakar kareeb liya X 4"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Main jo gunaho mein"
-    }, {
-      "text" : "Dooba hua tha"
-    }, {
-      "text" : "Tune mujhe bacha liya"
-    }, {
-      "text" : "Sare papon ko dhokar shuddh kiya X 4"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 5",
-    "lines" : [ {
-      "text" : "Ab main kyon daroo"
-    }, {
-      "text" : "Tu jo hai saath"
-    }, {
-      "text" : "Sada ke liye tune kaha"
-    }, {
-      "text" : "Tera anugrah mere liye kaafi hai prabhu X 4"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Teri aatma se mujhko bhar de prabhu"
-    }, {
-      "text" : "Teri raho par mujhko chalaya Yeshu"
-    }, {
-      "text" : "Tera beta banakar kareeb liya"
-    }, {
-      "text" : "Sare papon ko dhokar shuddh kiya"
-    } ]
-  } ]
+  "id": 3127,
+  "songNumber": 2028,
+  "title": "Tere bina main",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Tere bina main"
+        },
+        {
+          "text": "Kuch bhi nahin hoon"
+        },
+        {
+          "text": "Tere bina main adhoora hoon"
+        },
+        {
+          "text": "Teri aatma se mujhko bhar de prabhu X 4"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Duniya ke bheed mein"
+        },
+        {
+          "text": "Khoya hua tha"
+        },
+        {
+          "text": "Tune mujhe dund liya"
+        },
+        {
+          "text": "Teri raho par mujhko chalaya Yeshu X 4"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Main kya hoon prabhu"
+        },
+        {
+          "text": "Jo tune mujhe"
+        },
+        {
+          "text": "Tere pyar se apna liya"
+        },
+        {
+          "text": "Tera beta banakar kareeb liya X 4"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Main jo gunaho mein"
+        },
+        {
+          "text": "Dooba hua tha"
+        },
+        {
+          "text": "Tune mujhe bacha liya"
+        },
+        {
+          "text": "Sare papon ko dhokar shuddh kiya X 4"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Ab main kyon daroo"
+        },
+        {
+          "text": "Tu jo hai saath"
+        },
+        {
+          "text": "Sada ke liye tune kaha"
+        },
+        {
+          "text": "Tera anugrah mere liye kaafi hai prabhu X 4"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Teri aatma se mujhko bhar de prabhu"
+        },
+        {
+          "text": "Teri raho par mujhko chalaya Yeshu"
+        },
+        {
+          "text": "Tera beta banakar kareeb liya"
+        },
+        {
+          "text": "Sare papon ko dhokar shuddh kiya"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nTere bina main\nKuch bhi nahin hoon\nTere bina main adhoora hoon\nTeri aatma se mujhko bhar de prabhu X 4\n\n[Verse 2]\nDuniya ke bheed mein\nKhoya hua tha\nTune mujhe dund liya\nTeri raho par mujhko chalaya Yeshu X 4\n\n[Verse 3]\nMain kya hoon prabhu\nJo tune mujhe\nTere pyar se apna liya\nTera beta banakar kareeb liya X 4\n\n[Verse 4]\nMain jo gunaho mein\nDooba hua tha\nTune mujhe bacha liya\nSare papon ko dhokar shuddh kiya X 4\n\n[Verse 5]\nAb main kyon daroo\nTu jo hai saath\nSada ke liye tune kaha\nTera anugrah mere liye kaafi hai prabhu X 4\n\n[CHORUS]\nTeri aatma se mujhko bhar de prabhu\nTeri raho par mujhko chalaya Yeshu\nTera beta banakar kareeb liya\nSare papon ko dhokar shuddh kiya",
+  "lyrics": "[Verse 1]\nTere bina main\nKuch bhi nahin hoon\nTere bina main adhoora hoon\nTeri aatma se mujhko bhar de prabhu X 4\n\n[Verse 2]\nDuniya ke bheed mein\nKhoya hua tha\nTune mujhe dund liya\nTeri raho par mujhko chalaya Yeshu X 4\n\n[Verse 3]\nMain kya hoon prabhu\nJo tune mujhe\nTere pyar se apna liya\nTera beta banakar kareeb liya X 4\n\n[Verse 4]\nMain jo gunaho mein\nDooba hua tha\nTune mujhe bacha liya\nSare papon ko dhokar shuddh kiya X 4\n\n[Verse 5]\nAb main kyon daroo\nTu jo hai saath\nSada ke liye tune kaha\nTera anugrah mere liye kaafi hai prabhu X 4\n\n[CHORUS]\nTeri aatma se mujhko bhar de prabhu\nTeri raho par mujhko chalaya Yeshu\nTera beta banakar kareeb liya\nSare papon ko dhokar shuddh kiya",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

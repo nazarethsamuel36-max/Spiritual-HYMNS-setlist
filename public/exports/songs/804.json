@@ -1,193 +1,115 @@
 {
-  "id" : 804,
-  "songNumber" : 192,
-  "title" : "O MY HEART SINGS TODAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "O my heart sings today, sings for joy and gladness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Jesus saves, satisfies, banishes my sadness ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Guilt is gone, peace is mine, peace like to a river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Jesus is wonderful mighty to deliver.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Wonderful, wonderful, Jesus is to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Counselor, Prince of Peace, Mighty God is He ;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Saving me, keeping me from all sin and shame,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Wonderful is my Redeemer, praise His name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Once a slave, now I'm free, free from condemnation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Jesus gives liberty and a full salvation ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Now the sins of the past have been all forgiven,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And my name is inscribed on the book of heaven.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Living here with my Lord in a holy union,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Day by day, all the way holding sweet communion ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "O what change grace hath wrought in my lowly station !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Since my soul has received full and free salvation.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    } ]
-  } ]
+  "id": 804,
+  "songNumber": 192,
+  "title": "O MY HEART SINGS TODAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O my heart sings today, sings for joy and gladness,"
+        },
+        {
+          "text": "Jesus saves, satisfies, banishes my sadness ;"
+        },
+        {
+          "text": "Guilt is gone, peace is mine, peace like to a river,"
+        },
+        {
+          "text": "Jesus is wonderful mighty to deliver."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Wonderful, wonderful, Jesus is to me,"
+        },
+        {
+          "text": "Counselor, Prince of Peace, Mighty God is He ;"
+        },
+        {
+          "text": "Saving me, keeping me from all sin and shame,"
+        },
+        {
+          "text": "Wonderful is my Redeemer, praise His name!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Once a slave, now Im free, free from condemnation,"
+        },
+        {
+          "text": "Jesus gives liberty and a full salvation ;"
+        },
+        {
+          "text": "Now the sins of the past have been all forgiven,"
+        },
+        {
+          "text": "And my name is inscribed on the book of heaven."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Living here with my Lord in a holy union,"
+        },
+        {
+          "text": "Day by day, all the way holding sweet communion ;"
+        },
+        {
+          "text": "O what change grace hath wrought in my lowly station !"
+        },
+        {
+          "text": "Since my soul has received full and free salvation."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n O my [D]heart sings today, sings for [G]joy and gladness,\n[D]Jesus saves, satisfies, [A]banishes my sadness ;\n[D]Guilt is gone, peace is mine, [G]peace like to a river,\n[D]Jesus is wonderful [A]mighty to de[D]liver.\n[Verse]\n[Verse]\n[Chorus]\n[D]Wonderful, wonderful, [G]Jesus is to [D]me,\n[G]Counselor, Prince of [D]Peace, [A]Mighty God is He ;\n[D]Saving me, keeping me [G]from all sin and [D]shame,\n[D]Wonderful is my Re[A]deemer, praise His [D]name!\n[Verse]\n[Verse]\nOnce a [D]slave, now Im free, [G]free from condemnation,\n[D]Jesus gives liberty [A]and a full salvation ;\nNow the [D]sins of the past have [G]been all forgiven,\nAnd my [D]name is inscribed on the [A]book of [D]heaven.\n[Verse]\n[Verse]\n[D]Living here with my Lord in a [G]holy union,\n[D]Day by day, all the way [A]holding sweet communion ;\nO what [D]change grace hath wrought in my [G]lowly station !\nSince my [D]soul has received full and [A]free sal[D]vation.",
+  "lyrics": "[Verse]\n O my heart sings today, sings for joy and gladness,\nJesus saves, satisfies, banishes my sadness ;\nGuilt is gone, peace is mine, peace like to a river,\nJesus is wonderful mighty to deliver.\n[Verse]\n[Verse]\n[Chorus]\nWonderful, wonderful, Jesus is to me,\nCounselor, Prince of Peace, Mighty God is He ;\nSaving me, keeping me from all sin and shame,\nWonderful is my Redeemer, praise His name!\n[Verse]\n[Verse]\nOnce a slave, now Im free, free from condemnation,\nJesus gives liberty and a full salvation ;\nNow the sins of the past have been all forgiven,\nAnd my name is inscribed on the book of heaven.\n[Verse]\n[Verse]\nLiving here with my Lord in a holy union,\nDay by day, all the way holding sweet communion ;\nO what change grace hath wrought in my lowly station !\nSince my soul has received full and free salvation.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

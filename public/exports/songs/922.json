@@ -1,40 +1,44 @@
 {
-  "id" : 922,
-  "songNumber" : 43,
-  "title" : "I HAVE DECIDED TO FOLLOW JESUS",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I have decided to follow Jesus (3)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "No turning back, no turning back !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "The world behind me, the cross before me (3)"
-    }, {
-      "text" : "Though no one joins me, still I will follow (3)"
-    }, {
-      "text" : "You take the whole world, but give me Jesus (3)"
-    } ]
-  } ]
+  "id": 922,
+  "songNumber": 43,
+  "title": "I HAVE DECIDED TO FOLLOW JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I have decided to follow Jesus (3)"
+        },
+        {
+          "text": "No turning back, no turning back !"
+        },
+        {
+          "text": "The world behind me, the cross before me (3)"
+        },
+        {
+          "text": "Though no one joins me, still I will follow (3)"
+        },
+        {
+          "text": "You take the whole world, but give me Jesus (3)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]I have decided to follow Jesus (3)\r\n[D]No turning [A]back, no turning [D]back !\r\nThe world behind me, the cross before me (3)\r\nThough no one joins me, still I will follow (3)\r\nYou take the whole world, but give me Jesus (3)",
+  "lyrics": "[Verse]\r\nI have decided to follow Jesus (3)\r\nNo turning back, no turning back !\r\nThe world behind me, the cross before me (3)\r\nThough no one joins me, still I will follow (3)\r\nYou take the whole world, but give me Jesus (3)",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

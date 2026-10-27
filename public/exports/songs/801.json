@@ -1,230 +1,138 @@
 {
-  "id" : 801,
-  "songNumber" : 189,
-  "title" : "THE DAY OF REDEMPTION IS NEAR",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Nations are breaking, Israel's awaking,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "The signs that the prophets foretold ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "The Gentile days numbered, with horrors encumbered ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Eternity soon will unfold.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "The day of redemption is near,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Men's hearts are failing for fear ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Be filled with the Spirit, your lamps trimmed and clear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 50
-      } ]
-    }, {
-      "text" : "Look up ! your redemption is near.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "The fig tree is growing ; Jerusalem's restoring",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Her national life, long dethroned ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Today she is calling, her latter rain's falling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "\"Return, O dispersed, to your own.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Heaven's powers are shaking, and many are mistaking",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "God's meaning to be of the sky ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "God's Church is the power that's shaking this hour ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "The day of redemption is nigh.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "False prophets are lying, God's Truth they're denying,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "That Jesus the Christ is our God ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Though this generation spurns God's revelation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "We'll walk where the apostles have trod.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 801,
+  "songNumber": 189,
+  "title": "THE DAY OF REDEMPTION IS NEAR",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Nations are breaking, Israels awaking,"
+        },
+        {
+          "text": "The signs that the prophets foretold ;"
+        },
+        {
+          "text": "The Gentile days numbered, with horrors encumbered ;"
+        },
+        {
+          "text": "Eternity soon will unfold."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "The day of redemption is near,"
+        },
+        {
+          "text": "Mens hearts are failing for fear ;"
+        },
+        {
+          "text": "Be filled with the Spirit, your lamps trimmed and clear,"
+        },
+        {
+          "text": "Look up ! your redemption is near."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The fig tree is growing ; Jerusalems restoring"
+        },
+        {
+          "text": "Her national life, long dethroned ;"
+        },
+        {
+          "text": "Today she is calling, her latter rains falling,"
+        },
+        {
+          "text": "\"Return, O dispersed, to your own.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Heavens powers are shaking, and many are mistaking"
+        },
+        {
+          "text": "Gods meaning to be of the sky ;"
+        },
+        {
+          "text": "Gods Church is the power thats shaking this hour ;"
+        },
+        {
+          "text": "The day of redemption is nigh."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "False prophets are lying, Gods Truth theyre denying,"
+        },
+        {
+          "text": "That Jesus the Christ is our God ;"
+        },
+        {
+          "text": "Though this generation spurns Gods revelation,"
+        },
+        {
+          "text": "Well walk where the apostles have trod."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Nations are breaking, Israels a[G]waking,\nThe [D]signs that the prophets fore[A]told ;\nThe [D]Gentile days numbered, with horrors en[G]cumbered ;\nE[D]ternity [A]soon will un[D]fold.\n[Verse]\n[Verse]\n[Chorus]\nThe [D]day of redemption is [G]near,\nMens [D]hearts are failing for [A]fear ;\nBe [D]filled with the Spirit, your [G]lamps trimmed and [D]clear,\nLook [D]up ! your re[A]demption is [D]near.\n[Verse]\n[Verse]\nThe [D]fig tree is growing ; Jerusalems re[G]storing\nHer [D]national life, long de[A]throned ;\nTo[D]day she is calling, her latter rains [G]falling,\n\"[D]Return, O dis[A]persed, to your [D]own.\"\n[Verse]\n[Verse]\n[D]Heavens powers are shaking, and many are mis[G]taking\n[D]Gods meaning to be of the [A]sky ;\n[D]Gods Church is the power thats shaking this [G]hour ;\nThe [D]day of re[A]demption is [D]nigh.\n[Verse]\n[Verse]\n[D]False prophets are lying, Gods Truth theyre de[G]nying,\nThat [D]Jesus the Christ is our [A]God ;\nThough [D]this generation spurns Gods reve[G]lation,\n[D]Well walk where the a[A]postles have [D]trod.",
+  "lyrics": "[Verse]\n Nations are breaking, Israels awaking,\nThe signs that the prophets foretold ;\nThe Gentile days numbered, with horrors encumbered ;\nEternity soon will unfold.\n[Verse]\n[Verse]\n[Chorus]\nThe day of redemption is near,\nMens hearts are failing for fear ;\nBe filled with the Spirit, your lamps trimmed and clear,\nLook up ! your redemption is near.\n[Verse]\n[Verse]\nThe fig tree is growing ; Jerusalems restoring\nHer national life, long dethroned ;\nToday she is calling, her latter rains falling,\n\"Return, O dispersed, to your own.\"\n[Verse]\n[Verse]\nHeavens powers are shaking, and many are mistaking\nGods meaning to be of the sky ;\nGods Church is the power thats shaking this hour ;\nThe day of redemption is nigh.\n[Verse]\n[Verse]\nFalse prophets are lying, Gods Truth theyre denying,\nThat Jesus the Christ is our God ;\nThough this generation spurns Gods revelation,\nWell walk where the apostles have trod.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

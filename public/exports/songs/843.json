@@ -1,250 +1,113 @@
 {
-  "id" : 843,
-  "songNumber" : 231,
-  "title" : "LORD WE DESIRE TO SEEK THEE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Lord we desire to seek Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And in Thy courts to dwell,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "To gaze upon Thy beauty,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And to draw from the living well.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "To Thee belongs all glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "To Thee belongs all praise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "To Thee belongs all majesty,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Both now and through endless days.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "You are the Lily of the Valley,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "You are the Morning Star,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are the Rose of Sharon,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Both now and forever more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "You are the King of kings,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are the Lord of lords,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are the Prince of Peace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Both now and forever more."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "You are the Son of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "You are the Son of Man,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "You are the Son of David,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And Jesus is your name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 843,
+  "songNumber": 231,
+  "title": "LORD WE DESIRE TO SEEK THEE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lord we desire to seek Thee,"
+        },
+        {
+          "text": "And in Thy courts to dwell,"
+        },
+        {
+          "text": "To gaze upon Thy beauty,"
+        },
+        {
+          "text": "And to draw from the living well."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "To Thee belongs all glory,"
+        },
+        {
+          "text": "To Thee belongs all praise,"
+        },
+        {
+          "text": "To Thee belongs all majesty,"
+        },
+        {
+          "text": "Both now and through endless days."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the Lily of the Valley,"
+        },
+        {
+          "text": "You are the Morning Star,"
+        },
+        {
+          "text": "You are the Rose of Sharon,"
+        },
+        {
+          "text": "Both now and forever more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the King of kings,"
+        },
+        {
+          "text": "You are the Lord of lords,"
+        },
+        {
+          "text": "You are the Prince of Peace,"
+        },
+        {
+          "text": "Both now and forever more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the Son of God,"
+        },
+        {
+          "text": "You are the Son of Man,"
+        },
+        {
+          "text": "You are the Son of David,"
+        },
+        {
+          "text": "And Jesus is your name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]Lord we desire to [Bb]seek [F]Thee,\r\n[F]And in Thy [C]courts to [F]dwell,\r\n[F]To gaze upon Thy [Bb]beau[F]ty,\r\n[F]And to draw from the [C]living [F]well.\r\n\r\n[Verse]\r\nTo [F]Thee belongs all [Bb]glo[F]ry,\r\nTo [F]Thee belongs all [C]praise,\r\nTo [F]Thee belongs all [Bb]majes[F]ty,\r\n[F]Both now and through [C]endless [F]days.\r\n\r\n[Verse]\r\n[F]You are the Lily [Bb]of the [F]Valley,\r\n[F]You are the [C]Morning [F]Star,\r\n[F]You are the Rose of [Bb]Sha[F]ron,\r\n[F]Both now and for[C]ever [F]more.\r\n\r\n[Verse]\r\n[F]You are the King of [Bb]kings,\r\n[F]You are the [C]Lord of [F]lords,\r\n[F]You are the Prince of [Bb]Peace,\r\nBoth now and forever more.\r\n\r\n[Verse]\r\n[F]You are the Son of [Bb]God,\r\n[F]You are the [C]Son of [F]Man,\r\n[F]You are the Son of [Bb]Da[F]vid,\r\nAnd [F]Jesus [C]is your [F]name.",
+  "lyrics": "[Verse]\r\nLord we desire to seek Thee,\r\nAnd in Thy courts to dwell,\r\nTo gaze upon Thy beauty,\r\nAnd to draw from the living well.\r\n\r\n[Verse]\r\nTo Thee belongs all glory,\r\nTo Thee belongs all praise,\r\nTo Thee belongs all majesty,\r\nBoth now and through endless days.\r\n\r\n[Verse]\r\nYou are the Lily of the Valley,\r\nYou are the Morning Star,\r\nYou are the Rose of Sharon,\r\nBoth now and forever more.\r\n\r\n[Verse]\r\nYou are the King of kings,\r\nYou are the Lord of lords,\r\nYou are the Prince of Peace,\r\nBoth now and forever more.\r\n\r\n[Verse]\r\nYou are the Son of God,\r\nYou are the Son of Man,\r\nYou are the Son of David,\r\nAnd Jesus is your name.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

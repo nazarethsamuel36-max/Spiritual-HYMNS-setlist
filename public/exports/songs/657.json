@@ -1,123 +1,65 @@
 {
-  "id" : 657,
-  "songNumber" : 350,
-  "title" : "I AM CRUCIFIED WITH CHRIST",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I am crucified with Christ, nevertheless I live,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Yet not I but Christ liveth in me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And the life which I now live,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "I live by the faith of the Son of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Who loved me, who loved me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Who loved me and gave Himself for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I am crucified with Christ, nevertheless I live,"
-    }, {
-      "text" : "Yet not I but Christ liveth in me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 657,
+  "songNumber": 350,
+  "title": "I AM CRUCIFIED WITH CHRIST",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I am crucified with Christ, nevertheless I live,"
+        },
+        {
+          "text": "Yet not I but Christ liveth in me,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "And the life which I now live,"
+        },
+        {
+          "text": "I live by the faith of the Son of God,"
+        },
+        {
+          "text": "Who loved me, who loved me,"
+        },
+        {
+          "text": "Who loved me and gave Himself for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I am crucified with Christ, nevertheless I live,"
+        },
+        {
+          "text": "Yet not I but Christ liveth in me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\nI am [D]cruci[G]fied with [D]Christ, [A]nevertheless I [D]live,\nYet [G]not [D]I but [A]Christ liveth [D]in me,\n\n[Verse 1]\nAnd the [G]life which [D]I now [A]live,\nI [D]live by the [G]faith of the [D]Son of [A]God,\nWho [D]loved [G]me, who [D]loved [A]me,\nWho [D]loved [G]me and [A]gave Himself [D]for me.\n\n[Chorus]\nI am crucified with Christ, nevertheless I live,\nYet [G]not [D]I but [A]Christ liveth [D]in me.",
+  "lyrics": "[Chorus]\nI am crucified with Christ, nevertheless I live,\nYet not I but Christ liveth in me,\n\n[Verse 1]\nAnd the life which I now live,\nI live by the faith of the Son of God,\nWho loved me, who loved me,\nWho loved me and gave Himself for me.\n\n[Chorus]\nI am crucified with Christ, nevertheless I live,\nYet not I but Christ liveth in me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

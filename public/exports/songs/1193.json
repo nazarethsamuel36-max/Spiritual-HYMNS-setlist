@@ -1,122 +1,65 @@
 {
-  "id" : 1193,
-  "songNumber" : 215,
-  "title" : "आत्मा मंडराता, आत्मा मंडराता",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आत्मा मंडराता, आत्मा मंडराता,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "यीशु मसीह के नामसे, आत्मा मंडराता।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आत्मा मंडराता, आत्मा मंडराता,"
-    }, {
-      "text" : "पेंटीकॉस्ट के दिन समान, आत्मा मंडराता।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "रोगी चंगे होते...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "लंगडे चलते है, अंधे देखते है...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "शैतान भागता है ...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "मुर्दे जिलते है ...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 1193,
+  "songNumber": 215,
+  "title": "आत्मा मंडराता, आत्मा मंडराता",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आत्मा मंडराता, आत्मा मंडराता,"
+        },
+        {
+          "text": "यीशु मसीह के नामसे, आत्मा मंडराता।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आत्मा मंडराता, आत्मा मंडराता,"
+        },
+        {
+          "text": "पेंटीकॉस्ट के दिन समान, आत्मा मंडराता।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रोगी चंगे होते..."
+        },
+        {
+          "text": "लंगडे चलते है, अंधे देखते है..."
+        },
+        {
+          "text": "शैतान भागता है ..."
+        },
+        {
+          "text": "मुर्दे जिलते है ..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]आत्मा [C]मंडरा[G]ता, [G]आत्मा [D]मंडरा[G]ता,\n[G]यीशु मसीह के [C]नामसे, [G]आत्मा [D]मंडरा[G]ता।\n\n[Verse]\nआत्मा मंडराता, आत्मा मंडराता,\n[G]पेंटीकॉस्ट के [C]दिन समान, [G]आत्मा [D]मंडरा[G]ता।\n\n[Verse]\n[G]रोगी चंगे होते...\n[G]लंगडे चलते [C]है, [G]अंधे देखते [D]है...\n[G]शैतान भागता [C]है ...\n[G]मुर्दे जिलते [D]है ...",
+  "lyrics": "[Verse]\nआत्मा मंडराता, आत्मा मंडराता,\nयीशु मसीह के नामसे, आत्मा मंडराता।\n\n[Verse]\nआत्मा मंडराता, आत्मा मंडराता,\nपेंटीकॉस्ट के दिन समान, आत्मा मंडराता।\n\n[Verse]\nरोगी चंगे होते...\nलंगडे चलते है, अंधे देखते है...\nशैतान भागता है ...\nमुर्दे जिलते है ...",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

@@ -1,219 +1,125 @@
 {
-  "id" : 867,
-  "songNumber" : 255,
-  "title" : "MAKING MELODY",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Making melody in your heart (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Unto the King of kings.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Worship and adore Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Worship and adore Him,"
-    }, {
-      "text" : "Making melody in your heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Unto the King of kings."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "King of kings and Lord of lords (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Glorify His name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Love & serve Him from your heart (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Praise His lovely name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Joy in Him eternally (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "And bless His Holy Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Shout His praises everywhere (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "The King is coming soon.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "Clap your hands unto the Lord (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Rejoice forever more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 7",
-    "lines" : [ {
-      "text" : "Love Him, love Him, more and more (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And dance before His throne.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 867,
+  "songNumber": 255,
+  "title": "MAKING MELODY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Making melody in your heart (3)"
+        },
+        {
+          "text": "Unto the King of kings."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Worship and adore Him,"
+        },
+        {
+          "text": "Worship and adore Him,"
+        },
+        {
+          "text": "Making melody in your heart,"
+        },
+        {
+          "text": "Unto the King of kings."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "King of kings and Lord of lords (3)"
+        },
+        {
+          "text": "Glorify His name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Love & serve Him from your heart (3)"
+        },
+        {
+          "text": "Praise His lovely name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Joy in Him eternally (3)"
+        },
+        {
+          "text": "And bless His Holy Name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Shout His praises everywhere (3)"
+        },
+        {
+          "text": "The King is coming soon."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "Clap your hands unto the Lord (3)"
+        },
+        {
+          "text": "Rejoice forever more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": [
+        {
+          "text": "Love Him, love Him, more and more (3)"
+        },
+        {
+          "text": "And dance before His throne."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]Making melody in your [A]heart (3)\nUnto the [D][A]King of [A][D]kings.\n\n[Verse 1]\n[D]Worship and a[G][A]dore [D]Him,\nWorship and adore Him,\n[D]Making melody [G]in your [D]heart,\nUnto the King of kings.\n\n[Verse 2]\n[D]King of kings and [A]Lord of lords (3)\nGlori[D]fy His [A]name.\n\n[Verse 3]\n[D]Love & serve Him from your [A]heart (3)\nPraise His [D]lovely [A]name.\n\n[Verse 4]\n[D]Joy in Him eter[A]nally (3)\nAnd [D]bless His [A]Holy [D]Name.\n\n[Verse 5]\n[D]Shout His praises every[A]where (3)\nThe [D]King is [A]coming [D]soon.\n\n[Verse 6]\n[D]Clap your hands un[A]to the Lord (3)\nRe[D]joice for[A]ever [D]more.\n\n[Verse 7]\n[D]Love Him, love Him, more and [A]more (3)\nAnd [D]dance be[A]fore His [D]throne.",
+  "lyrics": "[Chorus]\nMaking melody in your heart (3)\nUnto the King of kings.\n\n[Verse 1]\nWorship and adore Him,\nWorship and adore Him,\nMaking melody in your heart,\nUnto the King of kings.\n\n[Verse 2]\nKing of kings and Lord of lords (3)\nGlorify His name.\n\n[Verse 3]\nLove & serve Him from your heart (3)\nPraise His lovely name.\n\n[Verse 4]\nJoy in Him eternally (3)\nAnd bless His Holy Name.\n\n[Verse 5]\nShout His praises everywhere (3)\nThe King is coming soon.\n\n[Verse 6]\nClap your hands unto the Lord (3)\nRejoice forever more.\n\n[Verse 7]\nLove Him, love Him, more and more (3)\nAnd dance before His throne.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

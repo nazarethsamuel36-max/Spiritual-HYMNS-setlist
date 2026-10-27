@@ -1,229 +1,113 @@
 {
-  "id" : 1029,
-  "songNumber" : 51,
-  "title" : "यीशु ने अपना खून बहाके, मुझे बचा लिया",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "यीशु ने अपना खून बहाके, मुझे बचा लिया,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "B",
-        "position" : 24
-      }, {
-        "chord" : "E",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "क्यों मैं न गाऊँगा गुण उसी के, मुझे बचा लिया ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "B",
-        "position" : 24
-      }, {
-        "chord" : "E",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जब मैं गुनाहो में पड़ा हुआ था, यीशु आ गया",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "C#m",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "B",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "उसीके मारे जाने से मैं जीवन भी पा गया,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "B",
-        "position" : 23
-      }, {
-        "chord" : "E",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "इसलिए गाऊँगा गुण उसी के, मुझे बचा लिया ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "B",
-        "position" : 18
-      }, {
-        "chord" : "E",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मेरे गुनाहोंका बोझ उठा कर",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "B",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "क्या-क्या न उसने सहा,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "मेरे गुनाहोंको माफ कराने,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "B",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "खून भी उसका बहा,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "कितना अनोखा है प्यार प्रभुका,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "B",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "मुझे बचा लिया ।",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "सेवा करेंगे प्यारे प्रभु की,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "B",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "जैसा कि उसने कहा,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मर भी मिटेंगे प्यारे प्रभु में,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "B",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "जैसा कि उसने सहा,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हरदम हम गायेंगे, गीत उसी के,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "B",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "हमें बचा लिया ।",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 9
-      } ]
-    } ]
-  } ]
+  "id": 1029,
+  "songNumber": 51,
+  "title": "यीशु ने अपना खून बहाके, मुझे बचा लिया",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "यीशु ने अपना खून बहाके, मुझे बचा लिया,"
+        },
+        {
+          "text": "क्यों मैं न गाऊँगा गुण उसी के, मुझे बचा लिया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब मैं गुनाहो में पड़ा हुआ था, यीशु आ गया"
+        },
+        {
+          "text": "उसीके मारे जाने से मैं जीवन भी पा गया,"
+        },
+        {
+          "text": "इसलिए गाऊँगा गुण उसी के, मुझे बचा लिया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मेरे गुनाहोंका बोझ उठा कर"
+        },
+        {
+          "text": "क्या-क्या न उसने सहा,"
+        },
+        {
+          "text": "मेरे गुनाहोंको माफ कराने,"
+        },
+        {
+          "text": "खून भी उसका बहा,"
+        },
+        {
+          "text": "कितना अनोखा है प्यार प्रभुका,"
+        },
+        {
+          "text": "मुझे बचा लिया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सेवा करेंगे प्यारे प्रभु की,"
+        },
+        {
+          "text": "जैसा कि उसने कहा,"
+        },
+        {
+          "text": "मर भी मिटेंगे प्यारे प्रभु में,"
+        },
+        {
+          "text": "जैसा कि उसने सहा,"
+        },
+        {
+          "text": "हरदम हम गायेंगे, गीत उसी के,"
+        },
+        {
+          "text": "हमें बचा लिया ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [E]यीशु ने अपना [A]खून बहाके, [B]मुझे बचा [E]लिया,\r\n[E]क्यों मैं न गा[A]ऊँगा गुण उ[B]सी के, मुझे बचा [E]लिया ।\r\n[Verse]\r\n[Verse]\r\n[E]जब मैं गुनाहो [C#m]में पड़ा हुआ था, [A]यीशु आ [B]गया\r\n[F#m]उसीके मारे [A]जाने से मैं [B]जीवन भी पा [E]गया,\r\n[E]इसलिए गा[A]ऊँगा गुण उ[B]सी के, मुझे बचा [E]लिया ।\r\n[Verse]\r\n[Verse]\r\n[E]मेरे गुनाहोंका [A]बोझ उठा [B]कर\r\n[F#m]क्या-क्या न उसने स[B]हा,\r\n[E]मेरे गुनाहोंको [A]माफ करा[B]ने,\r\n[F#m]खून भी उसका ब[B]हा,\r\n[E]कितना अनोखा है [A]प्यार प्रभु[B]का,\r\n[B]मुझे बचा [E]लिया ।\r\n[Verse]\r\n[Verse]\r\n[E]सेवा करेंगे [A]प्यारे प्रभु [B]की,\r\n[F#m]जैसा कि उसने क[B]हा,\r\n[E]मर भी मिटेंगे [A]प्यारे प्रभु [B]में,\r\n[F#m]जैसा कि उसने स[B]हा,\r\n[E]हरदम हम गा[A]येंगे, गीत उ[B]सी के,\r\n[B]हमें बचा [E]लिया ।",
+  "lyrics": "[Chorus]\r\n यीशु ने अपना खून बहाके, मुझे बचा लिया,\r\nक्यों मैं न गाऊँगा गुण उसी के, मुझे बचा लिया ।\r\n[Verse]\r\n[Verse]\r\nजब मैं गुनाहो में पड़ा हुआ था, यीशु आ गया\r\nउसीके मारे जाने से मैं जीवन भी पा गया,\r\nइसलिए गाऊँगा गुण उसी के, मुझे बचा लिया ।\r\n[Verse]\r\n[Verse]\r\nमेरे गुनाहोंका बोझ उठा कर\r\nक्या-क्या न उसने सहा,\r\nमेरे गुनाहोंको माफ कराने,\r\nखून भी उसका बहा,\r\nकितना अनोखा है प्यार प्रभुका,\r\nमुझे बचा लिया ।\r\n[Verse]\r\n[Verse]\r\nसेवा करेंगे प्यारे प्रभु की,\r\nजैसा कि उसने कहा,\r\nमर भी मिटेंगे प्यारे प्रभु में,\r\nजैसा कि उसने सहा,\r\nहरदम हम गायेंगे, गीत उसी के,\r\nहमें बचा लिया ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

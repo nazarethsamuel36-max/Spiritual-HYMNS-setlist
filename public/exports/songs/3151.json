@@ -1,66 +1,134 @@
 {
-  "id" : 3151,
-  "songNumber" : 1009,
-  "title" : "** Here I Am To Worship",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Light of the World"
-    }, {
-      "text" : "You stepped down into darkness"
-    }, {
-      "text" : "Open my eyes, Let me see"
-    }, {
-      "text" : "Beauty that made"
-    }, {
-      "text" : "This heart adore You"
-    }, {
-      "text" : "Hope of a life"
-    }, {
-      "text" : "Spent with You"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Here I am to worship"
-    }, {
-      "text" : "Here I am to bow down"
-    }, {
-      "text" : "Here I am to say that You're my God"
-    }, {
-      "text" : "You're altogether lovely"
-    }, {
-      "text" : "Altogether worthy"
-    }, {
-      "text" : "Altogether wonderful to me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "King of all days"
-    }, {
-      "text" : "Oh, so highly exalted"
-    }, {
-      "text" : "Glorious in Heaven above"
-    }, {
-      "text" : "Humbly You came"
-    }, {
-      "text" : "To the earth You created"
-    }, {
-      "text" : "All for love's sake became poor"
-    } ]
-  } ]
+  "id": 3151,
+  "songNumber": 1009,
+  "title": "Here I Am To Worship",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "[Intro] E  B/E  D/E  A/E"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Light of the world"
+        },
+        {
+          "text": "You stepped down into darkness"
+        },
+        {
+          "text": "Opened my eyes, let me see"
+        },
+        {
+          "text": "Beauty that made this heart adore You"
+        },
+        {
+          "text": "Hope of a life spent with You"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Here I am to worship"
+        },
+        {
+          "text": "Here I am to bow down"
+        },
+        {
+          "text": "[D/F#] Here I am to say that You're my God"
+        },
+        {
+          "text": "You're altogether lovely"
+        },
+        {
+          "text": "Altogether worthy"
+        },
+        {
+          "text": "[D/F#] Altogether wonderful to me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "King of all days"
+        },
+        {
+          "text": "Oh so highly exalted"
+        },
+        {
+          "text": "Glorious in heaven above"
+        },
+        {
+          "text": "Humbly You came to the earth You created"
+        },
+        {
+          "text": "All for love's sake became poor"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Bridge",
+      "lines": [
+        {
+          "text": "I'll never know how much it cost"
+        },
+        {
+          "text": "To see my sin upon that cross"
+        },
+        {
+          "text": "I'll never know how much it cost"
+        },
+        {
+          "text": "To see my sin upon that cross"
+        },
+        {
+          "text": "Here I am to worship"
+        },
+        {
+          "text": "Here I am to bow down"
+        },
+        {
+          "text": "[D/F#] Here I am to say that You're my God"
+        },
+        {
+          "text": "You're altogether lovely"
+        },
+        {
+          "text": "Altogether worthy"
+        },
+        {
+          "text": "[D/F#] Altogether wonderful to me"
+        }
+      ]
+    }
+  ],
+  "chords": "[Intro] E  B/E  D/E  A/E\n\n[Verse 1]\n Light of the world\n You stepped down into darkness\n Opened my eyes, let me see\n Beauty that made this heart adore You\n Hope of a life spent with You\n\n[Chorus]\n Here I am to worship\n Here I am to bow down\n[D/F#] Here I am to say that You're my God\n You're altogether lovely\n Altogether worthy\n[D/F#] Altogether wonderful to me\n\n[Verse 2]\n King of all days\n Oh so highly exalted\n Glorious in heaven above\n Humbly You came to the earth You created\n All for love's sake became poor\n\n[Bridge]\n I'll never know how much it cost\n To see my sin upon that cross\n I'll never know how much it cost\n To see my sin upon that cross\n Here I am to worship\n Here I am to bow down\n[D/F#] Here I am to say that You're my God\n You're altogether lovely\n Altogether worthy\n[D/F#] Altogether wonderful to me",
+  "lyrics": "[Intro] E  B/E  D/E  A/E\n\n[Verse 1]\n Light of the world\n You stepped down into darkness\n Opened my eyes, let me see\n Beauty that made this heart adore You\n Hope of a life spent with You\n\n[Chorus]\n Here I am to worship\n Here I am to bow down\n[D/F#] Here I am to say that You're my God\n You're altogether lovely\n Altogether worthy\n[D/F#] Altogether wonderful to me\n\n[Verse 2]\n King of all days\n Oh so highly exalted\n Glorious in heaven above\n Humbly You came to the earth You created\n All for love's sake became poor\n\n[Bridge]\n I'll never know how much it cost\n To see my sin upon that cross\n I'll never know how much it cost\n To see my sin upon that cross\n Here I am to worship\n Here I am to bow down\n[D/F#] Here I am to say that You're my God\n You're altogether lovely\n Altogether worthy\n[D/F#] Altogether wonderful to me",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

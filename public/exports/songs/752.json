@@ -1,196 +1,101 @@
 {
-  "id" : 752,
-  "songNumber" : 140,
-  "title" : "ROCK OF AGES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Rock of Ages, cleft for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Let me hide myself in Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Let the water and the blood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "From Thy wounded side which flowed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Be of sin the double cure,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Save from wrath and make me pure.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Could my tears forever flow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Could my zeal no languor know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "These for sin could not atone;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Thou must save, and Thou alone;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "In my hand no price I bring,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Simply to Thy cross I cling.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "While I draw this fleeting breath,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "When my eyes should close in death,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "When I rise to worlds unknown,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "And behold Thee on Thy throne,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Rock of Ages, cleft for me,"
-    }, {
-      "text" : "Let me hide myself in Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 752,
+  "songNumber": 140,
+  "title": "ROCK OF AGES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Rock of Ages, cleft for me,"
+        },
+        {
+          "text": "Let me hide myself in Thee;"
+        },
+        {
+          "text": "Let the water and the blood,"
+        },
+        {
+          "text": "From Thy wounded side which flowed,"
+        },
+        {
+          "text": "Be of sin the double cure,"
+        },
+        {
+          "text": "Save from wrath and make me pure."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Could my tears forever flow,"
+        },
+        {
+          "text": "Could my zeal no languor know,"
+        },
+        {
+          "text": "These for sin could not atone;"
+        },
+        {
+          "text": "Thou must save, and Thou alone;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "In my hand no price I bring,"
+        },
+        {
+          "text": "Simply to Thy cross I cling."
+        },
+        {
+          "text": "While I draw this fleeting breath,"
+        },
+        {
+          "text": "When my eyes should close in death,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "When I rise to worlds unknown,"
+        },
+        {
+          "text": "And behold Thee on Thy throne,"
+        },
+        {
+          "text": "Rock of Ages, cleft for me,"
+        },
+        {
+          "text": "Let me hide myself in Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Rock of Ages, cleft for [D]me,\r\n[G]Let me hide my[C]self in [G]Thee;\r\n[G]Let the water and the [D]blood,\r\n[G]From Thy wounded side which [C]flowed,\r\n[G]Be of sin the [D]double cure,\r\n[G]Save from wrath and make me [C]pure.\r\n\r\n[Verse 2]\r\n[G]Could my tears for[D]ever flow,\r\n[G]Could my zeal no [C]languor [G]know,\r\n[G]These for sin could [D]not atone;\r\n[G]Thou must save, and [C]Thou a[G]lone;\r\n\r\n[Verse 3]\r\n[G]In my hand no [D]price I bring,\r\n[G]Simply to Thy [C]cross I [G]cling.\r\n[G]While I draw this [D]fleeting breath,\r\n[G]When my eyes should [C]close in [G]death,\r\n\r\n[Verse 4]\r\n[G]When I rise to [D]worlds unknown,\r\n[G]And behold Thee [C]on Thy [G]throne,\r\nRock of Ages, cleft for me,\r\n[G]Let me hide my[C]self in [G]Thee.",
+  "lyrics": "[Verse 1]\r\nRock of Ages, cleft for me,\r\nLet me hide myself in Thee;\r\nLet the water and the blood,\r\nFrom Thy wounded side which flowed,\r\nBe of sin the double cure,\r\nSave from wrath and make me pure.\r\n\r\n[Verse 2]\r\nCould my tears forever flow,\r\nCould my zeal no languor know,\r\nThese for sin could not atone;\r\nThou must save, and Thou alone;\r\n\r\n[Verse 3]\r\nIn my hand no price I bring,\r\nSimply to Thy cross I cling.\r\nWhile I draw this fleeting breath,\r\nWhen my eyes should close in death,\r\n\r\n[Verse 4]\r\nWhen I rise to worlds unknown,\r\nAnd behold Thee on Thy throne,\r\nRock of Ages, cleft for me,\r\nLet me hide myself in Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

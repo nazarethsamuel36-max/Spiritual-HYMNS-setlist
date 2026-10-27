@@ -1,40 +1,65 @@
 {
-  "id" : 3184,
-  "songNumber" : 379,
-  "title" : "ZANNAIM TUM (Know Ye Not)",
-  "language" : "konkani",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Zannaim Tum, Zannaim Tum"
-    }, {
-      "text" : "Devachem mondir"
-    }, {
-      "text" : "Dev Spiritachem Mondir Tum."
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Mellun Mog, Mellun Mog,"
-    }, {
-      "text" : "Mellun Jivit (3)"
-    }, {
-      "text" : "Dev Spiritachem Mondir Tum"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Hallelu, Hallelu, Hallelujah (3)"
-    }, {
-      "text" : "Dev Spiritachem Mondir Tum."
-    } ]
-  } ]
+  "id": 3184,
+  "songNumber": 379,
+  "title": "ZANNAIM TUM (Know Ye Not)",
+  "artist": null,
+  "composer": null,
+  "language": "konkani",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Zannaim Tum, Zannaim Tum"
+        },
+        {
+          "text": "Devachem mondir"
+        },
+        {
+          "text": "Dev Spiritachem Mondir Tum."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Mellun Mog, Mellun Mog,"
+        },
+        {
+          "text": "Mellun Jivit (3)"
+        },
+        {
+          "text": "Dev Spiritachem Mondir Tum"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Hallelu, Hallelu, Hallelujah (3)"
+        },
+        {
+          "text": "Dev Spiritachem Mondir Tum."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nZannaim Tum, Zannaim Tum\nDevachem mondir\nDev Spiritachem Mondir Tum.\n\n[Chorus]\nMellun Mog, Mellun Mog,\nMellun Jivit (3)\nDev Spiritachem Mondir Tum\n\n[Verse 2]\nHallelu, Hallelu, Hallelujah (3)\nDev Spiritachem Mondir Tum.",
+  "lyrics": "[Verse 1]\nZannaim Tum, Zannaim Tum\nDevachem mondir\nDev Spiritachem Mondir Tum.\n\n[Chorus]\nMellun Mog, Mellun Mog,\nMellun Jivit (3)\nDev Spiritachem Mondir Tum\n\n[Verse 2]\nHallelu, Hallelu, Hallelujah (3)\nDev Spiritachem Mondir Tum.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

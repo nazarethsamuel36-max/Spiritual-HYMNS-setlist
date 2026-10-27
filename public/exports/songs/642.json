@@ -1,315 +1,178 @@
 {
-  "id" : 642,
-  "songNumber" : 335,
-  "title" : "HEAR OUR PRAYER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Hear our prayer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "we are Your children,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "And we've gathered here today,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "We're gathered here to pray.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Hear our cry,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Lord, we need Your mercy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And we need Your grace today,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Hear us as we pray.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Our Father, who art in Heaven,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Hallowed be thy name,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Our Father, hear us from Heaven,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Forgive our sins we pray.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Hear our song,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "As it rises to Heaven,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "May Your glory fill the earth,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "As the waters cover the seas.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "See our hearts,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And remove anything,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "That is standing in the way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Of coming to You today.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "And though we are few,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "We're surrounded by many,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Who have crossed that river before,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And this is the song we'll be singing forever.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "Holy is the Lord ! Holy is the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Holy is the Lord ! Holy is the Lord."
-    } ]
-  } ]
+  "id": 642,
+  "songNumber": 335,
+  "title": "HEAR OUR PRAYER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hear our prayer,"
+        },
+        {
+          "text": "we are Your children,"
+        },
+        {
+          "text": "And weve gathered here today,"
+        },
+        {
+          "text": "Were gathered here to pray."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hear our cry,"
+        },
+        {
+          "text": "Lord, we need Your mercy,"
+        },
+        {
+          "text": "And we need Your grace today,"
+        },
+        {
+          "text": "Hear us as we pray."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Our Father, who art in Heaven,"
+        },
+        {
+          "text": "Hallowed be thy name,"
+        },
+        {
+          "text": "Our Father, hear us from Heaven,"
+        },
+        {
+          "text": "Forgive our sins we pray."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hear our song,"
+        },
+        {
+          "text": "As it rises to Heaven,"
+        },
+        {
+          "text": "May Your glory fill the earth,"
+        },
+        {
+          "text": "As the waters cover the seas."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "See our hearts,"
+        },
+        {
+          "text": "And remove anything,"
+        },
+        {
+          "text": "That is standing in the way,"
+        },
+        {
+          "text": "Of coming to You today."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And though we are few,"
+        },
+        {
+          "text": "Were surrounded by many,"
+        },
+        {
+          "text": "Who have crossed that river before,"
+        },
+        {
+          "text": "And this is the song well be singing forever."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy is the Lord ! Holy is the Lord."
+        },
+        {
+          "text": "Holy is the Lord ! Holy is the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Hear our [A]prayer,\n[G]we are Your [D]children,\nAnd weve [G]gathered [D]here to[A]day,\nWere [G]gathered [D]here to [A]pray.\n[Verse]\n[Verse]\n[D]Hear our [A]cry,\n[G]Lord, we need Your [D]mercy,\nAnd we [G]need Your [D]grace to[A]day,\n[G]Hear us [A]as we [D]pray.\n[Verse]\n[Verse]\n[Chorus]\nOur [G]Father, [A]who art in [D]Heaven,\n[G]Hallowed [A]be thy [D]name,\nOur [G]Father, [A]hear us from [D]Heaven,\nFor[G]give our [A]sins we [D]pray.\n[Verse]\n[Verse]\n[D]Hear our [A]song,\n[G]As it rises to [D]Heaven,\nMay Your [G]glory [D]fill the [A]earth,\nAs the [G]waters [A]cover the [D]seas.\n[Verse]\n[Verse]\n[D]See our [A]hearts,\nAnd re[G]move [D]anything,\nThat is [G]standing [D]in the [A]way,\nOf [G]coming [A]to You to[D]day.\n[Verse]\n[Verse]\nAnd [D]though we [A]are few,\nWere sur[G]rounded by [D]many,\nWho have [G]crossed that [D]river be[A]fore,\nAnd this is the [G]song well be [A]singing for[D]ever.\n[Verse]\n[Verse]\n[D]Holy is the [G]Lord ! [D]Holy is the [A]Lord.\nHoly is the Lord ! Holy is the Lord.",
+  "lyrics": "[Verse]\n Hear our prayer,\nwe are Your children,\nAnd weve gathered here today,\nWere gathered here to pray.\n[Verse]\n[Verse]\nHear our cry,\nLord, we need Your mercy,\nAnd we need Your grace today,\nHear us as we pray.\n[Verse]\n[Verse]\n[Chorus]\nOur Father, who art in Heaven,\nHallowed be thy name,\nOur Father, hear us from Heaven,\nForgive our sins we pray.\n[Verse]\n[Verse]\nHear our song,\nAs it rises to Heaven,\nMay Your glory fill the earth,\nAs the waters cover the seas.\n[Verse]\n[Verse]\nSee our hearts,\nAnd remove anything,\nThat is standing in the way,\nOf coming to You today.\n[Verse]\n[Verse]\nAnd though we are few,\nWere surrounded by many,\nWho have crossed that river before,\nAnd this is the song well be singing forever.\n[Verse]\n[Verse]\nHoly is the Lord ! Holy is the Lord.\nHoly is the Lord ! Holy is the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

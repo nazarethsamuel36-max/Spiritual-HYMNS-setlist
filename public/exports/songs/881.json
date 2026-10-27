@@ -1,439 +1,164 @@
 {
-  "id" : 881,
-  "songNumber" : 269,
-  "title" : "GREAT AND MIGHTY IS THE LORD OUR GOD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Great and mighty is the Lord our God",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Great and mighty is He,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Lift up the banners, let your anthems raise,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Praises to our King,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Great and mighty is the Lord our God,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Great and mighty is He.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You are the Words and the music,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "You are the song that I sing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "You are the melody, You are the harmony,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Praises to Your name I bring,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "You are the mighty God,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "You are the Lord of lords,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are the King of all kings,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Now I return to You the song that You gave to me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "You are the song that I sing.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "You are the Way and the Truth,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "You are the Head of this Church,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "You are the High Priest,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "You are the Advocate,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Glory to Your Holy Name,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "You are the Prince of Peace,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "You are our Righteousness,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "You are the coming Bridegroom,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Now we invite You Lord, come and be here with us,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "You are the One that we love.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "You are the Bread and the Water,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "You are the source of my life,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "You are my Saviour, You are my Redeemer,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Humbly before You I bow,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are my Comforter,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are my Counsellor,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You are the Strength of my life,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Now I will praise You for the joy that You gave to me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "C",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "You are the All that I have.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 881,
+  "songNumber": 269,
+  "title": "GREAT AND MIGHTY IS THE LORD OUR GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Great and mighty is the Lord our God"
+        },
+        {
+          "text": "Great and mighty is He,"
+        },
+        {
+          "text": "Lift up the banners, let your anthems raise,"
+        },
+        {
+          "text": "Praises to our King,"
+        },
+        {
+          "text": "Great and mighty is the Lord our God,"
+        },
+        {
+          "text": "Great and mighty is He."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the Words and the music,"
+        },
+        {
+          "text": "You are the song that I sing,"
+        },
+        {
+          "text": "You are the melody, You are the harmony,"
+        },
+        {
+          "text": "Praises to Your name I bring,"
+        },
+        {
+          "text": "You are the mighty God,"
+        },
+        {
+          "text": "You are the Lord of lords,"
+        },
+        {
+          "text": "You are the King of all kings,"
+        },
+        {
+          "text": "Now I return to You the song that You gave to me,"
+        },
+        {
+          "text": "You are the song that I sing."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the Way and the Truth,"
+        },
+        {
+          "text": "You are the Head of this Church,"
+        },
+        {
+          "text": "You are the High Priest,"
+        },
+        {
+          "text": "You are the Advocate,"
+        },
+        {
+          "text": "Glory to Your Holy Name,"
+        },
+        {
+          "text": "You are the Prince of Peace,"
+        },
+        {
+          "text": "You are our Righteousness,"
+        },
+        {
+          "text": "You are the coming Bridegroom,"
+        },
+        {
+          "text": "Now we invite You Lord, come and be here with us,"
+        },
+        {
+          "text": "You are the One that we love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the Bread and the Water,"
+        },
+        {
+          "text": "You are the source of my life,"
+        },
+        {
+          "text": "You are my Saviour, You are my Redeemer,"
+        },
+        {
+          "text": "Humbly before You I bow,"
+        },
+        {
+          "text": "You are my Comforter,"
+        },
+        {
+          "text": "You are my Counsellor,"
+        },
+        {
+          "text": "You are the Strength of my life,"
+        },
+        {
+          "text": "Now I will praise You for the joy that You gave to me,"
+        },
+        {
+          "text": "You are the All that I have."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]Great and mighty is the [G]Lord our [D]God\n[D]Great and mighty is [A]He,\n[D]Lift up the banners, let your [G]anthems raise,\n[D]Praises [A]to our [D]King,\n[D]Great and mighty is the [G]Lord our [D]God,\n[D]Great and [A]mighty is [D]He.\n[Verse]\n[Verse]\n[D]You are the [G]Words and the [D]music,\n[D]You are the [G]song that I [A]sing,\n[D]You are the [G]melody, [D]You are the [G]harmony,\n[D]Praises to [A]Your name I [D]bring,\n[D]You are the [G]mighty [D]God,\n[D]You are the [A]Lord of [D]lords,\n[D]You are the [G]King of [D]all kings,\n[D]Now I re[G]turn to [D]You the [G]song that You [D]gave to me,\n[D]You are the [A]song that I [D]sing.\n[Verse]\n[Verse]\n[D]You are the [G]Way and the [D]Truth,\n[D]You are the [G]Head of this [A]Church,\n[D]You are the [G]High Priest,\n[D]You are the [A]Advocate,\n[D]Glory to [G]Your Holy [D]Name,\n[D]You are the [G]Prince of [D]Peace,\n[D]You are our [A]Righteousness,\n[D]You are the [G]coming [D]Bridegroom,\n[D]Now we in[G]vite You [D]Lord, [G]come and be [D]here with us,\n[D]You are the [A]One that we [D]love.\n[Verse]\n[Verse]\n[D]You are the [G]Bread and the [D]Water,\n[D]You are the [G]source of my [A]life,\n[D]You are my [G]Saviour, [D]You are my Re[G]deemer,\n[D]Humbly be[A]fore You I [D]bow,\n[D]You are my [G]Comforter,\n[D]You are my [A]Counsellor,\n[D]You are the [G]Strength of my [D]life,\n[D]Now I will [G]praise You [D]for the [G]joy that You [D]gave to me,\n[D]You are the [A]All that I [D]have.",
+  "lyrics": "[Chorus]\n Great and mighty is the Lord our God\nGreat and mighty is He,\nLift up the banners, let your anthems raise,\nPraises to our King,\nGreat and mighty is the Lord our God,\nGreat and mighty is He.\n[Verse]\n[Verse]\nYou are the Words and the music,\nYou are the song that I sing,\nYou are the melody, You are the harmony,\nPraises to Your name I bring,\nYou are the mighty God,\nYou are the Lord of lords,\nYou are the King of all kings,\nNow I return to You the song that You gave to me,\nYou are the song that I sing.\n[Verse]\n[Verse]\nYou are the Way and the Truth,\nYou are the Head of this Church,\nYou are the High Priest,\nYou are the Advocate,\nGlory to Your Holy Name,\nYou are the Prince of Peace,\nYou are our Righteousness,\nYou are the coming Bridegroom,\nNow we invite You Lord, come and be here with us,\nYou are the One that we love.\n[Verse]\n[Verse]\nYou are the Bread and the Water,\nYou are the source of my life,\nYou are my Saviour, You are my Redeemer,\nHumbly before You I bow,\nYou are my Comforter,\nYou are my Counsellor,\nYou are the Strength of my life,\nNow I will praise You for the joy that You gave to me,\nYou are the All that I have.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

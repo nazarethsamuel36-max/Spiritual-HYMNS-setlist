@@ -1,169 +1,86 @@
 {
-  "id" : 1068,
-  "songNumber" : 90,
-  "title" : "छोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "छोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "B",
-        "position" : 25
-      }, {
-        "chord" : "E",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "औरों पर तू दया करता, कर तू मुझ पर भी ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "B",
-        "position" : 21
-      }, {
-        "chord" : "E",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "यीशु, यीशु ! बिनंती सुन मेरी,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "E",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "औरों पर तू दया करता, कर तू मुझ पर भी ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तेरे पास, हे दयासिंधु, शांति पाऊंगा,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "B",
-        "position" : 23
-      }, {
-        "chord" : "E",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "तेरे सामने झुका हूँ मैं, अब विश्वास दिला ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "B",
-        "position" : 25
-      }, {
-        "chord" : "E",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "तुझ पर पूरी आंस मैं रखता,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "अपना मुख दिखला,",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "चंगा कर इस घायल मन को, इसे ले बचा ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "B",
-        "position" : 23
-      }, {
-        "chord" : "E",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "तू है शांति का चिर सोता, प्यारा प्राण से भी,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "B",
-        "position" : 25
-      }, {
-        "chord" : "E",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "तुझे छोड अब कौन है मेरा, जग या स्वर्ग में भी ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "B",
-        "position" : 25
-      }, {
-        "chord" : "E",
-        "position" : 42
-      } ]
-    } ]
-  } ]
+  "id": 1068,
+  "songNumber": 90,
+  "title": "छोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "छोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी"
+        },
+        {
+          "text": "औरों पर तू दया करता, कर तू मुझ पर भी ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु, यीशु ! बिनंती सुन मेरी,"
+        },
+        {
+          "text": "औरों पर तू दया करता, कर तू मुझ पर भी ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरे पास, हे दयासिंधु, शांति पाऊंगा,"
+        },
+        {
+          "text": "तेरे सामने झुका हूँ मैं, अब विश्वास दिला ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तुझ पर पूरी आंस मैं रखता,"
+        },
+        {
+          "text": "अपना मुख दिखला,"
+        },
+        {
+          "text": "चंगा कर इस घायल मन को, इसे ले बचा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तू है शांति का चिर सोता, प्यारा प्राण से भी,"
+        },
+        {
+          "text": "तुझे छोड अब कौन है मेरा, जग या स्वर्ग में भी ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[E]छोड न मुझे [A]प्यारे यीशु ! [B]बिनंती सुन [E]मेरी\r\n[E]औरों पर तू [A]दया करता, [B]कर तू मुझ पर [E]भी ।\r\n\r\n[Verse]\r\n[E]यीशु, यीशु ! [A]बिनंती सुन [E]मेरी,\r\nऔरों पर तू दया करता, कर तू मुझ पर भी ।\r\n\r\n[Verse]\r\n[E]तेरे पास, हे [A]दयासिंधु, [B]शांति पाऊं[E]गा,\r\n[E]तेरे सामने झु[A]का हूँ मैं, [B]अब विश्वास दि[E]ला ।\r\n\r\n[Verse]\r\n[E]तुझ पर पूरी [A]आंस मैं रखता,\r\n[B]अपना मुख दिख[E]ला,\r\n[E]चंगा कर इस [A]घायल मन को, [B]इसे ले ब[E]चा ।\r\n\r\n[Verse]\r\n[E]तू है शांति का [A]चिर सोता, [B]प्यारा प्राण से [E]भी,\r\n[E]तुझे छोड अब [A]कौन है मेरा, [B]जग या स्वर्ग में [E]भी ।",
+  "lyrics": "[Verse]\r\nछोड न मुझे प्यारे यीशु ! बिनंती सुन मेरी\r\nऔरों पर तू दया करता, कर तू मुझ पर भी ।\r\n\r\n[Verse]\r\nयीशु, यीशु ! बिनंती सुन मेरी,\r\nऔरों पर तू दया करता, कर तू मुझ पर भी ।\r\n\r\n[Verse]\r\nतेरे पास, हे दयासिंधु, शांति पाऊंगा,\r\nतेरे सामने झुका हूँ मैं, अब विश्वास दिला ।\r\n\r\n[Verse]\r\nतुझ पर पूरी आंस मैं रखता,\r\nअपना मुख दिखला,\r\nचंगा कर इस घायल मन को, इसे ले बचा ।\r\n\r\n[Verse]\r\nतू है शांति का चिर सोता, प्यारा प्राण से भी,\r\nतुझे छोड अब कौन है मेरा, जग या स्वर्ग में भी ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

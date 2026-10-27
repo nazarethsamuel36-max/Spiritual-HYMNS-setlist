@@ -1,105 +1,77 @@
 {
-  "id" : 1114,
-  "songNumber" : 136,
-  "title" : "तू प्यार का सागर",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "तू प्यार का सागर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "सागर दया का तू है (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "तेरे प्यार के सागर में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "हम तैरना चाहते है । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "गहराई मिले सागर की,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ऊँचाई मिले आसमाँ की, (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "पर कोई नाप ना पायेगा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "गहराई तेरे प्यार की । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "परमेश्वर होने पर भी तू,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "मानव रुप धारण किया (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "प्रभु तेरे इसी प्यार ने,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "हमको दीवाना बनाया । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 1114,
+  "songNumber": 136,
+  "title": "तू प्यार का सागर",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तू प्यार का सागर,"
+        },
+        {
+          "text": "सागर दया का तू है (2)"
+        },
+        {
+          "text": "तेरे प्यार के सागर में,"
+        },
+        {
+          "text": "हम तैरना चाहते है । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "गहराई मिले सागर की,"
+        },
+        {
+          "text": "ऊँचाई मिले आसमाँ की, (2)"
+        },
+        {
+          "text": "पर कोई नाप ना पायेगा,"
+        },
+        {
+          "text": "गहराई तेरे प्यार की । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "परमेश्वर होने पर भी तू,"
+        },
+        {
+          "text": "मानव रुप धारण किया (2)"
+        },
+        {
+          "text": "प्रभु तेरे इसी प्यार ने,"
+        },
+        {
+          "text": "हमको दीवाना बनाया । (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[G]तू प्यार का सागर,\r\n[C]सागर दया का तू है (2)\r\n[G]तेरे प्यार के सागर में,\r\n[D]हम तैरना चाहते है [G]। (2)\r\n\r\n[Verse]\r\n[G]गहराई मिले सागर की,\r\n[C]ऊँचाई मिले आसमाँ की, (2)\r\n[G]पर कोई नाप ना पायेगा,\r\n[D]गहराई तेरे प्यार [G]की । (2)\r\n\r\n[Verse]\r\n[G]परमेश्वर होने पर भी तू,\r\n[C]मानव रुप धारण किया (2)\r\n[G]प्रभु तेरे इसी प्यार ने,\r\n[D]हमको दीवाना बना[G]या । (2)",
+  "lyrics": "[Verse]\r\nतू प्यार का सागर,\r\nसागर दया का तू है (2)\r\nतेरे प्यार के सागर में,\r\nहम तैरना चाहते है । (2)\r\n\r\n[Verse]\r\nगहराई मिले सागर की,\r\nऊँचाई मिले आसमाँ की, (2)\r\nपर कोई नाप ना पायेगा,\r\nगहराई तेरे प्यार की । (2)\r\n\r\n[Verse]\r\nपरमेश्वर होने पर भी तू,\r\nमानव रुप धारण किया (2)\r\nप्रभु तेरे इसी प्यार ने,\r\nहमको दीवाना बनाया । (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

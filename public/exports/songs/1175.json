@@ -1,112 +1,71 @@
 {
-  "id" : 1175,
-  "songNumber" : 197,
-  "title" : "एक टूटे हुए दिलने, तुझको ही पुकारा है",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "एक टूटे हुए दिलने, तुझको ही पुकारा है",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "आजके मसीह मुझको, तेरा ही सहारा है।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 17
-      }, {
-        "chord" : "Am",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जब साथ मेरे तू है, संसारकी सागरमें (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "तुफ़ान का डर क्या है, हर मौज किनारा है।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 21
-      }, {
-        "chord" : "Am",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "थोडासा इशारा भी मेरे लिए काफी है (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "एक डूबनेवाले को, यीशु का सहारा है।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 17
-      }, {
-        "chord" : "Am",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "सच्चाई के राहों से, ना मेरे कदम बहके (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "मुझको तेरी राहोंमें, हरवक्त गँवाना है।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 21
-      }, {
-        "chord" : "Am",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 1175,
+  "songNumber": 197,
+  "title": "एक टूटे हुए दिलने, तुझको ही पुकारा है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "एक टूटे हुए दिलने, तुझको ही पुकारा है"
+        },
+        {
+          "text": "आजके मसीह मुझको, तेरा ही सहारा है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब साथ मेरे तू है, संसारकी सागरमें (2)"
+        },
+        {
+          "text": "तुफ़ान का डर क्या है, हर मौज किनारा है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "थोडासा इशारा भी मेरे लिए काफी है (2)"
+        },
+        {
+          "text": "एक डूबनेवाले को, यीशु का सहारा है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सच्चाई के राहों से, ना मेरे कदम बहके (2)"
+        },
+        {
+          "text": "मुझको तेरी राहोंमें, हरवक्त गँवाना है।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[Am]एक टूटे हुए दिलने, [G]तुझको ही पुकारा है\n[F]आजके मसीह मुझको, [E]तेरा ही सहा[Am]रा है।\n\n[Verse]\n[Am]जब साथ मेरे तू है, [G]संसारकी सागरमें (2)\n[F]तुफ़ान का डर क्या है, [E]हर मौज किना[Am]रा है।\n\n[Verse]\n[Am]थोडासा इशारा भी [G]मेरे लिए काफी है (2)\n[F]एक डूबनेवाले को, [E]यीशु का सहा[Am]रा है।\n\n[Verse]\n[Am]सच्चाई के राहों से, [G]ना मेरे कदम बहके (2)\n[F]मुझको तेरी राहोंमें, [E]हरवक्त गँवा[Am]ना है।",
+  "lyrics": "[Verse]\nएक टूटे हुए दिलने, तुझको ही पुकारा है\nआजके मसीह मुझको, तेरा ही सहारा है।\n\n[Verse]\nजब साथ मेरे तू है, संसारकी सागरमें (2)\nतुफ़ान का डर क्या है, हर मौज किनारा है।\n\n[Verse]\nथोडासा इशारा भी मेरे लिए काफी है (2)\nएक डूबनेवाले को, यीशु का सहारा है।\n\n[Verse]\nसच्चाई के राहों से, ना मेरे कदम बहके (2)\nमुझको तेरी राहोंमें, हरवक्त गँवाना है।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

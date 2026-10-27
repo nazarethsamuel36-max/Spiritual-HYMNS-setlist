@@ -1,212 +1,115 @@
 {
-  "id" : 1010,
-  "songNumber" : 32,
-  "title" : "जब से प्यारा यीशु आया, मेरा जीवन बदल गया",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "जब से प्यारा यीशु आया, मेरा जीवन बदल गया,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "जब से मैंने उसे है पाया, मेरा जीवन बदल गया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "मुझे ग़म और मुसीबतों में, सहारा देकर",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "मेरे पापों का बोझ लेकर, अपने ऊपर",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "क्रूस पर खून अपना बहाया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "इस जहाँ की गन्दगी से, मुझे छुड़ाया",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "जान देकर मुझे गुनाहों, से है बचाया",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "तब से दिल, मेरा मन, मेरी काया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "मुझे खरीदा है मसीह ने, खून देकर",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "मैं हूँ उसका मेरा न कोई, सिवाय उसके",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "पुत्र ने है पिता से मिलाया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "रात काली बीत गई है, हुआ सबेरा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "सुबह का तारा देखो चमका, यीशु मेरा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "इसलिए मैंने यह गीत गाया।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 1010,
+  "songNumber": 32,
+  "title": "जब से प्यारा यीशु आया, मेरा जीवन बदल गया",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "जब से प्यारा यीशु आया, मेरा जीवन बदल गया,"
+        },
+        {
+          "text": "जब से मैंने उसे है पाया, मेरा जीवन बदल गया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मुझे ग़म और मुसीबतों में, सहारा देकर"
+        },
+        {
+          "text": "मेरे पापों का बोझ लेकर, अपने ऊपर"
+        },
+        {
+          "text": "क्रूस पर खून अपना बहाया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस जहाँ की गन्दगी से, मुझे छुड़ाया"
+        },
+        {
+          "text": "जान देकर मुझे गुनाहों, से है बचाया"
+        },
+        {
+          "text": "तब से दिल, मेरा मन, मेरी काया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मुझे खरीदा है मसीह ने, खून देकर"
+        },
+        {
+          "text": "मैं हूँ उसका मेरा न कोई, सिवाय उसके"
+        },
+        {
+          "text": "पुत्र ने है पिता से मिलाया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रात काली बीत गई है, हुआ सबेरा"
+        },
+        {
+          "text": "सुबह का तारा देखो चमका, यीशु मेरा"
+        },
+        {
+          "text": "इसलिए मैंने यह गीत गाया।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]जब से प्यारा यीशु आया, [G]मेरा जीवन बदल ग[D]या,\n[D]जब से मैंने उसे है पाया, [G]मेरा जीवन बदल ग[D]या ।\n[Verse]\n[Verse]\n[D]मुझे ग़म और मुसी[G]बतों में, [A]सहारा दे[D]कर\n[D]मेरे पापों का [G]बोझ लेकर, [A]अपने ऊ[D]पर\n[G]क्रूस पर खून अपना ब[D]हाया ।\n[Verse]\n[Verse]\n[D]इस जहाँ की गन्द[G]गी से, [A]मुझे छु[D]ड़ाया\n[D]जान देकर मुझे गु[G]नाहों, [A]से है ब[D]चाया\n[G]तब से दिल, मेरा मन, मेरी [D]काया ।\n[Verse]\n[Verse]\n[D]मुझे खरीदा है म[G]सीह ने, [A]खून दे[D]कर\n[D]मैं हूँ उसका मेरा न [G]कोई, [A]सिवाय उस[D]के\n[G]पुत्र ने है पिता से मि[D]लाया ।\n[Verse]\n[Verse]\n[D]रात काली बीत [G]गई है, [A]हुआ सबे[D]रा\n[D]सुबह का तारा देखो [G]चमका, [A]यीशु मे[D]रा\n[G]इसलिए मैंने यह गीत [D]गाया।",
+  "lyrics": "[Chorus]\n जब से प्यारा यीशु आया, मेरा जीवन बदल गया,\nजब से मैंने उसे है पाया, मेरा जीवन बदल गया ।\n[Verse]\n[Verse]\nमुझे ग़म और मुसीबतों में, सहारा देकर\nमेरे पापों का बोझ लेकर, अपने ऊपर\nक्रूस पर खून अपना बहाया ।\n[Verse]\n[Verse]\nइस जहाँ की गन्दगी से, मुझे छुड़ाया\nजान देकर मुझे गुनाहों, से है बचाया\nतब से दिल, मेरा मन, मेरी काया ।\n[Verse]\n[Verse]\nमुझे खरीदा है मसीह ने, खून देकर\nमैं हूँ उसका मेरा न कोई, सिवाय उसके\nपुत्र ने है पिता से मिलाया ।\n[Verse]\n[Verse]\nरात काली बीत गई है, हुआ सबेरा\nसुबह का तारा देखो चमका, यीशु मेरा\nइसलिए मैंने यह गीत गाया।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

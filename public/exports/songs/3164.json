@@ -1,40 +1,95 @@
 {
-  "id" : 3164,
-  "songNumber" : 1023,
-  "title" : "** Lord I Lift Your Name On High",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Lord I lift your name on high"
-    }, {
-      "text" : "Lord I love to sing your praises"
-    }, {
-      "text" : "i'm so glad you are in my life"
-    }, {
-      "text" : "i'm so glad you came to save us"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "You came from heaven to earth, to show the way"
-    }, {
-      "text" : "From the earth to the cross, my debt to pay"
-    }, {
-      "text" : "From the cross to the grave, from the grave to the sky"
-    }, {
-      "text" : "Lord I lift your name on high"
-    } ]
-  } ]
+  "id": 3164,
+  "songNumber": 1023,
+  "title": "Lord I Lift Your Name On High",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I love to lift my voice in praise to You"
+        },
+        {
+          "text": "I love to lift my voice in praise to You"
+        },
+        {
+          "text": "I love to lift my voice in praise to You"
+        },
+        {
+          "text": "My God and my Savior"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "My God and Savior"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "You came from heaven to earth to show the way"
+        },
+        {
+          "text": "From the earth to the cross my debt to pay"
+        },
+        {
+          "text": "From the cross to the grave from the grave to the sky"
+        },
+        {
+          "text": "Lord I lift your name on high"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "Lord I lift Your name on high"
+        },
+        {
+          "text": "My God and Savior"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nMy God and my Savior\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior\n\n[Verse 2]\nYou came from heaven to earth to show the way\nFrom the earth to the cross my debt to pay\nFrom the cross to the grave from the grave to the sky\nLord I lift your name on high\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior",
+  "lyrics": "\n[Verse 1]\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nMy God and my Savior\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior\n\n[Verse 2]\nYou came from heaven to earth to show the way\nFrom the earth to the cross my debt to pay\nFrom the cross to the grave from the grave to the sky\nLord I lift your name on high\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

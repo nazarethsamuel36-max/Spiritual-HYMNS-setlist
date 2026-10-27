@@ -1,88 +1,77 @@
 {
-  "id" : 705,
-  "songNumber" : 29,
-  "title" : "EVERYBODY OUGHT TO KNOW",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Everybody ought to know (3)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 10
-      }, {
-        "chord" : "F",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Who Jesus is.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "F",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Heâ€™s the Lily of the Valley,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 9
-      }, {
-        "chord" : "F",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Heâ€™s the Bright and Morning Star,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Heâ€™s the fairest of ten thousand,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 9
-      }, {
-        "chord" : "F",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Everybody ought to know.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "F",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 705,
+  "songNumber": 29,
+  "title": "EVERYBODY OUGHT TO KNOW",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Everybody ought to know (3)"
+        },
+        {
+          "text": "Who Jesus is."
+        },
+        {
+          "text": "He's the Lily of the Valley,"
+        },
+        {
+          "text": "He's the Bright and Morning Star,"
+        },
+        {
+          "text": "He's the fairest of ten thousand,"
+        },
+        {
+          "text": "Everybody ought to know."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Unto thee, O Lord, do I lift up my soul (2)"
+        },
+        {
+          "text": "O my God, I trust in Thee,"
+        },
+        {
+          "text": "Let me not be ashamed,"
+        },
+        {
+          "text": "Let not mine enemies triumph over me."
+        },
+        {
+          "text": "Show me Thy ways, Thy ways O Lord."
+        },
+        {
+          "text": "Teach me Thy paths, Thy paths O Lord... O my God..."
+        },
+        {
+          "text": "Remember not the sins of my youth (2)...O my God..."
+        },
+        {
+          "text": "The secret of the Lord is with Them that fear Him. (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]Everybody [Bb]ought to [F]know (3)\r\n[F]Who [C]Jesus [F]is.\r\n[F]He's th[Bb]e Lily of th[F]e Valley,\r\n[F]He's th[Bb]e Bright and Mornin[C]g Star,\r\n[F]He's th[Bb]e fairest of te[F]n thousand,\r\n[F]Everybody [C]ought to [F]know.\r\n\r\n[Verse 1]\r\n[F]Unto thee, O Lord, do I [Gm]lift up my soul (2)\r\nO my [F]God, I [Bb]trust in Thee,\r\nLet me [F]not be a[Dm]shamed,\r\nLet not mine [Gm]enemies [C]triumph over [F]me.\r\n[F]Show me Thy ways, Thy [Gm]ways O Lord.\r\nTeach me Thy [C]paths, Thy paths O [F]Lord... O my God...\r\n[F]Remember not the [Gm]sins of my youth (2)...O my God...\r\nThe [C]secret of the Lord is with Them that fear [F]Him. (2)",
+  "lyrics": "[Verse]\r\nEverybody ought to know (3)\r\nWho Jesus is.\r\nHe's the Lily of the Valley,\r\nHe's the Bright and Morning Star,\r\nHe's the fairest of ten thousand,\r\nEverybody ought to know.\r\n\r\n[Verse 1]\r\nUnto thee, O Lord, do I lift up my soul (2)\r\nO my God, I trust in Thee,\r\nLet me not be ashamed,\r\nLet not mine enemies triumph over me.\r\nShow me Thy ways, Thy ways O Lord.\r\nTeach me Thy paths, Thy paths O Lord... O my God...\r\nRemember not the sins of my youth (2)...O my God...\r\nThe secret of the Lord is with Them that fear Him. (2)",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

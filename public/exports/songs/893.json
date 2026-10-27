@@ -1,377 +1,134 @@
 {
-  "id" : 893,
-  "songNumber" : 281,
-  "title" : "HOLY HOLY HOLY HOLY",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Holy, Holy, Holy Holy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Holy, Holy, Lord God Almighty.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As we lift our hearts before you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "As a token of our love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Holy, Holy, Holy Holy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Gracious Father, gracious Father,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "We're so blessed to be your children,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Gracious Father.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "As we lift our heads before you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As a token of our love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Gracious Father, gracious Father.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Precious Jesus, precious Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "We're so glad that you redeemed us, precious Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 36
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "As we lift our hands before you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As a token of our love,"
-    }, {
-      "text" : "Precious Jesus, precious Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Holy Spirit, Holy, Spirit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Come renew us with Your love",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Holy Spirit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "As we lift our voice before You,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As a token of our love,"
-    }, {
-      "text" : "Holy Spirit, Holy Spirit.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Hallelujah, Hallelujah, Hallelujah,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Lord God Almighty,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "As we lift our hearts before you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "As a token of our love,"
-    }, {
-      "text" : "Hallelujah, Hallelujah.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 893,
+  "songNumber": 281,
+  "title": "HOLY HOLY HOLY HOLY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy, Holy, Holy Holy,"
+        },
+        {
+          "text": "Holy, Holy, Lord God Almighty."
+        },
+        {
+          "text": "As we lift our hearts before you"
+        },
+        {
+          "text": "As a token of our love."
+        },
+        {
+          "text": "Holy, Holy, Holy Holy."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Gracious Father, gracious Father,"
+        },
+        {
+          "text": "We're so blessed to be your children,"
+        },
+        {
+          "text": "Gracious Father."
+        },
+        {
+          "text": "As we lift our heads before you"
+        },
+        {
+          "text": "As a token of our love,"
+        },
+        {
+          "text": "Gracious Father, gracious Father."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Precious Jesus, precious Jesus,"
+        },
+        {
+          "text": "We're so glad that you redeemed us, precious Jesus."
+        },
+        {
+          "text": "As we lift our hands before you"
+        },
+        {
+          "text": "As a token of our love,"
+        },
+        {
+          "text": "Precious Jesus, precious Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy Spirit, Holy, Spirit,"
+        },
+        {
+          "text": "Come renew us with Your love"
+        },
+        {
+          "text": "Holy Spirit,"
+        },
+        {
+          "text": "As we lift our voice before You,"
+        },
+        {
+          "text": "As a token of our love,"
+        },
+        {
+          "text": "Holy Spirit, Holy Spirit."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hallelujah, Hallelujah, Hallelujah,"
+        },
+        {
+          "text": "Lord God Almighty,"
+        },
+        {
+          "text": "As we lift our hearts before you,"
+        },
+        {
+          "text": "As a token of our love,"
+        },
+        {
+          "text": "Hallelujah, Hallelujah."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Holy, [G]Holy, [D]Holy [A]Holy,\n[D]Holy, [G]Holy, [D]Lord [A]God Al[D]mighty.\nAs we [D]lift our [G]hearts be[D]fore you\nAs a [D]token [A]of our [D]love.\n[D]Holy, [G]Holy, [D]Holy [A]Holy.\n\n[Verse]\n[D]Gracious [G]Father, [D]gracious [A]Father,\n[D]We're so [G]blessed to [D]be your [A]children,\n[D]Gracious [A]Father.\nAs we [D]lift our [G]heads be[D]fore you\nAs a [D]token [A]of our [D]love,\n[D]Gracious [G]Father, [D]gracious [A]Father.\n\n[Verse]\n[D]Precious [G]Jesus, [D]precious [A]Jesus,\n[D]We're so [G]glad that [D]you re[A]deemed us, [D]precious [A]Jesus.\nAs we [D]lift our [G]hands be[D]fore you\nAs a token of our love,\n[D]Precious [G]Jesus, [D]precious [A]Jesus.\n\n[Verse]\n[D]Holy [G]Spirit, [D]Holy, [A]Spirit,\n[D]Come re[G]new us [D]with Your [A]love\n[D]Holy [A]Spirit,\nAs we [D]lift our [G]voice be[D]fore You,\nAs a token of our love,\n[D]Holy [G]Spirit, [D]Holy [A]Spirit.\n\n[Verse]\n[D]Halle[G]lujah, [D]Halle[A]lujah, [D]Halle[G]lujah,\n[D]Lord [A]God Al[D]mighty,\nAs we [D]lift our [G]hearts be[D]fore you,\nAs a token of our love,\n[D]Halle[G]lujah, [D]Halle[A]lujah.",
+  "lyrics": "[Verse]\nHoly, Holy, Holy Holy,\nHoly, Holy, Lord God Almighty.\nAs we lift our hearts before you\nAs a token of our love.\nHoly, Holy, Holy Holy.\n\n[Verse]\nGracious Father, gracious Father,\nWe're so blessed to be your children,\nGracious Father.\nAs we lift our heads before you\nAs a token of our love,\nGracious Father, gracious Father.\n\n[Verse]\nPrecious Jesus, precious Jesus,\nWe're so glad that you redeemed us, precious Jesus.\nAs we lift our hands before you\nAs a token of our love,\nPrecious Jesus, precious Jesus.\n\n[Verse]\nHoly Spirit, Holy, Spirit,\nCome renew us with Your love\nHoly Spirit,\nAs we lift our voice before You,\nAs a token of our love,\nHoly Spirit, Holy Spirit.\n\n[Verse]\nHallelujah, Hallelujah, Hallelujah,\nLord God Almighty,\nAs we lift our hearts before you,\nAs a token of our love,\nHallelujah, Hallelujah.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

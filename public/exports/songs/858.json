@@ -1,392 +1,187 @@
 {
-  "id" : 858,
-  "songNumber" : 246,
-  "title" : "O WHAT A GIFT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O what a gift! what a wonderful gift!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Who can tell the wonders of the Lord?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Let us open our eyes, our ears, and our hearts,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "It is Christ the Lord, it is He!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "In the stillness of the night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "When the world was asleep,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The Almighty Word leapt out,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "He came to Mary, He came to us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Christ came to the land of Galilee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Christ our Lord and our King !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "On the night before He died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "It was Passover night,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "And He gathered His friends together,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "He broke the bread, He blessed the wine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "It was the gift of His love and His life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Christ our Lord and our King !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "On the hill of Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The world held its breath,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "For there for the world to see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "God gave His Son, His very own Son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "For the love of you and me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Christ our Lord and our King !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Early on that morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "When the guards were sleeping,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Back to life came He!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "He conquered death, He conquered sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "But the vict'ry He gave to you and me !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Christ our Lord and our King !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Some day with the saints,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "We will come before our Father,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "And then we will shout and dance and sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "For in our midst for our eyes to see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Will be Christ our Lord and our King!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Christ our Lord and our King !"
-    } ]
-  } ]
+  "id": 858,
+  "songNumber": 246,
+  "title": "O WHAT A GIFT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Dm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O what a gift! what a wonderful gift!"
+        },
+        {
+          "text": "Who can tell the wonders of the Lord?"
+        },
+        {
+          "text": "Let us open our eyes, our ears, and our hearts,"
+        },
+        {
+          "text": "It is Christ the Lord, it is He!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "In the stillness of the night,"
+        },
+        {
+          "text": "When the world was asleep,"
+        },
+        {
+          "text": "The Almighty Word leapt out,"
+        },
+        {
+          "text": "He came to Mary, He came to us,"
+        },
+        {
+          "text": "Christ came to the land of Galilee,"
+        },
+        {
+          "text": "Christ our Lord and our King !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On the night before He died,"
+        },
+        {
+          "text": "It was Passover night,"
+        },
+        {
+          "text": "And He gathered His friends together,"
+        },
+        {
+          "text": "He broke the bread, He blessed the wine,"
+        },
+        {
+          "text": "It was the gift of His love and His life,"
+        },
+        {
+          "text": "Christ our Lord and our King !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On the hill of Calvary,"
+        },
+        {
+          "text": "The world held its breath,"
+        },
+        {
+          "text": "For there for the world to see,"
+        },
+        {
+          "text": "God gave His Son, His very own Son,"
+        },
+        {
+          "text": "For the love of you and me,"
+        },
+        {
+          "text": "Christ our Lord and our King !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Early on that morning,"
+        },
+        {
+          "text": "When the guards were sleeping,"
+        },
+        {
+          "text": "Back to life came He!"
+        },
+        {
+          "text": "He conquered death, He conquered sin,"
+        },
+        {
+          "text": "But the victry He gave to you and me !"
+        },
+        {
+          "text": "Christ our Lord and our King !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Some day with the saints,"
+        },
+        {
+          "text": "We will come before our Father,"
+        },
+        {
+          "text": "And then we will shout and dance and sing,"
+        },
+        {
+          "text": "For in our midst for our eyes to see,"
+        },
+        {
+          "text": "Will be Christ our Lord and our King!"
+        },
+        {
+          "text": "Christ our Lord and our King !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n O [D]what a [G]gift! what a [D]wonderful gift!\r\n[D]Who can tell the [G]wonders of the [A]Lord?\r\nLet us [D]open our [G]eyes, our [D]ears, and our [G]hearts,\r\nIt is [D]Christ the [A]Lord, it is [D]He!\r\n[Verse]\r\n[Verse]\r\nIn the [D]stillness [G]of the [D]night,\r\nWhen the [G]world was a[A]sleep,\r\nThe Al[D]mighty [G]Word leapt [D]out,\r\nHe [D]came to Mary, He [G]came to [A]us,\r\n[D]Christ came to the [G]land of Gali[D]lee,\r\n[D]Christ our [A]Lord and our [D]King !\r\n[Verse]\r\n[Verse]\r\nOn the [D]night be[G]fore He [D]died,\r\nIt was [G]Passover [A]night,\r\nAnd He [D]gathered His [G]friends to[D]gether,\r\nHe [D]broke the bread, He [G]blessed the [A]wine,\r\nIt was the [D]gift of His [G]love and His [D]life,\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\nOn the [D]hill of [G]Calva[D]ry,\r\nThe [G]world held its [A]breath,\r\nFor [D]there for the [G]world to [D]see,\r\n[D]God gave His Son, His [G]very own [A]Son,\r\nFor the [D]love of [G]you and [D]me,\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\n[D]Early on [G]that [D]morning,\r\nWhen the [G]guards were [A]sleeping,\r\n[D]Back to [G]life came [D]He!\r\nHe [D]conquered death, He [G]conquered [A]sin,\r\nBut the [D]victry He [G]gave to you and [D]me !\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\n[D]Some day [G]with the [D]saints,\r\nWe will [G]come before our [A]Father,\r\nAnd [D]then we will [G]shout and [D]dance and sing,\r\nFor in [D]our midst for our [G]eyes to [A]see,\r\nWill be [D]Christ our [G]Lord and our [D]King!\r\nChrist our Lord and our King !",
+  "lyrics": "[Chorus]\r\n O what a gift! what a wonderful gift!\r\nWho can tell the wonders of the Lord?\r\nLet us open our eyes, our ears, and our hearts,\r\nIt is Christ the Lord, it is He!\r\n[Verse]\r\n[Verse]\r\nIn the stillness of the night,\r\nWhen the world was asleep,\r\nThe Almighty Word leapt out,\r\nHe came to Mary, He came to us,\r\nChrist came to the land of Galilee,\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\nOn the night before He died,\r\nIt was Passover night,\r\nAnd He gathered His friends together,\r\nHe broke the bread, He blessed the wine,\r\nIt was the gift of His love and His life,\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\nOn the hill of Calvary,\r\nThe world held its breath,\r\nFor there for the world to see,\r\nGod gave His Son, His very own Son,\r\nFor the love of you and me,\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\nEarly on that morning,\r\nWhen the guards were sleeping,\r\nBack to life came He!\r\nHe conquered death, He conquered sin,\r\nBut the victry He gave to you and me !\r\nChrist our Lord and our King !\r\n[Verse]\r\n[Verse]\r\nSome day with the saints,\r\nWe will come before our Father,\r\nAnd then we will shout and dance and sing,\r\nFor in our midst for our eyes to see,\r\nWill be Christ our Lord and our King!\r\nChrist our Lord and our King !",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Lord Supper",
+    "Worship",
+    "Gospel"
+  ]
 }

@@ -1,114 +1,86 @@
 {
-  "id" : 983,
-  "songNumber" : 5,
-  "title" : "यीशु ने कहा ''जीवन की रोटी",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "यीशु ने कहा ''जीवन की रोटी,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "जीवन की रोटी, मैं ही हूँ'' । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु ने कहा ''जगत का उजाला,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "जगत्न का उजाला, मैं ही हूँ'' । (2)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "यीशु ने कहा- ''सच्चा-गडरिया,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "सच्चा गडरिया, मैं ही हूँ'' । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "यीशु ने कहा- ''मार्ग और फाटक,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "मार्ग और फाटक, मैं ही हूँ'' । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 983,
+  "songNumber": 5,
+  "title": "यीशु ने कहा जीवन की रोटी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "यीशु ने कहा जीवन की रोटी,"
+        },
+        {
+          "text": "जीवन की रोटी, मैं ही हूँ । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ने कहा जगत का उजाला,"
+        },
+        {
+          "text": "जगत्न का उजाला, मैं ही हूँ । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ने कहा- सच्चा-गडरिया,"
+        },
+        {
+          "text": "सच्चा गडरिया, मैं ही हूँ । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ने कहा- मार्ग और फाटक,"
+        },
+        {
+          "text": "मार्ग और फाटक, मैं ही हूँ । (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]यीशु ने कहा [G]जीवन की [D]रोटी,\n[D]जीवन की [A]रोटी, मैं ही [D]हूँ । (2)\n[Verse]\n[Verse]\n[D]यीशु ने कहा [G]जगत का उ[D]जाला,\nजगत्न का उजाला, मैं ही हूँ । (2)\n[Verse]\n[Verse]\n[D]यीशु ने कहा- [G]सच्चा-गड[D]रिया,\n[D]सच्चा गड[A]रिया, मैं ही [D]हूँ । (2)\n[Verse]\n[Verse]\n[D]यीशु ने कहा- [G]मार्ग और [D]फाटक,\n[D]मार्ग और [A]फाटक, मैं ही [D]हूँ । (2)",
+  "lyrics": "[Chorus]\n यीशु ने कहा जीवन की रोटी,\nजीवन की रोटी, मैं ही हूँ । (2)\n[Verse]\n[Verse]\nयीशु ने कहा जगत का उजाला,\nजगत्न का उजाला, मैं ही हूँ । (2)\n[Verse]\n[Verse]\nयीशु ने कहा- सच्चा-गडरिया,\nसच्चा गडरिया, मैं ही हूँ । (2)\n[Verse]\n[Verse]\nयीशु ने कहा- मार्ग और फाटक,\nमार्ग और फाटक, मैं ही हूँ । (2)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

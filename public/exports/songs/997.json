@@ -1,88 +1,58 @@
 {
-  "id" : 997,
-  "songNumber" : 19,
-  "title" : "उसने दाख़रस और तेल उंडेला",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "उसने दाख़रस और तेल उंडेला",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "मेरी आत्मा को चंगा किया",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "यहीहो के किनारे अधमूआ पडा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "उसने दाख़रस और तेल उंडेला"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु, यीशु, यीशु, मैंने उसे पा लिया (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "मैंने यीशु को अपना लिया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 997,
+  "songNumber": 19,
+  "title": "उसने दाख़रस और तेल उंडेला",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "उसने दाख़रस और तेल उंडेला"
+        },
+        {
+          "text": "मेरी आत्मा को चंगा किया"
+        },
+        {
+          "text": "यहीहो के किनारे अधमूआ पडा"
+        },
+        {
+          "text": "उसने दाख़रस और तेल उंडेला"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु, यीशु, यीशु, मैंने उसे पा लिया (3)"
+        },
+        {
+          "text": "मैंने यीशु को अपना लिया ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]उसने दाख़रस और [G]तेल उं[D]डेला\n[D]मेरी आत्मा को [A]चंगा कि[D]या\n[D]यहीहो के कि[G]नारे अधमूआ प[D]डा\nउसने दाख़रस और तेल उंडेला\n[Verse]\n[Verse]\n[D]यीशु, [G]यीशु, [D]यीशु, मैंने उसे पा [A]लिया [D](3)\n[D]मैंने यीशु को अप[A]ना लि[D]या ।",
+  "lyrics": "[Chorus]\n उसने दाख़रस और तेल उंडेला\nमेरी आत्मा को चंगा किया\nयहीहो के किनारे अधमूआ पडा\nउसने दाख़रस और तेल उंडेला\n[Verse]\n[Verse]\nयीशु, यीशु, यीशु, मैंने उसे पा लिया (3)\nमैंने यीशु को अपना लिया ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Healing"
+  ]
 }

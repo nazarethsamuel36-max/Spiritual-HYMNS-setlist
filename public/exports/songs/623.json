@@ -1,109 +1,50 @@
 {
-  "id" : 623,
-  "songNumber" : 316,
-  "title" : "WE WILL WORSHIP THE MAKER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We will worship the maker of all things,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Almighty God, to you our voices sing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Hallowed be thy name (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "You are the Holy One, Father, Spirit, Son,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "King of kings and Lord of lords,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Hallowed be, Hallowed be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Hallowed be thy name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 623,
+  "songNumber": 316,
+  "title": "WE WILL WORSHIP THE MAKER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "We will worship the maker of all things,"
+        },
+        {
+          "text": "Almighty God, to you our voices sing,"
+        },
+        {
+          "text": "Hallowed be thy name (2)"
+        },
+        {
+          "text": "You are the Holy One, Father, Spirit, Son,"
+        },
+        {
+          "text": "King of kings and Lord of lords,"
+        },
+        {
+          "text": "Hallowed be, Hallowed be"
+        },
+        {
+          "text": "Hallowed be thy name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nWe will [D]worship the [G]maker [D]of [G]all [D]things,\nAl[G]mighty [D]God, to [A]you our voices sing,\n[D]Hallowed [G]be thy [D]name (2)\nYou are the [G]Holy One, Father, Spirit, [A]Son,\n[D]King of [G]kings and [D]Lord of [A]lords,\n[D]Hallowed [G]be, [D]Hallowed [G]be\n[D]Hallowed [A]be thy [D]name.",
+  "lyrics": "[Verse 1]\nWe will worship the maker of all things,\nAlmighty God, to you our voices sing,\nHallowed be thy name (2)\nYou are the Holy One, Father, Spirit, Son,\nKing of kings and Lord of lords,\nHallowed be, Hallowed be\nHallowed be thy name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

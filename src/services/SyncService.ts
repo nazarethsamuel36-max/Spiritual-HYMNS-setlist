@@ -67,7 +67,9 @@ export class SyncService {
       console.log(`Validation PASSED. Swapping ${normalizedSongs.length} songs into local database...`);
 
       // --- SWAP LAYER ---
-      await db.transaction('rw', [db.songIndex, db.syncMeta], async () => {
+      await db.transaction('rw', [db.songIndex, db.syncMeta, db.songs], async () => {
+        // Clear cached songs so fresh static content is loaded on next open
+        await db.songs.clear();
         // Clear and refill metadata index
         await db.songIndex.clear();
         await db.songIndex.bulkAdd(normalizedSongs);

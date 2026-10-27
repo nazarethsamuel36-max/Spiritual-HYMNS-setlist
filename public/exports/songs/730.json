@@ -1,107 +1,77 @@
 {
-  "id" : 730,
-  "songNumber" : 118,
-  "title" : "GOD FORGAVE MY SIN IN JESUS' NAME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God forgave my sin in Jesus' name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I've been born again in Jesus' name,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "And in Jesus' name I come to you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "To share His love as He told me to.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He said, 'Freely, freely you have received",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Freely, freely give.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Go in my name and because you believe,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Others will know that I live.'",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All power is given in Jesus' name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "In earth and heaven in Jesus' name,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "And in Jesus' name, I come to you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "To share His power as He told me to.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 730,
+  "songNumber": 118,
+  "title": "GOD FORGAVE MY SIN IN JESUS' NAME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "God forgave my sin in Jesus' name,"
+        },
+        {
+          "text": "I've been born again in Jesus' name,"
+        },
+        {
+          "text": "And in Jesus' name I come to you,"
+        },
+        {
+          "text": "To share His love as He told me to."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "He said, ''Freely, freely you have received"
+        },
+        {
+          "text": "Freely, freely give."
+        },
+        {
+          "text": "Go in my name and because you believe,"
+        },
+        {
+          "text": "Others will know that I live.''"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "All power is given in Jesus' name,"
+        },
+        {
+          "text": "In earth and heaven in Jesus' name,"
+        },
+        {
+          "text": "And in Jesus' name, I come to you,"
+        },
+        {
+          "text": "To share His power as He told me to."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]God forgave my sin in Jesus' name,\r\nI've been [C]born again in Jesus' name,\r\nAnd in [F]Jesus' name I come to you,\r\nTo [Bb]share His love as [C]He told me [F]to.\r\n\r\n[Chorus]\r\nHe said, ''[F]Freely, freely you have received\r\n[Bb]Freely, freely [F]give.\r\nGo in my [C]name and because you believe,\r\n[F]Others will know that I live.''\r\n\r\n[Verse 2]\r\nAll [F]power is given in Jesus' name,\r\nIn [C]earth and heaven in Jesus' name,\r\nAnd in [F]Jesus' name, I come to you,\r\nTo [Bb]share His power as [C]He told me [F]to.",
+  "lyrics": "[Verse 1]\r\nGod forgave my sin in Jesus' name,\r\nI've been born again in Jesus' name,\r\nAnd in Jesus' name I come to you,\r\nTo share His love as He told me to.\r\n\r\n[Chorus]\r\nHe said, ''Freely, freely you have received\r\nFreely, freely give.\r\nGo in my name and because you believe,\r\nOthers will know that I live.''\r\n\r\n[Verse 2]\r\nAll power is given in Jesus' name,\r\nIn earth and heaven in Jesus' name,\r\nAnd in Jesus' name, I come to you,\r\nTo share His power as He told me to.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

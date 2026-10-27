@@ -1,149 +1,89 @@
 {
-  "id" : 967,
-  "songNumber" : 89,
-  "title" : "SHACKLED BY A HEAVY BURDEN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Shackled by a heavy burden,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "'Neath a load of guilt and shame,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Then the hand of Jesus touched me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And now I am no longer the same.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He touched me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "Yes, He touched me",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And oh, the joy",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "E",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "That floods my soul.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Something happened,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "And now I know,",
-      "chords" : [ {
-        "chord" : "D7",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "He touched me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "And made me whole.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Since I met this blessed Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Since He cleansed and made me whole,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I shall never cease to praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "I'll shout it while eternity rolls.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 967,
+  "songNumber": 89,
+  "title": "SHACKLED BY A HEAVY BURDEN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Shackled by a heavy burden,"
+        },
+        {
+          "text": "'Neath a load of guilt and shame,"
+        },
+        {
+          "text": "Then the hand of Jesus touched me,"
+        },
+        {
+          "text": "And now I am no longer the same."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "He touched me,"
+        },
+        {
+          "text": "Yes, He touched me"
+        },
+        {
+          "text": "And oh, the joy"
+        },
+        {
+          "text": "That floods my soul."
+        },
+        {
+          "text": "Something happened,"
+        },
+        {
+          "text": "And now I know,"
+        },
+        {
+          "text": "He touched me"
+        },
+        {
+          "text": "And made me whole."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Since I met this blessed Saviour,"
+        },
+        {
+          "text": "Since He cleansed and made me whole,"
+        },
+        {
+          "text": "I shall never cease to praise Him,"
+        },
+        {
+          "text": "I'll shout it while eternity rolls."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Shackled by a heavy burden,\n'Neath a [A]load of guilt and [D]shame,\nThen the [D]hand of Jesus [G]touched me,\nAnd [D]now I am [A]no longer the [D]same.\n\n[Chorus]\nHe [D]touched me,\nYes, He [G]touched me\nAnd [D]oh, the [E]joy\nThat floods my [A]soul.\nSomething [D]happened,\nAnd [D7]now I [G]know,\nHe [D]touched me\nAnd [A]made me [D]whole.\n\n[Verse 2]\n[D]Since I met this blessed Saviour,\nSince He [A]cleansed and made me [D]whole,\nI shall [D]never cease to [G]praise Him,\nI'll [D]shout it while e[A]ternity [D]rolls.",
+  "lyrics": "[Verse 1]\nShackled by a heavy burden,\n'Neath a load of guilt and shame,\nThen the hand of Jesus touched me,\nAnd now I am no longer the same.\n\n[Chorus]\nHe touched me,\nYes, He touched me\nAnd oh, the joy\nThat floods my soul.\nSomething happened,\nAnd now I know,\nHe touched me\nAnd made me whole.\n\n[Verse 2]\nSince I met this blessed Saviour,\nSince He cleansed and made me whole,\nI shall never cease to praise Him,\nI'll shout it while eternity rolls.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Healing"
+  ]
 }

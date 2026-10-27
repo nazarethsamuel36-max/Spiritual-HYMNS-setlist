@@ -1,207 +1,119 @@
 {
-  "id" : 839,
-  "songNumber" : 227,
-  "title" : "WE'VE GOT A GREAT BIG WONDERFUL GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We've got a great big wonderful God, Hallelujah!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Great big wonderful God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "A God who's always victorious,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Always watching over us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Great big wonderful God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "We've got a great big wonderful God, Hallelujah!"
-    }, {
-      "text" : "Great big wonderful God,"
-    }, {
-      "text" : "A God who loves every one of us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Does so much for all of us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Great big wonderful God."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "He never, never, leaves us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "He's always standing by,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "To pick us up if we stumble,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "We're the apple of His eye.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "We've got a great big wonderful God, Hallelujah!"
-    }, {
-      "text" : "Great big wonderful God,"
-    }, {
-      "text" : "Oh what a glory it is to sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Praises to our coming King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Great, big, wonderful God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "We've got a great big wonderful,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Marvellous glorious!.........",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "We've got a great big wonderful God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 839,
+  "songNumber": 227,
+  "title": "WE'VE GOT A GREAT BIG WONDERFUL GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We've got a great big wonderful God, Hallelujah!"
+        },
+        {
+          "text": "Great big wonderful God,"
+        },
+        {
+          "text": "A God who's always victorious,"
+        },
+        {
+          "text": "Always watching over us,"
+        },
+        {
+          "text": "Great big wonderful God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We've got a great big wonderful God, Hallelujah!"
+        },
+        {
+          "text": "Great big wonderful God,"
+        },
+        {
+          "text": "A God who loves every one of us,"
+        },
+        {
+          "text": "Does so much for all of us,"
+        },
+        {
+          "text": "Great big wonderful God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He never, never, leaves us,"
+        },
+        {
+          "text": "He's always standing by,"
+        },
+        {
+          "text": "To pick us up if we stumble,"
+        },
+        {
+          "text": "We're the apple of His eye."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We've got a great big wonderful God, Hallelujah!"
+        },
+        {
+          "text": "Great big wonderful God,"
+        },
+        {
+          "text": "Oh what a glory it is to sing,"
+        },
+        {
+          "text": "Praises to our coming King,"
+        },
+        {
+          "text": "Great, big, wonderful God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We've got a great big wonderful,"
+        },
+        {
+          "text": "Marvellous glorious!........."
+        },
+        {
+          "text": "We've got a great big wonderful God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]We've got a great big wonderful God, Halle[A]lujah!\n[D]Great big wonderful [A]God,\nA [D]God who's always vic[G]torious,\n[D]Always watching [A]over us,\n[D]Great big [A]wonderful [D]God.\n\n[Verse]\nWe've got a great big wonderful God, Hallelujah!\nGreat big wonderful God,\nA [D]God who loves every [G]one of us,\n[D]Does so much for [A]all of us,\nGreat big wonderful God.\n\n[Verse]\nHe [D]never, never, [G]leaves us,\nHe's [D]always standing [A]by,\nTo [D]pick us up if we [G]stumble,\nWe're the [D]apple [A]of His [D]eye.\n\n[Verse]\nWe've got a great big wonderful God, Hallelujah!\nGreat big wonderful God,\nOh [D]what a glory it [G]is to sing,\n[D]Praises to our [A]coming King,\n[D]Great, big, [A]wonderful [D]God.\n\n[Verse]\n[D]We've got a great big [G]wonderful,\n[D]Marvellous [A]glorious!.........\n[D]We've got a [A]great big wonderful [D]God.",
+  "lyrics": "[Verse]\nWe've got a great big wonderful God, Hallelujah!\nGreat big wonderful God,\nA God who's always victorious,\nAlways watching over us,\nGreat big wonderful God.\n\n[Verse]\nWe've got a great big wonderful God, Hallelujah!\nGreat big wonderful God,\nA God who loves every one of us,\nDoes so much for all of us,\nGreat big wonderful God.\n\n[Verse]\nHe never, never, leaves us,\nHe's always standing by,\nTo pick us up if we stumble,\nWe're the apple of His eye.\n\n[Verse]\nWe've got a great big wonderful God, Hallelujah!\nGreat big wonderful God,\nOh what a glory it is to sing,\nPraises to our coming King,\nGreat, big, wonderful God.\n\n[Verse]\nWe've got a great big wonderful,\nMarvellous glorious!.........\nWe've got a great big wonderful God.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

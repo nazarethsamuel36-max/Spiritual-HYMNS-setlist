@@ -1,129 +1,83 @@
 {
-  "id" : 863,
-  "songNumber" : 251,
-  "title" : "SHEPHERD OF LOVE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Shepherd of love, you knew I had lost my way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Shepherd of love, you cared that I'd gone astray.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 37
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "You sought and found me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Placed around me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Strong arms that carried me home,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "No foe can harm me, nor alarm me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Never again will I roam.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Shepherd of love, Saviour and Lord and Guide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Shepherd of love, forever I'll stay by your side.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    } ]
-  } ]
+  "id": 863,
+  "songNumber": 251,
+  "title": "SHEPHERD OF LOVE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Shepherd of love, you knew I had lost my way,"
+        },
+        {
+          "text": "Shepherd of love, you cared that Id gone astray."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "You sought and found me,"
+        },
+        {
+          "text": "Placed around me,"
+        },
+        {
+          "text": "Strong arms that carried me home,"
+        },
+        {
+          "text": "No foe can harm me, nor alarm me,"
+        },
+        {
+          "text": "Never again will I roam."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Shepherd of love, Saviour and Lord and Guide,"
+        },
+        {
+          "text": "Shepherd of love, forever Ill stay by your side."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Shepherd of love, you [G]knew I had [D]lost my [A]way,\n[D]Shepherd of love, you [G]cared that Id [D]gone as[A]tray.\n[Verse]\n[Verse]\n[Chorus]\nYou [G]sought and [D]found me,\n[G]Placed a[D]round me,\n[D]Strong arms that carried me [A]home,\nNo [G]foe can harm me, nor [D]alarm me,\n[A]Never again will I [D]roam.\n[Verse]\n[Verse]\n[D]Shepherd of love, [G]Saviour and [D]Lord and [A]Guide,\n[D]Shepherd of love, for[G]ever Ill [D]stay by your [A]side.",
+  "lyrics": "[Verse]\n Shepherd of love, you knew I had lost my way,\nShepherd of love, you cared that Id gone astray.\n[Verse]\n[Verse]\n[Chorus]\nYou sought and found me,\nPlaced around me,\nStrong arms that carried me home,\nNo foe can harm me, nor alarm me,\nNever again will I roam.\n[Verse]\n[Verse]\nShepherd of love, Saviour and Lord and Guide,\nShepherd of love, forever Ill stay by your side.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

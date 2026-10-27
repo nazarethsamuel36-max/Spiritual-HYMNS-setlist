@@ -1,76 +1,113 @@
 {
-  "id" : 3147,
-  "songNumber" : 1005,
-  "title" : "** Come Thou Fount Of Every Blessing",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Come, Thou Fount of every blessing"
-    }, {
-      "text" : "Tune my heart to sing Thy grace"
-    }, {
-      "text" : "Streams of mercy, never ceasing"
-    }, {
-      "text" : "Call for songs of loudest praise"
-    }, {
-      "text" : "Teach me some melodious sonnet"
-    }, {
-      "text" : "Sung by flaming tongues above"
-    }, {
-      "text" : "Praise the mount, I'm fixed upon it"
-    }, {
-      "text" : "Mount of Thy redeeming love"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Here I raise my Ebenezer"
-    }, {
-      "text" : "Here there by Thy great help I've come"
-    }, {
-      "text" : "And I hope, by Thy good pleasure"
-    }, {
-      "text" : "Safely to arrive at home"
-    }, {
-      "text" : "Jesus sought me when a stranger"
-    }, {
-      "text" : "Wandering from the fold of God"
-    }, {
-      "text" : "He, to rescue me from danger"
-    }, {
-      "text" : "Interposed His precious blood"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Oh, to grace how great a debtor"
-    }, {
-      "text" : "Daily I'm constrained to be"
-    }, {
-      "text" : "Let that goodness like a fetter"
-    }, {
-      "text" : "Bind my wandering heart to Thee"
-    }, {
-      "text" : "Prone to wander, Lord, I feel it"
-    }, {
-      "text" : "Prone to leave the God I love"
-    }, {
-      "text" : "Here's my heart, oh, take and seal it"
-    }, {
-      "text" : "Seal it for Thy courts above"
-    } ]
-  } ]
+  "id": 3147,
+  "songNumber": 1005,
+  "title": "Come Thou Fount Of Every Blessing",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Come, Thou Fount of every blessing"
+        },
+        {
+          "text": "Tune my heart to sing Thy grace"
+        },
+        {
+          "text": "Streams of mercy, never ceasing"
+        },
+        {
+          "text": "Call for songs of loudest praise"
+        },
+        {
+          "text": "Teach me some melodious sonnet"
+        },
+        {
+          "text": "Sung by flaming tongues above"
+        },
+        {
+          "text": "Praise the mount! I'm fixed upon it,"
+        },
+        {
+          "text": "Mount of God's unchanging love!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Here I raise my Ebenezer;"
+        },
+        {
+          "text": "Hither by Thy help I'm come;"
+        },
+        {
+          "text": "And I hope, by Thy good pleasure,"
+        },
+        {
+          "text": "Safely to arrive at home."
+        },
+        {
+          "text": "Jesus sought me when a stranger,"
+        },
+        {
+          "text": "Wandering from the fold of God;"
+        },
+        {
+          "text": "He, to rescue me from danger,"
+        },
+        {
+          "text": "Interposed His precious blood."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Oh, to grace how great a debtor"
+        },
+        {
+          "text": "Daily I'm constrained to be"
+        },
+        {
+          "text": "Let that goodness like a fetter"
+        },
+        {
+          "text": "Bind my wandering heart to Thee"
+        },
+        {
+          "text": "Prone to wander, Lord, I feel it"
+        },
+        {
+          "text": "Prone to leave the God I love"
+        },
+        {
+          "text": "Here's my heart, oh, take and seal it"
+        },
+        {
+          "text": "Seal it for Thy courts above"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nCome, Thou Fount of every blessing\nTune my heart to sing Thy grace\nStreams of mercy, never ceasing\nCall for songs of loudest praise\nTeach me some melodious sonnet\nSung by flaming tongues above\nPraise the mount! I'm fixed upon it,\nMount of God's unchanging love!\n\n[Verse 2]\nHere I raise my Ebenezer;\nHither by Thy help I'm come;\nAnd I hope, by Thy good pleasure,\nSafely to arrive at home.\nJesus sought me when a stranger,\nWandering from the fold of God;\nHe, to rescue me from danger,\nInterposed His precious blood.\n\n[Verse 3]\nOh, to grace how great a debtor\nDaily I'm constrained to be\nLet that goodness like a fetter\nBind my wandering heart to Thee\nProne to wander, Lord, I feel it\nProne to leave the God I love\nHere's my heart, oh, take and seal it\nSeal it for Thy courts above",
+  "lyrics": "\n[Verse 1]\nCome, Thou Fount of every blessing\nTune my heart to sing Thy grace\nStreams of mercy, never ceasing\nCall for songs of loudest praise\nTeach me some melodious sonnet\nSung by flaming tongues above\nPraise the mount! I'm fixed upon it,\nMount of God's unchanging love!\n\n[Verse 2]\nHere I raise my Ebenezer;\nHither by Thy help I'm come;\nAnd I hope, by Thy good pleasure,\nSafely to arrive at home.\nJesus sought me when a stranger,\nWandering from the fold of God;\nHe, to rescue me from danger,\nInterposed His precious blood.\n\n[Verse 3]\nOh, to grace how great a debtor\nDaily I'm constrained to be\nLet that goodness like a fetter\nBind my wandering heart to Thee\nProne to wander, Lord, I feel it\nProne to leave the God I love\nHere's my heart, oh, take and seal it\nSeal it for Thy courts above",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

@@ -1,207 +1,131 @@
 {
-  "id" : 750,
-  "songNumber" : 138,
-  "title" : "STANDING ON THE PROMISES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Standing on the promises of Christ my King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Through eternal ages let His praises ring;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Glory in the highest I will shout and sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Standing on the promises of God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Standing, standing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Standing on the promises of God my Saviour;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Standing, standing,"
-    }, {
-      "text" : "I'm standing on the promises of God.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Standing on the promises that cannot fail,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "When the howling storms of doubt and fear assail,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "By the living Word of God I shall prevail,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Standing on the promises of God."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Standing on the promises I now can see",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Perfect, present cleansing in the blood for me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Standing in the liberty where Christ makes free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Standing on the promises of God."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Standing on the promises of Christ the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Bound to Him eternally by love's strong cord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Overcoming daily with the Spirit's sword,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Standing on the promises of God."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Standing on the promises I cannot fall,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "List'ning every moment to the Spirit's call,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Resting in my Saviour, as my all in all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Standing on the promises of God."
-    } ]
-  } ]
+  "id": 750,
+  "songNumber": 138,
+  "title": "STANDING ON THE PROMISES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Standing on the promises of Christ my King,"
+        },
+        {
+          "text": "Through eternal ages let His praises ring;"
+        },
+        {
+          "text": "Glory in the highest I will shout and sing,"
+        },
+        {
+          "text": "Standing on the promises of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Standing, standing,"
+        },
+        {
+          "text": "Standing on the promises of God my Saviour;"
+        },
+        {
+          "text": "Standing, standing,"
+        },
+        {
+          "text": "I'm standing on the promises of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Standing on the promises that cannot fail,"
+        },
+        {
+          "text": "When the howling storms of doubt and fear assail,"
+        },
+        {
+          "text": "By the living Word of God I shall prevail,"
+        },
+        {
+          "text": "Standing on the promises of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Standing on the promises I now can see"
+        },
+        {
+          "text": "Perfect, present cleansing in the blood for me;"
+        },
+        {
+          "text": "Standing in the liberty where Christ makes free,"
+        },
+        {
+          "text": "Standing on the promises of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Standing on the promises of Christ the Lord,"
+        },
+        {
+          "text": "Bound to Him eternally by love's strong cord,"
+        },
+        {
+          "text": "Overcoming daily with the Spirit's sword,"
+        },
+        {
+          "text": "Standing on the promises of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Standing on the promises I cannot fall,"
+        },
+        {
+          "text": "List'ning every moment to the Spirit's call,"
+        },
+        {
+          "text": "Resting in my Saviour, as my all in all,"
+        },
+        {
+          "text": "Standing on the promises of God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[A]Standing on the promises of Christ my [E]King,\r\nThrough e[A]ternal ages let His praises [D]ring;\r\n[A]Glory in the highest I will shout and [E]sing,\r\nStanding on the [A]promises of [E][D]God.\r\n\r\n[Chorus]\r\n[A]Standing, standing,\r\n[D]Standing on the promises of God my [A]Saviour;\r\nStanding, standing,\r\nI'm [E]standing on the promises of [A]God.\r\n\r\n[Verse 2]\r\n[A]Standing on the promises that cannot [E]fail,\r\nWhen the [A]howling storms of doubt and fear as[D]sail,\r\nBy the [A]living Word of God I shall pre[E]vail,\r\nStanding on the promises of God.\r\n\r\n[Verse 3]\r\n[A]Standing on the promises I now can [E]see\r\nPer[A]fect, present cleansing in the blood for [D]me;\r\n[A]Standing in the liberty where Christ makes [E]free,\r\nStanding on the promises of God.\r\n\r\n[Verse 4]\r\n[A]Standing on the promises of Christ the [E]Lord,\r\nBound to [A]Him eternally by love's strong [D]cord,\r\nOver[A]coming daily with the Spirit's [E]sword,\r\nStanding on the promises of God.\r\n\r\n[Verse 5]\r\n[A]Standing on the promises I cannot [E]fall,\r\nList'ning [A]every moment to the Spirit's [D]call,\r\nRest[A]ing in my Saviour, as my all in [E]all,\r\nStanding on the promises of God.",
+  "lyrics": "[Verse 1]\r\nStanding on the promises of Christ my King,\r\nThrough eternal ages let His praises ring;\r\nGlory in the highest I will shout and sing,\r\nStanding on the promises of God.\r\n\r\n[Chorus]\r\nStanding, standing,\r\nStanding on the promises of God my Saviour;\r\nStanding, standing,\r\nI'm standing on the promises of God.\r\n\r\n[Verse 2]\r\nStanding on the promises that cannot fail,\r\nWhen the howling storms of doubt and fear assail,\r\nBy the living Word of God I shall prevail,\r\nStanding on the promises of God.\r\n\r\n[Verse 3]\r\nStanding on the promises I now can see\r\nPerfect, present cleansing in the blood for me;\r\nStanding in the liberty where Christ makes free,\r\nStanding on the promises of God.\r\n\r\n[Verse 4]\r\nStanding on the promises of Christ the Lord,\r\nBound to Him eternally by love's strong cord,\r\nOvercoming daily with the Spirit's sword,\r\nStanding on the promises of God.\r\n\r\n[Verse 5]\r\nStanding on the promises I cannot fall,\r\nList'ning every moment to the Spirit's call,\r\nResting in my Saviour, as my all in all,\r\nStanding on the promises of God.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

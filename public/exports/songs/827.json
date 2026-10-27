@@ -1,292 +1,147 @@
 {
-  "id" : 827,
-  "songNumber" : 215,
-  "title" : "ON THAT BRIGHT AND GOLDEN MORNING",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "On that bright and golden morning",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "When the Son of Man shall come,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And the radiance of His glory we shall see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "When from ev'ry clime and nation",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "He shall call His people home,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "What a gath'ring of the ransomed that will be!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "What a gath'ring, what a gath'ring,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "What a gath'ring of the ransomed in the summer land of love!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 55
-      } ]
-    }, {
-      "text" : "What a gath'ring, what a gath'ring,"
-    }, {
-      "text" : "Of the ransomed in that happy home above.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "When the blest, who sleep in Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "at His bidding shall arise",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "From the silence of the grave, and from the sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "And with bodies all celestial they shall meet Him in the skies,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 41
-      }, {
-        "chord" : "A",
-        "position" : 57
-      } ]
-    }, {
-      "text" : "What a gath'ring and rejoicing there will be!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When our eyes behold the city, with its many mansions bright,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 40
-      }, {
-        "chord" : "A",
-        "position" : 54
-      } ]
-    }, {
-      "text" : "And its river, calm and restful, flowing free;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "When the friends that death hath parted shall in bliss again unite,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 49
-      }, {
-        "chord" : "A",
-        "position" : 62
-      } ]
-    }, {
-      "text" : "What a gath'ring and a greeting there will be!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "O the King is surely coming, and the time is drawing nigh,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 37
-      }, {
-        "chord" : "A",
-        "position" : 53
-      } ]
-    }, {
-      "text" : "When the blessèd day of promise we shall see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Then the changing in a moment, in the twinkling of an eye,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 38
-      }, {
-        "chord" : "A",
-        "position" : 54
-      } ]
-    }, {
-      "text" : "And forever in His presence we shall be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 827,
+  "songNumber": 215,
+  "title": "ON THAT BRIGHT AND GOLDEN MORNING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On that bright and golden morning"
+        },
+        {
+          "text": "When the Son of Man shall come,"
+        },
+        {
+          "text": "And the radiance of His glory we shall see;"
+        },
+        {
+          "text": "When from evry clime and nation"
+        },
+        {
+          "text": "He shall call His people home,"
+        },
+        {
+          "text": "What a gathring of the ransomed that will be!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "What a gathring, what a gathring,"
+        },
+        {
+          "text": "What a gathring of the ransomed in the summer land of love!"
+        },
+        {
+          "text": "What a gathring, what a gathring,"
+        },
+        {
+          "text": "Of the ransomed in that happy home above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the blest, who sleep in Jesus,"
+        },
+        {
+          "text": "at His bidding shall arise"
+        },
+        {
+          "text": "From the silence of the grave, and from the sea,"
+        },
+        {
+          "text": "And with bodies all celestial they shall meet Him in the skies,"
+        },
+        {
+          "text": "What a gathring and rejoicing there will be!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When our eyes behold the city, with its many mansions bright,"
+        },
+        {
+          "text": "And its river, calm and restful, flowing free;"
+        },
+        {
+          "text": "When the friends that death hath parted shall in bliss again unite,"
+        },
+        {
+          "text": "What a gathring and a greeting there will be!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O the King is surely coming, and the time is drawing nigh,"
+        },
+        {
+          "text": "When the blessèd day of promise we shall see;"
+        },
+        {
+          "text": "Then the changing in a moment, in the twinkling of an eye,"
+        },
+        {
+          "text": "And forever in His presence we shall be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n On that [D]bright and golden [G]morning\nWhen the [D]Son of Man shall [A]come,\nAnd the [D]radiance of His [G]glory we shall [A]see;\nWhen from [D]evry clime and [G]nation\nHe shall [D]call His people [A]home,\nWhat a [D]gathring of the [A]ransomed that will [D]be!\n[Verse]\n[Verse]\n[Chorus]\nWhat a [D]gathring, [G]what a [D]gathring,\nWhat a [D]gathring of the ransomed in the summer land of [A]love!\nWhat a gathring, what a gathring,\nOf the [D]ransomed in that [A]happy home a[D]bove.\n[Verse]\n[Verse]\nWhen the [D]blest, who sleep in [G]Jesus,\nat His [D]bidding shall a[A]rise\nFrom the [D]silence of the [G]grave, and from the [A]sea,\nAnd with [D]bodies all ce[G]lestial they shall [D]meet Him in the [A]skies,\nWhat a [D]gathring and re[A]joicing there will [D]be!\n[Verse]\n[Verse]\nWhen our [D]eyes behold the [G]city, with its [D]many mansions [A]bright,\nAnd its [D]river, calm and [G]restful, flowing [A]free;\nWhen the [D]friends that death hath [G]parted shall in [D]bliss again u[A]nite,\nWhat a [D]gathring and a [A]greeting there will [D]be!\n[Verse]\n[Verse]\nO the [D]King is surely [G]coming, and the [D]time is drawing [A]nigh,\nWhen the [D]blessèd day of [G]promise we shall [A]see;\nThen the [D]changing in a [G]moment, in the [D]twinkling of an [A]eye,\nAnd for[D]ever in His [A]presence we shall [D]be.",
+  "lyrics": "[Verse]\n On that bright and golden morning\nWhen the Son of Man shall come,\nAnd the radiance of His glory we shall see;\nWhen from evry clime and nation\nHe shall call His people home,\nWhat a gathring of the ransomed that will be!\n[Verse]\n[Verse]\n[Chorus]\nWhat a gathring, what a gathring,\nWhat a gathring of the ransomed in the summer land of love!\nWhat a gathring, what a gathring,\nOf the ransomed in that happy home above.\n[Verse]\n[Verse]\nWhen the blest, who sleep in Jesus,\nat His bidding shall arise\nFrom the silence of the grave, and from the sea,\nAnd with bodies all celestial they shall meet Him in the skies,\nWhat a gathring and rejoicing there will be!\n[Verse]\n[Verse]\nWhen our eyes behold the city, with its many mansions bright,\nAnd its river, calm and restful, flowing free;\nWhen the friends that death hath parted shall in bliss again unite,\nWhat a gathring and a greeting there will be!\n[Verse]\n[Verse]\nO the King is surely coming, and the time is drawing nigh,\nWhen the blessèd day of promise we shall see;\nThen the changing in a moment, in the twinkling of an eye,\nAnd forever in His presence we shall be.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

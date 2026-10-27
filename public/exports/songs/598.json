@@ -1,148 +1,71 @@
 {
-  "id" : 598,
-  "songNumber" : 12,
-  "title" : "येशु माझा मेंढपाळ, आम्ही त्याची मेंढरे",
-  "language" : "marathi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "येशु माझा मेंढपाळ, आम्ही त्याची मेंढरे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "हिरव्यागार कुरणात आम्हांला चारितो (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "सुंदर डोंगरावरूनी नेतो आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "मंजुळ झऱ्याचे पाणी पाजतो आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "मार्गात रक्षण आमुचे करतो आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "सैतानापासून दूर ठेवतो आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "भिणार नाही आम्ही आता कुणाला आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "ख्रिस्तच आहे आमुच्या संगतीला आss हाss",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 598,
+  "songNumber": 12,
+  "title": "येशु माझा मेंढपाळ, आम्ही त्याची मेंढरे",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "येशु माझा मेंढपाळ, आम्ही त्याची मेंढरे"
+        },
+        {
+          "text": "हिरव्यागार कुरणात आम्हांला चारितो (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सुंदर डोंगरावरूनी नेतो आss हाss"
+        },
+        {
+          "text": "मंजुळ झऱ्याचे पाणी पाजतो आss हाss"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मार्गात रक्षण आमुचे करतो आss हाss"
+        },
+        {
+          "text": "सैतानापासून दूर ठेवतो आss हाss"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "भिणार नाही आम्ही आता कुणाला आss हाss"
+        },
+        {
+          "text": "ख्रिस्तच आहे आमुच्या संगतीला आss हाss"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]येशु माझा [G]मेंढपाळ, [A]आम्ही त्याची मेंढ[D]रे\r\n[D]हिरव्यागार कु[G]रणात [A]आम्हांला चारि[D]तो (2)\r\n\r\n[Verse]\r\n[D]सुंदर डोंगरा[G]वरूनी [A]नेतो आss हा[D]ss\r\n[D]मंजुळ झऱ्याचे [G]पाणी [A]पाजतो आss हा[D]ss\r\n\r\n[Verse]\r\n[D]मार्गात रक्षण [G]आमुचे [A]करतो आss हा[D]ss\r\n[D]सैतानापासून [G]दूर [A]ठेवतो आss हा[D]ss\r\n\r\n[Verse]\r\n[D]भिणार नाही आ[G]म्ही [A]आता कुणा[D]ला आss हाss\r\n[D]ख्रिस्तच आहे [G]आमुच्या [A]संगतीला आss हा[D]ss",
+  "lyrics": "[Verse]\r\nयेशु माझा मेंढपाळ, आम्ही त्याची मेंढरे\r\nहिरव्यागार कुरणात आम्हांला चारितो (2)\r\n\r\n[Verse]\r\nसुंदर डोंगरावरूनी नेतो आss हाss\r\nमंजुळ झऱ्याचे पाणी पाजतो आss हाss\r\n\r\n[Verse]\r\nमार्गात रक्षण आमुचे करतो आss हाss\r\nसैतानापासून दूर ठेवतो आss हाss\r\n\r\n[Verse]\r\nभिणार नाही आम्ही आता कुणाला आss हाss\r\nख्रिस्तच आहे आमुच्या संगतीला आss हाss",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

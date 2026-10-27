@@ -1,90 +1,68 @@
 {
-  "id" : 727,
-  "songNumber" : 115,
-  "title" : "THE MOVE IS ON",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The move is on my Lord } 2",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The move is on",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "I can hear the rustle in the mulberry tree",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "And I know, I know",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "I know the move is on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Move on brother, move on sister.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "This is the moving time,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "You've got to move a little closer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Where the streams are flowing,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Move on brother move on.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Move on sister move on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 727,
+  "songNumber": 115,
+  "title": "THE MOVE IS ON",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "The move is on my Lord } 2"
+        },
+        {
+          "text": "The move is on"
+        },
+        {
+          "text": "I can hear the rustle in the mulberry tree"
+        },
+        {
+          "text": "And I know, I know"
+        },
+        {
+          "text": "I know the move is on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Move on brother, move on sister."
+        },
+        {
+          "text": "This is the moving time,"
+        },
+        {
+          "text": "You've got to move a little closer."
+        },
+        {
+          "text": "Where the streams are flowing,"
+        },
+        {
+          "text": "Move on brother move on."
+        },
+        {
+          "text": "Move on sister move on."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]The move is on my Lord } 2\nThe move is [A]on\nI can [D]hear the rustle in the mulberry tree\nAnd I [G]know, I know\nI [A]know the move is [D]on.\n\n[Verse 2]\nMove on [D]brother, move on sister.\nThis is the [G]moving time,\nYou've got to [D]move a little closer.\nWhere the [A]streams are flowing,\nMove on [D]brother move on.\nMove on [A]sister move [D]on.",
+  "lyrics": "[Verse 1]\nThe move is on my Lord } 2\nThe move is on\nI can hear the rustle in the mulberry tree\nAnd I know, I know\nI know the move is on.\n\n[Verse 2]\nMove on brother, move on sister.\nThis is the moving time,\nYou've got to move a little closer.\nWhere the streams are flowing,\nMove on brother move on.\nMove on sister move on.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

@@ -1,110 +1,62 @@
 {
-  "id" : 661,
-  "songNumber" : 354,
-  "title" : "ANOINT ME WITH FRESH OIL",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Anoint me with fresh oil,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Fill me spirit of God. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Help me to see thy purpose,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Understand all thy ways. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I want to get closer Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "So much closer, Lord to you;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I want to get closer, Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "So much closer, Lord,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "To you, to you, to you.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 661,
+  "songNumber": 354,
+  "title": "ANOINT ME WITH FRESH OIL",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Anoint me with fresh oil,"
+        },
+        {
+          "text": "Fill me spirit of God. (2)"
+        },
+        {
+          "text": "Help me to see thy purpose,"
+        },
+        {
+          "text": "Understand all thy ways. (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to get closer Lord,"
+        },
+        {
+          "text": "So much closer, Lord to you;"
+        },
+        {
+          "text": "I want to get closer, Lord,"
+        },
+        {
+          "text": "So much closer, Lord,"
+        },
+        {
+          "text": "To you, to you, to you."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nAn[D]oint me with fresh [G]oil,\n[D]Fill me spirit of [A]God. (2)\n[D]Help me to [G]see thy [D]purpose,\n[D]Understand [G]all thy [A]ways. (2)\n\n[Verse]\nI [G]want to get [D]closer Lord,\nSo [A]much closer, [D]Lord to you;\nI [G]want to get [D]closer, Lord,\nSo [A]much closer, [D]Lord,\nTo [G]you, to [A]you, to [D]you.",
+  "lyrics": "[Verse]\nAnoint me with fresh oil,\nFill me spirit of God. (2)\nHelp me to see thy purpose,\nUnderstand all thy ways. (2)\n\n[Verse]\nI want to get closer Lord,\nSo much closer, Lord to you;\nI want to get closer, Lord,\nSo much closer, Lord,\nTo you, to you, to you.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

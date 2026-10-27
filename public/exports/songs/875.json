@@ -1,148 +1,87 @@
 {
-  "id" : 875,
-  "songNumber" : 263,
-  "title" : "O LORD OUR GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Oh Lord our God",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "You are a great God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Your majesty beyond compare",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Who is a God like unto you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And who like me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Would know Your care.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "It's good dear Lord to know",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Your greatness,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "It's good dear Lord to know"
-    }, {
-      "text" : "Your care,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "It's good just to be,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "In Your presence,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "It's good just to know that",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "You are there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  } ]
+  "id": 875,
+  "songNumber": 263,
+  "title": "O LORD OUR GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Oh Lord our God"
+        },
+        {
+          "text": "You are a great God,"
+        },
+        {
+          "text": "Your majesty beyond compare"
+        },
+        {
+          "text": "Who is a God like unto you,"
+        },
+        {
+          "text": "And who like me,"
+        },
+        {
+          "text": "Would know Your care."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Its good dear Lord to know"
+        },
+        {
+          "text": "Your greatness,"
+        },
+        {
+          "text": "Its good dear Lord to know"
+        },
+        {
+          "text": "Your care,"
+        },
+        {
+          "text": "Its good just to be,"
+        },
+        {
+          "text": "In Your presence,"
+        },
+        {
+          "text": "Its good just to know that"
+        },
+        {
+          "text": "You are there."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n Oh [D]Lord our [G]God\n[D]You are a [A]great God,\nYour [D]majesty be[G]yond com[A]pare\nWho [D]is a [G]God like [D]unto [A]you,\nAnd [D]who like [G]me,\n[A]Would know Your [D]care.\n[Verse]\n[Verse]\n[Chorus]\nIts [D]good dear [G]Lord to [D]know\nYour [A]greatness,\nIts good dear Lord to know\nYour [A]care,\nIts [G]good just to [D]be,\nIn [G]Your [D]pres[A]ence,\nIts [D]good just to [G]know [A]that\nYou are [D]there.",
+  "lyrics": "[Verse]\n Oh Lord our God\nYou are a great God,\nYour majesty beyond compare\nWho is a God like unto you,\nAnd who like me,\nWould know Your care.\n[Verse]\n[Verse]\n[Chorus]\nIts good dear Lord to know\nYour greatness,\nIts good dear Lord to know\nYour care,\nIts good just to be,\nIn Your presence,\nIts good just to know that\nYou are there.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

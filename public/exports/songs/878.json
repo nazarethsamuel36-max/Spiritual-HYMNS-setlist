@@ -1,225 +1,95 @@
 {
-  "id" : 878,
-  "songNumber" : 266,
-  "title" : "AS THE DEER PANTETH",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "As the deer panteth for the waters",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "So my soul longeth after You,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "You alone are my heart's desire",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And I love to worship You.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "You O Lord, are my strength and shield,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "To You alone will my spirit yield,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "You alone are my heart's desire,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And I love to worship You."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I want You more than gold or silver,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Only You can satisfy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "You alone are the real joy-giver",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And the apple of my eye.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "You're my Friend and You are my Father",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Even though You are a King,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "I love You more than any other,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "So much more than anything.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 878,
+  "songNumber": 266,
+  "title": "AS THE DEER PANTETH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "As the deer panteth for the waters"
+        },
+        {
+          "text": "So my soul longeth after You,"
+        },
+        {
+          "text": "You alone are my hearts desire"
+        },
+        {
+          "text": "And I love to worship You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "You O Lord, are my strength and shield,"
+        },
+        {
+          "text": "To You alone will my spirit yield,"
+        },
+        {
+          "text": "You alone are my hearts desire,"
+        },
+        {
+          "text": "And I love to worship You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I want You more than gold or silver,"
+        },
+        {
+          "text": "Only You can satisfy,"
+        },
+        {
+          "text": "You alone are the real joy-giver"
+        },
+        {
+          "text": "And the apple of my eye."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Youre my Friend and You are my Father"
+        },
+        {
+          "text": "Even though You are a King,"
+        },
+        {
+          "text": "I love You more than any other,"
+        },
+        {
+          "text": "So much more than anything."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nAs the [D]deer [A]panteth [G]for the [D]waters\nSo my [G]soul [A]longeth after [D]You,\n[D]You a[A]lone are my [G]hearts de[D]sire\nAnd I [G]love to [A]worship [D]You.\n\n[Chorus]\n[G]You O Lord, are my [D]strength and shield,\n[G]To You a[A]lone will my [D]spirit yield,\n[D]You a[A]lone are my [G]hearts de[D]sire,\nAnd I love to worship You.\n\n[Verse 2]\nI [D]want You [A]more than [G]gold or [D]silver,\n[G]Only [A]You can satis[D]fy,\n[D]You a[A]lone are the [G]real joy-[D]giver\nAnd the [G]apple [A]of my [D]eye.\n\n[Verse 3]\nYoure my [D]Friend and [A]You are my [G]Father\n[G]Even [A]though You are a [D]King,\nI [D]love You [A]more than [G]any [D]other,\nSo [G]much [A]more than any[D]thing.",
+  "lyrics": "[Verse 1]\nAs the deer panteth for the waters\nSo my soul longeth after You,\nYou alone are my hearts desire\nAnd I love to worship You.\n\n[Chorus]\nYou O Lord, are my strength and shield,\nTo You alone will my spirit yield,\nYou alone are my hearts desire,\nAnd I love to worship You.\n\n[Verse 2]\nI want You more than gold or silver,\nOnly You can satisfy,\nYou alone are the real joy-giver\nAnd the apple of my eye.\n\n[Verse 3]\nYoure my Friend and You are my Father\nEven though You are a King,\nI love You more than any other,\nSo much more than anything.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

@@ -1,307 +1,143 @@
 {
-  "id" : 857,
-  "songNumber" : 245,
-  "title" : "OUT OF MY BONDAGE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Out of my bondage, sorrow and night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Jesus I come, Jesus I come;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Into Thy freedom, gladness and light,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Out of my sickness into Thy health,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Out of my want and into Thy wealth,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Out of my sin and into Thyself,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Out of my shameful failure and loss,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Jesus I come, Jesus I come;"
-    }, {
-      "text" : "Into the glorious gain of Thy cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee;"
-    }, {
-      "text" : "Out of earth's sorrows into Thy balm,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Out of life's storms and into Thy calm,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Out of distress to jubilant psalm,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Out of unrest and arrogant pride,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Jesus I come, Jesus I come;"
-    }, {
-      "text" : "Into Thy blessed will to abide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee;"
-    }, {
-      "text" : "Out of myself to dwell in Thy love,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Out of despair into raptures above,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Upward for aye on wings like a dove,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Out of the fear and dread of the tomb,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Jesus I come, Jesus I come;"
-    }, {
-      "text" : "Into the joy and light of my home,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee;"
-    }, {
-      "text" : "Out of the depths of ruin untold,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Into the peace of Thy sheltering fold,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Ever Thy glorious face to behold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Jesus I come to Thee."
-    } ]
-  } ]
+  "id": 857,
+  "songNumber": 245,
+  "title": "OUT OF MY BONDAGE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Out of my bondage, sorrow and night,"
+        },
+        {
+          "text": "Jesus I come, Jesus I come;"
+        },
+        {
+          "text": "Into Thy freedom, gladness and light,"
+        },
+        {
+          "text": "Jesus I come to Thee;"
+        },
+        {
+          "text": "Out of my sickness into Thy health,"
+        },
+        {
+          "text": "Out of my want and into Thy wealth,"
+        },
+        {
+          "text": "Out of my sin and into Thyself,"
+        },
+        {
+          "text": "Jesus I come to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Out of my shameful failure and loss,"
+        },
+        {
+          "text": "Jesus I come, Jesus I come;"
+        },
+        {
+          "text": "Into the glorious gain of Thy cross,"
+        },
+        {
+          "text": "Jesus I come to Thee;"
+        },
+        {
+          "text": "Out of earth's sorrows into Thy balm,"
+        },
+        {
+          "text": "Out of life's storms and into Thy calm,"
+        },
+        {
+          "text": "Out of distress to jubilant psalm,"
+        },
+        {
+          "text": "Jesus I come to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Out of unrest and arrogant pride,"
+        },
+        {
+          "text": "Jesus I come, Jesus I come;"
+        },
+        {
+          "text": "Into Thy blessed will to abide,"
+        },
+        {
+          "text": "Jesus I come to Thee;"
+        },
+        {
+          "text": "Out of myself to dwell in Thy love,"
+        },
+        {
+          "text": "Out of despair into raptures above,"
+        },
+        {
+          "text": "Upward for aye on wings like a dove,"
+        },
+        {
+          "text": "Jesus I come to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Out of the fear and dread of the tomb,"
+        },
+        {
+          "text": "Jesus I come, Jesus I come;"
+        },
+        {
+          "text": "Into the joy and light of my home,"
+        },
+        {
+          "text": "Jesus I come to Thee;"
+        },
+        {
+          "text": "Out of the depths of ruin untold,"
+        },
+        {
+          "text": "Into the peace of Thy sheltering fold,"
+        },
+        {
+          "text": "Ever Thy glorious face to behold,"
+        },
+        {
+          "text": "Jesus I come to Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]Out of my bondage, [Bb]sorrow and [F]night,\r\n[F]Jesus I come, [C]Jesus I come;\r\n[F]Into Thy freedom, [Bb]gladness and [F]light,\r\n[F]Jesus I [C]come to [F]Thee;\r\nOut of my [Bb]sickness [F]into Thy health,\r\nOut of my [Bb]want and [F]into Thy [C]wealth,\r\nOut of my [F]sin and [Bb]into Thy[F]self,\r\n[F]Jesus I [C]come to [F]Thee.\r\n\r\n[Verse]\r\n[F]Out of my shameful [Bb]failure and [F]loss,\r\nJesus I come, Jesus I come;\r\n[F]Into the glorious [Bb]gain of Thy [F]cross,\r\nJesus I come to Thee;\r\nOut of earth's [Bb]sorrows [F]into Thy balm,\r\nOut of life's [Bb]storms and [F]into Thy [C]calm,\r\nOut of dis[F]tress to [Bb]jubilant [F]psalm,\r\nJesus I come to Thee.\r\n\r\n[Verse]\r\n[F]Out of unrest and [Bb]arrogant [F]pride,\r\nJesus I come, Jesus I come;\r\n[F]Into Thy blessed [Bb]will to a[F]bide,\r\nJesus I come to Thee;\r\nOut of my[Bb]self to [F]dwell in Thy love,\r\nOut of des[Bb]pair into [F]raptures a[C]bove,\r\nUpward for [F]aye on [Bb]wings like a [F]dove,\r\nJesus I come to Thee.\r\n\r\n[Verse]\r\n[F]Out of the fear and [Bb]dread of the [F]tomb,\r\nJesus I come, Jesus I come;\r\n[F]Into the joy and [Bb]light of my [F]home,\r\nJesus I come to Thee;\r\nOut of the [Bb]depths of [F]ruin untold,\r\nInto the [Bb]peace of Thy [F]sheltering [C]fold,\r\nEver Thy [F]glorious [Bb]face to be[F]hold,\r\nJesus I come to Thee.",
+  "lyrics": "[Verse]\r\nOut of my bondage, sorrow and night,\r\nJesus I come, Jesus I come;\r\nInto Thy freedom, gladness and light,\r\nJesus I come to Thee;\r\nOut of my sickness into Thy health,\r\nOut of my want and into Thy wealth,\r\nOut of my sin and into Thyself,\r\nJesus I come to Thee.\r\n\r\n[Verse]\r\nOut of my shameful failure and loss,\r\nJesus I come, Jesus I come;\r\nInto the glorious gain of Thy cross,\r\nJesus I come to Thee;\r\nOut of earth's sorrows into Thy balm,\r\nOut of life's storms and into Thy calm,\r\nOut of distress to jubilant psalm,\r\nJesus I come to Thee.\r\n\r\n[Verse]\r\nOut of unrest and arrogant pride,\r\nJesus I come, Jesus I come;\r\nInto Thy blessed will to abide,\r\nJesus I come to Thee;\r\nOut of myself to dwell in Thy love,\r\nOut of despair into raptures above,\r\nUpward for aye on wings like a dove,\r\nJesus I come to Thee.\r\n\r\n[Verse]\r\nOut of the fear and dread of the tomb,\r\nJesus I come, Jesus I come;\r\nInto the joy and light of my home,\r\nJesus I come to Thee;\r\nOut of the depths of ruin untold,\r\nInto the peace of Thy sheltering fold,\r\nEver Thy glorious face to behold,\r\nJesus I come to Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

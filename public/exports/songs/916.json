@@ -1,52 +1,38 @@
 {
-  "id" : 916,
-  "songNumber" : 17,
-  "title" : "WE ARE GATHERING TOGETHER",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We are gathering together unto Him (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Unto Him shall the gathering of the people be,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "We are gathering together unto Him.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 916,
+  "songNumber": 17,
+  "title": "WE ARE GATHERING TOGETHER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We are gathering together unto Him (2)"
+        },
+        {
+          "text": "Unto Him shall the gathering of the people be,"
+        },
+        {
+          "text": "We are gathering together unto Him."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]We are gathering to[C]gether unto [G]Him (2)\n[G]Unto Him shall the [C]gathering of the [G]people be,\n[G]We are gathering to[D]gether unto [G]Him.",
+  "lyrics": "[Verse]\nWe are gathering together unto Him (2)\nUnto Him shall the gathering of the people be,\nWe are gathering together unto Him.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

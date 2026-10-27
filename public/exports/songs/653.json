@@ -1,227 +1,83 @@
 {
-  "id" : 653,
-  "songNumber" : 346,
-  "title" : "BLESS THE LORD O MY SOUL",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Bless the Lord, O my soul",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And all that is within me,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Bless His Holy name.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Bless the Lord, O my soul"
-    }, {
-      "text" : "And forget not all his benefits.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Who forgiveth all thy iniquities;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Who healeth all thy diseases ;",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Who redeemeth thy life from destruction;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 6
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Who crowneth thee with loving kindness.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "He hath not dealt with us after our sins;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 3
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "C",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "C",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Nor rewarded us according to our iniquities",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 6
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 29
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "C",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "For as the heaven is high above the earth,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "C",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "So great is His mercy toward them that",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 3
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "C",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Fear Him.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 5
-      } ]
-    } ]
-  } ]
+  "id": 653,
+  "songNumber": 346,
+  "title": "BLESS THE LORD O MY SOUL (Song 346)",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Bless the Lord, O my soul"
+        },
+        {
+          "text": "And all that is within me,"
+        },
+        {
+          "text": "Bless His Holy name."
+        },
+        {
+          "text": "Bless the Lord, O my soul"
+        },
+        {
+          "text": "And forget not all his benefits."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Who forgiveth all thy iniquities;"
+        },
+        {
+          "text": "Who healeth all thy diseases ;"
+        },
+        {
+          "text": "Who redeemeth thy life from destruction;"
+        },
+        {
+          "text": "Who crowneth thee with loving kindness."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He hath not dealt with us after our sins;"
+        },
+        {
+          "text": "Nor rewarded us according to our iniquities"
+        },
+        {
+          "text": "For as the heaven is high above the earth,"
+        },
+        {
+          "text": "So great is His mercy toward them that"
+        },
+        {
+          "text": "Fear Him."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Bless the [G]Lord, O [D]my [A]soul\nAnd [G]all that is [A]within [D]me,\n[G]Bless [A]His Holy [D]name.\nBless the Lord, O my soul\nAnd [G]forget [A]not all [D]his [A]bene[D]fits.\n\n[Verse]\nWho for[D]giveth [G]all [D]thy in[A]iqui[D]ties;\nWho [G]healeth [D]all [A]thy dis[D]eases ;\nWho re[D]deemeth [G]thy [D]life [A]from des[D]truction;\nWho [G]crowneth [D]thee [A]with loving [D]kindness.\n\n[Verse]\nHe [D]hath not [G]dealt with [D]us [A]after our [D]sins;\nNor re[G]warded [D]us ac[A]cording to [D]our in[A]iqui[D]ties\nFor [G]as the heaven is [D]high a[A]bove the [D]earth,\nSo [G]great is His [D]mercy [A]toward them [D]that\n[A]Fear [D]Him.",
+  "lyrics": "[Verse]\nBless the Lord, O my soul\nAnd all that is within me,\nBless His Holy name.\nBless the Lord, O my soul\nAnd forget not all his benefits.\n\n[Verse]\nWho forgiveth all thy iniquities;\nWho healeth all thy diseases ;\nWho redeemeth thy life from destruction;\nWho crowneth thee with loving kindness.\n\n[Verse]\nHe hath not dealt with us after our sins;\nNor rewarded us according to our iniquities\nFor as the heaven is high above the earth,\nSo great is His mercy toward them that\nFear Him.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,69 +1,53 @@
 {
-  "id" : 722,
-  "songNumber" : 110,
-  "title" : "GIVE HEED TO MY WORDS O LORD",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Give heed to my words, O Lord,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Consider my meditation.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 3
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Hearken unto the voice of my cry,"
-    }, {
-      "text" : "My King and my God,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "For Lord unto Thee will I pray.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "My voice shall Thou hear in the morning.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "O Lord in the morning will I direct my prayer",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Unto Thee, and will look up ! (repeat)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 722,
+  "songNumber": 110,
+  "title": "GIVE HEED TO MY WORDS O LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Give heed to my words, O Lord,"
+        },
+        {
+          "text": "Consider my meditation."
+        },
+        {
+          "text": "Hearken unto the voice of my cry,"
+        },
+        {
+          "text": "My King and my God,"
+        },
+        {
+          "text": "For Lord unto Thee will I pray."
+        },
+        {
+          "text": "My voice shall Thou hear in the morning."
+        },
+        {
+          "text": "O Lord in the morning will I direct my prayer"
+        },
+        {
+          "text": "Unto Thee, and will look up ! (repeat)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nGive [D]heed to my words, O Lord,\nCon[G]sider my medi[D]tation.\nHearken unto the voice of my cry,\nMy [D]King and my [A]God,\nFor [D]Lord unto Thee will I pray.\nMy [G]voice shall Thou hear in the morning.\nO Lord in the [D]morning will I direct my prayer\nUnto [A]Thee, and will look [D]up ! (repeat)",
+  "lyrics": "[Verse 1]\nGive heed to my words, O Lord,\nConsider my meditation.\nHearken unto the voice of my cry,\nMy King and my God,\nFor Lord unto Thee will I pray.\nMy voice shall Thou hear in the morning.\nO Lord in the morning will I direct my prayer\nUnto Thee, and will look up ! (repeat)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

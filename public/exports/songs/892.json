@@ -1,267 +1,108 @@
 {
-  "id" : 892,
-  "songNumber" : 280,
-  "title" : "WALKING IN CLOSE UNION",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Walking in close union",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Like you did with Adam",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Lord, you know my desire",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "To walk in sweet Communion.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I want to have my ears tuned so that I can hear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "And know it's You that speaks to me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "In the stillness of my heart.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "So much confusion now",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Take me Lord and show me how,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "To walk with You just You alone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Laying everything aside.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "And in the cool of day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "When I bow my head to pray,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Glad to be just praying Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Communing friend with friend,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And one day I will be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "With you for eternity,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "We'll walk together hand in hand",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And fellowship in love.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 892,
+  "songNumber": 280,
+  "title": "WALKING IN CLOSE UNION",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Walking in close union"
+        },
+        {
+          "text": "Like you did with Adam"
+        },
+        {
+          "text": "Lord, you know my desire"
+        },
+        {
+          "text": "To walk in sweet Communion."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to have my ears tuned so that I can hear,"
+        },
+        {
+          "text": "And know its You that speaks to me"
+        },
+        {
+          "text": "In the stillness of my heart."
+        },
+        {
+          "text": "So much confusion now"
+        },
+        {
+          "text": "Take me Lord and show me how,"
+        },
+        {
+          "text": "To walk with You just You alone,"
+        },
+        {
+          "text": "Laying everything aside."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And in the cool of day"
+        },
+        {
+          "text": "When I bow my head to pray,"
+        },
+        {
+          "text": "Glad to be just praying Lord"
+        },
+        {
+          "text": "Communing friend with friend,"
+        },
+        {
+          "text": "And one day I will be"
+        },
+        {
+          "text": "With you for eternity,"
+        },
+        {
+          "text": "Well walk together hand in hand"
+        },
+        {
+          "text": "And fellowship in love."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]Walking in [G]close [D]union\nLike [G]you did [D]with [A]Adam\n[D]Lord, you [G]know my de[D]sire\nTo [D]walk in [A]sweet Com[D]munion.\n[Verse]\n[Verse]\nI [D]want to have my [G]ears tuned so [D]that I can [A]hear,\nAnd [D]know its [G]You that [D]speaks to [A]me\nIn the [G]stillness [D]of my [A]heart.\nSo [D]much con[G]fusion [D]now\nTake [G]me Lord and [D]show me [A]how,\nTo [D]walk with [G]You just [D]You a[A]lone,\n[G]Laying [D]everything a[A]side.\n[Verse]\n[Verse]\nAnd [D]in the [G]cool of [D]day\nWhen [G]I bow [D]my head to [A]pray,\n[D]Glad to [G]be just [D]praying [A]Lord\nCom[G]muning [D]friend with [A]friend,\nAnd [D]one day [G]I will [D]be\nWith [G]you for e[D]terni[A]ty,\nWell [D]walk to[G]gether [D]hand in [A]hand\nAnd [G]fellow[D]ship in [A]love.",
+  "lyrics": "[Chorus]\n Walking in close union\nLike you did with Adam\nLord, you know my desire\nTo walk in sweet Communion.\n[Verse]\n[Verse]\nI want to have my ears tuned so that I can hear,\nAnd know its You that speaks to me\nIn the stillness of my heart.\nSo much confusion now\nTake me Lord and show me how,\nTo walk with You just You alone,\nLaying everything aside.\n[Verse]\n[Verse]\nAnd in the cool of day\nWhen I bow my head to pray,\nGlad to be just praying Lord\nCommuning friend with friend,\nAnd one day I will be\nWith you for eternity,\nWell walk together hand in hand\nAnd fellowship in love.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

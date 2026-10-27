@@ -1,96 +1,59 @@
 {
-  "id" : 1060,
-  "songNumber" : 82,
-  "title" : "आ यीशु पास आ, यीशु बुलाता तुझे",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आ यीशु पास आ, यीशु बुलाता तुझे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "सुनके आ यीशु पास, फिर ना होगा निराश ।",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जिंदगी को दे दे, हाथों में प्रभु यीशु के",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "संभालेगा वो तुझे, जीवन के हर खतरों से ।",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तेरे लिए क्रुस पर, यीशु ने जान अपनी दी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "ताकि तुझे मिल जाये, शांति, नयी जिंदगी ।",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 1060,
+  "songNumber": 82,
+  "title": "आ यीशु पास आ, यीशु बुलाता तुझे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "आ यीशु पास आ, यीशु बुलाता तुझे"
+        },
+        {
+          "text": "सुनके आ यीशु पास, फिर ना होगा निराश ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिंदगी को दे दे, हाथों में प्रभु यीशु के"
+        },
+        {
+          "text": "संभालेगा वो तुझे, जीवन के हर खतरों से ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरे लिए क्रुस पर, यीशु ने जान अपनी दी"
+        },
+        {
+          "text": "ताकि तुझे मिल जाये, शांति, नयी जिंदगी ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]आ यीशु पास आ, [A]यीशु बुलाता तुझे\n[Bm]सुनके आ यीशु [G]पास, [A]फिर ना होगा नि[D]राश ।\n\n[Verse]\n[D]जिंदगी को दे दे, [A]हाथों में प्रभु यीशु के\n[Bm]संभालेगा वो तु[G]झे, [A]जीवन के हर खतरों [D]से ।\n\n[Verse]\n[D]तेरे लिए क्रुस पर, [A]यीशु ने जान अपनी दी\n[Bm]ताकि तुझे मिल जा[G]ये, [A]शांति, नयी जिंद[D]गी ।",
+  "lyrics": "आ यीशु पास आ, यीशु बुलाता तुझे\nसुनके आ यीशु पास, फिर ना होगा निराश ।\n\n[Verse]\nजिंदगी को दे दे, हाथों में प्रभु यीशु के\nसंभालेगा वो तुझे, जीवन के हर खतरों से ।\n\n[Verse]\nतेरे लिए क्रुस पर, यीशु ने जान अपनी दी\nताकि तुझे मिल जाये, शांति, नयी जिंदगी ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

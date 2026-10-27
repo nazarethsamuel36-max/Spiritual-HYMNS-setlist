@@ -1,142 +1,83 @@
 {
-  "id" : 789,
-  "songNumber" : 177,
-  "title" : "I LOVE YOU LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I love you Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "And I lift my voice,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "To worship you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Oh my soul, rejoice,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Take joy, my King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "In what you hear,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Let it be a sweet, sweet sound,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "In your ear.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "We love you, Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "And we lift our hearts,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "To honor you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Oh my soul, rejoice,"
-    }, {
-      "text" : "Take joy, our King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "In what you see,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Let it be a pleasing sight,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "In your eyes.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  } ]
+  "id": 789,
+  "songNumber": 177,
+  "title": "I LOVE YOU LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I love you Lord,"
+        },
+        {
+          "text": "And I lift my voice,"
+        },
+        {
+          "text": "To worship you,"
+        },
+        {
+          "text": "Oh my soul, rejoice,"
+        },
+        {
+          "text": "Take joy, my King,"
+        },
+        {
+          "text": "In what you hear,"
+        },
+        {
+          "text": "Let it be a sweet, sweet sound,"
+        },
+        {
+          "text": "In your ear."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We love you, Lord,"
+        },
+        {
+          "text": "And we lift our hearts,"
+        },
+        {
+          "text": "To honor you,"
+        },
+        {
+          "text": "Oh my soul, rejoice,"
+        },
+        {
+          "text": "Take joy, our King,"
+        },
+        {
+          "text": "In what you see,"
+        },
+        {
+          "text": "Let it be a pleasing sight,"
+        },
+        {
+          "text": "In your eyes."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nI [E]love you Lord,\r\nAnd I [A]lift my [E]voice,\r\nTo [A]worship [E]you,\r\nOh my [B]soul, rejoice,\r\nTake [E]joy, my King,\r\nIn [A]what you [E]hear,\r\nLet it [A]be a [E]sweet, sweet [B]sound,\r\nIn your [E]ear.\r\n\r\n[Verse]\r\nWe [E]love you, Lord,\r\nAnd we [A]lift our [E]hearts,\r\nTo [A]honor [E]you,\r\nOh my soul, rejoice,\r\nTake [E]joy, our King,\r\nIn [A]what you [E]see,\r\nLet it [A]be a [E]pleasing [B]sight,\r\nIn your [E]eyes.",
+  "lyrics": "[Verse]\r\nI love you Lord,\r\nAnd I lift my voice,\r\nTo worship you,\r\nOh my soul, rejoice,\r\nTake joy, my King,\r\nIn what you hear,\r\nLet it be a sweet, sweet sound,\r\nIn your ear.\r\n\r\n[Verse]\r\nWe love you, Lord,\r\nAnd we lift our hearts,\r\nTo honor you,\r\nOh my soul, rejoice,\r\nTake joy, our King,\r\nIn what you see,\r\nLet it be a pleasing sight,\r\nIn your eyes.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

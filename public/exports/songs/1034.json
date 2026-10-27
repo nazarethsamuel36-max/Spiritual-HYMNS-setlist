@@ -1,229 +1,98 @@
 {
-  "id" : 1034,
-  "songNumber" : 56,
-  "title" : "सारी सृष्टी के मालिक तुम्ही हो",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "सारी सृष्टी के मालिक तुम्ही हो,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "सारी सृष्टी के रक्षक तुम्ही हो,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "करते हैं तुझको सादर प्रणाम,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "गाते हैं तेरे ही गुणगान ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "हा-हा-हाल्लेलुयाह...(7) आमीन ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "Em",
-        "position" : 17
-      }, {
-        "chord" : "Am",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "सारी सृष्टि को तेरा सहारा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "सारी संकट से हमको बचाना,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "तेरे हाथो मे जीवन हमारा है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "अपनी राहों पर हमको चलाना ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "हम हैं तेरे हाथों की रचना,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "हम पर रहे तेरी करुणा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "तन-मन-धन हमारा तेरा है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "इन्हे शैतान को छूने न देना ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "अब दूर नही है किनारा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "धीरज को हमारे बढ़ाना,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "जीवन की हमारी उस नैया को",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "भवसागर मे खोने न दे ना ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 1034,
+  "songNumber": 56,
+  "title": "सारी सृष्टी के मालिक तुम्ही हो",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सारी सृष्टी के मालिक तुम्ही हो,"
+        },
+        {
+          "text": "सारी सृष्टी के रक्षक तुम्ही हो,"
+        },
+        {
+          "text": "करते हैं तुझको सादर प्रणाम,"
+        },
+        {
+          "text": "गाते हैं तेरे ही गुणगान ।"
+        },
+        {
+          "text": "हा-हा-हाल्लेलुयाह...(7) आमीन ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सारी सृष्टि को तेरा सहारा,"
+        },
+        {
+          "text": "सारी संकट से हमको बचाना,"
+        },
+        {
+          "text": "तेरे हाथो मे जीवन हमारा है,"
+        },
+        {
+          "text": "अपनी राहों पर हमको चलाना ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हम हैं तेरे हाथों की रचना,"
+        },
+        {
+          "text": "हम पर रहे तेरी करुणा,"
+        },
+        {
+          "text": "तन-मन-धन हमारा तेरा है,"
+        },
+        {
+          "text": "इन्हे शैतान को छूने न देना ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अब दूर नही है किनारा,"
+        },
+        {
+          "text": "धीरज को हमारे बढ़ाना,"
+        },
+        {
+          "text": "जीवन की हमारी उस नैया को"
+        },
+        {
+          "text": "भवसागर मे खोने न दे ना ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]सारी सृष्टी के [C]मालिक तुम्ही [G]हो,\n[G]सारी सृष्टी के [C]रक्षक तुम्ही [D]हो,\n[D]करते हैं तुझको [C]सादर प्रणाम,\n[D]गाते हैं तेरे ही गुण[G]गान ।\n[C]हा-[D]हा-[G]हाल्लेलुयाह[Em]...(7) [Am]आ[D]मीन [G]।\n\n[Verse]\n[G]सारी सृष्टि को [C]तेरा सहा[G]रा,\n[G]सारी संकट से [C]हमको बचा[D]ना,\n[D]तेरे हाथो मे [C]जीवन हमारा है,\n[D]अपनी राहों पर [C]हमको चला[G]ना ।\n\n[Verse]\n[G]हम हैं तेरे [C]हाथों की रच[G]ना,\n[G]हम पर रहे [C]तेरी करु[D]णा,\n[D]तन-मन-धन ह[C]मारा तेरा है,\n[D]इन्हे शैतान को [C]छूने न दे[G]ना ।\n\n[Verse]\n[G]अब दूर न[C]ही है किना[G]रा,\n[G]धीरज को ह[C]मारे बढ़ा[D]ना,\n[D]जीवन की हमारी [C]उस नैया को\n[D]भवसागर मे [C]खोने न दे [G]ना ।",
+  "lyrics": "[Verse]\nसारी सृष्टी के मालिक तुम्ही हो,\nसारी सृष्टी के रक्षक तुम्ही हो,\nकरते हैं तुझको सादर प्रणाम,\nगाते हैं तेरे ही गुणगान ।\nहा-हा-हाल्लेलुयाह...(7) आमीन ।\n\n[Verse]\nसारी सृष्टि को तेरा सहारा,\nसारी संकट से हमको बचाना,\nतेरे हाथो मे जीवन हमारा है,\nअपनी राहों पर हमको चलाना ।\n\n[Verse]\nहम हैं तेरे हाथों की रचना,\nहम पर रहे तेरी करुणा,\nतन-मन-धन हमारा तेरा है,\nइन्हे शैतान को छूने न देना ।\n\n[Verse]\nअब दूर नही है किनारा,\nधीरज को हमारे बढ़ाना,\nजीवन की हमारी उस नैया को\nभवसागर मे खोने न दे ना ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T10:58:00.492666+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

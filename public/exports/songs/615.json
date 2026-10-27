@@ -1,231 +1,116 @@
 {
-  "id" : 615,
-  "songNumber" : 308,
-  "title" : "YOU ARE BEAUTIFUL BEYOND DESCRIPTION",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You are beautiful beyond description,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Too marvelous for words,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Too wonderful for comprehension,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Like nothing ever seen or heard.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Who can grasp your infinite wisdom?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Who can fathom the depth of your love?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "You are beautiful beyond description,"
-    }, {
-      "text" : "Majesty enthroned above.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And I stand, I stand in awe of you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I stand, I stand in awe of you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Holy God, to whom all praise is due,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "I stand in awe of you.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "You are beautiful beyond description,"
-    }, {
-      "text" : "Yet God crushed You for my sin,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "In agony and deep affliction,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Cut off that I might enter in.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Who can grasp such tender compassion?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Who can fathom this mercy so free?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "You are beautiful beyond description,"
-    }, {
-      "text" : "Lamb of God, Who died for me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 615,
+  "songNumber": 308,
+  "title": "YOU ARE BEAUTIFUL BEYOND DESCRIPTION",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are beautiful beyond description,"
+        },
+        {
+          "text": "Too marvelous for words,"
+        },
+        {
+          "text": "Too wonderful for comprehension,"
+        },
+        {
+          "text": "Like nothing ever seen or heard."
+        },
+        {
+          "text": "Who can grasp your infinite wisdom?"
+        },
+        {
+          "text": "Who can fathom the depth of your love?"
+        },
+        {
+          "text": "You are beautiful beyond description,"
+        },
+        {
+          "text": "Majesty enthroned above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And I stand, I stand in awe of you."
+        },
+        {
+          "text": "I stand, I stand in awe of you."
+        },
+        {
+          "text": "Holy God, to whom all praise is due,"
+        },
+        {
+          "text": "I stand in awe of you."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are beautiful beyond description,"
+        },
+        {
+          "text": "Yet God crushed You for my sin,"
+        },
+        {
+          "text": "In agony and deep affliction,"
+        },
+        {
+          "text": "Cut off that I might enter in."
+        },
+        {
+          "text": "Who can grasp such tender compassion?"
+        },
+        {
+          "text": "Who can fathom this mercy so free?"
+        },
+        {
+          "text": "You are beautiful beyond description,"
+        },
+        {
+          "text": "Lamb of God, Who died for me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n You are [D]beautiful be[G]yond de[D]scription,\nToo [G]marvelous for [A]words,\nToo [D]wonderful for [G]compre[D]hension,\nLike [G]nothing ever seen or [A]heard.\nWho can [G]grasp your [A]infinite [D]wisdom?\nWho can [G]fathom the [D]depth of your [A]love?\nYou are beautiful beyond description,\n[G]Majesty en[A]throned a[D]bove.\n[Verse]\n[Verse]\n[Chorus]\nAnd I [D]stand, I [A]stand in [G]awe of [D]you.\nI [D]stand, I [A]stand in [G]awe of [D]you.\n[G]Holy God, to [E]whom all praise is [A]due,\nI [G]stand in [A]awe of [D]you.\n[Verse]\n[Verse]\nYou are beautiful beyond description,\nYet [G]God crushed You for [A]my [D]sin,\nIn [D]agony and [G]deep af[D]fliction,\n[G]Cut off that I might enter [A]in.\nWho can [G]grasp such [A]tender com[D]passion?\nWho can [G]fathom this [D]mercy so [A]free?\nYou are beautiful beyond description,\n[G]Lamb of God, Who [A]died for [D]me.",
+  "lyrics": "[Verse]\n You are beautiful beyond description,\nToo marvelous for words,\nToo wonderful for comprehension,\nLike nothing ever seen or heard.\nWho can grasp your infinite wisdom?\nWho can fathom the depth of your love?\nYou are beautiful beyond description,\nMajesty enthroned above.\n[Verse]\n[Verse]\n[Chorus]\nAnd I stand, I stand in awe of you.\nI stand, I stand in awe of you.\nHoly God, to whom all praise is due,\nI stand in awe of you.\n[Verse]\n[Verse]\nYou are beautiful beyond description,\nYet God crushed You for my sin,\nIn agony and deep affliction,\nCut off that I might enter in.\nWho can grasp such tender compassion?\nWho can fathom this mercy so free?\nYou are beautiful beyond description,\nLamb of God, Who died for me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

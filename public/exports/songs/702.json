@@ -1,60 +1,44 @@
 {
-  "id" : 702,
-  "songNumber" : 26,
-  "title" : "HE IS THE SAME UNCHANGING JESUS",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He is the same unchanging Jesus,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Unchanging Jesus, unchanging Jesus.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He is the same unchanging Jesus"
-    }, {
-      "text" : "Now and through Eternity.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Hallelujah.........",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 7
-      } ]
-    } ]
-  } ]
+  "id": 702,
+  "songNumber": 26,
+  "title": "HE IS THE SAME UNCHANGING JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He is the same unchanging Jesus,"
+        },
+        {
+          "text": "Unchanging Jesus, unchanging Jesus."
+        },
+        {
+          "text": "He is the same unchanging Jesus"
+        },
+        {
+          "text": "Now and through Eternity."
+        },
+        {
+          "text": "Hallelujah........."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]He is the same un[C]changing [G]Jesus,\n[G]Unchanging Jesus, un[D]changing Jesus.\nHe is the same unchanging Jesus\n[G]Now and [D]through E[G]ternity.\n[G]Hallelu[C]jah.........",
+  "lyrics": "[Verse]\nHe is the same unchanging Jesus,\nUnchanging Jesus, unchanging Jesus.\nHe is the same unchanging Jesus\nNow and through Eternity.\nHallelujah.........",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,129 +1,81 @@
 {
-  "id" : 985,
-  "songNumber" : 7,
-  "title" : "वन्दे प्रभु, वन्दे मसीह",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "वन्दे प्रभु, वन्दे मसीह",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "शत् शत् वन्दना, वन्दे प्रभु ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "इस शुभ दिन हम अपने को",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "चरणों में तेरे लाते हैं",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "इस शुभ घड़ी दोहराते हैं",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तेरे ही मधुर वचनों को ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अर्पण करते हैं इस जीवन को",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "वचनामृत दे शरणागत को,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "अपने में करले पूर्ण प्रभु",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "धन्य मसीह, धन्य प्रभु ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 985,
+  "songNumber": 7,
+  "title": "वन्दे प्रभु, वन्दे मसीह",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "वन्दे प्रभु, वन्दे मसीह"
+        },
+        {
+          "text": "शत् शत् वन्दना, वन्दे प्रभु ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस शुभ दिन हम अपने को"
+        },
+        {
+          "text": "चरणों में तेरे लाते हैं"
+        },
+        {
+          "text": "इस शुभ घड़ी दोहराते हैं"
+        },
+        {
+          "text": "तेरे ही मधुर वचनों को ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अर्पण करते हैं इस जीवन को"
+        },
+        {
+          "text": "वचनामृत दे शरणागत को,"
+        },
+        {
+          "text": "अपने में करले पूर्ण प्रभु"
+        },
+        {
+          "text": "धन्य मसीह, धन्य प्रभु ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]वन्दे प्रभु, [D]वन्दे मसीह\n[C]शत् शत् वन्दना, [D]वन्दे प्र[G]भु ।\n[Verse]\n[Verse]\n[G]इस शुभ दिन हम [D]अपने को\n[C]चरणों में तेरे [D]लाते [G]हैं\n[G]इस शुभ घड़ी दोह[D]राते हैं\n[C]तेरे ही मधुर व[D]चनों [G]को ।\n[Verse]\n[Verse]\n[G]अर्पण करते हैं [D]इस जीवन को\n[C]वचनामृत दे [D]शरणागत [G]को,\n[G]अपने में करले [D]पूर्ण प्रभु\n[C]धन्य मसीह, [D]धन्य प्र[G]भु ।",
+  "lyrics": "[Chorus]\n वन्दे प्रभु, वन्दे मसीह\nशत् शत् वन्दना, वन्दे प्रभु ।\n[Verse]\n[Verse]\nइस शुभ दिन हम अपने को\nचरणों में तेरे लाते हैं\nइस शुभ घड़ी दोहराते हैं\nतेरे ही मधुर वचनों को ।\n[Verse]\n[Verse]\nअर्पण करते हैं इस जीवन को\nवचनामृत दे शरणागत को,\nअपने में करले पूर्ण प्रभु\nधन्य मसीह, धन्य प्रभु ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

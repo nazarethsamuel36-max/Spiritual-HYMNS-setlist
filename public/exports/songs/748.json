@@ -1,219 +1,131 @@
 {
-  "id" : 748,
-  "songNumber" : 136,
-  "title" : "I SURRENDER ALL",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All to Jesus I surrender,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "All to Him I freely give;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "I will ever love and trust Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "In His presence daily live.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I surrender all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "I surrender all,"
-    }, {
-      "text" : "All to Thee, my blessed Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "I surrender all.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All to Jesus I surrender,"
-    }, {
-      "text" : "Humbly at His feet I bow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Worldly pleasures all forsaken,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Take me, Jesus, take me now.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All to Jesus I surrender,"
-    }, {
-      "text" : "Make me, Saviour, wholly Thine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Let me feel the Holy Spirit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Truly know that Thou art mine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All to Jesus I surrender,"
-    }, {
-      "text" : "Lord, I give myself to Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Fill me with Thy love and power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Let Thy blessing fall on me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All to Jesus I surrender,"
-    }, {
-      "text" : "Now I feel the sacred flame;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Oh, the joy of full salvation !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Glory, glory to His name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 748,
+  "songNumber": 136,
+  "title": "I SURRENDER ALL",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "All to Jesus I surrender,"
+        },
+        {
+          "text": "All to Him I freely give;"
+        },
+        {
+          "text": "I will ever love and trust Him,"
+        },
+        {
+          "text": "In His presence daily live."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I surrender all,"
+        },
+        {
+          "text": "I surrender all,"
+        },
+        {
+          "text": "All to Thee, my blessed Saviour,"
+        },
+        {
+          "text": "I surrender all."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "All to Jesus I surrender,"
+        },
+        {
+          "text": "Humbly at His feet I bow,"
+        },
+        {
+          "text": "Worldly pleasures all forsaken,"
+        },
+        {
+          "text": "Take me, Jesus, take me now."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "All to Jesus I surrender,"
+        },
+        {
+          "text": "Make me, Saviour, wholly Thine;"
+        },
+        {
+          "text": "Let me feel the Holy Spirit,"
+        },
+        {
+          "text": "Truly know that Thou art mine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "All to Jesus I surrender,"
+        },
+        {
+          "text": "Lord, I give myself to Thee;"
+        },
+        {
+          "text": "Fill me with Thy love and power,"
+        },
+        {
+          "text": "Let Thy blessing fall on me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "All to Jesus I surrender,"
+        },
+        {
+          "text": "Now I feel the sacred flame;"
+        },
+        {
+          "text": "Oh, the joy of full salvation !"
+        },
+        {
+          "text": "Glory, glory to His name!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]All to Jesus I sur[G]render,\n[D]All to Him I [A]freely give;\n[D]I will ever love and [G]trust Him,\n[D]In His presence [A]daily [D]live.\n\n[Chorus]\nI sur[D][G]render [D]all,\nI surrender all,\nAll to [D]Thee, my blessed [A]Saviour,\nI sur[D]render [G]all.\n\n[Verse 2]\nAll to Jesus I surrender,\n[D]Humbly at His [A]feet I bow,\n[D]Worldly pleasures all for[G]saken,\n[D]Take me, Jesus, take me [A]now.\n\n[Verse 3]\nAll to Jesus I surrender,\n[D]Make me, Saviour, [A]wholly Thine;\n[D]Let me feel the Holy [G]Spirit,\n[D]Truly know that Thou art [A]mine.\n\n[Verse 4]\nAll to Jesus I surrender,\n[D]Lord, I give my[A]self to Thee;\n[D]Fill me with Thy love and [G]power,\n[D]Let Thy blessing [A]fall on [D]me.\n\n[Verse 5]\nAll to Jesus I surrender,\n[D]Now I feel the [A]sacred flame;\n[D]Oh, the joy of full sal[G]vation !\n[D]Glory, glory [A]to His [D]name!",
+  "lyrics": "[Verse 1]\nAll to Jesus I surrender,\nAll to Him I freely give;\nI will ever love and trust Him,\nIn His presence daily live.\n\n[Chorus]\nI surrender all,\nI surrender all,\nAll to Thee, my blessed Saviour,\nI surrender all.\n\n[Verse 2]\nAll to Jesus I surrender,\nHumbly at His feet I bow,\nWorldly pleasures all forsaken,\nTake me, Jesus, take me now.\n\n[Verse 3]\nAll to Jesus I surrender,\nMake me, Saviour, wholly Thine;\nLet me feel the Holy Spirit,\nTruly know that Thou art mine.\n\n[Verse 4]\nAll to Jesus I surrender,\nLord, I give myself to Thee;\nFill me with Thy love and power,\nLet Thy blessing fall on me.\n\n[Verse 5]\nAll to Jesus I surrender,\nNow I feel the sacred flame;\nOh, the joy of full salvation !\nGlory, glory to His name!",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Surrender",
+    "Worship"
+  ]
 }

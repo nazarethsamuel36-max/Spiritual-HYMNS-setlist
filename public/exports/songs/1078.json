@@ -1,121 +1,96 @@
 {
-  "id" : 1078,
-  "songNumber" : 100,
-  "title" : "अंबर भी नया, धरती भी नयी और",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "अंबर भी नया, धरती भी नयी और",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "नया यरुशलेम होगा ।",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हर सुबह नयी, हर शाम नयी,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "हर वक्त सुहाना होगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अंधे की आँख खुलेंगी, बहिरे का कान खुलेगा ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "दौडेगा जोर से लंगडा, गुंगा भी महिमा गाएगा ।",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "F",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "कष्ट नहीं, आसू भी नहीं, बस प्यार ही प्यार होगा ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "F",
-        "position" : 44
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "सूरज भी न डूबेगा, चाँद भी ना सोयेगा,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "कभी अंधेरा न होगा, ना पाप का नाम ना होगा,",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "F",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "वहाँ मौत नहीं, बिमारी नहीं",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "दुःख का अन्त होगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 1078,
+  "songNumber": 100,
+  "title": "अंबर भी नया, धरती भी नयी और",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "अंबर भी नया, धरती भी नयी और"
+        },
+        {
+          "text": "नया यरुशलेम होगा ।"
+        },
+        {
+          "text": "हर सुबह नयी, हर शाम नयी,"
+        },
+        {
+          "text": "हर वक्त सुहाना होगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अंधे की आँख खुलेंगी, बहिरे का कान खुलेगा ।"
+        },
+        {
+          "text": "दौडेगा जोर से लंगडा, गुंगा भी महिमा गाएगा ।"
+        },
+        {
+          "text": "कष्ट नहीं, आसू भी नहीं, बस प्यार ही प्यार होगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सूरज भी न डूबेगा, चाँद भी ना सोयेगा,"
+        },
+        {
+          "text": "कभी अंधेरा न होगा, ना पाप का नाम ना होगा,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वहाँ मौत नहीं, बिमारी नहीं"
+        },
+        {
+          "text": "दुःख का अन्त होगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus] [F]अंबर भी नया, धरती भी नयी और\r\n[Bb]नया यरुशलेम हो[F]गा ।\r\n[F]हर सुबह नयी, हर शाम नयी,\r\n[C]हर वक्त सुहाना हो[F]गा ।\r\n[Verse]\r\n[Verse]\r\n[F]अंधे की आँख खुलेंगी, बहिरे का कान खुलेगा ।\r\n[Bb]दौडेगा जोर से लंगडा, [C]गुंगा भी महिमा गाए[F]गा ।\r\n[F]कष्ट नहीं, आसू भी नहीं, [C]बस प्यार ही प्यार हो[F]गा ।\r\n[Verse]\r\n[Verse]\r\n[F]सूरज भी न डूबेगा, चाँद भी ना सोयेगा,\r\n[Bb]कभी अंधेरा न होगा, [C]ना पाप का नाम ना हो[F]गा,\r\n[Verse]\r\n[Verse]\r\n[F]वहाँ मौत नहीं, बिमारी नहीं\r\n[C]दुःख का अन्त हो[F]गा ।",
+  "lyrics": "\r\n अंबर भी नया, धरती भी नयी और\r\nनया यरुशलेम होगा ।\r\nहर सुबह नयी, हर शाम नयी,\r\nहर वक्त सुहाना होगा ।\r\n[Verse]\r\n[Verse]\r\nअंधे की आँख खुलेंगी, बहिरे का कान खुलेगा ।\r\nदौडेगा जोर से लंगडा, गुंगा भी महिमा गाएगा ।\r\nकष्ट नहीं, आसू भी नहीं, बस प्यार ही प्यार होगा ।\r\n[Verse]\r\n[Verse]\r\nसूरज भी न डूबेगा, चाँद भी ना सोयेगा,\r\nकभी अंधेरा न होगा, ना पाप का नाम ना होगा,\r\n[Verse]\r\n[Verse]\r\nवहाँ मौत नहीं, बिमारी नहीं\r\nदुःख का अन्त होगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

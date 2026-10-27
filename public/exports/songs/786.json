@@ -1,143 +1,96 @@
 {
-  "id" : 786,
-  "songNumber" : 174,
-  "title" : "YES JESUS LOVES ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Jesus loves me ! this I know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "For the Bible tells me so;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Little ones to Him belong,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "They are weak but He is strong.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Yes, Jesus loves me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Yes, Jesus loves me,"
-    }, {
-      "text" : "Yes, Jesus loves me,"
-    }, {
-      "text" : "The Bible tells me so.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Jesus loves me ! He who died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Heaven's gates to open wide;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He will wash away my sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Let His little child come in.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Jesus loves me ! loves me still,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Though I'm very weak and ill;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "From His shining throne on high,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Comes to watch me where I lie.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 786,
+  "songNumber": 174,
+  "title": "YES JESUS LOVES ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jesus loves me ! this I know,"
+        },
+        {
+          "text": "For the Bible tells me so;"
+        },
+        {
+          "text": "Little ones to Him belong,"
+        },
+        {
+          "text": "They are weak but He is strong."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Yes, Jesus loves me,"
+        },
+        {
+          "text": "Yes, Jesus loves me,"
+        },
+        {
+          "text": "Yes, Jesus loves me,"
+        },
+        {
+          "text": "The Bible tells me so."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Jesus loves me ! He who died,"
+        },
+        {
+          "text": "Heavens gates to open wide;"
+        },
+        {
+          "text": "He will wash away my sin,"
+        },
+        {
+          "text": "Let His little child come in."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Jesus loves me ! loves me still,"
+        },
+        {
+          "text": "Though Im very weak and ill;"
+        },
+        {
+          "text": "From His shining throne on high,"
+        },
+        {
+          "text": "Comes to watch me where I lie."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Jesus loves me ! this I know,\nFor the [G]Bible tells me [D]so;\nLittle [D]ones to Him belong,\nThey are [A]weak but He is [D]strong.\n\n[Chorus]\n[D][G]Yes, Jesus [D]loves me,\nYes, Jesus loves me,\nYes, Jesus loves me,\nThe [A]Bible tells me [D]so.\n\n[Verse 2]\n[D]Jesus loves me ! He who died,\nHeavens [G]gates to open [D]wide;\nHe will [D]wash away my sin,\nLet His [A]little child come [D]in.\n\n[Verse 3]\n[D]Jesus loves me ! loves me still,\nThough Im [G]very weak and [D]ill;\nFrom His [D]shining throne on high,\nComes to [A]watch me where I [D]lie.",
+  "lyrics": "[Verse 1]\nJesus loves me ! this I know,\nFor the Bible tells me so;\nLittle ones to Him belong,\nThey are weak but He is strong.\n\n[Chorus]\nYes, Jesus loves me,\nYes, Jesus loves me,\nYes, Jesus loves me,\nThe Bible tells me so.\n\n[Verse 2]\nJesus loves me ! He who died,\nHeavens gates to open wide;\nHe will wash away my sin,\nLet His little child come in.\n\n[Verse 3]\nJesus loves me ! loves me still,\nThough Im very weak and ill;\nFrom His shining throne on high,\nComes to watch me where I lie.",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Children",
+    "Worship",
+    "Gospel"
+  ]
 }

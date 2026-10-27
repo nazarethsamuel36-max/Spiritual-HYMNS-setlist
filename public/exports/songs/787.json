@@ -1,225 +1,110 @@
 {
-  "id" : 787,
-  "songNumber" : 175,
-  "title" : "ONCE MY SOUL WAS ASTRAY",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Once my soul was astray from the heavenly way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "And was wretched and vile as could be;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "But my Saviour above, gave me peace, joy and love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "When He reached down His hand for me, for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "When He reached down His hand for me; (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "I was lost and undone, without God or His Son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "When He reached down His hand for me, for me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I was nearing despair, when He came to me there,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "And He showed me that I could be free;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Then He lifted my feet, gave me glory complete,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "When He reached down His hand for me, for me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "How my heart doth rejoice since I made Him my choice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 34
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "From the tempest to Him now I flee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Now I lean on His arm, I'm secure from all harm,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Since He reached down His hand for me, for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Since the Lord gave me peace, heavenly joys never cease;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 39
-      }, {
-        "chord" : "D",
-        "position" : 50
-      } ]
-    }, {
-      "text" : "Lord, I give all my life unto Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Guide my feet, hold my hand, grant with Thee I may stand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 40
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "For you reached down your hand for me, for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 787,
+  "songNumber": 175,
+  "title": "ONCE MY SOUL WAS ASTRAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Once my soul was astray from the heavenly way,"
+        },
+        {
+          "text": "And was wretched and vile as could be;"
+        },
+        {
+          "text": "But my Saviour above, gave me peace, joy and love,"
+        },
+        {
+          "text": "When He reached down His hand for me, for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "When He reached down His hand for me; (2)"
+        },
+        {
+          "text": "I was lost and undone, without God or His Son,"
+        },
+        {
+          "text": "When He reached down His hand for me, for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I was nearing despair, when He came to me there,"
+        },
+        {
+          "text": "And He showed me that I could be free;"
+        },
+        {
+          "text": "Then He lifted my feet, gave me glory complete,"
+        },
+        {
+          "text": "When He reached down His hand for me, for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "How my heart doth rejoice since I made Him my choice,"
+        },
+        {
+          "text": "From the tempest to Him now I flee;"
+        },
+        {
+          "text": "Now I lean on His arm, Im secure from all harm,"
+        },
+        {
+          "text": "Since He reached down His hand for me, for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Since the Lord gave me peace, heavenly joys never cease;"
+        },
+        {
+          "text": "Lord, I give all my life unto Thee;"
+        },
+        {
+          "text": "Guide my feet, hold my hand, grant with Thee I may stand,"
+        },
+        {
+          "text": "For you reached down your hand for me, for me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Once my soul was astray from the [G]heavenly [D]way,\nAnd was [D]wretched and vile as could [A]be;\nBut my [D]Saviour above, gave me [G]peace, joy and [D]love,\nWhen He [D]reached down His [A]hand for [D]me, for me.\n\n[Chorus]\nWhen He [G]reached down His hand for [D]me; (2)\nI was [D]lost and undone, without [G]God or His [D]Son,\nWhen He reached down His hand for me, for me.\n\n[Verse 2]\nI was [D]nearing despair, when He [G]came to me [D]there,\nAnd He [D]showed me that I could be [A]free;\nThen He [D]lifted my feet, gave me [G]glory com[D]plete,\nWhen He reached down His hand for me, for me.\n\n[Verse 3]\nHow my [D]heart doth rejoice since I [G]made Him my [D]choice,\nFrom the [D]tempest to Him now I [A]flee;\nNow I [D]lean on His arm, Im se[G]cure from all [D]harm,\nSince He [D]reached down His [A]hand for [D]me, for me.\n\n[Verse 4]\nSince the [D]Lord gave me peace, heavenly [G]joys never [D]cease;\nLord, I [D]give all my life unto [A]Thee;\nGuide my [D]feet, hold my hand, grant with [G]Thee I may [D]stand,\nFor you [D]reached down your [A]hand for [D]me, for me.",
+  "lyrics": "[Verse 1]\nOnce my soul was astray from the heavenly way,\nAnd was wretched and vile as could be;\nBut my Saviour above, gave me peace, joy and love,\nWhen He reached down His hand for me, for me.\n\n[Chorus]\nWhen He reached down His hand for me; (2)\nI was lost and undone, without God or His Son,\nWhen He reached down His hand for me, for me.\n\n[Verse 2]\nI was nearing despair, when He came to me there,\nAnd He showed me that I could be free;\nThen He lifted my feet, gave me glory complete,\nWhen He reached down His hand for me, for me.\n\n[Verse 3]\nHow my heart doth rejoice since I made Him my choice,\nFrom the tempest to Him now I flee;\nNow I lean on His arm, Im secure from all harm,\nSince He reached down His hand for me, for me.\n\n[Verse 4]\nSince the Lord gave me peace, heavenly joys never cease;\nLord, I give all my life unto Thee;\nGuide my feet, hold my hand, grant with Thee I may stand,\nFor you reached down your hand for me, for me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

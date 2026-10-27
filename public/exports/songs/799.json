@@ -1,184 +1,96 @@
 {
-  "id" : 799,
-  "songNumber" : 187,
-  "title" : "BEYOND THE SUNSET",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Beyond the sunset, O blissful morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "When with our Saviour heaven is begun.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Earth's toiling ended, O glorious dawning ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Beyond the sunset, when day is done.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Beyond the sunset, no clouds will gather,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "No storms will threaten, no fears annoy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "O day of gladness, O day unending ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Beyond the sunset, eternal joy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Beyond the sunset, a hand will guide me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "To God, the Father, whom I adore ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "His glorious presence, His words of welcome,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Will be my portion on that fair shore.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Beyond the sunset, O glad reunion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "With our dear loved ones who've gone before.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "In that fair homeland we'll know no parting,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Beyond the sunset forevermore.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 799,
+  "songNumber": 187,
+  "title": "BEYOND THE SUNSET",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Beyond the sunset, O blissful morning,"
+        },
+        {
+          "text": "When with our Saviour heaven is begun."
+        },
+        {
+          "text": "Earth's toiling ended, O glorious dawning ;"
+        },
+        {
+          "text": "Beyond the sunset, when day is done."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Beyond the sunset, no clouds will gather,"
+        },
+        {
+          "text": "No storms will threaten, no fears annoy."
+        },
+        {
+          "text": "O day of gladness, O day unending ;"
+        },
+        {
+          "text": "Beyond the sunset, eternal joy."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Beyond the sunset, a hand will guide me"
+        },
+        {
+          "text": "To God, the Father, whom I adore ;"
+        },
+        {
+          "text": "His glorious presence, His words of welcome,"
+        },
+        {
+          "text": "Will be my portion on that fair shore."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Beyond the sunset, O glad reunion,"
+        },
+        {
+          "text": "With our dear loved ones who've gone before."
+        },
+        {
+          "text": "In that fair homeland we'll know no parting,"
+        },
+        {
+          "text": "Beyond the sunset forevermore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nBe[E]yond the sunset, O blissful [A]morning,\r\nWhen with our [E]Saviour heaven is be[B]gun.\r\nEarth's [E]toiling ended, O glorious [A]dawning ;\r\nBe[E]yond the sunset, [B]when day is [E]done.\r\n\r\n[Verse]\r\nBe[E]yond the sunset, no clouds will [A]gather,\r\nNo storms will [E]threaten, no fears an[B]noy.\r\nO [E]day of gladness, O day un[A]ending ;\r\nBe[E]yond the sunset, [B]eternal [E]joy.\r\n\r\n[Verse]\r\nBe[E]yond the sunset, a hand will [A]guide me\r\nTo [E]God, the Father, whom I a[B]dore ;\r\nHis [E]glorious presence, His words of [A]welcome,\r\nWill [E]be my portion [B]on that fair [E]shore.\r\n\r\n[Verse]\r\nBe[E]yond the sunset, O glad re[A]union,\r\nWith our dear [E]loved ones who've gone be[B]fore.\r\nIn [E]that fair homeland we'll know no [A]parting,\r\nBe[E]yond the sunset [B]forever[E]more.",
+  "lyrics": "[Verse]\r\nBeyond the sunset, O blissful morning,\r\nWhen with our Saviour heaven is begun.\r\nEarth's toiling ended, O glorious dawning ;\r\nBeyond the sunset, when day is done.\r\n\r\n[Verse]\r\nBeyond the sunset, no clouds will gather,\r\nNo storms will threaten, no fears annoy.\r\nO day of gladness, O day unending ;\r\nBeyond the sunset, eternal joy.\r\n\r\n[Verse]\r\nBeyond the sunset, a hand will guide me\r\nTo God, the Father, whom I adore ;\r\nHis glorious presence, His words of welcome,\r\nWill be my portion on that fair shore.\r\n\r\n[Verse]\r\nBeyond the sunset, O glad reunion,\r\nWith our dear loved ones who've gone before.\r\nIn that fair homeland we'll know no parting,\r\nBeyond the sunset forevermore.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

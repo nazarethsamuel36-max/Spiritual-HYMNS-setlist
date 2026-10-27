@@ -1,132 +1,77 @@
 {
-  "id" : 1208,
-  "songNumber" : 230,
-  "title" : "प्रार्थना में जो कुछ मांगा",
-  "language" : "hindi",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "प्रार्थना में जो कुछ मांगा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "पूरा करो अरमान",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "सारी खताऐं मानकर अपनी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "तेरा करूं अब ध्यान।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "दिल से धीमी आवाज आयी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "अपने गुनाहो को मान",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "जान लिया मैं आवाज उसकी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "जिसका किया अपमान",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जाना सभी को आखिर वहा है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "होगा जहां इन्साफ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "धो दो दिलो को आज हमारे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "कर दो लहू से साफ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 1208,
+  "songNumber": 230,
+  "title": "प्रार्थना में जो कुछ मांगा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रार्थना में जो कुछ मांगा"
+        },
+        {
+          "text": "पूरा करो अरमान"
+        },
+        {
+          "text": "सारी खताऐं मानकर अपनी"
+        },
+        {
+          "text": "तेरा करूं अब ध्यान।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दिल से धीमी आवाज आयी"
+        },
+        {
+          "text": "अपने गुनाहो को मान"
+        },
+        {
+          "text": "जान लिया मैं आवाज उसकी"
+        },
+        {
+          "text": "जिसका किया अपमान"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जाना सभी को आखिर वहा है"
+        },
+        {
+          "text": "होगा जहां इन्साफ"
+        },
+        {
+          "text": "धो दो दिलो को आज हमारे"
+        },
+        {
+          "text": "कर दो लहू से साफ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]प्रार्थना में जो [C]कुछ मांगा\n[G]पूरा करो अर[D]मान\n[G]सारी खताऐं [C]मानकर अपनी\n[D]तेरा करूं अब [G]ध्यान।\n\n[Verse]\n[G]दिल से धीमी [C]आवाज आयी\n[G]अपने गुनाहो को [D]मान\n[G]जान लिया मैं [C]आवाज उसकी\n[D]जिसका किया अप[G]मान\n\n[Verse]\n[G]जाना सभी को [C]आखिर वहा है\n[G]होगा जहां इन्[D]साफ\n[G]धो दो दिलो को [C]आज हमारे\n[D]कर दो लहू से [G]साफ।",
+  "lyrics": "[Verse]\nप्रार्थना में जो कुछ मांगा\nपूरा करो अरमान\nसारी खताऐं मानकर अपनी\nतेरा करूं अब ध्यान।\n\n[Verse]\nदिल से धीमी आवाज आयी\nअपने गुनाहो को मान\nजान लिया मैं आवाज उसकी\nजिसका किया अपमान\n\n[Verse]\nजाना सभी को आखिर वहा है\nहोगा जहां इन्साफ\nधो दो दिलो को आज हमारे\nकर दो लहू से साफ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

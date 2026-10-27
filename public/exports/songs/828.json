@@ -1,304 +1,119 @@
 {
-  "id" : 828,
-  "songNumber" : 216,
-  "title" : "ALL GLORY TO GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All glory to God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "He has lifted me up,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "He has lifted me up I know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "He stretched out His hand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And He lifted me up,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And that's why I love him so,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I love Him more and more,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And when I stand upon the other shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "I'll praise Him more and more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "My glory and the lifter of my head",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "My glory and the lifter of my head"
-    }, {
-      "text" : "For thou O Lord are a shield for me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "My glory and the lifter of mine head.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "I cried unto the Lord with my voice (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And He heard me out of His holy hill.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "The Lord liveth;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And blessed be my Rock",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Let the God of my salvation be exalted (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Thou hast turned my mourning into dancing for me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Thou hast put off my sack cloth",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Thou hast turned my mourning into dancing for me"
-    }, {
-      "text" : "And girded me with gladness",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "To the end my glory may sing praises to Thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "And not keep silence",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "O Lord my God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "I will give thanks unto Thee forever.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 828,
+  "songNumber": 216,
+  "title": "ALL GLORY TO GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All glory to God,"
+        },
+        {
+          "text": "He has lifted me up,"
+        },
+        {
+          "text": "He has lifted me up I know,"
+        },
+        {
+          "text": "He stretched out His hand,"
+        },
+        {
+          "text": "And He lifted me up,"
+        },
+        {
+          "text": "And that's why I love him so,"
+        },
+        {
+          "text": "I love Him more and more,"
+        },
+        {
+          "text": "And when I stand upon the other shore,"
+        },
+        {
+          "text": "I'll praise Him more and more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "My glory and the lifter of my head"
+        },
+        {
+          "text": "My glory and the lifter of my head"
+        },
+        {
+          "text": "For thou O Lord are a shield for me"
+        },
+        {
+          "text": "My glory and the lifter of mine head."
+        },
+        {
+          "text": "I cried unto the Lord with my voice (3)"
+        },
+        {
+          "text": "And He heard me out of His holy hill."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The Lord liveth;"
+        },
+        {
+          "text": "And blessed be my Rock"
+        },
+        {
+          "text": "Let the God of my salvation be exalted (2)"
+        },
+        {
+          "text": "Thou hast turned my mourning into dancing for me"
+        },
+        {
+          "text": "Thou hast put off my sack cloth"
+        },
+        {
+          "text": "Thou hast turned my mourning into dancing for me"
+        },
+        {
+          "text": "And girded me with gladness"
+        },
+        {
+          "text": "To the end my glory may sing praises to Thee"
+        },
+        {
+          "text": "And not keep silence"
+        },
+        {
+          "text": "O Lord my God,"
+        },
+        {
+          "text": "I will give thanks unto Thee forever."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nAll [C]glory to [F]God,\r\nHe has [C]lifted me [G]up,\r\nHe has [C]lifted me [G]up I [C]know,\r\nHe [C]stretched out His [F]hand,\r\nAnd He [C]lifted me [G]up,\r\nAnd [C]that's why I [G]love him [C]so,\r\nI [C]love Him [F]more and [C]more,\r\nAnd when I [C]stand u[F]pon the [C]other [G]shore,\r\nI'll [C]praise Him [G]more and [C]more.\r\n\r\n[Verse]\r\nMy [C]glory and the [F]lifter of my [C][G]head\r\nMy glory and the lifter of my head\r\nFor [C]thou O Lord are a [F]shield for [C]me\r\nMy [C]glory and the [G]lifter of mine [C]head.\r\nI [C]cried unto the [F]Lord with my [C]voice (3)\r\nAnd He [C]heard me [G]out of His holy [C]hill.\r\n\r\n[Verse]\r\nThe [C]Lord [F]liveth;\r\nAnd [C]blessed be my [G]Rock\r\nLet the [C]God of my sal[F]vation [C]be ex[G]alted (2)\r\nThou hast [C]turned my [F]mourning into [C]dancing for me\r\nThou hast [C]put off [F]my sack [G]cloth\r\nThou hast turned my mourning into dancing for me\r\nAnd [C]girded [F]me with [G]gladness\r\nTo the [C]end my [F]glory may [C]sing praises to [G]Thee\r\nAnd [C]not keep [G]silence\r\nO [C]Lord my [F]God,\r\nI will [C]give thanks un[G]to Thee for[C]ever.",
+  "lyrics": "[Verse]\r\nAll glory to God,\r\nHe has lifted me up,\r\nHe has lifted me up I know,\r\nHe stretched out His hand,\r\nAnd He lifted me up,\r\nAnd that's why I love him so,\r\nI love Him more and more,\r\nAnd when I stand upon the other shore,\r\nI'll praise Him more and more.\r\n\r\n[Verse]\r\nMy glory and the lifter of my head\r\nMy glory and the lifter of my head\r\nFor thou O Lord are a shield for me\r\nMy glory and the lifter of mine head.\r\nI cried unto the Lord with my voice (3)\r\nAnd He heard me out of His holy hill.\r\n\r\n[Verse]\r\nThe Lord liveth;\r\nAnd blessed be my Rock\r\nLet the God of my salvation be exalted (2)\r\nThou hast turned my mourning into dancing for me\r\nThou hast put off my sack cloth\r\nThou hast turned my mourning into dancing for me\r\nAnd girded me with gladness\r\nTo the end my glory may sing praises to Thee\r\nAnd not keep silence\r\nO Lord my God,\r\nI will give thanks unto Thee forever.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,120 +1,86 @@
 {
-  "id" : 798,
-  "songNumber" : 186,
-  "title" : "WHEN THE SAVIOUR CALLS I WILL ANSWER",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "When the Saviour calls I will answer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "When He calls for me I will hear ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "When the Saviour calls I will answer,"
-    }, {
-      "text" : "I'll be somewhere list'ning for my name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "I'll be somewhere list'ning, (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "I'll be somewhere list'ning, for my name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    }, {
-      "text" : "If my heart is right when He calls me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "If my heart is right I will hear ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "If my heart is right when He calls me,"
-    }, {
-      "text" : "I'll be somewhere list'ning for my name."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "If my robe is white when He calls me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "If my robe is white I will hear ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "If my robe is white when He calls me,"
-    }, {
-      "text" : "I'll be somewhere list'ning for my name."
-    } ]
-  } ]
+  "id": 798,
+  "songNumber": 186,
+  "title": "WHEN THE SAVIOUR CALLS I WILL ANSWER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "When the Saviour calls I will answer,"
+        },
+        {
+          "text": "When He calls for me I will hear ;"
+        },
+        {
+          "text": "When the Saviour calls I will answer,"
+        },
+        {
+          "text": "Ill be somewhere listning for my name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Ill be somewhere listning, (2)"
+        },
+        {
+          "text": "Ill be somewhere listning, for my name."
+        },
+        {
+          "text": "(Repeat)"
+        },
+        {
+          "text": "If my heart is right when He calls me,"
+        },
+        {
+          "text": "If my heart is right I will hear ;"
+        },
+        {
+          "text": "If my heart is right when He calls me,"
+        },
+        {
+          "text": "Ill be somewhere listning for my name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "If my robe is white when He calls me,"
+        },
+        {
+          "text": "If my robe is white I will hear ;"
+        },
+        {
+          "text": "If my robe is white when He calls me,"
+        },
+        {
+          "text": "Ill be somewhere listning for my name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nWhen the [D]Saviour calls I will [G]answer,\nWhen He [D]calls for me I will [A]hear ;\nWhen the Saviour calls I will answer,\nIll be [D]somewhere [A]listning for my [D]name.\n\n[Chorus]\nIll be [G]somewhere listning, (2)\nIll be [D]somewhere listning, [A]for my [D]name.\n(Repeat)\nIf my [D]heart is right when He [G]calls me,\nIf my [D]heart is right I will [A]hear ;\nIf my heart is right when He calls me,\nIll be somewhere listning for my name.\n\n[Verse 2]\nIf my [D]robe is white when He [G]calls me,\nIf my [D]robe is white I will [A]hear ;\nIf my robe is white when He calls me,\nIll be somewhere listning for my name.",
+  "lyrics": "[Verse 1]\nWhen the Saviour calls I will answer,\nWhen He calls for me I will hear ;\nWhen the Saviour calls I will answer,\nIll be somewhere listning for my name.\n\n[Chorus]\nIll be somewhere listning, (2)\nIll be somewhere listning, for my name.\n(Repeat)\nIf my heart is right when He calls me,\nIf my heart is right I will hear ;\nIf my heart is right when He calls me,\nIll be somewhere listning for my name.\n\n[Verse 2]\nIf my robe is white when He calls me,\nIf my robe is white I will hear ;\nIf my robe is white when He calls me,\nIll be somewhere listning for my name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

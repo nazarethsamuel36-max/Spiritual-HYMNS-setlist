@@ -1,242 +1,113 @@
 {
-  "id" : 822,
-  "songNumber" : 210,
-  "title" : "PASS ME NOT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Pass me not, O gentle Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Hear my humble cry;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "While on others Thou art calling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Do not pass me by.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Saviour, Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Hear my humble cry;"
-    }, {
-      "text" : "While on others Thou art calling,"
-    }, {
-      "text" : "Do not pass me by."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Let me at Thy throne of mercy",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Find a sweet relief;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Kneeling there in deep contrition,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Help my unbelief.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Trusting only in Thy merit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Would I seek Thy face;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Heal my wounded, broken spirit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Save me by Thy grace.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Thou the Spring of all my comfort,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "More than life to me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Whom have I on earth besides Thee?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Whom in heaven but Thee?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 822,
+  "songNumber": 210,
+  "title": "PASS ME NOT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Pass me not, O gentle Saviour,"
+        },
+        {
+          "text": "Hear my humble cry;"
+        },
+        {
+          "text": "While on others Thou art calling,"
+        },
+        {
+          "text": "Do not pass me by."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Saviour, Saviour,"
+        },
+        {
+          "text": "Hear my humble cry;"
+        },
+        {
+          "text": "While on others Thou art calling,"
+        },
+        {
+          "text": "Do not pass me by."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let me at Thy throne of mercy"
+        },
+        {
+          "text": "Find a sweet relief;"
+        },
+        {
+          "text": "Kneeling there in deep contrition,"
+        },
+        {
+          "text": "Help my unbelief."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Trusting only in Thy merit,"
+        },
+        {
+          "text": "Would I seek Thy face;"
+        },
+        {
+          "text": "Heal my wounded, broken spirit,"
+        },
+        {
+          "text": "Save me by Thy grace."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Thou the Spring of all my comfort,"
+        },
+        {
+          "text": "More than life to me,"
+        },
+        {
+          "text": "Whom have I on earth besides Thee?"
+        },
+        {
+          "text": "Whom in heaven but Thee?"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]Pass me not, O [Bb]gentle [F]Saviour,\r\n[Bb][F]Hear my [F]humble [C]cry;\r\n[F]While on others [Bb]Thou art [F]calling,\r\n[F]Do not [C]pass me [F]by.\r\n\r\n[Chorus]\r\n[F]Saviour, [Bb]Saviour,\r\nHear my humble cry;\r\nWhile on others Thou art calling,\r\nDo not pass me by.\r\n\r\n[Verse 2]\r\n[F]Let me at Thy [Bb]throne of [F]mercy\r\n[Bb]Find a [F]sweet re[C]lief;\r\n[F]Kneeling there in [Bb]deep con[F]trition,\r\n[F]Help my [C]unbe[F]lief.\r\n\r\n[Verse 3]\r\n[F]Trusting only [Bb]in Thy [F]merit,\r\n[Bb]Would I [F]seek Thy [C]face;\r\n[F]Heal my wounded, [Bb]broken [F]spirit,\r\n[F]Save me [C]by Thy [F]grace.\r\n\r\n[Verse 4]\r\n[F]Thou the Spring of [Bb]all my [F]comfort,\r\n[Bb]More than [F]life to [C]me,\r\n[F]Whom have I on [Bb]earth be[F]sides Thee?\r\n[F]Whom in [C]heaven but [F]Thee?",
+  "lyrics": "[Verse 1]\r\nPass me not, O gentle Saviour,\r\nHear my humble cry;\r\nWhile on others Thou art calling,\r\nDo not pass me by.\r\n\r\n[Chorus]\r\nSaviour, Saviour,\r\nHear my humble cry;\r\nWhile on others Thou art calling,\r\nDo not pass me by.\r\n\r\n[Verse 2]\r\nLet me at Thy throne of mercy\r\nFind a sweet relief;\r\nKneeling there in deep contrition,\r\nHelp my unbelief.\r\n\r\n[Verse 3]\r\nTrusting only in Thy merit,\r\nWould I seek Thy face;\r\nHeal my wounded, broken spirit,\r\nSave me by Thy grace.\r\n\r\n[Verse 4]\r\nThou the Spring of all my comfort,\r\nMore than life to me,\r\nWhom have I on earth besides Thee?\r\nWhom in heaven but Thee?",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

@@ -1,54 +1,47 @@
 {
-  "id" : 927,
-  "songNumber" : 48,
-  "title" : "PRAISE HIM PRAISE HIM",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Praise Him, praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise Him in the morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise Him in the noontime,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise Him, praise Him,"
-    }, {
-      "text" : "Praise Him when the sun goes down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "...Love Him,...Serve,...Meet etc.etc.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    } ]
-  } ]
+  "id": 927,
+  "songNumber": 48,
+  "title": "PRAISE HIM PRAISE HIM",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise Him, praise Him,"
+        },
+        {
+          "text": "Praise Him in the morning,"
+        },
+        {
+          "text": "Praise Him in the noontime,"
+        },
+        {
+          "text": "Praise Him, praise Him,"
+        },
+        {
+          "text": "Praise Him when the sun goes down."
+        },
+        {
+          "text": "...Love Him,...Serve,...Meet etc.etc."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Praise Him, praise Him,\n[D]Praise Him in the morning,\n[G]Praise Him in the noontime,\nPraise Him, praise Him,\n[D]Praise Him when the [A]sun goes [D]down.\n...[D]Love Him,...Serve,...Meet etc.etc.",
+  "lyrics": "[Verse]\nPraise Him, praise Him,\nPraise Him in the morning,\nPraise Him in the noontime,\nPraise Him, praise Him,\nPraise Him when the sun goes down.\n...Love Him,...Serve,...Meet etc.etc.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

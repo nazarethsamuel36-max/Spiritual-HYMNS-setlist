@@ -1,191 +1,104 @@
 {
-  "id" : 746,
-  "songNumber" : 134,
-  "title" : "MY FAITH LOOKS UP TO THEE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "My faith looks up to Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Thou Lamb of Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Saviour divine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Now hear me while I pray,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Take all my sin away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "O let me from this day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Be wholly Thine !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "May Thy rich grace impart",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Strength to my fainting heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "My zeal inspire;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "As Thou hast died for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "O may my love to Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Pure, warm, and changeless be,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "A living fire !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "While life's dark maze I tread,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And griefs around me spread,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Be Thou my Guide;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Bid darkness turn to day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Wipe sorrow's tears away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Nor let me ever stray",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "From Thee aside.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 746,
+  "songNumber": 134,
+  "title": "MY FAITH LOOKS UP TO THEE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "My faith looks up to Thee,"
+        },
+        {
+          "text": "Thou Lamb of Calvary,"
+        },
+        {
+          "text": "Saviour divine;"
+        },
+        {
+          "text": "Now hear me while I pray,"
+        },
+        {
+          "text": "Take all my sin away,"
+        },
+        {
+          "text": "O let me from this day"
+        },
+        {
+          "text": "Be wholly Thine !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "May Thy rich grace impart"
+        },
+        {
+          "text": "Strength to my fainting heart,"
+        },
+        {
+          "text": "My zeal inspire;"
+        },
+        {
+          "text": "As Thou hast died for me,"
+        },
+        {
+          "text": "O may my love to Thee,"
+        },
+        {
+          "text": "Pure, warm, and changeless be,"
+        },
+        {
+          "text": "A living fire !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "While life's dark maze I tread,"
+        },
+        {
+          "text": "And griefs around me spread,"
+        },
+        {
+          "text": "Be Thou my Guide;"
+        },
+        {
+          "text": "Bid darkness turn to day,"
+        },
+        {
+          "text": "Wipe sorrow's tears away,"
+        },
+        {
+          "text": "Nor let me ever stray"
+        },
+        {
+          "text": "From Thee aside."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nMy [D]faith looks up to [A]Thee,\nThou [D]Lamb of Cal[G]vary,\nSaviour di[D]vine;\nNow [D]hear me while I [A]pray,\nTake [D]all my sin a[G]way,\nO let me from this [D]day\nBe [A]wholly [D]Thine !\n\n[Verse 2]\nMay [D]Thy rich grace im[A]part\nStrength [D]to my faint[G]ing heart,\nMy zeal in[D]spire;\nAs [D]Thou hast died for [A]me,\nO may my [D]love to [G]Thee,\nPure, warm, and change[D]less be,\nA [A]living [D]fire !\n\n[Verse 3]\nWhile [D]life's dark maze I [A]tread,\nAnd [D]griefs around me [G]spread,\nBe Thou my [D]Guide;\nBid [D]darkness turn to [A]day,\nWipe [D]sorrow's tears a[G]way,\nNor let me ever [D]stray\nFrom [A]Thee a[D]side.",
+  "lyrics": "[Verse 1]\nMy faith looks up to Thee,\nThou Lamb of Calvary,\nSaviour divine;\nNow hear me while I pray,\nTake all my sin away,\nO let me from this day\nBe wholly Thine !\n\n[Verse 2]\nMay Thy rich grace impart\nStrength to my fainting heart,\nMy zeal inspire;\nAs Thou hast died for me,\nO may my love to Thee,\nPure, warm, and changeless be,\nA living fire !\n\n[Verse 3]\nWhile life's dark maze I tread,\nAnd griefs around me spread,\nBe Thou my Guide;\nBid darkness turn to day,\nWipe sorrow's tears away,\nNor let me ever stray\nFrom Thee aside.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

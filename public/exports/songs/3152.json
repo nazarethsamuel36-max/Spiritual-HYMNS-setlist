@@ -1,50 +1,98 @@
 {
-  "id" : 3152,
-  "songNumber" : 1010,
-  "title" : "** I Enter The Holy Of Holies",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I enter the Holy of Holies"
-    }, {
-      "text" : "I enter through the blood of the Lamb"
-    }, {
-      "text" : "I enter to worship You only"
-    }, {
-      "text" : "I enter to honor I Am"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Lord I worship You,"
-    }, {
-      "text" : "I worship You,"
-    }, {
-      "text" : "For Your name is Holy, Holy Lord"
-    }, {
-      "text" : "For Your name is Holy, Holy Lord"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "A Chord"
-    }, {
-      "text" : "Who was and Who is"
-    }, {
-      "text" : "And Who is to Come"
-    } ]
-  } ]
+  "id": 3152,
+  "songNumber": 1010,
+  "title": "I Enter The Holy Of Holies",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "F#m",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I enter the Holy of Holies"
+        },
+        {
+          "text": "I enter through the blood of the Lamb"
+        },
+        {
+          "text": "I enter to worship You only"
+        },
+        {
+          "text": "I enter to honor I Am"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lord I worship You, I worship You"
+        },
+        {
+          "text": "Lord I worship You, I worship You"
+        },
+        {
+          "text": "For Your name is Holy, Holy Lord"
+        },
+        {
+          "text": "For Your name is Holy, Holy Lord"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let the weight of Your glory cover us"
+        },
+        {
+          "text": "Let the life of Your river flow"
+        },
+        {
+          "text": "Let the truth of Your kingdom reign in us"
+        },
+        {
+          "text": "Let the weight of Your glory"
+        },
+        {
+          "text": "Let the weight of Your glory fall"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lord I worship You, I worship You"
+        },
+        {
+          "text": "Lord I worship You, I worship You"
+        },
+        {
+          "text": "For Your name is Holy, Holy Lord"
+        },
+        {
+          "text": "For Your name is Holy, Holy Lord"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nI enter the Holy of Holies\r\nI enter through the blood of the Lamb\r\nI enter to worship You only\r\nI enter to honor I Am\r\n\r\n[Chorus]\r\nLord I worship You, I worship You\r\nLord I worship You, I worship You\r\nFor Your name is Holy, Holy Lord\r\nFor Your name is Holy, Holy Lord\r\n\r\n[Verse 2]\r\nLet the weight of Your glory cover us\r\nLet the life of Your river flow\r\nLet the truth of Your kingdom reign in us\r\nLet the weight of Your glory\r\nLet the weight of Your glory fall\r\n\r\n[Chorus]\r\nLord I worship You, I worship You\r\nLord I worship You, I worship You\r\nFor Your name is Holy, Holy Lord\r\nFor Your name is Holy, Holy Lord",
+  "lyrics": "[Verse 1]\r\nI enter the Holy of Holies\r\nI enter through the blood of the Lamb\r\nI enter to worship You only\r\nI enter to honor I Am\r\n\r\n[Chorus]\r\nLord I worship You, I worship You\r\nLord I worship You, I worship You\r\nFor Your name is Holy, Holy Lord\r\nFor Your name is Holy, Holy Lord\r\n\r\n[Verse 2]\r\nLet the weight of Your glory cover us\r\nLet the life of Your river flow\r\nLet the truth of Your kingdom reign in us\r\nLet the weight of Your glory\r\nLet the weight of Your glory fall\r\n\r\n[Chorus]\r\nLord I worship You, I worship You\r\nLord I worship You, I worship You\r\nFor Your name is Holy, Holy Lord\r\nFor Your name is Holy, Holy Lord",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

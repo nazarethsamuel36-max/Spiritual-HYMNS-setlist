@@ -1,152 +1,101 @@
 {
-  "id" : 1111,
-  "songNumber" : 133,
-  "title" : "यीशु आप रहेंगे साथ",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु आप रहेंगे साथ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हम कभी ना होंगे निराश",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "आप सब कुछ संभालेंगे,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "यीशु सब कुछ संभालेंगे।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "शांतीदाता आप ही तो है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "सर्व शक्तिमान आप ही तो है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "यीशु आप रहेंगे साथ ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "चमत्कार करते आप ही तो है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "संमती देते आप ही तो है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "यीशु आप रहेंगे साथ ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "माता पिता आप ही तो है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "देते सहारा आप ही तो है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "यीशु आप रहेंगे साथ ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "तुम में उजाला आप ही तो है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "मुक्ति के दाता आप ही तो है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "यीशु आप रहेंगे साथ ।"
-    } ]
-  } ]
+  "id": 1111,
+  "songNumber": 133,
+  "title": "यीशु आप रहेंगे साथ",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु आप रहेंगे साथ,"
+        },
+        {
+          "text": "हम कभी ना होंगे निराश"
+        },
+        {
+          "text": "आप सब कुछ संभालेंगे,"
+        },
+        {
+          "text": "यीशु सब कुछ संभालेंगे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "शांतीदाता आप ही तो है,"
+        },
+        {
+          "text": "सर्व शक्तिमान आप ही तो है,"
+        },
+        {
+          "text": "यीशु आप रहेंगे साथ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चमत्कार करते आप ही तो है,"
+        },
+        {
+          "text": "संमती देते आप ही तो है"
+        },
+        {
+          "text": "यीशु आप रहेंगे साथ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "माता पिता आप ही तो है,"
+        },
+        {
+          "text": "देते सहारा आप ही तो है"
+        },
+        {
+          "text": "यीशु आप रहेंगे साथ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तुम में उजाला आप ही तो है,"
+        },
+        {
+          "text": "मुक्ति के दाता आप ही तो है"
+        },
+        {
+          "text": "यीशु आप रहेंगे साथ ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]यीशु आप रहेंगे [A]साथ,\r\n[G]हम कभी ना होंगे निरा[D]श\r\n[D]आप सब कुछ संभालेंगे,\r\n[G]यीशु सब कुछ संभालेंगे [D]।\r\n\r\n[Verse]\r\n[D]शांतीदाता आप ही [A]तो है,\r\n[G]सर्व शक्तिमान आप ही [D]तो है,\r\n[G]यीशु आप रहेंगे [D]साथ ।\r\n\r\n[Verse]\r\n[D]चमत्कार करते आप ही [A]तो है,\r\n[G]संमती देते आप ही [D]तो है\r\n[G]यीशु आप रहेंगे साथ ।\r\n\r\n[Verse]\r\n[D]माता पिता आप ही [A]तो है,\r\n[G]देते सहारा आप ही [D]तो है\r\n[G]यीशु आप रहेंगे साथ ।\r\n\r\n[Verse]\r\n[D]तुम में उजाला आप ही [A]तो है,\r\n[G]मुक्ति के दाता आप ही [D]तो है\r\n[G]यीशु आप रहेंगे साथ ।",
+  "lyrics": "[Verse]\r\nयीशु आप रहेंगे साथ,\r\nहम कभी ना होंगे निराश\r\nआप सब कुछ संभालेंगे,\r\nयीशु सब कुछ संभालेंगे ।\r\n\r\n[Verse]\r\nशांतीदाता आप ही तो है,\r\nसर्व शक्तिमान आप ही तो है,\r\nयीशु आप रहेंगे साथ ।\r\n\r\n[Verse]\r\nचमत्कार करते आप ही तो है,\r\nसंमती देते आप ही तो है\r\nयीशु आप रहेंगे साथ ।\r\n\r\n[Verse]\r\nमाता पिता आप ही तो है,\r\nदेते सहारा आप ही तो है\r\nयीशु आप रहेंगे साथ ।\r\n\r\n[Verse]\r\nतुम में उजाला आप ही तो है,\r\nमुक्ति के दाता आप ही तो है\r\nयीशु आप रहेंगे साथ ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

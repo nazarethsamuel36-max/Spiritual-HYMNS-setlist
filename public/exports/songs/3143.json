@@ -1,60 +1,89 @@
 {
-  "id" : 3143,
-  "songNumber" : 1001,
-  "title" : "** Above All Powers",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Above all powers"
-    }, {
-      "text" : "Above all kings"
-    }, {
-      "text" : "Above all nature and all created things"
-    }, {
-      "text" : "Above all wisdom and all the ways of man"
-    }, {
-      "text" : "You were here before the world began"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Above all kingdoms"
-    }, {
-      "text" : "Above all thrones"
-    }, {
-      "text" : "Above all wonders the world has ever known"
-    }, {
-      "text" : "Above all wealth and treasures of the earth"
-    }, {
-      "text" : "There's no way to measure what You're worth"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Crucified, laid behind the stone"
-    }, {
-      "text" : "You lived to die, rejected and alone"
-    }, {
-      "text" : "Like a rose trampled on the ground"
-    }, {
-      "text" : "You took the fall"
-    }, {
-      "text" : "And thought of me"
-    }, {
-      "text" : "Above all"
-    } ]
-  } ]
+  "id": 3143,
+  "songNumber": 1001,
+  "title": "Above All Powers",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Above all powers"
+        },
+        {
+          "text": "Above all kings"
+        },
+        {
+          "text": "Above all nature and all created things"
+        },
+        {
+          "text": "Above all wisdom and all the ways of man"
+        },
+        {
+          "text": "You were here before the world began"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Above all kingdoms"
+        },
+        {
+          "text": "Above all thrones"
+        },
+        {
+          "text": "Above all wonders the world has ever known"
+        },
+        {
+          "text": "Above all wealth and treasures of the earth"
+        },
+        {
+          "text": "There's no way to measure what You're worth"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Crucified, laid behind the stone"
+        },
+        {
+          "text": "You lived to die, rejected and alone"
+        },
+        {
+          "text": "Like a rose trampled on the ground"
+        },
+        {
+          "text": "You took the fall"
+        },
+        {
+          "text": "And thought of me"
+        },
+        {
+          "text": "Above all"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nAbove all powers\nAbove all kings\nAbove all nature and all created things\nAbove all wisdom and all the ways of man\nYou were here before the world began\n\n[Verse 2]\nAbove all kingdoms\nAbove all thrones\nAbove all wonders the world has ever known\nAbove all wealth and treasures of the earth\nThere's no way to measure what You're worth\n\n[CHORUS]\nCrucified, laid behind the stone\nYou lived to die, rejected and alone\nLike a rose trampled on the ground\nYou took the fall\nAnd thought of me\nAbove all",
+  "lyrics": "\n[Verse 1]\nAbove all powers\nAbove all kings\nAbove all nature and all created things\nAbove all wisdom and all the ways of man\nYou were here before the world began\n\n[Verse 2]\nAbove all kingdoms\nAbove all thrones\nAbove all wonders the world has ever known\nAbove all wealth and treasures of the earth\nThere's no way to measure what You're worth\n\n[CHORUS]\nCrucified, laid behind the stone\nYou lived to die, rejected and alone\nLike a rose trampled on the ground\nYou took the fall\nAnd thought of me\nAbove all",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

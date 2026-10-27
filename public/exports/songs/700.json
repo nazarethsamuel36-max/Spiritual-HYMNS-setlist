@@ -1,120 +1,62 @@
 {
-  "id" : 700,
-  "songNumber" : 24,
-  "title" : "COVER ME COVER ME",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Cover me, cover me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Extend the border of Thy mantle over me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Because Thou art my nearest kinsman",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Cover me, cover me, cover me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Fear not, fear not",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "My daughter I will do to thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "All you need,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Because thou art a virtuous woman",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Fear not, fear not."
-    } ]
-  } ]
+  "id": 700,
+  "songNumber": 24,
+  "title": "COVER ME COVER ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Cover me, cover me"
+        },
+        {
+          "text": "Extend the border of Thy mantle over me,"
+        },
+        {
+          "text": "Because Thou art my nearest kinsman"
+        },
+        {
+          "text": "Cover me, cover me, cover me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Fear not, fear not"
+        },
+        {
+          "text": "My daughter I will do to thee"
+        },
+        {
+          "text": "All you need,"
+        },
+        {
+          "text": "Because thou art a virtuous woman"
+        },
+        {
+          "text": "Fear not, fear not."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G]Cover me, [C]cover [G]me\n[G]Extend the border of Thy [C]mantle [G]over [D]me,\n[G]Because Thou art my [C]nearest [G]kinsman\n[G]Cover me, [D]cover me, [G]cover me.\n\n[Verse 2]\n[G]Fear not, [C][D]fear [G]not\n[G]My daughter [C]I will [G]do to [D]thee\n[G]All you [C]need,\n[G]Because thou art a [D]virtuous [G]woman\nFear not, fear not.",
+  "lyrics": "[Verse 1]\nCover me, cover me\nExtend the border of Thy mantle over me,\nBecause Thou art my nearest kinsman\nCover me, cover me, cover me.\n\n[Verse 2]\nFear not, fear not\nMy daughter I will do to thee\nAll you need,\nBecause thou art a virtuous woman\nFear not, fear not.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

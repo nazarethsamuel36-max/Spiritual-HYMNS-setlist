@@ -1,148 +1,86 @@
 {
-  "id" : 986,
-  "songNumber" : 8,
-  "title" : "हर दिन नयी आशा का, संदेश सुनाता है ।",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "हर दिन नयी आशा का, संदेश सुनाता है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "हर पल जो गुजर जाता, वापस नहीं आता है।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दुनिया में तसल्ली तो, मिलती है उसी दिल को ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "जो गीत मसीहा के, दिन रात ही गाता है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "रहता है जो संगत में, हर रोज ही यीशु के ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "संसार को ही अपना, वो स्वर्ग बनाता है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "अब दिल में बुला उसको, वो दूर नहीं तुझसे ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "आकाश से जो आकर, संसार में रहता है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 986,
+  "songNumber": 8,
+  "title": "हर दिन नयी आशा का, संदेश सुनाता है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "हर दिन नयी आशा का, संदेश सुनाता है ।"
+        },
+        {
+          "text": "हर पल जो गुजर जाता, वापस नहीं आता है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया में तसल्ली तो, मिलती है उसी दिल को ।"
+        },
+        {
+          "text": "जो गीत मसीहा के, दिन रात ही गाता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रहता है जो संगत में, हर रोज ही यीशु के ।"
+        },
+        {
+          "text": "संसार को ही अपना, वो स्वर्ग बनाता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अब दिल में बुला उसको, वो दूर नहीं तुझसे ।"
+        },
+        {
+          "text": "आकाश से जो आकर, संसार में रहता है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]हर दिन नयी [D]आशा का, [C]संदेश सुना[D]ता है ।\n[G]हर पल जो गु[D]जर जाता, [C]वापस नहीं आ[D]ता है।\n[Verse]\n[Verse]\n[G]दुनिया में तस[D]ल्ली तो, [C]मिलती है उ[D]सी दिल को ।\n[G]जो गीत म[D]सीहा के, [C]दिन रात ही [D]गाता है ।\n[Verse]\n[Verse]\n[G]रहता है जो [D]संगत में, [C]हर रोज ही [D]यीशु के ।\n[G]संसार को ही [D]अपना, वो [C]स्वर्ग बना[D]ता है ।\n[Verse]\n[Verse]\n[G]अब दिल में बु[D]ला उसको, [C]वो दूर नहीं [D]तुझसे ।\n[G]आकाश से जो [D]आकर, [C]संसार में रह[D]ता है ।",
+  "lyrics": "[Chorus]\n हर दिन नयी आशा का, संदेश सुनाता है ।\nहर पल जो गुजर जाता, वापस नहीं आता है।\n[Verse]\n[Verse]\nदुनिया में तसल्ली तो, मिलती है उसी दिल को ।\nजो गीत मसीहा के, दिन रात ही गाता है ।\n[Verse]\n[Verse]\nरहता है जो संगत में, हर रोज ही यीशु के ।\nसंसार को ही अपना, वो स्वर्ग बनाता है ।\n[Verse]\n[Verse]\nअब दिल में बुला उसको, वो दूर नहीं तुझसे ।\nआकाश से जो आकर, संसार में रहता है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

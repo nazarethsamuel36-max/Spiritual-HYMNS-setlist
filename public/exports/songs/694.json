@@ -1,88 +1,56 @@
 {
-  "id" : 694,
-  "songNumber" : 14,
-  "title" : "ALL OVER THE WORLD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All over the world,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "the Spirit is moving,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "All over the world, as the prophets said it would be,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "C",
-        "position" : 50
-      } ]
-    }, {
-      "text" : "All over the world,"
-    }, {
-      "text" : "thereâ€™s a mighty revelation,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Of the glory of the Lord,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 7
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "As the waters cover the sea.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Deep down in my heart....."
-    }, {
-      "text" : "Right here in our midst....."
-    } ]
-  } ]
+  "id": 694,
+  "songNumber": 14,
+  "title": "ALL OVER THE WORLD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "All over the world,"
+        },
+        {
+          "text": "the Spirit is moving,"
+        },
+        {
+          "text": "All over the world, as the prophets said it would be,"
+        },
+        {
+          "text": "All over the world,"
+        },
+        {
+          "text": "there's a mighty revelation,"
+        },
+        {
+          "text": "Of the glory of the Lord,"
+        },
+        {
+          "text": "As the waters cover the sea."
+        },
+        {
+          "text": "Deep down in my heart....."
+        },
+        {
+          "text": "Right here in our midst....."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G]All over the [C]world,\n[G]the Spirit is [D]moving,\n[G]All over the world, as the [C]prophets [D]said it would [G]be,\nAll over the world,\n[G]there's a might[D]y revelation,\n[G]Of the [C]glory of the [G]Lord,\n[G]As the [D]waters cover the [G]sea.\nDeep down in my heart.....\nRight here in our midst.....",
+  "lyrics": "[Verse 1]\nAll over the world,\nthe Spirit is moving,\nAll over the world, as the prophets said it would be,\nAll over the world,\nthere's a mighty revelation,\nOf the glory of the Lord,\nAs the waters cover the sea.\nDeep down in my heart.....\nRight here in our midst.....",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

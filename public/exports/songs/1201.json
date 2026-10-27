@@ -1,90 +1,62 @@
 {
-  "id" : 1201,
-  "songNumber" : 223,
-  "title" : "यीशु तुने मुझको बनाया।",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु तुने मुझको बनाया।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "इस दुनिया में चलना सिखाया (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "तेरी दया तेरी कृपा तुने मुझपे किया।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "तुने बनाया इस दुनियाको,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "तुने सजाया सारे सृष्टीको ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "रहता है यीशु मेरे ही पास,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "हरपल वह मुझको देता है साथ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 1201,
+  "songNumber": 223,
+  "title": "यीशु तुने मुझको बनाया",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु तुने मुझको बनाया।"
+        },
+        {
+          "text": "इस दुनिया में चलना सिखाया (2)"
+        },
+        {
+          "text": "तेरी दया तेरी कृपा तुने मुझपे किया।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तुने बनाया इस दुनियाको,"
+        },
+        {
+          "text": "तुने सजाया सारे सृष्टीको ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रहता है यीशु मेरे ही पास,"
+        },
+        {
+          "text": "हरपल वह मुझको देता है साथ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]यीशु तुने मुझको बना[C]या।\n[G]इस दुनिया में चलना सिखा[D]या (2)\n[G]तेरी दया तेरी कृपा तुने [C]मुझपे [G]किया।\n\n[Verse]\n[G]तुने बनाया इस दुनिया[C]को,\n[G]तुने सजाया सारे सृष्टी[D]को ।\n\n[Verse]\n[G]रहता है यीशु मेरे ही [C]पास,\n[G]हरपल वह मुझको देता है [D]साथ।",
+  "lyrics": "[Verse]\nयीशु तुने मुझको बनाया।\nइस दुनिया में चलना सिखाया (2)\nतेरी दया तेरी कृपा तुने मुझपे किया।\n\n[Verse]\nतुने बनाया इस दुनियाको,\nतुने सजाया सारे सृष्टीको ।\n\n[Verse]\nरहता है यीशु मेरे ही पास,\nहरपल वह मुझको देता है साथ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

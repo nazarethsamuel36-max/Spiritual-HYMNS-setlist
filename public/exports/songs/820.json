@@ -1,257 +1,138 @@
 {
-  "id" : 820,
-  "songNumber" : 208,
-  "title" : "JESUS KEEP ME NEAR THE CROSS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus, keep me near the cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "There a precious fountain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Free to all, a healing stream,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Flows from Calv'ry's mountain.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "In the cross, in the cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Be my glory ever;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Till my raptured soul shall find",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Rest beyond the river.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Near the cross, a trembling soul,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Love and mercy found me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "There the Bright and Morning Star",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Sheds its beams around me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Near the cross! O Lamb of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Bring its scenes before me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Help me walk from day to day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "With its shadows o'er me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Near the cross I'll watch and wait,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Hoping, trusting ever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Till I reach the golden strand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Just beyond the river.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 820,
+  "songNumber": 208,
+  "title": "JESUS KEEP ME NEAR THE CROSS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus, keep me near the cross,"
+        },
+        {
+          "text": "There a precious fountain,"
+        },
+        {
+          "text": "Free to all, a healing stream,"
+        },
+        {
+          "text": "Flows from Calvrys mountain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "In the cross, in the cross,"
+        },
+        {
+          "text": "Be my glory ever;"
+        },
+        {
+          "text": "Till my raptured soul shall find"
+        },
+        {
+          "text": "Rest beyond the river."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Near the cross, a trembling soul,"
+        },
+        {
+          "text": "Love and mercy found me;"
+        },
+        {
+          "text": "There the Bright and Morning Star"
+        },
+        {
+          "text": "Sheds its beams around me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Near the cross! O Lamb of God,"
+        },
+        {
+          "text": "Bring its scenes before me;"
+        },
+        {
+          "text": "Help me walk from day to day,"
+        },
+        {
+          "text": "With its shadows oer me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Near the cross Ill watch and wait,"
+        },
+        {
+          "text": "Hoping, trusting ever,"
+        },
+        {
+          "text": "Till I reach the golden strand,"
+        },
+        {
+          "text": "Just beyond the river."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Jesus, [G]keep me [D]near the cross,\n[D]There a precious [A]fountain,\n[D]Free to [G]all, a [D]healing stream,\n[D]Flows from [A]Calvrys [D]mountain.\n[Verse]\n[Verse]\n[Chorus]\n[D]In the cross, [G]in the [D]cross,\n[D]Be my glory [A]ever;\n[D]Till my [G]raptured [D]soul shall find\n[D]Rest be[A]yond the [D]river.\n[Verse]\n[Verse]\n[D]Near the [G]cross, a [D]trembling soul,\n[D]Love and mercy [A]found me;\n[D]There the [G]Bright and [D]Morning Star\n[D]Sheds its [A]beams a[D]round me.\n[Verse]\n[Verse]\n[D]Near the [G]cross! O [D]Lamb of God,\n[D]Bring its scenes be[A]fore me;\n[D]Help me [G]walk from [D]day to day,\n[D]With its [A]shadows [D]oer me.\n[Verse]\n[Verse]\n[D]Near the [G]cross Ill [D]watch and wait,\n[D]Hoping, trusting [A]ever,\n[D]Till I [G]reach the [D]golden strand,\n[D]Just be[A]yond the [D]river.",
+  "lyrics": "[Verse]\n Jesus, keep me near the cross,\nThere a precious fountain,\nFree to all, a healing stream,\nFlows from Calvrys mountain.\n[Verse]\n[Verse]\n[Chorus]\nIn the cross, in the cross,\nBe my glory ever;\nTill my raptured soul shall find\nRest beyond the river.\n[Verse]\n[Verse]\nNear the cross, a trembling soul,\nLove and mercy found me;\nThere the Bright and Morning Star\nSheds its beams around me.\n[Verse]\n[Verse]\nNear the cross! O Lamb of God,\nBring its scenes before me;\nHelp me walk from day to day,\nWith its shadows oer me.\n[Verse]\n[Verse]\nNear the cross Ill watch and wait,\nHoping, trusting ever,\nTill I reach the golden strand,\nJust beyond the river.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

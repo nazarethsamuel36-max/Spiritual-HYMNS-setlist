@@ -1,126 +1,180 @@
 {
-  "id" : 766,
-  "songNumber" : 154,
-  "title" : "JESUS IS MY SAVIOUR",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus is my Saviour, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "In His love and favor, I shall not be moved;"
-    }, {
-      "text" : "Just like a tree that's planted by the waters,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "I shall not be moved.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I shall not be, I shall not be moved,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I shall not be, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Just like a tree that's planted by the waters,"
-    }, {
-      "text" : "I shall not be moved."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "In my Christ abiding, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "In His love I'm hiding, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Just like a tree that's planted by the waters,"
-    }, {
-      "text" : "I shall not be moved."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "If I trust Him ever, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "He will fail me never, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Just like a tree that's planted by the waters,"
-    }, {
-      "text" : "I shall not be moved."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "On His Word I'm feeding, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "He's the One that's leading, I shall not be moved;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Just like a tree that's planted by the waters,"
-    }, {
-      "text" : "I shall not be moved."
-    } ]
-  } ]
+  "id": 766,
+  "songNumber": 154,
+  "title": "JESUS IS MY SAVIOUR",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jesus is my Saviour, I shall not be moved;"
+        },
+        {
+          "text": "In His love and favor, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I shall not be, I shall not be moved,"
+        },
+        {
+          "text": "I shall not be, I shall not be moved;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Glory Hallelujah, I shall not be moved;"
+        },
+        {
+          "text": "Anchored in Jehovah, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "In His love abiding, I shall not be moved;"
+        },
+        {
+          "text": "And in Him confiding, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Though all hell assail me, I shall not be moved;"
+        },
+        {
+          "text": "Jesus will not fail me, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Though the tempest rages, I shall not be moved;"
+        },
+        {
+          "text": "On the rock of ages, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "In my Christ abiding, I shall not be moved;"
+        },
+        {
+          "text": "In His love I'm hiding, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": [
+        {
+          "text": "If I trust Him ever, I shall not be moved;"
+        },
+        {
+          "text": "He will fail me never, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 8",
+      "lines": [
+        {
+          "text": "On His Word I'm feeding, I shall not be moved;"
+        },
+        {
+          "text": "He's the One that's leading, I shall not be moved;"
+        },
+        {
+          "text": "Just like a tree that's planted by the waters,"
+        },
+        {
+          "text": "I shall not be moved."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]Jesus is my Saviour, I shall not be [C]moved;\r\nIn His love and favor, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Chorus]\r\nI shall not [F]be, I shall not be [C]moved,\r\nI shall not [F]be, I shall not be moved;\r\n\r\n[Verse 2]\r\n[F]Glory Hallelujah, I shall not be [C]moved;\r\nAnchored in Jehovah, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 3]\r\n[F]In His love abiding, I shall not be [C]moved;\r\nAnd in Him confiding, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 4]\r\n[F]Though all hell assail me, I shall not be [C]moved;\r\nJesus will not fail me, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 5]\r\n[F]Though the tempest rages, I shall not be [C]moved;\r\nOn the rock of ages, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 6]\r\nIn my [F]Christ abiding, I shall not be [C]moved;\r\nIn His love I'm [F]hiding, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 7]\r\nIf I [F]trust Him ever, I shall not be [C]moved;\r\nHe will fail me [F]never, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.\r\n\r\n[Verse 8]\r\nOn His [F]Word I'm feeding, I shall not be [C]moved;\r\nHe's the One that's [F]leading, I shall not be moved;\r\nJust like a [Bb]tree that's planted by the [F]waters,\r\nI shall not be [C]moved.",
+  "lyrics": "[Verse 1]\r\nJesus is my Saviour, I shall not be moved;\r\nIn His love and favor, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Chorus]\r\nI shall not be, I shall not be moved,\r\nI shall not be, I shall not be moved;\r\n\r\n[Verse 2]\r\nGlory Hallelujah, I shall not be moved;\r\nAnchored in Jehovah, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 3]\r\nIn His love abiding, I shall not be moved;\r\nAnd in Him confiding, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 4]\r\nThough all hell assail me, I shall not be moved;\r\nJesus will not fail me, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 5]\r\nThough the tempest rages, I shall not be moved;\r\nOn the rock of ages, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 6]\r\nIn my Christ abiding, I shall not be moved;\r\nIn His love I'm hiding, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 7]\r\nIf I trust Him ever, I shall not be moved;\r\nHe will fail me never, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.\r\n\r\n[Verse 8]\r\nOn His Word I'm feeding, I shall not be moved;\r\nHe's the One that's leading, I shall not be moved;\r\nJust like a tree that's planted by the waters,\r\nI shall not be moved.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust",
+    "Funeral"
+  ]
 }

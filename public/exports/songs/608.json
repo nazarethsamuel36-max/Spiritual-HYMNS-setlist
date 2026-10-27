@@ -1,255 +1,92 @@
 {
-  "id" : 608,
-  "songNumber" : 301,
-  "title" : "PRAISE TO THE LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Praise to the Lord, the Almighty",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "The King of creation!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "O my soul praise Him for He is thy",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Health and salvation!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "All ye who hear, now to His temple draw near;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Join ye in glad adoration!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Praise to the Lord, who o'er all",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Things so wondrously reigneth",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Shieldeth thee under His wings,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Yea, so gently sustaineth!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Hast thou not seen how thy desires e'er have been",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "Granted in what He ordaineth?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Praise to the Lord who doth",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Prosper thy work and defend thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Surely His goodness and mercy here daily attend thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Ponder anew what the Almighty can do;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "If with His love He befriend thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 608,
+  "songNumber": 301,
+  "title": "PRAISE TO THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise to the Lord, the Almighty"
+        },
+        {
+          "text": "The King of creation!"
+        },
+        {
+          "text": "O my soul praise Him for He is thy"
+        },
+        {
+          "text": "Health and salvation!"
+        },
+        {
+          "text": "All ye who hear, now to His temple draw near;"
+        },
+        {
+          "text": "Join ye in glad adoration!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise to the Lord, who o'er all"
+        },
+        {
+          "text": "Things so wondrously reigneth"
+        },
+        {
+          "text": "Shieldeth thee under His wings,"
+        },
+        {
+          "text": "Yea, so gently sustaineth!"
+        },
+        {
+          "text": "Hast thou not seen how thy desires e'er have been"
+        },
+        {
+          "text": "Granted in what He ordaineth?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise to the Lord who doth"
+        },
+        {
+          "text": "Prosper thy work and defend thee"
+        },
+        {
+          "text": "Surely His goodness and mercy here daily attend thee,"
+        },
+        {
+          "text": "Ponder anew what the Almighty can do;"
+        },
+        {
+          "text": "If with His love He befriend thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Praise to the [A]Lord, the Al[G]mighty\nThe [D]King of cre[A]ation!\n[D]O my soul [A]praise Him for [G]He is thy\n[D]Health and sal[A]vation!\n[D]All ye who [G]hear, [D]now to His [G]temple draw [A]near;\n[D]Join ye in [G]glad ado[A]ra[D]tion!\n\n[Verse]\n[D]Praise to the [A]Lord, who [G]o'er all\n[D]Things so [A]wondrously [D]reigneth\n[D]Shieldeth thee [A]under His [G]wings,\n[D]Yea, so [A]gently sus[D]taineth!\n[D]Hast thou not [G]seen [D]how thy de[G]sires e'er have [A]been\n[D]Granted in [G]what He or[A]dain[D]eth?\n\n[Verse]\n[D]Praise to the [A]Lord who [G]doth\n[D]Prosper thy [A]work and de[D]fend thee\n[D]Surely His [A]goodness and [G]mercy here [D]daily at[A]tend thee,\n[D]Ponder a[G]new [D]what the Al[G]mighty can [A]do;\n[D]If with His [G]love He be[A]friend [D]thee.",
+  "lyrics": "[Verse]\nPraise to the Lord, the Almighty\nThe King of creation!\nO my soul praise Him for He is thy\nHealth and salvation!\nAll ye who hear, now to His temple draw near;\nJoin ye in glad adoration!\n\n[Verse]\nPraise to the Lord, who o'er all\nThings so wondrously reigneth\nShieldeth thee under His wings,\nYea, so gently sustaineth!\nHast thou not seen how thy desires e'er have been\nGranted in what He ordaineth?\n\n[Verse]\nPraise to the Lord who doth\nProsper thy work and defend thee\nSurely His goodness and mercy here daily attend thee,\nPonder anew what the Almighty can do;\nIf with His love He befriend thee.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

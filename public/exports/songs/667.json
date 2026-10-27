@@ -1,336 +1,131 @@
 {
-  "id" : 667,
-  "songNumber" : 360,
-  "title" : "REDEEMED HOW I LOVE TO PROCLAIM IT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Redeemed, how I love to proclaim it!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Redeemed by the blood of the Lamb,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Redeemed through His infinite mercy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "His child and forever I am.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Redeemed, Redeemed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Redeemed by the blood of the Lamb",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Redeemed, redeemed,"
-    }, {
-      "text" : "His child and forever I am."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Redeemed and so happy in Jesus",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "No language my rapture can tell,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I know that the light of His presence",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "With me doth continually dwell.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I think of my blessed Redeemer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I think of Him all the day long,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I sing, for I cannot be silent,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "His love is the theme of my song.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "I know I shall see in His beauty",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "The King in whose law I delight;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Who lovingly guardeth my footsteps,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And giveth me songs in the night.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "I know thereâ€™s a crown that is waiting"
-    }, {
-      "text" : "In yonder bright mansions for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And soon, with the spirits made perfect,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "At home with the Lord I shall be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 667,
+  "songNumber": 360,
+  "title": "REDEEMED HOW I LOVE TO PROCLAIM IT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Redeemed, how I love to proclaim it!"
+        },
+        {
+          "text": "Redeemed by the blood of the Lamb,"
+        },
+        {
+          "text": "Redeemed through His infinite mercy,"
+        },
+        {
+          "text": "His child and forever I am."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Redeemed, Redeemed,"
+        },
+        {
+          "text": "Redeemed by the blood of the Lamb"
+        },
+        {
+          "text": "Redeemed, redeemed,"
+        },
+        {
+          "text": "His child and forever I am."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Redeemed and so happy in Jesus"
+        },
+        {
+          "text": "No language my rapture can tell,"
+        },
+        {
+          "text": "I know that the light of His presence"
+        },
+        {
+          "text": "With me doth continually dwell."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I think of my blessed Redeemer,"
+        },
+        {
+          "text": "I think of Him all the day long,"
+        },
+        {
+          "text": "I sing, for I cannot be silent,"
+        },
+        {
+          "text": "His love is the theme of my song."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "I know I shall see in His beauty"
+        },
+        {
+          "text": "The King in whose law I delight;"
+        },
+        {
+          "text": "Who lovingly guardeth my footsteps,"
+        },
+        {
+          "text": "And giveth me songs in the night."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "I know there's a crown that is waiting"
+        },
+        {
+          "text": "In yonder bright mansions for me,"
+        },
+        {
+          "text": "And soon, with the spirits made perfect,"
+        },
+        {
+          "text": "At home with the Lord I shall be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nRe[D]deemed, how I [G]love to pro[D]claim [A]it!\nRe[D]deemed by the [G]blood of the [A]Lamb,\nRe[D]deemed through His [G]infinite [D]mer[A]cy,\nHis [D]child and for[G]ever [A]I [D]am.\n\n[Chorus]\nRe[D][G]deemed, Re[G][D]deemed,\nRe[D]deemed by the [A]blood of the [D]Lamb\nRedeemed, redeemed,\nHis child and forever I am.\n\n[Verse 2]\nRe[D]deemed and so [G]happy in [D]Je[A]sus\nNo [D]language my [G]rapture can [A]tell,\nI [D]know that the [G]light of His [D]pres[A]ence\nWith [D]me doth con[G]tinually [A]dwell.\n\n[Verse 3]\nI [D]think of my [G]blessed Re[D]deem[A]er,\nI [D]think of Him [G]all the day [A]long,\nI [D]sing, for I [G]cannot be [D]si[A]lent,\nHis [D]love is the [G]theme of [A]my [D]song.\n\n[Verse 4]\nI [D]know I shall [G]see in His [D]beau[A]ty\nThe [D]King in whose [G]law I de[A]light;\nWho [D]lovingly [G]guardeth my [D]foot[A]steps,\nAnd [D]giveth me [G]songs in [A]the [D]night.\n\n[Verse 5]\nI know there's a crown that is waiting\nIn [D]yonder bright [G]mansions for [A]me,\nAnd [D]soon, with the [G]spirits made [D]per[A]fect,\nAt [D]home with the [G]Lord I [A]shall [D]be.",
+  "lyrics": "[Verse 1]\nRedeemed, how I love to proclaim it!\nRedeemed by the blood of the Lamb,\nRedeemed through His infinite mercy,\nHis child and forever I am.\n\n[Chorus]\nRedeemed, Redeemed,\nRedeemed by the blood of the Lamb\nRedeemed, redeemed,\nHis child and forever I am.\n\n[Verse 2]\nRedeemed and so happy in Jesus\nNo language my rapture can tell,\nI know that the light of His presence\nWith me doth continually dwell.\n\n[Verse 3]\nI think of my blessed Redeemer,\nI think of Him all the day long,\nI sing, for I cannot be silent,\nHis love is the theme of my song.\n\n[Verse 4]\nI know I shall see in His beauty\nThe King in whose law I delight;\nWho lovingly guardeth my footsteps,\nAnd giveth me songs in the night.\n\n[Verse 5]\nI know there's a crown that is waiting\nIn yonder bright mansions for me,\nAnd soon, with the spirits made perfect,\nAt home with the Lord I shall be.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

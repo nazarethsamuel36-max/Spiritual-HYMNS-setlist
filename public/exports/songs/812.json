@@ -1,198 +1,112 @@
 {
-  "id" : 812,
-  "songNumber" : 200,
-  "title" : "BLESSED ASSURANCE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Blessed assurance, Jesus is mine!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Oh, what a foretaste of glory divine!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Heir of salvation, purchased of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Born of His Spirit, washed in His Blood.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "This is my story, this is my song,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Praising my Saviour all the day long.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Perfect submission, perfect delight,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Visions of rapture now burst on my sight;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Angels descending, bring from above",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Echoes of mercy, whispers of love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Perfect submission, all is at rest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I in my Saviour am happy and blest;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Watching and waiting looking above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Filled with His goodness, lost in His love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 812,
+  "songNumber": 200,
+  "title": "BLESSED ASSURANCE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Blessed assurance, Jesus is mine!"
+        },
+        {
+          "text": "Oh, what a foretaste of glory divine!"
+        },
+        {
+          "text": "Heir of salvation, purchased of God,"
+        },
+        {
+          "text": "Born of His Spirit, washed in His Blood."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "This is my story, this is my song,"
+        },
+        {
+          "text": "Praising my Saviour all the day long."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Perfect submission, perfect delight,"
+        },
+        {
+          "text": "Visions of rapture now burst on my sight;"
+        },
+        {
+          "text": "Angels descending, bring from above"
+        },
+        {
+          "text": "Echoes of mercy, whispers of love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Perfect submission, all is at rest,"
+        },
+        {
+          "text": "I in my Saviour am happy and blest;"
+        },
+        {
+          "text": "Watching and waiting looking above,"
+        },
+        {
+          "text": "Filled with His goodness, lost in His love."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Blessed assurance, [G]Jesus is [D]mine!\nOh, [D]what a foretaste of [G]glory di[A]vine!\n[D]Heir of salvation, [G]purchased of [D]God,\n[D]Born of His Spirit, [A]washed in His [D]Blood.\n[Verse]\n[Verse]\n[Chorus]\n[D]This is my story, [G]this is my [D]song,\n[D]Praising my Saviour [G]all the day [A]long.\n(Repeat)\n[Verse]\n[Verse]\n[D]Perfect submission, [G]perfect de[D]light,\n[D]Visions of rapture now [G]burst on my [A]sight;\n[D]Angels descending, [G]bring from a[D]bove\n[D]Echoes of mercy, [A]whispers of [D]love.\n[Verse]\n[Verse]\n[D]Perfect submission, [G]all is at [D]rest,\n[D]I in my Saviour am [G]happy and [A]blest;\n[D]Watching and waiting [G]looking a[D]bove,\n[D]Filled with His goodness, [A]lost in His [D]love.",
+  "lyrics": "[Verse]\n Blessed assurance, Jesus is mine!\nOh, what a foretaste of glory divine!\nHeir of salvation, purchased of God,\nBorn of His Spirit, washed in His Blood.\n[Verse]\n[Verse]\n[Chorus]\nThis is my story, this is my song,\nPraising my Saviour all the day long.\n(Repeat)\n[Verse]\n[Verse]\nPerfect submission, perfect delight,\nVisions of rapture now burst on my sight;\nAngels descending, bring from above\nEchoes of mercy, whispers of love.\n[Verse]\n[Verse]\nPerfect submission, all is at rest,\nI in my Saviour am happy and blest;\nWatching and waiting looking above,\nFilled with His goodness, lost in His love.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

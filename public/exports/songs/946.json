@@ -1,54 +1,47 @@
 {
-  "id" : 946,
-  "songNumber" : 68,
-  "title" : "HE'S A MIRACLE-WORKING GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He's a miracle-working God (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "He's the Alpha and Omega",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "He's a miracle-working God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let us sing and praise our God. (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Let us sing, let us praise,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Let us sing and praise our God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 946,
+  "songNumber": 68,
+  "title": "HE'S A MIRACLE-WORKING GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He's a miracle-working God (2)"
+        },
+        {
+          "text": "He's the Alpha and Omega"
+        },
+        {
+          "text": "He's a miracle-working God."
+        },
+        {
+          "text": "Let us sing and praise our God. (2)"
+        },
+        {
+          "text": "Let us sing, let us praise,"
+        },
+        {
+          "text": "Let us sing and praise our God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]He's a miracle-working God (2)\nHe's the [A]Alpha and Omega\nHe's a miracle-working [D]God.\n[D]Let us sing and praise our God. (2)\nLet us [A]sing, let us praise,\nLet us sing and praise our [D]God.",
+  "lyrics": "[Verse]\nHe's a miracle-working God (2)\nHe's the Alpha and Omega\nHe's a miracle-working God.\nLet us sing and praise our God. (2)\nLet us sing, let us praise,\nLet us sing and praise our God.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,88 +1,71 @@
 {
-  "id" : 1103,
-  "songNumber" : 125,
-  "title" : "कलिसिया करती इन्तजार",
-  "language" : "hindi",
-  "originalKey" : "Eb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "कलिसिया करती इन्तजार (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "अपने वादे के मुताबिक यीशु आ। यीशु आ SS",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "रात अंधेरी गुजरी जाती है (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "पौ फटते है, खुदावंद यीशु आ। यीशु आ SS",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "अपने लोगों के लिए अब आ (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ऐ सुबह के सितारे यीशु आ। यीशु आ SS",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "गुनाह दुनियाँ से होगा दूर (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ऐ सुबह के शाहजादे जल्दी आ। यीशु आ SS",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    } ]
-  } ]
+  "id": 1103,
+  "songNumber": 125,
+  "title": "कलिसिया करती इन्तजार",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "Eb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कलिसिया करती इन्तजार (3)"
+        },
+        {
+          "text": "अपने वादे के मुताबिक यीशु आ। यीशु आ SS"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रात अंधेरी गुजरी जाती है (3)"
+        },
+        {
+          "text": "पौ फटते है, खुदावंद यीशु आ। यीशु आ SS"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपने लोगों के लिए अब आ (3)"
+        },
+        {
+          "text": "ऐ सुबह के सितारे यीशु आ। यीशु आ SS"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "गुनाह दुनियाँ से होगा दूर (3)"
+        },
+        {
+          "text": "ऐ सुबह के शाहजादे जल्दी आ। यीशु आ SS"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[G]कलिसिया करती इन्तजार (3)\r\n[C]अपने वादे के मुताबिक यीशु आ। यीशु आ [G]SS\r\n\r\n[Verse]\r\n[G]रात अंधेरी गुजरी जाती है (3)\r\n[C]पौ फटते है, खुदावंद यीशु आ। यीशु आ [G]SS\r\n\r\n[Verse]\r\n[G]अपने लोगों के लिए अब आ (3)\r\n[C]ऐ सुबह के सितारे यीशु आ। यीशु आ [G]SS\r\n\r\n[Verse]\r\n[G]गुनाह दुनियाँ से होगा दूर (3)\r\n[C]ऐ सुबह के शाहजादे जल्दी आ। यीशु आ [G]SS",
+  "lyrics": "[Verse]\r\nकलिसिया करती इन्तजार (3)\r\nअपने वादे के मुताबिक यीशु आ। यीशु आ SS\r\n\r\n[Verse]\r\nरात अंधेरी गुजरी जाती है (3)\r\nपौ फटते है, खुदावंद यीशु आ। यीशु आ SS\r\n\r\n[Verse]\r\nअपने लोगों के लिए अब आ (3)\r\nऐ सुबह के सितारे यीशु आ। यीशु आ SS\r\n\r\n[Verse]\r\nगुनाह दुनियाँ से होगा दूर (3)\r\nऐ सुबह के शाहजादे जल्दी आ। यीशु आ SS",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

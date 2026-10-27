@@ -1,243 +1,107 @@
 {
-  "id" : 905,
-  "songNumber" : 293,
-  "title" : "SAY THEM OVER AGAIN TO ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Say them over again to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Let me more of their beauty see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Words of life and beauty,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Teach me faith and duty:",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Beautiful Words, Wonderful Words",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life } 2",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Christ, the Blessed One gives to all",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life,"
-    }, {
-      "text" : "Sinner, list to the loving call",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life,"
-    }, {
-      "text" : "All so freely given,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Taking us to heaven:",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Sweetly echo the Gospel call,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life,"
-    }, {
-      "text" : "Offer pardon and peace to all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Wonderful Words of Life,"
-    }, {
-      "text" : "Jesus, only Saviour,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Sanctify forever.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    } ]
-  } ]
+  "id": 905,
+  "songNumber": 293,
+  "title": "SAY THEM OVER AGAIN TO ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Say them over again to me,"
+        },
+        {
+          "text": "Wonderful Words of Life,"
+        },
+        {
+          "text": "Let me more of their beauty see,"
+        },
+        {
+          "text": "Wonderful Words of Life."
+        },
+        {
+          "text": "Words of life and beauty,"
+        },
+        {
+          "text": "Teach me faith and duty:"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Beautiful Words, Wonderful Words"
+        },
+        {
+          "text": "Wonderful Words of Life } 2"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Christ, the Blessed One gives to all"
+        },
+        {
+          "text": "Wonderful Words of Life,"
+        },
+        {
+          "text": "Sinner, list to the loving call"
+        },
+        {
+          "text": "Wonderful Words of Life,"
+        },
+        {
+          "text": "All so freely given,"
+        },
+        {
+          "text": "Taking us to heaven:"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Sweetly echo the Gospel call,"
+        },
+        {
+          "text": "Wonderful Words of Life,"
+        },
+        {
+          "text": "Offer pardon and peace to all,"
+        },
+        {
+          "text": "Wonderful Words of Life,"
+        },
+        {
+          "text": "Jesus, only Saviour,"
+        },
+        {
+          "text": "Sanctify forever."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Say them [G]over a[D]gain to [A]me,\n[D]Wonderful [A]Words of [D]Life,\n[D]Let me [G]more of their [D]beauty [A]see,\n[D]Wonderful [A]Words of [D]Life.\n[G]Words of [D]life and [A]beauty,\n[G]Teach me [D]faith and [A]duty:\n\n[Chorus]\n[D]Beautiful Words, [A]Wonderful Words\n[A]Wonderful [G]Words of [D]Life } 2\n\n[Verse 2]\n[D]Christ, the [G]Blessed One [D]gives to [A]all\nWonderful Words of Life,\n[D]Sinner, [G]list to the [D]loving [A]call\nWonderful Words of Life,\n[G]All so [D]freely [A]given,\n[G]Taking [D]us to [A]heaven:\n\n[Verse 3]\n[D]Sweetly [G]echo the [D]Gospel [A]call,\nWonderful Words of Life,\n[D]Offer [G]pardon and [D]peace to [A]all,\nWonderful Words of Life,\n[G]Jesus, [D]only [A]Saviour,\n[G]Sancti[D]fy for[A]ever.",
+  "lyrics": "[Verse 1]\nSay them over again to me,\nWonderful Words of Life,\nLet me more of their beauty see,\nWonderful Words of Life.\nWords of life and beauty,\nTeach me faith and duty:\n\n[Chorus]\nBeautiful Words, Wonderful Words\nWonderful Words of Life } 2\n\n[Verse 2]\nChrist, the Blessed One gives to all\nWonderful Words of Life,\nSinner, list to the loving call\nWonderful Words of Life,\nAll so freely given,\nTaking us to heaven:\n\n[Verse 3]\nSweetly echo the Gospel call,\nWonderful Words of Life,\nOffer pardon and peace to all,\nWonderful Words of Life,\nJesus, only Saviour,\nSanctify forever.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

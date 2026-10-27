@@ -1,202 +1,95 @@
 {
-  "id" : 743,
-  "songNumber" : 131,
-  "title" : "SEARCH ME O GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Search me, O God, and know my heart today;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Try me, O Saviour, know my thoughts, I pray;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "See if there be some wicked way in me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Cleanse me from every sin, and set me free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I praise Thee, Lord, for cleansing me from sin;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Fulfill Thy Word, and make me pure within;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Fill me with fire, where once I burned with shame;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Grant my desire to magnify Thy Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Lord, take my life, and make it wholly Thine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Fill my poor heart with Thy great love divine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Take all my will, my passion, self and pride;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "I now surrender; Lord, in me abide.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "O Holy Ghost, revival comes from Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Send a revival, start the work in me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Thy Word declares Thou wilt supply our need;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "For blessing now, O Lord, I humbly plead.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 743,
+  "songNumber": 131,
+  "title": "SEARCH ME O GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Search me, O God, and know my heart today;"
+        },
+        {
+          "text": "Try me, O Saviour, know my thoughts, I pray;"
+        },
+        {
+          "text": "See if there be some wicked way in me;"
+        },
+        {
+          "text": "Cleanse me from every sin, and set me free."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I praise Thee, Lord, for cleansing me from sin;"
+        },
+        {
+          "text": "Fulfill Thy Word, and make me pure within;"
+        },
+        {
+          "text": "Fill me with fire, where once I burned with shame;"
+        },
+        {
+          "text": "Grant my desire to magnify Thy Name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Lord, take my life, and make it wholly Thine;"
+        },
+        {
+          "text": "Fill my poor heart with Thy great love divine;"
+        },
+        {
+          "text": "Take all my will, my passion, self and pride;"
+        },
+        {
+          "text": "I now surrender; Lord, in me abide."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "O Holy Ghost, revival comes from Thee;"
+        },
+        {
+          "text": "Send a revival, start the work in me;"
+        },
+        {
+          "text": "Thy Word declares Thou wilt supply our need;"
+        },
+        {
+          "text": "For blessing now, O Lord, I humbly plead."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Search me, O God, and know my [G]heart to[D]day;\n[D]Try me, O Saviour, know my [A]thoughts, I pray;\n[D]See if there be some [G]wicked way in [D]me;\n[D]Cleanse me from every [A]sin, and set me [D]free.\n\n[Verse 2]\n[D]I praise Thee, Lord, for cleansing [G]me from [D]sin;\n[D]Fulfill Thy Word, and make me [A]pure within;\n[D]Fill me with fire, where once I [G]burned with [D]shame;\n[D]Grant my desire to [A]magnify Thy [D]Name.\n\n[Verse 3]\n[D]Lord, take my life, and make it [G]wholly [D]Thine;\n[D]Fill my poor heart with Thy great [A]love divine;\n[D]Take all my will, my passion, [G]self and [D]pride;\n[D]I now surrender; Lord, in [A]me a[D]bide.\n\n[Verse 4]\n[D]O Holy Ghost, revival [G]comes from [D]Thee;\n[D]Send a revival, start the [A]work in me;\n[D]Thy Word declares Thou wilt [G]supply our [D]need;\n[D]For blessing now, O Lord, I [A]humbly [D]plead.",
+  "lyrics": "[Verse 1]\nSearch me, O God, and know my heart today;\nTry me, O Saviour, know my thoughts, I pray;\nSee if there be some wicked way in me;\nCleanse me from every sin, and set me free.\n\n[Verse 2]\nI praise Thee, Lord, for cleansing me from sin;\nFulfill Thy Word, and make me pure within;\nFill me with fire, where once I burned with shame;\nGrant my desire to magnify Thy Name.\n\n[Verse 3]\nLord, take my life, and make it wholly Thine;\nFill my poor heart with Thy great love divine;\nTake all my will, my passion, self and pride;\nI now surrender; Lord, in me abide.\n\n[Verse 4]\nO Holy Ghost, revival comes from Thee;\nSend a revival, start the work in me;\nThy Word declares Thou wilt supply our need;\nFor blessing now, O Lord, I humbly plead.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

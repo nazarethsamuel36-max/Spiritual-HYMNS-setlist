@@ -1,52 +1,95 @@
 {
-  "id" : 3150,
-  "songNumber" : 1008,
-  "title" : "** He Looked Beyond My Faults",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Amazing Grace shall always be my song of praise"
-    }, {
-      "text" : "For it was grace that bought my liberty"
-    }, {
-      "text" : "I do not know just why He came to love me so"
-    }, {
-      "text" : "He looked beyond my faults and saw my need"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I shall forever lift mine eyes to Calvary"
-    }, {
-      "text" : "To view the cross where Jesus died for me"
-    }, {
-      "text" : "How marvelous the grace that caught my falling soul"
-    }, {
-      "text" : "He looked beyond my faults and saw my need"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "If not for grace, my soul would be a drifting ship"
-    }, {
-      "text" : "With no safe harbor from the angry waves"
-    }, {
-      "text" : "But Calvary's Cross shines brightest through the darkest storm"
-    }, {
-      "text" : "And just in time His mercy rescued me"
-    } ]
-  } ]
+  "id": 3150,
+  "songNumber": 1008,
+  "title": "He Looked Beyond My Faults",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Amazing grace shall always be my song of praise"
+        },
+        {
+          "text": "For it was grace that bought my liberty"
+        },
+        {
+          "text": "I do not know just why He came to love me so"
+        },
+        {
+          "text": "He looked beyond my faults and saw my need"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I shall forever lift mine eyes to Calvary"
+        },
+        {
+          "text": "To view the cross where Jesus died for me"
+        },
+        {
+          "text": "How marvelous the grace that caught my falling soul"
+        },
+        {
+          "text": "He looked beyond my faults and saw my need"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "If not for grace, my soul would be a drifting ship"
+        },
+        {
+          "text": "With no safe harbor from the angry waves"
+        },
+        {
+          "text": "But Calvary's cross has become my anchor"
+        },
+        {
+          "text": "He looked beyond my faults and saw my need"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I shall forever lift mine eyes to Calvary"
+        },
+        {
+          "text": "To view the cross where Jesus died for me"
+        },
+        {
+          "text": "How marvelous the grace that caught my falling soul"
+        },
+        {
+          "text": "He looked beyond my faults and saw my need"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nAmazing grace shall always be my song of praise\nFor it was grace that bought my liberty\nI do not know just why He came to love me so\nHe looked beyond my faults and saw my need\n\n[Chorus]\nI shall forever lift mine eyes to Calvary\nTo view the cross where Jesus died for me\nHow marvelous the grace that caught my falling soul\nHe looked beyond my faults and saw my need\n\n[Verse 2]\nIf not for grace, my soul would be a drifting ship\nWith no safe harbor from the angry waves\nBut Calvary's cross has become my anchor\nHe looked beyond my faults and saw my need\n\n[Chorus]\nI shall forever lift mine eyes to Calvary\nTo view the cross where Jesus died for me\nHow marvelous the grace that caught my falling soul\nHe looked beyond my faults and saw my need",
+  "lyrics": "\n[Verse 1]\nAmazing grace shall always be my song of praise\nFor it was grace that bought my liberty\nI do not know just why He came to love me so\nHe looked beyond my faults and saw my need\n\n[Chorus]\nI shall forever lift mine eyes to Calvary\nTo view the cross where Jesus died for me\nHow marvelous the grace that caught my falling soul\nHe looked beyond my faults and saw my need\n\n[Verse 2]\nIf not for grace, my soul would be a drifting ship\nWith no safe harbor from the angry waves\nBut Calvary's cross has become my anchor\nHe looked beyond my faults and saw my need\n\n[Chorus]\nI shall forever lift mine eyes to Calvary\nTo view the cross where Jesus died for me\nHow marvelous the grace that caught my falling soul\nHe looked beyond my faults and saw my need",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

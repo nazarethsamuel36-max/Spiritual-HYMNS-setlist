@@ -1,36 +1,43 @@
 {
-  "id" : 579,
-  "songNumber" : 33,
-  "title" : "COME AND PRAISE HIM",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Come and praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "royal priesthood,"
-    }, {
-      "text" : "Come and worship, holy nation,"
-    }, {
-      "text" : "Worship Jesus, our Redeemer,"
-    }, {
-      "text" : "He is Precious, King of Glory."
-    } ]
-  } ]
+  "id": 579,
+  "songNumber": 33,
+  "title": "COME AND PRAISE HIM",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Come and praise Him,"
+        },
+        {
+          "text": "royal priesthood,"
+        },
+        {
+          "text": "Come and worship, holy nation,"
+        },
+        {
+          "text": "Worship Jesus, our Redeemer,"
+        },
+        {
+          "text": "He is Precious, King of Glory."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[C]Come and praise Hi[F][C]m,\nroyal priesthood,\nCome and worship, holy nation,\nWorship Jesus, our Redeemer,\nHe is Precious, King of Glory.",
+  "lyrics": "[Verse]\nCome and praise Him,\nroyal priesthood,\nCome and worship, holy nation,\nWorship Jesus, our Redeemer,\nHe is Precious, King of Glory.",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

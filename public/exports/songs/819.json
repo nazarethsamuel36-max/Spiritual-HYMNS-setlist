@@ -1,124 +1,77 @@
 {
-  "id" : 819,
-  "songNumber" : 207,
-  "title" : "THERE IS COMING A DAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "There is coming a day when no heartaches shall come,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "No more clouds in the sky, no more tears to dim the eye;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "All is peace forevermore on that happy golden shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "What a day, glorious day that will be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "What a day that will be when my Jesus I shall see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "And I look upon His face, the One who saved me by His grace;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "When He takes me by the Hand, and leads me through the Promised Land,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 55
-      } ]
-    }, {
-      "text" : "What a day, glorious day that will be."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "There'll be no sorrow there, no more burdens to bear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "No more sickness, no pain, no more parting over there;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "And forever I will be with the One who died for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "What a day, glorious day that will be."
-    } ]
-  } ]
+  "id": 819,
+  "songNumber": 207,
+  "title": "THERE IS COMING A DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There is coming a day when no heartaches shall come,"
+        },
+        {
+          "text": "No more clouds in the sky, no more tears to dim the eye;"
+        },
+        {
+          "text": "All is peace forevermore on that happy golden shore,"
+        },
+        {
+          "text": "What a day, glorious day that will be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "What a day that will be when my Jesus I shall see,"
+        },
+        {
+          "text": "And I look upon His face, the One who saved me by His grace;"
+        },
+        {
+          "text": "When He takes me by the Hand, and leads me through the Promised Land,"
+        },
+        {
+          "text": "What a day, glorious day that will be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Therell be no sorrow there, no more burdens to bear,"
+        },
+        {
+          "text": "No more sickness, no pain, no more parting over there;"
+        },
+        {
+          "text": "And forever I will be with the One who died for me,"
+        },
+        {
+          "text": "What a day, glorious day that will be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nThere is [G]coming a day when no heartaches shall come,\r\nNo more [C]clouds in the sky, no more tears to dim the [G]eye;\r\nAll is [G]peace forevermore on that [C]happy golden [G]shore,\r\nWhat a [G]day, glorious [D]day that will [G]be.\r\n\r\n[Chorus]\r\nWhat a [G]day that will be when my [C]Jesus I shall [G]see,\r\nAnd I [D]look upon His face, the One who [G]saved me by His grace;\r\nWhen He [C]takes me by the Hand, and leads me through the [G]Promised Land,\r\nWhat a day, glorious day that will be.\r\n\r\n[Verse 2]\r\nTherell be [G]no sorrow there, no more burdens to bear,\r\nNo more [C]sickness, no pain, no more parting over [G]there;\r\nAnd for[G]ever I will be with the [C]One who died for [G]me,\r\nWhat a day, glorious day that will be.",
+  "lyrics": "[Verse 1]\r\nThere is coming a day when no heartaches shall come,\r\nNo more clouds in the sky, no more tears to dim the eye;\r\nAll is peace forevermore on that happy golden shore,\r\nWhat a day, glorious day that will be.\r\n\r\n[Chorus]\r\nWhat a day that will be when my Jesus I shall see,\r\nAnd I look upon His face, the One who saved me by His grace;\r\nWhen He takes me by the Hand, and leads me through the Promised Land,\r\nWhat a day, glorious day that will be.\r\n\r\n[Verse 2]\r\nTherell be no sorrow there, no more burdens to bear,\r\nNo more sickness, no pain, no more parting over there;\r\nAnd forever I will be with the One who died for me,\r\nWhat a day, glorious day that will be.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

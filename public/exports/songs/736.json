@@ -1,215 +1,113 @@
 {
-  "id" : 736,
-  "songNumber" : 124,
-  "title" : "SWEET HOUR OF PRAYER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Sweet hour of prayer, sweet hour of prayer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "That calls me from a world of care,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And bids me, at my Father's throne,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Make all my wants and wishes known;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "In seasons of distress and grief,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "My soul has often found relief,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And oft escaped the tempter's snare,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "By thy return, sweet hour of prayer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Sweet hour of prayer, sweet hour of prayer,"
-    }, {
-      "text" : "The joy I feel, the bliss I share,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Of those whose anxious spirits burn",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "With strong desires for thy return !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "With such I hasten to the place",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Where God, my Saviour, shows His face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "And gladly take my station there,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And wait for thee, sweet hour of prayer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Sweet hour of prayer, sweet hour of prayer,"
-    }, {
-      "text" : "Thy wings shall my petition bear",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "To Him whose truth and faithfulness",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Engage the waiting soul to bless;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And since He bids me seek His face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Believe His Word and trust His grace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I'll cast on Him my every care,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And wait for thee, sweet hour of prayer."
-    } ]
-  } ]
+  "id": 736,
+  "songNumber": 124,
+  "title": "SWEET HOUR OF PRAYER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Sweet hour of prayer, sweet hour of prayer,"
+        },
+        {
+          "text": "That calls me from a world of care,"
+        },
+        {
+          "text": "And bids me, at my Father's throne,"
+        },
+        {
+          "text": "Make all my wants and wishes known;"
+        },
+        {
+          "text": "In seasons of distress and grief,"
+        },
+        {
+          "text": "My soul has often found relief,"
+        },
+        {
+          "text": "And oft escaped the tempter's snare,"
+        },
+        {
+          "text": "By thy return, sweet hour of prayer."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Sweet hour of prayer, sweet hour of prayer,"
+        },
+        {
+          "text": "The joy I feel, the bliss I share,"
+        },
+        {
+          "text": "Of those whose anxious spirits burn"
+        },
+        {
+          "text": "With strong desires for thy return !"
+        },
+        {
+          "text": "With such I hasten to the place"
+        },
+        {
+          "text": "Where God, my Saviour, shows His face,"
+        },
+        {
+          "text": "And gladly take my station there,"
+        },
+        {
+          "text": "And wait for thee, sweet hour of prayer."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Sweet hour of prayer, sweet hour of prayer,"
+        },
+        {
+          "text": "Thy wings shall my petition bear"
+        },
+        {
+          "text": "To Him whose truth and faithfulness"
+        },
+        {
+          "text": "Engage the waiting soul to bless;"
+        },
+        {
+          "text": "And since He bids me seek His face,"
+        },
+        {
+          "text": "Believe His Word and trust His grace,"
+        },
+        {
+          "text": "I'll cast on Him my every care,"
+        },
+        {
+          "text": "And wait for thee, sweet hour of prayer."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nSweet [D]hour of prayer, sweet [G]hour of prayer,\nThat [D]calls me from a world of [A]care,\nAnd [D]bids me, at my [G]Father's throne,\nMake [D]all my wants and [A]wishes known;\nIn [D]seasons of distress and [G]grief,\nMy [D]soul has often found re[A]lief,\nAnd [D]oft escaped the [G]tempter's snare,\nBy [D]thy return, sweet hour of [A]prayer.\n\n[Verse 2]\nSweet hour of prayer, sweet hour of prayer,\nThe [D]joy I feel, the [A]bliss I share,\nOf [D]those whose anxious [G]spirits burn\nWith [D]strong desires for [A]thy return !\nWith [D]such I hasten to the [G]place\nWhere [D]God, my Saviour, shows His [A]face,\nAnd [D]gladly take my [G]station there,\nAnd [D]wait for thee, sweet [A]hour of prayer.\n\n[Verse 3]\nSweet hour of prayer, sweet hour of prayer,\nThy [D]wings shall my peti[A]tion bear\nTo [D]Him whose truth and [G]faithfulness\nEn[D]gage the waiting [A]soul to bless;\nAnd [D]since He bids me [G]seek His face,\nBe[D]lieve His Word and [A]trust His grace,\nI'll [D]cast on Him my [G]every care,\nAnd wait for thee, sweet hour of prayer.",
+  "lyrics": "[Verse 1]\nSweet hour of prayer, sweet hour of prayer,\nThat calls me from a world of care,\nAnd bids me, at my Father's throne,\nMake all my wants and wishes known;\nIn seasons of distress and grief,\nMy soul has often found relief,\nAnd oft escaped the tempter's snare,\nBy thy return, sweet hour of prayer.\n\n[Verse 2]\nSweet hour of prayer, sweet hour of prayer,\nThe joy I feel, the bliss I share,\nOf those whose anxious spirits burn\nWith strong desires for thy return !\nWith such I hasten to the place\nWhere God, my Saviour, shows His face,\nAnd gladly take my station there,\nAnd wait for thee, sweet hour of prayer.\n\n[Verse 3]\nSweet hour of prayer, sweet hour of prayer,\nThy wings shall my petition bear\nTo Him whose truth and faithfulness\nEngage the waiting soul to bless;\nAnd since He bids me seek His face,\nBelieve His Word and trust His grace,\nI'll cast on Him my every care,\nAnd wait for thee, sweet hour of prayer.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

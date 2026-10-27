@@ -22,6 +22,7 @@ import { ShareService } from './services/ShareService';
 import { authenticateDevice, clearAdminSession } from './services/DeviceAuthService';
 import { AdminScreen } from './components/AdminScreen';
 import { UserDataPackageService } from './services/UserDataPackage';
+import { isIOS } from './utils/platform';
 
 
 function App() {
@@ -332,6 +333,12 @@ function App() {
   // ==========================================
   // 3. VARIABLES & FUNCTIONS
   // ==========================================
+  useEffect(() => {
+    if (isIOS() && sidebar.panel === 'personal') {
+      setSidebarPanel('library');
+    }
+  }, [sidebar.panel, setSidebarPanel]);
+
   const isSongsTab = sidebar.panel === 'library' || (reader.type === 'song' && reader.source === 'library');
   const isSetlistTab = sidebar.panel === 'setlist-list' || sidebar.panel === 'setlist-detail' || (reader.type === 'song' && reader.source === 'setlist');
   const isPersonalTab = sidebar.panel === 'personal' || (reader.type === 'song' && reader.source === 'personal');
@@ -629,7 +636,9 @@ function App() {
                   <button onClick={() => setSidebarPanel('library')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isSongsTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Songs</button>
                   <button onClick={() => setSidebarPanel('shared')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${sidebar.panel === 'shared' ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Shared</button>
                   <button onClick={() => setSidebarPanel('setlist-list')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isSetlistTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Setlists</button>
-                  <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isPersonalTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
+                  {!isIOS() && (
+                    <button onClick={() => setSidebarPanel('personal')} className={`flex-1 py-1.5 rounded-md text-xs font-black tracking-widest transition-all ${isPersonalTab ? 'bg-[var(--color-surface)] text-[var(--color-brand)] shadow-sm' : 'text-slate-500 hover:text-slate-800'}`}>Personal</button>
+                  )}
                 </nav>
                   </>
                 )}
@@ -713,12 +722,14 @@ function App() {
                 </svg>
                 <span>Setlists</span>
               </button>
+              {!isIOS() && (
               <button id="mobile-nav-personal" onClick={() => setSidebarPanel('personal')} className={`mobile-bottom-nav-btn ${isPersonalTab ? 'mobile-bottom-nav-btn--active' : ''}`}>
                 <svg className="w-5 h-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span>Personal</span>
               </button>
+            )}
             </nav>
           )}
 

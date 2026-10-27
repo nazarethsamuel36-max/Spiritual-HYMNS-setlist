@@ -1,130 +1,80 @@
 {
-  "id" : 1000,
-  "songNumber" : 22,
-  "title" : "यीशु है सच्चा गडरिया, उसकी हम भेंडें है",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "यीशु है सच्चा गडरिया, उसकी हम भेंडें है,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "Bb",
-        "position" : 22
-      }, {
-        "chord" : "F",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "हरी चराईंयों में हमें चराता है ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "F",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "वादी पहाडी में ले चलता है,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "F",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "जहाँ पर सुखदायी झरने बहते हैं ।",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "मार्गों में मेरी रक्षा वो करता है,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "F",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "शैतान के हाथों से हमें छुडाता है ।",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "F",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "हमको किसीका अब तो डर नहीं है,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "F",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "क्योंकि यीशु जो मेरा साथी है ।",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "हाल्लेलुयाह, आमीन (4)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "Bb",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "F",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 1000,
+  "songNumber": 22,
+  "title": "यीशु है सच्चा गडरिया, उसकी हम भेंडें है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "यीशु है सच्चा गडरिया, उसकी हम भेंडें है,"
+        },
+        {
+          "text": "हरी चराईंयों में हमें चराता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वादी पहाडी में ले चलता है,"
+        },
+        {
+          "text": "जहाँ पर सुखदायी झरने बहते हैं ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मार्गों में मेरी रक्षा वो करता है,"
+        },
+        {
+          "text": "शैतान के हाथों से हमें छुडाता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हमको किसीका अब तो डर नहीं है,"
+        },
+        {
+          "text": "क्योंकि यीशु जो मेरा साथी है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हाल्लेलुयाह, आमीन (4)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [F]यीशु है सच्चा ग[C]डरिया, [Bb]उसकी हम भेंडें [F]है,\r\n[F]हरी चराईंयों में ह[C]में चराता [F]है ।\r\n[Verse]\r\n[F]वादी पहाडी में ले [C]चलता [F]है,\r\n[Bb]जहाँ पर सुखदा[C]यी झरने बहते [F]हैं ।\r\n[Verse]\r\n[F]मार्गों में मेरी र[C]क्षा वो करता [F]है,\r\n[Bb]शैतान के हाथों से ह[C]में छुडाता [F]है ।\r\n[Verse]\r\n[F]हमको किसीका [C]अब तो डर [F]नहीं है,\r\n[Bb]क्योंकि यीशु जो [C]मेरा साथी [F]है ।\r\n[Verse]\r\n[F]हाल्लेलु[Bb]याह, आ[C]मीन [F](4)",
+  "lyrics": "[Chorus]\r\n यीशु है सच्चा गडरिया, उसकी हम भेंडें है,\r\nहरी चराईंयों में हमें चराता है ।\r\n[Verse]\r\nवादी पहाडी में ले चलता है,\r\nजहाँ पर सुखदायी झरने बहते हैं ।\r\n[Verse]\r\nमार्गों में मेरी रक्षा वो करता है,\r\nशैतान के हाथों से हमें छुडाता है ।\r\n[Verse]\r\nहमको किसीका अब तो डर नहीं है,\r\nक्योंकि यीशु जो मेरा साथी है ।\r\n[Verse]\r\nहाल्लेलुयाह, आमीन (4)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

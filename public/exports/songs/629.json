@@ -1,353 +1,133 @@
 {
-  "id" : 629,
-  "songNumber" : 322,
-  "title" : "PRAISE HIM PRAISE HIM JESUS OUR BLESSED REDEEMER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Praise Him! Praise Him! Jesus, our blessed Redeemer!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "Sing, O Earth, His wonderful love proclaim!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Hail Him! Hail Him! Highest archangels in glory;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Strength and honor give to His holy Name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Like a shepherd, Jesus will guard His children,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "In His arms He carries them all day long.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Praise Him ! Praise Him! ",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Tell of His excellent greatness;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Praise Him! Praise Him! ",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Ever in joyful song!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Praise Him! Praise Him! Jesus, our blessed Redeemer!"
-    }, {
-      "text" : "For our sins He suffered, and bled, and died.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "He our Rock, our hope of eternal salvation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Hail Him! Hail Him! Jesus the Crucified.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Sound His praises! Jesus who bore our sorrows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Love unbounded, wonderful, deep and strong.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Praise Him! Praise Him! Jesus, our blessed Redeemer!"
-    }, {
-      "text" : "Heav'nly portals loud with hosannas ring!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Jesus, Savior, reigneth forever and ever;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Crown Him! Crown Him! Prophet, and Priest, and King!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "Christ is coming! over the world victorious,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Pow'r and glory unto the Lord belong.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 629,
+  "songNumber": 322,
+  "title": "PRAISE HIM PRAISE HIM JESUS OUR BLESSED REDEEMER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise Him! Praise Him! Jesus, our blessed Redeemer!"
+        },
+        {
+          "text": "Sing, O Earth, His wonderful love proclaim!"
+        },
+        {
+          "text": "Hail Him! Hail Him! Highest archangels in glory;"
+        },
+        {
+          "text": "Strength and honor give to His holy Name!"
+        },
+        {
+          "text": "Like a shepherd, Jesus will guard His children,"
+        },
+        {
+          "text": "In His arms He carries them all day long."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Praise Him ! Praise Him!"
+        },
+        {
+          "text": "Tell of His excellent greatness;"
+        },
+        {
+          "text": "Praise Him! Praise Him!"
+        },
+        {
+          "text": "Ever in joyful song!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise Him! Praise Him! Jesus, our blessed Redeemer!"
+        },
+        {
+          "text": "For our sins He suffered, and bled, and died."
+        },
+        {
+          "text": "He our Rock, our hope of eternal salvation,"
+        },
+        {
+          "text": "Hail Him! Hail Him! Jesus the Crucified."
+        },
+        {
+          "text": "Sound His praises! Jesus who bore our sorrows,"
+        },
+        {
+          "text": "Love unbounded, wonderful, deep and strong."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise Him! Praise Him! Jesus, our blessed Redeemer!"
+        },
+        {
+          "text": "Heavnly portals loud with hosannas ring!"
+        },
+        {
+          "text": "Jesus, Savior, reigneth forever and ever;"
+        },
+        {
+          "text": "Crown Him! Crown Him! Prophet, and Priest, and King!"
+        },
+        {
+          "text": "Christ is coming! over the world victorious,"
+        },
+        {
+          "text": "Powr and glory unto the Lord belong."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]Praise Him! [C]Praise Him! [G]Jesus, our [D]blessed Re[G]deemer!\r\n[G]Sing, O [C]Earth, His [G]wonderful [C]love pro[D]claim!\r\n[G]Hail Him! [C]Hail Him! [G]Highest arch[C]angels in [D]glory;\r\n[G]Strength and [C]honor [G]give to His [D]holy [G]Name!\r\n[G]Like a [C]shepherd, [G]Jesus will guard His [D]children,\r\n[G]In His [C]arms He [G]carries them [C]all day [D]long.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[G]Praise Him ! [C]Praise Him!\r\n[G]Tell of His [C]excellent [D]greatness;\r\n[G]Praise Him! [C]Praise Him!\r\n[G]Ever in [D]joyful [G]song!\r\n[Verse]\r\n[Verse]\r\nPraise Him! Praise Him! Jesus, our blessed Redeemer!\r\nFor [G]our [C]sins He [G]suffered, and [C]bled, and [D]died.\r\n[G]He our [C]Rock, our [G]hope of e[C]ternal sal[D]vation,\r\n[G]Hail Him! [C]Hail Him! [G]Jesus the [D]Cruci[G]fied.\r\n[G]Sound His [C]praises! [G]Jesus who bore our [D]sorrows,\r\n[G]Love un[C]bounded, [G]wonderful, [C]deep and [D]strong.\r\n[Verse]\r\n[Verse]\r\nPraise Him! Praise Him! Jesus, our blessed Redeemer!\r\n[G]Heavnly [C]portals [G]loud with ho[C]sannas [D]ring!\r\n[G]Jesus, [C]Savior, [G]reigneth for[C]ever and [D]ever;\r\n[G]Crown Him! [C]Crown Him! [G]Prophet, and [D]Priest, and [G]King!\r\n[G]Christ is [C]coming! [G]over the world vic[D]torious,\r\n[G]Powr and [C]glory [G]unto the [C]Lord be[D]long.",
+  "lyrics": "[Verse]\r\n Praise Him! Praise Him! Jesus, our blessed Redeemer!\r\nSing, O Earth, His wonderful love proclaim!\r\nHail Him! Hail Him! Highest archangels in glory;\r\nStrength and honor give to His holy Name!\r\nLike a shepherd, Jesus will guard His children,\r\nIn His arms He carries them all day long.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nPraise Him ! Praise Him!\r\nTell of His excellent greatness;\r\nPraise Him! Praise Him!\r\nEver in joyful song!\r\n[Verse]\r\n[Verse]\r\nPraise Him! Praise Him! Jesus, our blessed Redeemer!\r\nFor our sins He suffered, and bled, and died.\r\nHe our Rock, our hope of eternal salvation,\r\nHail Him! Hail Him! Jesus the Crucified.\r\nSound His praises! Jesus who bore our sorrows,\r\nLove unbounded, wonderful, deep and strong.\r\n[Verse]\r\n[Verse]\r\nPraise Him! Praise Him! Jesus, our blessed Redeemer!\r\nHeavnly portals loud with hosannas ring!\r\nJesus, Savior, reigneth forever and ever;\r\nCrown Him! Crown Him! Prophet, and Priest, and King!\r\nChrist is coming! over the world victorious,\r\nPowr and glory unto the Lord belong.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

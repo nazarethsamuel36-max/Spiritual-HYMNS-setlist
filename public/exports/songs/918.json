@@ -1,78 +1,47 @@
 {
-  "id" : 918,
-  "songNumber" : 35,
-  "title" : "BLESS THE LORD O MY SOUL",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Bless the Lord, O my soul,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And all that is within me } 2",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Bless His holy name,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "For He hath done great things,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He hath done great things (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Bless His Holy name."
-    } ]
-  } ]
+  "id": 918,
+  "songNumber": 35,
+  "title": "BLESS THE LORD O MY SOUL (Song 35)",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Bless the Lord, O my soul,"
+        },
+        {
+          "text": "And all that is within me } 2"
+        },
+        {
+          "text": "Bless His holy name,"
+        },
+        {
+          "text": "For He hath done great things,"
+        },
+        {
+          "text": "He hath done great things (2)"
+        },
+        {
+          "text": "Bless His Holy name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]Bless the Lord, [C]O my [G]soul,\n[G]And all that is [C]within [D]me } 2\n[G]Bless His [D]holy [G]name,\n[G]For He hath [C]done great [G]things,\n[G]He hath [D]done great [G]things (2)\nBless His Holy name.",
+  "lyrics": "[Verse]\nBless the Lord, O my soul,\nAnd all that is within me } 2\nBless His holy name,\nFor He hath done great things,\nHe hath done great things (2)\nBless His Holy name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

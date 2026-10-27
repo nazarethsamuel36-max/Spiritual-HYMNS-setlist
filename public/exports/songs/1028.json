@@ -1,164 +1,77 @@
 {
-  "id" : 1028,
-  "songNumber" : 50,
-  "title" : "यीशु सलीब पर मुआ, तेरे लिए मेरे लिए",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु सलीब पर मुआ, तेरे लिए मेरे लिए",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "कैसा महान दु:ख सहा, तेरे लिए मेरे लिए ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "नदियाँ वह कैसी खून की, ख्रीष्ट के लोहू से बह गई",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "धुल गये पाप, मिट गये दाग (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "यीशु मसीह के लोहू से ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मारा गया था क्रूस पर, छेदा गया था क्रूस पर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "मैं भी बचा, तुम भी बचो (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "अपराधों की मजदूरी से ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "धो डालो आज पापों को",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "Am",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "दिल से मिटा लो दागों को ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हो जाओ साफ, तन मन से आज (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "यीशु मसीह के लोहू से ।"
-    } ]
-  } ]
+  "id": 1028,
+  "songNumber": 50,
+  "title": "यीशु सलीब पर मुआ, तेरे लिए मेरे लिए",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु सलीब पर मुआ, तेरे लिए मेरे लिए"
+        },
+        {
+          "text": "कैसा महान दु:ख सहा, तेरे लिए मेरे लिए ।"
+        },
+        {
+          "text": "नदियाँ वह कैसी खून की, ख्रीष्ट के लोहू से बह गई"
+        },
+        {
+          "text": "धुल गये पाप, मिट गये दाग (2)"
+        },
+        {
+          "text": "यीशु मसीह के लोहू से ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मारा गया था क्रूस पर, छेदा गया था क्रूस पर"
+        },
+        {
+          "text": "मैं भी बचा, तुम भी बचो (2)"
+        },
+        {
+          "text": "अपराधों की मजदूरी से ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "धो डालो आज पापों को"
+        },
+        {
+          "text": "दिल से मिटा लो दागों को ।"
+        },
+        {
+          "text": "हो जाओ साफ, तन मन से आज (2)"
+        },
+        {
+          "text": "यीशु मसीह के लोहू से ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]यीशु सलीब पर मु[C]आ, तेरे [G]लिए मेरे [D]लिए                                  [Verse]\n[G]कैसा महान दु:ख स[C]हा, तेरे [G]लिए मेरे [D]लिए ।\n[G]नदियाँ वह कैसी [Am]खून की, [D]ख्रीष्ट के लोहू से [G]बह गई\n[G]धुल गये [C]पाप, मिट गये [D]दाग (2)\n[G]यीशु मसीह के [D]लोहू [G]से ।\n\n[Verse]\n[G]मारा गया था [Am]क्रूस पर, [D]छेदा गया था [G]क्रूस पर\n[G]मैं भी ब[C]चा, तुम भी ब[D]चो (2)\n[G]अपराधों की [D]मजदूरी [G]से ।\n\n[Verse]\n[G]धो डालो [Am]आज पापों को\n[D]दिल से मिटा लो [G]दागों को ।\n[G]हो जाओ [C]साफ, तन मन से [D]आज (2)\nयीशु मसीह के लोहू से ।",
+  "lyrics": "[Verse]\nयीशु सलीब पर मुआ, तेरे लिए मेरे लिए\nकैसा महान दु:ख सहा, तेरे लिए मेरे लिए ।\nनदियाँ वह कैसी खून की, ख्रीष्ट के लोहू से बह गई\nधुल गये पाप, मिट गये दाग (2)\nयीशु मसीह के लोहू से ।\n\n[Verse]\nमारा गया था क्रूस पर, छेदा गया था क्रूस पर\nमैं भी बचा, तुम भी बचो (2)\nअपराधों की मजदूरी से ।\n\n[Verse]\nधो डालो आज पापों को\nदिल से मिटा लो दागों को ।\nहो जाओ साफ, तन मन से आज (2)\nयीशु मसीह के लोहू से ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T10:57:01.242908+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

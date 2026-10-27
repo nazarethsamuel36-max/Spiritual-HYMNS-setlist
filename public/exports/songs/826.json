@@ -1,259 +1,138 @@
 {
-  "id" : 826,
-  "songNumber" : 214,
-  "title" : "TAKE THE NAME OF JESUS WITH YOU",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Take the name of Jesus with you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Child of sorrow and of woe;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "It will joy and comfort give you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Take it, then, where'er you go.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Precious name, O how sweet!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Hope of earth and joy of Heaven;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Precious name, O how sweet!"
-    }, {
-      "text" : "Hope of earth and joy of Heaven.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Take the name of Jesus ever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As a shield from every snare;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "If temptations round you gather,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Breathe that holy name in prayer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "O the precious name of Jesus!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "How it thrills our souls with joy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "When His loving arms receive us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And His songs our tongues employ!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "At the name of Jesus bowing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Falling prostrate at His feet,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "King of kings in Heaven we'll crown Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "When our journey is complete.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 826,
+  "songNumber": 214,
+  "title": "TAKE THE NAME OF JESUS WITH YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Take the name of Jesus with you,"
+        },
+        {
+          "text": "Child of sorrow and of woe;"
+        },
+        {
+          "text": "It will joy and comfort give you,"
+        },
+        {
+          "text": "Take it, then, whereer you go."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Precious name, O how sweet!"
+        },
+        {
+          "text": "Hope of earth and joy of Heaven;"
+        },
+        {
+          "text": "Precious name, O how sweet!"
+        },
+        {
+          "text": "Hope of earth and joy of Heaven."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Take the name of Jesus ever,"
+        },
+        {
+          "text": "As a shield from every snare;"
+        },
+        {
+          "text": "If temptations round you gather,"
+        },
+        {
+          "text": "Breathe that holy name in prayer."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O the precious name of Jesus!"
+        },
+        {
+          "text": "How it thrills our souls with joy,"
+        },
+        {
+          "text": "When His loving arms receive us,"
+        },
+        {
+          "text": "And His songs our tongues employ!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "At the name of Jesus bowing,"
+        },
+        {
+          "text": "Falling prostrate at His feet,"
+        },
+        {
+          "text": "King of kings in Heaven well crown Him,"
+        },
+        {
+          "text": "When our journey is complete."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Take the name of [G]Jesus [D]with you,\n[G]Child of [D]sorrow and of [A]woe;\n[D]It will joy and [G]comfort [D]give you,\n[D]Take it, then, wher[A]eer you [D]go.\n[Verse]\n[Verse]\n[Chorus]\n[D]Precious name, [G]O how [D]sweet!\nHope of [D]earth and joy of [A]Heaven;\nPrecious name, O how sweet!\nHope of [D]earth and [A]joy of [D]Heaven.\n[Verse]\n[Verse]\n[D]Take the name of [G]Jesus [D]ever,\n[G]As a [D]shield from every [A]snare;\n[D]If temptations [G]round you [D]gather,\n[D]Breathe that holy [A]name in [D]prayer.\n[Verse]\n[Verse]\n[D]O the precious [G]name of [D]Jesus!\n[G]How it [D]thrills our souls with [A]joy,\n[D]When His loving [G]arms re[D]ceive us,\n[D]And His songs our [A]tongues em[D]ploy!\n[Verse]\n[Verse]\n[D]At the name of [G]Jesus [D]bowing,\n[G]Falling [D]prostrate at His [A]feet,\n[D]King of kings in [G]Heaven well [D]crown Him,\n[D]When our journey [A]is com[D]plete.",
+  "lyrics": "[Verse]\n Take the name of Jesus with you,\nChild of sorrow and of woe;\nIt will joy and comfort give you,\nTake it, then, whereer you go.\n[Verse]\n[Verse]\n[Chorus]\nPrecious name, O how sweet!\nHope of earth and joy of Heaven;\nPrecious name, O how sweet!\nHope of earth and joy of Heaven.\n[Verse]\n[Verse]\nTake the name of Jesus ever,\nAs a shield from every snare;\nIf temptations round you gather,\nBreathe that holy name in prayer.\n[Verse]\n[Verse]\nO the precious name of Jesus!\nHow it thrills our souls with joy,\nWhen His loving arms receive us,\nAnd His songs our tongues employ!\n[Verse]\n[Verse]\nAt the name of Jesus bowing,\nFalling prostrate at His feet,\nKing of kings in Heaven well crown Him,\nWhen our journey is complete.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

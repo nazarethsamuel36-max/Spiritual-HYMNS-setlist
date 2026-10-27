@@ -1,150 +1,83 @@
 {
-  "id" : 840,
-  "songNumber" : 228,
-  "title" : "THOU ART WORTHY",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Thou art worthy, thou art worthy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Thou art worthy, O Lord,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Thou art worthy to receive glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Glory and honour and power.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "For thou hast created, hast all things created,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Thou hast created all things,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And for Thy pleasure they are created,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "For Thou art worthy, O Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Thou art worthy, Thou art worthy,"
-    }, {
-      "text" : "Thou art worthy, O Lamb,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Thou art worthy to receive glory,"
-    }, {
-      "text" : "And power at the Father's right hand.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "For Thou hast redeemed us, hast ransomed and cleansed us",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "By Thy blood setting us free;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "In white robes arrayed us, kings and priests made us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And we are reigning in Thee.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 840,
+  "songNumber": 228,
+  "title": "THOU ART WORTHY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thou art worthy, thou art worthy,"
+        },
+        {
+          "text": "Thou art worthy, O Lord,"
+        },
+        {
+          "text": "Thou art worthy to receive glory,"
+        },
+        {
+          "text": "Glory and honour and power."
+        },
+        {
+          "text": "For thou hast created, hast all things created,"
+        },
+        {
+          "text": "Thou hast created all things,"
+        },
+        {
+          "text": "And for Thy pleasure they are created,"
+        },
+        {
+          "text": "For Thou art worthy, O Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thou art worthy, Thou art worthy,"
+        },
+        {
+          "text": "Thou art worthy, O Lamb,"
+        },
+        {
+          "text": "Thou art worthy to receive glory,"
+        },
+        {
+          "text": "And power at the Father's right hand."
+        },
+        {
+          "text": "For Thou hast redeemed us, hast ransomed and cleansed us"
+        },
+        {
+          "text": "By Thy blood setting us free;"
+        },
+        {
+          "text": "In white robes arrayed us, kings and priests made us,"
+        },
+        {
+          "text": "And we are reigning in Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Thou art worthy, [G]thou art worthy,\n[A]Thou art worthy, [D]O Lord,\n[D]Thou art worthy to re[G]ceive glory,\n[A]Glory and honour and [D]power.\nFor [D]thou hast created, [G]hast all things created,\n[A]Thou hast created [D]all things,\nAnd for [D]Thy pleasure [G]they are created,\n[A]For Thou art worthy, [D]O Lord.\n\n[Verse]\nThou art worthy, Thou art worthy,\n[A]Thou art worthy, [D]O Lamb,\nThou art worthy to receive glory,\n[A]And power at the Father's [D]right hand.\nFor [D]Thou hast redeemed us, [G]hast ransomed and cleansed us\n[A]By Thy blood setting [D]us free;\nIn [D]white robes arrayed us, [G]kings and priests made us,\n[A]And we are reigning [D]in Thee.",
+  "lyrics": "[Verse]\nThou art worthy, thou art worthy,\nThou art worthy, O Lord,\nThou art worthy to receive glory,\nGlory and honour and power.\nFor thou hast created, hast all things created,\nThou hast created all things,\nAnd for Thy pleasure they are created,\nFor Thou art worthy, O Lord.\n\n[Verse]\nThou art worthy, Thou art worthy,\nThou art worthy, O Lamb,\nThou art worthy to receive glory,\nAnd power at the Father's right hand.\nFor Thou hast redeemed us, hast ransomed and cleansed us\nBy Thy blood setting us free;\nIn white robes arrayed us, kings and priests made us,\nAnd we are reigning in Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

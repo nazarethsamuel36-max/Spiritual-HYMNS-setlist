@@ -1,63 +1,53 @@
 {
-  "id" : 685,
-  "songNumber" : 4,
-  "title" : "THE WINDOWS OF HEAVEN",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The windows of heaven are open,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The blessings are falling to night;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "There's joy, joy, joy in my heart,"
-    }, {
-      "text" : "For Jesus makes everything right.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I gave Him my old tattered garment,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "He gave me a robe of pure white;",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I'm feasting on manna from heaven,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And that's why I'm happy to night.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 685,
+  "songNumber": 4,
+  "title": "THE WINDOWS OF HEAVEN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The windows of heaven are open,"
+        },
+        {
+          "text": "The blessings are falling to night;"
+        },
+        {
+          "text": "There''s joy, joy, joy in my heart,"
+        },
+        {
+          "text": "For Jesus makes everything right."
+        },
+        {
+          "text": "I gave Him my old tattered garment,"
+        },
+        {
+          "text": "He gave me a robe of pure white;"
+        },
+        {
+          "text": "I''m feasting on manna from heaven,"
+        },
+        {
+          "text": "And that''s why I''m happy to night."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[C]The windows of heaven are open,\r\nThe blessings are falling to [G]night;\r\nThere''s joy, joy, joy in my heart,\r\nFor Jesus makes everything [C]right.\r\nI [C]gave Him my old tattered garment,\r\nHe gave me a robe of pure [F]white;\r\nI''m feasting on manna from [C]heaven,\r\nAnd that''s why I''m [G]happy to [C]night.",
+  "lyrics": "[Verse]\r\nThe windows of heaven are open,\r\nThe blessings are falling to night;\r\nThere''s joy, joy, joy in my heart,\r\nFor Jesus makes everything right.\r\nI gave Him my old tattered garment,\r\nHe gave me a robe of pure white;\r\nI''m feasting on manna from heaven,\r\nAnd that''s why I''m happy to night.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

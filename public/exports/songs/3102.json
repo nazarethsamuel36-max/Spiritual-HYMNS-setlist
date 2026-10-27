@@ -1,54 +1,80 @@
 {
-  "id" : 3102,
-  "songNumber" : 2003,
-  "title" : "** धंयवद् कॆ सअथ् स्तुति गौन्ग",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Dhanyawad ke saath stuti gaunga"
-    }, {
-      "text" : "Hey Yeshu mere khuda"
-    }, {
-      "text" : "Upkar tere hai beshumar"
-    }, {
-      "text" : "Koti koti stuti dhanyawad"
-    }, {
-      "text" : "..Repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Yogyata se badh ke diya"
-    }, {
-      "text" : "Hai apni daya se tune mujhe...2"
-    }, {
-      "text" : "Mangne se jyada mila mujhe"
-    }, {
-      "text" : "Aabhari hoon prabhu main...2"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Tu hai saccha zinda khuda"
-    }, {
-      "text" : "Tujh par hi bharosa mera...2"
-    }, {
-      "text" : "Sewa poori karke paaon inaam"
-    }, {
-      "text" : "Prabhu aisa do vardan...2"
-    } ]
-  } ]
+  "id": 3102,
+  "songNumber": 2003,
+  "title": "Dhanyawad ke saath stuti gaunga",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Dhanyawad ke saath stuti gaunga"
+        },
+        {
+          "text": "Hey Yeshu mere khuda"
+        },
+        {
+          "text": "Upkar tere hai beshumar"
+        },
+        {
+          "text": "Koti koti stuti dhanyawad"
+        },
+        {
+          "text": "..Repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Yogyata se badh ke diya"
+        },
+        {
+          "text": "Hai apni daya se tune mujhe...2"
+        },
+        {
+          "text": "Mangne se jyada mila mujhe"
+        },
+        {
+          "text": "Aabhari hoon prabhu main...2"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Tu hai saccha zinda khuda"
+        },
+        {
+          "text": "Tujh par hi bharosa mera...2"
+        },
+        {
+          "text": "Sewa poori karke paaon inaam"
+        },
+        {
+          "text": "Prabhu aisa do vardan...2"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\nDhanyawad ke saath stuti gaunga\nHey Yeshu mere khuda\nUpkar tere hai beshumar\nKoti koti stuti dhanyawad\n..Repeat\n\n[Verse 2]\nYogyata se badh ke diya\nHai apni daya se tune mujhe...2\nMangne se jyada mila mujhe\nAabhari hoon prabhu main...2\n\n[Verse 3]\nTu hai saccha zinda khuda\nTujh par hi bharosa mera...2\nSewa poori karke paaon inaam\nPrabhu aisa do vardan...2",
+  "lyrics": "[Verse 1]\nDhanyawad ke saath stuti gaunga\nHey Yeshu mere khuda\nUpkar tere hai beshumar\nKoti koti stuti dhanyawad\n..Repeat\n\n[Verse 2]\nYogyata se badh ke diya\nHai apni daya se tune mujhe...2\nMangne se jyada mila mujhe\nAabhari hoon prabhu main...2\n\n[Verse 3]\nTu hai saccha zinda khuda\nTujh par hi bharosa mera...2\nSewa poori karke paaon inaam\nPrabhu aisa do vardan...2",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

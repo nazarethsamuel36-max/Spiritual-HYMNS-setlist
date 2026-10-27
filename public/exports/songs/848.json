@@ -1,192 +1,105 @@
 {
-  "id" : 848,
-  "songNumber" : 236,
-  "title" : "JESUS IS THE ANSWER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Jesus is the answer for the world today,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Above Him there's no other",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "For Jesus is the way. (Repeat)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "If you have any questions in the corners of your mind,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "Traces of discouragement,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Peace you cannot find,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Reflections of your past",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Seem to face you day by day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "There's one thing I'm sure of:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Jesus is the way.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I know you've got mountains",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "That you think you cannot climb,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I know your skies are dark you think",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "The sun won't shine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "In case you don't know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "But the Word of God is true,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And everything He's promised,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He will do it for you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 848,
+  "songNumber": 236,
+  "title": "JESUS IS THE ANSWER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Jesus is the answer for the world today,"
+        },
+        {
+          "text": "Above Him theres no other"
+        },
+        {
+          "text": "For Jesus is the way. (Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "If you have any questions in the corners of your mind,"
+        },
+        {
+          "text": "Traces of discouragement,"
+        },
+        {
+          "text": "Peace you cannot find,"
+        },
+        {
+          "text": "Reflections of your past"
+        },
+        {
+          "text": "Seem to face you day by day,"
+        },
+        {
+          "text": "Theres one thing Im sure of:"
+        },
+        {
+          "text": "Jesus is the way."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I know youve got mountains"
+        },
+        {
+          "text": "That you think you cannot climb,"
+        },
+        {
+          "text": "I know your skies are dark you think"
+        },
+        {
+          "text": "The sun wont shine."
+        },
+        {
+          "text": "In case you dont know,"
+        },
+        {
+          "text": "But the Word of God is true,"
+        },
+        {
+          "text": "And everything Hes promised,"
+        },
+        {
+          "text": "He will do it for you."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [F]Jesus is the answer for the [Bb]world to[F]day,\r\nA[F]bove Him theres no [C]other\r\nFor [F]Jesus is the way. (Repeat)\r\n[Verse]\r\n[Verse]\r\nIf you [F]have any questions in the [Bb]corners of your [F]mind,\r\n[F]Traces of dis[C]couragement,\r\n[F]Peace you cannot [C]find,\r\nRe[F]flections of your [Bb]past\r\nSeem to [F]face you day by [C]day,\r\nTheres [F]one thing Im sure of:\r\n[F]Jesus [C]is the [F]way.\r\n[Verse]\r\n[Verse]\r\nI [F]know youve got [Bb]mountains\r\nThat you [F]think you cannot [C]climb,\r\nI [F]know your skies are [Bb]dark you think\r\nThe [F]sun wont [C]shine.\r\nIn [F]case you dont [Bb]know,\r\nBut the [F]Word of God is [C]true,\r\nAnd [F]everything Hes [Bb]promised,\r\n[F]He will [C]do it for [F]you.",
+  "lyrics": "[Chorus]\r\n Jesus is the answer for the world today,\r\nAbove Him theres no other\r\nFor Jesus is the way. (Repeat)\r\n[Verse]\r\n[Verse]\r\nIf you have any questions in the corners of your mind,\r\nTraces of discouragement,\r\nPeace you cannot find,\r\nReflections of your past\r\nSeem to face you day by day,\r\nTheres one thing Im sure of:\r\nJesus is the way.\r\n[Verse]\r\n[Verse]\r\nI know youve got mountains\r\nThat you think you cannot climb,\r\nI know your skies are dark you think\r\nThe sun wont shine.\r\nIn case you dont know,\r\nBut the Word of God is true,\r\nAnd everything Hes promised,\r\nHe will do it for you.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

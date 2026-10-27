@@ -1,70 +1,47 @@
 {
-  "id" : 1091,
-  "songNumber" : 113,
-  "title" : "आओ मिलकर गायें ।",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आओ मिलकर गायें । (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "खुशी के ये गीत । (2) हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "गीत हम गाते है । (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "उसके चरणों में । (2) हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "दुनियां को कह देंगे (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "यीशु हमारा राजा (2) हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 1091,
+  "songNumber": 113,
+  "title": "आओ मिलकर गायें",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आओ मिलकर गायें । (2)"
+        },
+        {
+          "text": "खुशी के ये गीत । (2) हाल्लेलुयाह (2)"
+        },
+        {
+          "text": "गीत हम गाते है । (2)"
+        },
+        {
+          "text": "उसके चरणों में । (2) हाल्लेलुयाह (2)"
+        },
+        {
+          "text": "दुनियां को कह देंगे (2)"
+        },
+        {
+          "text": "यीशु हमारा राजा (2) हाल्लेलुयाह (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]आओ मिलकर [C]गायें । (2)\n[D]खुशी के ये गीत । (2) हाल्लेलु[G]याह (2)\n[G]गीत हम गाते [C]है । (2)\n[D]उसके चरणों में । (2) हाल्लेलु[G]याह (2)\n[G]दुनियां को कह दें[C]गे (2)\n[D]यीशु हमारा राजा (2) हाल्लेलु[G]याह (2)",
+  "lyrics": "[Verse]\nआओ मिलकर गायें । (2)\nखुशी के ये गीत । (2) हाल्लेलुयाह (2)\nगीत हम गाते है । (2)\nउसके चरणों में । (2) हाल्लेलुयाह (2)\nदुनियां को कह देंगे (2)\nयीशु हमारा राजा (2) हाल्लेलुयाह (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

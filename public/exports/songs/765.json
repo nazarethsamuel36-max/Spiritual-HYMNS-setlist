@@ -1,165 +1,113 @@
 {
-  "id" : 765,
-  "songNumber" : 153,
-  "title" : "DOWN AT THE CROSS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Down at the cross where my Saviour died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Down where for cleansing from sin I cried;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "There to my heart was the blood applied;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Glory to His name !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Glory to His name !"
-    }, {
-      "text" : "Glory to His name !"
-    }, {
-      "text" : "There to my heart was the blood applied; "
-    }, {
-      "text" : "Glory to His name !"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I am so wondrously saved from sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Jesus so sweetly abides within,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "There at the cross where He took me in;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Glory to His name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Oh, precious fountain that saves from sin !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "I am so glad I have entered in;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "There Jesus saves me and keeps me clean;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Glory to His name !"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Come, to this fountain so rich and sweet;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Cast thy poor soul at the Saviour's feet;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Plunge in today, and be made complete;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Glory to His name!"
-    } ]
-  } ]
+  "id": 765,
+  "songNumber": 153,
+  "title": "DOWN AT THE CROSS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Down at the cross where my Saviour died,"
+        },
+        {
+          "text": "Down where for cleansing from sin I cried;"
+        },
+        {
+          "text": "There to my heart was the blood applied;"
+        },
+        {
+          "text": "Glory to His name !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Glory to His name !"
+        },
+        {
+          "text": "Glory to His name !"
+        },
+        {
+          "text": "There to my heart was the blood applied;"
+        },
+        {
+          "text": "Glory to His name !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I am so wondrously saved from sin,"
+        },
+        {
+          "text": "Jesus so sweetly abides within,"
+        },
+        {
+          "text": "There at the cross where He took me in;"
+        },
+        {
+          "text": "Glory to His name!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Oh, precious fountain that saves from sin !"
+        },
+        {
+          "text": "I am so glad I have entered in;"
+        },
+        {
+          "text": "There Jesus saves me and keeps me clean;"
+        },
+        {
+          "text": "Glory to His name !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Come, to this fountain so rich and sweet;"
+        },
+        {
+          "text": "Cast thy poor soul at the Saviour's feet;"
+        },
+        {
+          "text": "Plunge in today, and be made complete;"
+        },
+        {
+          "text": "Glory to His name!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]Down at the cross where my Saviour [A]died,\r\nDown where for [E]cleansing from sin I [B]cried;\r\nThere to my [E]heart was the blood ap[A]plied;\r\n[E]Glory to His [B][A]name !\r\n\r\n[Chorus]\r\nGlory to His name !\r\nGlory to His name !\r\nThere to my heart was the blood applied;\r\nGlory to His name !\r\n\r\n[Verse 2]\r\nI am so [E]wondrously saved from [A]sin,\r\nJesus so [E]sweetly abides with[B]in,\r\nThere at the [E]cross where He took me [A]in;\r\n[E]Glory to His [B]name!\r\n\r\n[Verse 3]\r\nOh, precious [E]fountain that saves from [A]sin !\r\nI am so [E]glad I have entered [B]in;\r\nThere Jesus [E]saves me and keeps me [A]clean;\r\nGlory to His name !\r\n\r\n[Verse 4]\r\nCome, to this [E]fountain so rich and [A]sweet;\r\nCast thy poor [E]soul at the Saviour's [B]feet;\r\nPlunge in to[E]day, and be made com[A]plete;\r\nGlory to His name!",
+  "lyrics": "[Verse 1]\r\nDown at the cross where my Saviour died,\r\nDown where for cleansing from sin I cried;\r\nThere to my heart was the blood applied;\r\nGlory to His name !\r\n\r\n[Chorus]\r\nGlory to His name !\r\nGlory to His name !\r\nThere to my heart was the blood applied;\r\nGlory to His name !\r\n\r\n[Verse 2]\r\nI am so wondrously saved from sin,\r\nJesus so sweetly abides within,\r\nThere at the cross where He took me in;\r\nGlory to His name!\r\n\r\n[Verse 3]\r\nOh, precious fountain that saves from sin !\r\nI am so glad I have entered in;\r\nThere Jesus saves me and keeps me clean;\r\nGlory to His name !\r\n\r\n[Verse 4]\r\nCome, to this fountain so rich and sweet;\r\nCast thy poor soul at the Saviour's feet;\r\nPlunge in today, and be made complete;\r\nGlory to His name!",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

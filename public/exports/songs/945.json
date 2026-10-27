@@ -1,95 +1,71 @@
 {
-  "id" : 945,
-  "songNumber" : 66,
-  "title" : "GIVE THANKS",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Give thanks, with a grateful heart.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Give thanks to the Holy One.",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 5
-      }, {
-        "chord" : "Am",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Give thanks because He's given",
-      "chords" : [ {
-        "chord" : "Bb",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Jesus Christ, His Son.",
-      "chords" : [ {
-        "chord" : "Eb",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    }, {
-      "text" : "And now let the weak say \"I am strong\",",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 4
-      }, {
-        "chord" : "Dm",
-        "position" : 16
-      }, {
-        "chord" : "Gm",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Let the poor say \"I am rich\",",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "Am",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Because of what the Lord has done for us.",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 11
-      }, {
-        "chord" : "Eb",
-        "position" : 29
-      }, {
-        "chord" : "C",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    }, {
-      "text" : "Give thanks (last time)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      } ]
-    } ]
-  } ]
+  "id": 945,
+  "songNumber": 66,
+  "title": "GIVE THANKS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Give thanks, with a grateful heart."
+        },
+        {
+          "text": "Give thanks to the Holy One."
+        },
+        {
+          "text": "Give thanks because He's given"
+        },
+        {
+          "text": "Jesus Christ, His Son."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "And now let the weak say \"I am strong\","
+        },
+        {
+          "text": "Let the poor say \"I am rich\","
+        },
+        {
+          "text": "Because of what the Lord has done for us."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Give thanks (last time)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[F]Give thanks, with a [C]grateful heart.\nGive [Dm]thanks to the [Am]Holy One.\nGive [Bb]thanks because He's [F]given\n[Eb]Jesus Christ, His [C]Son.\n(Repeat)\n\n[Verse 1]\nAnd [Am]now let the [Dm]weak say \"I am [Gm]strong\",\nLet the [C]poor say \"I am [Am]rich\",\nBecause of [Dm]what the Lord has [Eb]done for [C]us.\n(Repeat)\n\n[Chorus]\n[F]Give thanks (last time)",
+  "lyrics": "[Chorus]\nGive thanks, with a grateful heart.\nGive thanks to the Holy One.\nGive thanks because He's given\nJesus Christ, His Son.\n(Repeat)\n\n[Verse 1]\nAnd now let the weak say \"I am strong\",\nLet the poor say \"I am rich\",\nBecause of what the Lord has done for us.\n(Repeat)\n\n[Chorus]\nGive thanks (last time)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

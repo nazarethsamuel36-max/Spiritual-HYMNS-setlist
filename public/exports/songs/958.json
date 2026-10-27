@@ -1,51 +1,44 @@
 {
-  "id" : 958,
-  "songNumber" : 80,
-  "title" : "VICTORY IS MINE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Victory* is mine (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Victory today is mine,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I told Satan to get behind,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Victory today is mine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "(*Joy......Peace......Jesus)"
-    } ]
-  } ]
+  "id": 958,
+  "songNumber": 80,
+  "title": "VICTORY IS MINE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Victory is mine (2)"
+        },
+        {
+          "text": "Victory today is mine,"
+        },
+        {
+          "text": "I told Satan to get behind,"
+        },
+        {
+          "text": "Victory today is mine."
+        },
+        {
+          "text": "(Joy......Peace......Jesus)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]Victory is mine (2)\r\nVictory today is [D]mine,\r\nI [G]told Satan to [C]get behind,\r\n[G]Victory to[D]day is [G]mine.\r\n(Joy......Peace......Jesus)",
+  "lyrics": "[Verse]\r\nVictory is mine (2)\r\nVictory today is mine,\r\nI told Satan to get behind,\r\nVictory today is mine.\r\n(Joy......Peace......Jesus)",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

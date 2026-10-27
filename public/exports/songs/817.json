@@ -1,245 +1,139 @@
 {
-  "id" : 817,
-  "songNumber" : 205,
-  "title" : "I AM BOUND FOR THE PROMISED LAND",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "On Jordan's stormy banks I stand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "And cast a wishful eye,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Toward Canaan's fair and happy land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "Where my possessions lie.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I am bound for the promised land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I am bound for the promised land;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "O who will come and go with me?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I am bound for the promised land.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "O'er all those wide extended plains",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Shines one eternal day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "There God the Son forever reigns,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And scatters night away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "No chilling winds, nor pois'nous breath,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Can reach that healthful shore;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Sickness and sorrow, pain and death,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Are feared and felt no more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "When shall I reach that happy place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And be forever blest!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "When shall I see my Father's face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And in His bosom rest?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 817,
+  "songNumber": 205,
+  "title": "I AM BOUND FOR THE PROMISED LAND",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On Jordans stormy banks I stand,"
+        },
+        {
+          "text": "And cast a wishful eye,"
+        },
+        {
+          "text": "Toward Canaans fair and happy land,"
+        },
+        {
+          "text": "Where my possessions lie."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I am bound for the promised land,"
+        },
+        {
+          "text": "I am bound for the promised land;"
+        },
+        {
+          "text": "O who will come and go with me?"
+        },
+        {
+          "text": "I am bound for the promised land."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Oer all those wide extended plains"
+        },
+        {
+          "text": "Shines one eternal day;"
+        },
+        {
+          "text": "There God the Son forever reigns,"
+        },
+        {
+          "text": "And scatters night away."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "No chilling winds, nor poisnous breath,"
+        },
+        {
+          "text": "Can reach that healthful shore;"
+        },
+        {
+          "text": "Sickness and sorrow, pain and death,"
+        },
+        {
+          "text": "Are feared and felt no more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When shall I reach that happy place,"
+        },
+        {
+          "text": "And be forever blest!"
+        },
+        {
+          "text": "When shall I see my Fathers face,"
+        },
+        {
+          "text": "And in His bosom rest?"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n On [D]Jordans stormy banks I stand,\nAnd [G]cast a wishful [D]eye,\nTo[D]ward Canaans fair and happy land,\nWhere [A]my possessions [D]lie.\n[Verse]\n[Verse]\n[Chorus]\nI am [D]bound for the [G]promised [D]land,\nI am [D]bound for the [A]promised [D]land;\nO [D]who will come and [G]go with [D]me?\nI am [D]bound for the [A]promised [D]land.\n[Verse]\n[Verse]\nOer [D]all those wide ex[G]tended [D]plains\nShines [D]one eternal [A]day;\nThere [D]God the Son for[G]ever [D]reigns,\nAnd [D]scatters [A]night a[D]way.\n[Verse]\n[Verse]\nNo [D]chilling winds, nor [G]poisnous [D]breath,\nCan [D]reach that healthful [A]shore;\n[D]Sickness and sorrow, [G]pain and [D]death,\nAre [D]feared and [A]felt no [D]more.\n[Verse]\n[Verse]\nWhen [D]shall I reach that [G]happy [D]place,\nAnd [D]be forever [A]blest!\nWhen [D]shall I see my [G]Fathers [D]face,\nAnd [D]in His [A]bosom [D]rest?",
+  "lyrics": "[Verse]\n On Jordans stormy banks I stand,\nAnd cast a wishful eye,\nToward Canaans fair and happy land,\nWhere my possessions lie.\n[Verse]\n[Verse]\n[Chorus]\nI am bound for the promised land,\nI am bound for the promised land;\nO who will come and go with me?\nI am bound for the promised land.\n[Verse]\n[Verse]\nOer all those wide extended plains\nShines one eternal day;\nThere God the Son forever reigns,\nAnd scatters night away.\n[Verse]\n[Verse]\nNo chilling winds, nor poisnous breath,\nCan reach that healthful shore;\nSickness and sorrow, pain and death,\nAre feared and felt no more.\n[Verse]\n[Verse]\nWhen shall I reach that happy place,\nAnd be forever blest!\nWhen shall I see my Fathers face,\nAnd in His bosom rest?",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel",
+    "Funeral"
+  ]
 }

@@ -1,93 +1,59 @@
 {
-  "id" : 633,
-  "songNumber" : 326,
-  "title" : "HOSANNA BLESSED BE THE NAME",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Hosanna, Blessed be the name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Blessed be the name of the Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Jehovah Jireh is His Name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Greatly He is to be praised !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Hosanna..."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He is the Lord of lords and King,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Shout His praises loud and Sing !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Hosanna..."
-    } ]
-  } ]
+  "id": 633,
+  "songNumber": 326,
+  "title": "HOSANNA BLESSED BE THE NAME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hosanna, Blessed be the name,"
+        },
+        {
+          "text": "Blessed be the name of the Lord,"
+        },
+        {
+          "text": "Jehovah Jireh is His Name,"
+        },
+        {
+          "text": "Greatly He is to be praised !"
+        },
+        {
+          "text": "Hosanna..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He is the Lord of lords and King,"
+        },
+        {
+          "text": "Shout His praises loud and Sing !"
+        },
+        {
+          "text": "Hosanna..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nHo[D]sanna, [G]Blessed be the [D]name,\n[G]Blessed be the [D]name of the [A]Lord,\nJe[D]hovah [G]Jireh is His [D]Name,\n[G]Greatly [A]He is to be [D]praised !\nHosanna...\n\n[Verse]\nHe is the [G]Lord of lords and [D]King,\n[G]Shout His praises [D]loud and [A]Sing !\nHosanna...",
+  "lyrics": "[Verse]\nHosanna, Blessed be the name,\nBlessed be the name of the Lord,\nJehovah Jireh is His Name,\nGreatly He is to be praised !\nHosanna...\n\n[Verse]\nHe is the Lord of lords and King,\nShout His praises loud and Sing !\nHosanna...",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

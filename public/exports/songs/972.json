@@ -1,95 +1,89 @@
 {
-  "id" : 972,
-  "songNumber" : 94,
-  "title" : "JUST ONE MORE TIME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Just one more time Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Don't pass me by,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Just one more time Lord"
-    }, {
-      "text" : "Oh! Hear my cry,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Send the revival, unto the bride,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Just one more time Lord"
-    }, {
-      "text" : "Don't pass me by.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "This is the hour of Your return",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And for Thy Spirit, my heart does yearn,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Refill my being deep down inside,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Just one more time Lord"
-    }, {
-      "text" : "Don't pass me by."
-    } ]
-  } ]
+  "id": 972,
+  "songNumber": 94,
+  "title": "JUST ONE MORE TIME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Just one more time Lord"
+        },
+        {
+          "text": "Don't pass me by,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Just one more time Lord"
+        },
+        {
+          "text": "Oh! Hear my cry,"
+        },
+        {
+          "text": "Send the revival, unto the bride,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Just one more time Lord"
+        },
+        {
+          "text": "Don't pass me by."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "This is the hour of Your return"
+        },
+        {
+          "text": "And for Thy Spirit, my heart does yearn,"
+        },
+        {
+          "text": "Refill my being deep down inside,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Just one more time Lord"
+        },
+        {
+          "text": "Don't pass me by."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]Just one more time Lord\n[G]Don't pass me [D]by,\n\n[Verse 1]\nJust one more time Lord\n[E]Oh! Hear my [A]cry,\nSend the re[D]vival, unto the [G]bride,\n\n[Chorus]\nJust one more time Lord\n[A]Don't pass me [D]by.\n\n[Verse 2]\n[D]This is the hour of Your re[G]turn\nAnd for Thy [D]Spirit, my heart does [A]yearn,\nRefill my [D]being deep down in[G]side,\n\n[Chorus]\nJust one more time Lord\nDon't pass me by.",
+  "lyrics": "[Chorus]\nJust one more time Lord\nDon't pass me by,\n\n[Verse 1]\nJust one more time Lord\nOh! Hear my cry,\nSend the revival, unto the bride,\n\n[Chorus]\nJust one more time Lord\nDon't pass me by.\n\n[Verse 2]\nThis is the hour of Your return\nAnd for Thy Spirit, my heart does yearn,\nRefill my being deep down inside,\n\n[Chorus]\nJust one more time Lord\nDon't pass me by.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

@@ -1,83 +1,95 @@
 {
-  "id" : 971,
-  "songNumber" : 93,
-  "title" : "THANK YOU JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Thank you Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Thank you Jesus,"
-    }, {
-      "text" : "Thank you Lord for loving me.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "You went to Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "There you died for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Thank you Lord for loving me."
-    }, {
-      "text" : "(Repeat)"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "You rose up from the grave,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "To me new life you gave,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Thank you Lord for loving me."
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  } ]
+  "id": 971,
+  "songNumber": 93,
+  "title": "THANK YOU JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Thank you Jesus,"
+        },
+        {
+          "text": "Thank you Jesus,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Thank you Lord for loving me."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "You went to Calvary,"
+        },
+        {
+          "text": "There you died for me,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Thank you Lord for loving me."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "You rose up from the grave,"
+        },
+        {
+          "text": "To me new life you gave,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Thank you Lord for loving me."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D][G]Thank you [D]Jesus,\nThank you Jesus,\n\n[Chorus]\nThank you [A]Lord for loving [D]me.\n(Repeat)\n\n[Verse 2]\n[D]You went to Calvary,\n[G]There you died for [D]me,\n\n[Chorus]\nThank you Lord for loving me.\n(Repeat)\n\n[Verse 3]\n[D]You rose up from the grave,\n[G]To me new life you [D]gave,\n\n[Chorus]\nThank you Lord for loving me.\n(Repeat)",
+  "lyrics": "[Verse 1]\nThank you Jesus,\nThank you Jesus,\n\n[Chorus]\nThank you Lord for loving me.\n(Repeat)\n\n[Verse 2]\nYou went to Calvary,\nThere you died for me,\n\n[Chorus]\nThank you Lord for loving me.\n(Repeat)\n\n[Verse 3]\nYou rose up from the grave,\nTo me new life you gave,\n\n[Chorus]\nThank you Lord for loving me.\n(Repeat)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

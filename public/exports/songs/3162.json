@@ -1,44 +1,65 @@
 {
-  "id" : 3162,
-  "songNumber" : 1021,
-  "title" : "** Open The Eyes Of My Heart",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Open the eyes of my heart Lord"
-    }, {
-      "text" : "Open the eyes of my heart"
-    }, {
-      "text" : "I want to see you"
-    }, {
-      "text" : "......repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "To see you higher and lifted up"
-    }, {
-      "text" : "Shining in the light of your glory"
-    }, {
-      "text" : "Lord pour out your power and love"
-    }, {
-      "text" : "As we sing holy holy holy"
-    }, {
-      "text" : "Holy holy holy (2)"
-    }, {
-      "text" : "I want to see you"
-    } ]
-  } ]
+  "id": 3162,
+  "songNumber": 1021,
+  "title": "Open The Eyes Of My Heart",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Open the eyes of my heart Lord"
+        },
+        {
+          "text": "Open the eyes of my heart"
+        },
+        {
+          "text": "I want to see you"
+        },
+        {
+          "text": "......repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "To see you higher and lifted up"
+        },
+        {
+          "text": "Shining in the light of your glory"
+        },
+        {
+          "text": "Lord pour out your power and love"
+        },
+        {
+          "text": "As we sing holy holy holy"
+        },
+        {
+          "text": "Holy holy holy (2)"
+        },
+        {
+          "text": "I want to see you"
+        }
+      ]
+    }
+  ],
+  "chords": "[CHORUS]\nOpen the eyes of my heart Lord\nOpen the eyes of my heart\nI want to see you\n......repeat\n\n[Verse 1]\nTo see you higher and lifted up\nShining in the light of your glory\nLord pour out your power and love\nAs we sing holy holy holy\nHoly holy holy (2)\nI want to see you",
+  "lyrics": "[CHORUS]\nOpen the eyes of my heart Lord\nOpen the eyes of my heart\nI want to see you\n......repeat\n\n[Verse 1]\nTo see you higher and lifted up\nShining in the light of your glory\nLord pour out your power and love\nAs we sing holy holy holy\nHoly holy holy (2)\nI want to see you",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

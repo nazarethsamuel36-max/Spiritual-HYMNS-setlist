@@ -1,168 +1,87 @@
 {
-  "id" : 1003,
-  "songNumber" : 25,
-  "title" : "तेरी इच्छा पूरी हो जाए",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "तेरी इच्छा पूरी हो जाए",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "हाथों में तेरे जीवन है ये",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "मैं मिट्टी हूँ तू है कुम्हार",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "मुझको बना, मुझको सजाँ ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अपनी मर्जी पर मैं चलता रहा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "तुझको कभी भी अपना ना कहा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "लेकिन मसीह आज से मैं",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "तेरे क्रूस को ले लेता हूँ ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "बढ़ता ही रहूँ तेरी मर्जी में",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "महिमा तेरी करूँ मैं अपनी जीवन से",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "गाता ही रहूँ तेरा अनुग्रह",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "मेरे लिए काफी है ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 1003,
+  "songNumber": 25,
+  "title": "तेरी इच्छा पूरी हो जाए",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "तेरी इच्छा पूरी हो जाए"
+        },
+        {
+          "text": "हाथों में तेरे जीवन है ये"
+        },
+        {
+          "text": "मैं मिट्टी हूँ तू है कुम्हार"
+        },
+        {
+          "text": "मुझको बना, मुझको सजाँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपनी मर्जी पर मैं चलता रहा"
+        },
+        {
+          "text": "तुझको कभी भी अपना ना कहा"
+        },
+        {
+          "text": "लेकिन मसीह आज से मैं"
+        },
+        {
+          "text": "तेरे क्रूस को ले लेता हूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "बढ़ता ही रहूँ तेरी मर्जी में"
+        },
+        {
+          "text": "महिमा तेरी करूँ मैं अपनी जीवन से"
+        },
+        {
+          "text": "गाता ही रहूँ तेरा अनुग्रह"
+        },
+        {
+          "text": "मेरे लिए काफी है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]तेरी इच्छा [C]पूरी हो [G]जाए\n[C]हाथों में तेरे [D]जीवन है [G]ये\n[G]मैं मिट्टी हूँ [C]तू है कु[D]म्हार\n[C]मुझको बना, [D]मुझको स[G]जाँ ।\n[Verse]\n[Verse]\n[G]अपनी मर्जी [C]पर मैं चलता [G]रहा\n[C]तुझको कभी भी [D]अपना ना [G]कहा\n[G]लेकिन मसीह [C]आज से [D]मैं\n[C]तेरे क्रूस को [D]ले लेता [G]हूँ ।\n[Verse]\n[Verse]\n[G]बढ़ता ही रहूँ [C]तेरी मर्जी [G]में\n[C]महिमा तेरी [D]करूँ मैं अपनी [G]जीवन से\n[G]गाता ही रहूँ [C]तेरा अनु[D]ग्रह\n[C]मेरे लिए का[D]फी [G]है ।",
+  "lyrics": "[Chorus]\n तेरी इच्छा पूरी हो जाए\nहाथों में तेरे जीवन है ये\nमैं मिट्टी हूँ तू है कुम्हार\nमुझको बना, मुझको सजाँ ।\n[Verse]\n[Verse]\nअपनी मर्जी पर मैं चलता रहा\nतुझको कभी भी अपना ना कहा\nलेकिन मसीह आज से मैं\nतेरे क्रूस को ले लेता हूँ ।\n[Verse]\n[Verse]\nबढ़ता ही रहूँ तेरी मर्जी में\nमहिमा तेरी करूँ मैं अपनी जीवन से\nगाता ही रहूँ तेरा अनुग्रह\nमेरे लिए काफी है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

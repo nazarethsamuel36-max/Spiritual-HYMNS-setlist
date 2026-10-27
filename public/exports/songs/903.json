@@ -1,162 +1,74 @@
 {
-  "id" : 903,
-  "songNumber" : 291,
-  "title" : "HEAR MY CRY O LORD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Hear my cry O Lord,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 8
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Attend unto my prayer,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "From the end of the earth,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Will I cry unto thee,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "When my heart is overwhelmed,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Lead me to the rock that is higher than I,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "that is higher than I.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "For Thou O Lord hast been",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "F",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "A shelter unto me,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "A tower O Lord against the enemy,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 2
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "When my heart is overwhelmed",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Lead me to the rock that is higher than I",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "that is higher than I."
-    } ]
-  } ]
+  "id": 903,
+  "songNumber": 291,
+  "title": "HEAR MY CRY O LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Hear my cry O Lord,"
+        },
+        {
+          "text": "Attend unto my prayer,"
+        },
+        {
+          "text": "From the end of the earth,"
+        },
+        {
+          "text": "Will I cry unto thee,"
+        },
+        {
+          "text": "When my heart is overwhelmed,"
+        },
+        {
+          "text": "Lead me to the rock that is higher than I,"
+        },
+        {
+          "text": "that is higher than I."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "For Thou O Lord hast been"
+        },
+        {
+          "text": "A shelter unto me,"
+        },
+        {
+          "text": "A tower O Lord against the enemy,"
+        },
+        {
+          "text": "When my heart is overwhelmed"
+        },
+        {
+          "text": "Lead me to the rock that is higher than I"
+        },
+        {
+          "text": "that is higher than I."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Hear my [G]cry O [D]Lord,\nAt[G]tend un[A]to my [D]prayer,\n[D]From the [G]end of the [D]earth,\n[G]Will I [A]cry unto [D]thee,\nWhen my [G]heart is [A]over[D]whelmed,\nLead me to the [G]rock that is [D]higher than [A]I,\nthat is [D]higher than [A]I.\n\n[Verse 2]\nFor [D]Thou O [G]Lord hast [D]been\nA [G]shelter [A]unto [D]me,\nA [D]tower O [G]Lord a[D]gainst the [A]enemy,\nWhen my [G]heart is [A]over[D]whelmed\nLead me to the [G]rock that is [D]higher than [A]I\nthat is higher than I.",
+  "lyrics": "[Verse 1]\nHear my cry O Lord,\nAttend unto my prayer,\nFrom the end of the earth,\nWill I cry unto thee,\nWhen my heart is overwhelmed,\nLead me to the rock that is higher than I,\nthat is higher than I.\n\n[Verse 2]\nFor Thou O Lord hast been\nA shelter unto me,\nA tower O Lord against the enemy,\nWhen my heart is overwhelmed\nLead me to the rock that is higher than I\nthat is higher than I.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

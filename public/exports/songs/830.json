@@ -1,367 +1,174 @@
 {
-  "id" : 830,
-  "songNumber" : 218,
-  "title" : "THE ORIGINAL LIFE THE ORIGINAL SEED",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God's attributes were manifested",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "To His Bride in this last age,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "We have caught the revelation",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "By the last prophet's message,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And we know who we are",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And what we are raised up for,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Praise the Lord, for the Original Life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "The Original Life, the Original Seed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "The Original Word is what I believe.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "The Son of Man is revealed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The seventh seal is unveiled,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "The Original Life, the Original Seed.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "We are the Word made flesh today,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "This is what the Scriptures say.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And our names are seen within,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Redeemed and perfect without sin.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Yes, we are anointed and inspired",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "By our God, Who's the Original Life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Our eyes of understanding",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "He has opened up at last.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And sweet victory is ours",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Who were chained down in the past.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "True Jubilee has sounded",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And we have responded",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "To our God, Who's the Original Life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "We are called unto adoption,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Full authority and power.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Sleeping saints will wake and join us",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "For translation in this hour.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Gentiles days soon will be over,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Glory, Hallelujah!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "To our God, Who's the Original Life."
-    } ]
-  } ]
+  "id": 830,
+  "songNumber": 218,
+  "title": "THE ORIGINAL LIFE THE ORIGINAL SEED",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Gods attributes were manifested"
+        },
+        {
+          "text": "To His Bride in this last age,"
+        },
+        {
+          "text": "We have caught the revelation"
+        },
+        {
+          "text": "By the last prophets message,"
+        },
+        {
+          "text": "And we know who we are"
+        },
+        {
+          "text": "And what we are raised up for,"
+        },
+        {
+          "text": "Praise the Lord, for the Original Life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "The Original Life, the Original Seed,"
+        },
+        {
+          "text": "The Original Word is what I believe."
+        },
+        {
+          "text": "The Son of Man is revealed,"
+        },
+        {
+          "text": "The seventh seal is unveiled,"
+        },
+        {
+          "text": "The Original Life, the Original Seed."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We are the Word made flesh today,"
+        },
+        {
+          "text": "This is what the Scriptures say."
+        },
+        {
+          "text": "And our names are seen within,"
+        },
+        {
+          "text": "Redeemed and perfect without sin."
+        },
+        {
+          "text": "Yes, we are anointed and inspired"
+        },
+        {
+          "text": "By our God, Whos the Original Life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Our eyes of understanding"
+        },
+        {
+          "text": "He has opened up at last."
+        },
+        {
+          "text": "And sweet victory is ours"
+        },
+        {
+          "text": "Who were chained down in the past."
+        },
+        {
+          "text": "True Jubilee has sounded"
+        },
+        {
+          "text": "And we have responded"
+        },
+        {
+          "text": "To our God, Whos the Original Life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We are called unto adoption,"
+        },
+        {
+          "text": "Full authority and power."
+        },
+        {
+          "text": "Sleeping saints will wake and join us"
+        },
+        {
+          "text": "For translation in this hour."
+        },
+        {
+          "text": "Gentiles days soon will be over,"
+        },
+        {
+          "text": "Glory, Hallelujah!"
+        },
+        {
+          "text": "To our God, Whos the Original Life."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Gods attributes were [G]mani[D]fested\nTo His [D]Bride in this last [A]age,\n[D]We have caught the [G]reve[D]lation\nBy the [D]last prophets [A]message,\nAnd [D]we know [G]who we [D]are\nAnd [D]what we are raised up [A]for,\nPraise the [D]Lord, for the O[A]riginal [D]Life.\n[Verse]\n[Verse]\n[Chorus]\nThe O[D]riginal Life, the O[G]riginal [D]Seed,\nThe O[D]riginal Word is [A]what I be[D]lieve.\nThe [D]Son of Man is re[G]vealed,\nThe [D]seventh seal is un[A]veiled,\nThe O[D]riginal Life, the O[A]riginal [D]Seed.\n[Verse]\n[Verse]\n[D]We are the Word made [G]flesh to[D]day,\nThis is [D]what the Scriptures [A]say.\nAnd [D]our names are [G]seen with[D]in,\nRe[D]deemed and perfect [A]without sin.\nYes, [D]we are a[G]nointed and in[D]spired\nBy our [D]God, Whos the O[A]riginal [D]Life.\n[Verse]\n[Verse]\nOur [D]eyes of under[G]stand[D]ing\nHe has [D]opened up at [A]last.\nAnd [D]sweet victory [G]is [D]ours\nWho were [D]chained down in the [A]past.\nTrue [D]Jubilee [G]has [D]sounded\nAnd [D]we have res[A]ponded\nTo our [D]God, Whos the O[A]riginal [D]Life.\n[Verse]\n[Verse]\n[D]We are called unto a[G]dop[D]tion,\nFull au[D]thority and [A]power.\n[D]Sleeping saints will [G]wake and [D]join us\nFor trans[D]lation in this [A]hour.\n[D]Gentiles days soon [G]will be [D]over,\n[D]Glory, Halle[A]lujah!\nTo our God, Whos the Original Life.",
+  "lyrics": "[Verse]\n Gods attributes were manifested\nTo His Bride in this last age,\nWe have caught the revelation\nBy the last prophets message,\nAnd we know who we are\nAnd what we are raised up for,\nPraise the Lord, for the Original Life.\n[Verse]\n[Verse]\n[Chorus]\nThe Original Life, the Original Seed,\nThe Original Word is what I believe.\nThe Son of Man is revealed,\nThe seventh seal is unveiled,\nThe Original Life, the Original Seed.\n[Verse]\n[Verse]\nWe are the Word made flesh today,\nThis is what the Scriptures say.\nAnd our names are seen within,\nRedeemed and perfect without sin.\nYes, we are anointed and inspired\nBy our God, Whos the Original Life.\n[Verse]\n[Verse]\nOur eyes of understanding\nHe has opened up at last.\nAnd sweet victory is ours\nWho were chained down in the past.\nTrue Jubilee has sounded\nAnd we have responded\nTo our God, Whos the Original Life.\n[Verse]\n[Verse]\nWe are called unto adoption,\nFull authority and power.\nSleeping saints will wake and join us\nFor translation in this hour.\nGentiles days soon will be over,\nGlory, Hallelujah!\nTo our God, Whos the Original Life.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

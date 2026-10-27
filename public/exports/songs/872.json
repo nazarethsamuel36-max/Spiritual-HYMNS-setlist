@@ -1,336 +1,151 @@
 {
-  "id" : 872,
-  "songNumber" : 260,
-  "title" : "I DON'T KNOW ABOUT TOMORROW",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I don't know about tomorrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I just live from day to day,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "I don't borrow from its sunshine;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "For its skies may turn to grey.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I don't worry about the future,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "For I know what Jesus said,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And today He walks beside me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And I know what lies ahead.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Many things about tomorrow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I don't seem to understand",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "But I know who holds tomorrow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And I know who holds my hand.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I don't know about tomorrow,"
-    }, {
-      "text" : "It may bring me poverty,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "But the one who feeds the sparrow,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Is the one who stands by me,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And the path that be my portion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Maybe through the flame or flood,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "But His presence goes before me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "And I'm covered with His blood.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Every step is getting brighter,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "As the golden stairs I climb,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Every burden's getting lighter,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Every cloud is silver lined,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "There the sun is always shining,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "There no tear will dim the eye,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "At the ending of the rainbow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Where the mountains touch the sky.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 872,
+  "songNumber": 260,
+  "title": "I DON'T KNOW ABOUT TOMORROW",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I dont know about tomorrow,"
+        },
+        {
+          "text": "I just live from day to day,"
+        },
+        {
+          "text": "I dont borrow from its sunshine;"
+        },
+        {
+          "text": "For its skies may turn to grey."
+        },
+        {
+          "text": "I dont worry about the future,"
+        },
+        {
+          "text": "For I know what Jesus said,"
+        },
+        {
+          "text": "And today He walks beside me,"
+        },
+        {
+          "text": "And I know what lies ahead."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Many things about tomorrow"
+        },
+        {
+          "text": "I dont seem to understand"
+        },
+        {
+          "text": "But I know who holds tomorrow"
+        },
+        {
+          "text": "And I know who holds my hand."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I dont know about tomorrow,"
+        },
+        {
+          "text": "It may bring me poverty,"
+        },
+        {
+          "text": "But the one who feeds the sparrow,"
+        },
+        {
+          "text": "Is the one who stands by me,"
+        },
+        {
+          "text": "And the path that be my portion,"
+        },
+        {
+          "text": "Maybe through the flame or flood,"
+        },
+        {
+          "text": "But His presence goes before me,"
+        },
+        {
+          "text": "And Im covered with His blood."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Every step is getting brighter,"
+        },
+        {
+          "text": "As the golden stairs I climb,"
+        },
+        {
+          "text": "Every burdens getting lighter,"
+        },
+        {
+          "text": "Every cloud is silver lined,"
+        },
+        {
+          "text": "There the sun is always shining,"
+        },
+        {
+          "text": "There no tear will dim the eye,"
+        },
+        {
+          "text": "At the ending of the rainbow,"
+        },
+        {
+          "text": "Where the mountains touch the sky."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n I [D]dont know a[G]bout to[D]morrow,\nI just live from [A]day to [D]day,\nI dont [G]borrow from its [D]sunshine;\nFor its [E]skies may turn to [A]grey.\nI dont [D]worry a[G]bout the [D]future,\nFor I [G]know what [D]Jesus [A]said,\nAnd to[D]day He [G]walks be[D]side me,\nAnd I [D]know what [A]lies a[D]head.\n[Verse]\n[Verse]\n[Chorus]\n[D]Many [G]things a[D]bout to[A]morrow\nI dont [G]seem to [D]under[A]stand\nBut I [D]know who [G]holds to[D]morrow\nAnd I [D]know who [A]holds my [D]hand.\n[Verse]\n[Verse]\nI dont know about tomorrow,\nIt may bring me [A]pover[D]ty,\nBut the [G]one who feeds the [D]sparrow,\nIs the [E]one who stands by [A]me,\nAnd the [D]path that [G]be my [D]portion,\nMaybe [G]through the [D]flame or [A]flood,\nBut His [D]presence [G]goes be[D]fore me,\nAnd Im [D]covered [A]with His [D]blood.\n[Verse]\n[Verse]\nEvery [D]step is [G]getting [D]brighter,\nAs the [G]golden [D]stairs I [A]climb,\nEvery [D]burdens [G]getting [D]lighter,\nEvery [E]cloud is silver [A]lined,\nThere the [D]sun is [G]always [D]shining,\nThere no [G]tear will [D]dim the [A]eye,\nAt the [D]ending [G]of the [D]rainbow,\nWhere the [D]mountains [A]touch the [D]sky.",
+  "lyrics": "[Verse]\n I dont know about tomorrow,\nI just live from day to day,\nI dont borrow from its sunshine;\nFor its skies may turn to grey.\nI dont worry about the future,\nFor I know what Jesus said,\nAnd today He walks beside me,\nAnd I know what lies ahead.\n[Verse]\n[Verse]\n[Chorus]\nMany things about tomorrow\nI dont seem to understand\nBut I know who holds tomorrow\nAnd I know who holds my hand.\n[Verse]\n[Verse]\nI dont know about tomorrow,\nIt may bring me poverty,\nBut the one who feeds the sparrow,\nIs the one who stands by me,\nAnd the path that be my portion,\nMaybe through the flame or flood,\nBut His presence goes before me,\nAnd Im covered with His blood.\n[Verse]\n[Verse]\nEvery step is getting brighter,\nAs the golden stairs I climb,\nEvery burdens getting lighter,\nEvery cloud is silver lined,\nThere the sun is always shining,\nThere no tear will dim the eye,\nAt the ending of the rainbow,\nWhere the mountains touch the sky.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,242 +1,113 @@
 {
-  "id" : 1055,
-  "songNumber" : 77,
-  "title" : "दिल मेरा ले ले प्यारे यीशु",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दिल मेरा ले ले प्यारे यीशु,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तू ही ने इसे बनाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "इसमें तू अपना घर बनालें",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "जिसके लिए यह बनाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "दुनियाकी सब चीज निकालकर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "इसे पाक और साफ कर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "गंदगी गुनाहों की तू धोकर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "उस खून से जो बनाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "बहुत साल मैं रहा तुझसे दूर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "लापरवाही ने किया दूर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "अनुग्रह और प्रेमकी आशीष,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "धीरज धर मुझे दिखाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "जब ध्यानसे पढता हूं वचन,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "जो राज-मार्ग प्रभू ही का है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "मार्ग सत्य जीवन और विश्वास,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "आशा तूने बढाई है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "पवित्र आत्मा का हो भवन,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "पवित्र आत्मा के बाप्तिस्मा से,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "हर वक्त हर जगह दू गवाही,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "जैसा उसने सिखाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1055,
+  "songNumber": 77,
+  "title": "दिल मेरा ले ले प्यारे यीशु",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दिल मेरा ले ले प्यारे यीशु,"
+        },
+        {
+          "text": "तू ही ने इसे बनाया है ।"
+        },
+        {
+          "text": "इसमें तू अपना घर बनालें"
+        },
+        {
+          "text": "जिसके लिए यह बनाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनियाकी सब चीज निकालकर,"
+        },
+        {
+          "text": "इसे पाक और साफ कर,"
+        },
+        {
+          "text": "गंदगी गुनाहों की तू धोकर,"
+        },
+        {
+          "text": "उस खून से जो बनाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "बहुत साल मैं रहा तुझसे दूर,"
+        },
+        {
+          "text": "लापरवाही ने किया दूर,"
+        },
+        {
+          "text": "अनुग्रह और प्रेमकी आशीष,"
+        },
+        {
+          "text": "धीरज धर मुझे दिखाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब ध्यानसे पढता हूं वचन,"
+        },
+        {
+          "text": "जो राज-मार्ग प्रभू ही का है,"
+        },
+        {
+          "text": "मार्ग सत्य जीवन और विश्वास,"
+        },
+        {
+          "text": "आशा तूने बढाई है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र आत्मा का हो भवन,"
+        },
+        {
+          "text": "पवित्र आत्मा के बाप्तिस्मा से,"
+        },
+        {
+          "text": "हर वक्त हर जगह दू गवाही,"
+        },
+        {
+          "text": "जैसा उसने सिखाया है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]दिल मेरा ले ले [A]प्यारे यीशु,\r\n[G]तू ही ने इसे ब[A]नाया [D]है ।\r\n[D]इसमें तू अपना [A]घर बनालें\r\n[G]जिसके लिए यह ब[A]नाया [D]है ।\r\n\r\n[Verse]\r\n[D]दुनियाकी सब चीज निकाल[A]कर,\r\n[G]इसे पाक और [A]साफ [D]कर,\r\n[D]गंदगी गुनाहों की तू धो[A]कर,\r\n[G]उस खून से जो ब[A]नाया [D]है ।\r\n\r\n[Verse]\r\n[D]बहुत साल मैं रहा तुझसे [A]दूर,\r\n[G]लापरवाही ने कि[A]या [D]दूर,\r\n[D]अनुग्रह और प्रेमकी आशी[A]ष,\r\n[G]धीरज धर मुझे दि[A]खाया [D]है ।\r\n\r\n[Verse]\r\n[D]जब ध्यानसे पढता हूं व[A]चन,\r\n[G]जो राज-मार्ग प्रभू [A]ही का [D]है,\r\n[D]मार्ग सत्य जीवन और विश्वा[A]स,\r\n[G]आशा तूने ब[A]ढाई [D]है ।\r\n\r\n[Verse]\r\n[D]पवित्र आत्मा का हो भ[A]वन,\r\n[G]पवित्र आत्मा के बा[A]प्तिस्मा [D]से,\r\n[D]हर वक्त हर जगह दू गवा[A]ही,\r\n[G]जैसा उसने सि[A]खाया [D]है ।",
+  "lyrics": "[Verse]\r\nदिल मेरा ले ले प्यारे यीशु,\r\nतू ही ने इसे बनाया है ।\r\nइसमें तू अपना घर बनालें\r\nजिसके लिए यह बनाया है ।\r\n\r\n[Verse]\r\nदुनियाकी सब चीज निकालकर,\r\nइसे पाक और साफ कर,\r\nगंदगी गुनाहों की तू धोकर,\r\nउस खून से जो बनाया है ।\r\n\r\n[Verse]\r\nबहुत साल मैं रहा तुझसे दूर,\r\nलापरवाही ने किया दूर,\r\nअनुग्रह और प्रेमकी आशीष,\r\nधीरज धर मुझे दिखाया है ।\r\n\r\n[Verse]\r\nजब ध्यानसे पढता हूं वचन,\r\nजो राज-मार्ग प्रभू ही का है,\r\nमार्ग सत्य जीवन और विश्वास,\r\nआशा तूने बढाई है ।\r\n\r\n[Verse]\r\nपवित्र आत्मा का हो भवन,\r\nपवित्र आत्मा के बाप्तिस्मा से,\r\nहर वक्त हर जगह दू गवाही,\r\nजैसा उसने सिखाया है ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

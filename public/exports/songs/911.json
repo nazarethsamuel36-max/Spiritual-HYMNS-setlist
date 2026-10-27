@@ -1,384 +1,113 @@
 {
-  "id" : 911,
-  "songNumber" : 299,
-  "title" : "LOVE DIVINE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Love divine all loves excelling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Joy of heaven to earth come down",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Fix in us Thy humble dwelling",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "All Thy faithful mercies crown.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Jesus, Thou art all compassion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Pure unbounded love Thou art;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Visit us with Thy salvation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Enter every longing heart.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Breathe, oh, breathe Thy loving Spirit",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Into every troubled breast!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Let us all in Thee inherit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Let us find Thy promised rest.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Come Almighty to deliver!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Let us all Thy grace receive;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Suddenly return, and never",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Never more Thy temples leave.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Finish then, Thy new creation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Pure and spotless may we be;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Let us see our whole salvation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Perfectly secured by Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Changed from glory into glory;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Till in heaven we take our place;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Till we cast our crowns before Thee'",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Lost in wonder, love and praise!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 911,
+  "songNumber": 299,
+  "title": "LOVE DIVINE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Love divine all loves excelling,"
+        },
+        {
+          "text": "Joy of heaven to earth come down"
+        },
+        {
+          "text": "Fix in us Thy humble dwelling"
+        },
+        {
+          "text": "All Thy faithful mercies crown."
+        },
+        {
+          "text": "Jesus, Thou art all compassion,"
+        },
+        {
+          "text": "Pure unbounded love Thou art;"
+        },
+        {
+          "text": "Visit us with Thy salvation,"
+        },
+        {
+          "text": "Enter every longing heart."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Breathe, oh, breathe Thy loving Spirit"
+        },
+        {
+          "text": "Into every troubled breast!"
+        },
+        {
+          "text": "Let us all in Thee inherit,"
+        },
+        {
+          "text": "Let us find Thy promised rest."
+        },
+        {
+          "text": "Come Almighty to deliver!"
+        },
+        {
+          "text": "Let us all Thy grace receive;"
+        },
+        {
+          "text": "Suddenly return, and never"
+        },
+        {
+          "text": "Never more Thy temples leave."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Finish then, Thy new creation,"
+        },
+        {
+          "text": "Pure and spotless may we be;"
+        },
+        {
+          "text": "Let us see our whole salvation,"
+        },
+        {
+          "text": "Perfectly secured by Thee."
+        },
+        {
+          "text": "Changed from glory into glory;"
+        },
+        {
+          "text": "Till in heaven we take our place;"
+        },
+        {
+          "text": "Till we cast our crowns before Thee'"
+        },
+        {
+          "text": "Lost in wonder, love and praise!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Love di[G]vine all [D]loves ex[A]celling,\n[D]Joy of [G]heaven to [D]earth come [A]down\n[D]Fix in [G]us Thy [D]humble [A]dwelling\n[D]All Thy [A]faithful [D]mercies [A]crown.\n[D]Jesus, [G]Thou art [D]all com[A]passion,\n[D]Pure un[G]bounded [D]love Thou [A]art;\n[D]Visit [G]us with [D]Thy sal[A]vation,\n[D]Enter [A]every [D]longing [A]heart.\n\n[Verse]\n[D]Breathe, oh, [G]breathe Thy [D]loving [A]Spirit\n[D]Into [G]every [D]troubled [A]breast!\n[D]Let us [G]all in [D]Thee in[A]herit,\n[D]Let us [A]find Thy [D]promised [A]rest.\n[D]Come Al[G]mighty [D]to de[A]liver!\n[D]Let us [G]all Thy [D]grace re[A]ceive;\n[D]Suddenly re[G]turn, [D]and [A]never\n[D]Never [A]more Thy [D]temples [A]leave.\n\n[Verse]\n[D]Finish [G]then, Thy [D]new cre[A]ation,\n[D]Pure and [G]spotless [D]may we [A]be;\n[D]Let us [G]see our [D]whole sal[A]vation,\n[D]Perfect[A]ly se[D]cured by [A]Thee.\n[D]Changed from [G]glory [D]into [A]glory;\n[D]Till in [G]heaven we [D]take our [A]place;\n[D]Till we [G]cast our [D]crowns be[A]fore Thee'\n[D]Lost in [A]wonder, [D]love and [A]praise!",
+  "lyrics": "[Verse]\nLove divine all loves excelling,\nJoy of heaven to earth come down\nFix in us Thy humble dwelling\nAll Thy faithful mercies crown.\nJesus, Thou art all compassion,\nPure unbounded love Thou art;\nVisit us with Thy salvation,\nEnter every longing heart.\n\n[Verse]\nBreathe, oh, breathe Thy loving Spirit\nInto every troubled breast!\nLet us all in Thee inherit,\nLet us find Thy promised rest.\nCome Almighty to deliver!\nLet us all Thy grace receive;\nSuddenly return, and never\nNever more Thy temples leave.\n\n[Verse]\nFinish then, Thy new creation,\nPure and spotless may we be;\nLet us see our whole salvation,\nPerfectly secured by Thee.\nChanged from glory into glory;\nTill in heaven we take our place;\nTill we cast our crowns before Thee'\nLost in wonder, love and praise!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

@@ -1,510 +1,233 @@
 {
-  "id" : 767,
-  "songNumber" : 155,
-  "title" : "YESTERDAY TODAY FOREVER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Oh, how sweet the glorious message,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Simple faith may claim;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Yesterday, today, forever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Jesus is the same.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Still He loves to save the sinful,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Heal the sick and lame;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Cheer the mourner, still the tempest;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Glory to His name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Yesterday, today, forever,"
-    }, {
-      "text" : "Jesus is the same;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "All may change, but Jesus never!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Glory to His name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Glory to His name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Glory to His name;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "All may change, but Jesus never!"
-    }, {
-      "text" : "Glory to His name."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He who was the friend of sinners,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Seeks thee, lost one, now;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Sinner, come, and at His footstool",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Penitently bow.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "He who said, \"I'll not condemn thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Go and sin no more;\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Speaks to thee that word of pardon,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "As in days of yore.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Oft on earth He healed the suff'rer",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "By His mighty hand;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Still our sicknesses and sorrows",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Go at His command.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "He who gave His healing virtue,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "To a woman's touch;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "To the faith that claims His fullness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Still will give as much.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He who pardoned erring Peter,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Never need'st thou fear;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He that came to faithless Thomas,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "All thy doubt will clear.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He who let the loved disciple",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "On His bosom rest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Bids thee still, with love as tender,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Lean upon His breast.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He who 'mid the raging billows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Walked upon the sea;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Still can hush our wildest tempest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "As on Galilee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "He who wept and prayed in anguish,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "In Gethsemane,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Drinks with us each cup of trembling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "In our agony.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "As of old He walked to Emmaus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "With them to abide;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "So through all life's way He walketh,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Ever near our side.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Soon again we shall behold Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Hasten, Lord, the day !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "But 'twill still be \"this same Jesus\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "As He went away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    } ]
-  } ]
+  "id": 767,
+  "songNumber": 155,
+  "title": "YESTERDAY TODAY FOREVER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Oh, how sweet the glorious message,"
+        },
+        {
+          "text": "Simple faith may claim;"
+        },
+        {
+          "text": "Yesterday, today, forever,"
+        },
+        {
+          "text": "Jesus is the same."
+        },
+        {
+          "text": "Still He loves to save the sinful,"
+        },
+        {
+          "text": "Heal the sick and lame;"
+        },
+        {
+          "text": "Cheer the mourner, still the tempest;"
+        },
+        {
+          "text": "Glory to His name!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Yesterday, today, forever,"
+        },
+        {
+          "text": "Jesus is the same;"
+        },
+        {
+          "text": "All may change, but Jesus never!"
+        },
+        {
+          "text": "Glory to His name."
+        },
+        {
+          "text": "Glory to His name,"
+        },
+        {
+          "text": "Glory to His name;"
+        },
+        {
+          "text": "All may change, but Jesus never!"
+        },
+        {
+          "text": "Glory to His name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "He who was the friend of sinners,"
+        },
+        {
+          "text": "Seeks thee, lost one, now;"
+        },
+        {
+          "text": "Sinner, come, and at His footstool"
+        },
+        {
+          "text": "Penitently bow."
+        },
+        {
+          "text": "He who said, \"I'll not condemn thee,"
+        },
+        {
+          "text": "Go and sin no more;\""
+        },
+        {
+          "text": "Speaks to thee that word of pardon,"
+        },
+        {
+          "text": "As in days of yore."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Oft on earth He healed the suff'rer"
+        },
+        {
+          "text": "By His mighty hand;"
+        },
+        {
+          "text": "Still our sicknesses and sorrows"
+        },
+        {
+          "text": "Go at His command."
+        },
+        {
+          "text": "He who gave His healing virtue,"
+        },
+        {
+          "text": "To a woman's touch;"
+        },
+        {
+          "text": "To the faith that claims His fullness,"
+        },
+        {
+          "text": "Still will give as much."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "He who pardoned erring Peter,"
+        },
+        {
+          "text": "Never need'st thou fear;"
+        },
+        {
+          "text": "He that came to faithless Thomas,"
+        },
+        {
+          "text": "All thy doubt will clear."
+        },
+        {
+          "text": "He who let the loved disciple"
+        },
+        {
+          "text": "On His bosom rest,"
+        },
+        {
+          "text": "Bids thee still, with love as tender,"
+        },
+        {
+          "text": "Lean upon His breast."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "He who 'mid the raging billows,"
+        },
+        {
+          "text": "Walked upon the sea;"
+        },
+        {
+          "text": "Still can hush our wildest tempest,"
+        },
+        {
+          "text": "As on Galilee."
+        },
+        {
+          "text": "He who wept and prayed in anguish,"
+        },
+        {
+          "text": "In Gethsemane,"
+        },
+        {
+          "text": "Drinks with us each cup of trembling,"
+        },
+        {
+          "text": "In our agony."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "As of old He walked to Emmaus,"
+        },
+        {
+          "text": "With them to abide;"
+        },
+        {
+          "text": "So through all life's way He walketh,"
+        },
+        {
+          "text": "Ever near our side."
+        },
+        {
+          "text": "Soon again we shall behold Him,"
+        },
+        {
+          "text": "Hasten, Lord, the day !"
+        },
+        {
+          "text": "But 'twill still be \"this same Jesus\""
+        },
+        {
+          "text": "As He went away."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nOh, how [Bb]sweet the glorious [Eb]message,\r\nSimple [Bb]faith may [F]claim;\r\nYester[Bb]day, today, for[Eb]ever,\r\n[Bb]Jesus is the [F]same.\r\nStill He [Bb]loves to save the [Eb]sinful,\r\n[Bb]Heal the sick and [F]lame;\r\n[Bb]Cheer the mourner, still the [Eb]tempest;\r\n[Bb]Glory to His [F]name!\r\n\r\n[Chorus]\r\nYesterday, today, forever,\r\n[Bb]Jesus is the [F]same;\r\n[Bb]All may change, but Jesus [Eb]never!\r\n[Bb]Glory to His [F]name.\r\n[Bb]Glory to His [Eb]name,\r\n[Bb]Glory to His [F]name;\r\nAll may change, but Jesus never!\r\nGlory to His name.\r\n\r\n[Verse 2]\r\nHe who [Bb]was the friend of [Eb]sinners,\r\nSeeks thee, [Bb]lost one, [F]now;\r\n[Bb]Sinner, come, and at His [Eb]footstool\r\nPeni[Bb]tently [F]bow.\r\nHe who [Bb]said, \"I'll not con[Eb]demn thee,\r\nGo and [Bb]sin no [F]more;\"\r\n[Bb]Speaks to thee that word of [Eb]pardon,\r\nAs in [Bb]days of [F]yore.\r\n\r\n[Verse 3]\r\nOft on [Bb]earth He healed the [Eb]suff'rer\r\nBy His [Bb]mighty [F]hand;\r\nStill our [Bb]sicknesses and [Eb]sorrows\r\nGo at [Bb]His com[F]mand.\r\nHe who [Bb]gave His healing [Eb]virtue,\r\nTo a [Bb]woman's [F]touch;\r\nTo the [Bb]faith that claims His [Eb]fullness,\r\nStill will [Bb]give as [F]much.\r\n\r\n[Verse 4]\r\nHe who [Bb]pardoned erring [Eb]Peter,\r\nNever [Bb]need'st thou [F]fear;\r\nHe that [Bb]came to faithless [Eb]Thomas,\r\nAll thy [Bb]doubt will [F]clear.\r\nHe who [Bb]let the loved dis[Eb]ciple\r\nOn His [Bb]bosom [F]rest,\r\nBids thee [Bb]still, with love as [Eb]tender,\r\nLean upon [Bb]His [F]breast.\r\n\r\n[Verse 5]\r\nHe who [Bb]'mid the raging [Eb]billows,\r\nWalked u[Bb]pon the [F]sea;\r\nStill can [Bb]hush our wildest [Eb]tempest,\r\nAs on [Bb]Gali[F]lee.\r\nHe who [Bb]wept and prayed in [Eb]anguish,\r\nIn Geth[Bb]se[F]mane,\r\nDrinks with [Bb]us each cup of [Eb]trembling,\r\nIn our [Bb]agony.\r\n\r\n[Verse 6]\r\nAs of [Bb]old He walked to [Eb]Emmaus,\r\nWith them [Bb]to a[F]bide;\r\nSo through [Bb]all life's way He [Eb]walketh,\r\nEver [Bb]near our [F]side.\r\n[Bb]Soon again we shall be[Eb]hold Him,\r\nHasten, [Bb]Lord, the [F]day !\r\nBut [Bb]'twill still be \"this same [Eb]Jesus\"\r\nAs He [Bb]went a[F]way.",
+  "lyrics": "[Verse 1]\r\nOh, how sweet the glorious message,\r\nSimple faith may claim;\r\nYesterday, today, forever,\r\nJesus is the same.\r\nStill He loves to save the sinful,\r\nHeal the sick and lame;\r\nCheer the mourner, still the tempest;\r\nGlory to His name!\r\n\r\n[Chorus]\r\nYesterday, today, forever,\r\nJesus is the same;\r\nAll may change, but Jesus never!\r\nGlory to His name.\r\nGlory to His name,\r\nGlory to His name;\r\nAll may change, but Jesus never!\r\nGlory to His name.\r\n\r\n[Verse 2]\r\nHe who was the friend of sinners,\r\nSeeks thee, lost one, now;\r\nSinner, come, and at His footstool\r\nPenitently bow.\r\nHe who said, \"I'll not condemn thee,\r\nGo and sin no more;\"\r\nSpeaks to thee that word of pardon,\r\nAs in days of yore.\r\n\r\n[Verse 3]\r\nOft on earth He healed the suff'rer\r\nBy His mighty hand;\r\nStill our sicknesses and sorrows\r\nGo at His command.\r\nHe who gave His healing virtue,\r\nTo a woman's touch;\r\nTo the faith that claims His fullness,\r\nStill will give as much.\r\n\r\n[Verse 4]\r\nHe who pardoned erring Peter,\r\nNever need'st thou fear;\r\nHe that came to faithless Thomas,\r\nAll thy doubt will clear.\r\nHe who let the loved disciple\r\nOn His bosom rest,\r\nBids thee still, with love as tender,\r\nLean upon His breast.\r\n\r\n[Verse 5]\r\nHe who 'mid the raging billows,\r\nWalked upon the sea;\r\nStill can hush our wildest tempest,\r\nAs on Galilee.\r\nHe who wept and prayed in anguish,\r\nIn Gethsemane,\r\nDrinks with us each cup of trembling,\r\nIn our agony.\r\n\r\n[Verse 6]\r\nAs of old He walked to Emmaus,\r\nWith them to abide;\r\nSo through all life's way He walketh,\r\nEver near our side.\r\nSoon again we shall behold Him,\r\nHasten, Lord, the day !\r\nBut 'twill still be \"this same Jesus\"\r\nAs He went away.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

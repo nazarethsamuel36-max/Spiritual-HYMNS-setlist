@@ -1,300 +1,131 @@
 {
-  "id" : 670,
-  "songNumber" : 363,
-  "title" : "THE BIRDS HAVE A NEST TO GO",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The birds have nest to go,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "The foxes have holes to go",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "But the Son of Man has no where;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "For His head to lay and go.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He knocked at the Jewish door;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "But the doors were tightly closed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "They crucified Him on the cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "For they failed to see who He was.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "They crucified the Lord;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "They rejected the King,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "But itâ€™s the plan of redemption;"
-    }, {
-      "text" : "By the Lamb of God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "He came to the Gentile Bride",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "They welcome Him with joy;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For their eyes were opened to recognise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "That Jesus was the Christ.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "He promised Heâ€™d come back again,"
-    }, {
-      "text" : "In a form of human flesh;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "To reveal the secret of His heart",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "To the very chosen bride.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "I recognise my Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I recognise His voice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I recognise Iâ€™m a bride of Christ;"
-    }, {
-      "text" : "And the thought in His mind.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 670,
+  "songNumber": 363,
+  "title": "THE BIRDS HAVE A NEST TO GO",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Fm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The birds have nest to go,"
+        },
+        {
+          "text": "The foxes have holes to go"
+        },
+        {
+          "text": "But the Son of Man has no where;"
+        },
+        {
+          "text": "For His head to lay and go."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He knocked at the Jewish door;"
+        },
+        {
+          "text": "But the doors were tightly closed,"
+        },
+        {
+          "text": "They crucified Him on the cross,"
+        },
+        {
+          "text": "For they failed to see who He was."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "They crucified the Lord;"
+        },
+        {
+          "text": "They rejected the King,"
+        },
+        {
+          "text": "But it's the plan of redemption;"
+        },
+        {
+          "text": "By the Lamb of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He came to the Gentile Bride"
+        },
+        {
+          "text": "They welcome Him with joy;"
+        },
+        {
+          "text": "For their eyes were opened to recognise,"
+        },
+        {
+          "text": "That Jesus was the Christ."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He promised He'd come back again,"
+        },
+        {
+          "text": "In a form of human flesh;"
+        },
+        {
+          "text": "To reveal the secret of His heart"
+        },
+        {
+          "text": "To the very chosen bride."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I recognise my Lord,"
+        },
+        {
+          "text": "I recognise His voice,"
+        },
+        {
+          "text": "I recognise I'm a bride of Christ;"
+        },
+        {
+          "text": "And the thought in His mind."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nThe [F]birds have [Bb]nest to [F]go,\r\nThe [F]foxes [Bb]have holes to [C]go\r\nBut the [F]Son of [Bb]Man has [F]no [Bb]where;\r\nFor [F]His [C]head to [F]lay and go.\r\n\r\n[Verse]\r\nHe [F]knocked at the [Bb]Jewish [F]door;\r\nBut the [F]doors were [Bb]tightly [C]closed,\r\nThey [F]cruci[Bb]fied Him [F]on the [Bb]cross,\r\nFor they [F]failed to [C]see who [F]He was.\r\n\r\n[Verse]\r\nThey [F]cruci[Bb]fied the [F]Lord;\r\nThey re[Bb]jected the [F]King,\r\nBut it's the plan of redemption;\r\nBy the [F]Lamb [C]of [F]God.\r\n\r\n[Verse]\r\nHe [F]came to the [Bb]Gentile [F]Bride\r\nThey [Bb]welcome [F]Him with [C]joy;\r\nFor their [F]eyes were [Bb]opened to [F]recognise,\r\nThat [F]Jesus [C]was the [F]Christ.\r\n\r\n[Verse]\r\nHe promised He'd come back again,\r\nIn a [F]form of [Bb]human [C]flesh;\r\nTo re[F]veal the [Bb]secret [F]of His [Bb]heart\r\nTo the [F]very [C]chosen [F]bride.\r\n\r\n[Verse]\r\nI [F]recognise [Bb]my [F]Lord,\r\nI [F]recognise [Bb]His [C]voice,\r\nI recognise I'm a bride of Christ;\r\nAnd the [F]thought [C]in His [F]mind.",
+  "lyrics": "[Verse]\r\nThe birds have nest to go,\r\nThe foxes have holes to go\r\nBut the Son of Man has no where;\r\nFor His head to lay and go.\r\n\r\n[Verse]\r\nHe knocked at the Jewish door;\r\nBut the doors were tightly closed,\r\nThey crucified Him on the cross,\r\nFor they failed to see who He was.\r\n\r\n[Verse]\r\nThey crucified the Lord;\r\nThey rejected the King,\r\nBut it's the plan of redemption;\r\nBy the Lamb of God.\r\n\r\n[Verse]\r\nHe came to the Gentile Bride\r\nThey welcome Him with joy;\r\nFor their eyes were opened to recognise,\r\nThat Jesus was the Christ.\r\n\r\n[Verse]\r\nHe promised He'd come back again,\r\nIn a form of human flesh;\r\nTo reveal the secret of His heart\r\nTo the very chosen bride.\r\n\r\n[Verse]\r\nI recognise my Lord,\r\nI recognise His voice,\r\nI recognise I'm a bride of Christ;\r\nAnd the thought in His mind.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

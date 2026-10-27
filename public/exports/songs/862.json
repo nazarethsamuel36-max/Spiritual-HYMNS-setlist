@@ -1,315 +1,113 @@
 {
-  "id" : 862,
-  "songNumber" : 250,
-  "title" : "I LOVE THE NAME OF JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I love the name of Jesus, King of my heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "He is everything to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I bless the name of Jesus, reign in my life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Show the Father's love so free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Spirit of Love, Spirit of Power,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Shine through eternity,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I praise the name of Jesus, Light of the world,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Let me walk each day with Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I love the name of Jesus, risen above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "And He loves and prays for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I bless the name of Jesus, ruling on high,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "With a glorious majesty.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Spirit of Love, Spirit of Power,"
-    }, {
-      "text" : "Shine through eternity.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I praise the name of Jesus, Lord of my life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "For He died to set me free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I love the name of Jesus, Splendour of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "And His face I long to see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I bless the name of Jesus, Shepherd of men,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "By His side I now can be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Spirit of Love, Spirit of Power,"
-    }, {
-      "text" : "Shine through eternity."
-    }, {
-      "text" : "I praise the name of Jesus, for He is Love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "And that Love He gives to me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 862,
+  "songNumber": 250,
+  "title": "I LOVE THE NAME OF JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I love the name of Jesus, King of my heart,"
+        },
+        {
+          "text": "He is everything to me,"
+        },
+        {
+          "text": "I bless the name of Jesus, reign in my life,"
+        },
+        {
+          "text": "Show the Father's love so free."
+        },
+        {
+          "text": "Spirit of Love, Spirit of Power,"
+        },
+        {
+          "text": "Shine through eternity,"
+        },
+        {
+          "text": "I praise the name of Jesus, Light of the world,"
+        },
+        {
+          "text": "Let me walk each day with Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I love the name of Jesus, risen above,"
+        },
+        {
+          "text": "And He loves and prays for me,"
+        },
+        {
+          "text": "I bless the name of Jesus, ruling on high,"
+        },
+        {
+          "text": "With a glorious majesty."
+        },
+        {
+          "text": "Spirit of Love, Spirit of Power,"
+        },
+        {
+          "text": "Shine through eternity."
+        },
+        {
+          "text": "I praise the name of Jesus, Lord of my life,"
+        },
+        {
+          "text": "For He died to set me free."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I love the name of Jesus, Splendour of God,"
+        },
+        {
+          "text": "And His face I long to see,"
+        },
+        {
+          "text": "I bless the name of Jesus, Shepherd of men,"
+        },
+        {
+          "text": "By His side I now can be."
+        },
+        {
+          "text": "Spirit of Love, Spirit of Power,"
+        },
+        {
+          "text": "Shine through eternity."
+        },
+        {
+          "text": "I praise the name of Jesus, for He is Love,"
+        },
+        {
+          "text": "And that Love He gives to me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nI [F]love the name of [Bb]Jesus, [F]King of my [C]heart,\r\n[F]He is [Bb]everything to [C]me,\r\nI [F]bless the name of [Bb]Jesus, [F]reign in my [C]life,\r\n[F]Show the [Bb]Father's [C]love so [F]free.\r\n[Bb]Spirit of Love, [F]Spirit of Power,\r\n[Bb]Shine through eter[C]nity,\r\nI [F]praise the name of [Bb]Jesus, [F]Light of the [C]world,\r\n[F]Let me [Bb]walk each [C]day with [F]Thee.\r\n\r\n[Verse]\r\nI [F]love the name of [Bb]Jesus, [F]risen a[C]bove,\r\nAnd [F]He [Bb]loves and [C]prays for me,\r\nI [F]bless the name of [Bb]Jesus, [F]ruling on [C]high,\r\nWith a [Bb]glorious [C]majes[F]ty.\r\nSpirit of Love, Spirit of Power,\r\n[Bb]Shine through eter[C]nity.\r\nI [F]praise the name of [Bb]Jesus, [F]Lord of my [C]life,\r\nFor [F]He [Bb]died to [C]set me [F]free.\r\n\r\n[Verse]\r\nI [F]love the name of [Bb]Jesus, [F]Splendour of [C]God,\r\nAnd [F]His [Bb]face I [C]long to see,\r\nI [F]bless the name of [Bb]Jesus, [F]Shepherd of [C]men,\r\nBy [F]His [Bb]side I [C]now can [F]be.\r\nSpirit of Love, Spirit of Power,\r\nShine through eternity.\r\nI [F]praise the name of [Bb]Jesus, [F]for He is [C]Love,\r\nAnd [F]that [Bb]Love He [C]gives to [F]me.",
+  "lyrics": "[Verse]\r\nI love the name of Jesus, King of my heart,\r\nHe is everything to me,\r\nI bless the name of Jesus, reign in my life,\r\nShow the Father's love so free.\r\nSpirit of Love, Spirit of Power,\r\nShine through eternity,\r\nI praise the name of Jesus, Light of the world,\r\nLet me walk each day with Thee.\r\n\r\n[Verse]\r\nI love the name of Jesus, risen above,\r\nAnd He loves and prays for me,\r\nI bless the name of Jesus, ruling on high,\r\nWith a glorious majesty.\r\nSpirit of Love, Spirit of Power,\r\nShine through eternity.\r\nI praise the name of Jesus, Lord of my life,\r\nFor He died to set me free.\r\n\r\n[Verse]\r\nI love the name of Jesus, Splendour of God,\r\nAnd His face I long to see,\r\nI bless the name of Jesus, Shepherd of men,\r\nBy His side I now can be.\r\nSpirit of Love, Spirit of Power,\r\nShine through eternity.\r\nI praise the name of Jesus, for He is Love,\r\nAnd that Love He gives to me.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

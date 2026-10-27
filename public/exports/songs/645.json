@@ -1,133 +1,77 @@
 {
-  "id" : 645,
-  "songNumber" : 338,
-  "title" : "HOLY SPIRIT THOU ART WELCOME IN THIS PLACE",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Holy Spirit Thou art welcome in this place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Holy Spirit Thou art welcome in this place,"
-    }, {
-      "text" : "Omnipotent Father of Mercy and Grace,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Thou art welcome in this place.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Lord in Thy presence there's healing divine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "No other power can save Lord, but Thine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Holy Spirit Thou art welcome in this place,"
-    }, {
-      "text" : "Thou art welcome in this place."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Fill all the hungry and empty within,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Restore us, oh Father revive us again,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Holy Spirit Thou art welcome in this place,"
-    }, {
-      "text" : "Thou art welcome in this place."
-    } ]
-  } ]
+  "id": 645,
+  "songNumber": 338,
+  "title": "HOLY SPIRIT THOU ART WELCOME IN THIS PLACE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy Spirit Thou art welcome in this place,"
+        },
+        {
+          "text": "Holy Spirit Thou art welcome in this place,"
+        },
+        {
+          "text": "Omnipotent Father of Mercy and Grace,"
+        },
+        {
+          "text": "Thou art welcome in this place."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lord in Thy presence there's healing divine,"
+        },
+        {
+          "text": "No other power can save Lord, but Thine,"
+        },
+        {
+          "text": "Holy Spirit Thou art welcome in this place,"
+        },
+        {
+          "text": "Thou art welcome in this place."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Fill all the hungry and empty within,"
+        },
+        {
+          "text": "Restore us, oh Father revive us again,"
+        },
+        {
+          "text": "Holy Spirit Thou art welcome in this place,"
+        },
+        {
+          "text": "Thou art welcome in this place."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Holy Spirit [G]Thou art [D]welcome in this [A]place,\nHoly Spirit Thou art welcome in this place,\nOm[G]nipotent Father of [D]Mercy and [G]Grace,\n[D]Thou art [A]welcome in this [D]place.\n\n[Verse]\n[D]Lord in Thy [G]presence there's [D]healing di[A]vine,\nNo [D]other [G]power can [D]save Lord, but [A]Thine,\nHoly Spirit Thou art welcome in this place,\nThou art welcome in this place.\n\n[Verse]\n[D]Fill all the [G]hungry and [D]empty with[A]in,\nRe[D]store us, oh [G]Father re[D]vive us a[A]gain,\nHoly Spirit Thou art welcome in this place,\nThou art welcome in this place.",
+  "lyrics": "[Verse]\nHoly Spirit Thou art welcome in this place,\nHoly Spirit Thou art welcome in this place,\nOmnipotent Father of Mercy and Grace,\nThou art welcome in this place.\n\n[Verse]\nLord in Thy presence there's healing divine,\nNo other power can save Lord, but Thine,\nHoly Spirit Thou art welcome in this place,\nThou art welcome in this place.\n\n[Verse]\nFill all the hungry and empty within,\nRestore us, oh Father revive us again,\nHoly Spirit Thou art welcome in this place,\nThou art welcome in this place.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

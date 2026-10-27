@@ -1,287 +1,113 @@
 {
-  "id" : 877,
-  "songNumber" : 265,
-  "title" : "ALL IS WELL",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All is Well, all is well,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "We have heard the Message 'Shalom'",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "All is well,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "There is a place of perfect rest",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Behind the Inner Veil,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "So rest, Little Bride, rest",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "For all is well.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "There's a story in the Bible of Elisha,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Shunamite woman and her son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "The woman found favour with God",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And He gave her a son.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "While working in the field,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The little boy died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "But the woman's faith never failed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Even in death she testified",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "That all is well.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Now things have not worked out",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Like God's people thought,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "For we still hear from",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "The Greatest Battle Ever Fought'!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "We must have the faith of Abraham,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Knowing God's Word never fails,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "If we trust in Him we will find",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "That all is well."
-    } ]
-  } ]
+  "id": 877,
+  "songNumber": 265,
+  "title": "ALL IS WELL",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All is Well, all is well,"
+        },
+        {
+          "text": "We have heard the Message ''Shalom'"
+        },
+        {
+          "text": "All is well,"
+        },
+        {
+          "text": "There is a place of perfect rest"
+        },
+        {
+          "text": "Behind the Inner Veil,"
+        },
+        {
+          "text": "So rest, Little Bride, rest"
+        },
+        {
+          "text": "For all is well."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "There's a story in the Bible of Elisha,"
+        },
+        {
+          "text": "Shunamite woman and her son,"
+        },
+        {
+          "text": "The woman found favour with God"
+        },
+        {
+          "text": "And He gave her a son."
+        },
+        {
+          "text": "While working in the field,"
+        },
+        {
+          "text": "The little boy died,"
+        },
+        {
+          "text": "But the woman's faith never failed,"
+        },
+        {
+          "text": "Even in death she testified"
+        },
+        {
+          "text": "That all is well."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Now things have not worked out"
+        },
+        {
+          "text": "Like God's people thought,"
+        },
+        {
+          "text": "For we still hear from"
+        },
+        {
+          "text": "The Greatest Battle Ever Fought'!"
+        },
+        {
+          "text": "We must have the faith of Abraham,"
+        },
+        {
+          "text": "Knowing God's Word never fails,"
+        },
+        {
+          "text": "If we trust in Him we will find"
+        },
+        {
+          "text": "That all is well."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[E]All is [A]Well, [E]all is well,\r\nWe have [E]heard the Message ''[A]Sha[E]lom'\r\n[E]All is [B]well,\r\nThere [E]is a [A]place of perfect [E]rest\r\nBe[E]hind the Inner [B]Veil,\r\nSo [E]rest, Little [A]Bride, [E]rest\r\nFor [E]all [B]is [E]well.\r\n\r\n[Verse]\r\nThere's a [E]story in the [A]Bible of E[E]lisha,\r\n[E]Shunamite [A]woman and her [B]son,\r\nThe [E]woman found [A]favour with [E]God\r\nAnd [E]He [B]gave her a [E]son.\r\nWhile [E]working [A]in the [E]field,\r\nThe [E]little [A]boy [B]died,\r\nBut the [E]woman's [A]faith never [E]failed,\r\nEven in [E]death she [B]testified\r\nThat [E]all [B]is [E]well.\r\n\r\n[Verse]\r\nNow [E]things have not [A]worked [E]out\r\nLike [E]God's [A]people [B]thought,\r\nFor we [E]still hear [A]from\r\nThe [E]Greatest Battle [B]Ever Fought'!\r\nWe [E]must have the [A]faith of [E]Abraham,\r\n[E]Knowing God's [B]Word never [E]fails,\r\nIf [E]we [A]trust in [E]Him we will find\r\nThat all is well.",
+  "lyrics": "[Verse]\r\nAll is Well, all is well,\r\nWe have heard the Message ''Shalom'\r\nAll is well,\r\nThere is a place of perfect rest\r\nBehind the Inner Veil,\r\nSo rest, Little Bride, rest\r\nFor all is well.\r\n\r\n[Verse]\r\nThere's a story in the Bible of Elisha,\r\nShunamite woman and her son,\r\nThe woman found favour with God\r\nAnd He gave her a son.\r\nWhile working in the field,\r\nThe little boy died,\r\nBut the woman's faith never failed,\r\nEven in death she testified\r\nThat all is well.\r\n\r\n[Verse]\r\nNow things have not worked out\r\nLike God's people thought,\r\nFor we still hear from\r\nThe Greatest Battle Ever Fought'!\r\nWe must have the faith of Abraham,\r\nKnowing God's Word never fails,\r\nIf we trust in Him we will find\r\nThat all is well.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

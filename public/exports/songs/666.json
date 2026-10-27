@@ -1,252 +1,99 @@
 {
-  "id" : 666,
-  "songNumber" : 359,
-  "title" : "LEAD KINDLY LIGHT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Lead, kindly Light, amidst thâ€™encircling gloom,"
-    }, {
-      "text" : "Lead Thou me on!",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "The night is dark, and I am far from home,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Lead Thou me on !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Keep Thou my feet; I do not ask to see",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "The distant scene; one step enough for me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I was not ever thus, nor prayed that Thou",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Shouldst lead me on;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I loved to choose and see my path; but now",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Lead Thou me on!"
-    }, {
-      "text" : "I loved the garish day, and, spite of fears,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Pride ruled my will",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Remember not past years !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "So long thy power hath blest me, sure it still",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Will lead me on.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Oâ€™er moor and fen, oâ€™er crag and torrent, till"
-    }, {
-      "text" : "The night is gone,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "And with the morn those distant faces smile,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Which I have loved long since, and lost awhile.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 666,
+  "songNumber": 359,
+  "title": "LEAD KINDLY LIGHT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lead, kindly Light, amidst th'encircling gloom,"
+        },
+        {
+          "text": "Lead Thou me on!"
+        },
+        {
+          "text": "The night is dark, and I am far from home,"
+        },
+        {
+          "text": "Lead Thou me on !"
+        },
+        {
+          "text": "Keep Thou my feet; I do not ask to see"
+        },
+        {
+          "text": "The distant scene; one step enough for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I was not ever thus, nor prayed that Thou"
+        },
+        {
+          "text": "Shouldst lead me on;"
+        },
+        {
+          "text": "I loved to choose and see my path; but now"
+        },
+        {
+          "text": "Lead Thou me on!"
+        },
+        {
+          "text": "I loved the garish day, and, spite of fears,"
+        },
+        {
+          "text": "Pride ruled my will"
+        },
+        {
+          "text": "Remember not past years !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "So long thy power hath blest me, sure it still"
+        },
+        {
+          "text": "Will lead me on."
+        },
+        {
+          "text": "O'er moor and fen, o'er crag and torrent, till"
+        },
+        {
+          "text": "The night is gone,"
+        },
+        {
+          "text": "And with the morn those distant faces smile,"
+        },
+        {
+          "text": "Which I have loved long since, and lost awhile."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nLead, kindly Light, amidst th'encircling gloom,\n[G]Lead Thou [A]me [D]on!\nThe [D]night is [A]dark, and [D]I am [G]far from [D]home,\n[G]Lead Thou [A]me [D]on !\n[A]Keep Thou my [D]feet; I [G]do not ask to [D]see\nThe [G]distant [D]scene; [A]one step e[D]nough for me.\n\n[Verse]\nI [D]was not [A]ever [D]thus, nor [G]prayed that [D]Thou\nShouldst [G]lead me [A]on;\nI [D]loved to [A]choose and [D]see my [G]path; but [D]now\nLead Thou me on!\nI [A]loved the [D]garish [G]day, and, spite of [D]fears,\n[G]Pride ruled my [D]will\nRe[A]member not [D]past [A]years [D]!\n\n[Verse]\n[D]So long thy [A]power hath [D]blest me, [G]sure it [D]still\nWill [G]lead me [A]on.\nO'er moor and fen, o'er crag and torrent, till\nThe [G]night is [A]gone,\nAnd [A]with the [D]morn those [G]distant faces [D]smile,\nWhich [G]I have [D]loved long [A]since, and [D]lost awhile.",
+  "lyrics": "[Verse]\nLead, kindly Light, amidst th'encircling gloom,\nLead Thou me on!\nThe night is dark, and I am far from home,\nLead Thou me on !\nKeep Thou my feet; I do not ask to see\nThe distant scene; one step enough for me.\n\n[Verse]\nI was not ever thus, nor prayed that Thou\nShouldst lead me on;\nI loved to choose and see my path; but now\nLead Thou me on!\nI loved the garish day, and, spite of fears,\nPride ruled my will\nRemember not past years !\n\n[Verse]\nSo long thy power hath blest me, sure it still\nWill lead me on.\nO'er moor and fen, o'er crag and torrent, till\nThe night is gone,\nAnd with the morn those distant faces smile,\nWhich I have loved long since, and lost awhile.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust",
+    "Funeral"
+  ]
 }

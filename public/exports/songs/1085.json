@@ -1,132 +1,77 @@
 {
-  "id" : 1085,
-  "songNumber" : 107,
-  "title" : "आ पवित्र आत्मा तू आ जा",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आ पवित्र आत्मा तू आ जा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "आ मैं प्रार्थना करूँ",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "और अपनी शक्ती ले आ जा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "आ अपने नम्रता में आ ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "ध्यान अपने बच्चों को दे दे,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "अंधो की रोशनी तू बन,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "निर्बल को शक्ती तू दे दे,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "ले मेरी आत्मा तन मन ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "सुखी की में चश्मा बहा दे,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "मुरझाये मन में तू आ,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "आ अपने सामर्थ्य में आ जा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "छुले संपूर्ण बना ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 1085,
+  "songNumber": 107,
+  "title": "आ पवित्र आत्मा तू आ जा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आ पवित्र आत्मा तू आ जा,"
+        },
+        {
+          "text": "आ मैं प्रार्थना करूँ"
+        },
+        {
+          "text": "और अपनी शक्ती ले आ जा,"
+        },
+        {
+          "text": "आ अपने नम्रता में आ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ध्यान अपने बच्चों को दे दे,"
+        },
+        {
+          "text": "अंधो की रोशनी तू बन,"
+        },
+        {
+          "text": "निर्बल को शक्ती तू दे दे,"
+        },
+        {
+          "text": "ले मेरी आत्मा तन मन ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सुखी की में चश्मा बहा दे,"
+        },
+        {
+          "text": "मुरझाये मन में तू आ,"
+        },
+        {
+          "text": "आ अपने सामर्थ्य में आ जा,"
+        },
+        {
+          "text": "छुले संपूर्ण बना ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]आ पवित्र आत्मा [G]तू आ जा,\n[A]आ मैं प्रार्थना क[D]रूँ\n[D]और अपनी शक्ती [G]ले आ जा,\n[A]आ अपने नम्रता में [D]आ ।\n\n[Verse]\n[D]ध्यान अपने बच्चों [G]को दे दे,\n[A]अंधो की रोशनी तू [D]बन,\n[D]निर्बल को शक्ती [G]तू दे दे,\n[A]ले मेरी आत्मा तन [D]मन ।\n\n[Verse]\n[D]सुखी की में चश्मा [G]बहा दे,\n[A]मुरझाये मन में तू [D]आ,\n[D]आ अपने सामर्थ्य [G]में आ जा,\n[A]छुले संपूर्ण ब[D]ना ।",
+  "lyrics": "[Verse]\nआ पवित्र आत्मा तू आ जा,\nआ मैं प्रार्थना करूँ\nऔर अपनी शक्ती ले आ जा,\nआ अपने नम्रता में आ ।\n\n[Verse]\nध्यान अपने बच्चों को दे दे,\nअंधो की रोशनी तू बन,\nनिर्बल को शक्ती तू दे दे,\nले मेरी आत्मा तन मन ।\n\n[Verse]\nसुखी की में चश्मा बहा दे,\nमुरझाये मन में तू आ,\nआ अपने सामर्थ्य में आ जा,\nछुले संपूर्ण बना ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

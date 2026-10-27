@@ -1,78 +1,53 @@
 {
-  "id" : 962,
-  "songNumber" : 84,
-  "title" : "YOU ARE MY HIDING PLACE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You are my hiding place,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "You always fill my heart,",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "With songs of deliverance,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "E",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Whenever I am afraid,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I will trust in You,",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 16
-      }, {
-        "chord" : "Am",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I will trust in You,"
-    }, {
-      "text" : "Let the weak say, \"I am strong,\"",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "In the strength of my God.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "Am",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 962,
+  "songNumber": 84,
+  "title": "YOU ARE MY HIDING PLACE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Dm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "You are my hiding place,"
+        },
+        {
+          "text": "You always fill my heart,"
+        },
+        {
+          "text": "With songs of deliverance,"
+        },
+        {
+          "text": "Whenever I am afraid,"
+        },
+        {
+          "text": "I will trust in You,"
+        },
+        {
+          "text": "I will trust in You,"
+        },
+        {
+          "text": "Let the weak say, \"I am strong,\""
+        },
+        {
+          "text": "In the strength of my God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[Dm]You are my hiding place,\r\n[Gm]You always fill my heart,\r\nWith [C]songs of de[F]liverance,[A]\r\n[Dm]Whenever I am afraid,\r\n[Gm]I will trust in [A][Dm]You,\r\nI will trust in You,\r\nLet the [Gm]weak say, \"I am [C]strong,\"\r\nIn the [F]strength of my [Dm]God.",
+  "lyrics": "[Verse 1]\r\nYou are my hiding place,\r\nYou always fill my heart,\r\nWith songs of deliverance,\r\nWhenever I am afraid,\r\nI will trust in You,\r\nI will trust in You,\r\nLet the weak say, \"I am strong,\"\r\nIn the strength of my God.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

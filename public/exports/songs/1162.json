@@ -1,206 +1,107 @@
 {
-  "id" : 1162,
-  "songNumber" : 184,
-  "title" : "तेरी शिरीन आवाज, मैं सुनता हूँ खुदा",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "तेरी शिरीन आवाज, मैं सुनता हूँ खुदा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "बुलाती पास उस चश्मे के,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "सलीब से जो बहा।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आता हूं मसीह, आता तेरे पास,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "धो के साफ कर चश्मे से,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "जो बहता क्रूस से खास।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "आता कमजोर लाचार,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "देख मेरी हालत को,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "नजाकत से कर पाक-औ-साफ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "कि एक भी दाग न हो।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "मसीह, तू बख्शता है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "कामिल प्यार इमान,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "कामिल उम्मेद और चैन आराम,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "जमीन पर और आसमान।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "तहसीन कफ्फारे को,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तहसीन मुफ्त फजल को,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "तहसीन मसिह की बख्शिश को,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "अब मिल के सब कहो।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 1162,
+  "songNumber": 184,
+  "title": "तेरी शिरीन आवाज, मैं सुनता हूँ खुदा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरी शिरीन आवाज, मैं सुनता हूँ खुदा,"
+        },
+        {
+          "text": "बुलाती पास उस चश्मे के,"
+        },
+        {
+          "text": "सलीब से जो बहा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आता हूं मसीह, आता तेरे पास,"
+        },
+        {
+          "text": "धो के साफ कर चश्मे से,"
+        },
+        {
+          "text": "जो बहता क्रूस से खास।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आता कमजोर लाचार,"
+        },
+        {
+          "text": "देख मेरी हालत को,"
+        },
+        {
+          "text": "नजाकत से कर पाक-औ-साफ,"
+        },
+        {
+          "text": "कि एक भी दाग न हो।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मसीह, तू बख्शता है,"
+        },
+        {
+          "text": "कामिल प्यार इमान,"
+        },
+        {
+          "text": "कामिल उम्मेद और चैन आराम,"
+        },
+        {
+          "text": "जमीन पर और आसमान।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तहसीन कफ्फारे को,"
+        },
+        {
+          "text": "तहसीन मुफ्त फजल को,"
+        },
+        {
+          "text": "तहसीन मसिह की बख्शिश को,"
+        },
+        {
+          "text": "अब मिल के सब कहो।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]तेरी शिरीन आवाज, मैं [G]सुनता हूँ खु[D]दा,\n[G]बुलाती पास उस [D]चश्मे के,\n[A]सलीब से जो ब[D]हा।\n\n[Verse]\n[D]आता हूं मसीह, आता [G]तेरे पा[D]स,\n[G]धो के साफ कर [D]चश्मे से,\n[A]जो बहता क्रूस से खा[D]स।\n\n[Verse]\n[D]आता कमजोर ला[G]चा[D]र,\n[G]देख मेरी हाल[D]त को,\n[G]नजाकत से कर [D]पाक-औ-साफ,\n[A]कि एक भी दाग न [D]हो।\n\n[Verse]\n[D]मसीह, तू बख्शता [G]है,\n[G]कामिल प्यार इ[D]मान,\n[G]कामिल उम्मेद और [D]चैन आराम,\n[A]जमीन पर और आस[D]मान।\n\n[Verse]\n[D]तहसीन कफ्फा[G]रे [D]को,\n[G]तहसीन मुफ्त फ[D]जल को,\n[G]तहसीन मसिह की ब[D]ख्शिश को,\n[A]अब मिल के सब क[D]हो।",
+  "lyrics": "[Verse]\nतेरी शिरीन आवाज, मैं सुनता हूँ खुदा,\nबुलाती पास उस चश्मे के,\nसलीब से जो बहा।\n\n[Verse]\nआता हूं मसीह, आता तेरे पास,\nधो के साफ कर चश्मे से,\nजो बहता क्रूस से खास।\n\n[Verse]\nआता कमजोर लाचार,\nदेख मेरी हालत को,\nनजाकत से कर पाक-औ-साफ,\nकि एक भी दाग न हो।\n\n[Verse]\nमसीह, तू बख्शता है,\nकामिल प्यार इमान,\nकामिल उम्मेद और चैन आराम,\nजमीन पर और आसमान।\n\n[Verse]\nतहसीन कफ्फारे को,\nतहसीन मुफ्त फजल को,\nतहसीन मसिह की बख्शिश को,\nअब मिल के सब कहो।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

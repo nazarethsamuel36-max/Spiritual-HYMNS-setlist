@@ -1,162 +1,114 @@
 {
-  "id" : 754,
-  "songNumber" : 142,
-  "title" : "THERE SHALL BE SHOWERS OF BLESSING",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "There shall be showers of blessing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "This is the promise of love;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "There shall be seasons refreshing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Sent from the Saviour above.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Showers of blessing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Showers of blessing we need;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Mercydrops round us are falling,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "But for the showers we plead.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "There shall be showers of blessing,"
-    }, {
-      "text" : "Precious reviving again;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Over the hills and the valleys,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Sound of abundance of rain.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "There shall be showers of blessing,"
-    }, {
-      "text" : "Send them upon us, O Lord;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Grant to us now a refreshing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Come, and now honor Thy Word.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "There shall be showers of blessing,"
-    }, {
-      "text" : "Oh, that today they might fall,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Now as to God we're confessing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Now as on Jesus we call !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 754,
+  "songNumber": 142,
+  "title": "THERE SHALL BE SHOWERS OF BLESSING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There shall be showers of blessing,"
+        },
+        {
+          "text": "This is the promise of love;"
+        },
+        {
+          "text": "There shall be seasons refreshing,"
+        },
+        {
+          "text": "Sent from the Saviour above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Showers of blessing,"
+        },
+        {
+          "text": "Showers of blessing we need;"
+        },
+        {
+          "text": "Mercydrops round us are falling,"
+        },
+        {
+          "text": "But for the showers we plead."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "There shall be showers of blessing,"
+        },
+        {
+          "text": "Precious reviving again;"
+        },
+        {
+          "text": "Over the hills and the valleys,"
+        },
+        {
+          "text": "Sound of abundance of rain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "There shall be showers of blessing,"
+        },
+        {
+          "text": "Send them upon us, O Lord;"
+        },
+        {
+          "text": "Grant to us now a refreshing,"
+        },
+        {
+          "text": "Come, and now honor Thy Word."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "There shall be showers of blessing,"
+        },
+        {
+          "text": "Oh, that today they might fall,"
+        },
+        {
+          "text": "Now as to God we're confessing,"
+        },
+        {
+          "text": "Now as on Jesus we call !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]There shall be showers of blessing,\n[G]This is the promise of [D]love;\n[D]There shall be seasons refreshing,\n[A]Sent from the Saviour a[D]bove.\n\n[Verse 2]\n[D]Showers of blessing,\n[G]Showers of blessing we [D]need;\n[D]Mercydrops round us are falling,\n[A]But for the showers we [D]plead.\n\n[Verse 3]\nThere shall be showers of blessing,\n[G]Precious reviving a[D]gain;\n[D]Over the hills and the valleys,\n[A]Sound of abundance of [D]rain.\n\n[Verse 4]\nThere shall be showers of blessing,\n[G]Send them upon us, O [D]Lord;\n[D]Grant to us now a refreshing,\n[A]Come, and now honor Thy [D]Word.\n\n[Verse 5]\nThere shall be showers of blessing,\n[G]Oh, that today they might [D]fall,\n[D]Now as to God we're confessing,\n[A]Now as on Jesus we [D]call !",
+  "lyrics": "[Verse 1]\nThere shall be showers of blessing,\nThis is the promise of love;\nThere shall be seasons refreshing,\nSent from the Saviour above.\n\n[Verse 2]\nShowers of blessing,\nShowers of blessing we need;\nMercydrops round us are falling,\nBut for the showers we plead.\n\n[Verse 3]\nThere shall be showers of blessing,\nPrecious reviving again;\nOver the hills and the valleys,\nSound of abundance of rain.\n\n[Verse 4]\nThere shall be showers of blessing,\nSend them upon us, O Lord;\nGrant to us now a refreshing,\nCome, and now honor Thy Word.\n\n[Verse 5]\nThere shall be showers of blessing,\nOh, that today they might fall,\nNow as to God we're confessing,\nNow as on Jesus we call !",
+  "is_active": true,
+  "updated_at": "2026-09-16T10:57:18.259112+00:00",
+  "genres": [
+    "Worship",
+    "Blessings",
+    "Wedding"
+  ]
 }

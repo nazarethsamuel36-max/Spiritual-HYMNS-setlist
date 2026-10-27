@@ -1,305 +1,149 @@
 {
-  "id" : 797,
-  "songNumber" : 185,
-  "title" : "ONE OF THEM ONE OF THEM",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "There are people almost everywhere,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Whose hearts are all aflame",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "With the fire that fell at Pentecost,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Which cleansed and made them clean ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "It is burning now within my heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "All glory to his name !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I'm so glad that I can say I'm one of them.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "One of them, one of them,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I am glad that I can say I'm one of them ;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "One of them, one of them,"
-    }, {
-      "text" : "I'm so glad that I can say I'm one of them."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Though these people may not learned be,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Nor boast of wordly fame,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "They have all received their Pentecost,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Baptized in Jesus' name ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And are telling now, both far and wide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "His power is yet the same,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I'm so glad that I can say I'm one of them."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "They were gathered in the upper room,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "All praying in His name,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "They were baptized with the Holy Ghost,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And pow'r for service came ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Now what he did for them that day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "He'll do for you the same,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I'm so glad that I can say I'm one of them."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Come, my brother, seek this blessing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "That will cleanse your heart from sin,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "That will start the joy-bells ringing",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And will keep the soul aflame ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "It is burning now within my heart,"
-    }, {
-      "text" : "All glory to His name,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I'm so glad that I can say I'm one of them."
-    } ]
-  } ]
+  "id": 797,
+  "songNumber": 185,
+  "title": "ONE OF THEM ONE OF THEM",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There are people almost everywhere,"
+        },
+        {
+          "text": "Whose hearts are all aflame"
+        },
+        {
+          "text": "With the fire that fell at Pentecost,"
+        },
+        {
+          "text": "Which cleansed and made them clean ;"
+        },
+        {
+          "text": "It is burning now within my heart,"
+        },
+        {
+          "text": "All glory to his name !"
+        },
+        {
+          "text": "Im so glad that I can say Im one of them."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "One of them, one of them,"
+        },
+        {
+          "text": "I am glad that I can say Im one of them ;"
+        },
+        {
+          "text": "One of them, one of them,"
+        },
+        {
+          "text": "Im so glad that I can say Im one of them."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Though these people may not learned be,"
+        },
+        {
+          "text": "Nor boast of wordly fame,"
+        },
+        {
+          "text": "They have all received their Pentecost,"
+        },
+        {
+          "text": "Baptized in Jesus name ;"
+        },
+        {
+          "text": "And are telling now, both far and wide,"
+        },
+        {
+          "text": "His power is yet the same,"
+        },
+        {
+          "text": "Im so glad that I can say Im one of them."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "They were gathered in the upper room,"
+        },
+        {
+          "text": "All praying in His name,"
+        },
+        {
+          "text": "They were baptized with the Holy Ghost,"
+        },
+        {
+          "text": "And powr for service came ;"
+        },
+        {
+          "text": "Now what he did for them that day"
+        },
+        {
+          "text": "Hell do for you the same,"
+        },
+        {
+          "text": "Im so glad that I can say Im one of them."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Come, my brother, seek this blessing,"
+        },
+        {
+          "text": "That will cleanse your heart from sin,"
+        },
+        {
+          "text": "That will start the joy-bells ringing"
+        },
+        {
+          "text": "And will keep the soul aflame ;"
+        },
+        {
+          "text": "It is burning now within my heart,"
+        },
+        {
+          "text": "All glory to His name,"
+        },
+        {
+          "text": "Im so glad that I can say Im one of them."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nThere are [G]people almost [C]every[G]where,\r\nWhose [C]hearts are all a[G]flame\r\nWith the [G]fire that fell at [D]Pentecost,\r\nWhich [G]cleansed and made them [D]clean ;\r\nIt is [G]burning now with[C]in my [G]heart,\r\nAll [C]glory to his [G]name !\r\nIm so [G][C]glad that I can [D]say Im one of [G]them.\r\n\r\n[Chorus]\r\n[G]One of them, one of them,\r\nI am [C]glad that I can [G]say Im one of [D]them ;\r\nOne of them, one of them,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 2]\r\nThough [G]these people may not [C]learned [G]be,\r\nNor [C]boast of wordly [G]fame,\r\nThey have [G]all received their [D]Pentecost,\r\nBap[G]tized in Jesus [D]name ;\r\nAnd are [G]telling now, both [C]far and [G]wide,\r\nHis [C]power is yet the [G]same,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 3]\r\nThey were [G]gathered in the [C]upper [G]room,\r\nAll [C]praying in His [G]name,\r\nThey were [G]baptized with the [D]Holy Ghost,\r\nAnd [G]powr for service [D]came ;\r\nNow what [G]he did for [C]them that [G]day\r\nHell [C]do for you the [G]same,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 4]\r\n[G]Come, my brother, [C]seek this [G]blessing,\r\nThat will [C]cleanse your heart from [G]sin,\r\nThat will [G]start the joy-bells [D]ringing\r\nAnd will [G]keep the soul a[D]flame ;\r\nIt is burning now within my heart,\r\nAll [C]glory to His [G]name,\r\nIm so glad that I can say Im one of them.",
+  "lyrics": "[Verse 1]\r\nThere are people almost everywhere,\r\nWhose hearts are all aflame\r\nWith the fire that fell at Pentecost,\r\nWhich cleansed and made them clean ;\r\nIt is burning now within my heart,\r\nAll glory to his name !\r\nIm so glad that I can say Im one of them.\r\n\r\n[Chorus]\r\nOne of them, one of them,\r\nI am glad that I can say Im one of them ;\r\nOne of them, one of them,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 2]\r\nThough these people may not learned be,\r\nNor boast of wordly fame,\r\nThey have all received their Pentecost,\r\nBaptized in Jesus name ;\r\nAnd are telling now, both far and wide,\r\nHis power is yet the same,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 3]\r\nThey were gathered in the upper room,\r\nAll praying in His name,\r\nThey were baptized with the Holy Ghost,\r\nAnd powr for service came ;\r\nNow what he did for them that day\r\nHell do for you the same,\r\nIm so glad that I can say Im one of them.\r\n\r\n[Verse 4]\r\nCome, my brother, seek this blessing,\r\nThat will cleanse your heart from sin,\r\nThat will start the joy-bells ringing\r\nAnd will keep the soul aflame ;\r\nIt is burning now within my heart,\r\nAll glory to His name,\r\nIm so glad that I can say Im one of them.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

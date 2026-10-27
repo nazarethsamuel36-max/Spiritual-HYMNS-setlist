@@ -1,118 +1,50 @@
 {
-  "id" : 703,
-  "songNumber" : 27,
-  "title" : "JEHOVAH JIREH",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jehovah, Jireh, my Provider, } 2",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "His grace is sufficient for me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "My God shall supply all my needs",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "According to His riches in glory,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He shall give His angels charge over thee;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Jehovah Jireh cares for me, for me, for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Jehovah Jireh cares for me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 703,
+  "songNumber": 27,
+  "title": "JEHOVAH JIREH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Em",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jehovah, Jireh, my Provider, } 2"
+        },
+        {
+          "text": "His grace is sufficient for me."
+        },
+        {
+          "text": "My God shall supply all my needs"
+        },
+        {
+          "text": "According to His riches in glory,"
+        },
+        {
+          "text": "He shall give His angels charge over thee;"
+        },
+        {
+          "text": "Jehovah Jireh cares for me, for me, for me,"
+        },
+        {
+          "text": "Jehovah Jireh cares for me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]Jehovah, [A]Jireh, my Pro[E]vider, [B]} 2\r\n[E]His grace is [A]sufficient [B]for [E]me.\r\n[E]My God shall sup[A]ply [E]all my [A]needs\r\n[E]According to His [A]riches in [B]glory,\r\n[E]He shall give His [A]angels [E]charge over [A]thee;\r\n[E]Jehovah [A]Jireh [E]cares for [B]me, for [E]me, for me,\r\n[E]Jehovah [B]Jireh cares for [E]me.",
+  "lyrics": "[Verse 1]\r\nJehovah, Jireh, my Provider, } 2\r\nHis grace is sufficient for me.\r\nMy God shall supply all my needs\r\nAccording to His riches in glory,\r\nHe shall give His angels charge over thee;\r\nJehovah Jireh cares for me, for me, for me,\r\nJehovah Jireh cares for me.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

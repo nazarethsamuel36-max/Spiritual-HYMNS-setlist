@@ -1,172 +1,83 @@
 {
-  "id" : 835,
-  "songNumber" : 223,
-  "title" : "JESUS IS THE JOY OF LIVING",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus is the joy of living",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He's the King of life to me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Unto Him my all I'm giving",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "His forevermore to be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "I will do what He commands me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Anywhere He leads, I'll go;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Jesus is the joy of living"
-    }, {
-      "text" : "He's the dearest friend I know.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I have found a wondrous Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Jesus Christ, the soul's delight;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Every blessing of His favour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Fills my heart with hope so bright.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I will do what He commands me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Anywhere He leads, I'll go;"
-    }, {
-      "text" : "Jesus is the joy of living"
-    }, {
-      "text" : "He's the dearest friend I know."
-    } ]
-  } ]
+  "id": 835,
+  "songNumber": 223,
+  "title": "JESUS IS THE JOY OF LIVING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus is the joy of living"
+        },
+        {
+          "text": "He's the King of life to me;"
+        },
+        {
+          "text": "Unto Him my all I'm giving"
+        },
+        {
+          "text": "His forevermore to be."
+        },
+        {
+          "text": "I will do what He commands me"
+        },
+        {
+          "text": "Anywhere He leads, I'll go;"
+        },
+        {
+          "text": "Jesus is the joy of living"
+        },
+        {
+          "text": "He's the dearest friend I know."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I have found a wondrous Saviour,"
+        },
+        {
+          "text": "Jesus Christ, the soul's delight;"
+        },
+        {
+          "text": "Every blessing of His favour"
+        },
+        {
+          "text": "Fills my heart with hope so bright."
+        },
+        {
+          "text": "I will do what He commands me."
+        },
+        {
+          "text": "Anywhere He leads, I'll go;"
+        },
+        {
+          "text": "Jesus is the joy of living"
+        },
+        {
+          "text": "He's the dearest friend I know."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[A]Jesus is the [D]joy of [A]living\r\n[A]He's the King of [E]life to [A]me;\r\n[A]Unto Him my [D]all I'm [A]giving\r\n[A]His for[E]evermore to [A]be.\r\n[A]I will do what [D]He com[A]mands me\r\n[A]Anywhere He [E]leads, I'll [A]go;\r\nJesus is the joy of living\r\n[A]He's the [E]dearest friend I [A]know.\r\n\r\n[Verse]\r\n[A]I have found a [D]wondrous [A]Saviour,\r\n[A]Jesus Christ, the [E]soul's de[A]light;\r\n[A]Every blessing [D]of His [A]favour\r\n[A]Fills my [E]heart with hope so [A]bright.\r\n[A]I will do what [D]He com[A]mands me.\r\nAnywhere He leads, I'll go;\r\nJesus is the joy of living\r\nHe's the dearest friend I know.",
+  "lyrics": "[Verse]\r\nJesus is the joy of living\r\nHe's the King of life to me;\r\nUnto Him my all I'm giving\r\nHis forevermore to be.\r\nI will do what He commands me\r\nAnywhere He leads, I'll go;\r\nJesus is the joy of living\r\nHe's the dearest friend I know.\r\n\r\n[Verse]\r\nI have found a wondrous Saviour,\r\nJesus Christ, the soul's delight;\r\nEvery blessing of His favour\r\nFills my heart with hope so bright.\r\nI will do what He commands me.\r\nAnywhere He leads, I'll go;\r\nJesus is the joy of living\r\nHe's the dearest friend I know.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

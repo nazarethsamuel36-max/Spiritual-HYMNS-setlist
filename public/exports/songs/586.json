@@ -1,34 +1,41 @@
 {
-  "id" : 586,
-  "songNumber" : 40,
-  "title" : "THANK YOU GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Thank you God for sending Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Thank you, Jesus, that you came."
-    }, {
-      "text" : "Holy Spirit, won't you tell me"
-    }, {
-      "text" : "More about His lovely Name."
-    } ]
-  } ]
+  "id": 586,
+  "songNumber": 40,
+  "title": "THANK YOU GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thank you God for sending Jesus."
+        },
+        {
+          "text": "Thank you, Jesus, that you came."
+        },
+        {
+          "text": "Holy Spirit, won't you tell me"
+        },
+        {
+          "text": "More about His lovely Name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[C]Thank you God for [F]sending [C]Jesus.\nThank you, Jesus, that you came.\nHoly Spirit, won't you tell me\nMore about His lovely Name.",
+  "lyrics": "[Verse]\nThank you God for sending Jesus.\nThank you, Jesus, that you came.\nHoly Spirit, won't you tell me\nMore about His lovely Name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

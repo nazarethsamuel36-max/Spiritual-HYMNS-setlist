@@ -1,38 +1,40 @@
 {
-  "id" : 561,
-  "songNumber" : 15,
-  "title" : "REJOICE IN THE LORD",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Rejoice in the Lord always",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And again I say rejoice (Repeat)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Rejoice, rejoice,"
-    }, {
-      "text" : "And again I say rejoice. (Repeat)"
-    } ]
-  } ]
+  "id": 561,
+  "songNumber": 15,
+  "title": "REJOICE IN THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Rejoice in the Lord always"
+        },
+        {
+          "text": "And again I say rejoice (Repeat)"
+        },
+        {
+          "text": "Rejoice, rejoice,"
+        },
+        {
+          "text": "And again I say rejoice. (Repeat)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]Rejoice in the Lord [C]always\n[D]And again I say re[G]joice (Repeat)\nRejoice, rejoice,\nAnd again I say rejoice. (Repeat)",
+  "lyrics": "[Verse]\nRejoice in the Lord always\nAnd again I say rejoice (Repeat)\nRejoice, rejoice,\nAnd again I say rejoice. (Repeat)",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

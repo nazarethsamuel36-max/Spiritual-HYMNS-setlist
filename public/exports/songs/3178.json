@@ -1,36 +1,95 @@
 {
-  "id" : 3178,
-  "songNumber" : 1037,
-  "title" : "** Welcome Holy Spirit, be here with Your Presence",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Welcome Holy Spirit be here with Your presence"
-    }, {
-      "text" : "Fill me with Your power"
-    }, {
-      "text" : "Live inside of me"
-    }, {
-      "text" : "..repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "You're the living water Never-drying fountain"
-    }, {
-      "text" : "Comforter and Counsellor take complete control"
-    } ]
-  } ]
+  "id": 3178,
+  "songNumber": 1037,
+  "title": "Welcome Holy Spirit, be here with Your Presence",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Welcome Holy Spirit be here with Your presence"
+        },
+        {
+          "text": "Fill me with Your power"
+        },
+        {
+          "text": "Live inside of me"
+        },
+        {
+          "text": "Welcome Holy Spirit be here with Your presence"
+        },
+        {
+          "text": "Fill me with Your power"
+        },
+        {
+          "text": "Live inside of me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "You're the living water"
+        },
+        {
+          "text": "Never-drying fountain"
+        },
+        {
+          "text": "Comforter and Counsellor"
+        },
+        {
+          "text": "Take complete control"
+        },
+        {
+          "text": "You're the living water"
+        },
+        {
+          "text": "Never-drying fountain"
+        },
+        {
+          "text": "Comforter and Counsellor"
+        },
+        {
+          "text": "Take complete control"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Welcome Holy Spirit"
+        },
+        {
+          "text": "Welcome Holy Spirit"
+        },
+        {
+          "text": "Welcome Holy Spirit"
+        },
+        {
+          "text": "Come and fill this place"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nWelcome Holy Spirit be here with Your presence\nFill me with Your power\nLive inside of me\nWelcome Holy Spirit be here with Your presence\nFill me with Your power\nLive inside of me\n\n[Verse 2]\nYou're the living water\nNever-drying fountain\nComforter and Counsellor\nTake complete control\nYou're the living water\nNever-drying fountain\nComforter and Counsellor\nTake complete control\n\n[Chorus]\nWelcome Holy Spirit\nWelcome Holy Spirit\nWelcome Holy Spirit\nCome and fill this place",
+  "lyrics": "\n[Verse 1]\nWelcome Holy Spirit be here with Your presence\nFill me with Your power\nLive inside of me\nWelcome Holy Spirit be here with Your presence\nFill me with Your power\nLive inside of me\n\n[Verse 2]\nYou're the living water\nNever-drying fountain\nComforter and Counsellor\nTake complete control\nYou're the living water\nNever-drying fountain\nComforter and Counsellor\nTake complete control\n\n[Chorus]\nWelcome Holy Spirit\nWelcome Holy Spirit\nWelcome Holy Spirit\nCome and fill this place",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

@@ -1,85 +1,50 @@
 {
-  "id" : 1067,
-  "songNumber" : 89,
-  "title" : "यहोवा थिरें, उपाय करने वाले",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यहोवा थिरें, उपाय करने वाले,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तेरा अनुग्रह काफी है (2)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तू अपनी महिमा के धन से,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "करेगा दूर मेरी सारी घटी",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तेरे दूत करते मेरी पहरेदारी,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तू चिन्ता करता है मेरी",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "मेरी, मेरी, तू चिन्ता करता है मेरी ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 6
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 1067,
+  "songNumber": 89,
+  "title": "यहोवा ईरें, उपाय करने वाले",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यहोवा ईरें, उपाय करने वाले,"
+        },
+        {
+          "text": "तेरा अनुग्रह काफी है (2)"
+        },
+        {
+          "text": "तू अपनी महिमा के धन से,"
+        },
+        {
+          "text": "करेगा दूर मेरी सारी घटी"
+        },
+        {
+          "text": "तेरे दूत करते मेरी पहरेदारी,"
+        },
+        {
+          "text": "तू चिन्ता करता है मेरी"
+        },
+        {
+          "text": "मेरी, मेरी, तू चिन्ता करता है मेरी ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[C]यहोवा ईरें, उ[Em]पाय करने वाले,\n[F]तेरा अनुग्रह का[G]फी है (2)\n[C]तू अपनी महिमा [Em]के धन से,\n[F]करेगा दूर मेरी [G]सारी घटी\n[C]तेरे दूत करते [Em]मेरी पहरेदारी,\n[F]तू चिन्ता करता है [G]मेरी\n[C]मेरी, [Em]मेरी, [F]तू चिन्ता करता है [G]मेरी ।",
+  "lyrics": "[Verse]\nयहोवा ईरें, उपाय करने वाले,\nतेरा अनुग्रह काफी है (2)\nतू अपनी महिमा के धन से,\nकरेगा दूर मेरी सारी घटी\nतेरे दूत करते मेरी पहरेदारी,\nतू चिन्ता करता है मेरी\nमेरी, मेरी, तू चिन्ता करता है मेरी ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,279 +1,113 @@
 {
-  "id" : 859,
-  "songNumber" : 247,
-  "title" : "O THE DEEP DEEP LOVE OF JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "O the deep, deep love of Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Vast, unmeasured, boundless, free!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Rolling as a mighty ocean",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "In its fulness over me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Underneath me, all around me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Is the current of Thy love;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Leading onward, leading homeward,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "To my glorious rest above.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "O the deep, deep love of Jesus,"
-    }, {
-      "text" : "Spread His praise from shore to shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "How He loveth, ever loveth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Changeth never, never more,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "How He watches o'er His loved ones,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Died to call them all His own,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "How for them He intercedeth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Watcheth o'er them from the throne.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "O the deep, deep love of Jesus,"
-    }, {
-      "text" : "Love of every love the best,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "'Tis an ocean vast of blessing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "'Tis a haven sweet of rest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "O the deep, deep love of Jesus,"
-    }, {
-      "text" : "'Tis a heaven of heavens to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And it lifts me up to glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For it lifts me up to Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 859,
+  "songNumber": 247,
+  "title": "O THE DEEP DEEP LOVE OF JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Dm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O the deep, deep love of Jesus,"
+        },
+        {
+          "text": "Vast, unmeasured, boundless, free!"
+        },
+        {
+          "text": "Rolling as a mighty ocean"
+        },
+        {
+          "text": "In its fulness over me."
+        },
+        {
+          "text": "Underneath me, all around me;"
+        },
+        {
+          "text": "Is the current of Thy love;"
+        },
+        {
+          "text": "Leading onward, leading homeward,"
+        },
+        {
+          "text": "To my glorious rest above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O the deep, deep love of Jesus,"
+        },
+        {
+          "text": "Spread His praise from shore to shore,"
+        },
+        {
+          "text": "How He loveth, ever loveth,"
+        },
+        {
+          "text": "Changeth never, never more,"
+        },
+        {
+          "text": "How He watches o'er His loved ones,"
+        },
+        {
+          "text": "Died to call them all His own,"
+        },
+        {
+          "text": "How for them He intercedeth,"
+        },
+        {
+          "text": "Watcheth o'er them from the throne."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O the deep, deep love of Jesus,"
+        },
+        {
+          "text": "Love of every love the best,"
+        },
+        {
+          "text": "'Tis an ocean vast of blessing,"
+        },
+        {
+          "text": "'Tis a haven sweet of rest,"
+        },
+        {
+          "text": "O the deep, deep love of Jesus,"
+        },
+        {
+          "text": "'Tis a heaven of heavens to me,"
+        },
+        {
+          "text": "And it lifts me up to glory,"
+        },
+        {
+          "text": "For it lifts me up to Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nO the [D]deep, deep [G]love of [D]Jesus,\r\n[D]Vast, unmeasured, [A]boundless, [D]free!\r\nRolling [D]as a [G]mighty [D]ocean\r\nIn its [D]fulness [A]over [D]me.\r\n[D]Underneath me, [G]all a[D]round me;\r\nIs the [D]current [A]of Thy love;\r\n[D]Leading onward, [G]leading [D]homeward,\r\nTo my [D]glorious [A]rest a[D]bove.\r\n\r\n[Verse]\r\nO the deep, deep love of Jesus,\r\nSpread His [D]praise from [A]shore to [D]shore,\r\nHow He [D]loveth, [G]ever [D]loveth,\r\nChangeth [D]never, [A]never [D]more,\r\nHow He [D]watches [G]o'er His [D]loved ones,\r\nDied to [D]call them [A]all His [D]own,\r\nHow for [D]them He [G]inter[D]cedeth,\r\nWatcheth [D]o'er them [A]from the [D]throne.\r\n\r\n[Verse]\r\nO the deep, deep love of Jesus,\r\nLove of [D]every [A]love the [D]best,\r\n'Tis an [D]ocean [G]vast of [D]blessing,\r\n'Tis a [D]haven [A]sweet of [D]rest,\r\nO the deep, deep love of Jesus,\r\n'Tis a [D]heaven of [A]heavens to [D]me,\r\nAnd it [D]lifts me [G]up to [D]glory,\r\nFor it [D]lifts me [A]up to [D]Thee.",
+  "lyrics": "[Verse]\r\nO the deep, deep love of Jesus,\r\nVast, unmeasured, boundless, free!\r\nRolling as a mighty ocean\r\nIn its fulness over me.\r\nUnderneath me, all around me;\r\nIs the current of Thy love;\r\nLeading onward, leading homeward,\r\nTo my glorious rest above.\r\n\r\n[Verse]\r\nO the deep, deep love of Jesus,\r\nSpread His praise from shore to shore,\r\nHow He loveth, ever loveth,\r\nChangeth never, never more,\r\nHow He watches o'er His loved ones,\r\nDied to call them all His own,\r\nHow for them He intercedeth,\r\nWatcheth o'er them from the throne.\r\n\r\n[Verse]\r\nO the deep, deep love of Jesus,\r\nLove of every love the best,\r\n'Tis an ocean vast of blessing,\r\n'Tis a haven sweet of rest,\r\nO the deep, deep love of Jesus,\r\n'Tis a heaven of heavens to me,\r\nAnd it lifts me up to glory,\r\nFor it lifts me up to Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

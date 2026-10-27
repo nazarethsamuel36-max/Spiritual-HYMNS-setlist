@@ -1,224 +1,138 @@
 {
-  "id" : 632,
-  "songNumber" : 325,
-  "title" : "STANDING BY A PURPOSE TRUE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Standing by a purpose true,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Heeding God's command,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Honor them, the faithful few!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "All hail to Daniel's band!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Dare to be a Daniel,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Dare to stand alone!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Dare to have a purpose firm!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Dare to make it known.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Many mighty men are lost",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Daring not to stand,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Who for God had been a host",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "By joining Daniel's band.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Many giants, great and tall,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Stalking through the land,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Headlong to the earth would fall,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "If met by Daniel's band.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Hold the Gospel banner high!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "On to vict'ry grand!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Satan and his hosts defy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "And shout for Daniel's band.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 632,
+  "songNumber": 325,
+  "title": "STANDING BY A PURPOSE TRUE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Standing by a purpose true,"
+        },
+        {
+          "text": "Heeding Gods command,"
+        },
+        {
+          "text": "Honor them, the faithful few!"
+        },
+        {
+          "text": "All hail to Daniels band!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Dare to be a Daniel,"
+        },
+        {
+          "text": "Dare to stand alone!"
+        },
+        {
+          "text": "Dare to have a purpose firm!"
+        },
+        {
+          "text": "Dare to make it known."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Many mighty men are lost"
+        },
+        {
+          "text": "Daring not to stand,"
+        },
+        {
+          "text": "Who for God had been a host"
+        },
+        {
+          "text": "By joining Daniels band."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Many giants, great and tall,"
+        },
+        {
+          "text": "Stalking through the land,"
+        },
+        {
+          "text": "Headlong to the earth would fall,"
+        },
+        {
+          "text": "If met by Daniels band."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hold the Gospel banner high!"
+        },
+        {
+          "text": "On to victry grand!"
+        },
+        {
+          "text": "Satan and his hosts defy,"
+        },
+        {
+          "text": "And shout for Daniels band."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Standing by a [A]purpose true,\n[A]Heeding Gods com[D]mand,\n[D]Honor them, the [G]faithful few!\n[D]All hail to [A]Daniels [D]band!\n[Verse]\n[Verse]\n[Chorus]\n[D]Dare to be a Daniel,\n[A]Dare to stand a[D]lone!\n[D]Dare to have a [G]purpose firm!\n[D]Dare to [A]make it [D]known.\n[Verse]\n[Verse]\n[D]Many mighty [A]men are lost\n[A]Daring not to [D]stand,\n[D]Who for God had [G]been a host\n[D]By joining [A]Daniels [D]band.\n[Verse]\n[Verse]\n[D]Many giants, [A]great and tall,\n[A]Stalking through the [D]land,\n[D]Headlong to the [G]earth would fall,\n[D]If met by [A]Daniels [D]band.\n[Verse]\n[Verse]\n[D]Hold the Gospel [A]banner high!\n[A]On to victry [D]grand!\n[D]Satan and his [G]hosts defy,\n[D]And shout for [A]Daniels [D]band.",
+  "lyrics": "[Verse]\n Standing by a purpose true,\nHeeding Gods command,\nHonor them, the faithful few!\nAll hail to Daniels band!\n[Verse]\n[Verse]\n[Chorus]\nDare to be a Daniel,\nDare to stand alone!\nDare to have a purpose firm!\nDare to make it known.\n[Verse]\n[Verse]\nMany mighty men are lost\nDaring not to stand,\nWho for God had been a host\nBy joining Daniels band.\n[Verse]\n[Verse]\nMany giants, great and tall,\nStalking through the land,\nHeadlong to the earth would fall,\nIf met by Daniels band.\n[Verse]\n[Verse]\nHold the Gospel banner high!\nOn to victry grand!\nSatan and his hosts defy,\nAnd shout for Daniels band.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

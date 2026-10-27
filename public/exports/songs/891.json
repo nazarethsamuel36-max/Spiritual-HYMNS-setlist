@@ -1,281 +1,141 @@
 {
-  "id" : 891,
-  "songNumber" : 279,
-  "title" : "WITHOUT HIM I CAN DO NOTHING",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Without Him I can do nothing",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Without Him I'd surely fail,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Without Him I would be drifting",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Like a boat without a sail.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "But with Him I can do all things",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And with Him I cannot fail,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And over the stormiest ocean",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "In perfect peace I'll sail.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Without Him I would be dying",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Without Him I'd be enslaved",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Without Him life would be hopeless",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "But with Jesus, thank God, I'm saved.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "So I'll ask Him to be my Pilot",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "His Word my compass and guide,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Till I've anchored safely in glory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "For without Him I'd drift with the tide.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Jesus, my Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Do you know Him today,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "You can't turn Him away",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "O Jesus, O Jesus",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Without Him how lost I would be.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 891,
+  "songNumber": 279,
+  "title": "WITHOUT HIM I CAN DO NOTHING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Without Him I can do nothing"
+        },
+        {
+          "text": "Without Him Id surely fail,"
+        },
+        {
+          "text": "Without Him I would be drifting"
+        },
+        {
+          "text": "Like a boat without a sail."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "But with Him I can do all things"
+        },
+        {
+          "text": "And with Him I cannot fail,"
+        },
+        {
+          "text": "And over the stormiest ocean"
+        },
+        {
+          "text": "In perfect peace Ill sail."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Without Him I would be dying"
+        },
+        {
+          "text": "Without Him Id be enslaved"
+        },
+        {
+          "text": "Without Him life would be hopeless"
+        },
+        {
+          "text": "But with Jesus, thank God, Im saved."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "So Ill ask Him to be my Pilot"
+        },
+        {
+          "text": "His Word my compass and guide,"
+        },
+        {
+          "text": "Till Ive anchored safely in glory"
+        },
+        {
+          "text": "For without Him Id drift with the tide."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus, my Jesus,"
+        },
+        {
+          "text": "Do you know Him today,"
+        },
+        {
+          "text": "You cant turn Him away"
+        },
+        {
+          "text": "O Jesus, O Jesus"
+        },
+        {
+          "text": "Without Him how lost I would be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n With[F]out Him I [Bb]can do [F]nothing\r\nWith[F]out Him Id [Bb]surely [C]fail,\r\nWith[F]out Him I [Bb]would be [F]drifting\r\nLike a [G]boat with[C]out a [F]sail.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nBut with [F]Him I [Bb]can do [F]all things\r\nAnd [Bb]with Him I [F]cannot [C]fail,\r\nAnd [F]over the [Bb]stormiest [F]ocean\r\nIn [Bb]perfect [C]peace Ill [F]sail.\r\n[Verse]\r\n[Verse]\r\nWith[F]out Him I [Bb]would be [F]dying\r\nWith[F]out Him Id [Bb]be en[C]slaved\r\nWith[F]out Him [Bb]life would be [F]hopeless\r\nBut with [G]Jesus, [C]thank God, Im [F]saved.\r\n[Verse]\r\n[Verse]\r\nSo Ill [F]ask Him to [Bb]be my [F]Pilot\r\nHis [Bb]Word my [F]compass and [C]guide,\r\nTill Ive [F]anchored [Bb]safely in [F]glory\r\nFor with[G]out Him Id [C]drift with the [F]tide.\r\n[Verse]\r\n[Verse]\r\n[F]Jesus, my [Bb]Jesus,\r\nDo [F]you know [C]Him to[F]day,\r\nYou [Bb]cant turn [F]Him a[C]way\r\nO [F]Jesus, [Bb]O [F]Jesus\r\nWith[G]out Him [C]how lost I would [F]be.",
+  "lyrics": "[Verse]\r\n Without Him I can do nothing\r\nWithout Him Id surely fail,\r\nWithout Him I would be drifting\r\nLike a boat without a sail.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nBut with Him I can do all things\r\nAnd with Him I cannot fail,\r\nAnd over the stormiest ocean\r\nIn perfect peace Ill sail.\r\n[Verse]\r\n[Verse]\r\nWithout Him I would be dying\r\nWithout Him Id be enslaved\r\nWithout Him life would be hopeless\r\nBut with Jesus, thank God, Im saved.\r\n[Verse]\r\n[Verse]\r\nSo Ill ask Him to be my Pilot\r\nHis Word my compass and guide,\r\nTill Ive anchored safely in glory\r\nFor without Him Id drift with the tide.\r\n[Verse]\r\n[Verse]\r\nJesus, my Jesus,\r\nDo you know Him today,\r\nYou cant turn Him away\r\nO Jesus, O Jesus\r\nWithout Him how lost I would be.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

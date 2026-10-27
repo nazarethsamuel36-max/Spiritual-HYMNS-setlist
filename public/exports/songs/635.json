@@ -1,297 +1,189 @@
 {
-  "id" : 635,
-  "songNumber" : 328,
-  "title" : "I'VE BELIEVED THE TRUE REPORT",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've believed the true report,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I have passed the outer court,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "O glory be to God!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "I am all on Jesus' side,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "On the altar sanctified,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "To the world and sin I've died,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Hallelujah! Hallelujah!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I have passed the riven veil,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Where the glories never fail,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Hallelujah! Hallelujah!"
-    }, {
-      "text" : "I am living in the presence of the King.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I'm a king and priest to God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    }, {
-      "text" : "By the cleansing of the blood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "O glory be to God!"
-    }, {
-      "text" : "By the Spirit's power and light,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I am living day and night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "In the holiest place so bright,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I have passed the outer veil,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    }, {
-      "text" : "Which did once God's light conceal,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "O glory be to God!"
-    }, {
-      "text" : "But the blood has brought me in",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "To God's holiness so clean,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Where there's death to self and sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "I'm within the holiest pale,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    }, {
-      "text" : "I have passed the inner veil,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "O glory be to God!"
-    }, {
-      "text" : "I am sanctified to God",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "By the power of the blood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Now the Lord is my abode,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Hallelujah to the Lamb!"
-    } ]
-  } ]
+  "id": 635,
+  "songNumber": 328,
+  "title": "I'VE BELIEVED THE TRUE REPORT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I've believed the true report,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        },
+        {
+          "text": "I have passed the outer court,"
+        },
+        {
+          "text": "O glory be to God!"
+        },
+        {
+          "text": "I am all on Jesus side,"
+        },
+        {
+          "text": "On the altar sanctified,"
+        },
+        {
+          "text": "To the world and sin Ive died,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Hallelujah! Hallelujah!"
+        },
+        {
+          "text": "I have passed the riven veil,"
+        },
+        {
+          "text": "Where the glories never fail,"
+        },
+        {
+          "text": "Hallelujah! Hallelujah!"
+        },
+        {
+          "text": "I am living in the presence of the King."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Im a king and priest to God,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        },
+        {
+          "text": "By the cleansing of the blood,"
+        },
+        {
+          "text": "O glory be to God!"
+        },
+        {
+          "text": "By the Spirits power and light,"
+        },
+        {
+          "text": "I am living day and night,"
+        },
+        {
+          "text": "In the holiest place so bright,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I have passed the outer veil,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        },
+        {
+          "text": "Which did once Gods light conceal,"
+        },
+        {
+          "text": "O glory be to God!"
+        },
+        {
+          "text": "But the blood has brought me in"
+        },
+        {
+          "text": "To Gods holiness so clean,"
+        },
+        {
+          "text": "Where theres death to self and sin,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Im within the holiest pale,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        },
+        {
+          "text": "I have passed the inner veil,"
+        },
+        {
+          "text": "O glory be to God!"
+        },
+        {
+          "text": "I am sanctified to God"
+        },
+        {
+          "text": "By the power of the blood,"
+        },
+        {
+          "text": "Now the Lord is my abode,"
+        },
+        {
+          "text": "Hallelujah to the Lamb!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nI've be[D]lieved the true re[G]port,\r\nHalle[D]lujah to the [A]Lamb!\r\nI have [D]passed the outer [G]court,\r\nO [D]glory [A]be to [D]God!\r\nI am [D]all on Jesus [G]side,\r\nOn the [D]altar sancti[A]fied,\r\nTo the [D]world and sin Ive [G]died,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nHalle[D]lujah! Halle[G]lujah!\r\nI have [D]passed the riven [A]veil,\r\nWhere the [D]glories [A]never [D]fail,\r\nHallelujah! Hallelujah!\r\nI am [D]living in the [A]presence of the [D]King.\r\n[Verse]\r\n[Verse]\r\nIm a [D]king and priest to [G]God,\r\nHallelujah to the Lamb!\r\nBy the [D]cleansing of the [G]blood,\r\nO glory be to God!\r\nBy the [D]Spirits power and [G]light,\r\nI am [D]living day and [A]night,\r\nIn the [D]holiest place so [G]bright,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\nI have [D]passed the outer [G]veil,\r\nHallelujah to the Lamb!\r\nWhich did [D]once Gods light con[G]ceal,\r\nO glory be to God!\r\nBut the [D]blood has brought me [G]in\r\nTo [D]Gods holiness so [A]clean,\r\nWhere theres [D]death to self and [G]sin,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\nIm with[D]in the holiest [G]pale,\r\nHallelujah to the Lamb!\r\nI have [D]passed the inner [G]veil,\r\nO glory be to God!\r\nI am [D]sanctified to [G]God\r\nBy the [D]power of the [A]blood,\r\nNow the [D]Lord is my a[G]bode,\r\nHallelujah to the Lamb!",
+  "lyrics": "[Verse]\r\nI've believed the true report,\r\nHallelujah to the Lamb!\r\nI have passed the outer court,\r\nO glory be to God!\r\nI am all on Jesus side,\r\nOn the altar sanctified,\r\nTo the world and sin Ive died,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nHallelujah! Hallelujah!\r\nI have passed the riven veil,\r\nWhere the glories never fail,\r\nHallelujah! Hallelujah!\r\nI am living in the presence of the King.\r\n[Verse]\r\n[Verse]\r\nIm a king and priest to God,\r\nHallelujah to the Lamb!\r\nBy the cleansing of the blood,\r\nO glory be to God!\r\nBy the Spirits power and light,\r\nI am living day and night,\r\nIn the holiest place so bright,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\nI have passed the outer veil,\r\nHallelujah to the Lamb!\r\nWhich did once Gods light conceal,\r\nO glory be to God!\r\nBut the blood has brought me in\r\nTo Gods holiness so clean,\r\nWhere theres death to self and sin,\r\nHallelujah to the Lamb!\r\n[Verse]\r\n[Verse]\r\nIm within the holiest pale,\r\nHallelujah to the Lamb!\r\nI have passed the inner veil,\r\nO glory be to God!\r\nI am sanctified to God\r\nBy the power of the blood,\r\nNow the Lord is my abode,\r\nHallelujah to the Lamb!",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

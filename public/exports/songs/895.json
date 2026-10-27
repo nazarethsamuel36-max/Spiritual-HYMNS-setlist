@@ -1,286 +1,118 @@
 {
-  "id" : 895,
-  "songNumber" : 283,
-  "title" : "BECAUSE HE LIVES I CAN FACE TOMORROW",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God sent His Son they called Him Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "He came to love, heal and forgive",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "He lived and died to buy my pardon",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "An empty grave is there to prove my Saviour lives.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Because He lives I can face tomorrow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Because He lives all fear is gone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Because I know He holds the future,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And life is worth the living,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Just because He lives.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "How sweet to hold a new-born baby,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And feel the pride and joy he gives,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "But greater still the calm assurance,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "This child can face uncertain days, because Christ lives.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "And then one day I'll cross the river",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "I'll fight life's final war with pain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "And then as death gives way to vict'ry",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I'll see the lights of glory and I'll know He lives.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 895,
+  "songNumber": 283,
+  "title": "BECAUSE HE LIVES I CAN FACE TOMORROW",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God sent His Son they called Him Jesus,"
+        },
+        {
+          "text": "He came to love, heal and forgive"
+        },
+        {
+          "text": "He lived and died to buy my pardon"
+        },
+        {
+          "text": "An empty grave is there to prove my Saviour lives."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Because He lives I can face tomorrow"
+        },
+        {
+          "text": "Because He lives all fear is gone,"
+        },
+        {
+          "text": "Because I know He holds the future,"
+        },
+        {
+          "text": "And life is worth the living,"
+        },
+        {
+          "text": "Just because He lives."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "How sweet to hold a new-born baby,"
+        },
+        {
+          "text": "And feel the pride and joy he gives,"
+        },
+        {
+          "text": "But greater still the calm assurance,"
+        },
+        {
+          "text": "This child can face uncertain days, because Christ lives."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And then one day Ill cross the river"
+        },
+        {
+          "text": "Ill fight lifes final war with pain,"
+        },
+        {
+          "text": "And then as death gives way to victry"
+        },
+        {
+          "text": "Ill see the lights of glory and Ill know He lives."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]God sent His [C]Son they [G]called Him [D]Jesus,\r\nHe [G]came to [C]love, heal [G]and for[D]give\r\nHe [G]lived and [C]died to buy [G]my [C]pardon\r\nAn [G]empty [C]grave is [G]there to [D]prove my [G]Saviour lives.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nBe[G]cause He [C]lives I can [G]face to[D]morrow\r\nBe[G]cause He [C]lives [G]all fear is [D]gone,\r\nBe[G]cause I [C]know He [G]holds the [C]future,\r\nAnd [G]life is [C]worth the [G]living,\r\n[G]Just be[D]cause He [G]lives.\r\n[Verse]\r\n[Verse]\r\nHow [G]sweet to [C]hold a [G]new-born [D]baby,\r\nAnd [G]feel the [C]pride and [G]joy he [D]gives,\r\nBut [G]greater [C]still the [G]calm as[C]surance,\r\nThis [G]child can [C]face un[G]certain [D]days, be[G]cause Christ lives.\r\n[Verse]\r\n[Verse]\r\nAnd [G]then one [C]day Ill [G]cross the [D]river\r\nIll [G]fight lifes [C]final [G]war with [D]pain,\r\nAnd [G]then as [C]death gives [G]way to [C]victry\r\nIll [G]see the [C]lights of [G]glory [D]and Ill [G]know He lives.",
+  "lyrics": "[Verse]\r\n God sent His Son they called Him Jesus,\r\nHe came to love, heal and forgive\r\nHe lived and died to buy my pardon\r\nAn empty grave is there to prove my Saviour lives.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nBecause He lives I can face tomorrow\r\nBecause He lives all fear is gone,\r\nBecause I know He holds the future,\r\nAnd life is worth the living,\r\nJust because He lives.\r\n[Verse]\r\n[Verse]\r\nHow sweet to hold a new-born baby,\r\nAnd feel the pride and joy he gives,\r\nBut greater still the calm assurance,\r\nThis child can face uncertain days, because Christ lives.\r\n[Verse]\r\n[Verse]\r\nAnd then one day Ill cross the river\r\nIll fight lifes final war with pain,\r\nAnd then as death gives way to victry\r\nIll see the lights of glory and Ill know He lives.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

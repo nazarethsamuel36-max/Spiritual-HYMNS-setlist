@@ -1,123 +1,68 @@
 {
-  "id" : 706,
-  "songNumber" : 30,
-  "title" : "SING ALLELUJAH TO THE LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Sing Allelujah to the Lord..... } 2",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Dm",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Sing Allelujah, sing Allelujah",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Dm",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Sing Allelujah to the Lord.",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "Am",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Jesus has conquered sin and death.....",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Jesus has risen from the dead......",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Jesus is seated on the throne......",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Jesus is Lord of Heaven and earth......",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Jesus is coming back again......",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "C",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Sing Allelujah to the Lord......."
-    } ]
-  } ]
+  "id": 706,
+  "songNumber": 30,
+  "title": "SING ALLELUJAH TO THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Dm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Sing Allelujah to the Lord..... } 2"
+        },
+        {
+          "text": "Sing Allelujah, sing Allelujah"
+        },
+        {
+          "text": "Sing Allelujah to the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jesus has conquered sin and death....."
+        },
+        {
+          "text": "Jesus has risen from the dead......"
+        },
+        {
+          "text": "Jesus is seated on the throne......"
+        },
+        {
+          "text": "Jesus is Lord of Heaven and earth......"
+        },
+        {
+          "text": "Jesus is coming back again......"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Sing Allelujah to the Lord......."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[Dm]Sing Alle[Gm]lujah [C]to the [F]Lord..... [C]} 2\r\n[Dm]Sing Alle[Gm]lujah, [C]sing Alle[F]lujah\r\n[Dm]Sing Alle[C]lujah [Dm]to the Lord.\r\n\r\n[Verse 1]\r\n[Dm]Jesus has conquered [C]sin and [F]death.....\r\n[Dm]Jesus has risen [C]from the [F]dead......\r\n[Dm]Jesus is seated [C]on the [F]throne......\r\n[Dm]Jesus is Lord of [C]Heaven and [F]earth......\r\n[Dm]Jesus is coming [C]back a[F]gain......\r\n\r\n[Chorus]\r\nSing Allelujah to the Lord.......",
+  "lyrics": "[Chorus]\r\nSing Allelujah to the Lord..... } 2\r\nSing Allelujah, sing Allelujah\r\nSing Allelujah to the Lord.\r\n\r\n[Verse 1]\r\nJesus has conquered sin and death.....\r\nJesus has risen from the dead......\r\nJesus is seated on the throne......\r\nJesus is Lord of Heaven and earth......\r\nJesus is coming back again......\r\n\r\n[Chorus]\r\nSing Allelujah to the Lord.......",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

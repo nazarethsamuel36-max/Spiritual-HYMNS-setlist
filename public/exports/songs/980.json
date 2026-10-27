@@ -1,148 +1,86 @@
 {
-  "id" : 980,
-  "songNumber" : 2,
-  "title" : "जो क्रूस पे कुरबां है, वो मेरा मसीहा है",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "जो क्रूस पे कुरबां है, वो मेरा मसीहा है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "हर जख्म जो उसका है, वो मेरे गुनाह का है",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "इस दुनिया में ले आये, मेरे ही गुनाह उसको,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "ये जुल्म सितम उस पर, मैंने ही कराया है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "इन्सान है वो कामिल, और सच्चा खुदा वो है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "वो प्यार का दरिया है, सच्चाई का रास्ता है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "देने को मुझे जीवन, खुद मौत सही उसने,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "क्या खूब है क़ुरबानी, क्या प्यार अनोखा है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 980,
+  "songNumber": 2,
+  "title": "जो क्रूस पे कुरबां है, वो मेरा मसीहा है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "जो क्रूस पे कुरबां है, वो मेरा मसीहा है,"
+        },
+        {
+          "text": "हर जख्म जो उसका है, वो मेरे गुनाह का है"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस दुनिया में ले आये, मेरे ही गुनाह उसको,"
+        },
+        {
+          "text": "ये जुल्म सितम उस पर, मैंने ही कराया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इन्सान है वो कामिल, और सच्चा खुदा वो है,"
+        },
+        {
+          "text": "वो प्यार का दरिया है, सच्चाई का रास्ता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "देने को मुझे जीवन, खुद मौत सही उसने,"
+        },
+        {
+          "text": "क्या खूब है क़ुरबानी, क्या प्यार अनोखा है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [D]जो क्रूस पे [G]कुरबां है, [A]वो मेरा [D]मसीहा है,\r\n[D]हर जख्म जो [G]उसका है, [A]वो मेरे [D]गुनाह का है\r\n[Verse]\r\n\r\n[Verse]\r\n[D]इस दुनिया में ले [G]आये, [A]मेरे ही [D]गुनाह उसको,\r\n[D]ये जुल्म सि[G]तम उस पर, [A]मैंने ही कराया [D]है ।\r\n[Verse]\r\n[Verse]\r\n[D]इन्सान है वो [G]कामिल, [A]और सच्चा [D]खुदा वो है,\r\n[D]वो प्यार का द[G]रिया है, [A]सच्चाई का [D]रास्ता है ।\r\n[Verse]\r\n[Verse]\r\n[D]देने को मुझे [G]जीवन, [A]खुद मौत [D]सही उसने,\r\n[D]क्या खूब है क़ु[G]रबानी, [A]क्या प्यार [D]अनोखा है ।",
+  "lyrics": "[Chorus]\r\n जो क्रूस पे कुरबां है, वो मेरा मसीहा है,\r\nहर जख्म जो उसका है, वो मेरे गुनाह का है\r\n[Verse]\r\n\r\n[Verse]\r\nइस दुनिया में ले आये, मेरे ही गुनाह उसको,\r\nये जुल्म सितम उस पर, मैंने ही कराया है ।\r\n[Verse]\r\n[Verse]\r\nइन्सान है वो कामिल, और सच्चा खुदा वो है,\r\nवो प्यार का दरिया है, सच्चाई का रास्ता है ।\r\n[Verse]\r\n[Verse]\r\nदेने को मुझे जीवन, खुद मौत सही उसने,\r\nक्या खूब है क़ुरबानी, क्या प्यार अनोखा है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

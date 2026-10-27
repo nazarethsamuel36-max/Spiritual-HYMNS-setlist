@@ -1,195 +1,98 @@
 {
-  "id" : 1013,
-  "songNumber" : 35,
-  "title" : "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "संसार के सब प्राणी, उसका ही नाम लेंगे",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "धरती आकाश दोनों ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "प्रभु का समय आता है, धरती मगन होगी",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "उसकी दया बरसेगी, और दूर जलन होगी",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "उसके वचन की महिमा, और शक्ति हम देखेंगे ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "प्रभु का वचन ऐसा है, जो चिराग सा जलता है",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "उसपर कोई चलता है, जीवन उसे मिलता है",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "उसके नियम को जो माने, कभी भी ना वो भटकेंगे ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "आँखे उठाकर देखो, प्रभु का दिन आवेगा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "उसको ग्रहण जो करेगा, वही साथ जावेगा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "जिसने प्रभु को न माना, वही एक दिन रोएगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 1013,
+  "songNumber": 35,
+  "title": "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "धरती आकाश दोनों, प्रभु की आवाज सुनेंगे"
+        },
+        {
+          "text": "संसार के सब प्राणी, उसका ही नाम लेंगे"
+        },
+        {
+          "text": "धरती आकाश दोनों ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु का समय आता है, धरती मगन होगी"
+        },
+        {
+          "text": "उसकी दया बरसेगी, और दूर जलन होगी"
+        },
+        {
+          "text": "उसके वचन की महिमा, और शक्ति हम देखेंगे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु का वचन ऐसा है, जो चिराग सा जलता है"
+        },
+        {
+          "text": "उसपर कोई चलता है, जीवन उसे मिलता है"
+        },
+        {
+          "text": "उसके नियम को जो माने, कभी भी ना वो भटकेंगे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आँखे उठाकर देखो, प्रभु का दिन आवेगा"
+        },
+        {
+          "text": "उसको ग्रहण जो करेगा, वही साथ जावेगा"
+        },
+        {
+          "text": "जिसने प्रभु को न माना, वही एक दिन रोएगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [C]धरती आकाश दो[F]नों, [G]प्रभु की आवाज सु[C]नेंगे\n[C]संसार के सब प्रा[F]णी, [G]उसका ही नाम लें[C]गे\nधरती आकाश दोनों ।\n[Verse]\n[Verse]\n[C]प्रभु का समय आ[F]ता है, [G]धरती मगन हो[C]गी\n[C]उसकी दया बर[F]सेगी, [G]और दूर जलन हो[C]गी\n[C]उसके वचन की [F]महिमा, [G]और शक्ति हम दे[C]खेंगे ।\n[Verse]\n[Verse]\n[C]प्रभु का वचन ऐ[F]सा है, [G]जो चिराग सा जल[C]ता है\n[C]उसपर कोई चल[F]ता है, [G]जीवन उसे मिल[C]ता है\n[C]उसके नियम को [F]जो माने, [G]कभी भी ना वो भट[C]केंगे ।\n[Verse]\n[Verse]\n[C]आँखे उठाकर दे[F]खो, [G]प्रभु का दिन आवे[C]गा\n[C]उसको ग्रहण जो क[F]रेगा, [G]वही साथ जावे[C]गा\n[C]जिसने प्रभु को न मा[F]ना, [G]वही एक दिन रोए[C]गा ।",
+  "lyrics": "[Chorus]\n धरती आकाश दोनों, प्रभु की आवाज सुनेंगे\nसंसार के सब प्राणी, उसका ही नाम लेंगे\nधरती आकाश दोनों ।\n[Verse]\n[Verse]\nप्रभु का समय आता है, धरती मगन होगी\nउसकी दया बरसेगी, और दूर जलन होगी\nउसके वचन की महिमा, और शक्ति हम देखेंगे ।\n[Verse]\n[Verse]\nप्रभु का वचन ऐसा है, जो चिराग सा जलता है\nउसपर कोई चलता है, जीवन उसे मिलता है\nउसके नियम को जो माने, कभी भी ना वो भटकेंगे ।\n[Verse]\n[Verse]\nआँखे उठाकर देखो, प्रभु का दिन आवेगा\nउसको ग्रहण जो करेगा, वही साथ जावेगा\nजिसने प्रभु को न माना, वही एक दिन रोएगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

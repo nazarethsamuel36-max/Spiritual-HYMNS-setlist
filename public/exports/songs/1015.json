@@ -1,330 +1,156 @@
 {
-  "id" : 1015,
-  "songNumber" : 37,
-  "title" : "परम पिता की हम स्तुति गायें",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "परम पिता की हम स्तुति गायें",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "वही है जो बचाता हमें,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "सारे पापों को करता क्षमा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "सारे रोगों को करता चंगा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "धन्यवाद दें उसके आसनों में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "आनन्द से आये उसके चरणों में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "संगीत गाकर खुशी से",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मुक्ति - चट्टान को जय ललकारें ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "वही हमारा है परम पिता",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "तरस खाता है सर्व सदा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "पूरब से पश्चिम है जितनी दूर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "उतने ही दूर किये हमारे गुनाह ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "माँ की तरह उसने दी तसल्ली",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "दुनिया के खतरों में छोडा नहीं,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "खालिस दूध कलाम का दिया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "और दी हमेशा की जिंदगी ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "चरवाहे की मानिन्द ढूँढा उसने",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "पापों के कीच से निकाला हमें,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "हमको बचाने को जान अपनी दी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "ताकि हाथ में हम उसके रहें ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "घोंसले को बार-बार तोडकर उसने",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "चाहा कि सीखें हम उडना उससे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "परों पर उठाया उकाब की तरह",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "ताकि हमको चोट न लगे ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1015,
+  "songNumber": 37,
+  "title": "परम पिता की हम स्तुति गायें",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "परम पिता की हम स्तुति गायें"
+        },
+        {
+          "text": "वही है जो बचाता हमें,"
+        },
+        {
+          "text": "सारे पापों को करता क्षमा"
+        },
+        {
+          "text": "सारे रोगों को करता चंगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "धन्यवाद दें उसके आसनों में,"
+        },
+        {
+          "text": "आनन्द से आये उसके चरणों में,"
+        },
+        {
+          "text": "संगीत गाकर खुशी से"
+        },
+        {
+          "text": "मुक्ति - चट्टान को जय ललकारें ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वही हमारा है परम पिता"
+        },
+        {
+          "text": "तरस खाता है सर्व सदा,"
+        },
+        {
+          "text": "पूरब से पश्चिम है जितनी दूर"
+        },
+        {
+          "text": "उतने ही दूर किये हमारे गुनाह ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "माँ की तरह उसने दी तसल्ली"
+        },
+        {
+          "text": "दुनिया के खतरों में छोडा नहीं,"
+        },
+        {
+          "text": "खालिस दूध कलाम का दिया,"
+        },
+        {
+          "text": "और दी हमेशा की जिंदगी ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चरवाहे की मानिन्द ढूँढा उसने"
+        },
+        {
+          "text": "पापों के कीच से निकाला हमें,"
+        },
+        {
+          "text": "हमको बचाने को जान अपनी दी"
+        },
+        {
+          "text": "ताकि हाथ में हम उसके रहें ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "घोंसले को बार-बार तोडकर उसने"
+        },
+        {
+          "text": "चाहा कि सीखें हम उडना उससे"
+        },
+        {
+          "text": "परों पर उठाया उकाब की तरह"
+        },
+        {
+          "text": "ताकि हमको चोट न लगे ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]परम पिता की हम [C]स्तुति [G]गायें\n[G]वही है जो ब[D]चाता ह[G]में,\n[G]सारे [D]पापों को क[C]रता [D]क्षमा\n[G]सारे [D]रोगों को क[C]रता [D]चंगा ।\n[Verse]\n[Verse]\n[G]धन्यवाद दें उसके [D]आसनों [G]में,\n[G]आनन्द से आये उस[D]के चरणों [G]में,\n[G]संगीत गाकर [D]खुशी [G]से\n[G]मुक्ति - चट्टान को [D]जय ललका[G]रें ।\n[Verse]\n[Verse]\n[G]वही हमारा है [D]परम पि[G]ता\n[G]तरस खाता है स[D]र्व स[G]दा,\n[G]पूरब से पश्चिम है [D]जितनी दू[G]र\n[G]उतने ही दूर [D]किये हमारे गु[G]नाह ।\n[Verse]\n[Verse]\n[G]माँ की तरह उसने [D]दी तस[G]ल्ली\n[G]दुनिया के खतरों में [D]छोडा न[G]हीं,\n[G]खालिस दूध क[D]लाम का दि[G]या,\n[G]और दी हमेशा [D]की जिं[G]दगी ।\n[Verse]\n[Verse]\n[G]चरवाहे की मानि[D]न्द ढूँढा उस[G]ने\n[G]पापों के कीच से नि[D]काला ह[G]में,\n[G]हमको बचाने को [D]जान अपनी [G]दी\n[G]ताकि हाथ में हम [D]उसके र[G]हें ।\n[Verse]\n[Verse]\n[G]घोंसले को बार-बार [D]तोडकर उस[G]ने\n[G]चाहा कि सीखें हम [D]उडना उस[G]से\n[G]परों पर उठाया उ[D]काब की त[G]रह\n[G]ताकि हमको [D]चोट न ल[G]गे ।",
+  "lyrics": "[Chorus]\n परम पिता की हम स्तुति गायें\nवही है जो बचाता हमें,\nसारे पापों को करता क्षमा\nसारे रोगों को करता चंगा ।\n[Verse]\n[Verse]\nधन्यवाद दें उसके आसनों में,\nआनन्द से आये उसके चरणों में,\nसंगीत गाकर खुशी से\nमुक्ति - चट्टान को जय ललकारें ।\n[Verse]\n[Verse]\nवही हमारा है परम पिता\nतरस खाता है सर्व सदा,\nपूरब से पश्चिम है जितनी दूर\nउतने ही दूर किये हमारे गुनाह ।\n[Verse]\n[Verse]\nमाँ की तरह उसने दी तसल्ली\nदुनिया के खतरों में छोडा नहीं,\nखालिस दूध कलाम का दिया,\nऔर दी हमेशा की जिंदगी ।\n[Verse]\n[Verse]\nचरवाहे की मानिन्द ढूँढा उसने\nपापों के कीच से निकाला हमें,\nहमको बचाने को जान अपनी दी\nताकि हाथ में हम उसके रहें ।\n[Verse]\n[Verse]\nघोंसले को बार-बार तोडकर उसने\nचाहा कि सीखें हम उडना उससे\nपरों पर उठाया उकाब की तरह\nताकि हमको चोट न लगे ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

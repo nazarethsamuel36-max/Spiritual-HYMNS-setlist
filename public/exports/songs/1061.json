@@ -1,104 +1,56 @@
 {
-  "id" : 1061,
-  "songNumber" : 83,
-  "title" : "जीवन से बेहतर करुणा तेरी",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जीवन से बेहतर करुणा तेरी (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "होंठों से अपने, स्तुति की भेंटें,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "मैं चढाऊंगा तुझे सर्वदा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "हाथ उठाकर मैं करता स्तुति,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "तेरे पवित्र नाम की स्तुति",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "जीवन भर तुझ को भजता रहूंगा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "तेरी सेवा, मैं दिल से करूंगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 1061,
+  "songNumber": 83,
+  "title": "जीवन से बेहतर करुणा तेरी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन से बेहतर करुणा तेरी (2)"
+        },
+        {
+          "text": "होंठों से अपने, स्तुति की भेंटें,"
+        },
+        {
+          "text": "मैं चढाऊंगा तुझे सर्वदा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हाथ उठाकर मैं करता स्तुति,"
+        },
+        {
+          "text": "तेरे पवित्र नाम की स्तुति"
+        },
+        {
+          "text": "जीवन भर तुझ को भजता रहूंगा"
+        },
+        {
+          "text": "तेरी सेवा, मैं दिल से करूंगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[C]जीवन से बेहतर क[F]रुणा ते[C]री (2)\r\n[C]होंठों से अपने, [F]स्तुति की भें[G]टें,\r\n[C]मैं चढाऊंगा [G]तुझे सर्व[C]दा ।\r\n\r\n[Verse]\r\n[C]हाथ उठाकर मैं [F]करता स्तु[C]ति,\r\n[C]तेरे पवित्र [F]नाम की स्तु[G]ति\r\n[C]जीवन भर तुझ को [F]भजता रहूं[C]गा\r\n[C]तेरी सेवा, मैं [G]दिल से करूं[C]गा ।",
+  "lyrics": "[Verse]\r\nजीवन से बेहतर करुणा तेरी (2)\r\nहोंठों से अपने, स्तुति की भेंटें,\r\nमैं चढाऊंगा तुझे सर्वदा ।\r\n\r\n[Verse]\r\nहाथ उठाकर मैं करता स्तुति,\r\nतेरे पवित्र नाम की स्तुति\r\nजीवन भर तुझ को भजता रहूंगा\r\nतेरी सेवा, मैं दिल से करूंगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

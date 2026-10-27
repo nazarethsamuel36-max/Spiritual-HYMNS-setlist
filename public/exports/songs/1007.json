@@ -1,166 +1,108 @@
 {
-  "id" : 1007,
-  "songNumber" : 29,
-  "title" : "घटाओं पर सवार होकर, ऊपर से उतरेगा",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "घटाओं पर सवार होकर, ऊपर से उतरेगा (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "आयेगा हमारा यीशु मसीह आयेगा (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दुनिया के सभी देखेंगे, उसको जब आवेगा (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "पूरब से पश्चिम तक वो, अपने को दिखलायेगा (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "आखिर ऐसा होगा (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "आयेगा हमारा यीशु मसीह आयेगा (2)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जो ईमान से सोये हैं, वे पहिले उठ जायेंगे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "यीशु के साथ आयेंगे, और अपने बदन बदलेंगे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जो चाहते हैं यीशु को, वे राज्य हमेशा करेंगे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "जिनके मन में है यीशु, वे जिन्दा हमेशा रहेंगे (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  } ]
+  "id": 1007,
+  "songNumber": 29,
+  "title": "घटाओं पर सवार होकर, ऊपर से उतरेगा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "घटाओं पर सवार होकर, ऊपर से उतरेगा (2)"
+        },
+        {
+          "text": "आयेगा हमारा यीशु मसीह आयेगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया के सभी देखेंगे, उसको जब आवेगा (2)"
+        },
+        {
+          "text": "पूरब से पश्चिम तक वो, अपने को दिखलायेगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "आखिर ऐसा होगा (2)"
+        },
+        {
+          "text": "आयेगा हमारा यीशु मसीह आयेगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जो ईमान से सोये हैं, वे पहिले उठ जायेंगे (2)"
+        },
+        {
+          "text": "यीशु के साथ आयेंगे, और अपने बदन बदलेंगे (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जो चाहते हैं यीशु को, वे राज्य हमेशा करेंगे (2)"
+        },
+        {
+          "text": "जिनके मन में है यीशु, वे जिन्दा हमेशा रहेंगे (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]घटाओं पर [G]सवार होकर, [A]ऊपर से उ[D]तरेगा (2)\n[D]आयेगा हमारा [G]यीशु [A]मसीह आये[D]गा (2)\n[Verse]\n[Verse]\n[D]दुनिया के स[G]भी देखेंगे, [A]उसको जब आवे[D]गा (2)\n[D]पूरब से प[G]श्चिम तक वो, [A]अपने को दिखला[D]येगा (2)\n[Verse]\n[Verse]\n[Chorus]\n[D]आखिर ऐ[G]सा हो[D]गा (2)\nआयेगा हमारा यीशु मसीह आयेगा (2)\n[Verse]\n[Verse]\n[D]जो ईमान से [G]सोये हैं, [A]वे पहिले उठ जा[D]येंगे (2)\n[D]यीशु के साथ [G]आयेंगे, [A]और अपने बदन ब[D]दलेंगे (2)\n[Verse]\n[Verse]\n[D]जो चाहते हैं [G]यीशु को, [A]वे राज्य हमेशा क[D]रेंगे (2)\n[D]जिनके मन में है [G]यीशु, [A]वे जिन्दा हमेशा र[D]हेंगे (2)",
+  "lyrics": "[Chorus]\n घटाओं पर सवार होकर, ऊपर से उतरेगा (2)\nआयेगा हमारा यीशु मसीह आयेगा (2)\n[Verse]\n[Verse]\nदुनिया के सभी देखेंगे, उसको जब आवेगा (2)\nपूरब से पश्चिम तक वो, अपने को दिखलायेगा (2)\n[Verse]\n[Verse]\n[Chorus]\nआखिर ऐसा होगा (2)\nआयेगा हमारा यीशु मसीह आयेगा (2)\n[Verse]\n[Verse]\nजो ईमान से सोये हैं, वे पहिले उठ जायेंगे (2)\nयीशु के साथ आयेंगे, और अपने बदन बदलेंगे (2)\n[Verse]\n[Verse]\nजो चाहते हैं यीशु को, वे राज्य हमेशा करेंगे (2)\nजिनके मन में है यीशु, वे जिन्दा हमेशा रहेंगे (2)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

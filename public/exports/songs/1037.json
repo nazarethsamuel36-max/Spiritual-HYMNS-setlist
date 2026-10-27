@@ -1,126 +1,75 @@
 {
-  "id" : 1037,
-  "songNumber" : 59,
-  "title" : "मेरे प्रभुजी, तूही है सहारा",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "मेरे प्रभुजी, तूही है सहारा",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "E",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "मेरे डुबे नैयाका, तूही है किनारा ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 18
-      }, {
-        "chord" : "E",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जगकी अभिलाषा में, जीवन निराशा में",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 18
-      }, {
-        "chord" : "B",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "अपनीही मर्जीसे बढ़ना सकूँगा",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "B",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "तूही है सहारा ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 9
-      }, {
-        "chord" : "E",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जीवन के सागर में, पापों के आंचल में",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 18
-      }, {
-        "chord" : "B",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "शैतान के भँवरों में, चलना सकूँगा",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "B",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "दे दे मुझको सहारा ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 13
-      }, {
-        "chord" : "E",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 1037,
+  "songNumber": 59,
+  "title": "मेरे प्रभुजी, तूही है सहारा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "मेरे प्रभुजी, तूही है सहारा"
+        },
+        {
+          "text": "मेरे डुबे नैयाका, तूही है किनारा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जगकी अभिलाषा में, जीवन निराशा में"
+        },
+        {
+          "text": "अपनीही मर्जीसे बढ़ना सकूँगा"
+        },
+        {
+          "text": "तूही है सहारा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन के सागर में, पापों के आंचल में"
+        },
+        {
+          "text": "शैतान के भँवरों में, चलना सकूँगा"
+        },
+        {
+          "text": "दे दे मुझको सहारा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [E]मेरे प्रभुजी, [A]तूही है स[E]हारा\n[E]मेरे डुबे नैयाका, [B]तूही है कि[E]नारा ।\n[Verse]\n[Verse]\n[E]जगकी अभिला[A]षा में, [E]जीवन निरा[B]शा में\n[E]अपनीही मर्जीसे ब[A]ढ़ना सकूँ[B]गा\n[E]तूही है स[B]हारा ।[E]\n[Verse]\n[Verse]\n[E]जीवन के सा[A]गर में, [E]पापों के [B]आंचल में\n[E]शैतान के भँवरों [A]में, चलना स[B]कूँगा\n[E]दे दे मुझको स[B]हारा ।[E]",
+  "lyrics": "[Chorus]\n मेरे प्रभुजी, तूही है सहारा\nमेरे डुबे नैयाका, तूही है किनारा ।\n[Verse]\n[Verse]\nजगकी अभिलाषा में, जीवन निराशा में\nअपनीही मर्जीसे बढ़ना सकूँगा\nतूही है सहारा ।\n[Verse]\n[Verse]\nजीवन के सागर में, पापों के आंचल में\nशैतान के भँवरों में, चलना सकूँगा\nदे दे मुझको सहारा ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

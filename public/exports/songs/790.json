@@ -1,228 +1,138 @@
 {
-  "id" : 790,
-  "songNumber" : 178,
-  "title" : "O LORD MY GOD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "O Lord my God ! When I in awesome wonder",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 2
-      }, {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Consider all the works Thy hand hath made,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I see the stars, I hear the mighty thunder",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 2
-      }, {
-        "chord" : "F",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Thy power throughout the universe displayed ;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Then sings my soul, my Saviour God to Thee,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "How great Thou art, how great Thou art !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "C",
-        "position" : 24
-      }, {
-        "chord" : "C",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Then sings my soul, my Saviour God to Thee,"
-    }, {
-      "text" : "How great Thou art, how great Thou art !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "When through the woods and forest glades I wander",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "And hear the birds sing sweetly in the trees ;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "C",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "When I look down from lofty mountain grandeur,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And hear the brook, and feel the gentle breeze ;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "C",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "And when I think that God His Son not sparing,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "F",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Sent Him to die I scarce can take it in ;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "That on the cross my burden gladly bearing,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "He bled and died to take away my sin ;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "C",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "When Christ shall come with shout of acclamation",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "And take me home what joy shall fill my heart !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "C",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Then shall I bow in humble adoration",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 5
-      }, {
-        "chord" : "F",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And there proclaim, my God, how great Thou art !",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "C",
-        "position" : 43
-      } ]
-    } ]
-  } ]
+  "id": 790,
+  "songNumber": 178,
+  "title": "O LORD MY GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O Lord my God ! When I in awesome wonder"
+        },
+        {
+          "text": "Consider all the works Thy hand hath made,"
+        },
+        {
+          "text": "I see the stars, I hear the mighty thunder"
+        },
+        {
+          "text": "Thy power throughout the universe displayed ;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Then sings my soul, my Saviour God to Thee,"
+        },
+        {
+          "text": "How great Thou art, how great Thou art !"
+        },
+        {
+          "text": "Then sings my soul, my Saviour God to Thee,"
+        },
+        {
+          "text": "How great Thou art, how great Thou art !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When through the woods and forest glades I wander"
+        },
+        {
+          "text": "And hear the birds sing sweetly in the trees ;"
+        },
+        {
+          "text": "When I look down from lofty mountain grandeur,"
+        },
+        {
+          "text": "And hear the brook, and feel the gentle breeze ;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And when I think that God His Son not sparing,"
+        },
+        {
+          "text": "Sent Him to die I scarce can take it in ;"
+        },
+        {
+          "text": "That on the cross my burden gladly bearing,"
+        },
+        {
+          "text": "He bled and died to take away my sin ;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When Christ shall come with shout of acclamation"
+        },
+        {
+          "text": "And take me home what joy shall fill my heart !"
+        },
+        {
+          "text": "Then shall I bow in humble adoration"
+        },
+        {
+          "text": "And there proclaim, my God, how great Thou art !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n O [D]Lord my God ! When I in [G]awesome wonder\nCon[D]sider all the [A]works Thy hand hath [D]made,\nI [D]see the stars, I hear the [G]mighty thunder\nThy [D]power through[A]out the universe dis[D]played ;\n[Verse]\n[Verse]\n[Chorus]\nThen [D]sings my soul, my [G]Saviour God to [D]Thee,\nHow [A]great Thou art, how [D]great Thou [D]art !\nThen sings my soul, my Saviour God to Thee,\nHow great Thou art, how great Thou art !\n[Verse]\n[Verse]\nWhen [D]through the woods and forest [G]glades I wander\nAnd [D]hear the birds sing [A]sweetly in the [D]trees ;\nWhen [D]I look down from lofty [G]mountain grandeur,\nAnd [D]hear the brook, and [A]feel the gentle [D]breeze ;\n[Verse]\n[Verse]\nAnd [D]when I think that God His [G]Son not sparing,\nSent [D]Him to die I [A]scarce can take it [D]in ;\nThat [D]on the cross my burden [G]gladly bearing,\nHe [D]bled and died to [A]take away my [D]sin ;\n[Verse]\n[Verse]\nWhen [D]Christ shall come with shout of [G]acclamation\nAnd [D]take me home what [A]joy shall fill my [D]heart !\nThen [D]shall I bow in humble [G]adoration\nAnd [D]there proclaim, my [A]God, how great Thou [D]art !",
+  "lyrics": "[Verse]\n O Lord my God ! When I in awesome wonder\nConsider all the works Thy hand hath made,\nI see the stars, I hear the mighty thunder\nThy power throughout the universe displayed ;\n[Verse]\n[Verse]\n[Chorus]\nThen sings my soul, my Saviour God to Thee,\nHow great Thou art, how great Thou art !\nThen sings my soul, my Saviour God to Thee,\nHow great Thou art, how great Thou art !\n[Verse]\n[Verse]\nWhen through the woods and forest glades I wander\nAnd hear the birds sing sweetly in the trees ;\nWhen I look down from lofty mountain grandeur,\nAnd hear the brook, and feel the gentle breeze ;\n[Verse]\n[Verse]\nAnd when I think that God His Son not sparing,\nSent Him to die I scarce can take it in ;\nThat on the cross my burden gladly bearing,\nHe bled and died to take away my sin ;\n[Verse]\n[Verse]\nWhen Christ shall come with shout of acclamation\nAnd take me home what joy shall fill my heart !\nThen shall I bow in humble adoration\nAnd there proclaim, my God, how great Thou art !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

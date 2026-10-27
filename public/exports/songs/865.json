@@ -1,242 +1,97 @@
 {
-  "id" : 865,
-  "songNumber" : 253,
-  "title" : "IT ONLY TAKES A SPARK",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "It only takes a spark to get a fire going,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "And soon all those around can warm up in its glowing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "That's how it is with God's love,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Once you've experienced it,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "You spread His love to everyone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "You want to pass it on !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "What a wondrous time is spring, when all the trees are budding,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 37
-      }, {
-        "chord" : "G",
-        "position" : 45
-      }, {
-        "chord" : "D",
-        "position" : 55
-      } ]
-    }, {
-      "text" : "The birds begin to sing, the flowers start their blooming.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "G",
-        "position" : 37
-      }, {
-        "chord" : "A",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "That's how it is with God's love,"
-    }, {
-      "text" : "Once you've experienced it,"
-    }, {
-      "text" : "You want to sing-it's fresh like spring,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "You want to pass it on !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I wish for you my friend, this happiness that I've found,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "You can depend on Him, it matters not where you're bound.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "I'll shout it from the mountain top,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "I want the world to know.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The Lord of love has come to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I want to pass it on !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "(Repeat from 'I'll shout it......')"
-    } ]
-  } ]
+  "id": 865,
+  "songNumber": 253,
+  "title": "IT ONLY TAKES A SPARK",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "It only takes a spark to get a fire going,"
+        },
+        {
+          "text": "And soon all those around can warm up in its glowing,"
+        },
+        {
+          "text": "That's how it is with God's love,"
+        },
+        {
+          "text": "Once you've experienced it,"
+        },
+        {
+          "text": "You spread His love to everyone,"
+        },
+        {
+          "text": "You want to pass it on !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "What a wondrous time is spring, when all the trees are budding,"
+        },
+        {
+          "text": "The birds begin to sing, the flowers start their blooming."
+        },
+        {
+          "text": "That's how it is with God's love,"
+        },
+        {
+          "text": "Once you've experienced it,"
+        },
+        {
+          "text": "You want to sing-it's fresh like spring,"
+        },
+        {
+          "text": "You want to pass it on !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I wish for you my friend, this happiness that I've found,"
+        },
+        {
+          "text": "You can depend on Him, it matters not where you're bound."
+        },
+        {
+          "text": "I'll shout it from the mountain top,"
+        },
+        {
+          "text": "I want the world to know."
+        },
+        {
+          "text": "The Lord of love has come to me,"
+        },
+        {
+          "text": "I want to pass it on !"
+        },
+        {
+          "text": "(Repeat from 'I'll shout it......'')"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nIt [D]only takes a [G]spark to [D]get a [G]fire [D]going,\nAnd [D]soon all those a[G]round can [D]warm up [G]in its [A]glowing,\nThat's [G]how it is with [D]God's love,\nOnce [G]you've expe[D]rienced [A]it,\nYou [D]spread His [G]love to [D]everyone,\nYou [G]want to [A]pass it [D]on !\n\n[Verse]\nWhat a [D]wondrous time is [G]spring, when [D]all the [G]trees are [D]budding,\nThe [D]birds begin to [G]sing, the [D]flowers [G]start their [A]blooming.\nThat's how it is with God's love,\nOnce you've experienced it,\nYou [D]want to [G]sing-it's [D]fresh like spring,\nYou want to pass it on !\n\n[Verse]\nI [D]wish for you my [G]friend, this [D]happi[G]ness that [D]I've found,\nYou [D]can de[G]pend on [D]Him, it [G]matters not where [A]you're bound.\nI'll [G]shout it from the [D]mountain top,\nI [G]want the [D]world to [A]know.\nThe [D]Lord of [G]love has [D]come to me,\nI [G]want to [A]pass it [D]on !\n(Repeat from 'I'll shout it......'')",
+  "lyrics": "[Verse]\nIt only takes a spark to get a fire going,\nAnd soon all those around can warm up in its glowing,\nThat's how it is with God's love,\nOnce you've experienced it,\nYou spread His love to everyone,\nYou want to pass it on !\n\n[Verse]\nWhat a wondrous time is spring, when all the trees are budding,\nThe birds begin to sing, the flowers start their blooming.\nThat's how it is with God's love,\nOnce you've experienced it,\nYou want to sing-it's fresh like spring,\nYou want to pass it on !\n\n[Verse]\nI wish for you my friend, this happiness that I've found,\nYou can depend on Him, it matters not where you're bound.\nI'll shout it from the mountain top,\nI want the world to know.\nThe Lord of love has come to me,\nI want to pass it on !\n(Repeat from 'I'll shout it......'')",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

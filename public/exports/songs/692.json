@@ -1,56 +1,44 @@
 {
-  "id" : 692,
-  "songNumber" : 11,
-  "title" : "Iâ€™LL PRAISE HIS NAME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Iâ€™ll praise His Name for evermore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Iâ€™ll praise His Name for evermore,"
-    }, {
-      "text" : "Iâ€™ll praise, and praise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "and praise and praise,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Iâ€™ll praise His Name for evermore."
-    } ]
-  } ]
+  "id": 692,
+  "songNumber": 11,
+  "title": "I'LL PRAISE HIS NAME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I'll praise His Name for evermore,"
+        },
+        {
+          "text": "I'll praise His Name for evermore,"
+        },
+        {
+          "text": "I'll praise, and praise,"
+        },
+        {
+          "text": "and praise and praise,"
+        },
+        {
+          "text": "I'll praise His Name for evermore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D][A]I'll praise Hi[A]s Name fo[G][D]r evermore,\nI'll praise His Name for evermore,\n[D]I'll praise, an[G]d praise,\n[A]and praise and [D]praise,\nI'll praise His Name for evermore.",
+  "lyrics": "[Verse]\nI'll praise His Name for evermore,\nI'll praise His Name for evermore,\nI'll praise, and praise,\nand praise and praise,\nI'll praise His Name for evermore.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

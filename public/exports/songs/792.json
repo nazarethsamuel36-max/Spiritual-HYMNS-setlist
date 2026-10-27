@@ -1,175 +1,113 @@
 {
-  "id" : 792,
-  "songNumber" : 180,
-  "title" : "WHAT CAN WASH AWAY MY SIN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "What can wash away my sin ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "What can make me whole again ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Oh, precious is the flow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "That makes me white as snow ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "No other fount I know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "For my pardon this I see",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus ;"
-    }, {
-      "text" : "For my cleansing this my plea",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Nothing can for sin atone",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus ;"
-    }, {
-      "text" : "Nought of good that I have done",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "This is all my hope and peace",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus ;"
-    }, {
-      "text" : "This is all my righteousness",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Nothing but the blood of Jesus."
-    } ]
-  } ]
+  "id": 792,
+  "songNumber": 180,
+  "title": "WHAT CAN WASH AWAY MY SIN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "What can wash away my sin ?"
+        },
+        {
+          "text": "Nothing but the blood of Jesus ;"
+        },
+        {
+          "text": "What can make me whole again ?"
+        },
+        {
+          "text": "Nothing but the blood of Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Oh, precious is the flow"
+        },
+        {
+          "text": "That makes me white as snow ;"
+        },
+        {
+          "text": "No other fount I know,"
+        },
+        {
+          "text": "Nothing but the blood of Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "For my pardon this I see"
+        },
+        {
+          "text": "Nothing but the blood of Jesus ;"
+        },
+        {
+          "text": "For my cleansing this my plea"
+        },
+        {
+          "text": "Nothing but the blood of Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Nothing can for sin atone"
+        },
+        {
+          "text": "Nothing but the blood of Jesus ;"
+        },
+        {
+          "text": "Nought of good that I have done"
+        },
+        {
+          "text": "Nothing but the blood of Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "This is all my hope and peace"
+        },
+        {
+          "text": "Nothing but the blood of Jesus ;"
+        },
+        {
+          "text": "This is all my righteousness"
+        },
+        {
+          "text": "Nothing but the blood of Jesus."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]What can wash a[B]way my [E]sin ?\r\n[E]Nothing but the [B]blood of [E]Jesus ;\r\n[E]What can make me [B]whole a[E]gain ?\r\n[E]Nothing but the [B]blood of [E]Jesus.\r\n\r\n[Chorus]\r\n[E]Oh, precious is the [B]flow\r\nThat [E]makes me white as [B]snow ;\r\n[E]No other fount I [B]know,\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 2]\r\nFor my pardon [B]this I [E]see\r\nNothing but the blood of Jesus ;\r\nFor my cleansing [B]this my [E]plea\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 3]\r\nNothing can for [B]sin a[E]tone\r\nNothing but the blood of Jesus ;\r\nNought of good that [B]I have [E]done\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 4]\r\nThis is all my [B]hope and [E]peace\r\nNothing but the blood of Jesus ;\r\nThis is all my [B]righteous[E]ness\r\nNothing but the blood of Jesus.",
+  "lyrics": "[Verse 1]\r\nWhat can wash away my sin ?\r\nNothing but the blood of Jesus ;\r\nWhat can make me whole again ?\r\nNothing but the blood of Jesus.\r\n\r\n[Chorus]\r\nOh, precious is the flow\r\nThat makes me white as snow ;\r\nNo other fount I know,\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 2]\r\nFor my pardon this I see\r\nNothing but the blood of Jesus ;\r\nFor my cleansing this my plea\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 3]\r\nNothing can for sin atone\r\nNothing but the blood of Jesus ;\r\nNought of good that I have done\r\nNothing but the blood of Jesus.\r\n\r\n[Verse 4]\r\nThis is all my hope and peace\r\nNothing but the blood of Jesus ;\r\nThis is all my righteousness\r\nNothing but the blood of Jesus.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

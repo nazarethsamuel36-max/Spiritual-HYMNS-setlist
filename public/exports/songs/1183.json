@@ -1,98 +1,83 @@
 {
-  "id" : 1183,
-  "songNumber" : 205,
-  "title" : "यीशु के पीछे मैं चलने लगा",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु के पीछे मैं चलने लगा (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ना लौटूँगा, ना लौटूँगा (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "संसार को छोड़कर सलीब को लेकर (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ना लौटूँगा, ना लौटूँगा (2)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "गर कोई मेरे साथ ना आए (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ना लौटूँगा, ना लौटूँगा (2)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "दुनिया के दुख से न घबराऊँगा (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "खुश रहूँगा, खुश रहूँगा (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "जल्द आने वाला है मेरा मुंजी (3)"
-    }, {
-      "text" : "साथ जाऊँगा साथ जाऊँगा (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 1183,
+  "songNumber": 205,
+  "title": "यीशु के पीछे मैं चलने लगा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु के पीछे मैं चलने लगा (3)"
+        },
+        {
+          "text": "ना लौटूँगा, ना लौटूँगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "संसार को छोड़कर सलीब को लेकर (3)"
+        },
+        {
+          "text": "ना लौटूँगा, ना लौटूँगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "गर कोई मेरे साथ ना आए (3)"
+        },
+        {
+          "text": "ना लौटूँगा, ना लौटूँगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया के दुख से न घबराऊँगा (3)"
+        },
+        {
+          "text": "खुश रहूँगा, खुश रहूँगा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जल्द आने वाला है मेरा मुंजी (3)"
+        },
+        {
+          "text": "साथ जाऊँगा साथ जाऊँगा (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]यीशु के पीछे मैं चलने लगा (3)\n[C]ना लौटूँ[D]गा, ना लौटूँ[G]गा (2)\n\n[Verse]\n[G]संसार को छोड़कर सलीब को लेकर (3)\nना लौटूँगा, ना लौटूँगा (2)\n\n[Verse]\n[G]गर कोई मेरे साथ ना आए (3)\nना लौटूँगा, ना लौटूँगा (2)\n\n[Verse]\n[G]दुनिया के दुख से न घबराऊँगा (3)\n[C]खुश रहूँ[D]गा, खुश रहूँ[G]गा (2)\n\n[Verse]\nजल्द आने वाला है मेरा मुंजी (3)\n[C]साथ जाऊँ[D]गा साथ जाऊँ[G]गा (2)",
+  "lyrics": "[Verse]\nयीशु के पीछे मैं चलने लगा (3)\nना लौटूँगा, ना लौटूँगा (2)\n\n[Verse]\nसंसार को छोड़कर सलीब को लेकर (3)\nना लौटूँगा, ना लौटूँगा (2)\n\n[Verse]\nगर कोई मेरे साथ ना आए (3)\nना लौटूँगा, ना लौटूँगा (2)\n\n[Verse]\nदुनिया के दुख से न घबराऊँगा (3)\nखुश रहूँगा, खुश रहूँगा (2)\n\n[Verse]\nजल्द आने वाला है मेरा मुंजी (3)\nसाथ जाऊँगा साथ जाऊँगा (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

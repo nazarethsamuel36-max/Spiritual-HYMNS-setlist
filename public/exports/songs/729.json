@@ -1,77 +1,65 @@
 {
-  "id" : 729,
-  "songNumber" : 117,
-  "title" : "THE ANGEL IS HERE RIGHT NOW",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The Angel is here right now,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "The Angel is here right now,"
-    }, {
-      "text" : "He is here to meet your need,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "And to set the captive free,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "O the Angel is here right now.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Jesus is here right now,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Jesus is here right now,"
-    }, {
-      "text" : "He is here to meet your need,"
-    }, {
-      "text" : "And to set the captive free,"
-    }, {
-      "text" : "O Jesus is here right now.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 729,
+  "songNumber": 117,
+  "title": "THE ANGEL IS HERE RIGHT NOW",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "The Angel is here right now,"
+        },
+        {
+          "text": "The Angel is here right now,"
+        },
+        {
+          "text": "He is here to meet your need,"
+        },
+        {
+          "text": "And to set the captive free,"
+        },
+        {
+          "text": "O the Angel is here right now."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "King Jesus is here right now,"
+        },
+        {
+          "text": "King Jesus is here right now,"
+        },
+        {
+          "text": "He is here to meet your need,"
+        },
+        {
+          "text": "And to set the captive free,"
+        },
+        {
+          "text": "O Jesus is here right now."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nThe [A]Angel is here right [E]now,\r\nThe Angel is here right now,\r\nHe is [A]here to meet your need,\r\nAnd to [D]set the captive [A]free,\r\nO the [A]Angel is here right [E]now.\r\n\r\n[Verse 2]\r\n[A]King Jesus is here right [E]now,\r\nKing Jesus is here right now,\r\nHe is here to meet your need,\r\nAnd to set the captive free,\r\nO [A]Jesus is here right [E]now.",
+  "lyrics": "[Verse 1]\r\nThe Angel is here right now,\r\nThe Angel is here right now,\r\nHe is here to meet your need,\r\nAnd to set the captive free,\r\nO the Angel is here right now.\r\n\r\n[Verse 2]\r\nKing Jesus is here right now,\r\nKing Jesus is here right now,\r\nHe is here to meet your need,\r\nAnd to set the captive free,\r\nO Jesus is here right now.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Healing"
+  ]
 }

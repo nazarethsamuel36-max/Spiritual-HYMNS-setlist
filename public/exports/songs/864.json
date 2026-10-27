@@ -1,197 +1,116 @@
 {
-  "id" : 864,
-  "songNumber" : 252,
-  "title" : "MAKE ME A CHANNEL OF YOUR PEACE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Make me a channel of your peace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Where there is hatred let me bring your love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Where there is injury your pardon, Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And where there's doubt, true faith in you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Oh, Master, grant that I may never seek,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "So much to be consoled as to console,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "To be understood as to understand,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "To be loved, as to love with all my soul.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Make me a channel of your peace,"
-    }, {
-      "text" : "Where there's despair in life let me bring hope,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Where there is darkness, only light",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And where there's sadness, ever joy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Make me a channel of your peace,"
-    }, {
-      "text" : "It is in pardoning that we are pardoned,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "In giving to all men that we receive,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And in dying that we're born to Eternal Life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  } ]
+  "id": 864,
+  "songNumber": 252,
+  "title": "MAKE ME A CHANNEL OF YOUR PEACE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Make me a channel of your peace,"
+        },
+        {
+          "text": "Where there is hatred let me bring your love,"
+        },
+        {
+          "text": "Where there is injury your pardon, Lord,"
+        },
+        {
+          "text": "And where theres doubt, true faith in you."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Oh, Master, grant that I may never seek,"
+        },
+        {
+          "text": "So much to be consoled as to console,"
+        },
+        {
+          "text": "To be understood as to understand,"
+        },
+        {
+          "text": "To be loved, as to love with all my soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Make me a channel of your peace,"
+        },
+        {
+          "text": "Where theres despair in life let me bring hope,"
+        },
+        {
+          "text": "Where there is darkness, only light"
+        },
+        {
+          "text": "And where theres sadness, ever joy."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Make me a channel of your peace,"
+        },
+        {
+          "text": "It is in pardoning that we are pardoned,"
+        },
+        {
+          "text": "In giving to all men that we receive,"
+        },
+        {
+          "text": "And in dying that were born to Eternal Life."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Make me a channel [G]of your [D]peace,\nWhere [D]there is hatred [G]let me bring your [A]love,\nWhere [G]there is injury your [D]pardon, Lord,\nAnd [D]where theres [A]doubt, true [G]faith in [D]you.\n[Verse]\n[Verse]\n[Chorus]\nOh, [G]Master, grant that I may never [D]seek,\nSo [G]much to be consoled as to con[D]sole,\nTo [G]be understood as to under[D]stand,\nTo [E]be loved, [A]as to [D]love with all my [A]soul.\n[Verse]\n[Verse]\nMake me a channel of your peace,\nWhere [D]theres despair in [G]life let me bring [A]hope,\nWhere [G]there is darkness, [D]only light\nAnd [D]where theres [A]sadness, [G]ever [D]joy.\n[Verse]\n[Verse]\nMake me a channel of your peace,\nIt [D]is in pardoning [G]that we are [A]pardoned,\nIn [G]giving to all [D]men that we receive,\nAnd in [D]dying [A]that were [G]born to E[A]ternal [D]Life.",
+  "lyrics": "[Verse]\n Make me a channel of your peace,\nWhere there is hatred let me bring your love,\nWhere there is injury your pardon, Lord,\nAnd where theres doubt, true faith in you.\n[Verse]\n[Verse]\n[Chorus]\nOh, Master, grant that I may never seek,\nSo much to be consoled as to console,\nTo be understood as to understand,\nTo be loved, as to love with all my soul.\n[Verse]\n[Verse]\nMake me a channel of your peace,\nWhere theres despair in life let me bring hope,\nWhere there is darkness, only light\nAnd where theres sadness, ever joy.\n[Verse]\n[Verse]\nMake me a channel of your peace,\nIt is in pardoning that we are pardoned,\nIn giving to all men that we receive,\nAnd in dying that were born to Eternal Life.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Peace",
+    "Worship",
+    "Surrender"
+  ]
 }

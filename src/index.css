@@ -199,6 +199,22 @@ body {
   padding-bottom: max(2rem, env(safe-area-inset-bottom));
 }
 
+/* Fix reader header being cropped by iPhone notch / Dynamic Island */
+.reader-header {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
+
+@media (min-width: 768px) {
+  .reader-header {
+    padding-top: 0.375rem;
+  }
+}
+
+/* Fix mobile bottom sheet (... menu) being cut by home indicator */
+.mobile-bottom-sheet {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+}
+
 /* ═══ READER PANE ═══ */
 .reader-pane {
   flex: 1;

@@ -1,238 +1,104 @@
 {
-  "id" : 894,
-  "songNumber" : 282,
-  "title" : "ALL FOR JESUS",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All for Jesus all for Jesus!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "All my being's ransomed powers,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "All my thoughts and words and doings,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "All my days and all my hours.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Let my hands perform His bidding,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Let my feet run in His ways,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Let my eyes see Jesus only,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Let my lips speak forth His praise",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "All for Jesus all for Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Let my feet run in His ways,"
-    }, {
-      "text" : "All for Jesus all for Jesus",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Let my lips speak forth His praise.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Since my eyes were fixed on Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I've lost sight of all beside,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "So enchained my spirit's vision,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Looking at the crucified.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "All for Jesus all for Jesus,"
-    }, {
-      "text" : "I've lost sight of all beside,"
-    }, {
-      "text" : "All for Jesus all for Jesus,"
-    }, {
-      "text" : "All for Jesus crucified.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 894,
+  "songNumber": 282,
+  "title": "ALL FOR JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All for Jesus all for Jesus!"
+        },
+        {
+          "text": "All my being's ransomed powers,"
+        },
+        {
+          "text": "All my thoughts and words and doings,"
+        },
+        {
+          "text": "All my days and all my hours."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let my hands perform His bidding,"
+        },
+        {
+          "text": "Let my feet run in His ways,"
+        },
+        {
+          "text": "Let my eyes see Jesus only,"
+        },
+        {
+          "text": "Let my lips speak forth His praise"
+        },
+        {
+          "text": "All for Jesus all for Jesus,"
+        },
+        {
+          "text": "Let my feet run in His ways,"
+        },
+        {
+          "text": "All for Jesus all for Jesus"
+        },
+        {
+          "text": "Let my lips speak forth His praise."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Since my eyes were fixed on Jesus,"
+        },
+        {
+          "text": "I've lost sight of all beside,"
+        },
+        {
+          "text": "So enchained my spirit's vision,"
+        },
+        {
+          "text": "Looking at the crucified."
+        },
+        {
+          "text": "All for Jesus all for Jesus,"
+        },
+        {
+          "text": "I've lost sight of all beside,"
+        },
+        {
+          "text": "All for Jesus all for Jesus,"
+        },
+        {
+          "text": "All for Jesus crucified."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]All for Jesus [G]all for [D]Jesus!\n[D]All my [G]being's [D]ransomed [A]powers,\n[D]All my [G]thoughts and [D]words and [G]doings,\n[D]All my [A]days and [D]all my [A]hours.\n(Repeat)\n\n[Verse]\nLet my [D]hands per[G]form His [D]bidding,\nLet my [G]feet run [D]in His [A]ways,\nLet my [D]eyes see [G]Jesus [D]only,\nLet my [A]lips speak [D]forth His [A]praise\n[D]All for Jesus [G]all for [D]Jesus,\nLet my feet run in His ways,\n[D]All for Jesus [G]all for [D]Jesus\nLet my [A]lips speak [D]forth His [A]praise.\n\n[Verse]\nSince my [D]eyes were [G]fixed on [D]Jesus,\nI've lost [G]sight of [D]all be[A]side,\nSo en[D]chained my [G]spirit's [D]vision,\n[A]Looking at the [D]cruci[A]fied.\nAll for Jesus all for Jesus,\nI've lost sight of all beside,\nAll for Jesus all for Jesus,\n[A]All for [D]Jesus [A]cruci[D]fied.",
+  "lyrics": "[Verse]\nAll for Jesus all for Jesus!\nAll my being's ransomed powers,\nAll my thoughts and words and doings,\nAll my days and all my hours.\n(Repeat)\n\n[Verse]\nLet my hands perform His bidding,\nLet my feet run in His ways,\nLet my eyes see Jesus only,\nLet my lips speak forth His praise\nAll for Jesus all for Jesus,\nLet my feet run in His ways,\nAll for Jesus all for Jesus\nLet my lips speak forth His praise.\n\n[Verse]\nSince my eyes were fixed on Jesus,\nI've lost sight of all beside,\nSo enchained my spirit's vision,\nLooking at the crucified.\nAll for Jesus all for Jesus,\nI've lost sight of all beside,\nAll for Jesus all for Jesus,\nAll for Jesus crucified.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

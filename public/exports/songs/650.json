@@ -1,326 +1,113 @@
 {
-  "id" : 650,
-  "songNumber" : 343,
-  "title" : "PRAISE YOU LORD FOR SAVING ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Praise you, Lord, for saving me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Praise you Lord, for setting me free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Praise you Lord, I want always to be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Praising You.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Thank you Lord, for changing my heart",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Thank you Lord, for all you impart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Thank you Lord, everyday I will start by",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Thanking you.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Your path is straight, but it's rocky,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "And I cannot walk it alone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "But no matter how far I wander,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "You're always there to lead me on.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "So lead me Lord, this is my prayer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Lead me, Lord with your love and care",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Lead me, Lord, I know you'll always be there",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Leading me.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "You have not promised me comfort,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And there might be suffering and pain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "But a crown of glory is waiting",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "For all who will live, by your Holy name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  } ]
+  "id": 650,
+  "songNumber": 343,
+  "title": "PRAISE YOU LORD FOR SAVING ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise you, Lord, for saving me,"
+        },
+        {
+          "text": "Praise you Lord, for setting me free,"
+        },
+        {
+          "text": "Praise you Lord, I want always to be"
+        },
+        {
+          "text": "Praising You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thank you Lord, for changing my heart"
+        },
+        {
+          "text": "Thank you Lord, for all you impart,"
+        },
+        {
+          "text": "Thank you Lord, everyday I will start by"
+        },
+        {
+          "text": "Thanking you."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Your path is straight, but it's rocky,"
+        },
+        {
+          "text": "And I cannot walk it alone,"
+        },
+        {
+          "text": "But no matter how far I wander,"
+        },
+        {
+          "text": "You're always there to lead me on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "So lead me Lord, this is my prayer,"
+        },
+        {
+          "text": "Lead me, Lord with your love and care"
+        },
+        {
+          "text": "Lead me, Lord, I know you'll always be there"
+        },
+        {
+          "text": "Leading me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You have not promised me comfort,"
+        },
+        {
+          "text": "And there might be suffering and pain,"
+        },
+        {
+          "text": "But a crown of glory is waiting"
+        },
+        {
+          "text": "For all who will live, by your Holy name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Praise you, [G]Lord, for [D]saving [A]me,\n[D]Praise you [G]Lord, for [D]setting me [A]free,\n[D]Praise you [G]Lord, I [D]want [G]always to [D]be\n[A]Praising [D]You.\n\n[Verse]\n[D]Thank you [G]Lord, for [D]changing my [A]heart\n[D]Thank you [G]Lord, for [D]all you im[A]part,\n[D]Thank you [G]Lord, [D]every[G]day I will [D]start by\n[A]Thanking [D]you.\n\n[Verse]\nYour [D]path is [G]straight, but [D]it's [A]rocky,\nAnd [D]I [G]cannot [D]walk it a[A]lone,\nBut [D]no [G]matter [D]how [G]far I [D]wander,\n[D]You're [G]always [D]there to [A]lead me [D]on.\n\n[Verse]\nSo [D]lead me [G]Lord, [D]this is my [A]prayer,\n[D]Lead me, [G]Lord [D]with your love and [A]care\n[D]Lead me, [G]Lord, I [D]know you'll [G]always be [D]there\n[A]Leading [D]me.\n\n[Verse]\nYou [D]have [G]not [D]promised me [A]comfort,\nAnd [D]there might be [G]suffering and [A]pain,\nBut a [D]crown of [G]glory [D]is [G]waiting\nFor [D]all who will [G]live, by [A]your Holy [D]name.",
+  "lyrics": "[Verse]\nPraise you, Lord, for saving me,\nPraise you Lord, for setting me free,\nPraise you Lord, I want always to be\nPraising You.\n\n[Verse]\nThank you Lord, for changing my heart\nThank you Lord, for all you impart,\nThank you Lord, everyday I will start by\nThanking you.\n\n[Verse]\nYour path is straight, but it's rocky,\nAnd I cannot walk it alone,\nBut no matter how far I wander,\nYou're always there to lead me on.\n\n[Verse]\nSo lead me Lord, this is my prayer,\nLead me, Lord with your love and care\nLead me, Lord, I know you'll always be there\nLeading me.\n\n[Verse]\nYou have not promised me comfort,\nAnd there might be suffering and pain,\nBut a crown of glory is waiting\nFor all who will live, by your Holy name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

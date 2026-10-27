@@ -1,73 +1,40 @@
 {
-  "id" : 646,
-  "songNumber" : 339,
-  "title" : "WEâ€™LL WALK IN THE LIGHT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Weâ€™ll walk in the light such a beautiful light,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 33
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Come where the dewdrops of mercy are bright,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Shine all around us by day and by night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Jesus, the Light of the world.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 646,
+  "songNumber": 339,
+  "title": "WE'LL WALK IN THE LIGHT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We'll walk in the light such a beautiful light,"
+        },
+        {
+          "text": "Come where the dewdrops of mercy are bright,"
+        },
+        {
+          "text": "Shine all around us by day and by night,"
+        },
+        {
+          "text": "Jesus, the Light of the world."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nWe'll [D]walk in the [G]light such a [D]beautiful [A]light,\n[D]Come where the [G]dewdrops of [D]mercy are [A]bright,\n[D]Shine all a[G]round us by [D]day and by [A]night,\n[D]Jesus, the [A]Light of the [D]world.",
+  "lyrics": "[Verse]\nWe'll walk in the light such a beautiful light,\nCome where the dewdrops of mercy are bright,\nShine all around us by day and by night,\nJesus, the Light of the world.",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

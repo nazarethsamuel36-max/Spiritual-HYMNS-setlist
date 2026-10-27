@@ -1,200 +1,111 @@
 {
-  "id" : 607,
-  "songNumber" : 21,
-  "title" : "येशूची सेवा आवडे, गेलो सुवेळी त्याकडे, (O Happy Day)",
-  "language" : "marathi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "येशूची सेवा आवडे, गेलो सुवेळी त्याकडे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "तो दावी फार करुणा, माझ्यांत तोष मावेना",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "धन्य वार ! धन्य वार ! जै सारा गेला पापभार",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "सतत आता प्रार्थना, स्तुति आनंद सरेना;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "धन्य वार ! धन्य वार ! प्रभूने केला जै उद्धार ॥धृ॥",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "केला करार निश्चये, दिली प्रभूने अभये,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "अंदेशा कां, आतां जीवा ? विसावा घे, जा गौरवा.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तो राहू देई जवळी, नित्याने तोचि संभाळी,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "सुखद स्वर्गी आणुनी ठेवील तो स्वसदनी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "प्रेमळ माझा प्रभू तो, दास सुखी मी हर्षतो,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "का करु घोर ? धन्य मी ! करी उल्लास नेहमी.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  } ]
+  "id": 607,
+  "songNumber": 21,
+  "title": "येशूची सेवा आवडे, गेलो सुवेळी त्याकडे, (O Happy Day)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "येशूची सेवा आवडे, गेलो सुवेळी त्याकडे,"
+        },
+        {
+          "text": "तो दावी फार करुणा, माझ्यांत तोष मावेना"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "धन्य वार ! धन्य वार ! जै सारा गेला पापभार"
+        },
+        {
+          "text": "सतत आता प्रार्थना, स्तुति आनंद सरेना;"
+        },
+        {
+          "text": "धन्य वार ! धन्य वार ! प्रभूने केला जै उद्धार ॥धृ॥"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "केला करार निश्चये, दिली प्रभूने अभये,"
+        },
+        {
+          "text": "अंदेशा कां, आतां जीवा ? विसावा घे, जा गौरवा."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तो राहू देई जवळी, नित्याने तोचि संभाळी,"
+        },
+        {
+          "text": "सुखद स्वर्गी आणुनी ठेवील तो स्वसदनी"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रेमळ माझा प्रभू तो, दास सुखी मी हर्षतो,"
+        },
+        {
+          "text": "का करु घोर ? धन्य मी ! करी उल्लास नेहमी."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]येशूची सेवा [C]आवडे, [G]गेलो सुवेळी [D]त्याकडे,\r\n[G]तो दावी फार [C]करुणा, [G]माझ्यांत तोष [D]मावेना\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[G]धन्य वार ! [C]धन्य वार ! [G]जै सारा [D]गेला पापभार\r\n[G]सतत आता [C]प्रार्थना, [G]स्तुति आ[D]नंद सरेना;\r\n[G]धन्य वार ! [C]धन्य वार ! [G]प्रभूने [D]केला जै उद्धार ॥[G]धृ॥\r\n[Verse]\r\n[Verse]\r\n[G]केला करार [C]निश्चये, [G]दिली प्रभूने [D]अभये,\r\n[G]अंदेशा कां, [C]आतां जीवा ? [G]विसावा घे, [D]जा गौरवा.\r\n[Verse]\r\n[Verse]\r\n[G]तो राहू दे[C]ई जवळी, [G]नित्याने तोचि [D]संभाळी,\r\n[G]सुखद स्वर्गी [C]आणुनी [G]ठेवील तो स्व[D]सदनी\r\n[Verse]\r\n[Verse]\r\n[G]प्रेमळ माझा [C]प्रभू तो, [G]दास सुखी मी [D]हर्षतो,\r\n[G]का करु घोर ? [C]धन्य मी ! [G]करी उल्लास [D]नेहमी.",
+  "lyrics": "[Verse]\r\n येशूची सेवा आवडे, गेलो सुवेळी त्याकडे,\r\nतो दावी फार करुणा, माझ्यांत तोष मावेना\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nधन्य वार ! धन्य वार ! जै सारा गेला पापभार\r\nसतत आता प्रार्थना, स्तुति आनंद सरेना;\r\nधन्य वार ! धन्य वार ! प्रभूने केला जै उद्धार ॥धृ॥\r\n[Verse]\r\n[Verse]\r\nकेला करार निश्चये, दिली प्रभूने अभये,\r\nअंदेशा कां, आतां जीवा ? विसावा घे, जा गौरवा.\r\n[Verse]\r\n[Verse]\r\nतो राहू देई जवळी, नित्याने तोचि संभाळी,\r\nसुखद स्वर्गी आणुनी ठेवील तो स्वसदनी\r\n[Verse]\r\n[Verse]\r\nप्रेमळ माझा प्रभू तो, दास सुखी मी हर्षतो,\r\nका करु घोर ? धन्य मी ! करी उल्लास नेहमी.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

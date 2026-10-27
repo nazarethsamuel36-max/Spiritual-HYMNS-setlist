@@ -1,265 +1,143 @@
 {
-  "id" : 755,
-  "songNumber" : 143,
-  "title" : "HAVE THINE OWN WAY LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Have Thine own way, Lord !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Have Thine own way !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Thou art the Potter;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "I am the clay.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Mould me and make me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "After Thy will,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "While I am waiting,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Yielded and still.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Have Thine own way, Lord !"
-    }, {
-      "text" : "Have Thine own way !"
-    }, {
-      "text" : "Search me and try me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Master, today !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Whiter than snow, Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Wash me just now,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "As in Thy presence,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Humbly I bow.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Have Thine own way, Lord !"
-    }, {
-      "text" : "Have Thine own way !"
-    }, {
-      "text" : "Wounded and weary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Help me, I pray !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Power, all power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Surely is Thine !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Touch me and heal me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Saviour divine !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Have Thine own way, Lord !"
-    }, {
-      "text" : "Have Thine own way !"
-    }, {
-      "text" : "Hold o'er my being",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Absolute sway !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Fill with Thy Spirit",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Till all shall see",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Christ only, always,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Living in me !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    } ]
-  } ]
+  "id": 755,
+  "songNumber": 143,
+  "title": "HAVE THINE OWN WAY LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Have Thine own way, Lord !"
+        },
+        {
+          "text": "Have Thine own way !"
+        },
+        {
+          "text": "Thou art the Potter;"
+        },
+        {
+          "text": "I am the clay."
+        },
+        {
+          "text": "Mould me and make me"
+        },
+        {
+          "text": "After Thy will,"
+        },
+        {
+          "text": "While I am waiting,"
+        },
+        {
+          "text": "Yielded and still."
+        },
+        {
+          "text": "Have Thine own way, Lord !"
+        },
+        {
+          "text": "Have Thine own way !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Search me and try me,"
+        },
+        {
+          "text": "Master, today !"
+        },
+        {
+          "text": "Whiter than snow, Lord,"
+        },
+        {
+          "text": "Wash me just now,"
+        },
+        {
+          "text": "As in Thy presence,"
+        },
+        {
+          "text": "Humbly I bow."
+        },
+        {
+          "text": "Have Thine own way, Lord !"
+        },
+        {
+          "text": "Have Thine own way !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Wounded and weary,"
+        },
+        {
+          "text": "Help me, I pray !"
+        },
+        {
+          "text": "Power, all power,"
+        },
+        {
+          "text": "Surely is Thine !"
+        },
+        {
+          "text": "Touch me and heal me,"
+        },
+        {
+          "text": "Saviour divine !"
+        },
+        {
+          "text": "Have Thine own way, Lord !"
+        },
+        {
+          "text": "Have Thine own way !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Hold o'er my being"
+        },
+        {
+          "text": "Absolute sway !"
+        },
+        {
+          "text": "Fill with Thy Spirit"
+        },
+        {
+          "text": "Till all shall see"
+        },
+        {
+          "text": "Christ only, always,"
+        },
+        {
+          "text": "Living in me !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Have Thine own way, Lord !\n[G]Have Thine own [D]way !\n[D]Thou art the [A]Potter;\n[D]I am the [G]clay.\n[D]Mould me and [A]make me\n[D]After Thy [G]will,\n[D]While I am [A]waiting,\n[D]Yielded and [G]still.\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 2]\n[D]Search me and [A]try me,\n[D]Master, to[G]day !\n[D]Whiter than [A]snow, Lord,\n[D]Wash me just [G]now,\n[D]As in Thy [A]presence,\n[D]Humbly I [G]bow.\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 3]\n[D]Wounded and [A]weary,\n[D]Help me, I [G]pray !\n[D]Power, all [A]power,\n[D]Surely is [G]Thine !\n[D]Touch me and [A]heal me,\n[D]Saviour di[G]vine !\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 4]\n[D]Hold o'er my [A]being\n[D]Absolute [G]sway !\n[D]Fill with Thy [A]Spirit\n[D]Till all shall [G]see\n[D]Christ only, [A]always,\n[D]Living in [G]me !",
+  "lyrics": "[Verse 1]\nHave Thine own way, Lord !\nHave Thine own way !\nThou art the Potter;\nI am the clay.\nMould me and make me\nAfter Thy will,\nWhile I am waiting,\nYielded and still.\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 2]\nSearch me and try me,\nMaster, today !\nWhiter than snow, Lord,\nWash me just now,\nAs in Thy presence,\nHumbly I bow.\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 3]\nWounded and weary,\nHelp me, I pray !\nPower, all power,\nSurely is Thine !\nTouch me and heal me,\nSaviour divine !\nHave Thine own way, Lord !\nHave Thine own way !\n\n[Verse 4]\nHold o'er my being\nAbsolute sway !\nFill with Thy Spirit\nTill all shall see\nChrist only, always,\nLiving in me !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

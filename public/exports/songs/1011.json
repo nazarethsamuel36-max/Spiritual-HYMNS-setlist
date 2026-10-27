@@ -1,234 +1,130 @@
 {
-  "id" : 1011,
-  "songNumber" : 33,
-  "title" : "जायेंगे उत्तम देश में जरूर",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "जायेंगे उत्तम देश में जरूर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "रहेंगे प्रभु के साथ में जरूर;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "स्वर्गीय देश उत्तम भी वह है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "हमारा वह देश जो अद्भुत है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "पिता को भाया है, हमारा एक राज्य है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "दुनिया की सृष्टि से, पहले बनाया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अद्भुत वह नगर भी है, ईश्वर की रचना है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "दृढ़ता से नेव डाली है, स्थिर भी किया गया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "पवित्र नगर वह है, धार्मिकता रहती है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "स्वर्गीय स्वभाव से, तैयार भी किया है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "सनातन राज्य वह है, युगानुयुग वह रहे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "रहेंगे सदा उसमें, जिनको उसने चुना है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "प्रभु को देखेंगे, आनंद से भर जायेंगे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "उसकी महिमा में, हम सब मिल जायेंगे ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "उसके समान होंगे, हमारा जीवन वह है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 1011,
+  "songNumber": 33,
+  "title": "जायेंगे उत्तम देश में जरूर",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "जायेंगे उत्तम देश में जरूर,"
+        },
+        {
+          "text": "रहेंगे प्रभु के साथ में जरूर;"
+        },
+        {
+          "text": "स्वर्गीय देश उत्तम भी वह है,"
+        },
+        {
+          "text": "हमारा वह देश जो अद्भुत है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पिता को भाया है, हमारा एक राज्य है,"
+        },
+        {
+          "text": "दुनिया की सृष्टि से, पहले बनाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अद्भुत वह नगर भी है, ईश्वर की रचना है ।"
+        },
+        {
+          "text": "दृढ़ता से नेव डाली है, स्थिर भी किया गया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र नगर वह है, धार्मिकता रहती है,"
+        },
+        {
+          "text": "स्वर्गीय स्वभाव से, तैयार भी किया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सनातन राज्य वह है, युगानुयुग वह रहे,"
+        },
+        {
+          "text": "रहेंगे सदा उसमें, जिनको उसने चुना है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु को देखेंगे, आनंद से भर जायेंगे,"
+        },
+        {
+          "text": "उसकी महिमा में, हम सब मिल जायेंगे ।"
+        },
+        {
+          "text": "उसके समान होंगे, हमारा जीवन वह है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]जायेंगे उत्तम [C]देश में जरू[G]र,\n[G]रहेंगे प्रभु के [D]साथ में जरू[G]र;\n[G]स्वर्गीय देश उत्त[C]म भी वह [G]है,\n[G]हमारा वह देश जो [D]अद्भुत [G]है ।\n[Verse]\n[Verse]\n[G]पिता को भाया [C]है, हमारा [G]एक राज्य है,\n[G]दुनिया की सृष्टि [C]से, पहले ब[D]नाया [G]है ।\n[Verse]\n[Verse]\n[G]अद्भुत वह नगर [C]भी है, [G]ईश्वर की रचना है ।\n[G]दृढ़ता से नेव [C]डाली है, [D]स्थिर भी किया ग[G]या है ।\n[Verse]\n[Verse]\n[G]पवित्र नगर वह [C]है, [G]धार्मिकता रहती है,\n[G]स्वर्गीय स्वभाव [C]से, तैयार [D]भी किया [G]है ।\n[Verse]\n[Verse]\n[G]सनातन राज्य वह [C]है, [G]युगानुयुग वह रहे,\n[G]रहेंगे सदा उस[C]में, जिनको [D]उसने चुना [G]है ।\n[Verse]\n[Verse]\n[G]प्रभु को देखें[C]गे, आनंद से [G]भर जायेंगे,\n[G]उसकी महिमा [C]में, हम सब [D]मिल जा[G]येंगे ।\n[G]उसके समान हों[C]गे, हमारा [D]जीवन वह [G]है ।",
+  "lyrics": "[Chorus]\n जायेंगे उत्तम देश में जरूर,\nरहेंगे प्रभु के साथ में जरूर;\nस्वर्गीय देश उत्तम भी वह है,\nहमारा वह देश जो अद्भुत है ।\n[Verse]\n[Verse]\nपिता को भाया है, हमारा एक राज्य है,\nदुनिया की सृष्टि से, पहले बनाया है ।\n[Verse]\n[Verse]\nअद्भुत वह नगर भी है, ईश्वर की रचना है ।\nदृढ़ता से नेव डाली है, स्थिर भी किया गया है ।\n[Verse]\n[Verse]\nपवित्र नगर वह है, धार्मिकता रहती है,\nस्वर्गीय स्वभाव से, तैयार भी किया है ।\n[Verse]\n[Verse]\nसनातन राज्य वह है, युगानुयुग वह रहे,\nरहेंगे सदा उसमें, जिनको उसने चुना है ।\n[Verse]\n[Verse]\nप्रभु को देखेंगे, आनंद से भर जायेंगे,\nउसकी महिमा में, हम सब मिल जायेंगे ।\nउसके समान होंगे, हमारा जीवन वह है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

@@ -1,172 +1,95 @@
 {
-  "id" : 1209,
-  "songNumber" : 231,
-  "title" : "यीशु मेरा राजा यीशु मेरा प्रभु",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु मेरा राजा यीशु मेरा प्रभु",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "वही मेरा सब कुछ है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "वही उद्धार वही चट्टान",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "यीशु मेरा गढ़ है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "दुनिया में आया मनुष्य बनकर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हमें बचाने को (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "लहूभी बहाया प्राण को भी दिया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "मुक्ति का दाता यीशु है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "भेड़ो की नाई भटक रहा था",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "उसने मुझे आवाज दी (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "पास बुलाया गले से लगाया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "शांति का दाता यीशु है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "उसने कहा माँगो उसने कहा ढूंढो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "उसने कहा खटखटाओ (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "मैंने उसे मांगा ढूढा खटखटाया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "यीशु को पा लिया।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 1209,
+  "songNumber": 231,
+  "title": "यीशु मेरा राजा यीशु मेरा प्रभु",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु मेरा राजा यीशु मेरा प्रभु"
+        },
+        {
+          "text": "वही मेरा सब कुछ है"
+        },
+        {
+          "text": "वही उद्धार वही चट्टान"
+        },
+        {
+          "text": "यीशु मेरा गढ़ है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुनिया में आया मनुष्य बनकर"
+        },
+        {
+          "text": "हमें बचाने को (2)"
+        },
+        {
+          "text": "लहूभी बहाया प्राण को भी दिया"
+        },
+        {
+          "text": "मुक्ति का दाता यीशु है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "भेड़ो की नाई भटक रहा था"
+        },
+        {
+          "text": "उसने मुझे आवाज दी (2)"
+        },
+        {
+          "text": "पास बुलाया गले से लगाया"
+        },
+        {
+          "text": "शांति का दाता यीशु है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "उसने कहा माँगो उसने कहा ढूंढो"
+        },
+        {
+          "text": "उसने कहा खटखटाओ (2)"
+        },
+        {
+          "text": "मैंने उसे मांगा ढूढा खटखटाया"
+        },
+        {
+          "text": "यीशु को पा लिया।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]यीशु मेरा राजा [C]यीशु मेरा प्रभु\n[G]वही मेरा सब [D]कुछ है\n[G]वही उद्धार [C]वही चट्टान\n[D]यीशु मेरा गढ़ [G]है ।\n\n[Verse]\n[G]दुनिया में आया [C]मनुष्य बनकर\n[G]हमें बचाने [D]को (2)\n[G]लहूभी बहाया [C]प्राण को भी दिया\n[D]मुक्ति का दाता यीशु [G]है ।\n\n[Verse]\n[G]भेड़ो की नाई [C]भटक रहा था\n[G]उसने मुझे आ[D]वाज दी (2)\n[G]पास बुलाया [C]गले से लगाया\n[D]शांति का दाता यीशु [G]है।\n\n[Verse]\n[G]उसने कहा माँगो [C]उसने कहा ढूंढो\n[G]उसने कहा खटख[D]टाओ (2)\n[G]मैंने उसे मांगा [C]ढूढा खटखटाया\n[D]यीशु को पा लि[G]या।",
+  "lyrics": "[Verse]\nयीशु मेरा राजा यीशु मेरा प्रभु\nवही मेरा सब कुछ है\nवही उद्धार वही चट्टान\nयीशु मेरा गढ़ है ।\n\n[Verse]\nदुनिया में आया मनुष्य बनकर\nहमें बचाने को (2)\nलहूभी बहाया प्राण को भी दिया\nमुक्ति का दाता यीशु है ।\n\n[Verse]\nभेड़ो की नाई भटक रहा था\nउसने मुझे आवाज दी (2)\nपास बुलाया गले से लगाया\nशांति का दाता यीशु है।\n\n[Verse]\nउसने कहा माँगो उसने कहा ढूंढो\nउसने कहा खटखटाओ (2)\nमैंने उसे मांगा ढूढा खटखटाया\nयीशु को पा लिया।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

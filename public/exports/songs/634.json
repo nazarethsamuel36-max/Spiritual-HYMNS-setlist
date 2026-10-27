@@ -1,232 +1,140 @@
 {
-  "id" : 634,
-  "songNumber" : 327,
-  "title" : "I JUST WANT TO BE WHERE YOU ARE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I just want to be where You are,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Dwelling daily in Your presence,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I don't want to worship from afar,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Draw me near to where You are.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I just want to be where You are,"
-    }, {
-      "text" : "In Your dwelling place forever,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Take me to the place where You are,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I just want to be with You.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I want to be where You are,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Dwelling in Your presence,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Feasting at Your table,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Surrounded by Your glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "In Your presence,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "That's where I always want to be",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "B",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I just want to be,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I just want to be with You."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "I just want to be where You are,"
-    }, {
-      "text" : "To enter boldly in Your presence",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I don't want to worship from afar,"
-    }, {
-      "text" : "Draw me near to where You are."
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Oh, my God,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "You are my strength and my song,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And when I'm in Your presence,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Though I'm weak You're always strong.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "B",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "(Repeat Verses 1 and 2)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "ENDING",
-    "lines" : [ {
-      "text" : "I just want to be,"
-    }, {
-      "text" : "I just want to be with You."
-    } ]
-  } ]
+  "id": 634,
+  "songNumber": 327,
+  "title": "I JUST WANT TO BE WHERE YOU ARE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I just want to be where You are,"
+        },
+        {
+          "text": "Dwelling daily in Your presence,"
+        },
+        {
+          "text": "I dont want to worship from afar,"
+        },
+        {
+          "text": "Draw me near to where You are."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I just want to be where You are,"
+        },
+        {
+          "text": "In Your dwelling place forever,"
+        },
+        {
+          "text": "Take me to the place where You are,"
+        },
+        {
+          "text": "I just want to be with You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I want to be where You are,"
+        },
+        {
+          "text": "Dwelling in Your presence,"
+        },
+        {
+          "text": "Feasting at Your table,"
+        },
+        {
+          "text": "Surrounded by Your glory,"
+        },
+        {
+          "text": "In Your presence,"
+        },
+        {
+          "text": "Thats where I always want to be"
+        },
+        {
+          "text": "I just want to be,"
+        },
+        {
+          "text": "I just want to be with You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I just want to be where You are,"
+        },
+        {
+          "text": "To enter boldly in Your presence"
+        },
+        {
+          "text": "I dont want to worship from afar,"
+        },
+        {
+          "text": "Draw me near to where You are."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Bridge",
+      "lines": [
+        {
+          "text": "Oh, my God,"
+        },
+        {
+          "text": "You are my strength and my song,"
+        },
+        {
+          "text": "And when Im in Your presence,"
+        },
+        {
+          "text": "Though Im weak Youre always strong."
+        },
+        {
+          "text": "(Repeat Verses 1 and 2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Outro",
+      "lines": [
+        {
+          "text": "I just want to be,"
+        },
+        {
+          "text": "I just want to be with You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nI [E]just want to be where You [A]are,\r\n[B]Dwelling daily in Your [A]pres[E]ence,\r\nI [E]dont want to worship from a[A]far,\r\n[B]Draw me near to where You [E]are.\r\n\r\n[Verse 2]\r\nI just want to be where You are,\r\n[B]In Your dwelling place for[A]ev[E]er,\r\n[E]Take me to the place where You [A]are,\r\n[B]I [A]just want to [B]be with [E]You.\r\n\r\n[Chorus]\r\nI [A]want to be where You [B]are,\r\n[E]Dwelling in Your presence,\r\n[A]Feasting at Your [B]table,\r\nSur[E]rounded by Your glory,\r\nIn Your [A]presence,\r\nThats [B]where I always [E]want to [C#]be\r\nI [A]just want to [B]be,\r\nI just want to be with You.\r\n\r\n[Verse 3]\r\nI just want to be where You are,\r\nTo [B]enter boldly in Your [A]pres[E]ence\r\nI dont want to worship from afar,\r\nDraw me near to where You are.\r\n\r\n[Bridge]\r\nOh, [A]my [B]God,\r\n[E]You are my strength and my [C#]song,\r\nAnd [A]when Im in Your [B]presence,\r\nThough Im [E]weak Youre always [C#]strong.\r\n(Repeat Verses 1 and 2)\r\n\r\n[Outro]\r\nI just want to be,\r\nI just want to be with You.",
+  "lyrics": "[Verse 1]\r\nI just want to be where You are,\r\nDwelling daily in Your presence,\r\nI dont want to worship from afar,\r\nDraw me near to where You are.\r\n\r\n[Verse 2]\r\nI just want to be where You are,\r\nIn Your dwelling place forever,\r\nTake me to the place where You are,\r\nI just want to be with You.\r\n\r\n[Chorus]\r\nI want to be where You are,\r\nDwelling in Your presence,\r\nFeasting at Your table,\r\nSurrounded by Your glory,\r\nIn Your presence,\r\nThats where I always want to be\r\nI just want to be,\r\nI just want to be with You.\r\n\r\n[Verse 3]\r\nI just want to be where You are,\r\nTo enter boldly in Your presence\r\nI dont want to worship from afar,\r\nDraw me near to where You are.\r\n\r\n[Bridge]\r\nOh, my God,\r\nYou are my strength and my song,\r\nAnd when Im in Your presence,\r\nThough Im weak Youre always strong.\r\n(Repeat Verses 1 and 2)\r\n\r\n[Outro]\r\nI just want to be,\r\nI just want to be with You.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

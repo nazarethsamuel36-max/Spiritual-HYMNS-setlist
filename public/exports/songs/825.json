@@ -1,158 +1,113 @@
 {
-  "id" : 825,
-  "songNumber" : 213,
-  "title" : "GOD BE WITH YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God be with you till we meet again!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "By His counsels guide, uphold you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "With His sheep securely fold you;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "God be with you till we meet again!"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Till we meet! till we meet!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Till we meet at Jesus' feet;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Till we meet! till we meet!"
-    }, {
-      "text" : "God be with you till we meet again!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "God be with you till we meet again!"
-    }, {
-      "text" : "'Neath His wings securely hide you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Daily manna still provide you;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "God be with you till we meet again!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "God be with you till we meet again!"
-    }, {
-      "text" : "When life's perils thick confound you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Put His arms unfailing round you;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "God be with you till we meet again!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "God be with you till we meet again!"
-    }, {
-      "text" : "Keep love's banner floating o'er you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Smite death's threat'ning wave before you;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "God be with you till we meet again!"
-    } ]
-  } ]
+  "id": 825,
+  "songNumber": 213,
+  "title": "GOD BE WITH YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "God be with you till we meet again!"
+        },
+        {
+          "text": "By His counsels guide, uphold you,"
+        },
+        {
+          "text": "With His sheep securely fold you;"
+        },
+        {
+          "text": "God be with you till we meet again!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Till we meet! till we meet!"
+        },
+        {
+          "text": "Till we meet at Jesus feet;"
+        },
+        {
+          "text": "Till we meet! till we meet!"
+        },
+        {
+          "text": "God be with you till we meet again!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "God be with you till we meet again!"
+        },
+        {
+          "text": "Neath His wings securely hide you,"
+        },
+        {
+          "text": "Daily manna still provide you;"
+        },
+        {
+          "text": "God be with you till we meet again!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "God be with you till we meet again!"
+        },
+        {
+          "text": "When lifes perils thick confound you,"
+        },
+        {
+          "text": "Put His arms unfailing round you;"
+        },
+        {
+          "text": "God be with you till we meet again!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "God be with you till we meet again!"
+        },
+        {
+          "text": "Keep loves banner floating oer you,"
+        },
+        {
+          "text": "Smite deaths threatning wave before you;"
+        },
+        {
+          "text": "God be with you till we meet again!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[C]God be with you till we [F][G]meet a[C]gain!\r\nBy His [C]counsels guide, up[G]hold you,\r\nWith His [C]sheep securely [G]fold you;\r\nGod be with you till we meet again!\r\n\r\n[Chorus]\r\n[C]Till we meet! [F]till we [C]meet!\r\nTill we [C]meet at [G]Jesus feet;\r\nTill we meet! till we meet!\r\nGod be with you till we meet again!\r\n\r\n[Verse 2]\r\nGod be with you till we meet again!\r\nNeath His [C]wings securely [G]hide you,\r\nDaily [C]manna still pro[G]vide you;\r\nGod be with you till we meet again!\r\n\r\n[Verse 3]\r\nGod be with you till we meet again!\r\nWhen lifes [C]perils thick con[G]found you,\r\nPut His [C]arms un[G]failing round you;\r\nGod be with you till we meet again!\r\n\r\n[Verse 4]\r\nGod be with you till we meet again!\r\nKeep loves [C]banner floating [G]oer you,\r\nSmite deaths [C]threatning wave be[G]fore you;\r\nGod be with you till we meet again!",
+  "lyrics": "[Verse 1]\r\nGod be with you till we meet again!\r\nBy His counsels guide, uphold you,\r\nWith His sheep securely fold you;\r\nGod be with you till we meet again!\r\n\r\n[Chorus]\r\nTill we meet! till we meet!\r\nTill we meet at Jesus feet;\r\nTill we meet! till we meet!\r\nGod be with you till we meet again!\r\n\r\n[Verse 2]\r\nGod be with you till we meet again!\r\nNeath His wings securely hide you,\r\nDaily manna still provide you;\r\nGod be with you till we meet again!\r\n\r\n[Verse 3]\r\nGod be with you till we meet again!\r\nWhen lifes perils thick confound you,\r\nPut His arms unfailing round you;\r\nGod be with you till we meet again!\r\n\r\n[Verse 4]\r\nGod be with you till we meet again!\r\nKeep loves banner floating oer you,\r\nSmite deaths threatning wave before you;\r\nGod be with you till we meet again!",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Blessing"
+  ]
 }

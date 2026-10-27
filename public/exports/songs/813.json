@@ -1,256 +1,150 @@
 {
-  "id" : 813,
-  "songNumber" : 201,
-  "title" : "ONCE OUR BLESSED CHRIST OF BEAUTY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Once our blessed Christ of beauty,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Was veiled off from human view;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "But through suffering, death and sorrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "He has rent the veil in two.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O behold the man of sorrows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "O behold Him in plain view,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Lo! He is the mighty conqueror,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Since He rent the veil in two,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Lo! He is the mighty conqueror,"
-    }, {
-      "text" : "Since He rent the veil in two.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Yes, He is with God, the Father,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Interceding there for you;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For He is the mighty conqueror,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Since He rent the veil in two."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Holy angels bow before Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Men of earth give praises due,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "For He is the well beloved,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Since He rent the veil in two."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Throughout time and endless ages,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Heights and depths of love so true,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "He alone can be the giver,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Since He rent the veil in two."
-    } ]
-  } ]
+  "id": 813,
+  "songNumber": 201,
+  "title": "ONCE OUR BLESSED CHRIST OF BEAUTY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Once our blessed Christ of beauty,"
+        },
+        {
+          "text": "Was veiled off from human view;"
+        },
+        {
+          "text": "But through suffering, death and sorrow,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "He has rent the veil in two."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O behold the man of sorrows,"
+        },
+        {
+          "text": "O behold Him in plain view,"
+        },
+        {
+          "text": "Lo! He is the mighty conqueror,"
+        },
+        {
+          "text": "Since He rent the veil in two,"
+        },
+        {
+          "text": "Lo! He is the mighty conqueror,"
+        },
+        {
+          "text": "Since He rent the veil in two."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Yes, He is with God, the Father,"
+        },
+        {
+          "text": "Interceding there for you;"
+        },
+        {
+          "text": "For He is the mighty conqueror,"
+        },
+        {
+          "text": "Since He rent the veil in two."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy angels bow before Him,"
+        },
+        {
+          "text": "Men of earth give praises due,"
+        },
+        {
+          "text": "For He is the well beloved,"
+        },
+        {
+          "text": "Since He rent the veil in two."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Throughout time and endless ages,"
+        },
+        {
+          "text": "Heights and depths of love so true,"
+        },
+        {
+          "text": "He alone can be the giver,"
+        },
+        {
+          "text": "Since He rent the veil in two."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [D]Once our blessed [G]Christ of [D]beauty,\r\nWas [D]veiled off from [A]human [D]view;\r\nBut through [D]suffering, [G]death and [D]sorrow,\r\n[Chorus]\r\nHe has [D]rent the [A]veil in [D]two.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nO be[D]hold the [G]man of [D]sorrows,\r\nO be[D]hold Him [A]in plain [D]view,\r\nLo! He [D]is the [G]mighty [D]conqueror,\r\nSince He [D]rent the [A]veil in [D]two,\r\nLo! He is the mighty conqueror,\r\nSince He [D]rent the [A]veil in [D]two.\r\n[Verse]\r\n[Verse]\r\nYes, He [D]is with [G]God, the [D]Father,\r\nInter[D]ceding [A]there for [D]you;\r\nFor He [D]is the [G]mighty [D]conqueror,\r\nSince He rent the veil in two.\r\n[Verse]\r\n[Verse]\r\nHoly [D]angels [G]bow be[D]fore Him,\r\nMen of [D]earth give [A]praises [D]due,\r\nFor He [D]is the [G]well be[D]loved,\r\nSince He rent the veil in two.\r\n[Verse]\r\n[Verse]\r\nThrough[D]out time and [G]endless [D]ages,\r\nHeights and [D]depths of [A]love so [D]true,\r\nHe a[D]lone can [G]be the [D]giver,\r\nSince He rent the veil in two.",
+  "lyrics": "[Verse]\r\n Once our blessed Christ of beauty,\r\nWas veiled off from human view;\r\nBut through suffering, death and sorrow,\r\n[Chorus]\r\nHe has rent the veil in two.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nO behold the man of sorrows,\r\nO behold Him in plain view,\r\nLo! He is the mighty conqueror,\r\nSince He rent the veil in two,\r\nLo! He is the mighty conqueror,\r\nSince He rent the veil in two.\r\n[Verse]\r\n[Verse]\r\nYes, He is with God, the Father,\r\nInterceding there for you;\r\nFor He is the mighty conqueror,\r\nSince He rent the veil in two.\r\n[Verse]\r\n[Verse]\r\nHoly angels bow before Him,\r\nMen of earth give praises due,\r\nFor He is the well beloved,\r\nSince He rent the veil in two.\r\n[Verse]\r\n[Verse]\r\nThroughout time and endless ages,\r\nHeights and depths of love so true,\r\nHe alone can be the giver,\r\nSince He rent the veil in two.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

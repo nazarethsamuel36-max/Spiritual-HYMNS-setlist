@@ -1,171 +1,95 @@
 {
-  "id" : 684,
-  "songNumber" : 377,
-  "title" : "BURDENS ARE LIFTED",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Days are filled with sorrow and care",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Hearts are lonely and drear;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Burdens are lifted at Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Jesus is very near.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Burdens are lifted at Calvary,"
-    }, {
-      "text" : "Calvary, Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Burdens are lifted at Calvary,"
-    }, {
-      "text" : "Jesus is very near."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Cast your care on Jesus today,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Leave your worry and fear;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Burdens are lifted at Calvary,"
-    }, {
-      "text" : "Jesus is very near."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Troubled soul, the Saviour can see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Evâ€™ry heartache and tear;"
-    }, {
-      "text" : "Burdens are lifted at Calvary",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Jesus is very near."
-    } ]
-  } ]
+  "id": 684,
+  "songNumber": 377,
+  "title": "BURDENS ARE LIFTED",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Days are filled with sorrow and care"
+        },
+        {
+          "text": "Hearts are lonely and drear;"
+        },
+        {
+          "text": "Burdens are lifted at Calvary,"
+        },
+        {
+          "text": "Jesus is very near."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Burdens are lifted at Calvary,"
+        },
+        {
+          "text": "Calvary, Calvary,"
+        },
+        {
+          "text": "Burdens are lifted at Calvary,"
+        },
+        {
+          "text": "Jesus is very near."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Cast your care on Jesus today,"
+        },
+        {
+          "text": "Leave your worry and fear;"
+        },
+        {
+          "text": "Burdens are lifted at Calvary,"
+        },
+        {
+          "text": "Jesus is very near."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Troubled soul, the Saviour can see,"
+        },
+        {
+          "text": "Ev'ry heartache and tear;"
+        },
+        {
+          "text": "Burdens are lifted at Calvary"
+        },
+        {
+          "text": "Jesus is very near."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]Days are [Bb]filled with [F]sorrow and [C]care\r\n[F]Hearts are [Bb]lonely and [C]drear;\r\n[F]Burdens are [Bb]lifted at [F]Calva[Bb][C]ry,\r\n[F]Jesus is [C]very [F]near.\r\n\r\n[Chorus]\r\nBurdens are lifted at Calvary,\r\n[F]Calva[Bb]ry, [F]Calva[C]ry,\r\nBurdens are lifted at Calvary,\r\nJesus is very near.\r\n\r\n[Verse 2]\r\n[F]Cast your [Bb]care on [F]Jesus to[C]day,\r\n[F]Leave your [Bb]worry and [C]fear;\r\nBurdens are lifted at Calvary,\r\nJesus is very near.\r\n\r\n[Verse 3]\r\n[F]Troubled [Bb]soul, the [F]Saviour can [C]see,\r\nEv'ry heartache and tear;\r\n[F]Burdens are [Bb]lifted at [F]Calva[Bb]ry\r\nJesus is very near.",
+  "lyrics": "[Verse 1]\r\nDays are filled with sorrow and care\r\nHearts are lonely and drear;\r\nBurdens are lifted at Calvary,\r\nJesus is very near.\r\n\r\n[Chorus]\r\nBurdens are lifted at Calvary,\r\nCalvary, Calvary,\r\nBurdens are lifted at Calvary,\r\nJesus is very near.\r\n\r\n[Verse 2]\r\nCast your care on Jesus today,\r\nLeave your worry and fear;\r\nBurdens are lifted at Calvary,\r\nJesus is very near.\r\n\r\n[Verse 3]\r\nTroubled soul, the Saviour can see,\r\nEv'ry heartache and tear;\r\nBurdens are lifted at Calvary\r\nJesus is very near.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

@@ -1,261 +1,114 @@
 {
-  "id" : 816,
-  "songNumber" : 204,
-  "title" : "WHAT A FRIEND",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "What a friend we have in Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "All our sins and griefs to bear!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "What a privilege to carry",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Everything to God in prayer!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "O what peace we often forfeit,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "O what needless pain we bear,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "All because we do not carry",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Everything to God in prayer!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Have we trials and temptations?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Is there trouble anywhere?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "We should never be discouraged,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Take it to the Lord in prayer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Can we find a friend so faithful,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Who will all our sorrows share?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Jesus knows our every weakness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Take it to the Lord in prayer."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Are we weak and heavy laden,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Cumbered with a load of care?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Precious Saviour, still our refuge,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Take it to the Lord in prayer."
-    }, {
-      "text" : "Do thy friends despise, forsake thee?",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Take it to the Lord in prayer;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "In His arms He'll take and shield thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Thou wilt find a solace there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 816,
+  "songNumber": 204,
+  "title": "WHAT A FRIEND",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "What a friend we have in Jesus,"
+        },
+        {
+          "text": "All our sins and griefs to bear!"
+        },
+        {
+          "text": "What a privilege to carry"
+        },
+        {
+          "text": "Everything to God in prayer!"
+        },
+        {
+          "text": "O what peace we often forfeit,"
+        },
+        {
+          "text": "O what needless pain we bear,"
+        },
+        {
+          "text": "All because we do not carry"
+        },
+        {
+          "text": "Everything to God in prayer!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Have we trials and temptations?"
+        },
+        {
+          "text": "Is there trouble anywhere?"
+        },
+        {
+          "text": "We should never be discouraged,"
+        },
+        {
+          "text": "Take it to the Lord in prayer."
+        },
+        {
+          "text": "Can we find a friend so faithful,"
+        },
+        {
+          "text": "Who will all our sorrows share?"
+        },
+        {
+          "text": "Jesus knows our every weakness,"
+        },
+        {
+          "text": "Take it to the Lord in prayer."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Are we weak and heavy laden,"
+        },
+        {
+          "text": "Cumbered with a load of care?"
+        },
+        {
+          "text": "Precious Saviour, still our refuge,"
+        },
+        {
+          "text": "Take it to the Lord in prayer."
+        },
+        {
+          "text": "Do thy friends despise, forsake thee?"
+        },
+        {
+          "text": "Take it to the Lord in prayer;"
+        },
+        {
+          "text": "In His arms He'll take and shield thee,"
+        },
+        {
+          "text": "Thou wilt find a solace there."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]What a friend we [G]have in [D]Jesus,\n[D]All our sins and [A]griefs to bear!\n[D]What a privilege to [G]carry\n[D]Everything to [A]God in [D]prayer!\nO what [A]peace we often [D]forfeit,\nO what [G]needless [D]pain we [A]bear,\n[D]All because we [G]do not [D]carry\nEverything to God in prayer!\n\n[Verse]\nHave we [D]trials and [G]temp[D]tations?\n[D]Is there trouble [A]anywhere?\n[D]We should never [G]be dis[D]couraged,\n[D]Take it to the [A]Lord in [D]prayer.\nCan we [A]find a friend so [D]faithful,\n[G]Who will all our [D]sorrows [A]share?\n[D]Jesus knows our [G]every [D]weakness,\nTake it to the Lord in prayer.\n\n[Verse]\nAre we [D]weak and [G]heavy [D]laden,\n[D]Cumbered with a [A]load of care?\n[D]Precious Saviour, [G]still our [D]refuge,\nTake it to the Lord in prayer.\nDo thy [A]friends despise, for[D]sake thee?\n[G]Take it to the [D]Lord in [A]prayer;\n[D]In His arms He'll [G]take and [D]shield thee,\n[D]Thou wilt find a [A]solace [D]there.",
+  "lyrics": "[Verse]\nWhat a friend we have in Jesus,\nAll our sins and griefs to bear!\nWhat a privilege to carry\nEverything to God in prayer!\nO what peace we often forfeit,\nO what needless pain we bear,\nAll because we do not carry\nEverything to God in prayer!\n\n[Verse]\nHave we trials and temptations?\nIs there trouble anywhere?\nWe should never be discouraged,\nTake it to the Lord in prayer.\nCan we find a friend so faithful,\nWho will all our sorrows share?\nJesus knows our every weakness,\nTake it to the Lord in prayer.\n\n[Verse]\nAre we weak and heavy laden,\nCumbered with a load of care?\nPrecious Saviour, still our refuge,\nTake it to the Lord in prayer.\nDo thy friends despise, forsake thee?\nTake it to the Lord in prayer;\nIn His arms He'll take and shield thee,\nThou wilt find a solace there.",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Peace",
+    "Worship",
+    "Prayer"
+  ]
 }

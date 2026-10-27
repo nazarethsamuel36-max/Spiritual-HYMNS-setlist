@@ -1,238 +1,110 @@
 {
-  "id" : 880,
-  "songNumber" : 268,
-  "title" : "FILL MY CUP LORD",
-  "language" : "english",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Fill my cup, Lord, I lift it up, Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Come and quench this thirsting of my soul,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Bread of Heaven, feed me till I want no more,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Fill my cup, fill it up and make me whole.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Like the woman at the well I was seeking",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "For things that could not satisfy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And then I heard my Saviour speaking",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "\"Draw from my well that never shall run dry.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "There are millions in this world who are craving",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "For pleasures earthly things afford,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "But none can match the wondrous treasure",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "That I find in Jesus Christ my Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "So my brother, if the things this world would give you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "Leave a hunger that won't pass away,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "My blessed Lord will come and save you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "If you kneel to Him and humbly pray.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 880,
+  "songNumber": 268,
+  "title": "FILL MY CUP LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Fill my cup, Lord, I lift it up, Lord"
+        },
+        {
+          "text": "Come and quench this thirsting of my soul,"
+        },
+        {
+          "text": "Bread of Heaven, feed me till I want no more,"
+        },
+        {
+          "text": "Fill my cup, fill it up and make me whole."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Like the woman at the well I was seeking"
+        },
+        {
+          "text": "For things that could not satisfy,"
+        },
+        {
+          "text": "And then I heard my Saviour speaking"
+        },
+        {
+          "text": "\"Draw from my well that never shall run dry.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "There are millions in this world who are craving"
+        },
+        {
+          "text": "For pleasures earthly things afford,"
+        },
+        {
+          "text": "But none can match the wondrous treasure"
+        },
+        {
+          "text": "That I find in Jesus Christ my Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "So my brother, if the things this world would give you"
+        },
+        {
+          "text": "Leave a hunger that wont pass away,"
+        },
+        {
+          "text": "My blessed Lord will come and save you"
+        },
+        {
+          "text": "If you kneel to Him and humbly pray."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]Fill my cup, [G]Lord, I [D]lift it up, [A]Lord\n[D]Come and quench this [G]thirsting of my [A]soul,\n[D]Bread of Heaven, [G]feed me [D]till I want no [G]more,\n[D]Fill my cup, [A]fill it up and [D]make me [G]whole.\n[Verse]\n[Verse]\nLike the [D]woman at the [G]well I was [D]seeking\nFor [G]things that [D]could not satis[A]fy,\nAnd then I [D]heard my [G]Saviour [D]speaking\n\"[D]Draw from my [A]well that [G]never shall run [D]dry.\"\n[Verse]\n[Verse]\nThere are [D]millions in this [G]world who are [D]craving\nFor [G]pleasures [D]earthly things af[A]ford,\nBut [D]none can [G]match the [D]wondrous treasure\nThat [D]I find in [A]Jesus [G]Christ my [D]Lord.\n[Verse]\n[Verse]\nSo my [D]brother, if the [G]things this world would [D]give you\n[G]Leave a hunger [D]that wont pass a[A]way,\nMy [D]blessed [G]Lord will [D]come and save you\nIf [D]you kneel [A]to Him and [G]humbly [D]pray.",
+  "lyrics": "[Chorus]\n Fill my cup, Lord, I lift it up, Lord\nCome and quench this thirsting of my soul,\nBread of Heaven, feed me till I want no more,\nFill my cup, fill it up and make me whole.\n[Verse]\n[Verse]\nLike the woman at the well I was seeking\nFor things that could not satisfy,\nAnd then I heard my Saviour speaking\n\"Draw from my well that never shall run dry.\"\n[Verse]\n[Verse]\nThere are millions in this world who are craving\nFor pleasures earthly things afford,\nBut none can match the wondrous treasure\nThat I find in Jesus Christ my Lord.\n[Verse]\n[Verse]\nSo my brother, if the things this world would give you\nLeave a hunger that wont pass away,\nMy blessed Lord will come and save you\nIf you kneel to Him and humbly pray.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

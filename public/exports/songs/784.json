@@ -1,257 +1,138 @@
 {
-  "id" : 784,
-  "songNumber" : 172,
-  "title" : "WHEN JESUS COMES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "One sat alone beside the highway begging,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "His eyes were blind, the light he could not see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "He clutched his rags and shivered in the shadows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Then Jesus came and bade his darkness flee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "When Jesus comes the tempter's pow'r is broken;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "When Jesus comes the tears are wiped away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "He takes the gloom and fills the life with glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "For all is changed when Jesus comes to stay.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "From home and friends the evil spirits drove him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Among the tombs he dwelt in misery;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "He cut himself as demon pow'rs possessed him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Then Jesus came and set the captive free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Unclean ! unclean ! the leper cried in torment,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "The deaf, the dumb, in helplessness stood near;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "The fever raged, disease had gripped its victim,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Then Jesus came and cast out every fear.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "So men today have found the Saviour able,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "They could not conquer passion, lust and sin;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Their broken hearts had left them sad and lonely,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Then Jesus came and dwelt Himself within.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 784,
+  "songNumber": 172,
+  "title": "WHEN JESUS COMES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One sat alone beside the highway begging,"
+        },
+        {
+          "text": "His eyes were blind, the light he could not see;"
+        },
+        {
+          "text": "He clutched his rags and shivered in the shadows,"
+        },
+        {
+          "text": "Then Jesus came and bade his darkness flee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "When Jesus comes the tempters powr is broken;"
+        },
+        {
+          "text": "When Jesus comes the tears are wiped away."
+        },
+        {
+          "text": "He takes the gloom and fills the life with glory,"
+        },
+        {
+          "text": "For all is changed when Jesus comes to stay."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "From home and friends the evil spirits drove him,"
+        },
+        {
+          "text": "Among the tombs he dwelt in misery;"
+        },
+        {
+          "text": "He cut himself as demon powrs possessed him,"
+        },
+        {
+          "text": "Then Jesus came and set the captive free."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Unclean ! unclean ! the leper cried in torment,"
+        },
+        {
+          "text": "The deaf, the dumb, in helplessness stood near;"
+        },
+        {
+          "text": "The fever raged, disease had gripped its victim,"
+        },
+        {
+          "text": "Then Jesus came and cast out every fear."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "So men today have found the Saviour able,"
+        },
+        {
+          "text": "They could not conquer passion, lust and sin;"
+        },
+        {
+          "text": "Their broken hearts had left them sad and lonely,"
+        },
+        {
+          "text": "Then Jesus came and dwelt Himself within."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]One sat alone be[G]side the highway [D]begging,\nHis [D]eyes were blind, the light he could not [A]see;\nHe [D]clutched his rags and [G]shivered in the [D]shadows,\nThen [D]Jesus came and [A]bade his darkness [D]flee.\n[Verse]\n[Verse]\n[Chorus]\n[D]When Jesus comes the [G]tempters powr is [D]broken;\nWhen [D]Jesus comes the tears are wiped a[A]way.\nHe [D]takes the gloom and [G]fills the life with [D]glory,\nFor [D]all is changed when [A]Jesus comes to [D]stay.\n[Verse]\n[Verse]\nFrom [D]home and friends the [G]evil spirits [D]drove him,\nA[D]mong the tombs he dwelt in mise[A]ry;\nHe [D]cut himself as [G]demon powrs pos[D]sessed him,\nThen [D]Jesus came and [A]set the captive [D]free.\n[Verse]\n[Verse]\nUn[D]clean ! unclean ! the [G]leper cried in [D]torment,\nThe [D]deaf, the dumb, in helplessness stood [A]near;\nThe [D]fever raged, dis[G]ease had gripped its [D]victim,\nThen [D]Jesus came and [A]cast out every [D]fear.\n[Verse]\n[Verse]\nSo [D]men today have [G]found the Saviour [D]able,\nThey [D]could not conquer passion, lust and [A]sin;\nTheir [D]broken hearts had [G]left them sad and [D]lonely,\nThen [D]Jesus came and [A]dwelt Himself with[D]in.",
+  "lyrics": "[Verse]\n One sat alone beside the highway begging,\nHis eyes were blind, the light he could not see;\nHe clutched his rags and shivered in the shadows,\nThen Jesus came and bade his darkness flee.\n[Verse]\n[Verse]\n[Chorus]\nWhen Jesus comes the tempters powr is broken;\nWhen Jesus comes the tears are wiped away.\nHe takes the gloom and fills the life with glory,\nFor all is changed when Jesus comes to stay.\n[Verse]\n[Verse]\nFrom home and friends the evil spirits drove him,\nAmong the tombs he dwelt in misery;\nHe cut himself as demon powrs possessed him,\nThen Jesus came and set the captive free.\n[Verse]\n[Verse]\nUnclean ! unclean ! the leper cried in torment,\nThe deaf, the dumb, in helplessness stood near;\nThe fever raged, disease had gripped its victim,\nThen Jesus came and cast out every fear.\n[Verse]\n[Verse]\nSo men today have found the Saviour able,\nThey could not conquer passion, lust and sin;\nTheir broken hearts had left them sad and lonely,\nThen Jesus came and dwelt Himself within.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Healing"
+  ]
 }

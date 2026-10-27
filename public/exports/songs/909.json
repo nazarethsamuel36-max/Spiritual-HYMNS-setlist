@@ -1,292 +1,108 @@
 {
-  "id" : 909,
-  "songNumber" : 297,
-  "title" : "PEACE PERFECT PEACE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! in this dark world of sin?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "The blood of Jesus whispers peace within.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! By thronging duties pressed?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "To do the will of Jesus this is rest.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! With sorrows surging round?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "On Jesus' bosom naught but calm is found.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! With loved ones far away?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "In Jesus' keeping we are safe and they.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! our future all unknown?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Jesus we know and He is on the throne.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "Peace! perfect peace! death shadowing us and ours?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "Jesus has vanquished death and all its powers.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 7",
-    "lines" : [ {
-      "text" : "It is enough: earth's struggles shall cease",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "And Jesus call to heaven's perfect peace.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 909,
+  "songNumber": 297,
+  "title": "PEACE PERFECT PEACE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! in this dark world of sin?"
+        },
+        {
+          "text": "The blood of Jesus whispers peace within."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! By thronging duties pressed?"
+        },
+        {
+          "text": "To do the will of Jesus this is rest."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! With sorrows surging round?"
+        },
+        {
+          "text": "On Jesus' bosom naught but calm is found."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! With loved ones far away?"
+        },
+        {
+          "text": "In Jesus' keeping we are safe and they."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! our future all unknown?"
+        },
+        {
+          "text": "Jesus we know and He is on the throne."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Peace! perfect peace! death shadowing us and ours?"
+        },
+        {
+          "text": "Jesus has vanquished death and all its powers."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "It is enough: earth's struggles shall cease"
+        },
+        {
+          "text": "And Jesus call to heaven's perfect peace."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Peace! perfect [G]peace! in [D]this dark [G]world of [A]sin?\nThe [D]blood of [G]Jesus [A]whispers [D]peace with[A]in.\n\n[Verse]\n[D]Peace! perfect [G]peace! By [D]thronging [G]duties [A]pressed?\nTo [D]do the [G]will of [A]Jesus [D]this is [A]rest.\n\n[Verse]\n[D]Peace! perfect [G]peace! With [D]sorrows [G]surging [A]round?\nOn [D]Jesus' [G]bosom [A]naught but [D]calm is [A]found.\n\n[Verse]\n[D]Peace! perfect [G]peace! With [D]loved ones [G]far a[A]way?\nIn [D]Jesus' [G]keeping [A]we are [D]safe and [A]they.\n\n[Verse]\n[D]Peace! perfect [G]peace! our [D]future [G]all un[A]known?\n[D]Jesus we [G]know and [A]He is [D]on the [A]throne.\n\n[Verse]\n[D]Peace! perfect [G]peace! death [D]shadowing [G]us and [A]ours?\n[D]Jesus has [G]vanquished [A]death and [D]all its [A]powers.\n\n[Verse]\nIt [D]is e[G]nough: earth's [D]struggles [G]shall [A]cease\nAnd [D]Jesus [G]call to [A]heaven's [D]perfect [A]peace.",
+  "lyrics": "[Verse]\nPeace! perfect peace! in this dark world of sin?\nThe blood of Jesus whispers peace within.\n\n[Verse]\nPeace! perfect peace! By thronging duties pressed?\nTo do the will of Jesus this is rest.\n\n[Verse]\nPeace! perfect peace! With sorrows surging round?\nOn Jesus' bosom naught but calm is found.\n\n[Verse]\nPeace! perfect peace! With loved ones far away?\nIn Jesus' keeping we are safe and they.\n\n[Verse]\nPeace! perfect peace! our future all unknown?\nJesus we know and He is on the throne.\n\n[Verse]\nPeace! perfect peace! death shadowing us and ours?\nJesus has vanquished death and all its powers.\n\n[Verse]\nIt is enough: earth's struggles shall cease\nAnd Jesus call to heaven's perfect peace.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Peace",
+    "Funeral"
+  ]
 }

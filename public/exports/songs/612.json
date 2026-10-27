@@ -1,85 +1,44 @@
 {
-  "id" : 612,
-  "songNumber" : 305,
-  "title" : "CAUSE ME TO COME TO THY RIVER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Cause me to come to Thy river O Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Cause me to drink at Thy river O Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Cause me to live in Thy river O Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Cause me to come, cause me to drink,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Cause me to live.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    } ]
-  } ]
+  "id": 612,
+  "songNumber": 305,
+  "title": "CAUSE ME TO COME TO THY RIVER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Cause me to come to Thy river O Lord."
+        },
+        {
+          "text": "Cause me to drink at Thy river O Lord."
+        },
+        {
+          "text": "Cause me to live in Thy river O Lord."
+        },
+        {
+          "text": "Cause me to come, cause me to drink,"
+        },
+        {
+          "text": "Cause me to live."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Cause me to [G]come to Thy [D]river O [A]Lord.\n[D]Cause me to [G]drink at Thy [D]river O [A]Lord.\n[D]Cause me to [G]live in Thy [D]river O [A]Lord.\n[G]Cause me to [D]come, [G]cause me to [D]drink,\n[A]Cause me to [D]live.",
+  "lyrics": "[Verse]\nCause me to come to Thy river O Lord.\nCause me to drink at Thy river O Lord.\nCause me to live in Thy river O Lord.\nCause me to come, cause me to drink,\nCause me to live.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,28 +1,46 @@
 {
-  "id" : 3159,
-  "songNumber" : 1018,
-  "title" : "** Our God Is An Awesome God",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Our God is an awesome God"
-    }, {
-      "text" : "He reigns from heaven above"
-    }, {
-      "text" : "With wisdom, power, and love"
-    }, {
-      "text" : "Our God is an awesome God"
-    } ]
-  } ]
+  "id": 3159,
+  "songNumber": 1018,
+  "title": "Our God Is An Awesome God",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "SECTIONS",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Our God is an awesome God"
+        },
+        {
+          "text": "He reigns from heaven above"
+        },
+        {
+          "text": "With wisdom, power, and love"
+        },
+        {
+          "text": "Our God is an awesome God"
+        }
+      ]
+    }
+  ],
+  "chords": "[SECTIONS]\r\n\r\n[CHORUS]\r\nOur God is an awesome God\r\nHe reigns from heaven above\r\nWith wisdom, power, and love\r\nOur God is an awesome God",
+  "lyrics": "[SECTIONS]\r\n\r\n[CHORUS]\r\nOur God is an awesome God\r\nHe reigns from heaven above\r\nWith wisdom, power, and love\r\nOur God is an awesome God",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

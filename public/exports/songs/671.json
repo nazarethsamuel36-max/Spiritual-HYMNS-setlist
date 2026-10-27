@@ -1,141 +1,62 @@
 {
-  "id" : 671,
-  "songNumber" : 364,
-  "title" : "I THE LORD THY GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I the Lord thy God, will hold thy right hand",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 34
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Saying unto thee, â€œFear notâ€"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Fear thou not for I am with thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Be not dismayed, for I am thy God.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I will strengthen thee, I will help thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Yea I will uphold thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "With the right hand of my righteousness",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Fear thou not for I am with thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Be not dismayed, for I am thy God."
-    } ]
-  } ]
+  "id": 671,
+  "songNumber": 364,
+  "title": "I THE LORD THY GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I the Lord thy God, will hold thy right hand"
+        },
+        {
+          "text": "Saying unto thee, \"Fear not\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Fear thou not for I am with thee,"
+        },
+        {
+          "text": "Be not dismayed, for I am thy God."
+        },
+        {
+          "text": "I will strengthen thee, I will help thee"
+        },
+        {
+          "text": "Yea I will uphold thee,"
+        },
+        {
+          "text": "With the right hand of my righteousness"
+        },
+        {
+          "text": "Fear thou not for I am with thee"
+        },
+        {
+          "text": "Be not dismayed, for I am thy God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nI the [D]Lord thy [G]God, will [D]hold thy [A]right [D]hand\nSaying unto thee, \"Fear not\"\n\n[Verse]\n[D]Fear thou [G]not for [D]I am [A]with [D]thee,\nBe [G]not dis[D]mayed, for [G]I am [A]thy [D]God.\nI will [D]strengthen [G]thee, I will [D]help [A]thee\n[D]Yea I will up[G]hold [D]thee,\nWith the [D]right [G]hand of [D]my [A]righteous[D]ness\n[D]Fear thou [G]not for [D]I am [A]with [D]thee\nBe not dismayed, for I am thy God.",
+  "lyrics": "[Verse]\nI the Lord thy God, will hold thy right hand\nSaying unto thee, \"Fear not\"\n\n[Verse]\nFear thou not for I am with thee,\nBe not dismayed, for I am thy God.\nI will strengthen thee, I will help thee\nYea I will uphold thee,\nWith the right hand of my righteousness\nFear thou not for I am with thee\nBe not dismayed, for I am thy God.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,277 +1,122 @@
 {
-  "id" : 906,
-  "songNumber" : 294,
-  "title" : "THE LORD IS MY SHEPHERD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The Lord is my Shepherd,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "There is nothing I shall want,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Fresh and green are the pastures,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Where He gives me repose,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Near restful waters He leads me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "To revive my drooping spirit.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "The Lord is my Shepherd",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "There is nothing I shall want. } 2",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He guides me along,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "For He knows to be right,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "If I walk in the darkness,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "No evil would I fear,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "I know that He will be there,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "With His crook and with His staff.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "The Lord has prepared,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Such a banquet for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Surely goodness and kindness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Shall follow after me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "In the Lord's own house shall I dwell;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "All the days of my life.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 906,
+  "songNumber": 294,
+  "title": "THE LORD IS MY SHEPHERD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "The Lord is my Shepherd,"
+        },
+        {
+          "text": "There is nothing I shall want,"
+        },
+        {
+          "text": "Fresh and green are the pastures,"
+        },
+        {
+          "text": "Where He gives me repose,"
+        },
+        {
+          "text": "Near restful waters He leads me,"
+        },
+        {
+          "text": "To revive my drooping spirit."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The Lord is my Shepherd"
+        },
+        {
+          "text": "There is nothing I shall want. } 2"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He guides me along,"
+        },
+        {
+          "text": "For He knows to be right,"
+        },
+        {
+          "text": "If I walk in the darkness,"
+        },
+        {
+          "text": "No evil would I fear,"
+        },
+        {
+          "text": "I know that He will be there,"
+        },
+        {
+          "text": "With His crook and with His staff."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The Lord has prepared,"
+        },
+        {
+          "text": "Such a banquet for me,"
+        },
+        {
+          "text": "Surely goodness and kindness,"
+        },
+        {
+          "text": "Shall follow after me,"
+        },
+        {
+          "text": "In the Lords own house shall I dwell;"
+        },
+        {
+          "text": "All the days of my life."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n The [D]Lord [A]is my [G]Shep[D]herd,\nThere is [G]nothing [A]I shall [D]want,\n[D]Fresh and [A]green are the [G]pastures,\n[G]Where He [A]gives me re[D]pose,\nNear [G]restful [A]waters He [D]leads me,\nTo re[G]vive my [A]drooping [D]spirit.\n[Verse]\n[Verse]\nThe [D]Lord [A]is my [G]Shep[D]herd\nThere is [G]nothing [A]I shall [D]want. } 2\n[Verse]\n[Verse]\nHe [D]guides [A]me a[G]long,\nFor He [G]knows [A]to be [D]right,\nIf I [G]walk [A]in the [D]darkness,\nNo [G]evil [A]would I [D]fear,\nI [D]know [A]that He [G]will be [D]there,\nWith His [G]crook and [A]with His [D]staff.\n[Verse]\n[Verse]\nThe [D]Lord [A]has pre[G]pared,\nSuch a [G]banquet [A]for [D]me,\n[D]Surely [A]goodness and [G]kindness,\nShall [G]follow [A]after [D]me,\nIn the [G]Lords own [A]house shall I [D]dwell;\n[G]All the [A]days of my [D]life.",
+  "lyrics": "[Chorus]\n The Lord is my Shepherd,\nThere is nothing I shall want,\nFresh and green are the pastures,\nWhere He gives me repose,\nNear restful waters He leads me,\nTo revive my drooping spirit.\n[Verse]\n[Verse]\nThe Lord is my Shepherd\nThere is nothing I shall want. } 2\n[Verse]\n[Verse]\nHe guides me along,\nFor He knows to be right,\nIf I walk in the darkness,\nNo evil would I fear,\nI know that He will be there,\nWith His crook and with His staff.\n[Verse]\n[Verse]\nThe Lord has prepared,\nSuch a banquet for me,\nSurely goodness and kindness,\nShall follow after me,\nIn the Lords own house shall I dwell;\nAll the days of my life.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

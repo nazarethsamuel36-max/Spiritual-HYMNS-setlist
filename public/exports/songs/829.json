@@ -1,204 +1,77 @@
 {
-  "id" : 829,
-  "songNumber" : 217,
-  "title" : "HOLY HOLY HOLY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Holy Holy Holy Lord God Almighty!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Early in the morning our song shall rise to Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Holy Holy Holy merciful and mighty;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "God over all who rules Eternity.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Holy Holy Holy angels adore Thee!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Casting down their bright crowns around the glassy sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 34
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "Thousands and ten thousands worship low before Thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Which wert and art and evermore shall be!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Holy Holy Holy though the darkness hide Thee!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Though the eye of sinful man Thy great glory may not see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 53
-      } ]
-    }, {
-      "text" : "Only Thou art Holy there is none beside Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Perfect in Power in Love and Purity!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 829,
+  "songNumber": 217,
+  "title": "HOLY HOLY HOLY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy Holy Holy Lord God Almighty!"
+        },
+        {
+          "text": "Early in the morning our song shall rise to Thee,"
+        },
+        {
+          "text": "Holy Holy Holy merciful and mighty;"
+        },
+        {
+          "text": "God over all who rules Eternity."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy Holy Holy angels adore Thee!"
+        },
+        {
+          "text": "Casting down their bright crowns around the glassy sea,"
+        },
+        {
+          "text": "Thousands and ten thousands worship low before Thee"
+        },
+        {
+          "text": "Which wert and art and evermore shall be!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Holy Holy Holy though the darkness hide Thee!"
+        },
+        {
+          "text": "Though the eye of sinful man Thy great glory may not see,"
+        },
+        {
+          "text": "Only Thou art Holy there is none beside Thee,"
+        },
+        {
+          "text": "Perfect in Power in Love and Purity!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Holy Holy [G]Holy [D]Lord God Al[A]mighty!\n[D]Early in the [G]morning our [A]song shall rise to [D]Thee,\n[D]Holy Holy [G]Holy [D]merciful and [A]mighty;\n[D]God over [G]all who [A]rules Eter[D]nity.\n\n[Verse]\n[D]Holy Holy [G]Holy [D]angels a[A]dore Thee!\n[D]Casting down their [G]bright crowns a[A]round the glassy [D]sea,\n[D]Thousands and ten [G]thousands [D]worship low be[A]fore Thee\n[D]Which wert and [G]art and [A]evermore shall [D]be!\n\n[Verse]\n[D]Holy Holy [G]Holy [D]though the darkness [A]hide Thee!\nThough the [D]eye of [G]sinful man Thy [A]great glory may not [D]see,\n[D]Only Thou art [G]Holy [D]there is none be[A]side Thee,\n[D]Perfect in [G]Power in [A]Love and Pu[D]rity!",
+  "lyrics": "[Verse]\nHoly Holy Holy Lord God Almighty!\nEarly in the morning our song shall rise to Thee,\nHoly Holy Holy merciful and mighty;\nGod over all who rules Eternity.\n\n[Verse]\nHoly Holy Holy angels adore Thee!\nCasting down their bright crowns around the glassy sea,\nThousands and ten thousands worship low before Thee\nWhich wert and art and evermore shall be!\n\n[Verse]\nHoly Holy Holy though the darkness hide Thee!\nThough the eye of sinful man Thy great glory may not see,\nOnly Thou art Holy there is none beside Thee,\nPerfect in Power in Love and Purity!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

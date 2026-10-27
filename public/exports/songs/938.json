@@ -1,64 +1,41 @@
 {
-  "id" : 938,
-  "songNumber" : 59,
-  "title" : "LET THE BOOK LIVE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Let the Book live to me, dear Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Show me myself within Thy Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Show me myself and show me my Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And let the Book live to me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 938,
+  "songNumber": 59,
+  "title": "LET THE BOOK LIVE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let the Book live to me, dear Lord,"
+        },
+        {
+          "text": "Show me myself within Thy Word,"
+        },
+        {
+          "text": "Show me myself and show me my Saviour,"
+        },
+        {
+          "text": "And let the Book live to me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Let the Book [A]live to me, dear [D]Lord,\n[D]Show me my[G]self within Thy [D]Word,\n[D]Show me my[G]self and show me my [D]Saviour,\nAnd [G]let the [A]Book live to [D]me.",
+  "lyrics": "[Verse]\nLet the Book live to me, dear Lord,\nShow me myself within Thy Word,\nShow me myself and show me my Saviour,\nAnd let the Book live to me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

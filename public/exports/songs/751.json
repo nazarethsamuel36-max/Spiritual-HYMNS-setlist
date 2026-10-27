@@ -1,84 +1,59 @@
 {
-  "id" : 751,
-  "songNumber" : 139,
-  "title" : "LEAD ME ON HOLY SPIRIT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Lead me on Holy Spirit,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Fill my heart, come flood my soul,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Lead me on, into Your presence,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Touch me Lord, Jesus I need you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I can't live without you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "I can't walk this road alone,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "In my heart I need you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Holy One, come take my hand.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 751,
+  "songNumber": 139,
+  "title": "LEAD ME ON HOLY SPIRIT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Lead me on Holy Spirit,"
+        },
+        {
+          "text": "Fill my heart, come flood my soul,"
+        },
+        {
+          "text": "Lead me on, into Your presence,"
+        },
+        {
+          "text": "Touch me Lord, Jesus I need you."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I can't live without you,"
+        },
+        {
+          "text": "I can't walk this road alone,"
+        },
+        {
+          "text": "In my heart I need you,"
+        },
+        {
+          "text": "Holy One, come take my hand."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Lead me on Holy [G]Spirit,\n[D]Fill my heart, come flood my [A]soul,\n[D]Lead me on, into Your [G]presence,\n[D]Touch me Lord, Jesus I [A]need you.\n\n[Verse 2]\nI can't [D]live without you,\nI can't [G]walk this road a[D]lone,\nIn my [D]heart I need you,\nHoly [A]One, come take my [D]hand.",
+  "lyrics": "[Verse 1]\nLead me on Holy Spirit,\nFill my heart, come flood my soul,\nLead me on, into Your presence,\nTouch me Lord, Jesus I need you.\n\n[Verse 2]\nI can't live without you,\nI can't walk this road alone,\nIn my heart I need you,\nHoly One, come take my hand.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

@@ -1,113 +1,71 @@
 {
-  "id" : 699,
-  "songNumber" : 23,
-  "title" : "THEREFORE THE REDEEMED OF THE LORD",
-  "language" : "english",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Therefore the redeemed of the Lord shall return,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "C",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "And come with singing unto Zion,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And everlasting joy shall be upon their head. (Repeat)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "They shall obtain gladness and joy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "C",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And sorrow and mourning shall flee away,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Therefore the redeemed of the Lord shall return,"
-    }, {
-      "text" : "And come with singing unto Zion,"
-    }, {
-      "text" : "And everlasting joy shall be upon their head.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    } ]
-  } ]
+  "id": 699,
+  "songNumber": 23,
+  "title": "THEREFORE THE REDEEMED OF THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Therefore the redeemed of the Lord shall return,"
+        },
+        {
+          "text": "And come with singing unto Zion,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "And everlasting joy shall be upon their head. (Repeat)"
+        },
+        {
+          "text": "They shall obtain gladness and joy,"
+        },
+        {
+          "text": "And sorrow and mourning shall flee away,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Therefore the redeemed of the Lord shall return,"
+        },
+        {
+          "text": "And come with singing unto Zion,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "And everlasting joy shall be upon their head."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]Therefore the re[C]deemed of the [G]Lord shall re[C]turn,\n[G]And come with [C]singing [G]unto [D]Zion,\n\n[Verse 1]\n[G]And ever[C]lasting [G]joy shall [D]be upon their [G]head. (Repeat)\n[G]They shall ob[C]tain [G]gladness and [C]joy,\n[G]And sorrow and [D]mourning shall flee a[G]way,\n\n[Chorus]\nTherefore the redeemed of the Lord shall return,\nAnd come with singing unto Zion,\n\n[Verse 2]\n[G]And ever[C]lasting [G]joy shall [D]be upon their [G]head.",
+  "lyrics": "[Chorus]\nTherefore the redeemed of the Lord shall return,\nAnd come with singing unto Zion,\n\n[Verse 1]\nAnd everlasting joy shall be upon their head. (Repeat)\nThey shall obtain gladness and joy,\nAnd sorrow and mourning shall flee away,\n\n[Chorus]\nTherefore the redeemed of the Lord shall return,\nAnd come with singing unto Zion,\n\n[Verse 2]\nAnd everlasting joy shall be upon their head.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

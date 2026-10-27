@@ -1,126 +1,62 @@
 {
-  "id" : 630,
-  "songNumber" : 323,
-  "title" : "SOME TRUST IN CHARIOTS AND SOME IN HORSES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Some trust in chariots and some in horses,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "But we will remember the name of the Lord our God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 37
-      }, {
-        "chord" : "A",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "Some trust in chariots and some in horses,"
-    }, {
-      "text" : "But we will remember the name of the Lord our God,"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Now know I that the Lord saveth His anointed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "He will hear them from His holy heaven,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "With the saving strength of his right hand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "They are brought down and fallen,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "But we are risen and stand upright.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 630,
+  "songNumber": 323,
+  "title": "SOME TRUST IN CHARIOTS AND SOME IN HORSES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Some trust in chariots and some in horses,"
+        },
+        {
+          "text": "But we will remember the name of the Lord our God,"
+        },
+        {
+          "text": "Some trust in chariots and some in horses,"
+        },
+        {
+          "text": "But we will remember the name of the Lord our God,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Now know I that the Lord saveth His anointed,"
+        },
+        {
+          "text": "He will hear them from His holy heaven,"
+        },
+        {
+          "text": "With the saving strength of his right hand,"
+        },
+        {
+          "text": "They are brought down and fallen,"
+        },
+        {
+          "text": "But we are risen and stand upright."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Some trust in [G]chariots and [D]some in [A]horses,\nBut [D]we will re[G]member the [A]name of the [D]Lord our [A]God,\nSome trust in chariots and some in horses,\nBut we will remember the name of the Lord our God,\n\n[Verse]\n[D]Now know [G]I that the [D]Lord saveth [G]His a[D]nointed,\n[D]He will hear them from His [G]holy [A]heaven,\nWith the [D]saving [G]strength of his [D]right [A]hand,\n[D]They are brought [G]down and [D]fallen,\nBut [G]we are [A]risen and stand up[D]right.",
+  "lyrics": "[Verse]\nSome trust in chariots and some in horses,\nBut we will remember the name of the Lord our God,\nSome trust in chariots and some in horses,\nBut we will remember the name of the Lord our God,\n\n[Verse]\nNow know I that the Lord saveth His anointed,\nHe will hear them from His holy heaven,\nWith the saving strength of his right hand,\nThey are brought down and fallen,\nBut we are risen and stand upright.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

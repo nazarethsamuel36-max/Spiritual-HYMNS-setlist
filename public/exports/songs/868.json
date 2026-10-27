@@ -1,173 +1,95 @@
 {
-  "id" : 868,
-  "songNumber" : 256,
-  "title" : "CLAP YOUR HANDS TOGETHER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Clap your hands together } 2",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Join together and sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Joy to the whole world bring;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Clap your hands together,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Lift your hands together } 2",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord,"
-    }, {
-      "text" : "Look into His face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "See His wondrous Grace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Lift your hands together,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Join your hands together } 2",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord,"
-    }, {
-      "text" : "Stand in unity,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Shout out we are free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Join your hands together,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And praise the Lord."
-    } ]
-  } ]
+  "id": 868,
+  "songNumber": 256,
+  "title": "CLAP YOUR HANDS TOGETHER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Clap your hands together } 2"
+        },
+        {
+          "text": "And praise the Lord,"
+        },
+        {
+          "text": "Join together and sing,"
+        },
+        {
+          "text": "Joy to the whole world bring;"
+        },
+        {
+          "text": "Clap your hands together,"
+        },
+        {
+          "text": "And praise the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lift your hands together } 2"
+        },
+        {
+          "text": "And praise the Lord,"
+        },
+        {
+          "text": "Look into His face,"
+        },
+        {
+          "text": "See His wondrous Grace,"
+        },
+        {
+          "text": "Lift your hands together,"
+        },
+        {
+          "text": "And praise the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Join your hands together } 2"
+        },
+        {
+          "text": "And praise the Lord,"
+        },
+        {
+          "text": "Stand in unity,"
+        },
+        {
+          "text": "Shout out we are free,"
+        },
+        {
+          "text": "Join your hands together,"
+        },
+        {
+          "text": "And praise the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]Clap your hands to[Bb]gether } 2\r\nAnd [F]praise the [C]Lord,\r\n[F]Join together [Bb]and sing,\r\n[F]Joy to the [Bb]whole world [C]bring;\r\n[F]Clap your hands to[Bb]gether,\r\nAnd [F]praise the [C]Lord.\r\n\r\n[Verse]\r\n[F]Lift your hands to[Bb]gether } 2\r\nAnd praise the Lord,\r\n[F]Look in[Bb]to His [F]face,\r\n[F]See His [Bb]wondrous [C]Grace,\r\n[F]Lift your hands to[Bb]gether,\r\nAnd praise the Lord.\r\n\r\n[Verse]\r\n[F]Join your hands to[Bb]gether } 2\r\nAnd praise the Lord,\r\n[F]Stand in [Bb]uni[F]ty,\r\n[F]Shout out [Bb]we are [C]free,\r\n[F]Join your hands to[Bb]gether,\r\nAnd praise the Lord.",
+  "lyrics": "[Verse]\r\nClap your hands together } 2\r\nAnd praise the Lord,\r\nJoin together and sing,\r\nJoy to the whole world bring;\r\nClap your hands together,\r\nAnd praise the Lord.\r\n\r\n[Verse]\r\nLift your hands together } 2\r\nAnd praise the Lord,\r\nLook into His face,\r\nSee His wondrous Grace,\r\nLift your hands together,\r\nAnd praise the Lord.\r\n\r\n[Verse]\r\nJoin your hands together } 2\r\nAnd praise the Lord,\r\nStand in unity,\r\nShout out we are free,\r\nJoin your hands together,\r\nAnd praise the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -158,7 +158,7 @@ export function ReaderHeader({
 
   return (
     <>
-    <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-transparent z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
+    <div className="reader-header flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-transparent z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
       {/* ── DESKTOP HEADER (hidden on mobile unless admin) ── */}
       <div className={`max-w-4xl mx-auto w-full flex-col gap-1.5 ${isAdminAuthenticated ? 'flex' : 'hidden md:flex'}`}>
 
@@ -495,7 +495,7 @@ export function ReaderHeader({
     {!isAdminAuthenticated && isMobileMenuOpen && (
       <>
         <div className="fixed inset-0 z-[60] bg-[rgba(15,23,42,0.4)] md:hidden" onClick={() => { setIsMobileMenuOpen(false); setMobileTab('main'); }} />
-        <div className="fixed inset-x-0 bottom-0 z-[70] md:hidden bg-[var(--color-surface)] rounded-t-2xl shadow-2xl animate-in slide-in-from-bottom-8 duration-200 max-h-[70vh] flex flex-col">
+        <div className="mobile-bottom-sheet fixed inset-x-0 bottom-0 z-[70] md:hidden bg-[var(--color-surface)] rounded-t-2xl shadow-2xl animate-in slide-in-from-bottom-8 duration-200 max-h-[70vh] flex flex-col">
 
           <div className="w-10 h-1 bg-slate-200 rounded-full mx-auto mt-2.5" />
 

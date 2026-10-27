@@ -1,83 +1,95 @@
 {
-  "id" : 648,
-  "songNumber" : 341,
-  "title" : "LETâ€™S GO UP TO ZION",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Letâ€™s go up to Zion,"
-    }, {
-      "text" : "Letâ€™s go up to Zion,"
-    }, {
-      "text" : "Letâ€™s go up to Zion,"
-    }, {
-      "text" : "The city of our God.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Thereâ€™s oil and wine in Zion,"
-    }, {
-      "text" : "Thereâ€™s oil and wine in Zion,"
-    }, {
-      "text" : "Thereâ€™s oil and wine in Zion,"
-    }, {
-      "text" : "The city of our God."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Sing hallelujah",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Sing hallelujah"
-    }, {
-      "text" : "Sing hallelujah"
-    }, {
-      "text" : "Thereâ€™s joy in the Lord."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Weâ€™ll sing and dance in Zion,"
-    }, {
-      "text" : "Weâ€™ll sing and dance in Zion,"
-    }, {
-      "text" : "Weâ€™ll sing and dance in Zion,"
-    }, {
-      "text" : "The city of our God."
-    } ]
-  } ]
+  "id": 648,
+  "songNumber": 341,
+  "title": "LET'S GO UP TO ZION",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let's go up to Zion,"
+        },
+        {
+          "text": "Let's go up to Zion,"
+        },
+        {
+          "text": "Let's go up to Zion,"
+        },
+        {
+          "text": "The city of our God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "There's oil and wine in Zion,"
+        },
+        {
+          "text": "There's oil and wine in Zion,"
+        },
+        {
+          "text": "There's oil and wine in Zion,"
+        },
+        {
+          "text": "The city of our God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Sing hallelujah"
+        },
+        {
+          "text": "Sing hallelujah"
+        },
+        {
+          "text": "Sing hallelujah"
+        },
+        {
+          "text": "There's joy in the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We'll sing and dance in Zion,"
+        },
+        {
+          "text": "We'll sing and dance in Zion,"
+        },
+        {
+          "text": "We'll sing and dance in Zion,"
+        },
+        {
+          "text": "The city of our God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nLet's go up to Zion,\nLet's go up to Zion,\nLet's go up to Zion,\nThe [A]city [G]of our [D]God.\n\n[Verse]\nThere's oil and wine in Zion,\nThere's oil and wine in Zion,\nThere's oil and wine in Zion,\nThe city of our God.\n\n[Verse]\n[D]Sing [G]halle[D][A]lujah\nSing hallelujah\nSing hallelujah\nThere's joy in the Lord.\n\n[Verse]\nWe'll sing and dance in Zion,\nWe'll sing and dance in Zion,\nWe'll sing and dance in Zion,\nThe city of our God.",
+  "lyrics": "[Verse]\nLet's go up to Zion,\nLet's go up to Zion,\nLet's go up to Zion,\nThe city of our God.\n\n[Verse]\nThere's oil and wine in Zion,\nThere's oil and wine in Zion,\nThere's oil and wine in Zion,\nThe city of our God.\n\n[Verse]\nSing hallelujah\nSing hallelujah\nSing hallelujah\nThere's joy in the Lord.\n\n[Verse]\nWe'll sing and dance in Zion,\nWe'll sing and dance in Zion,\nWe'll sing and dance in Zion,\nThe city of our God.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

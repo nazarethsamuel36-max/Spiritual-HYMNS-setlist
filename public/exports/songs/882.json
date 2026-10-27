@@ -1,273 +1,161 @@
 {
-  "id" : 882,
-  "songNumber" : 270,
-  "title" : "I NEED THEE EVERY HOUR",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I need Thee every hour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Most gracious Lord,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "No tender voice like Thine",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Can peace afford.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I need Thee Oh I need Thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Every hour I need Thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Oh bless me now my Saviour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "I come to Thee.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I need Thee every hour,"
-    }, {
-      "text" : "Stay Thou near by,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Temptations lose their power",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "When Thou art nigh.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I need Thee every hour,"
-    }, {
-      "text" : "In joy or pain",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Come quickly and abide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Or life is vain.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "I need Thee every hour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Teach me Thy will,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "And Thy rich promises",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "In me fulfill.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "I need Thee every hour"
-    }, {
-      "text" : "Most Holy One,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Oh, make me Thine indeed",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Thou blessed Son.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 882,
+  "songNumber": 270,
+  "title": "I NEED THEE EVERY HOUR",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I need Thee every hour,"
+        },
+        {
+          "text": "Most gracious Lord,"
+        },
+        {
+          "text": "No tender voice like Thine"
+        },
+        {
+          "text": "Can peace afford."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I need Thee Oh I need Thee"
+        },
+        {
+          "text": "Every hour I need Thee"
+        },
+        {
+          "text": "Oh bless me now my Saviour"
+        },
+        {
+          "text": "I come to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I need Thee every hour,"
+        },
+        {
+          "text": "Stay Thou near by,"
+        },
+        {
+          "text": "Temptations lose their power"
+        },
+        {
+          "text": "When Thou art nigh."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I need Thee every hour,"
+        },
+        {
+          "text": "In joy or pain"
+        },
+        {
+          "text": "Come quickly and abide,"
+        },
+        {
+          "text": "Or life is vain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I need Thee every hour"
+        },
+        {
+          "text": "Teach me Thy will,"
+        },
+        {
+          "text": "And Thy rich promises"
+        },
+        {
+          "text": "In me fulfill."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I need Thee every hour"
+        },
+        {
+          "text": "Most Holy One,"
+        },
+        {
+          "text": "Oh, make me Thine indeed"
+        },
+        {
+          "text": "Thou blessed Son."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]I need Thee [G]every [D]hour,\n[A]Most gracious [D]Lord,\n[D]No tender [A]voice like [D]Thine\n[G]Can [D]peace af[A]ford.\n[Verse]\n[Verse]\n[Chorus]\nI [D]need Thee Oh I [A]need Thee\n[D]Every hour I [G]need Thee\nOh [D]bless me [G]now my [D]Saviour\nI [A]come to [D]Thee.\n[Verse]\n[Verse]\nI need Thee every hour,\n[A]Stay Thou [D]near by,\n[D]Temptations [A]lose their [D]power\n[G]When [D]Thou art [A]nigh.\n[Verse]\n[Verse]\nI need Thee every hour,\n[A]In joy or [D]pain\n[D]Come [A]quickly [D]and a[G]bide,\nOr [D]life is [A]vain.\n[Verse]\n[Verse]\n[D]I need Thee [G]every [D]hour\n[A]Teach me Thy [D]will,\n[D]And [A]Thy rich [D]promis[G]es\nIn [D]me [A]ful[D]fill.\n[Verse]\n[Verse]\nI need Thee every hour\n[A]Most Holy [D]One,\nOh, [D]make me [A]Thine in[D]deed\n[G]Thou [D]blessed [A]Son.",
+  "lyrics": "[Verse]\n I need Thee every hour,\nMost gracious Lord,\nNo tender voice like Thine\nCan peace afford.\n[Verse]\n[Verse]\n[Chorus]\nI need Thee Oh I need Thee\nEvery hour I need Thee\nOh bless me now my Saviour\nI come to Thee.\n[Verse]\n[Verse]\nI need Thee every hour,\nStay Thou near by,\nTemptations lose their power\nWhen Thou art nigh.\n[Verse]\n[Verse]\nI need Thee every hour,\nIn joy or pain\nCome quickly and abide,\nOr life is vain.\n[Verse]\n[Verse]\nI need Thee every hour\nTeach me Thy will,\nAnd Thy rich promises\nIn me fulfill.\n[Verse]\n[Verse]\nI need Thee every hour\nMost Holy One,\nOh, make me Thine indeed\nThou blessed Son.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

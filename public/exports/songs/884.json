@@ -1,358 +1,154 @@
 {
-  "id" : 884,
-  "songNumber" : 272,
-  "title" : "I'M LOOKING THROUGH A LOOKING GLASS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I'm looking through a looking glass,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I'll tell you what I see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The people of the Lord are as perfect as can be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "I'm looking through the Blood of God.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "And this is what I see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "The people of the Lord are as perfect as can be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Oh! praise the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "It's Jesus that I see,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "The Bright and Morning Star,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Revealed in you and me,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "Oh I thank God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "I'm a part of that family",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Where the people are as perfect as can be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Don't speak evil of your brother,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Lest you speak against the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "For the Lord you know is perfect",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Without a single flaw.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "As long as he's repenting",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "For the sin that he can see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Your brother is as perfect,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "As perfect as can be.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Let's go on unto perfection,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Though we are potentially,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Till Christ be formed within us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And our promises believe.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Till our bodies are translated,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Right into the heavenlies",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Where the people of the Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Are as perfect as can be.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 884,
+  "songNumber": 272,
+  "title": "I'M LOOKING THROUGH A LOOKING GLASS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Im looking through a looking glass,"
+        },
+        {
+          "text": "Ill tell you what I see,"
+        },
+        {
+          "text": "The people of the Lord are as perfect as can be"
+        },
+        {
+          "text": "Im looking through the Blood of God."
+        },
+        {
+          "text": "And this is what I see,"
+        },
+        {
+          "text": "The people of the Lord are as perfect as can be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Oh! praise the Lord,"
+        },
+        {
+          "text": "Its Jesus that I see,"
+        },
+        {
+          "text": "The Bright and Morning Star,"
+        },
+        {
+          "text": "Revealed in you and me,"
+        },
+        {
+          "text": "Oh I thank God,"
+        },
+        {
+          "text": "Im a part of that family"
+        },
+        {
+          "text": "Where the people are as perfect as can be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Dont speak evil of your brother,"
+        },
+        {
+          "text": "Lest you speak against the Lord,"
+        },
+        {
+          "text": "For the Lord you know is perfect"
+        },
+        {
+          "text": "Without a single flaw."
+        },
+        {
+          "text": "As long as hes repenting"
+        },
+        {
+          "text": "For the sin that he can see;"
+        },
+        {
+          "text": "Your brother is as perfect,"
+        },
+        {
+          "text": "As perfect as can be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lets go on unto perfection,"
+        },
+        {
+          "text": "Though we are potentially,"
+        },
+        {
+          "text": "Till Christ be formed within us,"
+        },
+        {
+          "text": "And our promises believe."
+        },
+        {
+          "text": "Till our bodies are translated,"
+        },
+        {
+          "text": "Right into the heavenlies"
+        },
+        {
+          "text": "Where the people of the Lord"
+        },
+        {
+          "text": "Are as perfect as can be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n Im [F]looking through a [Bb]looking [F]glass,\r\n[F]Ill tell you [C]what I [F]see,\r\nThe [F]people [Bb]of the [F]Lord are as [C]perfect as can [F]be\r\nIm [F]looking [Bb]through the [F]Blood of God.\r\n[F]And this is [C]what I [F]see,\r\nThe [F]people [Bb]of the [F]Lord are as [C]perfect as can [F]be.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nOh! [F]praise the Lord,\r\nIts [Bb]Jesus that I [F]see,\r\nThe [Bb]Bright and [F]Morning Star,\r\nRe[C]vealed in you and me,\r\nOh [F]I thank [C]God,\r\nIm a [F]part of that [Bb]family\r\nWhere the [F]people are as [C]perfect as can [F]be.\r\n[Verse]\r\n[Verse]\r\nDont [F]speak [Bb]evil [F]of your brother,\r\n[F]Lest you [C]speak against the [F]Lord,\r\nFor the [F]Lord you [Bb]know is [F]perfect\r\nWith[F]out a [C]single [F]flaw.\r\nAs [F]long as [Bb]hes re[F]penting\r\nFor the [F]sin that [C]he can [F]see;\r\nYour [F]brother [Bb]is as [F]perfect,\r\nAs [C]perfect as can [F]be.\r\n[Verse]\r\n[Verse]\r\nLets [F]go [Bb]on unto [F]perfection,\r\n[F]Though we [C]are potential[F]ly,\r\nTill [F]Christ be [Bb]formed with[F]in us,\r\nAnd [F]our promis[C]es be[F]lieve.\r\nTill our [F]bodies [Bb]are trans[F]lated,\r\nRight [F]into [C]the heaven[F]lies\r\nWhere the [F]people [Bb]of the [F]Lord\r\nAre as [C]perfect as can [F]be.",
+  "lyrics": "[Verse]\r\n Im looking through a looking glass,\r\nIll tell you what I see,\r\nThe people of the Lord are as perfect as can be\r\nIm looking through the Blood of God.\r\nAnd this is what I see,\r\nThe people of the Lord are as perfect as can be.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nOh! praise the Lord,\r\nIts Jesus that I see,\r\nThe Bright and Morning Star,\r\nRevealed in you and me,\r\nOh I thank God,\r\nIm a part of that family\r\nWhere the people are as perfect as can be.\r\n[Verse]\r\n[Verse]\r\nDont speak evil of your brother,\r\nLest you speak against the Lord,\r\nFor the Lord you know is perfect\r\nWithout a single flaw.\r\nAs long as hes repenting\r\nFor the sin that he can see;\r\nYour brother is as perfect,\r\nAs perfect as can be.\r\n[Verse]\r\n[Verse]\r\nLets go on unto perfection,\r\nThough we are potentially,\r\nTill Christ be formed within us,\r\nAnd our promises believe.\r\nTill our bodies are translated,\r\nRight into the heavenlies\r\nWhere the people of the Lord\r\nAre as perfect as can be.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

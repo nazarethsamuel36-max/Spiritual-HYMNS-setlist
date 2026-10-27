@@ -1,221 +1,98 @@
 {
-  "id" : 655,
-  "songNumber" : 348,
-  "title" : "I CLAIM THE BLOOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I have a source of strength when I am weak,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 33
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "That takes me through when life is pressing in,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "I have a source of power from above,"
-    }, {
-      "text" : "I am covered over by a shield of Love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I claim the blood Jesus shed on calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Those precious blood stains",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Were made there just for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "For all my sins, my sickness and my pain",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "When I need healing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "I claim those precious blood stains.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I do not know how others make it through,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Who never go to calvary as I do,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "For there a healing, cleansing stream still flows",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "And peace that only, his redeemed can know.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 655,
+  "songNumber": 348,
+  "title": "I CLAIM THE BLOOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I have a source of strength when I am weak,"
+        },
+        {
+          "text": "That takes me through when life is pressing in,"
+        },
+        {
+          "text": "I have a source of power from above,"
+        },
+        {
+          "text": "I am covered over by a shield of Love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I claim the blood Jesus shed on calvary,"
+        },
+        {
+          "text": "Those precious blood stains"
+        },
+        {
+          "text": "Were made there just for me,"
+        },
+        {
+          "text": "For all my sins, my sickness and my pain"
+        },
+        {
+          "text": "When I need healing,"
+        },
+        {
+          "text": "I claim those precious blood stains."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I do not know how others make it through,"
+        },
+        {
+          "text": "Who never go to calvary as I do,"
+        },
+        {
+          "text": "For there a healing, cleansing stream still flows"
+        },
+        {
+          "text": "And peace that only, his redeemed can know."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n I [D]have a source of [G]strength when [D]I am [A]weak,\nThat [D]takes me [G]through when [D]life is [A]pressing [D]in,\nI have a source of power from above,\nI [D]am [G]covered [D]over [A]by a shield of [D]Love.\n[Verse]\n[Verse]\n[Chorus]\nI [D]claim the [G]blood [D]Jesus shed on [A]calvary,\nThose [G]precious [D]blood [A]stains\nWere [G]made there [A]just for [D]me,\nFor [D]all my [G]sins, my [D]sickness [A]and my [D]pain\nWhen I need [G]healing,\nI [D]claim those [A]precious blood [D]stains.\n[Verse]\n[Verse]\nI [D]do not [G]know how [D]others [A]make it [D]through,\nWho [D]never [G]go to [D]calvary [A]as I [D]do,\nFor [D]there a [G]healing, [D]cleansing [A]stream still [D]flows\nAnd [G]peace that [D]only, [A]his redeemed can [D]know.",
+  "lyrics": "[Verse]\n I have a source of strength when I am weak,\nThat takes me through when life is pressing in,\nI have a source of power from above,\nI am covered over by a shield of Love.\n[Verse]\n[Verse]\n[Chorus]\nI claim the blood Jesus shed on calvary,\nThose precious blood stains\nWere made there just for me,\nFor all my sins, my sickness and my pain\nWhen I need healing,\nI claim those precious blood stains.\n[Verse]\n[Verse]\nI do not know how others make it through,\nWho never go to calvary as I do,\nFor there a healing, cleansing stream still flows\nAnd peace that only, his redeemed can know.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

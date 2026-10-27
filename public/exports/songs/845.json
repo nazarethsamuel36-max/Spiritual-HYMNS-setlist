@@ -1,128 +1,89 @@
 {
-  "id" : 845,
-  "songNumber" : 233,
-  "title" : "I'VE BEEN REDEEMED",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've been redeemed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "By the blood of the Lamb }3",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Saved and sanctified I am,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "All my sins are washed away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Praise the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "And that's not all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "There's more besides. }3",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I went to the river",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "And I got baptized,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "All my sins are washed away,"
-    }, {
-      "text" : "Praise the Lord."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "My Lord and I,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "We got so close. }3",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "He baptized me with the Holy Ghost,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "All my sins are washed away,"
-    }, {
-      "text" : "Praise the Lord."
-    } ]
-  } ]
+  "id": 845,
+  "songNumber": 233,
+  "title": "I'VE BEEN REDEEMED",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I've been redeemed,"
+        },
+        {
+          "text": "By the blood of the Lamb }3"
+        },
+        {
+          "text": "Saved and sanctified I am,"
+        },
+        {
+          "text": "All my sins are washed away,"
+        },
+        {
+          "text": "Praise the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And that's not all,"
+        },
+        {
+          "text": "There's more besides. }3"
+        },
+        {
+          "text": "I went to the river"
+        },
+        {
+          "text": "And I got baptized,"
+        },
+        {
+          "text": "All my sins are washed away,"
+        },
+        {
+          "text": "Praise the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "My Lord and I,"
+        },
+        {
+          "text": "We got so close. }3"
+        },
+        {
+          "text": "He baptized me with the Holy Ghost,"
+        },
+        {
+          "text": "All my sins are washed away,"
+        },
+        {
+          "text": "Praise the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]I've been redeemed,\r\nBy the [Bb]blood of the [F]Lamb }3\r\n[F]Saved and sancti[C]fied I am,\r\nAll my [F]sins are washed a[Bb]way,\r\n[F]Praise [C]the [F]Lord.\r\n\r\n[Verse]\r\nAnd [F]that's not all,\r\nThere's [Bb]more be[F]sides. }3\r\nI [F]went to the river\r\nAnd [C]I got baptized,\r\nAll my sins are washed away,\r\nPraise the Lord.\r\n\r\n[Verse]\r\nMy [F]Lord and I,\r\nWe [Bb]got so [F]close. }3\r\nHe bap[F]tized me with the [C]Holy Ghost,\r\nAll my sins are washed away,\r\nPraise the Lord.",
+  "lyrics": "[Verse]\r\nI've been redeemed,\r\nBy the blood of the Lamb }3\r\nSaved and sanctified I am,\r\nAll my sins are washed away,\r\nPraise the Lord.\r\n\r\n[Verse]\r\nAnd that's not all,\r\nThere's more besides. }3\r\nI went to the river\r\nAnd I got baptized,\r\nAll my sins are washed away,\r\nPraise the Lord.\r\n\r\n[Verse]\r\nMy Lord and I,\r\nWe got so close. }3\r\nHe baptized me with the Holy Ghost,\r\nAll my sins are washed away,\r\nPraise the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

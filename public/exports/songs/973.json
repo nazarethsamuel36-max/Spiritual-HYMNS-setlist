@@ -1,179 +1,98 @@
 {
-  "id" : 973,
-  "songNumber" : 95,
-  "title" : "HOLY SPIRIT WE WELCOME YOU",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Holy Spirit, we welcome You, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Move amongst us with holy fire,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 21
-      }, {
-        "chord" : "Bm",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "As we lay aside all earthly desire,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "D7",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Hands reach out and our hearts aspire,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 24
-      }, {
-        "chord" : "Bm",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Holy Spirit (3), we welcome You.",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Holy Spirit, we welcome You (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Let the breeze of Your presence blow,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 23
-      }, {
-        "chord" : "Bm",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "That Your children here might truly know",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 36
-      }, {
-        "chord" : "D7",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "How to move in the Spirit's flow,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 19
-      }, {
-        "chord" : "Bm",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Holy Spirit (3), we welcome You."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Holy Spirit, we welcome You (2)"
-    }, {
-      "text" : "Please accomplish in me today,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 21
-      }, {
-        "chord" : "Bm",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Some new work of loving grace I pray",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "D7",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Unreservedly have Your way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 13
-      }, {
-        "chord" : "Bm",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Holy Spirit (3), we welcome You."
-    } ]
-  } ]
+  "id": 973,
+  "songNumber": 95,
+  "title": "HOLY SPIRIT WE WELCOME YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Holy Spirit, we welcome You, (2)"
+        },
+        {
+          "text": "Move amongst us with holy fire,"
+        },
+        {
+          "text": "As we lay aside all earthly desire,"
+        },
+        {
+          "text": "Hands reach out and our hearts aspire,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Holy Spirit (3), we welcome You."
+        },
+        {
+          "text": "Holy Spirit, we welcome You (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Let the breeze of Your presence blow,"
+        },
+        {
+          "text": "That Your children here might truly know"
+        },
+        {
+          "text": "How to move in the Spirit's flow,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Holy Spirit (3), we welcome You."
+        },
+        {
+          "text": "Holy Spirit, we welcome You (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Please accomplish in me today,"
+        },
+        {
+          "text": "Some new work of loving grace I pray"
+        },
+        {
+          "text": "Unreservedly have Your way,"
+        },
+        {
+          "text": "Holy Spirit (3), we welcome You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Holy Spirit, we [G]welcome [D]You, (2)\n[G]Move amongst us with [F#m]holy [Bm]fire,\nAs we [Em]lay aside all [A]earthly de[D]sire,[D7]\n[G]Hands reach out and our [F#m]hearts as[Bm]pire,\n\n[Chorus]\n[Em]Holy Spirit (3), we [A]welcome [D]You.\n[D]Holy Spirit, we [G]welcome [D]You (2)\n\n[Verse 2]\n[G]Let the breeze of Your [F#m]presence [Bm]blow,\nThat Your [Em]children here might [A]truly [D]know[D7]\n[G]How to move in the [F#m]Spirit's [Bm]flow,\n\n[Chorus]\nHoly Spirit (3), we welcome You.\nHoly Spirit, we welcome You (2)\n\n[Verse 3]\n[G]Please accomplish in [F#m]me to[Bm]day,\nSome new [Em]work of loving [A]grace I [D]pray[D7]\n[G]Unreservedly [F#m]have Your [Bm]way,\nHoly Spirit (3), we welcome You.",
+  "lyrics": "[Verse 1]\nHoly Spirit, we welcome You, (2)\nMove amongst us with holy fire,\nAs we lay aside all earthly desire,\nHands reach out and our hearts aspire,\n\n[Chorus]\nHoly Spirit (3), we welcome You.\nHoly Spirit, we welcome You (2)\n\n[Verse 2]\nLet the breeze of Your presence blow,\nThat Your children here might truly know\nHow to move in the Spirit's flow,\n\n[Chorus]\nHoly Spirit (3), we welcome You.\nHoly Spirit, we welcome You (2)\n\n[Verse 3]\nPlease accomplish in me today,\nSome new work of loving grace I pray\nUnreservedly have Your way,\nHoly Spirit (3), we welcome You.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

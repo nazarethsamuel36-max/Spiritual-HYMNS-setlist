@@ -1,100 +1,47 @@
 {
-  "id" : 949,
-  "songNumber" : 71,
-  "title" : "IN MOMENTS LIKE THESE",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "In moments like these I sing out a song",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "Bm",
-        "position" : 16
-      }, {
-        "chord" : "Em",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "I sing out a love song to Jesus;",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "In moments like these I lift up my hands",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "Bm",
-        "position" : 16
-      }, {
-        "chord" : "Em",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "I lift up my hands to the Lord.",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "D7",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Singing I love You Lord, (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "I love You.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    } ]
-  } ]
+  "id": 949,
+  "songNumber": 71,
+  "title": "IN MOMENTS LIKE THESE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "In moments like these I sing out a song"
+        },
+        {
+          "text": "I sing out a love song to Jesus;"
+        },
+        {
+          "text": "In moments like these I lift up my hands"
+        },
+        {
+          "text": "I lift up my hands to the Lord."
+        },
+        {
+          "text": "Singing I love You Lord, (3)"
+        },
+        {
+          "text": "I love You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]In moments like [Bm]these I [Em]sing out a [A]song\r\nI [Em]sing out a [A]love song to [D]Jesus;[A]\r\n[D]In moments like [Bm]these I [Em]lift up my [A]hands\r\nI [Em]lift up my [A]hands to the [D]Lord.[D7]\r\nSinging I [G]love [A]You [D]Lord, (3)\r\n[G]I [A]love [D]You.",
+  "lyrics": "[Verse]\r\nIn moments like these I sing out a song\r\nI sing out a love song to Jesus;\r\nIn moments like these I lift up my hands\r\nI lift up my hands to the Lord.\r\nSinging I love You Lord, (3)\r\nI love You.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

@@ -1,159 +1,71 @@
 {
-  "id" : 950,
-  "songNumber" : 72,
-  "title" : "IT'S YOUR BLOOD",
-  "language" : "english",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "It's Your blood that cleanses me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "It's Your blood that gives me life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "It's Your blood that took my place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "In redeeming sacrifice.",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "E",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Washes me whiter than the snow than the snow,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "F#m",
-        "position" : 26
-      }, {
-        "chord" : "Bm",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "It's my Jesus, God's perfect sacrifice.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "It's Your Love that sets me free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "It's Your Word that gives me life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "It's Your Grace that took my place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "In redeeming sacrifice.....",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "E",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 950,
+  "songNumber": 72,
+  "title": "IT'S YOUR BLOOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "It's Your blood that cleanses me,"
+        },
+        {
+          "text": "It's Your blood that gives me life,"
+        },
+        {
+          "text": "It's Your blood that took my place,"
+        },
+        {
+          "text": "In redeeming sacrifice."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Washes me whiter than the snow than the snow,"
+        },
+        {
+          "text": "It's my Jesus, God's perfect sacrifice."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "It's Your Love that sets me free,"
+        },
+        {
+          "text": "It's Your Word that gives me life,"
+        },
+        {
+          "text": "It's Your Grace that took my place,"
+        },
+        {
+          "text": "In redeeming sacrifice....."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]It's Your [F#m]blood that [G]cleanses me,[A]\n[D]It's Your [F#m]blood that [G]gives me life,[A]\n[D]It's Your [F#m]blood that [G]took my place,[A]\n[Bm]In re[A]deeming [E]sacrifice.\n\n[Chorus]\n[G]Washes me [A]whiter than the [F#m]snow than the [Bm]snow,\nIt's my [G]Jesus, [A]God's perfect [D]sacrifice.\n\n[Verse 2]\n[D]It's Your [F#m]Love that [G]sets me free,[A]\n[D]It's Your [F#m]Word that [G]gives me life,[A]\n[D]It's Your [F#m]Grace that [G]took my place,[A]\n[Bm]In re[A]deeming [E]sacrifice.....",
+  "lyrics": "[Verse 1]\nIt's Your blood that cleanses me,\nIt's Your blood that gives me life,\nIt's Your blood that took my place,\nIn redeeming sacrifice.\n\n[Chorus]\nWashes me whiter than the snow than the snow,\nIt's my Jesus, God's perfect sacrifice.\n\n[Verse 2]\nIt's Your Love that sets me free,\nIt's Your Word that gives me life,\nIt's Your Grace that took my place,\nIn redeeming sacrifice.....",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

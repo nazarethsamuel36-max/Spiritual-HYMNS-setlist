@@ -1,134 +1,89 @@
 {
-  "id" : 757,
-  "songNumber" : 145,
-  "title" : "I HAVE LOST MY REPUTATION",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I have lost my reputation since I turned my back on sin",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "And a lot of friends went from me, since I let my Saviour in;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 58
-      } ]
-    }, {
-      "text" : "Now they pass me by unknown, when they once passed with a smile;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 58
-      } ]
-    }, {
-      "text" : "Now they say I'm very foolish, and they say I'm out of style.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 55
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I am marked, marked, marked,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "I am marked now wherever I go;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I am marked, marked, marked,"
-    }, {
-      "text" : "Just what I am everyone seems to know.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I am sealed, sealed, sealed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "I am sealed by His Spirit Divine,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "O glory to God ! Hallelujah ! Amen !"
-    }, {
-      "text" : "I am His, and I know He is mine.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Well, they say my life is ruined, and my talent thrown away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 56
-      } ]
-    }, {
-      "text" : "And they cannot understand it, for I had such plans one day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 56
-      } ]
-    }, {
-      "text" : "But I know what I surrendered when I promised I'd go through;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 53
-      } ]
-    }, {
-      "text" : "And I gained far more glory since God made me over new.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 51
-      } ]
-    } ]
-  } ]
+  "id": 757,
+  "songNumber": 145,
+  "title": "I HAVE LOST MY REPUTATION",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I have lost my reputation since I turned my back on sin"
+        },
+        {
+          "text": "And a lot of friends went from me, since I let my Saviour in;"
+        },
+        {
+          "text": "Now they pass me by unknown, when they once passed with a smile;"
+        },
+        {
+          "text": "Now they say I'm very foolish, and they say I'm out of style."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I am marked, marked, marked,"
+        },
+        {
+          "text": "I am marked now wherever I go;"
+        },
+        {
+          "text": "I am marked, marked, marked,"
+        },
+        {
+          "text": "Just what I am everyone seems to know."
+        },
+        {
+          "text": "I am sealed, sealed, sealed,"
+        },
+        {
+          "text": "I am sealed by His Spirit Divine,"
+        },
+        {
+          "text": "O glory to God ! Hallelujah ! Amen !"
+        },
+        {
+          "text": "I am His, and I know He is mine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Well, they say my life is ruined, and my talent thrown away,"
+        },
+        {
+          "text": "And they cannot understand it, for I had such plans one day;"
+        },
+        {
+          "text": "But I know what I surrendered when I promised I'd go through;"
+        },
+        {
+          "text": "And I gained far more glory since God made me over new."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]I have lost my reputation since I turned my back on [A]sin\nAnd a [D]lot of friends went from me, since I let my Saviour [G]in;\nNow they [D]pass me by unknown, when they once passed with a [A]smile;\nNow they [D]say I'm very foolish, and they say I'm out of [G]style.\n\n[Chorus]\nI am [D]marked, marked, marked,\nI am marked now wher[A]ever I go;\nI am marked, marked, marked,\nJust what I am everyone seems to [G]know.\nI am [D]sealed, sealed, sealed,\nI am sealed by His [A]Spirit Divine,\nO glory to God ! Hallelujah ! Amen !\nI am His, and I know He is [G]mine.\n\n[Verse 2]\nWell, they [D]say my life is ruined, and my talent thrown a[A]way,\nAnd they [D]cannot understand it, for I had such plans one [G]day;\nBut I [D]know what I surrendered when I promised I'd go [A]through;\nAnd I [D]gained far more glory since God made me over [G]new.",
+  "lyrics": "[Verse 1]\nI have lost my reputation since I turned my back on sin\nAnd a lot of friends went from me, since I let my Saviour in;\nNow they pass me by unknown, when they once passed with a smile;\nNow they say I'm very foolish, and they say I'm out of style.\n\n[Chorus]\nI am marked, marked, marked,\nI am marked now wherever I go;\nI am marked, marked, marked,\nJust what I am everyone seems to know.\nI am sealed, sealed, sealed,\nI am sealed by His Spirit Divine,\nO glory to God ! Hallelujah ! Amen !\nI am His, and I know He is mine.\n\n[Verse 2]\nWell, they say my life is ruined, and my talent thrown away,\nAnd they cannot understand it, for I had such plans one day;\nBut I know what I surrendered when I promised I'd go through;\nAnd I gained far more glory since God made me over new.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

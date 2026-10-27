@@ -1,208 +1,113 @@
 {
-  "id" : 771,
-  "songNumber" : 159,
-  "title" : "I'VE FOUND A FRIEND IN JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've found a friend in Jesus, He's everything to me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "He's the fairest of ten thousand to my soul;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "The Lily of the Valley in Him alone I see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "All I need to cleanse and make me fully whole.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "In sorrow He's my comfort, in trouble He's my stay,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "He tells me every care on Him to roll. Hallelujah !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "He's the Lily of the Valley, the Bright and Morning Star,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "He's the fairest of ten thousand to my soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He all my griefs has taken, and all my sorrows borne;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "In temptation He's my strong and mighty tow'r;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "I have all for Him forsaken, and all my idols torn",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "From my heart, and now He keeps me by His power.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Though all the world forsake me, and Satan tempt me sore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "Through Jesus I shall safely reach the goal. Hallelujah !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 50
-      } ]
-    }, {
-      "text" : "He's the Lily of the Valley, the Bright and Morning Star,"
-    }, {
-      "text" : "He's the fairest of ten thousand to my soul."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He'll never, never leave me, nor yet forsake me here,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "While I live by faith and do His blessed will;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "A wall of fire about me, I've nothing now to fear;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "With His manna He my hungry soul shall fill.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Then sweeping up to glory, we'll see His blessed face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "Where rivers of delight shall ever roll. Hallelujah !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "He's the Lily of the Valley, the Bright and Morning Star,"
-    }, {
-      "text" : "He's the fairest of ten thousand to my soul."
-    } ]
-  } ]
+  "id": 771,
+  "songNumber": 159,
+  "title": "I'VE FOUND A FRIEND IN JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I've found a friend in Jesus, He's everything to me."
+        },
+        {
+          "text": "He's the fairest of ten thousand to my soul;"
+        },
+        {
+          "text": "The Lily of the Valley in Him alone I see,"
+        },
+        {
+          "text": "All I need to cleanse and make me fully whole."
+        },
+        {
+          "text": "In sorrow He's my comfort, in trouble He's my stay,"
+        },
+        {
+          "text": "He tells me every care on Him to roll. Hallelujah !"
+        },
+        {
+          "text": "He's the Lily of the Valley, the Bright and Morning Star,"
+        },
+        {
+          "text": "He's the fairest of ten thousand to my soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "He all my griefs has taken, and all my sorrows borne;"
+        },
+        {
+          "text": "In temptation He's my strong and mighty tow'r;"
+        },
+        {
+          "text": "I have all for Him forsaken, and all my idols torn"
+        },
+        {
+          "text": "From my heart, and now He keeps me by His power."
+        },
+        {
+          "text": "Though all the world forsake me, and Satan tempt me sore,"
+        },
+        {
+          "text": "Through Jesus I shall safely reach the goal. Hallelujah !"
+        },
+        {
+          "text": "He's the Lily of the Valley, the Bright and Morning Star,"
+        },
+        {
+          "text": "He's the fairest of ten thousand to my soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "He'll never, never leave me, nor yet forsake me here,"
+        },
+        {
+          "text": "While I live by faith and do His blessed will;"
+        },
+        {
+          "text": "A wall of fire about me, I've nothing now to fear;"
+        },
+        {
+          "text": "With His manna He my hungry soul shall fill."
+        },
+        {
+          "text": "Then sweeping up to glory, we'll see His blessed face,"
+        },
+        {
+          "text": "Where rivers of delight shall ever roll. Hallelujah !"
+        },
+        {
+          "text": "He's the Lily of the Valley, the Bright and Morning Star,"
+        },
+        {
+          "text": "He's the fairest of ten thousand to my soul."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]I've found a friend in Jesus, He's everything to [A]me.\r\nHe's the [E]fairest of ten thousand to my [B]soul;\r\nThe [E]Lily of the Valley in Him alone I [A]see,\r\nAll I [E]need to cleanse and make me fully [B]whole.\r\nIn [E]sorrow He's my comfort, in trouble He's my [A]stay,\r\nHe [E]tells me every care on Him to roll. Halle[B]lujah !\r\nHe's the [E]Lily of the Valley, the Bright and [A]Morning Star,\r\nHe's the [E]fairest of ten thousand to my [B]soul.\r\n\r\n[Verse 2]\r\nHe all my [E]griefs has taken, and all my sorrows [A]borne;\r\nIn tempta[E]tion He's my strong and mighty [B]tow'r;\r\nI have [E]all for Him forsaken, and all my idols [A]torn\r\nFrom my [E]heart, and now He keeps me by His [B]power.\r\nThough all the [E]world forsake me, and Satan tempt me [A]sore,\r\nThrough [E]Jesus I shall safely reach the goal. Halle[B]lujah !\r\nHe's the Lily of the Valley, the Bright and Morning Star,\r\nHe's the fairest of ten thousand to my soul.\r\n\r\n[Verse 3]\r\nHe'll [E]never, never leave me, nor yet forsake me [A]here,\r\nWhile I [E]live by faith and do His blessed [B]will;\r\nA wall of [E]fire about me, I've nothing now to [A]fear;\r\nWith His [E]manna He my hungry soul shall [B]fill.\r\nThen [E]sweeping up to glory, we'll see His blessed [A]face,\r\nWhere [E]rivers of delight shall ever roll. Halle[B]lujah !\r\nHe's the Lily of the Valley, the Bright and Morning Star,\r\nHe's the fairest of ten thousand to my soul.",
+  "lyrics": "[Verse 1]\r\nI've found a friend in Jesus, He's everything to me.\r\nHe's the fairest of ten thousand to my soul;\r\nThe Lily of the Valley in Him alone I see,\r\nAll I need to cleanse and make me fully whole.\r\nIn sorrow He's my comfort, in trouble He's my stay,\r\nHe tells me every care on Him to roll. Hallelujah !\r\nHe's the Lily of the Valley, the Bright and Morning Star,\r\nHe's the fairest of ten thousand to my soul.\r\n\r\n[Verse 2]\r\nHe all my griefs has taken, and all my sorrows borne;\r\nIn temptation He's my strong and mighty tow'r;\r\nI have all for Him forsaken, and all my idols torn\r\nFrom my heart, and now He keeps me by His power.\r\nThough all the world forsake me, and Satan tempt me sore,\r\nThrough Jesus I shall safely reach the goal. Hallelujah !\r\nHe's the Lily of the Valley, the Bright and Morning Star,\r\nHe's the fairest of ten thousand to my soul.\r\n\r\n[Verse 3]\r\nHe'll never, never leave me, nor yet forsake me here,\r\nWhile I live by faith and do His blessed will;\r\nA wall of fire about me, I've nothing now to fear;\r\nWith His manna He my hungry soul shall fill.\r\nThen sweeping up to glory, we'll see His blessed face,\r\nWhere rivers of delight shall ever roll. Hallelujah !\r\nHe's the Lily of the Valley, the Bright and Morning Star,\r\nHe's the fairest of ten thousand to my soul.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

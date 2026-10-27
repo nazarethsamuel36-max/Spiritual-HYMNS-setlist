@@ -1,212 +1,95 @@
 {
-  "id" : 668,
-  "songNumber" : 361,
-  "title" : "IN TIMES LIKE THESE YOU NEED A SAVIOR",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "In times like these you need a Savior",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "In times like these you need an anchor;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Be very sure, be very sure",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Your anchor holds and grips the Solid Rock !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "This Rock is Jesus, Yes, Heâ€™s the One"
-    }, {
-      "text" : "This Rock is Jesus, the only One !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Be very sure, be very sure"
-    }, {
-      "text" : "Your anchor holds and grips the Solid Rock !"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "In times like these you need the Bible,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "In times like these O be not idle;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Be very sure, be very sure"
-    }, {
-      "text" : "Your anchor holds and grips the Solid Rock!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "In times like these I have a Savior",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "In times like these I have an anchor,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Iâ€™m very sure, Iâ€™m very sure"
-    }, {
-      "text" : "My anchor holds and grips the Solid Rock!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  } ]
+  "id": 668,
+  "songNumber": 361,
+  "title": "IN TIMES LIKE THESE YOU NEED A SAVIOR",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "In times like these you need a Savior"
+        },
+        {
+          "text": "In times like these you need an anchor;"
+        },
+        {
+          "text": "Be very sure, be very sure"
+        },
+        {
+          "text": "Your anchor holds and grips the Solid Rock !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "This Rock is Jesus, Yes, He's the One"
+        },
+        {
+          "text": "This Rock is Jesus, the only One !"
+        },
+        {
+          "text": "Be very sure, be very sure"
+        },
+        {
+          "text": "Your anchor holds and grips the Solid Rock !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "In times like these you need the Bible,"
+        },
+        {
+          "text": "In times like these O be not idle;"
+        },
+        {
+          "text": "Be very sure, be very sure"
+        },
+        {
+          "text": "Your anchor holds and grips the Solid Rock!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "In times like these I have a Savior"
+        },
+        {
+          "text": "In times like these I have an anchor,"
+        },
+        {
+          "text": "I'm very sure, I'm very sure"
+        },
+        {
+          "text": "My anchor holds and grips the Solid Rock!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nIn [D]times like [G]these you [D]need a [A]Savior\nIn [D]times like [G]these you [D]need an [A]anchor;\nBe [D]very [G]sure, be [D]very [A]sure\nYour [D]anchor [G]holds and [D]grips the [A]Solid [D]Rock !\n\n[Chorus]\nThis Rock is Jesus, Yes, He's the One\nThis [D]Rock is [G]Jesus, [D]the only [A]One !\nBe very sure, be very sure\nYour anchor holds and grips the Solid Rock !\n\n[Verse 2]\nIn [D]times like [G]these you [D]need the [A]Bible,\nIn [D]times like [G]these [D]O be not [A]idle;\nBe very sure, be very sure\nYour [D]anchor [G]holds and [D]grips the [A]Solid [D]Rock!\n\n[Verse 3]\nIn [D]times like [G]these I [D]have a [A]Savior\nIn [D]times like [G]these I [D]have an [A]anchor,\nI'm very sure, I'm very sure\nMy [D]anchor [G]holds and [D]grips the [A]Solid [D]Rock!",
+  "lyrics": "[Verse 1]\nIn times like these you need a Savior\nIn times like these you need an anchor;\nBe very sure, be very sure\nYour anchor holds and grips the Solid Rock !\n\n[Chorus]\nThis Rock is Jesus, Yes, He's the One\nThis Rock is Jesus, the only One !\nBe very sure, be very sure\nYour anchor holds and grips the Solid Rock !\n\n[Verse 2]\nIn times like these you need the Bible,\nIn times like these O be not idle;\nBe very sure, be very sure\nYour anchor holds and grips the Solid Rock!\n\n[Verse 3]\nIn times like these I have a Savior\nIn times like these I have an anchor,\nI'm very sure, I'm very sure\nMy anchor holds and grips the Solid Rock!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

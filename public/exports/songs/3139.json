@@ -1,12 +1,213 @@
 {
-  "id" : 3139,
-  "songNumber" : 2040,
-  "title" : "तेरे जैसा कौन है, |एलशदाई आराधना",
-  "language" : "hindi",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ ]
+  "id": 3139,
+  "songNumber": 2040,
+  "title": "तेरे जैसा कौन है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "तेरे जैसा कौन है,"
+        },
+        {
+          "text": "जो मेरा भला करे,"
+        },
+        {
+          "text": "मेरा भरोसा सिर्फ तुझपर प्रभु –(2)"
+        },
+        {
+          "text": "मेरे जीवन का स्वामी,"
+        },
+        {
+          "text": "आधार बना तू प्रभुजी,"
+        },
+        {
+          "text": "तू नहीं तो मेरा जीवन,"
+        },
+        {
+          "text": "व्यर्थ हो… जायेगा –(2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "एलशदाई आराधना,"
+        },
+        {
+          "text": "एलोहीम आराधना,"
+        },
+        {
+          "text": "एदोनाई आराधना,"
+        },
+        {
+          "text": "येशुआ आराधना –(2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "1. बेचानी में मुझे पाकर,"
+        },
+        {
+          "text": "आंसू मेरे पोछे तूने ,"
+        },
+        {
+          "text": "आखों की पुतली जैसी,"
+        },
+        {
+          "text": "जीवन भर संभाला मुझे –(2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "2. मृत्यु के रास्ते पर"
+        },
+        {
+          "text": "टूटे दिल को लिए खड़ा था"
+        },
+        {
+          "text": "चंगा करने वाला बनकर"
+        },
+        {
+          "text": "मुझे नया जीवन दिया"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": [
+        {
+          "text": "============================"
+        },
+        {
+          "text": "Tere jaisa kaun hain"
+        },
+        {
+          "text": "Jo mera bhala kare"
+        },
+        {
+          "text": "Mera bharosa sirf tujhpar prabhu"
+        },
+        {
+          "text": "Mere jeevan ka swami"
+        },
+        {
+          "text": "Adhaar bana tu prabhuji"
+        },
+        {
+          "text": "Tu nahi toh mera jeevan"
+        },
+        {
+          "text": "Vyarth ho... jayega"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 8",
+      "lines": [
+        {
+          "text": "Elshadai aaradhana"
+        },
+        {
+          "text": "Elohim aaradhana"
+        },
+        {
+          "text": "Adonai aaradhana"
+        },
+        {
+          "text": "Yeshua aaradhana"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 9",
+      "lines": [
+        {
+          "text": "1. Bechaini mein mujhe paakar"
+        },
+        {
+          "text": "Aansu mere poche tune"
+        },
+        {
+          "text": "Aakhoan ki putli jaise"
+        },
+        {
+          "text": "Jeevan bhar sambhala mujhe"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 10",
+      "lines": [
+        {
+          "text": "2. Mrityu ke raaste par"
+        },
+        {
+          "text": "Tute dil ko liye khadaa tha"
+        },
+        {
+          "text": "Changa karne waala bankar"
+        },
+        {
+          "text": "Mujhe naya jeevan diya"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 11",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 12",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 13",
+      "lines": []
+    }
+  ],
+  "chords": "[Verse 1]\n\n\n[Verse 2]\n\n\n\n[Verse 3]\nतेरे जैसा कौन है,\nजो मेरा भला करे,\nमेरा भरोसा सिर्फ तुझपर प्रभु –(2)\nमेरे जीवन का स्वामी,\nआधार बना तू प्रभुजी,\nतू नहीं तो मेरा जीवन,\nव्यर्थ हो… जायेगा –(2)\n\n[Verse 4]\n\nएलशदाई आराधना,\nएलोहीम आराधना,\nएदोनाई आराधना,\nयेशुआ आराधना –(2)\n\n[Verse 5]\n1. बेचानी में मुझे पाकर,\nआंसू मेरे पोछे तूने ,\nआखों की पुतली जैसी,\nजीवन भर संभाला मुझे –(2)\n\n[Verse 6]\n2. मृत्यु के रास्ते पर\nटूटे दिल को लिए खड़ा था\nचंगा करने वाला बनकर\nमुझे नया जीवन दिया\n\n[Verse 7]\n============================\nTere jaisa kaun hain\nJo mera bhala kare\nMera bharosa sirf tujhpar prabhu\nMere jeevan ka swami\nAdhaar bana tu prabhuji\nTu nahi toh mera jeevan\nVyarth ho... jayega\n\n[Verse 8]\n\nElshadai aaradhana\nElohim aaradhana\nAdonai aaradhana\nYeshua aaradhana\n\n[Verse 9]\n1. Bechaini mein mujhe paakar\nAansu mere poche tune\nAakhoan ki putli jaise\nJeevan bhar sambhala mujhe\n\n[Verse 10]\n2. Mrityu ke raaste par\nTute dil ko liye khadaa tha\nChanga karne waala bankar\nMujhe naya jeevan diya\n\n[Verse 11]\n\n\n[Verse 12]\n\n\n[Verse 13]\n",
+  "lyrics": "[Verse 1]\n\n\n[Verse 2]\n\n\n\n[Verse 3]\nतेरे जैसा कौन है,\nजो मेरा भला करे,\nमेरा भरोसा सिर्फ तुझपर प्रभु –(2)\nमेरे जीवन का स्वामी,\nआधार बना तू प्रभुजी,\nतू नहीं तो मेरा जीवन,\nव्यर्थ हो… जायेगा –(2)\n\n[Verse 4]\n\nएलशदाई आराधना,\nएलोहीम आराधना,\nएदोनाई आराधना,\nयेशुआ आराधना –(2)\n\n[Verse 5]\n1. बेचानी में मुझे पाकर,\nआंसू मेरे पोछे तूने ,\nआखों की पुतली जैसी,\nजीवन भर संभाला मुझे –(2)\n\n[Verse 6]\n2. मृत्यु के रास्ते पर\nटूटे दिल को लिए खड़ा था\nचंगा करने वाला बनकर\nमुझे नया जीवन दिया\n\n[Verse 7]\n============================\nTere jaisa kaun hain\nJo mera bhala kare\nMera bharosa sirf tujhpar prabhu\nMere jeevan ka swami\nAdhaar bana tu prabhuji\nTu nahi toh mera jeevan\nVyarth ho... jayega\n\n[Verse 8]\n\nElshadai aaradhana\nElohim aaradhana\nAdonai aaradhana\nYeshua aaradhana\n\n[Verse 9]\n1. Bechaini mein mujhe paakar\nAansu mere poche tune\nAakhoan ki putli jaise\nJeevan bhar sambhala mujhe\n\n[Verse 10]\n2. Mrityu ke raaste par\nTute dil ko liye khadaa tha\nChanga karne waala bankar\nMujhe naya jeevan diya\n\n[Verse 11]\n\n\n[Verse 12]\n\n\n[Verse 13]\n",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

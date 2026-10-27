@@ -1,98 +1,86 @@
 {
-  "id" : 714,
-  "songNumber" : 102,
-  "title" : "I'VE GOT THE JOY DOWN IN MY HEART",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've got the joy, joy, joy, joy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Down in my heart........Where?"
-    }, {
-      "text" : "Down in my heart.......Where?"
-    }, {
-      "text" : "Down in my heart."
-    }, {
-      "text" : "I've got the joy, joy, joy, joy",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Down in my heart,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Glory to His name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I've got the peace that passes understanding.....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "I hear the Spirit crying 'Abba, Father'....",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "I know the Father, Son and Spirit's living.......",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And I'm so happy",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "So very happy",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "I have the love of Jesus",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "In my heart.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "} 2"
-    } ]
-  } ]
+  "id": 714,
+  "songNumber": 102,
+  "title": "I'VE GOT THE JOY DOWN IN MY HEART",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I've got the joy, joy, joy, joy,"
+        },
+        {
+          "text": "Down in my heart........Where?"
+        },
+        {
+          "text": "Down in my heart.......Where?"
+        },
+        {
+          "text": "Down in my heart."
+        },
+        {
+          "text": "I've got the joy, joy, joy, joy"
+        },
+        {
+          "text": "Down in my heart,"
+        },
+        {
+          "text": "Glory to His name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I've got the peace that passes understanding....."
+        },
+        {
+          "text": "I hear the Spirit crying 'Abba, Father'...."
+        },
+        {
+          "text": "I know the Father, Son and Spirit's living......."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "And I'm so happy"
+        },
+        {
+          "text": "So very happy"
+        },
+        {
+          "text": "I have the love of Jesus"
+        },
+        {
+          "text": "In my heart."
+        },
+        {
+          "text": "} 2"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nI've got the [D]joy, joy, joy, joy,\nDown in my heart........Where?\nDown in my heart.......Where?\nDown in my heart.\nI've got the [D]joy, joy, joy, joy\nDown in my [G]heart,\n[A]Glory to His [D]name.\n\n[Verse 2]\nI've got the [D]peace that passes understanding.....\nI hear the [G]Spirit crying 'Abba, Father'....\nI [D]know the Father, Son and [A]Spirit's living.......\n\n[Verse 3]\nAnd [D]I'm so happy\nSo very [G]happy\nI have the [D]love of Jesus\nIn my [A]heart.\n} 2",
+  "lyrics": "[Verse 1]\nI've got the joy, joy, joy, joy,\nDown in my heart........Where?\nDown in my heart.......Where?\nDown in my heart.\nI've got the joy, joy, joy, joy\nDown in my heart,\nGlory to His name.\n\n[Verse 2]\nI've got the peace that passes understanding.....\nI hear the Spirit crying 'Abba, Father'....\nI know the Father, Son and Spirit's living.......\n\n[Verse 3]\nAnd I'm so happy\nSo very happy\nI have the love of Jesus\nIn my heart.\n} 2",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

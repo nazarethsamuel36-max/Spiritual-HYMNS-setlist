@@ -1,52 +1,47 @@
 {
-  "id" : 715,
-  "songNumber" : 103,
-  "title" : "I'M SO GLAD JESUS SET ME FREE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I'm so glad Jesus set me free. (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Singing glory, Hallelujah,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Jesus lifted me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Satan had me bound, but Jesus set me free (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Once I was a sinner but Jesus set me free (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I'm on my way to heaven, shouting victory. (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    } ]
-  } ]
+  "id": 715,
+  "songNumber": 103,
+  "title": "I'M SO GLAD JESUS SET ME FREE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I''m so glad Jesus set me free. (3)"
+        },
+        {
+          "text": "Singing glory, Hallelujah,"
+        },
+        {
+          "text": "Jesus lifted me."
+        },
+        {
+          "text": "Satan had me bound, but Jesus set me free (3)"
+        },
+        {
+          "text": "Once I was a sinner but Jesus set me free (3)"
+        },
+        {
+          "text": "I''m on my way to heaven, shouting victory. (3)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n\r\n[G]I''m so glad Jesus set me free. (3)\r\n\r\nSinging [D]glory, Hallelujah,\r\n\r\nJesus [G]lifted me.\r\n\r\n[G]Satan had me bound, but Jesus set me free (3)\r\n\r\n[G]Once I was a sinner but Jesus set me free (3)\r\n\r\n[G]I''m on my way to heaven, shouting victory. (3)",
+  "lyrics": "[Verse]\r\n\r\nI''m so glad Jesus set me free. (3)\r\n\r\nSinging glory, Hallelujah,\r\n\r\nJesus lifted me.\r\n\r\nSatan had me bound, but Jesus set me free (3)\r\n\r\nOnce I was a sinner but Jesus set me free (3)\r\n\r\nI''m on my way to heaven, shouting victory. (3)",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

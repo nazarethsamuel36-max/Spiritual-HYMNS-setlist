@@ -1,85 +1,68 @@
 {
-  "id" : 968,
-  "songNumber" : 90,
-  "title" : "FOR I'M BUILDING A PEOPLE OF POWER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "For I'm building a people of power",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And I'm making a people of praise,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Who will move through this land by my Spirit,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And will glorify my precious name.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Oh build your church, Lord !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "Make it strong, Lord !",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Join our hearts, Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Through your Son.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Make us one, Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "In your body,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "In the Kingdom of your Son !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 968,
+  "songNumber": 90,
+  "title": "FOR I'M BUILDING A PEOPLE OF POWER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "For I'm building a people of power"
+        },
+        {
+          "text": "And I'm making a people of praise,"
+        },
+        {
+          "text": "Who will move through this land by my Spirit,"
+        },
+        {
+          "text": "And will glorify my precious name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Oh build your church, Lord !"
+        },
+        {
+          "text": "Make it strong, Lord !"
+        },
+        {
+          "text": "Join our hearts, Lord,"
+        },
+        {
+          "text": "Through your Son."
+        },
+        {
+          "text": "Make us one, Lord,"
+        },
+        {
+          "text": "In your body,"
+        },
+        {
+          "text": "In the Kingdom of your Son !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nFor I'm [D]building a people of power\nAnd I'm [Bm]making a people of praise,\nWho will [Em]move through this land by my Spirit,\nAnd will [A]glorify my precious name.\n\n[Chorus]\nOh [D]build your church, Lord !\nMake it [F#m]strong, Lord !\nJoin our [G]hearts, Lord,\nThrough your [D]Son.\nMake us [G]one, Lord,\nIn your [D]body,\nIn the [A]Kingdom of your [D]Son !",
+  "lyrics": "[Verse 1]\nFor I'm building a people of power\nAnd I'm making a people of praise,\nWho will move through this land by my Spirit,\nAnd will glorify my precious name.\n\n[Chorus]\nOh build your church, Lord !\nMake it strong, Lord !\nJoin our hearts, Lord,\nThrough your Son.\nMake us one, Lord,\nIn your body,\nIn the Kingdom of your Son !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

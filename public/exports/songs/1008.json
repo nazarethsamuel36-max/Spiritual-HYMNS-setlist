@@ -1,163 +1,104 @@
 {
-  "id" : 1008,
-  "songNumber" : 30,
-  "title" : "जिन्दगी मेरी बदल गई, जबसे मसीह को पाया है",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "जिन्दगी मेरी बदल गई, जबसे मसीह को पाया है,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "खिल गई है कलियाँ नई, यीशु बहार लाया है ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जीवन है क्या, पल ही दो पल का,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "किसने है जाना होगा क्या कल का ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "घडियाँ सुनहरी, फिर न लौटेंगी,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "मुक्ति और जीवन वो लाया है ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मार्ग में हमारे वह दर्शक रहेगा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "कदम डगमगाएँ हाथ वह थामेगा ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "भटके हुओं को राह दिखाने,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "इस धरती पर वह आया है ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जीवन की रोटी और अमृत जल को,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "कैसी भरपूरी से देता वह हमको,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "लहू बहाकर पाप हमारा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "प्यारे प्रभु ने उठाया है ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 1008,
+  "songNumber": 30,
+  "title": "जिन्दगी मेरी बदल गई, जबसे मसीह को पाया है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "जिन्दगी मेरी बदल गई, जबसे मसीह को पाया है,"
+        },
+        {
+          "text": "खिल गई है कलियाँ नई, यीशु बहार लाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन है क्या, पल ही दो पल का,"
+        },
+        {
+          "text": "किसने है जाना होगा क्या कल का ।"
+        },
+        {
+          "text": "घडियाँ सुनहरी, फिर न लौटेंगी,"
+        },
+        {
+          "text": "मुक्ति और जीवन वो लाया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मार्ग में हमारे वह दर्शक रहेगा,"
+        },
+        {
+          "text": "कदम डगमगाएँ हाथ वह थामेगा ।"
+        },
+        {
+          "text": "भटके हुओं को राह दिखाने,"
+        },
+        {
+          "text": "इस धरती पर वह आया है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन की रोटी और अमृत जल को,"
+        },
+        {
+          "text": "कैसी भरपूरी से देता वह हमको,"
+        },
+        {
+          "text": "लहू बहाकर पाप हमारा,"
+        },
+        {
+          "text": "प्यारे प्रभु ने उठाया है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [D]जिन्दगी मेरी बदल गई, [G]जबसे मसीह को [D]पाया है,\r\n[A]खिल गई है कलियाँ [G]नई, [A]यीशु बहार [D]लाया है ।\r\n[Verse]\r\n[Verse]\r\n[D]जीवन है क्या, [G]पल ही दो पल का,\r\n[A]किसने है जाना होगा [D]क्या कल का ।\r\n[D]घडियाँ सुनहरी, [G]फिर न लौटेंगी,\r\n[A]मुक्ति और जीवन [D]वो लाया है ।\r\n[Verse]\r\n[Verse]\r\n[D]मार्ग में हमारे [G]वह दर्शक रहेगा,\r\n[A]कदम डगमगाएँ [D]हाथ वह थामेगा ।\r\n[D]भटके हुओं को [G]राह दिखाने,\r\n[A]इस धरती पर [D]वह आया है ।\r\n[Verse]\r\n[Verse]\r\n[D]जीवन की रोटी और [G]अमृत जल को,\r\n[A]कैसी भरपूरी से [D]देता वह हमको,\r\n[D]लहू बहाकर [G]पाप हमारा,\r\n[A]प्यारे प्रभु ने [D]उठाया है ।",
+  "lyrics": "[Chorus]\r\n जिन्दगी मेरी बदल गई, जबसे मसीह को पाया है,\r\nखिल गई है कलियाँ नई, यीशु बहार लाया है ।\r\n[Verse]\r\n[Verse]\r\nजीवन है क्या, पल ही दो पल का,\r\nकिसने है जाना होगा क्या कल का ।\r\nघडियाँ सुनहरी, फिर न लौटेंगी,\r\nमुक्ति और जीवन वो लाया है ।\r\n[Verse]\r\n[Verse]\r\nमार्ग में हमारे वह दर्शक रहेगा,\r\nकदम डगमगाएँ हाथ वह थामेगा ।\r\nभटके हुओं को राह दिखाने,\r\nइस धरती पर वह आया है ।\r\n[Verse]\r\n[Verse]\r\nजीवन की रोटी और अमृत जल को,\r\nकैसी भरपूरी से देता वह हमको,\r\nलहू बहाकर पाप हमारा,\r\nप्यारे प्रभु ने उठाया है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

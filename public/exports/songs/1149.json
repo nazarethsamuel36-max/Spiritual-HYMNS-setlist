@@ -1,170 +1,101 @@
 {
-  "id" : 1149,
-  "songNumber" : 171,
-  "title" : "आप मेरा राजा, आप मेरा राजा",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आप मेरा राजा, आप मेरा राजा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "आप मेरा राजा, प्रभु की जय",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "ओ हल्लेलूयाह, हल्लेलूयाह",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हल्लेलूयाह प्रभु की जय।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आप मेरी शांती, आप मेरी शांती",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "आप मेरी शांती, प्रभु की जय",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "ओ हल्लेलूयाह।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "आप मेरा जीवन, आप मेरा जीवन",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मेरा जीवन प्रभु की जय",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "ओ हल्लेलूयाह।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "आप मेरा मुक्तीदाता, आप मेरा मुक्तीदाता",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "मेरा मुक्तीदाता, प्रभु की जय",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "ओ हल्लेलूयाह।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "आप मेरा सबकुछ, आप मेरा सबकुछ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "मेरा सबकुछ, प्रभु की जय",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "ओ हल्लेलूयाह।"
-    } ]
-  } ]
+  "id": 1149,
+  "songNumber": 171,
+  "title": "आप मेरा राजा, आप मेरा राजा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आप मेरा राजा, आप मेरा राजा"
+        },
+        {
+          "text": "आप मेरा राजा, प्रभु की जय"
+        },
+        {
+          "text": "ओ हल्लेलूयाह, हल्लेलूयाह"
+        },
+        {
+          "text": "हल्लेलूयाह प्रभु की जय।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आप मेरी शांती, आप मेरी शांती"
+        },
+        {
+          "text": "आप मेरी शांती, प्रभु की जय"
+        },
+        {
+          "text": "ओ हल्लेलूयाह।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आप मेरा जीवन, आप मेरा जीवन"
+        },
+        {
+          "text": "मेरा जीवन प्रभु की जय"
+        },
+        {
+          "text": "ओ हल्लेलूयाह।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आप मेरा मुक्तीदाता, आप मेरा मुक्तीदाता"
+        },
+        {
+          "text": "मेरा मुक्तीदाता, प्रभु की जय"
+        },
+        {
+          "text": "ओ हल्लेलूयाह।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आप मेरा सबकुछ, आप मेरा सबकुछ"
+        },
+        {
+          "text": "मेरा सबकुछ, प्रभु की जय"
+        },
+        {
+          "text": "ओ हल्लेलूयाह।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]आप मेरा राजा, [C]आप मेरा राजा\n[G]आप मेरा राजा, [D]प्रभु की [G]जय\n[G]ओ हल्लेलूयाह, [C]हल्लेलूयाह\n[G]हल्लेलूयाह [D]प्रभु की [G]जय।\n\n[Verse]\n[G]आप मेरी शांती, [C]आप मेरी शांती\n[G]आप मेरी शांती, [D]प्रभु की [G]जय\n[G]ओ हल्लेलूयाह।\n\n[Verse]\n[G]आप मेरा जीवन, [C]आप मेरा जीवन\n[G]मेरा जीवन [D]प्रभु की [G]जय\nओ हल्लेलूयाह।\n\n[Verse]\n[G]आप मेरा मुक्तीदाता, [C]आप मेरा मुक्तीदाता\n[G]मेरा मुक्तीदाता, [D]प्रभु की [G]जय\nओ हल्लेलूयाह।\n\n[Verse]\n[G]आप मेरा सबकुछ, [C]आप मेरा सबकुछ\n[G]मेरा सबकुछ, [D]प्रभु की [G]जय\nओ हल्लेलूयाह।",
+  "lyrics": "[Verse]\nआप मेरा राजा, आप मेरा राजा\nआप मेरा राजा, प्रभु की जय\nओ हल्लेलूयाह, हल्लेलूयाह\nहल्लेलूयाह प्रभु की जय।\n\n[Verse]\nआप मेरी शांती, आप मेरी शांती\nआप मेरी शांती, प्रभु की जय\nओ हल्लेलूयाह।\n\n[Verse]\nआप मेरा जीवन, आप मेरा जीवन\nमेरा जीवन प्रभु की जय\nओ हल्लेलूयाह।\n\n[Verse]\nआप मेरा मुक्तीदाता, आप मेरा मुक्तीदाता\nमेरा मुक्तीदाता, प्रभु की जय\nओ हल्लेलूयाह।\n\n[Verse]\nआप मेरा सबकुछ, आप मेरा सबकुछ\nमेरा सबकुछ, प्रभु की जय\nओ हल्लेलूयाह।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

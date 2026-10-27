@@ -1,193 +1,133 @@
 {
-  "id" : 1016,
-  "songNumber" : 38,
-  "title" : "पाप का बन्धन तोडा गया",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "पाप का बन्धन तोडा गया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "सब अपराध भी दूर हो गए",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "हाल्लेलुयाह यीशु मुआ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "मेरे बदल में मुआ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हाल्लेलुयाह, हाल्लेलुयाह",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जब से अपना पाप मान लिया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद,"
-    }, {
-      "text" : "तब से दिल में आग भी आई",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "कोई बन्धन अब नहीं है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद,"
-    }, {
-      "text" : "कोई डर भी अब नहीं है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "उसकी स्तुति मैं गाऊँगा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद,"
-    }, {
-      "text" : "उसकी सेवा भी करूँगा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मैं आजाद हूँ, आजाद ।"
-    } ]
-  } ]
+  "id": 1016,
+  "songNumber": 38,
+  "title": "पाप का बन्धन तोडा गया",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "पाप का बन्धन तोडा गया"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद,"
+        },
+        {
+          "text": "सब अपराध भी दूर हो गए"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हाल्लेलुयाह यीशु मुआ,"
+        },
+        {
+          "text": "मेरे बदल में मुआ,"
+        },
+        {
+          "text": "हाल्लेलुयाह, हाल्लेलुयाह"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब से अपना पाप मान लिया"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद,"
+        },
+        {
+          "text": "तब से दिल में आग भी आई"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कोई बन्धन अब नहीं है"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद,"
+        },
+        {
+          "text": "कोई डर भी अब नहीं है"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "उसकी स्तुति मैं गाऊँगा"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद,"
+        },
+        {
+          "text": "उसकी सेवा भी करूँगा"
+        },
+        {
+          "text": "मैं आजाद हूँ, आजाद ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]पाप का बन्धन [C]तोडा ग[G]या\n[G]मैं आ[D]जाद हूँ, आ[G][D]जाद,\n[G]सब अपराध भी [C]दूर हो ग[G]ए\n[G][D]मैं आ[D]जाद हूँ, आ[G][D]जाद ।\n[Verse]\n[Verse]\n[G]हाल्लेलुयाह यीशु मु[C]आ,\n[D]मेरे बदल में मु[G]आ,\n[G]हाल्लेलुयाह, हाल्लेलु[C]याह\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\n[G]जब से अपना [C]पाप मान लि[G]या\nमैं आजाद हूँ, आजाद,\n[G]तब से दिल में [C]आग भी आई\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\n[G]कोई बन्धन [C]अब नहीं [G]है\nमैं आजाद हूँ, आजाद,\n[G]कोई डर भी [C]अब नहीं [G]है\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\n[G]उसकी स्तुति मैं [C]गाऊँगा\nमैं आजाद हूँ, आजाद,\n[G]उसकी सेवा भी क[C]रूँगा\nमैं आजाद हूँ, आजाद ।",
+  "lyrics": "[Chorus]\n पाप का बन्धन तोडा गया\nमैं आजाद हूँ, आजाद,\nसब अपराध भी दूर हो गए\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\nहाल्लेलुयाह यीशु मुआ,\nमेरे बदल में मुआ,\nहाल्लेलुयाह, हाल्लेलुयाह\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\nजब से अपना पाप मान लिया\nमैं आजाद हूँ, आजाद,\nतब से दिल में आग भी आई\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\nकोई बन्धन अब नहीं है\nमैं आजाद हूँ, आजाद,\nकोई डर भी अब नहीं है\nमैं आजाद हूँ, आजाद ।\n[Verse]\n[Verse]\nउसकी स्तुति मैं गाऊँगा\nमैं आजाद हूँ, आजाद,\nउसकी सेवा भी करूँगा\nमैं आजाद हूँ, आजाद ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

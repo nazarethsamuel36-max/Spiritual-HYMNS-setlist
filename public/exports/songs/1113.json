@@ -1,110 +1,98 @@
 {
-  "id" : 1113,
-  "songNumber" : 135,
-  "title" : "यीशु का नाम सुखदायी",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु का नाम सुखदायी,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "भजन करो भाई",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "ये जीवन दो दिन का (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "ये जीवन है माटी का पुतला",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "पानी लगत गल जाये,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "भजन करो भाई...",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "ये जीवन है फूलों की माला",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धुप लगे तो मुरझाये,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "भजन करो भाई..."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "ये जीवन है चंदन की लकडी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "आग लगे तो जल जाये,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "भजन करो भाई..."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "ये जीवन है कागज का टुकडा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "हवा लगत उड जाये,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "भजन करो भाई..."
-    } ]
-  } ]
+  "id": 1113,
+  "songNumber": 135,
+  "title": "यीशु का नाम सुखदायी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु का नाम सुखदायी,"
+        },
+        {
+          "text": "भजन करो भाई"
+        },
+        {
+          "text": "ये जीवन दो दिन का (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये जीवन है माटी का पुतला"
+        },
+        {
+          "text": "पानी लगत गल जाये,"
+        },
+        {
+          "text": "भजन करो भाई..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये जीवन है फूलों की माला"
+        },
+        {
+          "text": "धुप लगे तो मुरझाये,"
+        },
+        {
+          "text": "भजन करो भाई..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये जीवन है चंदन की लकडी"
+        },
+        {
+          "text": "आग लगे तो जल जाये,"
+        },
+        {
+          "text": "भजन करो भाई..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये जीवन है कागज का टुकडा"
+        },
+        {
+          "text": "हवा लगत उड जाये,"
+        },
+        {
+          "text": "भजन करो भाई..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[G]यीशु का नाम सुखदायी,\r\n[C]भजन करो भाई\r\n[G]ये जीवन दो दिन का (2)\r\n\r\n[Verse]\r\n[G]ये जीवन है माटी का पुतला\r\n[C]पानी लगत गल जाये,\r\n[G]भजन करो भाई...\r\n\r\n[Verse]\r\n[G]ये जीवन है फूलों की माला\r\n[C]धुप लगे तो मुरझाये,\r\nभजन करो भाई...\r\n\r\n[Verse]\r\n[G]ये जीवन है चंदन की लकडी\r\n[C]आग लगे तो जल जाये,\r\nभजन करो भाई...\r\n\r\n[Verse]\r\n[G]ये जीवन है कागज का टुकडा\r\n[C]हवा लगत उड जाये,\r\nभजन करो भाई...",
+  "lyrics": "[Verse]\r\nयीशु का नाम सुखदायी,\r\nभजन करो भाई\r\nये जीवन दो दिन का (2)\r\n\r\n[Verse]\r\nये जीवन है माटी का पुतला\r\nपानी लगत गल जाये,\r\nभजन करो भाई...\r\n\r\n[Verse]\r\nये जीवन है फूलों की माला\r\nधुप लगे तो मुरझाये,\r\nभजन करो भाई...\r\n\r\n[Verse]\r\nये जीवन है चंदन की लकडी\r\nआग लगे तो जल जाये,\r\nभजन करो भाई...\r\n\r\n[Verse]\r\nये जीवन है कागज का टुकडा\r\nहवा लगत उड जाये,\r\nभजन करो भाई...",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

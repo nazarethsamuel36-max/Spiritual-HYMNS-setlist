@@ -1,62 +1,47 @@
 {
-  "id" : 696,
-  "songNumber" : 19,
-  "title" : "ITâ€™S NOT BY MIGHT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Itâ€™s not by might, itâ€™s not by power,",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "But by my Spirit, saith the Lord.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "F",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Itâ€™s not by might, itâ€™s not by power,"
-    }, {
-      "text" : "But by my Spirit, saith the Lord."
-    }, {
-      "text" : "This mountain shall be removed, (3)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "A#",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "By my Spirit, saith the Lord.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 6
-      }, {
-        "chord" : "F",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 696,
+  "songNumber": 19,
+  "title": "IT'S NOT BY MIGHT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "It's not by might, it's not by power,"
+        },
+        {
+          "text": "But by my Spirit, saith the Lord."
+        },
+        {
+          "text": "It's not by might, it's not by power,"
+        },
+        {
+          "text": "But by my Spirit, saith the Lord."
+        },
+        {
+          "text": "This mountain shall be removed, (3)"
+        },
+        {
+          "text": "By my Spirit, saith the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]It's not by might, it's not[C] by power,\n[G]But by my Spirit, [D]saith the [G]Lord.\nIt's not by might, it's not by power,\nBut by my Spirit, saith the Lord.\n[G]This mountain shall be re[C]moved, (3)\n[G]By my [D]Spirit, saith the [G]Lord.",
+  "lyrics": "[Verse]\nIt's not by might, it's not by power,\nBut by my Spirit, saith the Lord.\nIt's not by might, it's not by power,\nBut by my Spirit, saith the Lord.\nThis mountain shall be removed, (3)\nBy my Spirit, saith the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

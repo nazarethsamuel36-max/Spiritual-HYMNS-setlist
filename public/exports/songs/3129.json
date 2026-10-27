@@ -1,50 +1,74 @@
 {
-  "id" : 3129,
-  "songNumber" : 2030,
-  "title" : "** तॆरॆ पअस्, अअतअ हु",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Tere paas, aata hoon"
-    }, {
-      "text" : "Yeshu, tere paas"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Har pal, meri har saans"
-    }, {
-      "text" : "Teri stuti, karti rahe |"
-    }, {
-      "text" : "Har din, meri har baat"
-    }, {
-      "text" : "Teri mahima, gaati rahe |"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Yeshua, Yeshua,"
-    }, {
-      "text" : "Yeshua, Yeshua,"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Outro",
-    "lines" : [ {
-      "text" : "Yeshua...."
-    } ]
-  } ]
+  "id": 3129,
+  "songNumber": 2030,
+  "title": "Tere paas, aata hoon",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Tere paas, aata hoon"
+        },
+        {
+          "text": "Yeshu, tere paas"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Har pal, meri har saans"
+        },
+        {
+          "text": "Teri stuti, karti rahe |"
+        },
+        {
+          "text": "Har din, meri har baat"
+        },
+        {
+          "text": "Teri mahima, gaati rahe |"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Yeshua, Yeshua,"
+        },
+        {
+          "text": "Yeshua, Yeshua,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Outro",
+      "lines": [
+        {
+          "text": "Yeshua...."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nTere paas, aata hoon\nYeshu, tere paas\n\n[Verse 2]\nHar pal, meri har saans\nTeri stuti, karti rahe |\nHar din, meri har baat\nTeri mahima, gaati rahe |\n\n[CHORUS]\nYeshua, Yeshua,\nYeshua, Yeshua,\n\n[Outro]\nYeshua....",
+  "lyrics": "[Verse 1]\nTere paas, aata hoon\nYeshu, tere paas\n\n[Verse 2]\nHar pal, meri har saans\nTeri stuti, karti rahe |\nHar din, meri har baat\nTeri mahima, gaati rahe |\n\n[CHORUS]\nYeshua, Yeshua,\nYeshua, Yeshua,\n\n[Outro]\nYeshua....",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

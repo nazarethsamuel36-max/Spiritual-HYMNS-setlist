@@ -1,106 +1,80 @@
 {
-  "id" : 1107,
-  "songNumber" : 129,
-  "title" : "चले जाना है दूर से दूर तक",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "चले जाना है दूर से दूर तक",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "लेके यीशु का, प्यारा प्यारा नाम ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जिस नाम से हमको मुक्ति मिली,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जिस नाम से हमको शक्ति मिली,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "वो ही नाम, प्यारा प्यारा नाम।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जिस नाम से हमको आनंद मिला",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "उस आनंद को हम बाँटते चले",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "वो ही नाम प्यारा प्यारा नाम ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "जिस नाम से अंधे देखने लगे",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जिस नाम से लंगडे चलने लगे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "वो ही नाम प्यारा प्यारा नाम।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 1107,
+  "songNumber": 129,
+  "title": "चले जाना है दूर से दूर तक",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चले जाना है दूर से दूर तक"
+        },
+        {
+          "text": "लेके यीशु का, प्यारा प्यारा नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिस नाम से हमको मुक्ति मिली,"
+        },
+        {
+          "text": "जिस नाम से हमको शक्ति मिली,"
+        },
+        {
+          "text": "वो ही नाम, प्यारा प्यारा नाम।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिस नाम से हमको आनंद मिला"
+        },
+        {
+          "text": "उस आनंद को हम बाँटते चले"
+        },
+        {
+          "text": "वो ही नाम प्यारा प्यारा नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिस नाम से अंधे देखने लगे"
+        },
+        {
+          "text": "जिस नाम से लंगडे चलने लगे"
+        },
+        {
+          "text": "वो ही नाम प्यारा प्यारा नाम।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[C]चले जाना है दूर से दूर तक\r\n[G]लेके यीशु का, प्यारा प्यारा [C]नाम ।\r\n\r\n[Verse]\r\n[C]जिस नाम से हमको मुक्ति मिली,\r\n[G]जिस नाम से हमको शक्ति मिली,\r\n[F]वो ही नाम, प्यारा प्यारा [C]नाम।\r\n\r\n[Verse]\r\n[C]जिस नाम से हमको आनंद मिला\r\n[G]उस आनंद को हम बाँटते चले\r\n[F]वो ही नाम प्यारा प्यारा [C]नाम ।\r\n\r\n[Verse]\r\n[C]जिस नाम से अंधे देखने लगे\r\n[G]जिस नाम से लंगडे चलने लगे\r\n[F]वो ही नाम प्यारा प्यारा [C]नाम।",
+  "lyrics": "[Verse]\r\nचले जाना है दूर से दूर तक\r\nलेके यीशु का, प्यारा प्यारा नाम ।\r\n\r\n[Verse]\r\nजिस नाम से हमको मुक्ति मिली,\r\nजिस नाम से हमको शक्ति मिली,\r\nवो ही नाम, प्यारा प्यारा नाम।\r\n\r\n[Verse]\r\nजिस नाम से हमको आनंद मिला\r\nउस आनंद को हम बाँटते चले\r\nवो ही नाम प्यारा प्यारा नाम ।\r\n\r\n[Verse]\r\nजिस नाम से अंधे देखने लगे\r\nजिस नाम से लंगडे चलने लगे\r\nवो ही नाम प्यारा प्यारा नाम।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

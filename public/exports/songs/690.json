@@ -1,107 +1,74 @@
 {
-  "id" : 690,
-  "songNumber" : 9,
-  "title" : "HIS NAME IS WONDERFUL",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "His Name is Wonderful, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Jesus my Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "He is the Mighty King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Master of everything",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "His Name is Wonderful,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Jesus my Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He's the great Shepherd,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The Rock of all Ages,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Almighty God is He.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Bow down before Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Love and adore Him,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "His Name is Wonderful,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Jesus my Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  } ]
+  "id": 690,
+  "songNumber": 9,
+  "title": "HIS NAME IS WONDERFUL",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "His Name is Wonderful, (3)"
+        },
+        {
+          "text": "Jesus my Lord."
+        },
+        {
+          "text": "He is the Mighty King,"
+        },
+        {
+          "text": "Master of everything"
+        },
+        {
+          "text": "His Name is Wonderful,"
+        },
+        {
+          "text": "Jesus my Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He''s the great Shepherd,"
+        },
+        {
+          "text": "The Rock of all Ages,"
+        },
+        {
+          "text": "Almighty God is He."
+        },
+        {
+          "text": "Bow down before Him,"
+        },
+        {
+          "text": "Love and adore Him,"
+        },
+        {
+          "text": "His Name is Wonderful,"
+        },
+        {
+          "text": "Jesus my Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]His Name is Wonderful, (3)\r\nJesus my [A]Lord.\r\n[D]He is the Mighty King,\r\nMaster [A]of every[D]thing\r\nHis Name is [G]Wonderful,\r\nJesus my [D]Lord.\r\n\r\n[Verse]\r\n[A]He''s the great Shepherd,\r\nThe [D]Rock of all Ages,\r\n[E]Almighty God is [A]He.\r\n[D]Bow down before Him,\r\nLove [A]and adore [D]Him,\r\nHis Name is [G]Wonderful,\r\nJesus my [D]Lord.",
+  "lyrics": "[Verse]\r\nHis Name is Wonderful, (3)\r\nJesus my Lord.\r\nHe is the Mighty King,\r\nMaster of everything\r\nHis Name is Wonderful,\r\nJesus my Lord.\r\n\r\n[Verse]\r\nHe''s the great Shepherd,\r\nThe Rock of all Ages,\r\nAlmighty God is He.\r\nBow down before Him,\r\nLove and adore Him,\r\nHis Name is Wonderful,\r\nJesus my Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,52 +1,116 @@
 {
-  "id" : 3169,
-  "songNumber" : 1028,
-  "title" : "** He Knows my Name",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I have a Maker"
-    }, {
-      "text" : "He formed my heart"
-    }, {
-      "text" : "Before even time began"
-    }, {
-      "text" : "My life was in his hands"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "He knows my name"
-    }, {
-      "text" : "He knows my every thought"
-    }, {
-      "text" : "He sees each tear that falls"
-    }, {
-      "text" : "And He hears me when I call"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I have a Father"
-    }, {
-      "text" : "He calls me His own"
-    }, {
-      "text" : "He'll never leave me"
-    }, {
-      "text" : "No matter where I go"
-    } ]
-  } ]
+  "id": 3169,
+  "songNumber": 1028,
+  "title": "He Knows my Name",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "[Intro] G D Em C G D"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I have a  Maker"
+        },
+        {
+          "text": "He formed my  heart"
+        },
+        {
+          "text": "Before even time began"
+        },
+        {
+          "text": "My life  was in His  hands"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "He knows my  name"
+        },
+        {
+          "text": "He knows my  every  thought"
+        },
+        {
+          "text": "He sees each  tear that  falls"
+        },
+        {
+          "text": "And He  hears me when I  call"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I have a  Father"
+        },
+        {
+          "text": "He calls me  His own"
+        },
+        {
+          "text": "He'll never  leave me"
+        },
+        {
+          "text": "No matter  where I go"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Bridge",
+      "lines": [
+        {
+          "text": "He knows my  name"
+        },
+        {
+          "text": "He knows my  every  thought"
+        },
+        {
+          "text": "He sees each  tear that  falls"
+        },
+        {
+          "text": "And He  hears me when I  call"
+        },
+        {
+          "text": "He knows my  name"
+        },
+        {
+          "text": "He knows my  every  thought"
+        },
+        {
+          "text": "He sees each  tear that  falls"
+        },
+        {
+          "text": "And He  hears me when I  call"
+        }
+      ]
+    }
+  ],
+  "chords": "[Intro] G D Em C G D\n\n[Verse 1]\n[G] I have a [D] Maker\n[Em] He formed my [C] heart\n[G] Be[D]fore e[Em]ven time be[C]gan\n[G] My life [D] was in His [G] hands\n\n[Chorus]\n[G] He knows my [D] name\n[Em] He knows my [C] every [G] thought\n[G] He sees each [D] tear that [Em] falls\n[C] And He [D] hears me when I [G] call\n\n[Verse 2]\n[G] I have a [D] Father\n[Em] He calls me [C] His own\n[G] He'll never [D] leave me\n[Em] No matter [C] where I go\n\n[Bridge]\n[G] He knows my [D] name\n[Em] He knows my [C] every [G] thought\n[G] He sees each [D] tear that [Em] falls\n[C] And He [D] hears me when I [G] call\n[G] He knows my [D] name\n[Em] He knows my [C] every [G] thought\n[G] He sees each [D] tear that [Em] falls\n[C] And He [D] hears me when I [G] call",
+  "lyrics": "[Intro] G D Em C G D\n\n[Verse 1]\n I have a  Maker\n He formed my  heart\n Before even time began\n My life  was in His  hands\n\n[Chorus]\n He knows my  name\n He knows my  every  thought\n He sees each  tear that  falls\n And He  hears me when I  call\n\n[Verse 2]\n I have a  Father\n He calls me  His own\n He'll never  leave me\n No matter  where I go\n\n[Bridge]\n He knows my  name\n He knows my  every  thought\n He sees each  tear that  falls\n And He  hears me when I  call\n He knows my  name\n He knows my  every  thought\n He sees each  tear that  falls\n And He  hears me when I  call",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

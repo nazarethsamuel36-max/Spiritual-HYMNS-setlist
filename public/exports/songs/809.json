@@ -1,245 +1,144 @@
 {
-  "id" : 809,
-  "songNumber" : 197,
-  "title" : "I'VE REACHED THE LAND OF CORN AND WINE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've reached the land of corn and wine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "And all its riches freely mine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Here shines undimmed one blissful day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "For all my night has passed away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O Beulah Land, sweet Beulah Land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "As on thy highest mount I stand,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I look away across the sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Where mansions are prepared for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "And view the shining glory-shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "My Heaven, my home forevermore!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "My Saviour comes and walks with me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "And sweet communion here have we;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "He gently leads me by His hand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "For this is Heaven's borderland.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "A sweet perfume upon the breeze",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Is borne from ever vernal trees,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And flow'rs that never fading grow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Where streams of life forever flow.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "The zephyrs seem to float to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Sweet sounds of Heaven's melody,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "As angels with the white-robed throng",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Listen to the Saints' Redemption song.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 809,
+  "songNumber": 197,
+  "title": "I'VE REACHED THE LAND OF CORN AND WINE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Ive reached the land of corn and wine,"
+        },
+        {
+          "text": "And all its riches freely mine;"
+        },
+        {
+          "text": "Here shines undimmed one blissful day,"
+        },
+        {
+          "text": "For all my night has passed away."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O Beulah Land, sweet Beulah Land,"
+        },
+        {
+          "text": "As on thy highest mount I stand,"
+        },
+        {
+          "text": "I look away across the sea,"
+        },
+        {
+          "text": "Where mansions are prepared for me,"
+        },
+        {
+          "text": "And view the shining glory-shore,"
+        },
+        {
+          "text": "My Heaven, my home forevermore!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "My Saviour comes and walks with me,"
+        },
+        {
+          "text": "And sweet communion here have we;"
+        },
+        {
+          "text": "He gently leads me by His hand,"
+        },
+        {
+          "text": "For this is Heavens borderland."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "A sweet perfume upon the breeze"
+        },
+        {
+          "text": "Is borne from ever vernal trees,"
+        },
+        {
+          "text": "And flowrs that never fading grow,"
+        },
+        {
+          "text": "Where streams of life forever flow."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The zephyrs seem to float to me,"
+        },
+        {
+          "text": "Sweet sounds of Heavens melody,"
+        },
+        {
+          "text": "As angels with the white-robed throng"
+        },
+        {
+          "text": "Listen to the Saints Redemption song."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n Ive [D]reached the land of corn and [G]wine,\nAnd [D]all its riches freely [A]mine;\nHere [D]shines undimmed one blissful [G]day,\nFor [D]all my night has [A]passed a[D]way.\n[Verse]\n[Verse]\n[Chorus]\nO [D]Beulah Land, sweet Beulah Land,\nAs [G]on thy highest [D]mount I stand,\nI [D]look away a[A]cross the [D]sea,\nWhere [G]mansions are pre[D]pared for [A]me,\nAnd [D]view the shining glory-shore,\nMy [D]Heaven, my [A]home for[D]evermore!\n[Verse]\n[Verse]\nMy [D]Saviour comes and walks with [G]me,\nAnd [D]sweet communion here have [A]we;\nHe [D]gently leads me by His [G]hand,\nFor [D]this is Heavens [A]border[D]land.\n[Verse]\n[Verse]\nA [D]sweet perfume upon the [G]breeze\nIs [D]borne from ever vernal [A]trees,\nAnd [D]flowrs that never fading [G]grow,\nWhere [D]streams of life for[A]ever [D]flow.\n[Verse]\n[Verse]\nThe [D]zephyrs seem to float to [G]me,\nSweet [D]sounds of Heavens melo[A]dy,\nAs [D]angels with the white-robed [G]throng\n[D]Listen to the [A]Saints Re[D]demption song.",
+  "lyrics": "[Verse]\n Ive reached the land of corn and wine,\nAnd all its riches freely mine;\nHere shines undimmed one blissful day,\nFor all my night has passed away.\n[Verse]\n[Verse]\n[Chorus]\nO Beulah Land, sweet Beulah Land,\nAs on thy highest mount I stand,\nI look away across the sea,\nWhere mansions are prepared for me,\nAnd view the shining glory-shore,\nMy Heaven, my home forevermore!\n[Verse]\n[Verse]\nMy Saviour comes and walks with me,\nAnd sweet communion here have we;\nHe gently leads me by His hand,\nFor this is Heavens borderland.\n[Verse]\n[Verse]\nA sweet perfume upon the breeze\nIs borne from ever vernal trees,\nAnd flowrs that never fading grow,\nWhere streams of life forever flow.\n[Verse]\n[Verse]\nThe zephyrs seem to float to me,\nSweet sounds of Heavens melody,\nAs angels with the white-robed throng\nListen to the Saints Redemption song.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

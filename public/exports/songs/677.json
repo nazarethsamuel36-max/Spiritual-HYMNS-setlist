@@ -1,249 +1,111 @@
 {
-  "id" : 677,
-  "songNumber" : 370,
-  "title" : "PRECIOUS LORD TAKE MY HAND",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "When my way groweth drear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Precious Lord linger near,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "When my life is almost gone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Hear my cry, hear my call,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Hold my hand lest I fall,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "B",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Take my hand Precious Lord,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Lead me on.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Precious Lord, take my hand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Lead me on let me stand,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Iâ€™m tired, Iâ€™m weak, Iâ€™m worn,"
-    }, {
-      "text" : "Through the storm,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Through the night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Lead me on to the Light,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Take my hand Precious Lord,"
-    }, {
-      "text" : "Lead me home.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When my work is all done,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And my race here is run,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Let me see by the Light,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Thou hast shown,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "That fair city so bright,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "B",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Where the Lamb is the Light,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Take my hand, Precious Lord,",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Lead me on."
-    } ]
-  } ]
+  "id": 677,
+  "songNumber": 370,
+  "title": "PRECIOUS LORD TAKE MY HAND",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When my way groweth drear,"
+        },
+        {
+          "text": "Precious Lord linger near,"
+        },
+        {
+          "text": "When my life is almost gone,"
+        },
+        {
+          "text": "Hear my cry, hear my call,"
+        },
+        {
+          "text": "Hold my hand lest I fall,"
+        },
+        {
+          "text": "Take my hand Precious Lord,"
+        },
+        {
+          "text": "Lead me on."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Precious Lord, take my hand,"
+        },
+        {
+          "text": "Lead me on let me stand,"
+        },
+        {
+          "text": "I am tired, I am weak, I am worn,"
+        },
+        {
+          "text": "Through the storm,"
+        },
+        {
+          "text": "Through the night,"
+        },
+        {
+          "text": "Lead me on to the Light,"
+        },
+        {
+          "text": "Take my hand Precious Lord,"
+        },
+        {
+          "text": "Lead me home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When my work is all done,"
+        },
+        {
+          "text": "And my race here is run,"
+        },
+        {
+          "text": "Let me see by the Light,"
+        },
+        {
+          "text": "Thou hast shown,"
+        },
+        {
+          "text": "That fair city so bright,"
+        },
+        {
+          "text": "Where the Lamb is the Light,"
+        },
+        {
+          "text": "Take my hand, Precious Lord,"
+        },
+        {
+          "text": "Lead me on."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nWhen my [F]way groweth [Bb]drear,\r\nPrecious [F]Lord linger [C]near,\r\nWhen my [F]life is [Bb]almost [C]gone,\r\n[F]Hear my [Bb]cry, [F]hear my call,\r\n[F]Hold my [Bb]hand [F]lest I [D]fall,\r\n[G]Take my [C]hand Precious [F]Lord,\r\n[C]Lead me [F]on.\r\n\r\n[Verse]\r\n[F]Precious [C]Lord, [F]take my [Bb]hand,\r\n[Bb]Lead me [F]on let me [C]stand,\r\nI am tired, I am weak, I am worn,\r\n[F]Through the [Bb]storm,\r\n[F]Through the [Bb]night,\r\n[F]Lead me [Bb]on to the [C]Light,\r\nTake my hand Precious Lord,\r\n[C]Lead me [F]home.\r\n\r\n[Verse]\r\nWhen my [F]work is all [Bb]done,\r\nAnd my [F]race here is [C]run,\r\nLet me [F]see by the [C]Light,\r\n[F]Thou hast [Bb]shown,\r\nThat [F]fair [Bb]city [F]so [D]bright,\r\n[G]Where the [C]Lamb is the [F]Light,\r\n[G]Take my [C]hand, Precious [F]Lord,\r\nLead me on.",
+  "lyrics": "[Verse]\r\nWhen my way groweth drear,\r\nPrecious Lord linger near,\r\nWhen my life is almost gone,\r\nHear my cry, hear my call,\r\nHold my hand lest I fall,\r\nTake my hand Precious Lord,\r\nLead me on.\r\n\r\n[Verse]\r\nPrecious Lord, take my hand,\r\nLead me on let me stand,\r\nI am tired, I am weak, I am worn,\r\nThrough the storm,\r\nThrough the night,\r\nLead me on to the Light,\r\nTake my hand Precious Lord,\r\nLead me home.\r\n\r\n[Verse]\r\nWhen my work is all done,\r\nAnd my race here is run,\r\nLet me see by the Light,\r\nThou hast shown,\r\nThat fair city so bright,\r\nWhere the Lamb is the Light,\r\nTake my hand, Precious Lord,\r\nLead me on.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender",
+    "Funeral"
+  ]
 }

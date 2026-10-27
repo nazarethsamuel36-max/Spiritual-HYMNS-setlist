@@ -1,212 +1,107 @@
 {
-  "id" : 756,
-  "songNumber" : 144,
-  "title" : "I AM THINE O LORD",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I am Thine, O Lord, I have heard Thy voice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "And it told Thy love to me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "But I long to rise in the arms of faith,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "And be closer drawn to Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Draw me nearer, nearer, nearer, blessed Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "To the cross where Thou hast died;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Draw me nearer, nearer, nearer, blessed Lord,"
-    }, {
-      "text" : "To Thy precious, bleeding side.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Consecrate me now to Thy service Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "By the pow'r of grace divine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Let my soul look up with a steadfast hope,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "And my will be lost in Thine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Oh, the pure delight of a single hour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "That before Thy throne I spend,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "When I kneel in prayer, and with Thee, my God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "I commune as friend with friend.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "There are depths of love that I cannot know",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Till I cross the narrow sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "There are heights of joy that I may not reach,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Till I rest in peace with Thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 756,
+  "songNumber": 144,
+  "title": "I AM THINE O LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I am Thine, O Lord, I have heard Thy voice,"
+        },
+        {
+          "text": "And it told Thy love to me;"
+        },
+        {
+          "text": "But I long to rise in the arms of faith,"
+        },
+        {
+          "text": "And be closer drawn to Thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Draw me nearer, nearer, nearer, blessed Lord,"
+        },
+        {
+          "text": "To the cross where Thou hast died;"
+        },
+        {
+          "text": "Draw me nearer, nearer, nearer, blessed Lord,"
+        },
+        {
+          "text": "To Thy precious, bleeding side."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Consecrate me now to Thy service Lord,"
+        },
+        {
+          "text": "By the pow'r of grace divine;"
+        },
+        {
+          "text": "Let my soul look up with a steadfast hope,"
+        },
+        {
+          "text": "And my will be lost in Thine."
+        },
+        {
+          "text": "Oh, the pure delight of a single hour"
+        },
+        {
+          "text": "That before Thy throne I spend,"
+        },
+        {
+          "text": "When I kneel in prayer, and with Thee, my God,"
+        },
+        {
+          "text": "I commune as friend with friend."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "There are depths of love that I cannot know"
+        },
+        {
+          "text": "Till I cross the narrow sea,"
+        },
+        {
+          "text": "There are heights of joy that I may not reach,"
+        },
+        {
+          "text": "Till I rest in peace with Thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]I am Thine, O Lord, I have [G]heard Thy [D]voice,\nAnd it [D]told Thy love to [A]me;\nBut I [D]long to rise in the [G]arms of [D]faith,\nAnd be [D]closer drawn to [A]Thee.\n\n[Chorus]\n[D]Draw me nearer, nearer, nearer, blessed [G]Lord,\nTo the [D]cross where Thou hast [A]died;\nDraw me nearer, nearer, nearer, blessed Lord,\nTo Thy [D]precious, bleeding [A]side.\n\n[Verse 2]\n[D]Consecrate me now to Thy service [G]Lord,\nBy the [D]pow'r of grace di[A]vine;\nLet my [D]soul look up with a [G]steadfast [D]hope,\nAnd my [D]will be lost in [A]Thine.\n[D]Oh, the pure delight of a single [G]hour\nThat be[D]fore Thy throne I [A]spend,\nWhen I [D]kneel in prayer, and with [G]Thee, my [D]God,\nI com[D]mune as friend with [A]friend.\n\n[Verse 3]\n[D]There are depths of love that I cannot [G]know\nTill I [D]cross the narrow [A]sea,\nThere are [D]heights of joy that I may [G]not [D]reach,\nTill I [D]rest in peace with [A]Thee.",
+  "lyrics": "[Verse 1]\nI am Thine, O Lord, I have heard Thy voice,\nAnd it told Thy love to me;\nBut I long to rise in the arms of faith,\nAnd be closer drawn to Thee.\n\n[Chorus]\nDraw me nearer, nearer, nearer, blessed Lord,\nTo the cross where Thou hast died;\nDraw me nearer, nearer, nearer, blessed Lord,\nTo Thy precious, bleeding side.\n\n[Verse 2]\nConsecrate me now to Thy service Lord,\nBy the pow'r of grace divine;\nLet my soul look up with a steadfast hope,\nAnd my will be lost in Thine.\nOh, the pure delight of a single hour\nThat before Thy throne I spend,\nWhen I kneel in prayer, and with Thee, my God,\nI commune as friend with friend.\n\n[Verse 3]\nThere are depths of love that I cannot know\nTill I cross the narrow sea,\nThere are heights of joy that I may not reach,\nTill I rest in peace with Thee.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,232 +1,115 @@
 {
-  "id" : 886,
-  "songNumber" : 274,
-  "title" : "I'D RATHER HAVE JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I'd rather have Jesus than silver or gold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'd rather be His than have riches untold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I'd rather have Jesus than houses or lands,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'd rather be led by His nail-pierced hands.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Than to be the king of a vast domain",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And be held in sin's dread sway.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'd rather have Jesus than anything",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "That this world can afford to pay.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He's fairer than lilies of rarest bloom,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He's sweeter than honey from out of the comb,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "He's all that my hungering spirit needs,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'd rather have Jesus and let Him lead.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I'd rather have Jesus than worldly applause,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I'd rather be faithful to His dear cause,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "I'd rather have Jesus than worldwide fame,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Yes, I'd rather be true to His Holy Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  } ]
+  "id": 886,
+  "songNumber": 274,
+  "title": "I'D RATHER HAVE JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Id rather have Jesus than silver or gold,"
+        },
+        {
+          "text": "Id rather be His than have riches untold,"
+        },
+        {
+          "text": "Id rather have Jesus than houses or lands,"
+        },
+        {
+          "text": "Id rather be led by His nail-pierced hands."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Than to be the king of a vast domain"
+        },
+        {
+          "text": "And be held in sins dread sway."
+        },
+        {
+          "text": "Id rather have Jesus than anything"
+        },
+        {
+          "text": "That this world can afford to pay."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hes fairer than lilies of rarest bloom,"
+        },
+        {
+          "text": "Hes sweeter than honey from out of the comb,"
+        },
+        {
+          "text": "Hes all that my hungering spirit needs,"
+        },
+        {
+          "text": "Id rather have Jesus and let Him lead."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Id rather have Jesus than worldly applause,"
+        },
+        {
+          "text": "Id rather be faithful to His dear cause,"
+        },
+        {
+          "text": "Id rather have Jesus than worldwide fame,"
+        },
+        {
+          "text": "Yes, Id rather be true to His Holy Name."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n Id [D]rather have [G]Jesus than [D]silver or gold,\nId [D]rather be [G]His than have [D]riches un[A]told,\nId [D]rather have [G]Jesus than [D]houses or lands,\nId [D]rather be [G]led by His [A]nail-pierced [D]hands.\n[Verse]\n[Verse]\n[Chorus]\nThan to [A]be the king of a [D]vast domain\nAnd [G]be held in [D]sins dread [A]sway.\nId [D]rather have [G]Jesus than [D]anything\nThat this [A]world can afford to [D]pay.\n[Verse]\n[Verse]\nHes [D]fairer than [G]lilies of [D]rarest bloom,\nHes [D]sweeter than [G]honey from [D]out of the [A]comb,\nHes [D]all that my [G]hungering [D]spirit needs,\nId [D]rather have [G]Jesus and [A]let Him [D]lead.\n[Verse]\n[Verse]\nId [D]rather have [G]Jesus than [D]worldly applause,\nId [D]rather be [G]faithful to [D]His dear [A]cause,\nId [D]rather have [G]Jesus than [D]worldwide fame,\nYes, Id [D]rather be [G]true to His [A]Holy [D]Name.",
+  "lyrics": "[Verse]\n Id rather have Jesus than silver or gold,\nId rather be His than have riches untold,\nId rather have Jesus than houses or lands,\nId rather be led by His nail-pierced hands.\n[Verse]\n[Verse]\n[Chorus]\nThan to be the king of a vast domain\nAnd be held in sins dread sway.\nId rather have Jesus than anything\nThat this world can afford to pay.\n[Verse]\n[Verse]\nHes fairer than lilies of rarest bloom,\nHes sweeter than honey from out of the comb,\nHes all that my hungering spirit needs,\nId rather have Jesus and let Him lead.\n[Verse]\n[Verse]\nId rather have Jesus than worldly applause,\nId rather be faithful to His dear cause,\nId rather have Jesus than worldwide fame,\nYes, Id rather be true to His Holy Name.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

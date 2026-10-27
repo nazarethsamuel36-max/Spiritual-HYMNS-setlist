@@ -1,203 +1,92 @@
 {
-  "id" : 621,
-  "songNumber" : 314,
-  "title" : "GOD IS GOOD ALL THE TIME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God is good all the time",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He put a song of praise in this heart of mine",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "God is good all the time"
-    }, {
-      "text" : "Through the darkest night, His light will shine",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "God is good, God is good all the time",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "If you're walking through the valley,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And there are shadows all around,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Do not fear, He will guide you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "He will keep you safe and sound,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "'Cause He's promised to never leave you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Nor forsake you and His Word is true.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "We were sinners - so unworthy,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Still for us He chose to die,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Filled us with His Holy Spirit,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Now we can stand and testify,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "That His love is everlasting,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And His mercies - they will never end.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 621,
+  "songNumber": 314,
+  "title": "GOD IS GOOD ALL THE TIME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God is good all the time"
+        },
+        {
+          "text": "He put a song of praise in this heart of mine"
+        },
+        {
+          "text": "God is good all the time"
+        },
+        {
+          "text": "Through the darkest night, His light will shine"
+        },
+        {
+          "text": "God is good, God is good all the time"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "If you're walking through the valley,"
+        },
+        {
+          "text": "And there are shadows all around,"
+        },
+        {
+          "text": "Do not fear, He will guide you,"
+        },
+        {
+          "text": "He will keep you safe and sound,"
+        },
+        {
+          "text": "'Cause He's promised to never leave you,"
+        },
+        {
+          "text": "Nor forsake you and His Word is true."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We were sinners - so unworthy,"
+        },
+        {
+          "text": "Still for us He chose to die,"
+        },
+        {
+          "text": "Filled us with His Holy Spirit,"
+        },
+        {
+          "text": "Now we can stand and testify,"
+        },
+        {
+          "text": "That His love is everlasting,"
+        },
+        {
+          "text": "And His mercies - they will never end."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]God is [C]good all the [G]time\r\nHe put a [C]song of [G]praise in this [D]heart of mine\r\nGod is good all the time\r\nThrough the [C]darkest [G]night, His [D]light will shine\r\n[C]God is [G]good, [D]God is good [G]all the time\r\n\r\n[Verse]\r\nIf you're [C]walking through the [D]valley,\r\nAnd there are [G]shadows [C]all a[G]round,\r\nDo [C]not fear, He will [D]guide you,\r\nHe will [G]keep you [C]safe and [D]sound,\r\n'Cause He's [C]promised to [D]never leave you,\r\nNor for[G]sake [C]you and His [D]Word is true.\r\n\r\n[Verse]\r\nWe were [C]sinners - so [D]unworthy,\r\nStill for [G]us He [C]chose to [G]die,\r\n[C]Filled us with His [D]Holy Spirit,\r\nNow we can [G]stand and [C]testi[D]fy,\r\nThat His [C]love is [D]everlasting,\r\nAnd His [G]mer[C]cies - they will [D]never end.",
+  "lyrics": "[Verse]\r\nGod is good all the time\r\nHe put a song of praise in this heart of mine\r\nGod is good all the time\r\nThrough the darkest night, His light will shine\r\nGod is good, God is good all the time\r\n\r\n[Verse]\r\nIf you're walking through the valley,\r\nAnd there are shadows all around,\r\nDo not fear, He will guide you,\r\nHe will keep you safe and sound,\r\n'Cause He's promised to never leave you,\r\nNor forsake you and His Word is true.\r\n\r\n[Verse]\r\nWe were sinners - so unworthy,\r\nStill for us He chose to die,\r\nFilled us with His Holy Spirit,\r\nNow we can stand and testify,\r\nThat His love is everlasting,\r\nAnd His mercies - they will never end.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

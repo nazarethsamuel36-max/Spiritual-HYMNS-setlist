@@ -1,95 +1,62 @@
 {
-  "id" : 947,
-  "songNumber" : 69,
-  "title" : "HE IS LORD HE IS LORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He is Lord, He is Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "He has risen from the dead and He is Lord",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Every knee shall bow, every tongue confess",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "D7",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "That Jesus Christ is Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He's my Lord, He's my Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "He has risen from the dead",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And He's my Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Yes, my knee shall bow and my tongue confess",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "D7",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "That Jesus Christ is Lord."
-    } ]
-  } ]
+  "id": 947,
+  "songNumber": 69,
+  "title": "HE IS LORD HE IS LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "He is Lord, He is Lord,"
+        },
+        {
+          "text": "He has risen from the dead and He is Lord"
+        },
+        {
+          "text": "Every knee shall bow, every tongue confess"
+        },
+        {
+          "text": "That Jesus Christ is Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "He's my Lord, He's my Lord,"
+        },
+        {
+          "text": "He has risen from the dead"
+        },
+        {
+          "text": "And He's my Lord,"
+        },
+        {
+          "text": "Yes, my knee shall bow and my tongue confess"
+        },
+        {
+          "text": "That Jesus Christ is Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]He is Lord, [A]He is Lord,\n[A]He has risen from the dead and He is [D]Lord\nEvery [D]knee shall bow,[D7] every [G]tongue confess\nThat [D]Jesus [A]Christ is [D]Lord.\n\n[Verse 2]\n[D]He's my Lord, [A]He's my Lord,\n[A]He has risen from the dead\nAnd He's my [D]Lord,\nYes, my [D]knee shall bow[D7] and my [G]tongue confess\nThat Jesus Christ is Lord.",
+  "lyrics": "[Verse 1]\nHe is Lord, He is Lord,\nHe has risen from the dead and He is Lord\nEvery knee shall bow, every tongue confess\nThat Jesus Christ is Lord.\n\n[Verse 2]\nHe's my Lord, He's my Lord,\nHe has risen from the dead\nAnd He's my Lord,\nYes, my knee shall bow and my tongue confess\nThat Jesus Christ is Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,153 +1,114 @@
 {
-  "id" : 805,
-  "songNumber" : 193,
-  "title" : "I'M A PILGRIM AND A STRANGER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I'm a pilgrim and a stranger",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Wand'ring through this world of sin,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "On my way to that fair city,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "When the saints go marching in.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "When the saints go marching in,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "When the saints go marching in,"
-    }, {
-      "text" : "Lord, I want to be in that number",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "When the saints go marching in."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Oh, I know I'll see my Saviour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "If my life is free from sin,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Heaven's doors will open for me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "When the saints go marching in."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "When we gather 'round the Throne",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And the gates are closed within,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "I'll be shouting \"Glory, Glory\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "When the saints go marching in."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "I'm waiting for the chariot",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "To swing low and I'll step in,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "On the clouds I'll ride to Heaven",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "When the saints go marching in."
-    } ]
-  } ]
+  "id": 805,
+  "songNumber": 193,
+  "title": "I'M A PILGRIM AND A STRANGER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Im a pilgrim and a stranger"
+        },
+        {
+          "text": "Wandring through this world of sin,"
+        },
+        {
+          "text": "On my way to that fair city,"
+        },
+        {
+          "text": "When the saints go marching in."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "When the saints go marching in,"
+        },
+        {
+          "text": "When the saints go marching in,"
+        },
+        {
+          "text": "Lord, I want to be in that number"
+        },
+        {
+          "text": "When the saints go marching in."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Oh, I know Ill see my Saviour"
+        },
+        {
+          "text": "If my life is free from sin,"
+        },
+        {
+          "text": "Heavens doors will open for me"
+        },
+        {
+          "text": "When the saints go marching in."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "When we gather round the Throne"
+        },
+        {
+          "text": "And the gates are closed within,"
+        },
+        {
+          "text": "Ill be shouting \"Glory, Glory\""
+        },
+        {
+          "text": "When the saints go marching in."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Im waiting for the chariot"
+        },
+        {
+          "text": "To swing low and Ill step in,"
+        },
+        {
+          "text": "On the clouds Ill ride to Heaven"
+        },
+        {
+          "text": "When the saints go marching in."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nIm a [D]pilgrim and a stranger\n[G]Wandring through this world of [D]sin,\nOn my [D]way to that fair city,\nWhen the [A]saints go marching [D]in.\n\n[Chorus]\nWhen the [D][G]saints go marching [D]in,\nWhen the saints go marching in,\nLord, I [D]want to be in that number\nWhen the saints go marching in.\n\n[Verse 2]\nOh, I [D]know Ill see my Saviour\nIf my [G]life is free from [D]sin,\nHeavens [D]doors will open for me\nWhen the saints go marching in.\n\n[Verse 3]\nWhen we [D]gather round the Throne\nAnd the [G]gates are closed with[D]in,\nIll be [D]shouting \"Glory, Glory\"\nWhen the saints go marching in.\n\n[Verse 4]\nIm [D]waiting for the chariot\nTo [G]swing low and Ill step [D]in,\nOn the [D]clouds Ill ride to Heaven\nWhen the saints go marching in.",
+  "lyrics": "[Verse 1]\nIm a pilgrim and a stranger\nWandring through this world of sin,\nOn my way to that fair city,\nWhen the saints go marching in.\n\n[Chorus]\nWhen the saints go marching in,\nWhen the saints go marching in,\nLord, I want to be in that number\nWhen the saints go marching in.\n\n[Verse 2]\nOh, I know Ill see my Saviour\nIf my life is free from sin,\nHeavens doors will open for me\nWhen the saints go marching in.\n\n[Verse 3]\nWhen we gather round the Throne\nAnd the gates are closed within,\nIll be shouting \"Glory, Glory\"\nWhen the saints go marching in.\n\n[Verse 4]\nIm waiting for the chariot\nTo swing low and Ill step in,\nOn the clouds Ill ride to Heaven\nWhen the saints go marching in.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel",
+    "Funeral"
+  ]
 }

@@ -1,251 +1,133 @@
 {
-  "id" : 860,
-  "songNumber" : 248,
-  "title" : "O LORD ALL THE WORLD BELONGS TO YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O Lord, all the world belongs to you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "And you are always making all things new,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "What is wrong you forgive, and the new life you give,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "Is what's turning the world upside down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The world's only loving to its friends,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "But your way of loving never ends,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Loving enemies too and this loving with you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Is what's turning the world upside down."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "This world lives divided and apart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "You draw men together and we start,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "In your body to see that in fellowship we,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Can be turning the world upside down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "The world wants the wealth to live in state,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "But you show a new way to be great,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Like a servant you came and if we do the same,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "We'll be turning the world upside down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "O Lord, all the world belongs to you,"
-    }, {
-      "text" : "And you are always making all things new,"
-    }, {
-      "text" : "Send your Spirit on all in your Church whom you call",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "To be turning the world upside down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 860,
+  "songNumber": 248,
+  "title": "O LORD ALL THE WORLD BELONGS TO YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O Lord, all the world belongs to you,"
+        },
+        {
+          "text": "And you are always making all things new,"
+        },
+        {
+          "text": "What is wrong you forgive, and the new life you give,"
+        },
+        {
+          "text": "Is whats turning the world upside down."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The worlds only loving to its friends,"
+        },
+        {
+          "text": "But your way of loving never ends,"
+        },
+        {
+          "text": "Loving enemies too and this loving with you,"
+        },
+        {
+          "text": "Is whats turning the world upside down."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "This world lives divided and apart,"
+        },
+        {
+          "text": "You draw men together and we start,"
+        },
+        {
+          "text": "In your body to see that in fellowship we,"
+        },
+        {
+          "text": "Can be turning the world upside down."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The world wants the wealth to live in state,"
+        },
+        {
+          "text": "But you show a new way to be great,"
+        },
+        {
+          "text": "Like a servant you came and if we do the same,"
+        },
+        {
+          "text": "Well be turning the world upside down."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O Lord, all the world belongs to you,"
+        },
+        {
+          "text": "And you are always making all things new,"
+        },
+        {
+          "text": "Send your Spirit on all in your Church whom you call"
+        },
+        {
+          "text": "To be turning the world upside down."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n O [F]Lord, all the [Bb]world belongs to [F]you,\r\nAnd you are [Bb]always [F]making [C]all things [F]new,\r\nWhat is [Bb]wrong you for[F]give, and the [Bb]new life you [F]give,\r\nIs whats [F]turning the [C]world upside [F]down.\r\n[Verse]\r\n[Verse]\r\nThe [F]worlds only [Bb]loving to its [F]friends,\r\nBut your way of [C]loving never [F]ends,\r\nLoving [Bb]enemies [F]too and this [Bb]loving with [F]you,\r\nIs whats turning the world upside down.\r\n[Verse]\r\n[Verse]\r\nThis [F]world lives di[Bb]vided and a[F]part,\r\nYou draw men to[C]gether and we [F]start,\r\nIn your [Bb]body to [F]see that in [Bb]fellowship [F]we,\r\nCan be [F]turning the [C]world upside [F]down.\r\n[Verse]\r\n[Verse]\r\nThe [F]world wants the [Bb]wealth to live in [F]state,\r\nBut you show a [C]new way to be [F]great,\r\nLike a [Bb]servant you [F]came and if [Bb]we do the [F]same,\r\nWell be [F]turning the [C]world upside [F]down.\r\n[Verse]\r\n[Verse]\r\nO Lord, all the world belongs to you,\r\nAnd you are always making all things new,\r\nSend your [Bb]Spirit on [F]all in your [Bb]Church whom you [F]call\r\nTo be [F]turning the [C]world upside [F]down.",
+  "lyrics": "[Chorus]\r\n O Lord, all the world belongs to you,\r\nAnd you are always making all things new,\r\nWhat is wrong you forgive, and the new life you give,\r\nIs whats turning the world upside down.\r\n[Verse]\r\n[Verse]\r\nThe worlds only loving to its friends,\r\nBut your way of loving never ends,\r\nLoving enemies too and this loving with you,\r\nIs whats turning the world upside down.\r\n[Verse]\r\n[Verse]\r\nThis world lives divided and apart,\r\nYou draw men together and we start,\r\nIn your body to see that in fellowship we,\r\nCan be turning the world upside down.\r\n[Verse]\r\n[Verse]\r\nThe world wants the wealth to live in state,\r\nBut you show a new way to be great,\r\nLike a servant you came and if we do the same,\r\nWell be turning the world upside down.\r\n[Verse]\r\n[Verse]\r\nO Lord, all the world belongs to you,\r\nAnd you are always making all things new,\r\nSend your Spirit on all in your Church whom you call\r\nTo be turning the world upside down.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

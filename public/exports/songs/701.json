@@ -1,69 +1,44 @@
 {
-  "id" : 701,
-  "songNumber" : 25,
-  "title" : "LIFT JESUS HIGHER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Lift Jesus higher,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Lift Jesus higher,"
-    }, {
-      "text" : "Lift Him up for the world to see.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "He said, if I be lifted up from the earth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "I will draw all men unto Me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 701,
+  "songNumber": 25,
+  "title": "LIFT JESUS HIGHER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lift Jesus higher,"
+        },
+        {
+          "text": "Lift Jesus higher,"
+        },
+        {
+          "text": "Lift Him up for the world to see."
+        },
+        {
+          "text": "He said, if I be lifted up from the earth,"
+        },
+        {
+          "text": "I will draw all men unto Me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]Lift Jesus [C][D]higher,\nLift Jesus higher,\n[G]Lift Him [C]up for the [G]world to [D]see.\n[G]He said, if I be [C]lifted up from the [G]earth,\n[G]I will draw [D]all men unto [G]Me.",
+  "lyrics": "[Verse]\nLift Jesus higher,\nLift Jesus higher,\nLift Him up for the world to see.\nHe said, if I be lifted up from the earth,\nI will draw all men unto Me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

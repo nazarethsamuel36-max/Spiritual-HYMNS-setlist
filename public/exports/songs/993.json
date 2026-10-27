@@ -1,148 +1,98 @@
 {
-  "id" : 993,
-  "songNumber" : 15,
-  "title" : "प्यारा यीशु का पैगाम, हम सुनाने आए है ।",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "प्यारा यीशु का पैगाम, हम सुनाने आए है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "देता नज्ञात गुनाहोंसे, हम बताने आए है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "C",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "हाल्लेलुयाह (4)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "अंधोको जिसने चंगा किया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "लंगडोको जिसने चलता किया ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "आज भी यीशु जिंदा है, हम बताने आए है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "क्रूस पर यीशु मारा गया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तिसरे दिन वो फिर जी उठा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "आज भी यीशु जिंदा है, हम बताने आए है ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "बादलों पर यीशु आयेगा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हम सबको लेकर जाएगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "आज भी यीशु जिंदा है, हम बताने आए है ।"
-    } ]
-  } ]
+  "id": 993,
+  "songNumber": 15,
+  "title": "प्यारा यीशु का पैगाम, हम सुनाने आए है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "प्यारा यीशु का पैगाम, हम सुनाने आए है ।"
+        },
+        {
+          "text": "देता नज्ञात गुनाहोंसे, हम बताने आए है ।"
+        },
+        {
+          "text": "हाल्लेलुयाह (4)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अंधोको जिसने चंगा किया ।"
+        },
+        {
+          "text": "लंगडोको जिसने चलता किया ।"
+        },
+        {
+          "text": "आज भी यीशु जिंदा है, हम बताने आए है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्रूस पर यीशु मारा गया ।"
+        },
+        {
+          "text": "तिसरे दिन वो फिर जी उठा ।"
+        },
+        {
+          "text": "आज भी यीशु जिंदा है, हम बताने आए है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "बादलों पर यीशु आयेगा ।"
+        },
+        {
+          "text": "हम सबको लेकर जाएगा ।"
+        },
+        {
+          "text": "आज भी यीशु जिंदा है, हम बताने आए है ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]प्यारा यीशु का [D]पैगाम, [C]हम सुनाने [D]आए [G]है ।\n[G]देता नज्ञात गु[D]नाहोंसे, [C]हम बताने [D]आए [G]है ।\nहाल्लेलुयाह (4)\n[Verse]\n[Verse]\n[G]अंधोको जिसने [D]चंगा किया ।\n[C]लंगडोको जिसने [D]चलता कि[G]या ।\n[G]आज भी यीशु [D]जिंदा है, [C]हम बताने [D]आए [G]है ।\n[Verse]\n[Verse]\n[G]क्रूस पर यीशु [D]मारा गया ।\n[C]तिसरे दिन वो [D]फिर जी उ[G]ठा ।\nआज भी यीशु जिंदा है, हम बताने आए है ।\n[Verse]\n[Verse]\n[G]बादलों पर यीशु [D]आयेगा ।\n[C]हम सबको लेकर [D]जाएगा ।\nआज भी यीशु जिंदा है, हम बताने आए है ।",
+  "lyrics": "[Chorus]\n प्यारा यीशु का पैगाम, हम सुनाने आए है ।\nदेता नज्ञात गुनाहोंसे, हम बताने आए है ।\nहाल्लेलुयाह (4)\n[Verse]\n[Verse]\nअंधोको जिसने चंगा किया ।\nलंगडोको जिसने चलता किया ।\nआज भी यीशु जिंदा है, हम बताने आए है ।\n[Verse]\n[Verse]\nक्रूस पर यीशु मारा गया ।\nतिसरे दिन वो फिर जी उठा ।\nआज भी यीशु जिंदा है, हम बताने आए है ।\n[Verse]\n[Verse]\nबादलों पर यीशु आयेगा ।\nहम सबको लेकर जाएगा ।\nआज भी यीशु जिंदा है, हम बताने आए है ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

@@ -1,42 +1,62 @@
 {
-  "id" : 3144,
-  "songNumber" : 1002,
-  "title" : "** Alive, Alive, Alive Forevermore",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Alive, alive, alive forevermore"
-    }, {
-      "text" : "My Jesus is alive, alive forevermore"
-    }, {
-      "text" : "Alive, alive, alive forevermore"
-    }, {
-      "text" : "My Jesus is alive, alive forevermore"
-    }, {
-      "text" : "My Jesus is alive forevermore"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Sing hallelujah, sing hallelujah"
-    }, {
-      "text" : "My Jesus is alive forevermore"
-    }, {
-      "text" : "Sing hallelujah, sing hallelujah"
-    }, {
-      "text" : "My Jesus is alive forevermore"
-    } ]
-  } ]
+  "id": 3144,
+  "songNumber": 1002,
+  "title": "Alive, Alive, Alive Forevermore",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Alive, alive, alive forevermore"
+        },
+        {
+          "text": "My Jesus is alive, alive forevermore"
+        },
+        {
+          "text": "Alive, alive, alive forevermore"
+        },
+        {
+          "text": "My Jesus is alive, alive forevermore"
+        },
+        {
+          "text": "My Jesus is alive forevermore"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Sing hallelujah, sing hallelujah"
+        },
+        {
+          "text": "My Jesus is alive forevermore"
+        },
+        {
+          "text": "Sing hallelujah, sing hallelujah"
+        },
+        {
+          "text": "My Jesus is alive forevermore"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nAlive, alive, alive forevermore\nMy Jesus is alive, alive forevermore\nAlive, alive, alive forevermore\nMy Jesus is alive, alive forevermore\nMy Jesus is alive forevermore\n\n[CHORUS]\nSing hallelujah, sing hallelujah\nMy Jesus is alive forevermore\nSing hallelujah, sing hallelujah\nMy Jesus is alive forevermore",
+  "lyrics": "[Verse 1]\nAlive, alive, alive forevermore\nMy Jesus is alive, alive forevermore\nAlive, alive, alive forevermore\nMy Jesus is alive, alive forevermore\nMy Jesus is alive forevermore\n\n[CHORUS]\nSing hallelujah, sing hallelujah\nMy Jesus is alive forevermore\nSing hallelujah, sing hallelujah\nMy Jesus is alive forevermore",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

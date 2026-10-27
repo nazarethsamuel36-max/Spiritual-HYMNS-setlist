@@ -1,248 +1,132 @@
 {
-  "id" : 1014,
-  "songNumber" : 36,
-  "title" : "प्रभु महान विचारूँ कार्य तेरे",
-  "language" : "hindi",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "प्रभु महान विचारूँ कार्य तेरे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "कितने अद्भुत जो तूने बनाए ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "देखूँ तारे सुनूँ गर्जन भयंकर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "सामर्थ्य तेरी सारे भूमण्डल पर ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "प्रशंसा होवे प्रभु यीशु की,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "कितना महान कितना महान",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "वन के बीच में तराईमध्य विचरूँ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "मधुर संगीत में चिडियों का सुनूँ ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "पहाड विशाल से जब मैं नीचे देखूँ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "झरने बहते लगती शीतल वायु ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जब सोचता हूँ कि पिता अपना पुत्र",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "मरने भेजा है वर्णन से आपार",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "कि क्रूसपर उसने मेरे पाप सब लेकर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "रक्त बहाया कि मेरा हो उद्धार ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "मसीह आवेगा शब्द तुरही का होगा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "मुझे लेगा जहाँ आनंद वहाँ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "मैं झुकूँगा साथ आदर, भक्ति, दीनता",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "और गाऊँगा प्रभु कितना महान ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 1014,
+  "songNumber": 36,
+  "title": "प्रभु महान विचारूँ कार्य तेरे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "प्रभु महान विचारूँ कार्य तेरे,"
+        },
+        {
+          "text": "कितने अद्भुत जो तूने बनाए ।"
+        },
+        {
+          "text": "देखूँ तारे सुनूँ गर्जन भयंकर,"
+        },
+        {
+          "text": "सामर्थ्य तेरी सारे भूमण्डल पर ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "प्रशंसा होवे प्रभु यीशु की,"
+        },
+        {
+          "text": "कितना महान कितना महान"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वन के बीच में तराईमध्य विचरूँ"
+        },
+        {
+          "text": "मधुर संगीत में चिडियों का सुनूँ ।"
+        },
+        {
+          "text": "पहाड विशाल से जब मैं नीचे देखूँ,"
+        },
+        {
+          "text": "झरने बहते लगती शीतल वायु ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब सोचता हूँ कि पिता अपना पुत्र"
+        },
+        {
+          "text": "मरने भेजा है वर्णन से आपार"
+        },
+        {
+          "text": "कि क्रूसपर उसने मेरे पाप सब लेकर"
+        },
+        {
+          "text": "रक्त बहाया कि मेरा हो उद्धार ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मसीह आवेगा शब्द तुरही का होगा"
+        },
+        {
+          "text": "मुझे लेगा जहाँ आनंद वहाँ"
+        },
+        {
+          "text": "मैं झुकूँगा साथ आदर, भक्ति, दीनता"
+        },
+        {
+          "text": "और गाऊँगा प्रभु कितना महान ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [G]प्रभु महान वि[C]चारूँ कार्य [G]तेरे,\r\n[G]कितने अद्भुत [D]जो तूने ब[G]नाए ।\r\n[G]देखूँ तारे सु[C]नूँ गर्जन भयं[G]कर,\r\n[G]सामर्थ्य तेरी [D]सारे भूमण्[G]डल पर ।\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[G]प्रशंसा होवे [C]प्रभु यीशु [G]की,\r\n[Am]कितना म[D]हान [G]कितना महान\r\n[Verse]\r\n[Verse]\r\n[G]वन के बीच में त[C]राईमध्य वि[G]चरूँ\r\n[G]मधुर संगीत में [D]चिडियों का सु[G]नूँ ।\r\n[G]पहाड विशाल से [C]जब मैं नीचे दे[G]खूँ,\r\n[G]झरने बहते ल[D]गती शीतल वा[G]यु ।\r\n[Verse]\r\n[Verse]\r\n[G]जब सोचता हूँ कि पि[C]ता अपना पु[G]त्र\r\n[G]मरने भेजा है [D]वर्णन से आ[G]पार\r\n[G]कि क्रूसपर उसने [C]मेरे पाप सब ले[G]कर\r\n[G]रक्त बहाया कि [D]मेरा हो उ[G]द्धार ।\r\n[Verse]\r\n[Verse]\r\n[G]मसीह आवेगा श[C]ब्द तुरही का हो[G]गा\r\n[G]मुझे लेगा ज[D]हाँ आनंद व[G]हाँ\r\n[G]मैं झुकूँगा साथ आ[C]दर, भक्ति, दीन[G]ता\r\n[G]और गाऊँगा प्र[D]भु कितना म[G]हान ।",
+  "lyrics": "[Chorus]\r\n प्रभु महान विचारूँ कार्य तेरे,\r\nकितने अद्भुत जो तूने बनाए ।\r\nदेखूँ तारे सुनूँ गर्जन भयंकर,\r\nसामर्थ्य तेरी सारे भूमण्डल पर ।\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nप्रशंसा होवे प्रभु यीशु की,\r\nकितना महान कितना महान\r\n[Verse]\r\n[Verse]\r\nवन के बीच में तराईमध्य विचरूँ\r\nमधुर संगीत में चिडियों का सुनूँ ।\r\nपहाड विशाल से जब मैं नीचे देखूँ,\r\nझरने बहते लगती शीतल वायु ।\r\n[Verse]\r\n[Verse]\r\nजब सोचता हूँ कि पिता अपना पुत्र\r\nमरने भेजा है वर्णन से आपार\r\nकि क्रूसपर उसने मेरे पाप सब लेकर\r\nरक्त बहाया कि मेरा हो उद्धार ।\r\n[Verse]\r\n[Verse]\r\nमसीह आवेगा शब्द तुरही का होगा\r\nमुझे लेगा जहाँ आनंद वहाँ\r\nमैं झुकूँगा साथ आदर, भक्ति, दीनता\r\nऔर गाऊँगा प्रभु कितना महान ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

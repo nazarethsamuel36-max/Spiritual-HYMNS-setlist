@@ -1,56 +1,114 @@
 {
-  "id" : 3174,
-  "songNumber" : 1033,
-  "title" : "** I come to the garden alone",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I come to the garden alone"
-    }, {
-      "text" : "While the dew is still on the roses"
-    }, {
-      "text" : "And the voice I hear, falling on my ear"
-    }, {
-      "text" : "The son of God discloses"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And he walks with me"
-    }, {
-      "text" : "And he talks with me"
-    }, {
-      "text" : "And he tells me I am his own"
-    }, {
-      "text" : "And the joy we share as we tarry there"
-    }, {
-      "text" : "None other has ever known"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I'd stay in the garden with him"
-    }, {
-      "text" : "Though the night around me is falling"
-    }, {
-      "text" : "But he bids me go"
-    }, {
-      "text" : "Through the voice of woe"
-    }, {
-      "text" : "His voice to me is calling"
-    } ]
-  } ]
+  "id": 3174,
+  "songNumber": 1033,
+  "title": "I come to the garden alone",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "I Come To The Garden Alone"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I come to the  garden alone,"
+        },
+        {
+          "text": "While the  dew is still  on the roses,"
+        },
+        {
+          "text": "And the  voice I  hear falling  on my  ear,"
+        },
+        {
+          "text": "The  Son of God dis closes."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Refrain",
+      "lines": [
+        {
+          "text": "And He walks with  me, and He  talks with  me,"
+        },
+        {
+          "text": "And He tells me  I am His own;"
+        },
+        {
+          "text": "And the  joy we share as  we tarry  there,"
+        },
+        {
+          "text": "None other has ever  known."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "He speaks, and the  sound of His  voice is so  sweet,"
+        },
+        {
+          "text": "The  birds hush their  singing,"
+        },
+        {
+          "text": "And  the melody that  He gives to me"
+        },
+        {
+          "text": "Within my heart is  ringing."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Refrain",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I stay in the  garden with  Him,"
+        },
+        {
+          "text": "Though the  night around me  is falling."
+        },
+        {
+          "text": "But He bids me go;  through the voice of woe"
+        },
+        {
+          "text": "His voice to me is  calling."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Refrain",
+      "lines": []
+    }
+  ],
+  "chords": "I Come To The Garden Alone\n\n[Verse 1]\n[G] I come to the [D] garden a[G]lone,\nWhile the [C] dew is still [G] on the roses,\nAnd the [G] voice I [D] hear falling [C] on my [G] ear,\nThe [D] Son of God dis[D] closes.\n\n[Refrain]\n[G] And He walks with [D] me, and He [G] talks with [D] me,\n[C] And He tells me [G] I am His own;\n[G] And the [D] joy we share as [C] we tarry [B7] there,\n[Em] None other has ever [D] known.\n\n[Verse 2]\n[G] He speaks, and the [D] sound of His [C] voice is so [G] sweet,\nThe [C] birds hush their [G] singing,\nAnd [D] the melody that [G] He gives to me\n[D] Within my heart is [G] ringing.\n\n[Refrain]\n\n[Verse 3]\n[G] I stay in the [D] garden with [C] Him,\nThough the [C] night around me [G] is falling.\n[D] But He bids me go; [D] through the voice of woe\n[D] His voice to me is [G] calling.\n\n[Refrain]",
+  "lyrics": "I Come To The Garden Alone\n\n[Verse 1]\n I come to the  garden alone,\nWhile the  dew is still  on the roses,\nAnd the  voice I  hear falling  on my  ear,\nThe  Son of God dis closes.\n\n[Refrain]\n And He walks with  me, and He  talks with  me,\n And He tells me  I am His own;\n And the  joy we share as  we tarry  there,\n None other has ever  known.\n\n[Verse 2]\n He speaks, and the  sound of His  voice is so  sweet,\nThe  birds hush their  singing,\nAnd  the melody that  He gives to me\n Within my heart is  ringing.\n\n[Refrain]\n\n[Verse 3]\n I stay in the  garden with  Him,\nThough the  night around me  is falling.\n But He bids me go;  through the voice of woe\n His voice to me is  calling.\n\n[Refrain]",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

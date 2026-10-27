@@ -1,107 +1,68 @@
 {
-  "id" : 592,
-  "songNumber" : 6,
-  "title" : "ख्रिस्त माझा तारणारा, मला वाटे प्रिय फार",
-  "language" : "marathi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "ख्रिस्त माझा तारणारा, मला वाटे प्रिय फार",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "ज्या ज्या वेळी, होते दुःख, करिता धावा, देतो सुख (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "किती नम्र प्रभू झाला, पापी जग तारायला (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "माते परी देतो धीर, म्हणे आता तरी फिर (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "काय सांगू त्याचे प्रेम, देई वारंवार क्षेम (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 592,
+  "songNumber": 6,
+  "title": "ख्रिस्त माझा तारणारा, मला वाटे प्रिय फार",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "ख्रिस्त माझा तारणारा, मला वाटे प्रिय फार"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ज्या ज्या वेळी, होते दुःख, करिता धावा, देतो सुख (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "किती नम्र प्रभू झाला, पापी जग तारायला (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "माते परी देतो धीर, म्हणे आता तरी फिर (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "काय सांगू त्याचे प्रेम, देई वारंवार क्षेम (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]ख्रिस्त माझा [G]तारणारा, [A]मला वाटे [D]प्रिय फार\n\n[Verse]\n[D]ज्या ज्या वेळी, [G]होते दुःख, [A]करिता धावा, [D]देतो सुख (2)\n\n[Verse]\n[D]किती नम्र [G]प्रभू झाला, [A]पापी जग ता[D]रायला (2)\n\n[Verse]\n[D]माते परी [G]देतो धीर, [A]म्हणे आता [D]तरी फिर (2)\n\n[Verse]\n[D]काय सांगू [G]त्याचे प्रेम, [A]देई वारं[D]वार क्षेम (2)",
+  "lyrics": "[Chorus]\nख्रिस्त माझा तारणारा, मला वाटे प्रिय फार\n\n[Verse]\nज्या ज्या वेळी, होते दुःख, करिता धावा, देतो सुख (2)\n\n[Verse]\nकिती नम्र प्रभू झाला, पापी जग तारायला (2)\n\n[Verse]\nमाते परी देतो धीर, म्हणे आता तरी फिर (2)\n\n[Verse]\nकाय सांगू त्याचे प्रेम, देई वारंवार क्षेम (2)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

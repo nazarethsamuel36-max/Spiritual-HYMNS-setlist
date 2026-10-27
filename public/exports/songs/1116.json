@@ -1,87 +1,68 @@
 {
-  "id" : 1116,
-  "songNumber" : 138,
-  "title" : "हो लेंगे हम यीशु के संग",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "हो लेंगे हम यीशु के संग",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जिसने दिया है पापों से मुक्ति",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "धन्य है उसका नाम ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मार्ग, सत्य, जीवन यीशु ही है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जो उसपर विश्वास करेगा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "अनंत जीवन वो पायेगा।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जीवन की रोटी यीशु ही है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "जो उसको खायेगा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "वो तो कभी न मरेगा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 1116,
+  "songNumber": 138,
+  "title": "हो लेंगे हम यीशु के संग",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हो लेंगे हम यीशु के संग"
+        },
+        {
+          "text": "जिसने दिया है पापों से मुक्ति"
+        },
+        {
+          "text": "धन्य है उसका नाम ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मार्ग, सत्य, जीवन यीशु ही है"
+        },
+        {
+          "text": "जो उसपर विश्वास करेगा"
+        },
+        {
+          "text": "अनंत जीवन वो पायेगा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जीवन की रोटी यीशु ही है"
+        },
+        {
+          "text": "जो उसको खायेगा"
+        },
+        {
+          "text": "वो तो कभी न मरेगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[G]हो लेंगे हम यीशु के संग\r\n[C]जिसने दिया है पापों से मुक्ति\r\n[D]धन्य है उसका [G]नाम ।\r\n\r\n[Verse]\r\n[G]मार्ग, सत्य, जीवन यीशु ही है\r\n[C]जो उसपर विश्वास करेगा\r\n[D]अनंत जीवन वो पाये[G]गा।\r\n\r\n[Verse]\r\n[G]जीवन की रोटी यीशु ही है\r\n[C]जो उसको खायेगा\r\n[D]वो तो कभी न मरे[G]गा ।",
+  "lyrics": "[Verse]\r\nहो लेंगे हम यीशु के संग\r\nजिसने दिया है पापों से मुक्ति\r\nधन्य है उसका नाम ।\r\n\r\n[Verse]\r\nमार्ग, सत्य, जीवन यीशु ही है\r\nजो उसपर विश्वास करेगा\r\nअनंत जीवन वो पायेगा।\r\n\r\n[Verse]\r\nजीवन की रोटी यीशु ही है\r\nजो उसको खायेगा\r\nवो तो कभी न मरेगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

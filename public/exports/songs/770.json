@@ -1,188 +1,107 @@
 {
-  "id" : 770,
-  "songNumber" : 158,
-  "title" : "GREAT IS THY FAITHFULNESS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Great is Thy faithfulness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "O God my Father,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "There is no shadow of turning with Thee;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Thou changest not,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Thy compassions, they fail not;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "As Thou hast been Thou forever wilt be.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Great is Thy faithfulness !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Great is Thy faithfulness !"
-    }, {
-      "text" : "Morning by morning new mercies I see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "All I have needed Thy hand hath provided;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Great is Thy faithfulness,"
-    }, {
-      "text" : "Lord, unto me !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Summer and winter, and springtime and harvest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Sun, moon and stars in their courses above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Join with all nature in manifold witness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "To Thy great faithfulness, mercy and love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Pardon for sin and a peace that endureth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Thy own dear presence to cheer and to guide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Strength for today and bright hope for tomorrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Blessings all mine, with ten thousand beside !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    } ]
-  } ]
+  "id": 770,
+  "songNumber": 158,
+  "title": "GREAT IS THY FAITHFULNESS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Great is Thy faithfulness,"
+        },
+        {
+          "text": "O God my Father,"
+        },
+        {
+          "text": "There is no shadow of turning with Thee;"
+        },
+        {
+          "text": "Thou changest not,"
+        },
+        {
+          "text": "Thy compassions, they fail not;"
+        },
+        {
+          "text": "As Thou hast been Thou forever wilt be."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Great is Thy faithfulness !"
+        },
+        {
+          "text": "Great is Thy faithfulness !"
+        },
+        {
+          "text": "Morning by morning new mercies I see;"
+        },
+        {
+          "text": "All I have needed Thy hand hath provided;"
+        },
+        {
+          "text": "Great is Thy faithfulness,"
+        },
+        {
+          "text": "Lord, unto me !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Summer and winter, and springtime and harvest,"
+        },
+        {
+          "text": "Sun, moon and stars in their courses above,"
+        },
+        {
+          "text": "Join with all nature in manifold witness,"
+        },
+        {
+          "text": "To Thy great faithfulness, mercy and love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Pardon for sin and a peace that endureth,"
+        },
+        {
+          "text": "Thy own dear presence to cheer and to guide,"
+        },
+        {
+          "text": "Strength for today and bright hope for tomorrow,"
+        },
+        {
+          "text": "Blessings all mine, with ten thousand beside !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Great is Thy faithfulness,\n[G]O God my [D]Father,\n[D]There is no shadow of turning with [A]Thee;\n[D]Thou changest not,\n[G]Thy compassions, they fail [D]not;\nAs Thou hast been Thou for[A]ever wilt [D]be.\n\n[Chorus]\n[D][G]Great is Thy faith[D]fulness !\nGreat is Thy faithfulness !\n[D]Morning by morning new [G]mercies I [D]see;\n[D]All I have needed Thy hand hath pro[G]vided;\nGreat is Thy faithfulness,\n[G]Lord, unto [A]me !\n\n[Verse 2]\n[D]Summer and winter, and springtime and [G]harvest,\n[D]Sun, moon and stars in their courses a[A]bove,\n[D]Join with all nature in manifold [G]witness,\nTo Thy great faith[D]fulness, mercy and [A]love.\n\n[Verse 3]\n[D]Pardon for sin and a peace that en[G]dureth,\n[D]Thy own dear presence to cheer and to [A]guide,\n[D]Strength for today and bright hope for to[G]morrow,\n[D]Blessings all mine, with ten thousand be[A]side !",
+  "lyrics": "[Verse 1]\nGreat is Thy faithfulness,\nO God my Father,\nThere is no shadow of turning with Thee;\nThou changest not,\nThy compassions, they fail not;\nAs Thou hast been Thou forever wilt be.\n\n[Chorus]\nGreat is Thy faithfulness !\nGreat is Thy faithfulness !\nMorning by morning new mercies I see;\nAll I have needed Thy hand hath provided;\nGreat is Thy faithfulness,\nLord, unto me !\n\n[Verse 2]\nSummer and winter, and springtime and harvest,\nSun, moon and stars in their courses above,\nJoin with all nature in manifold witness,\nTo Thy great faithfulness, mercy and love.\n\n[Verse 3]\nPardon for sin and a peace that endureth,\nThy own dear presence to cheer and to guide,\nStrength for today and bright hope for tomorrow,\nBlessings all mine, with ten thousand beside !",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

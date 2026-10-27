@@ -1,151 +1,107 @@
 {
-  "id" : 762,
-  "songNumber" : 150,
-  "title" : "BRINGING IN THE SHEAVES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Sowing in the morning, sowing seeds of kindness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Sowing in the noontide and the dewy eve;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Waiting for the harvest and the time of reaping,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "We shall come rejoicing, bringing in the sheaves.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Bringing in the sheaves, bringing in the sheaves",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "We shall come rejoicing, bringing in the sheaves;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Bringing in the sheaves, bringing in the sheaves,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "We shall come rejoicing, bringing in the sheaves."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Sowing in the sunshine, sowing in the shadows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Fearing neither clouds nor winter's chilling breeze;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "By and by the harvest and the labor ended,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "We shall come rejoicing, bringing in the sheaves."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Going forth with weeping, sowing for the Master,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Though the loss sustained, our spirit often grieves;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "When our weeping's over, He will bid us welcome,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "We shall come rejoicing, bringing in the sheaves."
-    } ]
-  } ]
+  "id": 762,
+  "songNumber": 150,
+  "title": "BRINGING IN THE SHEAVES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Sowing in the morning, sowing seeds of kindness,"
+        },
+        {
+          "text": "Sowing in the noontide and the dewy eve;"
+        },
+        {
+          "text": "Waiting for the harvest and the time of reaping,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "We shall come rejoicing, bringing in the sheaves."
+        },
+        {
+          "text": "Bringing in the sheaves, bringing in the sheaves"
+        },
+        {
+          "text": "We shall come rejoicing, bringing in the sheaves;"
+        },
+        {
+          "text": "Bringing in the sheaves, bringing in the sheaves,"
+        },
+        {
+          "text": "We shall come rejoicing, bringing in the sheaves."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Sowing in the sunshine, sowing in the shadows,"
+        },
+        {
+          "text": "Fearing neither clouds nor winter's chilling breeze;"
+        },
+        {
+          "text": "By and by the harvest and the labor ended,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "We shall come rejoicing, bringing in the sheaves."
+        },
+        {
+          "text": "Going forth with weeping, sowing for the Master,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Though the loss sustained, our spirit often grieves;"
+        },
+        {
+          "text": "When our weeping's over, He will bid us welcome,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "We shall come rejoicing, bringing in the sheaves."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[A]Sowing in the morning, sowing seeds of [D]kindness,\r\n[A]Sowing in the noontide and the dewy [E]eve;\r\n[A]Waiting for the harvest and the time of [D]reaping,\r\n\r\n[Chorus]\r\nWe shall [A]come rejoicing, [E]bringing in the [A]sheaves.\r\n[A]Bringing in the sheaves, [D]bringing in the sheaves\r\nWe shall [A]come rejoicing, [E]bringing in the [A]sheaves;\r\n[A]Bringing in the sheaves, [D]bringing in the sheaves,\r\nWe shall come rejoicing, bringing in the sheaves.\r\n\r\n[Verse 2]\r\n[A]Sowing in the sunshine, sowing in the [D]shadows,\r\n[A]Fearing neither clouds nor winter's chilling [E]breeze;\r\n[A]By and by the harvest and the labor [D]ended,\r\n\r\n[Verse 3]\r\nWe shall come rejoicing, bringing in the sheaves.\r\n[A]Going forth with weeping, sowing for the [D]Master,\r\n\r\n[Verse 4]\r\n[A]Though the loss sustained, our spirit often [E]grieves;\r\n[A]When our weeping's over, He will bid us [D]welcome,\r\n\r\n[Chorus]\r\nWe shall come rejoicing, bringing in the sheaves.",
+  "lyrics": "[Verse 1]\r\nSowing in the morning, sowing seeds of kindness,\r\nSowing in the noontide and the dewy eve;\r\nWaiting for the harvest and the time of reaping,\r\n\r\n[Chorus]\r\nWe shall come rejoicing, bringing in the sheaves.\r\nBringing in the sheaves, bringing in the sheaves\r\nWe shall come rejoicing, bringing in the sheaves;\r\nBringing in the sheaves, bringing in the sheaves,\r\nWe shall come rejoicing, bringing in the sheaves.\r\n\r\n[Verse 2]\r\nSowing in the sunshine, sowing in the shadows,\r\nFearing neither clouds nor winter's chilling breeze;\r\nBy and by the harvest and the labor ended,\r\n\r\n[Verse 3]\r\nWe shall come rejoicing, bringing in the sheaves.\r\nGoing forth with weeping, sowing for the Master,\r\n\r\n[Verse 4]\r\nThough the loss sustained, our spirit often grieves;\r\nWhen our weeping's over, He will bid us welcome,\r\n\r\n[Chorus]\r\nWe shall come rejoicing, bringing in the sheaves.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

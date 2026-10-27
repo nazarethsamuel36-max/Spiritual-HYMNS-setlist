@@ -1,103 +1,77 @@
 {
-  "id" : 716,
-  "songNumber" : 104,
-  "title" : "ALL HEAVENS DECLARE",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All Heavens declare",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The glory of the risen Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Who can compare",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "With the beauty of the Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Forever Thou wilt be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The Lamb upon the throne.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I gladly bow my knee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And worship Thee alone.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I will proclaim",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "The glory of the risen Lord,"
-    }, {
-      "text" : "Who once was slain",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "To reconcile man to God.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 716,
+  "songNumber": 104,
+  "title": "ALL HEAVENS DECLARE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "All Heavens declare"
+        },
+        {
+          "text": "The glory of the risen Lord,"
+        },
+        {
+          "text": "Who can compare"
+        },
+        {
+          "text": "With the beauty of the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Forever Thou wilt be"
+        },
+        {
+          "text": "The Lamb upon the throne."
+        },
+        {
+          "text": "I gladly bow my knee"
+        },
+        {
+          "text": "And worship Thee alone."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I will proclaim"
+        },
+        {
+          "text": "The glory of the risen Lord,"
+        },
+        {
+          "text": "Who once was slain"
+        },
+        {
+          "text": "To reconcile man to God."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]All Heavens declare\nThe [G]glory of the risen [D]Lord,\n[D]Who can compare\nWith the [A]beauty of the [D]Lord.\n\n[Verse 2]\n[D]Forever Thou wilt be\nThe [G]Lamb upon the [D]throne.\nI gladly [D]bow my knee\nAnd [A]worship Thee a[D]lone.\n\n[Verse 3]\n[D]I will proclaim\nThe glory of the risen Lord,\n[D]Who once was slain\nTo re[A]concile man to [D]God.",
+  "lyrics": "[Verse 1]\nAll Heavens declare\nThe glory of the risen Lord,\nWho can compare\nWith the beauty of the Lord.\n\n[Verse 2]\nForever Thou wilt be\nThe Lamb upon the throne.\nI gladly bow my knee\nAnd worship Thee alone.\n\n[Verse 3]\nI will proclaim\nThe glory of the risen Lord,\nWho once was slain\nTo reconcile man to God.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

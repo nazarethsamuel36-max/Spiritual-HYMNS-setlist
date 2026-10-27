@@ -1,119 +1,75 @@
 {
-  "id" : 996,
-  "songNumber" : 18,
-  "title" : "उठाते हैं तेरा नाम, तेरी स्तुति करते हुए",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "उठाते हैं तेरा नाम, तेरी स्तुति करते हुए",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 20
-      }, {
-        "chord" : "Em",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "घुटनों पर हम आकर, करते हैं तुझसे प्रार्थना (2)",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "Em",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "मिलकर हम गायें, प्रभु की स्तुति हो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "Em",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "मिलकर हम गायें, हाल्लेलुयाह (4)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "Em",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आयेगा मेरा यीशु, हमें लेने एक दिन",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "Em",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "जायेंगे हम उसके संग,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "जहाँपर होगा अनंतजीवन",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मिलकर हम गायें, हाल्लेलुयाह (4)"
-    } ]
-  } ]
+  "id": 996,
+  "songNumber": 18,
+  "title": "उठाते हैं तेरा नाम, तेरी स्तुति करते हुए",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "उठाते हैं तेरा नाम, तेरी स्तुति करते हुए"
+        },
+        {
+          "text": "घुटनों पर हम आकर, करते हैं तुझसे प्रार्थना (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मिलकर हम गायें, प्रभु की स्तुति हो"
+        },
+        {
+          "text": "मिलकर हम गायें, हाल्लेलुयाह (4)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आयेगा मेरा यीशु, हमें लेने एक दिन"
+        },
+        {
+          "text": "जायेंगे हम उसके संग,"
+        },
+        {
+          "text": "जहाँपर होगा अनंतजीवन"
+        },
+        {
+          "text": "मिलकर हम गायें, हाल्लेलुयाह (4)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [Em]उठाते हैं [D]तेरा नाम, [C]तेरी स्तुति [Em]करते हुए\r\n[Em]घुटनों पर [D]हम आकर, [C]करते हैं तुझसे [Em]प्रार्थना (2)\r\n[Verse]\r\n[Verse]\r\n[G]मिलकर हम [D]गायें, [C]प्रभु की स्तुति [Em]हो\r\n[G]मिलकर हम [D]गायें, [C]हाल्लेलु[Em]याह (4)\r\n[Verse]\r\n[Verse]\r\n[Em]आयेगा मेरा [D]यीशु, [C]हमें लेने एक [Em]दिन\r\n[Em]जायेंगे हम [D]उसके संग,\r\n[C]जहाँपर होगा अनंत[Em]जीवन\r\nमिलकर हम गायें, हाल्लेलुयाह (4)",
+  "lyrics": "[Chorus]\r\n उठाते हैं तेरा नाम, तेरी स्तुति करते हुए\r\nघुटनों पर हम आकर, करते हैं तुझसे प्रार्थना (2)\r\n[Verse]\r\n[Verse]\r\nमिलकर हम गायें, प्रभु की स्तुति हो\r\nमिलकर हम गायें, हाल्लेलुयाह (4)\r\n[Verse]\r\n[Verse]\r\nआयेगा मेरा यीशु, हमें लेने एक दिन\r\nजायेंगे हम उसके संग,\r\nजहाँपर होगा अनंतजीवन\r\nमिलकर हम गायें, हाल्लेलुयाह (4)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

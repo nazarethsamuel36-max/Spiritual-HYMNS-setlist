@@ -1,165 +1,95 @@
 {
-  "id" : 1094,
-  "songNumber" : 116,
-  "title" : "है खुदाकी ये तमन्ना",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "है खुदाकी ये तमन्ना,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "इन्सा उसको प्यार करे । (2)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "है करम उसका जमानेपर,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "उसका धन्यवाद करे।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "वह सभी दुखोंके आलममें,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "खुशियाँ भरता है। (2)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "खुशियाँ मिलती है मुफतमें,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "उसका धन्यवाद करे।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "साँसे चलती है जीवनमें,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "उसकी मर्जीसे (2)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "जिन्दगी बक्षी है उसने,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "उसका धन्यवाद करो।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "इस जमाने में वो देता है,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "वक्त पापीय़ों को (2)",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "पाया है मौतसे जीवन,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "उसका धन्यवाद करे ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 1094,
+  "songNumber": 116,
+  "title": "है खुदाकी ये तमन्ना",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "है खुदाकी ये तमन्ना,"
+        },
+        {
+          "text": "इन्सा उसको प्यार करे । (2)"
+        },
+        {
+          "text": "है करम उसका जमानेपर,"
+        },
+        {
+          "text": "उसका धन्यवाद करे।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वह सभी दुखोंके आलममें,"
+        },
+        {
+          "text": "खुशियाँ भरता है। (2)"
+        },
+        {
+          "text": "खुशियाँ मिलती है मुफतमें,"
+        },
+        {
+          "text": "उसका धन्यवाद करे।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "साँसे चलती है जीवनमें,"
+        },
+        {
+          "text": "उसकी मर्जीसे (2)"
+        },
+        {
+          "text": "जिन्दगी बक्षी है उसने,"
+        },
+        {
+          "text": "उसका धन्यवाद करो।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस जमाने में वो देता है,"
+        },
+        {
+          "text": "वक्त पापीय़ों को (2)"
+        },
+        {
+          "text": "पाया है मौतसे जीवन,"
+        },
+        {
+          "text": "उसका धन्यवाद करे ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[Am]है खुदाकी ये त[G]मन्ना,\n[F]इन्सा उसको प्यार क[E]रे । (2)\n[Am]है करम उसका जमा[G]नेपर,\n[F]उसका धन्यवाद क[E]रे।\n\n[Verse]\n[Am]वह सभी दुखोंके आ[G]लममें,\n[F]खुशियाँ भरता [E]है। (2)\n[Am]खुशियाँ मिलती है मु[G]फतमें,\nउसका धन्यवाद करे।\n\n[Verse]\n[Am]साँसे चलती है जीव[G]नमें,\n[F]उसकी मर्जी[E]से (2)\n[Am]जिन्दगी बक्षी है उ[G]सने,\n[F]उसका धन्यवाद क[E]रो।\n\n[Verse]\n[Am]इस जमाने में वो दे[G]ता है,\n[F]वक्त पापीय़ों [E]को (2)\n[Am]पाया है मौतसे जी[G]वन,\n[F]उसका धन्यवाद क[E]रे ।",
+  "lyrics": "[Verse]\nहै खुदाकी ये तमन्ना,\nइन्सा उसको प्यार करे । (2)\nहै करम उसका जमानेपर,\nउसका धन्यवाद करे।\n\n[Verse]\nवह सभी दुखोंके आलममें,\nखुशियाँ भरता है। (2)\nखुशियाँ मिलती है मुफतमें,\nउसका धन्यवाद करे।\n\n[Verse]\nसाँसे चलती है जीवनमें,\nउसकी मर्जीसे (2)\nजिन्दगी बक्षी है उसने,\nउसका धन्यवाद करो।\n\n[Verse]\nइस जमाने में वो देता है,\nवक्त पापीय़ों को (2)\nपाया है मौतसे जीवन,\nउसका धन्यवाद करे ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

@@ -1,73 +1,41 @@
 {
-  "id" : 923,
-  "songNumber" : 44,
-  "title" : "I WANT TO WORSHIP THE LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I want to worship the Lord with all of my heart.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Give Him my all, not just a part,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Lift up my hands to the King of kings,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D7",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Praise Him in everything.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 923,
+  "songNumber": 44,
+  "title": "I WANT TO WORSHIP THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to worship the Lord with all of my heart."
+        },
+        {
+          "text": "Give Him my all, not just a part,"
+        },
+        {
+          "text": "Lift up my hands to the King of kings,"
+        },
+        {
+          "text": "Praise Him in everything."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]I want to [G]worship the [D]Lord with [A]all of my [D]heart.\n[D]Give Him my [G]all, not [D]just a [A]part,\n[D]Lift up my [D7]hands to the [G]King of kings,\n[D]Praise Him in [A]every[D]thing.",
+  "lyrics": "[Verse]\nI want to worship the Lord with all of my heart.\nGive Him my all, not just a part,\nLift up my hands to the King of kings,\nPraise Him in everything.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,169 +1,98 @@
 {
-  "id" : 1035,
-  "songNumber" : 57,
-  "title" : "हाल्लेलुयाह स्तुति गाये हम",
-  "language" : "hindi",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "हाल्लेलुयाह स्तुति गाये हम,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 12
-      }, {
-        "chord" : "F#m",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "यीशु की स्तुति गाये हम (2)",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "F#m",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "हा SSS हाल्लेलुयाह, हाल्लेलुयाह, हाल्लेलुयाह, (2)",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "C#",
-        "position" : 28
-      }, {
-        "chord" : "F#m",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "क्रूस पर बलि द्वारा अपना लहू बहाया,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 13
-      }, {
-        "chord" : "F#m",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "पाप को हटा कर साफ है किया",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "और हमको बचा लिया ।",
-      "chords" : [ {
-        "chord" : "C#",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "इस जीवन भर में सदा तुझको ध्यान करूँगा,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "F#m",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "तेरी आत्मा पाके तेरी इच्छा जान के",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "आगे ही बढ़ता रहूँगा ।",
-      "chords" : [ {
-        "chord" : "C#",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "यीशु के पास आओ और मुक्ति को अपनाओ,",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "F#m",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "आशीष वह देगा साथ अपने लेगा",
-      "chords" : [ {
-        "chord" : "F#m",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "कभी नहीं छोड़ेगा ।",
-      "chords" : [ {
-        "chord" : "C#",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 1035,
+  "songNumber": 57,
+  "title": "हाल्लेलुयाह स्तुति गाये हम",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "हाल्लेलुयाह स्तुति गाये हम,"
+        },
+        {
+          "text": "यीशु की स्तुति गाये हम (2)"
+        },
+        {
+          "text": "हा SSS हाल्लेलुयाह, हाल्लेलुयाह, हाल्लेलुयाह, (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्रूस पर बलि द्वारा अपना लहू बहाया,"
+        },
+        {
+          "text": "पाप को हटा कर साफ है किया"
+        },
+        {
+          "text": "और हमको बचा लिया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस जीवन भर में सदा तुझको ध्यान करूँगा,"
+        },
+        {
+          "text": "तेरी आत्मा पाके तेरी इच्छा जान के"
+        },
+        {
+          "text": "आगे ही बढ़ता रहूँगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु के पास आओ और मुक्ति को अपनाओ,"
+        },
+        {
+          "text": "आशीष वह देगा साथ अपने लेगा"
+        },
+        {
+          "text": "कभी नहीं छोड़ेगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [F#m]हाल्लेलुयाह [E]स्तुति गाये [F#m]हम,\n[F#m]यीशु की [E]स्तुति गाये [F#m]हम (2)\n[F#m]हा [E]SSS हाल्लेलु[D]याह, हाल्लेलु[C#]याह, हाल्लेलु[F#m]याह, (2)\n[Verse]\n[Verse]\n[F#m]क्रूस पर बलि [E]द्वारा अपना [F#m]लहू बहाया,\n[F#m]पाप को हटा [E]कर साफ है [D]किया\n[C#]और हमको बचा [F#m]लिया ।\n[Verse]\n[Verse]\n[F#m]इस जीवन [E]भर में सदा तुझको [F#m]ध्यान करूँगा,\n[F#m]तेरी आत्मा [E]पाके तेरी [D]इच्छा जान के\n[C#]आगे ही बढ़ता र[F#m]हूँगा ।\n[Verse]\n[Verse]\n[F#m]यीशु के [E]पास आओ और मु[F#m]क्ति को अपनाओ,\n[F#m]आशीष वह [E]देगा साथ [D]अपने लेगा\n[C#]कभी नहीं छो[F#m]ड़ेगा ।",
+  "lyrics": "[Chorus]\n हाल्लेलुयाह स्तुति गाये हम,\nयीशु की स्तुति गाये हम (2)\nहा SSS हाल्लेलुयाह, हाल्लेलुयाह, हाल्लेलुयाह, (2)\n[Verse]\n[Verse]\nक्रूस पर बलि द्वारा अपना लहू बहाया,\nपाप को हटा कर साफ है किया\nऔर हमको बचा लिया ।\n[Verse]\n[Verse]\nइस जीवन भर में सदा तुझको ध्यान करूँगा,\nतेरी आत्मा पाके तेरी इच्छा जान के\nआगे ही बढ़ता रहूँगा ।\n[Verse]\n[Verse]\nयीशु के पास आओ और मुक्ति को अपनाओ,\nआशीष वह देगा साथ अपने लेगा\nकभी नहीं छोड़ेगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

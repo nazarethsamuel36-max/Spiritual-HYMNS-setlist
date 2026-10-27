@@ -1,52 +1,44 @@
 {
-  "id" : 769,
-  "songNumber" : 157,
-  "title" : "HALLELUJAH HALLELUJAH",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Hallelujah Hallelujah (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Thank You Jesus (4)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I Love You Jesus (4)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I will serve You (4)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Hallelujah Hallelujah Hallelujah Hallelujah.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 769,
+  "songNumber": 157,
+  "title": "HALLELUJAH HALLELUJAH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hallelujah Hallelujah (2)"
+        },
+        {
+          "text": "Thank You Jesus (4)"
+        },
+        {
+          "text": "I Love You Jesus (4)"
+        },
+        {
+          "text": "I will serve You (4)"
+        },
+        {
+          "text": "Hallelujah Hallelujah Hallelujah Hallelujah."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]Hallelujah Hallelujah (2)\r\n[C]Thank You Jesus (4)\r\n[G]I Love You Jesus (4)\r\n[C]I will serve You (4)\r\n[G]Hallelujah Hallelujah [D]Hallelujah [G]Hallelujah.",
+  "lyrics": "[Verse]\r\nHallelujah Hallelujah (2)\r\nThank You Jesus (4)\r\nI Love You Jesus (4)\r\nI will serve You (4)\r\nHallelujah Hallelujah Hallelujah Hallelujah.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

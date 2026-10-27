@@ -1,226 +1,89 @@
 {
-  "id" : 599,
-  "songNumber" : 13,
-  "title" : "धन्य हो धन्य येशु माझा, (Blessed Assurance)",
-  "language" : "marathi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "धन्य हो धन्य येशु माझा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "प्रेमी किती हा दैवी राजा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "खंडूनी त्यानें कलें मुक्त,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "Bm",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "शुद्ध कराया ओतिले रक्त",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "येशूची प्रीति वर्णू किती,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "Bm",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "नित्य करीन मी त्याची स्तुती",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "संपूर्ण अर्पण संपूर्ण सुख",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "Bm",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "होई नित्यानंद पाहातांना मुख",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "दूत आकाशी दणाणती",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "Bm",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "येशूची प्रीति ते वदती",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "संपूर्ण अर्पण त्याच्या पायी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "Bm",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "त्रात्यामध्ये मी सुखी राही,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "असें तल्लीन मी त्याच्या भक्तित",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "Bm",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "गेलों बुडून मी त्याच्या प्रीतित.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 599,
+  "songNumber": 13,
+  "title": "धन्य हो धन्य येशु माझा, (Blessed Assurance)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "धन्य हो धन्य येशु माझा,"
+        },
+        {
+          "text": "प्रेमी किती हा दैवी राजा"
+        },
+        {
+          "text": "खंडूनी त्यानें कलें मुक्त,"
+        },
+        {
+          "text": "शुद्ध कराया ओतिले रक्त"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "येशूची प्रीति वर्णू किती,"
+        },
+        {
+          "text": "नित्य करीन मी त्याची स्तुती"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "संपूर्ण अर्पण संपूर्ण सुख"
+        },
+        {
+          "text": "होई नित्यानंद पाहातांना मुख"
+        },
+        {
+          "text": "दूत आकाशी दणाणती"
+        },
+        {
+          "text": "येशूची प्रीति ते वदती"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "संपूर्ण अर्पण त्याच्या पायी"
+        },
+        {
+          "text": "त्रात्यामध्ये मी सुखी राही,"
+        },
+        {
+          "text": "असें तल्लीन मी त्याच्या भक्तित"
+        },
+        {
+          "text": "गेलों बुडून मी त्याच्या प्रीतित."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]धन्य हो धन्य [G]येशु मा[D]झा,\r\n[D]प्रेमी कि[E]ती हा [A]दैवी राजा\r\n[D]खंडूनी त्या[G]नें क[D]लें मु[Bm]क्त,\r\n[G]शुद्ध [D]कराया [A]ओतिले र[D]क्त\r\n\r\n[Chorus]\r\n[D]येशूची प्री[G]ति व[D]र्णू कि[Bm]ती,\r\n[G]नित्य क[D]रीन मी [A]त्याची स्तु[D]ती\r\n\r\n[Verse]\r\n[D]संपूर्ण अ[G]र्पण सं[D]पूर्ण सु[Bm]ख\r\n[D]होई नि[E]त्यानंद [A]पाहातांना मुख\r\n[D]दूत आका[G]शी द[D]णाण[Bm]ती\r\n[G]येशूची प्री[D]ति ते [A]वद[D]ती\r\n\r\n[Verse]\r\n[D]संपूर्ण अ[G]र्पण त्या[D]च्या पा[Bm]यी\r\n[D]त्रात्याम[E]ध्ये मी [A]सुखी राही,\r\n[D]असें त[G]ल्लीन मी [D]त्याच्या भ[Bm]क्तित\r\n[G]गेलों बु[D]डून मी [A]त्याच्या प्री[D]तित.",
+  "lyrics": "[Verse]\r\nधन्य हो धन्य येशु माझा,\r\nप्रेमी किती हा दैवी राजा\r\nखंडूनी त्यानें कलें मुक्त,\r\nशुद्ध कराया ओतिले रक्त\r\n\r\n[Chorus]\r\nयेशूची प्रीति वर्णू किती,\r\nनित्य करीन मी त्याची स्तुती\r\n\r\n[Verse]\r\nसंपूर्ण अर्पण संपूर्ण सुख\r\nहोई नित्यानंद पाहातांना मुख\r\nदूत आकाशी दणाणती\r\nयेशूची प्रीति ते वदती\r\n\r\n[Verse]\r\nसंपूर्ण अर्पण त्याच्या पायी\r\nत्रात्यामध्ये मी सुखी राही,\r\nअसें तल्लीन मी त्याच्या भक्तित\r\nगेलों बुडून मी त्याच्या प्रीतित.",
+  "is_active": true,
+  "updated_at": "2026-09-04T11:21:53.360883+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

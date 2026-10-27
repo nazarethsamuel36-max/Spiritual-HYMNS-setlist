@@ -1,69 +1,47 @@
 {
-  "id" : 934,
-  "songNumber" : 55,
-  "title" : "FATHER WE LOVE / WORSHIP YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Father* we love You,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "We worship and adore You,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Glorify Your name in all the earth",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Glorify Your name (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Glorify your name in all the earth.",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "*JESUS........"
-    } ]
-  } ]
+  "id": 934,
+  "songNumber": 55,
+  "title": "FATHER WE LOVE / WORSHIP YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Father we love You,"
+        },
+        {
+          "text": "We worship and adore You,"
+        },
+        {
+          "text": "Glorify Your name in all the earth"
+        },
+        {
+          "text": "Glorify Your name (2)"
+        },
+        {
+          "text": "Glorify your name in all the earth."
+        },
+        {
+          "text": "JESUS........"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Father we [A]love You,\nWe [G]worship and a[D]dore You,\n[G]Glorify Your [D]name in all the [A]earth\n[D]Glorify Your [G]name (2)\n[E]Glorify your [A]name in all the [D]earth.\nJESUS........",
+  "lyrics": "[Verse]\nFather we love You,\nWe worship and adore You,\nGlorify Your name in all the earth\nGlorify Your name (2)\nGlorify your name in all the earth.\nJESUS........",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

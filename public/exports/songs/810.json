@@ -1,243 +1,110 @@
 {
-  "id" : 810,
-  "songNumber" : 198,
-  "title" : "THAT GOD SHOULD LOVE",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "That God should love a sinner such as I,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Should yearn to change my sorrow into bliss,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Nor rest till He had planned to bring me nigh,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "How wonderful is love like this!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Such love, such wondrous love, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "That God should love a sinner such as I,"
-    }, {
-      "text" : "How wonderful is love like this!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "That Christ should join so freely in the scheme,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Although it meant His death on Calvary,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Did ever human tongue find nobler theme",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Than love divine that ransomed me?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "That for a wilful outcast such as I,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "The Father planned, the Saviour bled and died;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Redemption for a worthless slave to buy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Who long had law and grace defied.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "And now He takes me to His heart, a son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He asks me not to fill a servant's place;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "The \"faroff country\" wand'rings all are done,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Wide open are His arms of grace.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 810,
+  "songNumber": 198,
+  "title": "THAT GOD SHOULD LOVE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "That God should love a sinner such as I,"
+        },
+        {
+          "text": "Should yearn to change my sorrow into bliss,"
+        },
+        {
+          "text": "Nor rest till He had planned to bring me nigh,"
+        },
+        {
+          "text": "How wonderful is love like this!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Such love, such wondrous love, (2)"
+        },
+        {
+          "text": "That God should love a sinner such as I,"
+        },
+        {
+          "text": "How wonderful is love like this!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "That Christ should join so freely in the scheme,"
+        },
+        {
+          "text": "Although it meant His death on Calvary,"
+        },
+        {
+          "text": "Did ever human tongue find nobler theme"
+        },
+        {
+          "text": "Than love divine that ransomed me?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "That for a wilful outcast such as I,"
+        },
+        {
+          "text": "The Father planned, the Saviour bled and died;"
+        },
+        {
+          "text": "Redemption for a worthless slave to buy,"
+        },
+        {
+          "text": "Who long had law and grace defied."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "And now He takes me to His heart, a son,"
+        },
+        {
+          "text": "He asks me not to fill a servants place;"
+        },
+        {
+          "text": "The \"faroff country\" wandrings all are done,"
+        },
+        {
+          "text": "Wide open are His arms of grace."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nThat [D]God should love a [G]sinner [D]such as [D]I,\nShould [D]yearn to change my [G]sorrow into [A]bliss,\nNor [D]rest till He had [G]planned to [D]bring me nigh,\nHow [D]wonderful is [A]love like [D]this!\n\n[Chorus]\nSuch [D]love, such [A]wondrous [D]love, (2)\nThat God should love a sinner such as I,\nHow wonderful is love like this!\n\n[Verse 2]\nThat [D]Christ should join so [G]freely in the [D]scheme,\nAl[D]though it meant His [G]death on Calva[A]ry,\nDid [D]ever human [G]tongue find [D]nobler theme\nThan [D]love divine that [A]ransomed [D]me?\n\n[Verse 3]\nThat [D]for a wilful [G]outcast such as [D]I,\nThe [D]Father planned, the [G]Saviour bled and [A]died;\nRe[D]demption for a [G]worthless [D]slave to buy,\nWho [D]long had law and [A]grace de[D]fied.\n\n[Verse 4]\nAnd [D]now He takes me [G]to His [D]heart, a son,\nHe [D]asks me not to [G]fill a servants [A]place;\nThe [D]\"faroff country\" [G]wandrings all are [D]done,\nWide [D]open are His [A]arms of [D]grace.",
+  "lyrics": "[Verse 1]\nThat God should love a sinner such as I,\nShould yearn to change my sorrow into bliss,\nNor rest till He had planned to bring me nigh,\nHow wonderful is love like this!\n\n[Chorus]\nSuch love, such wondrous love, (2)\nThat God should love a sinner such as I,\nHow wonderful is love like this!\n\n[Verse 2]\nThat Christ should join so freely in the scheme,\nAlthough it meant His death on Calvary,\nDid ever human tongue find nobler theme\nThan love divine that ransomed me?\n\n[Verse 3]\nThat for a wilful outcast such as I,\nThe Father planned, the Saviour bled and died;\nRedemption for a worthless slave to buy,\nWho long had law and grace defied.\n\n[Verse 4]\nAnd now He takes me to His heart, a son,\nHe asks me not to fill a servants place;\nThe \"faroff country\" wandrings all are done,\nWide open are His arms of grace.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

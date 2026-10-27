@@ -1,166 +1,95 @@
 {
-  "id" : 760,
-  "songNumber" : 148,
-  "title" : "JESUS HAS A TABLE SPREAD",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus has a table spread where the saints of God are fed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 53
-      } ]
-    }, {
-      "text" : "He invites His chosen people \"Come and dine,\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "With His manna He doth feed and supplies our every need;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "O, 'tis sweet to sup with Jesus all the time !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "\"Come and dine,\" the Master calleth, \"Come and dine,\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "You may feast at Jesus' table all the time;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "He who fed the multitude, turned the water into wine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "To the hungry calleth now, \"Come and dine.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "The disciples came to land, thus obeying Christ's command,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 53
-      } ]
-    }, {
-      "text" : "For the Master called to them, \"Come and dine,\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "There they found their hearts' desire, bread and fish upon the fire;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 63
-      } ]
-    }, {
-      "text" : "Thus He satisfies the hungry every time.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Soon the Lamb will take His bride to be ever at His side,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 52
-      } ]
-    }, {
-      "text" : "All the host of heaven will assembled be;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "O, 'twill be a glorious sight, all the saints in spotless white;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 58
-      } ]
-    }, {
-      "text" : "And with Jesus they will feast eternally.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    } ]
-  } ]
+  "id": 760,
+  "songNumber": 148,
+  "title": "JESUS HAS A TABLE SPREAD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jesus has a table spread where the saints of God are fed,"
+        },
+        {
+          "text": "He invites His chosen people \"Come and dine,\""
+        },
+        {
+          "text": "With His manna He doth feed and supplies our every need;"
+        },
+        {
+          "text": "O, 'tis sweet to sup with Jesus all the time !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "\"Come and dine,\" the Master calleth, \"Come and dine,\""
+        },
+        {
+          "text": "You may feast at Jesus' table all the time;"
+        },
+        {
+          "text": "He who fed the multitude, turned the water into wine,"
+        },
+        {
+          "text": "To the hungry calleth now, \"Come and dine.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "The disciples came to land, thus obeying Christ's command,"
+        },
+        {
+          "text": "For the Master called to them, \"Come and dine,\""
+        },
+        {
+          "text": "There they found their hearts' desire, bread and fish upon the fire;"
+        },
+        {
+          "text": "Thus He satisfies the hungry every time."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Soon the Lamb will take His bride to be ever at His side,"
+        },
+        {
+          "text": "All the host of heaven will assembled be;"
+        },
+        {
+          "text": "O, 'twill be a glorious sight, all the saints in spotless white;"
+        },
+        {
+          "text": "And with Jesus they will feast eternally."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Jesus has a table spread where the saints of God are [G]fed,\nHe in[D]vites His chosen people \"Come and [A]dine,\"\nWith His [D]manna He doth feed and supplies our every [G]need;\nO, 'tis [D]sweet to sup with Jesus all the [A]time !\n\n[Verse 2]\n\"Come and [D]dine,\" the Master calleth, \"Come and [G]dine,\"\nYou may [D]feast at Jesus' table all the [A]time;\nHe who [D]fed the multitude, turned the water into [G]wine,\nTo the [D]hungry calleth now, \"Come and [A]dine.\"\n\n[Verse 3]\nThe dis[D]ciples came to land, thus obeying Christ's com[G]mand,\nFor the [D]Master called to them, \"Come and [A]dine,\"\nThere they [D]found their hearts' desire, bread and fish upon the [G]fire;\nThus He [D]satisfies the hungry every [A]time.\n\n[Verse 4]\nSoon the [D]Lamb will take His bride to be ever at His [G]side,\nAll the [D]host of heaven will assembled [A]be;\nO, 'twill [D]be a glorious sight, all the saints in spotless [G]white;\nAnd with [D]Jesus they will feast eter[A]nally.",
+  "lyrics": "[Verse 1]\nJesus has a table spread where the saints of God are fed,\nHe invites His chosen people \"Come and dine,\"\nWith His manna He doth feed and supplies our every need;\nO, 'tis sweet to sup with Jesus all the time !\n\n[Verse 2]\n\"Come and dine,\" the Master calleth, \"Come and dine,\"\nYou may feast at Jesus' table all the time;\nHe who fed the multitude, turned the water into wine,\nTo the hungry calleth now, \"Come and dine.\"\n\n[Verse 3]\nThe disciples came to land, thus obeying Christ's command,\nFor the Master called to them, \"Come and dine,\"\nThere they found their hearts' desire, bread and fish upon the fire;\nThus He satisfies the hungry every time.\n\n[Verse 4]\nSoon the Lamb will take His bride to be ever at His side,\nAll the host of heaven will assembled be;\nO, 'twill be a glorious sight, all the saints in spotless white;\nAnd with Jesus they will feast eternally.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Lord Supper"
+  ]
 }

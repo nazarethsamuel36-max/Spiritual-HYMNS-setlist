@@ -1,106 +1,89 @@
 {
-  "id" : 1112,
-  "songNumber" : 134,
-  "title" : "सेनाओ का यहोवा हमारे संग संग है",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "सेनाओ का यहोवा हमारे संग संग है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "याकुब का परमेश्वर हमारा ऊँचा गढ है ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जिसने आकाश बनाया, जिसने पृथ्वी बनाई",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "वो सर्व शक्तिमान प्रभु है, वो यहोवा हमारे संग संग है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 42
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "समुंदर को जिसने दुभागा, जंगल से मार्ग निकाला,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "जो वायदे को करता है पूरा, वो यहोवा हमारे संग संग है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "लाजर को जिसने जिलाया, जक्कय को जिसने बचाया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "जिसके लिए है सब कुछ संभव, वो यहोवा हमारे",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "संग संग है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      } ]
-    } ]
-  } ]
+  "id": 1112,
+  "songNumber": 134,
+  "title": "सेनाओ का यहोवा हमारे संग संग है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "सेनाओ का यहोवा हमारे संग संग है"
+        },
+        {
+          "text": "याकुब का परमेश्वर हमारा ऊँचा गढ है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जिसने आकाश बनाया, जिसने पृथ्वी बनाई"
+        },
+        {
+          "text": "वो सर्व शक्तिमान प्रभु है, वो यहोवा हमारे संग संग है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "समुंदर को जिसने दुभागा, जंगल से मार्ग निकाला,"
+        },
+        {
+          "text": "जो वायदे को करता है पूरा, वो यहोवा हमारे संग संग है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "लाजर को जिसने जिलाया, जक्कय को जिसने बचाया"
+        },
+        {
+          "text": "जिसके लिए है सब कुछ संभव, वो यहोवा हमारे"
+        },
+        {
+          "text": "संग संग है।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [G]सेनाओ का यहोवा हमारे [C]संग संग है\r\n[D]याकुब का परमेश्वर हमारा [G]ऊँचा गढ है ।\r\n[Verse]\r\n[Verse]\r\n[G]जिसने आकाश बनाया, जिसने [C]पृथ्वी बनाई\r\n[D]वो सर्व शक्तिमान प्रभु है, वो यहोवा हमारे [G]संग संग है।\r\n[Verse]\r\n[Verse]\r\n[G]समुंदर को जिसने दुभागा, [C]जंगल से मार्ग निकाला,\r\n[D]जो वायदे को करता है पूरा, वो यहोवा हमारे [G]संग संग है।\r\n[Verse]\r\n[Verse]\r\n[G]लाजर को जिसने जिलाया, [C]जक्कय को जिसने बचाया\r\n[D]जिसके लिए है सब कुछ संभव, वो यहोवा हमारे\r\n[D]संग संग [G]है।",
+  "lyrics": "[Chorus]\r\n सेनाओ का यहोवा हमारे संग संग है\r\nयाकुब का परमेश्वर हमारा ऊँचा गढ है ।\r\n[Verse]\r\n[Verse]\r\nजिसने आकाश बनाया, जिसने पृथ्वी बनाई\r\nवो सर्व शक्तिमान प्रभु है, वो यहोवा हमारे संग संग है।\r\n[Verse]\r\n[Verse]\r\nसमुंदर को जिसने दुभागा, जंगल से मार्ग निकाला,\r\nजो वायदे को करता है पूरा, वो यहोवा हमारे संग संग है।\r\n[Verse]\r\n[Verse]\r\nलाजर को जिसने जिलाया, जक्कय को जिसने बचाया\r\nजिसके लिए है सब कुछ संभव, वो यहोवा हमारे\r\nसंग संग है।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

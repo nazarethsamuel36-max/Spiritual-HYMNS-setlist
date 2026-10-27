@@ -1,345 +1,179 @@
 {
-  "id" : 733,
-  "songNumber" : 121,
-  "title" : "THEY COME FROM THE EAST AND WEST",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "They come from the East and West,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "They come from the lands afar,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "To feast with the King, to dine as His guest;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "How blessed these pilgrims are!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Beholding His hallowed face",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Aglow with light divine;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Blest partakers of His grace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "As gems in His crown to shine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Since Jesus has set me free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "I'm happy as heart can be;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "No longer I bear the burden of care,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "His yoke is so sweet to me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "My soul was as black as night,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "But darkness has taken flight;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Now I shout the victory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "For Jesus has set me free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I look on the great white throne,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Before it the ransom'd stand;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "No longer are tears, no sorrow is known",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Nor death in that goodly land.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "My Saviour has gone before,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Preparing the way for me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Soon we'll meet to part no more",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Thru time or eternity.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "The gates of that holy place",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Stand open by night and day;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "O look to the Lord who \"giveth more grace,\"",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Whose love has prepared the way",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "A home in those mansions fair",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "His hand hath reserved for all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "For the wedding feast prepare,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Obeying the gracious call.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Oh, Jesus is coming soon,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Our trials will then be o'er.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "What if our Lord this moment should come.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For those who are free from sin?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Then would it bring you joy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Or sorrow and deep despair?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "When our Lord in glory comes,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "We'll meet Him up in the air.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 733,
+  "songNumber": 121,
+  "title": "THEY COME FROM THE EAST AND WEST",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "They come from the East and West,"
+        },
+        {
+          "text": "They come from the lands afar,"
+        },
+        {
+          "text": "To feast with the King, to dine as His guest;"
+        },
+        {
+          "text": "How blessed these pilgrims are!"
+        },
+        {
+          "text": "Beholding His hallowed face"
+        },
+        {
+          "text": "Aglow with light divine;"
+        },
+        {
+          "text": "Blest partakers of His grace,"
+        },
+        {
+          "text": "As gems in His crown to shine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Since Jesus has set me free,"
+        },
+        {
+          "text": "I'm happy as heart can be;"
+        },
+        {
+          "text": "No longer I bear the burden of care,"
+        },
+        {
+          "text": "His yoke is so sweet to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "My soul was as black as night,"
+        },
+        {
+          "text": "But darkness has taken flight;"
+        },
+        {
+          "text": "Now I shout the victory,"
+        },
+        {
+          "text": "For Jesus has set me free."
+        },
+        {
+          "text": "I look on the great white throne,"
+        },
+        {
+          "text": "Before it the ransom'd stand;"
+        },
+        {
+          "text": "No longer are tears, no sorrow is known"
+        },
+        {
+          "text": "Nor death in that goodly land."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "My Saviour has gone before,"
+        },
+        {
+          "text": "Preparing the way for me;"
+        },
+        {
+          "text": "Soon we'll meet to part no more"
+        },
+        {
+          "text": "Thru time or eternity."
+        },
+        {
+          "text": "The gates of that holy place"
+        },
+        {
+          "text": "Stand open by night and day;"
+        },
+        {
+          "text": "O look to the Lord who \"giveth more grace,\""
+        },
+        {
+          "text": "Whose love has prepared the way"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "A home in those mansions fair"
+        },
+        {
+          "text": "His hand hath reserved for all,"
+        },
+        {
+          "text": "For the wedding feast prepare,"
+        },
+        {
+          "text": "Obeying the gracious call."
+        },
+        {
+          "text": "Oh, Jesus is coming soon,"
+        },
+        {
+          "text": "Our trials will then be o'er."
+        },
+        {
+          "text": "What if our Lord this moment should come."
+        },
+        {
+          "text": "For those who are free from sin?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Then would it bring you joy,"
+        },
+        {
+          "text": "Or sorrow and deep despair?"
+        },
+        {
+          "text": "When our Lord in glory comes,"
+        },
+        {
+          "text": "We'll meet Him up in the air."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nThey [D]come from the East and West,\nThey come from the [G]lands a[D]far,\nTo [D]feast with the King, to [A]dine as His guest;\nHow [D]blessed these pil[G]grims [D]are!\nBe[D]holding His hallowed [A]face\nA[D]glow with light di[G]vine;\nBlest par[D]takers of His [A]grace,\nAs gems in His [D]crown to shine.\n\n[Chorus]\nSince [D]Jesus has set me [A]free,\nI'm happy as heart can [D]be;\nNo longer I bear the [G]burden of care,\nHis [D]yoke is so [A]sweet to [D]me.\n\n[Verse 2]\nMy soul was as [D]black as night,\nBut darkness has [G]taken flight;\nNow I [D]shout the [A]victory,\nFor [D]Jesus has set me [A]free.\nI look on the [D]great white throne,\nBe[A]fore it the ransom'd stand;\nNo longer are tears, no [D]sorrow is known\nNor [G]death in that [D]goodly land.\n\n[Verse 3]\nMy [D]Saviour has gone be[A]fore,\nPre[D]paring the way for [G]me;\nSoon we'll [D]meet to part no more\nThru [A]time or e[D]ternity.\nThe [D]gates of that holy place\nStand [A]open by night and [D]day;\nO look to the Lord who [G]\"giveth more grace,\"\nWhose [D]love has pre[A]pared the way\n\n[Verse 4]\nA [D]home in those man[G]sions fair\nHis [D]hand hath re[A]served for all,\nFor the [D]wedding feast pre[G]pare,\nO[D]beying the [A]gracious [D]call.\nOh, [D]Jesus is coming [G]soon,\nOur [D]trials will then be [A]o'er.\nWhat if our Lord this [D]moment should come.\nFor those who are [G]free from sin?\n\n[Verse 5]\nThen [D]would it bring you [A]joy,\nOr sorrow and deep de[D]spair?\nWhen our [D]Lord in glory [A]comes,\nWe'll meet Him [D]up in the air.",
+  "lyrics": "[Verse 1]\nThey come from the East and West,\nThey come from the lands afar,\nTo feast with the King, to dine as His guest;\nHow blessed these pilgrims are!\nBeholding His hallowed face\nAglow with light divine;\nBlest partakers of His grace,\nAs gems in His crown to shine.\n\n[Chorus]\nSince Jesus has set me free,\nI'm happy as heart can be;\nNo longer I bear the burden of care,\nHis yoke is so sweet to me.\n\n[Verse 2]\nMy soul was as black as night,\nBut darkness has taken flight;\nNow I shout the victory,\nFor Jesus has set me free.\nI look on the great white throne,\nBefore it the ransom'd stand;\nNo longer are tears, no sorrow is known\nNor death in that goodly land.\n\n[Verse 3]\nMy Saviour has gone before,\nPreparing the way for me;\nSoon we'll meet to part no more\nThru time or eternity.\nThe gates of that holy place\nStand open by night and day;\nO look to the Lord who \"giveth more grace,\"\nWhose love has prepared the way\n\n[Verse 4]\nA home in those mansions fair\nHis hand hath reserved for all,\nFor the wedding feast prepare,\nObeying the gracious call.\nOh, Jesus is coming soon,\nOur trials will then be o'er.\nWhat if our Lord this moment should come.\nFor those who are free from sin?\n\n[Verse 5]\nThen would it bring you joy,\nOr sorrow and deep despair?\nWhen our Lord in glory comes,\nWe'll meet Him up in the air.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

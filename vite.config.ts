@@ -24,6 +24,20 @@ export default defineConfig(({ mode }) => ({
         navigateFallbackDenylist: [/^\/rest\/v1/],
         runtimeCaching: [
           {
+            urlPattern: /\/exports\/.*\.json$/i,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'static-exports-cache',
+              expiration: {
+                maxEntries: 1500,
+                maxAgeSeconds: 60 * 60 * 24 * 365
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*$/i,
             handler: 'CacheFirst',
             options: {

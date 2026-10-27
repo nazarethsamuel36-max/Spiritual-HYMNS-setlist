@@ -1,12 +1,88 @@
 {
-  "id" : 3135,
-  "songNumber" : 2036,
-  "title" : "यीशु मेरे दिल में आ",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ ]
+  "id": 3135,
+  "songNumber": 2036,
+  "title": "यीशु मेरे दिल में आ",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "यीशु मेरे दिल में आ,"
+        },
+        {
+          "text": "यीशु मेरे दिल में आ...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "पाप को हटाकर,"
+        },
+        {
+          "text": "मौत से छुड़ाकर"
+        },
+        {
+          "text": "यीशु मेरे दिल में आ...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "भटका हुआ था मै,"
+        },
+        {
+          "text": "खोया हुआ था...repeat"
+        },
+        {
+          "text": "कौन मुझे छुड़ाएगा"
+        },
+        {
+          "text": "पाप के बंधनो से...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": []
+    }
+  ],
+  "chords": "[Chorus]\n\n\n\n[Verse 2]\nयीशु मेरे दिल में आ,\nयीशु मेरे दिल में आ...repeat\n\n[Verse 3]\nपाप को हटाकर,\nमौत से छुड़ाकर\nयीशु मेरे दिल में आ...repeat\n\n[Verse 4]\nभटका हुआ था मै,\nखोया हुआ था...repeat\nकौन मुझे छुड़ाएगा\nपाप के बंधनो से...repeat\n\n[Verse 5]\n\n\n[Verse 6]\n\n\n[Verse 7]\n",
+  "lyrics": "[Verse 1]\n\n\n\n[Verse 2]\nयीशु मेरे दिल में आ,\nयीशु मेरे दिल में आ...repeat\n\n[Verse 3]\nपाप को हटाकर,\nमौत से छुड़ाकर\nयीशु मेरे दिल में आ...repeat\n\n[Verse 4]\nभटका हुआ था मै,\nखोया हुआ था...repeat\nकौन मुझे छुड़ाएगा\nपाप के बंधनो से...repeat\n\n[Verse 5]\n\n\n[Verse 6]\n\n\n[Verse 7]\n",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

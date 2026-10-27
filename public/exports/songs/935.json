@@ -1,85 +1,44 @@
 {
-  "id" : 935,
-  "songNumber" : 56,
-  "title" : "WHOM I HAVE IN HEAVEN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Whom have I have in heaven but thee?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And there is none upon earth that I desire beside thee",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 50
-      } ]
-    }, {
-      "text" : "My flesh and my heart faileth",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "But God is the strength of my heart",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And my portion forever.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 935,
+  "songNumber": 56,
+  "title": "WHOM I HAVE IN HEAVEN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Whom have I have in heaven but thee?"
+        },
+        {
+          "text": "And there is none upon earth that I desire beside thee"
+        },
+        {
+          "text": "My flesh and my heart faileth"
+        },
+        {
+          "text": "But God is the strength of my heart"
+        },
+        {
+          "text": "And my portion forever."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Whom have I [A]have in [G]heaven but [D]thee?\n[G]And there is [A]none upon [D]earth that I de[A]sire beside [D]thee\n[G]My flesh and my [A]heart [D]faileth\n[G]But God is the [A]strength of my [D]heart\n[G]And my [A]portion for[D]ever.",
+  "lyrics": "[Verse]\nWhom have I have in heaven but thee?\nAnd there is none upon earth that I desire beside thee\nMy flesh and my heart faileth\nBut God is the strength of my heart\nAnd my portion forever.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,155 +1,104 @@
 {
-  "id" : 721,
-  "songNumber" : 109,
-  "title" : "HEAVENLY FATHER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Heavenly Father I worship You, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I love You, adore You,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Bow down before You,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Heavenly Father I worship You.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Son of God, what a wonder",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "You are (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "You saved me from sin",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Put your Holy Ghost within,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Son of God what a wonder You are.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Holy Ghost, what a comfort",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "You are (2)"
-    }, {
-      "text" : "You lead us and guide us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "You live right inside us",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Holy Ghost, what a comfort"
-    }, {
-      "text" : "You are.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Brother, Sister, I appreciate you, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "With God's love inside us,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "We'll glorify Jesus",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Brother, Sister, I appreciate you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 721,
+  "songNumber": 109,
+  "title": "HEAVENLY FATHER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Heavenly Father I worship You, (2)"
+        },
+        {
+          "text": "I love You, adore You,"
+        },
+        {
+          "text": "Bow down before You,"
+        },
+        {
+          "text": "Heavenly Father I worship You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Son of God, what a wonder"
+        },
+        {
+          "text": "You are (2)"
+        },
+        {
+          "text": "You saved me from sin"
+        },
+        {
+          "text": "Put your Holy Ghost within,"
+        },
+        {
+          "text": "Son of God what a wonder You are."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Holy Ghost, what a comfort"
+        },
+        {
+          "text": "You are (2)"
+        },
+        {
+          "text": "You lead us and guide us,"
+        },
+        {
+          "text": "You live right inside us"
+        },
+        {
+          "text": "Holy Ghost, what a comfort"
+        },
+        {
+          "text": "You are."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Brother, Sister, I appreciate you, (2)"
+        },
+        {
+          "text": "With God's love inside us,"
+        },
+        {
+          "text": "We'll glorify Jesus"
+        },
+        {
+          "text": "Brother, Sister, I appreciate you."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Heavenly Father I worship You, (2)\r\nI love [C]You, adore [G]You,\r\nBow down be[D]fore You,\r\n[G]Heavenly Father I worship [D]You.\r\n\r\n[Verse 2]\r\nSon of [G]God, what a wonder\r\nYou [D]are (2)\r\nYou [G]saved me from sin\r\nPut your [C]Holy Ghost with[G]in,\r\nSon of [G]God what a [D]wonder You [G]are.\r\n\r\n[Verse 3]\r\nHoly [G]Ghost, what a [D]comfort\r\nYou are (2)\r\nYou [G]lead us and guide us,\r\nYou [C]live right inside [G]us\r\nHoly Ghost, what a comfort\r\nYou [G]are.\r\n\r\n[Verse 4]\r\nBrother, [G]Sister, I appreciate you, (2)\r\nWith God's [C]love inside [G]us,\r\nWe'll glori[D]fy Jesus\r\n[G]Brother, Sister, I appreciate [D]you.",
+  "lyrics": "[Verse 1]\r\nHeavenly Father I worship You, (2)\r\nI love You, adore You,\r\nBow down before You,\r\nHeavenly Father I worship You.\r\n\r\n[Verse 2]\r\nSon of God, what a wonder\r\nYou are (2)\r\nYou saved me from sin\r\nPut your Holy Ghost within,\r\nSon of God what a wonder You are.\r\n\r\n[Verse 3]\r\nHoly Ghost, what a comfort\r\nYou are (2)\r\nYou lead us and guide us,\r\nYou live right inside us\r\nHoly Ghost, what a comfort\r\nYou are.\r\n\r\n[Verse 4]\r\nBrother, Sister, I appreciate you, (2)\r\nWith God's love inside us,\r\nWe'll glorify Jesus\r\nBrother, Sister, I appreciate you.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

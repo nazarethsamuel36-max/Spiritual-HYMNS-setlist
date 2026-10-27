@@ -1,168 +1,98 @@
 {
-  "id" : 675,
-  "songNumber" : 368,
-  "title" : "LORD MAKE ME AN INSTRUMENT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Lord, make me an instrument,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "An instrument of worship,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I lift up my hands in Your Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Iâ€™ll sing You a love song,"
-    }, {
-      "text" : "A love song of worship,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Iâ€™ll lift up my hands in Your Name"
-    }, {
-      "text" : "Iâ€™ll sing You a love song,"
-    }, {
-      "text" : "A love song to Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "I lift up my hands in Your Name."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "For we are a symphony,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "A symphony of worship,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "We lift up our hands in Your Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "All glory and honour to Jesus forever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "We lift up our hands to Your Name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  } ]
+  "id": 675,
+  "songNumber": 368,
+  "title": "LORD MAKE ME AN INSTRUMENT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Lord, make me an instrument,"
+        },
+        {
+          "text": "An instrument of worship,"
+        },
+        {
+          "text": "I lift up my hands in Your Name."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I'll sing You a love song,"
+        },
+        {
+          "text": "A love song of worship,"
+        },
+        {
+          "text": "I'll lift up my hands in Your Name"
+        },
+        {
+          "text": "I'll sing You a love song,"
+        },
+        {
+          "text": "A love song to Jesus,"
+        },
+        {
+          "text": "I lift up my hands in Your Name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "For we are a symphony,"
+        },
+        {
+          "text": "A symphony of worship,"
+        },
+        {
+          "text": "We lift up our hands in Your Name."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All glory and honour to Jesus forever,"
+        },
+        {
+          "text": "We lift up our hands to Your Name."
+        },
+        {
+          "text": "(Repeat)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]Lord, make me an [Bb]instrument,\r\nAn [F]instrument of [C]worship,\r\nI [F]lift up my [Bb]hands in [C]Your [F]Name.\r\n(Repeat)\r\n\r\n[Verse]\r\nI'll sing You a love song,\r\nA [F]love song of [Bb]wor[C]ship,\r\nI'll lift up my hands in Your Name\r\nI'll sing You a love song,\r\nA [F]love song to [Bb]Je[C]sus,\r\nI lift up my hands in Your Name.\r\n\r\n[Verse]\r\nFor [F]we are a [Bb]sympho[F]ny,\r\nA [F]symphony of [Bb]wor[C]ship,\r\nWe [F]lift up our [Bb]hands in [C]Your [F]Name.\r\n(Repeat)\r\n\r\n[Verse]\r\n[F]All glory and [Bb]honour to [F]Jesus for[C]ever,\r\nWe [F]lift up our [Bb]hands to [C]Your [F]Name.\r\n(Repeat)",
+  "lyrics": "[Verse]\r\nLord, make me an instrument,\r\nAn instrument of worship,\r\nI lift up my hands in Your Name.\r\n(Repeat)\r\n\r\n[Verse]\r\nI'll sing You a love song,\r\nA love song of worship,\r\nI'll lift up my hands in Your Name\r\nI'll sing You a love song,\r\nA love song to Jesus,\r\nI lift up my hands in Your Name.\r\n\r\n[Verse]\r\nFor we are a symphony,\r\nA symphony of worship,\r\nWe lift up our hands in Your Name.\r\n(Repeat)\r\n\r\n[Verse]\r\nAll glory and honour to Jesus forever,\r\nWe lift up our hands to Your Name.\r\n(Repeat)",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

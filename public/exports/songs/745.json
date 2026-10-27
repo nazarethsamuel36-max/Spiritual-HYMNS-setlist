@@ -1,341 +1,191 @@
 {
-  "id" : 745,
-  "songNumber" : 133,
-  "title" : "ONWARD CHRISTIAN SOLDIERS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Onward, Christian soldiers !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Marching as to war,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "With the cross of Jesus",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Going on before;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Christ, the royal Master,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Leads against the foe;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Forward into battle,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "See, His banners go !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Onward, Christian soldiers !"
-    }, {
-      "text" : "Marching as to war,"
-    }, {
-      "text" : "With the cross of Jesus"
-    }, {
-      "text" : "Going on before.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Like a mighty army",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Moves the Church of God;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Brothers, we are treading",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Where the saints have trod;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "We are not divided,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "All one body we;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "One in hope and doctrine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "One in charity.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Crowns and thrones may perish,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Kingdoms rise and wane;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "But the Church of Jesus",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Constant will remain;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Gates of hell can never",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "'Gainst that Church prevail;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "We have Christ's own promise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Which can never fail.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "At the name of Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Satan's host doth flee;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Oh, then, Christian soldiers,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "On to victory !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Hell's foundations quiver",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "At the shout of praise;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Brothers, lift your voices,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Loud your anthems raise !",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Onward, then, ye people !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Join our happy throng;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Blend with ours your voices",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "In the triumph song;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Glory, laud, and honour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Unto Christ the King;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "This through countless ages",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Men and angels sing.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 745,
+  "songNumber": 133,
+  "title": "ONWARD CHRISTIAN SOLDIERS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Onward, Christian soldiers !"
+        },
+        {
+          "text": "Marching as to war,"
+        },
+        {
+          "text": "With the cross of Jesus"
+        },
+        {
+          "text": "Going on before;"
+        },
+        {
+          "text": "Christ, the royal Master,"
+        },
+        {
+          "text": "Leads against the foe;"
+        },
+        {
+          "text": "Forward into battle,"
+        },
+        {
+          "text": "See, His banners go !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Onward, Christian soldiers !"
+        },
+        {
+          "text": "Marching as to war,"
+        },
+        {
+          "text": "With the cross of Jesus"
+        },
+        {
+          "text": "Going on before."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Like a mighty army"
+        },
+        {
+          "text": "Moves the Church of God;"
+        },
+        {
+          "text": "Brothers, we are treading"
+        },
+        {
+          "text": "Where the saints have trod;"
+        },
+        {
+          "text": "We are not divided,"
+        },
+        {
+          "text": "All one body we;"
+        },
+        {
+          "text": "One in hope and doctrine,"
+        },
+        {
+          "text": "One in charity."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Crowns and thrones may perish,"
+        },
+        {
+          "text": "Kingdoms rise and wane;"
+        },
+        {
+          "text": "But the Church of Jesus"
+        },
+        {
+          "text": "Constant will remain;"
+        },
+        {
+          "text": "Gates of hell can never"
+        },
+        {
+          "text": "'Gainst that Church prevail;"
+        },
+        {
+          "text": "We have Christ's own promise,"
+        },
+        {
+          "text": "Which can never fail."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "At the name of Jesus,"
+        },
+        {
+          "text": "Satan's host doth flee;"
+        },
+        {
+          "text": "Oh, then, Christian soldiers,"
+        },
+        {
+          "text": "On to victory !"
+        },
+        {
+          "text": "Hell's foundations quiver"
+        },
+        {
+          "text": "At the shout of praise;"
+        },
+        {
+          "text": "Brothers, lift your voices,"
+        },
+        {
+          "text": "Loud your anthems raise !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Onward, then, ye people !"
+        },
+        {
+          "text": "Join our happy throng;"
+        },
+        {
+          "text": "Blend with ours your voices"
+        },
+        {
+          "text": "In the triumph song;"
+        },
+        {
+          "text": "Glory, laud, and honour,"
+        },
+        {
+          "text": "Unto Christ the King;"
+        },
+        {
+          "text": "This through countless ages"
+        },
+        {
+          "text": "Men and angels sing."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[E]Onward, Christian soldiers !\r\n[A]Marching as to [E]war,\r\nWith the [B]cross of Jesus\r\n[E]Going on be[B]fore;\r\n[E]Christ, the royal Master,\r\n[A]Leads against the [E]foe;\r\n[E]Forward into battle,\r\n[B]See, His banners [E]go !\r\n\r\n[Chorus]\r\nOnward, Christian soldiers !\r\nMarching as to war,\r\nWith the cross of Jesus\r\n[E]Going on be[B]fore.\r\n\r\n[Verse 2]\r\nLike a [E]mighty army\r\n[A]Moves the Church of [E]God;\r\n[E]Brothers, we are treading\r\n[B]Where the saints have [E]trod;\r\n[E]We are not divided,\r\n[A]All one body [E]we;\r\n[E]One in hope and doctrine,\r\n[B]One in cha[E]rity.\r\n\r\n[Verse 3]\r\nCrowns and [E]thrones may perish,\r\n[A]Kingdoms rise and [E]wane;\r\nBut the [E]Church of Jesus\r\n[B]Constant will re[E]main;\r\n[E]Gates of hell can never\r\n[A]'Gainst that Church pre[E]vail;\r\nWe have [E]Christ's own promise,\r\n[B]Which can never [E]fail.\r\n\r\n[Verse 4]\r\nAt the [E]name of Jesus,\r\n[A]Satan's host doth [E]flee;\r\nOh, then, [E]Christian soldiers,\r\n[B]On to vic[E]tory !\r\nHell's foun[E]dations quiver\r\n[A]At the shout of [E]praise;\r\n[E]Brothers, lift your voices,\r\n[B]Loud your anthems [E]raise !\r\n\r\n[Verse 5]\r\nOnward, [E]then, ye people !\r\n[A]Join our happy [E]throng;\r\nBlend with [E]ours your voices\r\n[B]In the triumph [E]song;\r\n[E]Glory, laud, and honour,\r\n[A]Unto Christ the [E]King;\r\nThis through [E]countless ages\r\n[B]Men and angels [E]sing.",
+  "lyrics": "[Verse]\r\nOnward, Christian soldiers !\r\nMarching as to war,\r\nWith the cross of Jesus\r\nGoing on before;\r\nChrist, the royal Master,\r\nLeads against the foe;\r\nForward into battle,\r\nSee, His banners go !\r\n\r\n[Chorus]\r\nOnward, Christian soldiers !\r\nMarching as to war,\r\nWith the cross of Jesus\r\nGoing on before.\r\n\r\n[Verse 2]\r\nLike a mighty army\r\nMoves the Church of God;\r\nBrothers, we are treading\r\nWhere the saints have trod;\r\nWe are not divided,\r\nAll one body we;\r\nOne in hope and doctrine,\r\nOne in charity.\r\n\r\n[Verse 3]\r\nCrowns and thrones may perish,\r\nKingdoms rise and wane;\r\nBut the Church of Jesus\r\nConstant will remain;\r\nGates of hell can never\r\n'Gainst that Church prevail;\r\nWe have Christ's own promise,\r\nWhich can never fail.\r\n\r\n[Verse 4]\r\nAt the name of Jesus,\r\nSatan's host doth flee;\r\nOh, then, Christian soldiers,\r\nOn to victory !\r\nHell's foundations quiver\r\nAt the shout of praise;\r\nBrothers, lift your voices,\r\nLoud your anthems raise !\r\n\r\n[Verse 5]\r\nOnward, then, ye people !\r\nJoin our happy throng;\r\nBlend with ours your voices\r\nIn the triumph song;\r\nGlory, laud, and honour,\r\nUnto Christ the King;\r\nThis through countless ages\r\nMen and angels sing.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

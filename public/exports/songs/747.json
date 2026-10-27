@@ -1,201 +1,113 @@
 {
-  "id" : 747,
-  "songNumber" : 135,
-  "title" : "I CARE NOT TODAY WHAT THE MORROW MAY BRING",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I care not today what the morrow may bring,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "If shadow or sunshine or rain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "The Lord I know ruleth o'er everything,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And all of my worry is vain.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Living by faith, in Jesus above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Trusting, confiding in His great love;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "I am safe from all harm, in His sheltering arm.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I'm living by faith and feel no alarm.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Though tempest may blow and the storm clouds arise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "Obscuring the brightness of life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "I'm never alarmed at the overcast skies,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "The Master looks on at the strife.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I know that He safely will carry me through,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "No matter what evils betide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Why should I then care, though the tempest may blow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "If Jesus walks close to my side.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Our Lord will return to this earth some sweet day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "Our troubles will then all be o'er,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "The Master so gently will lead us away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Beyond that blest heavenly shore.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 747,
+  "songNumber": 135,
+  "title": "I CARE NOT TODAY WHAT THE MORROW MAY BRING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I care not today what the morrow may bring,"
+        },
+        {
+          "text": "If shadow or sunshine or rain,"
+        },
+        {
+          "text": "The Lord I know ruleth o'er everything,"
+        },
+        {
+          "text": "And all of my worry is vain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Living by faith, in Jesus above,"
+        },
+        {
+          "text": "Trusting, confiding in His great love;"
+        },
+        {
+          "text": "I am safe from all harm, in His sheltering arm."
+        },
+        {
+          "text": "I'm living by faith and feel no alarm."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Though tempest may blow and the storm clouds arise,"
+        },
+        {
+          "text": "Obscuring the brightness of life,"
+        },
+        {
+          "text": "I'm never alarmed at the overcast skies,"
+        },
+        {
+          "text": "The Master looks on at the strife."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I know that He safely will carry me through,"
+        },
+        {
+          "text": "No matter what evils betide,"
+        },
+        {
+          "text": "Why should I then care, though the tempest may blow,"
+        },
+        {
+          "text": "If Jesus walks close to my side."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Our Lord will return to this earth some sweet day,"
+        },
+        {
+          "text": "Our troubles will then all be o'er,"
+        },
+        {
+          "text": "The Master so gently will lead us away,"
+        },
+        {
+          "text": "Beyond that blest heavenly shore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]I care not today what the morrow may [G]bring,\nIf [D]shadow or sunshine or [A]rain,\nThe [D]Lord I know ruleth o'er [G]everything,\nAnd [D]all of my worry is [A]vain.\n\n[Chorus]\n[D]Living by faith, in Jesus a[G]bove,\n[D]Trusting, confiding in His great [A]love;\n[D]I am safe from all harm, in His sheltering arm.\nI'm [D]living by faith and feel no [A]alarm.\n\n[Verse 2]\nThough [D]tempest may blow and the storm clouds a[G]rise,\nOb[D]scuring the brightness of [A]life,\nI'm [D]never alarmed at the overcast [G]skies,\nThe [D]Master looks on at the [A]strife.\n\n[Verse 3]\nI [D]know that He safely will carry me [G]through,\nNo [D]matter what evils be[A]tide,\nWhy [D]should I then care, though the tempest may [G]blow,\nIf [D]Jesus walks close to my [A]side.\n\n[Verse 4]\nOur [D]Lord will return to this earth some sweet [G]day,\nOur [D]troubles will then all be [A]o'er,\nThe [D]Master so gently will lead us a[G]way,\nBe[D]yond that blest heavenly [A]shore.",
+  "lyrics": "[Verse 1]\nI care not today what the morrow may bring,\nIf shadow or sunshine or rain,\nThe Lord I know ruleth o'er everything,\nAnd all of my worry is vain.\n\n[Chorus]\nLiving by faith, in Jesus above,\nTrusting, confiding in His great love;\nI am safe from all harm, in His sheltering arm.\nI'm living by faith and feel no alarm.\n\n[Verse 2]\nThough tempest may blow and the storm clouds arise,\nObscuring the brightness of life,\nI'm never alarmed at the overcast skies,\nThe Master looks on at the strife.\n\n[Verse 3]\nI know that He safely will carry me through,\nNo matter what evils betide,\nWhy should I then care, though the tempest may blow,\nIf Jesus walks close to my side.\n\n[Verse 4]\nOur Lord will return to this earth some sweet day,\nOur troubles will then all be o'er,\nThe Master so gently will lead us away,\nBeyond that blest heavenly shore.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

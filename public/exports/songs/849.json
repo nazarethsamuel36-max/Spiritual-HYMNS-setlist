@@ -1,253 +1,157 @@
 {
-  "id" : 849,
-  "songNumber" : 237,
-  "title" : "WE ARE ONE IN THE SPIRIT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We are one in the Spirit, we are one in the Lord (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "And we praise God our unity is now being restored.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And they'll know we are Christians,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "By our love, by our love,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Yes, they'll know we are Christians",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "By our love.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "We will walk with each other, we will walk hand in hand (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "And together we'll spread the news",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "That Christ is in our land.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "We will work with each other, we will work side by side (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "In this Holy Ghost revival",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "In God's Spirit we'll abide.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "We are being built together, we are being built in love (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "And we know that this love is coming down from above.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Now the Lord is that Spirit, and the Spirit is the Lord (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 37
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    }, {
-      "text" : "And He dwells in our spirit and we're all in one accord.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 51
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "Give all praise to the Father from whom all blessings come",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 54
-      } ]
-    }, {
-      "text" : "And all praise to Christ Jesus the Father's firstborn Son",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "And all praise to the Spirit who makes us one.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    } ]
-  } ]
+  "id": 849,
+  "songNumber": 237,
+  "title": "WE ARE ONE IN THE SPIRIT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Fm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We are one in the Spirit, we are one in the Lord (2)"
+        },
+        {
+          "text": "And we praise God our unity is now being restored."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And theyll know we are Christians,"
+        },
+        {
+          "text": "By our love, by our love,"
+        },
+        {
+          "text": "Yes, theyll know we are Christians"
+        },
+        {
+          "text": "By our love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We will walk with each other, we will walk hand in hand (2)"
+        },
+        {
+          "text": "And together well spread the news"
+        },
+        {
+          "text": "That Christ is in our land."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We will work with each other, we will work side by side (2)"
+        },
+        {
+          "text": "In this Holy Ghost revival"
+        },
+        {
+          "text": "In Gods Spirit well abide."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "We are being built together, we are being built in love (2)"
+        },
+        {
+          "text": "And we know that this love is coming down from above."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Now the Lord is that Spirit, and the Spirit is the Lord (2)"
+        },
+        {
+          "text": "And He dwells in our spirit and were all in one accord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Give all praise to the Father from whom all blessings come"
+        },
+        {
+          "text": "And all praise to Christ Jesus the Fathers firstborn Son"
+        },
+        {
+          "text": "And all praise to the Spirit who makes us one."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n We are [F]one in the Spirit, we are [Bb]one in the [F]Lord (2)\r\nAnd we [Bb]praise God our [F]unity is [C]now being re[F]stored.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nAnd theyll [Bb]know we are [F]Christians,\r\nBy our [Bb]love, by our [F]love,\r\nYes, theyll [Bb]know we are [F]Christians\r\nBy our [C]love.\r\n[Verse]\r\n[Verse]\r\nWe will [F]walk with each other, we will [Bb]walk hand in [F]hand (2)\r\nAnd to[Bb]gether well [F]spread the news\r\nThat [C]Christ is in our [F]land.\r\n[Verse]\r\n[Verse]\r\nWe will [F]work with each other, we will [Bb]work side by [F]side (2)\r\nIn this [Bb]Holy Ghost re[F]vival\r\nIn [C]Gods Spirit well a[F]bide.\r\n[Verse]\r\n[Verse]\r\nWe are [F]being built together, we are [Bb]being built in [F]love (2)\r\nAnd we [Bb]know that this [F]love is [C]coming down from a[F]bove.\r\n[Verse]\r\n[Verse]\r\nNow the [F]Lord is that Spirit, and the [Bb]Spirit is the [F]Lord (2)\r\nAnd He [Bb]dwells in our [F]spirit and were [C]all in one ac[F]cord.\r\n[Verse]\r\n[Verse]\r\nGive all [F]praise to the Father from [Bb]whom all blessings [F]come\r\nAnd all [Bb]praise to Christ [F]Jesus the [C]Fathers firstborn Son\r\nAnd all [Bb]praise to the [F]Spirit who [C]makes us [F]one.",
+  "lyrics": "[Verse]\r\n We are one in the Spirit, we are one in the Lord (2)\r\nAnd we praise God our unity is now being restored.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nAnd theyll know we are Christians,\r\nBy our love, by our love,\r\nYes, theyll know we are Christians\r\nBy our love.\r\n[Verse]\r\n[Verse]\r\nWe will walk with each other, we will walk hand in hand (2)\r\nAnd together well spread the news\r\nThat Christ is in our land.\r\n[Verse]\r\n[Verse]\r\nWe will work with each other, we will work side by side (2)\r\nIn this Holy Ghost revival\r\nIn Gods Spirit well abide.\r\n[Verse]\r\n[Verse]\r\nWe are being built together, we are being built in love (2)\r\nAnd we know that this love is coming down from above.\r\n[Verse]\r\n[Verse]\r\nNow the Lord is that Spirit, and the Spirit is the Lord (2)\r\nAnd He dwells in our spirit and were all in one accord.\r\n[Verse]\r\n[Verse]\r\nGive all praise to the Father from whom all blessings come\r\nAnd all praise to Christ Jesus the Fathers firstborn Son\r\nAnd all praise to the Spirit who makes us one.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Unity"
+  ]
 }

@@ -1,252 +1,119 @@
 {
-  "id" : 876,
-  "songNumber" : 264,
-  "title" : "O GLORIOUS VICTORY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "O glorious victory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "That day He set me free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And made my heart His very throne,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "My life is no longer mine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I'm a prisoner of love divine",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And now I live to praise His name.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Who I am, Lord, who I am,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "I can see now, who I am,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "A part of my Saviour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "A part of His Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "It's a revelation",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "(It's predestination)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Of who I am.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "On Calvary He died",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "To redeem His lost Bride",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "The King of kings",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Became my Saviour,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "This is God's great mystery,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Of love expressed to me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "That Christ and I",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Might be made one!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    } ]
-  } ]
+  "id": 876,
+  "songNumber": 264,
+  "title": "O GLORIOUS VICTORY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O glorious victory"
+        },
+        {
+          "text": "That day He set me free,"
+        },
+        {
+          "text": "And made my heart His very throne,"
+        },
+        {
+          "text": "My life is no longer mine,"
+        },
+        {
+          "text": "Im a prisoner of love divine"
+        },
+        {
+          "text": "And now I live to praise His name."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Who I am, Lord, who I am,"
+        },
+        {
+          "text": "I can see now, who I am,"
+        },
+        {
+          "text": "A part of my Saviour"
+        },
+        {
+          "text": "A part of His Word,"
+        },
+        {
+          "text": "Its a revelation"
+        },
+        {
+          "text": "(Its predestination)"
+        },
+        {
+          "text": "Of who I am."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On Calvary He died"
+        },
+        {
+          "text": "To redeem His lost Bride"
+        },
+        {
+          "text": "The King of kings"
+        },
+        {
+          "text": "Became my Saviour,"
+        },
+        {
+          "text": "This is Gods great mystery,"
+        },
+        {
+          "text": "Of love expressed to me,"
+        },
+        {
+          "text": "That Christ and I"
+        },
+        {
+          "text": "Might be made one!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n O [D]glorious [G]victo[D]ry\nThat [D]day He set me [A]free,\nAnd [G]made my [D]heart His [A]very [D]throne,\nMy [D]life is [G]no longer [D]mine,\nIm a [G]prisoner [D]of love di[A]vine\nAnd [D]now I [G]live to [A]praise His [D]name.\n[Verse]\n[Verse]\n[Chorus]\nWho I [D]am, Lord, [G]who I [D]am,\nI can [G]see now, [D]who I [A]am,\nA [D]part of my [G]Saviour\nA [D]part of His [A]Word,\nIts a [D]reve[G]lation\n(Its [D]predesti[A]nation)\nOf [D]who [A]I [D]am.\n[Verse]\n[Verse]\nOn [D]Calva[G]ry He [D]died\nTo re[D]deem His lost [A]Bride\nThe [G]King of [D]kings\nBe[A]came my [D]Saviour,\nThis is [D]Gods great [G]myste[D]ry,\nOf [G]love ex[D]pressed to [A]me,\nThat [D]Christ [G]and [A]I\nMight be made [D]one!",
+  "lyrics": "[Verse]\n O glorious victory\nThat day He set me free,\nAnd made my heart His very throne,\nMy life is no longer mine,\nIm a prisoner of love divine\nAnd now I live to praise His name.\n[Verse]\n[Verse]\n[Chorus]\nWho I am, Lord, who I am,\nI can see now, who I am,\nA part of my Saviour\nA part of His Word,\nIts a revelation\n(Its predestination)\nOf who I am.\n[Verse]\n[Verse]\nOn Calvary He died\nTo redeem His lost Bride\nThe King of kings\nBecame my Saviour,\nThis is Gods great mystery,\nOf love expressed to me,\nThat Christ and I\nMight be made one!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

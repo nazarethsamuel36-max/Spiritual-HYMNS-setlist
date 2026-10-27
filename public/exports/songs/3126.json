@@ -1,52 +1,77 @@
 {
-  "id" : 3126,
-  "songNumber" : 2027,
-  "title" : "** छॊत्तॆय् बछ्हॊ कॊ पअस् अअनॆ दॊ",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Chote bachon ko paas aane do,"
-    }, {
-      "text" : "Aashish unhen bhi pane do"
-    }, {
-      "text" : "Unhen mana mat karo mere paas aane do"
-    }, {
-      "text" : "Swarg ka rajya hai aison ka। (२)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Nanha balak aaya Yeshu paas,"
-    }, {
-      "text" : "Apna khana laya Yeshu paas"
-    }, {
-      "text" : "Aashish maagi Prabhu Yeshu ne,"
-    }, {
-      "text" : "Khaya paanch hajar logon ne। (२)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Dena seekhen apne Prabhu ko,"
-    }, {
-      "text" : "Apna sab kuch de den usi ko"
-    }, {
-      "text" : "Dena lene se dhanya hai,"
-    }, {
-      "text" : "Yeshu ka yah anmol vachan hai। (२)"
-    } ]
-  } ]
+  "id": 3126,
+  "songNumber": 2027,
+  "title": "Chote bachon ko paas aane do",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Chote bachon ko paas aane do,"
+        },
+        {
+          "text": "Aashish unhen bhi pane do"
+        },
+        {
+          "text": "Unhen mana mat karo mere paas aane do"
+        },
+        {
+          "text": "Swarg ka rajya hai aison ka। (२)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Nanha balak aaya Yeshu paas,"
+        },
+        {
+          "text": "Apna khana laya Yeshu paas"
+        },
+        {
+          "text": "Aashish maagi Prabhu Yeshu ne,"
+        },
+        {
+          "text": "Khaya paanch hajar logon ne। (२)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Dena seekhen apne Prabhu ko,"
+        },
+        {
+          "text": "Apna sab kuch de den usi ko"
+        },
+        {
+          "text": "Dena lene se dhanya hai,"
+        },
+        {
+          "text": "Yeshu ka yah anmol vachan hai। (२)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nChote bachon ko paas aane do,\nAashish unhen bhi pane do\nUnhen mana mat karo mere paas aane do\nSwarg ka rajya hai aison ka। (२)\n\n[Verse 2]\nNanha balak aaya Yeshu paas,\nApna khana laya Yeshu paas\nAashish maagi Prabhu Yeshu ne,\nKhaya paanch hajar logon ne। (२)\n\n[Verse 3]\nDena seekhen apne Prabhu ko,\nApna sab kuch de den usi ko\nDena lene se dhanya hai,\nYeshu ka yah anmol vachan hai। (२)",
+  "lyrics": "[Verse 1]\nChote bachon ko paas aane do,\nAashish unhen bhi pane do\nUnhen mana mat karo mere paas aane do\nSwarg ka rajya hai aison ka। (२)\n\n[Verse 2]\nNanha balak aaya Yeshu paas,\nApna khana laya Yeshu paas\nAashish maagi Prabhu Yeshu ne,\nKhaya paanch hajar logon ne। (२)\n\n[Verse 3]\nDena seekhen apne Prabhu ko,\nApna sab kuch de den usi ko\nDena lene se dhanya hai,\nYeshu ka yah anmol vachan hai। (२)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Children"
+  ]
 }

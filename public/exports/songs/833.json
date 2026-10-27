@@ -1,260 +1,138 @@
 {
-  "id" : 833,
-  "songNumber" : 221,
-  "title" : "SING THE WONDROUS LOVE OF JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Sing the wondrous love of Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Sing His mercy and his grace;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "In the mansions, bright and blessed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "He'll prepare for us a place.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "When we all get to heaven,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "What a day of rejoicing that will be!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "When we all see Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "We'll sing and shout the victory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "While we walk the pilgrim pathway.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Clouds will overspread the sky;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "But when travelling days are over.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Not a shadow, not a sigh.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Let us then be true and faithful,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Trusting, serving, every day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Just one glimpse of him in glory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Will the toils of life repay.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Onward to the prize before us!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Soon His beauty we'll behold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Soon the pearly gates will open,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "We shall tread the streets of gold.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 833,
+  "songNumber": 221,
+  "title": "SING THE WONDROUS LOVE OF JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Sing the wondrous love of Jesus."
+        },
+        {
+          "text": "Sing His mercy and his grace;"
+        },
+        {
+          "text": "In the mansions, bright and blessed,"
+        },
+        {
+          "text": "Hell prepare for us a place."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "When we all get to heaven,"
+        },
+        {
+          "text": "What a day of rejoicing that will be!"
+        },
+        {
+          "text": "When we all see Jesus."
+        },
+        {
+          "text": "Well sing and shout the victory"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "While we walk the pilgrim pathway."
+        },
+        {
+          "text": "Clouds will overspread the sky;"
+        },
+        {
+          "text": "But when travelling days are over."
+        },
+        {
+          "text": "Not a shadow, not a sigh."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Let us then be true and faithful,"
+        },
+        {
+          "text": "Trusting, serving, every day;"
+        },
+        {
+          "text": "Just one glimpse of him in glory"
+        },
+        {
+          "text": "Will the toils of life repay."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Onward to the prize before us!"
+        },
+        {
+          "text": "Soon His beauty well behold,"
+        },
+        {
+          "text": "Soon the pearly gates will open,"
+        },
+        {
+          "text": "We shall tread the streets of gold."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]Sing the wondrous love of Jesus.\r\n[G]Sing His mercy [D]and his [G]grace;\r\n[G]In the mansions, [C]bright and [G]blessed,\r\n[G]Hell pre[D]pare for us a [G]place.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nWhen we [G]all get to [C]heaven,\r\nWhat a [G]day of re[D]joicing that will [G]be!\r\nWhen we [G]all see [C]Jesus.\r\nWell [G]sing and [D]shout the [G]victory\r\n[Verse]\r\n[Verse]\r\n[G]While we walk the [C]pilgrim [G]pathway.\r\n[G]Clouds will over[D]spread the [G]sky;\r\n[G]But when travelling [C]days are [G]over.\r\n[G]Not a [D]shadow, not a [G]sigh.\r\n[Verse]\r\n[Verse]\r\n[G]Let us then be [C]true and [G]faithful,\r\n[G]Trusting, serving, [D]every [G]day;\r\n[G]Just one glimpse of [C]him in [G]glory\r\n[G]Will the [D]toils of life re[G]pay.\r\n[Verse]\r\n[Verse]\r\n[G]Onward to the [C]prize be[G]fore us!\r\n[G]Soon His beauty [D]well be[G]hold,\r\n[G]Soon the pearly [C]gates will [G]open,\r\n[G]We shall [D]tread the streets of [G]gold.",
+  "lyrics": "[Verse]\r\n Sing the wondrous love of Jesus.\r\nSing His mercy and his grace;\r\nIn the mansions, bright and blessed,\r\nHell prepare for us a place.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nWhen we all get to heaven,\r\nWhat a day of rejoicing that will be!\r\nWhen we all see Jesus.\r\nWell sing and shout the victory\r\n[Verse]\r\n[Verse]\r\nWhile we walk the pilgrim pathway.\r\nClouds will overspread the sky;\r\nBut when travelling days are over.\r\nNot a shadow, not a sigh.\r\n[Verse]\r\n[Verse]\r\nLet us then be true and faithful,\r\nTrusting, serving, every day;\r\nJust one glimpse of him in glory\r\nWill the toils of life repay.\r\n[Verse]\r\n[Verse]\r\nOnward to the prize before us!\r\nSoon His beauty well behold,\r\nSoon the pearly gates will open,\r\nWe shall tread the streets of gold.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

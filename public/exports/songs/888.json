@@ -1,145 +1,65 @@
 {
-  "id" : 888,
-  "songNumber" : 276,
-  "title" : "YOUR LOVE IS TO ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Your love is to me like an overflowing stream (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Reaching out Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Lord I need Your love*, yes I need your love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "I need Your love to make it through.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "(*Grace.....Peace.....Joy)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Your Word is to me, like a lamp unto my feet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Your Word is to me, like a lamp unto my path,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Leading me Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Lord we need Your Word, yes we need Your Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "We need Your Word to make it through.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 888,
+  "songNumber": 276,
+  "title": "YOUR LOVE IS TO ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Your love is to me like an overflowing stream (2)"
+        },
+        {
+          "text": "Reaching out Lord."
+        },
+        {
+          "text": "Lord I need Your love, yes I need your love,"
+        },
+        {
+          "text": "I need Your love to make it through."
+        },
+        {
+          "text": "(Grace.....Peace.....Joy)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Your Word is to me, like a lamp unto my feet,"
+        },
+        {
+          "text": "Your Word is to me, like a lamp unto my path,"
+        },
+        {
+          "text": "Leading me Lord,"
+        },
+        {
+          "text": "Lord we need Your Word, yes we need Your Word,"
+        },
+        {
+          "text": "We need Your Word to make it through."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nYour [C]love is to [F]me like an [C]overflowing [F]stream (2)\r\n[C]Reaching out [G]Lord.\r\n[C]Lord I need Your [F]love, [C]yes I need your [G]love,\r\nI [C]need Your [F]love to [G]make it [C]through.\r\n(Grace.....Peace.....Joy)\r\n\r\n[Verse]\r\nYour [C]Word is to [F]me, like a [C]lamp unto my [F]feet,\r\nYour [C]Word is to [F]me, like a [C]lamp unto my [G]path,\r\n[C]Leading me [F]Lord,\r\n[C]Lord we need Your [F]Word, [C]yes we need Your [G]Word,\r\nWe [C]need Your [F]Word to [G]make it [C]through.",
+  "lyrics": "[Verse]\r\nYour love is to me like an overflowing stream (2)\r\nReaching out Lord.\r\nLord I need Your love, yes I need your love,\r\nI need Your love to make it through.\r\n(Grace.....Peace.....Joy)\r\n\r\n[Verse]\r\nYour Word is to me, like a lamp unto my feet,\r\nYour Word is to me, like a lamp unto my path,\r\nLeading me Lord,\r\nLord we need Your Word, yes we need Your Word,\r\nWe need Your Word to make it through.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

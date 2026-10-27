@@ -1,205 +1,119 @@
 {
-  "id" : 740,
-  "songNumber" : 128,
-  "title" : "AM I A SOLDIER OF THE CROSS",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Am I a soldier of the cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "A follower of the Lamb,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And shall I fear to own His cause,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Or blush to speak His Name?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "And when the battle's over, we shall wear a crown!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Yes, we shall wear a crown! Yes, we shall wear a crown!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "And when the battle's over, we shall wear a crown",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "In the new Jerusalem.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Wear a crown, wear a crown,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Wear a bright and shining crown.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And when the battle's over, we shall wear a crown"
-    }, {
-      "text" : "In the new Jerusalem."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Must I be carried to the skies",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "On flow'ry beds of ease,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "While others fought to win the prize,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And sailed through bloody seas ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Are there no foes for me to face?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Must I not stem the flood?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Is this vile world a friend to grace",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "To help me on to God?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Sure I must fight if I would reign,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Increase my courage, Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I'll bear the toil, endure the pain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Supported by Thy Word.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 740,
+  "songNumber": 128,
+  "title": "AM I A SOLDIER OF THE CROSS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Am I a soldier of the cross,"
+        },
+        {
+          "text": "A follower of the Lamb,"
+        },
+        {
+          "text": "And shall I fear to own His cause,"
+        },
+        {
+          "text": "Or blush to speak His Name?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And when the battle's over, we shall wear a crown!"
+        },
+        {
+          "text": "Yes, we shall wear a crown! Yes, we shall wear a crown!"
+        },
+        {
+          "text": "And when the battle's over, we shall wear a crown"
+        },
+        {
+          "text": "In the new Jerusalem."
+        },
+        {
+          "text": "Wear a crown, wear a crown,"
+        },
+        {
+          "text": "Wear a bright and shining crown."
+        },
+        {
+          "text": "And when the battle's over, we shall wear a crown"
+        },
+        {
+          "text": "In the new Jerusalem."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Must I be carried to the skies"
+        },
+        {
+          "text": "On flow'ry beds of ease,"
+        },
+        {
+          "text": "While others fought to win the prize,"
+        },
+        {
+          "text": "And sailed through bloody seas ?"
+        },
+        {
+          "text": "Are there no foes for me to face?"
+        },
+        {
+          "text": "Must I not stem the flood?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Is this vile world a friend to grace"
+        },
+        {
+          "text": "To help me on to God?"
+        },
+        {
+          "text": "Sure I must fight if I would reign,"
+        },
+        {
+          "text": "Increase my courage, Lord,"
+        },
+        {
+          "text": "I'll bear the toil, endure the pain,"
+        },
+        {
+          "text": "Supported by Thy Word."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nAm I a [D]soldier of the cross,\nA fol[G]lower of the [D]Lamb,\nAnd shall I [D]fear to own His [A]cause,\nOr blush to [D]speak His Name?\n\n[Chorus]\nAnd when the [D]battle's over, we shall wear a [G]crown!\nYes, we shall [D]wear a crown! Yes, we shall wear a [A]crown!\nAnd when the [D]battle's over, we shall wear a [G]crown\nIn the new Je[D]ru[A]sa[D]lem.\nWear a crown, wear a [D]crown,\nWear a bright and [G]shining [D]crown.\nAnd when the battle's over, we shall wear a crown\nIn the new Jerusalem.\n\n[Verse 2]\nMust I be [D]carried to the skies\nOn flow'ry [G]beds of [D]ease,\nWhile others [D]fought to win the [A]prize,\nAnd sailed through [D]bloody seas ?\nAre there no [D]foes for me to face?\nMust I not [G]stem the [D]flood?\n\n[Verse 3]\nIs this vile [D]world a friend to [A]grace\nTo help me [D]on to God?\nSure I must [D]fight if I would reign,\nIn[G]crease my courage, [D]Lord,\nI'll bear the [D]toil, endure the [A]pain,\nSup[D]ported by Thy [G]Word.",
+  "lyrics": "[Verse 1]\nAm I a soldier of the cross,\nA follower of the Lamb,\nAnd shall I fear to own His cause,\nOr blush to speak His Name?\n\n[Chorus]\nAnd when the battle's over, we shall wear a crown!\nYes, we shall wear a crown! Yes, we shall wear a crown!\nAnd when the battle's over, we shall wear a crown\nIn the new Jerusalem.\nWear a crown, wear a crown,\nWear a bright and shining crown.\nAnd when the battle's over, we shall wear a crown\nIn the new Jerusalem.\n\n[Verse 2]\nMust I be carried to the skies\nOn flow'ry beds of ease,\nWhile others fought to win the prize,\nAnd sailed through bloody seas ?\nAre there no foes for me to face?\nMust I not stem the flood?\n\n[Verse 3]\nIs this vile world a friend to grace\nTo help me on to God?\nSure I must fight if I would reign,\nIncrease my courage, Lord,\nI'll bear the toil, endure the pain,\nSupported by Thy Word.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

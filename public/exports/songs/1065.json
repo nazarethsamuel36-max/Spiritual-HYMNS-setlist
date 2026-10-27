@@ -1,227 +1,126 @@
 {
-  "id" : 1065,
-  "songNumber" : 87,
-  "title" : "यीशु को मैं सब कुछ देता",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु को मैं सब कुछ देता",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "सब कुछ अर्पण करता हूँ,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "प्रति दिन संगति उसकी"
-    }, {
-      "text" : "प्रेम विश्वास से करता हूँ ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "सब मैं देता हूँ , सब मैं देता हूँ ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "तेरे लिए प्यारे यीशु, सब मैं देता हूँ ।",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "यीशु को मैं सब कुछ देता,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "झुकता तेरे चरणों पर,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "छोडता हूँ सांसारिक इच्छा,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "मुझे ले और अपना कर ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "यीशु को मैं सब कुछ देता,"
-    }, {
-      "text" : "मुझे अपना कर प्रभु,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "हो पवित्र आत्मा साक्षी,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "तेरा हूँ और मेरा तू ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "यीशु को मैं सब कुछ देता,"
-    }, {
-      "text" : "तुझ से मैं न रहूँ दुर,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मुझ में भर प्यार और शक्ति",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "कर आशिषों से भरपूर ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "यीशु को मैं सब कुछ देता,"
-    }, {
-      "text" : "आत्मिक आग अब दिल में है,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "पूरी मुक्ति का है आनन्द,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "उसके नामकी होवे जय ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 1065,
+  "songNumber": 87,
+  "title": "यीशु को मैं सब कुछ देता",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "यीशु को मैं सब कुछ देता"
+        },
+        {
+          "text": "सब कुछ अर्पण करता हूँ,"
+        },
+        {
+          "text": "प्रति दिन संगति उसकी"
+        },
+        {
+          "text": "प्रेम विश्वास से करता हूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सब मैं देता हूँ , सब मैं देता हूँ ,"
+        },
+        {
+          "text": "तेरे लिए प्यारे यीशु, सब मैं देता हूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु को मैं सब कुछ देता,"
+        },
+        {
+          "text": "झुकता तेरे चरणों पर,"
+        },
+        {
+          "text": "छोडता हूँ सांसारिक इच्छा,"
+        },
+        {
+          "text": "मुझे ले और अपना कर ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु को मैं सब कुछ देता,"
+        },
+        {
+          "text": "मुझे अपना कर प्रभु,"
+        },
+        {
+          "text": "हो पवित्र आत्मा साक्षी,"
+        },
+        {
+          "text": "तेरा हूँ और मेरा तू ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु को मैं सब कुछ देता,"
+        },
+        {
+          "text": "तुझ से मैं न रहूँ दुर,"
+        },
+        {
+          "text": "मुझ में भर प्यार और शक्ति"
+        },
+        {
+          "text": "कर आशिषों से भरपूर ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु को मैं सब कुछ देता,"
+        },
+        {
+          "text": "आत्मिक आग अब दिल में है,"
+        },
+        {
+          "text": "पूरी मुक्ति का है आनन्द,"
+        },
+        {
+          "text": "उसके नामकी होवे जय ।"
+        }
+      ]
+    }
+  ],
+  "chords": "\r\n[D]यीशु को मैं [G]सब कुछ [D]देता\r\n[A]सब कुछ अर्पण [D]करता हूँ,\r\nप्रति दिन संगति उसकी\r\n[A]प्रेम विश्वास से [D]करता हूँ ।\r\n\r\n[Verse]\r\n[D]सब मैं [G]देता हूँ , [D]सब मैं [A]देता हूँ ,\r\n[Bm]तेरे लिए [G]प्यारे यी[D]शु, [A]सब मैं [D]देता हूँ ।\r\n\r\n[Verse]\r\n[D]यीशु को मैं [G]सब कुछ [D]देता,\r\n[A]झुकता तेरे [D]चरणों पर,\r\n[Bm]छोडता हूँ सांसारिक इ[G]च्छा,\r\n[A]मुझे ले और [D]अपना कर ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\n[A]मुझे अपना [D]कर प्रभु,\r\n[Bm]हो पवित्र आ[G]त्मा साक्षी,\r\n[A]तेरा हूँ और [D]मेरा तू ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\n[A]तुझ से मैं न र[D]हूँ दुर,\r\n[Bm]मुझ में भर प्यार [G]और शक्ति\r\n[A]कर आशिषों से [D]भरपूर ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\n[A]आत्मिक आग अब [D]दिल में है,\r\n[Bm]पूरी मुक्ति का [G]है आनन्द,\r\n[A]उसके नामकी [D]होवे जय ।",
+  "lyrics": "\r\nयीशु को मैं सब कुछ देता\r\nसब कुछ अर्पण करता हूँ,\r\nप्रति दिन संगति उसकी\r\nप्रेम विश्वास से करता हूँ ।\r\n\r\n[Verse]\r\nसब मैं देता हूँ , सब मैं देता हूँ ,\r\nतेरे लिए प्यारे यीशु, सब मैं देता हूँ ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\nझुकता तेरे चरणों पर,\r\nछोडता हूँ सांसारिक इच्छा,\r\nमुझे ले और अपना कर ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\nमुझे अपना कर प्रभु,\r\nहो पवित्र आत्मा साक्षी,\r\nतेरा हूँ और मेरा तू ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\nतुझ से मैं न रहूँ दुर,\r\nमुझ में भर प्यार और शक्ति\r\nकर आशिषों से भरपूर ।\r\n\r\n[Verse]\r\nयीशु को मैं सब कुछ देता,\r\nआत्मिक आग अब दिल में है,\r\nपूरी मुक्ति का है आनन्द,\r\nउसके नामकी होवे जय ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Surrender",
+    "Wedding"
+  ]
 }

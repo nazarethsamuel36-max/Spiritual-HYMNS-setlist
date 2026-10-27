@@ -1,70 +1,47 @@
 {
-  "id" : 933,
-  "songNumber" : 54,
-  "title" : "BY HIS WORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "By His Word I have no fear in me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "By His Word death cannot swallow me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "By His Word I have prosperity",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "Bm",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "By His Word sickness can't dwell in me,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "By His Word I walk in victory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "By His Word I've been set free.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 933,
+  "songNumber": 54,
+  "title": "BY HIS WORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "By His Word I have no fear in me,"
+        },
+        {
+          "text": "By His Word death cannot swallow me,"
+        },
+        {
+          "text": "By His Word I have prosperity"
+        },
+        {
+          "text": "By His Word sickness can't dwell in me,"
+        },
+        {
+          "text": "By His Word I walk in victory"
+        },
+        {
+          "text": "By His Word I've been set free."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]By His Word I have no fear in me,\n[G]By His Word death cannot [D]swallow me,\n[D]By His Word I have pros[Bm]perity\n[Em]By His Word [A]sickness can't [D]dwell in me,\n[D]By His Word I walk in victory\n[G]By His Word I've [A]been set [D]free.",
+  "lyrics": "[Verse]\nBy His Word I have no fear in me,\nBy His Word death cannot swallow me,\nBy His Word I have prosperity\nBy His Word sickness can't dwell in me,\nBy His Word I walk in victory\nBy His Word I've been set free.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

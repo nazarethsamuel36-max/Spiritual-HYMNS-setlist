@@ -1,229 +1,98 @@
 {
-  "id" : 990,
-  "songNumber" : 12,
-  "title" : "हम तो जलते दीप हैं, यीशु की ज्योती के",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "हम तो जलते दीप हैं, यीशु की ज्योती के",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "Am",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "जब तक हम है इस जहाँ में जलते जाना है ।",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 24
-      }, {
-        "chord" : "Am",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "अंधियारे डगर पे हो, आँधियाँ कई",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 20
-      }, {
-        "chord" : "Am",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "हर डगर पे ज्योत यीशु की फैलाना है ।",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 26
-      }, {
-        "chord" : "Am",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "जलना जिन्दगी हमारी यीशु के लिए"
-    }, {
-      "text" : "जिसने दाग हर गुनाह के मेरे धो दिए"
-    }, {
-      "text" : "जिसने सुलीपर जलाई ज्योत प्रेम की",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "F",
-        "position" : 24
-      }, {
-        "chord" : "Am",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "वही ज्योत आज मेरे दिल में जल रही",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "F",
-        "position" : 26
-      }, {
-        "chord" : "Am",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "कोई भटका हो डगर पे बेपनाह सा",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "F",
-        "position" : 22
-      }, {
-        "chord" : "Am",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "आज सुली के तले उसे बुलाना है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "Am",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "जल रही थी जिन्दगी यहां गुनाहो में",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "F",
-        "position" : 25
-      }, {
-        "chord" : "Am",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "प्रभुने तुमको ही रखा अपनी निगाहो में",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "F",
-        "position" : 26
-      }, {
-        "chord" : "Am",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "दे रहा आवाजं सबको, आओ मेरे पास",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "F",
-        "position" : 19
-      }, {
-        "chord" : "Am",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "पास रखुंगा हमेशा, होते क्यो निराश",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "F",
-        "position" : 18
-      }, {
-        "chord" : "Am",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "जिसने पाया है हमे, दे के अपनी जान",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "F",
-        "position" : 27
-      }, {
-        "chord" : "Am",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "उस मसीह की हर घडी महिमा गाना है।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 18
-      }, {
-        "chord" : "Am",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 990,
+  "songNumber": 12,
+  "title": "हम तो जलते दीप हैं, यीशु की ज्योती के",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "हम तो जलते दीप हैं, यीशु की ज्योती के"
+        },
+        {
+          "text": "जब तक हम है इस जहाँ में जलते जाना है ।"
+        },
+        {
+          "text": "अंधियारे डगर पे हो, आँधियाँ कई"
+        },
+        {
+          "text": "हर डगर पे ज्योत यीशु की फैलाना है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जलना जिन्दगी हमारी यीशु के लिए"
+        },
+        {
+          "text": "जिसने दाग हर गुनाह के मेरे धो दिए"
+        },
+        {
+          "text": "जिसने सुलीपर जलाई ज्योत प्रेम की"
+        },
+        {
+          "text": "वही ज्योत आज मेरे दिल में जल रही"
+        },
+        {
+          "text": "कोई भटका हो डगर पे बेपनाह सा"
+        },
+        {
+          "text": "आज सुली के तले उसे बुलाना है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जल रही थी जिन्दगी यहां गुनाहो में"
+        },
+        {
+          "text": "प्रभुने तुमको ही रखा अपनी निगाहो में"
+        },
+        {
+          "text": "दे रहा आवाजं सबको, आओ मेरे पास"
+        },
+        {
+          "text": "पास रखुंगा हमेशा, होते क्यो निराश"
+        },
+        {
+          "text": "जिसने पाया है हमे, दे के अपनी जान"
+        },
+        {
+          "text": "उस मसीह की हर घडी महिमा गाना है।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [Am]हम तो जलते [G]दीप हैं, [Am]यीशु की ज्योती के\r\n[Am]जब तक हम है इस ज[G]हाँ में [F]जलते जाना [Am]है ।\r\n[Am]अंधियारे डगर पे [G]हो, [F]आँधियाँ [Am]कई\r\n[Am]हर डगर पे ज्योत [G]यीशु की फै[F]लाना [Am]है ।\r\n[Verse]\r\n[Verse]\r\nजलना जिन्दगी हमारी यीशु के लिए\r\nजिसने दाग हर गुनाह के मेरे धो दिए\r\n[Am]जिसने सुलीपर ज[G]लाई ज्योत [F]प्रेम [Am]की\r\n[Am]वही ज्योत आज मे[G]रे दिल में [F]जल र[Am]ही\r\n[Am]कोई भटका हो ड[G]गर पे बेप[F]नाह [Am]सा\r\n[G]आज सुली के तले [F]उसे बुलाना [Am]है ।\r\n[Verse]\r\n[Verse]\r\n[Am]जल रही थी जिन्दगी [G]यहां गु[F]नाहो [Am]में\r\n[Am]प्रभुने तुमको ही [G]रखा अपनी [F]निगाहो [Am]में\r\n[Am]दे रहा आ[G]वाजं सबको, [F]आओ मेरे [Am]पास\r\n[Am]पास रखुंगा ह[G]मेशा, [F]होते क्यो नि[Am]राश\r\n[Am]जिसने पाया है ह[G]मे, दे के अप[F]नी [Am]जान\r\n[G]उस मसीह की हर घडी [F]महिमा गाना [Am]है।",
+  "lyrics": "[Chorus]\r\n हम तो जलते दीप हैं, यीशु की ज्योती के\r\nजब तक हम है इस जहाँ में जलते जाना है ।\r\nअंधियारे डगर पे हो, आँधियाँ कई\r\nहर डगर पे ज्योत यीशु की फैलाना है ।\r\n[Verse]\r\n[Verse]\r\nजलना जिन्दगी हमारी यीशु के लिए\r\nजिसने दाग हर गुनाह के मेरे धो दिए\r\nजिसने सुलीपर जलाई ज्योत प्रेम की\r\nवही ज्योत आज मेरे दिल में जल रही\r\nकोई भटका हो डगर पे बेपनाह सा\r\nआज सुली के तले उसे बुलाना है ।\r\n[Verse]\r\n[Verse]\r\nजल रही थी जिन्दगी यहां गुनाहो में\r\nप्रभुने तुमको ही रखा अपनी निगाहो में\r\nदे रहा आवाजं सबको, आओ मेरे पास\r\nपास रखुंगा हमेशा, होते क्यो निराश\r\nजिसने पाया है हमे, दे के अपनी जान\r\nउस मसीह की हर घडी महिमा गाना है।",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

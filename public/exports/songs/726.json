@@ -1,52 +1,44 @@
 {
-  "id" : 726,
-  "songNumber" : 114,
-  "title" : "HE'S SETTING ME FREE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He's setting me free, this Holy Ghost power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "He's setting me free, this very hour,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "He's flooding my soul, He's making me whole,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "He's setting me free, free, free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "This Holy Ghost power.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    } ]
-  } ]
+  "id": 726,
+  "songNumber": 114,
+  "title": "HE'S SETTING ME FREE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He's setting me free, this Holy Ghost power,"
+        },
+        {
+          "text": "He's setting me free, this very hour,"
+        },
+        {
+          "text": "He's flooding my soul, He's making me whole,"
+        },
+        {
+          "text": "He's setting me free, free, free,"
+        },
+        {
+          "text": "This Holy Ghost power."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nHe's [G]setting me free, this Holy Ghost power,\r\nHe's [D]setting me free, this very hour,\r\nHe's [G]flooding my soul, He's [C]making me whole,\r\nHe's [G]setting me free, free, [D]free,\r\nThis [G]Holy Ghost power.",
+  "lyrics": "[Verse]\r\nHe's setting me free, this Holy Ghost power,\r\nHe's setting me free, this very hour,\r\nHe's flooding my soul, He's making me whole,\r\nHe's setting me free, free, free,\r\nThis Holy Ghost power.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

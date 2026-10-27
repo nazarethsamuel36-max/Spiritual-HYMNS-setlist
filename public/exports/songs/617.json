@@ -1,322 +1,142 @@
 {
-  "id" : 617,
-  "songNumber" : 310,
-  "title" : "CALLED TO WALK IN THE WAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Called to walk in the way of the man who stilled the water;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Called to walk in the way of the man who calmed the sea:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Called to live in the Word and be free to live for others;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Called to walk in the way of the man from Galilee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Hear the Word that's the Word",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "that's been said for all God's creatures;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Hear the Word that's the Word"
-    }, {
-      "text" : "that's been said for you and me;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "It's the Word about life you are called to give to your brother;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "It's the Word that will give him his possibility.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "The Lord has given a land of good things,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "I will press in and make them mine,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "I'll know His power, I'll know His glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "And in His kingdom I will shine.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "With the high praises of God in our mouth",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "And a two-edged sword in our hand",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "We'll march right on to the victory side,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Right into Canaan's land.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Gird up your armour, ye sons of Zion,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Gird up your armour, let's go to war,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "We'll win the battle with great rejoicing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "And so we'll praise Him more and more.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "Praise ye the Lord always,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Praise ye the Lord always,"
-    }, {
-      "text" : "Praise ye the Lord with all your heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Praise ye the Lord with all your heart always,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Yes God is good (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "God is good to me.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  } ]
+  "id": 617,
+  "songNumber": 310,
+  "title": "CALLED TO WALK IN THE WAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Called to walk in the way of the man who stilled the water;"
+        },
+        {
+          "text": "Called to walk in the way of the man who calmed the sea:"
+        },
+        {
+          "text": "Called to live in the Word and be free to live for others;"
+        },
+        {
+          "text": "Called to walk in the way of the man from Galilee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hear the Word that's the Word"
+        },
+        {
+          "text": "that's been said for all God's creatures;"
+        },
+        {
+          "text": "Hear the Word that's the Word"
+        },
+        {
+          "text": "that's been said for you and me;"
+        },
+        {
+          "text": "It's the Word about life you are called to give to your brother;"
+        },
+        {
+          "text": "It's the Word that will give him his possibility."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The Lord has given a land of good things,"
+        },
+        {
+          "text": "I will press in and make them mine,"
+        },
+        {
+          "text": "I'll know His power, I'll know His glory,"
+        },
+        {
+          "text": "And in His kingdom I will shine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "With the high praises of God in our mouth"
+        },
+        {
+          "text": "And a two-edged sword in our hand"
+        },
+        {
+          "text": "We'll march right on to the victory side,"
+        },
+        {
+          "text": "Right into Canaan's land."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Gird up your armour, ye sons of Zion,"
+        },
+        {
+          "text": "Gird up your armour, let's go to war,"
+        },
+        {
+          "text": "We'll win the battle with great rejoicing,"
+        },
+        {
+          "text": "And so we'll praise Him more and more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise ye the Lord always,"
+        },
+        {
+          "text": "Praise ye the Lord always,"
+        },
+        {
+          "text": "Praise ye the Lord with all your heart,"
+        },
+        {
+          "text": "Praise ye the Lord with all your heart always,"
+        },
+        {
+          "text": "Yes God is good (3)"
+        },
+        {
+          "text": "God is good to me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]Called to walk in the way of the man who [C]stilled the water;\r\n[G]Called to walk in the way of the man who [D]calmed the sea:\r\n[G]Called to live in the Word and be free to [C]live for others;\r\n[G]Called to walk in the [D]way of the man from Gali[G]lee.\r\n\r\n[Verse]\r\n[G]Hear the Word that's the Word\r\nthat's been [C]said for all God's creatures;\r\nHear the Word that's the Word\r\nthat's been [D]said for you and me;\r\n[G]It's the Word about life you are called to [C]give to your brother;\r\n[G]It's the Word that will [D]give him his possibili[G]ty.\r\n\r\n[Verse]\r\nThe [G]Lord has given a [C]land of good [G]things,\r\nI [C]will press [G]in and [D]make them [G]mine,\r\nI'll [G]know His power, I'll [C]know His [G]glory,\r\nAnd [C]in His [G]kingdom [D]I will [G]shine.\r\n\r\n[Verse]\r\nWith the [G]high praises of [C]God in our [G]mouth\r\nAnd a [C]two-edged [G]sword in our [D]hand\r\nWe'll [G]march right on to the [C]victory [G]side,\r\n[C]Right into [G]Canaan's [D]land.\r\n\r\n[Verse]\r\n[G]Gird up your armour, ye [C]sons of [G]Zion,\r\n[C]Gird up your armour, [G]let's go to [D]war,\r\nWe'll [G]win the battle with [C]great re[G]joicing,\r\nAnd [C]so we'll [G]praise Him [D]more and [G]more.\r\n\r\n[Verse]\r\n[G]Praise ye the Lord [C][D]always,\r\nPraise ye the Lord always,\r\n[G]Praise ye the Lord with [C]all your heart,\r\n[G]Praise ye the Lord with [D]all your heart [G]always,\r\nYes [C]God is [G]good (3)\r\n[D]God is good to [G]me.",
+  "lyrics": "[Verse]\r\nCalled to walk in the way of the man who stilled the water;\r\nCalled to walk in the way of the man who calmed the sea:\r\nCalled to live in the Word and be free to live for others;\r\nCalled to walk in the way of the man from Galilee.\r\n\r\n[Verse]\r\nHear the Word that's the Word\r\nthat's been said for all God's creatures;\r\nHear the Word that's the Word\r\nthat's been said for you and me;\r\nIt's the Word about life you are called to give to your brother;\r\nIt's the Word that will give him his possibility.\r\n\r\n[Verse]\r\nThe Lord has given a land of good things,\r\nI will press in and make them mine,\r\nI'll know His power, I'll know His glory,\r\nAnd in His kingdom I will shine.\r\n\r\n[Verse]\r\nWith the high praises of God in our mouth\r\nAnd a two-edged sword in our hand\r\nWe'll march right on to the victory side,\r\nRight into Canaan's land.\r\n\r\n[Verse]\r\nGird up your armour, ye sons of Zion,\r\nGird up your armour, let's go to war,\r\nWe'll win the battle with great rejoicing,\r\nAnd so we'll praise Him more and more.\r\n\r\n[Verse]\r\nPraise ye the Lord always,\r\nPraise ye the Lord always,\r\nPraise ye the Lord with all your heart,\r\nPraise ye the Lord with all your heart always,\r\nYes God is good (3)\r\nGod is good to me.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

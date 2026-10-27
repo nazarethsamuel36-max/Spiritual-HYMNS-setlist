@@ -1,223 +1,113 @@
 {
-  "id" : 824,
-  "songNumber" : 212,
-  "title" : "I WILL MEET YOU IN THE MORNING",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will meet you in the morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Just inside the Eastern Gate,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Then be ready, faithful pilgrim,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Lest with you it be too late.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I will meet you, I will meet you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Just inside the Eastern Gate over there;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "I will meet you, I will meet you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "I will meet you in the morning over there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "If you hasten off to glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Linger near the Eastern Gate,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "For I'm coming in the morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "So you'll not have long to wait.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Keep your lamps all trimmed and burning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "For the Bridegroom watch and wait;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "He'll be with us at the meeting,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Just inside the Eastern Gate.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "O the joys of that glad meeting",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "With the saints who for us wait,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "What a blessed, happy meeting,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Just inside the Eastern Gate."
-    } ]
-  } ]
+  "id": 824,
+  "songNumber": 212,
+  "title": "I WILL MEET YOU IN THE MORNING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I will meet you in the morning,"
+        },
+        {
+          "text": "Just inside the Eastern Gate,"
+        },
+        {
+          "text": "Then be ready, faithful pilgrim,"
+        },
+        {
+          "text": "Lest with you it be too late."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I will meet you, I will meet you"
+        },
+        {
+          "text": "Just inside the Eastern Gate over there;"
+        },
+        {
+          "text": "I will meet you, I will meet you,"
+        },
+        {
+          "text": "I will meet you in the morning over there."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "If you hasten off to glory,"
+        },
+        {
+          "text": "Linger near the Eastern Gate,"
+        },
+        {
+          "text": "For Im coming in the morning,"
+        },
+        {
+          "text": "So youll not have long to wait."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Keep your lamps all trimmed and burning,"
+        },
+        {
+          "text": "For the Bridegroom watch and wait;"
+        },
+        {
+          "text": "Hell be with us at the meeting,"
+        },
+        {
+          "text": "Just inside the Eastern Gate."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "O the joys of that glad meeting"
+        },
+        {
+          "text": "With the saints who for us wait,"
+        },
+        {
+          "text": "What a blessed, happy meeting,"
+        },
+        {
+          "text": "Just inside the Eastern Gate."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nI will [F]meet you in the [Bb]morning,\r\nJust in[F]side the Eastern [C]Gate,\r\nThen be [F]ready, faithful [Bb]pilgrim,\r\nLest with [F]you it [C]be too [F]late.\r\n\r\n[Chorus]\r\nI will [F]meet you, [Bb]I will [F]meet you\r\nJust in[F]side the Eastern [C]Gate over [F]there;\r\nI will meet you, [Bb]I will [F]meet you,\r\nI will [F]meet you in the [C]morning over [F]there.\r\n\r\n[Verse 2]\r\nIf you [F]hasten off to [Bb]glory,\r\nLinger [F]near the Eastern [C]Gate,\r\nFor Im [F]coming in the [Bb]morning,\r\nSo youll [F]not have [C]long to [F]wait.\r\n\r\n[Verse 3]\r\nKeep your [F]lamps all trimmed and [Bb]burning,\r\nFor the [F]Bridegroom watch and [C]wait;\r\nHell be [F]with us at the [Bb]meeting,\r\nJust in[F]side the [C]Eastern [F]Gate.\r\n\r\n[Verse 4]\r\nO the [F]joys of that glad [Bb]meeting\r\nWith the [F]saints who for us [C]wait,\r\nWhat a [F]blessed, happy [Bb]meeting,\r\nJust inside the Eastern Gate.",
+  "lyrics": "[Verse 1]\r\nI will meet you in the morning,\r\nJust inside the Eastern Gate,\r\nThen be ready, faithful pilgrim,\r\nLest with you it be too late.\r\n\r\n[Chorus]\r\nI will meet you, I will meet you\r\nJust inside the Eastern Gate over there;\r\nI will meet you, I will meet you,\r\nI will meet you in the morning over there.\r\n\r\n[Verse 2]\r\nIf you hasten off to glory,\r\nLinger near the Eastern Gate,\r\nFor Im coming in the morning,\r\nSo youll not have long to wait.\r\n\r\n[Verse 3]\r\nKeep your lamps all trimmed and burning,\r\nFor the Bridegroom watch and wait;\r\nHell be with us at the meeting,\r\nJust inside the Eastern Gate.\r\n\r\n[Verse 4]\r\nO the joys of that glad meeting\r\nWith the saints who for us wait,\r\nWhat a blessed, happy meeting,\r\nJust inside the Eastern Gate.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

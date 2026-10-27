@@ -1,178 +1,118 @@
 {
-  "id" : 1022,
-  "songNumber" : 44,
-  "title" : "बोलो जय मिलकर जय-बोलो जय यीशु की जय",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "बोलो जय मिलकर जय-बोलो जय यीशु की जय",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "बोलो जय मिलकर जय-बोलो जय यीशु की जय"
-    }, {
-      "text" : "बोलो जय जय जय ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "प्रेम की तेरी यह ही रीत",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मन में भर दे अपनी प्रीत,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "तेरे प्रेम के गाएं गीत ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "क्रूसपर अपना खून बहा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "मुझ पापी को दी शिफा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "मन मेरे तू बोल सदा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तेरे कुदरत की यह शान",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "खुद ही दाता खुद ही दान,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "पूरे कर मन के अरमान ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "खिदमत अपनी ले मुझ से",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "इस मन्दिर में तू बसे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "जग में तेरा नाम रहे ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 1022,
+  "songNumber": 44,
+  "title": "बोलो जय मिलकर जय-बोलो जय यीशु की जय",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "बोलो जय मिलकर जय-बोलो जय यीशु की जय"
+        },
+        {
+          "text": "बोलो जय मिलकर जय-बोलो जय यीशु की जय"
+        },
+        {
+          "text": "बोलो जय जय जय ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रेम की तेरी यह ही रीत"
+        },
+        {
+          "text": "मन में भर दे अपनी प्रीत,"
+        },
+        {
+          "text": "तेरे प्रेम के गाएं गीत ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्रूसपर अपना खून बहा"
+        },
+        {
+          "text": "मुझ पापी को दी शिफा,"
+        },
+        {
+          "text": "मन मेरे तू बोल सदा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरे कुदरत की यह शान"
+        },
+        {
+          "text": "खुद ही दाता खुद ही दान,"
+        },
+        {
+          "text": "पूरे कर मन के अरमान ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "खिदमत अपनी ले मुझ से"
+        },
+        {
+          "text": "इस मन्दिर में तू बसे,"
+        },
+        {
+          "text": "जग में तेरा नाम रहे ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [D]बोलो जय मिलकर [A]जय-बोलो जय यीशु की [D]जय\nबोलो जय मिलकर जय-बोलो जय यीशु की जय\n[G]बोलो जय [A]जय [D]जय ।\n[Verse]\n[Verse]\n[D]प्रेम की तेरी [A]यह ही रीत\n[G]मन में भर दे [A]अपनी प्रीत,\n[D]तेरे प्रेम के [A]गाएं [D]गीत ।\n[Verse]\n[Verse]\n[D]क्रूसपर अपना [A]खून बहा\n[G]मुझ पापी को [A]दी शिफा,\n[D]मन मेरे तू [A]बोल स[D]दा ।\n[Verse]\n[Verse]\n[D]तेरे कुदरत [A]की यह शान\n[G]खुद ही दाता [A]खुद ही दान,\n[D]पूरे कर मन [A]के अर[D]मान ।\n[Verse]\n[Verse]\n[D]खिदमत अपनी [A]ले मुझ से\n[G]इस मन्दिर में [A]तू बसे,\n[D]जग में तेरा [A]नाम र[D]हे ।",
+  "lyrics": "[Chorus]\n बोलो जय मिलकर जय-बोलो जय यीशु की जय\nबोलो जय मिलकर जय-बोलो जय यीशु की जय\nबोलो जय जय जय ।\n[Verse]\n[Verse]\nप्रेम की तेरी यह ही रीत\nमन में भर दे अपनी प्रीत,\nतेरे प्रेम के गाएं गीत ।\n[Verse]\n[Verse]\nक्रूसपर अपना खून बहा\nमुझ पापी को दी शिफा,\nमन मेरे तू बोल सदा ।\n[Verse]\n[Verse]\nतेरे कुदरत की यह शान\nखुद ही दाता खुद ही दान,\nपूरे कर मन के अरमान ।\n[Verse]\n[Verse]\nखिदमत अपनी ले मुझ से\nइस मन्दिर में तू बसे,\nजग में तेरा नाम रहे ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

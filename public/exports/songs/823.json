@@ -1,263 +1,149 @@
 {
-  "id" : 823,
-  "songNumber" : 211,
-  "title" : "I'VE WANDERED FAR AWAY FROM GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've wandered far away from God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Now I'm coming home;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "The paths of sin too long I've trod,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Coming home, coming home,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Nevermore to roam;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Open wide Thine arms of love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I've wasted many precious years,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Now I'm coming home;"
-    }, {
-      "text" : "I now repent with bitter tears,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I'm tired of sin and straying, Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Now I'm coming home;"
-    }, {
-      "text" : "I'll trust Thy love, believe Thy Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "My soul is sick, my heart is sore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Now I'm coming home;"
-    }, {
-      "text" : "My strength renew, my hope restore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "My only hope, my only plea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Now I'm coming home;"
-    }, {
-      "text" : "That Jesus died, and died for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "I need His cleansing blood, I know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Now I'm coming home;"
-    }, {
-      "text" : "O wash me whiter than the snow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Lord, I'm coming home."
-    } ]
-  } ]
+  "id": 823,
+  "songNumber": 211,
+  "title": "I'VE WANDERED FAR AWAY FROM GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Ive wandered far away from God,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "The paths of sin too long Ive trod,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Coming home, coming home,"
+        },
+        {
+          "text": "Nevermore to roam;"
+        },
+        {
+          "text": "Open wide Thine arms of love,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Ive wasted many precious years,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "I now repent with bitter tears,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Im tired of sin and straying, Lord,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "Ill trust Thy love, believe Thy Word,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "My soul is sick, my heart is sore,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "My strength renew, my hope restore,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "My only hope, my only plea,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "That Jesus died, and died for me,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "I need His cleansing blood, I know,"
+        },
+        {
+          "text": "Now Im coming home;"
+        },
+        {
+          "text": "O wash me whiter than the snow,"
+        },
+        {
+          "text": "Lord, Im coming home."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[F]Ive wandered far a[Bb]way from [F]God,\r\n[F]Now Im [C]coming [F]home;\r\n[F]The paths of sin too [Bb]long Ive [F]trod,\r\n[F]Lord, Im [C]coming [F]home.\r\n\r\n[Chorus]\r\n[F]Coming home, [Bb]coming [F]home,\r\n[F]Nevermore to [C]roam;\r\n[F]Open wide Thine [Bb]arms of [F]love,\r\nLord, Im coming home.\r\n\r\n[Verse 2]\r\n[F]Ive wasted many [Bb]precious [F]years,\r\nNow Im coming home;\r\n[F]I now repent with [Bb]bitter [F]tears,\r\nLord, Im coming home.\r\n\r\n[Verse 3]\r\n[F]Im tired of sin and [Bb]straying, [F]Lord,\r\nNow Im coming home;\r\n[F]Ill trust Thy love, be[Bb]lieve Thy [F]Word,\r\nLord, Im coming home.\r\n\r\n[Verse 4]\r\n[F]My soul is sick, my [Bb]heart is [F]sore,\r\nNow Im coming home;\r\n[F]My strength renew, my [Bb]hope re[F]store,\r\nLord, Im coming home.\r\n\r\n[Verse 5]\r\n[F]My only hope, my [Bb]only [F]plea,\r\nNow Im coming home;\r\n[F]That Jesus died, and [Bb]died for [F]me,\r\nLord, Im coming home.\r\n\r\n[Verse 6]\r\n[F]I need His cleansing [Bb]blood, I [F]know,\r\nNow Im coming home;\r\n[F]O wash me whiter [Bb]than the [F]snow,\r\nLord, Im coming home.",
+  "lyrics": "[Verse 1]\r\nIve wandered far away from God,\r\nNow Im coming home;\r\nThe paths of sin too long Ive trod,\r\nLord, Im coming home.\r\n\r\n[Chorus]\r\nComing home, coming home,\r\nNevermore to roam;\r\nOpen wide Thine arms of love,\r\nLord, Im coming home.\r\n\r\n[Verse 2]\r\nIve wasted many precious years,\r\nNow Im coming home;\r\nI now repent with bitter tears,\r\nLord, Im coming home.\r\n\r\n[Verse 3]\r\nIm tired of sin and straying, Lord,\r\nNow Im coming home;\r\nIll trust Thy love, believe Thy Word,\r\nLord, Im coming home.\r\n\r\n[Verse 4]\r\nMy soul is sick, my heart is sore,\r\nNow Im coming home;\r\nMy strength renew, my hope restore,\r\nLord, Im coming home.\r\n\r\n[Verse 5]\r\nMy only hope, my only plea,\r\nNow Im coming home;\r\nThat Jesus died, and died for me,\r\nLord, Im coming home.\r\n\r\n[Verse 6]\r\nI need His cleansing blood, I know,\r\nNow Im coming home;\r\nO wash me whiter than the snow,\r\nLord, Im coming home.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

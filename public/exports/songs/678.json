@@ -1,124 +1,65 @@
 {
-  "id" : 678,
-  "songNumber" : 371,
-  "title" : "I WILL NEVER FORGET YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will never forget you my people",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "I have carved you on the palm of my hand",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "I will never forget you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I will not leave you orphaned",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I will never forget my own.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Does a mother forget her baby?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Or a woman the child within the womb?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Yet even if these forget",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Yes, even if these forget",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "I will never forget my own."
-    } ]
-  } ]
+  "id": 678,
+  "songNumber": 371,
+  "title": "I WILL NEVER FORGET YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will never forget you my people"
+        },
+        {
+          "text": "I have carved you on the palm of my hand"
+        },
+        {
+          "text": "I will never forget you"
+        },
+        {
+          "text": "I will not leave you orphaned"
+        },
+        {
+          "text": "I will never forget my own."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Does a mother forget her baby?"
+        },
+        {
+          "text": "Or a woman the child within the womb?"
+        },
+        {
+          "text": "Yet even if these forget"
+        },
+        {
+          "text": "Yes, even if these forget"
+        },
+        {
+          "text": "I will never forget my own."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nI will [D]never for[G]get you my [D]people\nI have [D]carved you on the [G]palm of my [A]hand\nI will [D]never for[G]get [D]you\nI will [G]not leave you [D]orphaned\nI will [A]never for[D]get my own.\n\n[Verse]\nDoes a [D]mother for[G]get her [D]baby?\nOr a [D]woman the [G]child within the [A]womb?\nYet [G]even if [D]these for[A]get\nYes, [G]even if [D]these for[A]get\nI will never forget my own.",
+  "lyrics": "[Verse]\nI will never forget you my people\nI have carved you on the palm of my hand\nI will never forget you\nI will not leave you orphaned\nI will never forget my own.\n\n[Verse]\nDoes a mother forget her baby?\nOr a woman the child within the womb?\nYet even if these forget\nYes, even if these forget\nI will never forget my own.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

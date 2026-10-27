@@ -1,129 +1,62 @@
 {
-  "id" : 676,
-  "songNumber" : 369,
-  "title" : "I WILL SERVE THEE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will serve Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Because I love Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "You have given life to me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "I was nothing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Before you found me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "You have given life to me,"
-    }, {
-      "text" : "Heartaches, broken pieces,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Ruined lives are why",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "You died on Calvary,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Your touch is what I long for,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "You have given life to me.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 676,
+  "songNumber": 369,
+  "title": "I WILL SERVE THEE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I will serve Thee,"
+        },
+        {
+          "text": "Because I love Thee,"
+        },
+        {
+          "text": "You have given life to me,"
+        },
+        {
+          "text": "I was nothing,"
+        },
+        {
+          "text": "Before you found me,"
+        },
+        {
+          "text": "You have given life to me,"
+        },
+        {
+          "text": "Heartaches, broken pieces,"
+        },
+        {
+          "text": "Ruined lives are why"
+        },
+        {
+          "text": "You died on Calvary,"
+        },
+        {
+          "text": "Your touch is what I long for,"
+        },
+        {
+          "text": "You have given life to me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nI will [D]serve [G]Thee,\nBe[D]cause I [A]love [D]Thee,\nYou have [G]given [D]life to [A]me,\nI was [D]nothing,\nBe[G]fore you [A]found [D]me,\nYou have given life to me,\n[D]Heartaches, [G]broken pieces,\n[D]Ruined [G]lives [A]are why\nYou [G]died on [A]Calva[D]ry,\nYour [D]touch is [G]what I [D]long for,\nYou have [G]given [D]life [A]to [D]me.",
+  "lyrics": "[Verse 1]\nI will serve Thee,\nBecause I love Thee,\nYou have given life to me,\nI was nothing,\nBefore you found me,\nYou have given life to me,\nHeartaches, broken pieces,\nRuined lives are why\nYou died on Calvary,\nYour touch is what I long for,\nYou have given life to me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

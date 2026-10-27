@@ -1,191 +1,104 @@
 {
-  "id" : 1153,
-  "songNumber" : 175,
-  "title" : "तेरा प्यार है महान, तेरा प्यार है जहाँ",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "तेरा प्यार है महान, तेरा प्यार है जहाँ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "मैं जो पहले मुर्दा था, तूने डाली मुझमें जान",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "क्यों ना बोलू फिर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "मैं तेरी जय जयकार (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "जय जयकार, जय जयकार",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "तुने मेरे लिए क्या कुछ ना किया । (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "मेरी सुरत बिगडी थी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मेरा दिल था खाली।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तुने सींचा था खून से",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "ताकि आये हरियाली ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "आयी जीवन में खुशी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "आयी अब्दी जिंदगी।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "तू है जिंदा साफिया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "तुने यह है किया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "अपनी रूह से भर दिया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "अपनी शक्ति मुझको दी।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "ताकि दू मैं गवाही तेरी जी उठने की।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 1153,
+  "songNumber": 175,
+  "title": "तेरा प्यार है महान, तेरा प्यार है जहाँ",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरा प्यार है महान, तेरा प्यार है जहाँ"
+        },
+        {
+          "text": "मैं जो पहले मुर्दा था, तूने डाली मुझमें जान"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "क्यों ना बोलू फिर"
+        },
+        {
+          "text": "मैं तेरी जय जयकार (2)"
+        },
+        {
+          "text": "जय जयकार, जय जयकार"
+        },
+        {
+          "text": "तुने मेरे लिए क्या कुछ ना किया । (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मेरी सुरत बिगडी थी"
+        },
+        {
+          "text": "मेरा दिल था खाली।"
+        },
+        {
+          "text": "तुने सींचा था खून से"
+        },
+        {
+          "text": "ताकि आये हरियाली ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आयी जीवन में खुशी"
+        },
+        {
+          "text": "आयी अब्दी जिंदगी।"
+        },
+        {
+          "text": "तू है जिंदा साफिया"
+        },
+        {
+          "text": "तुने यह है किया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपनी रूह से भर दिया"
+        },
+        {
+          "text": "अपनी शक्ति मुझको दी।"
+        },
+        {
+          "text": "ताकि दू मैं गवाही तेरी जी उठने की।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]तेरा प्यार है महान, तेरा [C]प्यार है जहाँ\n[G]मैं जो पहले मुर्दा था, तूने [D]डाली मुझमें [G]जान\n\n[Verse]\n[G]क्यों ना बोलू फिर\n[C]मैं तेरी जय जय[G]कार (2)\n[G]जय जयकार, जय जयकार\n[D]तुने मेरे लिए क्या कुछ ना [G]किया । (2)\n\n[Verse]\n[G]मेरी सुरत बिगडी [C]थी\n[G]मेरा दिल था खा[D]ली।\n[G]तुने सींचा था खून [C]से\n[G]ताकि आये हरि[D]या[G]ली ।\n\n[Verse]\n[G]आयी जीवन में खु[C]शी\n[G]आयी अब्दी जिंद[D]गी।\n[G]तू है जिंदा साफिया[C]\n[G]तुने यह है [D]कि[G]या ।\n\n[Verse]\n[G]अपनी रूह से भर दि[C]या\n[G]अपनी शक्ति मुझको [D]दी।\n[G]ताकि दू मैं गवाही तेरी [D]जी उठने [G]की।",
+  "lyrics": "[Verse]\nतेरा प्यार है महान, तेरा प्यार है जहाँ\nमैं जो पहले मुर्दा था, तूने डाली मुझमें जान\n\n[Verse]\nक्यों ना बोलू फिर\nमैं तेरी जय जयकार (2)\nजय जयकार, जय जयकार\nतुने मेरे लिए क्या कुछ ना किया । (2)\n\n[Verse]\nमेरी सुरत बिगडी थी\nमेरा दिल था खाली।\nतुने सींचा था खून से\nताकि आये हरियाली ।\n\n[Verse]\nआयी जीवन में खुशी\nआयी अब्दी जिंदगी।\nतू है जिंदा साफिया\nतुने यह है किया ।\n\n[Verse]\nअपनी रूह से भर दिया\nअपनी शक्ति मुझको दी।\nताकि दू मैं गवाही तेरी जी उठने की।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

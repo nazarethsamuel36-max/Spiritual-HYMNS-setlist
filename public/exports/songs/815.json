@@ -1,272 +1,138 @@
 {
-  "id" : 815,
-  "songNumber" : 203,
-  "title" : "WHEN I SAW THE CLEANSING FOUNTAIN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "When I saw the cleansing fountain",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Open wide for all my sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I obeyed the Spirit's wooing",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "When He said, \"Wilt thou be clean?\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I will praise Him, I will praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Praise the Lamb for sinners slain;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Give Him glory all ye people,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "For His blood can wash away each stain.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Though the way seemed straight and narrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "All I claimed was swept away;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "My ambitions, plans, and wishes,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "At my feet in ashes lay.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Then God's fire upon the altar",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Of my heart was set aflame;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I shall never cease to praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Glory! glory to His name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Blessed be the name of Jesus!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "I'm so glad He took me in;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He's forgiven my transgressions,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "He has cleansed my heart from sin.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 815,
+  "songNumber": 203,
+  "title": "WHEN I SAW THE CLEANSING FOUNTAIN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When I saw the cleansing fountain"
+        },
+        {
+          "text": "Open wide for all my sin,"
+        },
+        {
+          "text": "I obeyed the Spirits wooing"
+        },
+        {
+          "text": "When He said, \"Wilt thou be clean?\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I will praise Him, I will praise Him,"
+        },
+        {
+          "text": "Praise the Lamb for sinners slain;"
+        },
+        {
+          "text": "Give Him glory all ye people,"
+        },
+        {
+          "text": "For His blood can wash away each stain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Though the way seemed straight and narrow,"
+        },
+        {
+          "text": "All I claimed was swept away;"
+        },
+        {
+          "text": "My ambitions, plans, and wishes,"
+        },
+        {
+          "text": "At my feet in ashes lay."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Then Gods fire upon the altar"
+        },
+        {
+          "text": "Of my heart was set aflame;"
+        },
+        {
+          "text": "I shall never cease to praise Him,"
+        },
+        {
+          "text": "Glory! glory to His name!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Blessed be the name of Jesus!"
+        },
+        {
+          "text": "Im so glad He took me in;"
+        },
+        {
+          "text": "Hes forgiven my transgressions,"
+        },
+        {
+          "text": "He has cleansed my heart from sin."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n When I [D]saw the [G]cleansing [D]fountain\nOpen [D]wide for [A]all my [D]sin,\nI o[D]beyed the [G]Spirits [D]wooing\nWhen He [D]said, \"Wilt [A]thou be [D]clean?\"\n[Verse]\n[Verse]\n[Chorus]\nI will [D]praise Him, [G]I will [D]praise Him,\nPraise the [D]Lamb for [A]sinners [D]slain;\nGive Him [D]glory [G]all ye [D]people,\nFor His [D]blood can [A]wash away each [D]stain.\n[Verse]\n[Verse]\nThough the [D]way seemed [G]straight and [D]narrow,\nAll I [D]claimed was [A]swept a[D]way;\nMy am[D]bitions, [G]plans, and [D]wishes,\nAt my [D]feet in [A]ashes [D]lay.\n[Verse]\n[Verse]\nThen Gods [D]fire u[G]pon the [D]altar\nOf my [D]heart was [A]set a[D]flame;\nI shall [D]never [G]cease to [D]praise Him,\n[D]Glory! glory [A]to His [D]name!\n[Verse]\n[Verse]\n[D]Blessed be the [G]name of [D]Jesus!\nIm so [D]glad He [A]took me [D]in;\nHes for[D]given [G]my trans[D]gressions,\nHe has [D]cleansed my [A]heart from [D]sin.",
+  "lyrics": "[Verse]\n When I saw the cleansing fountain\nOpen wide for all my sin,\nI obeyed the Spirits wooing\nWhen He said, \"Wilt thou be clean?\"\n[Verse]\n[Verse]\n[Chorus]\nI will praise Him, I will praise Him,\nPraise the Lamb for sinners slain;\nGive Him glory all ye people,\nFor His blood can wash away each stain.\n[Verse]\n[Verse]\nThough the way seemed straight and narrow,\nAll I claimed was swept away;\nMy ambitions, plans, and wishes,\nAt my feet in ashes lay.\n[Verse]\n[Verse]\nThen Gods fire upon the altar\nOf my heart was set aflame;\nI shall never cease to praise Him,\nGlory! glory to His name!\n[Verse]\n[Verse]\nBlessed be the name of Jesus!\nIm so glad He took me in;\nHes forgiven my transgressions,\nHe has cleansed my heart from sin.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

@@ -1,382 +1,143 @@
 {
-  "id" : 907,
-  "songNumber" : 295,
-  "title" : "STAND UP STAND UP FOR JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Stand up! stand up for Jesus!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Ye soldiers of the cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Lift high His royal banner,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "It must not suffer loss,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "From victory unto victory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "His army shall He lead,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Till every foe is vanquished,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And Christ is Lord indeed.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Stand up! Stand up for Jesus!"
-    }, {
-      "text" : "The trumpet call obey,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Forth to the might conflict",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "In this His glorious day!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Ye that are men now serve Him",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Against unnumbered foes,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Let courage rise with danger,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And strength to strength oppose.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Stand up! Stand up for Jesus!"
-    }, {
-      "text" : "Stand in His strength alone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "The arm of flesh will fail you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Ye dare not trust your own:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Put on the gospel armour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And, watching unto prayer",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Where duty calls, or danger",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Be never wanting there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Stand up! stand up for Jesus!"
-    }, {
-      "text" : "The strife will not be long:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "This day the noise of battle,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "The next the victor's song:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "To Him that overcometh",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "A crown of life shall be:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "He with the King of glory",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Shall reign eternally.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 907,
+  "songNumber": 295,
+  "title": "STAND UP STAND UP FOR JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Stand up! stand up for Jesus!"
+        },
+        {
+          "text": "Ye soldiers of the cross,"
+        },
+        {
+          "text": "Lift high His royal banner,"
+        },
+        {
+          "text": "It must not suffer loss,"
+        },
+        {
+          "text": "From victory unto victory,"
+        },
+        {
+          "text": "His army shall He lead,"
+        },
+        {
+          "text": "Till every foe is vanquished,"
+        },
+        {
+          "text": "And Christ is Lord indeed."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Stand up! Stand up for Jesus!"
+        },
+        {
+          "text": "The trumpet call obey,"
+        },
+        {
+          "text": "Forth to the might conflict"
+        },
+        {
+          "text": "In this His glorious day!"
+        },
+        {
+          "text": "Ye that are men now serve Him"
+        },
+        {
+          "text": "Against unnumbered foes,"
+        },
+        {
+          "text": "Let courage rise with danger,"
+        },
+        {
+          "text": "And strength to strength oppose."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Stand up! Stand up for Jesus!"
+        },
+        {
+          "text": "Stand in His strength alone,"
+        },
+        {
+          "text": "The arm of flesh will fail you"
+        },
+        {
+          "text": "Ye dare not trust your own:"
+        },
+        {
+          "text": "Put on the gospel armour,"
+        },
+        {
+          "text": "And, watching unto prayer"
+        },
+        {
+          "text": "Where duty calls, or danger"
+        },
+        {
+          "text": "Be never wanting there."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Stand up! stand up for Jesus!"
+        },
+        {
+          "text": "The strife will not be long:"
+        },
+        {
+          "text": "This day the noise of battle,"
+        },
+        {
+          "text": "The next the victor's song:"
+        },
+        {
+          "text": "To Him that overcometh"
+        },
+        {
+          "text": "A crown of life shall be:"
+        },
+        {
+          "text": "He with the King of glory"
+        },
+        {
+          "text": "Shall reign eternally."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[A]Stand up! [D]stand up for [A]Jesus!\r\nYe [A]soldiers [D]of the [E]cross,\r\nLift [A]high His [D]royal [A]banner,\r\nIt [A]must not [E]suffer [A]loss,\r\nFrom [A]victory [D]unto [A]victory,\r\nHis [A]army [D]shall He [E]lead,\r\nTill [A]every [D]foe is [A]vanquished,\r\nAnd [A]Christ is [E]Lord in[A]deed.\r\n\r\n[Verse]\r\nStand up! Stand up for Jesus!\r\nThe [A]trumpet [D]call o[E]bey,\r\nForth [A]to the [D]might con[A]flict\r\nIn [A]this His [E]glorious [A]day!\r\nYe [A]that are [D]men now [A]serve Him\r\nA[A]gainst un[D]numbered [E]foes,\r\nLet [A]courage [D]rise with [A]danger,\r\nAnd [A]strength to [E]strength op[A]pose.\r\n\r\n[Verse]\r\nStand up! Stand up for Jesus!\r\nStand [A]in His [D]strength a[E]lone,\r\nThe [A]arm of [D]flesh will [A]fail you\r\nYe [A]dare not [E]trust your [A]own:\r\nPut [A]on the [D]gospel [A]armour,\r\nAnd, [A]watching [D]unto [E]prayer\r\nWhere [A]duty [D]calls, or [A]danger\r\nBe [A]never [E]wanting [A]there.\r\n\r\n[Verse]\r\nStand up! stand up for Jesus!\r\nThe [A]strife will [D]not be [E]long:\r\nThis [A]day the [D]noise of [A]battle,\r\nThe [A]next the [E]victor's [A]song:\r\nTo [A]Him that [D]over[A]cometh\r\nA [A]crown of [D]life shall [E]be:\r\nHe [A]with the [D]King of [A]glory\r\nShall [A]reign e[E]ternal[A]ly.",
+  "lyrics": "[Verse]\r\nStand up! stand up for Jesus!\r\nYe soldiers of the cross,\r\nLift high His royal banner,\r\nIt must not suffer loss,\r\nFrom victory unto victory,\r\nHis army shall He lead,\r\nTill every foe is vanquished,\r\nAnd Christ is Lord indeed.\r\n\r\n[Verse]\r\nStand up! Stand up for Jesus!\r\nThe trumpet call obey,\r\nForth to the might conflict\r\nIn this His glorious day!\r\nYe that are men now serve Him\r\nAgainst unnumbered foes,\r\nLet courage rise with danger,\r\nAnd strength to strength oppose.\r\n\r\n[Verse]\r\nStand up! Stand up for Jesus!\r\nStand in His strength alone,\r\nThe arm of flesh will fail you\r\nYe dare not trust your own:\r\nPut on the gospel armour,\r\nAnd, watching unto prayer\r\nWhere duty calls, or danger\r\nBe never wanting there.\r\n\r\n[Verse]\r\nStand up! stand up for Jesus!\r\nThe strife will not be long:\r\nThis day the noise of battle,\r\nThe next the victor's song:\r\nTo Him that overcometh\r\nA crown of life shall be:\r\nHe with the King of glory\r\nShall reign eternally.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

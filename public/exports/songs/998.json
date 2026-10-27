@@ -1,139 +1,90 @@
 {
-  "id" : 998,
-  "songNumber" : 20,
-  "title" : "हम यीशु के संग एक दिन, स्वर्ग जायेंगे",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "हम यीशु के संग एक दिन, स्वर्ग जायेंगे",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 11
-      }, {
-        "chord" : "Gm",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "पिता को देखेंगे धन्य हो जायेंगे...",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "Gm",
-        "position" : 16
-      }, {
-        "chord" : "F",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "हाल्लेलुयाह...",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 8
-      }, {
-        "chord" : "Gm",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दुःख से भरे ये दिन बीत जायेंगे,",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "Gm",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "हर पल हम यीशु के संग आनंद मनायेंगे ।",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 17
-      }, {
-        "chord" : "Gm",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "रहना नहीं यहाँ हमेशा के लिए,",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 15
-      }, {
-        "chord" : "Gm",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "परदेसी हैं हम यहाँ थोडे दिनों के लिए ।",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 14
-      }, {
-        "chord" : "Gm",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तैयारी हम करें वहाँ जाने के लिए,",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "Gm",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "यीशु जल्द आता है हमको लेने के लिए ।",
-      "chords" : [ {
-        "chord" : "Gm",
-        "position" : 0
-      }, {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "Gm",
-        "position" : 30
-      } ]
-    } ]
-  } ]
+  "id": 998,
+  "songNumber": 20,
+  "title": "हम यीशु के संग एक दिन, स्वर्ग जायेंगे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "हम यीशु के संग एक दिन, स्वर्ग जायेंगे"
+        },
+        {
+          "text": "पिता को देखेंगे धन्य हो जायेंगे..."
+        },
+        {
+          "text": "हाल्लेलुयाह..."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुःख से भरे ये दिन बीत जायेंगे,"
+        },
+        {
+          "text": "हर पल हम यीशु के संग आनंद मनायेंगे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रहना नहीं यहाँ हमेशा के लिए,"
+        },
+        {
+          "text": "परदेसी हैं हम यहाँ थोडे दिनों के लिए ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तैयारी हम करें वहाँ जाने के लिए,"
+        },
+        {
+          "text": "यीशु जल्द आता है हमको लेने के लिए ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [Gm]हम यीशु के [F]संग एक दिन, [Gm]स्वर्ग जायेंगे\r\n[Gm]पिता को दे[F]खेंगे [Gm]धन्य हो जा[F]येंगे...\r\n[Gm]हाल्लेलु[F]याह...[Gm]\r\n[Verse]\r\n[Verse]\r\n[Gm]दुःख से भरे ये [F]दिन बीत जा[Gm]येंगे,\r\n[Gm]हर पल हम यीशु के [F]संग आनंद मना[Gm]येंगे ।\r\n[Verse]\r\n[Verse]\r\n[Gm]रहना नहीं यहाँ [F]हमेशा के [Gm]लिए,\r\n[Gm]परदेसी हैं हम [F]यहाँ थोडे दिनों के [Gm]लिए ।\r\n[Verse]\r\n[Verse]\r\n[Gm]तैयारी हम [F]करें वहाँ जाने के [Gm]लिए,\r\n[Gm]यीशु जल्द [F]आता है हमको लेने के [Gm]लिए ।",
+  "lyrics": "[Chorus]\r\n हम यीशु के संग एक दिन, स्वर्ग जायेंगे\r\nपिता को देखेंगे धन्य हो जायेंगे...\r\nहाल्लेलुयाह...\r\n[Verse]\r\n[Verse]\r\nदुःख से भरे ये दिन बीत जायेंगे,\r\nहर पल हम यीशु के संग आनंद मनायेंगे ।\r\n[Verse]\r\n[Verse]\r\nरहना नहीं यहाँ हमेशा के लिए,\r\nपरदेसी हैं हम यहाँ थोडे दिनों के लिए ।\r\n[Verse]\r\n[Verse]\r\nतैयारी हम करें वहाँ जाने के लिए,\r\nयीशु जल्द आता है हमको लेने के लिए ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

@@ -1,101 +1,71 @@
 {
-  "id" : 961,
-  "songNumber" : 83,
-  "title" : "WHEN I LOOK INTO YOUR HOLINESS",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "When I look into Your holiness,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "F",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "When I gaze into Your loveliness,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "Em",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "When all things that surround me",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "C7",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Form shadows in the light of You.",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "When I find the joy of reaching Your heart,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 7
-      }, {
-        "chord" : "F",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "When my will becomes enthroned in your life,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "Em",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "When all things that surround me"
-    }, {
-      "text" : "Form shadows in the light of You."
-    }, {
-      "text" : "I worship You, I worship You } 2",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "Em",
-        "position" : 25
-      }, {
-        "chord" : "Am",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "The reason I live is to worship You.",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "C",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 961,
+  "songNumber": 83,
+  "title": "WHEN I LOOK INTO YOUR HOLINESS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "When I look into Your holiness,"
+        },
+        {
+          "text": "When I gaze into Your loveliness,"
+        },
+        {
+          "text": "When all things that surround me"
+        },
+        {
+          "text": "Form shadows in the light of You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "When I find the joy of reaching Your heart,"
+        },
+        {
+          "text": "When my will becomes enthroned in your life,"
+        },
+        {
+          "text": "When all things that surround me"
+        },
+        {
+          "text": "Form shadows in the light of You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "I worship You, I worship You } 2"
+        },
+        {
+          "text": "The reason I live is to worship You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nWhen I [D]look into Your [G]holiness,\r\nWhen I [D]gaze into Your [F#m]loveliness,\r\nWhen all [D]things that sur[D7]round me\r\nForm [G]shadows in the [A]light of You.\r\n\r\n[Verse 2]\r\nWhen I [D]find the joy of [G]reaching Your heart,\r\nWhen my [D]will becomes en[F#m]throned in your life,\r\nWhen all things that surround me\r\nForm shadows in the light of You.\r\n\r\n[Chorus]\r\nI worship [G]You, [A]I worship [F#m]You [Bm]} 2\r\nThe [Em]reason I [A]live is to worship [D]You.",
+  "lyrics": "[Verse 1]\r\nWhen I look into Your holiness,\r\nWhen I gaze into Your loveliness,\r\nWhen all things that surround me\r\nForm shadows in the light of You.\r\n\r\n[Verse 2]\r\nWhen I find the joy of reaching Your heart,\r\nWhen my will becomes enthroned in your life,\r\nWhen all things that surround me\r\nForm shadows in the light of You.\r\n\r\n[Chorus]\r\nI worship You, I worship You } 2\r\nThe reason I live is to worship You.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

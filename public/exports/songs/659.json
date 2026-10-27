@@ -1,92 +1,65 @@
 {
-  "id" : 659,
-  "songNumber" : 352,
-  "title" : "WHY WORRY WHEN YOU CAN PRAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Why worry, when you can pray,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Take it all to Jesus, thatâ€™s the easy way,"
-    }, {
-      "text" : "Heâ€™ll carry all your burdens,"
-    }, {
-      "text" : "And drive your fears away,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Why worry, when you can pray.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Why worry, when you can pray,"
-    }, {
-      "text" : "Take it all to Jesus thatâ€™s the easy way,"
-    }, {
-      "text" : "Donâ€™t be a doubting Thomas,"
-    }, {
-      "text" : "Just stand upon His promise,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Why worry, when you can pray."
-    } ]
-  } ]
+  "id": 659,
+  "songNumber": 352,
+  "title": "WHY WORRY WHEN YOU CAN PRAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Why worry, when you can pray,"
+        },
+        {
+          "text": "Take it all to Jesus, that's the easy way,"
+        },
+        {
+          "text": "He'll carry all your burdens,"
+        },
+        {
+          "text": "And drive your fears away,"
+        },
+        {
+          "text": "Why worry, when you can pray."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Why worry, when you can pray,"
+        },
+        {
+          "text": "Take it all to Jesus that's the easy way,"
+        },
+        {
+          "text": "Don't be a doubting Thomas,"
+        },
+        {
+          "text": "Just stand upon His promise,"
+        },
+        {
+          "text": "Why worry, when you can pray."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nWhy [A]worry, [D]when [A]you [E]can [A]pray,\r\nTake it all to Jesus, that's the easy way,\r\nHe'll carry all your burdens,\r\nAnd [D]drive your [A]fears a[E]way,\r\nWhy [A]worry, [D]when [A]you [E]can [A]pray.\r\n\r\n[Verse]\r\nWhy worry, when you can pray,\r\nTake it all to Jesus that's the easy way,\r\nDon't be a doubting Thomas,\r\nJust [D]stand u[A]pon His [E]promise,\r\nWhy worry, when you can pray.",
+  "lyrics": "[Verse]\r\nWhy worry, when you can pray,\r\nTake it all to Jesus, that's the easy way,\r\nHe'll carry all your burdens,\r\nAnd drive your fears away,\r\nWhy worry, when you can pray.\r\n\r\n[Verse]\r\nWhy worry, when you can pray,\r\nTake it all to Jesus that's the easy way,\r\nDon't be a doubting Thomas,\r\nJust stand upon His promise,\r\nWhy worry, when you can pray.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,28 +1,113 @@
 {
-  "id" : 3177,
-  "songNumber" : 1036,
-  "title" : "** Will the circle be unbroken",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Can the circle be unbroken,"
-    }, {
-      "text" : "By and by, Lord, bye and bye?"
-    }, {
-      "text" : "There's a better home a-waiting"
-    }, {
-      "text" : "In the sky, Lord, in the sky."
-    } ]
-  } ]
+  "id": 3177,
+  "songNumber": 1036,
+  "title": "Will the circle be unbroken",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Can the circle be unbroken"
+        },
+        {
+          "text": "By and by, Lord, bye and bye"
+        },
+        {
+          "text": "There's a better home a-waiting"
+        },
+        {
+          "text": "In the sky, Lord, in the sky"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I was standing by my window"
+        },
+        {
+          "text": "On a dark and cloudy day"
+        },
+        {
+          "text": "When I saw that hearse come rolling"
+        },
+        {
+          "text": "For to carry my mother away"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Can the circle be unbroken"
+        },
+        {
+          "text": "By and by, Lord, bye and bye"
+        },
+        {
+          "text": "There's a better home a-waiting"
+        },
+        {
+          "text": "In the sky, Lord, in the sky"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Well I said to the undertaker"
+        },
+        {
+          "text": "Undertaker please drive slow"
+        },
+        {
+          "text": "For this lady you are hauling"
+        },
+        {
+          "text": "Lord, I hate to see her go"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Can the circle be unbroken"
+        },
+        {
+          "text": "By and by, Lord, bye and bye"
+        },
+        {
+          "text": "There's a better home a-waiting"
+        },
+        {
+          "text": "In the sky, Lord, in the sky"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky\n\n[Verse 1]\nI was standing by my window\nOn a dark and cloudy day\nWhen I saw that hearse come rolling\nFor to carry my mother away\n\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky\n\n[Verse 2]\nWell I said to the undertaker\nUndertaker please drive slow\nFor this lady you are hauling\nLord, I hate to see her go\n\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky",
+  "lyrics": "\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky\n\n[Verse 1]\nI was standing by my window\nOn a dark and cloudy day\nWhen I saw that hearse come rolling\nFor to carry my mother away\n\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky\n\n[Verse 2]\nWell I said to the undertaker\nUndertaker please drive slow\nFor this lady you are hauling\nLord, I hate to see her go\n\n[CHORUS]\nCan the circle be unbroken\nBy and by, Lord, bye and bye\nThere's a better home a-waiting\nIn the sky, Lord, in the sky",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

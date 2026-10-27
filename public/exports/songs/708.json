@@ -1,93 +1,47 @@
 {
-  "id" : 708,
-  "songNumber" : 32,
-  "title" : "I WILL ENTER HIS GATES",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will enter His gates with thanksgiving in my heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 34
-      }, {
-        "chord" : "A",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "I will enter His courts with praise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "I will say this is the day that the Lord has made,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 36
-      }, {
-        "chord" : "A",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "I will rejoice for He has made me glad.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "He has made me glad (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I will rejoice for He has made me glad."
-    } ]
-  } ]
+  "id": 708,
+  "songNumber": 32,
+  "title": "I WILL ENTER HIS GATES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will enter His gates with thanksgiving in my heart,"
+        },
+        {
+          "text": "I will enter His courts with praise,"
+        },
+        {
+          "text": "I will say this is the day that the Lord has made,"
+        },
+        {
+          "text": "I will rejoice for He has made me glad."
+        },
+        {
+          "text": "He has made me glad (2)"
+        },
+        {
+          "text": "I will rejoice for He has made me glad."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]I will enter His [C]gates with thanks[G]giving in my [D]heart,\n[G]I will enter His [C]courts with [G]praise,[D]\n[G]I will say this is the [C]day that the [G]Lord has [D]made,\n[G]I will re[C]joice for [G]He has [D]made me [G]glad.\n[G]He has [C]made me [G]glad (2)\nI will rejoice for He has made me glad.",
+  "lyrics": "[Verse]\nI will enter His gates with thanksgiving in my heart,\nI will enter His courts with praise,\nI will say this is the day that the Lord has made,\nI will rejoice for He has made me glad.\nHe has made me glad (2)\nI will rejoice for He has made me glad.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

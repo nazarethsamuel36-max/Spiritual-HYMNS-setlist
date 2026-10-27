@@ -1,215 +1,89 @@
 {
-  "id" : 658,
-  "songNumber" : 351,
-  "title" : "MASTER REDEEMER SAVIOUR OF THE WORLD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Master, Redeemer, Saviour of the world",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Wonderful, Counsellor",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Bright morning star,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Lily of the valley, Provider and Friend,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "He was yesterday, Heâ€™ll be tomorrow"
-    }, {
-      "text" : "The Beginning and End.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "But the angel called Him Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Born of a virgin, .",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Mary called Him Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "But I call Him Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Jehovah, Messiah, Mighty God and King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Breath of life, lasting Word of love that I sing.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "Light in darkness, Door to Heaven",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "My home in the sky,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "The fountain of living water,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "That never shall run dry.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 658,
+  "songNumber": 351,
+  "title": "MASTER REDEEMER SAVIOUR OF THE WORLD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Master, Redeemer, Saviour of the world"
+        },
+        {
+          "text": "Wonderful, Counsellor"
+        },
+        {
+          "text": "Bright morning star,"
+        },
+        {
+          "text": "Lily of the valley, Provider and Friend,"
+        },
+        {
+          "text": "He was yesterday, He'll be tomorrow"
+        },
+        {
+          "text": "The Beginning and End."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "But the angel called Him Jesus,"
+        },
+        {
+          "text": "Born of a virgin, ."
+        },
+        {
+          "text": "Mary called Him Jesus,"
+        },
+        {
+          "text": "But I call Him Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jehovah, Messiah, Mighty God and King,"
+        },
+        {
+          "text": "Breath of life, lasting Word of love that I sing."
+        },
+        {
+          "text": "Light in darkness, Door to Heaven"
+        },
+        {
+          "text": "My home in the sky,"
+        },
+        {
+          "text": "The fountain of living water,"
+        },
+        {
+          "text": "That never shall run dry."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Master, Re[G]deemer, [D]Saviour of the [A]world\n[D]Wonderful, [G]Counsel[D]lor\n[D]Bright morning [A]star,\n[D]Lily of the [G]valley, Pro[D]vider and [A]Friend,\nHe was yesterday, He'll be tomorrow\nThe Be[G]ginning [A]and [D]End.\n\n[Verse]\nBut the [D]angel [G]called Him [D]Jesus,\n[D]Born of a [A]virgin, .\n[D]Mary [G]called Him [D]Jesus,\nBut [A]I call Him [D]Lord.\n\n[Verse]\nJe[D]hovah, Mes[G]siah, [D]Mighty God and [A]King,\n[D]Breath of [G]life, [D]lasting Word of [A]love that I [D]sing.\n[D]Light in [G]darkness, [D]Door to [A]Heaven\n[D]My home [G]in the [A]sky,\nThe [G]fountain of [D]living [A]water,\nThat [G]never [A]shall run [D]dry.",
+  "lyrics": "[Verse]\nMaster, Redeemer, Saviour of the world\nWonderful, Counsellor\nBright morning star,\nLily of the valley, Provider and Friend,\nHe was yesterday, He'll be tomorrow\nThe Beginning and End.\n\n[Verse]\nBut the angel called Him Jesus,\nBorn of a virgin, .\nMary called Him Jesus,\nBut I call Him Lord.\n\n[Verse]\nJehovah, Messiah, Mighty God and King,\nBreath of life, lasting Word of love that I sing.\nLight in darkness, Door to Heaven\nMy home in the sky,\nThe fountain of living water,\nThat never shall run dry.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,58 +1,44 @@
 {
-  "id" : 723,
-  "songNumber" : 111,
-  "title" : "TAKE UP YOUR CROSS",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Take up your cross and follow Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Take up the cross every day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Don't be ashamed to say that you know Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Count the cost take up the cross",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And follow Him.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    } ]
-  } ]
+  "id": 723,
+  "songNumber": 111,
+  "title": "TAKE UP YOUR CROSS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Take up your cross and follow Jesus,"
+        },
+        {
+          "text": "Take up the cross every day;"
+        },
+        {
+          "text": "Don't be ashamed to say that you know Him,"
+        },
+        {
+          "text": "Count the cost take up the cross"
+        },
+        {
+          "text": "And follow Him."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Take up your cross and follow [G]Jesus,\n[D]Take up the cross every [A]day;\nDon't be [D]ashamed to say that you know [G]Him,\nCount the [D]cost take up the [A]cross\nAnd [D]follow Him.",
+  "lyrics": "[Verse]\nTake up your cross and follow Jesus,\nTake up the cross every day;\nDon't be ashamed to say that you know Him,\nCount the cost take up the cross\nAnd follow Him.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

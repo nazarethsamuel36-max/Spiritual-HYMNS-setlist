@@ -1,76 +1,47 @@
 {
-  "id" : 725,
-  "songNumber" : 113,
-  "title" : "HALLELUJAH MY FATHER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Hallelujah, my Father, for giving us Your Son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Sending Him into the world to be given up for men,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Knowing we would bruise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And smite Him from the earth,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Hallelujah, my Father, in His death is my birth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Hallelujah, my Father, in His life is my life !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    } ]
-  } ]
+  "id": 725,
+  "songNumber": 113,
+  "title": "HALLELUJAH MY FATHER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hallelujah, my Father, for giving us Your Son,"
+        },
+        {
+          "text": "Sending Him into the world to be given up for men,"
+        },
+        {
+          "text": "Knowing we would bruise Him,"
+        },
+        {
+          "text": "And smite Him from the earth,"
+        },
+        {
+          "text": "Hallelujah, my Father, in His death is my birth,"
+        },
+        {
+          "text": "Hallelujah, my Father, in His life is my life !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Hallelujah, my Father, for [G]giving us Your [D]Son,\n[D]Sending Him into the world to be [A]given up for men,\n[D]Knowing we would bruise Him,\nAnd [G]smite Him from the [D]earth,\n[D]Hallelujah, my Father, in His [A]death is my [D]birth,\n[D]Hallelujah, my Father, in His [A]life is my [D]life !",
+  "lyrics": "[Verse]\nHallelujah, my Father, for giving us Your Son,\nSending Him into the world to be given up for men,\nKnowing we would bruise Him,\nAnd smite Him from the earth,\nHallelujah, my Father, in His death is my birth,\nHallelujah, my Father, in His life is my life !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

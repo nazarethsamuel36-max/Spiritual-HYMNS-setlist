@@ -1,70 +1,41 @@
 {
-  "id" : 929,
-  "songNumber" : 50,
-  "title" : "JESUS NAME ABOVE ALL NAMES",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus, Name above all names,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 7
-      }, {
-        "chord" : "Bm",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Beautiful Saviour, Glorious Lord !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "Em",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Emmanuel, God is with us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 10
-      }, {
-        "chord" : "Bm",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Blessed Redeemer, Living Word!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 929,
+  "songNumber": 50,
+  "title": "JESUS NAME ABOVE ALL NAMES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus, Name above all names,"
+        },
+        {
+          "text": "Beautiful Saviour, Glorious Lord !"
+        },
+        {
+          "text": "Emmanuel, God is with us,"
+        },
+        {
+          "text": "Blessed Redeemer, Living Word!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Jesus, [F#m]Name above all [Bm]names,\n[D]Beautiful [G]Saviour, [Em]Glorious [A]Lord !\n[D]Emmanuel, [F#m]God is with [Bm]us,\n[D]Blessed Re[G]deemer, [A]Living [D]Word!",
+  "lyrics": "[Verse]\nJesus, Name above all names,\nBeautiful Saviour, Glorious Lord !\nEmmanuel, God is with us,\nBlessed Redeemer, Living Word!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,139 +1,89 @@
 {
-  "id" : 897,
-  "songNumber" : 285,
-  "title" : "WHEN THE SPIRIT OF THE LORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "When the Spirit of the Lord is in my heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I will sing as David sang. (Repeat)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I will sing, I will sing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I will sing as David sang. (Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "When the Spirit of the Lord is in my heart",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I will dance as David danced....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When the Spirit of the Lord is in my heart"
-    }, {
-      "text" : "I will praise as David praised....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "When the Spirit of the Lord is in my heart"
-    }, {
-      "text" : "I will pray as Daniel prayed.....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "When the Spirit of the Lord is in my heart"
-    }, {
-      "text" : "I will speak as Moses spoke....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 897,
+  "songNumber": 285,
+  "title": "WHEN THE SPIRIT OF THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Gm",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the Spirit of the Lord is in my heart,"
+        },
+        {
+          "text": "I will sing as David sang. (Repeat)"
+        },
+        {
+          "text": "I will sing, I will sing,"
+        },
+        {
+          "text": "I will sing as David sang. (Repeat)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the Spirit of the Lord is in my heart"
+        },
+        {
+          "text": "I will dance as David danced...."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the Spirit of the Lord is in my heart"
+        },
+        {
+          "text": "I will praise as David praised...."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the Spirit of the Lord is in my heart"
+        },
+        {
+          "text": "I will pray as Daniel prayed....."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "When the Spirit of the Lord is in my heart"
+        },
+        {
+          "text": "I will speak as Moses spoke...."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nWhen the [G]Spirit of the [D]Lord is in my [G]heart,\r\nI will [C][D]sing as [D][G]David [G]sang. (Repeat)\r\nI will [C]sing, I will [G]sing,\r\nI will sing as David sang. (Repeat)\r\n\r\n[Verse]\r\nWhen the [G]Spirit of the [D]Lord is in my [G]heart\r\nI will [C]dance as [D]David [G]danced....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will [C]praise as [D]David [G]praised....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will [C]pray as [D]Daniel [G]prayed.....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will [C]speak as [D]Moses [G]spoke....",
+  "lyrics": "[Verse]\r\nWhen the Spirit of the Lord is in my heart,\r\nI will sing as David sang. (Repeat)\r\nI will sing, I will sing,\r\nI will sing as David sang. (Repeat)\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will dance as David danced....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will praise as David praised....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will pray as Daniel prayed.....\r\n\r\n[Verse]\r\nWhen the Spirit of the Lord is in my heart\r\nI will speak as Moses spoke....",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,221 +1,108 @@
 {
-  "id" : 1063,
-  "songNumber" : 85,
-  "title" : "शून्य से लेकर तूने मुझे",
-  "language" : "hindi",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "शून्य से लेकर तूने मुझे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "रच लिया अपने ही रुप में ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "प्रेम किया है, अनंत प्रेम से,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "दिया पुत्र मेरे मुक्ति के लिए ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "अनोखा प्यार है तेरा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "करूंगा स्तुति तेरी मैं सर्वदा (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जग में आया यीशु स्वर्ग छोड़कर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मेरा सारा दर्द सह लिया उसने ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "कोडे खाके क्रुस उठाया यीशुने,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "मुझे मुक्ति और चंगाई दे दी है ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "अन्न वस्त्र और सभी आशिषे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "दि मुझे उसने भरपुरी से ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "कहाँ और सब मुसीबतों में,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "आँखों की पुतली जैसा संभाला मुझे ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "अविनाशी अनंत मिरास,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "धन्य संगती, यीशु के साथ ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "पायेंगे यीशु से जलाली ताज,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "स्वर्ग में धन्य उसकी संतान ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 1063,
+  "songNumber": 85,
+  "title": "शून्य से लेकर तूने मुझे",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "शून्य से लेकर तूने मुझे,"
+        },
+        {
+          "text": "रच लिया अपने ही रुप में ।"
+        },
+        {
+          "text": "प्रेम किया है, अनंत प्रेम से,"
+        },
+        {
+          "text": "दिया पुत्र मेरे मुक्ति के लिए ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अनोखा प्यार है तेरा,"
+        },
+        {
+          "text": "करूंगा स्तुति तेरी मैं सर्वदा (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जग में आया यीशु स्वर्ग छोड़कर"
+        },
+        {
+          "text": "मेरा सारा दर्द सह लिया उसने ।"
+        },
+        {
+          "text": "कोडे खाके क्रुस उठाया यीशुने,"
+        },
+        {
+          "text": "मुझे मुक्ति और चंगाई दे दी है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अन्न वस्त्र और सभी आशिषे,"
+        },
+        {
+          "text": "दि मुझे उसने भरपुरी से ।"
+        },
+        {
+          "text": "कहाँ और सब मुसीबतों में,"
+        },
+        {
+          "text": "आँखों की पुतली जैसा संभाला मुझे ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अविनाशी अनंत मिरास,"
+        },
+        {
+          "text": "धन्य संगती, यीशु के साथ ।"
+        },
+        {
+          "text": "पायेंगे यीशु से जलाली ताज,"
+        },
+        {
+          "text": "स्वर्ग में धन्य उसकी संतान ।"
+        }
+      ]
+    }
+  ],
+  "chords": "\r\n[G]शून्य से लेकर [D]तूने मुझे,\r\n[C]रच लिया अपने [D]ही रुप [G]में ।\r\n[G]प्रेम किया है, अ[D]नंत प्रेम से,\r\n[C]दिया पुत्र मेरे मुक्ति के [D]लि[G]ए ।\r\n\r\n[Chorus]\r\n[G]अनोखा [D]प्यार है तेरा,\r\n[C]करूंगा स्तुति तेरी [D]मैं सर्व[G]दा (2)\r\n\r\n[Verse]\r\n[G]जग में आया यीशु [D]स्वर्ग छोड़कर\r\n[C]मेरा सारा दर्द सह लिया [D]उस[G]ने ।\r\n[G]कोडे खाके क्रुस [D]उठाया यीशुने,\r\n[C]मुझे मुक्ति और चंगाई [D]दे दी [G]है ।\r\n\r\n[Verse]\r\n[G]अन्न वस्त्र और [D]सभी आशिषे,\r\n[C]दि मुझे उसने [D]भरपुरी [G]से ।\r\n[G]कहाँ और सब मु[D]सीबतों में,\r\n[C]आँखों की पुतली जैसा संभाला [D]मु[G]झे ।\r\n\r\n[Verse]\r\n[G]अविनाशी अ[D]नंत मिरास,\r\n[C]धन्य संगती, यीशु [D]के सा[G]थ ।\r\n[G]पायेंगे यीशु से ज[D]लाली ताज,\r\n[C]स्वर्ग में धन्य [D]उसकी संता[G]न ।\r\n\r\n",
+  "lyrics": "\r\nशून्य से लेकर तूने मुझे,\r\nरच लिया अपने ही रुप में ।\r\nप्रेम किया है, अनंत प्रेम से,\r\nदिया पुत्र मेरे मुक्ति के लिए ।\r\n\r\n[Verse]\r\nअनोखा प्यार है तेरा,\r\nकरूंगा स्तुति तेरी मैं सर्वदा (2)\r\n\r\n[Verse]\r\nजग में आया यीशु स्वर्ग छोड़कर\r\nमेरा सारा दर्द सह लिया उसने ।\r\nकोडे खाके क्रुस उठाया यीशुने,\r\nमुझे मुक्ति और चंगाई दे दी है ।\r\n\r\n[Verse]\r\nअन्न वस्त्र और सभी आशिषे,\r\nदि मुझे उसने भरपुरी से ।\r\nकहाँ और सब मुसीबतों में,\r\nआँखों की पुतली जैसा संभाला मुझे ।\r\n\r\n[Verse]\r\nअविनाशी अनंत मिरास,\r\nधन्य संगती, यीशु के साथ ।\r\nपायेंगे यीशु से जलाली ताज,\r\nस्वर्ग में धन्य उसकी संतान ।\r\n\r\n",
+  "is_active": true,
+  "updated_at": "2026-09-16T14:12:29.937727+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving",
+    "Funeral"
+  ]
 }

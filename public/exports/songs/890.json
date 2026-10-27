@@ -1,309 +1,128 @@
 {
-  "id" : 890,
-  "songNumber" : 278,
-  "title" : "BLESSED BE THE FOUNTAIN OF BLOOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Blessed be the fountain of blood",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "To a world of sinners revealed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Blessed be the dear Son of God",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Only by His stripes we are healed.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Though I've wandered far from His fold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Bringing to my heart pain and woe,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Wash me in the blood of the Lamb",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And I shall be whiter than snow.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Whiter than the snow (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Wash me in the blood of the Lamb"
-    }, {
-      "text" : "And I shall be whiter than snow."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Thorny was the crown that He wore",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And the cross His body overcame,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Grievous were the sorrows He bore",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "But He suffered not thus in vain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "May I to that fountain be led",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Made to cleanse my sins here below,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Wash me in the blood that He shed",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And I shall be whiter than snow."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Father I have wandered from Thee",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Often has my heart gone astray,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Crimson do my sins seem to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Water cannot wash them away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Jesus to that fountain of Thine",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Leaning on Thy promise I go,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Cleanse me by Thy washing divine",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And I shall be whiter than snow."
-    } ]
-  } ]
+  "id": 890,
+  "songNumber": 278,
+  "title": "BLESSED BE THE FOUNTAIN OF BLOOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Blessed be the fountain of blood"
+        },
+        {
+          "text": "To a world of sinners revealed,"
+        },
+        {
+          "text": "Blessed be the dear Son of God"
+        },
+        {
+          "text": "Only by His stripes we are healed."
+        },
+        {
+          "text": "Though Ive wandered far from His fold,"
+        },
+        {
+          "text": "Bringing to my heart pain and woe,"
+        },
+        {
+          "text": "Wash me in the blood of the Lamb"
+        },
+        {
+          "text": "And I shall be whiter than snow."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Whiter than the snow (2)"
+        },
+        {
+          "text": "Wash me in the blood of the Lamb"
+        },
+        {
+          "text": "And I shall be whiter than snow."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Thorny was the crown that He wore"
+        },
+        {
+          "text": "And the cross His body overcame,"
+        },
+        {
+          "text": "Grievous were the sorrows He bore"
+        },
+        {
+          "text": "But He suffered not thus in vain,"
+        },
+        {
+          "text": "May I to that fountain be led"
+        },
+        {
+          "text": "Made to cleanse my sins here below,"
+        },
+        {
+          "text": "Wash me in the blood that He shed"
+        },
+        {
+          "text": "And I shall be whiter than snow."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Father I have wandered from Thee"
+        },
+        {
+          "text": "Often has my heart gone astray,"
+        },
+        {
+          "text": "Crimson do my sins seem to me,"
+        },
+        {
+          "text": "Water cannot wash them away."
+        },
+        {
+          "text": "Jesus to that fountain of Thine"
+        },
+        {
+          "text": "Leaning on Thy promise I go,"
+        },
+        {
+          "text": "Cleanse me by Thy washing divine"
+        },
+        {
+          "text": "And I shall be whiter than snow."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Blessed be the [G]fountain of [D]blood\nTo a [D]world of [A]sinners re[D]vealed,\n[D]Blessed be the [G]dear Son of [D]God\nOnly [D]by His [A]stripes we are [D]healed.\n[D]Though Ive wandered [G]far from His [D]fold,\nBringing [D]to my [A]heart pain and [D]woe,\n[D]Wash me in the [G]blood of the [D]Lamb\nAnd [D]I shall be [A]whiter than [D]snow.\n\n[Chorus]\n[D]Whiter than the [G]snow (2)\nWash me in the blood of the Lamb\nAnd I shall be whiter than snow.\n\n[Verse 2]\n[D]Thorny was the [G]crown that He [D]wore\nAnd the [D]cross His [A]body over[D]came,\n[D]Grievous were the [G]sorrows He [D]bore\nBut [D]He suffered [A]not thus in [D]vain,\n[D]May I to that [G]fountain be [D]led\nMade to [D]cleanse my [A]sins here be[D]low,\n[D]Wash me in the [G]blood that He [D]shed\nAnd I shall be whiter than snow.\n\n[Verse 3]\n[D]Father I have [G]wandered from [D]Thee\n[D]Often has my [A]heart gone as[D]tray,\n[D]Crimson do my [G]sins seem to [D]me,\n[D]Water cannot [A]wash them a[D]way.\n[D]Jesus to that [G]fountain of [D]Thine\n[D]Leaning on Thy [A]promise I [D]go,\n[D]Cleanse me by Thy [G]washing di[D]vine\nAnd I shall be whiter than snow.",
+  "lyrics": "[Verse 1]\nBlessed be the fountain of blood\nTo a world of sinners revealed,\nBlessed be the dear Son of God\nOnly by His stripes we are healed.\nThough Ive wandered far from His fold,\nBringing to my heart pain and woe,\nWash me in the blood of the Lamb\nAnd I shall be whiter than snow.\n\n[Chorus]\nWhiter than the snow (2)\nWash me in the blood of the Lamb\nAnd I shall be whiter than snow.\n\n[Verse 2]\nThorny was the crown that He wore\nAnd the cross His body overcame,\nGrievous were the sorrows He bore\nBut He suffered not thus in vain,\nMay I to that fountain be led\nMade to cleanse my sins here below,\nWash me in the blood that He shed\nAnd I shall be whiter than snow.\n\n[Verse 3]\nFather I have wandered from Thee\nOften has my heart gone astray,\nCrimson do my sins seem to me,\nWater cannot wash them away.\nJesus to that fountain of Thine\nLeaning on Thy promise I go,\nCleanse me by Thy washing divine\nAnd I shall be whiter than snow.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

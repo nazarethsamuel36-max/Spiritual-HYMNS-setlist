@@ -1,44 +1,65 @@
 {
-  "id" : 3176,
-  "songNumber" : 1035,
-  "title" : "** I will celebrate, sing unto the Lord",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "I will celebrate, sing unto the Lord"
-    }, {
-      "text" : "I will sing to Him a new Song"
-    }, {
-      "text" : "...repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "I will praise Him, I will sing to Him a new song"
-    }, {
-      "text" : "I will praise Him, I will sing to Him a new song"
-    }, {
-      "text" : "...repeat"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "I will celebrate, sing unto the Lord"
-    }, {
-      "text" : "I will sing to Him a new Song"
-    } ]
-  } ]
+  "id": 3176,
+  "songNumber": 1035,
+  "title": "I will celebrate, sing unto the Lord",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Em",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I will celebrate, sing unto the Lord"
+        },
+        {
+          "text": "I will sing to Him a new Song"
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I will praise Him, I will sing to Him a new song"
+        },
+        {
+          "text": "I will praise Him, I will sing to Him a new song"
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "I will celebrate, sing unto the Lord"
+        },
+        {
+          "text": "I will sing to Him a new Song"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nI will celebrate, sing unto the Lord\r\nI will sing to Him a new Song\r\n...repeat\r\n\r\n[Verse 2]\r\nI will praise Him, I will sing to Him a new song\r\nI will praise Him, I will sing to Him a new song\r\n...repeat\r\n\r\n[Verse 3]\r\nI will celebrate, sing unto the Lord\r\nI will sing to Him a new Song",
+  "lyrics": "[Verse 1]\r\nI will celebrate, sing unto the Lord\r\nI will sing to Him a new Song\r\n...repeat\r\n\r\n[Verse 2]\r\nI will praise Him, I will sing to Him a new song\r\nI will praise Him, I will sing to Him a new song\r\n...repeat\r\n\r\n[Verse 3]\r\nI will celebrate, sing unto the Lord\r\nI will sing to Him a new Song",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

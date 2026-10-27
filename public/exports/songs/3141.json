@@ -1,12 +1,234 @@
 {
-  "id" : 3141,
-  "songNumber" : 2042,
-  "title" : "मेरे जीवन में यीशु तेरा नाम, जलाल पाता रहे",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ ]
+  "id": 3141,
+  "songNumber": 2042,
+  "title": "मेरे जीवन में येशू तेरा नाम",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "मेरे जीवन में येशू तेरा नाम,"
+        },
+        {
+          "text": "जलाल पाता रहे - x 2"
+        },
+        {
+          "text": "मेरा उठना बैठना और - x 2"
+        },
+        {
+          "text": "चलना तुझे भाता रहे"
+        },
+        {
+          "text": "मेरे जीवन……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "बेमिशल है तू में मिशल बनू,"
+        },
+        {
+          "text": "तू कामिल हैं मे भी कमाल बनू - x 2"
+        },
+        {
+          "text": "दुनिया का नूर हैं येशू,"
+        },
+        {
+          "text": "मेरी राहे सजाता रहे - x 2"
+        },
+        {
+          "text": "मेरा उतना………"
+        },
+        {
+          "text": "मेरे जीवन…..…"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "मेरी सोचो मैं तू, मेरे ख्वाबो मैं तू,"
+        },
+        {
+          "text": "मेरे सारे सवालो, जवाबो में तू - x 2"
+        },
+        {
+          "text": "जब भी तुझे पुकारूँ,"
+        },
+        {
+          "text": "तेरा रूह मुझमें आता रहे - x 2"
+        },
+        {
+          "text": "मेरा उतना………"
+        },
+        {
+          "text": "मेरे जीवन……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "ज़िंदगी भर तेरे गीत गाता रहूं,"
+        },
+        {
+          "text": "तू सुनता रहे मे सुनाता रहूं - x 2"
+        },
+        {
+          "text": "जब गीत तेरे मैं गाउँ,"
+        },
+        {
+          "text": "तेरा रूह मुझ में गाता रहे - x 2"
+        },
+        {
+          "text": "मेरा उतना………"
+        },
+        {
+          "text": "मेरे जीवन……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": [
+        {
+          "text": "Mere Jeevan Men Yeshu Teraa Naam,"
+        },
+        {
+          "text": "Jalaal Paataa Rahe - x 2"
+        },
+        {
+          "text": "Meraa Uṭhanaa Baiṭhanaa Aur - x 2"
+        },
+        {
+          "text": "Chalanaa Tujhe Bhaataa Rahe"
+        },
+        {
+          "text": "Mere Jeevan……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 8",
+      "lines": [
+        {
+          "text": "Bemishal Hai Tu Men Mishal Banu,"
+        },
+        {
+          "text": "Tu Kaamil Hain Me Bhee Kamaal Banu - x 2"
+        },
+        {
+          "text": "Duniyaa Kaa Nur Hain Yeshu,"
+        },
+        {
+          "text": "Meree Raahe Sajaataa Rahe - x 2"
+        },
+        {
+          "text": "Meraa Utanaa………"
+        },
+        {
+          "text": "Mere Jeevan…..…"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 9",
+      "lines": [
+        {
+          "text": "Meree Socho Main Tu, Mere Khvaabo Main Tu,"
+        },
+        {
+          "text": "Mere Saare Savaalo, Javaabo Men Tu - x 2"
+        },
+        {
+          "text": "Jab Bhee Tujhe Pukaarun,"
+        },
+        {
+          "text": "Teraa Ruh Mujhamen Aataa Rahe - x 2"
+        },
+        {
+          "text": "Meraa Utanaa………"
+        },
+        {
+          "text": "Mere Jeevan……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 10",
+      "lines": [
+        {
+          "text": "Zaindagee Bhar Tere Geet Gaataa Rahun,"
+        },
+        {
+          "text": "Tu Sunataa Rahe Me Sunaataa Rahun - x 2"
+        },
+        {
+          "text": "Jab Geet Tere Main Gaaun,"
+        },
+        {
+          "text": "Teraa Ruh Mujh Men Gaataa Rahe - x 2"
+        },
+        {
+          "text": "Meraa Utanaa………"
+        },
+        {
+          "text": "Mere Jeevan……"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 11",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 12",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 13",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 14",
+      "lines": []
+    }
+  ],
+  "chords": "[Chorus]\n\n\n\n\n\n[Verse 3]\nमेरे जीवन में येशू तेरा नाम,\nजलाल पाता रहे - x 2\nमेरा उठना बैठना और - x 2\nचलना तुझे भाता रहे\nमेरे जीवन……\n\n[Verse 4]\nबेमिशल है तू में मिशल बनू,\nतू कामिल हैं मे भी कमाल बनू - x 2\nदुनिया का नूर हैं येशू,\nमेरी राहे सजाता रहे - x 2\nमेरा उतना………\nमेरे जीवन…..…\n\n[Verse 5]\nमेरी सोचो मैं तू, मेरे ख्वाबो मैं तू,\nमेरे सारे सवालो, जवाबो में तू - x 2\nजब भी तुझे पुकारूँ,\nतेरा रूह मुझमें आता रहे - x 2\nमेरा उतना………\nमेरे जीवन……\n\n[Verse 6]\nज़िंदगी भर तेरे गीत गाता रहूं,\nतू सुनता रहे मे सुनाता रहूं - x 2\nजब गीत तेरे मैं गाउँ,\nतेरा रूह मुझ में गाता रहे - x 2\nमेरा उतना………\nमेरे जीवन……\n\n[Verse 7]\nMere Jeevan Men Yeshu Teraa Naam,\nJalaal Paataa Rahe - x 2\nMeraa Uṭhanaa Baiṭhanaa Aur - x 2\nChalanaa Tujhe Bhaataa Rahe\nMere Jeevan……\n\n[Verse 8]\nBemishal Hai Tu Men Mishal Banu,\nTu Kaamil Hain Me Bhee Kamaal Banu - x 2\nDuniyaa Kaa Nur Hain Yeshu,\nMeree Raahe Sajaataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan…..…\n\n[Verse 9]\nMeree Socho Main Tu, Mere Khvaabo Main Tu,\nMere Saare Savaalo, Javaabo Men Tu - x 2\nJab Bhee Tujhe Pukaarun,\nTeraa Ruh Mujhamen Aataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan……\n\n[Verse 10]\nZaindagee Bhar Tere Geet Gaataa Rahun,\nTu Sunataa Rahe Me Sunaataa Rahun - x 2\nJab Geet Tere Main Gaaun,\nTeraa Ruh Mujh Men Gaataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan……\n\n[Verse 11]\n\n\n\n[Verse 12]\n\n\n[Verse 13]\n\n\n[Verse 14]\n",
+  "lyrics": "[Chorus]\n\n\n\n\n\n[Verse 3]\nमेरे जीवन में येशू तेरा नाम,\nजलाल पाता रहे - x 2\nमेरा उठना बैठना और - x 2\nचलना तुझे भाता रहे\nमेरे जीवन……\n\n[Verse 4]\nबेमिशल है तू में मिशल बनू,\nतू कामिल हैं मे भी कमाल बनू - x 2\nदुनिया का नूर हैं येशू,\nमेरी राहे सजाता रहे - x 2\nमेरा उतना………\nमेरे जीवन…..…\n\n[Verse 5]\nमेरी सोचो मैं तू, मेरे ख्वाबो मैं तू,\nमेरे सारे सवालो, जवाबो में तू - x 2\nजब भी तुझे पुकारूँ,\nतेरा रूह मुझमें आता रहे - x 2\nमेरा उतना………\nमेरे जीवन……\n\n[Verse 6]\nज़िंदगी भर तेरे गीत गाता रहूं,\nतू सुनता रहे मे सुनाता रहूं - x 2\nजब गीत तेरे मैं गाउँ,\nतेरा रूह मुझ में गाता रहे - x 2\nमेरा उतना………\nमेरे जीवन……\n\n[Verse 7]\nMere Jeevan Men Yeshu Teraa Naam,\nJalaal Paataa Rahe - x 2\nMeraa Uṭhanaa Baiṭhanaa Aur - x 2\nChalanaa Tujhe Bhaataa Rahe\nMere Jeevan……\n\n[Verse 8]\nBemishal Hai Tu Men Mishal Banu,\nTu Kaamil Hain Me Bhee Kamaal Banu - x 2\nDuniyaa Kaa Nur Hain Yeshu,\nMeree Raahe Sajaataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan…..…\n\n[Verse 9]\nMeree Socho Main Tu, Mere Khvaabo Main Tu,\nMere Saare Savaalo, Javaabo Men Tu - x 2\nJab Bhee Tujhe Pukaarun,\nTeraa Ruh Mujhamen Aataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan……\n\n[Verse 10]\nZaindagee Bhar Tere Geet Gaataa Rahun,\nTu Sunataa Rahe Me Sunaataa Rahun - x 2\nJab Geet Tere Main Gaaun,\nTeraa Ruh Mujh Men Gaataa Rahe - x 2\nMeraa Utanaa………\nMere Jeevan……\n\n[Verse 11]\n\n\n\n[Verse 12]\n\n\n[Verse 13]\n\n\n[Verse 14]\n",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

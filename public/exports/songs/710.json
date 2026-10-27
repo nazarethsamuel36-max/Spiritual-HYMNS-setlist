@@ -1,85 +1,47 @@
 {
-  "id" : 710,
-  "songNumber" : 38,
-  "title" : "I THANK YOU JESUS FOR YOUR LOVE TO ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I thank you Jesus for Your love to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "I thank you Jesus for Your grace so free,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "I lift my voice to praise Your Name,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I'll praise you again and again",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "You're my everything,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "You are my Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 710,
+  "songNumber": 38,
+  "title": "I THANK YOU JESUS FOR YOUR LOVE TO ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I thank you Jesus for Your love to me,"
+        },
+        {
+          "text": "I thank you Jesus for Your grace so free,"
+        },
+        {
+          "text": "I lift my voice to praise Your Name,"
+        },
+        {
+          "text": "I'll praise you again and again"
+        },
+        {
+          "text": "You're my everything,"
+        },
+        {
+          "text": "You are my Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]I thank you Jesus for Your [C]love to [G]me,\n[G]I thank you Jesus for Your [C]grace so [D]free,\n[G]I lift my voice to [C]praise Your [G]Name,\n[G]I'll praise you a[D]gain and a[G]gain\n[G]You're my [C]every[G]thing,\n[D]You are my [G]Lord.",
+  "lyrics": "[Verse]\nI thank you Jesus for Your love to me,\nI thank you Jesus for Your grace so free,\nI lift my voice to praise Your Name,\nI'll praise you again and again\nYou're my everything,\nYou are my Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

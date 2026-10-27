@@ -1,213 +1,77 @@
 {
-  "id" : 852,
-  "songNumber" : 240,
-  "title" : "FAIREST LORD JESUS RULER OF ALL NATURE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Fairest Lord Jesus, Ruler of all nature,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "O Thou of God and man the Son,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Thee will I cherish, Thee will I honour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Thou my soul's glory, joy and crown.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Beautiful Saviour, Lord of the nations,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Son of God and Son of man,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Glory and honour, praise, adoration,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Now and forever more be Thine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Fair is the sunshine, fairer still the moonlight,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "And all the twinkling starry host,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Jesus shines brighter, Jesus shines purer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Than all the angels heaven can boast.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  } ]
+  "id": 852,
+  "songNumber": 240,
+  "title": "FAIREST LORD JESUS RULER OF ALL NATURE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Fairest Lord Jesus, Ruler of all nature,"
+        },
+        {
+          "text": "O Thou of God and man the Son,"
+        },
+        {
+          "text": "Thee will I cherish, Thee will I honour,"
+        },
+        {
+          "text": "Thou my soul's glory, joy and crown."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Beautiful Saviour, Lord of the nations,"
+        },
+        {
+          "text": "Son of God and Son of man,"
+        },
+        {
+          "text": "Glory and honour, praise, adoration,"
+        },
+        {
+          "text": "Now and forever more be Thine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Fair is the sunshine, fairer still the moonlight,"
+        },
+        {
+          "text": "And all the twinkling starry host,"
+        },
+        {
+          "text": "Jesus shines brighter, Jesus shines purer,"
+        },
+        {
+          "text": "Than all the angels heaven can boast."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Fairest Lord [G]Jesus, [D]Ruler [G]of all [D]nature,\n[D]O Thou of [G]God and [D]man the [A]Son,\n[D]Thee will I [G]cherish, [D]Thee will I [A]honour,\n[D]Thou my soul's [G]glory, [A]joy and [D]crown.\n\n[Verse]\n[D]Beautiful [G]Saviour, [D]Lord [G]of the [D]nations,\n[D]Son of [G]God and [D]Son of [A]man,\n[D]Glory and [G]honour, [D]praise, adora[A]tion,\n[D]Now and for[G]ever [A]more be [D]Thine.\n\n[Verse]\n[D]Fair is the [G]sunshine, [D]fairer [G]still the [D]moonlight,\n[D]And all the [G]twinkling [D]starry [A]host,\n[D]Jesus shines [G]brighter, [D]Jesus shines [A]purer,\n[D]Than all the [G]angels [A]heaven can [D]boast.",
+  "lyrics": "[Verse]\nFairest Lord Jesus, Ruler of all nature,\nO Thou of God and man the Son,\nThee will I cherish, Thee will I honour,\nThou my soul's glory, joy and crown.\n\n[Verse]\nBeautiful Saviour, Lord of the nations,\nSon of God and Son of man,\nGlory and honour, praise, adoration,\nNow and forever more be Thine.\n\n[Verse]\nFair is the sunshine, fairer still the moonlight,\nAnd all the twinkling starry host,\nJesus shines brighter, Jesus shines purer,\nThan all the angels heaven can boast.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

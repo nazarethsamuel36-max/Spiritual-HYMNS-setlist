@@ -1,52 +1,42 @@
 {
-  "id" : 641,
-  "songNumber" : 334,
-  "title" : "IN THE PRESENCE OF JEHOVAH",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "In the presence of Jehovah,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "God Almighty, Prince of Peace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Troubles vanish hearts are mended,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "In the presence of the King.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 641,
+  "songNumber": 334,
+  "title": "IN THE PRESENCE OF JEHOVAH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "In the presence of Jehovah,"
+        },
+        {
+          "text": "God Almighty, Prince of Peace,"
+        },
+        {
+          "text": "Troubles vanish hearts are mended,"
+        },
+        {
+          "text": "In the presence of the King."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nIn the [D]presence of Je[G]hovah,\n[D]God Almighty, [A]Prince of Peace,\n[D]Troubles vanish [G]hearts are mended,\nIn the [A]presence of the [D]King.",
+  "lyrics": "[Verse]\nIn the presence of Jehovah,\nGod Almighty, Prince of Peace,\nTroubles vanish hearts are mended,\nIn the presence of the King.",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Peace",
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,170 +1,139 @@
 {
-  "id" : 1006,
-  "songNumber" : 28,
-  "title" : "आशिष तुझसे चाहते हैं",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "आशिष तुझसे चाहते हैं,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "हे स्वर्गीय पिता हम आते हैं ।",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "ना कोई खूबी है न लियाकत,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "बख्शों हम को अपनी ताकत, (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "खाली दिलों को लाते है, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हे स्वर्गीय पिता हम आते हैं ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "हमने बहुत खतायें की हैं,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "रहे निकम्मे जफाएँ की हैं, (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "शर्म से सर झुक जाते हैं, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हे स्वर्गीय पिता हम आते हैं ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "तुम हो शक्तिमान प्रभु जी,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "कुदरत तुम्हारी शान यीशु जी, (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "हम्द ओ-सन्ना हम गाते हैं, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "हे स्वर्गीय पिता हम आते हैं ।"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 6",
-    "lines" : [ {
-      "text" : "बन्दे को तू कभी न भूले,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "दु:ख सहे दुनियाँ में तूने, (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "उसी प्यार को चाहते हैं, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "हे स्वर्गीय पिता हम आते हैं ।"
-    } ]
-  } ]
+  "id": 1006,
+  "songNumber": 28,
+  "title": "आशिष तुझसे चाहते हैं",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "आशिष तुझसे चाहते हैं,"
+        },
+        {
+          "text": "हे स्वर्गीय पिता हम आते हैं ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ना कोई खूबी है न लियाकत,"
+        },
+        {
+          "text": "बख्शों हम को अपनी ताकत, (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "खाली दिलों को लाते है, (2)"
+        },
+        {
+          "text": "हे स्वर्गीय पिता हम आते हैं ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हमने बहुत खतायें की हैं,"
+        },
+        {
+          "text": "रहे निकम्मे जफाएँ की हैं, (2)"
+        },
+        {
+          "text": "शर्म से सर झुक जाते हैं, (2)"
+        },
+        {
+          "text": "हे स्वर्गीय पिता हम आते हैं ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तुम हो शक्तिमान प्रभु जी,"
+        },
+        {
+          "text": "कुदरत तुम्हारी शान यीशु जी, (2)"
+        },
+        {
+          "text": "हम्द ओ-सन्ना हम गाते हैं, (2)"
+        },
+        {
+          "text": "हे स्वर्गीय पिता हम आते हैं ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "बन्दे को तू कभी न भूले,"
+        },
+        {
+          "text": "दु:ख सहे दुनियाँ में तूने, (2)"
+        },
+        {
+          "text": "उसी प्यार को चाहते हैं, (2)"
+        },
+        {
+          "text": "हे स्वर्गीय पिता हम आते हैं ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [D]आशिष तुझसे [G]चाहते हैं,\r\n[A]हे स्वर्गीय पिता [D]हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\n[D]ना कोई खूबी है न [G]लियाकत,\r\n[A]बख्शों हम को अपनी [D]ताकत, (2)\r\n[Verse]\r\n[Verse]\r\n[D]खाली दिलों को [G]लाते है, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\n[D]हमने बहुत ख[G]तायें की हैं,\r\n[A]रहे निकम्मे ज[D]फाएँ की हैं, (2)\r\n[D]शर्म से सर झुक [G]जाते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\n[D]तुम हो शक्ति[G]मान प्रभु जी,\r\n[A]कुदरत तुम्हारी [D]शान यीशु जी, (2)\r\n[D]हम्द ओ-सन्ना [G]हम गाते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\n[D]बन्दे को तू क[G]भी न भूले,\r\n[A]दु:ख सहे दुनियाँ में [D]तूने, (2)\r\n[D]उसी प्यार को [G]चाहते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।",
+  "lyrics": "[Chorus]\r\n आशिष तुझसे चाहते हैं,\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\nना कोई खूबी है न लियाकत,\r\nबख्शों हम को अपनी ताकत, (2)\r\n[Verse]\r\n[Verse]\r\nखाली दिलों को लाते है, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\nहमने बहुत खतायें की हैं,\r\nरहे निकम्मे जफाएँ की हैं, (2)\r\nशर्म से सर झुक जाते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\nतुम हो शक्तिमान प्रभु जी,\r\nकुदरत तुम्हारी शान यीशु जी, (2)\r\nहम्द ओ-सन्ना हम गाते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।\r\n[Verse]\r\n[Verse]\r\nबन्दे को तू कभी न भूले,\r\nदु:ख सहे दुनियाँ में तूने, (2)\r\nउसी प्यार को चाहते हैं, (2)\r\nहे स्वर्गीय पिता हम आते हैं ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T09:10:48.327051+00:00",
+  "genres": [
+    "Blessing",
+    "Worship",
+    "Prayer"
+  ]
 }

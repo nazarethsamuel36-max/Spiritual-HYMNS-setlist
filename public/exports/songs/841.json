@@ -1,149 +1,81 @@
 {
-  "id" : 841,
-  "songNumber" : 229,
-  "title" : "YOU ARE THE KING OF GLORY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You are the King of Glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You are the Prince of Peace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "You are the Lord of heaven and earth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "You're the Son of righteousness.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Angels bow down before you,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Worship and adore-for",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "You have the words of eternal life.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "You are Jesus Christ the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Hosannah to the Son of David!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Hosannah to the King of Kings.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Glory in the highest heaven,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "For Jesus the Messiah reigns!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 841,
+  "songNumber": 229,
+  "title": "YOU ARE THE KING OF GLORY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You are the King of Glory,"
+        },
+        {
+          "text": "You are the Prince of Peace,"
+        },
+        {
+          "text": "You are the Lord of heaven and earth,"
+        },
+        {
+          "text": "Youre the Son of righteousness."
+        },
+        {
+          "text": "Angels bow down before you,"
+        },
+        {
+          "text": "Worship and adore-for"
+        },
+        {
+          "text": "You have the words of eternal life."
+        },
+        {
+          "text": "You are Jesus Christ the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Hosannah to the Son of David!"
+        },
+        {
+          "text": "Hosannah to the King of Kings."
+        },
+        {
+          "text": "Glory in the highest heaven,"
+        },
+        {
+          "text": "For Jesus the Messiah reigns!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]You are the King of [G]Glory,\n[D]You are the [A]Prince of [D]Peace,\n[D]You are the Lord of [G]heaven and earth,\n[D]Youre the [A]Son of [D]righteousness.\n[G]Angels bow [D]down before you,\n[G]Worship and [D]adore-for\n[D]You have the [G]words of e[D]ternal [A]life.\n[D]You are [A]Jesus Christ the [D]Lord.\n[Verse]\n[Verse]\n[Chorus]\n[D]Hosannah to the [G]Son of [D]David!\n[D]Hosannah to the [A]King of [D]Kings.\n[G]Glory in the [D]highest heaven,\nFor [A]Jesus the Messiah [D]reigns!",
+  "lyrics": "[Verse]\n You are the King of Glory,\nYou are the Prince of Peace,\nYou are the Lord of heaven and earth,\nYoure the Son of righteousness.\nAngels bow down before you,\nWorship and adore-for\nYou have the words of eternal life.\nYou are Jesus Christ the Lord.\n[Verse]\n[Verse]\n[Chorus]\nHosannah to the Son of David!\nHosannah to the King of Kings.\nGlory in the highest heaven,\nFor Jesus the Messiah reigns!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

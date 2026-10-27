@@ -1,189 +1,143 @@
 {
-  "id" : 758,
-  "songNumber" : 146,
-  "title" : "ON THE WINGS OF A SNOW - WHITE DOVE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Noah had drifted",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "On the floods many days,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He searched for land",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "In various ways;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Troubles he had some,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "But not from above,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "God gave him His sign",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "On the wings of a dove.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "On the wings of a snow-white dove,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "God sends down His pure, sweet love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "A sign from above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "On the wings of a dove."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Jesus, our Saviour",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Came to earth one day;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "He was born in a stable,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "In a manger of hay;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Though here rejected,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "But not from above,"
-    }, {
-      "text" : "God gave us His sign",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "On the wings of a dove."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Though I have suffered",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "In many a way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "I cried for healing",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "Both night and day,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Faith wasn't forgotten",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "By the Father above,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "He gave me His sign,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "On the wings of a dove."
-    } ]
-  } ]
+  "id": 758,
+  "songNumber": 146,
+  "title": "ON THE WINGS OF A SNOW - WHITE DOVE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Noah had drifted"
+        },
+        {
+          "text": "On the floods many days,"
+        },
+        {
+          "text": "He searched for land"
+        },
+        {
+          "text": "In various ways;"
+        },
+        {
+          "text": "Troubles he had some,"
+        },
+        {
+          "text": "But not from above,"
+        },
+        {
+          "text": "God gave him His sign"
+        },
+        {
+          "text": "On the wings of a dove."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "On the wings of a snow-white dove,"
+        },
+        {
+          "text": "God sends down His pure, sweet love,"
+        },
+        {
+          "text": "A sign from above,"
+        },
+        {
+          "text": "On the wings of a dove."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Jesus, our Saviour"
+        },
+        {
+          "text": "Came to earth one day;"
+        },
+        {
+          "text": "He was born in a stable,"
+        },
+        {
+          "text": "In a manger of hay;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Though here rejected,"
+        },
+        {
+          "text": "But not from above,"
+        },
+        {
+          "text": "God gave us His sign"
+        },
+        {
+          "text": "On the wings of a dove."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Though I have suffered"
+        },
+        {
+          "text": "In many a way,"
+        },
+        {
+          "text": "I cried for healing"
+        },
+        {
+          "text": "Both night and day,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Faith wasn't forgotten"
+        },
+        {
+          "text": "By the Father above,"
+        },
+        {
+          "text": "He gave me His sign,"
+        },
+        {
+          "text": "On the wings of a dove."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]Noah had drifted\r\nOn the [A]floods many [E]days,\r\nHe [E]searched for land\r\nIn va[B]rious ways;\r\n[E]Troubles he had some,\r\nBut not from a[A]bove,\r\nGod [E]gave him His sign\r\nOn the [B]wings of a [E]dove.\r\n\r\n[Chorus]\r\nOn the [E]wings of a snow-white [A]dove,\r\nGod sends down His [E]pure, sweet love,\r\nA [E]sign from above,\r\nOn the wings of a dove.\r\n\r\n[Verse 2]\r\n[E]Jesus, our Saviour\r\nCame to [A]earth one [E]day;\r\nHe was [E]born in a stable,\r\nIn a [B]manger of hay;\r\n\r\n[Verse 3]\r\nThough [E]here rejected,\r\nBut not from above,\r\nGod [E]gave us His sign\r\nOn the wings of a dove.\r\n\r\n[Verse 4]\r\nThough [E]I have suffered\r\nIn [A]many a [E]way,\r\nI [E]cried for healing\r\nBoth [B]night and day,\r\n\r\n[Verse 5]\r\nFaith [E]wasn't forgotten\r\nBy the [A]Father above,\r\nHe [E]gave me His sign,\r\nOn the wings of a dove.",
+  "lyrics": "[Verse 1]\r\nNoah had drifted\r\nOn the floods many days,\r\nHe searched for land\r\nIn various ways;\r\nTroubles he had some,\r\nBut not from above,\r\nGod gave him His sign\r\nOn the wings of a dove.\r\n\r\n[Chorus]\r\nOn the wings of a snow-white dove,\r\nGod sends down His pure, sweet love,\r\nA sign from above,\r\nOn the wings of a dove.\r\n\r\n[Verse 2]\r\nJesus, our Saviour\r\nCame to earth one day;\r\nHe was born in a stable,\r\nIn a manger of hay;\r\n\r\n[Verse 3]\r\nThough here rejected,\r\nBut not from above,\r\nGod gave us His sign\r\nOn the wings of a dove.\r\n\r\n[Verse 4]\r\nThough I have suffered\r\nIn many a way,\r\nI cried for healing\r\nBoth night and day,\r\n\r\n[Verse 5]\r\nFaith wasn't forgotten\r\nBy the Father above,\r\nHe gave me His sign,\r\nOn the wings of a dove.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

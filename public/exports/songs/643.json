@@ -1,400 +1,132 @@
 {
-  "id" : 643,
-  "songNumber" : 336,
-  "title" : "ALL THE WAY MY SAVIOR LEADS ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "All the way my Savior leads me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "What have I to ask beside?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Can I doubt His tender mercy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Who through life has been my Guide?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Heavâ€™nly peace, divinest comfort,"
-    }, {
-      "text" : "Here by faith in Him to dwell!",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "E",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "For I know, whateâ€™er befall me,"
-    }, {
-      "text" : "Jesus doeth all things well;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "For I know, whateâ€™er befall me,"
-    }, {
-      "text" : "Jesus doeth all things well.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "All the way my Savior leads me,"
-    }, {
-      "text" : "Cheers each winding path I tread,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "E",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Gives me grace for every trial,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Feeds me with the living Bread.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Though my weary steps may falter",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And my soul athirst may be,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "E",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Gushing from the Rock before me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Lo! A spring of joy I see;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Gushing from the Rock before me,"
-    }, {
-      "text" : "Lo! A spring of joy I see.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "All the way my Savior leads me,"
-    }, {
-      "text" : "Oh, the fullness of His love!",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "E",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Perfect rest to me is promised",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "In my Fatherâ€™s house above."
-    }, {
-      "text" : "When my spirit, clothed immortal,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Wings its flight to realms of day",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "This my song through endless ages:",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Jesus led me all the way;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "This my song through endless ages:"
-    }, {
-      "text" : "Jesus led me all the way.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 643,
+  "songNumber": 336,
+  "title": "ALL THE WAY MY SAVIOR LEADS ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All the way my Savior leads me,"
+        },
+        {
+          "text": "What have I to ask beside?"
+        },
+        {
+          "text": "Can I doubt His tender mercy,"
+        },
+        {
+          "text": "Who through life has been my Guide?"
+        },
+        {
+          "text": "Heav'nly peace, divinest comfort,"
+        },
+        {
+          "text": "Here by faith in Him to dwell!"
+        },
+        {
+          "text": "For I know, whate'er befall me,"
+        },
+        {
+          "text": "Jesus doeth all things well;"
+        },
+        {
+          "text": "For I know, whate'er befall me,"
+        },
+        {
+          "text": "Jesus doeth all things well."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All the way my Savior leads me,"
+        },
+        {
+          "text": "Cheers each winding path I tread,"
+        },
+        {
+          "text": "Gives me grace for every trial,"
+        },
+        {
+          "text": "Feeds me with the living Bread."
+        },
+        {
+          "text": "Though my weary steps may falter"
+        },
+        {
+          "text": "And my soul athirst may be,"
+        },
+        {
+          "text": "Gushing from the Rock before me,"
+        },
+        {
+          "text": "Lo! A spring of joy I see;"
+        },
+        {
+          "text": "Gushing from the Rock before me,"
+        },
+        {
+          "text": "Lo! A spring of joy I see."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "All the way my Savior leads me,"
+        },
+        {
+          "text": "Oh, the fullness of His love!"
+        },
+        {
+          "text": "Perfect rest to me is promised"
+        },
+        {
+          "text": "In my Father's house above."
+        },
+        {
+          "text": "When my spirit, clothed immortal,"
+        },
+        {
+          "text": "Wings its flight to realms of day"
+        },
+        {
+          "text": "This my song through endless ages:"
+        },
+        {
+          "text": "Jesus led me all the way;"
+        },
+        {
+          "text": "This my song through endless ages:"
+        },
+        {
+          "text": "Jesus led me all the way."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]All the [D]way my [G]Savior [C]leads [G]me,\r\n[C]What have [G]I to [A]ask be[D]side?\r\n[G]Can I [D]doubt His [G]tender [C]mer[G]cy,\r\n[C]Who through [G]life has [D]been my [G]Guide?\r\nHeav'nly peace, divinest comfort,\r\n[C]Here by [G]faith in [A]Him to [D]dwell!\r\nFor I know, whate'er befall me,\r\n[G]Jesus [C]doeth [D]all things [G]well;\r\nFor I know, whate'er befall me,\r\n[G]Jesus [C]doeth [D]all things [G]well.\r\n\r\n[Verse]\r\nAll the way my Savior leads me,\r\n[C]Cheers each [G]winding [A]path I [D]tread,\r\n[G]Gives me [D]grace for [G]every [C]tri[G]al,\r\n[C]Feeds me [G]with the [D]living [G]Bread.\r\n[D]Though my [G]weary [C]steps may [G]falter\r\n[C]And my [G]soul a[A]thirst may [D]be,\r\nGushing [G][C]from the [C][G]Rock be[G][D]fore [D]me,\r\n[G]Lo! A [C]spring of [D]joy I [G]see;\r\nGushing from the Rock before me,\r\n[G]Lo! A [C]spring of [D]joy I [G]see.\r\n\r\n[Verse]\r\nAll the way my Savior leads me,\r\n[C]Oh, the [G]fullness [A]of His [D]love!\r\n[G]Perfect [D]rest to [G]me is [C]prom[G]ised\r\nIn my Father's house above.\r\n[D]When my [G]spirit, [C]clothed im[G]mortal,\r\n[C]Wings its [G]flight to [A]realms of [D]day\r\nThis my [G][C]song through [C][G]endless [G][D]ag[D]es:\r\n[G]Jesus [C]led me [D]all the [G]way;\r\nThis my song through endless ages:\r\n[G]Jesus [C]led me [D]all the [G]way.",
+  "lyrics": "[Verse]\r\nAll the way my Savior leads me,\r\nWhat have I to ask beside?\r\nCan I doubt His tender mercy,\r\nWho through life has been my Guide?\r\nHeav'nly peace, divinest comfort,\r\nHere by faith in Him to dwell!\r\nFor I know, whate'er befall me,\r\nJesus doeth all things well;\r\nFor I know, whate'er befall me,\r\nJesus doeth all things well.\r\n\r\n[Verse]\r\nAll the way my Savior leads me,\r\nCheers each winding path I tread,\r\nGives me grace for every trial,\r\nFeeds me with the living Bread.\r\nThough my weary steps may falter\r\nAnd my soul athirst may be,\r\nGushing from the Rock before me,\r\nLo! A spring of joy I see;\r\nGushing from the Rock before me,\r\nLo! A spring of joy I see.\r\n\r\n[Verse]\r\nAll the way my Savior leads me,\r\nOh, the fullness of His love!\r\nPerfect rest to me is promised\r\nIn my Father's house above.\r\nWhen my spirit, clothed immortal,\r\nWings its flight to realms of day\r\nThis my song through endless ages:\r\nJesus led me all the way;\r\nThis my song through endless ages:\r\nJesus led me all the way.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Trust",
+    "Funeral"
+  ]
 }

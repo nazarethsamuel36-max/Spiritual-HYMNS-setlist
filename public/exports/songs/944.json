@@ -1,71 +1,59 @@
 {
-  "id" : 944,
-  "songNumber" : 65,
-  "title" : "GOD IS GOOD TO ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God is good to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Oh what love I see,"
-    }, {
-      "text" : "Jesus as a lamb was slain,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He delivered me, cleansed and set me free,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "Lord of all, He rose again.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Now I live, yet not I,"
-    }, {
-      "text" : "Jesus is alive in me,",
-      "chords" : [ {
-        "chord" : "D7",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Sending the Spirit's flame",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Into my heart again,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "God has shown His love for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 944,
+  "songNumber": 65,
+  "title": "GOD IS GOOD TO ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "God is good to me,"
+        },
+        {
+          "text": "Oh what love I see,"
+        },
+        {
+          "text": "Jesus as a lamb was slain,"
+        },
+        {
+          "text": "He delivered me, cleansed and set me free,"
+        },
+        {
+          "text": "Lord of all, He rose again."
+        },
+        {
+          "text": "Now I live, yet not I,"
+        },
+        {
+          "text": "Jesus is alive in me,"
+        },
+        {
+          "text": "Sending the Spirit's flame"
+        },
+        {
+          "text": "Into my heart again,"
+        },
+        {
+          "text": "God has shown His love for me."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]God is good to me,\nOh what love I see,\nJesus as a lamb was [A]slain,\nHe de[A]livered me, cleansed and set me free,\nLord of all, He rose a[D]gain.\nNow I live, yet not I,\nJesus is a[D7]live in [G]me,\nSending the [D]Spirit's flame\nInto my [A]heart again,\nGod has shown His love for [D]me.",
+  "lyrics": "[Verse 1]\nGod is good to me,\nOh what love I see,\nJesus as a lamb was slain,\nHe delivered me, cleansed and set me free,\nLord of all, He rose again.\nNow I live, yet not I,\nJesus is alive in me,\nSending the Spirit's flame\nInto my heart again,\nGod has shown His love for me.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

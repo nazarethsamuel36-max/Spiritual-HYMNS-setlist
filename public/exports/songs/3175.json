@@ -1,52 +1,125 @@
 {
-  "id" : 3175,
-  "songNumber" : 1034,
-  "title" : "** This is the Air I Breathe",
-  "language" : "english",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "This is the Air I Breathe"
-    }, {
-      "text" : "This is the Air I Breathe"
-    }, {
-      "text" : "Your holy presence living in me"
-    }, {
-      "text" : "This is my daily bread"
-    }, {
-      "text" : "This is my daily bread"
-    }, {
-      "text" : "Your very word spoken to me"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And I"
-    }, {
-      "text" : "I'm desperate for you"
-    }, {
-      "text" : "And I"
-    }, {
-      "text" : "I'm blessed, you found me"
-    }, {
-      "text" : "And I"
-    }, {
-      "text" : "I'm blessed, you washed me"
-    }, {
-      "text" : "And I"
-    }, {
-      "text" : "I'm blessed, you saved me"
-    } ]
-  } ]
+  "id": 3175,
+  "songNumber": 1034,
+  "title": "This is the Air I Breathe",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "Bb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "This is the  air I breathe,"
+        },
+        {
+          "text": "This is the  air I breathe."
+        },
+        {
+          "text": "Your holy  presence, living  in me."
+        },
+        {
+          "text": "This is my  daily bread,"
+        },
+        {
+          "text": "This is the  air I breathe."
+        },
+        {
+          "text": "Your very  word, spoken to  me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And I,  I'm desperate for  You,"
+        },
+        {
+          "text": "And I,  I'm lost without  You."
+        },
+        {
+          "text": "And I,  I'm desperate for  You,"
+        },
+        {
+          "text": "I'm lost  without  You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "This is the  air I breathe,"
+        },
+        {
+          "text": "This is the  air I breathe."
+        },
+        {
+          "text": "Your holy  presence, living  in me."
+        },
+        {
+          "text": "This is my  daily bread,"
+        },
+        {
+          "text": "This is the  air I breathe."
+        },
+        {
+          "text": "Your very  word, spoken to  me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And I,  I'm desperate for  You,"
+        },
+        {
+          "text": "And I,  I'm lost without  You."
+        },
+        {
+          "text": "And I,  I'm desperate for  You,"
+        },
+        {
+          "text": "I'm lost  without  You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Bridge",
+      "lines": [
+        {
+          "text": "I'm lost  without  You."
+        },
+        {
+          "text": "I'm lost  without  You."
+        },
+        {
+          "text": "I'm lost  without  You."
+        },
+        {
+          "text": "I'm  desperate for  You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G] This is the [Em] air I breathe,\n[C] This is the [G] air I breathe.\n[G] Your holy [D] presence, living [G] in me.\n[G] This is my [Em] daily bread,\n[C] This is the [G] air I breathe.\n[G] Your very [D] word, spoken to [G] me.\n\n[Chorus]\n[Em] And I, [C] I'm desperate for [G] You,\n[Em] And I, [C] I'm lost without [G] You.\n[Em] And I, [C] I'm desperate for [G] You,\n[Em] I'm lost [D] without [G] You.\n\n[Verse 2]\n[G] This is the [Em] air I breathe,\n[C] This is the [G] air I breathe.\n[G] Your holy [D] presence, living [G] in me.\n[G] This is my [Em] daily bread,\n[C] This is the [G] air I breathe.\n[G] Your very [D] word, spoken to [G] me.\n\n[Chorus]\n[Em] And I, [C] I'm desperate for [G] You,\n[Em] And I, [C] I'm lost without [G] You.\n[Em] And I, [C] I'm desperate for [G] You,\n[Em] I'm lost [D] without [G] You.\n\n[Bridge]\n[Em] I'm lost [D] without [G] You.\n[Em] I'm lost [D] without [G] You.\n[Em] I'm lost [D] without [G] You.\n[Em] I'm [C] desperate for [G] You.",
+  "lyrics": "[Verse 1]\n This is the  air I breathe,\n This is the  air I breathe.\n Your holy  presence, living  in me.\n This is my  daily bread,\n This is the  air I breathe.\n Your very  word, spoken to  me.\n\n[Chorus]\n And I,  I'm desperate for  You,\n And I,  I'm lost without  You.\n And I,  I'm desperate for  You,\n I'm lost  without  You.\n\n[Verse 2]\n This is the  air I breathe,\n This is the  air I breathe.\n Your holy  presence, living  in me.\n This is my  daily bread,\n This is the  air I breathe.\n Your very  word, spoken to  me.\n\n[Chorus]\n And I,  I'm desperate for  You,\n And I,  I'm lost without  You.\n And I,  I'm desperate for  You,\n I'm lost  without  You.\n\n[Bridge]\n I'm lost  without  You.\n I'm lost  without  You.\n I'm lost  without  You.\n I'm  desperate for  You.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

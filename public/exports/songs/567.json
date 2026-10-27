@@ -1,51 +1,62 @@
 {
-  "id" : 567,
-  "songNumber" : 21,
-  "title" : "WITH MY HANDS LIFTED UP",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "With my hands lifted up,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 8
-      }, {
-        "chord" : "Bm",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And my mouth filled with praise,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "With a heart of thanksgiving,"
-    }, {
-      "text" : "I will bless Thee, O Lord. (3)"
-    }, {
-      "text" : "With a heart of thanksgiving,"
-    }, {
-      "text" : "I will bless Thee, O Lord."
-    }, {
-      "text" : "We bless Thee, O Lord, (2)"
-    }, {
-      "text" : "With a heart of thanksgiving,"
-    }, {
-      "text" : "We bless Thee, O Lord."
-    } ]
-  } ]
+  "id": 567,
+  "songNumber": 21,
+  "title": "WITH MY HANDS LIFTED UP",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "With my hands lifted up,"
+        },
+        {
+          "text": "And my mouth filled with praise,"
+        },
+        {
+          "text": "With a heart of thanksgiving,"
+        },
+        {
+          "text": "I will bless Thee, O Lord. (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "With a heart of thanksgiving,"
+        },
+        {
+          "text": "I will bless Thee, O Lord."
+        },
+        {
+          "text": "We bless Thee, O Lord, (2)"
+        },
+        {
+          "text": "With a heart of thanksgiving,"
+        },
+        {
+          "text": "We bless Thee, O Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]With my [F#m]hands lifted [Bm]up,\nAnd my [A]mouth filled with [D]praise,\nWith a heart of thanksgiving,\nI will bless Thee, O Lord. (3)\n\n[Verse 2]\nWith a heart of thanksgiving,\nI will bless Thee, O Lord.\nWe bless Thee, O Lord, (2)\nWith a heart of thanksgiving,\nWe bless Thee, O Lord.",
+  "lyrics": "[Verse 1]\nWith my hands lifted up,\nAnd my mouth filled with praise,\nWith a heart of thanksgiving,\nI will bless Thee, O Lord. (3)\n\n[Verse 2]\nWith a heart of thanksgiving,\nI will bless Thee, O Lord.\nWe bless Thee, O Lord, (2)\nWith a heart of thanksgiving,\nWe bless Thee, O Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

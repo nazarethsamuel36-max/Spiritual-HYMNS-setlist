@@ -1,80 +1,83 @@
 {
-  "id" : 712,
-  "songNumber" : 67,
-  "title" : "THY LOVING KINDNESS",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Thy loving kindness, } 2",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Is better than life.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "My lips shall praise Thee"
-    }, {
-      "text" : "Thus will I bless Thee,",
-      "chords" : [ {
-        "chord" : "Bm",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Thy loving kindness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "Em",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Is better than life."
-    }, {
-      "text" : "I lift my hands up unto",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "D7",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Thy Name, (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "My lips shall praise Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Thus will I bless Thee,"
-    }, {
-      "text" : "Thy loving kindness,"
-    }, {
-      "text" : "Is better than life."
-    } ]
-  } ]
+  "id": 712,
+  "songNumber": 67,
+  "title": "THY LOVING KINDNESS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Thy loving kindness, } 2"
+        },
+        {
+          "text": "Is better than life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "My lips shall praise Thee"
+        },
+        {
+          "text": "Thus will I bless Thee,"
+        },
+        {
+          "text": "Thy loving kindness,"
+        },
+        {
+          "text": "Is better than life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "I lift my hands up unto"
+        },
+        {
+          "text": "Thy Name, (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "My lips shall praise Thee,"
+        },
+        {
+          "text": "Thus will I bless Thee,"
+        },
+        {
+          "text": "Thy loving kindness,"
+        },
+        {
+          "text": "Is better than life."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nThy loving [D]kindness, } 2\nIs better than [A][D]life.\n\n[Chorus]\nMy lips shall praise Thee\nThus will I [Bm]bless Thee,\nThy loving [D][Em]kind[A]ness,\nIs better than life.\n\n[Verse 2]\nI lift my [D]hands up [D7]unto\nThy [G]Name, (2)\n\n[Chorus]\nMy lips shall [D]praise Thee,\nThus will I bless Thee,\nThy loving kindness,\nIs better than life.",
+  "lyrics": "[Verse 1]\nThy loving kindness, } 2\nIs better than life.\n\n[Chorus]\nMy lips shall praise Thee\nThus will I bless Thee,\nThy loving kindness,\nIs better than life.\n\n[Verse 2]\nI lift my hands up unto\nThy Name, (2)\n\n[Chorus]\nMy lips shall praise Thee,\nThus will I bless Thee,\nThy loving kindness,\nIs better than life.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

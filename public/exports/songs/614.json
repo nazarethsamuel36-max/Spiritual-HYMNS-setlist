@@ -1,176 +1,89 @@
 {
-  "id" : 614,
-  "songNumber" : 307,
-  "title" : "GOD WILL MAKE A WAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God will make a way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Where there seems to be no way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "He works in ways we cannot see,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He will make a way for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "He will make a way.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He will be my Guide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Hold me closely to His side;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "With love and strength for each new day",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He will make a way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "He will make a way."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "By a roadway in the wilderness,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He'll lead me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "And rivers in the desert will I see,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Heaven and Earth will fade but",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "His Word will still remain.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And He will do something new today.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 614,
+  "songNumber": 307,
+  "title": "GOD WILL MAKE A WAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God will make a way,"
+        },
+        {
+          "text": "Where there seems to be no way,"
+        },
+        {
+          "text": "He works in ways we cannot see,"
+        },
+        {
+          "text": "He will make a way for me,"
+        },
+        {
+          "text": "He will make a way."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He will be my Guide,"
+        },
+        {
+          "text": "Hold me closely to His side;"
+        },
+        {
+          "text": "With love and strength for each new day"
+        },
+        {
+          "text": "He will make a way,"
+        },
+        {
+          "text": "He will make a way."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "By a roadway in the wilderness,"
+        },
+        {
+          "text": "He'll lead me"
+        },
+        {
+          "text": "And rivers in the desert will I see,"
+        },
+        {
+          "text": "Heaven and Earth will fade but"
+        },
+        {
+          "text": "His Word will still remain."
+        },
+        {
+          "text": "And He will do something new today."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]God will [D]make a way,\r\nWhere [C]there seems to [G]be no way,\r\nHe [C]works in ways we [G]cannot see,\r\n[C]He will [D]make a way for me,\r\n[G][C]He will [D]make a [G]way.\r\n\r\n[Verse]\r\nHe [G]will [D]be my Guide,\r\nHold [C]me closely [G]to His side;\r\nWith [C]love and strength for [G]each new day\r\n[C]He will [D]make a way,\r\nHe will make a way.\r\n\r\n[Verse]\r\nBy a [C]roadway in the [D]wilderness,\r\nHe'll [G]lead me\r\nAnd [C]rivers in the [G]desert will I [D]see,\r\n[G]Heaven and [D]Earth will [G]fade but\r\n[C]His Word [G]will still re[D]main.\r\nAnd [C]He will do [D]something [G]new today.",
+  "lyrics": "[Verse]\r\nGod will make a way,\r\nWhere there seems to be no way,\r\nHe works in ways we cannot see,\r\nHe will make a way for me,\r\nHe will make a way.\r\n\r\n[Verse]\r\nHe will be my Guide,\r\nHold me closely to His side;\r\nWith love and strength for each new day\r\nHe will make a way,\r\nHe will make a way.\r\n\r\n[Verse]\r\nBy a roadway in the wilderness,\r\nHe'll lead me\r\nAnd rivers in the desert will I see,\r\nHeaven and Earth will fade but\r\nHis Word will still remain.\r\nAnd He will do something new today.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

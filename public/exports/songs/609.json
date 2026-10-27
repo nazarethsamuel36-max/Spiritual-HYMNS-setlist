@@ -1,279 +1,113 @@
 {
-  "id" : 609,
-  "songNumber" : 302,
-  "title" : "A WONDERFUL SAVIOUR IS JESUS MY LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "A wonderful Saviour is Jesus my Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "A wonderful Saviour to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He hideth my soul in the cleft of the rock,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Where rivers of pleasure I see.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "He hideth my soul in the cleft of the rock,"
-    }, {
-      "text" : "That shadows a dry, thirsty land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "He hideth my life in the depths of His love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "And covers me there with His hand.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "A wonderful Saviour is Jesus my Lord,"
-    }, {
-      "text" : "He taketh my burden away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "He holdeth me up, and I shall not be moved,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "He giveth me strength as my day.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "With numberless blessings each moment He crowns,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "And filled with His fullness divine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I sing in my rapture, Oh, glory to God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "For such a Redeemer as mine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "When clothed in His brightness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Transported I rise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "To meet Him in clouds of the sky,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "His perfect salvation, His wonderful love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I'll shout with the millions on high.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 609,
+  "songNumber": 302,
+  "title": "A WONDERFUL SAVIOUR IS JESUS MY LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "A wonderful Saviour is Jesus my Lord,"
+        },
+        {
+          "text": "A wonderful Saviour to me,"
+        },
+        {
+          "text": "He hideth my soul in the cleft of the rock,"
+        },
+        {
+          "text": "Where rivers of pleasure I see."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "That shadows a dry, thirsty land,"
+        },
+        {
+          "text": "He hideth my life in the depths of His love,"
+        },
+        {
+          "text": "And covers me there with His hand."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "A wonderful Saviour is Jesus my Lord,"
+        },
+        {
+          "text": "He taketh my burden away,"
+        },
+        {
+          "text": "He holdeth me up, and I shall not be moved,"
+        },
+        {
+          "text": "He giveth me strength as my day."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "With numberless blessings each moment He crowns,"
+        },
+        {
+          "text": "And filled with His fullness divine,"
+        },
+        {
+          "text": "I sing in my rapture, Oh, glory to God,"
+        },
+        {
+          "text": "For such a Redeemer as mine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "When clothed in His brightness,"
+        },
+        {
+          "text": "Transported I rise,"
+        },
+        {
+          "text": "To meet Him in clouds of the sky,"
+        },
+        {
+          "text": "His perfect salvation, His wonderful love,"
+        },
+        {
+          "text": "Ill shout with the millions on high."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nA [D]wonderful [G]Saviour is [D]Jesus my [A]Lord,\nA [D]wonderful [G]Saviour to [A]me,\nHe [D]hideth my [G]soul in the [D]cleft of the [A]rock,\nWhere [D]rivers of [A]pleasure I [D]see.\n\n[Chorus]\nThat [D]shadows a [G]dry, thirsty [A]land,\nHe [D]hideth my [G]life in the [D]depths of His [A]love,\nAnd [D]covers me [A]there with His [D]hand.\n\n[Verse 2]\nA wonderful Saviour is Jesus my Lord,\nHe [D]taketh my [G]burden a[A]way,\nHe [D]holdeth me [G]up, and I [D]shall not be [A]moved,\nHe [D]giveth me [A]strength as my [D]day.\n\n[Verse 3]\nWith [D]numberless [G]blessings each [D]moment He [A]crowns,\nAnd [D]filled with His [G]fullness di[A]vine,\nI [D]sing in my [G]rapture, Oh, [D]glory to [A]God,\nFor [D]such a Re[A]deemer as [D]mine.\n\n[Verse 4]\nWhen [D]clothed in His [G]brightness,\nTrans[D]ported I [A]rise,\nTo [D]meet Him in [G]clouds of the [A]sky,\nHis [D]perfect sal[G]vation, His [D]wonderful [A]love,\nIll [D]shout with the [A]millions on [D]high.",
+  "lyrics": "[Verse 1]\nA wonderful Saviour is Jesus my Lord,\nA wonderful Saviour to me,\nHe hideth my soul in the cleft of the rock,\nWhere rivers of pleasure I see.\n\n[Chorus]\nThat shadows a dry, thirsty land,\nHe hideth my life in the depths of His love,\nAnd covers me there with His hand.\n\n[Verse 2]\nA wonderful Saviour is Jesus my Lord,\nHe taketh my burden away,\nHe holdeth me up, and I shall not be moved,\nHe giveth me strength as my day.\n\n[Verse 3]\nWith numberless blessings each moment He crowns,\nAnd filled with His fullness divine,\nI sing in my rapture, Oh, glory to God,\nFor such a Redeemer as mine.\n\n[Verse 4]\nWhen clothed in His brightness,\nTransported I rise,\nTo meet Him in clouds of the sky,\nHis perfect salvation, His wonderful love,\nIll shout with the millions on high.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

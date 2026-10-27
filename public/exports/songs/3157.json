@@ -1,90 +1,152 @@
 {
-  "id" : 3157,
-  "songNumber" : 1016,
-  "title" : "** No Longer Slaves",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "You unravel me, with a melody"
-    }, {
-      "text" : "You surround me with a song"
-    }, {
-      "text" : "Of deliverance, from my enemies"
-    }, {
-      "text" : "Till all my fears have gone"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "I'm no longer a slave to fear"
-    }, {
-      "text" : "I am a child of God"
-    }, {
-      "text" : "I'm no longer a slave to fear"
-    }, {
-      "text" : "I am a child of God"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "From my mother's womb"
-    }, {
-      "text" : "You have chosen me"
-    }, {
-      "text" : "Your Love has called my name"
-    }, {
-      "text" : "I've been born again, into a family"
-    }, {
-      "text" : "Your blood flows through my veins"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "You split the sea"
-    }, {
-      "text" : "So I could walk right through it"
-    }, {
-      "text" : "My fears are drowned in perfect love"
-    }, {
-      "text" : "You rescued me"
-    }, {
-      "text" : "So I could stand and say"
-    }, {
-      "text" : "I am a child of God"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "I am surrounded"
-    }, {
-      "text" : "By the arms of the father"
-    }, {
-      "text" : "I am surrounded"
-    }, {
-      "text" : "By songs of deliverance"
-    }, {
-      "text" : "We've been liberated"
-    }, {
-      "text" : "From our bondage"
-    }, {
-      "text" : "We're the sons and the daughters"
-    }, {
-      "text" : "Let us sing our freedom"
-    } ]
-  } ]
+  "id": 3157,
+  "songNumber": 1016,
+  "title": "No Longer Slaves",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "You unravel me with a melody"
+        },
+        {
+          "text": "You surround me with a song"
+        },
+        {
+          "text": "Of deliverance from my enemies"
+        },
+        {
+          "text": "Till all my fears have gone"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "I'm no longer a slave to fear"
+        },
+        {
+          "text": "I am a child of God"
+        },
+        {
+          "text": "I'm no longer a slave to fear"
+        },
+        {
+          "text": "I am a child of God"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "From my mother's womb"
+        },
+        {
+          "text": "You have chosen me"
+        },
+        {
+          "text": "Your love has called my name"
+        },
+        {
+          "text": "I've been born again into a family"
+        },
+        {
+          "text": "Your blood flows through my veins"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "I'm no longer a slave to fear"
+        },
+        {
+          "text": "I am a child of God"
+        },
+        {
+          "text": "I'm no longer a slave to fear"
+        },
+        {
+          "text": "I am a child of God"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "You split the sea"
+        },
+        {
+          "text": "So I could walk right through it"
+        },
+        {
+          "text": "My fears are drowned in perfect love"
+        },
+        {
+          "text": "You rescued me"
+        },
+        {
+          "text": "So I could stand and say"
+        },
+        {
+          "text": "I am a child of God"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "I am surrounded"
+        },
+        {
+          "text": "By the arms of the Father"
+        },
+        {
+          "text": "I am surrounded"
+        },
+        {
+          "text": "By songs of deliverance"
+        },
+        {
+          "text": "We've been liberated"
+        },
+        {
+          "text": "From our bondage"
+        },
+        {
+          "text": "We're the sons and the daughters"
+        },
+        {
+          "text": "Let us sing our freedom"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nYou unravel me with a melody\nYou surround me with a song\nOf deliverance from my enemies\nTill all my fears have gone\n\n[CHORUS]\nI'm no longer a slave to fear\nI am a child of God\nI'm no longer a slave to fear\nI am a child of God\n\n[Verse 2]\nFrom my mother's womb\nYou have chosen me\nYour love has called my name\nI've been born again into a family\nYour blood flows through my veins\n\n[CHORUS]\nI'm no longer a slave to fear\nI am a child of God\nI'm no longer a slave to fear\nI am a child of God\n\n[Verse 3]\nYou split the sea\nSo I could walk right through it\nMy fears are drowned in perfect love\nYou rescued me\nSo I could stand and say\nI am a child of God\n\n[Verse 4]\nI am surrounded\nBy the arms of the Father\nI am surrounded\nBy songs of deliverance\nWe've been liberated\nFrom our bondage\nWe're the sons and the daughters\nLet us sing our freedom",
+  "lyrics": "\n[Verse 1]\nYou unravel me with a melody\nYou surround me with a song\nOf deliverance from my enemies\nTill all my fears have gone\n\n[CHORUS]\nI'm no longer a slave to fear\nI am a child of God\nI'm no longer a slave to fear\nI am a child of God\n\n[Verse 2]\nFrom my mother's womb\nYou have chosen me\nYour love has called my name\nI've been born again into a family\nYour blood flows through my veins\n\n[CHORUS]\nI'm no longer a slave to fear\nI am a child of God\nI'm no longer a slave to fear\nI am a child of God\n\n[Verse 3]\nYou split the sea\nSo I could walk right through it\nMy fears are drowned in perfect love\nYou rescued me\nSo I could stand and say\nI am a child of God\n\n[Verse 4]\nI am surrounded\nBy the arms of the Father\nI am surrounded\nBy songs of deliverance\nWe've been liberated\nFrom our bondage\nWe're the sons and the daughters\nLet us sing our freedom",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Victory"
+  ]
 }

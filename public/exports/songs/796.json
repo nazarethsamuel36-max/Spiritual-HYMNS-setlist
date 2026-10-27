@@ -1,292 +1,126 @@
 {
-  "id" : 796,
-  "songNumber" : 184,
-  "title" : "O HAPPY DAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "O happy day, that fixed my choice",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "On Thee, my Saviour and my God !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Well may this glowing heart rejoice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And tell its raptures all abroad.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Happy day, happy day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "When Jesus washed my sins away!",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He taught me how to watch and pray,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "And live rejoicing every day.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Happy day, happy day,"
-    }, {
-      "text" : "When Jesus washed my sins away !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "O happy bond, that seals my vows",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "To Him who merits all my love !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Let cheerful anthems fill His house,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "While to that sacred shrine I move.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "'Tis done ; the great transaction's done !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "I am my Lord's and He is mine ;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "He drew me, and I followed on,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Charmed to confess the voice divine.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Now rest my long-divided heart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Fixed on this blissful centre rest ;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Nor ever from thy Lord depart",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "With Him of every good possessed.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 796,
+  "songNumber": 184,
+  "title": "O HAPPY DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O happy day, that fixed my choice"
+        },
+        {
+          "text": "On Thee, my Saviour and my God !"
+        },
+        {
+          "text": "Well may this glowing heart rejoice,"
+        },
+        {
+          "text": "And tell its raptures all abroad."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Happy day, happy day,"
+        },
+        {
+          "text": "When Jesus washed my sins away!"
+        },
+        {
+          "text": "He taught me how to watch and pray,"
+        },
+        {
+          "text": "And live rejoicing every day."
+        },
+        {
+          "text": "Happy day, happy day,"
+        },
+        {
+          "text": "When Jesus washed my sins away !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O happy bond, that seals my vows"
+        },
+        {
+          "text": "To Him who merits all my love !"
+        },
+        {
+          "text": "Let cheerful anthems fill His house,"
+        },
+        {
+          "text": "While to that sacred shrine I move."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Tis done ; the great transactions done !"
+        },
+        {
+          "text": "I am my Lords and He is mine ;"
+        },
+        {
+          "text": "He drew me, and I followed on,"
+        },
+        {
+          "text": "Charmed to confess the voice divine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    }
+  ],
+  "chords": "[Verse]\r\n O [D]happy day, that [G]fixed my [D]choice\r\nOn [G]Thee, my Saviour [D]and my [A]God !\r\nWell [D]may this glowing [G]heart re[D]joice,\r\nAnd [G]tell its raptures [D]all a[A]broad.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[D]Happy day, [G]happy [D]day,\r\nWhen [G]Jesus washed my [D]sins a[A]way!\r\nHe [D]taught me how to [G]watch and [D]pray,\r\nAnd [G]live re[D]joicing [A]every [D]day.\r\nHappy day, happy day,\r\nWhen [G]Jesus washed my [D]sins a[A]way !\r\n[Verse]\r\n[Verse]\r\nO [D]happy bond, that [G]seals my [D]vows\r\nTo [G]Him who merits [D]all my [A]love !\r\nLet [D]cheerful anthems [G]fill His [D]house,\r\nWhile [G]to that sacred [D]shrine I [A]move.\r\n[Verse]\r\n[Verse]\r\nTis [D]done ; the great trans[G]actions [D]done !\r\nI [G]am my Lords and [D]He is [A]mine ;\r\nHe [D]drew me, and I [G]followed [D]on,\r\n[G]Charmed to con[D]fess the [A]voice di[D]vine.\r\n",
+  "lyrics": "[Verse]\r\n O happy day, that fixed my choice\r\nOn Thee, my Saviour and my God !\r\nWell may this glowing heart rejoice,\r\nAnd tell its raptures all abroad.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nHappy day, happy day,\r\nWhen Jesus washed my sins away!\r\nHe taught me how to watch and pray,\r\nAnd live rejoicing every day.\r\nHappy day, happy day,\r\nWhen Jesus washed my sins away !\r\n[Verse]\r\n[Verse]\r\nO happy bond, that seals my vows\r\nTo Him who merits all my love !\r\nLet cheerful anthems fill His house,\r\nWhile to that sacred shrine I move.\r\n[Verse]\r\n[Verse]\r\nTis done ; the great transactions done !\r\nI am my Lords and He is mine ;\r\nHe drew me, and I followed on,\r\nCharmed to confess the voice divine.\r\n[Verse]\r\n",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

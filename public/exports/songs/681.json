@@ -1,387 +1,170 @@
 {
-  "id" : 681,
-  "songNumber" : 374,
-  "title" : "I WANT TO WALK WITH JESUS CHRIST",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I want to walk with Jesus Christ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "All the days I live of this life on earth,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "To give to Him complete control,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Of body and of soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Follow Him, follow Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Yield your life to Him,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "He has conquered death,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "He is King of kings,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Accept the joy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Which He gives to those,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Who yield their lives to Him.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I want to learn to speak to Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "To pray to Him, confess my sin,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "To open my life and let Him in,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "For joy will then be mine.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I want to learn to read His Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "For this is how I know the way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "To live my life as pleases Him,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "In holiness and joy.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "I want to learn to speak of Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "My life must show that He lives in me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "My deeds, my thoughts, my words must speak",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "All of His love for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "O Holy Spirit of the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Enter now into this heart of mine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Take full control of my selfish will,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "And make me wholly thine !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 681,
+  "songNumber": 374,
+  "title": "I WANT TO WALK WITH JESUS CHRIST",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to walk with Jesus Christ,"
+        },
+        {
+          "text": "All the days I live of this life on earth,"
+        },
+        {
+          "text": "To give to Him complete control,"
+        },
+        {
+          "text": "Of body and of soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Follow Him, follow Him,"
+        },
+        {
+          "text": "Yield your life to Him,"
+        },
+        {
+          "text": "He has conquered death,"
+        },
+        {
+          "text": "He is King of kings,"
+        },
+        {
+          "text": "Accept the joy,"
+        },
+        {
+          "text": "Which He gives to those,"
+        },
+        {
+          "text": "Who yield their lives to Him."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to learn to speak to Him,"
+        },
+        {
+          "text": "To pray to Him, confess my sin,"
+        },
+        {
+          "text": "To open my life and let Him in,"
+        },
+        {
+          "text": "For joy will then be mine."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to learn to read His Word,"
+        },
+        {
+          "text": "For this is how I know the way,"
+        },
+        {
+          "text": "To live my life as pleases Him,"
+        },
+        {
+          "text": "In holiness and joy."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I want to learn to speak of Him,"
+        },
+        {
+          "text": "My life must show that He lives in me,"
+        },
+        {
+          "text": "My deeds, my thoughts, my words must speak"
+        },
+        {
+          "text": "All of His love for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "O Holy Spirit of the Lord,"
+        },
+        {
+          "text": "Enter now into this heart of mine,"
+        },
+        {
+          "text": "Take full control of my selfish will,"
+        },
+        {
+          "text": "And make me wholly thine !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n I want to [E]walk with [A]Jesus [E]Christ,\r\n[E]All the [A]days I [E]live of this life on [B]earth,\r\nTo [E]give to [A]Him com[E]plete con[A]trol,\r\nOf [E]body [B]and of [E]soul.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[E]Follow Him, [A]follow [E]Him,\r\n[A]Yield your [E]life to [B]Him,\r\n[E]He has [A]conquered [E]death,\r\nHe is [A]King of [B]kings,\r\nAc[E]cept the [A]joy,\r\n[E]Which He [A]gives to [B]those,\r\n[E]Who yield their [B]lives to [E]Him.\r\n[Verse]\r\n[Verse]\r\nI [E]want to learn to [A]speak to [E]Him,\r\nTo [A]pray to [E]Him, con[B]fess my [E]sin,\r\nTo [A]open [E]my life and [A]let Him [E]in,\r\nFor [E]joy will [B]then be [E]mine.\r\n[Verse]\r\n[Verse]\r\nI [E]want to learn to [A]read His [E]Word,\r\nFor [A]this is [E]how I [B]know the [E]way,\r\nTo [A]live my [E]life as [A]pleases [E]Him,\r\nIn [E]holiness [B]and [E]joy.\r\n[Verse]\r\n[Verse]\r\nI [E]want to learn to [A]speak of [E]Him,\r\nMy [A]life must [E]show that [B]He lives in [E]me,\r\nMy [A]deeds, my [E]thoughts, my [A]words must [E]speak\r\n[E]All of [B]His love for [E]me.\r\n[Verse]\r\n[Verse]\r\nO [E]Holy [A]Spirit [E]of the [B]Lord,\r\nEn[E]ter [A]now into [E]this heart of [B]mine,\r\n[E]Take full con[A]trol of [E]my selfish [A]will,\r\nAnd [E]make me [B]wholly [E]thine !",
+  "lyrics": "[Verse]\r\n I want to walk with Jesus Christ,\r\nAll the days I live of this life on earth,\r\nTo give to Him complete control,\r\nOf body and of soul.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nFollow Him, follow Him,\r\nYield your life to Him,\r\nHe has conquered death,\r\nHe is King of kings,\r\nAccept the joy,\r\nWhich He gives to those,\r\nWho yield their lives to Him.\r\n[Verse]\r\n[Verse]\r\nI want to learn to speak to Him,\r\nTo pray to Him, confess my sin,\r\nTo open my life and let Him in,\r\nFor joy will then be mine.\r\n[Verse]\r\n[Verse]\r\nI want to learn to read His Word,\r\nFor this is how I know the way,\r\nTo live my life as pleases Him,\r\nIn holiness and joy.\r\n[Verse]\r\n[Verse]\r\nI want to learn to speak of Him,\r\nMy life must show that He lives in me,\r\nMy deeds, my thoughts, my words must speak\r\nAll of His love for me.\r\n[Verse]\r\n[Verse]\r\nO Holy Spirit of the Lord,\r\nEnter now into this heart of mine,\r\nTake full control of my selfish will,\r\nAnd make me wholly thine !",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

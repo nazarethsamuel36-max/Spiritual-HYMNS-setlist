@@ -1,200 +1,113 @@
 {
-  "id" : 601,
-  "songNumber" : 15,
-  "title" : "होईल वृष्टि कृपेची (There Shall Be Showers)",
-  "language" : "marathi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "होईल वृष्टि कृपेची",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "स्फूर्तिदायी, थोर ती;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "ये झोड भारी वारीची,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "खिंड्याटेंकाडांत ती.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "वृष्टी कृपेची ! वृष्टी कृपेची हवी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "बिंदु येताती, दयेची -",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "आम्हां सुवृष्टि हवी.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "होईल वृष्टि कृपेची"
-    }, {
-      "text" : "देवा, करावी आतां !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "स्वोक्ति करा, स्वामी, साची,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "द्या हर्ष अपेक्षांतां.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "होईल वृष्टि कृपेची"
-    }, {
-      "text" : "साधा प्रभू इष्ट काज;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "ऐसी विनंती ख्रिस्ताचे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "नांवें करीतसुं आज.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  } ]
+  "id": 601,
+  "songNumber": 15,
+  "title": "होईल वृष्टि कृपेची (There Shall Be Showers)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "होईल वृष्टि कृपेची"
+        },
+        {
+          "text": "स्फूर्तिदायी, थोर ती;"
+        },
+        {
+          "text": "ये झोड भारी वारीची,"
+        },
+        {
+          "text": "खिंड्याटेंकाडांत ती."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "वृष्टी कृपेची ! वृष्टी कृपेची हवी"
+        },
+        {
+          "text": "बिंदु येताती, दयेची -"
+        },
+        {
+          "text": "आम्हां सुवृष्टि हवी."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "होईल वृष्टि कृपेची"
+        },
+        {
+          "text": "देवा, करावी आतां !"
+        },
+        {
+          "text": "स्वोक्ति करा, स्वामी, साची,"
+        },
+        {
+          "text": "द्या हर्ष अपेक्षांतां."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "होईल वृष्टि कृपेची"
+        },
+        {
+          "text": "साधा प्रभू इष्ट काज;"
+        },
+        {
+          "text": "ऐसी विनंती ख्रिस्ताचे,"
+        },
+        {
+          "text": "नांवें करीतसुं आज."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[G]होईल वृष्टि [C]कृपे[G]ची\n[G]स्फूर्तिदा[A]यी, थोर [D]ती;\n[G]ये झोड भारी [C]वारी[G]ची,\n[C]खिंड्याटेंका[G]डांत [D]ती.[G]\n[Verse]\n[Verse]\n[Chorus]\n[G]वृष्टी कृपेची ! [C]वृष्टी कृपेची ह[G]वी\n[G]बिंदु येता[C]ती, द[G]येची [D]-\n[G]आम्हां सु[C]वृष्टि [G]हवी.\n[Verse]\n[Verse]\nहोईल वृष्टि कृपेची\n[G]देवा, क[A]रावी आ[D]तां !\n[G]स्वोक्ति क[C]रा, स्वामी, [G]साची,\n[C]द्या हर्ष अ[G]पेक्षां[D]तां.[G]\n[Verse]\n[Verse]\nहोईल वृष्टि कृपेची\n[G]साधा प्र[A]भू इष्ट [D]काज;\n[G]ऐसी विनं[C]ती ख्रिस्ता[G]चे,\n[C]नांवें क[G]रीतसुं [D]आज.[G]",
+  "lyrics": "[Verse]\nहोईल वृष्टि कृपेची\nस्फूर्तिदायी, थोर ती;\nये झोड भारी वारीची,\nखिंड्याटेंकाडांत ती.\n[Verse]\n[Verse]\n[Chorus]\nवृष्टी कृपेची ! वृष्टी कृपेची हवी\nबिंदु येताती, दयेची -\nआम्हां सुवृष्टि हवी.\n[Verse]\n[Verse]\nहोईल वृष्टि कृपेची\nदेवा, करावी आतां !\nस्वोक्ति करा, स्वामी, साची,\nद्या हर्ष अपेक्षांतां.\n[Verse]\n[Verse]\nहोईल वृष्टि कृपेची\nसाधा प्रभू इष्ट काज;\nऐसी विनंती ख्रिस्ताचे,\nनांवें करीतसुं आज.",
+  "is_active": true,
+  "updated_at": "2026-09-16T11:01:12.571601+00:00",
+  "genres": [
+    "Worship",
+    "Blessings",
+    "Wedding"
+  ]
 }

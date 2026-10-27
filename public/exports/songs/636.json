@@ -1,294 +1,113 @@
 {
-  "id" : 636,
-  "songNumber" : 329,
-  "title" : "WHAT WE NEED IS THE PILLAR OF FIRE",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "What we need is the pillar of Fire,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Leading the church of God again,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Leading them back to the Bible,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Leading them away from sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Showing the resurrected Savior,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Showing Himself alive again,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "What we need is the pillar of fire,"
-    }, {
-      "text" : "Burning in the hearts of man.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "The pillar of fire led the Children of Israel;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Led them out of Egypt's land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Led them to the Rock of the water,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Led them to the manna in that sand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Led them to God's holy mountain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Where God choose to speak unto them,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "But He wasn't finished yet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He led them to the promise land.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "The early church had the pillar of fire,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Leading each day and every day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Showing to all the sinners;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "That Jesus is the only way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Without the blood there is no salvation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Without the Spirit there is no life;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "What we need is the pillar of fire,"
-    }, {
-      "text" : "Burning in the hearts of man."
-    } ]
-  } ]
+  "id": 636,
+  "songNumber": 329,
+  "title": "WHAT WE NEED IS THE PILLAR OF FIRE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "What we need is the pillar of Fire,"
+        },
+        {
+          "text": "Leading the church of God again,"
+        },
+        {
+          "text": "Leading them back to the Bible,"
+        },
+        {
+          "text": "Leading them away from sin,"
+        },
+        {
+          "text": "Showing the resurrected Savior,"
+        },
+        {
+          "text": "Showing Himself alive again,"
+        },
+        {
+          "text": "What we need is the pillar of fire,"
+        },
+        {
+          "text": "Burning in the hearts of man."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The pillar of fire led the Children of Israel;"
+        },
+        {
+          "text": "Led them out of Egypt's land,"
+        },
+        {
+          "text": "Led them to the Rock of the water,"
+        },
+        {
+          "text": "Led them to the manna in that sand,"
+        },
+        {
+          "text": "Led them to God's holy mountain,"
+        },
+        {
+          "text": "Where God choose to speak unto them,"
+        },
+        {
+          "text": "But He wasn't finished yet,"
+        },
+        {
+          "text": "He led them to the promise land."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The early church had the pillar of fire,"
+        },
+        {
+          "text": "Leading each day and every day,"
+        },
+        {
+          "text": "Showing to all the sinners;"
+        },
+        {
+          "text": "That Jesus is the only way,"
+        },
+        {
+          "text": "Without the blood there is no salvation,"
+        },
+        {
+          "text": "Without the Spirit there is no life;"
+        },
+        {
+          "text": "What we need is the pillar of fire,"
+        },
+        {
+          "text": "Burning in the hearts of man."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nWhat we [D]need is the [G]pillar of [D]Fire,\n[D]Leading the [G]church of God a[A]gain,\n[D]Leading them [G]back to the [D]Bible,\n[D]Leading them a[G]way from [A]sin,\n[D]Showing the [G]resurrected [D]Savior,\n[D]Showing Him[G]self a[A]live a[D]gain,\nWhat we need is the pillar of fire,\n[D]Burning in the [A]hearts of [D]man.\n\n[Verse]\nThe [D]pillar of fire led the [G]Children of [D]Israel;\n[D]Led them [G]out of Egypt's [A]land,\n[D]Led them [G]to the [D]Rock of the water,\n[D]Led them to the [G]manna in that [A]sand,\n[D]Led them to [G]God's holy [D]mountain,\nWhere [G]God choose to [D]speak unto [A]them,\nBut [D]He [G]wasn't [D]finished [A]yet,\nHe [D]led them to the [A]promise [D]land.\n\n[Verse]\nThe [D]early church had the [G]pillar of [D]fire,\n[D]Leading each [G]day and every [A]day,\n[D]Showing to [G]all the [D]sinners;\nThat [D]Jesus is the [G]only [A]way,\nWith[D]out the [G]blood there [D]is no sal[G]vation,\nWith[D]out the [G]Spirit [D]there is no [A]life;\nWhat we need is the pillar of fire,\nBurning in the hearts of man.",
+  "lyrics": "[Verse]\nWhat we need is the pillar of Fire,\nLeading the church of God again,\nLeading them back to the Bible,\nLeading them away from sin,\nShowing the resurrected Savior,\nShowing Himself alive again,\nWhat we need is the pillar of fire,\nBurning in the hearts of man.\n\n[Verse]\nThe pillar of fire led the Children of Israel;\nLed them out of Egypt's land,\nLed them to the Rock of the water,\nLed them to the manna in that sand,\nLed them to God's holy mountain,\nWhere God choose to speak unto them,\nBut He wasn't finished yet,\nHe led them to the promise land.\n\n[Verse]\nThe early church had the pillar of fire,\nLeading each day and every day,\nShowing to all the sinners;\nThat Jesus is the only way,\nWithout the blood there is no salvation,\nWithout the Spirit there is no life;\nWhat we need is the pillar of fire,\nBurning in the hearts of man.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Revival"
+  ]
 }

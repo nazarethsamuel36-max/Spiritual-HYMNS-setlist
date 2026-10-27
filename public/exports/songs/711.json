@@ -1,85 +1,43 @@
 {
-  "id" : 711,
-  "songNumber" : 39,
-  "title" : "I'VE TAKEN MY HARP DOWN",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I've taken my harp down from the willow tree,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 33
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "My heart is singing the victory.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "My past is forgiven, my home is in heaven.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "All sorrow has gone the glory has come,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "And now I am free.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 711,
+  "songNumber": 39,
+  "title": "I'VE TAKEN MY HARP DOWN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I've taken my harp down from the willow tree,"
+        },
+        {
+          "text": "My heart is singing the victory."
+        },
+        {
+          "text": "My past is forgiven, my home is in heaven."
+        },
+        {
+          "text": "All sorrow has gone the glory has come,"
+        },
+        {
+          "text": "And now I am free."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[F]I've taken my harp down from the [Bb]willow [F]tree,\r\n[F]My heart is [Bb]singing the [C]victo[F]ry.\r\n[F]My past is for[Bb]given, my [F]home is in [C]heaven.\r\n[F]All sorrow has [Bb]gone the [F]glory has [C]come,\r\n[F]And [C]now I am [F]free.",
+  "lyrics": "[Verse]\r\nI've taken my harp down from the willow tree,\r\nMy heart is singing the victory.\r\nMy past is forgiven, my home is in heaven.\r\nAll sorrow has gone the glory has come,\r\nAnd now I am free.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

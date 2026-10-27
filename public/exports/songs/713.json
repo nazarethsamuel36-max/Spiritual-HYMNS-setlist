@@ -1,132 +1,61 @@
 {
-  "id" : 713,
-  "songNumber" : 101,
-  "title" : "HE BROUGHT ME TO HIS BANQUETING TABLE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He brought me to His banqueting table,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "And His banner over me is love } 2",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "His banner over me is love.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He set straight paths before my feet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "and His banner over me is love..",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He broke the chains and He set me free...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He lifts me up into heavenly places...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I'm safe and secure in the Rock of all ages...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He is the Way, the Truth and the Life...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "In Christ there is no condemnation...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "I am my Beloved's and He is mine...",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 713,
+  "songNumber": 101,
+  "title": "HE BROUGHT ME TO HIS BANQUETING TABLE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "He brought me to His banqueting table,"
+        },
+        {
+          "text": "And His banner over me is love } 2"
+        },
+        {
+          "text": "His banner over me is love."
+        },
+        {
+          "text": "He set straight paths before my feet,"
+        },
+        {
+          "text": "and His banner over me is love.."
+        },
+        {
+          "text": "He broke the chains and He set me free..."
+        },
+        {
+          "text": "He lifts me up into heavenly places..."
+        },
+        {
+          "text": "I''m safe and secure in the Rock of all ages..."
+        },
+        {
+          "text": "He is the Way, the Truth and the Life..."
+        },
+        {
+          "text": "In Christ there is no condemnation..."
+        },
+        {
+          "text": "I am my Beloved''s and He is mine..."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n\r\nHe [F]brought me to His banqueting table,\r\n\r\nAnd [Bb]His banner over me is [F]love } 2\r\n\r\nHis [C]banner over me is [F]love.\r\n\r\nHe set [F]straight paths before my feet,\r\n\r\nand [Bb]His banner over me is [F]love..\r\n\r\nHe [F]broke the chains and He [Bb]set me [F]free...\r\n\r\nHe [F]lifts me up into [Bb]heavenly [F]places...\r\n\r\nI''m [F]safe and secure in the [C]Rock of all [F]ages...\r\n\r\nHe is the [F]Way, the Truth and the [C]Life...\r\n\r\n[F]In Christ there is no con[Bb]demnation...\r\n\r\nI am my [F]Beloved''s and He is [C]mine...",
+  "lyrics": "[Verse]\r\n\r\nHe brought me to His banqueting table,\r\n\r\nAnd His banner over me is love } 2\r\n\r\nHis banner over me is love.\r\n\r\nHe set straight paths before my feet,\r\n\r\nand His banner over me is love..\r\n\r\nHe broke the chains and He set me free...\r\n\r\nHe lifts me up into heavenly places...\r\n\r\nI''m safe and secure in the Rock of all ages...\r\n\r\nHe is the Way, the Truth and the Life...\r\n\r\nIn Christ there is no condemnation...\r\n\r\nI am my Beloved''s and He is mine...",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

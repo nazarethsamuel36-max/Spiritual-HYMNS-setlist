@@ -1,266 +1,131 @@
 {
-  "id" : 870,
-  "songNumber" : 258,
-  "title" : "OH THIS IS LIKE HEAVEN TO ME",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We find many people who can't understand",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Why we are so happy and free.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "We've crossed over Jordan to Canaan's fair land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "And this is like Heaven to me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Oh, this is like Heaven to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Yes, this is like Heaven to me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "I've crossed over Jordan to Canaan's fair land,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "And this is like Heaven to me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "So when we are happy we sing and we shout;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Some don't understand us, I see.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "We're filled with the Spirit, there isn't a doubt,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "And this is like Heaven to me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "We've heard the sweet music, the heavenly chord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "From glory land over the sea;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "A soul-thrilling message from Jesus, our Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "And this is like Heaven to me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "We're looking for Jesus with glory to come;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "'Tis Jesus Who died on the tree.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "A cloud of bright angels to carry me home-",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Oh, that will be Heaven to me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS 2",
-    "lines" : [ {
-      "text" : "Oh, that will be Heaven to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Yes, that will be Heaven to me;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "A cloud of bright angels to carry me home-"
-    }, {
-      "text" : "Yes, that will be Heaven to me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 870,
+  "songNumber": 258,
+  "title": "OH THIS IS LIKE HEAVEN TO ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "We find many people who cant understand"
+        },
+        {
+          "text": "Why we are so happy and free."
+        },
+        {
+          "text": "Weve crossed over Jordan to Canaans fair land,"
+        },
+        {
+          "text": "And this is like Heaven to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Oh, this is like Heaven to me,"
+        },
+        {
+          "text": "Yes, this is like Heaven to me;"
+        },
+        {
+          "text": "Ive crossed over Jordan to Canaans fair land,"
+        },
+        {
+          "text": "And this is like Heaven to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "So when we are happy we sing and we shout;"
+        },
+        {
+          "text": "Some dont understand us, I see."
+        },
+        {
+          "text": "Were filled with the Spirit, there isnt a doubt,"
+        },
+        {
+          "text": "And this is like Heaven to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Weve heard the sweet music, the heavenly chord,"
+        },
+        {
+          "text": "From glory land over the sea;"
+        },
+        {
+          "text": "A soul-thrilling message from Jesus, our Lord,"
+        },
+        {
+          "text": "And this is like Heaven to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Were looking for Jesus with glory to come;"
+        },
+        {
+          "text": "Tis Jesus Who died on the tree."
+        },
+        {
+          "text": "A cloud of bright angels to carry me home-"
+        },
+        {
+          "text": "Oh, that will be Heaven to me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Ending",
+      "lines": [
+        {
+          "text": "Oh, that will be Heaven to me,"
+        },
+        {
+          "text": "Yes, that will be Heaven to me;"
+        },
+        {
+          "text": "A cloud of bright angels to carry me home-"
+        },
+        {
+          "text": "Yes, that will be Heaven to me"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nWe [D]find many people who [G]cant under[D]stand\nWhy [D]we are so happy and [A]free.\nWeve [D]crossed over Jordan to [G]Canaans fair [D]land,\nAnd [D]this is like [A]Heaven to [D]me.\n\n[Chorus]\nOh, [D]this is like [G]Heaven to [D]me,\nYes, [D]this is like [A]Heaven to me;\nIve [D]crossed over Jordan to [G]Canaans fair [D]land,\nAnd this is like Heaven to me.\n\n[Verse 2]\nSo [D]when we are happy we [G]sing and we [D]shout;\nSome [D]dont understand us, I [A]see.\nWere [D]filled with the Spirit, there [G]isnt a [D]doubt,\nAnd this is like Heaven to me.\n\n[Verse 3]\nWeve [D]heard the sweet music, the [G]heavenly [D]chord,\nFrom [D]glory land over the [A]sea;\nA [D]soul-thrilling message from [G]Jesus, our [D]Lord,\nAnd this is like Heaven to me.\n\n[Verse 4]\nWere [D]looking for Jesus with [G]glory to [D]come;\nTis [D]Jesus Who died on the [A]tree.\nA [D]cloud of bright angels to [G]carry me [D]home-\nOh, [D]that will be [A]Heaven to [D]me.\n\n[Ending]\nOh, [D]that will be [G]Heaven to [D]me,\nYes, [D]that will be [A]Heaven to me;\nA cloud of bright angels to carry me home-\nYes, [D]that will be [A]Heaven to [D]me",
+  "lyrics": "[Verse 1]\nWe find many people who cant understand\nWhy we are so happy and free.\nWeve crossed over Jordan to Canaans fair land,\nAnd this is like Heaven to me.\n\n[Chorus]\nOh, this is like Heaven to me,\nYes, this is like Heaven to me;\nIve crossed over Jordan to Canaans fair land,\nAnd this is like Heaven to me.\n\n[Verse 2]\nSo when we are happy we sing and we shout;\nSome dont understand us, I see.\nWere filled with the Spirit, there isnt a doubt,\nAnd this is like Heaven to me.\n\n[Verse 3]\nWeve heard the sweet music, the heavenly chord,\nFrom glory land over the sea;\nA soul-thrilling message from Jesus, our Lord,\nAnd this is like Heaven to me.\n\n[Verse 4]\nWere looking for Jesus with glory to come;\nTis Jesus Who died on the tree.\nA cloud of bright angels to carry me home-\nOh, that will be Heaven to me.\n\n[Ending]\nOh, that will be Heaven to me,\nYes, that will be Heaven to me;\nA cloud of bright angels to carry me home-\nYes, that will be Heaven to me",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

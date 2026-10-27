@@ -1,242 +1,96 @@
 {
-  "id" : 896,
-  "songNumber" : 284,
-  "title" : "MY JESUS I LOVE THEE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "My Jesus I love Thee, I know Thou art mine!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "For Thee all the pleasure of sin I resign;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "My gracious Redeemer my Saviour art Thou",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "\"If ever I loved Thee, my Jesus, 'tis now\"!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "I love Thee, because Thou hast first loved me!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 31
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "And purchased my pardon on Calvary's tree;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "I love Thee for wearing the thorn on Thy brow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "\"If ever I loved Thee, my Jesus, 'tis now\"!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I will love Thee in life, I will love Thee in death!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 33
-      }, {
-        "chord" : "A",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "And praise Thee as long as Thou lendest me breath;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "And say when the death-dew lies cold on my brow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "\"If ever I loved Thee, my Jesus, 'tis now\"!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "In mansions of Glory and endless delight!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "I'll ever adore Thee in heaven so bright;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "I'll sing with the glittering crown on my brow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "\"If ever I love Thee, my Jesus, 'tis now\"!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 896,
+  "songNumber": 284,
+  "title": "MY JESUS I LOVE THEE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "My Jesus I love Thee, I know Thou art mine!"
+        },
+        {
+          "text": "For Thee all the pleasure of sin I resign;"
+        },
+        {
+          "text": "My gracious Redeemer my Saviour art Thou"
+        },
+        {
+          "text": "\"If ever I loved Thee, my Jesus, 'tis now\"!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I love Thee, because Thou hast first loved me!"
+        },
+        {
+          "text": "And purchased my pardon on Calvary's tree;"
+        },
+        {
+          "text": "I love Thee for wearing the thorn on Thy brow"
+        },
+        {
+          "text": "\"If ever I loved Thee, my Jesus, 'tis now\"!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will love Thee in life, I will love Thee in death!"
+        },
+        {
+          "text": "And praise Thee as long as Thou lendest me breath;"
+        },
+        {
+          "text": "And say when the death-dew lies cold on my brow"
+        },
+        {
+          "text": "\"If ever I loved Thee, my Jesus, 'tis now\"!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "In mansions of Glory and endless delight!"
+        },
+        {
+          "text": "I'll ever adore Thee in heaven so bright;"
+        },
+        {
+          "text": "I'll sing with the glittering crown on my brow"
+        },
+        {
+          "text": "\"If ever I love Thee, my Jesus, 'tis now\"!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nMy [F]Jesus I [Bb]love Thee, I [F]know Thou art [C]mine!\r\nFor [F]Thee all the [Bb]pleasure of [F]sin I re[C]sign;\r\nMy [F]gracious Re[Bb]deemer my [F]Saviour art [C]Thou\r\n\"[F]If ever I [Bb]loved Thee, my [C]Jesus, 'tis [F]now\"!\r\n\r\n[Verse]\r\nI [F]love Thee, be[Bb]cause Thou hast [F]first loved [C]me!\r\nAnd [F]purchased my [Bb]pardon on [F]Calvary's [C]tree;\r\nI [F]love Thee for [Bb]wearing the [F]thorn on Thy [C]brow\r\n\"If ever I loved Thee, my Jesus, 'tis now\"!\r\n\r\n[Verse]\r\nI [F]will love Thee [Bb]in life, I will [F]love Thee in [C]death!\r\nAnd [F]praise Thee as [Bb]long as Thou [F]lendest me [C]breath;\r\nAnd [F]say when the [Bb]death-dew lies [F]cold on my [C]brow\r\n\"If ever I loved Thee, my Jesus, 'tis now\"!\r\n\r\n[Verse]\r\nIn [F]mansions of [Bb]Glory and [F]endless de[C]light!\r\nI'll [F]ever a[Bb]dore Thee in [F]heaven so [C]bright;\r\nI'll [F]sing with the [Bb]glittering [F]crown on my [C]brow\r\n\"[F]If ever I [Bb]love Thee, my [C]Jesus, 'tis [F]now\"!",
+  "lyrics": "[Verse]\r\nMy Jesus I love Thee, I know Thou art mine!\r\nFor Thee all the pleasure of sin I resign;\r\nMy gracious Redeemer my Saviour art Thou\r\n\"If ever I loved Thee, my Jesus, 'tis now\"!\r\n\r\n[Verse]\r\nI love Thee, because Thou hast first loved me!\r\nAnd purchased my pardon on Calvary's tree;\r\nI love Thee for wearing the thorn on Thy brow\r\n\"If ever I loved Thee, my Jesus, 'tis now\"!\r\n\r\n[Verse]\r\nI will love Thee in life, I will love Thee in death!\r\nAnd praise Thee as long as Thou lendest me breath;\r\nAnd say when the death-dew lies cold on my brow\r\n\"If ever I loved Thee, my Jesus, 'tis now\"!\r\n\r\n[Verse]\r\nIn mansions of Glory and endless delight!\r\nI'll ever adore Thee in heaven so bright;\r\nI'll sing with the glittering crown on my brow\r\n\"If ever I love Thee, my Jesus, 'tis now\"!",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Adoration",
+    "Funeral"
+  ]
 }

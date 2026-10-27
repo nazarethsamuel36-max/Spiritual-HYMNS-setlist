@@ -1,76 +1,113 @@
 {
-  "id" : 3170,
-  "songNumber" : 1029,
-  "title" : "** Hallowed be Thy Name",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Hallowed be Thy Name"
-    }, {
-      "text" : "Jehovah God You reign"
-    }, {
-      "text" : "And You will never change, O Lord"
-    }, {
-      "text" : "Forever You're the same"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Jehovah-Jireh"
-    }, {
-      "text" : "You supply my every need"
-    }, {
-      "text" : "Jehovah-Rapha"
-    }, {
-      "text" : "Perfect health You give to me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Jehovah-Shalom"
-    }, {
-      "text" : "You're the One who gives me peace"
-    }, {
-      "text" : "Jehovah-Rohi"
-    }, {
-      "text" : "My faithful Shepherd leading me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Jehovah-Mekaddesh"
-    }, {
-      "text" : "You're the One who makes me clean"
-    }, {
-      "text" : "Jehovah-Tsidkenu"
-    }, {
-      "text" : "Imparting righteousness to me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 5",
-    "lines" : [ {
-      "text" : "Jehovah-Nissi"
-    }, {
-      "text" : "Lord, You reign in victory"
-    }, {
-      "text" : "Jehovah-Shammah"
-    }, {
-      "text" : "You are always there for me"
-    } ]
-  } ]
+  "id": 3170,
+  "songNumber": 1029,
+  "title": "Hallowed be Thy Name",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Hallowed be Thy Name"
+        },
+        {
+          "text": "Jehovah God You reign"
+        },
+        {
+          "text": "And You will never change, O Lord"
+        },
+        {
+          "text": "Forever You're the same"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Jehovah-Jireh"
+        },
+        {
+          "text": "You supply my every need"
+        },
+        {
+          "text": "Jehovah-Rapha"
+        },
+        {
+          "text": "Perfect health You give to me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Jehovah-Shalom"
+        },
+        {
+          "text": "You're the One who gives me peace"
+        },
+        {
+          "text": "Jehovah-Rohi"
+        },
+        {
+          "text": "My faithful Shepherd leading me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Jehovah-Mekaddesh"
+        },
+        {
+          "text": "You're the One who makes me clean"
+        },
+        {
+          "text": "Jehovah-Tsidkenu"
+        },
+        {
+          "text": "Imparting righteousness to me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Jehovah-Nissi"
+        },
+        {
+          "text": "Lord, You reign in victory"
+        },
+        {
+          "text": "Jehovah-Shammah"
+        },
+        {
+          "text": "You are always there for me"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[Verse 1]\nHallowed be Thy Name\nJehovah God You reign\nAnd You will never change, O Lord\nForever You're the same\n\n[Verse 2]\nJehovah-Jireh\nYou supply my every need\nJehovah-Rapha\nPerfect health You give to me\n\n[Verse 3]\nJehovah-Shalom\nYou're the One who gives me peace\nJehovah-Rohi\nMy faithful Shepherd leading me\n\n[Verse 4]\nJehovah-Mekaddesh\nYou're the One who makes me clean\nJehovah-Tsidkenu\nImparting righteousness to me\n\n[Verse 5]\nJehovah-Nissi\nLord, You reign in victory\nJehovah-Shammah\nYou are always there for me",
+  "lyrics": "\n[Verse 1]\nHallowed be Thy Name\nJehovah God You reign\nAnd You will never change, O Lord\nForever You're the same\n\n[Verse 2]\nJehovah-Jireh\nYou supply my every need\nJehovah-Rapha\nPerfect health You give to me\n\n[Verse 3]\nJehovah-Shalom\nYou're the One who gives me peace\nJehovah-Rohi\nMy faithful Shepherd leading me\n\n[Verse 4]\nJehovah-Mekaddesh\nYou're the One who makes me clean\nJehovah-Tsidkenu\nImparting righteousness to me\n\n[Verse 5]\nJehovah-Nissi\nLord, You reign in victory\nJehovah-Shammah\nYou are always there for me",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

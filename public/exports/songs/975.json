@@ -1,128 +1,125 @@
 {
-  "id" : 975,
-  "songNumber" : 97,
-  "title" : "BLESSED BE THE NAME OF THE LORD",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Blessed be the Name of the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "He is worthy to be praised and adored",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "So we lift up holy hands in one accord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Singing Blessed be the Name,",
-      "chords" : [ {
-        "chord" : "D7",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Blessed be the Name,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Blessed be the Name of the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Worthy, You are worthy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "King of kings, Lord of lords,"
-    }, {
-      "text" : "You are worthy.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Worthy, You are worthy,"
-    }, {
-      "text" : "King of kings, Lords of lords,"
-    }, {
-      "text" : "I worship You.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Holy, You are holy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "King of kings, Lord of lords,"
-    }, {
-      "text" : "You are holy.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Holy, You are holy,"
-    }, {
-      "text" : "King of kings, Lord of lords,"
-    }, {
-      "text" : "I worship You."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Jesus, You are Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "King of kings, Lord of lords,"
-    }, {
-      "text" : "You are Jesus.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Jesus, You are Jesus,"
-    }, {
-      "text" : "King of kings, Lord of lords,"
-    }, {
-      "text" : "I worship You."
-    } ]
-  } ]
+  "id": 975,
+  "songNumber": 97,
+  "title": "BLESSED BE THE NAME OF THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Blessed be the Name of the Lord,"
+        },
+        {
+          "text": "He is worthy to be praised and adored"
+        },
+        {
+          "text": "So we lift up holy hands in one accord"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Singing Blessed be the Name,"
+        },
+        {
+          "text": "Blessed be the Name,"
+        },
+        {
+          "text": "Blessed be the Name of the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Worthy, You are worthy,"
+        },
+        {
+          "text": "King of kings, Lord of lords,"
+        },
+        {
+          "text": "You are worthy."
+        },
+        {
+          "text": "Worthy, You are worthy,"
+        },
+        {
+          "text": "King of kings, Lords of lords,"
+        },
+        {
+          "text": "I worship You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Holy, You are holy,"
+        },
+        {
+          "text": "King of kings, Lord of lords,"
+        },
+        {
+          "text": "You are holy."
+        },
+        {
+          "text": "Holy, You are holy,"
+        },
+        {
+          "text": "King of kings, Lord of lords,"
+        },
+        {
+          "text": "I worship You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Jesus, You are Jesus,"
+        },
+        {
+          "text": "King of kings, Lord of lords,"
+        },
+        {
+          "text": "You are Jesus."
+        },
+        {
+          "text": "Jesus, You are Jesus,"
+        },
+        {
+          "text": "King of kings, Lord of lords,"
+        },
+        {
+          "text": "I worship You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Blessed be the Name of the Lord,\nHe is worthy to be praised and a[A]dored\nSo we lift up holy hands in one ac[D]cord\n\n[Chorus]\nSinging Blessed be the [D7]Name,\nBlessed be the [G]Name,\nBlessed be the [D]Name [A]of the [D]Lord.\n\n[Verse 2]\n[D]Worthy, You are worthy,\nKing of kings, Lord of lords,\n[A]You are worthy.\nWorthy, You are worthy,\nKing of kings, Lords of lords,\nI worship [D]You.\n\n[Verse 3]\n[D]Holy, You are holy,\nKing of kings, Lord of lords,\n[A]You are holy.\nHoly, You are holy,\nKing of kings, Lord of lords,\nI worship You.\n\n[Verse 4]\n[D]Jesus, You are Jesus,\nKing of kings, Lord of lords,\n[A]You are Jesus.\nJesus, You are Jesus,\nKing of kings, Lord of lords,\nI worship You.",
+  "lyrics": "[Verse 1]\nBlessed be the Name of the Lord,\nHe is worthy to be praised and adored\nSo we lift up holy hands in one accord\n\n[Chorus]\nSinging Blessed be the Name,\nBlessed be the Name,\nBlessed be the Name of the Lord.\n\n[Verse 2]\nWorthy, You are worthy,\nKing of kings, Lord of lords,\nYou are worthy.\nWorthy, You are worthy,\nKing of kings, Lords of lords,\nI worship You.\n\n[Verse 3]\nHoly, You are holy,\nKing of kings, Lord of lords,\nYou are holy.\nHoly, You are holy,\nKing of kings, Lord of lords,\nI worship You.\n\n[Verse 4]\nJesus, You are Jesus,\nKing of kings, Lord of lords,\nYou are Jesus.\nJesus, You are Jesus,\nKing of kings, Lord of lords,\nI worship You.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

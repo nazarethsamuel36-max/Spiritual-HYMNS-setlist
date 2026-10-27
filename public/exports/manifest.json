@@ -1,20 +1,58 @@
 {
-  "version" : "v1",
-  "generatedAt" : "2026-06-27T17:06:17.966748200Z",
-  "songCount" : 722,
-  "languages" : {
-    "marathi" : {
-      "count" : 25,
-      "range" : "2001-2999"
+  "version": "1789994517552",
+  "generatedAt": "2026-09-21T12:41:57.551Z",
+  "songCount": 733,
+  "languages": {
+    "english": {
+      "count": 418,
+      "range": "1-1042"
     },
-    "english" : {
-      "count" : 414,
-      "range" : "1-999"
+    "marathi": {
+      "count": 25,
+      "range": "1-1504"
     },
-    "hindi" : {
-      "count" : 275,
-      "range" : "1001-1999"
+    "hindi": {
+      "count": 278,
+      "range": "1-2046"
+    },
+    "konkani": {
+      "count": 8,
+      "range": "378-385"
+    },
+    "bengali": {
+      "count": 4,
+      "range": "1-4"
     }
   },
-  "exportedBy" : "ExportService v1.0"
+  "exportedBy": "ExportService v2.0 (CDN Manifest Architecture)",
+  "changedSongIds": [
+    3111,
+    3134,
+    3137,
+    3139,
+    3141,
+    3142,
+    3143,
+    3147,
+    3150,
+    3153,
+    3154,
+    3155,
+    3156,
+    3157,
+    3158,
+    3164,
+    3165,
+    3166,
+    3168,
+    3170,
+    3173,
+    3177,
+    3178,
+    3208,
+    4001,
+    4002,
+    4003,
+    4004
+  ]
 }

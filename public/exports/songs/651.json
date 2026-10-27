@@ -1,243 +1,101 @@
 {
-  "id" : 651,
-  "songNumber" : 344,
-  "title" : "COME THOU ALMIGHTY KING",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Come, thou almighty King,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Help us Thy name to sing,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Help us to praise !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Father all glorious,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "O'er all victorious,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Come and reign over us,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Ancient of days !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Come, Thou Incarnate Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Gird on Thy mighty sword,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Our prayer attend !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Come, and Thy people bless,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "And give Thy word success,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Spirit of holiness, on us descend!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Come, Holy Comforter,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Thy sacred witness bear,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "In this glad hour.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Thou who Almighty art,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "Now rule in every heart,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And ne'er from us depart,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Spirit of power!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    } ]
-  } ]
+  "id": 651,
+  "songNumber": 344,
+  "title": "COME THOU ALMIGHTY KING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Come, thou almighty King,"
+        },
+        {
+          "text": "Help us Thy name to sing,"
+        },
+        {
+          "text": "Help us to praise !"
+        },
+        {
+          "text": "Father all glorious,"
+        },
+        {
+          "text": "O'er all victorious,"
+        },
+        {
+          "text": "Come and reign over us,"
+        },
+        {
+          "text": "Ancient of days !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Come, Thou Incarnate Word,"
+        },
+        {
+          "text": "Gird on Thy mighty sword,"
+        },
+        {
+          "text": "Our prayer attend !"
+        },
+        {
+          "text": "Come, and Thy people bless,"
+        },
+        {
+          "text": "And give Thy word success,"
+        },
+        {
+          "text": "Spirit of holiness, on us descend!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Come, Holy Comforter,"
+        },
+        {
+          "text": "Thy sacred witness bear,"
+        },
+        {
+          "text": "In this glad hour."
+        },
+        {
+          "text": "Thou who Almighty art,"
+        },
+        {
+          "text": "Now rule in every heart,"
+        },
+        {
+          "text": "And ne'er from us depart,"
+        },
+        {
+          "text": "Spirit of power!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Come, thou al[A]mighty [D]King,\n[G]Help us Thy [D]name to [A]sing,\n[D]Help us to [A]praise !\n[D]Father all glorious,\n[G]O'er all vic[D]torious,\n[D]Come and reign [G]over us,\n[D]Ancient [A]of [D]days !\n\n[Verse]\n[D]Come, Thou In[A]carnate [D]Word,\n[G]Gird on Thy [D]mighty [A]sword,\n[D]Our prayer at[A]tend !\n[D]Come, and Thy [G]people bless,\n[G]And give Thy [D]word suc[A]cess,\n[D]Spirit of [G]holiness, [D]on [A]us de[D]scend!\n\n[Verse]\n[D]Come, Holy [A]Comfor[D]ter,\n[G]Thy sacred [D]witness [A]bear,\n[D]In this glad [A]hour.\n[D]Thou who Al[G]mighty art,\n[G]Now rule in [D]every [A]heart,\n[D]And ne'er from [G]us de[D]part,\n[D]Spirit [A]of [D]power!",
+  "lyrics": "[Verse]\nCome, thou almighty King,\nHelp us Thy name to sing,\nHelp us to praise !\nFather all glorious,\nO'er all victorious,\nCome and reign over us,\nAncient of days !\n\n[Verse]\nCome, Thou Incarnate Word,\nGird on Thy mighty sword,\nOur prayer attend !\nCome, and Thy people bless,\nAnd give Thy word success,\nSpirit of holiness, on us descend!\n\n[Verse]\nCome, Holy Comforter,\nThy sacred witness bear,\nIn this glad hour.\nThou who Almighty art,\nNow rule in every heart,\nAnd ne'er from us depart,\nSpirit of power!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

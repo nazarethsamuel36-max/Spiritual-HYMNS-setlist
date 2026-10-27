@@ -1,116 +1,110 @@
 {
-  "id" : 628,
-  "songNumber" : 321,
-  "title" : "MORE LOVE MORE POWER",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "More love more power;",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "More of you in my life,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "More love more power,"
-    }, {
-      "text" : "More of you in my life."
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "And I will worship you,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "With all of my heart,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "And I will worship you,"
-    }, {
-      "text" : "With all of my mind,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "And I will worship you,"
-    }, {
-      "text" : "With all of my strength,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "For you are my Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 8
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "And I will seek Your face,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "With all of my heart,"
-    }, {
-      "text" : "And I will seek Your face,"
-    }, {
-      "text" : "With all of my mind,"
-    }, {
-      "text" : "And I will seek Your face,"
-    }, {
-      "text" : "With all of my strength,"
-    }, {
-      "text" : "For you are my Lord."
-    } ]
-  } ]
+  "id": 628,
+  "songNumber": 321,
+  "title": "MORE LOVE MORE POWER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Am",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "More love more power;"
+        },
+        {
+          "text": "More of you in my life,"
+        },
+        {
+          "text": "More love more power,"
+        },
+        {
+          "text": "More of you in my life."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And I will worship you,"
+        },
+        {
+          "text": "With all of my heart,"
+        },
+        {
+          "text": "And I will worship you,"
+        },
+        {
+          "text": "With all of my mind,"
+        },
+        {
+          "text": "And I will worship you,"
+        },
+        {
+          "text": "With all of my strength,"
+        },
+        {
+          "text": "For you are my Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "And I will seek Your face,"
+        },
+        {
+          "text": "With all of my heart,"
+        },
+        {
+          "text": "And I will seek Your face,"
+        },
+        {
+          "text": "With all of my mind,"
+        },
+        {
+          "text": "And I will seek Your face,"
+        },
+        {
+          "text": "With all of my strength,"
+        },
+        {
+          "text": "For you are my Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [Am]More love [F]more power;\r\n[G]More of you in [Am]my life,\r\nMore love more power,\r\nMore of you in my life.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[Dm]And I will worship [Am]you,\r\n[Dm]With all of my [Am]heart,\r\nAnd I will worship you,\r\n[Dm]With all of my [Am]mind,\r\nAnd I will worship you,\r\n[Dm]With all of my [Am]strength,\r\n[G]For you [Am]are my Lord.\r\n[Verse]\r\n[Verse]\r\n[Dm]And I will seek Your [Am]face,\r\nWith all of my heart,\r\nAnd I will seek Your face,\r\nWith all of my mind,\r\nAnd I will seek Your face,\r\nWith all of my strength,\r\nFor you are my Lord.",
+  "lyrics": "[Verse]\r\n More love more power;\r\nMore of you in my life,\r\nMore love more power,\r\nMore of you in my life.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nAnd I will worship you,\r\nWith all of my heart,\r\nAnd I will worship you,\r\nWith all of my mind,\r\nAnd I will worship you,\r\nWith all of my strength,\r\nFor you are my Lord.\r\n[Verse]\r\n[Verse]\r\nAnd I will seek Your face,\r\nWith all of my heart,\r\nAnd I will seek Your face,\r\nWith all of my mind,\r\nAnd I will seek Your face,\r\nWith all of my strength,\r\nFor you are my Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

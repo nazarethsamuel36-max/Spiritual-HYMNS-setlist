@@ -1,75 +1,56 @@
 {
-  "id" : 1194,
-  "songNumber" : 216,
-  "title" : "महिमा हो तेरी, महिमा हो तेरी",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "महिमा हो तेरी, महिमा हो तेरी (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "करते है तेरी हम स्तुति, हृदय की गहराईयों से (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "यीशु तुही है, तुही है हमारा प्रभु (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "आत्मा और सच्चाई से, तेरी आराधना करे (2)",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "ऊँचा और ऊँचा सबसे ऊँचा रहे तेरा नाम (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 1194,
+  "songNumber": 216,
+  "title": "महिमा हो तेरी, महिमा हो तेरी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "महिमा हो तेरी, महिमा हो तेरी (2)"
+        },
+        {
+          "text": "करते है तेरी हम स्तुति, हृदय की गहराईयों से (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु तुही है, तुही है हमारा प्रभु (2)"
+        },
+        {
+          "text": "आत्मा और सच्चाई से, तेरी आराधना करे (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ऊँचा और ऊँचा सबसे ऊँचा रहे तेरा नाम (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]महिमा हो तेरी, महिमा हो तेरी (2)\n[C]करते है तेरी हम स्तुति, [D]हृदय की गहराईयों [G]से (2)\n\n[Verse]\n[G]यीशु तुही है, तुही है हमारा प्रभु (2)\n[C]आत्मा और सच्चाई से, [D]तेरी आराधना क[G]रे (2)\n\n[Verse]\n[G]ऊँचा और ऊँचा सबसे [C]ऊँचा [D]रहे तेरा [G]नाम (2)",
+  "lyrics": "[Verse]\nमहिमा हो तेरी, महिमा हो तेरी (2)\nकरते है तेरी हम स्तुति, हृदय की गहराईयों से (2)\n\n[Verse]\nयीशु तुही है, तुही है हमारा प्रभु (2)\nआत्मा और सच्चाई से, तेरी आराधना करे (2)\n\n[Verse]\nऊँचा और ऊँचा सबसे ऊँचा रहे तेरा नाम (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

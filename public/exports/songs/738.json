@@ -1,131 +1,77 @@
 {
-  "id" : 738,
-  "songNumber" : 126,
-  "title" : "TEACH ME LORD TO WAIT DOWN ON MY KNEES",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Teach me, Lord, to wait down on my knees,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Till in Your own good time You answer my pleas;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Teach me not to rely on what others do,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "But to wait in prayer for an answer from You.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "They that wait upon the Lord, shall renew their strength,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "They shall mount up with wings as an eagle,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "They shall run and not be weary, they shall walk and not faint;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 57
-      } ]
-    }, {
-      "text" : "Teach me, Lord, teach me, Lord, to wait.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Teach me, Lord, to wait while hearts are aflame,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Help me humble my pride and call on Your Name;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Keep my faith renewed, keep my eyes on Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Let me be on this earth what You want me to be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 44
-      } ]
-    } ]
-  } ]
+  "id": 738,
+  "songNumber": 126,
+  "title": "TEACH ME LORD TO WAIT DOWN ON MY KNEES",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Teach me, Lord, to wait down on my knees,"
+        },
+        {
+          "text": "Till in Your own good time You answer my pleas;"
+        },
+        {
+          "text": "Teach me not to rely on what others do,"
+        },
+        {
+          "text": "But to wait in prayer for an answer from You."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "They that wait upon the Lord, shall renew their strength,"
+        },
+        {
+          "text": "They shall mount up with wings as an eagle,"
+        },
+        {
+          "text": "They shall run and not be weary, they shall walk and not faint;"
+        },
+        {
+          "text": "Teach me, Lord, teach me, Lord, to wait."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Teach me, Lord, to wait while hearts are aflame,"
+        },
+        {
+          "text": "Help me humble my pride and call on Your Name;"
+        },
+        {
+          "text": "Keep my faith renewed, keep my eyes on Thee,"
+        },
+        {
+          "text": "Let me be on this earth what You want me to be."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nTeach me, [D]Lord, to wait down on my [G]knees,\nTill in [D]Your own good time You answer my [A]pleas;\nTeach me [D]not to rely on what [G]others do,\nBut to [D]wait in prayer for an [A]answer from [D]You.\n\n[Chorus]\nThey that [D]wait upon the Lord, shall renew their [G]strength,\nThey shall [D]mount up with wings as an eagle,\nThey shall [D]run and not be weary, they shall walk and not [G]faint;\nTeach me, [D]Lord, teach me, Lord, to [A]wait.\n\n[Verse 2]\nTeach me, [D]Lord, to wait while hearts are a[G]flame,\nHelp me [D]humble my pride and call on Your [A]Name;\nKeep my [D]faith renewed, keep my [G]eyes on Thee,\nLet me [D]be on this earth what You [A]want me to [D]be.",
+  "lyrics": "[Verse 1]\nTeach me, Lord, to wait down on my knees,\nTill in Your own good time You answer my pleas;\nTeach me not to rely on what others do,\nBut to wait in prayer for an answer from You.\n\n[Chorus]\nThey that wait upon the Lord, shall renew their strength,\nThey shall mount up with wings as an eagle,\nThey shall run and not be weary, they shall walk and not faint;\nTeach me, Lord, teach me, Lord, to wait.\n\n[Verse 2]\nTeach me, Lord, to wait while hearts are aflame,\nHelp me humble my pride and call on Your Name;\nKeep my faith renewed, keep my eyes on Thee,\nLet me be on this earth what You want me to be.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

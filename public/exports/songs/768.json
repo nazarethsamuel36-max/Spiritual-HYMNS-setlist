@@ -1,54 +1,47 @@
 {
-  "id" : 768,
-  "songNumber" : 156,
-  "title" : "PRAISE THE LORD O PRAISE THE LORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Praise the Lord O Praise the Lord (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise the Praise the Lord",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "I am weak and He Is Strong (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise the Praise the Lord"
-    }, {
-      "text" : "Watch and pray He's coming soon (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Praise the Praise the Lord.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 768,
+  "songNumber": 156,
+  "title": "PRAISE THE LORD O PRAISE THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Praise the Lord O Praise the Lord (3)"
+        },
+        {
+          "text": "Praise the Praise the Lord"
+        },
+        {
+          "text": "I am weak and He Is Strong (3)"
+        },
+        {
+          "text": "Praise the Praise the Lord"
+        },
+        {
+          "text": "Watch and pray He's coming soon (3)"
+        },
+        {
+          "text": "Praise the Praise the Lord."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Praise the Lord O Praise the Lord (3)\n[G]Praise the Praise the [D]Lord\n[D]I am weak and He Is Strong (3)\nPraise the Praise the Lord\n[D]Watch and pray He's coming soon (3)\n[G]Praise the Praise the [D]Lord.",
+  "lyrics": "[Verse]\nPraise the Lord O Praise the Lord (3)\nPraise the Praise the Lord\nI am weak and He Is Strong (3)\nPraise the Praise the Lord\nWatch and pray He's coming soon (3)\nPraise the Praise the Lord.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

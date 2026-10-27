@@ -1,157 +1,89 @@
 {
-  "id" : 1081,
-  "songNumber" : 103,
-  "title" : "ओ आकाश और सूर्य चंद्रमा",
-  "language" : "hindi",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "ओ आकाश और सूर्य चंद्रमा,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "स्तुति करो सारा भूमण्डल ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "यीशु ने तुझ से प्रेम किया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "तेरे लिए अपना प्राण दिया,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "नरक से आत्मा को बचा लिया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "अनंत जीवन सबको दिया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "अनुग्रहकारी प्रिय यीशु,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "धर्मी हो उसने दुख सहा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "हरा दिया बैरी शैतान को,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "मृत्यु पर यीशु विजयी हुआ ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "दूतों ने सुनाया सुसमाचार,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "यीशु जी उठा है जरुर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "जा के बताओ यह समाचार,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "बाजे बजाते गाते जय जयकार ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 1081,
+  "songNumber": 103,
+  "title": "ओ आकाश और सूर्य चंद्रमा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "ओ आकाश और सूर्य चंद्रमा,"
+        },
+        {
+          "text": "स्तुति करो सारा भूमण्डल ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ने तुझ से प्रेम किया,"
+        },
+        {
+          "text": "तेरे लिए अपना प्राण दिया,"
+        },
+        {
+          "text": "नरक से आत्मा को बचा लिया,"
+        },
+        {
+          "text": "अनंत जीवन सबको दिया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अनुग्रहकारी प्रिय यीशु,"
+        },
+        {
+          "text": "धर्मी हो उसने दुख सहा,"
+        },
+        {
+          "text": "हरा दिया बैरी शैतान को,"
+        },
+        {
+          "text": "मृत्यु पर यीशु विजयी हुआ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दूतों ने सुनाया सुसमाचार,"
+        },
+        {
+          "text": "यीशु जी उठा है जरुर,"
+        },
+        {
+          "text": "जा के बताओ यह समाचार,"
+        },
+        {
+          "text": "बाजे बजाते गाते जय जयकार ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]ओ आकाश और [C]सूर्य चंद्र[G]मा,\n[D]स्तुति करो सारा [G]भूमण्डल ।\n\n[Verse]\n[G]यीशु ने तुझ से [C]प्रेम किया,\n[D]तेरे लिए अपना [G]प्राण दिया,\n[G]नरक से आत्मा को [C]बचा लिया,\n[D]अनंत जीवन सबको [G]दिया ।\n\n[Verse]\n[G]अनुग्रहकारी [C]प्रिय यीशु,\n[D]धर्मी हो उसने [G]दुख सहा,\n[G]हरा दिया बैरी [C]शैतान को,\n[D]मृत्यु पर यीशु [G]विजयी हुआ ।\n\n[Verse]\n[G]दूतों ने सुनाया [C]सुसमाचार,\n[D]यीशु जी उठा है [G]जरुर,\n[G]जा के बताओ यह [C]समाचार,\n[D]बाजे बजाते गाते [G]जय जयकार ।",
+  "lyrics": "ओ आकाश और सूर्य चंद्रमा,\nस्तुति करो सारा भूमण्डल ।\n\n[Verse]\nयीशु ने तुझ से प्रेम किया,\nतेरे लिए अपना प्राण दिया,\nनरक से आत्मा को बचा लिया,\nअनंत जीवन सबको दिया ।\n\n[Verse]\nअनुग्रहकारी प्रिय यीशु,\nधर्मी हो उसने दुख सहा,\nहरा दिया बैरी शैतान को,\nमृत्यु पर यीशु विजयी हुआ ।\n\n[Verse]\nदूतों ने सुनाया सुसमाचार,\nयीशु जी उठा है जरुर,\nजा के बताओ यह समाचार,\nबाजे बजाते गाते जय जयकार ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

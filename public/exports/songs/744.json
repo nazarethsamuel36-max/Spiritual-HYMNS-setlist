@@ -1,156 +1,155 @@
 {
-  "id" : 744,
-  "songNumber" : 132,
-  "title" : "MY SHEEP KNOW MY VOICE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "My sheep know My voice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And the path that I take,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "They follow wherever I go;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "My sheep know My voice"
-    }, {
-      "text" : "And come at My call,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "But a stranger's voice do they not know.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "My sheep know My voice,"
-    }, {
-      "text" : "And day by day,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "They abide in the fold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "And go not astray;"
-    }, {
-      "text" : "They love Me because",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "I have made them My choice,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And they follow My call,"
-    }, {
-      "text" : "For My sheep know My voice.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "My sheep know My voice.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And the pastures of green,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Where I lead them so often to feed;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "My sheep know My voice,"
-    }, {
-      "text" : "And the cool sparkling stream,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Where beside its still waters I lead.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "My sheep know My voice,"
-    }, {
-      "text" : "And the valley of death,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Thru which I shall lead them some day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "But no danger nor harm"
-    }, {
-      "text" : "Can touch one of them,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "For I will be with them alway.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    } ]
-  } ]
+  "id": 744,
+  "songNumber": 132,
+  "title": "MY SHEEP KNOW MY VOICE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "My sheep know My voice,"
+        },
+        {
+          "text": "And the path that I take,"
+        },
+        {
+          "text": "They follow wherever I go;"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "My sheep know My voice"
+        },
+        {
+          "text": "And come at My call,"
+        },
+        {
+          "text": "But a stranger's voice do they not know."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "My sheep know My voice,"
+        },
+        {
+          "text": "And day by day,"
+        },
+        {
+          "text": "They abide in the fold,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "And go not astray;"
+        },
+        {
+          "text": "They love Me because"
+        },
+        {
+          "text": "I have made them My choice,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "And they follow My call,"
+        },
+        {
+          "text": "For My sheep know My voice."
+        },
+        {
+          "text": "My sheep know My voice."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "And the pastures of green,"
+        },
+        {
+          "text": "Where I lead them so often to feed;"
+        },
+        {
+          "text": "My sheep know My voice,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 7",
+      "lines": [
+        {
+          "text": "And the cool sparkling stream,"
+        },
+        {
+          "text": "Where beside its still waters I lead."
+        },
+        {
+          "text": "My sheep know My voice,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 8",
+      "lines": [
+        {
+          "text": "And the valley of death,"
+        },
+        {
+          "text": "Thru which I shall lead them some day;"
+        },
+        {
+          "text": "But no danger nor harm"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 9",
+      "lines": [
+        {
+          "text": "Can touch one of them,"
+        },
+        {
+          "text": "For I will be with them alway."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[A]My sheep [A]know My voice,\r\nAnd the [E]path that I take,\r\nThey [A]follow wherever I go;\r\n\r\n[Verse 2]\r\nMy sheep know My voice\r\nAnd come at [E]My call,\r\nBut a [A]stranger's voice do they not know.\r\n\r\n[Verse 3]\r\nMy sheep know My voice,\r\nAnd day by [E]day,\r\nThey a[A]bide in the fold,\r\n\r\n[Verse 4]\r\nAnd go not astray;\r\nThey love Me be[E]cause\r\nI have made them My [A]choice,\r\n\r\n[Verse 5]\r\nAnd they follow My call,\r\nFor My [E]sheep know My [A]voice.\r\nMy sheep [A]know My voice.\r\n\r\n[Verse 6]\r\nAnd the [E]pastures of green,\r\nWhere I [A]lead them so often to feed;\r\nMy sheep know My voice,\r\n\r\n[Verse 7]\r\nAnd the cool [E]sparkling stream,\r\nWhere be[A]side its still waters I lead.\r\nMy sheep know My voice,\r\n\r\n[Verse 8]\r\nAnd the [E]valley of death,\r\nThru [A]which I shall lead them some day;\r\nBut no danger nor harm\r\n\r\n[Verse 9]\r\nCan touch [E]one of them,\r\nFor I [A]will be with them alway.",
+  "lyrics": "[Verse 1]\r\nMy sheep know My voice,\r\nAnd the path that I take,\r\nThey follow wherever I go;\r\n\r\n[Verse 2]\r\nMy sheep know My voice\r\nAnd come at My call,\r\nBut a stranger's voice do they not know.\r\n\r\n[Verse 3]\r\nMy sheep know My voice,\r\nAnd day by day,\r\nThey abide in the fold,\r\n\r\n[Verse 4]\r\nAnd go not astray;\r\nThey love Me because\r\nI have made them My choice,\r\n\r\n[Verse 5]\r\nAnd they follow My call,\r\nFor My sheep know My voice.\r\nMy sheep know My voice.\r\n\r\n[Verse 6]\r\nAnd the pastures of green,\r\nWhere I lead them so often to feed;\r\nMy sheep know My voice,\r\n\r\n[Verse 7]\r\nAnd the cool sparkling stream,\r\nWhere beside its still waters I lead.\r\nMy sheep know My voice,\r\n\r\n[Verse 8]\r\nAnd the valley of death,\r\nThru which I shall lead them some day;\r\nBut no danger nor harm\r\n\r\n[Verse 9]\r\nCan touch one of them,\r\nFor I will be with them alway.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

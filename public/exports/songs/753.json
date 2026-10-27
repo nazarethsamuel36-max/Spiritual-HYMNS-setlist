@@ -1,230 +1,131 @@
 {
-  "id" : 753,
-  "songNumber" : 141,
-  "title" : "I WAS SINKING DEEP IN SIN",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I was sinking deep in sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Far from the peaceful shore,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Very deeply stained within,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Sinking to rise no more;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "But the Master of the sea",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Heard my despairing cry,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "From the waters lifted me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Now safe am I.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Love lifted me ! Love lifted me !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "When nothing else could help, love lifted me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Love lifted me ! Love lifted me !"
-    }, {
-      "text" : "When nothing else could help, love lifted me."
-    }, {
-      "text" : ""
-    }, {
-      "text" : "All my heart to Him I give,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Ever to Him I'll cling,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "In His blessed presence live,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Ever His praises sing.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "Love so mighty and so true",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Merits my soul's best songs;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Faithful, loving service, too,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "To Him belongs.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Souls in danger, look above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Jesus completely saves;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "He will lift you by His love",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Out of the angry waves.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "He's the Master of the sea,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Billows His will obey;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "He your Saviour wants to be;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Be saved today.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    } ]
-  } ]
+  "id": 753,
+  "songNumber": 141,
+  "title": "I WAS SINKING DEEP IN SIN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I was sinking deep in sin,"
+        },
+        {
+          "text": "Far from the peaceful shore,"
+        },
+        {
+          "text": "Very deeply stained within,"
+        },
+        {
+          "text": "Sinking to rise no more;"
+        },
+        {
+          "text": "But the Master of the sea"
+        },
+        {
+          "text": "Heard my despairing cry,"
+        },
+        {
+          "text": "From the waters lifted me,"
+        },
+        {
+          "text": "Now safe am I."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Love lifted me ! Love lifted me !"
+        },
+        {
+          "text": "When nothing else could help, love lifted me."
+        },
+        {
+          "text": "Love lifted me ! Love lifted me !"
+        },
+        {
+          "text": "When nothing else could help, love lifted me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "All my heart to Him I give,"
+        },
+        {
+          "text": "Ever to Him I'll cling,"
+        },
+        {
+          "text": "In His blessed presence live,"
+        },
+        {
+          "text": "Ever His praises sing."
+        },
+        {
+          "text": "Love so mighty and so true"
+        },
+        {
+          "text": "Merits my soul's best songs;"
+        },
+        {
+          "text": "Faithful, loving service, too,"
+        },
+        {
+          "text": "To Him belongs."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Souls in danger, look above,"
+        },
+        {
+          "text": "Jesus completely saves;"
+        },
+        {
+          "text": "He will lift you by His love"
+        },
+        {
+          "text": "Out of the angry waves."
+        },
+        {
+          "text": "He's the Master of the sea,"
+        },
+        {
+          "text": "Billows His will obey;"
+        },
+        {
+          "text": "He your Saviour wants to be;"
+        },
+        {
+          "text": "Be saved today."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]I was sinking deep in sin,\r\n[C]Far from the peaceful [G]shore,\r\n[G]Very deeply stained within,\r\n[D]Sinking to rise no [G]more;\r\n[G]But the Master of the sea\r\n[C]Heard my despairing [G]cry,\r\n[G]From the waters lifted me,\r\n[D]Now safe am [G]I.\r\n\r\n[Chorus]\r\n[G]Love lifted me ! [C]Love lifted [G]me !\r\nWhen [G]nothing else could [D]help, love lifted [G]me.\r\nLove lifted me ! Love lifted me !\r\nWhen nothing else could help, love lifted me.\r\n\r\n[Verse 2]\r\n[G]All my heart to Him I give,\r\n[C]Ever to Him I'll [G]cling,\r\n[G]In His blessed presence live,\r\n[D]Ever His praises [G]sing.\r\n[G]Love so mighty and so true\r\n[C]Merits my soul's best [G]songs;\r\n[G]Faithful, loving service, too,\r\n[D]To Him be[G]longs.\r\n\r\n[Verse 3]\r\n[G]Souls in danger, look above,\r\n[C]Jesus completely [G]saves;\r\n[G]He will lift you by His love\r\n[D]Out of the angry [G]waves.\r\n[G]He's the Master of the sea,\r\n[C]Billows His will o[G]bey;\r\n[G]He your Saviour wants to be;\r\n[D]Be saved to[G]day.",
+  "lyrics": "[Verse 1]\r\nI was sinking deep in sin,\r\nFar from the peaceful shore,\r\nVery deeply stained within,\r\nSinking to rise no more;\r\nBut the Master of the sea\r\nHeard my despairing cry,\r\nFrom the waters lifted me,\r\nNow safe am I.\r\n\r\n[Chorus]\r\nLove lifted me ! Love lifted me !\r\nWhen nothing else could help, love lifted me.\r\nLove lifted me ! Love lifted me !\r\nWhen nothing else could help, love lifted me.\r\n\r\n[Verse 2]\r\nAll my heart to Him I give,\r\nEver to Him I'll cling,\r\nIn His blessed presence live,\r\nEver His praises sing.\r\nLove so mighty and so true\r\nMerits my soul's best songs;\r\nFaithful, loving service, too,\r\nTo Him belongs.\r\n\r\n[Verse 3]\r\nSouls in danger, look above,\r\nJesus completely saves;\r\nHe will lift you by His love\r\nOut of the angry waves.\r\nHe's the Master of the sea,\r\nBillows His will obey;\r\nHe your Saviour wants to be;\r\nBe saved today.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

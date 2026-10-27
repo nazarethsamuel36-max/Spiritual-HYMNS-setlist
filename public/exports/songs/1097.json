@@ -1,102 +1,62 @@
 {
-  "id" : 1097,
-  "songNumber" : 119,
-  "title" : "मैं पापी हूँ प्रभुजी, तूने मुझे अपनाया ।",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "मैं पापी हूँ प्रभुजी, तूने मुझे अपनाया ।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "C#m",
-        "position" : 22
-      }, {
-        "chord" : "E",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "फिर भी मेरे मसिहा, मैंने तुझे ठुकराया",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "मैं पापी हूँ प्रभुजी।",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मैंने छोड़ा तुझको, पाप को मैंने ना छोड़ा",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "C#m",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "फिर भी मेरे मसीहा, तूने ना मुझको छोड़ा",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "याद आता हैं मुझको, क्रूस का वह नजारा",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "C#m",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "मेरे गुनाहों के खातिर, बहती है खून की धार",
-      "chords" : [ {
-        "chord" : "B",
-        "position" : 0
-      }, {
-        "chord" : "F#m",
-        "position" : 23
-      }, {
-        "chord" : "E",
-        "position" : 40
-      } ]
-    } ]
-  } ]
+  "id": 1097,
+  "songNumber": 119,
+  "title": "मैं पापी हूँ प्रभुजी, तूने मुझे अपनाया",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मैं पापी हूँ प्रभुजी, तूने मुझे अपनाया ।"
+        },
+        {
+          "text": "फिर भी मेरे मसिहा, मैंने तुझे ठुकराया"
+        },
+        {
+          "text": "मैं पापी हूँ प्रभुजी।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मैंने छोड़ा तुझको, पाप को मैंने ना छोड़ा"
+        },
+        {
+          "text": "फिर भी मेरे मसीहा, तूने ना मुझको छोड़ा"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "याद आता हैं मुझको, क्रूस का वह नजारा"
+        },
+        {
+          "text": "मेरे गुनाहों के खातिर, बहती है खून की धार"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[E]मैं पापी हूँ प्रभुजी, [C#m]तूने मुझे अपना[E]या ।\r\n[B]फिर भी मेरे मसिहा, [F#m]मैंने तुझे ठुकरा[E]या\r\n[E]मैं पापी हूँ प्रभुजी।\r\n\r\n[Verse]\r\n[E]मैंने छोड़ा तुझको, [C#m]पाप को मैंने ना छो[E]ड़ा\r\n[B]फिर भी मेरे मसीहा, [F#m]तूने ना मुझको छो[E]ड़ा\r\n\r\n[Verse]\r\n[E]याद आता हैं मुझको, [C#m]क्रूस का वह नजा[E]रा\r\n[B]मेरे गुनाहों के खातिर, [F#m]बहती है खून की धा[E]र",
+  "lyrics": "[Verse]\r\nमैं पापी हूँ प्रभुजी, तूने मुझे अपनाया ।\r\nफिर भी मेरे मसिहा, मैंने तुझे ठुकराया\r\nमैं पापी हूँ प्रभुजी।\r\n\r\n[Verse]\r\nमैंने छोड़ा तुझको, पाप को मैंने ना छोड़ा\r\nफिर भी मेरे मसीहा, तूने ना मुझको छोड़ा\r\n\r\n[Verse]\r\nयाद आता हैं मुझको, क्रूस का वह नजारा\r\nमेरे गुनाहों के खातिर, बहती है खून की धार",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

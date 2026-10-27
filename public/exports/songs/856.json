@@ -1,327 +1,154 @@
 {
-  "id" : 856,
-  "songNumber" : 244,
-  "title" : "OH WHAT A WONDERFUL WONDERFUL DAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Oh, what a wonderful, wonderful day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Day I will never forget,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "After I'd wandered in darkness away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Jesus my Saviour I met,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Oh, what a tender, compassionate friend,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "He met the need of my heart,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Shadows dispelling, with joy I am telling.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "He made all the darkness depart!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Heaven came down and glory filled my soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "When at the cross the Saviour made me whole",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "My sins were washed away,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And my night was turned to day.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Heaven came down and glory filled my soul."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Born of the Spirit with life from above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Into God's family divine,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Justified fully through Calvary's love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Oh, what a standing is mine!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And the transaction so quickly was made.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "When as a sinner I came,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Took of the offer of grace He did proffer.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "He saved me, Oh praise His dear name!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Now I've a hope that will surely endure",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "After the passing of time,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "I have a future in Heaven for sure,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "There in those mansions sublime,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And it's because of that wonderful day",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "When at the cross I believed,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Riches eternal and blessings supernal",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "From His precious hand I received!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 856,
+  "songNumber": 244,
+  "title": "OH WHAT A WONDERFUL WONDERFUL DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Oh, what a wonderful, wonderful day,"
+        },
+        {
+          "text": "Day I will never forget,"
+        },
+        {
+          "text": "After Id wandered in darkness away,"
+        },
+        {
+          "text": "Jesus my Saviour I met,"
+        },
+        {
+          "text": "Oh, what a tender, compassionate friend,"
+        },
+        {
+          "text": "He met the need of my heart,"
+        },
+        {
+          "text": "Shadows dispelling, with joy I am telling."
+        },
+        {
+          "text": "He made all the darkness depart!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Heaven came down and glory filled my soul."
+        },
+        {
+          "text": "When at the cross the Saviour made me whole"
+        },
+        {
+          "text": "My sins were washed away,"
+        },
+        {
+          "text": "And my night was turned to day."
+        },
+        {
+          "text": "Heaven came down and glory filled my soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Born of the Spirit with life from above,"
+        },
+        {
+          "text": "Into Gods family divine,"
+        },
+        {
+          "text": "Justified fully through Calvarys love,"
+        },
+        {
+          "text": "Oh, what a standing is mine!"
+        },
+        {
+          "text": "And the transaction so quickly was made."
+        },
+        {
+          "text": "When as a sinner I came,"
+        },
+        {
+          "text": "Took of the offer of grace He did proffer."
+        },
+        {
+          "text": "He saved me, Oh praise His dear name!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Now Ive a hope that will surely endure"
+        },
+        {
+          "text": "After the passing of time,"
+        },
+        {
+          "text": "I have a future in Heaven for sure,"
+        },
+        {
+          "text": "There in those mansions sublime,"
+        },
+        {
+          "text": "And its because of that wonderful day"
+        },
+        {
+          "text": "When at the cross I believed,"
+        },
+        {
+          "text": "Riches eternal and blessings supernal"
+        },
+        {
+          "text": "From His precious hand I received!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n Oh, what a [E]wonderful, wonderful [A]day,\r\n[B]Day I will never for[E]get,\r\nAfter Id [E]wandered in darkness a[A]way,\r\n[B]Jesus my Saviour I [E]met,\r\nOh, what a [E]tender, com[A]passionate [E]friend,\r\nHe [A]met the [E]need of my [B]heart,\r\n[E]Shadows dispelling, with [A]joy I am telling.\r\nHe [E]made all the [B]darkness de[E]part!\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[E]Heaven came [A]down and [A]glory filled my [E]soul.\r\nWhen at the [B]cross the Saviour made me [E]whole\r\nMy [A]sins were washed a[E]way,\r\nAnd [B]my night was turned to [E]day.\r\nHeaven came down and glory filled my soul.\r\n[Verse]\r\n[Verse]\r\n[E]Born of the Spirit with [A]life from a[E]bove,\r\n[B]Into Gods family di[E]vine,\r\n[E]Justified fully through [A]Calvarys [E]love,\r\nOh, [B]what a standing is [E]mine!\r\nAnd the [E]transaction so [A]quickly was [E]made.\r\nWhen [A]as a [E]sinner I [B]came,\r\n[E]Took of the offer of [A]grace He did proffer.\r\nHe [E]saved me, Oh [B]praise His dear [E]name!\r\n[Verse]\r\n[Verse]\r\n[E]Now Ive a hope that will [A]surely en[E]dure\r\n[B]After the passing of [E]time,\r\n[E]I have a future in [A]Heaven for [E]sure,\r\n[B]There in those mansions sub[E]lime,\r\nAnd [E]its because of that [A]wonderful [E]day\r\nWhen [A]at the [E]cross I be[B]lieved,\r\n[E]Riches eternal and [A]blessings supernal\r\nFrom [E]His precious [B]hand I re[E]ceived!",
+  "lyrics": "[Verse]\r\n Oh, what a wonderful, wonderful day,\r\nDay I will never forget,\r\nAfter Id wandered in darkness away,\r\nJesus my Saviour I met,\r\nOh, what a tender, compassionate friend,\r\nHe met the need of my heart,\r\nShadows dispelling, with joy I am telling.\r\nHe made all the darkness depart!\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nHeaven came down and glory filled my soul.\r\nWhen at the cross the Saviour made me whole\r\nMy sins were washed away,\r\nAnd my night was turned to day.\r\nHeaven came down and glory filled my soul.\r\n[Verse]\r\n[Verse]\r\nBorn of the Spirit with life from above,\r\nInto Gods family divine,\r\nJustified fully through Calvarys love,\r\nOh, what a standing is mine!\r\nAnd the transaction so quickly was made.\r\nWhen as a sinner I came,\r\nTook of the offer of grace He did proffer.\r\nHe saved me, Oh praise His dear name!\r\n[Verse]\r\n[Verse]\r\nNow Ive a hope that will surely endure\r\nAfter the passing of time,\r\nI have a future in Heaven for sure,\r\nThere in those mansions sublime,\r\nAnd its because of that wonderful day\r\nWhen at the cross I believed,\r\nRiches eternal and blessings supernal\r\nFrom His precious hand I received!",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

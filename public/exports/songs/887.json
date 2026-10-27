@@ -1,151 +1,92 @@
 {
-  "id" : 887,
-  "songNumber" : 275,
-  "title" : "HE IS JEHOVAH",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He is Jehovah, God of creation,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "He is Jehovah, Lord God Almighty,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "The Balm of Gilead, the Rock of Ages,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "He is Jehovah, the God that healeth thee.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Sing Hallelujah (4)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "He is Jehovah, Lord God Almighty",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "He is Jehovah, the God that healeth thee."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "He is the Great I Am, the God of Abraham,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Jehovah Shalom, the God of peace I Am,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "The God of Israel, the Everlasting One,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "He is Jehovah, the God that healeth thee."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "He's our Provider, Jehovah Jireh,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "God of Salvation, God the Messiah,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "The Son is sent to you and testified of Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "He is Jehovah, the God that healeth thee."
-    } ]
-  } ]
+  "id": 887,
+  "songNumber": 275,
+  "title": "HE IS JEHOVAH",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "Em",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "He is Jehovah, God of creation,"
+        },
+        {
+          "text": "He is Jehovah, Lord God Almighty,"
+        },
+        {
+          "text": "The Balm of Gilead, the Rock of Ages,"
+        },
+        {
+          "text": "He is Jehovah, the God that healeth thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Sing Hallelujah (4)"
+        },
+        {
+          "text": "He is Jehovah, Lord God Almighty"
+        },
+        {
+          "text": "He is Jehovah, the God that healeth thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "He is the Great I Am, the God of Abraham,"
+        },
+        {
+          "text": "Jehovah Shalom, the God of peace I Am,"
+        },
+        {
+          "text": "The God of Israel, the Everlasting One,"
+        },
+        {
+          "text": "He is Jehovah, the God that healeth thee."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Hes our Provider, Jehovah Jireh,"
+        },
+        {
+          "text": "God of Salvation, God the Messiah,"
+        },
+        {
+          "text": "The Son is sent to you and testified of Him,"
+        },
+        {
+          "text": "He is Jehovah, the God that healeth thee."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]He is Jehovah, God of creation,\r\n[A]He is Jehovah, Lord [E]God Al[B]mighty,\r\nThe [E]Balm of Gilead, the [A]Rock of Ages,\r\n[E]He is Jehovah, the [B]God that healeth [E]thee.\r\n\r\n[Chorus]\r\nSing Halle[E]lujah (4)\r\n[A]He is Jehovah, Lord [E]God Al[B]mighty\r\nHe is Jehovah, the God that healeth thee.\r\n\r\n[Verse 2]\r\nHe [E]is the Great I Am, the [A]God of Abraham,\r\nJe[E]hovah Shalom, the [E]God of [B]peace I Am,\r\nThe [E]God of Israel, the [A]Everlasting One,\r\nHe is Jehovah, the God that healeth thee.\r\n\r\n[Verse 3]\r\nHes [E]our Provider, Je[A]hovah Jireh,\r\n[E]God of Salvation, [E]God the Mes[B]siah,\r\nThe [E]Son is sent to you and [A]testified of Him,\r\nHe is Jehovah, the God that healeth thee.",
+  "lyrics": "[Verse 1]\r\nHe is Jehovah, God of creation,\r\nHe is Jehovah, Lord God Almighty,\r\nThe Balm of Gilead, the Rock of Ages,\r\nHe is Jehovah, the God that healeth thee.\r\n\r\n[Chorus]\r\nSing Hallelujah (4)\r\nHe is Jehovah, Lord God Almighty\r\nHe is Jehovah, the God that healeth thee.\r\n\r\n[Verse 2]\r\nHe is the Great I Am, the God of Abraham,\r\nJehovah Shalom, the God of peace I Am,\r\nThe God of Israel, the Everlasting One,\r\nHe is Jehovah, the God that healeth thee.\r\n\r\n[Verse 3]\r\nHes our Provider, Jehovah Jireh,\r\nGod of Salvation, God the Messiah,\r\nThe Son is sent to you and testified of Him,\r\nHe is Jehovah, the God that healeth thee.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

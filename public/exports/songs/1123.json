@@ -1,172 +1,101 @@
 {
-  "id" : 1123,
-  "songNumber" : 145,
-  "title" : "परमेश्वर की दया कैसी",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "परमेश्वर की दया कैसी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "थाह पाना है कठिन,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "लंबी चौडी नदी जैसी",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "दिव्य सिंधु क्रोध विहीन",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "हे पिता दया सागर !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "प्रेम किया पुत्र देकर (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "सिंहासन विशाल कृपा का",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "खुला रहता रात और दिन,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "सोता बहता निश्वल प्रेम का",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "बालकों के लिए असीम।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "तेरी ज्योति से झलकता",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "स्वर्ग का प्रभा-मण्डल,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "संतों का हृदय उल्हासता",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "तेरी करुणा सकल।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "अपरंपार वर्षा होती",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "स्वर्ग से अनुग्रह की,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "व्याकुल मन को तृप्त करती",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "दिव्य-धारा सत् प्रेम की।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 1123,
+  "songNumber": 145,
+  "title": "परमेश्वर की दया कैसी",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "परमेश्वर की दया कैसी"
+        },
+        {
+          "text": "थाह पाना है कठिन,"
+        },
+        {
+          "text": "लंबी चौडी नदी जैसी"
+        },
+        {
+          "text": "दिव्य सिंधु क्रोध विहीन"
+        },
+        {
+          "text": "हे पिता दया सागर !"
+        },
+        {
+          "text": "प्रेम किया पुत्र देकर (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सिंहासन विशाल कृपा का"
+        },
+        {
+          "text": "खुला रहता रात और दिन,"
+        },
+        {
+          "text": "सोता बहता निश्वल प्रेम का"
+        },
+        {
+          "text": "बालकों के लिए असीम।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तेरी ज्योति से झलकता"
+        },
+        {
+          "text": "स्वर्ग का प्रभा-मण्डल,"
+        },
+        {
+          "text": "संतों का हृदय उल्हासता"
+        },
+        {
+          "text": "तेरी करुणा सकल।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपरंपार वर्षा होती"
+        },
+        {
+          "text": "स्वर्ग से अनुग्रह की,"
+        },
+        {
+          "text": "व्याकुल मन को तृप्त करती"
+        },
+        {
+          "text": "दिव्य-धारा सत् प्रेम की।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]परमेश्वर की दया [G]कैसी\r\n[D]थाह पाना है कठि[A]न,\r\n[D]लंबी चौडी नदी जैसी\r\n[G]दिव्य सिंधु क्रोध विही[D]न\r\n[G]हे पिता दया सागर !\r\n[A]प्रेम किया पुत्र देकर (2)\r\n\r\n[Verse]\r\n[D]सिंहासन विशाल कृपा [G]का\r\n[D]खुला रहता रात और [A]दिन,\r\n[D]सोता बहता निश्वल प्रेम का\r\n[G]बालकों के लिए असी[D]म।\r\n\r\n[Verse]\r\n[D]तेरी ज्योति से झल[G]कता\r\n[D]स्वर्ग का प्रभा-मण्ड[A]ल,\r\n[D]संतों का हृदय उल्हासता\r\n[G]तेरी करुणा सक[D]ल।\r\n\r\n[Verse]\r\n[D]अपरंपार वर्षा [G]होती\r\n[D]स्वर्ग से अनुग्रह [A]की,\r\n[D]व्याकुल मन को तृप्त करती\r\n[G]दिव्य-धारा सत् प्रेम [D]की।",
+  "lyrics": "[Verse]\r\nपरमेश्वर की दया कैसी\r\nथाह पाना है कठिन,\r\nलंबी चौडी नदी जैसी\r\nदिव्य सिंधु क्रोध विहीन\r\nहे पिता दया सागर !\r\nप्रेम किया पुत्र देकर (2)\r\n\r\n[Verse]\r\nसिंहासन विशाल कृपा का\r\nखुला रहता रात और दिन,\r\nसोता बहता निश्वल प्रेम का\r\nबालकों के लिए असीम।\r\n\r\n[Verse]\r\nतेरी ज्योति से झलकता\r\nस्वर्ग का प्रभा-मण्डल,\r\nसंतों का हृदय उल्हासता\r\nतेरी करुणा सकल।\r\n\r\n[Verse]\r\nअपरंपार वर्षा होती\r\nस्वर्ग से अनुग्रह की,\r\nव्याकुल मन को तृप्त करती\r\nदिव्य-धारा सत् प्रेम की।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

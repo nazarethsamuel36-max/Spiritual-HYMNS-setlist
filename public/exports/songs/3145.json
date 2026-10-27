@@ -1,66 +1,108 @@
 {
-  "id" : 3145,
-  "songNumber" : 1003,
-  "title" : "** All I Once Held Dear",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "All I once held dear, built my life upon"
-    }, {
-      "text" : "All this world reveres, and wars to own"
-    }, {
-      "text" : "All I once thought gain I have counted loss"
-    }, {
-      "text" : "Spent and worthless now, compared to this"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Knowing you, Jesus, knowing you,"
-    }, {
-      "text" : "There is no greater thing"
-    }, {
-      "text" : "You're my all, you're the best"
-    }, {
-      "text" : "You're my joy, my righteousness"
-    }, {
-      "text" : "And I love you, Lord"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Now my heart's desire is to know you more"
-    }, {
-      "text" : "To be found in you and known as yours"
-    }, {
-      "text" : "To possess by faith what I could not earn"
-    }, {
-      "text" : "All-surpassing gift of righteousness"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Oh, to know the power of your risen life"
-    }, {
-      "text" : "And to know You in Your sufferings"
-    }, {
-      "text" : "To become like you in your death, my Lord"
-    }, {
-      "text" : "So with you to live and never die"
-    } ]
-  } ]
+  "id": 3145,
+  "songNumber": 1003,
+  "title": "All I Once Held Dear",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "All I once held dear, built my life upon"
+        },
+        {
+          "text": "All this world reveres, and wars to own"
+        },
+        {
+          "text": "All I once thought gain I have counted loss"
+        },
+        {
+          "text": "Spent and worthless now, compared to this"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Knowing You, Jesus, knowing You"
+        },
+        {
+          "text": "There is no greater thing"
+        },
+        {
+          "text": "You're my all, You're the best"
+        },
+        {
+          "text": "You're my joy, my righteousness"
+        },
+        {
+          "text": "And I love You, Lord"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Now my heart's desire is to know You more"
+        },
+        {
+          "text": "To be found in You and known as Yours"
+        },
+        {
+          "text": "To possess by faith what I could not earn"
+        },
+        {
+          "text": "All-surpassing gift of righteousness"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Oh, to know the power of Your risen life"
+        },
+        {
+          "text": "And to know You in Your sufferings"
+        },
+        {
+          "text": "To become like You in Your death, my Lord"
+        },
+        {
+          "text": "So with You to live and never die"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": []
+    }
+  ],
+  "chords": "[Verse 1]\nAll I once held dear, built my life upon\nAll this world reveres, and wars to own\nAll I once thought gain I have counted loss\nSpent and worthless now, compared to this\n\n[CHORUS]\nKnowing You, Jesus, knowing You\nThere is no greater thing\nYou're my all, You're the best\nYou're my joy, my righteousness\nAnd I love You, Lord\n\n[Verse 2]\nNow my heart's desire is to know You more\nTo be found in You and known as Yours\nTo possess by faith what I could not earn\nAll-surpassing gift of righteousness\n\n[CHORUS]\n\n[Verse 3]\nOh, to know the power of Your risen life\nAnd to know You in Your sufferings\nTo become like You in Your death, my Lord\nSo with You to live and never die\n\n[CHORUS]",
+  "lyrics": "[Verse 1]\nAll I once held dear, built my life upon\nAll this world reveres, and wars to own\nAll I once thought gain I have counted loss\nSpent and worthless now, compared to this\n\n[CHORUS]\nKnowing You, Jesus, knowing You\nThere is no greater thing\nYou're my all, You're the best\nYou're my joy, my righteousness\nAnd I love You, Lord\n\n[Verse 2]\nNow my heart's desire is to know You more\nTo be found in You and known as Yours\nTo possess by faith what I could not earn\nAll-surpassing gift of righteousness\n\n[CHORUS]\n\n[Verse 3]\nOh, to know the power of Your risen life\nAnd to know You in Your sufferings\nTo become like You in Your death, my Lord\nSo with You to live and never die\n\n[CHORUS]",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

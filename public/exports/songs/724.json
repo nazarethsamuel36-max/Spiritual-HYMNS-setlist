@@ -1,55 +1,44 @@
 {
-  "id" : 724,
-  "songNumber" : 112,
-  "title" : "HAVE YOUR WAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Have your way, Have your way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Holy Spirit fill our hearts and have your way,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "As we wait (wait on You Lord)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "And as we pray, (pray to you)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Speak your words into our hearts and have your way.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 47
-      } ]
-    } ]
-  } ]
+  "id": 724,
+  "songNumber": 112,
+  "title": "HAVE YOUR WAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Have your way, Have your way,"
+        },
+        {
+          "text": "Holy Spirit fill our hearts and have your way,"
+        },
+        {
+          "text": "As we wait (wait on You Lord)"
+        },
+        {
+          "text": "And as we pray, (pray to you)"
+        },
+        {
+          "text": "Speak your words into our hearts and have your way."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Have your way, Have your way,\n[G]Holy Spirit fill our [D]hearts and have your [A]way,\nAs we [D]wait (wait on You Lord)\nAnd as we [G]pray, (pray to you)\n[D]Speak your words into our hearts and have your [A]way.",
+  "lyrics": "[Verse]\nHave your way, Have your way,\nHoly Spirit fill our hearts and have your way,\nAs we wait (wait on You Lord)\nAnd as we pray, (pray to you)\nSpeak your words into our hearts and have your way.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

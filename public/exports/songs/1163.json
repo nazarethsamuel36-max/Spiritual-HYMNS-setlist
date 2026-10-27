@@ -1,146 +1,89 @@
 {
-  "id" : 1163,
-  "songNumber" : 185,
-  "title" : "यीशु नाम में कुदरत पायी जाती है",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु नाम में कुदरत पायी जाती है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "पाक कलाम में कुदरत पायी जाती है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "जो चश्मा कलवरी से बहता है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "वह आज भी पापों को धोता है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "वह अन्धी आँखें खोलता है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "और मुर्दे जिन्दा करता है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "वह कोढ़ियों को पाक करता है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "और लंगडों को चलाता है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "वह गुनाहगारों को बुलाता है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "और दिल में शान्ति भरता है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "वह गुनाहों को मुआफ करता है,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "और रूह-ए-पाक से भरता है।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 1163,
+  "songNumber": 185,
+  "title": "यीशु नाम में कुदरत पायी जाती है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु नाम में कुदरत पायी जाती है,"
+        },
+        {
+          "text": "पाक कलाम में कुदरत पायी जाती है,"
+        },
+        {
+          "text": "जो चश्मा कलवरी से बहता है,"
+        },
+        {
+          "text": "वह आज भी पापों को धोता है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वह अन्धी आँखें खोलता है,"
+        },
+        {
+          "text": "और मुर्दे जिन्दा करता है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वह कोढ़ियों को पाक करता है,"
+        },
+        {
+          "text": "और लंगडों को चलाता है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वह गुनाहगारों को बुलाता है,"
+        },
+        {
+          "text": "और दिल में शान्ति भरता है।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वह गुनाहों को मुआफ करता है,"
+        },
+        {
+          "text": "और रूह-ए-पाक से भरता है।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]यीशु नाम में [C]कुदरत पायी [G]जाती है,\n[G]पाक कलाम में [C]कुदरत पायी [G]जाती है,\n[G]जो चश्मा कलवरी से [C]बहता है,\n[D]वह आज भी पापों को धोता [G]है।\n\n[Verse]\n[G]वह अन्धी आँखें [C]खोलता है,\n[D]और मुर्दे जिन्दा [G]करता है।\n\n[Verse]\n[G]वह कोढ़ियों को [C]पाक करता है,\n[D]और लंगडों को [G]चलाता है।\n\n[Verse]\n[G]वह गुनाहगारों को [C]बुलाता है,\n[D]और दिल में शान्ति [G]भरता है।\n\n[Verse]\n[G]वह गुनाहों को [C]मुआफ करता है,\n[D]और रूह-ए-पाक से [G]भरता है।",
+  "lyrics": "[Verse]\nयीशु नाम में कुदरत पायी जाती है,\nपाक कलाम में कुदरत पायी जाती है,\nजो चश्मा कलवरी से बहता है,\nवह आज भी पापों को धोता है।\n\n[Verse]\nवह अन्धी आँखें खोलता है,\nऔर मुर्दे जिन्दा करता है।\n\n[Verse]\nवह कोढ़ियों को पाक करता है,\nऔर लंगडों को चलाता है।\n\n[Verse]\nवह गुनाहगारों को बुलाता है,\nऔर दिल में शान्ति भरता है।\n\n[Verse]\nवह गुनाहों को मुआफ करता है,\nऔर रूह-ए-पाक से भरता है।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

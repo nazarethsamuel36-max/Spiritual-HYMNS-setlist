@@ -1,261 +1,147 @@
 {
-  "id" : 674,
-  "songNumber" : 367,
-  "title" : "SAFE IN THE ARMS OF JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Safe in the arms of Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Safe on His gentle breast,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "There by His love oâ€™ershaded,"
-    }, {
-      "text" : "Sweetly my soul shall rest.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Hark â€˜tis the voice of angels,"
-    }, {
-      "text" : "Borne in a song to me,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Over the fields of glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Over the jasper sea.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Safe in the arms of Jesus,"
-    }, {
-      "text" : "Safe on His gentle breast,"
-    }, {
-      "text" : "There by His love oâ€™ershaded,"
-    }, {
-      "text" : "Sweetly my soul shall rest."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Safe in the arms of Jesus,"
-    }, {
-      "text" : "Safe from corroding care,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Safe from the worldâ€™s temptations,"
-    }, {
-      "text" : "Sin cannot harm me there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Free from the blight of sorrow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Free from my doubts and fears,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Only a few more trials,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Only a few more tears.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Jesus my heartâ€™s dear refuge,"
-    }, {
-      "text" : "Jesus has died for me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Firm on the Rock of Ages,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Ever my trust shall be.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Here let me wait with patience,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Wait till the night is oâ€™er,"
-    }, {
-      "text" : "Wait till I see the morning,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Break on the golden shore.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 674,
+  "songNumber": 367,
+  "title": "SAFE IN THE ARMS OF JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Safe in the arms of Jesus,"
+        },
+        {
+          "text": "Safe on His gentle breast,"
+        },
+        {
+          "text": "There by His love o'ershaded,"
+        },
+        {
+          "text": "Sweetly my soul shall rest."
+        },
+        {
+          "text": "Hark 'tis the voice of angels,"
+        },
+        {
+          "text": "Borne in a song to me,"
+        },
+        {
+          "text": "Over the fields of glory,"
+        },
+        {
+          "text": "Over the jasper sea."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Safe in the arms of Jesus,"
+        },
+        {
+          "text": "Safe on His gentle breast,"
+        },
+        {
+          "text": "There by His love o'ershaded,"
+        },
+        {
+          "text": "Sweetly my soul shall rest."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Safe in the arms of Jesus,"
+        },
+        {
+          "text": "Safe from corroding care,"
+        },
+        {
+          "text": "Safe from the world's temptations,"
+        },
+        {
+          "text": "Sin cannot harm me there."
+        },
+        {
+          "text": "Free from the blight of sorrow,"
+        },
+        {
+          "text": "Free from my doubts and fears,"
+        },
+        {
+          "text": "Only a few more trials,"
+        },
+        {
+          "text": "Only a few more tears."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus my heart's dear refuge,"
+        },
+        {
+          "text": "Jesus has died for me,"
+        },
+        {
+          "text": "Firm on the Rock of Ages,"
+        },
+        {
+          "text": "Ever my trust shall be."
+        },
+        {
+          "text": "Here let me wait with patience,"
+        },
+        {
+          "text": "Wait till the night is o'er,"
+        },
+        {
+          "text": "Wait till I see the morning,"
+        },
+        {
+          "text": "Break on the golden shore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [F]Safe in the [Bb]arms of [F]Jesus,\r\n[F]Safe on [Bb]His gentle [C]breast,\r\nThere by His love o'ershaded,\r\n[F]Sweetly [C]my soul shall [F]rest.\r\nHark 'tis the voice of angels,\r\nBorne in a [C]song to [F]me,\r\n[F]Over the [Bb]fields of [F]glory,\r\n[F]Over the [C]jasper [F]sea.\r\n[Verse]\r\n[Verse]\r\nSafe in the arms of Jesus,\r\nSafe on His gentle breast,\r\nThere by His love o'ershaded,\r\nSweetly my soul shall rest.\r\n[Verse]\r\n[Verse]\r\nSafe in the arms of Jesus,\r\n[F]Safe from [Bb]corroding [C]care,\r\nSafe from the world's temptations,\r\n[F]Sin cannot [C]harm me [F]there.\r\n[F]Free from the [Bb]blight of [F]sorrow,\r\n[F]Free from my [Bb]doubts and [C]fears,\r\n[F]Only a [Bb]few more [F]trials,\r\n[F]Only a [C]few more [F]tears.\r\n[Verse]\r\n[Verse]\r\nJesus my heart's dear refuge,\r\n[F]Jesus has [Bb]died for [C]me,\r\n[F]Firm on the [Bb]Rock of [F]Ages,\r\n[F]Ever my [C]trust shall [F]be.\r\n[F]Here let me [Bb]wait with [F]patience,\r\nWait till the night is o'er,\r\n[F]Wait till I [Bb]see the [F]morning,\r\n[F]Break on the [C]golden [F]shore.",
+  "lyrics": "[Chorus]\r\n Safe in the arms of Jesus,\r\nSafe on His gentle breast,\r\nThere by His love o'ershaded,\r\nSweetly my soul shall rest.\r\nHark 'tis the voice of angels,\r\nBorne in a song to me,\r\nOver the fields of glory,\r\nOver the jasper sea.\r\n[Verse]\r\n[Verse]\r\nSafe in the arms of Jesus,\r\nSafe on His gentle breast,\r\nThere by His love o'ershaded,\r\nSweetly my soul shall rest.\r\n[Verse]\r\n[Verse]\r\nSafe in the arms of Jesus,\r\nSafe from corroding care,\r\nSafe from the world's temptations,\r\nSin cannot harm me there.\r\nFree from the blight of sorrow,\r\nFree from my doubts and fears,\r\nOnly a few more trials,\r\nOnly a few more tears.\r\n[Verse]\r\n[Verse]\r\nJesus my heart's dear refuge,\r\nJesus has died for me,\r\nFirm on the Rock of Ages,\r\nEver my trust shall be.\r\nHere let me wait with patience,\r\nWait till the night is o'er,\r\nWait till I see the morning,\r\nBreak on the golden shore.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:29.786299+00:00",
+  "genres": [
+    "Worship",
+    "Trust",
+    "Funeral"
+  ]
 }

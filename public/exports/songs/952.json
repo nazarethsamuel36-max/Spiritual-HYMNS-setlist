@@ -1,56 +1,62 @@
 {
-  "id" : 952,
-  "songNumber" : 74,
-  "title" : "KNOW YE NOT",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Know ye not, know ye not, ye are a temple (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Ye are a temple of the Holy Ghost.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Full of praise, full of power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "full of glory (3)"
-    }, {
-      "text" : "Ye are a temple of the Holy Ghost."
-    }, {
-      "text" : "Yes, I know, Yes I know, I'm the temple (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "I am the temple of the Holy Ghost.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 952,
+  "songNumber": 74,
+  "title": "KNOW YE NOT",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Know ye not, know ye not, ye are a temple (3)"
+        },
+        {
+          "text": "Ye are a temple of the Holy Ghost."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Full of praise, full of power,"
+        },
+        {
+          "text": "full of glory (3)"
+        },
+        {
+          "text": "Ye are a temple of the Holy Ghost."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Yes, I know, Yes I know, I'm the temple (3)"
+        },
+        {
+          "text": "I am the temple of the Holy Ghost."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Know ye not, know ye not, ye are a temple (3)\r\n[D]Ye are a temple of the Holy [G]Ghost.\r\n\r\n[Verse 2]\r\n[G]Full of praise, full of power,\r\nfull of glory (3)\r\nYe are a temple of the Holy Ghost.\r\n\r\n[Verse 3]\r\n[G]Yes, I know, Yes I know, I'm the temple (3)\r\n[D]I am the temple of the Holy [G]Ghost.",
+  "lyrics": "[Verse 1]\r\nKnow ye not, know ye not, ye are a temple (3)\r\nYe are a temple of the Holy Ghost.\r\n\r\n[Verse 2]\r\nFull of praise, full of power,\r\nfull of glory (3)\r\nYe are a temple of the Holy Ghost.\r\n\r\n[Verse 3]\r\nYes, I know, Yes I know, I'm the temple (3)\r\nI am the temple of the Holy Ghost.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

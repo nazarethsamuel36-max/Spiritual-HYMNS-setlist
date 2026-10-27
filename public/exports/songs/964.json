@@ -1,133 +1,59 @@
 {
-  "id" : 964,
-  "songNumber" : 86,
-  "title" : "FATHER IN HEAVEN",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Father in Heaven how we love you;",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 10
-      }, {
-        "chord" : "F",
-        "position" : 24
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "We lift Your Name in all the earth,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 3
-      }, {
-        "chord" : "Am",
-        "position" : 13
-      }, {
-        "chord" : "F",
-        "position" : 29
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "May Your Kingdom be established in our praises,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "Em",
-        "position" : 22
-      }, {
-        "chord" : "F",
-        "position" : 39
-      }, {
-        "chord" : "G",
-        "position" : 44
-      } ]
-    }, {
-      "text" : "As Your people declare Your mighty works.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 8
-      }, {
-        "chord" : "Am",
-        "position" : 17
-      }, {
-        "chord" : "F",
-        "position" : 35
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Blessed be the Lord God Almighty,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      }, {
-        "chord" : "F",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Who was and is and is to come,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "Am",
-        "position" : 12
-      }, {
-        "chord" : "F",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Blessed be the Lord God Almighty",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "Em",
-        "position" : 15
-      }, {
-        "chord" : "F",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Who reigns for evermore.",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 964,
+  "songNumber": 86,
+  "title": "FATHER IN HEAVEN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Father in Heaven how we love you;"
+        },
+        {
+          "text": "We lift Your Name in all the earth,"
+        },
+        {
+          "text": "May Your Kingdom be established in our praises,"
+        },
+        {
+          "text": "As Your people declare Your mighty works."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Blessed be the Lord God Almighty,"
+        },
+        {
+          "text": "Who was and is and is to come,"
+        },
+        {
+          "text": "Blessed be the Lord God Almighty"
+        },
+        {
+          "text": "Who reigns for evermore."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[C]Father in [Em]Heaven how we [F]love [G]you;\nWe [C]lift Your [Am]Name in all the [F]earth,[G]\nMay Your [C]Kingdom be es[Em]tablished in our [F]prais[G]es,\nAs Your [C]people de[Am]clare Your mighty [F]works.[G]\n\n[Verse 2]\n[C]Blessed be the [Em]Lord God Al[F]mighty,[G]\nWho [C]was and [Am]is and is to [F]come,[G]\n[C]Blessed be the [Em]Lord God Al[F]mighty[G]\nWho [C]reigns for [G]ever[C]more.",
+  "lyrics": "[Verse 1]\nFather in Heaven how we love you;\nWe lift Your Name in all the earth,\nMay Your Kingdom be established in our praises,\nAs Your people declare Your mighty works.\n\n[Verse 2]\nBlessed be the Lord God Almighty,\nWho was and is and is to come,\nBlessed be the Lord God Almighty\nWho reigns for evermore.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

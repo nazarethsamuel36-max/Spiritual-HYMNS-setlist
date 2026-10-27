@@ -1,233 +1,179 @@
 {
-  "id" : 772,
-  "songNumber" : 160,
-  "title" : "THE SANDS HAVE BEEN WASHED",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The sands have been washed in the footprints",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Of the Stranger on Galilee's shore,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And the voice that subdued the rough billows,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Will be heard in Judea no more.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "But the path of that lone Galilean",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "With joy I will follow today.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And the toils of the road will seem nothing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "When I get to the end of the way. (2)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "There are so many hills to climb upward,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "I often am longing for rest,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "But He who appoints me my pathway,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Knows just what is needful and best.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I know in His Word He hath promised",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      } ]
-    }, {
-      "text" : "That my strength, \"it shall be as my day\"",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "And the toils of the road will seem nothing,"
-    }, {
-      "text" : "When I get to the end of the way. (2)"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He loves me too well to forsake me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "Or give me one trial too much.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "All His people have been dearly purchased,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "And Satan can never claim such.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "By and by I shall see Him and praise Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "In the city of unending day.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "And the toils of the road will seem nothing,"
-    }, {
-      "text" : "When I get to the end of the way. (2)"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "When the last feeble step has been taken,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And the gates of that city appear,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And the beautiful songs of the angels",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "Float out on my listening ear.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "When all that now seems so mysterious",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Will be bright and as clear as the day,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Then the toils of the road will seem nothing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "When I get to the end of the way. (2)"
-    } ]
-  } ]
+  "id": 772,
+  "songNumber": 160,
+  "title": "THE SANDS HAVE BEEN WASHED",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "The sands have been washed in the footprints"
+        },
+        {
+          "text": "Of the Stranger on Galilee's shore,"
+        },
+        {
+          "text": "And the voice that subdued the rough billows,"
+        },
+        {
+          "text": "Will be heard in Judea no more."
+        },
+        {
+          "text": "But the path of that lone Galilean"
+        },
+        {
+          "text": "With joy I will follow today."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And the toils of the road will seem nothing,"
+        },
+        {
+          "text": "When I get to the end of the way."
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "There are so many hills to climb upward,"
+        },
+        {
+          "text": "I often am longing for rest,"
+        },
+        {
+          "text": "But He who appoints me my pathway,"
+        },
+        {
+          "text": "Knows just what is needful and best."
+        },
+        {
+          "text": "I know in His Word He hath promised"
+        },
+        {
+          "text": "That my strength, \"it shall be as my day\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And the toils of the road will seem nothing,"
+        },
+        {
+          "text": "When I get to the end of the way."
+        },
+        {
+          "text": "..repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "He loves me too well to forsake me"
+        },
+        {
+          "text": "Or give me one trial too much."
+        },
+        {
+          "text": "All His people have been dearly purchased,"
+        },
+        {
+          "text": "And Satan can never claim such."
+        },
+        {
+          "text": "By and by I shall see Him and praise Him,"
+        },
+        {
+          "text": "In the city of unending day."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "And the toils of the road will seem nothing,"
+        },
+        {
+          "text": "When I get to the end of the way."
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "When the last feeble step has been taken,"
+        },
+        {
+          "text": "And the gates of that city appear,"
+        },
+        {
+          "text": "And the beautiful songs of the angels"
+        },
+        {
+          "text": "Float out on my listening ear."
+        },
+        {
+          "text": "When all that now seems so mysterious"
+        },
+        {
+          "text": "Will be bright and as clear as the day,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Then the toils of the road will seem nothing,"
+        },
+        {
+          "text": "When I get to the end of the way."
+        },
+        {
+          "text": "...repeat"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nThe [C]sands have been washed in the footprints\r\nOf the [F]Stranger on Galilee's [C]shore,\r\nAnd the [C]voice that subdued the rough billows,\r\nWill be [G]heard in Judea no [C]more.\r\nBut the [C]path of that lone Galilean\r\nWith [F]joy I will follow to[C]day.\r\n\r\n[Chorus]\r\nAnd the [C]toils of the road will seem nothing,\r\nWhen I [G]get to the end of the [C]way. \r\n...repeat\r\n\r\n[Verse 2]\r\nThere are [C]so many hills to climb upward,\r\nI often am [F]longing for [C]rest,\r\nBut [C]He who appoints me my pathway,\r\nKnows just what is [G]needful and [C]best.\r\nI [C]know in His Word He hath promised\r\nThat my [F]strength, \"it shall be as my [C]day\"\r\n\r\n[Chorus]\r\nAnd the toils of the road will seem nothing,\r\nWhen I get to the end of the way. \r\n...repeat\r\n[Verse 3]\r\nHe [C]loves me too well to forsake me\r\nOr give me one [F]trial too [C]much.\r\nAll [C]His people have been dearly purchased,\r\nAnd Satan can [G]never claim [C]such.\r\nBy and [C]by I shall see Him and praise Him,\r\nIn the [F]city of unending [C]day.\r\n\r\n[Chorus]\r\nAnd the toils of the road will seem nothing,\r\nWhen I get to the end of the way. (2)\r\n\r\n[Verse 4]\r\nWhen the [C]last feeble step has been taken,\r\nAnd the [F]gates of that city ap[C]pear,\r\nAnd the [C]beautiful songs of the angels\r\nFloat [G]out on my listening [C]ear.\r\nWhen all [C]that now seems so mysterious\r\nWill be [F]bright and as clear as the [C]day,\r\nThen the [C]toils of the road will seem nothing,\r\n\r\n[Chorus]\r\nAnd the [C]toils of the road will seem nothing,\r\nWhen I [G]get to the end of the [C]way. \r\n...repeat",
+  "lyrics": "[Verse 1]\r\nThe sands have been washed in the footprints\r\nOf the Stranger on Galilee's shore,\r\nAnd the voice that subdued the rough billows,\r\nWill be heard in Judea no more.\r\nBut the path of that lone Galilean\r\nWith joy I will follow today.\r\n\r\n[Chorus]\r\nAnd the toils of the road will seem nothing,\r\nWhen I get to the end of the way. \r\n...repeat\r\n\r\n[Verse 2]\r\nThere are so many hills to climb upward,\r\nI often am longing for rest,\r\nBut He who appoints me my pathway,\r\nKnows just what is needful and best.\r\nI know in His Word He hath promised\r\nThat my strength, \"it shall be as my day\"\r\n\r\n[Chorus]\r\nAnd the toils of the road will seem nothing,\r\nWhen I get to the end of the way.\r\n..repeat\r\n\r\n[Verse 3]\r\nHe loves me too well to forsake me\r\nOr give me one trial too much.\r\nAll His people have been dearly purchased,\r\nAnd Satan can never claim such.\r\nBy and by I shall see Him and praise Him,\r\nIn the city of unending day.\r\n\r\n[Chorus]\r\nAnd the toils of the road will seem nothing,\r\nWhen I get to the end of the way.\r\n...repeat\r\n\r\n[Verse 4]\r\nWhen the last feeble step has been taken,\r\nAnd the gates of that city appear,\r\nAnd the beautiful songs of the angels\r\nFloat out on my listening ear.\r\nWhen all that now seems so mysterious\r\nWill be bright and as clear as the day,\r\n\r\n[Chorus]\r\nThen the toils of the road will seem nothing,\r\nWhen I get to the end of the way.\r\n...repeat",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,387 +1,173 @@
 {
-  "id" : 781,
-  "songNumber" : 169,
-  "title" : "WE'RE FLOATING DOWN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "We're floating down the stream of time,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "We have not long to stay;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The stormy clouds of darkness",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Will turn to brightest day.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Then let us all take courage,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "For we're not left alone;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "The lifeboat soon is coming",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "To gather the Jewels home.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Then cheer, my brother, cheer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Our trials will soon be o'er,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Our loved ones we shall meet, shall meet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Upon the golden shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 1
-      }, {
-        "chord" : "A",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "We're pilgrims and we're strangers here,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "We're seeking a city to come,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "The lifeboat soon is coming,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "To gather the Jewels home."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Sometimes the Devil tempts me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And says it's all in vain",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "To try to live a Christian life",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And walk in Jesus' name;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "But then we hear the Master say,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "\"I'll lend you a helping hand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "And if you'll only trust Me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "I'll guide you to that land.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "The lifeboat soon is coming,"
-    }, {
-      "text" : "By eyes of faith I see",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "As she sweeps through the waters",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "To rescue you and me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And land us safely in the port",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "With friends we love so dear.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "\"Get ready,\" cries the Captain;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "\"Oh, look, she's almost here.\"",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Oh, now's the time to get on board,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "While she is passing by;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "But if you stand and wait too long,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "You shall forever die;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "The fare is paid for one and all,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "The Captain bids you come,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And get on board the lifeboat,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "She'll carry you safely home.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 781,
+  "songNumber": 169,
+  "title": "WE'RE FLOATING DOWN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Were floating down the stream of time,"
+        },
+        {
+          "text": "We have not long to stay;"
+        },
+        {
+          "text": "The stormy clouds of darkness"
+        },
+        {
+          "text": "Will turn to brightest day."
+        },
+        {
+          "text": "Then let us all take courage,"
+        },
+        {
+          "text": "For were not left alone;"
+        },
+        {
+          "text": "The lifeboat soon is coming"
+        },
+        {
+          "text": "To gather the Jewels home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Then cheer, my brother, cheer,"
+        },
+        {
+          "text": "Our trials will soon be oer,"
+        },
+        {
+          "text": "Our loved ones we shall meet, shall meet,"
+        },
+        {
+          "text": "Upon the golden shore,"
+        },
+        {
+          "text": "Were pilgrims and were strangers here,"
+        },
+        {
+          "text": "Were seeking a city to come,"
+        },
+        {
+          "text": "The lifeboat soon is coming,"
+        },
+        {
+          "text": "To gather the Jewels home."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Sometimes the Devil tempts me,"
+        },
+        {
+          "text": "And says its all in vain"
+        },
+        {
+          "text": "To try to live a Christian life"
+        },
+        {
+          "text": "And walk in Jesus name;"
+        },
+        {
+          "text": "But then we hear the Master say,"
+        },
+        {
+          "text": "\"Ill lend you a helping hand,"
+        },
+        {
+          "text": "And if youll only trust Me,"
+        },
+        {
+          "text": "Ill guide you to that land.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "The lifeboat soon is coming,"
+        },
+        {
+          "text": "By eyes of faith I see"
+        },
+        {
+          "text": "As she sweeps through the waters"
+        },
+        {
+          "text": "To rescue you and me,"
+        },
+        {
+          "text": "And land us safely in the port"
+        },
+        {
+          "text": "With friends we love so dear."
+        },
+        {
+          "text": "\"Get ready,\" cries the Captain;"
+        },
+        {
+          "text": "\"Oh, look, shes almost here.\""
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Oh, nows the time to get on board,"
+        },
+        {
+          "text": "While she is passing by;"
+        },
+        {
+          "text": "But if you stand and wait too long,"
+        },
+        {
+          "text": "You shall forever die;"
+        },
+        {
+          "text": "The fare is paid for one and all,"
+        },
+        {
+          "text": "The Captain bids you come,"
+        },
+        {
+          "text": "And get on board the lifeboat,"
+        },
+        {
+          "text": "Shell carry you safely home."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nWere [D]floating down the stream of time,\nWe [G]have not long to [D]stay;\nThe [D]stormy clouds of [A]darkness\nWill [D]turn to brightest [A]day.\nThen [D]let us all take [G]courage,\nFor [D]were not left a[A]lone;\nThe [D]lifeboat soon is [G]coming\nTo [D]gather the [A]Jewels [D]home.\n\n[Chorus]\nThen [D]cheer, my brother, [G]cheer,\nOur [D]trials will soon be [A]oer,\nOur [D]loved ones we shall [G]meet, shall meet,\nU[D]pon the golden [A]shore,\nWere [D]pilgrims and were [G]strangers here,\nWere [D]seeking a city to [A]come,\nThe [D]lifeboat soon is [G]coming,\nTo gather the Jewels home.\n\n[Verse 2]\nSome[D]times the Devil [G]tempts me,\nAnd [D]says its all in [A]vain\nTo [D]try to live a [G]Christian life\nAnd [D]walk in Jesus [A]name;\nBut [D]then we hear the [G]Master say,\n[D]\"Ill lend you a helping [A]hand,\nAnd [D]if youll only [G]trust Me,\nIll [D]guide you [A]to that [D]land.\"\n\n[Verse 3]\nThe lifeboat soon is coming,\nBy [D]eyes of faith I [A]see\nAs [D]she sweeps through the [G]waters\nTo [D]rescue you and [A]me,\nAnd [D]land us safely [G]in the port\nWith [D]friends we love so [A]dear.\n[D]\"Get ready,\" cries the [G]Captain;\n[D]\"Oh, look, shes [A]almost [D]here.\"\n\n[Verse 4]\nOh, [D]nows the time to [G]get on board,\nWhile [D]she is passing [A]by;\nBut [D]if you stand and [G]wait too long,\nYou [D]shall for[A]ever die;\nThe [D]fare is paid for [G]one and all,\nThe [D]Captain bids you [A]come,\nAnd [D]get on board the [G]lifeboat,\nShell [D]carry you [A]safely [D]home.",
+  "lyrics": "[Verse 1]\nWere floating down the stream of time,\nWe have not long to stay;\nThe stormy clouds of darkness\nWill turn to brightest day.\nThen let us all take courage,\nFor were not left alone;\nThe lifeboat soon is coming\nTo gather the Jewels home.\n\n[Chorus]\nThen cheer, my brother, cheer,\nOur trials will soon be oer,\nOur loved ones we shall meet, shall meet,\nUpon the golden shore,\nWere pilgrims and were strangers here,\nWere seeking a city to come,\nThe lifeboat soon is coming,\nTo gather the Jewels home.\n\n[Verse 2]\nSometimes the Devil tempts me,\nAnd says its all in vain\nTo try to live a Christian life\nAnd walk in Jesus name;\nBut then we hear the Master say,\n\"Ill lend you a helping hand,\nAnd if youll only trust Me,\nIll guide you to that land.\"\n\n[Verse 3]\nThe lifeboat soon is coming,\nBy eyes of faith I see\nAs she sweeps through the waters\nTo rescue you and me,\nAnd land us safely in the port\nWith friends we love so dear.\n\"Get ready,\" cries the Captain;\n\"Oh, look, shes almost here.\"\n\n[Verse 4]\nOh, nows the time to get on board,\nWhile she is passing by;\nBut if you stand and wait too long,\nYou shall forever die;\nThe fare is paid for one and all,\nThe Captain bids you come,\nAnd get on board the lifeboat,\nShell carry you safely home.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

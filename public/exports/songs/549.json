@@ -1,55 +1,40 @@
 {
-  "id" : 549,
-  "songNumber" : 3,
-  "title" : "SWEEP OVER MY SOUL",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Sweep over my soul, sweep over my soul,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "sweet Spirit, sweep over my soul;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "My rest is complete while I sit at Your feet;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Sweet Spirit sweep over my soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 549,
+  "songNumber": 3,
+  "title": "SWEEP OVER MY SOUL",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Sweep over my soul, sweep over my soul,"
+        },
+        {
+          "text": "sweet Spirit, sweep over my soul;"
+        },
+        {
+          "text": "My rest is complete while I sit at Your feet;"
+        },
+        {
+          "text": "Sweet Spirit sweep over my soul."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Sweep over my soul, sweep [G]over my soul,\nsweet [D]Spirit, sweep over my [A]soul;\nMy [D]rest is complete while I [G]sit at Your feet;\nSweet [D]Spirit sweep [A]over my [D]soul.",
+  "lyrics": "[Verse]\nSweep over my soul, sweep over my soul,\nsweet Spirit, sweep over my soul;\nMy rest is complete while I sit at Your feet;\nSweet Spirit sweep over my soul.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship"
+  ]
 }

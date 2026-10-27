@@ -1,219 +1,77 @@
 {
-  "id" : 606,
-  "songNumber" : 20,
-  "title" : "कोण मित्र येशुवाणी, सारें ओझे वाहाया ? (What A Friend We Have In Jesus)",
-  "language" : "marathi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "कोण मित्र येशुवाणी, सारें ओझे वाहाया ?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "सर्व दुखें तो ऐकूनी, साह्य करि सोसावा;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "त्याकडे कधी न जाता, आम्ही अवमानितो,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "C",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "शांति खरि हरवूनि, शोक किती करितो !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "मोह असले कि चिंता, काहि दिसे त्रासाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "धैर्य नच सुटू देतां, जा प्रभुला सांगाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "सर्व दुबळ्यांस पाहे, चित्तवृत्ति जाणतो,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "मित्र प्रिय जसा आहे, 'हात धरि,' म्हणतो,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "कष्टि जरि श्रमेलेले, खांब जड वहाया,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "त्यासहि उपाय केले, जा प्रभुला सांगाया;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "मित्र जरि तुच्छ मानी, जा प्रभुला सांगाया;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "तोचि सखा सर्वांहूनि, सिद्ध अंगिकाराया.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 27
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 606,
+  "songNumber": 20,
+  "title": "कोण मित्र येशुवाणी, सारें ओझे वाहाया ? (What A Friend We Have In Jesus)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कोण मित्र येशुवाणी, सारें ओझे वाहाया ?"
+        },
+        {
+          "text": "सर्व दुखें तो ऐकूनी, साह्य करि सोसावा;"
+        },
+        {
+          "text": "त्याकडे कधी न जाता, आम्ही अवमानितो,"
+        },
+        {
+          "text": "शांति खरि हरवूनि, शोक किती करितो !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मोह असले कि चिंता, काहि दिसे त्रासाया,"
+        },
+        {
+          "text": "धैर्य नच सुटू देतां, जा प्रभुला सांगाया,"
+        },
+        {
+          "text": "सर्व दुबळ्यांस पाहे, चित्तवृत्ति जाणतो,"
+        },
+        {
+          "text": "मित्र प्रिय जसा आहे, ''हात धरि,'' म्हणतो,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कष्टि जरि श्रमेलेले, खांब जड वहाया,"
+        },
+        {
+          "text": "त्यासहि उपाय केले, जा प्रभुला सांगाया;"
+        },
+        {
+          "text": "मित्र जरि तुच्छ मानी, जा प्रभुला सांगाया;"
+        },
+        {
+          "text": "तोचि सखा सर्वांहूनि, सिद्ध अंगिकाराया."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[G]कोण मित्र [C]येशुवाणी, [G]सारें ओझे [D]वाहाया ?\r\n[G]सर्व दुखें [C]तो ऐकूनी, [G]साह्य [D]करि सोसा[G]वा;\r\n[D]त्याकडे कधी न [G]जाता, [C]आम्ही अवमा[G]नितो,\r\n[G]शांति खरि ह[C]रवूनि, [G]शोक [D]किती करि[G]तो !\r\n\r\n[Verse]\r\n[G]मोह असले [C]कि चिंता, [G]काहि दिसे [D]त्रासाया,\r\n[G]धैर्य नच [C]सुटू देतां, [G]जा प्रभु[D]ला सांगा[G]या,\r\n[D]सर्व दुबळ्यांस [G]पाहे, [C]चित्तवृत्ति [G]जाणतो,\r\n[G]मित्र प्रिय [C]जसा आहे, [G]''हात धरि,'' [D]म्हणतो,\r\n\r\n[Verse]\r\n[G]कष्टि जरि [C]श्रमेलेले, [G]खांब जड व[D]हाया,\r\n[G]त्यासहि उ[C]पाय केले, [G]जा प्रभु[D]ला सांगा[G]या;\r\n[D]मित्र जरि [G]तुच्छ मानी, [C]जा प्रभुला [G]सांगाया;\r\n[G]तोचि सखा [C]सर्वांहूनि, [G]सिद्ध [D]अंगिका[G]राया.",
+  "lyrics": "[Verse]\r\nकोण मित्र येशुवाणी, सारें ओझे वाहाया ?\r\nसर्व दुखें तो ऐकूनी, साह्य करि सोसावा;\r\nत्याकडे कधी न जाता, आम्ही अवमानितो,\r\nशांति खरि हरवूनि, शोक किती करितो !\r\n\r\n[Verse]\r\nमोह असले कि चिंता, काहि दिसे त्रासाया,\r\nधैर्य नच सुटू देतां, जा प्रभुला सांगाया,\r\nसर्व दुबळ्यांस पाहे, चित्तवृत्ति जाणतो,\r\nमित्र प्रिय जसा आहे, ''हात धरि,'' म्हणतो,\r\n\r\n[Verse]\r\nकष्टि जरि श्रमेलेले, खांब जड वहाया,\r\nत्यासहि उपाय केले, जा प्रभुला सांगाया;\r\nमित्र जरि तुच्छ मानी, जा प्रभुला सांगाया;\r\nतोचि सखा सर्वांहूनि, सिद्ध अंगिकाराया.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Prayer"
+  ]
 }

@@ -1,194 +1,107 @@
 {
-  "id" : 1086,
-  "songNumber" : 108,
-  "title" : "हा S S हाल्लेलुयाह मिलकर गाए",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "हा S S हाल्लेलुयाह मिलकर गाए",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "भजन प्रभुजीके ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "वो है राजाओंका राजा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "उसकी चरणों में तू भी आजा ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "उसकी स्तुति सुना उसके महिमामें गा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "तनमनसे उसे भज ले । हा S S",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "जब जान निकल जायेगी ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "देह मिट्टी में मील जाएगी ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "यह माया तेरी, दुःखकी आँसू भरी ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "कुछ काम न आयेगी । हा S S",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "यीशु ख्रिस्त जगतमें आया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "तेरे पापोंका भार उठाया ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "उसपर विश्वास ला, उसकी चरणों में आ ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "मिले मुक्तिका दान तुझे । हा S S",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "जाती जातीके लोगों आओ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "प्रभु यीशु के गुण अब गाओ ।",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "वोंही पाप हरे, मनमें शांती भरे ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "वोंही पिडा पार करे । हा S S",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  } ]
+  "id": 1086,
+  "songNumber": 108,
+  "title": "हा S S हाल्लेलुयाह मिलकर गाए",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "हा S S हाल्लेलुयाह मिलकर गाए"
+        },
+        {
+          "text": "भजन प्रभुजीके ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "वो है राजाओंका राजा ।"
+        },
+        {
+          "text": "उसकी चरणों में तू भी आजा ।"
+        },
+        {
+          "text": "उसकी स्तुति सुना उसके महिमामें गा ।"
+        },
+        {
+          "text": "तनमनसे उसे भज ले । हा S S"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जब जान निकल जायेगी ।"
+        },
+        {
+          "text": "देह मिट्टी में मील जाएगी ।"
+        },
+        {
+          "text": "यह माया तेरी, दुःखकी आँसू भरी ।"
+        },
+        {
+          "text": "कुछ काम न आयेगी । हा S S"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ख्रिस्त जगतमें आया ।"
+        },
+        {
+          "text": "तेरे पापोंका भार उठाया ।"
+        },
+        {
+          "text": "उसपर विश्वास ला, उसकी चरणों में आ ।"
+        },
+        {
+          "text": "मिले मुक्तिका दान तुझे । हा S S"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "जाती जातीके लोगों आओ"
+        },
+        {
+          "text": "प्रभु यीशु के गुण अब गाओ ।"
+        },
+        {
+          "text": "वोंही पाप हरे, मनमें शांती भरे ।"
+        },
+        {
+          "text": "वोंही पिडा पार करे । हा S S"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]हा S S हाल्लेलुयाह मिलकर [C]गाए\n[D]भजन प्रभुजी[G]के ।\n\n[Verse]\n[G]वो है राजाओंका [C]राजा ।\n[D]उसकी चरणों में तू भी आ[G]जा ।\n[G]उसकी स्तुति सुना उसके म[C]हिमामें गा ।\n[D]तनमनसे उसे भज ले । हा [G]S S\n\n[Verse]\n[G]जब जान निकल जा[C]येगी ।\n[D]देह मिट्टी में मील जाए[G]गी ।\n[G]यह माया तेरी, दुःखकी आँ[C]सू भरी ।\n[D]कुछ काम न आयेगी । हा [G]S S\n\n[Verse]\n[G]यीशु ख्रिस्त जगतमें आ[C]या ।\n[D]तेरे पापोंका भार उठा[G]या ।\n[G]उसपर विश्वास ला, उसकी च[C]रणों में आ ।\n[D]मिले मुक्तिका दान तुझे । हा [G]S S\n\n[Verse]\n[G]जाती जातीके लोगों [C]आओ\n[D]प्रभु यीशु के गुण अब गा[G]ओ ।\n[G]वोंही पाप हरे, मनमें शां[C]ती भरे ।\n[D]वोंही पिडा पार करे । हा [G]S S",
+  "lyrics": "हा S S हाल्लेलुयाह मिलकर गाए\nभजन प्रभुजीके ।\n\n[Verse]\nवो है राजाओंका राजा ।\nउसकी चरणों में तू भी आजा ।\nउसकी स्तुति सुना उसके महिमामें गा ।\nतनमनसे उसे भज ले । हा S S\n\n[Verse]\nजब जान निकल जायेगी ।\nदेह मिट्टी में मील जाएगी ।\nयह माया तेरी, दुःखकी आँसू भरी ।\nकुछ काम न आयेगी । हा S S\n\n[Verse]\nयीशु ख्रिस्त जगतमें आया ।\nतेरे पापोंका भार उठाया ।\nउसपर विश्वास ला, उसकी चरणों में आ ।\nमिले मुक्तिका दान तुझे । हा S S\n\n[Verse]\nजाती जातीके लोगों आओ\nप्रभु यीशु के गुण अब गाओ ।\nवोंही पाप हरे, मनमें शांती भरे ।\nवोंही पिडा पार करे । हा S S",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

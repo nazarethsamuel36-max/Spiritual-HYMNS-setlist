@@ -1,159 +1,92 @@
 {
-  "id" : 844,
-  "songNumber" : 232,
-  "title" : "THE SAVIOUR IS WAITING",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "The Saviour is waiting to enter your heart.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Why don't you let Him come in?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "There's nothing in this world to keep you apart;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "What is your answer to Him?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Time after time He has waited before,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "And now He is waiting again,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "To see if you're willing to open the door,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Oh, how He wants to come in!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "If you'll take one step t'wards the Saviour, my friend,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 36
-      }, {
-        "chord" : "D",
-        "position" : 48
-      } ]
-    }, {
-      "text" : "You'll find His arms open wide.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Receive Him and all of your darkness will end,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Within your heart He'll abide.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 844,
+  "songNumber": 232,
+  "title": "THE SAVIOUR IS WAITING",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The Saviour is waiting to enter your heart."
+        },
+        {
+          "text": "Why dont you let Him come in?"
+        },
+        {
+          "text": "Theres nothing in this world to keep you apart;"
+        },
+        {
+          "text": "What is your answer to Him?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Time after time He has waited before,"
+        },
+        {
+          "text": "And now He is waiting again,"
+        },
+        {
+          "text": "To see if youre willing to open the door,"
+        },
+        {
+          "text": "Oh, how He wants to come in!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "If youll take one step twards the Saviour, my friend,"
+        },
+        {
+          "text": "Youll find His arms open wide."
+        },
+        {
+          "text": "Receive Him and all of your darkness will end,"
+        },
+        {
+          "text": "Within your heart Hell abide."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n The [E]Saviour is waiting to [A]enter your [E]heart.\r\nWhy [E]dont you let Him come [B]in?\r\nTheres [E]nothing in this world to [A]keep you a[E]part;\r\nWhat [E]is your [B]answer to [E]Him?\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[E]Time after [A]time He has [E]waited before,\r\nAnd [E]now He is waiting a[B]gain,\r\nTo [E]see if youre [A]willing to [E]open the door,\r\nOh, [E]how He [B]wants to come [E]in!\r\n[Verse]\r\n[Verse]\r\nIf youll [E]take one step twards the [A]Saviour, my [E]friend,\r\nYoull [E]find His arms open [B]wide.\r\nRe[E]ceive Him and all of your [A]darkness will [E]end,\r\nWith[E]in your [B]heart Hell a[E]bide.",
+  "lyrics": "[Verse]\r\n The Saviour is waiting to enter your heart.\r\nWhy dont you let Him come in?\r\nTheres nothing in this world to keep you apart;\r\nWhat is your answer to Him?\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nTime after time He has waited before,\r\nAnd now He is waiting again,\r\nTo see if youre willing to open the door,\r\nOh, how He wants to come in!\r\n[Verse]\r\n[Verse]\r\nIf youll take one step twards the Saviour, my friend,\r\nYoull find His arms open wide.\r\nReceive Him and all of your darkness will end,\r\nWithin your heart Hell abide.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

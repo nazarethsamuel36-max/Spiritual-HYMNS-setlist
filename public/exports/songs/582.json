@@ -1,46 +1,53 @@
 {
-  "id" : 582,
-  "songNumber" : 36,
-  "title" : "JESUS TAKE ME AS I AM",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus take me as I am;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "I can come no other way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Take me deeper into You,"
-    }, {
-      "text" : "Make my flesh-life melt away,"
-    }, {
-      "text" : "Make me like a precious stone"
-    }, {
-      "text" : "Crystal-clear and finely-honed,"
-    }, {
-      "text" : "Life of Jesus shining through"
-    }, {
-      "text" : "Giving glory back to You."
-    } ]
-  } ]
+  "id": 582,
+  "songNumber": 36,
+  "title": "JESUS TAKE ME AS I AM",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jesus take me as I am;"
+        },
+        {
+          "text": "I can come no other way,"
+        },
+        {
+          "text": "Take me deeper into You,"
+        },
+        {
+          "text": "Make my flesh-life melt away,"
+        },
+        {
+          "text": "Make me like a precious stone"
+        },
+        {
+          "text": "Crystal-clear and finely-honed,"
+        },
+        {
+          "text": "Life of Jesus shining through"
+        },
+        {
+          "text": "Giving glory back to You."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[C]Jesus take me as I [F]am;\n[C]I can come no other [G]way,\nTake me deeper into You,\nMake my flesh-life melt away,\nMake me like a precious stone\nCrystal-clear and finely-honed,\nLife of Jesus shining through\nGiving glory back to You.",
+  "lyrics": "[Verse 1]\nJesus take me as I am;\nI can come no other way,\nTake me deeper into You,\nMake my flesh-life melt away,\nMake me like a precious stone\nCrystal-clear and finely-honed,\nLife of Jesus shining through\nGiving glory back to You.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Surrender",
+    "Worship"
+  ]
 }

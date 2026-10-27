@@ -1,318 +1,161 @@
 {
-  "id" : 802,
-  "songNumber" : 190,
-  "title" : "ONE DAY WHEN HEAVEN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "One day when heaven was filled with His praises,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "One day when sin was as black as could be,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Jesus came forth to be born of a virgin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Dwelt among men, my example is He !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Living, He loved me ; dying, He saved me ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Buried, He carried my sins far away ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Rising, He justified freely forever ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "One day He's coming-oh, glorious day !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "One day they led Him up Calvary's mountain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "One day they nailed Him to die on the tree ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Suffering anguish, despised and rejected ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Bearing our sins, my Redeemer is He !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "One day they left Him alone in the garden,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "One day He rested, from suffering free ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Angels came down o'er His tomb to keep vigil ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Hope of the hopeless, my Saviour is He !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "One day the grave could conceal Him no longer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "One day the stone rolled away from the door ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Then He arose, over death He had conquered ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Now is ascended, my Lord evermore !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 5",
-    "lines" : [ {
-      "text" : "One day the trumpet will sound for His coming,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "One day the skies with His glories will shine ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "A",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Wonderful day, my beloved ones bringing ;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Glorious Saviour, this Jesus is mine !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  } ]
+  "id": 802,
+  "songNumber": 190,
+  "title": "ONE DAY WHEN HEAVEN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One day when heaven was filled with His praises,"
+        },
+        {
+          "text": "One day when sin was as black as could be,"
+        },
+        {
+          "text": "Jesus came forth to be born of a virgin,"
+        },
+        {
+          "text": "Dwelt among men, my example is He !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Living, He loved me ; dying, He saved me ;"
+        },
+        {
+          "text": "Buried, He carried my sins far away ;"
+        },
+        {
+          "text": "Rising, He justified freely forever ;"
+        },
+        {
+          "text": "One day Hes coming-oh, glorious day !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One day they led Him up Calvarys mountain,"
+        },
+        {
+          "text": "One day they nailed Him to die on the tree ;"
+        },
+        {
+          "text": "Suffering anguish, despised and rejected ;"
+        },
+        {
+          "text": "Bearing our sins, my Redeemer is He !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One day they left Him alone in the garden,"
+        },
+        {
+          "text": "One day He rested, from suffering free ;"
+        },
+        {
+          "text": "Angels came down oer His tomb to keep vigil ;"
+        },
+        {
+          "text": "Hope of the hopeless, my Saviour is He !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One day the grave could conceal Him no longer,"
+        },
+        {
+          "text": "One day the stone rolled away from the door ;"
+        },
+        {
+          "text": "Then He arose, over death He had conquered ;"
+        },
+        {
+          "text": "Now is ascended, my Lord evermore !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "One day the trumpet will sound for His coming,"
+        },
+        {
+          "text": "One day the skies with His glories will shine ;"
+        },
+        {
+          "text": "Wonderful day, my beloved ones bringing ;"
+        },
+        {
+          "text": "Glorious Saviour, this Jesus is mine !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n One [D]day when heaven was [G]filled with His [D]praises,\nOne [D]day when sin was as [G]black as could [A]be,\n[D]Jesus came forth to be [G]born of a [D]virgin,\n[D]Dwelt among men, my ex[A]ample is [D]He !\n[Verse]\n[Verse]\n[Chorus]\n[D]Living, He loved me ; [G]dying, He saved me ;\n[D]Buried, He carried my [A]sins far away ;\n[D]Rising, He justified [G]freely for[D]ever ;\nOne [D]day Hes coming-oh, [A]glorious [D]day !\n[Verse]\n[Verse]\nOne [D]day they led Him up [G]Calvarys [D]mountain,\nOne [D]day they nailed Him to [G]die on the [A]tree ;\n[D]Suffering anguish, de[G]spised and re[D]jected ;\n[D]Bearing our sins, my Re[A]deemer is [D]He !\n[Verse]\n[Verse]\nOne [D]day they left Him a[G]lone in the [D]garden,\nOne [D]day He rested, from [G]suffering [A]free ;\n[D]Angels came down oer His [G]tomb to keep [D]vigil ;\n[D]Hope of the hopeless, my [A]Saviour is [D]He !\n[Verse]\n[Verse]\nOne [D]day the grave could con[G]ceal Him no [D]longer,\nOne [D]day the stone rolled a[G]way from the [A]door ;\n[D]Then He arose, over [G]death He had [D]conquered ;\n[D]Now is ascended, my [A]Lord ever[D]more !\n[Verse]\n[Verse]\nOne [D]day the trumpet will [G]sound for His [D]coming,\nOne [D]day the skies with His [G]glories will [A]shine ;\n[D]Wonderful day, my be[G]loved ones [D]bringing ;\n[D]Glorious Saviour, this [A]Jesus is [D]mine !",
+  "lyrics": "[Verse]\n One day when heaven was filled with His praises,\nOne day when sin was as black as could be,\nJesus came forth to be born of a virgin,\nDwelt among men, my example is He !\n[Verse]\n[Verse]\n[Chorus]\nLiving, He loved me ; dying, He saved me ;\nBuried, He carried my sins far away ;\nRising, He justified freely forever ;\nOne day Hes coming-oh, glorious day !\n[Verse]\n[Verse]\nOne day they led Him up Calvarys mountain,\nOne day they nailed Him to die on the tree ;\nSuffering anguish, despised and rejected ;\nBearing our sins, my Redeemer is He !\n[Verse]\n[Verse]\nOne day they left Him alone in the garden,\nOne day He rested, from suffering free ;\nAngels came down oer His tomb to keep vigil ;\nHope of the hopeless, my Saviour is He !\n[Verse]\n[Verse]\nOne day the grave could conceal Him no longer,\nOne day the stone rolled away from the door ;\nThen He arose, over death He had conquered ;\nNow is ascended, my Lord evermore !\n[Verse]\n[Verse]\nOne day the trumpet will sound for His coming,\nOne day the skies with His glories will shine ;\nWonderful day, my beloved ones bringing ;\nGlorious Saviour, this Jesus is mine !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

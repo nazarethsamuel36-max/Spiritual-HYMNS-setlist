@@ -1,46 +1,41 @@
 {
-  "id" : 717,
-  "songNumber" : 105,
-  "title" : "JESUS WHAT A WONDER YOU ARE",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Jesus, what a wonder you are,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "You are so gentle, so pure and so kind",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "You shine like the Morning Star,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Jesus, what a wonder you are.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 717,
+  "songNumber": 105,
+  "title": "JESUS WHAT A WONDER YOU ARE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Jesus, what a wonder you are,"
+        },
+        {
+          "text": "You are so gentle, so pure and so kind"
+        },
+        {
+          "text": "You shine like the Morning Star,"
+        },
+        {
+          "text": "Jesus, what a wonder you are."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]Jesus, what a wonder you are,\nYou are so [A]gentle, so pure and so kind\nYou [G]shine like the Morning Star,\n[D]Jesus, what a [A]wonder you [D]are.",
+  "lyrics": "[Verse]\nJesus, what a wonder you are,\nYou are so gentle, so pure and so kind\nYou shine like the Morning Star,\nJesus, what a wonder you are.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

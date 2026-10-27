@@ -1,124 +1,71 @@
 {
-  "id" : 1056,
-  "songNumber" : 78,
-  "title" : "यीशु नाम में उद्धार हमको - हाल्लेलुयाह",
-  "language" : "hindi",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "यीशु नाम में उद्धार हमको - हाल्लेलुयाह",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "E",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "यीशु नाम में अनंत जीवन - हाल्लेलुयाह",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 25
-      }, {
-        "chord" : "E",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "राजाओं का राजा यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "E",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "प्रभुआ का प्रभु यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 21
-      }, {
-        "chord" : "E",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "चंगा करनेवाला यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "E",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "छुटकारा देनेवाला यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 22
-      }, {
-        "chord" : "E",
-        "position" : 30
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "अदभुत काम करनेवाला यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "E",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "शांति देनेवाला यीशु-हाल्लेलुयाह (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "B",
-        "position" : 20
-      }, {
-        "chord" : "E",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 1056,
+  "songNumber": 78,
+  "title": "यीशु नाम में उद्धार हमको - हाल्लेलुयाह",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु नाम में उद्धार हमको - हाल्लेलुयाह"
+        },
+        {
+          "text": "यीशु नाम में अनंत जीवन - हाल्लेलुयाह"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "राजाओं का राजा यीशु-हाल्लेलुयाह (2)"
+        },
+        {
+          "text": "प्रभुआ का प्रभु यीशु-हाल्लेलुयाह (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चंगा करनेवाला यीशु-हाल्लेलुयाह (2)"
+        },
+        {
+          "text": "छुटकारा देनेवाला यीशु-हाल्लेलुयाह (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अदभुत काम करनेवाला यीशु-हाल्लेलुयाह (2)"
+        },
+        {
+          "text": "शांति देनेवाला यीशु-हाल्लेलुयाह (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[E]यीशु नाम में उद्धार हमको - [A]हाल्लेलु[E]याह\n[E]यीशु नाम में अनंत जीवन - [B]हाल्लेलु[E]याह\n\n[Verse]\n[E]राजाओं का राजा यीशु-[A]हाल्लेलु[E]याह (2)\n[E]प्रभुआ का प्रभु यीशु-[B]हाल्लेलु[E]याह (2)\n\n[Verse]\n[E]चंगा करनेवाला यीशु-[A]हाल्लेलु[E]याह (2)\n[E]छुटकारा देनेवाला यीशु-[B]हाल्लेलु[E]याह (2)\n\n[Verse]\n[E]अदभुत काम करनेवाला यीशु-[A]हाल्लेलु[E]याह (2)\n[E]शांति देनेवाला यीशु-[B]हाल्लेलु[E]याह (2)",
+  "lyrics": "[Verse]\nयीशु नाम में उद्धार हमको - हाल्लेलुयाह\nयीशु नाम में अनंत जीवन - हाल्लेलुयाह\n\n[Verse]\nराजाओं का राजा यीशु-हाल्लेलुयाह (2)\nप्रभुआ का प्रभु यीशु-हाल्लेलुयाह (2)\n\n[Verse]\nचंगा करनेवाला यीशु-हाल्लेलुयाह (2)\nछुटकारा देनेवाला यीशु-हाल्लेलुयाह (2)\n\n[Verse]\nअदभुत काम करनेवाला यीशु-हाल्लेलुयाह (2)\nशांति देनेवाला यीशु-हाल्लेलुयाह (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

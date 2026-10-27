@@ -1,111 +1,69 @@
 {
-  "id" : 866,
-  "songNumber" : 254,
-  "title" : "I WILL GIVE THANKS TO THEE",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will give thanks to Thee, O Lord, among the people;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 46
-      } ]
-    }, {
-      "text" : "I will sing praises to Thee among the nations.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "For Thy steadfast love is great, is great to the heavens,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 36
-      }, {
-        "chord" : "A",
-        "position" : 49
-      } ]
-    }, {
-      "text" : "And Thy faithfulness, Thy faithfulness, to the clouds.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 40
-      }, {
-        "chord" : "D",
-        "position" : 47
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Be exalted, O God, above the heavens !",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Let Thy glory be over all the earth !",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Be exalted, O God, above the heavens !"
-    }, {
-      "text" : "Let Thy glory be over all the earth !"
-    } ]
-  } ]
+  "id": 866,
+  "songNumber": 254,
+  "title": "I WILL GIVE THANKS TO THEE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I will give thanks to Thee, O Lord, among the people;"
+        },
+        {
+          "text": "I will sing praises to Thee among the nations."
+        },
+        {
+          "text": "For Thy steadfast love is great, is great to the heavens,"
+        },
+        {
+          "text": "And Thy faithfulness, Thy faithfulness, to the clouds."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Be exalted, O God, above the heavens !"
+        },
+        {
+          "text": "Let Thy glory be over all the earth !"
+        },
+        {
+          "text": "Be exalted, O God, above the heavens !"
+        },
+        {
+          "text": "Let Thy glory be over all the earth !"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n I will [D]give thanks to Thee, O [G]Lord, among the [D]people;\nI will sing [G]praises to Thee a[D]mong the [A]nations.\nFor Thy [G]steadfast [D]love is [G]great, is [D]great to the [A]heavens,\nAnd Thy [D]faithfulness, Thy [G]faithfulness, [A]to the [D]clouds.\n[Verse]\n[Verse]\n[Chorus]\nBe ex[D]alted, O [G]God, a[D]bove the [A]heavens !\nLet Thy [G]glory be [D]over [A]all the [D]earth !\nBe exalted, O God, above the heavens !\nLet Thy glory be over all the earth !",
+  "lyrics": "[Verse]\n I will give thanks to Thee, O Lord, among the people;\nI will sing praises to Thee among the nations.\nFor Thy steadfast love is great, is great to the heavens,\nAnd Thy faithfulness, Thy faithfulness, to the clouds.\n[Verse]\n[Verse]\n[Chorus]\nBe exalted, O God, above the heavens !\nLet Thy glory be over all the earth !\nBe exalted, O God, above the heavens !\nLet Thy glory be over all the earth !",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

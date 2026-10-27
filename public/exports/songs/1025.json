@@ -1,210 +1,126 @@
 {
-  "id" : 1025,
-  "songNumber" : 47,
-  "title" : "मेरे दिल में नया गाना, मुझे यीशु देता है",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "मेरे दिल में नया गाना, मुझे यीशु देता है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "आनन्द से गाऊँगा, जीवन भर अपने",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "प्रभु की स्तुति करूँगा ।",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "मेरे दिल में नया गाना, मुझे यीशु देता है ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "पाप की गन्दगी से मुझे उठाया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "दिया उसने नया गीत मेरे जीवन में ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "कीच से उसने मेरे प्राण को खींच के निकाला",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "खून से उसने बदबू सारा बिल्कुल दूर किया ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "माता पिता भाई बहन सब कुछ वही है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "निन्दा लेकर उसकी महिमा करता रहूँगा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "इस जहाँ की मुसीबतें क्या करेंगी",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "उस जहाँ की जिन्दगी पर आशा रखता हूँ ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "मेरे लिए जल्दी वह आने वाला है",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "उसके साथ हमेशा मैं गाता रहूँगा ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    } ]
-  } ]
+  "id": 1025,
+  "songNumber": 47,
+  "title": "मेरे दिल में नया गाना, मुझे यीशु देता है",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "मेरे दिल में नया गाना, मुझे यीशु देता है"
+        },
+        {
+          "text": "आनन्द से गाऊँगा, जीवन भर अपने"
+        },
+        {
+          "text": "प्रभु की स्तुति करूँगा ।"
+        },
+        {
+          "text": "मेरे दिल में नया गाना, मुझे यीशु देता है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पाप की गन्दगी से मुझे उठाया"
+        },
+        {
+          "text": "दिया उसने नया गीत मेरे जीवन में ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कीच से उसने मेरे प्राण को खींच के निकाला"
+        },
+        {
+          "text": "खून से उसने बदबू सारा बिल्कुल दूर किया ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "माता पिता भाई बहन सब कुछ वही है"
+        },
+        {
+          "text": "निन्दा लेकर उसकी महिमा करता रहूँगा ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "इस जहाँ की मुसीबतें क्या करेंगी"
+        },
+        {
+          "text": "उस जहाँ की जिन्दगी पर आशा रखता हूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "मेरे लिए जल्दी वह आने वाला है"
+        },
+        {
+          "text": "उसके साथ हमेशा मैं गाता रहूँगा ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n [G]मेरे दिल में नया गा[C]ना, [D]मुझे यीशु दे[G]ता है\n[G]आनन्द से गा[C]ऊँगा, [D]जीवन भर अप[G]ने\n[C]प्रभु की स्तुति क[D]रूँगा ।\n[G]मेरे दिल में नया गा[C]ना, [D]मुझे यीशु दे[G]ता है ।\n[Verse]\n[Verse]\n[G]पाप की गन्दगी [C]से मुझे उ[G]ठाया\n[G]दिया उसने नया [D]गीत मेरे जीवन [G]में ।\n[Verse]\n[Verse]\n[G]कीच से उसने मेरे [C]प्राण को खींच के नि[G]काला\n[G]खून से उसने बदबू [D]सारा बिल्कुल दूर कि[G]या ।\n[Verse]\n[Verse]\n[G]माता पिता [C]भाई बहन सब कुछ व[G]ही है\n[G]निन्दा लेकर उसकी [D]महिमा करता र[G]हूँगा ।\n[Verse]\n[Verse]\n[G]इस जहाँ की मुसी[C]बतें क्या क[G]रेंगी\n[G]उस जहाँ की जिन्दगी [D]पर आशा रखता [G]हूँ ।\n[Verse]\n[Verse]\n[G]मेरे लिए [C]जल्दी वह आने वा[G]ला है\n[G]उसके साथ ह[D]मेशा मैं गाता र[G]हूँगा ।",
+  "lyrics": "[Chorus]\n मेरे दिल में नया गाना, मुझे यीशु देता है\nआनन्द से गाऊँगा, जीवन भर अपने\nप्रभु की स्तुति करूँगा ।\nमेरे दिल में नया गाना, मुझे यीशु देता है ।\n[Verse]\n[Verse]\nपाप की गन्दगी से मुझे उठाया\nदिया उसने नया गीत मेरे जीवन में ।\n[Verse]\n[Verse]\nकीच से उसने मेरे प्राण को खींच के निकाला\nखून से उसने बदबू सारा बिल्कुल दूर किया ।\n[Verse]\n[Verse]\nमाता पिता भाई बहन सब कुछ वही है\nनिन्दा लेकर उसकी महिमा करता रहूँगा ।\n[Verse]\n[Verse]\nइस जहाँ की मुसीबतें क्या करेंगी\nउस जहाँ की जिन्दगी पर आशा रखता हूँ ।\n[Verse]\n[Verse]\nमेरे लिए जल्दी वह आने वाला है\nउसके साथ हमेशा मैं गाता रहूँगा ।",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

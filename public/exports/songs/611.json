@@ -1,332 +1,139 @@
 {
-  "id" : 611,
-  "songNumber" : 304,
-  "title" : "FACE TO FACE WITH CHRIST MY SAVIOUR",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Face to face with Christ my Saviour,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Face to face what will it be,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "When with rapture I behold Him",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Jesus Christ, who died for me?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Face to face shall I behold Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Far beyond the starry sky,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Face to face in all His glory,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "I shall see Him by and by.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Only faintly now I see Him,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "With the darkening veil between,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "But a blessed day is coming,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "When His glory shall be seen.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "What rejoicing in His presence,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "When are banished grief and pain,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "When the crooked ways are straightened,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "And the dark things shall be plain.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Face to face O blissful moment,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Face to face to see and know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Face to face with my Redeemer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Jesus Christ who loves me so.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  } ]
+  "id": 611,
+  "songNumber": 304,
+  "title": "FACE TO FACE WITH CHRIST MY SAVIOUR",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Face to face with Christ my Saviour,"
+        },
+        {
+          "text": "Face to face what will it be,"
+        },
+        {
+          "text": "When with rapture I behold Him"
+        },
+        {
+          "text": "Jesus Christ, who died for me?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Face to face shall I behold Him,"
+        },
+        {
+          "text": "Far beyond the starry sky,"
+        },
+        {
+          "text": "Face to face in all His glory,"
+        },
+        {
+          "text": "I shall see Him by and by."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Only faintly now I see Him,"
+        },
+        {
+          "text": "With the darkening veil between,"
+        },
+        {
+          "text": "But a blessed day is coming,"
+        },
+        {
+          "text": "When His glory shall be seen."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "What rejoicing in His presence,"
+        },
+        {
+          "text": "When are banished grief and pain,"
+        },
+        {
+          "text": "When the crooked ways are straightened,"
+        },
+        {
+          "text": "And the dark things shall be plain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Face to face O blissful moment,"
+        },
+        {
+          "text": "Face to face to see and know,"
+        },
+        {
+          "text": "Face to face with my Redeemer,"
+        },
+        {
+          "text": "Jesus Christ who loves me so."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [A]Face to [D]face with [A]Christ my [E]Saviour,\r\n[A]Face to [D]face what [E]will it [A]be,\r\n[A]When with [D]rapture [A]I be[E]hold Him\r\n[A]Jesus [D]Christ, who [E]died for [A]me?\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[A]Face to [D]face shall [A]I be[E]hold Him,\r\n[A]Far be[D]yond the [E]starry [A]sky,\r\n[A]Face to [D]face in [A]all His [E]glory,\r\n[A]I shall [D]see Him [E]by and [A]by.\r\n[Verse]\r\n[Verse]\r\n[A]Only [D]faintly [A]now I [E]see Him,\r\nWith [A]the [D]darkening [E]veil be[A]tween,\r\n[A]But a [D]blessed [A]day is [E]coming,\r\n[A]When His [D]glory [E]shall be [A]seen.\r\n[Verse]\r\n[Verse]\r\n[A]What re[D]joicing [A]in His [E]presence,\r\nWhen [A]are [D]banished [E]grief and [A]pain,\r\n[A]When the [D]crooked [A]ways are [E]straightened,\r\nAnd [A]the [D]dark things [E]shall be [A]plain.\r\n[Verse]\r\n[Verse]\r\n[A]Face to [D]face O [A]blissful [E]moment,\r\n[A]Face to [D]face to [E]see and [A]know,\r\n[A]Face to [D]face with [A]my Re[E]deemer,\r\n[A]Jesus [D]Christ who [E]loves me [A]so.",
+  "lyrics": "[Verse]\r\n Face to face with Christ my Saviour,\r\nFace to face what will it be,\r\nWhen with rapture I behold Him\r\nJesus Christ, who died for me?\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nFace to face shall I behold Him,\r\nFar beyond the starry sky,\r\nFace to face in all His glory,\r\nI shall see Him by and by.\r\n[Verse]\r\n[Verse]\r\nOnly faintly now I see Him,\r\nWith the darkening veil between,\r\nBut a blessed day is coming,\r\nWhen His glory shall be seen.\r\n[Verse]\r\n[Verse]\r\nWhat rejoicing in His presence,\r\nWhen are banished grief and pain,\r\nWhen the crooked ways are straightened,\r\nAnd the dark things shall be plain.\r\n[Verse]\r\n[Verse]\r\nFace to face O blissful moment,\r\nFace to face to see and know,\r\nFace to face with my Redeemer,\r\nJesus Christ who loves me so.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

@@ -1,72 +1,59 @@
 {
-  "id" : 1142,
-  "songNumber" : 164,
-  "title" : "आसमानों के नीचे, और इस धरती पर",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "आसमानों के नीचे, और इस धरती पर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "सबसे ऊँचा है प्रभु, यीशु तेरा नाम,",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "पवित्र आत्मा देता है हमको,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "यीशु तेरा नाम, सबसे ऊँचा",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "चंगाई देता है हमको, यीशु तेरा नाम",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "स्वर्ग ले जायेगा हमको, यीशु तेरा नाम",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 1142,
+  "songNumber": 164,
+  "title": "आसमानों के नीचे, और इस धरती पर",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आसमानों के नीचे, और इस धरती पर,"
+        },
+        {
+          "text": "सबसे ऊँचा है प्रभु, यीशु तेरा नाम,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र आत्मा देता है हमको,"
+        },
+        {
+          "text": "यीशु तेरा नाम, सबसे ऊँचा"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चंगाई देता है हमको, यीशु तेरा नाम"
+        },
+        {
+          "text": "स्वर्ग ले जायेगा हमको, यीशु तेरा नाम"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]आसमानों के नीचे, और इस धरती पर,\n[C]सबसे ऊँचा है प्रभु, [D]यीशु तेरा नाम,\n\n[Verse]\n[G]पवित्र आत्मा देता है हमको,\n[C]यीशु तेरा नाम, [D]सबसे ऊँचा\n\n[Verse]\n[G]चंगाई देता है हमको, [D]यीशु तेरा नाम\n[G]स्वर्ग ले जायेगा हमको, [D]यीशु तेरा नाम",
+  "lyrics": "[Verse]\nआसमानों के नीचे, और इस धरती पर,\nसबसे ऊँचा है प्रभु, यीशु तेरा नाम,\n\n[Verse]\nपवित्र आत्मा देता है हमको,\nयीशु तेरा नाम, सबसे ऊँचा\n\n[Verse]\nचंगाई देता है हमको, यीशु तेरा नाम\nस्वर्ग ले जायेगा हमको, यीशु तेरा नाम",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

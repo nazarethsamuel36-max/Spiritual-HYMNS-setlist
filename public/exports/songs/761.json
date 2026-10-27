@@ -1,156 +1,96 @@
 {
-  "id" : 761,
-  "songNumber" : 149,
-  "title" : "THERE'S A LAND THAT IS FAIRER THAN DAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "There's a land that is fairer than day,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "And by faith we can see it afar;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "For the Father waits over the way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "To prepare us a dwelling place there.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "In the sweet by and by,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "We shall meet on that beautiful shore;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "In the sweet by and by,"
-    }, {
-      "text" : "We shall meet on that beautiful shore.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "We shall sing on that beautiful shore,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "The melodious songs of the blest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And our spirits shall sorrow no more,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Not a sigh for the blessing of rest.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "To our bountiful Father above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "We will offer our tribute of praise,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "For the glorious gift of His love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And the blessings that hallow our days.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    } ]
-  } ]
+  "id": 761,
+  "songNumber": 149,
+  "title": "THERE'S A LAND THAT IS FAIRER THAN DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There's a land that is fairer than day,"
+        },
+        {
+          "text": "And by faith we can see it afar;"
+        },
+        {
+          "text": "For the Father waits over the way,"
+        },
+        {
+          "text": "To prepare us a dwelling place there."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "In the sweet by and by,"
+        },
+        {
+          "text": "We shall meet on that beautiful shore;"
+        },
+        {
+          "text": "In the sweet by and by,"
+        },
+        {
+          "text": "We shall meet on that beautiful shore."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "We shall sing on that beautiful shore,"
+        },
+        {
+          "text": "The melodious songs of the blest,"
+        },
+        {
+          "text": "And our spirits shall sorrow no more,"
+        },
+        {
+          "text": "Not a sigh for the blessing of rest."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "To our bountiful Father above,"
+        },
+        {
+          "text": "We will offer our tribute of praise,"
+        },
+        {
+          "text": "For the glorious gift of His love,"
+        },
+        {
+          "text": "And the blessings that hallow our days."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]There's a land that is fairer than [A]day,\nAnd by [D]faith we can see it a[G]far;\nFor the [D]Father waits over the [A]way,\nTo pre[D]pare us a dwelling place [G]there.\n\n[Chorus]\nIn the [D]sweet by and by,\nWe shall [G]meet on that beautiful [D]shore;\nIn the sweet by and by,\nWe shall [G]meet on that beautiful [D]shore.\n\n[Verse 2]\nWe shall [D]sing on that beautiful [A]shore,\nThe melo[D]dious songs of the [G]blest,\nAnd our [D]spirits shall sorrow no [A]more,\nNot a [D]sigh for the blessing of [G]rest.\n\n[Verse 3]\nTo our [D]bountiful Father a[A]bove,\nWe will [D]offer our tribute of [G]praise,\nFor the [D]glorious gift of His [A]love,\nAnd the [D]blessings that hallow our [G]days.",
+  "lyrics": "[Verse 1]\nThere's a land that is fairer than day,\nAnd by faith we can see it afar;\nFor the Father waits over the way,\nTo prepare us a dwelling place there.\n\n[Chorus]\nIn the sweet by and by,\nWe shall meet on that beautiful shore;\nIn the sweet by and by,\nWe shall meet on that beautiful shore.\n\n[Verse 2]\nWe shall sing on that beautiful shore,\nThe melodious songs of the blest,\nAnd our spirits shall sorrow no more,\nNot a sigh for the blessing of rest.\n\n[Verse 3]\nTo our bountiful Father above,\nWe will offer our tribute of praise,\nFor the glorious gift of His love,\nAnd the blessings that hallow our days.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

@@ -1,71 +1,47 @@
 {
-  "id" : 695,
-  "songNumber" : 16,
-  "title" : "Iâ€™LL SAY â€œYESâ€",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Iâ€™ll say yes, yes, yes, (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Iâ€™ll say yes Lord, (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Iâ€™ll say yes, yes, yes.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Where He leads me, I will follow (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Iâ€™ll go with Him, with Him,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "All the way."
-    } ]
-  } ]
+  "id": 695,
+  "songNumber": 16,
+  "title": "I'LL SAY \"YES\"",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I'll say yes, yes, yes, (2)"
+        },
+        {
+          "text": "I'll say yes Lord, (2)"
+        },
+        {
+          "text": "I'll say yes, yes, yes."
+        },
+        {
+          "text": "Where He leads me, I will follow (3)"
+        },
+        {
+          "text": "I'll go with Him, with Him,"
+        },
+        {
+          "text": "All the way."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]I'll say yes, yes[A], yes, (2)\n[D]I'll say ye[G]s Lord, (2)\n[D]I'll sa[A]y yes, yes[D], yes.\n[D]Where He leads me, [G]I will follow (3)\n[D]I'll go wit[A]h Him, wit[D]h Him,\nAll the way.",
+  "lyrics": "[Verse]\nI'll say yes, yes, yes, (2)\nI'll say yes Lord, (2)\nI'll say yes, yes, yes.\nWhere He leads me, I will follow (3)\nI'll go with Him, with Him,\nAll the way.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

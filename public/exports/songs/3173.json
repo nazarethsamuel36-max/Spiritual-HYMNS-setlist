@@ -1,76 +1,131 @@
 {
-  "id" : 3173,
-  "songNumber" : 1032,
-  "title" : "** Give me that old time religion",
-  "language" : "english",
-  "originalKey" : "A",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Give me that old time religion (3)"
-    }, {
-      "text" : "It's good enough for me"
-    }, {
-      "text" : "Give me that old time religion (3)"
-    }, {
-      "text" : "It's good enough for me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "It was good for Paul and Silas (3)"
-    }, {
-      "text" : "It's good enough for me"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "It was good for our mothers,"
-    }, {
-      "text" : "It was good for our fathers,"
-    }, {
-      "text" : "It was good for the prophets,"
-    }, {
-      "text" : "It's good enough for me."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "It will take us all to heaven (3)"
-    }, {
-      "text" : "It's good enough for us"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "It will save us from the devil (3)"
-    }, {
-      "text" : "It's good enough for us"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Outro",
-    "lines" : [ {
-      "text" : "Give us that old time religion (2)"
-    }, {
-      "text" : "We'll go back to that..."
-    }, {
-      "text" : "Old time religion,"
-    }, {
-      "text" : "It's good enough for us"
-    } ]
-  } ]
+  "id": 3173,
+  "songNumber": 1032,
+  "title": "Give me that old time religion",
+  "artist": null,
+  "composer": null,
+  "language": "English",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "Give me that old time religion (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        },
+        {
+          "text": "Give me that old time religion (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "It was good for Paul and Silas (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "It was good for our mothers (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "It was good for our fathers (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "It was good for the prophets (3)"
+        },
+        {
+          "text": "It's good enough for me"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "It will take us all to heaven (3)"
+        },
+        {
+          "text": "It's good enough for us"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "It will save us from the devil (3)"
+        },
+        {
+          "text": "It's good enough for us"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Outro",
+      "lines": [
+        {
+          "text": "Give us that old time religion (2)"
+        },
+        {
+          "text": "We'll go back to that"
+        },
+        {
+          "text": "Old time religion"
+        },
+        {
+          "text": "It's good enough for us"
+        }
+      ]
+    }
+  ],
+  "chords": "\n[CHORUS]\nGive me that old time religion (3)\nIt's good enough for me\nGive me that old time religion (3)\nIt's good enough for me\n\n[Verse 1]\nIt was good for Paul and Silas (3)\nIt's good enough for me\n\n[Verse 2]\nIt was good for our mothers (3)\nIt's good enough for me\n\n[Verse 3]\nIt was good for our fathers (3)\nIt's good enough for me\n\n[Verse 4]\nIt was good for the prophets (3)\nIt's good enough for me\n\n[Verse 5]\nIt will take us all to heaven (3)\nIt's good enough for us\n\n[Verse 6]\nIt will save us from the devil (3)\nIt's good enough for us\n\n[Outro]\nGive us that old time religion (2)\nWe'll go back to that\nOld time religion\nIt's good enough for us",
+  "lyrics": "\n[CHORUS]\nGive me that old time religion (3)\nIt's good enough for me\nGive me that old time religion (3)\nIt's good enough for me\n\n[Verse 1]\nIt was good for Paul and Silas (3)\nIt's good enough for me\n\n[Verse 2]\nIt was good for our mothers (3)\nIt's good enough for me\n\n[Verse 3]\nIt was good for our fathers (3)\nIt's good enough for me\n\n[Verse 4]\nIt was good for the prophets (3)\nIt's good enough for me\n\n[Verse 5]\nIt will take us all to heaven (3)\nIt's good enough for us\n\n[Verse 6]\nIt will save us from the devil (3)\nIt's good enough for us\n\n[Outro]\nGive us that old time religion (2)\nWe'll go back to that\nOld time religion\nIt's good enough for us",
+  "is_active": true,
+  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

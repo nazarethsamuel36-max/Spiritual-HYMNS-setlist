@@ -1,215 +1,89 @@
 {
-  "id" : 836,
-  "songNumber" : 224,
-  "title" : "SEEK YE FIRST THE KINGDOM OF GOD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Seek ye first the Kingdom of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "And His righteousness,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And all these things shall be added unto you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Hallelu-Hallelujah.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Hallelujah, Hallelujah,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Hallelujah, Hallelu-Hallelujah.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Ask and it shall be given unto you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Seek and you shall find,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Knock and the door shall be opened unto you,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Hallelu-Hallelujah."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Man shall not live by bread alone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "But by every word,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "That proceeds from the mouth of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Hallelu-Hallelujah."
-    } ]
-  } ]
+  "id": 836,
+  "songNumber": 224,
+  "title": "SEEK YE FIRST THE KINGDOM OF GOD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Seek ye first the Kingdom of God,"
+        },
+        {
+          "text": "And His righteousness,"
+        },
+        {
+          "text": "And all these things shall be added unto you."
+        },
+        {
+          "text": "Hallelu-Hallelujah."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Hallelujah, Hallelujah,"
+        },
+        {
+          "text": "Hallelujah, Hallelu-Hallelujah."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Ask and it shall be given unto you,"
+        },
+        {
+          "text": "Seek and you shall find,"
+        },
+        {
+          "text": "Knock and the door shall be opened unto you,"
+        },
+        {
+          "text": "Hallelu-Hallelujah."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Man shall not live by bread alone,"
+        },
+        {
+          "text": "But by every word,"
+        },
+        {
+          "text": "That proceeds from the mouth of God,"
+        },
+        {
+          "text": "Hallelu-Hallelujah."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Seek ye [A]first the [G]Kingdom of [D]God,\n[G]And His [D]righteous[A]ness,\n[D]And all these [A]things shall be [G]added unto [D]you.\n[G]Hallelu-[D]Halle[A]lu[D]jah.\n\n[Chorus]\n[D]Halle[A]lu[G]jah, [D]Halle[A]lu[D]jah,\n[D]Halle[A]lu[G]jah, [D]Hallelu-[A]Halle[D]lujah.\n\n[Verse 2]\n[D]Ask and it [A]shall be [G]given unto [D]you,\n[G]Seek and [D]you shall [A]find,\n[D]Knock and the [A]door shall be [G]opened unto [D]you,\nHallelu-Hallelujah.\n\n[Verse 3]\n[D]Man shall not [A]live by [G]bread a[D]lone,\n[G]But by [D]every [A]word,\n[D]That pro[A]ceeds from the [G]mouth of [D]God,\nHallelu-Hallelujah.",
+  "lyrics": "[Verse 1]\nSeek ye first the Kingdom of God,\nAnd His righteousness,\nAnd all these things shall be added unto you.\nHallelu-Hallelujah.\n\n[Chorus]\nHallelujah, Hallelujah,\nHallelujah, Hallelu-Hallelujah.\n\n[Verse 2]\nAsk and it shall be given unto you,\nSeek and you shall find,\nKnock and the door shall be opened unto you,\nHallelu-Hallelujah.\n\n[Verse 3]\nMan shall not live by bread alone,\nBut by every word,\nThat proceeds from the mouth of God,\nHallelu-Hallelujah.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

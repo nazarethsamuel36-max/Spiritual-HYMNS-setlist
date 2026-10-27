@@ -1,328 +1,131 @@
 {
-  "id" : 855,
-  "songNumber" : 243,
-  "title" : "KING OF MY LIFE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "King of my life, I crown Thee now,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Thine shall the glory be",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Lest I forget Thy thorn-crowned brow",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Lead me to Calvary.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Lest I forget Gethsemane,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Lest I forget Thine agony,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Lest I forget Thy love for me,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Lead me to Calvary."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Show me the tomb where Thou wast laid,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Tenderly mourned and wept,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Angels in robes of light arrayed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Guarded Thee whilst Thou slept.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Let me, like Mary, through the gloom,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Come with a gift to Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Show to me now the empty tomb,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 19
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Lead me to Calvary."
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "May I be willing, Lord, to bear",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Daily my cross for Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "Even Thy cup of grief to share,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Thou hast borne all for me.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "Fill me, O Lord, with Thy desire",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "For all who know not Thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Then touch my lips with holy fire,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "To speak of Calvary.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  } ]
+  "id": 855,
+  "songNumber": 243,
+  "title": "KING OF MY LIFE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "King of my life, I crown Thee now,"
+        },
+        {
+          "text": "Thine shall the glory be"
+        },
+        {
+          "text": "Lest I forget Thy thorn-crowned brow"
+        },
+        {
+          "text": "Lead me to Calvary."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lest I forget Gethsemane,"
+        },
+        {
+          "text": "Lest I forget Thine agony,"
+        },
+        {
+          "text": "Lest I forget Thy love for me,"
+        },
+        {
+          "text": "Lead me to Calvary."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Show me the tomb where Thou wast laid,"
+        },
+        {
+          "text": "Tenderly mourned and wept,"
+        },
+        {
+          "text": "Angels in robes of light arrayed,"
+        },
+        {
+          "text": "Guarded Thee whilst Thou slept."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Let me, like Mary, through the gloom,"
+        },
+        {
+          "text": "Come with a gift to Thee,"
+        },
+        {
+          "text": "Show to me now the empty tomb,"
+        },
+        {
+          "text": "Lead me to Calvary."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "May I be willing, Lord, to bear"
+        },
+        {
+          "text": "Daily my cross for Thee,"
+        },
+        {
+          "text": "Even Thy cup of grief to share,"
+        },
+        {
+          "text": "Thou hast borne all for me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "Fill me, O Lord, with Thy desire"
+        },
+        {
+          "text": "For all who know not Thee,"
+        },
+        {
+          "text": "Then touch my lips with holy fire,"
+        },
+        {
+          "text": "To speak of Calvary."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[E]King of my [A]life, I [E]crown Thee [B]now,\r\n[E]Thine shall the [A]glory [B]be\r\n[E]Lest I for[A]get Thy [E]thorn-crowned [B]brow\r\n[E]Lead me to [B]Calva[E]ry.\r\n\r\n[Chorus]\r\n[E]Lest I for[A]get Geth[E]semane,\r\n[B]Lest I forget Thine [E]agony,\r\n[A]Lest I forget Thy [E]love for me,\r\nLead me to Calvary.\r\n\r\n[Verse 2]\r\n[E]Show me the [A]tomb where [E]Thou wast [B]laid,\r\n[E]Tenderly [A]mourned and [B]wept,\r\n[E]Angels in [A]robes of [E]light ar[B]rayed,\r\n[E]Guarded Thee [B]whilst Thou [E]slept.\r\n\r\n[Verse 3]\r\n[E]Let me, like [A]Mary, [E]through the [B]gloom,\r\n[E]Come with a [A]gift to [B]Thee,\r\n[E]Show to me [A]now the [E]empty [B]tomb,\r\nLead me to Calvary.\r\n\r\n[Verse 4]\r\n[E]May I be [A]willing, [E]Lord, to [B]bear\r\n[E]Daily my [A]cross for [B]Thee,\r\n[E]Even Thy [A]cup of [E]grief to [B]share,\r\n[E]Thou hast borne [B]all for [E]me.\r\n\r\n[Verse 5]\r\n[E]Fill me, O [A]Lord, with [E]Thy de[B]sire\r\n[E]For all who [A]know not [B]Thee,\r\n[E]Then touch my [A]lips with [E]holy [B]fire,\r\n[E]To speak of [B]Calva[E]ry.",
+  "lyrics": "[Verse 1]\r\nKing of my life, I crown Thee now,\r\nThine shall the glory be\r\nLest I forget Thy thorn-crowned brow\r\nLead me to Calvary.\r\n\r\n[Chorus]\r\nLest I forget Gethsemane,\r\nLest I forget Thine agony,\r\nLest I forget Thy love for me,\r\nLead me to Calvary.\r\n\r\n[Verse 2]\r\nShow me the tomb where Thou wast laid,\r\nTenderly mourned and wept,\r\nAngels in robes of light arrayed,\r\nGuarded Thee whilst Thou slept.\r\n\r\n[Verse 3]\r\nLet me, like Mary, through the gloom,\r\nCome with a gift to Thee,\r\nShow to me now the empty tomb,\r\nLead me to Calvary.\r\n\r\n[Verse 4]\r\nMay I be willing, Lord, to bear\r\nDaily my cross for Thee,\r\nEven Thy cup of grief to share,\r\nThou hast borne all for me.\r\n\r\n[Verse 5]\r\nFill me, O Lord, with Thy desire\r\nFor all who know not Thee,\r\nThen touch my lips with holy fire,\r\nTo speak of Calvary.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

@@ -1,329 +1,165 @@
 {
-  "id" : 885,
-  "songNumber" : 273,
-  "title" : "IS YOUR ALL ON THE ALTAR OF SACRIFICE LAID",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "You have longed for sweet peace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And for faith to increase,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And have earnestly, fervently prayed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "But you cannot have rest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Or be perfectly blest,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "Until all on the altar is laid.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "A",
-        "position" : 17
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Is your all on the altar of sacrifice laid ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Your heart does the Spirit control ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "You can only be blessed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "And have peace and sweet rest",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "As you yield Him your body and soul.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Would you walk with the Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "In the light of His Word,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "And have peace and contentment alway;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "You must do His sweet will,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "To be free from all ill;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "On the altar your all you must lay.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Oh we never can know,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "What the Lord will bestow,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Of the blessings for which we have prayed,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Till our body and soul,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "He doth fully control,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And our all on the altar is laid.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Who can tell of the love,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "He will send from above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "And how happy our hearts will be made,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Of the fellowship sweet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "We shall share at His feet,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "When our all on the altar is laid.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 885,
+  "songNumber": 273,
+  "title": "IS YOUR ALL ON THE ALTAR OF SACRIFICE LAID",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "You have longed for sweet peace,"
+        },
+        {
+          "text": "And for faith to increase,"
+        },
+        {
+          "text": "And have earnestly, fervently prayed,"
+        },
+        {
+          "text": "But you cannot have rest,"
+        },
+        {
+          "text": "Or be perfectly blest,"
+        },
+        {
+          "text": "Until all on the altar is laid."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Is your all on the altar of sacrifice laid ?"
+        },
+        {
+          "text": "Your heart does the Spirit control ?"
+        },
+        {
+          "text": "You can only be blessed,"
+        },
+        {
+          "text": "And have peace and sweet rest"
+        },
+        {
+          "text": "As you yield Him your body and soul."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Would you walk with the Lord"
+        },
+        {
+          "text": "In the light of His Word,"
+        },
+        {
+          "text": "And have peace and contentment alway;"
+        },
+        {
+          "text": "You must do His sweet will,"
+        },
+        {
+          "text": "To be free from all ill;"
+        },
+        {
+          "text": "On the altar your all you must lay."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Oh we never can know,"
+        },
+        {
+          "text": "What the Lord will bestow,"
+        },
+        {
+          "text": "Of the blessings for which we have prayed,"
+        },
+        {
+          "text": "Till our body and soul,"
+        },
+        {
+          "text": "He doth fully control,"
+        },
+        {
+          "text": "And our all on the altar is laid."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Who can tell of the love,"
+        },
+        {
+          "text": "He will send from above,"
+        },
+        {
+          "text": "And how happy our hearts will be made,"
+        },
+        {
+          "text": "Of the fellowship sweet,"
+        },
+        {
+          "text": "We shall share at His feet,"
+        },
+        {
+          "text": "When our all on the altar is laid."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n You [D]have longed for [G]sweet peace,\nAnd [D]for faith to [A]increase,\nAnd [D]have earnestly, [G]fervently [A]prayed,\nBut [D]you cannot [G]have rest,\nOr [D]be perfectly [G]blest,\nUn[D]til all on the [A]altar is [D]laid.\n[Verse]\n[Verse]\n[Chorus]\nIs your [D]all on the [G]altar of [D]sacrifice [A]laid ?\nYour [D]heart does the [G]Spirit con[A]trol ?\nYou [D]can only [G]be blessed,\nAnd [D]have peace and [G]sweet rest\nAs you [D]yield Him your [A]body and [D]soul.\n[Verse]\n[Verse]\nWould you [D]walk with the [G]Lord\nIn the [D]light of His [A]Word,\nAnd [D]have peace and con[G]tentment al[A]way;\nYou [D]must do His [G]sweet will,\nTo [D]be free from [G]all ill;\nOn the [D]altar your [A]all you [D]must lay.\n[Verse]\n[Verse]\nOh we [D]never can [G]know,\nWhat the [D]Lord will be[A]stow,\nOf the [D]blessings for [G]which we have [A]prayed,\nTill our [D]body and [G]soul,\nHe [D]doth fully con[G]trol,\nAnd our [D]all on the [A]altar is [D]laid.\n[Verse]\n[Verse]\nWho can [D]tell of the [G]love,\nHe will [D]send from a[A]bove,\nAnd [D]how happy our [G]hearts will be [A]made,\nOf the [D]fellowship [G]sweet,\nWe [D]shall share at [G]His feet,\nWhen [D]our all on the [A]altar is [D]laid.",
+  "lyrics": "[Verse]\n You have longed for sweet peace,\nAnd for faith to increase,\nAnd have earnestly, fervently prayed,\nBut you cannot have rest,\nOr be perfectly blest,\nUntil all on the altar is laid.\n[Verse]\n[Verse]\n[Chorus]\nIs your all on the altar of sacrifice laid ?\nYour heart does the Spirit control ?\nYou can only be blessed,\nAnd have peace and sweet rest\nAs you yield Him your body and soul.\n[Verse]\n[Verse]\nWould you walk with the Lord\nIn the light of His Word,\nAnd have peace and contentment alway;\nYou must do His sweet will,\nTo be free from all ill;\nOn the altar your all you must lay.\n[Verse]\n[Verse]\nOh we never can know,\nWhat the Lord will bestow,\nOf the blessings for which we have prayed,\nTill our body and soul,\nHe doth fully control,\nAnd our all on the altar is laid.\n[Verse]\n[Verse]\nWho can tell of the love,\nHe will send from above,\nAnd how happy our hearts will be made,\nOf the fellowship sweet,\nWe shall share at His feet,\nWhen our all on the altar is laid.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

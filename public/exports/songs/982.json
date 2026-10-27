@@ -1,134 +1,103 @@
 {
-  "id" : 982,
-  "songNumber" : 4,
-  "title" : "मुक्ति दिलाये यीशु नाम",
-  "language" : "hindi",
-  "originalKey" : "Eb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "मुक्ति दिलाये यीशु नाम",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "शान्ति दिलाये यीशु नाम",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "चरणी में तुने जनम लिया यीशु (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "सुली पे किया विश्राम (4)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "E",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "यीशु दया का बहता सागर (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "यीशु है दाता महान (4)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "हम सब के पापों को मिटाने (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "यीशु हुआ बलिदान (4)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 14
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "नर तन धार लियो अवतरा (2)",
-      "chords" : [ {
-        "chord" : "E",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "प्रेम है उस का महान (4)",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "E",
-        "position" : 16
-      } ]
-    } ]
-  } ]
+  "id": 982,
+  "songNumber": 4,
+  "title": "मुक्ति दिलाये यीशु नाम",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "Eb",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "मुक्ति दिलाये यीशु नाम"
+        },
+        {
+          "text": "शान्ति दिलाये यीशु नाम"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "चरणी में तुने जनम लिया यीशु (2)"
+        },
+        {
+          "text": "सुली पे किया विश्राम (4)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु दया का बहता सागर (2)"
+        },
+        {
+          "text": "यीशु है दाता महान (4)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "हम सब के पापों को मिटाने (2)"
+        },
+        {
+          "text": "यीशु हुआ बलिदान (4)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "नर तन धार लियो अवतरा (2)"
+        },
+        {
+          "text": "प्रेम है उस का महान (4)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n [E]मुक्ति दिलाये [A]यीशु नाम\r\n[D]शान्ति दिलाये [E]यीशु नाम\r\n[Verse]\r\n[Verse]\r\n[E]चरणी में तुने जनम [A]लिया यीशु (2)\r\n[A]सुली पे [D]किया विश्रा[E]म (4)\r\n[Verse]\r\n[Verse]\r\n[E]यीशु दया का [A]बहता सागर (2)\r\n[A]यीशु है [D]दाता म[E]हान (4)\r\n[Verse]\r\n[Verse]\r\n[E]हम सब के पापों [A]को मिटाने (2)\r\n[A]यीशु हुआ ब[D]लिदा[E]न (4)\r\n[Verse]\r\n[Verse]\r\n[E]नर तन धार लियो [A]अवतरा (2)\r\n[A]प्रेम है [D]उस का म[E]हान (4)",
+  "lyrics": "[Chorus]\r\n मुक्ति दिलाये यीशु नाम\r\nशान्ति दिलाये यीशु नाम\r\n[Verse]\r\n[Verse]\r\nचरणी में तुने जनम लिया यीशु (2)\r\nसुली पे किया विश्राम (4)\r\n[Verse]\r\n[Verse]\r\nयीशु दया का बहता सागर (2)\r\nयीशु है दाता महान (4)\r\n[Verse]\r\n[Verse]\r\nहम सब के पापों को मिटाने (2)\r\nयीशु हुआ बलिदान (4)\r\n[Verse]\r\n[Verse]\r\nनर तन धार लियो अवतरा (2)\r\nप्रेम है उस का महान (4)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

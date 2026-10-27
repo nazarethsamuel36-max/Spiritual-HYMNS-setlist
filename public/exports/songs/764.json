@@ -1,238 +1,150 @@
 {
-  "id" : 764,
-  "songNumber" : 152,
-  "title" : "SHALL WE GATHER AT THE RIVER",
-  "language" : "english",
-  "originalKey" : "E",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Shall we gather at the river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Where bright angel feet have trod,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "With its crystal tide forever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "Flowing by the throne of God?",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Yes, we'll gather at the river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "The beautiful, the beautiful river;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Gather with the saints at the river",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "That flows by the throne of God.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "On the bosom of the river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Where the Saviour-King we own,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "We shall meet and sorrow never,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "'Neath the glory of the throne.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "On the margin of the river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Washing up its silver spray,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "We will walk and worship ever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "All the happy, golden day.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "'Ere we reach the shining river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Lay we every burden down;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Grace our spirits will deliver,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "And provide a robe and crown.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "At the shining of the river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Mirror of the Saviour's face,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Saints whom death will never sever",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Lift their songs of saving grace.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Soon we'll reach the shining river,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Soon our pilgrimage will cease;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Soon our happy hearts will quiver",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "With the melody of peace.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 764,
+  "songNumber": 152,
+  "title": "SHALL WE GATHER AT THE RIVER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Shall we gather at the river,"
+        },
+        {
+          "text": "Where bright angel feet have trod,"
+        },
+        {
+          "text": "With its crystal tide forever,"
+        },
+        {
+          "text": "Flowing by the throne of God?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Yes, we'll gather at the river,"
+        },
+        {
+          "text": "The beautiful, the beautiful river;"
+        },
+        {
+          "text": "Gather with the saints at the river"
+        },
+        {
+          "text": "That flows by the throne of God."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "On the bosom of the river,"
+        },
+        {
+          "text": "Where the Saviour-King we own,"
+        },
+        {
+          "text": "We shall meet and sorrow never,"
+        },
+        {
+          "text": "'Neath the glory of the throne."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "On the margin of the river,"
+        },
+        {
+          "text": "Washing up its silver spray,"
+        },
+        {
+          "text": "We will walk and worship ever,"
+        },
+        {
+          "text": "All the happy, golden day."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "'Ere we reach the shining river,"
+        },
+        {
+          "text": "Lay we every burden down;"
+        },
+        {
+          "text": "Grace our spirits will deliver,"
+        },
+        {
+          "text": "And provide a robe and crown."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 5",
+      "lines": [
+        {
+          "text": "At the shining of the river,"
+        },
+        {
+          "text": "Mirror of the Saviour's face,"
+        },
+        {
+          "text": "Saints whom death will never sever"
+        },
+        {
+          "text": "Lift their songs of saving grace."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 6",
+      "lines": [
+        {
+          "text": "Soon we'll reach the shining river,"
+        },
+        {
+          "text": "Soon our pilgrimage will cease;"
+        },
+        {
+          "text": "Soon our happy hearts will quiver"
+        },
+        {
+          "text": "With the melody of peace."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[D]Shall we gather at the river,\nWhere [G]bright angel feet have [D]trod,\nWith its [D]crystal tide forever,\n[A]Flowing by the throne of [D]God?\n\n[Chorus]\nYes, we'll [D]gather at the river,\nThe [G]beautiful, the beautiful [D]river;\n[D]Gather with the saints at the river\nThat [A]flows by the throne of [D]God.\n\n[Verse 2]\nOn the [D]bosom of the river,\nWhere the [G]Saviour-King we [D]own,\nWe shall [D]meet and sorrow never,\n[A]'Neath the glory of the [D]throne.\n\n[Verse 3]\nOn the [D]margin of the river,\nWashing [G]up its silver [D]spray,\nWe will [D]walk and worship ever,\n[A]All the happy, golden [D]day.\n\n[Verse 4]\n[D]'Ere we reach the shining river,\nLay we [G]every burden [D]down;\n[D]Grace our spirits will deliver,\n[A]And provide a robe and [D]crown.\n\n[Verse 5]\nAt the [D]shining of the river,\nMirror [G]of the Saviour's [D]face,\n[D]Saints whom death will never sever\n[A]Lift their songs of saving [D]grace.\n\n[Verse 6]\n[D]Soon we'll reach the shining river,\n[G]Soon our pilgrimage will [D]cease;\n[D]Soon our happy hearts will quiver\n[A]With the melody of [D]peace.",
+  "lyrics": "[Verse 1]\nShall we gather at the river,\nWhere bright angel feet have trod,\nWith its crystal tide forever,\nFlowing by the throne of God?\n\n[Chorus]\nYes, we'll gather at the river,\nThe beautiful, the beautiful river;\nGather with the saints at the river\nThat flows by the throne of God.\n\n[Verse 2]\nOn the bosom of the river,\nWhere the Saviour-King we own,\nWe shall meet and sorrow never,\n'Neath the glory of the throne.\n\n[Verse 3]\nOn the margin of the river,\nWashing up its silver spray,\nWe will walk and worship ever,\nAll the happy, golden day.\n\n[Verse 4]\n'Ere we reach the shining river,\nLay we every burden down;\nGrace our spirits will deliver,\nAnd provide a robe and crown.\n\n[Verse 5]\nAt the shining of the river,\nMirror of the Saviour's face,\nSaints whom death will never sever\nLift their songs of saving grace.\n\n[Verse 6]\nSoon we'll reach the shining river,\nSoon our pilgrimage will cease;\nSoon our happy hearts will quiver\nWith the melody of peace.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

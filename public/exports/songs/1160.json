@@ -1,145 +1,74 @@
 {
-  "id" : 1160,
-  "songNumber" : 182,
-  "title" : "पवित्र आत्मा प्रेमी पवित्र आत्मा",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "पवित्र आत्मा प्रेमी पवित्र आत्मा",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "आ इस दिल में घर तू बना ले,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "रह मेरे संग तू सदा।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "किचसे निकाला हमें, शुद्ध तुने किया हमें,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "खूनसे धो प्रभू श्वेत तू करना धन्य नाम हो तेरा।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 29
-      }, {
-        "chord" : "G",
-        "position" : 43
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "सिनाय पर्वतपर जैसे तू उतरा प्रभु,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "वैसे इस दिल में उतरकर प्रभु पवित्र हमको बना।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 28
-      }, {
-        "chord" : "G",
-        "position" : 41
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "पवित्र हाथों से प्रभू हरपल हमको संभाल,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "आत्मा के दान तू दे प्रभु हमको रुपमें अपने तू ढाल ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 30
-      }, {
-        "chord" : "G",
-        "position" : 45
-      } ]
-    } ]
-  } ]
+  "id": 1160,
+  "songNumber": 182,
+  "title": "पवित्र आत्मा प्रेमी पवित्र आत्मा",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र आत्मा प्रेमी पवित्र आत्मा"
+        },
+        {
+          "text": "आ इस दिल में घर तू बना ले,"
+        },
+        {
+          "text": "रह मेरे संग तू सदा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "किचसे निकाला हमें, शुद्ध तुने किया हमें,"
+        },
+        {
+          "text": "खूनसे धो प्रभू श्वेत तू करना धन्य नाम हो तेरा।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "सिनाय पर्वतपर जैसे तू उतरा प्रभु,"
+        },
+        {
+          "text": "वैसे इस दिल में उतरकर प्रभु पवित्र हमको बना।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "पवित्र हाथों से प्रभू हरपल हमको संभाल,"
+        },
+        {
+          "text": "आत्मा के दान तू दे प्रभु हमको रुपमें अपने तू ढाल ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[D]पवित्र आत्मा [G]प्रेमी पवित्र आ[D]त्मा\n[G]आ इस दिल में [A]घर तू बना [D]ले,\n[G]रह मेरे [A]संग तू स[D]दा।\n\n[Verse]\n[D]किचसे निकाला हमें, [G]शुद्ध तुने किया ह[D]में,\n[G]खूनसे धो प्रभू [A]श्वेत तू करना [D]धन्य नाम हो ते[G]रा।\n\n[Verse]\n[D]सिनाय पर्वतपर [G]जैसे तू उतरा प्र[D]भु,\n[G]वैसे इस दिल में [A]उतरकर प्रभु [D]पवित्र हमको ब[G]ना।\n\n[Verse]\n[D]पवित्र हाथों से प्रभू [G]हरपल हमको संभा[D]ल,\n[G]आत्मा के दान तू [A]दे प्रभु हमको [D]रुपमें अपने तू [G]ढाल ।",
+  "lyrics": "[Verse]\nपवित्र आत्मा प्रेमी पवित्र आत्मा\nआ इस दिल में घर तू बना ले,\nरह मेरे संग तू सदा।\n\n[Verse]\nकिचसे निकाला हमें, शुद्ध तुने किया हमें,\nखूनसे धो प्रभू श्वेत तू करना धन्य नाम हो तेरा।\n\n[Verse]\nसिनाय पर्वतपर जैसे तू उतरा प्रभु,\nवैसे इस दिल में उतरकर प्रभु पवित्र हमको बना।\n\n[Verse]\nपवित्र हाथों से प्रभू हरपल हमको संभाल,\nआत्मा के दान तू दे प्रभु हमको रुपमें अपने तू ढाल ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Holy Spirit"
+  ]
 }

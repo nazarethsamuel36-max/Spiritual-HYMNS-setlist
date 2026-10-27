@@ -1,152 +1,93 @@
 {
-  "id" : 595,
-  "songNumber" : 9,
-  "title" : "स्तुती-स्तुती करूया उपकार स्तुती करूया",
-  "language" : "marathi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "स्तुती-स्तुती करूया उपकार स्तुती करूया",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 20
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "गौरवे स्तवूया, तारणारा देव (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "थोर किती थोर तो सिंहासनी बसतो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "स्तवनात बसतो, तारणारा देव (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "स्विकार करितो, विश्वास ठेवितो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "पुत्र बनविल तो, तारणारा देव (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "कृपा व सत्य तो, परिपूर्ण असतो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "वस्तीला राहतो, तारणारा देव (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 5",
-    "lines" : [ {
-      "text" : "रानीवनी धुंडीतो, रक्ताने खंडीतो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 17
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "उपकारे वंदीतो, तारणारा देव (3)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  } ]
+  "id": 595,
+  "songNumber": 9,
+  "title": "स्तुती-स्तुती करूया उपकार स्तुती करूया",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "स्तुती-स्तुती करूया उपकार स्तुती करूया"
+        },
+        {
+          "text": "गौरवे स्तवूया, तारणारा देव (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "थोर किती थोर तो सिंहासनी बसतो"
+        },
+        {
+          "text": "स्तवनात बसतो, तारणारा देव (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "स्विकार करितो, विश्वास ठेवितो"
+        },
+        {
+          "text": "पुत्र बनविल तो, तारणारा देव (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "कृपा व सत्य तो, परिपूर्ण असतो"
+        },
+        {
+          "text": "वस्तीला राहतो, तारणारा देव (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "रानीवनी धुंडीतो, रक्ताने खंडीतो"
+        },
+        {
+          "text": "उपकारे वंदीतो, तारणारा देव (3)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": []
+    }
+  ],
+  "chords": "[Chorus]\n[G]स्तुती-स्तुती करूया [C]उपकार स्तुती करू[G]या\n[G]गौरवे स्तवूया, [D]तारणारा [G]देव (3)\n\n[Verse]\n[G]थोर किती थोर तो [C]सिंहासनी बस[G]तो\n[G]स्तवनात बसतो, [D]तारणारा [G]देव (3)\n\n[Verse]\n[G]स्विकार करितो, [C]विश्वास ठेवि[G]तो\n[G]पुत्र बनविल तो, [D]तारणारा [G]देव (3)\n\n[Verse]\n[G]कृपा व सत्य तो, [C]परिपूर्ण अस[G]तो\n[G]वस्तीला राहतो, [D]तारणारा [G]देव (3)\n\n[Verse]\n[G]रानीवनी धुंडीतो, [C]रक्ताने खंडी[G]तो\n[G]उपकारे वंदीतो, [D]तारणारा [G]देव (3)\n[Chorus]\n[Chorus]",
+  "lyrics": "[Chorus]\nस्तुती-स्तुती करूया उपकार स्तुती करूया\nगौरवे स्तवूया, तारणारा देव (3)\n\n[Verse]\nथोर किती थोर तो सिंहासनी बसतो\nस्तवनात बसतो, तारणारा देव (3)\n\n[Verse]\nस्विकार करितो, विश्वास ठेवितो\nपुत्र बनविल तो, तारणारा देव (3)\n\n[Verse]\nकृपा व सत्य तो, परिपूर्ण असतो\nवस्तीला राहतो, तारणारा देव (3)\n\n[Verse]\nरानीवनी धुंडीतो, रक्ताने खंडीतो\nउपकारे वंदीतो, तारणारा देव (3)\n[Chorus]\n[Chorus]",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

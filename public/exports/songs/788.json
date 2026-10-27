@@ -1,150 +1,115 @@
 {
-  "id" : 788,
-  "songNumber" : 176,
-  "title" : "BRING THEM IN",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Hark! 'tis the Shepherd's voice I hear,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Out in the desert dark and drear,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Calling the sheep who've gone astray,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Far from the Shepherd's fold away.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Bring them in, bring them in,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Bring them in from the fields of sin;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Bring them in, bring them in,"
-    }, {
-      "text" : "Bring the wand'ring ones to Jesus.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Who'll go and help this Shepherd kind,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Help Him the wand'ring ones to find ?",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Who'll bring the lost ones to the fold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Where they'll be sheltered from the cold ?",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Out in the desert hear their cry,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Out on the mountains wild and high;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Hark! 'tis the Master speaks to thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "\"Go find My sheep where'er they be.\"",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  } ]
+  "id": 788,
+  "songNumber": 176,
+  "title": "BRING THEM IN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "E",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Hark! tis the Shepherds voice I hear,"
+        },
+        {
+          "text": "Out in the desert dark and drear,"
+        },
+        {
+          "text": "Calling the sheep whove gone astray,"
+        },
+        {
+          "text": "Far from the Shepherds fold away."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Bring them in, bring them in,"
+        },
+        {
+          "text": "Bring them in from the fields of sin;"
+        },
+        {
+          "text": "Bring them in, bring them in,"
+        },
+        {
+          "text": "Bring the wandring ones to Jesus."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Wholl go and help this Shepherd kind,"
+        },
+        {
+          "text": "Help Him the wandring ones to find ?"
+        },
+        {
+          "text": "Wholl bring the lost ones to the fold,"
+        },
+        {
+          "text": "Where theyll be sheltered from the cold ?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Out in the desert hear their cry,"
+        },
+        {
+          "text": "Out on the mountains wild and high;"
+        },
+        {
+          "text": "Hark! tis the Master speaks to thee,"
+        },
+        {
+          "text": "\"Go find My sheep whereer they be.\""
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [E]Hark! tis the Shepherds voice I hear,\r\nOut [B]in the desert dark and [E]drear,\r\nCalling the [E]sheep whove gone astray,\r\n[B]Far from the Shepherds [E]fold away.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[E]Bring them in, bring them [B][A]in,\r\nBring them in from the [E]fields of sin;\r\nBring them in, bring them in,\r\n[E]Bring the wandring [B]ones to [E]Jesus.\r\n[Verse]\r\n[Verse]\r\n[E]Wholl go and help this Shepherd kind,\r\nHelp [B]Him the wandring ones to [E]find ?\r\nWholl [E]bring the lost ones to the fold,\r\nWhere [B]theyll be sheltered from the [E]cold ?\r\n[Verse]\r\n[Verse]\r\n[E]Out in the desert hear their cry,\r\nOut [B]on the mountains wild and [E]high;\r\nHark! [E]tis the Master speaks to thee,\r\n\"Go [B]find My sheep wher[E]eer they be.\"",
+  "lyrics": "[Verse]\r\n Hark! tis the Shepherds voice I hear,\r\nOut in the desert dark and drear,\r\nCalling the sheep whove gone astray,\r\nFar from the Shepherds fold away.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nBring them in, bring them in,\r\nBring them in from the fields of sin;\r\nBring them in, bring them in,\r\nBring the wandring ones to Jesus.\r\n[Verse]\r\n[Verse]\r\nWholl go and help this Shepherd kind,\r\nHelp Him the wandring ones to find ?\r\nWholl bring the lost ones to the fold,\r\nWhere theyll be sheltered from the cold ?\r\n[Verse]\r\n[Verse]\r\nOut in the desert hear their cry,\r\nOut on the mountains wild and high;\r\nHark! tis the Master speaks to thee,\r\n\"Go find My sheep whereer they be.\"",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

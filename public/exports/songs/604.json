@@ -1,199 +1,110 @@
 {
-  "id" : 604,
-  "songNumber" : 18,
-  "title" : "दिव्य तेजे प्रकाशीत स्थळ, (There's A Land That Is Fairer)",
-  "language" : "marathi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "दिव्य तेजे प्रकाशीत स्थळ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "दिसे विश्वासनयने वर,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "तेथे आम्हांसी वस्ती अढळ",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "प्रभु देईल तो प्रियकर",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "अहा त्या सुस्थळी, पार नाही हो विश्रामा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "तेथेही सुदिनी भेट होई प्रियांची आम्हां",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "तारिलेल्यांची ती गायनें,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "तेव्हां गाऊ मंजूळ स्वरे",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "नाही कोणाचे तें रडणे,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "दु:ख पिडा हें गेलें सारें",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "प्रभु ख्रिस्त अत्यंत प्रेमळ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 15
-      }, {
-        "chord" : "G",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "सर्व सत्सुख जो पुरवी,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "जीवनाचा तो पाया, सबळ,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "प्रभुराया स्तवूं गौरवी.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    } ]
-  } ]
+  "id": 604,
+  "songNumber": 18,
+  "title": "दिव्य तेजे प्रकाशीत स्थळ, (There's A Land That Is Fairer)",
+  "artist": null,
+  "composer": null,
+  "language": "marathi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दिव्य तेजे प्रकाशीत स्थळ,"
+        },
+        {
+          "text": "दिसे विश्वासनयने वर,"
+        },
+        {
+          "text": "तेथे आम्हांसी वस्ती अढळ"
+        },
+        {
+          "text": "प्रभु देईल तो प्रियकर"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "अहा त्या सुस्थळी, पार नाही हो विश्रामा"
+        },
+        {
+          "text": "तेथेही सुदिनी भेट होई प्रियांची आम्हां"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "तारिलेल्यांची ती गायनें,"
+        },
+        {
+          "text": "तेव्हां गाऊ मंजूळ स्वरे"
+        },
+        {
+          "text": "नाही कोणाचे तें रडणे,"
+        },
+        {
+          "text": "दु:ख पिडा हें गेलें सारें"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु ख्रिस्त अत्यंत प्रेमळ,"
+        },
+        {
+          "text": "सर्व सत्सुख जो पुरवी,"
+        },
+        {
+          "text": "जीवनाचा तो पाया, सबळ,"
+        },
+        {
+          "text": "प्रभुराया स्तवूं गौरवी."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]दिव्य तेजे प्रका[C]शीत [G]स्थळ,\r\n[G]दिसे विश्वासन[A]यने [D]वर,\r\n[G]तेथे आम्हांसी [C]वस्ती अ[G]ढळ\r\n[G]प्रभु दे[D]ईल तो प्रिय[G]कर\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\n[G]अहा त्या सुस्थळी, [D]पार नाही हो विश्रा[G]मा\r\n[G]तेथेही सुदिनी भेट [C]होई प्रियांची [D]आम्हां[G]\r\n[Verse]\r\n[Verse]\r\n[G]तारिलेल्यांची [C]ती गाय[G]नें,\r\n[G]तेव्हां गाऊ मं[A]जूळ स्व[D]रे\r\n[G]नाही कोणाचे [C]तें रड[G]णे,\r\n[G]दु:ख पिडा [D]हें गेलें सा[G]रें\r\n[Verse]\r\n[Verse]\r\n[G]प्रभु ख्रिस्त अ[C]त्यंत प्रे[G]मळ,\r\n[G]सर्व सत्सुख [A]जो पुर[D]वी,\r\n[G]जीवनाचा तो [C]पाया, सब[G]ळ,\r\n[G]प्रभुराया [D]स्तवूं गौर[G]वी.",
+  "lyrics": "[Verse]\r\n दिव्य तेजे प्रकाशीत स्थळ,\r\nदिसे विश्वासनयने वर,\r\nतेथे आम्हांसी वस्ती अढळ\r\nप्रभु देईल तो प्रियकर\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nअहा त्या सुस्थळी, पार नाही हो विश्रामा\r\nतेथेही सुदिनी भेट होई प्रियांची आम्हां\r\n[Verse]\r\n[Verse]\r\nतारिलेल्यांची ती गायनें,\r\nतेव्हां गाऊ मंजूळ स्वरे\r\nनाही कोणाचे तें रडणे,\r\nदु:ख पिडा हें गेलें सारें\r\n[Verse]\r\n[Verse]\r\nप्रभु ख्रिस्त अत्यंत प्रेमळ,\r\nसर्व सत्सुख जो पुरवी,\r\nजीवनाचा तो पाया, सबळ,\r\nप्रभुराया स्तवूं गौरवी.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

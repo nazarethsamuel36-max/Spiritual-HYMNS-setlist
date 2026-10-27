@@ -1,168 +1,113 @@
 {
-  "id" : 662,
-  "songNumber" : 355,
-  "title" : "AS THE WORLD LOOKS UPON ME",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "As the world looks upon me",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "As I struggle along",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "They say Iâ€™ve got nothing"
-    }, {
-      "text" : "But they are so wrong",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "In my heart Iâ€™m rejoicing"
-    }, {
-      "text" : "How I wish they could see",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Thank you Lord",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "For your blessing on me!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 21
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Thereâ€™s a roof up above me"
-    }, {
-      "text" : "Iâ€™ve a good place to sleep"
-    }, {
-      "text" : "Thereâ€™s food on my table"
-    }, {
-      "text" : "And shoes on my feet",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "You gave me your love Lord",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    }, {
-      "text" : "And a fine family",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Thank you Lord"
-    }, {
-      "text" : "For your blessings on me!",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "I know Iâ€™m not wealthy"
-    }, {
-      "text" : "These clothes, theyâ€™re not new"
-    }, {
-      "text" : "I donâ€™t have much money"
-    }, {
-      "text" : "But Lord I have you",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    }, {
-      "text" : "And thatâ€™s all that matters"
-    }, {
-      "text" : "Though the world may not see",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "Thank you Lord"
-    }, {
-      "text" : "For your blessings on me!"
-    } ]
-  } ]
+  "id": 662,
+  "songNumber": 355,
+  "title": "AS THE WORLD LOOKS UPON ME",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "As the world looks upon me"
+        },
+        {
+          "text": "As I struggle along"
+        },
+        {
+          "text": "They say I've got nothing"
+        },
+        {
+          "text": "But they are so wrong"
+        },
+        {
+          "text": "In my heart I'm rejoicing"
+        },
+        {
+          "text": "How I wish they could see"
+        },
+        {
+          "text": "Thank you Lord"
+        },
+        {
+          "text": "For your blessing on me!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "There's a roof up above me"
+        },
+        {
+          "text": "I've a good place to sleep"
+        },
+        {
+          "text": "There's food on my table"
+        },
+        {
+          "text": "And shoes on my feet"
+        },
+        {
+          "text": "You gave me your love Lord"
+        },
+        {
+          "text": "And a fine family"
+        },
+        {
+          "text": "Thank you Lord"
+        },
+        {
+          "text": "For your blessings on me!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "I know I'm not wealthy"
+        },
+        {
+          "text": "These clothes, they're not new"
+        },
+        {
+          "text": "I don't have much money"
+        },
+        {
+          "text": "But Lord I have you"
+        },
+        {
+          "text": "And that's all that matters"
+        },
+        {
+          "text": "Though the world may not see"
+        },
+        {
+          "text": "Thank you Lord"
+        },
+        {
+          "text": "For your blessings on me!"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\nAs the [D]world looks u[G]pon [D]me\nAs I [D]struggle a[A]long\nThey say I've got nothing\nBut [D]they are [A]so [D]wrong\nIn my heart I'm rejoicing\nHow I [G]wish they could [D]see\n[D]Thank you [G]Lord\nFor your [A]blessing on [D]me!\n\n[Verse]\nThere's a roof up above me\nI've a good place to sleep\nThere's food on my table\nAnd [D]shoes [A]on my [D]feet\nYou [G]gave me your [D]love Lord\nAnd a [G]fine fami[D]ly\nThank you Lord\nFor your [A]blessings on [D]me!\n\n[Verse]\nI know I'm not wealthy\nThese clothes, they're not new\nI don't have much money\nBut [D]Lord I [A]have [D]you\nAnd that's all that matters\nThough the [G]world may not [D]see\nThank you Lord\nFor your blessings on me!",
+  "lyrics": "[Verse]\nAs the world looks upon me\nAs I struggle along\nThey say I've got nothing\nBut they are so wrong\nIn my heart I'm rejoicing\nHow I wish they could see\nThank you Lord\nFor your blessing on me!\n\n[Verse]\nThere's a roof up above me\nI've a good place to sleep\nThere's food on my table\nAnd shoes on my feet\nYou gave me your love Lord\nAnd a fine family\nThank you Lord\nFor your blessings on me!\n\n[Verse]\nI know I'm not wealthy\nThese clothes, they're not new\nI don't have much money\nBut Lord I have you\nAnd that's all that matters\nThough the world may not see\nThank you Lord\nFor your blessings on me!",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Thanksgiving"
+  ]
 }

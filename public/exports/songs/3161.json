@@ -1,52 +1,77 @@
 {
-  "id" : 3161,
-  "songNumber" : 1020,
-  "title" : "** Still (Hide Me Now)",
-  "language" : "english",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "SECTIONS",
-    "lines" : [ ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Hide me now"
-    }, {
-      "text" : "Under Your wings"
-    }, {
-      "text" : "Cover me"
-    }, {
-      "text" : "Within Your mighty hand"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "When the oceans rise and thunders roar"
-    }, {
-      "text" : "I will soar with you above the storm"
-    }, {
-      "text" : "Father, You are King over the flood"
-    }, {
-      "text" : "I will be still and know You are God"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Find rest my soul"
-    }, {
-      "text" : "In Christ alone"
-    }, {
-      "text" : "Know His power"
-    }, {
-      "text" : "In quietness and trust"
-    } ]
-  } ]
+  "id": 3161,
+  "songNumber": 1020,
+  "title": "Still (Hide Me Now)",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Hide me now"
+        },
+        {
+          "text": "Under Your wings"
+        },
+        {
+          "text": "Cover me"
+        },
+        {
+          "text": "Within Your mighty hand"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "CHORUS",
+      "lines": [
+        {
+          "text": "When the oceans rise and thunders roar"
+        },
+        {
+          "text": "I will soar with you above the storm"
+        },
+        {
+          "text": "Father, You are King over the flood"
+        },
+        {
+          "text": "I will be still and know You are God"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Find rest my soul"
+        },
+        {
+          "text": "In Christ alone"
+        },
+        {
+          "text": "Know His power"
+        },
+        {
+          "text": "In quietness and trust"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nHide me now\nUnder Your wings\nCover me\nWithin Your mighty hand\n\n[CHORUS]\nWhen the oceans rise and thunders roar\nI will soar with you above the storm\nFather, You are King over the flood\nI will be still and know You are God\n\n[Verse 2]\nFind rest my soul\nIn Christ alone\nKnow His power\nIn quietness and trust",
+  "lyrics": "[Verse 1]\nHide me now\nUnder Your wings\nCover me\nWithin Your mighty hand\n\n[CHORUS]\nWhen the oceans rise and thunders roar\nI will soar with you above the storm\nFather, You are King over the flood\nI will be still and know You are God\n\n[Verse 2]\nFind rest my soul\nIn Christ alone\nKnow His power\nIn quietness and trust",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

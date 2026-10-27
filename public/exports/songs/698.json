@@ -1,94 +1,62 @@
 {
-  "id" : 698,
-  "songNumber" : 22,
-  "title" : "I WILL SING OF THE MERCIES OF THE LORD",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I will sing of the mercies of the Lord forever,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 34
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "I will sing, I will sing;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "I will sing of the mercies of the Lord forever,"
-    }, {
-      "text" : "I will sing of the mercies of the Lord.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "With my mouth will I make known,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "Thy faithfulness, Thy faithfulness,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "With my mouth will I make known,"
-    }, {
-      "text" : "Thy faithfulness to all generations.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "(Repeat first four lines)"
-    } ]
-  } ]
+  "id": 698,
+  "songNumber": 22,
+  "title": "I WILL SING OF THE MERCIES OF THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I will sing of the mercies of the Lord forever,"
+        },
+        {
+          "text": "I will sing, I will sing;"
+        },
+        {
+          "text": "I will sing of the mercies of the Lord forever,"
+        },
+        {
+          "text": "I will sing of the mercies of the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "With my mouth will I make known,"
+        },
+        {
+          "text": "Thy faithfulness, Thy faithfulness,"
+        },
+        {
+          "text": "With my mouth will I make known,"
+        },
+        {
+          "text": "Thy faithfulness to all generations."
+        },
+        {
+          "text": "(Repeat first four lines)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G]I will sing of the [C]mercies of the [G]Lord for[D]ever,\n[G]I will sing, [D]I will [G]sing;\nI will sing of the mercies of the Lord forever,\n[G]I will sing of the [D]mercies of the [G]Lord.\n\n[Verse 2]\n[G]With my mouth will I [C]make [G]known,\n[G]Thy faithfulness, [D]Thy faithfulness,\nWith my mouth will I make known,\n[G]Thy faithfulness to [D]all gener[G]ations.\n(Repeat first four lines)",
+  "lyrics": "[Verse 1]\nI will sing of the mercies of the Lord forever,\nI will sing, I will sing;\nI will sing of the mercies of the Lord forever,\nI will sing of the mercies of the Lord.\n\n[Verse 2]\nWith my mouth will I make known,\nThy faithfulness, Thy faithfulness,\nWith my mouth will I make known,\nThy faithfulness to all generations.\n(Repeat first four lines)",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

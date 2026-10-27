@@ -1,126 +1,71 @@
 {
-  "id" : 954,
-  "songNumber" : 76,
-  "title" : "MAJESTY WORSHIP HIS MAJESTY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Majesty, worship His Majesty,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Unto Jesus be glory, honour and praise.",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 32
-      }, {
-        "chord" : "D7",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Majesty, kingdom, authority,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Flows from His throne unto His own,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 15
-      }, {
-        "chord" : "Am",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "His anthem raise.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "So exalt, lift up on high,",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "The name of Jesus,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "Em",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "Magnify, come glorify Christ Jesus",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "the King,",
-      "chords" : [ {
-        "chord" : "B7",
-        "position" : 4
-      } ]
-    }, {
-      "text" : "Majesty, worship His Majesty,"
-    }, {
-      "text" : "Jesus who died, now glorified,",
-      "chords" : [ {
-        "chord" : "Em",
-        "position" : 10
-      }, {
-        "chord" : "Am",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "King of all kings.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      } ]
-    } ]
-  } ]
+  "id": 954,
+  "songNumber": 76,
+  "title": "MAJESTY WORSHIP HIS MAJESTY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Majesty, worship His Majesty,"
+        },
+        {
+          "text": "Unto Jesus be glory, honour and praise."
+        },
+        {
+          "text": "Majesty, kingdom, authority,"
+        },
+        {
+          "text": "Flows from His throne unto His own,"
+        },
+        {
+          "text": "His anthem raise."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "So exalt, lift up on high,"
+        },
+        {
+          "text": "The name of Jesus,"
+        },
+        {
+          "text": "Magnify, come glorify Christ Jesus"
+        },
+        {
+          "text": "the King,"
+        },
+        {
+          "text": "Majesty, worship His Majesty,"
+        },
+        {
+          "text": "Jesus who died, now glorified,"
+        },
+        {
+          "text": "King of all kings."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\n[G]Majesty, [C]worship His [G]Majesty,\nUnto [Em]Jesus be [A]glory, honour and [D]praise.[D7]\n[G]Majesty, [C]kingdom, au[G]thority,\nFlows from His [Em]throne unto His [Am]own,\n[D]His anthem [G]raise.\n\n[Chorus]\nSo ex[Am]alt, lift [D]up on high,\nThe [G]name of [Em]Jesus,\nMagni[Am]fy, come glori[D]fy Christ Jesus\nthe [B7]King,\nMajesty, worship His Majesty,\nJesus who [Em]died, now glori[Am]fied,\n[D]King of all [G]kings.",
+  "lyrics": "[Verse 1]\nMajesty, worship His Majesty,\nUnto Jesus be glory, honour and praise.\nMajesty, kingdom, authority,\nFlows from His throne unto His own,\nHis anthem raise.\n\n[Chorus]\nSo exalt, lift up on high,\nThe name of Jesus,\nMagnify, come glorify Christ Jesus\nthe King,\nMajesty, worship His Majesty,\nJesus who died, now glorified,\nKing of all kings.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

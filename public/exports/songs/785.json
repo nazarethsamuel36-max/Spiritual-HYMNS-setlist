@@ -1,216 +1,113 @@
 {
-  "id" : 785,
-  "songNumber" : 173,
-  "title" : "HAVE YOU BEEN TO JESUS",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Have you been to Jesus for the cleansing pow'r ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Are you washed in the blood of the Lamb ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Are you fully trusting in His grace this hour ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "Are you washed in the blood of the Lamb ?"
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "Are you washed in the blood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "In the soul-cleansing blood of the Lamb ?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Are your garments spotless ? are they white as snow ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "Are you washed in the blood of the Lamb ?"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Are you walking daily by the Saviour's side ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 29
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Are you washed in the blood of the Lamb ?"
-    }, {
-      "text" : "Do you rest each moment in the Crucified ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 31
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Are you washed in the blood of the Lamb ?"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "When the Bridegroom cometh, will your robes be white ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 38
-      }, {
-        "chord" : "D",
-        "position" : 47
-      } ]
-    }, {
-      "text" : "Pure and white in the blood of the Lamb ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Will your soul be ready for the mansions bright",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "And be washed in the blood of the Lamb ?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 34
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "Lay aside the garments that are stained with sin,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "And be washed in the blood of the Lamb ?"
-    }, {
-      "text" : "There's a fountain flowing for the soul unclean,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Oh, be washed in the blood of the Lamb.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    } ]
-  } ]
+  "id": 785,
+  "songNumber": 173,
+  "title": "HAVE YOU BEEN TO JESUS",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Have you been to Jesus for the cleansing powr ?"
+        },
+        {
+          "text": "Are you washed in the blood of the Lamb ?"
+        },
+        {
+          "text": "Are you fully trusting in His grace this hour ?"
+        },
+        {
+          "text": "Are you washed in the blood of the Lamb ?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Are you washed in the blood,"
+        },
+        {
+          "text": "In the soul-cleansing blood of the Lamb ?"
+        },
+        {
+          "text": "Are your garments spotless ? are they white as snow ?"
+        },
+        {
+          "text": "Are you washed in the blood of the Lamb ?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Are you walking daily by the Saviours side ?"
+        },
+        {
+          "text": "Are you washed in the blood of the Lamb ?"
+        },
+        {
+          "text": "Do you rest each moment in the Crucified ?"
+        },
+        {
+          "text": "Are you washed in the blood of the Lamb ?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "When the Bridegroom cometh, will your robes be white ?"
+        },
+        {
+          "text": "Pure and white in the blood of the Lamb ?"
+        },
+        {
+          "text": "Will your soul be ready for the mansions bright"
+        },
+        {
+          "text": "And be washed in the blood of the Lamb ?"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Lay aside the garments that are stained with sin,"
+        },
+        {
+          "text": "And be washed in the blood of the Lamb ?"
+        },
+        {
+          "text": "Theres a fountain flowing for the soul unclean,"
+        },
+        {
+          "text": "Oh, be washed in the blood of the Lamb."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Have you been to Jesus for the [C]cleansing [G]powr ?\r\nAre you [G]washed in the blood [D]of the [D][G]Lamb ?\r\nAre you [G]fully trusting in His [C]grace this [G]hour ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Chorus]\r\nAre you [G]washed in the blood,\r\nIn the [C]soul-cleansing blood of the [D]Lamb ?\r\nAre your [G]garments spotless ? are they [C]white as [G]snow ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Verse 2]\r\nAre you [G]walking daily by the [C]Saviours [G]side ?\r\nAre you washed in the blood of the Lamb ?\r\nDo you [G]rest each moment in the [C]Cruci[G]fied ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Verse 3]\r\nWhen the [G]Bridegroom cometh, will your [C]robes be [G]white ?\r\nPure and [G]white in the blood of the [D]Lamb ?\r\nWill your [G]soul be ready for the [C]mansions [G]bright\r\nAnd be [G]washed in the blood [D]of the [G][D]Lamb ?\r\n\r\n[Verse 4]\r\n[G]Lay aside the garments that are [C]stained with [G]sin,\r\nAnd be washed in the blood of the Lamb ?\r\nTheres a [G]fountain flowing for the [C]soul un[G]clean,\r\nOh, be [G]washed in the blood [D]of the [G]Lamb.",
+  "lyrics": "[Verse 1]\r\nHave you been to Jesus for the cleansing powr ?\r\nAre you washed in the blood of the Lamb ?\r\nAre you fully trusting in His grace this hour ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Chorus]\r\nAre you washed in the blood,\r\nIn the soul-cleansing blood of the Lamb ?\r\nAre your garments spotless ? are they white as snow ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Verse 2]\r\nAre you walking daily by the Saviours side ?\r\nAre you washed in the blood of the Lamb ?\r\nDo you rest each moment in the Crucified ?\r\nAre you washed in the blood of the Lamb ?\r\n\r\n[Verse 3]\r\nWhen the Bridegroom cometh, will your robes be white ?\r\nPure and white in the blood of the Lamb ?\r\nWill your soul be ready for the mansions bright\r\nAnd be washed in the blood of the Lamb ?\r\n\r\n[Verse 4]\r\nLay aside the garments that are stained with sin,\r\nAnd be washed in the blood of the Lamb ?\r\nTheres a fountain flowing for the soul unclean,\r\nOh, be washed in the blood of the Lamb.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:03.438752+00:00",
+  "genres": [
+    "Worship",
+    "Repentance"
+  ]
 }

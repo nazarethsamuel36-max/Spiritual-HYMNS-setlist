@@ -1,268 +1,96 @@
 {
-  "id" : 665,
-  "songNumber" : 358,
-  "title" : "GOD WILL TAKE CARE OF YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "God will take care of you; be not afraid;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "He is your safeguard through sunshine and shade;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 11
-      }, {
-        "chord" : "E",
-        "position" : 29
-      }, {
-        "chord" : "A",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "Tenderly watching and keeping His own,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "He will not leave you to wander alone.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "God will take care of you still to the end;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Oh what a Father, Redeemer and Friend",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "E",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Jesus will answer whenever you call",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "He will take care of you, trust Him for all.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "God will take care of you, through all the day.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "Shielding your footsteps, directing your way,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "E",
-        "position" : 28
-      }, {
-        "chord" : "A",
-        "position" : 41
-      } ]
-    }, {
-      "text" : "He is your Shepherd, Protector and Guide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 11
-      }, {
-        "chord" : "D",
-        "position" : 24
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Leading His children where still waters glide.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "God will take care you long as you live,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 23
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Granting you blessings no other can give,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "E",
-        "position" : 26
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "He will take care of you when time is past;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "A",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "Safe to His kingdom will bring you at last.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "A",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    } ]
-  } ]
+  "id": 665,
+  "songNumber": 358,
+  "title": "GOD WILL TAKE CARE OF YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God will take care of you; be not afraid;"
+        },
+        {
+          "text": "He is your safeguard through sunshine and shade;"
+        },
+        {
+          "text": "Tenderly watching and keeping His own,"
+        },
+        {
+          "text": "He will not leave you to wander alone."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God will take care of you still to the end;"
+        },
+        {
+          "text": "Oh what a Father, Redeemer and Friend"
+        },
+        {
+          "text": "Jesus will answer whenever you call"
+        },
+        {
+          "text": "He will take care of you, trust Him for all."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God will take care of you, through all the day."
+        },
+        {
+          "text": "Shielding your footsteps, directing your way,"
+        },
+        {
+          "text": "He is your Shepherd, Protector and Guide,"
+        },
+        {
+          "text": "Leading His children where still waters glide."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "God will take care you long as you live,"
+        },
+        {
+          "text": "Granting you blessings no other can give,"
+        },
+        {
+          "text": "He will take care of you when time is past;"
+        },
+        {
+          "text": "Safe to His kingdom will bring you at last."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n[D]God will take [A]care of [D]you; be not a[A]fraid;\n[D]He is your [A]safeguard through [E]sunshine and [A]shade;\n[D]Tenderly [G]watching and [D]keeping His [A]own,\n[D]He will not [G]leave you to [A]wander a[D]lone.\n\n[Verse]\n[D]God will take [A]care of [D]you still to the [A]end;\n[D]Oh what a [A]Father, Re[E]deemer and [A]Friend\n[D]Jesus will [G]answer when[D]ever you [A]call\n[D]He will take [G]care of [A]you, trust Him for [D]all.\n\n[Verse]\n[D]God will take [A]care of [D]you, through all the [A]day.\n[D]Shielding your [A]footsteps, di[E]recting your [A]way,\n[D]He is your [G]Shepherd, Pro[D]tector and [A]Guide,\n[D]Leading His [G]children where [A]still waters [D]glide.\n\n[Verse]\n[D]God will take [A]care you [D]long as you [A]live,\n[D]Granting you [A]blessings no [E]other can [A]give,\n[D]He will take [G]care of [D]you when time is [A]past;\n[D]Safe to His [G]kingdom will [A]bring you at [D]last.",
+  "lyrics": "[Verse]\nGod will take care of you; be not afraid;\nHe is your safeguard through sunshine and shade;\nTenderly watching and keeping His own,\nHe will not leave you to wander alone.\n\n[Verse]\nGod will take care of you still to the end;\nOh what a Father, Redeemer and Friend\nJesus will answer whenever you call\nHe will take care of you, trust Him for all.\n\n[Verse]\nGod will take care of you, through all the day.\nShielding your footsteps, directing your way,\nHe is your Shepherd, Protector and Guide,\nLeading His children where still waters glide.\n\n[Verse]\nGod will take care you long as you live,\nGranting you blessings no other can give,\nHe will take care of you when time is past;\nSafe to His kingdom will bring you at last.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Trust",
+    "Funeral"
+  ]
 }

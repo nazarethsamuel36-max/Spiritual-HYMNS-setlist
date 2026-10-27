@@ -1,142 +1,77 @@
 {
-  "id" : 1173,
-  "songNumber" : 195,
-  "title" : "ये संदेश सुनाओ सब को",
-  "language" : "hindi",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "ये संदेश सुनाओ सब को (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "यीशु मसीह राजा है प्यारो",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "यीशु मसीह राजा है। आ ss ओ ss",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "होसन्ना के नारे सबको शांति देवेंगे (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "आज मसीह को अर्पण कर दो (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "होसन्ना गाओ, होसन्ना गाओ (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "अपने दिलों को खाली कर दो यीशु के कदमों में (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 22
-      }, {
-        "chord" : "G",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "जान मसीह को अर्पण कर दो अपना चढ़ाओ मन (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 21
-      }, {
-        "chord" : "G",
-        "position" : 35
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "यीशु ने कहा मैं आऊँगा, जहाँ मैं रहता वहाँ ले जाऊँगा",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "C",
-        "position" : 19
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "तैयार हो भाईयों, तैयार हो बहनों (2)",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 1173,
+  "songNumber": 195,
+  "title": "ये संदेश सुनाओ सब को",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "ये संदेश सुनाओ सब को (2)"
+        },
+        {
+          "text": "यीशु मसीह राजा है प्यारो"
+        },
+        {
+          "text": "यीशु मसीह राजा है। आ ss ओ ss"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "होसन्ना के नारे सबको शांति देवेंगे (2)"
+        },
+        {
+          "text": "आज मसीह को अर्पण कर दो (2)"
+        },
+        {
+          "text": "होसन्ना गाओ, होसन्ना गाओ (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "अपने दिलों को खाली कर दो यीशु के कदमों में (2)"
+        },
+        {
+          "text": "जान मसीह को अर्पण कर दो अपना चढ़ाओ मन (2)"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "यीशु ने कहा मैं आऊँगा, जहाँ मैं रहता वहाँ ले जाऊँगा"
+        },
+        {
+          "text": "तैयार हो भाईयों, तैयार हो बहनों (2)"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[G]ये संदेश सुनाओ सब [C]को (2)\n[G]यीशु मसीह राजा है [D]प्यारो\n[G]यीशु मसीह राजा [D]है। आ [C]ss ओ [G]ss\n\n[Verse]\n[G]होसन्ना के नारे सबको [C]शांति देवें[G]गे (2)\n[G]आज मसीह को अर्पण कर [D]दो (2)\n[G]होसन्ना गाओ, [C]होसन्ना गा[G]ओ (2)\n\n[Verse]\n[G]अपने दिलों को खाली कर [C]दो यीशु के कदमों [G]में (2)\n[G]जान मसीह को अर्पण कर [D]दो अपना चढ़ाओ [G]मन (2)\n\n[Verse]\n[G]यीशु ने कहा मैं आऊँ[C]गा, जहाँ मैं रहता [G]वहाँ ले जाऊँगा\n[G]तैयार हो भाई[D]यों, तैयार हो ब[G]हनों (2)",
+  "lyrics": "[Verse]\nये संदेश सुनाओ सब को (2)\nयीशु मसीह राजा है प्यारो\nयीशु मसीह राजा है। आ ss ओ ss\n\n[Verse]\nहोसन्ना के नारे सबको शांति देवेंगे (2)\nआज मसीह को अर्पण कर दो (2)\nहोसन्ना गाओ, होसन्ना गाओ (2)\n\n[Verse]\nअपने दिलों को खाली कर दो यीशु के कदमों में (2)\nजान मसीह को अर्पण कर दो अपना चढ़ाओ मन (2)\n\n[Verse]\nयीशु ने कहा मैं आऊँगा, जहाँ मैं रहता वहाँ ले जाऊँगा\nतैयार हो भाईयों, तैयार हो बहनों (2)",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

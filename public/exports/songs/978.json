@@ -1,93 +1,71 @@
 {
-  "id" : 978,
-  "songNumber" : 100,
-  "title" : "WE HAVE COME INTO HIS HOUSE",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "We have come into His house,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And gathered in His Name to worship Him } 2",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "We have come into this house,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "And gathered in His Name,"
-    }, {
-      "text" : "To worship Christ the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Worship Christ the Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "So forget about yourself and",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Concentrate on Him and worship Him.....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 23
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He is all my Righteousness, I Stand",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      } ]
-    }, {
-      "text" : "Complete in Him and worship Him.....",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 20
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Let us lift up Holy hands and",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Magnify His Name and worship Him......",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 21
-      } ]
-    } ]
-  } ]
+  "id": 978,
+  "songNumber": 100,
+  "title": "WE HAVE COME INTO HIS HOUSE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "We have come into His house,"
+        },
+        {
+          "text": "And gathered in His Name to worship Him } 2"
+        },
+        {
+          "text": "We have come into this house,"
+        },
+        {
+          "text": "And gathered in His Name,"
+        },
+        {
+          "text": "To worship Christ the Lord,"
+        },
+        {
+          "text": "Worship Christ the Lord."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "So forget about yourself and"
+        },
+        {
+          "text": "Concentrate on Him and worship Him....."
+        },
+        {
+          "text": "He is all my Righteousness, I Stand"
+        },
+        {
+          "text": "Complete in Him and worship Him....."
+        },
+        {
+          "text": "Let us lift up Holy hands and"
+        },
+        {
+          "text": "Magnify His Name and worship Him......"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nWe have [D]come into His house,\nAnd gathered in His Name to [G]worship Him } 2\nWe have [A]come into this house,\nAnd gathered in His Name,\nTo worship Christ the [D]Lord,\n[A]Worship Christ the [D]Lord.\n\n[Verse 2]\nSo for[D]get about yourself and\nConcentrate on Him and [G]worship Him.....\nHe is [D]all my Righteousness, I Stand\nComplete in Him and [G]worship Him.....\nLet us [D]lift up Holy hands and\nMagnify His Name and [G]worship Him......",
+  "lyrics": "[Verse 1]\nWe have come into His house,\nAnd gathered in His Name to worship Him } 2\nWe have come into this house,\nAnd gathered in His Name,\nTo worship Christ the Lord,\nWorship Christ the Lord.\n\n[Verse 2]\nSo forget about yourself and\nConcentrate on Him and worship Him.....\nHe is all my Righteousness, I Stand\nComplete in Him and worship Him.....\nLet us lift up Holy hands and\nMagnify His Name and worship Him......",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

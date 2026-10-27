@@ -1,140 +1,71 @@
 {
-  "id" : 966,
-  "songNumber" : 88,
-  "title" : "COME BLESS THE LORD",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Come bless the Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "All ye servants of the Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "Who stand by night,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "In the house of the Lord,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Lift up your hands in the Holy place,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And bless the Lord,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "And bless the Lord.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "O taste and see that the Lord is good (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Blessed is the man,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "who trusts in Him.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "He lifted me up from the miry clay,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "He set my feet on the Rock to stay,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "He put a song in my heart today",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "A song of praise, a song of praise.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    } ]
-  } ]
+  "id": 966,
+  "songNumber": 88,
+  "title": "COME BLESS THE LORD",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Come bless the Lord,"
+        },
+        {
+          "text": "All ye servants of the Lord,"
+        },
+        {
+          "text": "Who stand by night,"
+        },
+        {
+          "text": "In the house of the Lord,"
+        },
+        {
+          "text": "Lift up your hands in the Holy place,"
+        },
+        {
+          "text": "And bless the Lord,"
+        },
+        {
+          "text": "And bless the Lord."
+        },
+        {
+          "text": "O taste and see that the Lord is good (3)"
+        },
+        {
+          "text": "Blessed is the man,"
+        },
+        {
+          "text": "who trusts in Him."
+        },
+        {
+          "text": "He lifted me up from the miry clay,"
+        },
+        {
+          "text": "He set my feet on the Rock to stay,"
+        },
+        {
+          "text": "He put a song in my heart today"
+        },
+        {
+          "text": "A song of praise, a song of praise."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n[D]Come bless the Lord,\r\nAll ye [G]servants of the [D]Lord,\r\nWho [G]stand by [D]night,\r\nIn the [A]house of the [D]Lord,\r\nLift up your [D]hands in the [G]Holy [D]place,\r\nAnd [A]bless the [D]Lord,\r\nAnd [A]bless the [D]Lord.\r\nO [D]taste and see that the [G]Lord is [D]good (3)\r\n[D]Blessed is the [A]man,\r\nwho trusts in [D]Him.\r\nHe [D]lifted me up from the miry clay,\r\nHe [A]set my feet on the [D]Rock to stay,\r\nHe [D]put a song in my heart today\r\nA [A]song of praise, a song of [D]praise.",
+  "lyrics": "[Verse]\r\nCome bless the Lord,\r\nAll ye servants of the Lord,\r\nWho stand by night,\r\nIn the house of the Lord,\r\nLift up your hands in the Holy place,\r\nAnd bless the Lord,\r\nAnd bless the Lord.\r\nO taste and see that the Lord is good (3)\r\nBlessed is the man,\r\nwho trusts in Him.\r\nHe lifted me up from the miry clay,\r\nHe set my feet on the Rock to stay,\r\nHe put a song in my heart today\r\nA song of praise, a song of praise.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

@@ -1,162 +1,110 @@
 {
-  "id" : 734,
-  "songNumber" : 122,
-  "title" : "FEAR NOT LITTLE FLOCK",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Fear not, little flock, from the cross to the throne,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "From death into life He went for His own;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 5
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "All power in earth, all power above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "Is given to Him for the flock of His love.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "G",
-        "position" : 37
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Only believe, only believe,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "All things are possible, only believe;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Only believe, only believe,"
-    }, {
-      "text" : "All things are possible, only believe.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "(Lord, I believe.....)"
-    }, {
-      "text" : "(Lord, I receive.....)"
-    }, {
-      "text" : "(Jesus is here.......)"
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Fear not, little flock, He goeth ahead,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Your Shepherd selecteth the path you must tread;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "The waters of Marah He'll sweeten for thee,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "He drank all the bitter in Gethsemane.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Fear not, little flock, whatever your lot,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      } ]
-    }, {
-      "text" : "He enters all rooms, \"the doors being shut;\"",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "He never forsakes, He never is gone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "So count on His presence in darkness and dawn.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 41
-      } ]
-    } ]
-  } ]
+  "id": 734,
+  "songNumber": 122,
+  "title": "FEAR NOT LITTLE FLOCK",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Fear not, little flock, from the cross to the throne,"
+        },
+        {
+          "text": "From death into life He went for His own;"
+        },
+        {
+          "text": "All power in earth, all power above,"
+        },
+        {
+          "text": "Is given to Him for the flock of His love."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Only believe, only believe,"
+        },
+        {
+          "text": "All things are possible, only believe;"
+        },
+        {
+          "text": "Only believe, only believe,"
+        },
+        {
+          "text": "All things are possible, only believe."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "(Lord, I believe.....)"
+        },
+        {
+          "text": "(Lord, I receive.....)"
+        },
+        {
+          "text": "(Jesus is here.......)"
+        },
+        {
+          "text": "Fear not, little flock, He goeth ahead,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Your Shepherd selecteth the path you must tread;"
+        },
+        {
+          "text": "The waters of Marah He'll sweeten for thee,"
+        },
+        {
+          "text": "He drank all the bitter in Gethsemane."
+        },
+        {
+          "text": "Fear not, little flock, whatever your lot,"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "He enters all rooms, \"the doors being shut;\""
+        },
+        {
+          "text": "He never forsakes, He never is gone,"
+        },
+        {
+          "text": "So count on His presence in darkness and dawn."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\nFear [C]not, little flock, from the cross to the throne,\r\nFrom [F]death into life He went for His [C]own;\r\nAll [C]power in earth, all [G]power above,\r\nIs [C]given to Him for the flock of His [F]love.\r\n\r\n[Chorus]\r\n[C]Only believe, only believe,\r\n[F]All things are possible, only be[C]lieve;\r\nOnly believe, only believe,\r\n[F]All things are possible, only be[C]lieve.\r\n\r\n[Verse 2]\r\n(Lord, I believe.....)\r\n(Lord, I receive.....)\r\n(Jesus is here.......)\r\nFear [C]not, little flock, He goeth a[G]head,\r\n\r\n[Verse 3]\r\nYour Shepherd selecteth the [C]path you must tread;\r\nThe [C]waters of Marah He'll [F]sweeten for [C]thee,\r\nHe [C]drank all the bitter in [G]Geth[C]semane.\r\nFear [C]not, little flock, whatever your lot,\r\n\r\n[Verse 4]\r\nHe [F]enters all rooms, \"the doors being [C]shut;\"\r\nHe [C]never forsakes, He [G]never is gone,\r\nSo [C]count on His presence in dark[G]ness and [C]dawn.",
+  "lyrics": "[Verse 1]\r\nFear not, little flock, from the cross to the throne,\r\nFrom death into life He went for His own;\r\nAll power in earth, all power above,\r\nIs given to Him for the flock of His love.\r\n\r\n[Chorus]\r\nOnly believe, only believe,\r\nAll things are possible, only believe;\r\nOnly believe, only believe,\r\nAll things are possible, only believe.\r\n\r\n[Verse 2]\r\n(Lord, I believe.....)\r\n(Lord, I receive.....)\r\n(Jesus is here.......)\r\nFear not, little flock, He goeth ahead,\r\n\r\n[Verse 3]\r\nYour Shepherd selecteth the path you must tread;\r\nThe waters of Marah He'll sweeten for thee,\r\nHe drank all the bitter in Gethsemane.\r\nFear not, little flock, whatever your lot,\r\n\r\n[Verse 4]\r\nHe enters all rooms, \"the doors being shut;\"\r\nHe never forsakes, He never is gone,\r\nSo count on His presence in darkness and dawn.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

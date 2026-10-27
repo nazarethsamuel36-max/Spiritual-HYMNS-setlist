@@ -1,290 +1,138 @@
 {
-  "id" : 902,
-  "songNumber" : 290,
-  "title" : "DEEPER DEEPER",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Deeper, deeper in the love of Jesus",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Daily let me go;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 13
-      } ]
-    }, {
-      "text" : "Higher, higher in the school of wisdom,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "More of grace to know.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 17
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "O deeper yet I pray",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 9
-      } ]
-    }, {
-      "text" : "And higher every day",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      } ]
-    }, {
-      "text" : "And wiser, blessed Lord,",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "A",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "In Thy precious, holy word.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Deeper, deeper! blessed Holy Spirit",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Take me deeper still,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 15
-      } ]
-    }, {
-      "text" : "Till my life is wholly lost in Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And His perfect will.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Deeper, deeper! though it cost hard trials",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Deeper let me go!",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "A",
-        "position" : 14
-      } ]
-    }, {
-      "text" : "Rooted in the holy love of Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Let me fruitful grow.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 7
-      }, {
-        "chord" : "D",
-        "position" : 16
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "Deeper, higher every day in Jesus,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Till all conflict past,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "A",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "Finds me conqu'ror, and in His own image,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 9
-      }, {
-        "chord" : "D",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Perfected at last.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 13
-      } ]
-    } ]
-  } ]
+  "id": 902,
+  "songNumber": 290,
+  "title": "DEEPER DEEPER",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Deeper, deeper in the love of Jesus"
+        },
+        {
+          "text": "Daily let me go;"
+        },
+        {
+          "text": "Higher, higher in the school of wisdom,"
+        },
+        {
+          "text": "More of grace to know."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "O deeper yet I pray"
+        },
+        {
+          "text": "And higher every day"
+        },
+        {
+          "text": "And wiser, blessed Lord,"
+        },
+        {
+          "text": "In Thy precious, holy word."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Deeper, deeper! blessed Holy Spirit"
+        },
+        {
+          "text": "Take me deeper still,"
+        },
+        {
+          "text": "Till my life is wholly lost in Jesus,"
+        },
+        {
+          "text": "And His perfect will."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Deeper, deeper! though it cost hard trials"
+        },
+        {
+          "text": "Deeper let me go!"
+        },
+        {
+          "text": "Rooted in the holy love of Jesus,"
+        },
+        {
+          "text": "Let me fruitful grow."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Deeper, higher every day in Jesus,"
+        },
+        {
+          "text": "Till all conflict past,"
+        },
+        {
+          "text": "Finds me conquror, and in His own image,"
+        },
+        {
+          "text": "Perfected at last."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\n [G]Deeper, [C]deeper [G]in the love of [D]Jesus\r\n[G]Daily [C]let me [D]go;\r\n[G]Higher, [C]higher [G]in the school of [D]wisdom,\r\n[G]More of [D]grace to [G]know.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nO [C]deeper [G]yet I pray\r\nAnd [D]higher [G]every day\r\nAnd [C]wiser, [G]blessed [D]Lord,\r\nIn [G]Thy [D]precious, holy [G]word.\r\n[Verse]\r\n[Verse]\r\n[G]Deeper, [C]deeper! [G]blessed Holy [D]Spirit\r\n[G]Take me [C]deeper [D]still,\r\n[G]Till my [C]life is [G]wholly lost in [D]Jesus,\r\nAnd [G]His [D]perfect [G]will.\r\n[Verse]\r\n[Verse]\r\n[G]Deeper, [C]deeper! [G]though it cost hard [D]trials\r\n[G]Deeper [C]let me [D]go!\r\n[G]Rooted [C]in the [G]holy love of [D]Jesus,\r\nLet [G]me [D]fruitful [G]grow.\r\n[Verse]\r\n[Verse]\r\n[G]Deeper, [C]higher [G]every day in [D]Jesus,\r\nTill [G]all [C]conflict [D]past,\r\n[G]Finds me [C]conquror, [G]and in His own [D]image,\r\nPer[G]fected [D]at [G]last.",
+  "lyrics": "[Verse]\r\n Deeper, deeper in the love of Jesus\r\nDaily let me go;\r\nHigher, higher in the school of wisdom,\r\nMore of grace to know.\r\n[Verse]\r\n[Verse]\r\n[Chorus]\r\nO deeper yet I pray\r\nAnd higher every day\r\nAnd wiser, blessed Lord,\r\nIn Thy precious, holy word.\r\n[Verse]\r\n[Verse]\r\nDeeper, deeper! blessed Holy Spirit\r\nTake me deeper still,\r\nTill my life is wholly lost in Jesus,\r\nAnd His perfect will.\r\n[Verse]\r\n[Verse]\r\nDeeper, deeper! though it cost hard trials\r\nDeeper let me go!\r\nRooted in the holy love of Jesus,\r\nLet me fruitful grow.\r\n[Verse]\r\n[Verse]\r\nDeeper, higher every day in Jesus,\r\nTill all conflict past,\r\nFinds me conquror, and in His own image,\r\nPerfected at last.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:45:15.658983+00:00",
+  "genres": [
+    "Worship",
+    "Surrender"
+  ]
 }

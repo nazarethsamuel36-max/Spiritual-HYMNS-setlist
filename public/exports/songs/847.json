@@ -1,244 +1,115 @@
 {
-  "id" : 847,
-  "songNumber" : 235,
-  "title" : "THOU DOST SEEK A BRIDE",
-  "language" : "english",
-  "originalKey" : "F",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Thou dost seek a Bride all pure and holy,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Those who now belong to Thee alone,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Those who give Thee all their heart's affections,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "Of Thyself a part, bone of Thy bone.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Lord we answer to Thy heart's deep longing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Even so come quickly Lord we say,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "In our hearts we have the blessed answer,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Rise my love, my fair one come away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "Drawn from every kindred, tribe and nation",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "By Thy Holy Spirit's mighty power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "Finding rest in Thee, God's great salvation",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    }, {
-      "text" : "Waits Thy Bride for Thine appointed hour.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "A",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "Sharing with Thee in this world's rejection.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 26
-      }, {
-        "chord" : "D",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Putting on Thy death to gain a crown,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "By Thy Blood and Word we're overcomers,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 28
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "With Thee in Thy throne we shall sit down.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "G",
-        "position" : 17
-      }, {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 847,
+  "songNumber": 235,
+  "title": "THOU DOST SEEK A BRIDE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "F",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thou dost seek a Bride all pure and holy,"
+        },
+        {
+          "text": "Those who now belong to Thee alone,"
+        },
+        {
+          "text": "Those who give Thee all their hearts affections,"
+        },
+        {
+          "text": "Of Thyself a part, bone of Thy bone."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Lord we answer to Thy hearts deep longing,"
+        },
+        {
+          "text": "Even so come quickly Lord we say,"
+        },
+        {
+          "text": "In our hearts we have the blessed answer,"
+        },
+        {
+          "text": "Rise my love, my fair one come away."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Drawn from every kindred, tribe and nation"
+        },
+        {
+          "text": "By Thy Holy Spirits mighty power,"
+        },
+        {
+          "text": "Finding rest in Thee, Gods great salvation"
+        },
+        {
+          "text": "Waits Thy Bride for Thine appointed hour."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Sharing with Thee in this worlds rejection."
+        },
+        {
+          "text": "Putting on Thy death to gain a crown,"
+        },
+        {
+          "text": "By Thy Blood and Word were overcomers,"
+        },
+        {
+          "text": "With Thee in Thy throne we shall sit down."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n [D]Thou dost seek a Bride all [G]pure and [D]holy,\n[D]Those who now belong to [A]Thee a[D]lone,\n[D]Those who give Thee all their [G]hearts af[D]fections,\n[D]Of Thy[A]self a [G]part, bone [A]of Thy [D]bone.\n[Verse]\n[Verse]\n[Chorus]\n[D]Lord we answer to Thy [G]hearts deep [D]longing,\n[D]Even so come quickly [A]Lord we [D]say,\n[D]In our hearts we have the [G]blessed [D]answer,\n[D]Rise my [A]love, my [G]fair one [A]come a[D]way.\n[Verse]\n[Verse]\n[D]Drawn from every kindred, [G]tribe and [D]nation\n[D]By Thy Holy Spirits [A]mighty [D]power,\n[D]Finding rest in Thee, Gods [G]great sal[D]vation\n[D]Waits Thy [A]Bride for [G]Thine ap[A]pointed [D]hour.\n[Verse]\n[Verse]\n[D]Sharing with Thee in this [G]worlds re[D]jection.\n[D]Putting on Thy death to [A]gain a [D]crown,\n[D]By Thy Blood and Word were [G]over[D]comers,\n[D]With Thee [A]in Thy [G]throne we [A]shall sit [D]down.",
+  "lyrics": "[Verse]\n Thou dost seek a Bride all pure and holy,\nThose who now belong to Thee alone,\nThose who give Thee all their hearts affections,\nOf Thyself a part, bone of Thy bone.\n[Verse]\n[Verse]\n[Chorus]\nLord we answer to Thy hearts deep longing,\nEven so come quickly Lord we say,\nIn our hearts we have the blessed answer,\nRise my love, my fair one come away.\n[Verse]\n[Verse]\nDrawn from every kindred, tribe and nation\nBy Thy Holy Spirits mighty power,\nFinding rest in Thee, Gods great salvation\nWaits Thy Bride for Thine appointed hour.\n[Verse]\n[Verse]\nSharing with Thee in this worlds rejection.\nPutting on Thy death to gain a crown,\nBy Thy Blood and Word were overcomers,\nWith Thee in Thy throne we shall sit down.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming"
+  ]
 }

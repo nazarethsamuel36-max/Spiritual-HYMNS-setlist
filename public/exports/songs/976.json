@@ -1,34 +1,41 @@
 {
-  "id" : 976,
-  "songNumber" : 98,
-  "title" : "HE CARETH FOR YOU",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "He careth for you, (2)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    }, {
-      "text" : "Through sunshine or shadow,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      } ]
-    }, {
-      "text" : "He careth for you.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      } ]
-    } ]
-  } ]
+  "id": 976,
+  "songNumber": 98,
+  "title": "HE CARETH FOR YOU",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "He careth for you,"
+        },
+        {
+          "text": "He careth for you;"
+        },
+        {
+          "text": "Through sunshine or shadow,"
+        },
+        {
+          "text": "He careth for you."
+        }
+      ]
+    }
+  ],
+  "chords": "He careth for you,\r\nHe careth for you;\r\n\r\nThrough sunshine or shadow,\r\n\r\nHe careth for you.",
+  "lyrics": "He careth for you,\r\nHe careth for you;\r\n\r\nThrough sunshine or shadow,\r\n\r\nHe careth for you.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:24.719394+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

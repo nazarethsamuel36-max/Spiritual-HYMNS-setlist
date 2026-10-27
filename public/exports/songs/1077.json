@@ -1,124 +1,59 @@
 {
-  "id" : 1077,
-  "songNumber" : 99,
-  "title" : "प्रभु तू है चांदी से भी किमती",
-  "language" : "hindi",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "प्रभु तू है चांदी से भी किमती,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "प्रभु तू है सोने से मेहँगाँ,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "प्रभु तू है हिरों से भी सुन्दर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "और तुझ से बढकर कुछ नहीं चाहूँ ।",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "प्रभु तू है मेरे दिल से भी किमती,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "प्रभु तू है जीवन से मेहँगा,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "A",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "प्रभु तू है सृष्टी से भी सुन्दर,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 25
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "और तुझ से बढकर कुछ नहीं चाहूँ ।"
-    } ]
-  } ]
+  "id": 1077,
+  "songNumber": 99,
+  "title": "प्रभु तू है चांदी से भी किमती",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु तू है चांदी से भी किमती,"
+        },
+        {
+          "text": "प्रभु तू है सोने से मेहँगाँ,"
+        },
+        {
+          "text": "प्रभु तू है हिरों से भी सुन्दर,"
+        },
+        {
+          "text": "और तुझ से बढकर कुछ नहीं चाहूँ ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "प्रभु तू है मेरे दिल से भी किमती,"
+        },
+        {
+          "text": "प्रभु तू है जीवन से मेहँगा,"
+        },
+        {
+          "text": "प्रभु तू है सृष्टी से भी सुन्दर,"
+        },
+        {
+          "text": "और तुझ से बढकर कुछ नहीं चाहूँ ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\r\n[D]प्रभु तू है [A]चांदी से भी [G]किमती[D],\r\n[D]प्रभु तू है [A]सोने से मे[G]हँगाँ[A],\r\n[D]प्रभु तू है [A]हिरों से भी [G]सुन्दर[D],\r\n[G]और तुझ से [A]बढकर कुछ नहीं चा[D]हूँ ।\r\n\r\n[Verse]\r\n[D]प्रभु तू है [A]मेरे दिल से भी [G]किमती[D],\r\n[D]प्रभु तू है [A]जीवन से मे[G]हँगा[A],\r\n[D]प्रभु तू है [A]सृष्टी से भी [G]सुन्दर[D],\r\nऔर तुझ से बढकर कुछ नहीं चाहूँ ।",
+  "lyrics": "[Verse]\r\nप्रभु तू है चांदी से भी किमती,\r\nप्रभु तू है सोने से मेहँगाँ,\r\nप्रभु तू है हिरों से भी सुन्दर,\r\nऔर तुझ से बढकर कुछ नहीं चाहूँ ।\r\n\r\n[Verse]\r\nप्रभु तू है मेरे दिल से भी किमती,\r\nप्रभु तू है जीवन से मेहँगा,\r\nप्रभु तू है सृष्टी से भी सुन्दर,\r\nऔर तुझ से बढकर कुछ नहीं चाहूँ ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Adoration"
+  ]
 }

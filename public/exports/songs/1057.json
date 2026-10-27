@@ -1,148 +1,74 @@
 {
-  "id" : 1057,
-  "songNumber" : 79,
-  "title" : "राहों में काँटे अगर हों, रुकना नही चलते जाना",
-  "language" : "hindi",
-  "originalKey" : "C",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "राहों में काँटे अगर हों, रुकना नही चलते जाना",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "Dm",
-        "position" : 25
-      }, {
-        "chord" : "G",
-        "position" : 40
-      } ]
-    }, {
-      "text" : "यीशु तेरे साथ है, ये तू विश्वास करना",
-      "chords" : [ {
-        "chord" : "C",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 10
-      }, {
-        "chord" : "Am",
-        "position" : 18
-      }, {
-        "chord" : "Dm",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "संसार के अंत तक, वो तेरे साथ है ।",
-      "chords" : [ {
-        "chord" : "F",
-        "position" : 0
-      }, {
-        "chord" : "E",
-        "position" : 20
-      }, {
-        "chord" : "Am",
-        "position" : 29
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "आँधी आने दो, या आने दो तूफान (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "Am",
-        "position" : 25
-      } ]
-    }, {
-      "text" : "वो नैया क्या डुबेगी, जिसमें है यीशु महान !",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "E",
-        "position" : 21
-      }, {
-        "chord" : "Am",
-        "position" : 37
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "दुःख से भरी है जिंदगी, मुसीबत भरे रास्ते है (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 23
-      }, {
-        "chord" : "Am",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "दुःख दूर हो जाएगें तेरे, गर तू यीशु के साथ है !",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 12
-      }, {
-        "chord" : "E",
-        "position" : 25
-      }, {
-        "chord" : "Am",
-        "position" : 39
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 4",
-    "lines" : [ {
-      "text" : "गर मौत का डर सताए तुझे, सलीब पर तू गौर कर (2)",
-      "chords" : [ {
-        "chord" : "Am",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "Am",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "यीशु ने मौत को जित लिया है, उस पर तू विश्वास कर ।",
-      "chords" : [ {
-        "chord" : "Dm",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 15
-      }, {
-        "chord" : "E",
-        "position" : 28
-      }, {
-        "chord" : "Am",
-        "position" : 45
-      } ]
-    } ]
-  } ]
+  "id": 1057,
+  "songNumber": 79,
+  "title": "राहों में काँटे अगर हों, रुकना नही चलते जाना",
+  "artist": null,
+  "composer": null,
+  "language": "hindi",
+  "originalKey": "C",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "VERSE",
+      "lines": [
+        {
+          "text": "राहों में काँटे अगर हों, रुकना नही चलते जाना"
+        },
+        {
+          "text": "यीशु तेरे साथ है, ये तू विश्वास करना"
+        },
+        {
+          "text": "संसार के अंत तक, वो तेरे साथ है ।"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "आँधी आने दो, या आने दो तूफान (2)"
+        },
+        {
+          "text": "वो नैया क्या डुबेगी, जिसमें है यीशु महान !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "दुःख से भरी है जिंदगी, मुसीबत भरे रास्ते है (2)"
+        },
+        {
+          "text": "दुःख दूर हो जाएगें तेरे, गर तू यीशु के साथ है !"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "गर मौत का डर सताए तुझे, सलीब पर तू गौर कर (2)"
+        },
+        {
+          "text": "यीशु ने मौत को जित लिया है, उस पर तू विश्वास कर ।"
+        }
+      ]
+    }
+  ],
+  "chords": "[Chorus]\n[Am]राहों में काँटे अगर हों, [Dm]रुकना नही चलते [G]जाना\n[C]यीशु तेरे [E]साथ है, [Am]ये तू विश्वास क[Dm]रना\n[F]संसार के अंत तक, वो [E]तेरे साथ [Am]है ।\n\n[Verse]\n[Am]आँधी आने दो, या [G]आने दो तू[Am]फान (2)\n[Dm]वो नैया क्या [G]डुबेगी, [E]जिसमें है यीशु म[Am]हान !\n\n[Verse]\n[Am]दुःख से भरी है जिंदगी, [G]मुसीबत भरे रा[Am]स्ते है (2)\n[Dm]दुःख दूर हो [G]जाएगें तेरे, [E]गर तू यीशु के [Am]साथ है !\n\n[Verse]\n[Am]गर मौत का डर सताए तुझे, [G]सलीब पर तू [Am]गौर कर (2)\n[Dm]यीशु ने मौत को [G]जित लिया है, [E]उस पर तू विश्वास [Am]कर ।",
+  "lyrics": "राहों में काँटे अगर हों, रुकना नही चलते जाना\nयीशु तेरे साथ है, ये तू विश्वास करना\nसंसार के अंत तक, वो तेरे साथ है ।\n\n[Verse]\nआँधी आने दो, या आने दो तूफान (2)\nवो नैया क्या डुबेगी, जिसमें है यीशु महान !\n\n[Verse]\nदुःख से भरी है जिंदगी, मुसीबत भरे रास्ते है (2)\nदुःख दूर हो जाएगें तेरे, गर तू यीशु के साथ है !\n\n[Verse]\nगर मौत का डर सताए तुझे, सलीब पर तू गौर कर (2)\nयीशु ने मौत को जित लिया है, उस पर तू विश्वास कर ।",
+  "is_active": true,
+  "updated_at": "2026-09-17T14:41:15.297919+00:00",
+  "genres": [
+    "Worship",
+    "Trust"
+  ]
 }

@@ -1,215 +1,138 @@
 {
-  "id" : 803,
-  "songNumber" : 191,
-  "title" : "ON A HILL FAR AWAY",
-  "language" : "english",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "On a hill far away stood an old rugged cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "The emblem of suffering and shame,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "And I love that old cross where the Dearest and Best,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "For a world of lost sinners was slain.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "Chorus",
-    "lines" : [ {
-      "text" : "So I'll cherish the old rugged cross,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Till my trophies at last I lay down ;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 8
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "I will cling to the old rugged cross,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "And exchange it some day for a crown.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 31
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Oh, that old rugged cross, so despised by the world,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Has a wondrous attraction for me ;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 6
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "For the dear Lamb of God left His glory above,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "To bear it to dark Calvary.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 24
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "In the old rugged cross, stained with blood so divine,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : "A wondrous beauty I see.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 2
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "For 'twas on that old cross Jesus suffered and died.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "To pardon and sanctify me.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 3
-      }, {
-        "chord" : "D",
-        "position" : 23
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "To the old rugged cross I will ever be true,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Its shame and reproach gladly bear ;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 4
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Then He'll call me some day to my home for away,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 34
-      } ]
-    }, {
-      "text" : "Where His glory forever I'll share.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 29
-      } ]
-    } ]
-  } ]
+  "id": 803,
+  "songNumber": 191,
+  "title": "ON A HILL FAR AWAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "On a hill far away stood an old rugged cross,"
+        },
+        {
+          "text": "The emblem of suffering and shame,"
+        },
+        {
+          "text": "And I love that old cross where the Dearest and Best,"
+        },
+        {
+          "text": "For a world of lost sinners was slain."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "So Ill cherish the old rugged cross,"
+        },
+        {
+          "text": "Till my trophies at last I lay down ;"
+        },
+        {
+          "text": "I will cling to the old rugged cross,"
+        },
+        {
+          "text": "And exchange it some day for a crown."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Oh, that old rugged cross, so despised by the world,"
+        },
+        {
+          "text": "Has a wondrous attraction for me ;"
+        },
+        {
+          "text": "For the dear Lamb of God left His glory above,"
+        },
+        {
+          "text": "To bear it to dark Calvary."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "In the old rugged cross, stained with blood so divine,"
+        },
+        {
+          "text": "A wondrous beauty I see."
+        },
+        {
+          "text": "For twas on that old cross Jesus suffered and died."
+        },
+        {
+          "text": "To pardon and sanctify me."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": []
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "To the old rugged cross I will ever be true,"
+        },
+        {
+          "text": "Its shame and reproach gladly bear ;"
+        },
+        {
+          "text": "Then Hell call me some day to my home for away,"
+        },
+        {
+          "text": "Where His glory forever Ill share."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\n On a [D]hill far away stood an [G]old rugged cross,\nThe [A]emblem of suffering and [D]shame,\nAnd I [D]love that old cross where the [G]Dearest and Best,\nFor a [A]world of lost sinners was [D]slain.\n[Verse]\n[Verse]\n[Chorus]\nSo Ill [A]cherish the old rugged [D]cross,\nTill my [G]trophies at last I lay [D]down ;\nI will [D]cling to the old rugged [G]cross,\nAnd ex[D]change it some [A]day for a [D]crown.\n[Verse]\n[Verse]\nOh, that [D]old rugged cross, so de[G]spised by the world,\nHas a [A]wondrous attraction for [D]me ;\nFor the [D]dear Lamb of God left His [G]glory above,\nTo [A]bear it to dark Calva[D]ry.\n[Verse]\n[Verse]\nIn the [D]old rugged cross, stained with [G]blood so divine,\nA [A]wondrous beauty I [D]see.\nFor [D]twas on that old cross Jesus [G]suffered and died.\nTo [A]pardon and sanctify [D]me.\n[Verse]\n[Verse]\nTo the [D]old rugged cross I will [G]ever be true,\nIts [A]shame and reproach gladly [D]bear ;\nThen Hell [D]call me some day to my [G]home for away,\nWhere His [A]glory forever Ill [D]share.",
+  "lyrics": "[Verse]\n On a hill far away stood an old rugged cross,\nThe emblem of suffering and shame,\nAnd I love that old cross where the Dearest and Best,\nFor a world of lost sinners was slain.\n[Verse]\n[Verse]\n[Chorus]\nSo Ill cherish the old rugged cross,\nTill my trophies at last I lay down ;\nI will cling to the old rugged cross,\nAnd exchange it some day for a crown.\n[Verse]\n[Verse]\nOh, that old rugged cross, so despised by the world,\nHas a wondrous attraction for me ;\nFor the dear Lamb of God left His glory above,\nTo bear it to dark Calvary.\n[Verse]\n[Verse]\nIn the old rugged cross, stained with blood so divine,\nA wondrous beauty I see.\nFor twas on that old cross Jesus suffered and died.\nTo pardon and sanctify me.\n[Verse]\n[Verse]\nTo the old rugged cross I will ever be true,\nIts shame and reproach gladly bear ;\nThen Hell call me some day to my home for away,\nWhere His glory forever Ill share.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

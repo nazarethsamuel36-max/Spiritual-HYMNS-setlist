@@ -1,337 +1,143 @@
 {
-  "id" : 773,
-  "songNumber" : 161,
-  "title" : "THERE IS A FOUNTAIN",
-  "language" : "english",
-  "originalKey" : "Bb",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "There is a fountain filled with blood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "G",
-        "position" : 20
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Drawn from Immanuel's veins,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And sinners plunged beneath that flood,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Lose all their guilty stains, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "And sinners plunged beneath that flood,"
-    }, {
-      "text" : "Lose all their guilty stains.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 15
-      }, {
-        "chord" : "D",
-        "position" : 22
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "The dying thief rejoiced to see",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 28
-      } ]
-    }, {
-      "text" : "That fountain in his day;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "And there may I, though vile as he,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Wash all my sins away, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    }, {
-      "text" : "And there may I, though vile as he,"
-    }, {
-      "text" : "Wash all my sins away.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 18
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Thou dying Lamb, Thy precious blood",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Shall never lose its power,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 21
-      } ]
-    }, {
-      "text" : "Till all the ransomed Church of God,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Be saved, to sin no more, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Till all the ransomed Church of God,"
-    }, {
-      "text" : "Be saved, to sin no more.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 4",
-    "lines" : [ {
-      "text" : "E'er since by faith I saw the stream",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Thy flowing wounds supply,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 22
-      } ]
-    }, {
-      "text" : "Redeeming love has been my theme,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 2
-      }, {
-        "chord" : "G",
-        "position" : 19
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "And shall be till I die, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    }, {
-      "text" : "Redeeming love has been my theme,"
-    }, {
-      "text" : "And shall be till I die.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "A",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 20
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 5",
-    "lines" : [ {
-      "text" : "Then in a nobler, sweeter song,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 26
-      } ]
-    }, {
-      "text" : "I'll sing Thy power to save,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 23
-      } ]
-    }, {
-      "text" : "When this poor lisping, stammering tongue",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Lies silent in the grave, (3)",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    }, {
-      "text" : "When this poor lisping, stammering tongue,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "G",
-        "position" : 24
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Lies silent in the grave.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 12
-      }, {
-        "chord" : "D",
-        "position" : 19
-      } ]
-    } ]
-  } ]
+  "id": 773,
+  "songNumber": 161,
+  "title": "THERE IS A FOUNTAIN",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "A",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "There is a fountain filled with blood,"
+        },
+        {
+          "text": "Drawn from Immanuel's veins,"
+        },
+        {
+          "text": "And sinners plunged beneath that flood,"
+        },
+        {
+          "text": "Lose all their guilty stains, (3)"
+        },
+        {
+          "text": "And sinners plunged beneath that flood,"
+        },
+        {
+          "text": "Lose all their guilty stains."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "The dying thief rejoiced to see"
+        },
+        {
+          "text": "That fountain in his day;"
+        },
+        {
+          "text": "And there may I, though vile as he,"
+        },
+        {
+          "text": "Wash all my sins away, (3)"
+        },
+        {
+          "text": "And there may I, though vile as he,"
+        },
+        {
+          "text": "Wash all my sins away."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Thou dying Lamb, Thy precious blood"
+        },
+        {
+          "text": "Shall never lose its power,"
+        },
+        {
+          "text": "Till all the ransomed Church of God,"
+        },
+        {
+          "text": "Be saved, to sin no more, (3)"
+        },
+        {
+          "text": "Till all the ransomed Church of God,"
+        },
+        {
+          "text": "Be saved, to sin no more."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "E'er since by faith I saw the stream"
+        },
+        {
+          "text": "Thy flowing wounds supply,"
+        },
+        {
+          "text": "Redeeming love has been my theme,"
+        },
+        {
+          "text": "And shall be till I die, (3)"
+        },
+        {
+          "text": "Redeeming love has been my theme,"
+        },
+        {
+          "text": "And shall be till I die."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse",
+      "lines": [
+        {
+          "text": "Then in a nobler, sweeter song,"
+        },
+        {
+          "text": "I'll sing Thy power to save,"
+        },
+        {
+          "text": "When this poor lisping, stammering tongue"
+        },
+        {
+          "text": "Lies silent in the grave, (3)"
+        },
+        {
+          "text": "When this poor lisping, stammering tongue,"
+        },
+        {
+          "text": "Lies silent in the grave."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse]\r\nThere [A]is a fountain [D]filled with [A]blood,\r\nDrawn from Im[E]manuel's [A]veins,\r\nAnd [A]sinners plunged be[D]neath that [A]flood,\r\nLose [A]all their [E]guilty [A]stains, (3)\r\nAnd sinners plunged beneath that flood,\r\nLose [A]all their [E]guilty [A]stains.\r\n\r\n[Verse]\r\nThe [A]dying thief re[D]joiced to [A]see\r\nThat [A]fountain in his [E]day;\r\nAnd [A]there may I, though [D]vile as [A]he,\r\nWash [A]all my [E]sins a[A]way, (3)\r\nAnd there may I, though vile as he,\r\nWash [A]all my [E]sins a[A]way.\r\n\r\n[Verse]\r\nThou [A]dying Lamb, Thy [D]precious [A]blood\r\nShall [A]never lose its [E]power,\r\nTill [A]all the ransomed [D]Church of [A]God,\r\nBe [A]saved, to [E]sin no [A]more, (3)\r\nTill all the ransomed Church of God,\r\nBe [A]saved, to [E]sin no [A]more.\r\n\r\n[Verse]\r\nE'er [A]since by faith I [D]saw the [A]stream\r\nThy [A]flowing wounds sup[E]ply,\r\nRe[A]deeming love has [D]been my [A]theme,\r\nAnd [A]shall be [E]till I [A]die, (3)\r\nRedeeming love has been my theme,\r\nAnd [A]shall be [E]till I [A]die.\r\n\r\n[Verse]\r\nThen [A]in a nobler, [D]sweeter [A]song,\r\nI'll [A]sing Thy power to [E]save,\r\nWhen [A]this poor lisping, [D]stammering [A]tongue\r\nLies [A]silent [E]in the [A]grave, (3)\r\nWhen [A]this poor lisping, [D]stammering [A]tongue,\r\nLies [A]silent [E]in the [A]grave.",
+  "lyrics": "[Verse]\r\nThere is a fountain filled with blood,\r\nDrawn from Immanuel's veins,\r\nAnd sinners plunged beneath that flood,\r\nLose all their guilty stains, (3)\r\nAnd sinners plunged beneath that flood,\r\nLose all their guilty stains.\r\n\r\n[Verse]\r\nThe dying thief rejoiced to see\r\nThat fountain in his day;\r\nAnd there may I, though vile as he,\r\nWash all my sins away, (3)\r\nAnd there may I, though vile as he,\r\nWash all my sins away.\r\n\r\n[Verse]\r\nThou dying Lamb, Thy precious blood\r\nShall never lose its power,\r\nTill all the ransomed Church of God,\r\nBe saved, to sin no more, (3)\r\nTill all the ransomed Church of God,\r\nBe saved, to sin no more.\r\n\r\n[Verse]\r\nE'er since by faith I saw the stream\r\nThy flowing wounds supply,\r\nRedeeming love has been my theme,\r\nAnd shall be till I die, (3)\r\nRedeeming love has been my theme,\r\nAnd shall be till I die.\r\n\r\n[Verse]\r\nThen in a nobler, sweeter song,\r\nI'll sing Thy power to save,\r\nWhen this poor lisping, stammering tongue\r\nLies silent in the grave, (3)\r\nWhen this poor lisping, stammering tongue,\r\nLies silent in the grave.",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

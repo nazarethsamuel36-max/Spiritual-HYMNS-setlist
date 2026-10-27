@@ -1,155 +1,90 @@
 {
-  "id" : 808,
-  "songNumber" : 196,
-  "title" : "I HAVE HEARD OF A LAND",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "I have heard of a land on the far away strand,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      }, {
-        "chord" : "G",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "'Tis a beautiful home of the soul;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "Built by Jesus on high, there we never shall die,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "'Tis a land where we never grow old.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    } ]
-  }, {
-    "type" : "chorus",
-    "label" : "CHORUS",
-    "lines" : [ {
-      "text" : "Never grow old, never grow old,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 11
-      }, {
-        "chord" : "G",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "In a land where we'll never grow old.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 5
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "(Repeat)"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 2",
-    "lines" : [ {
-      "text" : "In that beautiful home where we'll nevermore roam,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "We shall be in the sweet by and by;",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Happy praise to the King, through eternity sing,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 43
-      } ]
-    }, {
-      "text" : "'Tis a land where we never shall die.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 21
-      }, {
-        "chord" : "D",
-        "position" : 33
-      } ]
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "VERSE 3",
-    "lines" : [ {
-      "text" : "When our work here is done and the life-crown is won,"
-    }, {
-      "text" : "And our troubles and trials are o'er,",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "All our sorrow will end, and our voices will blend,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 33
-      }, {
-        "chord" : "D",
-        "position" : 45
-      } ]
-    }, {
-      "text" : "With the loved ones who've gone on before.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 37
-      } ]
-    } ]
-  } ]
+  "id": 808,
+  "songNumber": 196,
+  "title": "I HAVE HEARD OF A LAND",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "I have heard of a land on the far away strand,"
+        },
+        {
+          "text": "Tis a beautiful home of the soul;"
+        },
+        {
+          "text": "Built by Jesus on high, there we never shall die,"
+        },
+        {
+          "text": "Tis a land where we never grow old."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Never grow old, never grow old,"
+        },
+        {
+          "text": "In a land where well never grow old."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "In that beautiful home where well nevermore roam,"
+        },
+        {
+          "text": "We shall be in the sweet by and by;"
+        },
+        {
+          "text": "Happy praise to the King, through eternity sing,"
+        },
+        {
+          "text": "Tis a land where we never shall die."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "When our work here is done and the life-crown is won,"
+        },
+        {
+          "text": "And our troubles and trials are oer,"
+        },
+        {
+          "text": "All our sorrow will end, and our voices will blend,"
+        },
+        {
+          "text": "With the loved ones whove gone on before."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nI have [D]heard of a land on the [G]far away [D]strand,\nTis a beautiful home of the [A]soul;\nBuilt by [D]Jesus on high, there we [G]never shall [D]die,\nTis a land where we [A]never grow [D]old.\n\n[Chorus]\nNever grow [D]old, never grow [G]old,\nIn a [D]land where well never grow [A]old.\n\n[Verse 2]\nIn that [D]beautiful home where well [G]nevermore [D]roam,\nWe shall be in the sweet by and [A]by;\n[D]Happy praise to the King, through e[G]ternity [D]sing,\nTis a land where we [A]never shall [D]die.\n\n[Verse 3]\nWhen our work here is done and the life-crown is won,\nAnd our troubles and trials are [A]oer,\nAll our [D]sorrow will end, and our [G]voices will [D]blend,\nWith the loved ones whove [A]gone on be[D]fore.",
+  "lyrics": "[Verse 1]\nI have heard of a land on the far away strand,\nTis a beautiful home of the soul;\nBuilt by Jesus on high, there we never shall die,\nTis a land where we never grow old.\n\n[Chorus]\nNever grow old, never grow old,\nIn a land where well never grow old.\n\n[Verse 2]\nIn that beautiful home where well nevermore roam,\nWe shall be in the sweet by and by;\nHappy praise to the King, through eternity sing,\nTis a land where we never shall die.\n\n[Verse 3]\nWhen our work here is done and the life-crown is won,\nAnd our troubles and trials are oer,\nAll our sorrow will end, and our voices will blend,\nWith the loved ones whove gone on before.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Second Coming",
+    "Funeral"
+  ]
 }

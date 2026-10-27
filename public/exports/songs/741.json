@@ -1,183 +1,113 @@
 {
-  "id" : 741,
-  "songNumber" : 129,
-  "title" : "MARVELOUS GRACE",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "VERSE 1",
-    "lines" : [ {
-      "text" : "Marvelous grace of our loving Lord,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 0
-      } ]
-    }, {
-      "text" : "Grace that exceeds our sin and our guilt.",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "Yonder on Calvary's mount outpoured,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      }, {
-        "chord" : "A",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "There where the Blood of the Lamb was spilt.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 16
-      }, {
-        "chord" : "G",
-        "position" : 38
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Grace, grace, God's grace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 7
-      } ]
-    }, {
-      "text" : "Grace that will pardon and cleanse within;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 16
-      }, {
-        "chord" : "D",
-        "position" : 39
-      } ]
-    }, {
-      "text" : "Grace, grace, God's grace,"
-    }, {
-      "text" : "Grace that is greater than all our sin.",
-      "chords" : [ {
-        "chord" : "A",
-        "position" : 14
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Sin and despair like the sea waves cold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 10
-      } ]
-    }, {
-      "text" : "Threaten the soul with infinite loss;",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 13
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Grace that is greater, yes, grace untold,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "A",
-        "position" : 36
-      } ]
-    }, {
-      "text" : "Points to the Refuge, the Mighty Cross.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    }, {
-      "text" : ""
-    }, {
-      "text" : "Dark is the stain that we cannot hide,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      } ]
-    }, {
-      "text" : "What can avail to wash it away?",
-      "chords" : [ {
-        "chord" : "G",
-        "position" : 10
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "Look! there is flowing a crimson tide;",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 15
-      }, {
-        "chord" : "A",
-        "position" : 33
-      } ]
-    }, {
-      "text" : "Whiter than snow you may be today.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 12
-      }, {
-        "chord" : "G",
-        "position" : 30
-      } ]
-    }, {
-      "text" : "Marvelous, infinite, matchless grace,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 6
-      }, {
-        "chord" : "A",
-        "position" : 31
-      } ]
-    }, {
-      "text" : "Freely bestowed on all who believe,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 9
-      }, {
-        "chord" : "G",
-        "position" : 29
-      } ]
-    }, {
-      "text" : "You that are longing to see His face,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 13
-      }, {
-        "chord" : "A",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "Will you this moment His grace receive?",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 14
-      }, {
-        "chord" : "G",
-        "position" : 33
-      } ]
-    } ]
-  } ]
+  "id": 741,
+  "songNumber": 129,
+  "title": "MARVELOUS GRACE",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Marvelous grace of our loving Lord,"
+        },
+        {
+          "text": "Grace that exceeds our sin and our guilt."
+        },
+        {
+          "text": "Yonder on Calvary's mount outpoured,"
+        },
+        {
+          "text": "There where the Blood of the Lamb was spilt."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Chorus",
+      "lines": [
+        {
+          "text": "Grace, grace, God's grace,"
+        },
+        {
+          "text": "Grace that will pardon and cleanse within;"
+        },
+        {
+          "text": "Grace, grace, God's grace,"
+        },
+        {
+          "text": "Grace that is greater than all our sin."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Sin and despair like the sea waves cold,"
+        },
+        {
+          "text": "Threaten the soul with infinite loss;"
+        },
+        {
+          "text": "Grace that is greater, yes, grace untold,"
+        },
+        {
+          "text": "Points to the Refuge, the Mighty Cross."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 3",
+      "lines": [
+        {
+          "text": "Dark is the stain that we cannot hide,"
+        },
+        {
+          "text": "What can avail to wash it away?"
+        },
+        {
+          "text": "Look! there is flowing a crimson tide;"
+        },
+        {
+          "text": "Whiter than snow you may be today."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 4",
+      "lines": [
+        {
+          "text": "Marvelous, infinite, matchless grace,"
+        },
+        {
+          "text": "Freely bestowed on all who believe,"
+        },
+        {
+          "text": "You that are longing to see His face,"
+        },
+        {
+          "text": "Will you this moment His grace receive?"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\r\n[G]Marvelous grace of our loving Lord,\r\nGrace that ex[C]ceeds our sin and our [G]guilt.\r\nYonder on [G]Calvary's mount out[D]poured,\r\nThere where the [G]Blood of the Lamb was [C]spilt.\r\n\r\n[Chorus]\r\nGrace, [G]grace, God's grace,\r\nGrace that will [C]pardon and cleanse with[G]in;\r\nGrace, grace, God's grace,\r\nGrace that is [D]greater than all our [G]sin.\r\n\r\n[Verse 2]\r\nSin and de[G]spair like the sea waves cold,\r\nThreaten the [C]soul with infinite [G]loss;\r\nGrace that is [G]greater, yes, grace un[D]told,\r\nPoints to the [G]Refuge, the Mighty [C]Cross.\r\n\r\n[Verse 3]\r\nDark is the [G]stain that we cannot hide,\r\nWhat can a[C]vail to wash it a[G]way?\r\nLook! there is [G]flowing a crimson [D]tide;\r\nWhiter than [G]snow you may be to[C]day.\r\n\r\n[Verse 4]\r\nMarvel[G]ous, infinite, matchless [D]grace,\r\nFreely be[G]stowed on all who be[C]lieve,\r\nYou that are [G]longing to see His [D]face,\r\nWill you this [G]moment His grace re[C]ceive?",
+  "lyrics": "[Verse 1]\r\nMarvelous grace of our loving Lord,\r\nGrace that exceeds our sin and our guilt.\r\nYonder on Calvary's mount outpoured,\r\nThere where the Blood of the Lamb was spilt.\r\n\r\n[Chorus]\r\nGrace, grace, God's grace,\r\nGrace that will pardon and cleanse within;\r\nGrace, grace, God's grace,\r\nGrace that is greater than all our sin.\r\n\r\n[Verse 2]\r\nSin and despair like the sea waves cold,\r\nThreaten the soul with infinite loss;\r\nGrace that is greater, yes, grace untold,\r\nPoints to the Refuge, the Mighty Cross.\r\n\r\n[Verse 3]\r\nDark is the stain that we cannot hide,\r\nWhat can avail to wash it away?\r\nLook! there is flowing a crimson tide;\r\nWhiter than snow you may be today.\r\n\r\n[Verse 4]\r\nMarvelous, infinite, matchless grace,\r\nFreely bestowed on all who believe,\r\nYou that are longing to see His face,\r\nWill you this moment His grace receive?",
+  "is_active": true,
+  "updated_at": "2026-09-19T09:43:50.462364+00:00",
+  "genres": [
+    "Worship",
+    "Gospel"
+  ]
 }

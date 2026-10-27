@@ -1,42 +1,47 @@
 {
-  "id" : 3183,
-  "songNumber" : 378,
-  "title" : "JEZU TUJIM UTRAM",
-  "language" : "konkani",
-  "originalKey" : "G",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "Jezu, tujim utram kallzacho sontos,"
-    }, {
-      "text" : "Jezu, tujim utram dolleancho uzvadd,"
-    }, {
-      "text" : "Jezu, tujim utram jinnecho visvas!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 2",
-    "lines" : [ {
-      "text" : "Jezu, tujim utram tanel'leank udok,"
-    }, {
-      "text" : "Jezu, tujim utram bhukel'leank jevonn,"
-    }, {
-      "text" : "Jezu, tujim utram meloleank jivit!"
-    } ]
-  }, {
-    "type" : "verse",
-    "label" : "Verse 3",
-    "lines" : [ {
-      "text" : "Jezu, tujim utram roddteleank buzvonn,"
-    }, {
-      "text" : "Jezu, tujim utram opradeank mafi,"
-    }, {
-      "text" : "Jezu, tujim utram gulamank suttka!"
-    } ]
-  } ]
+  "id": 3183,
+  "songNumber": 378,
+  "title": "JEZU TUJIM UTRAM",
+  "artist": null,
+  "composer": null,
+  "language": "konkani",
+  "originalKey": "G",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "Jezu, tujim utram kallzacho sontos,"
+        },
+        {
+          "text": "Jezu, tujim utram dolleancho uzvadd,"
+        },
+        {
+          "text": "Jezu, tujim utram jinnecho visvas!"
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "Jezu, tujim utram tanel"
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nJezu, tujim utram kallzacho sontos,\nJezu, tujim utram dolleancho uzvadd,\nJezu, tujim utram jinnecho visvas!\n\n[Verse 2]\nJezu, tujim utram tanel",
+  "lyrics": "[Verse 1]\nJezu, tujim utram kallzacho sontos,\nJezu, tujim utram dolleancho uzvadd,\nJezu, tujim utram jinnecho visvas!\n\n[Verse 2]\nJezu, tujim utram tanel",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }

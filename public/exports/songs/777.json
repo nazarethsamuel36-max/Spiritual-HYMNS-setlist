@@ -1,109 +1,59 @@
 {
-  "id" : 777,
-  "songNumber" : 165,
-  "title" : "THERE'S NEVER BEEN A DAY",
-  "language" : "english",
-  "originalKey" : "D",
-  "capo" : 0,
-  "bpm" : 0,
-  "timeSignature" : "4/4",
-  "hashtags" : [ ],
-  "sections" : [ {
-    "type" : "verse",
-    "label" : "Verse 1",
-    "lines" : [ {
-      "text" : "There's never been a day like this day to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 35
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "There's never been a day like this day, I see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "A",
-        "position" : 30
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "There's never been a light that shines so bright",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 8
-      }, {
-        "chord" : "G",
-        "position" : 32
-      }, {
-        "chord" : "D",
-        "position" : 42
-      } ]
-    }, {
-      "text" : "As this day, this glorious day.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    }, {
-      "text" : "For Christ is revealing Himself to me,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 27
-      }, {
-        "chord" : "D",
-        "position" : 35
-      } ]
-    }, {
-      "text" : "He opened my eyes and now I can see,",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 22
-      }, {
-        "chord" : "D",
-        "position" : 32
-      } ]
-    }, {
-      "text" : "His Word has become a reality",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 4
-      }, {
-        "chord" : "G",
-        "position" : 24
-      } ]
-    }, {
-      "text" : "In this day, this glorious day.",
-      "chords" : [ {
-        "chord" : "D",
-        "position" : 3
-      }, {
-        "chord" : "A",
-        "position" : 18
-      }, {
-        "chord" : "D",
-        "position" : 27
-      } ]
-    } ]
-  } ]
+  "id": 777,
+  "songNumber": 165,
+  "title": "THERE'S NEVER BEEN A DAY",
+  "artist": null,
+  "composer": null,
+  "language": "english",
+  "originalKey": "D",
+  "capo": 0,
+  "bpm": 0,
+  "timeSignature": "4/4",
+  "hashtags": [],
+  "sections": [
+    {
+      "type": "verse",
+      "label": "Verse 1",
+      "lines": [
+        {
+          "text": "There's never been a day like this day to me,"
+        },
+        {
+          "text": "There's never been a day like this day, I see,"
+        },
+        {
+          "text": "There's never been a light that shines so bright"
+        },
+        {
+          "text": "As this day, this glorious day."
+        }
+      ]
+    },
+    {
+      "type": "verse",
+      "label": "Verse 2",
+      "lines": [
+        {
+          "text": "For Christ is revealing Himself to me,"
+        },
+        {
+          "text": "He opened my eyes and now I can see,"
+        },
+        {
+          "text": "His Word has become a reality"
+        },
+        {
+          "text": "In this day, this glorious day."
+        }
+      ]
+    }
+  ],
+  "chords": "[Verse 1]\nThere's [D]never been a day like this [G]day to [D]me,\nThere's [D]never been a day like [A]this day, I [D]see,\nThere's [D]never been a light that [G]shines so [D]bright\nAs [D]this day, this [A]glorious [D]day.\n\n[Verse 2]\nFor [D]Christ is revealing Him[G]self to [D]me,\nHe [D]opened my eyes and [A]now I can [D]see,\nHis [D]Word has become a re[G]ality\nIn [D]this day, this [A]glorious [D]day.",
+  "lyrics": "[Verse 1]\nThere's never been a day like this day to me,\nThere's never been a day like this day, I see,\nThere's never been a light that shines so bright\nAs this day, this glorious day.\n\n[Verse 2]\nFor Christ is revealing Himself to me,\nHe opened my eyes and now I can see,\nHis Word has become a reality\nIn this day, this glorious day.",
+  "is_active": true,
+  "updated_at": "2026-09-04T04:31:48.704892+00:00",
+  "genres": [
+    "Worship",
+    "Praise"
+  ]
 }
