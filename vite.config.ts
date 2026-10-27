@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
       manifest: false,
       workbox: {
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}', 'exports/**/*.json'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}', 'exports/*.json'],
         navigateFallback: 'index.html',
         // 🛑 Tell Workbox to completely ignore Supabase API calls
         // This prevents the "no-response" error when offline

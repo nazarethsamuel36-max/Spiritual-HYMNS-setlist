@@ -94,11 +94,50 @@ async function batchDownloadFromJson(
     }
 
     const count = songsList.length;
-    const localCount = await db.songIndex.count();
+    const localCount = await db.songs.count();
     if (localCount >= count) {
       console.log(`✅ Library already fully downloaded (${localCount}/${count} songs).`);
       onProgress?.(100, `Already downloaded! (${localCount} songs offline)`);
       return 'skipped';
+    }
+
+    // Try fast single-bundle download first
+    try {
+      onProgress?.(15, 'Downloading complete song library...');
+      const bundleRes = await fetch('/exports/all-songs.json');
+      if (bundleRes.ok) {
+        const allSongs = await bundleRes.json();
+        onProgress?.(60, `Saving ${allSongs.length} songs to device...`);
+        const allSongIndices = allSongs.map((s: any) => ({
+          id: s.id,
+          songNumber: s.songNumber,
+          title: s.title,
+          artist: s.artist,
+          language: s.language,
+          originalKey: s.originalKey,
+          hashtags: s.hashtags || [],
+          searchTokens: `${s.title} ${s.artist || ''} ${s.language || ''}`.toLowerCase(),
+          genres: s.genres || [],
+        }));
+
+        await db.transaction('rw', [db.songs, db.songIndex, db.meta], async () => {
+          await db.songs.bulkPut(allSongs);
+          await db.songIndex.bulkPut(allSongIndices.map(normalizeSongIndex));
+          await db.meta.put({
+            id: LAST_SYNC_TIME_KEY,
+            value: Date.now()
+          });
+        });
+
+        await SearchEngine.indexSongs(allSongIndices.map(normalizeSongIndex));
+        await SearchEngine.indexLyrics(allSongs);
+
+        console.log(`✅ Fast bundle download complete: ${allSongs.length} songs saved.`);
+        onProgress?.(100, `Successfully downloaded ${allSongs.length} songs!`);
+        return 'completed';
+      }
+    } catch (bundleErr) {
+      console.warn('Fast bundle download failed, falling back to batch download:', bundleErr);
     }
 
     const allSongDetails: SongDetail[] = [];

@@ -14,11 +14,13 @@ export class SyncService {
       if (!response.ok) throw new Error('Manifest not found');
       const remoteManifest = await response.json();
 
-      // 2. Get local manifest
+      // 2. Get local manifest and song count
       const localManifest = await db.syncMeta.get('manifest');
+      const localSongsCount = await db.songs.count();
 
-      // 3. Compare versions/dates
-      const needsSync = force || !localManifest || localManifest.generatedAt !== remoteManifest.generatedAt;
+      // 3. Compare versions/dates or check if local database is missing songs
+      const targetCount = remoteManifest.songCount || 700;
+      const needsSync = force || !localManifest || localManifest.generatedAt !== remoteManifest.generatedAt || localSongsCount < targetCount;
 
       if (needsSync) {
         console.log('New version detected. Performing deep sync...');
@@ -66,10 +68,24 @@ export class SyncService {
 
       console.log(`Validation PASSED. Swapping ${normalizedSongs.length} songs into local database...`);
 
+      // Try to load full library bundle for instant offline availability
+      let allSongs = [];
+      try {
+        const allSongsResponse = await fetch(`${EXPORTS_BASE_URL}/all-songs.json`);
+        if (allSongsResponse.ok) {
+          allSongs = await allSongsResponse.json();
+          console.log(`Loaded full songs bundle: ${allSongs.length} songs`);
+        }
+      } catch (bundleErr) {
+        console.warn('Could not load all-songs.json bundle:', bundleErr);
+      }
+
       // --- SWAP LAYER ---
       await db.transaction('rw', [db.songIndex, db.syncMeta, db.songs], async () => {
-        // Clear cached songs so fresh static content is loaded on next open
-        await db.songs.clear();
+        if (allSongs.length > 0) {
+          await db.songs.clear();
+          await db.songs.bulkPut(allSongs);
+        }
         // Clear and refill metadata index
         await db.songIndex.clear();
         await db.songIndex.bulkAdd(normalizedSongs);
@@ -86,6 +102,9 @@ export class SyncService {
 
       // Update in-memory engine
       await SearchEngine.indexSongs(normalizedSongs);
+      if (allSongs.length > 0) {
+        await SearchEngine.indexLyrics(allSongs);
+      }
       console.log('Sync complete. System is stable.');
 
     } catch (err) {
@@ -105,6 +124,19 @@ export class SyncService {
    * Explicitly download and cache all song details for guaranteed offline access.
    */
   static async downloadAllSongs(onProgress: (current: number, total: number) => void) {
+    try {
+      const res = await fetch(`${EXPORTS_BASE_URL}/all-songs.json`);
+      if (res.ok) {
+        const allSongs = await res.json();
+        await db.songs.bulkPut(allSongs);
+        await SearchEngine.indexLyrics(allSongs);
+        onProgress(allSongs.length, allSongs.length);
+        return;
+      }
+    } catch (e) {
+      console.warn('Bundle download failed, falling back to batch:', e);
+    }
+
     const allSongs = await db.songIndex.toArray();
     const total = allSongs.length;
     let downloaded = 0;
