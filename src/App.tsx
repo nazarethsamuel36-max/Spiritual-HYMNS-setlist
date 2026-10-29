@@ -10,14 +10,12 @@ import { PersonalSongs } from './components/PersonalSongs';
 import { MyVersions } from './components/MyVersions';
 import { SystemSettings } from './components/SystemSettings';
 import { InstallPrompt } from './components/InstallPrompt';
-import { ContextRail } from './components/ContextRail';
 import { SetupGatekeeper } from './components/SetupGatekeeper';
 import { SetlistService } from './services/SetlistService';
 import { useWorkflowStore } from './store/workflowStore';
 import { useIsMobile } from './hooks/useMediaQuery';
 import { db, ensureUid } from './db/Database';
 import { generateUUID } from './utils/uuid';
-import { batchDownloadSongs, wakeUpSync } from './services/DataService';
 import { ShareService } from './services/ShareService';
 import { authenticateDevice, clearAdminSession } from './services/DeviceAuthService';
 import { AdminScreen } from './components/AdminScreen';
@@ -33,22 +31,20 @@ function App() {
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
   const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
   const [isAddingPersonalSong, setIsAddingPersonalSong] = useState(false);
-  const [syncToast, setSyncToast] = useState<'idle' | 'syncing' | 'done'>('idle');
   const [appToast, setAppToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
-  const [isSyncingHeader, setIsSyncingHeader] = useState(false);
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   const [showAdminScreen, setShowAdminScreen] = useState(false);
   const [showAdminButton, setShowAdminButton] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isExporting, setIsExporting] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
+  const [isSidebarOverlayOpen, setIsSidebarOverlayOpen] = useState(false);
   
   const sidebar = useWorkflowStore((s) => s.sidebar);
   const reader = useWorkflowStore((s) => s.reader);
   const readerMode = useWorkflowStore((s) => s.readerMode);
   const mobileActivePane = useWorkflowStore((s) => s.mobileActivePane);
   const showSettings = useWorkflowStore((s) => s.showSettings);
-  const showContextRail = useWorkflowStore((s) => s.showContextRail);
   const isAdminAuthenticated = useWorkflowStore((s) => s.isAdminAuthenticated);
   const setAdminAuthenticated = useWorkflowStore((s) => s.setAdminAuthenticated);
   const openSong = useWorkflowStore((s) => s.openSong);
@@ -389,23 +385,6 @@ function App() {
     setShowAdminButton(true);
   };
 
-  const handleHeaderSync = async () => {
-    if (isSyncingHeader) return;
-    setIsSyncingHeader(true);
-    setSyncToast('syncing');
-    try {
-      // Run sync (patches changed songs) + download (pulls new songs)
-      await wakeUpSync('manual');
-      await batchDownloadSongs(() => {});
-    } catch (e) {
-      console.error('Header sync failed:', e);
-    } finally {
-      setIsSyncingHeader(false);
-      setSyncToast('done');
-      setTimeout(() => setSyncToast('idle'), 2000);
-    }
-  };
-
   const handleExportData = async () => {
     if (isExporting) return;
     setIsExporting(true);
@@ -504,36 +483,31 @@ function App() {
             </div>
           )}
 
-          {/* Sync toast — fixed so it floats at bottom above footer bar */}
-          {syncToast !== 'idle' && (
-            <div
-              className="fixed bottom-20 md:bottom-6 left-1/2 -translate-x-1/2 z-[500] flex items-center gap-2 px-4 py-2.5 rounded-full shadow-2xl text-sm font-semibold pointer-events-none animate-in fade-in slide-in-from-bottom-2 duration-200"
-              style={{
-                background: 'var(--color-brand)',
-                color: 'var(--color-on-inverse)',
-              }}
-            >
-              {syncToast === 'syncing' ? (
-                <>
-                  <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    style={{ color: 'var(--color-on-inverse)' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                  Refreshing...
-                </>
-              ) : (
-                <>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    style={{ color: 'var(--color-on-inverse)' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Up to date
-                </>
-              )}
+          {/* Desktop Collapsed Sidebar Bar when reading a song */}
+          {!isMobile && hasActiveSong && !isSidebarOverlayOpen && (
+            <div className="w-12 h-full flex flex-col items-center py-4 bg-slate-50 border-r border-slate-200 z-30 flex-shrink-0 select-none">
+              <button
+                onClick={() => setIsSidebarOverlayOpen(true)}
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-slate-600 hover:text-slate-900 hover:bg-slate-200 transition-all shadow-xs"
+                title="Open Navigation"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
             </div>
           )}
-          {showSidebar && (
-            <div className="sidebar-pane">
+
+          {/* Desktop Overlay Backdrop: transparent so reader color does not change at all */}
+          {!isMobile && hasActiveSong && isSidebarOverlayOpen && (
+            <div
+              onClick={() => setIsSidebarOverlayOpen(false)}
+              className="fixed inset-0 bg-transparent z-40"
+            />
+          )}
+
+          {showSidebar && (!hasActiveSong || isMobile || isSidebarOverlayOpen) && (
+            <div className={`sidebar-pane ${!isMobile && hasActiveSong && isSidebarOverlayOpen ? 'fixed left-0 top-0 bottom-0 z-50 shadow-2xl animate-in slide-in-from-left duration-200' : ''}`}>
               <header className="sidebar-header">
                 {librarySearchActive && isSongsTab ? (
                   /* Search header state — occupies the entire header */
@@ -580,21 +554,6 @@ function App() {
                         </svg>
                       </button>
                     )}
-                    {/* Sync/Refresh button */}
-                    <button
-                      onClick={handleHeaderSync}
-                      disabled={isSyncingHeader}
-                      className="p-2 text-slate-400 hover:text-[var(--color-brand)] rounded-full transition-all disabled:opacity-50"
-                      aria-label="Sync library"
-                      title="Sync library"
-                    >
-                      <svg
-                        className={`w-5 h-5 ${isSyncingHeader ? 'animate-spin' : ''}`}
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                      </svg>
-                    </button>
                     {isPersonalTab && (
                       <>
                         <input
@@ -700,7 +659,7 @@ function App() {
             </div>
           )}
 
-          {!isMobile && showContextRail && hasActiveSong && <ContextRail />}
+          {/* Context Rail disabled on desktop for clean reader experience */}
 
           {isMobile && mobileActivePane === 'sidebar' && (
             <nav className="mobile-bottom-nav">

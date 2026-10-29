@@ -1,8 +1,4 @@
-import { db } from '../db/Database';
-import { useLiveQuery } from 'dexie-react-hooks';
-import { batchDownloadSongs, wakeUpSync } from '../services/DataService';
 import { UserDataPackageService } from '../services/UserDataPackage';
-import { usePWA } from '../hooks/usePWA';
 import { useState, useEffect } from 'react';
 
 type ThemeMode = 'light' | 'dark';
@@ -15,30 +11,6 @@ function getStoredTheme(): ThemeMode {
 }
 
 const FAQS: { q: string; a: string }[] = [
-  {
-    q: 'How do I install the app?',
-    a: 'Open the browser menu (⋮) and tap \'Add to Home Screen\' or \'Install\' / \'Download\'. After installing, open the app shortcut from your home screen to use it like a normal app.',
-  },
-  {
-    q: 'How do I download songs for offline use?',
-    a: 'Tap \'Refresh\' while you are online. This updates the song library on your device so the downloaded songs are available when you are offline.',
-  },
-  {
-    q: 'Can I use the app offline?',
-    a: 'Yes. Songs downloaded to your device, along with your locally stored personal songs and setlists, can be used offline.',
-  },
-  {
-    q: 'I can\'t see the latest songs. What should I do?',
-    a: 'Make sure you are online and tap \'Refresh\' to update the song library.',
-  },
-  {
-    q: 'I can\'t see any songs / the song list is empty. What should I do?',
-    a: 'Make sure you are online and tap \'Refresh\'. If this is the first download, the app needs an internet connection to get the song library.',
-  },
-  {
-    q: 'I can see a song number, but the title/song isn\'t showing correctly. What should I do?',
-    a: 'Tap \'Refresh\' to update the local song data and try again.',
-  },
   {
     q: 'How do I create a Personal Song?',
     a: 'Go to Personal → +, enter the song information and content, then save it.',
@@ -58,20 +30,7 @@ const FAQS: { q: string; a: string }[] = [
 ];
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
-  const stats = useLiveQuery(async () => {
-    const songCount = await db.songs.count();
-    const syncMeta = await db.meta.get('last_sync_time');
-    return { songCount, syncMeta };
-  }, []);
-
-  const [isDownloading, setIsDownloading] = useState(false);
-  const [downloadProgress, setDownloadProgress] = useState(0);
-  const [statusMsg, setStatusMsg] = useState('');
-  const [isSyncing, setIsSyncing] = useState(false);
-  const [showSongManagement, setShowSongManagement] = useState(true);
   const [theme, setTheme] = useState<ThemeMode>(getStoredTheme);
-  const [hasOfflineLibrary, setHasOfflineLibrary] = useState<boolean>(false);
-  const [showOfflineRemovalNotice, setShowOfflineRemovalNotice] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [showDataBackup, setShowDataBackup] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -80,71 +39,11 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
   const [importReport, setImportReport] = useState<string | null>(null);
   const [showImportSuccess, setShowImportSuccess] = useState(false);
 
-  useEffect(() => {
-    const refreshOfflineState = async () => {
-      const count = await db.songs.count();
-      setHasOfflineLibrary(count > 0);
-    };
-    void refreshOfflineState();
-  }, [stats?.songCount]);
-
   // Light/dark mode
   useEffect(() => {
     document.body.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
-
-  const { isIOS, installApp, showInstallInstructions, setShowInstallInstructions } = usePWA();
-
-  const handleDownloadSongs = async () => {
-    setIsDownloading(true);
-    setStatusMsg('Checking...');
-    setDownloadProgress(0);
-    setShowOfflineRemovalNotice(false);
-
-    // 1. Download offline library
-    void batchDownloadSongs((percent, message) => {
-      setDownloadProgress(percent);
-      setStatusMsg(message || 'Downloading songs...');
-    }).then((result) => {
-      if (result === 'skipped') {
-        setStatusMsg('Library already available offline');
-      } else if (result === 'completed') {
-        setStatusMsg('Download complete');
-        setHasOfflineLibrary(true);
-      } else if (result === 'error') {
-        setStatusMsg('Download failed');
-      }
-      setIsDownloading(false);
-    }).catch((err) => {
-      console.error('Download error:', err);
-      setStatusMsg('Download failed');
-      setIsDownloading(false);
-    });
-
-    // 2. Trigger app install (native prompt if available, instructions modal if not)
-    void installApp();
-  };
-
-  const handleDeleteOfflineLibrary = async () => {
-    if (!confirm('Remove the downloaded offline library? This will not delete your settings or setlists.')) return;
-    await db.songs.clear();
-    await db.songIndex.clear();
-    await db.meta.delete('last_sync_time');
-    setHasOfflineLibrary(false);
-    setShowOfflineRemovalNotice(true);
-    setStatusMsg('Offline library removed');
-    setDownloadProgress(0);
-  };
-
-  const handleSyncNow = async () => {
-    setIsSyncing(true);
-    try {
-      await wakeUpSync('manual');
-    } finally {
-      setIsSyncing(false);
-    }
-  };
 
   const handleExportData = async () => {
     setIsExporting(true);
@@ -159,10 +58,8 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
       a.download = `worship-userdata-${date}.json`;
       a.click();
       URL.revokeObjectURL(url);
-      setStatusMsg('Export complete');
     } catch (err) {
       console.error('❌ Export failed:', err);
-      setStatusMsg('Export failed');
     } finally {
       setIsExporting(false);
     }
@@ -208,107 +105,6 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
         <div className="p-6 space-y-6 overflow-y-auto flex-1">
           <div className="space-y-3">
-            {/* Song Management */}
-            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
-              <button
-                type="button"
-                onClick={() => setShowSongManagement((prev) => !prev)}
-                className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors"
-              >
-                <span className="text-sm font-bold text-slate-700">Song Management</span>
-                <span className="text-slate-400">{showSongManagement ? '▾' : '▸'}</span>
-              </button>
-              {showSongManagement && (
-                <div className="border-t border-slate-100 px-4 py-3 space-y-2">
-                  <button
-                    type="button"
-                    onClick={handleDownloadSongs}
-                    disabled={isDownloading}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-brand)] text-[var(--color-on-inverse)] rounded-2xl hover:opacity-90 transition-all group disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
-                  >
-                    <div className="text-left">
-                      <div className="font-bold text-sm">
-                        {isDownloading ? statusMsg : 'Download Songs & Install App'}
-                      </div>
-                      <div className="text-xs opacity-80 mt-0.5">
-                        {isDownloading ? `${downloadProgress}%` : 'Download ~728 songs (5MB) & add app to home screen'}
-                      </div>
-                    </div>
-                    <svg className="w-5 h-5 flex-shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                  </button>
-
-                  {hasOfflineLibrary && (
-                    <button
-                      type="button"
-                      onClick={handleDeleteOfflineLibrary}
-                      className="w-full flex items-center justify-between p-3 bg-red-50 border border-red-200 rounded-xl hover:bg-red-100 transition-all group"
-                    >
-                      <div className="text-left">
-                        <div className="font-bold text-red-700 text-xs">Delete Offline Library</div>
-                        <div className="text-[11px] text-red-500">Remove downloaded songs from this device</div>
-                      </div>
-                      <svg className="w-4 h-4 text-red-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-4v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                      </svg>
-                    </button>
-                  )}
-
-                  <button
-                    type="button"
-                    onClick={handleSyncNow}
-                    disabled={isSyncing}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    <div className="text-left">
-                      <div className="font-bold text-slate-700 group-hover:text-blue-600">
-                        {isSyncing ? 'Syncing...' : 'Sync Now'}
-                      </div>
-                      <div className="text-xs text-slate-400">Check for updates from server</div>
-                    </div>
-                    <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                  </button>
-
-                  <div className="grid grid-cols-2 gap-2">
-                    <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Local Library</span>
-                      <span className="text-sm font-bold text-slate-700">{stats?.songCount ?? 0} Songs</span>
-                    </div>
-                    <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
-                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Last Update</span>
-                      <span className="text-xs font-bold text-slate-700">
-                        {stats?.syncMeta ? new Date(stats.syncMeta.value as number).toLocaleDateString() : 'Never'}
-                      </span>
-                    </div>
-                  </div>
-
-                  {isDownloading && downloadProgress > 0 && (
-                    <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                      <div className="mb-2 flex items-center justify-between text-xs font-bold text-slate-600">
-                        <span>{statusMsg}</span>
-                        <span>{downloadProgress}%</span>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2.5">
-                        <div
-                          className="bg-emerald-600 h-2.5 rounded-full transition-all"
-                          style={{ width: `${downloadProgress}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  )}
-
-                  {showOfflineRemovalNotice && (
-                    <div className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600">
-                      Offline library removed. Songs are now being loaded directly from the server. Download the library anytime for offline access.
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-
             {/* Data Backup */}
             <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
               <button
@@ -491,126 +287,6 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
               className="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all"
             >
               Done
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* iOS Instructions Modal */}
-      {/* Install Instructions Modal (for iOS or browsers without native auto-prompt) */}
-      {showInstallInstructions && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[300] flex items-center justify-center p-4 pointer-events-auto">
-          <div className="bg-[var(--color-surface)] rounded-2xl shadow-2xl max-w-sm w-full p-6 space-y-4 animate-in fade-in zoom-in-95 duration-200">
-            <div className="text-center space-y-2">
-              <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md mx-auto">
-                <img src="/pwa-192x192.png" alt="BBF Song Book" className="w-full h-full object-cover" />
-              </div>
-              <h2 className="text-lg font-semibold text-slate-900">Install BBF Song Book</h2>
-              <p className="text-sm text-slate-600">
-                {isIOS
-                  ? 'Follow these steps to add BBF Song Book to your home screen'
-                  : 'Follow these steps in your browser to install the app'}
-              </p>
-            </div>
-
-            {/* Download progress status inside modal */}
-            {(isDownloading || downloadProgress > 0) && (
-              <div className="rounded-xl border border-blue-200 bg-blue-50/80 p-3 space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-1.5 font-semibold text-blue-900">
-                    {downloadProgress >= 100 ? (
-                      <span className="text-emerald-700 font-bold">✅ Offline library downloaded</span>
-                    ) : (
-                      <>
-                        <div className="h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
-                        <span>Downloading library in background...</span>
-                      </>
-                    )}
-                  </div>
-                  <span className="font-bold text-blue-700">{downloadProgress}%</span>
-                </div>
-                <div className="h-2 w-full overflow-hidden rounded-full bg-blue-200/60">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300"
-                    style={{ width: `${downloadProgress}%` }}
-                  />
-                </div>
-                {statusMsg && (
-                  <p className="text-[11px] text-slate-500 truncate">{statusMsg}</p>
-                )}
-              </div>
-            )}
-
-            <div className="bg-blue-50 rounded-xl p-4 space-y-3">
-              {isIOS ? (
-                <>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Tap the Share button</p>
-                      <p className="text-xs text-slate-600">Look for the square icon with an arrow pointing up</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Scroll down and tap</p>
-                      <p className="text-xs text-slate-600">"Add to Home Screen"</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Tap "Add"</p>
-                      <p className="text-xs text-slate-600">App will appear on your home screen</p>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">1</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Open Browser Menu</p>
-                      <p className="text-xs text-slate-600">Tap the three dots (⋮) or menu icon in your browser</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">2</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Select "Add to Home Screen"</p>
-                      <p className="text-xs text-slate-600">Or look for "Install app" / "Download app"</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-3">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-6 w-6 rounded-full bg-blue-600 text-white text-xs font-bold">3</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-900">Confirm Installation</p>
-                      <p className="text-xs text-slate-600">App icon will be added to your home screen</p>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setShowInstallInstructions(false)}
-              className="w-full py-2.5 bg-blue-600 text-white rounded-xl font-medium text-xs hover:bg-blue-700 transition-colors"
-            >
-              Got it
             </button>
           </div>
         </div>
