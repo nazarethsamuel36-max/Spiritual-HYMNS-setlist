@@ -1,4 +1,5 @@
 import { UserDataPackageService } from '../services/UserDataPackage';
+import { isIOS } from '../utils/platform';
 import { useState, useEffect } from 'react';
 
 type ThemeMode = 'light' | 'dark';
@@ -10,26 +11,39 @@ function getStoredTheme(): ThemeMode {
   return saved === 'dark' ? 'dark' : 'light';
 }
 
-const FAQS: { q: string; a: string }[] = [
+interface FaqItem {
+  q: string;
+  a: string;
+  ios?: boolean;
+}
+
+const ALL_FAQS: FaqItem[] = [
   {
     q: 'How do I create a Personal Song?',
     a: 'Go to Personal → +, enter the song information and content, then save it.',
+    ios: false,
   },
   {
     q: 'What is the difference between a Personal Song and a Version?',
     a: 'A Personal Song is a song you create yourself. A Version is your customized version of an existing song from the main library.',
+    ios: false,
   },
   {
     q: 'How do I create and use a Setlist?',
     a: 'Open Setlists, create a setlist, and add the songs you want. You can then open the setlist to navigate through its songs.',
+    ios: true,
   },
   {
     q: 'How do I back up or transfer my songs and setlists?',
     a: 'Go to Settings → Data Backup → Export My Data. This downloads a JSON file named \'worship-userdata-YYYY-MM-DD.json\' (e.g. \'worship-userdata-2026-08-18.json\'). On another device, go to Settings → Data Backup → Import Backup and select that same file to restore your data.',
+    ios: false,
   },
 ];
 
 export function SystemSettings({ onClose }: { onClose: () => void }) {
+  const isApple = isIOS();
+  const faqs = ALL_FAQS.filter((faq) => !isApple || faq.ios);
+
   const [theme, setTheme] = useState<ThemeMode>(getStoredTheme);
   const [isExporting, setIsExporting] = useState(false);
   const [showDataBackup, setShowDataBackup] = useState(false);
@@ -105,77 +119,79 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
 
         <div className="p-6 space-y-6 overflow-y-auto flex-1">
           <div className="space-y-3">
-            {/* Data Backup */}
-            <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
-              <button
-                type="button"
-                onClick={() => setShowDataBackup((prev) => !prev)}
-                className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors"
-              >
-                <span className="text-sm font-bold text-slate-700">Data Backup</span>
-                <span className="text-slate-400">{showDataBackup ? '▾' : '▸'}</span>
-              </button>
-              {showDataBackup && (
-                <div className="border-t border-slate-100 px-4 py-3 space-y-2">
-                  <button
-                    type="button"
-                    onClick={handleExportData}
-                    disabled={isExporting}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    <div className="text-left">
-                      <div className="font-bold text-slate-700 group-hover:text-blue-600">
-                        {isExporting ? 'Exporting...' : 'Export My Data'}
+            {/* Data Backup (Android / Desktop only) */}
+            {!isApple && (
+              <div className="bg-[var(--color-surface)] border border-slate-200 rounded-2xl overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setShowDataBackup((prev) => !prev)}
+                  className="flex w-full items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors"
+                >
+                  <span className="text-sm font-bold text-slate-700">Data Backup</span>
+                  <span className="text-slate-400">{showDataBackup ? '▾' : '▸'}</span>
+                </button>
+                {showDataBackup && (
+                  <div className="border-t border-slate-100 px-4 py-3 space-y-2">
+                    <button
+                      type="button"
+                      onClick={handleExportData}
+                      disabled={isExporting}
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-blue-400 hover:bg-blue-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <div className="text-left">
+                        <div className="font-bold text-slate-700 group-hover:text-blue-600">
+                          {isExporting ? 'Exporting...' : 'Export My Data'}
+                        </div>
+                        <div className="text-xs text-slate-400">
+                          Download a backup of personal songs, versions, and setlists
+                        </div>
                       </div>
-                      <div className="text-xs text-slate-400">
-                        Download a backup of personal songs, versions, and setlists
+                      <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => document.getElementById('udp-import-input')?.click()}
+                      disabled={isImporting}
+                      className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <div className="text-left">
+                        <div className="font-bold text-slate-700 group-hover:text-emerald-600">
+                          {isImporting ? 'Importing...' : 'Import Backup'}
+                        </div>
+                        <div className="text-xs text-slate-400">
+                          Restore from a backup file (existing data is never overwritten)
+                        </div>
                       </div>
-                    </div>
-                    <svg className="w-5 h-5 text-slate-300 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => document.getElementById('udp-import-input')?.click()}
-                    disabled={isImporting}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--color-surface)] border border-slate-200 rounded-2xl hover:border-emerald-400 hover:bg-emerald-50 transition-all group disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    <div className="text-left">
-                      <div className="font-bold text-slate-700 group-hover:text-emerald-600">
-                        {isImporting ? 'Importing...' : 'Import Backup'}
+                      <svg className="w-5 h-5 text-slate-300 group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                    </button>
+                    <input
+                      id="udp-import-input"
+                      type="file"
+                      accept="application/json,.json"
+                      className="hidden"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) void handleImportFile(file);
+                        e.target.value = '';
+                      }}
+                    />
+                    {importReport && (
+                      <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-700 whitespace-pre-line font-medium">
+                        {importReport}
                       </div>
-                      <div className="text-xs text-slate-400">
-                        Restore from a backup file (existing data is never overwritten)
-                      </div>
-                    </div>
-                    <svg className="w-5 h-5 text-slate-300 group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                  </button>
-                  <input
-                    id="udp-import-input"
-                    type="file"
-                    accept="application/json,.json"
-                    className="hidden"
-                    onChange={(e) => {
-                      const file = e.target.files?.[0];
-                      if (file) void handleImportFile(file);
-                      e.target.value = '';
-                    }}
-                  />
-                  {importReport && (
-                    <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-700 whitespace-pre-line font-medium">
-                      {importReport}
-                    </div>
-                  )}
-                  <p className="text-[11px] text-slate-400 leading-relaxed">
-                    The backup file can be imported on another device. Shared songs and setlists are included and
-                    remain shared.
-                  </p>
-                </div>
-              )}
-            </div>
+                    )}
+                    <p className="text-[11px] text-slate-400 leading-relaxed">
+                      The backup file can be imported on another device. Shared songs and setlists are included and
+                      remain shared.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Appearance — Light / Dark */}
             <div className="bg-[var(--color-surface)] p-4 rounded-2xl border border-slate-200">
@@ -204,7 +220,7 @@ export function SystemSettings({ onClose }: { onClose: () => void }) {
                 <span className="text-sm font-bold text-slate-700">FAQs</span>
               </div>
               <div className="divide-y divide-slate-200 max-h-64 overflow-y-auto">
-                {FAQS.map((faq, i) => (
+                {faqs.map((faq, i) => (
                   <div key={i}>
                     <button
                       type="button"
