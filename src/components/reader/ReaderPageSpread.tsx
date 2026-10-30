@@ -24,6 +24,19 @@ interface AdjacentSongData {
   transpose: number;
 }
 
+interface TouchPoint {
+  x: number;
+  y: number;
+}
+
+interface TouchAwarePageFlip extends PageFlip {
+  isUserTouch: boolean;
+  isUserMove: boolean;
+  startUserTouch: (point: TouchPoint) => void;
+  userStop: (point: TouchPoint, wasSwipe?: boolean) => void;
+  ui?: { touchPoint: unknown };
+}
+
 interface ReaderPageSpreadProps {
   rawChordPro: string;
   fontSize: number;
@@ -281,6 +294,80 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
         clickEventForward: true,
       });
 
+      const trackedFlip = pageFlip as TouchAwarePageFlip;
+      const startUserTouch = trackedFlip.startUserTouch.bind(trackedFlip);
+      const userStop = trackedFlip.userStop.bind(trackedFlip);
+      const touchGesture = {
+        active: false,
+        started: false,
+        moved: false,
+        startedAt: 0,
+        origin: { x: 0, y: 0 },
+        lastPoint: { x: 0, y: 0 },
+      };
+      const getLocalTouchPoint = (touch: Touch): TouchPoint => {
+        const rect = hostEl.getBoundingClientRect();
+        return { x: touch.clientX - rect.left, y: touch.clientY - rect.top };
+      };
+      const onTouchStart = (event: TouchEvent) => {
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        const point = getLocalTouchPoint(touch);
+        touchGesture.active = true;
+        touchGesture.started = false;
+        touchGesture.moved = false;
+        touchGesture.startedAt = Date.now();
+        touchGesture.origin = point;
+        touchGesture.lastPoint = point;
+      };
+      const onTouchMove = (event: TouchEvent) => {
+        if (!touchGesture.active) return;
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        const point = getLocalTouchPoint(touch);
+        const deltaX = point.x - touchGesture.origin.x;
+        const deltaY = point.y - touchGesture.origin.y;
+        touchGesture.lastPoint = point;
+        touchGesture.moved = Math.hypot(deltaX, deltaY) > 5;
+
+        if (!touchGesture.started && Math.abs(deltaX) > 5 && Math.abs(deltaX) > Math.abs(deltaY)) {
+          touchGesture.started = true;
+          startUserTouch(touchGesture.origin);
+        }
+      };
+      const onTouchEnd = () => {
+        if (!touchGesture.active) return;
+        if (!touchGesture.moved && Date.now() - touchGesture.startedAt >= 250) {
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+        }
+        touchGesture.active = false;
+      };
+      const onTouchCancel = () => {
+        if (!touchGesture.active) return;
+        if (touchGesture.moved && trackedFlip.isUserTouch) {
+          userStop(touchGesture.lastPoint);
+        } else {
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+        }
+        if (trackedFlip.ui) trackedFlip.ui.touchPoint = null;
+        touchGesture.active = false;
+      };
+
+      trackedFlip.startUserTouch = (point) => {
+        if (!touchGesture.active || Date.now() - touchGesture.startedAt < 240) return;
+        if (touchGesture.started && trackedFlip.isUserTouch) return;
+        if (Math.hypot(point.x - touchGesture.origin.x, point.y - touchGesture.origin.y) > 20) return;
+        startUserTouch(point);
+      };
+
+      const interactionElement = containerRef.current;
+      interactionElement?.addEventListener('touchstart', onTouchStart, true);
+      interactionElement?.addEventListener('touchmove', onTouchMove, true);
+      interactionElement?.addEventListener('touchend', onTouchEnd, true);
+      interactionElement?.addEventListener('touchcancel', onTouchCancel, true);
+
       // Clone staging page elements and load into PageFlip
       const stagingChildren = Array.from(stagingRef.current.children) as HTMLElement[];
       const clonedPages = stagingChildren.map((child) => child.cloneNode(true) as HTMLElement);
@@ -332,6 +419,10 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
       pageFlipInstance.current = pageFlip;
 
       return () => {
+        interactionElement?.removeEventListener('touchstart', onTouchStart, true);
+        interactionElement?.removeEventListener('touchmove', onTouchMove, true);
+        interactionElement?.removeEventListener('touchend', onTouchEnd, true);
+        interactionElement?.removeEventListener('touchcancel', onTouchCancel, true);
         if (pageFlipInstance.current) {
           try {
             pageFlipInstance.current.destroy();
