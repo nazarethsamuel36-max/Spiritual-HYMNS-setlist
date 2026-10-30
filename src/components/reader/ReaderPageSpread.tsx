@@ -301,6 +301,7 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
         active: false,
         started: false,
         moved: false,
+        axis: null as 'horizontal' | 'vertical' | null,
         startedAt: 0,
         origin: { x: 0, y: 0 },
         lastPoint: { x: 0, y: 0 },
@@ -312,10 +313,12 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
       const onTouchStart = (event: TouchEvent) => {
         const touch = event.changedTouches[0];
         if (!touch) return;
+        if (!isDualPage) event.stopImmediatePropagation();
         const point = getLocalTouchPoint(touch);
         touchGesture.active = true;
         touchGesture.started = false;
         touchGesture.moved = false;
+        touchGesture.axis = null;
         touchGesture.startedAt = Date.now();
         touchGesture.origin = point;
         touchGesture.lastPoint = point;
@@ -330,13 +333,80 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
         touchGesture.lastPoint = point;
         touchGesture.moved = Math.hypot(deltaX, deltaY) > 5;
 
-        if (!touchGesture.started && Math.abs(deltaX) > 5 && Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (!touchGesture.axis && Math.hypot(deltaX, deltaY) >= 10) {
+          touchGesture.axis = Math.abs(deltaX) > Math.abs(deltaY) ? 'horizontal' : 'vertical';
+        }
+
+        if (!isDualPage) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+          if (trackedFlip.ui) trackedFlip.ui.touchPoint = null;
+          if (touchGesture.axis === 'horizontal') touchGesture.started = true;
+          return;
+        }
+
+        if (touchGesture.axis === 'vertical') {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+          if (trackedFlip.ui) trackedFlip.ui.touchPoint = null;
+          return;
+        }
+
+        if (!touchGesture.started && touchGesture.axis === 'horizontal' && Math.abs(deltaX) > 5) {
           touchGesture.started = true;
           startUserTouch(touchGesture.origin);
         }
       };
-      const onTouchEnd = () => {
+      const onTouchEnd = (event: TouchEvent) => {
         if (!touchGesture.active) return;
+
+        const touch = event.changedTouches[0];
+        if (touch) {
+          touchGesture.lastPoint = getLocalTouchPoint(touch);
+        }
+
+        const deltaX = touchGesture.lastPoint.x - touchGesture.origin.x;
+        const deltaY = touchGesture.lastPoint.y - touchGesture.origin.y;
+        const swipeThreshold = Math.max(40, pageFlip.getBoundsRect().pageWidth * 0.18);
+        const verticalSwipeThreshold = Math.max(40, pageFlip.getBoundsRect().height * 0.1);
+        const isVerticalSwipe = !isDualPage
+          && touchGesture.axis === 'vertical'
+          && Math.abs(deltaY) >= verticalSwipeThreshold
+          && Math.abs(deltaY) > Math.abs(deltaX) * 1.2;
+        const isIntentionalSwipe = touchGesture.started
+          && Math.abs(deltaX) >= swipeThreshold
+          && Math.abs(deltaX) > Math.abs(deltaY) * 1.2;
+
+        if (!isDualPage) {
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+          if (trackedFlip.ui) trackedFlip.ui.touchPoint = null;
+          touchGesture.active = false;
+          event.stopImmediatePropagation();
+          if (isVerticalSwipe && deltaY > 0) {
+            onNextSong?.();
+          } else if (isIntentionalSwipe) {
+            if (deltaX < 0) pageFlip.flipNext('bottom');
+            else pageFlip.flipPrev('bottom');
+          }
+          return;
+        }
+
+        if (isIntentionalSwipe) {
+          trackedFlip.isUserTouch = false;
+          trackedFlip.isUserMove = false;
+          if (trackedFlip.ui) trackedFlip.ui.touchPoint = null;
+          touchGesture.active = false;
+          event.stopImmediatePropagation();
+          if (deltaX < 0) pageFlip.flipNext('bottom');
+          else pageFlip.flipPrev('bottom');
+          return;
+        }
+
         if (!touchGesture.moved && Date.now() - touchGesture.startedAt >= 250) {
           trackedFlip.isUserTouch = false;
           trackedFlip.isUserMove = false;
@@ -356,7 +426,7 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
       };
 
       trackedFlip.startUserTouch = (point) => {
-        if (!touchGesture.active || Date.now() - touchGesture.startedAt < 240) return;
+        if (!touchGesture.active || touchGesture.axis === 'vertical' || Date.now() - touchGesture.startedAt < 240) return;
         if (touchGesture.started && trackedFlip.isUserTouch) return;
         if (Math.hypot(point.x - touchGesture.origin.x, point.y - touchGesture.origin.y) > 20) return;
         startUserTouch(point);
@@ -540,7 +610,7 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
         ref={containerRef}
         className="relative w-full h-full flex flex-col justify-center items-center overflow-hidden select-none bg-[var(--color-surface,#fcfbf9)]"
         style={{
-          touchAction: 'pan-y',
+          touchAction: isDualPage ? 'auto' : 'none',
         }}
       >
         {/* Mobile Persistent Left Spine Binding (< 600px) — touches left edge completely */}
