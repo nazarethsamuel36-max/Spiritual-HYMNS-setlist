@@ -34,9 +34,7 @@ export function ReaderHeader({
   onRefreshSong,
   source,
 }: ReaderHeaderProps) {
-  const showContextRail = useWorkflowStore((s) => s.showContextRail);
-  const setShowContextRail = useWorkflowStore((s) => s.setShowContextRail);
-  const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
+    const activeArrangementId = useWorkflowStore((s) => s.reader.type === 'song' ? s.reader.activeArrangementId : null);
   const setActiveArrangementId = useWorkflowStore((s) => s.setActiveArrangementId);
   const lastReaderMode = useWorkflowStore((s) => s.lastReaderMode);
   const reader = useWorkflowStore((s) => s.reader);
@@ -158,72 +156,178 @@ export function ReaderHeader({
 
   return (
     <>
-    <div className="reader-header flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-transparent z-40 relative pl-4 pr-2 md:px-8 py-1.5 flex flex-col w-full">
+    <div className="reader-header flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-b border-slate-300 z-40 relative px-4 md:px-6 py-2 flex flex-col w-full">
       {/* ── DESKTOP HEADER (hidden on mobile unless admin) ── */}
-      <div className={`max-w-4xl mx-auto w-full flex-col gap-1.5 ${isAdminAuthenticated ? 'flex' : 'hidden md:flex'}`}>
+      <div className={`w-full ${isAdminAuthenticated ? 'flex flex-col' : 'hidden md:flex md:items-center md:justify-between'}`}>
 
-        {/* TOP ROW: Title + More */}
-        <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center space-x-2 min-w-0 flex-1">
-            <div className="min-w-0">
-              <h1 className="text-[28px] leading-tight font-normal font-sans text-slate-900 tracking-tight break-words">
-                {formatSongTitle(song.title)}
-              </h1>
-<div className="flex items-center space-x-1.5">
-                <span className="text-slate-500 text-[10px] font-semibold uppercase tracking-wider truncate">
-                  {song.artist || 'Unknown Artist'}
-                </span>
-                {!isNonOfficial && (
-                  <>
-                    <span className="text-slate-300 text-[9px]">•</span>
-                    <span className="text-slate-500 text-[10px] font-medium">{song.songNumber}</span>
-                  </>
-                )}
-              </div>
-            </div>
+        {/* SINGLE CLEAN LINE: Spacer + Centered Title + Actions */}
+        <div className="relative flex items-center justify-between w-full min-h-[38px]">
+          {/* Left spacer so title centers relative to the full spread */}
+          <div className="w-8 flex-shrink-0" />
+
+          {/* Absolute Centered Title (middle of the spread / divider) */}
+          <div className="absolute left-1/2 -translate-x-1/2 flex items-baseline gap-2.5 pointer-events-none select-none max-w-[75%] justify-center text-center">
+            {!isNonOfficial && (
+              <span className="text-slate-400 text-[24px] font-bold flex-shrink-0 leading-[1.1]">
+                {song.songNumber}
+              </span>
+            )}
+            <h1 className="text-[26px] leading-tight font-normal font-sans text-slate-900 tracking-tight truncate">
+              {formatSongTitle(song.title)}
+            </h1>
+            {song.artist && song.artist.toLowerCase() !== 'unknown artist' && (
+              <span className="text-slate-500 text-[11px] font-semibold uppercase tracking-wider truncate">
+                {song.artist}
+              </span>
+            )}
           </div>
 
+          {/* Right Actions: Admin tools + Three dots (⋮) button */}
           <div className="flex items-center space-x-1.5 flex-shrink-0">
-            <button
-              onClick={() => setShowContextRail(!showContextRail)}
-              className={`hidden md:flex items-center justify-center w-8 h-8 rounded-lg border transition-all ${
-                showContextRail
-                  ? 'bg-slate-800 border-slate-800 text-[var(--color-on-inverse)]'
-                  : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
-              }`}
-              title="Toggle Context Rail"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </button>
+            {isAdminAuthenticated && (
+              <div className="flex items-center gap-2 mr-2">
+                <span className="text-[10px] font-medium text-slate-600">
+                  {isPublishLoading ? 'Saving...' : song.is_active ? 'Visible' : 'Hidden'}
+                </span>
+                <VisibilitySwitch
+                  checked={song.is_active !== false}
+                  onChange={handlePublishToggle}
+                  disabled={isPublishLoading}
+                />
+              </div>
+            )}
 
             {!isAdminAuthenticated && (
-              <div className="relative">
-                <button
-                  onClick={() => { setIsMoreOpen(!isMoreOpen); setMoreTab('main'); }}
-                  className={`w-8 h-8 border rounded-lg shadow-sm transition-all flex items-center justify-center active:scale-95 ${
-                    isMoreOpen
-                      ? 'bg-slate-900 border-slate-900 text-[var(--color-on-inverse)]'
-                      : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
-                  }`}
-                  title="More Actions"
-                >
-                  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                  </svg>
-                </button>
+              <div className="flex items-center gap-2">
+                {/* Desktop Transpose Bar beside 3 dots */}
+                <div className="flex items-center gap-1.5 px-2.5 h-8 bg-slate-50 border border-slate-300 rounded-lg shadow-2xs">
+                  <div className="flex items-center gap-1 text-xs text-slate-600 font-semibold select-none mr-1">
+                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Key</span>
+                    <span className="font-black text-slate-800 text-xs">
+                      {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
+                    </span>
+                    {transpose !== 0 && (
+                      <span className="text-[10px] font-bold text-amber-600">
+                        ({transpose > 0 ? `+${transpose}` : transpose})
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <button
+                      onClick={onTransposeDown}
+                      className="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-black transition-colors active:scale-95 shadow-2xs"
+                      aria-label="Transpose down"
+                      title="Transpose down"
+                    >
+                      −
+                    </button>
+                    <button
+                      onClick={resetTranspose}
+                      className="px-1.5 h-6 flex items-center justify-center rounded bg-white border border-slate-300 hover:bg-slate-100 text-slate-600 text-[10px] font-bold tracking-tight transition-colors active:scale-95 shadow-2xs"
+                      title="Reset to original key"
+                      aria-label="Reset transpose"
+                    >
+                      Reset
+                    </button>
+                    <button
+                      onClick={onTransposeUp}
+                      className="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-black transition-colors active:scale-95 shadow-2xs"
+                      aria-label="Transpose up"
+                      title="Transpose up"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <button
+                    onClick={() => { setIsMoreOpen(!isMoreOpen); setMoreTab('main'); }}
+                    className={`w-8 h-8 border rounded-lg shadow-xs transition-all flex items-center justify-center active:scale-95 ${
+                      isMoreOpen
+                        ? 'bg-slate-900 border-slate-900 text-[var(--color-on-inverse)]'
+                        : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
+                    }`}
+                    title="More Actions"
+                    aria-label="More Actions"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                    </svg>
+                  </button>
 
                 {isMoreOpen && (
                   <>
                     <div className="fixed inset-0 z-40" onClick={() => setIsMoreOpen(false)} />
-                    <div className="absolute right-0 top-full mt-2 w-56 bg-[var(--color-surface)] border border-slate-200 rounded-xl shadow-xl z-50 p-2 animate-in fade-in slide-in-from-top-2">
+                    <div className="absolute right-0 top-full mt-2 w-64 bg-[var(--color-surface)] border border-slate-200 rounded-xl shadow-xl z-50 p-2.5 animate-in fade-in slide-in-from-top-2">
 
                       {moreTab === 'main' && (
-                        <div className="space-y-0.5">
+                        <div className="space-y-1">
+                          {/* Transpose Key row */}
+                          <div className="flex items-center justify-between px-2.5 py-1.5 bg-slate-50 rounded-lg">
+                            <div className="flex flex-col">
+                              <span className="text-[11px] font-bold text-slate-600">Transpose</span>
+                              <span className="text-[10px] text-slate-400 font-medium">
+                                Key: <span className="font-bold text-slate-700">{ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}</span>
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <button
+                                onClick={onTransposeDown}
+                                className="w-7 h-7 flex items-center justify-center rounded-md bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-sm font-black transition-colors active:scale-95 shadow-2xs"
+                                aria-label="Transpose down"
+                              >
+                                −
+                              </button>
+                              <button
+                                onClick={resetTranspose}
+                                className="px-2 h-7 flex items-center justify-center rounded-md bg-white border border-slate-200 hover:bg-slate-100 text-slate-600 text-[10px] font-bold tracking-tight transition-colors active:scale-95 shadow-2xs"
+                                title="Reset to original key"
+                                aria-label="Reset transpose"
+                              >
+                                Reset
+                              </button>
+                              <button
+                                onClick={onTransposeUp}
+                                className="w-7 h-7 flex items-center justify-center rounded-md bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-sm font-black transition-colors active:scale-95 shadow-2xs"
+                                aria-label="Transpose up"
+                              >
+                                +
+                              </button>
+                            </div>
+                          </div>
+
+                          {/* Font Size row */}
+                          <div className="flex items-center justify-between px-2.5 py-1.5 bg-slate-50 rounded-lg">
+                            <span className="text-[11px] font-bold text-slate-600">Font Size</span>
+                            <div className="flex items-center gap-1">
+                              <button
+                                onClick={() => setFontSize(fontSize - 1)}
+                                disabled={fontSize <= 12}
+                                className="w-7 h-7 flex items-center justify-center rounded-md bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-sm font-black transition-colors active:scale-95 disabled:opacity-30 shadow-2xs"
+                                aria-label="Decrease font size"
+                              >
+                                −
+                              </button>
+                              <span className="w-7 text-center text-xs font-bold text-slate-800">{fontSize}</span>
+                              <button
+                                onClick={() => setFontSize(fontSize + 1)}
+                                disabled={fontSize >= 24}
+                                className="w-7 h-7 flex items-center justify-center rounded-md bg-white border border-slate-200 hover:bg-slate-100 text-slate-700 text-sm font-black transition-colors active:scale-95 disabled:opacity-30 shadow-2xs"
+                                aria-label="Increase font size"
+                              >
+                                +
+                              </button>
+                            </div>
+                          </div>
+
+                          {/* Separator between Controls and Actions */}
+                          <div className="border-t border-slate-200 my-1" />
+
+                          {/* Action Options */}
                           <button
                             onClick={() => setMoreTab('setlist')}
-                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-xs font-semibold text-slate-700 transition-colors"
                           >
                             <span>Add to Setlist</span>
                             <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -233,7 +337,7 @@ export function ReaderHeader({
                           <button
                             onClick={handleShare}
                             disabled={isShareLoading}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors flex items-center justify-between disabled:opacity-60"
+                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-xs font-semibold text-slate-700 transition-colors flex items-center justify-between disabled:opacity-60"
                           >
                             <span>{isShareLoading ? 'Generating link...' : 'Share Song'}</span>
                             {isShareLoading && (
@@ -246,16 +350,16 @@ export function ReaderHeader({
                           {mode !== 'edit' && (
                             <button
                               onClick={() => { onModeChange('edit'); setIsMoreOpen(false); }}
-                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-xs font-semibold text-slate-700 transition-colors"
                             >
                               Edit Song
                             </button>
                           )}
                           <button
                             onClick={() => setMoreTab('versions')}
-                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-lg hover:bg-slate-50 text-xs font-semibold text-slate-700 transition-colors"
                           >
-                            <span>Versions</span>
+                            <span>Song Versions</span>
                             <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
@@ -263,7 +367,7 @@ export function ReaderHeader({
                           {source === 'personal' && (
                             <button
                               onClick={handleDeletePersonalSong}
-                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-red-50 text-sm font-semibold text-red-700 transition-colors border-t border-slate-100 mt-1"
+                              className="w-full text-left px-3 py-2 rounded-lg hover:bg-red-50 text-xs font-semibold text-red-700 transition-colors border-t border-slate-100 mt-1"
                             >
                               Delete Song
                             </button>
@@ -298,9 +402,10 @@ export function ReaderHeader({
                                       })
                                     );
                                   }}
-                                  className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-50 text-sm font-semibold text-slate-700 transition-colors"
+                                  className="w-full text-left px-2 py-1.5 rounded-lg hover:bg-slate-50 text-xs font-medium text-slate-700 transition-colors flex items-center justify-between"
                                 >
-                                  {list.title}
+                                  <span className="truncate">{list.title}</span>
+                                  <span className="text-[10px] text-slate-400 ml-2">{(list.songs || []).length} songs</span>
                                 </button>
                               ))
                             )}
@@ -316,12 +421,12 @@ export function ReaderHeader({
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
                               </svg>
                             </button>
-                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Versions</span>
+                            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Song Versions</span>
                           </div>
                           <div className="max-h-48 overflow-y-auto space-y-0.5 hide-scrollbar">
                             <button
                               onClick={() => { setActiveArrangementId(null); onModeChange(lastReaderMode); setIsMoreOpen(false); }}
-                              className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${!activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'}`}
+                              className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${!activeArrangementId ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'}`}
                             >
                               Original Version
                             </button>
@@ -329,7 +434,7 @@ export function ReaderHeader({
                               <button
                                 key={arr.uid}
                                 onClick={() => { setActiveArrangementId(arr.uid); onModeChange(lastReaderMode); setIsMoreOpen(false); }}
-                                className={`w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'}`}
+                                className={`w-full text-left px-3 py-2 rounded-lg text-xs font-semibold transition-colors ${activeArrangementId === arr.uid ? 'bg-[var(--color-brand-soft)] text-[var(--color-brand)]' : 'hover:bg-slate-50 text-slate-700'}`}
                               >
                                 {arr.name}
                               </button>
@@ -339,14 +444,14 @@ export function ReaderHeader({
                                 const uid = await createNewVersion(reader);
                                 if (uid) { setActiveArrangementId(uid); onModeChange('edit'); setIsMoreOpen(false); }
                               }}
-                              className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-slate-500 hover:bg-slate-50 hover:text-slate-700 border-t border-slate-100 mt-1"
+                              className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold transition-colors text-slate-500 hover:bg-slate-50 hover:text-slate-700 border-t border-slate-100 mt-1"
                             >
                               + New Version
                             </button>
                             {activeVersion && activeVersion.owner === 'shared' && (
                               <button
                                 onClick={async () => { await handleMakeMyVersion(); setIsMoreOpen(false); }}
-                                className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold transition-colors text-amber-700 hover:bg-amber-50"
+                                className="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold transition-colors text-amber-700 hover:bg-amber-50"
                               >
                                 Make My Version
                               </button>
@@ -359,109 +464,11 @@ export function ReaderHeader({
                   </>
                 )}
               </div>
-            )}
-          </div>
-        </div>
-
-        {/* BOTTOM ROW: Chords/Lyrics toggle + Transpose */}
-        <div className="flex items-center justify-between">
-          {!isAdminAuthenticated && (
-            <div className="flex items-center gap-1.5">
-              <button
-                onClick={() => onModeChange('lyrics')}
-                className={`px-2.5 h-7 text-[10px] sm:text-xs font-bold rounded-full border transition-all ${
-                  mode === 'lyrics'
-                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
-                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
-                }`}
-              >
-                Lyrics
-              </button>
-              <button
-                onClick={() => onModeChange('chords')}
-                className={`px-2.5 h-7 text-[10px] sm:text-xs font-bold rounded-full border transition-all ${
-                  mode === 'chords'
-                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
-                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
-                }`}
-              >
-                Chords
-              </button>
             </div>
           )}
-
-          <div className="flex items-center gap-2">
-            {mode === 'lyrics' ? (
-              <div className="flex items-center h-8 bg-[var(--color-surface)] border border-slate-200 rounded-lg shadow-sm overflow-hidden">
-                <div className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full">
-                  <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
-                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5">
-                    {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
-                  </span>
-                </div>
-              </div>
-            ) : (
-              <div className="flex items-center h-8 bg-[var(--color-surface)] border border-slate-200 rounded-lg shadow-sm overflow-hidden">
-                <button onClick={onTransposeDown} className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100" aria-label="Transpose down">
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 12H4" />
-                  </svg>
-                </button>
-                <button
-                  onClick={resetTranspose}
-                  className="flex flex-col items-center justify-center px-2 border-x border-slate-100 bg-slate-50/50 min-w-[2.5rem] h-full hover:bg-slate-100 transition-colors"
-                  title={transpose !== 0 ? "Click to reset key" : "Key"}
-                >
-                  <span className="text-[8px] uppercase font-bold text-slate-400 leading-none">Key</span>
-                  <span className="text-[11px] font-black text-slate-800 leading-none mt-0.5 flex items-center gap-0.5">
-                    {ChordTransposer.transposeChord(formatKey(song.originalKey), transpose)}
-                    {transpose !== 0 && (
-                      <svg className="w-2.5 h-2.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M19.5 12a7.5 7.5 0 1 1-2.69-5.74M19.5 5v4.5h-4.5" />
-                      </svg>
-                    )}
-                  </span>
-                </button>
-                <button onClick={onTransposeUp} className="w-7 sm:w-8 h-full flex items-center justify-center hover:bg-slate-50 transition-colors text-slate-600 font-black active:bg-slate-100" aria-label="Transpose up">
-                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
-                  </svg>
-                </button>
-              </div>
-            )}
-
-            {!isAdminAuthenticated && (
-              <div className="flex items-center h-8 bg-[var(--color-surface)] border border-slate-200 rounded-lg shadow-sm px-2 gap-2">
-                <span className="text-[8px] font-bold text-slate-400">A</span>
-                <input
-                  type="range"
-                  min="12"
-                  max="24"
-                  value={fontSize}
-                  onChange={(e) => setFontSize(parseInt(e.target.value, 10))}
-                  className="w-16 sm:w-20 h-1 bg-slate-200 rounded-lg appearance-none cursor-pointer"
-                  title="Font Size"
-                />
-                <span className="text-[10px] font-bold text-slate-600 w-6 text-center">{fontSize}</span>
-              </div>
-            )}
-
-            {isAdminAuthenticated && (
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-medium text-slate-600">
-                  {isPublishLoading ? 'Saving...' : song.is_active ? 'Visible' : 'Hidden'}
-                </span>
-                <VisibilitySwitch
-                  checked={song.is_active !== false}
-                  onChange={handlePublishToggle}
-                  disabled={isPublishLoading}
-                />
-              </div>
-            )}
-          </div>
         </div>
-
       </div>
+    </div>
 
       {/* ── MOBILE HEADER: single clean line (hidden in admin mode) ── */}
 {!isAdminAuthenticated && (
