@@ -51,6 +51,12 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
     opacity: isDragging ? 0.5 : 1,
   };
 
+  const rawKey = item.versionDetail?.originalKey || item.detail?.originalKey;
+  const hasKey = rawKey && rawKey.trim() !== '' && rawKey.trim() !== '-' && rawKey.trim() !== 'N/A' && rawKey.trim() !== 'NA';
+  const keyDisplay = hasKey ? rawKey.trim() : null;
+  const genres: string[] = item.detail?.genres && Array.isArray(item.detail.genres) ? item.detail.genres : [];
+  const language = item.detail?.language;
+
   return (
     <div
       ref={setNodeRef}
@@ -76,15 +82,41 @@ function SortableSongItem({ item, setlistId }: { item: any, setlistId: string })
         className="flex-1 text-left min-w-0 flex items-center justify-between outline-none focus:outline-none"
       >
         <div className="flex-1 min-w-0 pr-4">
-          <div className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors py-1">
-            {formatSongTitle(item.versionDetail?.name || item.detail?.title || 'Unknown Song')}
-            {item.versionDetail && (
-              <span className="ml-2 inline-block align-middle text-[9px] font-black px-1.5 py-0.5 bg-slate-200 text-slate-600 rounded-full">VERSION</span>
+          <div className="flex items-center justify-between gap-2 py-0.5">
+            <span className="font-semibold text-slate-800 text-sm md:text-base leading-normal truncate group-hover:text-slate-900 transition-colors">
+              {formatSongTitle(item.versionDetail?.name || item.detail?.title || 'Unknown Song')}
+              {item.versionDetail && (
+                <span className="ml-2 inline-block align-middle text-[9px] font-black px-1.5 py-0.5 bg-slate-200 text-slate-600 rounded-full">VERSION</span>
+              )}
+            </span>
+            {genres.length > 0 && (
+              <div className="flex items-center gap-1 shrink-0">
+                {genres.slice(0, 2).map((genre) => (
+                  <span
+                    key={genre}
+                    className="px-1.5 py-0.5 text-[10px] font-medium bg-[var(--color-genre-badge-bg)] text-[var(--color-genre-badge-text)] rounded"
+                  >
+                    {genre}
+                  </span>
+                ))}
+              </div>
             )}
           </div>
-          <div className="flex items-center space-x-1.5 mt-0.5">
-            <span className="text-xs font-medium text-slate-500">{item.detail?.language}</span>
-          </div>
+          {(language || keyDisplay) && (
+            <div className="flex items-center space-x-1.5 mt-0.5">
+              {language && (
+                <span className="text-xs font-medium text-slate-500">{language}</span>
+              )}
+              {language && keyDisplay && (
+                <span className="text-slate-300 text-[10px]">•</span>
+              )}
+              {keyDisplay && (
+                <span className="text-xs font-medium text-slate-600">
+                  Key: {keyDisplay}
+                </span>
+              )}
+            </div>
+          )}
         </div>
 
         {item.transpose !== 0 && (
