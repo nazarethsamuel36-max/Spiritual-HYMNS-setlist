@@ -8,6 +8,7 @@ import { useWorkflowStore } from '../store/workflowStore';
 import { ReaderHeader } from './reader/ReaderHeader';
 import { EditorMode } from './reader/EditorMode';
 import { ChordProRenderer } from './reader/ChordProRenderer';
+import { ReaderPageSpread, type ReaderPageSpreadRef } from './reader/ReaderPageSpread';
 import { ChordTransposer } from '../utils/ChordTransposer';
 
 // Parse lyrics helper
@@ -73,6 +74,53 @@ export function SongView() {
   // Smooth slide direction tracking
   const [prevActiveIdx, setPrevActiveIdx] = useState<number | null>(null);
   const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null);
+
+  const [viewStyle, setViewStyle] = useState<'book' | 'scroll'>('book');
+  const viewStyleRef = useRef(viewStyle);
+  useEffect(() => {
+    viewStyleRef.current = viewStyle;
+  }, [viewStyle]);
+  const [currentSpread, setCurrentSpread] = useState(0);
+  const [totalSpreads, setTotalSpreads] = useState(1);
+  const spreadRef = useRef<ReaderPageSpreadRef>(null);
+
+  // Hold-to-flip interval & timeout management
+  const holdTimeoutRef = useRef<any>(null);
+  const holdIntervalRef = useRef<any>(null);
+
+  // Adjacent songs in-memory cache for continuous inter-song flipping
+  const [prevSongData, setPrevSongData] = useState<{ id: number; rawContent: string; transpose: number } | null>(null);
+  const [nextSongData, setNextSongData] = useState<{ id: number; rawContent: string; transpose: number } | null>(null);
+
+  const stopHold = useCallback(() => {
+    if (holdTimeoutRef.current) {
+      clearTimeout(holdTimeoutRef.current);
+      holdTimeoutRef.current = null;
+    }
+    if (holdIntervalRef.current) {
+      clearInterval(holdIntervalRef.current);
+      holdIntervalRef.current = null;
+    }
+  }, []);
+
+  const startHold = useCallback((action: () => void) => {
+    stopHold();
+    action();
+    holdTimeoutRef.current = setTimeout(() => {
+      holdIntervalRef.current = setInterval(() => {
+        action();
+      }, 420);
+    }, 350);
+  }, [stopHold]);
+
+  useEffect(() => {
+    return () => stopHold();
+  }, [stopHold]);
+
+  // Reset page spread when switching songs
+  useEffect(() => {
+    setCurrentSpread(0);
+  }, [songId]);
 
   // 🔥 SAFE LOCAL DATA: Read from Dexie based on active context
   const activeNavigationList = useLiveQuery(async () => {
@@ -173,6 +221,97 @@ export function SongView() {
     refreshSong();
   }, [songId, refreshSong]);
 
+  // Preload adjacent songs in memory for continuous inter-song flipping
+  useEffect(() => {
+    if (viewStyle !== 'book') {
+      setPrevSongData(null);
+      setNextSongData(null);
+      return;
+    }
+
+    let isMounted = true;
+
+    const loadAdjacentSongs = async () => {
+      try {
+        // Resolve Prev Song
+        if (activeIdx !== undefined && activeIdx > 0) {
+          let prevRef: any = null;
+          if (isSetlistContext && setlistItems) {
+            const item = setlistItems[activeIdx - 1];
+            if (item && (!item.type || item.type === 'song')) {
+              prevRef = {
+                kind: item.refType ?? 'official',
+                songId: item.songId,
+                versionUid: item.versionId ?? undefined,
+                transpose: item.transpose ?? 0,
+              };
+            }
+          } else if (activeNavigationList && activeNavigationList[activeIdx - 1]) {
+            const item = activeNavigationList[activeIdx - 1];
+            prevRef = {
+              kind: source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : 'official',
+              songId: item.id,
+              transpose: 0,
+            };
+          }
+
+          if (prevRef?.songId) {
+            const resolved = await SongResolver.resolve(prevRef);
+            if (resolved && isMounted) {
+              const d = resolved.detail;
+              const content = d.chords || d.lyrics || (d.sections?.length ? d.sections.map((s: any) => `[${s.label}]\n` + s.lines.map((l: any) => l.text).join('\n')).join('\n\n') : '');
+              setPrevSongData({ id: d.id, rawContent: content, transpose: prevRef.transpose + (d.capo || 0) });
+            }
+          }
+        } else {
+          setPrevSongData(null);
+        }
+
+        // Resolve Next Song
+        if (activeIdx !== undefined && activeIdx !== -1 && activeIdx < totalItems - 1) {
+          let nextRef: any = null;
+          if (isSetlistContext && setlistItems) {
+            const item = setlistItems[activeIdx + 1];
+            if (item && (!item.type || item.type === 'song')) {
+              nextRef = {
+                kind: item.refType ?? 'official',
+                songId: item.songId,
+                versionUid: item.versionId ?? undefined,
+                transpose: item.transpose ?? 0,
+              };
+            }
+          } else if (activeNavigationList && activeNavigationList[activeIdx + 1]) {
+            const item = activeNavigationList[activeIdx + 1];
+            nextRef = {
+              kind: source === 'personal' ? 'personal' : source === 'shared' ? 'shared' : 'official',
+              songId: item.id,
+              transpose: 0,
+            };
+          }
+
+          if (nextRef?.songId) {
+            const resolved = await SongResolver.resolve(nextRef);
+            if (resolved && isMounted) {
+              const d = resolved.detail;
+              const content = d.chords || d.lyrics || (d.sections?.length ? d.sections.map((s: any) => `[${s.label}]\n` + s.lines.map((l: any) => l.text).join('\n')).join('\n\n') : '');
+              setNextSongData({ id: d.id, rawContent: content, transpose: nextRef.transpose + (d.capo || 0) });
+            }
+          }
+        } else {
+          setNextSongData(null);
+        }
+      } catch (e) {
+        console.warn('[SongView] Error preloading adjacent songs', e);
+      }
+    };
+
+    loadAdjacentSongs();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [songId, activeIdx, totalItems, viewStyle, isSetlistContext, setlistItems, activeNavigationList, source]);
+
   // 6. Swipe Navigation Logic
   const navigateSetlist = useCallback((direction: 'prev' | 'next') => {
     if (!setlistItems || !setlistId) return;
@@ -195,6 +334,74 @@ export function SongView() {
       openSong(activeNavigationList[targetIdx].id, source);
     }
   }, [songId, activeNavigationList, openSong, source]);
+
+  const hasPrevSong = activeIdx !== undefined && activeIdx > 0;
+  const hasNextSong = activeIdx !== undefined && activeIdx !== -1 && activeIdx < totalItems - 1;
+
+  const canGoPrev = viewStyle === 'book' ? (currentSpread > 0 || hasPrevSong) : hasPrevSong;
+  const canGoNext = viewStyle === 'book' ? (currentSpread < totalSpreads - 1 || hasNextSong) : hasNextSong;
+
+  const handlePrev = useCallback(() => {
+    if (viewStyle === 'book') {
+      const onEdgeFlip = hasPrevSong
+        ? () => {
+            if (isSetlistContext) {
+              navigateSetlist('prev');
+            } else {
+              navigateLibrary('prev');
+            }
+          }
+        : undefined;
+
+      const handled = spreadRef.current?.flipBackward(onEdgeFlip);
+      if (handled) return;
+
+      if (hasPrevSong) {
+        if (isSetlistContext) {
+          navigateSetlist('prev');
+        } else {
+          navigateLibrary('prev');
+        }
+      }
+    } else if (hasPrevSong) {
+      if (isSetlistContext) {
+        navigateSetlist('prev');
+      } else {
+        navigateLibrary('prev');
+      }
+    }
+  }, [viewStyle, hasPrevSong, isSetlistContext, navigateSetlist, navigateLibrary]);
+
+  const handleNext = useCallback(() => {
+    if (viewStyle === 'book') {
+      const onEdgeFlip = hasNextSong
+        ? () => {
+            if (isSetlistContext) {
+              navigateSetlist('next');
+            } else {
+              navigateLibrary('next');
+            }
+          }
+        : undefined;
+
+      const handled = spreadRef.current?.flipForward(onEdgeFlip);
+      if (handled) return;
+
+      if (hasNextSong) {
+        if (isSetlistContext) {
+          navigateSetlist('next');
+        } else {
+          navigateLibrary('next');
+        }
+      }
+    } else if (hasNextSong) {
+      if (isSetlistContext) {
+        navigateSetlist('next');
+      } else {
+        navigateLibrary('next');
+      }
+    }
+  }, [viewStyle, hasNextSong, isSetlistContext, navigateSetlist, navigateLibrary]);
 
   // Swipe navigation — document-level so it works regardless of
   // loading state or DOM mount order. Refs ensure callbacks are always fresh.
@@ -220,8 +427,8 @@ export function SongView() {
     };
 
     const onTouchEnd = (e: TouchEvent) => {
-      // Block swipe navigation while editing
-      if (isEditModeRef.current) return;
+      // Block swipe navigation while editing or in book mode (StPageFlip owns gestures in book mode)
+      if (isEditModeRef.current || viewStyleRef.current === 'book') return;
 
       const dx = e.changedTouches[0].clientX - startX;
       const dy = e.changedTouches[0].clientY - startY;
@@ -301,7 +508,7 @@ export function SongView() {
 
 
   // 7. Render
-  if (loading) return (
+  if (loading && !song) return (
     <div className="p-12 text-center flex flex-col items-center">
       <div className="animate-spin h-8 w-8 border-4 border-[var(--color-brand)] border-t-transparent rounded-full mb-4"></div>
       <div className="text-slate-400 font-black uppercase text-[10px] tracking-widest">Loading...</div>
@@ -388,19 +595,51 @@ export function SongView() {
           isAdmin={isAdminAuthenticated}
           onExit={() => setReaderMode(lastReaderMode)}
         />
+      ) : viewStyle === 'book' && hasContent ? (
+        <div className="flex-1 flex flex-col w-full h-full overflow-hidden">
+          {/* Dual/Single Page spread container */}
+          <div className="flex-1 w-full h-full overflow-hidden">
+            <ReaderPageSpread
+              ref={spreadRef}
+              rawChordPro={rawContent}
+              fontSize={fontSize}
+              transpose={displayTranspose}
+              hideChords={readerMode === 'lyrics'}
+              spreadIndex={currentSpread}
+              onSpreadChange={setCurrentSpread}
+              onTotalSpreadsCalculated={setTotalSpreads}
+              prevSongData={prevSongData}
+              nextSongData={nextSongData}
+              hasNextSong={hasNextSong}
+              hasPrevSong={hasPrevSong}
+              onNextSong={() => {
+                if (isSetlistContext) navigateSetlist('next');
+                else navigateLibrary('next');
+              }}
+              onPrevSong={() => {
+                if (isSetlistContext) navigateSetlist('prev');
+                else navigateLibrary('prev');
+              }}
+            />
+          </div>
+        </div>
       ) : (
         <div
-          ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto overscroll-contain"
-          style={{ touchAction: 'pan-y' }}
+          className="relative flex-1 w-full h-full overflow-hidden bg-[var(--color-surface)]"
         >
-          <div className="w-full px-4 md:px-8 pt-8 pb-40 overflow-x-hidden">
-            <div 
-              key={songId || currentItemId || 'empty'}
-              className={`max-w-4xl mx-auto w-full reader-anim-container ${
-                slideDir === 'next' ? 'animate-slide-next' : slideDir === 'prev' ? 'animate-slide-prev' : ''
-              }`}
-            >
+          {/* Scrollable Song View */}
+          <div
+            ref={scrollContainerRef}
+            className="w-full h-full overflow-y-auto overscroll-contain"
+            style={{ touchAction: 'pan-y' }}
+          >
+            <div className="w-full px-3 sm:px-6 pt-6 pb-40 overflow-x-hidden">
+              <div 
+                key={songId || currentItemId || 'empty'}
+                className={`max-w-4xl mx-auto w-full reader-anim-container ${
+                  slideDir === 'next' ? 'animate-slide-next' : slideDir === 'prev' ? 'animate-slide-prev' : ''
+                }`}
+              >
               {/* Key metadata — part of the song's opening, not a UI control */}
               {!isAdminAuthenticated && (
                 <div className="mb-5 pl-2">
@@ -465,73 +704,152 @@ export function SongView() {
             </div>
           </div>
         </div>
+      </div>
       )}
 
-      {/* Mobile-only Reader Footer: Swipe dots + Lyrics/Chords toggle + Auto Scroll */}
+      {/* Reader Footer: Navigation (Prev/Next Page Spread or Songs), Mode, and Scroll */}
       {!isAdminAuthenticated && readerMode !== 'edit' && (
-        <div className="md:hidden flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-slate-200 z-50 px-4 pt-1 pb-2">
+        <div className="flex-shrink-0 bg-[var(--color-reader-surface)]/95 backdrop-blur-md border-t border-slate-300 z-50 px-4 pt-1.5 pb-2">
           {totalItems > 1 && activeIdx !== undefined && activeIdx !== -1 && (
-            <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1.5 select-none">
+            <div className="max-w-4xl mx-auto w-full flex items-center justify-center space-x-1.5 py-1 select-none">
               {visibleDots.map((idx) => (
                 <div key={idx} className={`rounded-full transition-all duration-200 ${idx === activeIdx ? 'w-4 h-1.5 bg-[var(--color-brand)]' : 'w-1.5 h-1.5 bg-slate-200'}`} />
               ))}
             </div>
           )}
           <div className="max-w-4xl mx-auto w-full flex items-center justify-between gap-3">
-            {/* Mode Selector — two pills */}
+            {/* Left: Prev button (desktop only — on mobile users swipe left/right) */}
+            <div className="hidden sm:flex items-center gap-1.5">
+              <button
+                onPointerDown={() => startHold(handlePrev)}
+                onPointerUp={stopHold}
+                onPointerLeave={stopHold}
+                onPointerCancel={stopHold}
+                disabled={!canGoPrev}
+                className="w-8 h-8 flex items-center justify-center text-xs font-black rounded-lg border border-slate-300 bg-[var(--color-surface)] text-slate-700 hover:bg-slate-50 disabled:opacity-30 disabled:pointer-events-none shadow-xs transition-colors select-none"
+                title={viewStyle === 'book' && currentSpread > 0 ? "Previous Page" : "Previous Song"}
+                aria-label="Previous"
+              >
+                ◀
+              </button>
+            </div>
+
+            {/* Middle: Lyrics / Chords Mode pills */}
             <div className="flex items-center gap-1.5">
               <button
                 onClick={() => setReaderMode('lyrics')}
-                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                className={`px-3.5 h-8 text-xs font-bold rounded-full border transition-all ${
                   readerMode === 'lyrics'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
-                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
+                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
                 }`}
               >
                 Lyrics
               </button>
               <button
                 onClick={() => setReaderMode('chords')}
-                className={`px-3 h-7 text-xs font-bold rounded-full border transition-all ${
+                className={`px-3.5 h-8 text-xs font-bold rounded-full border transition-all ${
                   readerMode === 'chords'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
-                    : 'bg-[var(--color-surface)] border-slate-200 text-slate-600 hover:bg-slate-50'
+                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
                 }`}
               >
                 Chords
               </button>
+
+              <div className="w-px h-4 bg-slate-300 mx-0.5" />
+
+              {/* Book & Scroll circle icon buttons side by side */}
+              <button
+                onClick={() => setViewStyle('book')}
+                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
+                  viewStyle === 'book'
+                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
+                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
+                }`}
+                title="Book mode (Page flip)"
+                aria-label="Book mode"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              </button>
+              <button
+                onClick={() => setViewStyle('scroll')}
+                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
+                  viewStyle === 'scroll'
+                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
+                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
+                }`}
+                title="Scroll mode (Continuous)"
+                aria-label="Scroll mode"
+              >
+                {/* Scroll icon: hollow up-triangle + divider + hollow down-triangle (evenodd) */}
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  {/* Up hollow triangle via evenodd */}
+                  <path
+                    fillRule="evenodd"
+                    d="M12,1 L2,11 L22,11 Z M12,4.5 L6,9.5 L18,9.5 Z"
+                  />
+                  {/* Divider bar */}
+                  <rect x="2" y="11.5" width="20" height="1.5" />
+                  {/* Down hollow triangle via evenodd */}
+                  <path
+                    fillRule="evenodd"
+                    d="M12,23 L2,13 L22,13 Z M12,19.5 L6,14.5 L18,14.5 Z"
+                  />
+                </svg>
+              </button>
             </div>
 
-            {/* Auto Scroll — rectangle with rounded corners, three zones separated by dividers */}
-            <div className={`flex items-center h-8 rounded-lg overflow-hidden border flex-shrink-0 ${
-              autoScrollEnabled
-                ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
-                : 'bg-[var(--color-surface)] border-slate-200 text-slate-600'
-            }`}>
+            {/* Right: Next button (navigates page spread or next song on desktop) + Auto Scroll (in scroll mode) */}
+            <div className="flex items-center gap-2">
+              {viewStyle === 'scroll' && (
+                <div
+                  className={`flex items-center h-8 rounded-lg overflow-hidden border flex-shrink-0 ${
+                    autoScrollEnabled
+                      ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)]'
+                      : 'bg-[var(--color-surface)] border-slate-300 text-slate-600'
+                  }`}
+                >
+                  <button
+                    onClick={() => setAutoScrollSpeed((s) => Math.max(0.5, +(s - 0.5).toFixed(1)))}
+                    className="w-7 h-full flex items-center justify-center text-sm font-black hover:bg-black/5 transition-colors active:scale-95"
+                    aria-label="Slow down auto scroll"
+                  >
+                    −
+                  </button>
+                  <div className={`w-px h-3.5 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
+                  <button
+                    onClick={() => setAutoScrollEnabled(!autoScrollEnabled)}
+                    className="flex items-center justify-center px-2 h-full text-[11px] font-black transition-colors active:opacity-70"
+                    title="Toggle auto scroll"
+                  >
+                    {autoScrollSpeed}x
+                  </button>
+                  <div className={`w-px h-3.5 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
+                  <button
+                    onClick={() => setAutoScrollSpeed((s) => Math.min(3, +(s + 0.5).toFixed(1)))}
+                    className="w-7 h-full flex items-center justify-center text-sm font-black hover:bg-black/5 transition-colors active:scale-95"
+                    aria-label="Speed up auto scroll"
+                  >
+                    +
+                  </button>
+                </div>
+              )}
+
               <button
-                onClick={() => setAutoScrollSpeed((s) => Math.max(0.5, +(s - 0.5).toFixed(1)))}
-                className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
-                aria-label="Slow down auto scroll"
-                title="Slow"
+                onPointerDown={() => startHold(handleNext)}
+                onPointerUp={stopHold}
+                onPointerLeave={stopHold}
+                onPointerCancel={stopHold}
+                disabled={!canGoNext}
+                className="hidden sm:flex w-8 h-8 items-center justify-center text-xs font-black rounded-lg border border-slate-300 bg-[var(--color-surface)] text-slate-700 hover:bg-slate-50 disabled:opacity-30 disabled:pointer-events-none shadow-xs transition-colors select-none"
+                title={viewStyle === 'book' && currentSpread < totalSpreads - 1 ? "Next Page" : "Next Song"}
+                aria-label="Next"
               >
-                −
-              </button>
-              <div className={`w-px h-4 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
-              <button
-                onClick={() => setAutoScrollEnabled(!autoScrollEnabled)}
-                className="flex items-center justify-center w-8 h-full text-[11px] font-black transition-colors active:opacity-70"
-                title="Toggle auto scroll"
-              >
-                {autoScrollSpeed}x
-              </button>
-              <div className={`w-px h-4 self-center ${autoScrollEnabled ? 'bg-black/20' : 'bg-slate-200'}`} />
-              <button
-                onClick={() => setAutoScrollSpeed((s) => Math.min(3, +(s + 0.5).toFixed(1)))}
-                className="w-7 h-full flex items-center justify-center text-base font-black hover:bg-black/5 transition-colors active:scale-95"
-                aria-label="Speed up auto scroll"
-                title="Fast"
-              >
-                +
+                ▶
               </button>
             </div>
           </div>
