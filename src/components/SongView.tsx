@@ -34,6 +34,28 @@ function parseLyricsToSections(lyrics: string): Array<{ type: string; label: str
   return sections;
 }
 
+const VIEW_STYLE_STORAGE_KEY_MOBILE = 'worship-view-style-mobile';
+const VIEW_STYLE_STORAGE_KEY_DESKTOP = 'worship-view-style-desktop';
+
+function getInitialViewStyle(): 'book' | 'scroll' {
+  if (typeof window === 'undefined') return 'book';
+  const isMobile = window.innerWidth < 640;
+  const storageKey = isMobile ? VIEW_STYLE_STORAGE_KEY_MOBILE : VIEW_STYLE_STORAGE_KEY_DESKTOP;
+  const saved = window.localStorage.getItem(storageKey);
+  if (saved === 'book' || saved === 'scroll') {
+    return saved;
+  }
+  // Default: mobile is 'scroll', desktop is 'book'
+  return isMobile ? 'scroll' : 'book';
+}
+
+function saveViewStyle(style: 'book' | 'scroll') {
+  if (typeof window === 'undefined') return;
+  const isMobile = window.innerWidth < 640;
+  const storageKey = isMobile ? VIEW_STYLE_STORAGE_KEY_MOBILE : VIEW_STYLE_STORAGE_KEY_DESKTOP;
+  window.localStorage.setItem(storageKey, style);
+}
+
 export function SongView() {
   // 1. Store Connections
   const reader = useWorkflowStore((s) => s.reader);
@@ -75,7 +97,11 @@ export function SongView() {
   const [prevActiveIdx, setPrevActiveIdx] = useState<number | null>(null);
   const [slideDir, setSlideDir] = useState<'next' | 'prev' | null>(null);
 
-  const [viewStyle, setViewStyle] = useState<'book' | 'scroll'>('book');
+  const [viewStyle, setViewStyleState] = useState<'book' | 'scroll'>(getInitialViewStyle);
+  const setViewStyle = useCallback((style: 'book' | 'scroll') => {
+    setViewStyleState(style);
+    saveViewStyle(style);
+  }, []);
   const viewStyleRef = useRef(viewStyle);
   useEffect(() => {
     viewStyleRef.current = viewStyle;
@@ -759,22 +785,7 @@ export function SongView() {
 
               <div className="w-px h-4 bg-slate-300 mx-0.5" />
 
-              {/* Book & Scroll circle icon buttons side by side */}
-              <button
-                onClick={() => setViewStyle('book')}
-                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
-                  viewStyle === 'book'
-                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
-                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
-                }`}
-                title="Book mode (Page flip)"
-                aria-label="Book mode"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                </svg>
-              </button>
+              {/* Scroll & Book circle icon buttons side by side (scroll on left, book on right) */}
               <button
                 onClick={() => setViewStyle('scroll')}
                 className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
@@ -799,6 +810,21 @@ export function SongView() {
                     fillRule="evenodd"
                     d="M12,23 L2,13 L22,13 Z M12,19.5 L6,14.5 L18,14.5 Z"
                   />
+                </svg>
+              </button>
+              <button
+                onClick={() => setViewStyle('book')}
+                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
+                  viewStyle === 'book'
+                    ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
+                    : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
+                }`}
+                title="Book mode (Page flip)"
+                aria-label="Book mode"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                 </svg>
               </button>
             </div>
