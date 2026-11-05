@@ -622,9 +622,9 @@ export function SongView() {
           onExit={() => setReaderMode(lastReaderMode)}
         />
       ) : viewStyle === 'book' && hasContent ? (
-        <div className="flex-1 flex flex-col w-full h-full overflow-hidden">
+        <div className="flex-1 flex flex-col w-full h-full overflow-hidden bg-[#FAFAF8]">
           {/* Dual/Single Page spread container */}
-          <div className="flex-1 w-full h-full overflow-hidden">
+          <div className="flex-1 w-full h-full overflow-hidden bg-[#FAFAF8]">
             <ReaderPageSpread
               ref={spreadRef}
               rawChordPro={rawContent}
@@ -787,7 +787,14 @@ export function SongView() {
 
               {/* Scroll & Book circle icon buttons side by side (scroll on left, book on right) */}
               <button
-                onClick={() => setViewStyle('scroll')}
+                onClick={() => {
+                  setViewStyle('scroll');
+                  window.dispatchEvent(
+                    new CustomEvent('show-toast', {
+                      detail: { message: 'Scroll mode', icon: 'scroll' },
+                    })
+                  );
+                }}
                 className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
                   viewStyle === 'scroll'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
@@ -813,14 +820,21 @@ export function SongView() {
                 </svg>
               </button>
               <button
-                onClick={() => setViewStyle('book')}
+                onClick={() => {
+                  setViewStyle('book');
+                  window.dispatchEvent(
+                    new CustomEvent('show-toast', {
+                      detail: { message: 'Hymnal mode', icon: 'book' },
+                    })
+                  );
+                }}
                 className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
                   viewStyle === 'book'
                     ? 'bg-[var(--color-brand)] border-[var(--color-brand)] text-[var(--color-on-inverse)] shadow-xs'
                     : 'bg-[var(--color-surface)] border-slate-300 text-slate-600 hover:bg-slate-50'
                 }`}
-                title="Book mode (Page flip)"
-                aria-label="Book mode"
+                title="Hymnal mode (Page flip)"
+                aria-label="Hymnal mode"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />

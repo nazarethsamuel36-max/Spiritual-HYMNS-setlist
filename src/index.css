@@ -505,7 +505,11 @@ body {
   display: none;
   position: absolute;
   transform-style: preserve-3d;
-  background-color: var(--color-surface, #ffffff);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  color-scheme: light;
+  background-color: #FAFAF8 !important;
+  color: #1a1a1a !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 

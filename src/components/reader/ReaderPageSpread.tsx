@@ -608,21 +608,11 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
     return (
       <div
         ref={containerRef}
-        className="relative w-full h-full flex flex-col justify-center items-center overflow-hidden select-none bg-[var(--color-surface,#fcfbf9)]"
+        className="relative w-full h-full flex flex-col justify-center items-center overflow-hidden select-none bg-[#FAFAF8]"
         style={{
           touchAction: isDualPage ? 'auto' : 'none',
         }}
       >
-        {/* Mobile Persistent Left Spine Binding (< 600px) — touches left edge completely */}
-        {!isDualPage && (
-          <div className="absolute top-0 bottom-0 left-0 w-4 z-30 pointer-events-none flex select-none">
-            {/* Spine seam line flush against edge */}
-            <div className="w-[2px] h-full bg-slate-400 flex-shrink-0" />
-            {/* Spine depth shadow fading into the page */}
-            <div className="w-full h-full bg-gradient-to-r from-black/[0.18] via-black/[0.06] to-transparent" />
-          </div>
-        )}
-
         {/* Active StPageFlip Render Host (spans 100% width flush with edges) */}
         <div
           ref={mountRef}
@@ -650,7 +640,9 @@ export const ReaderPageSpread = forwardRef<ReaderPageSpreadRef, ReaderPageSpread
               style={{
                 width: '100%',
                 height: '100%',
-                backgroundColor: 'var(--color-surface, #fcfbf9)',
+                backgroundColor: '#FAFAF8',
+                color: '#1a1a1a',
+                colorScheme: 'light',
                 boxSizing: 'border-box',
                 overflow: 'hidden',
                 position: 'relative',

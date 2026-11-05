@@ -31,7 +31,7 @@ function App() {
   const [showGatekeeper, setShowGatekeeper] = useState<boolean | null>(null);
   const [personalTab, setPersonalTab] = useState<'songs' | 'versions'>('songs');
   const [isAddingPersonalSong, setIsAddingPersonalSong] = useState(false);
-  const [appToast, setAppToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
+  const [appToast, setAppToast] = useState<{ message: string; type: 'success' | 'error'; icon?: 'scroll' | 'book' | 'check' } | null>(null);
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   const [showAdminScreen, setShowAdminScreen] = useState(false);
   const [showAdminButton, setShowAdminButton] = useState(false);
@@ -69,12 +69,13 @@ function App() {
 
   useEffect(() => {
     const handleShowToast = (event: Event) => {
-      const customEvent = event as CustomEvent<{ message?: string; type?: 'success' | 'error' }>;
+      const customEvent = event as CustomEvent<{ message?: string; type?: 'success' | 'error'; icon?: 'scroll' | 'book' | 'check' }>;
       const message = customEvent.detail?.message;
       const type = customEvent.detail?.type ?? 'success';
+      const icon = customEvent.detail?.icon;
       if (!message) return;
 
-      setAppToast({ message, type });
+      setAppToast({ message, type, icon });
       window.clearTimeout((handleShowToast as any)._timer);
       (handleShowToast as any)._timer = window.setTimeout(() => setAppToast(null), 2600);
     };
@@ -475,11 +476,30 @@ function App() {
                 color: appToast.type === 'error' ? '#FFFFFF' : 'var(--color-on-inverse)',
               }}
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
-                style={{ color: appToast.type === 'error' ? '#FCA5A5' : 'var(--color-on-inverse)' }}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-              </svg>
-              {appToast.message}
+              {appToast.icon === 'book' ? (
+                <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+              ) : appToast.icon === 'scroll' ? (
+                <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fillRule="evenodd"
+                    d="M12,1 L2,11 L22,11 Z M12,4.5 L6,9.5 L18,9.5 Z"
+                  />
+                  <rect x="2" y="11.5" width="20" height="1.5" />
+                  <path
+                    fillRule="evenodd"
+                    d="M12,23 L2,13 L22,13 Z M12,19.5 L6,14.5 L18,14.5 Z"
+                  />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
+                  style={{ color: appToast.type === 'error' ? '#FCA5A5' : 'var(--color-on-inverse)' }}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              )}
+              <span>{appToast.message}</span>
             </div>
           )}
 
