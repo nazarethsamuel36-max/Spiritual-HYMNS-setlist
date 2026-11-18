@@ -532,6 +532,12 @@ export function SongView() {
     };
   }, [autoScrollEnabled]);
 
+  useEffect(() => {
+    if (readerMode !== 'chords' || viewStyle !== 'scroll') {
+      setAutoScrollEnabled(false);
+    }
+  }, [readerMode, viewStyle]);
+
 
   // 7. Render
   if (loading && !song) return (
@@ -843,9 +849,9 @@ export function SongView() {
               </button>
             </div>
 
-            {/* Right: Next button (navigates page spread or next song on desktop) + Auto Scroll (in scroll mode) */}
+            {/* Right: Next button (navigates page spread or next song on desktop) + Auto Scroll (in scroll mode, chords view only) */}
             <div className="flex items-center gap-2">
-              {viewStyle === 'scroll' && (
+              {viewStyle === 'scroll' && readerMode === 'chords' && (
                 <div
                   className={`flex items-center h-8 rounded-lg overflow-hidden border flex-shrink-0 ${
                     autoScrollEnabled

@@ -13,19 +13,19 @@
   "sections": [
     {
       "type": "verse",
-      "label": "Verse 1",
+      "label": "Verse",
       "lines": [
         {
-          "text": "I love to lift my voice in praise to You"
+          "text": "Lord, I lift Your name on high"
         },
         {
-          "text": "I love to lift my voice in praise to You"
+          "text": "Lord, I love to sing Your praises"
         },
         {
-          "text": "I love to lift my voice in praise to You"
+          "text": "I'm so glad You're in my life"
         },
         {
-          "text": "My God and my Savior"
+          "text": "I'm so glad You came to save us"
         }
       ]
     },
@@ -34,60 +34,33 @@
       "label": "Chorus",
       "lines": [
         {
-          "text": "Lord I lift Your name on high"
+          "text": "You came from heaven to earth"
         },
         {
-          "text": "Lord I lift Your name on high"
+          "text": "To show the way"
         },
         {
-          "text": "Lord I lift Your name on high"
+          "text": "From the earth to the cross"
         },
         {
-          "text": "My God and Savior"
-        }
-      ]
-    },
-    {
-      "type": "verse",
-      "label": "Verse 2",
-      "lines": [
-        {
-          "text": "You came from heaven to earth to show the way"
+          "text": "My debt to pay"
         },
         {
-          "text": "From the earth to the cross my debt to pay"
+          "text": "From the cross to the grave"
         },
         {
-          "text": "From the cross to the grave from the grave to the sky"
+          "text": "From the grave to the sky"
         },
         {
-          "text": "Lord I lift your name on high"
-        }
-      ]
-    },
-    {
-      "type": "verse",
-      "label": "Chorus",
-      "lines": [
-        {
-          "text": "Lord I lift Your name on high"
-        },
-        {
-          "text": "Lord I lift Your name on high"
-        },
-        {
-          "text": "Lord I lift Your name on high"
-        },
-        {
-          "text": "My God and Savior"
+          "text": "Lord, I lift Your name on high"
         }
       ]
     }
   ],
-  "chords": "\n[Verse 1]\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nMy God and my Savior\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior\n\n[Verse 2]\nYou came from heaven to earth to show the way\nFrom the earth to the cross my debt to pay\nFrom the cross to the grave from the grave to the sky\nLord I lift your name on high\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior",
-  "lyrics": "\n[Verse 1]\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nI love to lift my voice in praise to You\nMy God and my Savior\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior\n\n[Verse 2]\nYou came from heaven to earth to show the way\nFrom the earth to the cross my debt to pay\nFrom the cross to the grave from the grave to the sky\nLord I lift your name on high\n\n[Chorus]\nLord I lift Your name on high\nLord I lift Your name on high\nLord I lift Your name on high\nMy God and Savior",
+  "chords": "[Verse]\nLord, I lift Your name on high\nLord, I love to sing Your praises\nI'm so glad You're in my life\nI'm so glad You came to save us\n\n[Chorus]\nYou came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high",
+  "lyrics": "[Verse]\nLord, I lift Your name on high\nLord, I love to sing Your praises\nI'm so glad You're in my life\nI'm so glad You came to save us\n\n[Chorus]\nYou came from heaven to earth\nTo show the way\nFrom the earth to the cross\nMy debt to pay\nFrom the cross to the grave\nFrom the grave to the sky\nLord, I lift Your name on high",
   "is_active": true,
-  "updated_at": "2026-09-21T12:41:15.963001+00:00",
+  "updated_at": "2026-11-18T04:27:06.392Z",
   "genres": [
     "Worship",
     "Praise"
