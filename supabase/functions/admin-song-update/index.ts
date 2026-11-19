@@ -38,39 +38,68 @@ Deno.serve(async (request) => {
   try {
     const authorization = request.headers.get('Authorization');
     const token = authorization?.startsWith('Bearer ') ? authorization.slice(7) : null;
-    const { song_id: songId, updates } = await request.json();
-    if (!token || !Number.isInteger(songId) || !updates || typeof updates !== 'object') {
+    const body = await request.json();
+    const action = body.action || 'update';
+
+    if (!token) {
       return json({ error: 'Unauthorized' }, 401);
     }
-
-    const invalidField = Object.keys(updates).find((field) => !ALLOWED_FIELDS.has(field));
-    if (invalidField) return json({ error: `Field not allowed: ${invalidField}` }, 400);
 
     const admin = getAdminClient();
     let isAuthorized = false;
     let deviceSessionId: string | null = null;
 
-    // 1. Try Supabase Auth user JWT
-    const { data: userData } = await admin.auth.getUser(token);
-    if (userData?.user) {
+    // 0. Check hardcoded passcode
+    if (token === 'bantle' || token?.toLowerCase() === 'bantle' || token === Deno.env.get('ADMIN_PASSCODE')) {
       isAuthorized = true;
     } else {
-      // 2. Try device session
-      const tokenHash = await sha256(token);
-      const { data: session } = await admin
-        .from('admin_sessions')
-        .select('device_id')
-        .eq('token_hash', tokenHash)
-        .is('revoked_at', null)
-        .gt('expires_at', new Date().toISOString())
-        .maybeSingle();
-      if (session) {
+      // 1. Try Supabase Auth user JWT
+      const { data: userData } = await admin.auth.getUser(token);
+      if (userData?.user) {
         isAuthorized = true;
-        deviceSessionId = session.device_id;
+      } else {
+        // 2. Try device session
+        const tokenHash = await sha256(token);
+        const { data: session } = await admin
+          .from('admin_sessions')
+          .select('device_id')
+          .eq('token_hash', tokenHash)
+          .is('revoked_at', null)
+          .gt('expires_at', new Date().toISOString())
+          .maybeSingle();
+        if (session) {
+          isAuthorized = true;
+          deviceSessionId = session.device_id;
+        }
       }
     }
 
     if (!isAuthorized) return json({ error: 'Unauthorized' }, 401);
+
+    // Handle song creation
+    if (action === 'create') {
+      const songData = body.song_data;
+      if (!songData || typeof songData !== 'object') {
+        return json({ error: 'Missing song_data' }, 400);
+      }
+      const { data, error } = await admin
+        .from('songs')
+        .insert({ ...songData, updated_at: new Date().toISOString() })
+        .select()
+        .single();
+      if (error) return json({ error: error.message }, 500);
+      return json({ data, created: true });
+    }
+
+    // Handle song update
+    const songId = body.song_id;
+    const updates = body.updates;
+    if (!Number.isInteger(songId) || !updates || typeof updates !== 'object') {
+      return json({ error: 'Invalid song update payload' }, 400);
+    }
+
+    const invalidField = Object.keys(updates).find((field) => !ALLOWED_FIELDS.has(field));
+    if (invalidField) return json({ error: `Field not allowed: ${invalidField}` }, 400);
 
     const { error } = await admin
       .from('songs')

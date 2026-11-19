@@ -17,7 +17,7 @@ import { useIsMobile } from './hooks/useMediaQuery';
 import { db, ensureUid } from './db/Database';
 import { generateUUID } from './utils/uuid';
 import { ShareService } from './services/ShareService';
-import { authenticateDevice, clearAdminSession, getAdminSession } from './services/DeviceAuthService';
+import { authenticateDevice, clearAdminSession, getAdminSession, getAdminPasscode } from './services/DeviceAuthService';
 import { AdminScreen } from './components/AdminScreen';
 import { AdminLoginScreen } from './components/AdminLoginScreen';
 import { supabase } from './lib/supabaseClient';
@@ -38,6 +38,8 @@ function App() {
   const [showAdminScreen, setShowAdminScreen] = useState(false);
   const [showAdminButton, setShowAdminButton] = useState(false);
   const [showAdminLogin, setShowAdminLogin] = useState(() => {
+    const savedCode = getAdminPasscode();
+    if (savedCode && savedCode.toLowerCase() === 'bantle') return false;
     if (typeof window === 'undefined') return false;
     const path = window.location.pathname.toLowerCase();
     const search = window.location.search.toLowerCase();
@@ -75,7 +77,19 @@ function App() {
   // ==========================================
   
   useEffect(() => {
-    // Check active Supabase Auth session on mount
+    // 1. Check if passcode 'bantle' is stored
+    const savedCode = getAdminPasscode();
+    if (savedCode && savedCode.toLowerCase() === 'bantle') {
+      setAdminAuthenticated(true);
+      setShowAdminButton(true);
+      setShowAdminLogin(false);
+      if (window.location.pathname.toLowerCase() === '/admin') {
+        window.history.replaceState({ adminMode: true }, '', '/');
+      }
+      return;
+    }
+
+    // 2. Check active Supabase Auth session on mount
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session?.user) {
         setAdminAuthenticated(true);
@@ -93,6 +107,8 @@ function App() {
         setShowAdminButton(true);
         setShowAdminLogin(false);
       } else {
+        const code = getAdminPasscode();
+        if (code && code.toLowerCase() === 'bantle') return;
         const deviceSession = getAdminSession();
         if (!deviceSession) {
           setAdminAuthenticated(false);

@@ -12,6 +12,7 @@ import { SongRow } from './shared/SongRow';
 import { VisibilitySwitch } from './shared/VisibilitySwitch';
 import { formatSongTitle, songMatchesLanguageFilter, getLanguagePriority } from '../utils/SongFormatter';
 import { formatKeyDisplay, KEY_ROOT_OPTIONS, type KeyQuality } from '../utils/KeyUtils';
+import { createAdminSong } from '../services/DeviceAuthService';
 
 export function SongList() {
   const renderCount = useRef(0);
@@ -122,9 +123,9 @@ export function SongList() {
       const chordsToUse = opts?.chords ?? '';
       const isActiveToUse = opts?.is_active !== false;
 
-      const { data, error } = await supabase
-        .from('songs')
-        .insert({
+      let data: any = null;
+      try {
+        data = await createAdminSong({
           title: titleToUse,
           song_number: nextSongNumber,
           language: languageToUse,
@@ -133,13 +134,27 @@ export function SongList() {
           lyrics: '',
           artist: '',
           original_key: keyToUse
-        })
-        .select()
-        .single();
-
-      if (error) {
-        alert('❌ Failed to create new song: ' + error.message);
-        return;
+        });
+      } catch (adminErr: any) {
+        const { data: directData, error } = await supabase
+          .from('songs')
+          .insert({
+            title: titleToUse,
+            song_number: nextSongNumber,
+            language: languageToUse,
+            is_active: isActiveToUse,
+            chords: chordsToUse,
+            lyrics: '',
+            artist: '',
+            original_key: keyToUse
+          })
+          .select()
+          .single();
+        if (error) {
+          alert('❌ Failed to create new song: ' + (adminErr?.message || error.message));
+          return;
+        }
+        data = directData;
       }
 
       if (data) {
