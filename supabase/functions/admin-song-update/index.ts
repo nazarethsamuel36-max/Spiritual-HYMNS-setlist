@@ -47,15 +47,30 @@ Deno.serve(async (request) => {
     if (invalidField) return json({ error: `Field not allowed: ${invalidField}` }, 400);
 
     const admin = getAdminClient();
-    const tokenHash = await sha256(token);
-    const { data: session } = await admin
-      .from('admin_sessions')
-      .select('device_id')
-      .eq('token_hash', tokenHash)
-      .is('revoked_at', null)
-      .gt('expires_at', new Date().toISOString())
-      .maybeSingle();
-    if (!session) return json({ error: 'Unauthorized' }, 401);
+    let isAuthorized = false;
+    let deviceSessionId: string | null = null;
+
+    // 1. Try Supabase Auth user JWT
+    const { data: userData } = await admin.auth.getUser(token);
+    if (userData?.user) {
+      isAuthorized = true;
+    } else {
+      // 2. Try device session
+      const tokenHash = await sha256(token);
+      const { data: session } = await admin
+        .from('admin_sessions')
+        .select('device_id')
+        .eq('token_hash', tokenHash)
+        .is('revoked_at', null)
+        .gt('expires_at', new Date().toISOString())
+        .maybeSingle();
+      if (session) {
+        isAuthorized = true;
+        deviceSessionId = session.device_id;
+      }
+    }
+
+    if (!isAuthorized) return json({ error: 'Unauthorized' }, 401);
 
     const { error } = await admin
       .from('songs')
@@ -63,11 +78,13 @@ Deno.serve(async (request) => {
       .eq('id', songId);
     if (error) return json({ error: 'Unable to update song' }, 500);
 
-    await admin
-      .from('admin_devices')
-      .update({ last_seen: new Date().toISOString() })
-      .eq('id', session.device_id)
-      .is('revoked_at', null);
+    if (deviceSessionId) {
+      await admin
+        .from('admin_devices')
+        .update({ last_seen: new Date().toISOString() })
+        .eq('id', deviceSessionId)
+        .is('revoked_at', null);
+    }
 
     return json({ updated: true });
   } catch {

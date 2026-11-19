@@ -74,11 +74,13 @@ export function clearAdminSession(): void {
 }
 
 export async function updateAdminSong(songId: number, updates: Record<string, unknown>): Promise<void> {
-  const session = getAdminSession();
-  if (!session) throw new Error('Admin session expired.');
+  const { data: { session: authSession } } = await supabase.auth.getSession();
+  const token = authSession?.access_token || getAdminSession()?.token;
+
+  if (!token) throw new Error('Admin session expired. Please sign in again.');
 
   const { error } = await supabase.functions.invoke('admin-song-update', {
-    headers: { Authorization: `Bearer ${session.token}` },
+    headers: { Authorization: `Bearer ${token}` },
     body: { song_id: songId, updates }
   });
   if (error) throw new Error(error.message);

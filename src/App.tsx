@@ -17,8 +17,10 @@ import { useIsMobile } from './hooks/useMediaQuery';
 import { db, ensureUid } from './db/Database';
 import { generateUUID } from './utils/uuid';
 import { ShareService } from './services/ShareService';
-import { authenticateDevice, clearAdminSession } from './services/DeviceAuthService';
+import { authenticateDevice, clearAdminSession, getAdminSession } from './services/DeviceAuthService';
 import { AdminScreen } from './components/AdminScreen';
+import { AdminLoginScreen } from './components/AdminLoginScreen';
+import { supabase } from './lib/supabaseClient';
 import { UserDataPackageService } from './services/UserDataPackage';
 import { isIOS } from './utils/platform';
 
@@ -35,6 +37,12 @@ function App() {
   const [shareImportLoading, setShareImportLoading] = useState<string | null>(null);
   const [showAdminScreen, setShowAdminScreen] = useState(false);
   const [showAdminButton, setShowAdminButton] = useState(false);
+  const [showAdminLogin, setShowAdminLogin] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const path = window.location.pathname.toLowerCase();
+    const search = window.location.search.toLowerCase();
+    return path === '/admin' || path.startsWith('/admin/') || search.includes('admin=true') || search === '?admin';
+  });
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isExporting, setIsExporting] = useState(false);
   const [isImporting, setIsImporting] = useState(false);
@@ -65,6 +73,36 @@ function App() {
   // ==========================================
   // 2. ALL USE_EFFECTS MUST BE HERE
   // ==========================================
+  
+  useEffect(() => {
+    // Check active Supabase Auth session on mount
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        setAdminAuthenticated(true);
+        setShowAdminButton(true);
+        setShowAdminLogin(false);
+        if (window.location.pathname.toLowerCase() === '/admin') {
+          window.history.replaceState({ adminMode: true }, '', '/');
+        }
+      }
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        setAdminAuthenticated(true);
+        setShowAdminButton(true);
+        setShowAdminLogin(false);
+      } else {
+        const deviceSession = getAdminSession();
+        if (!deviceSession) {
+          setAdminAuthenticated(false);
+          setShowAdminButton(false);
+        }
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [setAdminAuthenticated]);
   
 
   useEffect(() => {
@@ -209,6 +247,8 @@ function App() {
           setShareImportLoading(null);
           window.history.replaceState({}, '', '/');
         }
+      } else if (path.toLowerCase() === '/admin' || path.toLowerCase().startsWith('/admin/')) {
+        setShowAdminLogin(true);
       } else {
         const songMatch = path.match(/^\/song\/(\d+)$/);
         if (songMatch) openSong(parseInt(songMatch[1], 10), 'library');
@@ -364,11 +404,17 @@ function App() {
     }
     titleTapTimerRef.current = window.setTimeout(() => { titleTapCountRef.current = 0; }, 1500);
   };
-  const handleExitAdminMode = () => {
+  const handleExitAdminMode = async () => {
+    try {
+      await supabase.auth.signOut();
+    } catch (err) {
+      console.warn('Sign out error:', err);
+    }
     clearAdminSession();
     setAdminAuthenticated(false);
     setShowAdminScreen(false);
     setShowAdminButton(false);
+    setShowAdminLogin(false);
     closeReader();
     setSidebarPanel('library');
     window.history.replaceState({ adminMode: false }, '', '/');
@@ -464,6 +510,22 @@ function App() {
   // ==========================================
   return (
     <>
+      {showAdminLogin && !isAdminAuthenticated && (
+        <AdminLoginScreen
+          onSuccess={() => {
+            setAdminAuthenticated(true);
+            setShowAdminButton(true);
+            setShowAdminLogin(false);
+            setSidebarPanel('library');
+            closeReader();
+            window.history.replaceState({ adminMode: true }, '', '/');
+          }}
+          onCancel={() => {
+            setShowAdminLogin(false);
+            window.history.replaceState({}, '', '/');
+          }}
+        />
+      )}
       {showGatekeeper ? (
         <SetupGatekeeper onComplete={() => setShowGatekeeper(false)} />
       ) : (
